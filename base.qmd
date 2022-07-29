@@ -1,0 +1,360 @@
+---
+title: "Keywords and collocation analysis on the BASE corpus"
+editor: visual
+---
+
+# Setup
+
+```{r}
+#| include: false
+
+corpus_folder <- "_corpora/"
+```
+
+This document illustrates a keyword analysis and a collocation analysis. They both use the BASE corpus and the same criteria for association strength. You may replicate the code by copy-pasting the snippets (clicking on the symbol on the top right corner of each) and running it on the console or, better yet, on a script or R Markdown file.
+
+For the analysis we'll mainly use the `{tidyverse}` package and the `{mclm}` package. For the report itself, mostly when printing tables, we'll also use `{kableExtra}`.
+
+```{r}
+#| label: loadpkg
+#| message: false
+
+library(tidyverse)
+library(mclm)
+library(kableExtra) # for the report
+```
+
+## Association strength criteria
+
+Both of the studies rely on the `assoc_scores` objects of the `{mclm}` package, which return frequencies and association scores, i.e. measures based on the frequency of a certain event in a target context and in a reference context. For keyword analysis, the target context is a target (sub)corpus and the reference context is a reference (sub)corpus. For collocation analysis based on surface co-occurrences, the target context is the text surrounding the node term and the reference context is all the other text in the corpus.
+
+In order to define keywords (for the first study) or collocations (for the second study) we will filter the output of `assoc_scores()` based on the following three criteria:
+
+-   A **frequency** of three or higher in the target context
+-   A **PMI score** of two or higher
+-   A **signed G** score of two or higher
+
+A **PMI score** of two or higher means that the probability of the keyword in the target context is at least four times higher than its probability in all the data taken together.[^1]
+
+[^1]: Incidentally: a PMI of one indicated that this probability is twice as high, a PMI of two indicates it is four times as high, a PMI of three indicates it is eight times as high, a PMI of four indicates it is sixteen times as high, etc.
+
+A **signed G score** of two or higher is not a very strict criterion. With a signed G score of two there is only mild evidence for attraction. In a traditional G test (log likelihood ratio test) for a two-by-two contingency table, a G score of one would indicate no evidence for any association whatsoever and a G score of 3.84 would be needed for the test to indicate a significant association (at a 95% confidence level). So a value of two would indicate that there is not enough evidence to establish significance.
+
+::: callout-tip
+## Selection criteria
+
+In short, the selection criteria that were chosen here value both the *effect size* and *amount of evidence*, but could be said to be more demanding with respect to the former than with respect to the latter. This choice is acceptable, as long as the researcher is aware to be prioritizing (to some extent) effect size over amount of evidence.
+:::
+
+## Data {#data}
+
+The first step to analyzing the data is to read the corpus. The first line of the code below sets the path to the "BASE" directory where all the corpus files are stored, in this case inside the parent directory. In order to run this in your own computer, set `base_corpus` to the path from wherever you are running the code to where your copy of the corpus is stored.
+
+The second line of the code collects all the file names in that folder in an `fnames` object and keeps those with the "txt" extension.
+
+```{r}
+#| label: files
+
+fnames_BASE <- get_fnames(file.path(corpus_folder, "BASE")) %>% 
+  keep_re("[.]txt")
+
+print(fnames_BASE, 10)
+```
+
+The functions to actually read the corpus for the analyses will be `freqlist()` and `surf_cooc()`. In both cases we'll use three non-default settings that are more appropriate for the format of the BASE corpus.
+
+-   In `re_token_splitter` we use the regular expression `(?xi) \s+`; in other words, we treat all chunks of whitespace as token separators. We do this because the default tokenizer, which roughly identifies the chunks of alphanumeric characters as tokens, would e.g. cut up the corpus snippet `a simple [0.4] example` into the tokens `a`, `simple`, `0`, `4`, and `example`, which is not what we want. The tokenizer we do use would cut the same snippet up in the tokens `a`, `simple`, `[0.4]`, and `example`. This is still not exactly what we want, but see the next point.
+-   In `re_drop_token` we use `(?xi) [:\[\]]` in order to drop all the tokens that match this regular expression; in other words we drop all tokens that contain either a colon, an opening square bracket or a closing square bracket. So in the aforementioned example, the pseudo-token `[0.4]`, which actually is a pause indication, would be dropped eventually. Tokens that contain a colon are also dropped, because those are speaker identifiers in the BASE corpus, not real tokens.
+-   In `file_encoding` we specify `windows-1252`, which indeed is the encoding used in the BASE corpus.
+
+## Steps
+
+The main function we will use is `assoc_scores()`, which creates an object of class `assoc_scores`, i.e. a special kind of dataframe with association scores information. In the case of [keyword analysis](#kw) we'll run it with two frequency lists created from different (subcorpora), whereas for [collocation analysis](#colloc) we'll provide a `cooc_info` object created with `surf_cooc()`.
+
+By default, `assoc_scores()` will not return values where the frequency in the target context was lower than 3, so we don't need to do anything else to define our first criterion. For the other two criteria, instead, we'll need to filter the `assoc_scores` object to only retain elements with a high enough PMI and G_signed.
+
+# Keyword analysis  {#kw}
+
+For the keyword analysis, the target corpus will be the file *ahlct001.txt* and the reference corpus, the remaining 198 files. We will store the target filename in a variable called `fnames_target` and the reference corpus filenames in a variable called `fnames_ref`.
+
+```{r}
+#| label: key-corpus
+# store names of target corpus files in fnames_target
+fnames_target <- fnames_BASE %>%
+  keep_re("ahlct001") %>%
+  print()
+
+# store names of reference corpus files in fnames_ref
+fnames_ref <- fnames_BASE %>%
+  drop_re("ahlct001") %>%
+  print(n = 10)
+```
+
+Such `fnames` objects can be turned into `tibble` objects and printed as tables for a nicer rendering in R Markdown file. The most basic way to print a table is with `knitr::kable()`, but we can also take advantage of the wide range of options of the [`{kableExtra}` package](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html).
+
+```{r}
+#| label: kable-extra-1
+fnames_ref %>%
+  as_tibble() %>%
+  head(10) %>%   # only keep the first ten items
+  kbl() %>% 
+  kable_minimal()
+```
+
+## Frequency lists
+
+Next, we build the frequency lists, both for the target corpus and for the reference corpus. The former we store in a variable `flist_target` and the latter in a variable `flist_ref`.
+
+```{r}
+#| label: flist
+# build frequency list for target corpus
+flist_target <- fnames_target %>%
+  freqlist(re_token_splitter = r"--[(?xi)  \s+   ]--", # whitespace as token splitter
+           re_drop_token     = r"--[(?xi)  [:\[\]] ]--", # drop tokens with :, [ or ]
+           file_encoding     = "windows-1252") %>%
+  print()
+
+# build frequency list for reference corpus
+flist_ref <- fnames_ref %>%
+  freqlist(re_token_splitter = r"--[(?xi)  \s+   ]--",
+           re_drop_token     = r"--[(?xi)  [:\[\]] ]--",
+           file_encoding     = "windows-1252") %>%
+  print()
+```
+
+Like with `fnames` objects, we can turn `freqlist` objects into tibbles and print them nicely with `{kableExtra}`. When the output is HTML, we can also print the table in a scrollable box.
+
+```{r}
+#| label: flist-kbl
+flist_target %>% 
+  as_tibble() %>% 
+  kbl() %>% 
+  kable_minimal() %>% 
+  scroll_box(height = "400px")
+```
+
+## Association scores
+
+Next, we calculate the association score with a call to `assoc_scores()`, providing first the target frequency list and then the reference frequency list. We store the result in a variable called `scores_kw`. Once we have our `scores_kw`, we can sort them by PMI and by signed G.
+
+```{r}
+#| label: scores-kw
+# calculate scores
+scores_kw <- assoc_scores(flist_target, flist_ref)
+
+# print scores, sorted by PMI
+print(scores_kw, sort_order = "PMI")
+
+# print scores, sorted by G_signed
+print(scores_kw, sort_order = "G_signed")
+```
+
+## Filtering of keywords by PMI and signed G
+
+We use `filter` to filter the keywords (i.e. the object `scores_kw`) by PMI and signed G. We store the result in a variable called `top_scores_kw`. We again print the result, first sorted by PMI, then by signed G. This allows us to explore which words are ranked higher by each of the measures.
+
+```{r}
+#| label: top-kw
+top_scores_kw <- scores_kw %>% 
+  filter(PMI >= 2 & G_signed >= 2)
+
+# print top_scores_kw, sorted by PMI
+top_scores_kw %>%
+  print(sort_order = "PMI")
+
+# print top_scores_kw, sorted by G_signed
+top_scores_kw %>%
+  print(sort_order = "G_signed")
+```
+
+Here you can keep reading to see the steps for collocation analysis or skip to the [post-processing section](#post) for tips on how to move forward.
+
+# Collocation analysis  {#colloc}
+
+For collocation analysis, we will only use the full BASE corpus (`fnames_BASE`) and, instead of the `freqlist()` function, the `surf_cooc()` function. This function requires a `re_node` argument that is a regular expression capturing what should be identified as a **node** token. In this case we ask for `(?xi)  ^ big $`.
+
+:::{.callout-note collapse="true"}
+
+## What does this regex mean?
+
+The regular expression `(?xi)  ^ big $` asks for the beginning of a word, followed by 'big', followed by the end of the word.
+
+:::
+
+The rest of the arguments are the same that were set in `freqlist()`, as explained [above](#data).
+
+```{r}
+#| label: surfcooc
+coocs <- fnames_BASE %>% 
+  surf_cooc("(?xi)  ^ big $",
+            re_token_splitter = r"--[(?xi)  \s+   ]--",
+            re_drop_token     = r"--[(?xi)  [:\[\]] ]--",
+            file_encoding     = "windows-1252")
+coocs
+```
+
+The object `coocs` is a list with two frequency lists: a target frequency list with the co-occurrence frequencies of items in the vicinity of the node *big* (by default, 3 tokens to either side), and reference frequency list with the frequencies of items in the rest of the corpus.
+
+## Association scores
+
+Next, we calculate the association score with a call to `assoc_scores()`, providing the full object `coocs` instead of the separated frequency lists. We store the result in a variable called `scores_colloc`. Once we have our `scores_colloc`, we can sort them by PMI and by signed G.
+
+```{r}
+#| label: scores-colloc
+# calculate scores
+scores_colloc <- assoc_scores(flist_target, flist_ref)
+
+# print scores, sorted by PMI
+print(scores_colloc, sort_order = "PMI")
+
+# print scores, sorted by G_signed
+print(scores_colloc, sort_order = "G_signed")
+```
+
+## Filtering of collocatesby PMI and signed G
+
+We use `filter` to filter the collocates (i.e. the object `scores_colloc`) by PMI and signed G. We store the result in a variable called `top_scores_colloc`. We again print the result, first sorted by PMI, then by signed G. This allows us to explore which words are ranked higher by each of the measures.
+
+```{r}
+#| label: top-colloc
+top_scores_colloc <- scores_colloc %>% 
+  filter(PMI >= 2 & G_signed >= 2)
+
+# print top_scores_colloc, sorted by PMI
+top_scores_colloc %>%
+  print(sort_order = "PMI")
+
+# print top_scores_colloc, sorted by G_signed
+top_scores_colloc %>%
+  print(sort_order = "G_signed")
+```
+
+# Post-processing {#post}
+
+The rest of the steps can be applied to any `assoc_scores` object, i.e. either the output of a keyword analysis or that of a collocation analysis.
+
+## Saving the results to file
+
+We can use `write_assoc()` to write an `assoc_scores` object to a file. That file is a tab delimited text file. It can easily be imported in spreadsheet tools. It can also be read again in RStudio, in future sessions, with `read_assoc()`.
+
+```{r}
+#| label: write
+#| eval: false
+top_scores_kw %>%
+  write_assoc("ahlct001_top_keywords.csv") 
+# top_scores_kw <- read_assoc("ahlct001_top_keywords.csv")
+
+top_scores_colloc %>%
+  write_assoc("big_top_collocates.csv") 
+# top_scores_colloc <- read_assoc("big_top_collocates.csv")
+```
+
+## A nicer way of showing the scores in a report
+
+We can turn the scores into a so-called *tibble* (i.e. a tidyverse style data frame) with the function `as_tibble()`. This allows people familiar with the tidyverse to use the rich set of tidyverse functions that are applicable to tibbles.
+
+Here we print the top thirty keywords (according to PMI, and sorted by descending PMI) the tidyverse way:
+
+```{r}
+#| label: top-pmi
+top_scores_kw %>% # also valid for top_scores_colloc
+  as_tibble() %>%
+  select(type, a, PMI, G_signed) %>% # select 4 columns
+  arrange(desc(PMI)) %>%             # sort by PMI (descending) 
+  head(30) %>%                       # select top 30 rows
+  kbl(caption = "Top 30 key words of the 'ahlct001' file in the BASE corpus, sorted by PMI.", digits = 3) %>% 
+  kable_minimal() %>% 
+  scroll_box(height = "400px")
+```
+
+We can do the same sorting by G signed instead:
+
+```{r}
+#| label: top-g
+top_scores_colloc %>% # also valid for top_scores_kw
+  as_tibble() %>%
+  select(type, a, PMI, G_signed) %>% # select 4 columns
+  arrange(desc(G_signed)) %>%        # sort by G_signed (descending)  
+  head(30) %>%                       # select top 30 rows
+  kbl(caption = "Top 30 collocates of 'big' in the BASE corpus, sorted by G signed.", digits = 3) %>% 
+  kable_minimal() %>% 
+  scroll_box(height = "400px")
+```
+
+Alternatively, we can print the table with `DT::datatable()`, a wrapper for Javascript's datatable. This interactive table (not available in PDF output) allows the user to select different sorting criteria.
+
+```{r}
+#| label: top-kw-dt
+top_scores_kw %>%
+  as_tibble() %>%
+  select(type, a, PMI, G_signed) %>% # select 4 columns
+  arrange(desc(G_signed)) %>%        # sort by G_signed (descending)  
+  head(30) %>%                       # select top 30 rows
+  DT::datatable(caption = "Top 30 keywords of the 'ahlct001' file in the BASE corpus.") %>% 
+  DT::formatRound(columns = 3:4, digits = 3)
+```
+
+```{r}
+#| label:  top-colloc-dt
+top_scores_colloc %>%
+  as_tibble() %>%
+  select(type, a, PMI, G_signed) %>% # select 4 columns
+  arrange(desc(G_signed)) %>%        # sort by G_signed (descending)  
+  head(30) %>%                       # select top 30 rows
+  DT::datatable(caption = "Top 30 collocates of 'big' in the BASE corpus.") %>% 
+  DT::formatRound(columns = 3:4, digits = 3)
+```
+
+## Plotting the association scores
+
+If we store the tibble version of the results in a variable, such as `top_scores_df`, we can reuse that object in several subsequent instructions without having to recreate it time and again. Let's look at the values for the keywords here.
+
+```{r}
+#| label: top-tibble
+top_scores_df <- as_tibble(top_scores_kw)
+```
+
+To illustrate the use of the *tibble* version of the results, we can, for instance, generate plots on the basis of the object `top_scores_df`. Below, we build a scatter plot of signed G scores (x-axis) by PMI scores (y-axis). The plot gives us an idea of to which extent both measures correlate.
+
+```{r}
+#| label: plot-kw1
+# plot PMI by G_signed (without names of the types)
+top_scores_df %>%
+  ggplot(aes(x = PMI, y = G_signed)) +
+  geom_point()
+```
+
+We see that the measures do correlate a bit, but definitely not perfectly. In fact, should you build similar plots for other combinations of measures, you'll find that some pair correlate much more clearly than what we see here.
+
+Let's inspect to which extent absolute frequencies can explain the discrepancies between PMI and signed G. Below we have the frequencies in the target corpus (i.e. the values in the *a* cell of the contingency tables) reflect the size of the symbols. We see that high frequencies tend to relatively boost signed G scores and that low frequencies appear to relatively increase the probability of obtaining a high PMI score.
+
+```{r}
+#| label: plot-kw2
+# plot PMI by G_signed (size reflecting frequencies)
+top_scores_df %>%
+  ggplot(aes(x = PMI, y = G_signed)) +
+  geom_point(aes(size = a))
+```
+
+We can also plot the names of the words instead of using symbols, using the `geom_text()` function. Notice that in `top_scores_df` the names of the types are stored in a column called `type`.
+
+```{r}
+#| label: plot-kw3
+# plot PMI by G_signed (with names of the types)
+top_scores_df %>%
+  ggplot(aes(x = PMI, y = G_signed)) +
+  geom_text(aes(label = type))
+```
+
+For a more sophisticated plot, the `{ggrepel}` package allows us to add text close to the position of their datapoints, avoiding overlap. We can combine text and points to only annotate the higher values.
+
+```{r}
+#| label: plot-kw4
+high_G_signed <- top_scores_df %>% 
+  filter(G_signed > 100) # extract types with high G_signed
+
+top_scores_df %>% 
+  ggplot(aes(x = PMI, y = G_signed)) +
+  geom_point() +
+  ggrepel::geom_text_repel(data = high_G_signed, aes(label = type))
+```

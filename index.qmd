@@ -1,0 +1,11 @@
+---
+title: "Methods in Corpus Linguistics"
+---
+
+This is a Quarto website. I just learned about Quarto. Let's try to use it!
+
+In this website I'll compile course material for the Advanced Masters in Linguistics course "Methods in Corpus Linguistics" (September-December 2022). In principle this course will not provide corpora (but we'll see) but it will illustrate code for practice and illustration.
+
+The code shown here makes use of the mclm package that I will eventually link to :)
+
+Check out [this report](base.qmd)!
