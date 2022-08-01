@@ -73,7 +73,7 @@ The main function we will use is `assoc_scores()`, which creates an object of cl
 
 By default, `assoc_scores()` will not return values where the frequency in the target context was lower than 3, so we don't need to do anything else to define our first criterion. For the other two criteria, instead, we'll need to filter the `assoc_scores` object to only retain elements with a high enough PMI and G_signed.
 
-# Keyword analysis  {#kw}
+# Keyword analysis {#kw}
 
 For the keyword analysis, the target corpus will be the file *ahlct001.txt* and the reference corpus, the remaining 198 files. We will store the target filename in a variable called `fnames_target` and the reference corpus filenames in a variable called `fnames_ref`.
 
@@ -169,16 +169,14 @@ top_scores_kw %>%
 
 Here you can keep reading to see the steps for collocation analysis or skip to the [post-processing section](#post) for tips on how to move forward.
 
-# Collocation analysis  {#colloc}
+# Collocation analysis {#colloc}
 
 For collocation analysis, we will only use the full BASE corpus (`fnames_BASE`) and, instead of the `freqlist()` function, the `surf_cooc()` function. This function requires a `re_node` argument that is a regular expression capturing what should be identified as a **node** token. In this case we ask for `(?xi)  ^ big $`.
 
-:::{.callout-note collapse="true"}
-
+::: {.callout-note collapse="true"}
 ## What does this regex mean?
 
 The regular expression `(?xi)  ^ big $` asks for the beginning of a word, followed by 'big', followed by the end of the word.
-
 :::
 
 The rest of the arguments are the same that were set in `freqlist()`, as explained [above](#data).

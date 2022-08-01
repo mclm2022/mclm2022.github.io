@@ -1,0 +1,334 @@
+---
+title: "Regression analysis"
+format:
+  revealjs:
+    slide-number: true
+    show-slide-number: all
+    chalkboard: true
+editor: visual
+execute:
+  echo: true
+---
+
+## Linear and logistic regression {.smaller}
+
+```{r}
+#| include: false
+
+library(tidyverse)
+```
+
+
+|                                                      | Linear regression            | Logistic regression                                                      |
+|----------------------|-------------------------|-------------------------|
+| Response variable                                    | Numerical                    | Categorical                                                              |
+| Relationship between predictor estimate and response | Linear                       | Logistic (linear relationship between estimate and log odds of response) |
+| Fitting function                                     | OSL (ordinary least squares) | MLE (maximum likelihood estimation)                                      |
+| Model comparison                                     | F-test                       | AIC                                                                      |
+| Evaluation metric                                    | $R^2$                        | $C$                                                                      |
+| Base R function                                      | `lm()`                       | `glm()`                                                                  |
+
+# Simple linear regression
+
+## Simple linear regression
+
+Simple
+
+:   one predictor variable
+
+Linear
+
+:   linear relation between estimated parameters and response variable
+
+Notation
+
+:   `y ~ x`
+
+Estimation: OSL
+
+:   Ordinary least squares, minimizing sum of squares of residuals
+
+## Example
+
+```{r}
+#| code-line-numbers: "|1-2|3|5-8|9-10|12-15"
+library(ggplot2)
+library(tibble)
+set.seed(2022)
+
+utt_lengths <- tibble(
+  age = 3:17,
+  utterance_length = 3 + 0.5*seq_along(age) + rnorm(length(age), sd = 0.8)
+)
+m <- lm(utterance_length ~ age, data = utt_lengths)
+utt_lengths$fit <- m$fitted.values
+
+g <- ggplot(utt_lengths, aes(x = age, y = utterance_length)) +
+  labs(x = "Age", y = "Utterance length") +
+  xlim(c(0,18)) + ylim(c(0,15)) +
+  theme_minimal(base_size = 14) + theme(aspect.ratio = 1)
+```
+
+## Plotted values
+
+```{r}
+g <- g + geom_point()
+g
+```
+
+
+## Adding fitted line
+
+```{r}
+g <- g + geom_line(aes(y = fit))
+g
+```
+
+## Residuals
+
+```{r}
+g <- g + geom_segment(aes(xend = age, yend = fit))
+g
+```
+
+## Model output
+
+```{r}
+summary(m)
+```
+
+# Easy stats
+
+## Quick reports in text
+
+```{r}
+library(report)
+report(m)
+```
+
+::: footer
+[{report} package](https://easystats.github.io/report/)
+:::
+
+## Quickly printing estimates
+
+```{r}
+library(parameters)
+model_parameters(m)
+
+print_md(model_parameters(m))
+```
+
+::: footer
+[{parameters} package](https://easystats.github.io/parameters/)
+:::
+
+## Check and plot assumptions
+
+```{r}
+library(performance)
+check_heteroscedasticity(m)
+
+check_model(m, check = c("qq", "ncv"))
+```
+
+::: footer
+[{performance} package](https://easystats.github.io/performance/)
+:::
+
+## Evaluate model
+
+```{r}
+model_performance(m) %>% print_md()
+```
+
+::: footer
+[{performance} package](https://easystats.github.io/performance/)
+:::
+
+# Multiple linear regression
+
+## Multiple linear regression
+
+Multiple
+
+:   more than one predictor
+
+Linear
+
+:   linear relation between estimated parameters and response variable
+
+Notation
+
+:   `y ~ x1 + x2` (fitting on a plane)
+
+:   `y ~ x1 + x2 + ... + xn` (fitting on a hyperplane)
+
+Estimation: OSL
+
+:   Ordinary least squares, minimizing sum of squares of residuals
+
+## Example
+
+```{r}
+library(dplyr)
+
+utt_lengths <- utt_lengths %>% 
+  mutate(pages_read = 0 + 0.8*seq_along(age) + rnorm(length(age), sd = 1))
+
+m2 <- glm(utterance_length ~ age + pages_read, data = utt_lengths)
+utt_lengths$fit2 <- m2$fitted.values
+```
+
+<!-- TODO make 3D plot, maaaybe with gg3D -->
+
+## Categorical predictors
+
+<!-- TODO explain dummy variables -->
+
+# Logistic regression
+
+## Logistic regression
+
+Logistic regression explains the probability of success (= a certain outcome)
+
+We cannot fit a simple straight line
+<!-- TODO create plot -->
+
+## Probabilities, odds and logit {.smaller}
+
+Value | Range | Neutral value | Description
+----- | ----- | ------ | ----------------
+probabilities <br> $P$ | 0-1 | 0.5 | Number of successes divided by number of trials
+odds <br> $\frac{P}{1-P}$ | 0-$\infty$ | 1 | Probability of success divided by the probability of failure. <br> Undefined for $P=1$
+logit, log odds <br> $\log\left(\frac{P}{1-P}\right)$ | $-\infty$-$\infty$ | 0 | If positive, success is more likely; if negative failure is more likely. <br> Undefined for $P=0$ and for $P=1$
+
+Higher $P$ -> higher odds -> higher logit
+
+## Some examples
+
+We'll create a vector `probabilities` with the values of fractions from $\frac{1}{7}$ to $\frac{1}{2}$ and then from $1-\frac{1}{3}$ to $1-\frac{1}{7}$.
+
+`MASS::fractions()` prints them as fractions.
+
+From there we compute odds and logit.
+
+```{r}
+#| code-line-numbers: "|3,5|7|6,8|9"
+library(MASS) # to print fractions
+
+probabilities <- c(1/c(7:2), 1-(1/c(3:7)))
+probs <- tibble(
+  P = probabilities,
+  P_frac = as.character(fractions(P)),
+  odds = P/(1-P),
+  odds_frac = as.character(fractions(odds)),
+  logit = log(odds)
+)
+```
+
+## Some examples {.smaller}
+
+```{r}
+#| echo: false
+knitr::kable(probs, digits = 3)
+```
+
+## Plot code {visibility="hidden"}
+
+```{r}
+lnplot <- function(df, x, y) {
+  ggplot(df, aes(x = {{ x }}, y = {{ y }})) +
+    geom_line() +
+    geom_point() + 
+    theme_minimal(base_size = 20) +
+    theme(aspect.ratio = 1)
+}
+```
+
+## Probabilities, odds, logit
+
+::: {.panel-tabset}
+
+## `logit ~ P`
+
+```{r}
+lnplot(probs, P, logit)
+```
+
+## `odds ~ P`
+
+```{r}
+lnplot(probs, P, odds)
+```
+
+:::
+
+## Linear/logistic
+
+Linear relation `logit ~ x` entails logistic curve `p ~ x`.
+
+```{r}
+with_x <- tibble(x = 1:30, logit = -3.5 + 0.3*x,
+                 odds = exp(logit), P = odds/(1+odds))
+```
+
+:::: {.columns}
+
+::: {.column widht="50%"}
+```{r}
+#| fig-height: 8
+lnplot(with_x, x, logit)
+```
+:::
+
+::: {.column widht="50%"}
+```{r}
+#| fig-height: 8
+lnplot(with_x, x, P)
+```
+:::
+
+::::
+
+## Linear/logistic
+
+Linear relation `logit ~ x` entails logistic curve `p ~ x`.
+
+```{r}
+with_x2 <- tibble(x = 1:30, logit = 3.5 - 0.3*x,
+                 odds = exp(logit), P = odds/(1+odds))
+```
+
+:::: {.columns}
+
+::: {.column widht="50%"}
+```{r}
+#| fig-height: 8
+lnplot(with_x2, x, logit)
+```
+:::
+
+::: {.column widht="50%"}
+```{r}
+#| fig-height: 8
+lnplot(with_x2, x, P)
+```
+:::
+
+::::
+
+# Extra code {visibility="uncounted"}
+
+## Plot code {visibility="uncounted"}
+
+```{r}
+lnplot <- function(df, x, y) {
+  ggplot(df, aes(x = {{ x }}, y = {{ y }})) +
+    geom_line() +
+    geom_point() + 
+    theme_minimal(base_size = 20) +
+    theme(aspect.ratio = 1)
+}
+```
+
