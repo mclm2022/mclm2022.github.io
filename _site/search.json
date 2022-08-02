@@ -137,14 +137,14 @@
     "href": "slides.html#example",
     "title": "Regression analysis",
     "section": "Example",
-    "text": "Example\n\nlibrary(ggplot2)\nlibrary(tibble)\nset.seed(2022)\n\nutt_lengths <- tibble(\n  age = 3:17,\n  utterance_length = 3 + 0.5*seq_along(age) + rnorm(length(age), sd = 0.8)\n)\nm <- lm(utterance_length ~ age, data = utt_lengths)\nutt_lengths$fit <- m$fitted.values\n\ng <- ggplot(utt_lengths, aes(x = age, y = utterance_length)) +\n  labs(x = \"Age\", y = \"Utterance length\") +\n  xlim(c(0,18)) + ylim(c(0,15)) +\n  theme_minimal(base_size = 14) + theme(aspect.ratio = 1)"
+    "text": "Example\n\nlibrary(ggplot2)\nlibrary(tibble)\nset.seed(2022)\n\nutt_lengths <- tibble(\n  age = 3:17,\n  utterance_length = 3 + 0.5*seq_along(age) + rnorm(length(age), sd = 0.3)\n)\nm <- lm(utterance_length ~ age, data = utt_lengths)\nutt_lengths$fit <- m$fitted.values\n\ng <- ggplot(utt_lengths, aes(x = age, y = utterance_length)) +\n  labs(x = \"Age\", y = \"Utterance length\") +\n  xlim(c(0,18)) + ylim(c(0,15)) +\n  theme_minimal(base_size = 14) + theme(aspect.ratio = 1)"
   },
   {
     "objectID": "slides.html#model-output",
     "href": "slides.html#model-output",
     "title": "Regression analysis",
     "section": "Model output",
-    "text": "Model output\n\nsummary(m)\n\n\nCall:\nlm(formula = utterance_length ~ age, data = utt_lengths)\n\nResiduals:\n     Min       1Q   Median       3Q      Max \n-1.91258 -0.40949 -0.04272  0.46447  1.38014 \n\nCoefficients:\n            Estimate Std. Error t value Pr(>|t|)    \n(Intercept)  1.18871    0.54280    2.19   0.0474 *  \nage          0.55042    0.04983   11.05 5.61e-08 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 0.8338 on 13 degrees of freedom\nMultiple R-squared:  0.9037,    Adjusted R-squared:  0.8963 \nF-statistic:   122 on 1 and 13 DF,  p-value: 5.605e-08"
+    "text": "Model output\n\nsummary(m)\n\n\nCall:\nlm(formula = utterance_length ~ age, data = utt_lengths)\n\nResiduals:\n     Min       1Q   Median       3Q      Max \n-0.71722 -0.15356 -0.01602  0.17418  0.51755 \n\nCoefficients:\n            Estimate Std. Error t value Pr(>|t|)    \n(Intercept)  1.69576    0.20355   8.331 1.43e-06 ***\nage          0.51891    0.01869  27.770 5.84e-13 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 0.3127 on 13 degrees of freedom\nMultiple R-squared:  0.9834,    Adjusted R-squared:  0.9821 \nF-statistic: 771.2 on 1 and 13 DF,  p-value: 5.843e-13"
   },
   {
     "objectID": "slides.html#easystats-report",
@@ -179,14 +179,14 @@
     "href": "slides.html#quick-reports-in-text",
     "title": "Regression analysis",
     "section": "Quick reports in text",
-    "text": "Quick reports in text\n\nlibrary(report)\nreport(m)\n\nWe fitted a linear model (estimated using OLS) to predict utterance_length with age (formula: utterance_length ~ age). The model explains a statistically significant and substantial proportion of variance (R2 = 0.90, F(1, 13) = 122.02, p < .001, adj. R2 = 0.90). The model's intercept, corresponding to age = 0, is at 1.19 (95% CI [0.02, 2.36], t(13) = 2.19, p = 0.047). Within this model:\n\n  - The effect of age is statistically significant and positive (beta = 0.55, 95% CI [0.44, 0.66], t(13) = 11.05, p < .001; Std. beta = 0.95, 95% CI [0.76, 1.14])\n\nStandardized parameters were obtained by fitting the model on a standardized version of the dataset. 95% Confidence Intervals (CIs) and p-values were computed using the Wald approximation.\n\n\n\n{report} package"
+    "text": "Quick reports in text\n\nlibrary(report)\nreport(m)\n\nWe fitted a linear model (estimated using OLS) to predict utterance_length with age (formula: utterance_length ~ age). The model explains a statistically significant and substantial proportion of variance (R2 = 0.98, F(1, 13) = 771.19, p < .001, adj. R2 = 0.98). The model's intercept, corresponding to age = 0, is at 1.70 (95% CI [1.26, 2.14], t(13) = 8.33, p < .001). Within this model:\n\n  - The effect of age is statistically significant and positive (beta = 0.52, 95% CI [0.48, 0.56], t(13) = 27.77, p < .001; Std. beta = 0.99, 95% CI [0.91, 1.07])\n\nStandardized parameters were obtained by fitting the model on a standardized version of the dataset. 95% Confidence Intervals (CIs) and p-values were computed using the Wald approximation.\n\n\n\n{report} package"
   },
   {
     "objectID": "slides.html#quickly-printing-estimates",
     "href": "slides.html#quickly-printing-estimates",
     "title": "Regression analysis",
     "section": "Quickly printing estimates",
-    "text": "Quickly printing estimates\n\nlibrary(parameters)\nmodel_parameters(m)\n\nParameter   | Coefficient |   SE |       95% CI | t(13) |      p\n----------------------------------------------------------------\n(Intercept) |        1.19 | 0.54 | [0.02, 2.36] |  2.19 | 0.047 \nage         |        0.55 | 0.05 | [0.44, 0.66] | 11.05 | < .001\n\nprint_md(model_parameters(m))\n\n\n\n\nParameter\nCoefficient\nSE\n95% CI\nt(13)\np\n\n\n\n\n(Intercept)\n1.19\n0.54\n(0.02, 2.36)\n2.19\n0.047\n\n\nage\n0.55\n0.05\n(0.44, 0.66)\n11.05\n< .001\n\n\n\n\n\n\n{parameters} package"
+    "text": "Quickly printing estimates\n\nlibrary(parameters)\nmodel_parameters(m)\n\nParameter   | Coefficient |   SE |       95% CI | t(13) |      p\n----------------------------------------------------------------\n(Intercept) |        1.70 | 0.20 | [1.26, 2.14] |  8.33 | < .001\nage         |        0.52 | 0.02 | [0.48, 0.56] | 27.77 | < .001\n\nprint_md(model_parameters(m))\n\n\n\n\nParameter\nCoefficient\nSE\n95% CI\nt(13)\np\n\n\n\n\n(Intercept)\n1.70\n0.20\n(1.26, 2.14)\n8.33\n< .001\n\n\nage\n0.52\n0.02\n(0.48, 0.56)\n27.77\n< .001\n\n\n\n\n\n\n{parameters} package"
   },
   {
     "objectID": "slides.html#check-and-plot-assumptions",
@@ -200,7 +200,7 @@
     "href": "slides.html#evaluate-model",
     "title": "Regression analysis",
     "section": "Evaluate model",
-    "text": "Evaluate model\n\nmodel_performance(m) %>% print_md()\n\n\nIndices of model performance\n\n\nAIC\nBIC\nR2\nR2 (adj.)\nRMSE\nSigma\n\n\n\n\n40.97\n43.09\n0.90\n0.90\n0.78\n0.83\n\n\n\n\n\n\n{performance} package"
+    "text": "Evaluate model\n\nmodel_performance(m) %>% print_md()\n\n\nIndices of model performance\n\n\nAIC\nBIC\nR2\nR2 (adj.)\nRMSE\nSigma\n\n\n\n\n11.54\n13.67\n0.98\n0.98\n0.29\n0.31\n\n\n\n\n\n\n{performance} package"
   },
   {
     "objectID": "slides.html#simple-linear-regression-1",
@@ -214,21 +214,21 @@
     "href": "slides.html#multiple-linear-regression-1",
     "title": "Regression analysis",
     "section": "Multiple linear regression",
-    "text": "Multiple linear regression\n\nMultiple\n\nmore than one predictor\n\nLinear\n\nlinear relation between estimated parameters and response variable\n\nNotation\n\ny ~ x1 + x2 (fitting on a plane)\n\n\ny ~ x1 + x2 + ... + xn (fitting on a hyperplane)\n\nEstimation: OSL\n\nOrdinary least squares, minimizing sum of squares of residuals"
+    "text": "Multiple linear regression\n\nMultiple\n\nmore than one predictor\n\nNotation\n\ny ~ x1 + x2 (fitting on a plane)\n\n\ny ~ x1 + x2 + ... + xn (fitting on a hyperplane)\n\nEstimation: OSL\n\nOrdinary least squares, minimizing sum of squares of residuals"
   },
   {
     "objectID": "slides.html#example-1",
     "href": "slides.html#example-1",
     "title": "Regression analysis",
     "section": "Example",
-    "text": "Example\n\nlibrary(dplyr)\n\nutt_lengths <- utt_lengths %>% \n  mutate(pages_read = 0 + 0.8*seq_along(age) + rnorm(length(age), sd = 1))\n\nm2 <- glm(utterance_length ~ age + pages_read, data = utt_lengths)\nutt_lengths$fit2 <- m2$fitted.values"
+    "text": "Example\n\nlibrary(dplyr)\n\nutt_lengths <- utt_lengths %>% \n  mutate(pages_read = 0 + 0.8*seq_along(age) + rnorm(length(age), sd = 1))\n\nm2 <- glm(utterance_length ~ age + pages_read, data = utt_lengths)\nutt_lengths$fit2 <- m2$fitted.values\nhead(utt_lengths) %>% knitr::kable()\n\n\n\n\nage\nutterance_length\nfit\npages_read\nfit2\n\n\n\n\n3\n3.770043\n3.252489\n2.393078\n3.247895\n\n\n4\n3.647996\n3.771397\n2.645829\n3.772950\n\n\n5\n4.230754\n4.290305\n3.507192\n4.289808\n\n\n6\n4.566650\n4.809213\n4.444730\n4.805639\n\n\n7\n5.400696\n5.328121\n4.297667\n5.336080\n\n\n8\n5.129811\n5.847029\n5.284364\n5.851249"
   },
   {
     "objectID": "slides.html#categorical-predictors",
     "href": "slides.html#categorical-predictors",
     "title": "Regression analysis",
     "section": "Categorical predictors",
-    "text": "Categorical predictors"
+    "text": "Categorical predictors\n\nWith 2 levels, e.g. “monolingual family”: yes/no\nTranslated into 1 dummy predictor with two levels\n\n0: reference level, e.g. no\n1: other level, e.g. yes\n\nLine fitted between 0 and 1, slope is the difference in y when yes (compared to no)"
   },
   {
     "objectID": "slides.html#logistic-regression-1",
@@ -320,5 +320,110 @@
     "title": "Regression analysis",
     "section": "Plot code",
     "text": "Plot code\n\nlnplot <- function(df, x, y) {\n  ggplot(df, aes(x = {{ x }}, y = {{ y }})) +\n    geom_line() +\n    geom_point() + \n    theme_minimal(base_size = 20) +\n    theme(aspect.ratio = 1)\n}"
+  },
+  {
+    "objectID": "slides.html#categorical-predictors-1",
+    "href": "slides.html#categorical-predictors-1",
+    "title": "Regression analysis",
+    "section": "Categorical predictors",
+    "text": "Categorical predictors\n\nWith more than 2 levels, e.g. “L1”: EN, Es, FR…\nTranslated into n-1 dummy predictors with two levels\n\n1: one of the levels, not the reference level, e.g. Es\n0: the rest of the levels, including the reference level (e.g. EN)\n\n(Hyper)plane fitted between combinations of 0 and 1, slope is the difference in y when it is a level compared to the reference level."
+  },
+  {
+    "objectID": "slides.html#categorical-predictors-2",
+    "href": "slides.html#categorical-predictors-2",
+    "title": "Regression analysis",
+    "section": "Categorical predictors",
+    "text": "Categorical predictors\n\nComparison is done between each level and the reference level, not in all combinations\nt-test: does the slope of an individual dummy predictor differ from 0?\nF-test of nested models: do the dummy predictors jointly reduce unexplained variation?"
+  },
+  {
+    "objectID": "slides.html#example-2",
+    "href": "slides.html#example-2",
+    "title": "Regression analysis",
+    "section": "Example",
+    "text": "Example\n\nset.seed(0)\nreading_habits <- tibble(\n  L1 = factor(rep(c(\"EN\", \"ES\"), each = 50), levels = c(\"EN\", \"ES\")),\n  age = rep(15:6, 10)) %>%\n  mutate(\n    logit = 0.2 -0.8*as.numeric(L1) + 0.2*age + rnorm(nrow(.)),\n    odds = exp(logit),\n    P = odds/(odds+1),\n    reads_EN = factor(P >= 0.5, c(\"FALSE\", \"TRUE\"))\n    )\n\nm3 <- glm(reads_EN ~ L1 + age, data = reading_habits, family = binomial(logit))\nreading_habits$fit <- m3$fitted.values\n\nreading_habits %>% head() %>% knitr::kable()"
+  },
+  {
+    "objectID": "slides.html#example-3d",
+    "href": "slides.html#example-3d",
+    "title": "Regression analysis",
+    "section": "Example 3D",
+    "text": "Example 3D\n\nplt = require(\"https://cdn.plot.ly/plotly-latest.min.js\")\npoints = [{x: data.age, y: data.pages_read, z: data.utterance_length,\ntype: \"scatter3d\", mode: \"markers\"}]\nsurface = [{x: data.age, y: data.pages_read, z: surface_fit,\ntype: \"surface\"}]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nviewof traces = Inputs.checkbox(\n  [\n    {value: points[0], label: \"Observed values\"},\n    {value: surface[0], label: \"Fitted plane\"}\n  ],\n  {\n    value: [points[0], surface[0]],\n    label: \"Show:\",\n    format: (d) => d.label,\n    valueof: (d) => d.value\n  }\n)\n\n\n\n\n\n\n\nplt.newPlot(DOM.element(\"div\"), traces, layout)"
+  },
+  {
+    "objectID": "slides.html#example-3d-1",
+    "href": "slides.html#example-3d-1",
+    "title": "Regression analysis",
+    "section": "Example 3D",
+    "text": "Example 3D\n\ntrace2 = [{x: data.pages_read, y: data.age, z: data.utterance_length,\ntype: \"surface\"}]\n\n\n\n\n\n\n\nplt.newPlot(DOM.element(\"div\"), trace2, layout)"
+  },
+  {
+    "objectID": "slides.html#example-plane",
+    "href": "slides.html#example-plane",
+    "title": "Regression analysis",
+    "section": "Example Plane",
+    "text": "Example Plane\n\ntrace2 = [{x: data.age, y: data.pages_read, z: surface_fit,\ntype: \"surface\"}]\n\n\n\n\n\n\n\nplt.newPlot(DOM.element(\"div\"), [trace2[0], trace[0]], layout)"
+  },
+  {
+    "objectID": "slides.html#default-output",
+    "href": "slides.html#default-output",
+    "title": "Regression analysis",
+    "section": "Default output",
+    "text": "Default output\n\nsummary(m3)\n\n\nCall:\nglm(formula = reads_EN ~ L1 + age, family = binomial(logit), \n    data = reading_habits)\n\nDeviance Residuals: \n    Min       1Q   Median       3Q      Max  \n-2.4851   0.1262   0.2338   0.5153   1.2084  \n\nCoefficients:\n            Estimate Std. Error z value Pr(>|z|)   \n(Intercept)  -2.4052     1.4574  -1.650  0.09888 . \nL1ES         -0.9353     0.7086  -1.320  0.18687   \nage           0.5446     0.1744   3.123  0.00179 **\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n(Dispersion parameter for binomial family taken to be 1)\n\n    Null deviance: 73.385  on 99  degrees of freedom\nResidual deviance: 56.258  on 97  degrees of freedom\nAIC: 62.258\n\nNumber of Fisher Scoring iterations: 6"
+  },
+  {
+    "objectID": "slides.html#visual-exploration",
+    "href": "slides.html#visual-exploration",
+    "title": "Regression analysis",
+    "section": "Visual exploration",
+    "text": "Visual exploration\n\nggplot(reading_habits, aes(x = age, y = P, color = L1)) +\n  geom_point(size = 3, alpha = 0.6) +\n  scale_color_manual(values=c(\"#E69F00\", \"#56B4E9\")) +\n  theme_minimal(base_size = 20) +\n  labs(x = \"Age\", y = \"Probability of reading in English\")"
+  },
+  {
+    "objectID": "slides.html#example-2-output",
+    "href": "slides.html#example-2-output",
+    "title": "Regression analysis",
+    "section": "Example",
+    "text": "Example\n\n\n\n\nL1\nage\nlogit\nodds\nP\nreads_EN\nfit\n\n\n\n\nEN\n15\n3.662954\n38.9763201\n0.9749852\nTRUE\n0.9968727\n\n\nEN\n14\n1.873767\n6.5127816\n0.8668935\nTRUE\n0.9946208\n\n\nEN\n13\n3.329799\n27.9327340\n0.9654371\nTRUE\n0.9907623\n\n\nEN\n12\n3.072429\n21.5942985\n0.9557410\nTRUE\n0.9841801\n\n\nEN\n11\n2.014641\n7.4980384\n0.8823258\nTRUE\n0.9730353\n\n\nEN\n10\n-0.139950\n0.8694017\n0.4650695\nFALSE\n0.9544032"
+  },
+  {
+    "objectID": "slides.html#quick-reports-in-text-1",
+    "href": "slides.html#quick-reports-in-text-1",
+    "title": "Regression analysis",
+    "section": "Quick reports in text",
+    "text": "Quick reports in text\n\nreport(m3)\n\nWe fitted a logistic model (estimated using ML) to predict reads_EN with L1 and age (formula: reads_EN ~ L1 + age). The model's explanatory power is moderate (Tjur's R2 = 0.19). The model's intercept, corresponding to L1 = EN and age = 0, is at -2.41 (95% CI [-5.52, 0.31], p = 0.099). Within this model:\n\n  - The effect of L1 [ES] is statistically non-significant and negative (beta = -0.94, 95% CI [-2.43, 0.41], p = 0.187; Std. beta = -0.94, 95% CI [-2.43, 0.41])\n  - The effect of age is statistically significant and positive (beta = 0.54, 95% CI [0.25, 0.94], p = 0.002; Std. beta = 1.57, 95% CI [0.71, 2.73])\n\nStandardized parameters were obtained by fitting the model on a standardized version of the dataset. 95% Confidence Intervals (CIs) and p-values were computed using \n\n\n\n{report} package"
+  },
+  {
+    "objectID": "slides.html#quickly-printing-estimates-1",
+    "href": "slides.html#quickly-printing-estimates-1",
+    "title": "Regression analysis",
+    "section": "Quickly printing estimates",
+    "text": "Quickly printing estimates\n\nTablePlot\n\n\n\nprint_md(model_parameters(m3))\n\n\n\n\nParameter\nLog-Odds\nSE\n95% CI\nz\np\n\n\n\n\n(Intercept)\n-2.41\n1.46\n(-5.52, 0.31)\n-1.65\n0.099\n\n\nL1 (ES)\n-0.94\n0.71\n(-2.43, 0.41)\n-1.32\n0.187\n\n\nage\n0.54\n0.17\n(0.25, 0.94)\n3.12\n0.002\n\n\n\n\n\n\n\n\nplot(model_parameters(m3))\n\n\n\n\n\n\n\n\n{parameters} package"
+  },
+  {
+    "objectID": "slides.html#check-and-plot-assumptions-1",
+    "href": "slides.html#check-and-plot-assumptions-1",
+    "title": "Regression analysis",
+    "section": "Check and plot assumptions",
+    "text": "Check and plot assumptions\n\nWritten outputPlots\n\n\n\ncheck_collinearity(m3)\n\n# Check for Multicollinearity\n\nLow Correlation\n\n Term  VIF       VIF 95% CI Increased SE Tolerance Tolerance 95% CI\n   L1 1.01 [1.00, 62814.39]         1.01      0.99     [0.00, 1.00]\n  age 1.01 [1.00, 62814.39]         1.01      0.99     [0.00, 1.00]\n\n\n\n\n\ncheck_model(m3, check = c(\"binned_residuals\", \"vif\", \"outliers\"))\n\n\n\n\n\n\n\n\n{performance} package"
+  },
+  {
+    "objectID": "slides.html#evaluate-model-1",
+    "href": "slides.html#evaluate-model-1",
+    "title": "Regression analysis",
+    "section": "Evaluate model",
+    "text": "Evaluate model\n\nmodel_performance(m3, metrics = \"common\") %>% \n  mutate(C = Hmisc::somers2(\n    reading_habits$fit,\n    as.numeric(reading_habits$reads_EN == \"TRUE\")\n  )[[\"C\"]]\n  ) %>% \n  print_md()\n\n\nIndices of model performance\n\n\nAIC\nBIC\nTjur’s R2\nRMSE\nC\n\n\n\n\n62.26\n70.07\n0.19\n0.29\n0.84\n\n\n\n\n\n\n{performance} package"
+  },
+  {
+    "objectID": "slides.html#written-output",
+    "href": "slides.html#written-output",
+    "title": "Regression analysis",
+    "section": "Written output",
+    "text": "Written output\n\ncheck_collinearity(m3)\n\n# Check for Multicollinearity\n\nLow Correlation\n\n Term  VIF       VIF 95% CI Increased SE Tolerance Tolerance 95% CI\n   L1 1.01 [1.00, 62814.39]         1.01      0.99     [0.00, 1.00]\n  age 1.01 [1.00, 62814.39]         1.01      0.99     [0.00, 1.00]"
+  },
+  {
+    "objectID": "slides.html#plots",
+    "href": "slides.html#plots",
+    "title": "Regression analysis",
+    "section": "Plots",
+    "text": "Plots\n\ncheck_model(m3, check = c(\"binned_residuals\", \"vif\", \"outliers\"))\n\n\n\n{performance} package"
   }
 ]

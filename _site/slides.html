@@ -91,8 +91,6 @@
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
-  <link href="site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
@@ -378,6 +376,17 @@
       margin-right: 0; 
     }
   </style>
+  <script type="module" src="site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+  <link href="site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
+  <script type="ojs-define">
+  {"contents":[{"name":"data","value":{"age":[3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],"utterance_length":[3.77,3.648,4.2308,4.5666,5.4007,5.1298,6.1822,7.0834,7.7248,8.0725,8.8019,8.9445,9.2055,10.0279,10.4842],"fit":[3.2525,3.7714,4.2903,4.8092,5.3281,5.847,6.3659,6.8848,7.4038,7.9227,8.4416,8.9605,9.4794,9.9983,10.5172],"pages_read":[2.3931,2.6458,3.5072,4.4447,4.2977,5.2844,7.0285,6.1532,6.84,8.8465,10.194,9.8795,11.4164,10.8829,11.4254],"fit2":[3.2479,3.7729,4.2898,4.8056,5.3361,5.8512,6.3562,6.8965,7.4157,7.9171,8.4274,8.9601,9.4679,10.0035,10.5247]}}]}
+  </script>
+  <script type="ojs-define">
+  {"contents":[{"name":"surface_fit","value":[[3.2479,3.7764,4.3048,4.8333,5.3617,5.8902,6.4187,6.9471,7.4756,8.004,8.5325,9.061,9.5894,10.1179,10.6463],[3.2445,3.7729,4.3014,4.8299,5.3583,5.8868,6.4152,6.9437,7.4722,8.0006,8.5291,9.0575,9.586,10.1145,10.6429],[3.2329,3.7613,4.2898,4.8183,5.3467,5.8752,6.4036,6.9321,7.4606,7.989,8.5175,9.0459,9.5744,10.1029,10.6313],[3.2222,3.7507,4.2792,4.8076,5.3361,5.8645,6.393,6.9215,7.4499,7.9784,8.5068,9.0353,9.5638,10.0922,10.6207],[3.2203,3.7487,4.2772,4.8056,5.3341,5.8626,6.391,6.9195,7.4479,7.9764,8.5049,9.0333,9.5618,10.0902,10.6187],[3.209,3.7374,4.2659,4.7943,5.3228,5.8512,6.3797,6.9082,7.4366,7.9651,8.4935,9.022,9.5505,10.0789,10.6074],[3.1972,3.7257,4.2542,4.7826,5.3111,5.8395,6.368,6.8965,7.4249,7.9534,8.4818,9.0103,9.5388,10.0672,10.5957],[3.188,3.7165,4.2449,4.7734,5.3018,5.8303,6.3588,6.8872,7.4157,7.9441,8.4726,9.0011,9.5295,10.058,10.5864],[3.1855,3.7139,4.2424,4.7708,5.2993,5.8278,6.3562,6.8847,7.4131,7.9416,8.4701,8.9985,9.527,10.0554,10.5839],[3.161,3.6894,4.2179,4.7464,5.2748,5.8033,6.3317,6.8602,7.3886,7.9171,8.4456,8.974,9.5025,10.0309,10.5594],[3.1471,3.6755,4.204,4.7324,5.2609,5.7894,6.3178,6.8463,7.3747,7.9032,8.4317,8.9601,9.4886,10.017,10.5455],[3.1428,3.6713,4.1997,4.7282,5.2567,5.7851,6.3136,6.842,7.3705,7.899,8.4274,8.9559,9.4843,10.0128,10.5413],[3.1335,3.662,4.1905,4.7189,5.2474,5.7758,6.3043,6.8328,7.3612,7.8897,8.4181,8.9466,9.4751,10.0035,10.532],[3.1264,3.6548,4.1833,4.7117,5.2402,5.7687,6.2971,6.8256,7.354,7.8825,8.411,8.9394,9.4679,9.9963,10.5248],[3.1262,3.6547,4.1832,4.7116,5.2401,5.7685,6.297,6.8255,7.3539,7.8824,8.4108,8.9393,9.4678,9.9962,10.5247]]}]}
+  </script>
+  <script type="ojs-define">
+  {"contents":[{"name":"layout","value":{"scene":{"xaxis":{"title":"Pages read"},"yaxis":{"title":"Age"},"zaxis":{"title":"Utterance length"}},"margin":{"l":0,"r":0,"t":0,"b":0}}}]}
+  </script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -471,7 +480,7 @@
 <span id="cb1-4"><a href="#cb1-4"></a></span>
 <span id="cb1-5"><a href="#cb1-5"></a>utt_lengths <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
 <span id="cb1-6"><a href="#cb1-6"></a>  <span class="at">age =</span> <span class="dv">3</span><span class="sc">:</span><span class="dv">17</span>,</span>
-<span id="cb1-7"><a href="#cb1-7"></a>  <span class="at">utterance_length =</span> <span class="dv">3</span> <span class="sc">+</span> <span class="fl">0.5</span><span class="sc">*</span><span class="fu">seq_along</span>(age) <span class="sc">+</span> <span class="fu">rnorm</span>(<span class="fu">length</span>(age), <span class="at">sd =</span> <span class="fl">0.8</span>)</span>
+<span id="cb1-7"><a href="#cb1-7"></a>  <span class="at">utterance_length =</span> <span class="dv">3</span> <span class="sc">+</span> <span class="fl">0.5</span><span class="sc">*</span><span class="fu">seq_along</span>(age) <span class="sc">+</span> <span class="fu">rnorm</span>(<span class="fu">length</span>(age), <span class="at">sd =</span> <span class="fl">0.3</span>)</span>
 <span id="cb1-8"><a href="#cb1-8"></a>)</span>
 <span id="cb1-9"><a href="#cb1-9"></a>m <span class="ot">&lt;-</span> <span class="fu">lm</span>(utterance_length <span class="sc">~</span> age, <span class="at">data =</span> utt_lengths)</span>
 <span id="cb1-10"><a href="#cb1-10"></a>utt_lengths<span class="sc">$</span>fit <span class="ot">&lt;-</span> m<span class="sc">$</span>fitted.values</span>
@@ -517,24 +526,24 @@ lm(formula = utterance_length ~ age, data = utt_lengths)
 
 Residuals:
      Min       1Q   Median       3Q      Max 
--1.91258 -0.40949 -0.04272  0.46447  1.38014 
+-0.71722 -0.15356 -0.01602  0.17418  0.51755 
 
 Coefficients:
             Estimate Std. Error t value Pr(&gt;|t|)    
-(Intercept)  1.18871    0.54280    2.19   0.0474 *  
-age          0.55042    0.04983   11.05 5.61e-08 ***
+(Intercept)  1.69576    0.20355   8.331 1.43e-06 ***
+age          0.51891    0.01869  27.770 5.84e-13 ***
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
-Residual standard error: 0.8338 on 13 degrees of freedom
-Multiple R-squared:  0.9037,    Adjusted R-squared:  0.8963 
-F-statistic:   122 on 1 and 13 DF,  p-value: 5.605e-08</code></pre>
+Residual standard error: 0.3127 on 13 degrees of freedom
+Multiple R-squared:  0.9834,    Adjusted R-squared:  0.9821 
+F-statistic: 771.2 on 1 and 13 DF,  p-value: 5.843e-13</code></pre>
 </div>
 </div>
 </section></section>
 <section>
-<section id="easy-stats" class="title-slide slide level1 center">
-<h1>Easy stats</h1>
+<section id="easystats" class="title-slide slide level1 center">
+<h1>Easystats</h1>
 
 </section>
 <section id="quick-reports-in-text" class="slide level2">
@@ -543,9 +552,9 @@ F-statistic:   122 on 1 and 13 DF,  p-value: 5.605e-08</code></pre>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a><span class="fu">library</span>(report)</span>
 <span id="cb7-2"><a href="#cb7-2"></a><span class="fu">report</span>(m)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>We fitted a linear model (estimated using OLS) to predict utterance_length with age (formula: utterance_length ~ age). The model explains a statistically significant and substantial proportion of variance (R2 = 0.90, F(1, 13) = 122.02, p &lt; .001, adj. R2 = 0.90). The model's intercept, corresponding to age = 0, is at 1.19 (95% CI [0.02, 2.36], t(13) = 2.19, p = 0.047). Within this model:
+<pre><code>We fitted a linear model (estimated using OLS) to predict utterance_length with age (formula: utterance_length ~ age). The model explains a statistically significant and substantial proportion of variance (R2 = 0.98, F(1, 13) = 771.19, p &lt; .001, adj. R2 = 0.98). The model's intercept, corresponding to age = 0, is at 1.70 (95% CI [1.26, 2.14], t(13) = 8.33, p &lt; .001). Within this model:
 
-  - The effect of age is statistically significant and positive (beta = 0.55, 95% CI [0.44, 0.66], t(13) = 11.05, p &lt; .001; Std. beta = 0.95, 95% CI [0.76, 1.14])
+  - The effect of age is statistically significant and positive (beta = 0.52, 95% CI [0.48, 0.56], t(13) = 27.77, p &lt; .001; Std. beta = 0.99, 95% CI [0.91, 1.07])
 
 Standardized parameters were obtained by fitting the model on a standardized version of the dataset. 95% Confidence Intervals (CIs) and p-values were computed using the Wald approximation.</code></pre>
 </div>
@@ -562,8 +571,8 @@ Standardized parameters were obtained by fitting the model on a standardized ver
 <div class="cell-output cell-output-stdout">
 <pre><code>Parameter   | Coefficient |   SE |       95% CI | t(13) |      p
 ----------------------------------------------------------------
-(Intercept) |        1.19 | 0.54 | [0.02, 2.36] |  2.19 | 0.047 
-age         |        0.55 | 0.05 | [0.44, 0.66] | 11.05 | &lt; .001</code></pre>
+(Intercept) |        1.70 | 0.20 | [1.26, 2.14] |  8.33 | &lt; .001
+age         |        0.52 | 0.02 | [0.48, 0.56] | 27.77 | &lt; .001</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a><span class="fu">print_md</span>(<span class="fu">model_parameters</span>(m))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
@@ -581,18 +590,18 @@ age         |        0.55 | 0.05 | [0.44, 0.66] | 11.05 | &lt; .001</code></pre>
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">(Intercept)</td>
-<td style="text-align: center;">1.19</td>
-<td style="text-align: center;">0.54</td>
-<td style="text-align: center;">(0.02, 2.36)</td>
-<td style="text-align: center;">2.19</td>
-<td style="text-align: center;">0.047</td>
+<td style="text-align: center;">1.70</td>
+<td style="text-align: center;">0.20</td>
+<td style="text-align: center;">(1.26, 2.14)</td>
+<td style="text-align: center;">8.33</td>
+<td style="text-align: center;">&lt; .001</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">age</td>
-<td style="text-align: center;">0.55</td>
-<td style="text-align: center;">0.05</td>
-<td style="text-align: center;">(0.44, 0.66)</td>
-<td style="text-align: center;">11.05</td>
+<td style="text-align: center;">0.52</td>
+<td style="text-align: center;">0.02</td>
+<td style="text-align: center;">(0.48, 0.56)</td>
+<td style="text-align: center;">27.77</td>
 <td style="text-align: center;">&lt; .001</td>
 </tr>
 </tbody>
@@ -637,12 +646,12 @@ age         |        0.55 | 0.05 | [0.44, 0.66] | 11.05 | &lt; .001</code></pre>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">40.97</td>
-<td style="text-align: center;">43.09</td>
-<td style="text-align: center;">0.90</td>
-<td style="text-align: center;">0.90</td>
-<td style="text-align: center;">0.78</td>
-<td style="text-align: center;">0.83</td>
+<td style="text-align: left;">11.54</td>
+<td style="text-align: center;">13.67</td>
+<td style="text-align: center;">0.98</td>
+<td style="text-align: center;">0.98</td>
+<td style="text-align: center;">0.29</td>
+<td style="text-align: center;">0.31</td>
 </tr>
 </tbody>
 </table>
@@ -663,10 +672,6 @@ age         |        0.55 | 0.05 | [0.44, 0.66] | 11.05 | &lt; .001</code></pre>
 <dt>Multiple</dt>
 <dd>
 <p>more than one predictor</p>
-</dd>
-<dt>Linear</dt>
-<dd>
-<p>linear relation between estimated parameters and response variable</p>
 </dd>
 <dt>Notation</dt>
 <dd>
@@ -690,13 +695,156 @@ age         |        0.55 | 0.05 | [0.44, 0.66] | 11.05 | &lt; .001</code></pre>
 <span id="cb16-4"><a href="#cb16-4"></a>  <span class="fu">mutate</span>(<span class="at">pages_read =</span> <span class="dv">0</span> <span class="sc">+</span> <span class="fl">0.8</span><span class="sc">*</span><span class="fu">seq_along</span>(age) <span class="sc">+</span> <span class="fu">rnorm</span>(<span class="fu">length</span>(age), <span class="at">sd =</span> <span class="dv">1</span>))</span>
 <span id="cb16-5"><a href="#cb16-5"></a></span>
 <span id="cb16-6"><a href="#cb16-6"></a>m2 <span class="ot">&lt;-</span> <span class="fu">glm</span>(utterance_length <span class="sc">~</span> age <span class="sc">+</span> pages_read, <span class="at">data =</span> utt_lengths)</span>
-<span id="cb16-7"><a href="#cb16-7"></a>utt_lengths<span class="sc">$</span>fit2 <span class="ot">&lt;-</span> m2<span class="sc">$</span>fitted.values</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb16-7"><a href="#cb16-7"></a>utt_lengths<span class="sc">$</span>fit2 <span class="ot">&lt;-</span> m2<span class="sc">$</span>fitted.values</span>
+<span id="cb16-8"><a href="#cb16-8"></a><span class="fu">head</span>(utt_lengths) <span class="sc">%&gt;%</span> knitr<span class="sc">::</span><span class="fu">kable</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">age</th>
+<th style="text-align: right;">utterance_length</th>
+<th style="text-align: right;">fit</th>
+<th style="text-align: right;">pages_read</th>
+<th style="text-align: right;">fit2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3.770043</td>
+<td style="text-align: right;">3.252489</td>
+<td style="text-align: right;">2.393078</td>
+<td style="text-align: right;">3.247895</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3.647996</td>
+<td style="text-align: right;">3.771397</td>
+<td style="text-align: right;">2.645829</td>
+<td style="text-align: right;">3.772950</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4.230754</td>
+<td style="text-align: right;">4.290305</td>
+<td style="text-align: right;">3.507192</td>
+<td style="text-align: right;">4.289808</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">4.566650</td>
+<td style="text-align: right;">4.809213</td>
+<td style="text-align: right;">4.444730</td>
+<td style="text-align: right;">4.805639</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">5.400696</td>
+<td style="text-align: right;">5.328121</td>
+<td style="text-align: right;">4.297667</td>
+<td style="text-align: right;">5.336080</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">5.129811</td>
+<td style="text-align: right;">5.847029</td>
+<td style="text-align: right;">5.284364</td>
+<td style="text-align: right;">5.851249</td>
+</tr>
+</tbody>
+</table>
 </div>
-<!-- TODO make 3D plot, maaaybe with gg3D -->
+</div>
+</section>
+<section id="example-3d" class="slide level2">
+<h2>Example 3D</h2>
+<div class="cell">
+<div class="sourceCode cell-code hidden" id="cb17" data-startfrom="200" data-source-offset="-0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 199;"><span id="cb17-200"><a href="#cb17-200"></a>plt <span class="op">=</span> <span class="pp">require</span>(<span class="st">"https://cdn.plot.ly/plotly-latest.min.js"</span>)</span>
+<span id="cb17-201"><a href="#cb17-201"></a>points <span class="op">=</span> [{<span class="dt">x</span><span class="op">:</span> data<span class="op">.</span><span class="at">age</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> data<span class="op">.</span><span class="at">pages_read</span><span class="op">,</span> <span class="dt">z</span><span class="op">:</span> data<span class="op">.</span><span class="at">utterance_length</span><span class="op">,</span></span>
+<span id="cb17-202"><a href="#cb17-202"></a><span class="dt">type</span><span class="op">:</span> <span class="st">"scatter3d"</span><span class="op">,</span> <span class="dt">mode</span><span class="op">:</span> <span class="st">"markers"</span>}]</span>
+<span id="cb17-203"><a href="#cb17-203"></a>surface <span class="op">=</span> [{<span class="dt">x</span><span class="op">:</span> data<span class="op">.</span><span class="at">age</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> data<span class="op">.</span><span class="at">pages_read</span><span class="op">,</span> <span class="dt">z</span><span class="op">:</span> surface_fit<span class="op">,</span></span>
+<span id="cb17-204"><a href="#cb17-204"></a><span class="dt">type</span><span class="op">:</span> <span class="st">"surface"</span>}]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+<div class="cell panel-input">
+<div class="sourceCode cell-code hidden" id="cb18" data-startfrom="209" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 208;"><span id="cb18-209"><a href="#cb18-209"></a>viewof traces <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">checkbox</span>(</span>
+<span id="cb18-210"><a href="#cb18-210"></a>  [</span>
+<span id="cb18-211"><a href="#cb18-211"></a>    {<span class="dt">value</span><span class="op">:</span> points[<span class="dv">0</span>]<span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Observed values"</span>}<span class="op">,</span></span>
+<span id="cb18-212"><a href="#cb18-212"></a>    {<span class="dt">value</span><span class="op">:</span> surface[<span class="dv">0</span>]<span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Fitted plane"</span>}</span>
+<span id="cb18-213"><a href="#cb18-213"></a>  ]<span class="op">,</span></span>
+<span id="cb18-214"><a href="#cb18-214"></a>  {</span>
+<span id="cb18-215"><a href="#cb18-215"></a>    <span class="dt">value</span><span class="op">:</span> [points[<span class="dv">0</span>]<span class="op">,</span> surface[<span class="dv">0</span>]]<span class="op">,</span></span>
+<span id="cb18-216"><a href="#cb18-216"></a>    <span class="dt">label</span><span class="op">:</span> <span class="st">"Show:"</span><span class="op">,</span></span>
+<span id="cb18-217"><a href="#cb18-217"></a>    <span class="dt">format</span><span class="op">:</span> (d) <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">label</span><span class="op">,</span></span>
+<span id="cb18-218"><a href="#cb18-218"></a>    <span class="dt">valueof</span><span class="op">:</span> (d) <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">value</span></span>
+<span id="cb18-219"><a href="#cb18-219"></a>  }</span>
+<span id="cb18-220"><a href="#cb18-220"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code hidden" id="cb19" data-startfrom="225" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 224;"><span id="cb19-225"><a href="#cb19-225"></a>plt<span class="op">.</span><span class="fu">newPlot</span>(DOM<span class="op">.</span><span class="fu">element</span>(<span class="st">"div"</span>)<span class="op">,</span> traces<span class="op">,</span> layout)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-3" data-nodetype="expression">
+
+</div>
+</div>
+</div>
 </section>
 <section id="categorical-predictors" class="slide level2">
 <h2>Categorical predictors</h2>
-<!-- TODO explain dummy variables -->
+<ul>
+<li><p>With 2 levels, e.g.&nbsp;“monolingual family”: yes/no</p></li>
+<li><p>Translated into 1 <strong>dummy</strong> predictor with two levels</p>
+<ul>
+<li><p>0: reference level, e.g.&nbsp;<em>no</em></p></li>
+<li><p>1: other level, e.g.&nbsp;<em>yes</em></p></li>
+</ul></li>
+<li><p>Line fitted between 0 and 1, slope is the difference in <code>y</code> when <em>yes</em> (compared to <em>no</em>)</p></li>
+</ul>
+</section>
+<section id="categorical-predictors-1" class="slide level2">
+<h2>Categorical predictors</h2>
+<ul>
+<li><p>With more than 2 levels, e.g.&nbsp;“L1”: EN, Es, FR…</p></li>
+<li><p>Translated into <em>n</em>-1 <strong>dummy</strong> predictors with two levels</p>
+<ul>
+<li><p>1: one of the levels, not the reference level, e.g.&nbsp;Es</p></li>
+<li><p>0: the rest of the levels, including the reference level (e.g.&nbsp;EN)</p></li>
+</ul></li>
+<li><p>(Hyper)plane fitted between combinations of 0 and 1, slope is the difference in <code>y</code> when it is a level compared to the reference level.</p></li>
+</ul>
+</section>
+<section id="categorical-predictors-2" class="slide level2">
+<h2>Categorical predictors</h2>
+<ul>
+<li><p>Comparison is done between each level and the reference level, not in all combinations</p></li>
+<li><p>t-test: does the slope of an individual dummy predictor differ from 0?</p></li>
+<li><p>F-test of nested models: do the dummy predictors jointly reduce unexplained variation?</p></li>
+</ul>
 </section></section>
 <section>
 <section id="logistic-regression" class="title-slide slide level1 center">
@@ -712,10 +860,10 @@ age         |        0.55 | 0.05 | [0.44, 0.66] | 11.05 | &lt; .001</code></pre>
 <h2>Probabilities, odds and logit</h2>
 <table>
 <colgroup>
-<col style="width: 15%">
-<col style="width: 15%">
-<col style="width: 18%">
-<col style="width: 50%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 37%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -754,16 +902,16 @@ age         |        0.55 | 0.05 | [0.44, 0.66] | 11.05 | &lt; .001</code></pre>
 <p><code>MASS::fractions()</code> prints them as fractions.</p>
 <p>From there we compute odds and logit.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb17" data-code-line-numbers="|3,5|7|6,8|9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a><span class="fu">library</span>(MASS) <span class="co"># to print fractions</span></span>
-<span id="cb17-2"><a href="#cb17-2"></a></span>
-<span id="cb17-3"><a href="#cb17-3"></a>probabilities <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span><span class="sc">/</span><span class="fu">c</span>(<span class="dv">7</span><span class="sc">:</span><span class="dv">2</span>), <span class="dv">1</span><span class="sc">-</span>(<span class="dv">1</span><span class="sc">/</span><span class="fu">c</span>(<span class="dv">3</span><span class="sc">:</span><span class="dv">7</span>)))</span>
-<span id="cb17-4"><a href="#cb17-4"></a>probs <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
-<span id="cb17-5"><a href="#cb17-5"></a>  <span class="at">P =</span> probabilities,</span>
-<span id="cb17-6"><a href="#cb17-6"></a>  <span class="at">P_frac =</span> <span class="fu">as.character</span>(<span class="fu">fractions</span>(P)),</span>
-<span id="cb17-7"><a href="#cb17-7"></a>  <span class="at">odds =</span> P<span class="sc">/</span>(<span class="dv">1</span><span class="sc">-</span>P),</span>
-<span id="cb17-8"><a href="#cb17-8"></a>  <span class="at">odds_frac =</span> <span class="fu">as.character</span>(<span class="fu">fractions</span>(odds)),</span>
-<span id="cb17-9"><a href="#cb17-9"></a>  <span class="at">logit =</span> <span class="fu">log</span>(odds)</span>
-<span id="cb17-10"><a href="#cb17-10"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb20" data-code-line-numbers="|3,5|7|6,8|9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1"></a><span class="fu">library</span>(MASS) <span class="co"># to print fractions</span></span>
+<span id="cb20-2"><a href="#cb20-2"></a></span>
+<span id="cb20-3"><a href="#cb20-3"></a>probabilities <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span><span class="sc">/</span><span class="fu">c</span>(<span class="dv">7</span><span class="sc">:</span><span class="dv">2</span>), <span class="dv">1</span><span class="sc">-</span>(<span class="dv">1</span><span class="sc">/</span><span class="fu">c</span>(<span class="dv">3</span><span class="sc">:</span><span class="dv">7</span>)))</span>
+<span id="cb20-4"><a href="#cb20-4"></a>probs <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb20-5"><a href="#cb20-5"></a>  <span class="at">P =</span> probabilities,</span>
+<span id="cb20-6"><a href="#cb20-6"></a>  <span class="at">P_frac =</span> <span class="fu">as.character</span>(<span class="fu">fractions</span>(P)),</span>
+<span id="cb20-7"><a href="#cb20-7"></a>  <span class="at">odds =</span> P<span class="sc">/</span>(<span class="dv">1</span><span class="sc">-</span>P),</span>
+<span id="cb20-8"><a href="#cb20-8"></a>  <span class="at">odds_frac =</span> <span class="fu">as.character</span>(<span class="fu">fractions</span>(odds)),</span>
+<span id="cb20-9"><a href="#cb20-9"></a>  <span class="at">logit =</span> <span class="fu">log</span>(odds)</span>
+<span id="cb20-10"><a href="#cb20-10"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="some-examples-1" class="slide level2 smaller">
@@ -871,17 +1019,17 @@ age         |        0.55 | 0.05 | [0.44, 0.66] | 11.05 | &lt; .001</code></pre>
 <div class="tab-content">
 <div id="tabset-1-1">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1"></a><span class="fu">lnplot</span>(probs, P, logit)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1"></a><span class="fu">lnplot</span>(probs, P, logit)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-15-1.png" width="960"></p>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-19-1.png" width="960"></p>
 </div>
 </div>
 </div>
 <div id="tabset-1-2">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1"></a><span class="fu">lnplot</span>(probs, P, odds)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1"></a><span class="fu">lnplot</span>(probs, P, odds)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-16-1.png" width="960"></p>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-20-1.png" width="960"></p>
 </div>
 </div>
 </div>
@@ -892,22 +1040,22 @@ age         |        0.55 | 0.05 | [0.44, 0.66] | 11.05 | &lt; .001</code></pre>
 <h2>Linear/logistic</h2>
 <p>Linear relation <code>logit ~ x</code> entails logistic curve <code>p ~ x</code>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1"></a>with_x <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">30</span>, <span class="at">logit =</span> <span class="sc">-</span><span class="fl">3.5</span> <span class="sc">+</span> <span class="fl">0.3</span><span class="sc">*</span>x,</span>
-<span id="cb21-2"><a href="#cb21-2"></a>                 <span class="at">odds =</span> <span class="fu">exp</span>(logit), <span class="at">P =</span> odds<span class="sc">/</span>(<span class="dv">1</span><span class="sc">+</span>odds))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1"></a>with_x <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">30</span>, <span class="at">logit =</span> <span class="sc">-</span><span class="fl">3.5</span> <span class="sc">+</span> <span class="fl">0.3</span><span class="sc">*</span>x,</span>
+<span id="cb24-2"><a href="#cb24-2"></a>                 <span class="at">odds =</span> <span class="fu">exp</span>(logit), <span class="at">P =</span> odds<span class="sc">/</span>(<span class="dv">1</span><span class="sc">+</span>odds))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="columns">
 <div class="column" data-widht="50%">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1"></a><span class="fu">lnplot</span>(with_x, x, logit)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1"></a><span class="fu">lnplot</span>(with_x, x, logit)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-18-1.png" width="960"></p>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-22-1.png" width="960"></p>
 </div>
 </div>
 </div><div class="column" data-widht="50%">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1"></a><span class="fu">lnplot</span>(with_x, x, P)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1"></a><span class="fu">lnplot</span>(with_x, x, P)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-19-1.png" width="960"></p>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-23-1.png" width="960"></p>
 </div>
 </div>
 </div>
@@ -917,25 +1065,318 @@ age         |        0.55 | 0.05 | [0.44, 0.66] | 11.05 | &lt; .001</code></pre>
 <h2>Linear/logistic</h2>
 <p>Linear relation <code>logit ~ x</code> entails logistic curve <code>p ~ x</code>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1"></a>with_x2 <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">30</span>, <span class="at">logit =</span> <span class="fl">3.5</span> <span class="sc">-</span> <span class="fl">0.3</span><span class="sc">*</span>x,</span>
-<span id="cb24-2"><a href="#cb24-2"></a>                 <span class="at">odds =</span> <span class="fu">exp</span>(logit), <span class="at">P =</span> odds<span class="sc">/</span>(<span class="dv">1</span><span class="sc">+</span>odds))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1"></a>with_x2 <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">30</span>, <span class="at">logit =</span> <span class="fl">3.5</span> <span class="sc">-</span> <span class="fl">0.3</span><span class="sc">*</span>x,</span>
+<span id="cb27-2"><a href="#cb27-2"></a>                 <span class="at">odds =</span> <span class="fu">exp</span>(logit), <span class="at">P =</span> odds<span class="sc">/</span>(<span class="dv">1</span><span class="sc">+</span>odds))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="columns">
 <div class="column" data-widht="50%">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1"></a><span class="fu">lnplot</span>(with_x2, x, logit)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1"></a><span class="fu">lnplot</span>(with_x2, x, logit)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-21-1.png" width="960"></p>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-25-1.png" width="960"></p>
 </div>
 </div>
 </div><div class="column" data-widht="50%">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1"></a><span class="fu">lnplot</span>(with_x2, x, P)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1"></a><span class="fu">lnplot</span>(with_x2, x, P)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-22-1.png" width="960"></p>
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-26-1.png" width="960"></p>
 </div>
 </div>
 </div>
+</div>
+</section>
+<section id="example-2" class="slide level2">
+<h2>Example</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb30" data-code-line-numbers="|3|4|6|7|8|9|12-13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1"></a><span class="fu">set.seed</span>(<span class="dv">0</span>)</span>
+<span id="cb30-2"><a href="#cb30-2"></a>reading_habits <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb30-3"><a href="#cb30-3"></a>  <span class="at">L1 =</span> <span class="fu">factor</span>(<span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"EN"</span>, <span class="st">"ES"</span>), <span class="at">each =</span> <span class="dv">50</span>), <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"EN"</span>, <span class="st">"ES"</span>)),</span>
+<span id="cb30-4"><a href="#cb30-4"></a>  <span class="at">age =</span> <span class="fu">rep</span>(<span class="dv">15</span><span class="sc">:</span><span class="dv">6</span>, <span class="dv">10</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb30-5"><a href="#cb30-5"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb30-6"><a href="#cb30-6"></a>    <span class="at">logit =</span> <span class="fl">0.2</span> <span class="sc">-</span><span class="fl">0.8</span><span class="sc">*</span><span class="fu">as.numeric</span>(L1) <span class="sc">+</span> <span class="fl">0.2</span><span class="sc">*</span>age <span class="sc">+</span> <span class="fu">rnorm</span>(<span class="fu">nrow</span>(.)),</span>
+<span id="cb30-7"><a href="#cb30-7"></a>    <span class="at">odds =</span> <span class="fu">exp</span>(logit),</span>
+<span id="cb30-8"><a href="#cb30-8"></a>    <span class="at">P =</span> odds<span class="sc">/</span>(odds<span class="sc">+</span><span class="dv">1</span>),</span>
+<span id="cb30-9"><a href="#cb30-9"></a>    <span class="at">reads_EN =</span> <span class="fu">factor</span>(P <span class="sc">&gt;=</span> <span class="fl">0.5</span>, <span class="fu">c</span>(<span class="st">"FALSE"</span>, <span class="st">"TRUE"</span>))</span>
+<span id="cb30-10"><a href="#cb30-10"></a>    )</span>
+<span id="cb30-11"><a href="#cb30-11"></a></span>
+<span id="cb30-12"><a href="#cb30-12"></a>m3 <span class="ot">&lt;-</span> <span class="fu">glm</span>(reads_EN <span class="sc">~</span> L1 <span class="sc">+</span> age, <span class="at">data =</span> reading_habits, <span class="at">family =</span> <span class="fu">binomial</span>(logit))</span>
+<span id="cb30-13"><a href="#cb30-13"></a>reading_habits<span class="sc">$</span>fit <span class="ot">&lt;-</span> m3<span class="sc">$</span>fitted.values</span>
+<span id="cb30-14"><a href="#cb30-14"></a></span>
+<span id="cb30-15"><a href="#cb30-15"></a>reading_habits <span class="sc">%&gt;%</span> <span class="fu">head</span>() <span class="sc">%&gt;%</span> knitr<span class="sc">::</span><span class="fu">kable</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+
+</section>
+<section id="example-2-output" class="slide level2 output-location-slide"><h2>Example</h2><div class="cell output-location-slide">
+<div class="cell-output-display">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">L1</th>
+<th style="text-align: right;">age</th>
+<th style="text-align: right;">logit</th>
+<th style="text-align: right;">odds</th>
+<th style="text-align: right;">P</th>
+<th style="text-align: left;">reads_EN</th>
+<th style="text-align: right;">fit</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">EN</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">3.662954</td>
+<td style="text-align: right;">38.9763201</td>
+<td style="text-align: right;">0.9749852</td>
+<td style="text-align: left;">TRUE</td>
+<td style="text-align: right;">0.9968727</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">EN</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">1.873767</td>
+<td style="text-align: right;">6.5127816</td>
+<td style="text-align: right;">0.8668935</td>
+<td style="text-align: left;">TRUE</td>
+<td style="text-align: right;">0.9946208</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">EN</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">3.329799</td>
+<td style="text-align: right;">27.9327340</td>
+<td style="text-align: right;">0.9654371</td>
+<td style="text-align: left;">TRUE</td>
+<td style="text-align: right;">0.9907623</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">EN</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">3.072429</td>
+<td style="text-align: right;">21.5942985</td>
+<td style="text-align: right;">0.9557410</td>
+<td style="text-align: left;">TRUE</td>
+<td style="text-align: right;">0.9841801</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">EN</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">2.014641</td>
+<td style="text-align: right;">7.4980384</td>
+<td style="text-align: right;">0.8823258</td>
+<td style="text-align: left;">TRUE</td>
+<td style="text-align: right;">0.9730353</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">EN</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">-0.139950</td>
+<td style="text-align: right;">0.8694017</td>
+<td style="text-align: right;">0.4650695</td>
+<td style="text-align: left;">FALSE</td>
+<td style="text-align: right;">0.9544032</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div></section><section id="visual-exploration" class="slide level2">
+<h2>Visual exploration</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1"></a><span class="fu">ggplot</span>(reading_habits, <span class="fu">aes</span>(<span class="at">x =</span> age, <span class="at">y =</span> P, <span class="at">color =</span> L1)) <span class="sc">+</span></span>
+<span id="cb31-2"><a href="#cb31-2"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">3</span>, <span class="at">alpha =</span> <span class="fl">0.6</span>) <span class="sc">+</span></span>
+<span id="cb31-3"><a href="#cb31-3"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values=</span><span class="fu">c</span>(<span class="st">"#E69F00"</span>, <span class="st">"#56B4E9"</span>)) <span class="sc">+</span></span>
+<span id="cb31-4"><a href="#cb31-4"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>) <span class="sc">+</span></span>
+<span id="cb31-5"><a href="#cb31-5"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Age"</span>, <span class="at">y =</span> <span class="st">"Probability of reading in English"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="slides_files/figure-revealjs/unnamed-chunk-28-1.png" width="960" class="r-stretch"></section>
+<section id="default-output" class="slide level2">
+<h2>Default output</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1"></a><span class="fu">summary</span>(m3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+glm(formula = reads_EN ~ L1 + age, family = binomial(logit), 
+    data = reading_habits)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.4851   0.1262   0.2338   0.5153   1.2084  
+
+Coefficients:
+            Estimate Std. Error z value Pr(&gt;|z|)   
+(Intercept)  -2.4052     1.4574  -1.650  0.09888 . 
+L1ES         -0.9353     0.7086  -1.320  0.18687   
+age           0.5446     0.1744   3.123  0.00179 **
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 73.385  on 99  degrees of freedom
+Residual deviance: 56.258  on 97  degrees of freedom
+AIC: 62.258
+
+Number of Fisher Scoring iterations: 6</code></pre>
+</div>
+</div>
+</section></section>
+<section>
+<section id="easystats---logistic-regression" class="title-slide slide level1 center">
+<h1>Easystats - logistic regression</h1>
+
+</section>
+<section id="quick-reports-in-text-1" class="slide level2">
+<h2>Quick reports in text</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1"></a><span class="fu">report</span>(m3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>We fitted a logistic model (estimated using ML) to predict reads_EN with L1 and age (formula: reads_EN ~ L1 + age). The model's explanatory power is moderate (Tjur's R2 = 0.19). The model's intercept, corresponding to L1 = EN and age = 0, is at -2.41 (95% CI [-5.52, 0.31], p = 0.099). Within this model:
+
+  - The effect of L1 [ES] is statistically non-significant and negative (beta = -0.94, 95% CI [-2.43, 0.41], p = 0.187; Std. beta = -0.94, 95% CI [-2.43, 0.41])
+  - The effect of age is statistically significant and positive (beta = 0.54, 95% CI [0.25, 0.94], p = 0.002; Std. beta = 1.57, 95% CI [0.71, 2.73])
+
+Standardized parameters were obtained by fitting the model on a standardized version of the dataset. 95% Confidence Intervals (CIs) and p-values were computed using </code></pre>
+</div>
+</div>
+<div class="footer">
+<p><a href="https://easystats.github.io/report/">{report} package</a></p>
+</div>
+</section>
+<section id="quickly-printing-estimates-1" class="slide level2">
+<h2>Quickly printing estimates</h2>
+<div class="panel-tabset">
+<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">Table</a></li><li><a href="#tabset-2-2">Plot</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1"></a><span class="fu">print_md</span>(<span class="fu">model_parameters</span>(m3))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Parameter</th>
+<th style="text-align: center;">Log-Odds</th>
+<th style="text-align: center;">SE</th>
+<th style="text-align: center;">95% CI</th>
+<th style="text-align: center;">z</th>
+<th style="text-align: center;">p</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">(Intercept)</td>
+<td style="text-align: center;">-2.41</td>
+<td style="text-align: center;">1.46</td>
+<td style="text-align: center;">(-5.52, 0.31)</td>
+<td style="text-align: center;">-1.65</td>
+<td style="text-align: center;">0.099</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">L1 (ES)</td>
+<td style="text-align: center;">-0.94</td>
+<td style="text-align: center;">0.71</td>
+<td style="text-align: center;">(-2.43, 0.41)</td>
+<td style="text-align: center;">-1.32</td>
+<td style="text-align: center;">0.187</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">age</td>
+<td style="text-align: center;">0.54</td>
+<td style="text-align: center;">0.17</td>
+<td style="text-align: center;">(0.25, 0.94)</td>
+<td style="text-align: center;">3.12</td>
+<td style="text-align: center;">0.002</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="tabset-2-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1"></a><span class="fu">plot</span>(<span class="fu">model_parameters</span>(m3))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-32-1.png" width="960"></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<p><a href="https://easystats.github.io/parameters/">{parameters} package</a></p>
+</div>
+</section>
+<section id="check-and-plot-assumptions-1" class="slide level2">
+<h2>Check and plot assumptions</h2>
+<div class="panel-tabset">
+<ul id="tabset-3" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-3-1">Written output</a></li><li><a href="#tabset-3-2">Plots</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1"></a><span class="fu">check_collinearity</span>(m3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># Check for Multicollinearity
+
+Low Correlation
+
+ Term  VIF       VIF 95% CI Increased SE Tolerance Tolerance 95% CI
+   L1 1.01 [1.00, 62814.39]         1.01      0.99     [0.00, 1.00]
+  age 1.01 [1.00, 62814.39]         1.01      0.99     [0.00, 1.00]</code></pre>
+</div>
+</div>
+</div>
+<div id="tabset-3-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1"></a><span class="fu">check_model</span>(m3, <span class="at">check =</span> <span class="fu">c</span>(<span class="st">"binned_residuals"</span>, <span class="st">"vif"</span>, <span class="st">"outliers"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img data-src="slides_files/figure-revealjs/unnamed-chunk-34-1.png" width="960"></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<p><a href="https://easystats.github.io/performance/">{performance} package</a></p>
+</div>
+</section>
+<section id="evaluate-model-1" class="slide level2">
+<h2>Evaluate model</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1"></a><span class="fu">model_performance</span>(m3, <span class="at">metrics =</span> <span class="st">"common"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb41-2"><a href="#cb41-2"></a>  <span class="fu">mutate</span>(<span class="at">C =</span> Hmisc<span class="sc">::</span><span class="fu">somers2</span>(</span>
+<span id="cb41-3"><a href="#cb41-3"></a>    reading_habits<span class="sc">$</span>fit,</span>
+<span id="cb41-4"><a href="#cb41-4"></a>    <span class="fu">as.numeric</span>(reading_habits<span class="sc">$</span>reads_EN <span class="sc">==</span> <span class="st">"TRUE"</span>)</span>
+<span id="cb41-5"><a href="#cb41-5"></a>  )[[<span class="st">"C"</span>]]</span>
+<span id="cb41-6"><a href="#cb41-6"></a>  ) <span class="sc">%&gt;%</span> </span>
+<span id="cb41-7"><a href="#cb41-7"></a>  <span class="fu">print_md</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table>
+<caption>Indices of model performance</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">AIC</th>
+<th style="text-align: center;">BIC</th>
+<th style="text-align: center;">Tjur’s R2</th>
+<th style="text-align: center;">RMSE</th>
+<th style="text-align: center;">C</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">62.26</td>
+<td style="text-align: center;">70.07</td>
+<td style="text-align: center;">0.19</td>
+<td style="text-align: center;">0.29</td>
+<td style="text-align: center;">0.84</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="footer">
+<p><a href="https://easystats.github.io/performance/">{performance} package</a></p>
 </div>
 </section></section>
 <section>
@@ -946,13 +1387,13 @@ age         |        0.55 | 0.05 | [0.44, 0.66] | 11.05 | &lt; .001</code></pre>
 <section id="plot-code-1" class="slide level2" data-visibility="uncounted">
 <h2>Plot code</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1"></a>lnplot <span class="ot">&lt;-</span> <span class="cf">function</span>(df, x, y) {</span>
-<span id="cb27-2"><a href="#cb27-2"></a>  <span class="fu">ggplot</span>(df, <span class="fu">aes</span>(<span class="at">x =</span> {{ x }}, <span class="at">y =</span> {{ y }})) <span class="sc">+</span></span>
-<span id="cb27-3"><a href="#cb27-3"></a>    <span class="fu">geom_line</span>() <span class="sc">+</span></span>
-<span id="cb27-4"><a href="#cb27-4"></a>    <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
-<span id="cb27-5"><a href="#cb27-5"></a>    <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>) <span class="sc">+</span></span>
-<span id="cb27-6"><a href="#cb27-6"></a>    <span class="fu">theme</span>(<span class="at">aspect.ratio =</span> <span class="dv">1</span>)</span>
-<span id="cb27-7"><a href="#cb27-7"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1"></a>lnplot <span class="ot">&lt;-</span> <span class="cf">function</span>(df, x, y) {</span>
+<span id="cb42-2"><a href="#cb42-2"></a>  <span class="fu">ggplot</span>(df, <span class="fu">aes</span>(<span class="at">x =</span> {{ x }}, <span class="at">y =</span> {{ y }})) <span class="sc">+</span></span>
+<span id="cb42-3"><a href="#cb42-3"></a>    <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb42-4"><a href="#cb42-4"></a>    <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
+<span id="cb42-5"><a href="#cb42-5"></a>    <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">20</span>) <span class="sc">+</span></span>
+<span id="cb42-6"><a href="#cb42-6"></a>    <span class="fu">theme</span>(<span class="at">aspect.ratio =</span> <span class="dv">1</span>)</span>
+<span id="cb42-7"><a href="#cb42-7"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 <div class="footer footer-default">
@@ -969,7 +1410,6 @@ age         |        0.55 | 0.05 | [0.44, 0.66] | 11.05 | &lt; .001</code></pre>
   <script src="site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
   <script src="site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
   <script src="site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
   <script src="site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
@@ -991,8 +1431,7 @@ age         |        0.55 | 0.05 | [0.44, 0.66] | 11.05 | &lt; .001</code></pre>
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
-'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'chalkboard': {"buttons":true},
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -1163,7 +1602,7 @@ age         |        0.55 | 0.05 | [0.44, 0.66] | 11.05 | &lt; .001</code></pre>
         },
 
         // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
 
           RevealMath,
           RevealNotes,
@@ -1171,6 +1610,16 @@ age         |        0.55 | 0.05 | [0.44, 0.66] | 11.05 | &lt; .001</code></pre>
           RevealZoom
         ]
       });
+    </script>
+    <script type="ojs-module-contents">
+    {"contents":[{"methodName":"interpret","cellName":"ojs-cell-1","inline":false,"source":"plt = require(\"https://cdn.plot.ly/plotly-latest.min.js\")\npoints = [{x: data.age, y: data.pages_read, z: data.utterance_length,\ntype: \"scatter3d\", mode: \"markers\"}]\nsurface = [{x: data.age, y: data.pages_read, z: surface_fit,\ntype: \"surface\"}]\n"},{"methodName":"interpret","cellName":"ojs-cell-2","inline":false,"source":"viewof traces = Inputs.checkbox(\n  [\n    {value: points[0], label: \"Observed values\"},\n    {value: surface[0], label: \"Fitted plane\"}\n  ],\n  {\n    value: [points[0], surface[0]],\n    label: \"Show:\",\n    format: (d) => d.label,\n    valueof: (d) => d.value\n  }\n)\n"},{"methodName":"interpret","cellName":"ojs-cell-3","inline":false,"source":"plt.newPlot(DOM.element(\"div\"), traces, layout)\n"},{"methodName":"interpretQuiet","source":"shinyInput('traces')"}]}
+    </script>
+    <script type="module">
+    window._ojs.paths.runtimeToDoc = "..\..";
+    window._ojs.paths.runtimeToRoot = "..\..";
+    window._ojs.paths.docToRoot = "";
+    window._ojs.selfContained = false;
+    window._ojs.runtime.interpretFromScriptTags();
     </script>
     
     <script>

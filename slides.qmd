@@ -4,7 +4,6 @@ format:
   revealjs:
     slide-number: true
     show-slide-number: all
-    chalkboard: true
 editor: visual
 execute:
   echo: true
@@ -17,7 +16,6 @@ execute:
 
 library(tidyverse)
 ```
-
 
 |                                                      | Linear regression            | Logistic regression                                                      |
 |----------------------|-------------------------|-------------------------|
@@ -58,7 +56,7 @@ set.seed(2022)
 
 utt_lengths <- tibble(
   age = 3:17,
-  utterance_length = 3 + 0.5*seq_along(age) + rnorm(length(age), sd = 0.8)
+  utterance_length = 3 + 0.5*seq_along(age) + rnorm(length(age), sd = 0.3)
 )
 m <- lm(utterance_length ~ age, data = utt_lengths)
 utt_lengths$fit <- m$fitted.values
@@ -75,7 +73,6 @@ g <- ggplot(utt_lengths, aes(x = age, y = utterance_length)) +
 g <- g + geom_point()
 g
 ```
-
 
 ## Adding fitted line
 
@@ -97,7 +94,7 @@ g
 summary(m)
 ```
 
-# Easy stats
+# Easystats
 
 ## Quick reports in text
 
@@ -154,10 +151,6 @@ Multiple
 
 :   more than one predictor
 
-Linear
-
-:   linear relation between estimated parameters and response variable
-
 Notation
 
 :   `y ~ x1 + x2` (fitting on a plane)
@@ -178,13 +171,92 @@ utt_lengths <- utt_lengths %>%
 
 m2 <- glm(utterance_length ~ age + pages_read, data = utt_lengths)
 utt_lengths$fit2 <- m2$fitted.values
+head(utt_lengths) %>% knitr::kable()
 ```
 
-<!-- TODO make 3D plot, maaaybe with gg3D -->
+## Example 3D
+
+```{r}
+#| include: false
+ojs_define(data = utt_lengths)
+
+combos <- crossing(age = utt_lengths$age, pages_read = utt_lengths$pages_read)
+combos$fit <- predict(m2, combos)
+surface_fit <- split(combos, combos$pages_read) %>% purrr::map(pull, fit) %>% unname()
+ojs_define(surface_fit = surface_fit)
+
+plotly_layout = list(
+  scene = list(
+  xaxis = list(title = "Pages read"),
+  yaxis = list(title = "Age"),
+  zaxis = list(title = "Utterance length")),
+  margin = list(l = 0, r = 0, t = 0, b = 0)
+)
+ojs_define(layout = plotly_layout)
+```
+
+```{ojs}
+//| echo: false
+plt = require("https://cdn.plot.ly/plotly-latest.min.js")
+points = [{x: data.age, y: data.pages_read, z: data.utterance_length,
+type: "scatter3d", mode: "markers"}]
+surface = [{x: data.age, y: data.pages_read, z: surface_fit,
+type: "surface"}]
+```
+
+```{ojs}
+//| panel: input
+//| echo: false
+viewof traces = Inputs.checkbox(
+  [
+    {value: points[0], label: "Observed values"},
+    {value: surface[0], label: "Fitted plane"}
+  ],
+  {
+    value: [points[0], surface[0]],
+    label: "Show:",
+    format: (d) => d.label,
+    valueof: (d) => d.value
+  }
+)
+```
+
+```{ojs}
+//| echo: false
+plt.newPlot(DOM.element("div"), traces, layout)
+```
 
 ## Categorical predictors
 
-<!-- TODO explain dummy variables -->
+-   With 2 levels, e.g. "monolingual family": yes/no
+
+-   Translated into 1 **dummy** predictor with two levels
+
+    -   0: reference level, e.g. *no*
+
+    -   1: other level, e.g. *yes*
+
+-   Line fitted between 0 and 1, slope is the difference in `y` when *yes* (compared to *no*)
+
+## Categorical predictors
+
+-   With more than 2 levels, e.g. "L1": EN, Es, FR...
+
+-   Translated into *n*-1 **dummy** predictors with two levels
+
+    -   1: one of the levels, not the reference level, e.g. Es
+
+    -   0: the rest of the levels, including the reference level (e.g. EN)
+
+-   (Hyper)plane fitted between combinations of 0 and 1, slope is the difference in `y` when it is a level compared to the reference level.
+
+## Categorical predictors
+
+-   Comparison is done between each level and the reference level, not in all combinations
+
+-   t-test: does the slope of an individual dummy predictor differ from 0?
+
+-   F-test of nested models: do the dummy predictors jointly reduce unexplained variation?
 
 # Logistic regression
 
@@ -192,18 +264,17 @@ utt_lengths$fit2 <- m2$fitted.values
 
 Logistic regression explains the probability of success (= a certain outcome)
 
-We cannot fit a simple straight line
-<!-- TODO create plot -->
+We cannot fit a simple straight line <!-- TODO create plot -->
 
 ## Probabilities, odds and logit {.smaller}
 
-Value | Range | Neutral value | Description
------ | ----- | ------ | ----------------
-probabilities <br> $P$ | 0-1 | 0.5 | Number of successes divided by number of trials
-odds <br> $\frac{P}{1-P}$ | 0-$\infty$ | 1 | Probability of success divided by the probability of failure. <br> Undefined for $P=1$
-logit, log odds <br> $\log\left(\frac{P}{1-P}\right)$ | $-\infty$-$\infty$ | 0 | If positive, success is more likely; if negative failure is more likely. <br> Undefined for $P=0$ and for $P=1$
+| Value                                                 | Range              | Neutral value | Description                                                                                                     |
+|---------------|---------------|---------------|---------------------------|
+| probabilities <br> $P$                                | 0-1                | 0.5           | Number of successes divided by number of trials                                                                 |
+| odds <br> $\frac{P}{1-P}$                             | 0-$\infty$         | 1             | Probability of success divided by the probability of failure. <br> Undefined for $P=1$                          |
+| logit, log odds <br> $\log\left(\frac{P}{1-P}\right)$ | $-\infty$-$\infty$ | 0             | If positive, success is more likely; if negative failure is more likely. <br> Undefined for $P=0$ and for $P=1$ |
 
-Higher $P$ -> higher odds -> higher logit
+Higher $P$ -\> higher odds -\> higher logit
 
 ## Some examples
 
@@ -248,8 +319,7 @@ lnplot <- function(df, x, y) {
 
 ## Probabilities, odds, logit
 
-::: {.panel-tabset}
-
+::: panel-tabset
 ## `logit ~ P`
 
 ```{r}
@@ -261,7 +331,6 @@ lnplot(probs, P, logit)
 ```{r}
 lnplot(probs, P, odds)
 ```
-
 :::
 
 ## Linear/logistic
@@ -273,8 +342,7 @@ with_x <- tibble(x = 1:30, logit = -3.5 + 0.3*x,
                  odds = exp(logit), P = odds/(1+odds))
 ```
 
-:::: {.columns}
-
+::: columns
 ::: {.column widht="50%"}
 ```{r}
 #| fig-height: 8
@@ -288,8 +356,7 @@ lnplot(with_x, x, logit)
 lnplot(with_x, x, P)
 ```
 :::
-
-::::
+:::
 
 ## Linear/logistic
 
@@ -300,8 +367,7 @@ with_x2 <- tibble(x = 1:30, logit = 3.5 - 0.3*x,
                  odds = exp(logit), P = odds/(1+odds))
 ```
 
-:::: {.columns}
-
+::: columns
 ::: {.column widht="50%"}
 ```{r}
 #| fig-height: 8
@@ -315,8 +381,116 @@ lnplot(with_x2, x, logit)
 lnplot(with_x2, x, P)
 ```
 :::
+:::
 
-::::
+## Example
+
+```{r}
+#| code-line-numbers: "|3|4|6|7|8|9|12-13"
+#| output-location: slide
+
+set.seed(0)
+reading_habits <- tibble(
+  L1 = factor(rep(c("EN", "ES"), each = 50), levels = c("EN", "ES")),
+  age = rep(15:6, 10)) %>%
+  mutate(
+    logit = 0.2 -0.8*as.numeric(L1) + 0.2*age + rnorm(nrow(.)),
+    odds = exp(logit),
+    P = odds/(odds+1),
+    reads_EN = factor(P >= 0.5, c("FALSE", "TRUE"))
+    )
+
+m3 <- glm(reads_EN ~ L1 + age, data = reading_habits, family = binomial(logit))
+reading_habits$fit <- m3$fitted.values
+
+reading_habits %>% head() %>% knitr::kable()
+```
+
+## Visual exploration
+
+```{r}
+ggplot(reading_habits, aes(x = age, y = P, color = L1)) +
+  geom_point(size = 3, alpha = 0.6) +
+  scale_color_manual(values=c("#E69F00", "#56B4E9")) +
+  theme_minimal(base_size = 20) +
+  labs(x = "Age", y = "Probability of reading in English")
+```
+
+## Default output
+
+```{r}
+summary(m3)
+```
+
+# Easystats - logistic regression
+
+## Quick reports in text
+
+```{r}
+report(m3)
+```
+
+::: footer
+[{report} package](https://easystats.github.io/report/)
+:::
+
+## Quickly printing estimates
+
+::: panel-tabset
+
+## Table
+
+```{r}
+print_md(model_parameters(m3))
+```
+
+## Plot
+```{r}
+plot(model_parameters(m3))
+```
+:::
+
+::: footer
+[{parameters} package](https://easystats.github.io/parameters/)
+:::
+
+## Check and plot assumptions
+
+::: panel-tabset
+
+## Written output
+
+```{r}
+check_collinearity(m3)
+```
+
+## Plots
+
+```{r}
+check_model(m3, check = c("binned_residuals", "vif", "outliers"))
+```
+
+:::
+
+::: footer
+[{performance} package](https://easystats.github.io/performance/)
+:::
+
+## Evaluate model
+
+```{r}
+model_performance(m3, metrics = "common") %>% 
+  mutate(C = Hmisc::somers2(
+    reading_habits$fit,
+    as.numeric(reading_habits$reads_EN == "TRUE")
+  )[["C"]]
+  ) %>% 
+  print_md()
+```
+
+::: footer
+[{performance} package](https://easystats.github.io/performance/)
+:::
 
 # Extra code {visibility="uncounted"}
 
