@@ -34,9 +34,8 @@ In order to define keywords (for the first study) or collocations (for the secon
 -   A **PMI score** of two or higher
 -   A **signed G** score of two or higher
 
-A **PMI score** of two or higher means that the probability of the keyword in the target context is at least four times higher than its probability in all the data taken together.[^1]
-
-[^1]: Incidentally: a PMI of one indicated that this probability is twice as high, a PMI of two indicates it is four times as high, a PMI of three indicates it is eight times as high, a PMI of four indicates it is sixteen times as high, etc.
+A **PMI score** of two or higher means that the probability of the keyword in the target context is at least four times higher than its probability in all the data taken together.
+[Incidentally: a PMI of one indicated that this probability is twice as high, a PMI of two indicates it is four times as high, a PMI of three indicates it is eight times as high, a PMI of four indicates it is sixteen times as high, etc.]{.aside}
 
 A **signed G score** of two or higher is not a very strict criterion. With a signed G score of two there is only mild evidence for attraction. In a traditional G test (log likelihood ratio test) for a two-by-two contingency table, a G score of one would indicate no evidence for any association whatsoever and a G score of 3.84 would be needed for the test to indicate a significant association (at a 95% confidence level). So a value of two would indicate that there is not enough evidence to establish significance.
 

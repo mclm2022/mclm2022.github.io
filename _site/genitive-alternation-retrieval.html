@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Methods in Corpus Linguistics - Genitive Alternation I: Retrieval</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Methods in Corpus Linguistics</span>
+  </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html">Home</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html">About</a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-studies" role="button" data-bs-toggle="dropdown" aria-expanded="false">Studies</a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-studies">    
+        <li>
+    <a class="dropdown-item" href="./base.html">
+ <span class="dropdown-text">Keywords and collocation analysis on the BASE corpus</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./genitive-alternation-retrieval.html">
+ <span class="dropdown-text">Genitive Alternation I: Retrieval</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./ca-trump-clinton.html">
+ <span class="dropdown-text">CA applied to the Trump-Clinton speeches</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-slides" role="button" data-bs-toggle="dropdown" aria-expanded="false">Slides</a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-slides">    
+        <li>
+    <a class="dropdown-item" href="./slides.html">
+ <span class="dropdown-text">Regression analysis</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#setup" id="toc-setup" class="nav-link active" data-scroll-target="#setup">Setup</a>
+  <ul class="collapse">
+  <li><a href="#pos-tags" id="toc-pos-tags" class="nav-link" data-scroll-target="#pos-tags">POS tags</a></li>
+  </ul></li>
+  <li><a href="#data-retrieval" id="toc-data-retrieval" class="nav-link" data-scroll-target="#data-retrieval">Data retrieval</a>
+  <ul class="collapse">
+  <li><a href="#of-genitive-with-common-nouns" id="toc-of-genitive-with-common-nouns" class="nav-link" data-scroll-target="#of-genitive-with-common-nouns">Of-genitive with common nouns</a>
+  <ul class="collapse">
+  <li><a href="#regular-expression" id="toc-regular-expression" class="nav-link" data-scroll-target="#regular-expression">Regular expression</a></li>
+  <li><a href="#code" id="toc-code" class="nav-link" data-scroll-target="#code">Code</a></li>
+  </ul></li>
+  <li><a href="#of-genitive-with-proper-nouns" id="toc-of-genitive-with-proper-nouns" class="nav-link" data-scroll-target="#of-genitive-with-proper-nouns">Of-genitive with proper nouns</a>
+  <ul class="collapse">
+  <li><a href="#regular-expression-1" id="toc-regular-expression-1" class="nav-link" data-scroll-target="#regular-expression-1">Regular expression</a></li>
+  <li><a href="#code-1" id="toc-code-1" class="nav-link" data-scroll-target="#code-1">Code</a></li>
+  </ul></li>
+  <li><a href="#s-genitive-with-common-nouns" id="toc-s-genitive-with-common-nouns" class="nav-link" data-scroll-target="#s-genitive-with-common-nouns">S-genitive with common nouns</a>
+  <ul class="collapse">
+  <li><a href="#regular-expression-2" id="toc-regular-expression-2" class="nav-link" data-scroll-target="#regular-expression-2">Regular expression</a></li>
+  <li><a href="#code-2" id="toc-code-2" class="nav-link" data-scroll-target="#code-2">Code</a></li>
+  </ul></li>
+  <li><a href="#s-genitive-with-proper-nouns" id="toc-s-genitive-with-proper-nouns" class="nav-link" data-scroll-target="#s-genitive-with-proper-nouns">S-genitive with proper nouns</a>
+  <ul class="collapse">
+  <li><a href="#regular-expression-3" id="toc-regular-expression-3" class="nav-link" data-scroll-target="#regular-expression-3">Regular expression</a></li>
+  <li><a href="#code-3" id="toc-code-3" class="nav-link" data-scroll-target="#code-3">Code</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#automatic-annotation" id="toc-automatic-annotation" class="nav-link" data-scroll-target="#automatic-annotation">Automatic annotation</a>
+  <ul class="collapse">
+  <li><a href="#citing-examples-in-markdown" id="toc-citing-examples-in-markdown" class="nav-link" data-scroll-target="#citing-examples-in-markdown">Citing examples in markdown</a></li>
+  <li><a href="#save" id="toc-save" class="nav-link" data-scroll-target="#save">Save your progress and be free!</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Genitive Alternation I: Retrieval</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<p>This is the first part of a variation study focusing on the genitive alternation in English, using the Brown corpus. This part focuses on retrieving observations of the alternation, whereas the second part will illustrate the analysis with conditional inference trees and mixed-effects logistic regression. One of the reasons to split the analysis in two is that, more often than not, between retrieval and analysis there is an additional step of manual cleaning or annotation of the dataset.</p>
+<section id="setup" class="level1 page-columns page-full">
+<h1>Setup</h1>
+<p>For this study we need to activate the packages <code>{tidyverse}</code> and <code>{mclm}</code>. We will also use <code>kableExtra()</code> to print some tables.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(mclm)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(kableExtra)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>We’ll collect the files from the Brown corpus. To replicate this code, adjust the path to wherever you stored your copy of the corpus. In this case, we also add a <code>keep_re()</code> call to capture the pattern shared by all corpus files and not by metadata files such as “CONTENTS” and “README”.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>brown_fnames <span class="ot">&lt;-</span> <span class="fu">get_fnames</span>(<span class="fu">file.path</span>(corpus_folder, <span class="st">"brown"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">keep_re</span>(<span class="st">"/c[a-z][0-9]{2}"</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(brown_fnames, <span class="at">n =</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Filename collection of length 500
+              filename
+   -------------------
+ 1 _corpora/brown/ca01
+ 2 _corpora/brown/ca02
+ 3 _corpora/brown/ca03
+ 4 _corpora/brown/ca04
+ 5 _corpora/brown/ca05
+ 6 _corpora/brown/ca06
+ 7 _corpora/brown/ca07
+ 8 _corpora/brown/ca08
+ 9 _corpora/brown/ca09
+10 _corpora/brown/ca10
+...</code></pre>
+</div>
+</div>
+
+<div class="no-row-height column-margin column-container"><div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>For more information on the Brown corpus, such as the components and tagset, see the <a href="https://en.wikipedia.org/wiki/Brown_Corpus">Wikipedia documentation</a>.</p>
+</div>
+</div></div><section id="pos-tags" class="level2">
+<h2 class="anchored" data-anchor-id="pos-tags">POS tags</h2>
+<p>The text in this corpus looks as follows, with word forms followed by a part-of-speech tag, with a slash in between.</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>The/at Fulton/np-tl County/nn-tl Grand/jj-tl Jury/nn-tl said/vbd Friday/nr an/at
+investigation/nn of/in Atlanta's/np$ recent/jj primary/nn election/nn produced/
+vbd ``/`` no/at evidence/nn ''/'' that/cs any/dti irregularities/nns took/vbd
+place/nn ./.</code></pre>
+</div>
+</div>
+<p>Some of the POS tags of Brown are of particular importance for this case study.</p>
+<dl>
+<dt>at</dt>
+<dd>
+<p>article, e.g.&nbsp;<em>the/at</em></p>
+</dd>
+<dt>in</dt>
+<dd>
+<p>preposition, e.g.&nbsp;<em>of/in</em></p>
+</dd>
+<dt>jj</dt>
+<dd>
+<p>adjective, e.g.&nbsp;<em>recent/jj</em></p>
+</dd>
+<dt>nn</dt>
+<dd>
+<p>common noun, e.g.&nbsp;<em>year/nn</em></p>
+</dd>
+<dt>np</dt>
+<dd>
+<p>proper noun, e.g.&nbsp;<em>Atlanta/np</em></p>
+</dd>
+<dt>-tl</dt>
+<dd>
+<p>(suffix to a POS tag) title or part of title, e.g.&nbsp;Sen./nn-tl George/np Parkhouse/np</p>
+</dd>
+<dt>$</dt>
+<dd>
+<p>(suffix to a POS tag) genitive marker (since a token ending in <em>’s</em> will be treated as one token), e.g.&nbsp;<em>the/at major’s/nn$ occupation/nn, Atlanta’s/np$ recent/jj primary/nn</em></p>
+</dd>
+</dl>
+</section>
+</section>
+<section id="data-retrieval" class="level1 page-columns page-full">
+<h1>Data retrieval</h1>
+<p>Our goal is to obtain the attestations of the genitive alternation in the Brown corpus, e.g.&nbsp;examples of <em>the student’s idea</em> and <em>the idea of the student</em>. In this alternation, the main elements we are interested in are called “Possessor” and “Possessed”, because the prototypical situation of the genitive is that of possession. However, the terminology can be misleading, because this is not the only meaning of the genitive constructions. For example, in <em>The car’s owner</em>, <em>car</em> takes the role of Possessor and <em>owner</em> that of Possessed.</p>
+<p>An alternation study aims to describe the aspects of language use that favor or disfavor one variant of the alternation against the other. This translates to studies where the alternation itself, e.g.&nbsp;where an <em>s</em> form or an <em>of</em> form is used, becomes the response variable, and different characteristics of the context become predictors or regressors. In this study, we’ll capture the following predictors:</p>
+<dl>
+<dt>possessor_type</dt>
+<dd>
+<p>Whether the role of the Possessor is filled by a common noun or a proper noun</p>
+</dd>
+<dt>possessor_size</dt>
+<dd>
+<p>The size of the Possessor slot, in characters</p>
+</dd>
+<dt>possessed_size</dt>
+<dd>
+<p>The size of the Possessed slot, in characters</p>
+</dd>
+<dt>size_difference</dt>
+<dd>
+<p>The difference between the size of the possessor and that of the possessed</p>
+</dd>
+</dl>
+<p>The reason for taking the size of the constituents, i.e.&nbsp;Possessor and Possessed, is the theory within linguistics that speakers try to push longer constituents towards the end. In the genitive alternation, in which each variant has a different word order, this becomes relevant. Concretely, in the <em>s</em> variant we have the Possessor before the Possessed (<em>The student’s idea</em>), whereas in the <em>of</em> variant we have the Possessed before the Possessor (<em>The idea of the student</em>). If we indeed tend to push longer constituents towards the end, a long Possessor such as <em>the keen and insightful student</em> would favor the <em>of variant</em> (<em>The idea of the keen and insightful student</em>) rather than the <em>s</em> variant (<em>The keen and insightful student’s idea</em>).</p>
+<p>In practice, we will also transform the sizes to their logarithm, in order to lessen the impact of extremely long constituents.</p>
+<p>The strategy of data retrieval consists of four queries with non-overlapping results, aimed at collecting four different patterns:</p>
+<ul>
+<li><p>of-genitive with common nouns</p></li>
+<li><p>of-genitive with proper nouns</p></li>
+<li><p>s-genitive with common nouns</p></li>
+<li><p>s-genitive with proper nouns</p></li>
+</ul>
+<p>For each of these queries, we will:</p>
+<ol type="1">
+<li>Collect the observations with <code>mclm::conc()</code>, generating a concordance.</li>
+<li>Add columns with the values of <code>gen_type</code> (our response variable) and <code>possessor_type</code>, since they are the same for all observations in that query.</li>
+<li>Extract the <code>possessed</code> and <code>possessor</code> based on their position in the query. For that purpose, the regular expressions used to query the corpus include capturing groups surrounding each of the constituents.</li>
+</ol>
+<p>This will be achieved with the following lines of code:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>cd <span class="ot">&lt;-</span> brown_fnames <span class="sc">%&gt;%</span> </span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">conc</span>(pattern) <span class="sc">%&gt;%</span>  <span class="co"># whatever regex pattern we have defined</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">gen_type =</span> <span class="st">"of"</span>,                                     <span class="co"># or "s"</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">possessor_type =</span> <span class="st">"common"</span>,                           <span class="co"># or proper</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">possessed =</span> <span class="fu">re_replace_first</span>(match, pattern, <span class="st">"</span><span class="sc">\\</span><span class="st">1"</span>), <span class="co"># or \\2 for s-genitive</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">possessor =</span> <span class="fu">re_replace_first</span>(match, pattern, <span class="st">"</span><span class="sc">\\</span><span class="st">2"</span>)  <span class="co"># or \\1 for of-genitive</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="4" type="1">
+<li>Once we have more than one concordance, we can merge them with <code>merge_conc()</code>.</li>
+</ol>
+<div class="callout-caution callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Variable names
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The first concordance will be stored in a variable called <code>cd</code>, to which we will merge each new concordance, called <code>cd_new</code>. Alternatively, you could name each concordance differently and then merge them into a larger concordance <code>conc_merged</code>, for example.</p>
+<p>The first approach has the advantage of avoiding duplicate objects and using more memory than necessary. <code>cd_new</code> is constantly rewritten and, at the end, you only have one large concordance <code>cd</code> and a small <code>cd_new</code> concordance with the latest query. In contrast, with the second approach you end up with four small concordances and one large one, and their contents are duplicated.</p>
+<p>The second approach makes sense if you need to keep the datasets separate. When you’re writing a long script or processing a dataset in different ways, overwriting a variable may bring confusion, as you forget the contents of the variable at any given time.</p>
+<p>Think about this in your own analyses.</p>
+</div>
+</div>
+</div>
+<section id="of-genitive-with-common-nouns" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="of-genitive-with-common-nouns">Of-genitive with common nouns</h2>
+<p>In the first query we will retrieve the attestations of the <em>of</em>-genitive with common nouns, e.g.&nbsp;<em>the idea of the student</em>.</p>
+<section id="regular-expression" class="level3">
+<h3 class="anchored" data-anchor-id="regular-expression">Regular expression</h3>
+<p>As a first step, we construct a regular expression that will match, in the non-tokenized corpus, the sequence we are interested in, and we’ll store it in a variable <code>pattern</code>. Notice that we use a raw string (preceded with <code>r</code> and, within the quotation marks, surrounded by two hyphens and a square bracket) and that we flag the regular expression with an <code>x</code> and an <code>i</code>. The <code>x</code> allows us to insert spaces and line breaks for more readability (free-spacing mode), and the <code>i</code> makes the search case insensitive.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>pattern <span class="ot">&lt;-</span> r<span class="st">"--[(?xi)</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a><span class="st">          </span><span class="sc">\b</span><span class="st">         the / at          \s+</span></span>
+<span id="cb6-3"><a href="#cb6-3"></a><span class="st">          ( (?:  [^\s/]+ / jj  [^\s]*  \s+ )*</span></span>
+<span id="cb6-4"><a href="#cb6-4"></a><span class="st">            (?:  [^\s/]+ / nn  [^\s]*  \s+ )*</span></span>
+<span id="cb6-5"><a href="#cb6-5"></a><span class="st">                 [^\s/]+ / nn  [^\s]*</span></span>
+<span id="cb6-6"><a href="#cb6-6"></a><span class="st">          )                            \s+</span></span>
+<span id="cb6-7"><a href="#cb6-7"></a><span class="st">                      of / in          \s+</span></span>
+<span id="cb6-8"><a href="#cb6-8"></a><span class="st">                     the / at          \s+</span></span>
+<span id="cb6-9"><a href="#cb6-9"></a><span class="st">          ( (?:  [^\s/]+ / jj  [^\s]*  \s+ )*</span></span>
+<span id="cb6-10"><a href="#cb6-10"></a><span class="st">            (?:  [^\s/]+ / nn  [^\s]*  \s+ )*</span></span>
+<span id="cb6-11"><a href="#cb6-11"></a><span class="st">                 [^\s/]+ / nn  [^\s$]* </span></span>
+<span id="cb6-12"><a href="#cb6-12"></a><span class="st">          )                            \s    </span></span>
+<span id="cb6-13"><a href="#cb6-13"></a><span class="st">]--"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>In line 2 we have a <code>\b</code>, followed by the string <em>the/at</em>, followed by <code>\s+</code>. This means that we want the literal string <em>the/at</em> preceded by a word boundary and followed by one or more whitespace characters. A word boundary at the beginning covers whitespace characters, punctuation marks and even the beginning of the text.</p>
+<p>Lines 3-5 and 9-11 are surrounded by parentheses, turning them into capturing groups. Later, when we want to extract the Possessed and Possessor from the match, we can ask for the text matching each of the capturing groups.</p>
+<p>Within the capturing groups we have non-capturing groups, marked by parentheses and <code>?:</code> at the beginning. If we didn’t add <code>?:</code> at the beginning, they would be included in the numbering of the capturing groups and we wouldn’t know for sure which number belongs to the full Possessed and Possessor groups. But we need the parentheses in order to apply the final asterisks (in lines 3, 4, 9 and 10) to the full match that they surround. What are they matching, exactly?</p>
+<p>The main capturing groups for Possessed and Possessor want to match a common noun optionally preceded by one or more adjectives and one or more nouns. The match for a common noun is <code>[^\s/]+ / nn [^\s]*</code>. <code>[\s/]</code> matches either a whitespace character or a slash; adding the <code>^</code> inverts the match to anything <em>but</em> a whitespace character or a slash; <code>+</code> requires one or more of them and <code>*</code>, zero or more. Therefore, this regex asks for a sequence of characters that are neither a whitespace character or a slash, (e.g.&nbsp;<em>idea</em> or <em>student</em>), followed by a slash and then <em>nn</em>, followed by an optional sequence of characters that are not whitespace characters, in case the part-of-speech tag ends with an <code>s</code> (for plurar) or <code>-tl</code>. We use <code>jj</code> instead of <code>nn</code> when we ask for adjectives and we also reject <code>$</code> at the end of the Possessor slot, because we don’t want an s-genitive to match.</p>
+<p>Within each non-capturing group, therefore, we match either an adjective or a noun, but we still get a match if neither of them occurs. They are also followed by <code>\s+</code> to capture the whitespace characters between the words.</p>
+<p>Finally, lines 7 and 9 match the core of the <em>of</em>-genitive construction, i.e.&nbsp;<em>of/in</em> and <em>the/at</em>, surrounded and separated by whitespace characters.</p>
+<p>In other words, we are asking for:</p>
+<ul>
+<li><p>a word boundary,</p></li>
+<li><p>followed by <em>the/at</em> and whitespace,</p></li>
+<li><p>optionally followed by adjectives, each followed by whitespace, and then at least one common noun — this is the first capturing group, the Possessed,</p></li>
+<li><p>then whitespace, followed by <em>of/in</em>, whitespace, <em>the/at</em> and whitespace,</p></li>
+<li><p>optionally followed by adjectives, each followed by whitespace, and then at least one common noun without the genitive tag — this is the second capturing group, the Possessor.</p></li>
+</ul>
+<!-- TODO talk about limitations -->
+<!-- The solution is far from perfect. Think about the following -->
+<!-- examples, how they are dealt with now, and how we would want to deal -->
+<!-- with them ideally: -->
+<!--  - the/at center/nn of/in the/at entire/jj two-and-a-half-mile/jj -->
+<!--    length/nn |of/in the/at project/nn -->
+<!--  - the/at growth/nn of/in the/at child's/nn$ conscience/nn -->
+<!--  - the/at boxy/jj look/nn of/in the/at '20's/nns and/cc '40's/nns -->
+<!--  - the/at confidence/nn of/in the/at Democratic/jj-tl rank/nn -->
+<!--    and/cc file/nn -->
+<!--  - the/at election/nn of/in the/at man/nn who/wps defeated/vbd him/ppo -->
+<!--  - the/at day-to-day/jj course/nn of/in the/at closest/jjt -->
+<!--    Presidential/jj-tl election/nn in/in American/jj history/nn -->
+<!-- Likewise, the solutions we will use for the other queries have their -->
+<!-- limitations. A more thorough case study would imply a step of -->
+<!-- manual correction of the results (perhaps in combination with -->
+<!-- further refinements of the queries). -->
+</section>
+<section id="code" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="code">Code</h3>
+<p>We build the concordance with <code>conc()</code>, which takes a corpus or filenames, e.g.&nbsp;<code>brown_fnames</code>, and a regular expression to match, e.g.&nbsp;<code>pattern</code>. We can then explore the concordance with <code>print_kwic()</code>, <code>explore()</code> or <code>View()</code>. This really is advisable, in order to inspect how good the regex pattern is and see if you might want to refine it to capture patterns that were missed, or to exclude patterns that should be discarded.</p>
+
+<div class="no-row-height column-margin column-container"><div class="callout-caution callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Manual or automatic
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>With practice, you’ll find the balance between refining the automatic process and performing manual cleaning. In some cases, it’s quicker to fix the automatic procedure; in other cases, manual adjustments are easier and more reliable.</p>
+</div>
+</div></div><div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>cd <span class="ot">&lt;-</span> brown_fnames <span class="sc">%&gt;%</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">conc</span>(pattern)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">print_kwic</span>(cd, <span class="at">n =</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>idx                      left|        match        |right                   
+  1 ... suit/nn to/to test/vb|the/at va...at act/nn|,/, and/cc then/rb th...
+  2 ...n/cd dollars/nns at/in|the/at en...j year/nn|next/ap Aug./np 31/cd...
+  3 ...e/ber teaching/vbg ./.|The/at re...rement/nn|would/md be/be in/in ...
+  4 ...ill/md retire/vb at/in|the/at cl...n term/nn|./. Dr./nn-tl Clark/n...
+  5 ... ``/`` Actually/rb ,/,|the/at ab...rocess/nn|may/md have/hv consti...
+  6 .../at 23d/od ward/nn ./.|The/at ca...udges/nns|in/in the/at 58th/od ...
+  7 ...O/nn line/nn ./. On/in|the/at ne... sheet/nn|must/md be/be set/vbn...
+  8 ...the/at alliance/nn ,/,|the/at us...ion/nn-tl|for/in-tl Economic/jj...
+  9 ...ns as/ql well/rb as/cs|the/at ma...errent/nn|./. This/dt increase/...
+ 10 ...ey/ppss count/vb on/in|the/at ai...tries/nns|attending/vbg the/at ...
+...</code></pre>
+</div>
+</div>
+<p>Because <code>cd</code> is also a dataframe, of which <code>match</code> is a column, we can also inspect the elements in the <code>match</code> by extracting the corresponding columns.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(cd<span class="sc">$</span>match)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "the/at validity/nn of/in the/at act/nn "                              
+[2] "the/at end/nn of/in the/at current/jj fiscal/jj year/nn "             
+[3] "The/at remainder/nn of/in the/at 4-year/jj college/nn requirement/nn "
+[4] "the/at close/nn of/in the/at present/jj school/nn term/nn "           
+[5] "the/at abuse/nn of/in the/at process/nn "                             
+[6] "The/at case/nn of/in the/at judges/nns "                              </code></pre>
+</div>
+</div>
+<p>Once we have a decent concordance, we can add variables that are characteristic of it. All of these observations will have the value <em>of</em> in the <code>gen_type</code> variable and the value <em>common</em> in the <code>possessor_type</code> variable. In addition, we can extract the constituents of the Possessed and Possessor slots with <code>mclm::re_replace_first()</code>. The first argument is a text to match, e.g.&nbsp;the elements in the <code>match</code> column; the second is a regular expression to match in the text, e.g.&nbsp;<code>pattern</code>, and the third is a replacement string. <code>"\\1"</code> and <code>"\\2"</code> correspond to the contents of the first and second capturing group in <code>pattern</code>, respectively.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>cd <span class="ot">&lt;-</span> <span class="fu">mutate</span>(cd,</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">gen_type =</span> <span class="st">"of"</span>,</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">possessor_type =</span> <span class="st">"common"</span>,</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">possessed =</span> <span class="fu">re_replace_first</span>(match, pattern, <span class="st">"</span><span class="sc">\\</span><span class="st">1"</span>), </span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">possessor =</span> <span class="fu">re_replace_first</span>(match, pattern, <span class="st">"</span><span class="sc">\\</span><span class="st">2"</span>) </span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>cd <span class="sc">%&gt;%</span> </span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(match, possessed, possessor) <span class="sc">%&gt;%</span> </span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kbl</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_paper</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<table class=" lightable-paper" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> match </th>
+   <th style="text-align:left;"> possessed </th>
+   <th style="text-align:left;"> possessor </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> the/at validity/nn of/in the/at act/nn </td>
+   <td style="text-align:left;"> validity/nn </td>
+   <td style="text-align:left;"> act/nn </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> the/at end/nn of/in the/at current/jj fiscal/jj year/nn </td>
+   <td style="text-align:left;"> end/nn </td>
+   <td style="text-align:left;"> current/jj fiscal/jj year/nn </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> The/at remainder/nn of/in the/at 4-year/jj college/nn requirement/nn </td>
+   <td style="text-align:left;"> remainder/nn </td>
+   <td style="text-align:left;"> 4-year/jj college/nn requirement/nn </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> the/at close/nn of/in the/at present/jj school/nn term/nn </td>
+   <td style="text-align:left;"> close/nn </td>
+   <td style="text-align:left;"> present/jj school/nn term/nn </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> the/at abuse/nn of/in the/at process/nn </td>
+   <td style="text-align:left;"> abuse/nn </td>
+   <td style="text-align:left;"> process/nn </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> The/at case/nn of/in the/at judges/nns </td>
+   <td style="text-align:left;"> case/nn </td>
+   <td style="text-align:left;"> judges/nns </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</section>
+</section>
+<section id="of-genitive-with-proper-nouns" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="of-genitive-with-proper-nouns">Of-genitive with proper nouns</h2>
+<p>The second query also captures the <em>of</em>-genitive variant, but with proper nouns in the Possessor slot instead, e.g.&nbsp;<em>the rivers of Belgium</em>.</p>
+<section id="regular-expression-1" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="regular-expression-1">Regular expression</h3>
+<p>The regular expression is very similar to the one for the first query, with a few differences:</p>
+<ul>
+<li><p>It does not ask or even accept an article after <em>of/in</em>.</p></li>
+<li><p>The noun(s), requested in lines 10 and 11 are proper nouns instead of common nouns.</p></li>
+<li><p>Between the optional adjective(s) and the noun(s) of the second capturing group, i.e.&nbsp;the Possessor slot, we also accept optional items with any part-of-speech as long as they also end in <em>-nt</em> (line 9).</p></li>
+</ul>
+
+<div class="no-row-height column-margin column-container"><div class="callout-warning callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Rewriting variables
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Notice that we are rewriting the variable <code>pattern</code> with the regex for the second query, so, if you suddenly wanted to rerun the first query, you would need to change <code>pattern</code> again.</p>
+</div>
+</div></div><div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a>pattern <span class="ot">&lt;-</span> r<span class="st">"--[(?xi)</span></span>
+<span id="cb12-2"><a href="#cb12-2"></a><span class="st">       </span><span class="sc">\b</span><span class="st">         the / at                 \s+</span></span>
+<span id="cb12-3"><a href="#cb12-3"></a><span class="st">       ( (?:  [^\s/]+ / jj         [^\s]*  \s+ )*</span></span>
+<span id="cb12-4"><a href="#cb12-4"></a><span class="st">         (?:  [^\s/]+ / nn         [^\s]*  \s+ )*</span></span>
+<span id="cb12-5"><a href="#cb12-5"></a><span class="st">              [^\s/]+ / nn         [^\s]*</span></span>
+<span id="cb12-6"><a href="#cb12-6"></a><span class="st">         )                                 \s+</span></span>
+<span id="cb12-7"><a href="#cb12-7"></a><span class="st">                   of / in                 \s+</span></span>
+<span id="cb12-8"><a href="#cb12-8"></a><span class="st">       ( (?:  [^\s/]+ / jj         [^\s]*  \s+ )*</span></span>
+<span id="cb12-9"><a href="#cb12-9"></a><span class="st">         (?:  [^\s/]+ / [^\s]+ -tl [^\s$]* \s+ )*</span></span>
+<span id="cb12-10"><a href="#cb12-10"></a><span class="st">         (?:  [^\s/]+ / np         [^\s$]* \s+ )*</span></span>
+<span id="cb12-11"><a href="#cb12-11"></a><span class="st">              [^\s/]+ / np         [^\s$]* </span></span>
+<span id="cb12-12"><a href="#cb12-12"></a><span class="st">       )                                   \s</span></span>
+<span id="cb12-13"><a href="#cb12-13"></a><span class="st">]--"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="code-1" class="level3">
+<h3 class="anchored" data-anchor-id="code-1">Code</h3>
+<p>The steps are the same as for the first query. We store the object in a different variable, <code>cd_new</code>, and we assign the value <em>proper</em> to <code>possessor_type</code> instead of <em>common</em>. Afterwards, we rewrite <code>cd</code> to be the combination of <code>cd</code> (the first query) and <code>cd_new</code> (the second query) using <code>merge_conc()</code>, an <code>{mclm}</code> wrapper for <code>bind_rows()</code>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>cd_new <span class="ot">&lt;-</span> brown_fnames <span class="sc">%&gt;%</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">conc</span>(pattern) <span class="sc">%&gt;%</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">gen_type =</span> <span class="st">"of"</span>,</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">possessor_type =</span> <span class="st">"proper"</span>,</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">possessed =</span> <span class="fu">re_replace_first</span>(match, pattern, <span class="st">"</span><span class="sc">\\</span><span class="st">1"</span>), </span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">possessor =</span> <span class="fu">re_replace_first</span>(match, pattern, <span class="st">"</span><span class="sc">\\</span><span class="st">2"</span>)  </span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a><span class="fu">print_kwic</span>(cd_new, <span class="at">n =</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>idx                      left|        match        |right                   
+  1 ...he/at state/nn with/in|the/at ex...ton/np-tl|County/nn-tl ,/, whic...
+  2 ...Thursday/nr despite/in|the/at ad... Texas/np|bankers/nns ./. Danie...
+  3 ...proved/vbd Thursday/nr|the/at bi...khouse/np|of/in Dallas/np autho...
+  4 .../cd session/nn upon/in|the/at re...ckland/np|./. State/nn and/cc f...
+  5 ...l avoided/vbn-hl In/in|the/at ca...rtugal/np|,/, which/wdt a/at fe...
+  6 ...lomat/nn described/vbd|the/at te...l Dean/np|Rusk's/np$ speeches/n...
+  7 .../jjr support/nn for/in|the/at in...n Cuba/np|by/in exile/nn groups...
+  8 .../cd factor/nn was/bedz|the/at st...bright/np|(/( D/np )/) of/in Ar...
+  9 ...ounced/vbd Thursday/nr|the/at ap...ackett/np|,/, a/at special/jj a...
+ 10 ...cept/vb them/ppo at/in|the/at su...np Sr./np|./. The/at law/nn whi...
+...</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>cd <span class="ot">&lt;-</span> <span class="fu">merge_conc</span>(cd, cd_new)</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(cd)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 4157</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="s-genitive-with-common-nouns" class="level2">
+<h2 class="anchored" data-anchor-id="s-genitive-with-common-nouns">S-genitive with common nouns</h2>
+<p>The third query retrieves attestations of the <em>s</em>-genitive variant with common nouns in the Possessor slot, e.g.&nbsp;<em>the student’s idea</em>.</p>
+<section id="regular-expression-2" class="level3">
+<h3 class="anchored" data-anchor-id="regular-expression-2">Regular expression</h3>
+<p>The main regular expression symbols are the same used in the previous queries. The main differences with the first regular expression are twofold. First, we don’t have word between the two capturing groups; instead, we only have whitespace, and the noun in line 5 must include <em>$</em> somewhere in its part-of-speech tag. Second, the first capturing group now represents the Possessor, and the second capturing group, the possessed. This doesn’t affect the writing of the regular expression itself, other than the requirement of <em>$</em> at the end of the first component and that it should <em>not</em> be present in the second component. However, it will affect the code below when extracting the Possessed and Possessor variables.</p>
+<p>Again, here we overwrite the <code>pattern</code> variable with the new regular expression.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a>pattern <span class="ot">&lt;-</span> r<span class="st">"--[(?xi)</span></span>
+<span id="cb17-2"><a href="#cb17-2"></a><span class="st">      </span><span class="sc">\b</span><span class="st">         the / at                  \s+</span></span>
+<span id="cb17-3"><a href="#cb17-3"></a><span class="st">      (  (?: [^\s/]+ / jj  [^\s]*          \s+ )*</span></span>
+<span id="cb17-4"><a href="#cb17-4"></a><span class="st">         (?: [^\s/]+ / nn  [^\s]*          \s+ )*</span></span>
+<span id="cb17-5"><a href="#cb17-5"></a><span class="st">             [^\s/]+ / nn  [^\s]* [$] [^\s]*</span></span>
+<span id="cb17-6"><a href="#cb17-6"></a><span class="st">       )                                   \s+</span></span>
+<span id="cb17-7"><a href="#cb17-7"></a><span class="st">      (  (?: [^\s/]+ / jj  [^\s]*          \s+ )*</span></span>
+<span id="cb17-8"><a href="#cb17-8"></a><span class="st">         (?: [^\s/]+ / nn  [^\s]*          \s+ )*</span></span>
+<span id="cb17-9"><a href="#cb17-9"></a><span class="st">             [^\s/]+ / nn  [^\s$]*            </span></span>
+<span id="cb17-10"><a href="#cb17-10"></a><span class="st">       )                                   \s </span></span>
+<span id="cb17-11"><a href="#cb17-11"></a><span class="st">]--"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="code-2" class="level3">
+<h3 class="anchored" data-anchor-id="code-2">Code</h3>
+<p>Now that we have merged the first two queries into <code>cd</code>, we don’t need <code>cd_new</code> anymore, so we can overwrite it with the output of the third query. Again, we call <code>conc()</code> with <code>brown_fnames</code> and the new <code>pattern</code> and assign the values that correspond to this concordance: <em>s</em> for <code>gen_type</code> and <em>common</em> for <code>possessor_type</code>, and the appropriate capturing groups of the pattern for <code>possessed</code> and <code>possessor</code>. Since the word order is inverted in relation to the <em>of</em>-genitive, now the first capturing group corresponds to the Possessor and the second one to the Possessed.</p>
+<p>Finally, we use <code>merge_conc()</code> to merge the output of the first two queries, <code>cd</code>, with the output of the third query, <code>cd_new</code>, overwriting <code>cd</code>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>cd_new <span class="ot">&lt;-</span> brown_fnames <span class="sc">%&gt;%</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">conc</span>(pattern) <span class="sc">%&gt;%</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">gen_type =</span> <span class="st">"s"</span>,</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">possessor_type =</span> <span class="st">"common"</span>,</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">possessed =</span> <span class="fu">re_replace_first</span>(match, pattern, <span class="st">"</span><span class="sc">\\</span><span class="st">2"</span>), </span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">possessor =</span> <span class="fu">re_replace_first</span>(match, pattern, <span class="st">"</span><span class="sc">\\</span><span class="st">1"</span>)  </span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a><span class="fu">print_kwic</span>(cd_new, <span class="at">n =</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>idx                      left|        match        |right                   
+  1 ...bd a/at swipe/nn at/in|the/at St...ndling/nn|of/in federal/jj fund...
+  2 ...and/cc in/in effect/nn|the/at co...wards/nns|from/in undue/jj cost...
+  3 ...petition/nn listed/vbd|the/at ma...pation/nn|as/cs ``/`` attorney/...
+  4 ...e/at petition/nn as/cs|the/at ma...torney/nn|./. Hartsfield/np has...
+  5 ...l/nn in/in 1923/cd ./.|The/at ma...j term/nn|of/in office/nn expir...
+  6 ...nn-tl to/to rescind/vb|the/at bo...action/nn|of/in Friday/nr in/in...
+  7 ...t gift/nn out/rp of/in|the/at ta...ckets/nns|to/in banks/nns ,/, i...
+  8 ... bill/nn extending/vbg|the/at St...hority/nn|to/to give/vb plannin...
+  9 ...en's/np$ attack/nn ./.|The/at bi...nders/nns|were/bed mostly/rb sm...
+ 10 ...s/np ,/, Kan./np as/cs|the/at sc...sident/nn|./. Dr./nn-tl Clark/n...
+...</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>cd_new <span class="sc">%&gt;%</span> </span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(match, possessed, possessor) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kbl</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_paper</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<table class=" lightable-paper" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> match </th>
+   <th style="text-align:left;"> possessed </th>
+   <th style="text-align:left;"> possessor </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> the/at State/nn-tl Welfare/nn-tl Department's/nn$-tl handling/nn </td>
+   <td style="text-align:left;"> handling/nn </td>
+   <td style="text-align:left;"> State/nn-tl Welfare/nn-tl Department's/nn$-tl </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> the/at court's/nn$ wards/nns </td>
+   <td style="text-align:left;"> wards/nns </td>
+   <td style="text-align:left;"> court's/nn$ </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> the/at mayor's/nn$ occupation/nn </td>
+   <td style="text-align:left;"> occupation/nn </td>
+   <td style="text-align:left;"> mayor's/nn$ </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> the/at mayor's/nn$ attorney/nn </td>
+   <td style="text-align:left;"> attorney/nn </td>
+   <td style="text-align:left;"> mayor's/nn$ </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> The/at mayor's/nn$ present/jj term/nn </td>
+   <td style="text-align:left;"> present/jj term/nn </td>
+   <td style="text-align:left;"> mayor's/nn$ </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> the/at body's/nn$ action/nn </td>
+   <td style="text-align:left;"> action/nn </td>
+   <td style="text-align:left;"> body's/nn$ </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>cd <span class="ot">&lt;-</span> <span class="fu">merge_conc</span>(cd, cd_new)</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(cd)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 5207</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="s-genitive-with-proper-nouns" class="level2">
+<h2 class="anchored" data-anchor-id="s-genitive-with-proper-nouns">S-genitive with proper nouns</h2>
+<p>The fourth query captures the <em>s</em>-genitive variant with proper nouns in the Possessor slot, e.g.&nbsp;<em>Belgium’s rivers</em>.</p>
+<section id="regular-expression-3" class="level3">
+<h3 class="anchored" data-anchor-id="regular-expression-3">Regular expression</h3>
+<p>Again we overwrite <code>pattern</code> with the regular expression for the last query, which is very similar to the third query. The difference, like the difference between the second and the first, is that it asks of proper nouns instead of common nouns in the Possessor slot (lines 4 and 5; but also it excludes articles at the beginning) and that it allows for any item with <em>-tl</em> in its part-of-speech tag preceding the Possessor noun (line 3).</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1"></a>pattern <span class="ot">&lt;-</span> r<span class="st">"--[(?xi)</span></span>
+<span id="cb23-2"><a href="#cb23-2"></a><span class="st">        </span><span class="sc">\b</span><span class="st">  ( (?: [^\s/]+ / jj         [^\s]*          \s+ )*</span></span>
+<span id="cb23-3"><a href="#cb23-3"></a><span class="st">              (?: [^\s/]+ / [^\s]+ -tl [^\s]*          \s+ )*</span></span>
+<span id="cb23-4"><a href="#cb23-4"></a><span class="st">              (?: [^\s/]+ / np         [^\s$]*         \s+ )*</span></span>
+<span id="cb23-5"><a href="#cb23-5"></a><span class="st">                  [^\s/]+ / np         [^\s]* [$] [^\s]*        </span></span>
+<span id="cb23-6"><a href="#cb23-6"></a><span class="st">            )                                          \s+</span></span>
+<span id="cb23-7"><a href="#cb23-7"></a><span class="st">            ( (?: [^\s/]+ / jj         [^\s]*          \s+ )*</span></span>
+<span id="cb23-8"><a href="#cb23-8"></a><span class="st">              (?: [^\s/]+ / nn         [^\s]*          \s+ )*</span></span>
+<span id="cb23-9"><a href="#cb23-9"></a><span class="st">                  [^\s/]+ / nn         [^\s$]*           </span></span>
+<span id="cb23-10"><a href="#cb23-10"></a><span class="st">            )                                          \s</span></span>
+<span id="cb23-11"><a href="#cb23-11"></a><span class="st">]--"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="code-3" class="level3">
+<h3 class="anchored" data-anchor-id="code-3">Code</h3>
+<p>Again we overwrite the now useless <code>cd_new</code> with the output of the fourth query and assign the appropriate values for the common variables. The <code>possessor_type</code> is no <em>proper</em>, but the rest of the variables take the same values as in the previous query. At the end, we overwrite <code>cd</code> by merging the old <code>cd</code>, which contains the output of the first three queries, and <code>cd_new</code>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>cd_new <span class="ot">&lt;-</span> brown_fnames <span class="sc">%&gt;%</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">conc</span>(pattern) <span class="sc">%&gt;%</span></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">gen_type =</span> <span class="st">"s"</span>,</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">possessor_type =</span> <span class="st">"proper"</span>,</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">possessed =</span> <span class="fu">re_replace_first</span>(match, pattern, <span class="st">"</span><span class="sc">\\</span><span class="st">2"</span>), </span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">possessor =</span> <span class="fu">re_replace_first</span>(match, pattern, <span class="st">"</span><span class="sc">\\</span><span class="st">1"</span>)  </span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a><span class="fu">print_kwic</span>(cd_new, <span class="at">n =</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>idx                      left|        match        |right                   
+  1 ...investigation/nn of/in|Atlanta's...ection/nn|produced/vbd ``/`` no...
+  2 ... that/cs many/ap of/in|Georgia's...ration/nn|and/cc election/nn la...
+  3 ...mplementation/nn of/in|Georgia's...nn law/nn|was/bedz also/rb reco...
+  4 ...d/vbd ./. Regarding/in|Atlanta's...irport/nn|,/, the/at jury/nn re...
+  5 ...r to/to work/vb for/in|Lt./nn-tl...mpaign/nn|./. Caldwell's/np$ re...
+  6 ...'s/np$ campaign/nn ./.|Caldwell'...nation/nn|had/hvd been/ben expe...
+  7 ... that/cs none/pn of/in|Georgia's...ssmen/nns|specifically/rb asked...
+  8 ...tions/nns ./. Under/in|Formby's/np$ plan/nn |,/, an/at appointee/n...
+  9 ...ter/nn needs/nns of/in|Texas'/np...ities/nns|Thursday/nr ./. Rep./...
+ 10 ... did/dod not/* sway/vb|Cotten's/...attack/nn|./. The/at bill's/nn$...
+...</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>cd_new <span class="sc">%&gt;%</span> </span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(match, possessed, possessor) <span class="sc">%&gt;%</span> </span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kbl</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_paper</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<table class=" lightable-paper" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> match </th>
+   <th style="text-align:left;"> possessed </th>
+   <th style="text-align:left;"> possessor </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Atlanta's/np$ recent/jj primary/nn election/nn </td>
+   <td style="text-align:left;"> recent/jj primary/nn election/nn </td>
+   <td style="text-align:left;"> Atlanta's/np$ </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Georgia's/np$ registration/nn </td>
+   <td style="text-align:left;"> registration/nn </td>
+   <td style="text-align:left;"> Georgia's/np$ </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Georgia's/np$ automobile/nn title/nn law/nn </td>
+   <td style="text-align:left;"> automobile/nn title/nn law/nn </td>
+   <td style="text-align:left;"> Georgia's/np$ </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Atlanta's/np$ new/jj multi-million-dollar/jj airport/nn </td>
+   <td style="text-align:left;"> new/jj multi-million-dollar/jj airport/nn </td>
+   <td style="text-align:left;"> Atlanta's/np$ </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Lt./nn-tl Gov./nn-tl Garland/np Byrd's/np$ campaign/nn </td>
+   <td style="text-align:left;"> campaign/nn </td>
+   <td style="text-align:left;"> Lt./nn-tl Gov./nn-tl Garland/np Byrd's/np$ </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Caldwell's/np$ resignation/nn </td>
+   <td style="text-align:left;"> resignation/nn </td>
+   <td style="text-align:left;"> Caldwell's/np$ </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>cd <span class="ot">&lt;-</span> <span class="fu">merge_conc</span>(cd, cd_new)</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(cd)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 7344</code></pre>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="automatic-annotation" class="level1 page-columns page-full">
+<h1>Automatic annotation</h1>
+<p>We now have a concordance <code>cd</code> with 7344 observations matching four different patterns. We can get a quick overview of the size of each subset with <code>xtabs()</code>. Here we can see that the most common pattern is the <em>of</em> genitive with a common noun in the Possessor slot, but also that within the <em>s</em> variant the proper noun is more common.</p>
+
+<div class="no-row-height column-margin column-container"><div class="cell">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">xtabs</span>(<span class="sc">~</span> gen_type <span class="sc">+</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>        possessor_type,</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>      <span class="at">data =</span> cd)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>        possessor_type
+gen_type common proper
+      of   3151   1006
+      s    1050   2137</code></pre>
+</div>
+</div></div><div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>It’s a good idea to practice quick overview functions, such as <code>xtabs()</code> and <code>table()</code> from Base R, as well as <code>count()</code> and <code>summarize()</code> from <code>{tidyverse}</code>. Running sophisticated analysis should not push us away from simpler forms of exploration of the data.</p>
+</div>
+</div>
+<p>Before saving our concordance, we can add some automatic annotation. The following <code>dplyr::mutate()</code> call adds or manipulates columns in different ways:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1"></a>cd <span class="ot">&lt;-</span> <span class="fu">mutate</span>(cd,</span>
+<span id="cb31-2"><a href="#cb31-2"></a>  <span class="at">possessed =</span> <span class="fu">re_replace_all</span>(possessed, </span>
+<span id="cb31-3"><a href="#cb31-3"></a>                             r<span class="st">"--[(?xi) ([^\s/]+) / [^\s]+ ]--"</span>, </span>
+<span id="cb31-4"><a href="#cb31-4"></a>                             <span class="st">"</span><span class="sc">\\</span><span class="st">1"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb31-5"><a href="#cb31-5"></a>              <span class="fu">tolower</span>(),</span>
+<span id="cb31-6"><a href="#cb31-6"></a>  <span class="at">possessor =</span> <span class="fu">re_replace_all</span>(possessor, </span>
+<span id="cb31-7"><a href="#cb31-7"></a>                             r<span class="st">"--[(?xi) ([^\s/]+?) ('s)? / [^\s]+ ]--"</span>, </span>
+<span id="cb31-8"><a href="#cb31-8"></a>                             <span class="st">"</span><span class="sc">\\</span><span class="st">1"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb31-9"><a href="#cb31-9"></a>              <span class="fu">tolower</span>(),</span>
+<span id="cb31-10"><a href="#cb31-10"></a>  <span class="at">comp =</span> <span class="fu">re_retrieve_first</span>(source, <span class="st">".(.)..$"</span>, <span class="at">requested_group =</span> <span class="dv">1</span>),</span>
+<span id="cb31-11"><a href="#cb31-11"></a>  <span class="at">left_tagged =</span> left,</span>
+<span id="cb31-12"><a href="#cb31-12"></a>  <span class="at">left        =</span> <span class="fu">re_replace_all</span>(left_tagged, </span>
+<span id="cb31-13"><a href="#cb31-13"></a>                               r<span class="st">"--[(?xi) ([^\s/]+) / [^\s]+ ]--"</span>, </span>
+<span id="cb31-14"><a href="#cb31-14"></a>                               <span class="st">"</span><span class="sc">\\</span><span class="st">1"</span>),</span>
+<span id="cb31-15"><a href="#cb31-15"></a>  <span class="at">match_tagged =</span> match,</span>
+<span id="cb31-16"><a href="#cb31-16"></a>  <span class="at">match        =</span> <span class="fu">re_replace_all</span>(match_tagged, </span>
+<span id="cb31-17"><a href="#cb31-17"></a>                                r<span class="st">"--[(?xi) ([^\s/]+) / [^\s]+ ]--"</span>, </span>
+<span id="cb31-18"><a href="#cb31-18"></a>                                <span class="st">"</span><span class="sc">\\</span><span class="st">1"</span>),</span>
+<span id="cb31-19"><a href="#cb31-19"></a>  <span class="at">right_tagged =</span> right,</span>
+<span id="cb31-20"><a href="#cb31-20"></a>  <span class="at">right        =</span> <span class="fu">re_replace_all</span>(right_tagged, </span>
+<span id="cb31-21"><a href="#cb31-21"></a>                                r<span class="st">"--[(?xi) ([^\s/]+) / [^\s]+ ]--"</span>, </span>
+<span id="cb31-22"><a href="#cb31-22"></a>                                <span class="st">"</span><span class="sc">\\</span><span class="st">1"</span>),</span>
+<span id="cb31-23"><a href="#cb31-23"></a>  <span class="at">size_possessed =</span> <span class="fu">log</span>(<span class="fu">nchar</span>(possessed)),</span>
+<span id="cb31-24"><a href="#cb31-24"></a>  <span class="at">size_possessor =</span> <span class="fu">log</span>(<span class="fu">nchar</span>(possessor)),</span>
+<span id="cb31-25"><a href="#cb31-25"></a>  <span class="at">size_diff      =</span> size_possessor <span class="sc">-</span> size_possessed</span>
+<span id="cb31-26"><a href="#cb31-26"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li><p>Lines 2-4 remove the part-of-speech tags from the text in the <code>possessed</code> column, overwriting. They do so by replacing all matches of the regular expression in line 3 as found in the text in line 2, i.e.&nbsp;the content of the <code>possessed</code> column, with the match of the first capturing group. The regular expression captures sequences of characters that are neither whitespace nor slashes, followed by a slash and then by another sequence of non whitespace characters, e.g.&nbsp;<em>the/at</em> and <em>example/nn</em>. The capturing group surrounds the first sequence before the slash, and therefore the result would replace <em>the/at example/nn</em> with <em>the example</em>.</p></li>
+<li><p>Line 5 converts the new contents of <code>possessed</code> to lowercase, which is useful if you want to use the column as a random effect in regression analysis.</p></li>
+<li><p>Lines 6-8 do the same as lines 2-4 but for the <code>possessor</code> column, and as such also exclude the optional <em>’s</em> sequence by leaving it out of the capturing group. Line 9 does the same as line 5, for the new contents of <code>possessor</code>. </p></li>
+<li><p>Line 9 creates a column <code>comp</code> that reads the column <code>source</code>, where the names of the files are stored, and extracts the third to last character by using <code>re_retrieve_first()</code> with the pattern <code>.(.)..$</code> and specifying that we want the first captured group. This character corresponds to the genre assignment of the file and could be used in modelling.</p></li>
+<li><p>Lines 11-13, 15-17 and 19-21 do the same as lines 2-4 for the columns <code>left</code>, <code>match</code> and <code>right</code> respectively. However, since we might want to keep the original, tagged text as well, lines 10, 14 and 18 stored the original values of these columns in new columns, <code>left_tagged</code>, <code>match_tagged</code> and <code>right_tagged</code> respectively.</p></li>
+<li><p>Lines 22 and 23 count the number of characters in each row of <code>possessed</code> and <code>possessor</code> with <code>nchar()</code> and then take their logarithm with <code>log()</code>. For example, for a word such as <em>example</em>, <code>nchar("example")</code> returns 7, and <code>log(nchar("example"))</code> returns 1.946; for <em>the example</em>, <code>nchar("the example")</code> returns 11, and <code>log(nchar("the example"))</code> returns 2.398. You can retrieve the original length by applying <code>exp()</code>: <code>exp(log(nchar("the example"))</code> returns 11. Line 24 computes the difference between the logged size of the possessor and that of the possessed, giving us positive numbers when the possessor is longer and negative otherwise.</p></li>
+</ul>
+<div class="no-row-height column-margin column-container"><span class="aside">In this example, <code>re_replace_all()</code> and <code>re_retrieve_first()</code> seem to be doing the same thing: they match a regular expression to a piece of text and extract the contents of the first captured group. The difference is that <code>re_replace_all()</code> will replace <em>all</em> matches in a piece of text with the contents of the replacement string — if there are multiple matches, because there are multiple words, it will replace each group of <code>wordform/pos</code> with <code>wordform</code>. <code>re_retrieve_first()</code>, instead, will extract the first match of the pattern in the text, regardless of whether there are capturing groups; specifying <code>requested_group = 1</code> narrows down the return value to the match of the first capturing group in the match.</span></div><div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+EXTRA: Writing your own functions
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The code above has some repetition: the <code>re_replace_all()</code> calls in lines 2, 6, 11, 15 and 19 all have the same structure. The first call and the three last calls only differ in the first argument (<code>possessed</code>, <code>left_tagged</code>, <code>match_tagged</code> or <code>right_tagged</code>), whereas the second call has a different first argument and a different pattern.</p>
+<p>It is often useful —as long as it doesn’t hamper interpretation— to avoid repetition in coding. First, the more you type, the more chances you have of mistyping something. Second, if you want to “always do the same thing” but then you change your mind on what that thing should be, e.g.&nbsp;you want to refine the regex, it would be beter to only have to change it once, and not every time you do it.</p>
+<p>This can be achieved with variables and functions. For example, instead of typing or copy-pasting the regular expressions multiple times, you could write the following variable and then just call <code>pattern</code> instead of the regex in lines 3, 12, 16 and 20 We have done this above.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>pattern <span class="ot">&lt;-</span> r<span class="st">"--[(?xi) ([^\s/]+) / [^\s]+ ]--"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>But, since the whole function call is pretty much the same, you could create your own function with one argument: the variable you want to change. After the code below, you could replace the full call from lines 2 to 4 with a simple <code>remove_tags(possessed)</code> in line 2, and the same, changing the name of the column, with the last three calls of <code>re_replace_all()</code>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>remove_tags <span class="ot">&lt;-</span> <span class="cf">function</span>(column) {</span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">re_replace_all</span>(column,</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>                 r<span class="st">"--[(?xi) ([^\s/]+) / [^\s]+ ]--"</span>, </span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>                 <span class="st">"</span><span class="sc">\\</span><span class="st">1"</span>)</span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>However, this doesn’t work with the second call of <code>re_replace_all()</code>, since it uses a different pattern. You could either keep it that way, i.e.&nbsp;not replacing it with <code>remove_tags()</code>, or add an optional argument for the regular expression. The default value could be the most common regular expression, and then when you call <code>remove_tags()</code> on <code>possessor()</code> you could provide the appropriate regex.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>remove_tags <span class="ot">&lt;-</span> <span class="cf">function</span>(</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>    column,</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">regex =</span> r<span class="st">"--[(?xi) ([^\s/]+) / [^\s]+ ]--"</span></span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>    ) {</span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">re_replace_all</span>(column,</span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>                 regex, </span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>                 <span class="st">"</span><span class="sc">\\</span><span class="st">1"</span>)</span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>With this definition, the code from above would look as follows:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1"></a>cd <span class="ot">&lt;-</span> <span class="fu">mutate</span>(cd,</span>
+<span id="cb35-2"><a href="#cb35-2"></a>  <span class="at">possessed =</span> <span class="fu">remove_tags</span>(possessed) <span class="sc">%&gt;%</span> <span class="fu">tolower</span>(),</span>
+<span id="cb35-3"><a href="#cb35-3"></a>  <span class="at">possessor =</span> <span class="fu">remove_tags</span>(possessor, </span>
+<span id="cb35-4"><a href="#cb35-4"></a>                          r<span class="st">"--[(?xi) ([^\s/]+?) ('s)? / [^\s]+ ]--"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb35-5"><a href="#cb35-5"></a>              <span class="fu">tolower</span>(),</span>
+<span id="cb35-6"><a href="#cb35-6"></a>  <span class="at">comp =</span> <span class="fu">re_retrieve_first</span>(source, <span class="st">".(.)..$"</span>, <span class="at">requested_group =</span> <span class="dv">1</span>),</span>
+<span id="cb35-7"><a href="#cb35-7"></a>  <span class="at">left_tagged =</span> left,</span>
+<span id="cb35-8"><a href="#cb35-8"></a>  <span class="at">left        =</span> <span class="fu">remove_tags</span>(left_tagged),</span>
+<span id="cb35-9"><a href="#cb35-9"></a>  <span class="at">match_tagged =</span> match,</span>
+<span id="cb35-10"><a href="#cb35-10"></a>  <span class="at">match        =</span> <span class="fu">remove_tags</span>(match_tagged),</span>
+<span id="cb35-11"><a href="#cb35-11"></a>  <span class="at">right_tagged =</span> right,</span>
+<span id="cb35-12"><a href="#cb35-12"></a>  <span class="at">right        =</span> <span class="fu">remove_tags</span>(right_tagged),</span>
+<span id="cb35-13"><a href="#cb35-13"></a>  <span class="at">size_possessed =</span> <span class="fu">log</span>(<span class="fu">nchar</span>(possessed)),</span>
+<span id="cb35-14"><a href="#cb35-14"></a>  <span class="at">size_possessor =</span> <span class="fu">log</span>(<span class="fu">nchar</span>(possessor)),</span>
+<span id="cb35-15"><a href="#cb35-15"></a>  <span class="at">size_diff      =</span> size_possessor <span class="sc">-</span> size_possessed</span>
+<span id="cb35-16"><a href="#cb35-16"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>In fact, you could make the code even shorter by replacing these new lines 2, 8, 10 and 12 with a single call to across: <code>across(c(possessed, left, match, right), remove_tags)</code>. Remember to first create the <code>_tagged</code> columns, or you will lose the tagged versions of the text.</p>
+</div>
+</div>
+</div>
+<section id="citing-examples-in-markdown" class="level2">
+<h2 class="anchored" data-anchor-id="citing-examples-in-markdown">Citing examples in markdown</h2>
+<p>With this new version of the concordance, which you can explore with <code>print_kwic(cd)</code>, <code>View(cd)</code> or <code>explore(cd)</code>, you can also extract full examples. If you use R Markdown or Quarto to write a report, rather than copy-pasting an example to describe, you can join the new <code>left</code>, <code>match</code> and <code>right</code> columns and call a specific example to illustrate.</p>
+<p>In the following code:</p>
+<ul>
+<li><p>The calls to <code>unite()</code> create a column with the name of the first argument (<code>conc_line</code> or <code>id</code>) by joining the rest of the columns mentioned (<code>left</code>, <code>match</code> and <code>right</code>, or <code>source</code> and <code>id</code>). By default they are separated with an underscore, but the <code>sep</code> argument allows you to use a different term.</p></li>
+<li><p>The call to <code>select()</code> extracts only the <code>id</code> and <code>conc_line</code> columns. Àfterwards, <code>deframe()</code> turns the two-column tibble into a named character vector: the values are the contexts and their names, the ids.</p></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>examples <span class="ot">&lt;-</span> cd <span class="sc">%&gt;%</span> </span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unite</span>(conc_line, left, match, right, <span class="at">sep =</span> <span class="st">" "</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unite</span>(id, source, id) <span class="sc">%&gt;%</span> </span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(id, conc_line) <span class="sc">%&gt;%</span></span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">deframe</span>()</span>
+<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-8"><a href="#cb36-8" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(examples)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                                                                                                                                                                                                                                                                                          _corpora/brown/ca01_1 
+                         "ns million worth of highway reconstruction bonds . The bond issue will go to the state courts for a friendly test suit to test  the validity of the act  , and then the sales will begin and contracts let for repair work on some of Georgia's most heavily traveled highways . A H" 
+                                                                                                                                                                                                                                                                                          _corpora/brown/ca02_2 
+             "servative '' his estimate that it would produce 17 million dollars to help erase an anticipated deficit of 63 million dollars at  the end of the current fiscal year  next Aug. 31 . He told the committee the measure would merely provide means of enforcing the escheat law which has been on" 
+                                                                                                                                                                                                                                                                                          _corpora/brown/ca02_3 
+"over also would require junior-senior high teachers to have at least 24 semester hours credit in the subject they are teaching .  The remainder of the 4-year college requirement  would be in general subjects . `` A person with a master's degree in physics , chemistry , math or English , yet who has n" 
+                                                                                                                                                                                                                                                                                          _corpora/brown/ca02_4 
+                            "/np Clark of Hays , Kan. as the school's new president . Dr. Clark will succeed Dr. J. R. McLemore , who will retire at  the close of the present school term  . Dr. Clark holds an earned Doctor of Education degree from the University of Oklahoma . He also received a Master" 
+                                                                                                                                                                                                                                                                                          _corpora/brown/ca03_5 
+                                "d jury room '' . He said this constituted a `` very serious misuse '' of the Criminal court processes . `` Actually ,  the abuse of the process  may have constituted a contempt of the Criminal court of Cook county , altho vindication of the authority of that court is n" 
+                                                                                                                                                                                                                                                                                          _corpora/brown/ca03_6 
+                            "at 21st and 28th precincts of the 29th ward , the 18th precinct of the 4th ward , and the 9th precinct of the 23d ward .  The case of the judges  in the 58th precinct of the 23d ward had been heard previously and taken under advisement by Karns . Two other cases also were/" </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>examples[[<span class="st">"_corpora/brown/ca01_1"</span>]]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "ns million worth of highway reconstruction bonds . The bond issue will go to the state courts for a friendly test suit to test  the validity of the act  , and then the sales will begin and contracts let for repair work on some of Georgia's most heavily traveled highways . A H"</code></pre>
+</div>
+</div>
+<p>Then you could write, in an empty line of your report, a numbered example with R inline code: <code>(@label) `r examples[["_corpora/brown/ca01_1"]]`</code>. Then you can easily cite the example with <code>(@label)</code>, which produces (1).</p>
+<ol class="example" type="1">
+<li>ns million worth of highway reconstruction bonds . The bond issue will go to the state courts for a friendly test suit to test the validity of the act , and then the sales will begin and contracts let for repair work on some of Georgia’s most heavily traveled highways . A H</li>
+</ol>
+<p>You might also want to, first, modify the <code>match</code> column, for example to add underscores or asterisks around it so that markdown turns them into italics or boldface.</p>
+</section>
+<section id="save" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="save">Save your progress and be free!</h2>
+<div class="page-columns page-full"><p>We are DONE. Congratulations! We can now store the output in a tab-separated file with <code>write_conc()</code>. Then you can open the file with any spreadsheet software for manual cleaning and/or annotation and then read it again from R with <code>mclm::read_conc(filename)</code>.</p><div class="no-row-height column-margin column-container"><span class="aside">Spreadsheet programs may call this format a “csv”, comma-separated values file. What matters is that it’s a plain text file. A proper csv file will have commas to separate the different columns, or semicolons in some places where commas are used to indicate decimals. However, this is meant for numbers: texts, such as concordances, will inevitably have commas and probably also semicolons. Therefore, we use tabs to separate the columns instead.</span></div></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="fu">write_conc</span>(cd,</span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>           <span class="fu">file.path</span>(data_folder, <span class="st">"genitive-alternation.tab"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

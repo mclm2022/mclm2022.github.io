@@ -4,6 +4,7 @@ format:
   revealjs:
     slide-number: true
     show-slide-number: all
+    self-contained: true
 editor: visual
 execute:
   echo: true
@@ -16,6 +17,8 @@ execute:
 
 library(tidyverse)
 ```
+
+Is this html according to rmarkdown? `r knitr::is_html_output()`
 
 |                                                      | Linear regression            | Logistic regression                                                      |
 |----------------------|-------------------------|-------------------------|

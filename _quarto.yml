@@ -8,9 +8,14 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
-      - base.qmd
-      - href: slides.qmd
-        text: Lessons
+      - text: Studies
+        menu: 
+          - base.qmd
+          - genitive-alternation-retrieval.qmd
+          - ca-trump-clinton.qmd
+      - text: Slides
+        menu: 
+          - slides.qmd
 
 format:
   html:

@@ -1,0 +1,596 @@
+---
+title: "Genitive Alternation I: Retrieval"
+editor: visual
+---
+
+This is the first part of a variation study focusing on the genitive alternation in English, using the Brown corpus. This part focuses on retrieving observations of the alternation, whereas the second part will illustrate the analysis with conditional inference trees and mixed-effects logistic regression. One of the reasons to split the analysis in two is that, more often than not, between retrieval and analysis there is an additional step of manual cleaning or annotation of the dataset.
+
+```{r}
+#| include: false
+#| label: setup
+corpus_folder <- "_corpora"
+data_folder <- "assets/genitive-alternation"
+```
+
+# Setup
+
+For this study we need to activate the packages `{tidyverse}` and `{mclm}`. We will also use `kableExtra()` to print some tables.
+
+```{r}
+#| message: false
+#| warning: false
+#| label: packages
+library(tidyverse)
+library(mclm)
+library(kableExtra)
+```
+
+We'll collect the files from the Brown corpus. To replicate this code, adjust the path to wherever you stored your copy of the corpus. In this case, we also add a `keep_re()` call to capture the pattern shared by all corpus files and not by metadata files such as "CONTENTS" and "README".[For more information on the Brown corpus, such as the components and tagset, see the Wikipedia documentation: https://en.wikipedia.org/wiki/Brown_Corpus.]{.aside}
+
+```{r}
+#| label: read
+brown_fnames <- get_fnames(file.path(corpus_folder, "brown")) %>% 
+  keep_re("/c[a-z][0-9]{2}")
+print(brown_fnames, n = 10)
+```
+
+## POS tags
+
+The text in this corpus looks as follows, with word forms followed by a part-of-speech tag, with a slash in between.
+
+```{r}
+#| echo: false
+#| label: example
+file.path(corpus_folder, "brown") %>% 
+  dir(full.names = TRUE) %>% 
+  .[[1]] %>% 
+  readLines() %>% 
+  .[[3]] %>%
+  str_wrap() %>% 
+  cat()
+```
+
+Some of the POS tags of Brown are of particular importance for this case study.
+
+at
+
+:   article, e.g. *the/at*
+
+in
+
+:   preposition, e.g. *of/in*
+
+jj
+
+:   adjective, e.g. *recent/jj*
+
+nn
+
+:   common noun, e.g. *year/nn*
+
+np
+
+:   proper noun, e.g. *Atlanta/np*
+
+-tl
+
+:   (suffix to a POS tag) title or part of title, e.g. Sen./nn-tl George/np Parkhouse/np
+
+\$
+
+:   (suffix to a POS tag) genitive marker (since a token ending in *'s* will be treated as one token), e.g. *the/at major's/nn\$ occupation/nn, Atlanta's/np\$ recent/jj primary/nn*
+
+# Data retrieval
+
+Our goal is to obtain the attestations of the genitive alternation in the Brown corpus, e.g. examples of *the student's idea* and *the idea of the student*. In this alternation, the main elements we are interested in are called "Possessor" and "Possessed", because the prototypical situation of the genitive is that of possession. However, the terminology can be misleading, because this is not the only meaning of the genitive constructions. For example, in *The car's owner*, *car* takes the role of Possessor and *owner* that of Possessed.
+
+An alternation study aims to describe the aspects of language use that favor or disfavor one variant of the alternation against the other. This translates to studies where the alternation itself, e.g. where an *s* form or an *of* form is used, becomes the response variable, and different characteristics of the context become predictors or regressors. In this study, we'll capture the following predictors:
+
+possessor_type
+
+:    Whether the role of the Possessor is filled by a common noun or a proper noun
+
+possessor_size
+
+:   The size of the Possessor slot, in characters
+
+possessed_size
+
+:   The size of the Possessed slot, in characters
+
+size_difference
+
+:   The difference between the size of the possessor and that of the possessed
+
+The reason for taking the size of the constituents, i.e. Possessor and Possessed, is the theory within linguistics that speakers try to push longer constituents towards the end. In the genitive alternation, in which each variant has a different word order, this becomes relevant. Concretely, in the *s* variant we have the Possessor before the Possessed (*The student's idea*), whereas in the *of* variant we have the Possessed before the Possessor (*The idea of the student*). If we indeed tend to push longer constituents towards the end, a long Possessor such as *the keen and insightful student* would favor the *of variant* (*The idea of the keen and insightful student*) rather than the *s* variant (*The keen and insightful student's idea*).
+
+In practice, we will also transform the sizes to their logarithm, in order to lessen the impact of extremely long constituents.
+
+The strategy of data retrieval consists of four queries with non-overlapping results, aimed at collecting four different patterns:
+
+-   of-genitive with common nouns
+
+-   of-genitive with proper nouns
+
+-   s-genitive with common nouns
+
+-   s-genitive with proper nouns
+
+For each of these queries, we will:
+
+1.  Collect the observations with `mclm::conc()`, generating a concordance.
+2.  Add columns with the values of `gen_type` (our response variable) and `possessor_type`, since they are the same for all observations in that query.
+3.  Extract the `possessed` and `possessor` based on their position in the query. For that purpose, the regular expressions used to query the corpus include capturing groups surrounding each of the constituents.
+
+This will be achieved with the following lines of code:
+
+```{r}
+#| eval: false
+#| label: template
+cd <- brown_fnames %>% 
+  conc(pattern) %>%  # whatever regex pattern we have defined
+  mutate(
+    gen_type = "of",                                     # or "s"
+    possessor_type = "common",                           # or proper
+    possessed = re_replace_first(match, pattern, "\\1"), # or \\2 for s-genitive
+    possessor = re_replace_first(match, pattern, "\\2")  # or \\1 for of-genitive
+  )
+```
+
+4.  Once we have more than one concordance, we can merge them with `merge_conc()`.
+
+:::{.callout-caution collapse="true"}
+
+## Variable names
+
+The first concordance will be stored in a variable called `cd`, to which we will merge each new concordance, called `cd_new`. Alternatively, you could name each concordance differently and then merge them into a larger concordance `conc_merged`, for example.
+
+The first approach has the advantage of avoiding duplicate objects and using more memory than necessary. `cd_new` is constantly rewritten and, at the end, you only have one large concordance `cd` and a small `cd_new` concordance with the latest query. In contrast, with the second approach you end up with four small concordances and one large one, and their contents are duplicated.
+
+The second approach makes sense if you need to keep the datasets separate. When you're writing a long script or processing a dataset in different ways, overwriting a variable may bring confusion, as you forget the contents of the variable at any given time.
+
+Think about this in your own analyses.
+
+:::
+
+## Of-genitive with common nouns
+
+In the first query we will retrieve the attestations of the *of*-genitive with common nouns, e.g. *the idea of the student*.
+
+### Regular expression
+
+As a first step, we construct a regular expression that will match, in the non-tokenized corpus, the sequence we are interested in, and we'll store it in a variable `pattern`. Notice that we use a raw string (preceded with `r` and, within the quotation marks, surrounded by two hyphens and a square bracket) and that we flag the regular expression with an `x` and an `i`. The `x` allows us to insert spaces and line breaks for more readability (free-spacing mode), and the `i` makes the search case insensitive.
+
+```{r}
+#| label: pattern-1
+#| code-line-numbers: true
+pattern <- r"--[(?xi)
+          \b         the / at          \s+
+          ( (?:  [^\s/]+ / jj  [^\s]*  \s+ )*
+            (?:  [^\s/]+ / nn  [^\s]*  \s+ )*
+                 [^\s/]+ / nn  [^\s]*
+          )                            \s+
+                      of / in          \s+
+                     the / at          \s+
+          ( (?:  [^\s/]+ / jj  [^\s]*  \s+ )*
+            (?:  [^\s/]+ / nn  [^\s]*  \s+ )*
+                 [^\s/]+ / nn  [^\s$]* 
+          )                            \s    
+]--"
+```
+
+In line 2 we have a `\b`, followed by the string *the/at*, followed by `\s+`. This means that we want the literal string *the/at* preceded by a word boundary and followed by one or more whitespace characters. A word boundary at the beginning covers whitespace characters, punctuation marks and even the beginning of the text.
+
+Lines 3-5 and 9-11 are surrounded by parentheses, turning them into capturing groups. Later, when we want to extract the Possessed and Possessor from the match, we can ask for the text matching each of the capturing groups.
+
+Within the capturing groups we have non-capturing groups, marked by parentheses and `?:` at the beginning. If we didn't add `?:` at the beginning, they would be included in the numbering of the capturing groups and we wouldn't know for sure which number belongs to the full Possessed and Possessor groups. But we need the parentheses in order to apply the final asterisks (in lines 3, 4, 9 and 10) to the full match that they surround. What are they matching, exactly?
+
+The main capturing groups for Possessed and Possessor want to match a common noun optionally preceded by one or more adjectives and one or more nouns. The match for a common noun is `[^\s/]+ / nn [^\s]*`. `[\s/]` matches either a whitespace character or a slash; adding the `^` inverts the match to anything *but* a whitespace character or a slash; `+` requires one or more of them and `*`, zero or more. Therefore, this regex asks for a sequence of characters that are neither a whitespace character or a slash, (e.g. *idea* or *student*), followed by a slash and then *nn*, followed by an optional sequence of characters that are not whitespace characters, in case the part-of-speech tag ends with an `s` (for plurar) or  `-tl`. We use `jj` instead of `nn` when we ask for adjectives and we also reject `$` at the end of the Possessor slot, because we don't want an s-genitive to match.
+
+Within each non-capturing group, therefore, we match either an adjective or a noun, but we still get a match if neither of them occurs. They are also followed by `\s+` to capture the whitespace characters between the words.
+
+Finally, lines 7 and 9 match the core of the *of*-genitive construction, i.e. *of/in* and *the/at*, surrounded and separated by whitespace characters.
+
+In other words, we are asking for:
+
+- a word boundary,
+
+- followed by *the/at* and whitespace,
+
+- optionally followed by adjectives, each followed by whitespace, and then at least one common noun --- this is the first capturing group, the Possessed,
+
+- then whitespace, followed by *of/in*, whitespace, *the/at* and whitespace,
+
+- optionally followed by adjectives, each followed by whitespace, and then at least one common noun without the genitive tag --- this is the second capturing group, the Possessor.
+
+<!-- TODO talk about limitations -->
+
+<!-- The solution is far from perfect. Think about the following -->
+<!-- examples, how they are dealt with now, and how we would want to deal -->
+<!-- with them ideally: -->
+
+<!--  - the/at center/nn of/in the/at entire/jj two-and-a-half-mile/jj -->
+<!--    length/nn |of/in the/at project/nn -->
+<!--  - the/at growth/nn of/in the/at child's/nn$ conscience/nn -->
+<!--  - the/at boxy/jj look/nn of/in the/at '20's/nns and/cc '40's/nns -->
+<!--  - the/at confidence/nn of/in the/at Democratic/jj-tl rank/nn -->
+<!--    and/cc file/nn -->
+<!--  - the/at election/nn of/in the/at man/nn who/wps defeated/vbd him/ppo -->
+<!--  - the/at day-to-day/jj course/nn of/in the/at closest/jjt -->
+<!--    Presidential/jj-tl election/nn in/in American/jj history/nn -->
+
+<!-- Likewise, the solutions we will use for the other queries have their -->
+<!-- limitations. A more thorough case study would imply a step of -->
+<!-- manual correction of the results (perhaps in combination with -->
+<!-- further refinements of the queries). -->
+
+### Code
+
+We build the concordance with `conc()`, which takes a corpus or filenames, e.g. `brown_fnames`, and a regular expression to match, e.g. `pattern`. We can then explore the concordance with `print_kwic()`, `explore()` or `View()`. This really is advisable, in order to inspect how good the regex pattern is and see if you might want to refine it to capture patterns that were missed, or to exclude patterns that should be discarded.[With practice, you'll find the balance between refining the automatic process and performing manual cleaning. In some cases, it's quicker to fix the automatic procedure; in other cases, manual adjustments are easier and more reliable.]{.aside}
+
+```{r}
+#| label: cd-1
+cd <- brown_fnames %>%
+  conc(pattern)
+print_kwic(cd, n = 10)
+```
+
+Because `cd` is also a dataframe, of which `match` is a column, we can also inspect the elements in the `match` by extracting the corresponding columns.
+
+```{r}
+#| label: show-match
+head(cd$match)
+```
+
+Once we have a decent concordance, we can add variables that are characteristic of it. All of these observations will have the value *of* in the `gen_type` variable and the value *common* in the `possessor_type` variable. In addition, we can extract the constituents of the Possessed and Possessor slots with `mclm::re_replace_first()`. The first argument is a text to match, e.g. the elements in the `match` column; the second is a regular expression to match in the text, e.g. `pattern`, and the third is a replacement string. `"\\1"` and `"\\2"` correspond to the contents of the first and second capturing group in `pattern`, respectively.
+
+```{r}
+#| label: cd-variables
+cd <- mutate(cd,
+    gen_type = "of",
+    possessor_type = "common",
+    possessed = re_replace_first(match, pattern, "\\1"), 
+    possessor = re_replace_first(match, pattern, "\\2") 
+)
+cd %>% 
+  as_tibble() %>% 
+  select(match, possessed, possessor) %>% 
+  head() %>% 
+  kbl() %>% 
+  kable_paper()
+```
+
+## Of-genitive with proper nouns
+
+The second query also captures the *of*-genitive variant, but with proper nouns in the Possessor slot instead, e.g. *the rivers of Belgium*.
+
+### Regular expression
+
+The regular expression is very similar to the one for the first query, with a few differences:
+
+- It does not ask or even accept an article after *of/in*.
+
+- The noun(s), requested in lines 10 and 11 are proper nouns instead of common nouns.
+
+- Between the optional adjective(s) and the noun(s) of the second capturing group, i.e. the Possessor slot, we also accept optional items with any part-of-speech as long as they also end in *-nt* (line 9).
+
+::: {.callout-warning}
+#### Rewriting variables
+
+Notice that we are rewriting the variable `pattern` with the regex for the second query, so, if you suddenly wanted to rerun the first query, you would need to change `pattern` again.
+:::
+
+```{r}
+#| label: pattern-2
+#| code-line-numbers: true
+pattern <- r"--[(?xi)
+       \b         the / at                 \s+
+       ( (?:  [^\s/]+ / jj         [^\s]*  \s+ )*
+         (?:  [^\s/]+ / nn         [^\s]*  \s+ )*
+              [^\s/]+ / nn         [^\s]*
+         )                                 \s+
+                   of / in                 \s+
+       ( (?:  [^\s/]+ / jj         [^\s]*  \s+ )*
+         (?:  [^\s/]+ / [^\s]+ -tl [^\s$]* \s+ )*
+         (?:  [^\s/]+ / np         [^\s$]* \s+ )*
+              [^\s/]+ / np         [^\s$]* 
+       )                                   \s
+]--"
+```
+
+### Code
+
+The steps are the same as for the first query. We store the object in a different variable, `cd_new`, and we assign the value *proper* to `possessor_type` instead of *common*. Afterwards, we rewrite `cd` to be the combination of `cd` (the first query) and `cd_new` (the second query) using `merge_conc()`, an `{mclm}` wrapper for `bind_rows()`.
+
+```{r}
+#| label: conc-2
+cd_new <- brown_fnames %>%
+  conc(pattern) %>%
+  mutate(
+    gen_type = "of",
+    possessor_type = "proper",
+    possessed = re_replace_first(match, pattern, "\\1"), 
+    possessor = re_replace_first(match, pattern, "\\2")  
+  )
+print_kwic(cd_new, n = 10)
+
+cd <- merge_conc(cd, cd_new)
+nrow(cd)
+```
+
+## S-genitive with common nouns
+
+The third query retrieves attestations of the *s*-genitive variant with common nouns in the Possessor slot, e.g. *the student's idea*.
+
+### Regular expression
+
+The main regular expression symbols are the same used in the previous queries. The main differences with the first regular expression are twofold. First, we don't have word between the two capturing groups; instead, we only have whitespace, and the noun in line 5 must include *\$* somewhere in its part-of-speech tag.
+Second, the first capturing group now represents the Possessor, and the second capturing group, the possessed. This doesn't affect the writing of the regular expression itself, other than the requirement of *\$* at the end of the first component and that it should *not* be present in the second component. However, it will affect the code below when extracting the Possessed and Possessor variables.
+
+Again, here we overwrite the `pattern` variable with the new regular expression.
+
+```{r}
+#| label: pattern-3
+#| code-line-numbers: true
+pattern <- r"--[(?xi)
+      \b         the / at                  \s+
+      (  (?: [^\s/]+ / jj  [^\s]*          \s+ )*
+         (?: [^\s/]+ / nn  [^\s]*          \s+ )*
+             [^\s/]+ / nn  [^\s]* [$] [^\s]*
+       )                                   \s+
+      (  (?: [^\s/]+ / jj  [^\s]*          \s+ )*
+         (?: [^\s/]+ / nn  [^\s]*          \s+ )*
+             [^\s/]+ / nn  [^\s$]*            
+       )                                   \s 
+]--"
+```
+
+### Code
+
+Now that we have merged the first two queries into `cd`, we don't need `cd_new` anymore, so we can overwrite it with the output of the third query. Again, we call `conc()` with `brown_fnames` and the new `pattern` and assign the values that correspond to this concordance: *s* for `gen_type` and *common* for `possessor_type`, and the appropriate capturing groups of the pattern for `possessed` and `possessor`. Since the word order is inverted in relation to the *of*-genitive, now the first capturing group corresponds to the Possessor and the second one to the Possessed.
+
+Finally, we use `merge_conc()` to merge the output of the first two queries, `cd`, with the output of the third query, `cd_new`, overwriting `cd`.
+
+```{r}
+#| label: conc-3
+cd_new <- brown_fnames %>%
+  conc(pattern) %>%
+  mutate(
+    gen_type = "s",
+    possessor_type = "common",
+    possessed = re_replace_first(match, pattern, "\\2"), 
+    possessor = re_replace_first(match, pattern, "\\1")  
+  )
+print_kwic(cd_new, n = 10)
+cd_new %>% 
+  as_tibble() %>% 
+  select(match, possessed, possessor) %>% 
+  head() %>% 
+  kbl() %>% 
+  kable_paper()
+
+cd <- merge_conc(cd, cd_new)
+nrow(cd)
+```
+
+## S-genitive with proper nouns
+
+The fourth query captures the *s*-genitive variant with proper nouns in the Possessor slot, e.g. *Belgium's rivers*.
+
+### Regular expression
+
+Again we overwrite `pattern` with the regular expression for the last query, which is very similar to the third query. The difference, like the difference between the second and the first, is that it asks of proper nouns instead of common nouns in the Possessor slot (lines 4 and 5; but also it excludes articles at the beginning) and that it allows for any item with *-tl* in its part-of-speech tag preceding the Possessor noun (line 3).
+
+```{r}
+#| label: pattern-4
+#| code-line-numbers: true
+pattern <- r"--[(?xi)
+        \b  ( (?: [^\s/]+ / jj         [^\s]*          \s+ )*
+              (?: [^\s/]+ / [^\s]+ -tl [^\s]*          \s+ )*
+              (?: [^\s/]+ / np         [^\s$]*         \s+ )*
+                  [^\s/]+ / np         [^\s]* [$] [^\s]*        
+            )                                          \s+
+            ( (?: [^\s/]+ / jj         [^\s]*          \s+ )*
+              (?: [^\s/]+ / nn         [^\s]*          \s+ )*
+                  [^\s/]+ / nn         [^\s$]*           
+            )                                          \s
+]--"
+```
+
+### Code
+
+Again we overwrite the now useless `cd_new` with the output of the fourth query and assign the appropriate values for the common variables. The `possessor_type` is no *proper*, but the rest of the variables take the same values as in the previous query. At the end, we overwrite `cd` by merging the old `cd`, which contains the output of the first three queries, and `cd_new`.
+
+```{r}
+#| label: conc-4
+cd_new <- brown_fnames %>%
+  conc(pattern) %>%
+  mutate(
+    gen_type = "s",
+    possessor_type = "proper",
+    possessed = re_replace_first(match, pattern, "\\2"), 
+    possessor = re_replace_first(match, pattern, "\\1")  
+  )
+print_kwic(cd_new, n = 10)
+cd_new %>% 
+  as_tibble() %>% 
+  select(match, possessed, possessor) %>% 
+  head() %>% 
+  kbl() %>% 
+  kable_paper()
+
+cd <- merge_conc(cd, cd_new)
+nrow(cd)
+```
+
+# Automatic annotation
+
+We now have a concordance `cd` with `r nrow(cd)` observations matching four different patterns. We can get a quick overview of the size of each subset with `xtabs()`. Here we can see that the most common pattern is the *of* genitive with a common noun in the Possessor slot, but also that within the *s* variant the proper noun is more common.
+
+```{r}
+#| label: xtabs
+#| column: margin
+xtabs(~ gen_type +
+        possessor_type,
+      data = cd)
+```
+
+:::{.callout-tip}
+
+It's a good idea to practice quick overview functions, such as `xtabs()` and `table()` from Base R, as well as `count()` and `summarize()` from `{tidyverse}`. Running sophisticated analysis should not push us away from simpler forms of exploration of the data.
+
+:::
+
+Before saving our concordance, we can add some automatic annotation. The following `dplyr::mutate()` call adds or manipulates columns in different ways:
+
+```{r}
+#| label: conc-all
+#| code-line-numbers: true
+cd <- mutate(cd,
+  possessed = re_replace_all(possessed, 
+                             r"--[(?xi) ([^\s/]+) / [^\s]+ ]--", 
+                             "\\1") %>% 
+              tolower(),
+  possessor = re_replace_all(possessor, 
+                             r"--[(?xi) ([^\s/]+?) ('s)? / [^\s]+ ]--", 
+                             "\\1") %>% 
+              tolower(),
+  comp = re_retrieve_first(source, ".(.)..$", requested_group = 1),
+  left_tagged = left,
+  left        = re_replace_all(left_tagged, 
+                               r"--[(?xi) ([^\s/]+) / [^\s]+ ]--", 
+                               "\\1"),
+  match_tagged = match,
+  match        = re_replace_all(match_tagged, 
+                                r"--[(?xi) ([^\s/]+) / [^\s]+ ]--", 
+                                "\\1"),
+  right_tagged = right,
+  right        = re_replace_all(right_tagged, 
+                                r"--[(?xi) ([^\s/]+) / [^\s]+ ]--", 
+                                "\\1"),
+  size_possessed = log(nchar(possessed)),
+  size_possessor = log(nchar(possessor)),
+  size_diff      = size_possessor - size_possessed
+)
+```
+
+- Lines 2-4 remove the part-of-speech tags from the text in the `possessed` column, overwriting. They do so by replacing all matches of the regular expression in line 3 as found in the text in line 2, i.e. the content of the `possessed` column, with the match of the first capturing group. The regular expression captures sequences of characters that are neither whitespace nor slashes, followed by a slash and then by another sequence of non whitespace characters, e.g. *the/at* and *example/nn*. The capturing group surrounds the first sequence before the slash, and therefore the result would replace *the/at example/nn* with *the example*.
+
+- Line 5 converts the new contents of `possessed` to lowercase, which is useful if you want to use the column as a random effect in regression analysis.
+
+- Lines 6-8 do the same as lines 2-4 but for the `possessor` column, and as such also exclude the optional *'s* sequence by leaving it out of the capturing group. Line 9 does the same as line 5, for the new contents of `possessor`.
+[In this example, `re_replace_all()` and `re_retrieve_first()` seem to be doing the same thing: they match a regular expression to a piece of text and extract the contents of the first captured group. The difference is that `re_replace_all()` will replace *all* matches in a piece of text with the contents of the replacement string --- if there are multiple matches, because there are multiple words, it will replace each group of `wordform/pos` with `wordform`. `re_retrieve_first()`, instead, will extract the first match of the pattern in the text, regardless of whether there are capturing groups; specifying `requested_group = 1` narrows down the return value to the match of the first capturing group in the match.]{.aside}
+
+- Line 9 creates a column `comp` that reads the column `source`, where the names of the files are stored, and extracts the third to last character by using `re_retrieve_first()` with the pattern `.(.)..$` and specifying that we want the first captured group. This character corresponds to the genre assignment of the file and could be used in modelling.
+
+- Lines 11-13, 15-17 and 19-21 do the same as lines 2-4 for the columns `left`, `match` and `right` respectively. However, since we might want to keep the original, tagged text as well, lines 10, 14 and 18 stored the original values of these columns in new columns, `left_tagged`, `match_tagged` and `right_tagged` respectively.
+
+- Lines 22 and 23 count the number of characters in each row of `possessed` and `possessor` with `nchar()` and then take their logarithm with `log()`. For example, for a word such as *example*, `nchar("example")` returns `r nchar("example")`, and `log(nchar("example"))` returns `r round(log(nchar("example")), 3)`; for *the example*, `nchar("the example")` returns `r nchar("the example")`, and `log(nchar("the example"))` returns `r round(log(nchar("the example")), 3)`. You can retrieve the original length by applying `exp()`: `exp(log(nchar("the example"))` returns `r exp(log(nchar("the example")))`. Line 24 computes the difference between the logged size of the possessor and that of the possessed, giving us positive numbers when the possessor is longer and negative otherwise.
+
+:::{.callout-tip collapse="true"}
+### EXTRA: Writing your own functions
+
+The code above has some repetition: the `re_replace_all()` calls in lines 2, 6, 11, 15 and 19 all have the same structure. The first call and the three last calls only differ in the first argument (`possessed`, `left_tagged`, `match_tagged` or `right_tagged`), whereas the second call has a different first argument and a different pattern.
+
+It is often useful ---as long as it doesn't hamper interpretation--- to avoid repetition in coding. First, the more you type, the more chances you have of mistyping something. Second, if you want to "always do the same thing" but then you change your mind on what that thing should be, e.g. you want to refine the regex, it would be beter to only have to change it once, and not every time you do it.
+
+This can be achieved with variables and functions. For example, instead of typing or copy-pasting the regular expressions multiple times, you could write the following variable and then just call `pattern` instead of the regex in lines 3, 12, 16 and 20 We have done this above.
+
+```{r}
+#| label: pattern-mini-1
+pattern <- r"--[(?xi) ([^\s/]+) / [^\s]+ ]--"
+```
+
+But, since the whole function call is pretty much the same, you could create your own function with one argument: the variable you want to change. After the code below, you could replace the full call from lines 2 to 4 with a simple `remove_tags(possessed)` in line 2, and the same, changing the name of the column, with the last three calls of `re_replace_all()`.
+
+```{r}
+#| label: remove-tags
+remove_tags <- function(column) {
+  re_replace_all(column,
+                 r"--[(?xi) ([^\s/]+) / [^\s]+ ]--", 
+                 "\\1")
+}
+```
+
+However, this doesn't work with the second call of `re_replace_all()`, since it uses a different pattern. You could either keep it that way, i.e. not replacing it with `remove_tags()`, or add an optional argument for the regular expression. The default value could be the most common regular expression, and then when you call `remove_tags()` on `possessor()` you could provide the appropriate regex.
+
+```{r}
+#| label: remove-tags-2
+remove_tags <- function(
+    column,
+    regex = r"--[(?xi) ([^\s/]+) / [^\s]+ ]--"
+    ) {
+  re_replace_all(column,
+                 regex, 
+                 "\\1")
+}
+```
+
+With this definition, the code from above would look as follows:
+
+```{r}
+#| label: remove-tags-apply
+#| code-line-numbers: true
+cd <- mutate(cd,
+  possessed = remove_tags(possessed) %>% tolower(),
+  possessor = remove_tags(possessor, 
+                          r"--[(?xi) ([^\s/]+?) ('s)? / [^\s]+ ]--") %>% 
+              tolower(),
+  comp = re_retrieve_first(source, ".(.)..$", requested_group = 1),
+  left_tagged = left,
+  left        = remove_tags(left_tagged),
+  match_tagged = match,
+  match        = remove_tags(match_tagged),
+  right_tagged = right,
+  right        = remove_tags(right_tagged),
+  size_possessed = log(nchar(possessed)),
+  size_possessor = log(nchar(possessor)),
+  size_diff      = size_possessor - size_possessed
+)
+```
+
+In fact, you could make the code even shorter by replacing these new lines 2, 8, 10 and 12 with a single call to across: `across(c(possessed, left, match, right), remove_tags)`. Remember to first create the `_tagged` columns, or you will lose the tagged versions of the text.
+
+:::
+
+## Citing examples in markdown
+
+With this new version of the concordance, which you can explore with `print_kwic(cd)`, `View(cd)` or `explore(cd)`, you can also extract full examples. If you use R Markdown or Quarto to write a report, rather than copy-pasting an example to describe, you can join the new `left`, `match` and `right` columns and call a specific example to illustrate.
+
+In the following code:
+
+- The calls to `unite()` create a column with the name of the first argument (`conc_line` or `id`) by joining the rest of the columns mentioned (`left`, `match` and `right`, or `source` and `id`). By default they are separated with an underscore, but the `sep` argument allows you to use a different term.
+
+- The call to `select()` extracts only the `id` and `conc_line` columns. Àfterwards, `deframe()` turns the two-column tibble into a named character vector: the values are the contexts and their names, the ids.
+
+```{r}
+#| label: print-examples
+examples <- cd %>% 
+  as_tibble() %>% 
+  unite(conc_line, left, match, right, sep = " ") %>% 
+  unite(id, source, id) %>% 
+  select(id, conc_line) %>%
+  deframe()
+
+head(examples)
+
+examples[["_corpora/brown/ca01_1"]]
+```
+
+Then you could write, in an empty line of your report, a numbered example with R inline code: ``(@label) `r knitr::inline_expr('examples[["_corpora/brown/ca01_1"]]')` ``. Then you can easily cite the example with `(@label)`, which produces (@label).
+
+(@label) `r examples[["_corpora/brown/ca01_1"]]`
+
+You might also want to, first, modify the `match` column, for example to add underscores or asterisks around it so that markdown turns them into italics or boldface.
+
+## Save your progress and be free! {#save}
+
+We are DONE. Congratulations! We can now store the output in a tab-separated file with `write_conc()`. Then you can open the file with any spreadsheet software for manual cleaning and/or annotation and then read it again from R with `mclm::read_conc(filename)`.[Spreadsheet programs may call this format a "csv", comma-separated values file. What matters is that it's a plain text file. A proper csv file will have commas to separate the different columns, or semicolons in some places where commas are used to indicate decimals. However, this is meant for numbers: texts, such as concordances, will inevitably have commas and probably also semicolons. Therefore, we use tabs to separate the columns instead.]{.aside}
+
+```{r}
+#| label: write
+#| eval: false
+write_conc(cd,
+           file.path(data_folder, "genitive-alternation.tab"))
+```
+

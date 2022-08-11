@@ -1,0 +1,1930 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Methods in Corpus Linguistics - CA applied to the Trump-Clinton speeches</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Methods in Corpus Linguistics</span>
+  </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html">Home</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html">About</a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-studies" role="button" data-bs-toggle="dropdown" aria-expanded="false">Studies</a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-studies">    
+        <li>
+    <a class="dropdown-item" href="./base.html">
+ <span class="dropdown-text">Keywords and collocation analysis on the BASE corpus</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./genitive-alternation-retrieval.html">
+ <span class="dropdown-text">Genitive Alternation I: Retrieval</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./ca-trump-clinton.html">
+ <span class="dropdown-text">CA applied to the Trump-Clinton speeches</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-slides" role="button" data-bs-toggle="dropdown" aria-expanded="false">Slides</a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-slides">    
+        <li>
+    <a class="dropdown-item" href="./slides.html">
+ <span class="dropdown-text">Regression analysis</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#setup" id="toc-setup" class="nav-link active" data-scroll-target="#setup">Setup</a>
+  <ul class="collapse">
+  <li><a href="#activate-packages" id="toc-activate-packages" class="nav-link" data-scroll-target="#activate-packages">Activate packages</a></li>
+  <li><a href="#collecte-the-corpus-filenames" id="toc-collecte-the-corpus-filenames" class="nav-link" data-scroll-target="#collecte-the-corpus-filenames">Collecte the corpus filenames</a></li>
+  </ul></li>
+  <li><a href="#a-first-ca-based-on-function-words" id="toc-a-first-ca-based-on-function-words" class="nav-link" data-scroll-target="#a-first-ca-based-on-function-words">A first CA: based on function words</a>
+  <ul class="collapse">
+  <li><a href="#specifying-the-features" id="toc-specifying-the-features" class="nav-link" data-scroll-target="#specifying-the-features">Specifying the features</a></li>
+  <li><a href="#building-the-file-by-feature-matrix" id="toc-building-the-file-by-feature-matrix" class="nav-link" data-scroll-target="#building-the-file-by-feature-matrix">Building the file-by-feature matrix</a></li>
+  <li><a href="#running-correspondence-analysis" id="toc-running-correspondence-analysis" class="nav-link" data-scroll-target="#running-correspondence-analysis">Running correspondence analysis</a></li>
+  <li><a href="#biplot" id="toc-biplot" class="nav-link" data-scroll-target="#biplot">Biplot</a></li>
+  <li><a href="#typical-clinton-features-vs.-typical-trump-features" id="toc-typical-clinton-features-vs.-typical-trump-features" class="nav-link" data-scroll-target="#typical-clinton-features-vs.-typical-trump-features">Typical Clinton features vs.&nbsp;typical Trump features</a></li>
+  </ul></li>
+  <li><a href="#a-second-ca-based-on-high-frequency-content-words" id="toc-a-second-ca-based-on-high-frequency-content-words" class="nav-link" data-scroll-target="#a-second-ca-based-on-high-frequency-content-words">A second CA: based on high frequency content words</a>
+  <ul class="collapse">
+  <li><a href="#specifying-the-features-1" id="toc-specifying-the-features-1" class="nav-link" data-scroll-target="#specifying-the-features-1">Specifying the features</a></li>
+  <li><a href="#next-steps-and-plot" id="toc-next-steps-and-plot" class="nav-link" data-scroll-target="#next-steps-and-plot">Next steps and plot</a></li>
+  </ul></li>
+  <li><a href="#a-third-ca-based-on-high-frequency-bigrams" id="toc-a-third-ca-based-on-high-frequency-bigrams" class="nav-link" data-scroll-target="#a-third-ca-based-on-high-frequency-bigrams">A third CA: based on high frequency bigrams</a></li>
+  <li><a href="#a-fourth-ca-based-on-high-frequency-trigrams" id="toc-a-fourth-ca-based-on-high-frequency-trigrams" class="nav-link" data-scroll-target="#a-fourth-ca-based-on-high-frequency-trigrams">A fourth CA: based on high frequency trigrams</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">CA applied to the Trump-Clinton speeches</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<section id="setup" class="level1">
+<h1>Setup</h1>
+<p>This document illustrates how to use <em>correspondence analysis</em> (CA) to investigate the degree to which the Trump speeches and the Clinton speeches in the <code>clinton_trump</code> corpus are different from, or similar to, one another. The approach boils down to adopting a bird’s-eye perspective, looking at the broad picture we get if we aggregate over a wide range of <strong>features</strong> of the speeches. More specifically, we compare the frequencies of a wide range of features in the documents. A major advantage of the technique is that it allows us to see how similar or different the documents are when taking into account the full range of features, but at the same time to also see how similarly or differently the features are distributed over the documents, and, importantly, which features or groups of features are the ones that account most for the most important dissimilarities between the documents.</p>
+<section id="activate-packages" class="level2">
+<h2 class="anchored" data-anchor-id="activate-packages">Activate packages</h2>
+<p>We start by activating the R packages we will use. Note that activating <code>{mclm}</code> automatically also activates the package <code>{ca}</code> which it relies on. This is the reason why we do not have to explicitly activate <code>{ca}</code>, even though we will conduct <em>correspondence analysis</em> using the function <code>ca::ca()</code>. We’ll also load <code>{kableExtra}</code> to create some tables.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(mclm)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(kableExtra)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="collecte-the-corpus-filenames" class="level2">
+<h2 class="anchored" data-anchor-id="collecte-the-corpus-filenames">Collecte the corpus filenames</h2>
+<p>First, we collect the names of the corpus files and store them in an object called <code>fnames</code>. From this we also derive the short filenames (stored in <code>short_fnames</code>) and a character vector with, for each filename, the subcorpus (stored in <code>sub_corp</code>).</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># retrieve list of corpus file names</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>fnames <span class="ot">&lt;-</span> <span class="fu">get_fnames</span>(<span class="fu">file.path</span>(corpus_folder, <span class="st">"clinton_trump"</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Filename collection of length 118
+                                                  filename
+   -------------------------------------------------------
+ 1   _corpora/clinton_trump/Clinton/Clinton_2016-07-28.txt
+ 2   _corpora/clinton_trump/Clinton/Clinton_2016-07-29.txt
+ 3   _corpora/clinton_trump/Clinton/Clinton_2016-08-01.txt
+ 4   _corpora/clinton_trump/Clinton/Clinton_2016-08-05.txt
+ 5   _corpora/clinton_trump/Clinton/Clinton_2016-08-10.txt
+ 6   _corpora/clinton_trump/Clinton/Clinton_2016-08-11.txt
+ 7   _corpora/clinton_trump/Clinton/Clinton_2016-08-15.txt
+ 8   _corpora/clinton_trump/Clinton/Clinton_2016-08-16.txt
+ 9   _corpora/clinton_trump/Clinton/Clinton_2016-08-17.txt
+10   _corpora/clinton_trump/Clinton/Clinton_2016-08-25.txt
+11   _corpora/clinton_trump/Clinton/Clinton_2016-08-31.txt
+12 _corpora/clinton_trump/Clinton/Clinton_2016-09-05-A.txt
+13 _corpora/clinton_trump/Clinton/Clinton_2016-09-05-B.txt
+14   _corpora/clinton_trump/Clinton/Clinton_2016-09-06.txt
+15 _corpora/clinton_trump/Clinton/Clinton_2016-09-08-A.txt
+16 _corpora/clinton_trump/Clinton/Clinton_2016-09-08-B.txt
+17 _corpora/clinton_trump/Clinton/Clinton_2016-09-08-C.txt
+18   _corpora/clinton_trump/Clinton/Clinton_2016-09-29.txt
+19   _corpora/clinton_trump/Clinton/Clinton_2016-09-30.txt
+20   _corpora/clinton_trump/Clinton/Clinton_2016-10-03.txt
+...</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>short_fnames <span class="ot">&lt;-</span> <span class="fu">short_names</span>(fnames) <span class="sc">%&gt;%</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Filename collection of length 118
+               filename
+   --------------------
+ 1   Clinton_2016-07-28
+ 2   Clinton_2016-07-29
+ 3   Clinton_2016-08-01
+ 4   Clinton_2016-08-05
+ 5   Clinton_2016-08-10
+ 6   Clinton_2016-08-11
+ 7   Clinton_2016-08-15
+ 8   Clinton_2016-08-16
+ 9   Clinton_2016-08-17
+10   Clinton_2016-08-25
+11   Clinton_2016-08-31
+12 Clinton_2016-09-05-A
+13 Clinton_2016-09-05-B
+14   Clinton_2016-09-06
+15 Clinton_2016-09-08-A
+16 Clinton_2016-09-08-B
+17 Clinton_2016-09-08-C
+18   Clinton_2016-09-29
+19   Clinton_2016-09-30
+20   Clinton_2016-10-03
+...</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>sub_corp <span class="ot">&lt;-</span> fnames <span class="sc">%&gt;%</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">re_retrieve_first</span>(<span class="st">"/clinton_trump/([^/]+)"</span>, <span class="at">requested_group =</span> <span class="dv">1</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  [1] "Clinton" "Clinton" "Clinton" "Clinton" "Clinton" "Clinton" "Clinton"
+  [8] "Clinton" "Clinton" "Clinton" "Clinton" "Clinton" "Clinton" "Clinton"
+ [15] "Clinton" "Clinton" "Clinton" "Clinton" "Clinton" "Clinton" "Clinton"
+ [22] "Clinton" "Clinton" "Clinton" "Clinton" "Clinton" "Clinton" "Clinton"
+ [29] "Clinton" "Clinton" "Clinton" "Clinton" "Clinton" "Clinton" "Clinton"
+ [36] "Clinton" "Trump"   "Trump"   "Trump"   "Trump"   "Trump"   "Trump"  
+ [43] "Trump"   "Trump"   "Trump"   "Trump"   "Trump"   "Trump"   "Trump"  
+ [50] "Trump"   "Trump"   "Trump"   "Trump"   "Trump"   "Trump"   "Trump"  
+ [57] "Trump"   "Trump"   "Trump"   "Trump"   "Trump"   "Trump"   "Trump"  
+ [64] "Trump"   "Trump"   "Trump"   "Trump"   "Trump"   "Trump"   "Trump"  
+ [71] "Trump"   "Trump"   "Trump"   "Trump"   "Trump"   "Trump"   "Trump"  
+ [78] "Trump"   "Trump"   "Trump"   "Trump"   "Trump"   "Trump"   "Trump"  
+ [85] "Trump"   "Trump"   "Trump"   "Trump"   "Trump"   "Trump"   "Trump"  
+ [92] "Trump"   "Trump"   "Trump"   "Trump"   "Trump"   "Trump"   "Trump"  
+ [99] "Trump"   "Trump"   "Trump"   "Trump"   "Trump"   "Trump"   "Trump"  
+[106] "Trump"   "Trump"   "Trump"   "Trump"   "Trump"   "Trump"   "Trump"  
+[113] "Trump"   "Trump"   "Trump"   "Trump"   "Trump"   "Trump"  </code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="a-first-ca-based-on-function-words" class="level1 page-columns page-full">
+<h1>A first CA: based on function words</h1>
+<p>In a first approach, we use so-called <em>function words</em> as features (i.e.&nbsp;closed word classes such as pronouns, prepositions, auxiliaries, …, as opposed to so-called <em>content words</em> such as nouns, verbs, adjectives, …). In the field of <em>stylometry</em>, which is devoted to the quantitative study of linguistics style (e.g.&nbsp;in support of authorship attribution), it has long been established that function words are a powerful instrument in support of the identification of typical or even unique characteristics of the style of a specific author (or group of authors). Zooming in on function words steers the analysis away from differences related to topic/content and foregrounds differences related to style. Using function words by no means is the only way to do this (alternatives are (i) zooming in on longer n-grams, e.g.&nbsp;3-grams, 4-grams, or, (ii) if the information is available, looking at the frequencies of POS tags or POS tag n-grams, or, (iii) looking at derived features such as lexical density, word length, sentence length, etc.).</p>
+<section id="specifying-the-features" class="level2">
+<h2 class="anchored" data-anchor-id="specifying-the-features">Specifying the features</h2>
+<p>We start by reading the names of the features for this analysis from the file <em>function-words.txt</em> and storing then into an object called <code>features</code>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>features <span class="ot">&lt;-</span> <span class="fu">read_types</span>(<span class="st">"assets/ca-trump-clinton/function-words.txt"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Type collection of length 149
+      type
+   -------
+ 1   about
+ 2  across
+ 3 against
+ 4   along
+ 5  around
+ 6      at
+ 7  behind
+ 8  beside
+ 9 besides
+10      by
+11 despite
+12    down
+13  during
+14     for
+15    from
+16      in
+17  inside
+18    into
+19    near
+20      of
+...</code></pre>
+</div>
+</div>
+<p>The object <code>features</code> now contains about 149 function words.</p>
+</section>
+<section id="building-the-file-by-feature-matrix" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="building-the-file-by-feature-matrix">Building the file-by-feature matrix</h2>
+<p>Now, we are ready to build the matrix that we will apply the correspondence analysis to. Eventually, this matrix will be of the data type <em>matrix</em> with as its rows the files and as its columns the features, and in the cells the absolute frequencies of the features in the files.</p>
+<p>A convenient way in R to incrementally build that data set, file by file, is to first store the data in a data frame with as its rows the features and as its columns the files. This is convenient, because we will ‘grow’ the data set file by file, and adding new columns to a data frame is a straigthforward and (in most situations sufficiently) time- and memory-efficient procedure in R. So that’s how we will go about. Once we have all the data, we will, as a final step, turn the data frame into the data type <em>matrix</em> and then transpose the matrix in order to make the files the rows and the features the columns.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>d <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">row.names =</span> features)</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">seq_along</span>(fnames)) {</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  fname <span class="ot">&lt;-</span> fnames[[i]]             <span class="co"># identify i-th filename</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  short_fname <span class="ot">&lt;-</span> short_fnames[[i]] <span class="co"># identify i-th short filename</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>  flist <span class="ot">&lt;-</span> <span class="fu">freqlist</span>(fname)         <span class="co"># build frequency list for file</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>  flist <span class="ot">&lt;-</span> flist[features]         <span class="co"># filter that list to just features</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>  d[[short_fname]] <span class="ot">&lt;-</span> flist        <span class="co"># add column to d named after filename</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>d <span class="ot">&lt;-</span> d <span class="sc">%&gt;%</span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.matrix</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">t</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">drop_empty_rc</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>The top-left part of the resulting matrix (first ten rows, first ten columns) looks like this:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">kbl</span>(d[<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:right;"> about </th>
+   <th style="text-align:right;"> across </th>
+   <th style="text-align:right;"> against </th>
+   <th style="text-align:right;"> along </th>
+   <th style="text-align:right;"> around </th>
+   <th style="text-align:right;"> at </th>
+   <th style="text-align:right;"> behind </th>
+   <th style="text-align:right;"> besides </th>
+   <th style="text-align:right;"> by </th>
+   <th style="text-align:right;"> despite </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Clinton_2016-07-28 </td>
+   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 26 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 20 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Clinton_2016-07-29 </td>
+   <td style="text-align:right;"> 24 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Clinton_2016-08-01 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Clinton_2016-08-05 </td>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 30 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 17 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Clinton_2016-08-10 </td>
+   <td style="text-align:right;"> 19 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 9 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Clinton_2016-08-11 </td>
+   <td style="text-align:right;"> 18 </td>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 17 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Clinton_2016-08-15 </td>
+   <td style="text-align:right;"> 41 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 30 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 18 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Clinton_2016-08-16 </td>
+   <td style="text-align:right;"> 16 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Clinton_2016-08-17 </td>
+   <td style="text-align:right;"> 34 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 19 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Clinton_2016-08-25 </td>
+   <td style="text-align:right;"> 17 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 9 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div></div></section>
+<section id="running-correspondence-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="running-correspondence-analysis">Running correspondence analysis</h2>
+<p>Then we run the actual correspondence analysis and store the result in an object called <code>d_ca</code>. For reasons of brevity, we will skip the inspection of the summary report of the analysis, which we would normally do with <code>summary(d_ca)</code>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>d_ca <span class="ot">&lt;-</span> <span class="fu">ca</span>(d)</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="co"># summary(d_ca)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="biplot" class="level2">
+<h2 class="anchored" data-anchor-id="biplot">Biplot</h2>
+<p>Next, we build the biplot, with color indication the subcorpus of each file. First, we prepare the data needed for the plot:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>text_coord <span class="ot">&lt;-</span> <span class="fu">row_pcoord</span>(d_ca)                <span class="co"># coordinates of texts</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>word_coord <span class="ot">&lt;-</span> <span class="fu">col_pcoord</span>(d_ca)                <span class="co"># coordinates of function words</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>words_df <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">word =</span> <span class="fu">colnames</span>(d),</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> word_coord[, <span class="dv">1</span>],</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">y =</span> word_coord[, <span class="dv">2</span>])</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>texts_df <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">text =</span> short_fnames,</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">sub_corp =</span> sub_corp,</span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> text_coord[, <span class="dv">1</span>],</span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">y =</span> text_coord[, <span class="dv">2</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Then we build the plot:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(words_df, <span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> y)) <span class="sc">+</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> word), <span class="at">col =</span> <span class="st">"gray"</span>) <span class="sc">+</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> texts_df, <span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> y, <span class="at">col =</span> sub_corp))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="ca-trump-clinton_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="typical-clinton-features-vs.-typical-trump-features" class="level2">
+<h2 class="anchored" data-anchor-id="typical-clinton-features-vs.-typical-trump-features">Typical Clinton features vs.&nbsp;typical Trump features</h2>
+<p>Since the dimension that sets apart the Clinton speeches (top) most clearly from the Trump speeches (bottom) is the second dimension (y-axis), we may want to inspect the features that occupy extreme positions on the y-axis (and that hence contribute importantly to the y-axis).</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Top of y-axis</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>words_df <span class="sc">%&gt;%</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(y)) <span class="sc">%&gt;%</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="dv">20</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kbl</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_paper</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<table class=" lightable-paper" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> word </th>
+   <th style="text-align:right;"> x </th>
+   <th style="text-align:right;"> y </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> anyway </td>
+   <td style="text-align:right;"> -0.3155405 </td>
+   <td style="text-align:right;"> 0.4838693 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> little </td>
+   <td style="text-align:right;"> -0.3201301 </td>
+   <td style="text-align:right;"> 0.3855589 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> mine </td>
+   <td style="text-align:right;"> -0.3006109 </td>
+   <td style="text-align:right;"> 0.3704244 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> they </td>
+   <td style="text-align:right;"> -0.1100616 </td>
+   <td style="text-align:right;"> 0.3573612 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> over </td>
+   <td style="text-align:right;"> 0.1258590 </td>
+   <td style="text-align:right;"> 0.3230058 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> twice </td>
+   <td style="text-align:right;"> 0.2008103 </td>
+   <td style="text-align:right;"> 0.3066290 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> myself </td>
+   <td style="text-align:right;"> -0.2886836 </td>
+   <td style="text-align:right;"> 0.2990135 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> second </td>
+   <td style="text-align:right;"> 0.0895100 </td>
+   <td style="text-align:right;"> 0.2862035 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> anything </td>
+   <td style="text-align:right;"> -0.0647732 </td>
+   <td style="text-align:right;"> 0.2780591 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> though </td>
+   <td style="text-align:right;"> -0.1755457 </td>
+   <td style="text-align:right;"> 0.2731911 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> otherwise </td>
+   <td style="text-align:right;"> 0.0231480 </td>
+   <td style="text-align:right;"> 0.2654870 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> onto </td>
+   <td style="text-align:right;"> 0.8234335 </td>
+   <td style="text-align:right;"> 0.2650169 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> along </td>
+   <td style="text-align:right;"> -0.2338846 </td>
+   <td style="text-align:right;"> 0.2418416 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> never </td>
+   <td style="text-align:right;"> 0.0738386 </td>
+   <td style="text-align:right;"> 0.2399916 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> such </td>
+   <td style="text-align:right;"> -0.0547490 </td>
+   <td style="text-align:right;"> 0.2364184 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> them </td>
+   <td style="text-align:right;"> -0.0402881 </td>
+   <td style="text-align:right;"> 0.2264511 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> her </td>
+   <td style="text-align:right;"> 0.2439963 </td>
+   <td style="text-align:right;"> 0.2191622 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> two </td>
+   <td style="text-align:right;"> -0.1872550 </td>
+   <td style="text-align:right;"> 0.2072901 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> but </td>
+   <td style="text-align:right;"> -0.2232874 </td>
+   <td style="text-align:right;"> 0.2066175 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> ones </td>
+   <td style="text-align:right;"> 0.3295460 </td>
+   <td style="text-align:right;"> 0.2038937 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Bottom of y-axis</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>words_df <span class="sc">%&gt;%</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(y) <span class="sc">%&gt;%</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="dv">20</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kbl</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_paper</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<table class=" lightable-paper" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> word </th>
+   <th style="text-align:right;"> x </th>
+   <th style="text-align:right;"> y </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> someone </td>
+   <td style="text-align:right;"> -0.4735705 </td>
+   <td style="text-align:right;"> -1.4773000 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> himself </td>
+   <td style="text-align:right;"> -0.5698533 </td>
+   <td style="text-align:right;"> -1.3988530 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> toward </td>
+   <td style="text-align:right;"> -0.2463907 </td>
+   <td style="text-align:right;"> -0.9793770 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> each </td>
+   <td style="text-align:right;"> 0.1809908 </td>
+   <td style="text-align:right;"> -0.9297508 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> shall </td>
+   <td style="text-align:right;"> 0.5359764 </td>
+   <td style="text-align:right;"> -0.8667748 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> everyone </td>
+   <td style="text-align:right;"> -0.0728205 </td>
+   <td style="text-align:right;"> -0.8459891 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> ourselves </td>
+   <td style="text-align:right;"> 0.0495236 </td>
+   <td style="text-align:right;"> -0.7420725 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> ours </td>
+   <td style="text-align:right;"> 0.6504992 </td>
+   <td style="text-align:right;"> -0.7361496 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> his </td>
+   <td style="text-align:right;"> -0.4138206 </td>
+   <td style="text-align:right;"> -0.7257485 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> anyone </td>
+   <td style="text-align:right;"> 0.1498842 </td>
+   <td style="text-align:right;"> -0.6868008 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> often </td>
+   <td style="text-align:right;"> 0.1759930 </td>
+   <td style="text-align:right;"> -0.6558481 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> several </td>
+   <td style="text-align:right;"> 0.5116921 </td>
+   <td style="text-align:right;"> -0.6098689 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> own </td>
+   <td style="text-align:right;"> 0.1746523 </td>
+   <td style="text-align:right;"> -0.5274312 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> across </td>
+   <td style="text-align:right;"> 0.1301973 </td>
+   <td style="text-align:right;"> -0.5099514 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> both </td>
+   <td style="text-align:right;"> -0.0676852 </td>
+   <td style="text-align:right;"> -0.4914948 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> sometimes </td>
+   <td style="text-align:right;"> -0.0428908 </td>
+   <td style="text-align:right;"> -0.4700575 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> whose </td>
+   <td style="text-align:right;"> 0.5228517 </td>
+   <td style="text-align:right;"> -0.4698125 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> may </td>
+   <td style="text-align:right;"> -0.3249036 </td>
+   <td style="text-align:right;"> -0.4224336 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> should </td>
+   <td style="text-align:right;"> -0.0410605 </td>
+   <td style="text-align:right;"> -0.4095433 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> my </td>
+   <td style="text-align:right;"> -0.0467555 </td>
+   <td style="text-align:right;"> -0.4069630 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</section>
+</section>
+<section id="a-second-ca-based-on-high-frequency-content-words" class="level1">
+<h1>A second CA: based on high frequency content words</h1>
+<p>In a second approach, we look at <em>content words</em> instead. Obviously, then, topic will start playing an important role (although some stylistic differences may still be present in the patterns that emerge). So the nature of this analysis is very different, and it serves different purposes. Even so, it is a legitimate question whether the Clinton speeches and the Trump speeches turn out to be as clearly separated as in the previous analysis if we zoom in on the content words. Also, we can inspect which (groups of) content words will emerge as the ones that are most characteristic of the different areas in the map that will emerge.</p>
+<section id="specifying-the-features-1" class="level2">
+<h2 class="anchored" data-anchor-id="specifying-the-features-1">Specifying the features</h2>
+<p>Technically, the only difference, compared to the previous analysis, is how we define the features. This time, we build a complete frequency list of the whole corpus, we then remove a number of stop words (mostly function words, but also some undesired types such as <code>000</code> and <code>--</code>), and finally we treat the top 150 (i.e.&nbsp;the 150 highest frequency items) of the remaining items as our features. The number 150 is an arbitrary choice. We chose it so we could make a fair comparison to the performance of the analysis that used function words.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>stop_list <span class="ot">&lt;-</span> <span class="fu">read_types</span>(<span class="st">"assets/ca-trump-clinton/stop_list.txt"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Type collection of length 154
+      type
+   -------
+ 1     000
+ 2   about
+ 3  across
+ 4 against
+ 5   along
+ 6  around
+ 7      at
+ 8  behind
+ 9  beside
+10 besides
+11      by
+12 despite
+13    down
+14  during
+15     for
+16    from
+17      in
+18  inside
+19    into
+20    near
+...</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>features <span class="ot">&lt;-</span> <span class="fu">freqlist</span>(fnames) <span class="sc">%&gt;%</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">drop_types</span>(stop_list) <span class="sc">%&gt;%</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">keep_bool</span>(<span class="fu">ranks</span>(.) <span class="sc">&lt;=</span> <span class="dv">150</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_types</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Type collection of length 150
+        type
+   ---------
+ 1     again
+ 2       ago
+ 3      also
+ 4   america
+ 5  american
+ 6 americans
+ 7  applause
+ 8       are
+ 9  audience
+10      back
+11       bad
+12      been
+13     being
+14   believe
+15    better
+16       big
+17    booing
+18     bring
+19     build
+20  campaign
+...</code></pre>
+</div>
+</div>
+</section>
+<section id="next-steps-and-plot" class="level2">
+<h2 class="anchored" data-anchor-id="next-steps-and-plot">Next steps and plot</h2>
+<p>The next steps, all the way up to the creation of the plot, are completely analogous to the previous analysis.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># build file by feature frequency matrix</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>d <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">row.names =</span> features)</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">seq_along</span>(fnames)) {</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>  fname <span class="ot">&lt;-</span> fnames[[i]]</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>  short_fname <span class="ot">&lt;-</span> short_fnames[[i]]</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>  flist <span class="ot">&lt;-</span> <span class="fu">freqlist</span>(fname)</span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>  flist <span class="ot">&lt;-</span> flist[features]</span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>  d[[short_fname]] <span class="ot">&lt;-</span> flist</span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a>d <span class="ot">&lt;-</span> d <span class="sc">%&gt;%</span></span>
+<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.matrix</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">t</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb21-13"><a href="#cb21-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">drop_empty_rc</span>()</span>
+<span id="cb21-14"><a href="#cb21-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-15"><a href="#cb21-15" aria-hidden="true" tabindex="-1"></a><span class="co"># conduct CA</span></span>
+<span id="cb21-16"><a href="#cb21-16" aria-hidden="true" tabindex="-1"></a>d_ca <span class="ot">&lt;-</span> <span class="fu">ca</span>(d)</span>
+<span id="cb21-17"><a href="#cb21-17" aria-hidden="true" tabindex="-1"></a><span class="co"># summary(d_ca)</span></span>
+<span id="cb21-18"><a href="#cb21-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-19"><a href="#cb21-19" aria-hidden="true" tabindex="-1"></a><span class="co"># preparations for biplot</span></span>
+<span id="cb21-20"><a href="#cb21-20" aria-hidden="true" tabindex="-1"></a>text_coord <span class="ot">&lt;-</span> <span class="fu">row_pcoord</span>(d_ca)  <span class="co"># coordinates of texts</span></span>
+<span id="cb21-21"><a href="#cb21-21" aria-hidden="true" tabindex="-1"></a>word_coord <span class="ot">&lt;-</span> <span class="fu">col_pcoord</span>(d_ca)  <span class="co"># coordinates of function words</span></span>
+<span id="cb21-22"><a href="#cb21-22" aria-hidden="true" tabindex="-1"></a>words_df <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb21-23"><a href="#cb21-23" aria-hidden="true" tabindex="-1"></a>  <span class="at">word =</span> <span class="fu">colnames</span>(d),</span>
+<span id="cb21-24"><a href="#cb21-24" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> word_coord[, <span class="dv">1</span>],</span>
+<span id="cb21-25"><a href="#cb21-25" aria-hidden="true" tabindex="-1"></a>  <span class="at">y =</span> word_coord[, <span class="dv">2</span>])</span>
+<span id="cb21-26"><a href="#cb21-26" aria-hidden="true" tabindex="-1"></a>texts_df <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb21-27"><a href="#cb21-27" aria-hidden="true" tabindex="-1"></a>  <span class="at">text =</span> short_fnames,</span>
+<span id="cb21-28"><a href="#cb21-28" aria-hidden="true" tabindex="-1"></a>  <span class="at">sub_corp =</span> sub_corp,</span>
+<span id="cb21-29"><a href="#cb21-29" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> text_coord[, <span class="dv">1</span>],</span>
+<span id="cb21-30"><a href="#cb21-30" aria-hidden="true" tabindex="-1"></a>  <span class="at">y =</span> text_coord[, <span class="dv">2</span>])</span>
+<span id="cb21-31"><a href="#cb21-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-32"><a href="#cb21-32" aria-hidden="true" tabindex="-1"></a><span class="co"># biplot, color coding sub_corp</span></span>
+<span id="cb21-33"><a href="#cb21-33" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> words_df, <span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> y)) <span class="sc">+</span></span>
+<span id="cb21-34"><a href="#cb21-34" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> word), <span class="at">col =</span> <span class="st">"gray"</span>) <span class="sc">+</span></span>
+<span id="cb21-35"><a href="#cb21-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> texts_df, <span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> y, <span class="at">col =</span> sub_corp))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="ca-trump-clinton_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>This time it is the combination of the two dimensions that sets apart the two groups of speeches. This makes it a bit more difficult to select the items on the basis of their co-ordinates. We will do so in a minute, but first, we use a more visual approach. We will demonstrate how we can zoom in on a specific area, if we want to be able to better read the words in that area. This is demonstrated here for the region of x-values ranging from <code>0</code> to <code>0.5</code> and y-values ranging from <code>-0.5</code> to <code>0</code>:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> words_df, <span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> y)) <span class="sc">+</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> word), <span class="at">col =</span> <span class="st">"gray"</span>) <span class="sc">+</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> texts_df, <span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> y, <span class="at">col =</span> sub_corp)) <span class="sc">+</span></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_cartesian</span>(<span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">0.5</span>), <span class="at">ylim =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="fl">0.5</span>, <span class="dv">0</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="ca-trump-clinton_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Identifying the same items by co-ordinates can be done as follows:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>words_df <span class="sc">%&gt;%</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(x <span class="sc">&gt;=</span> <span class="dv">0</span> <span class="sc">&amp;</span> x <span class="sc">&lt;=</span> <span class="fl">0.5</span> <span class="sc">&amp;</span> y <span class="sc">&gt;=</span> <span class="sc">-</span><span class="fl">0.5</span> <span class="sc">&amp;</span> y <span class="sc">&lt;=</span> <span class="dv">0</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kbl</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_paper</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<table class=" lightable-paper" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> word </th>
+   <th style="text-align:right;"> x </th>
+   <th style="text-align:right;"> y </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> ago </td>
+   <td style="text-align:right;"> 0.3291397 </td>
+   <td style="text-align:right;"> -0.0295476 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> back </td>
+   <td style="text-align:right;"> 0.0388658 </td>
+   <td style="text-align:right;"> -0.1325115 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> bad </td>
+   <td style="text-align:right;"> 0.4574157 </td>
+   <td style="text-align:right;"> -0.1128620 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> been </td>
+   <td style="text-align:right;"> 0.0034804 </td>
+   <td style="text-align:right;"> -0.0325135 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> big </td>
+   <td style="text-align:right;"> 0.1562966 </td>
+   <td style="text-align:right;"> -0.0067499 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> build </td>
+   <td style="text-align:right;"> 0.0709564 </td>
+   <td style="text-align:right;"> -0.1794433 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> countries </td>
+   <td style="text-align:right;"> 0.1597364 </td>
+   <td style="text-align:right;"> -0.2265987 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> deal </td>
+   <td style="text-align:right;"> 0.2835922 </td>
+   <td style="text-align:right;"> -0.1705052 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> ever </td>
+   <td style="text-align:right;"> 0.0507152 </td>
+   <td style="text-align:right;"> -0.2509585 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> folks </td>
+   <td style="text-align:right;"> 0.3473194 </td>
+   <td style="text-align:right;"> -0.2326320 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> four </td>
+   <td style="text-align:right;"> 0.1758754 </td>
+   <td style="text-align:right;"> -0.2835233 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> going </td>
+   <td style="text-align:right;"> 0.2464146 </td>
+   <td style="text-align:right;"> -0.1284104 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> gonna </td>
+   <td style="text-align:right;"> 0.4044800 </td>
+   <td style="text-align:right;"> -0.1469801 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> great </td>
+   <td style="text-align:right;"> 0.1749042 </td>
+   <td style="text-align:right;"> -0.0561112 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> happen </td>
+   <td style="text-align:right;"> 0.2269616 </td>
+   <td style="text-align:right;"> -0.2435791 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> hillary </td>
+   <td style="text-align:right;"> 0.0022117 </td>
+   <td style="text-align:right;"> -0.2948394 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> isis </td>
+   <td style="text-align:right;"> 0.1313030 </td>
+   <td style="text-align:right;"> -0.0470277 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> it's </td>
+   <td style="text-align:right;"> 0.2133225 </td>
+   <td style="text-align:right;"> -0.0224581 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> love </td>
+   <td style="text-align:right;"> 0.1205771 </td>
+   <td style="text-align:right;"> -0.0031032 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> mexico </td>
+   <td style="text-align:right;"> 0.4442550 </td>
+   <td style="text-align:right;"> -0.2760828 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> military </td>
+   <td style="text-align:right;"> 0.0434435 </td>
+   <td style="text-align:right;"> -0.0979677 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> money </td>
+   <td style="text-align:right;"> 0.3234956 </td>
+   <td style="text-align:right;"> -0.0891778 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> obama </td>
+   <td style="text-align:right;"> 0.0894609 </td>
+   <td style="text-align:right;"> -0.0669849 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> percent </td>
+   <td style="text-align:right;"> 0.2057814 </td>
+   <td style="text-align:right;"> -0.4195578 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> remember </td>
+   <td style="text-align:right;"> 0.0668603 </td>
+   <td style="text-align:right;"> -0.2196482 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> seen </td>
+   <td style="text-align:right;"> 0.0875536 </td>
+   <td style="text-align:right;"> -0.0358512 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> she </td>
+   <td style="text-align:right;"> 0.2088097 </td>
+   <td style="text-align:right;"> -0.2392202 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> she's </td>
+   <td style="text-align:right;"> 0.3582893 </td>
+   <td style="text-align:right;"> -0.1401435 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> stop </td>
+   <td style="text-align:right;"> 0.1601854 </td>
+   <td style="text-align:right;"> -0.3351756 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> these </td>
+   <td style="text-align:right;"> 0.1570971 </td>
+   <td style="text-align:right;"> -0.0847603 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> they're </td>
+   <td style="text-align:right;"> 0.4958715 </td>
+   <td style="text-align:right;"> -0.0129272 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> trade </td>
+   <td style="text-align:right;"> 0.2751758 </td>
+   <td style="text-align:right;"> -0.3840834 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> trump </td>
+   <td style="text-align:right;"> 0.0742683 </td>
+   <td style="text-align:right;"> -0.0092921 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> very </td>
+   <td style="text-align:right;"> 0.1813124 </td>
+   <td style="text-align:right;"> -0.0718012 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> wall </td>
+   <td style="text-align:right;"> 0.2477776 </td>
+   <td style="text-align:right;"> -0.4118414 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> wants </td>
+   <td style="text-align:right;"> 0.1278280 </td>
+   <td style="text-align:right;"> -0.1563581 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> we'll </td>
+   <td style="text-align:right;"> 0.2001646 </td>
+   <td style="text-align:right;"> -0.2353112 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> we're </td>
+   <td style="text-align:right;"> 0.2492592 </td>
+   <td style="text-align:right;"> -0.1106971 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> what's </td>
+   <td style="text-align:right;"> 0.3391358 </td>
+   <td style="text-align:right;"> -0.0261773 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> win </td>
+   <td style="text-align:right;"> 0.2972385 </td>
+   <td style="text-align:right;"> -0.2643769 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> years </td>
+   <td style="text-align:right;"> 0.0907164 </td>
+   <td style="text-align:right;"> -0.1080381 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</section>
+</section>
+<section id="a-third-ca-based-on-high-frequency-bigrams" class="level1">
+<h1>A third CA: based on high frequency bigrams</h1>
+<p>In our third approach, we work with bigrams. Our features are the top 150 items from the frequency list of bigrams. Notice in the code snippet below how we use the argument <code>ngram_size = 2</code> to make sure that <code>freqlist()</code> builds a frequency list of bigrams. Notice also that prior to identifying the top 150, we remove all bigrams with either <code>applause</code>, <code>cheering</code>, or <code>--</code> in them. We do this, because in this corpus those items (almost always) are part of the annotation instead of being real tokens.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>features <span class="ot">&lt;-</span> fnames <span class="sc">%&gt;%</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">freqlist</span>(<span class="at">ngram_size =</span> <span class="dv">2</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">drop_re</span>(<span class="st">"(applause|cheering|--)"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">keep_bool</span>(<span class="fu">ranks</span>(.) <span class="sc">&lt;=</span> <span class="dv">150</span>) <span class="sc">%&gt;%</span> <span class="co"># or keep_pos(1:150)</span></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_types</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Type collection of length 150
+        type
+   ---------
+ 1   a_great
+ 2     a_lot
+ 3    a_very
+ 4  about_it
+ 5    all_of
+ 6   all_the
+ 7    and_he
+ 8     and_i
+ 9    and_it
+10  and_it's
+11  and_that
+12   and_the
+13  and_then
+14  and_they
+15    and_we
+16 and_we're
+17   and_you
+18 are_going
+19    at_the
+20      be_a
+...</code></pre>
+</div>
+</div>
+<p>The rest of the steps again is identical to what it was in the previous analysis, except that when we build frequency lists for each file, we must make sure that here too we build a frequency list of bigram (so again you see the argument <code>ngram_size = 2</code> popping up). Note that the step <code>drop_re("(applause|cheering|--)")</code> is not necessary here, because bigrams containing <code>applause</code>, <code>cheering</code>, or <code>--</code> are not part of the feature list anyway.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># build file by feature frequency matrix</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>d <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">row.names =</span> features)</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">seq_along</span>(fnames)) {</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>  fname <span class="ot">&lt;-</span> fnames[[i]]</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>  short_fname <span class="ot">&lt;-</span> short_fnames[[i]]</span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>  flist <span class="ot">&lt;-</span> <span class="fu">freqlist</span>(fname, <span class="at">ngram_size =</span> <span class="dv">2</span>)</span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>  flist <span class="ot">&lt;-</span> flist[features]</span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>  d[[short_fname]] <span class="ot">&lt;-</span> flist</span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a>d <span class="ot">&lt;-</span> d <span class="sc">%&gt;%</span></span>
+<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.matrix</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">t</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb26-13"><a href="#cb26-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">drop_empty_rc</span>()</span>
+<span id="cb26-14"><a href="#cb26-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-15"><a href="#cb26-15" aria-hidden="true" tabindex="-1"></a><span class="co"># conduct CA</span></span>
+<span id="cb26-16"><a href="#cb26-16" aria-hidden="true" tabindex="-1"></a>d_ca <span class="ot">&lt;-</span> <span class="fu">ca</span>(d)</span>
+<span id="cb26-17"><a href="#cb26-17" aria-hidden="true" tabindex="-1"></a><span class="co"># summary(d_ca)</span></span>
+<span id="cb26-18"><a href="#cb26-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-19"><a href="#cb26-19" aria-hidden="true" tabindex="-1"></a><span class="co"># preparations for biplot</span></span>
+<span id="cb26-20"><a href="#cb26-20" aria-hidden="true" tabindex="-1"></a>text_coord <span class="ot">&lt;-</span> <span class="fu">row_pcoord</span>(d_ca)  <span class="co"># coordinates of texts</span></span>
+<span id="cb26-21"><a href="#cb26-21" aria-hidden="true" tabindex="-1"></a>word_coord <span class="ot">&lt;-</span> <span class="fu">col_pcoord</span>(d_ca)  <span class="co"># coordinates of function words</span></span>
+<span id="cb26-22"><a href="#cb26-22" aria-hidden="true" tabindex="-1"></a>words_df <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb26-23"><a href="#cb26-23" aria-hidden="true" tabindex="-1"></a>  <span class="at">word =</span> <span class="fu">colnames</span>(d),</span>
+<span id="cb26-24"><a href="#cb26-24" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> word_coord[,<span class="dv">1</span>],</span>
+<span id="cb26-25"><a href="#cb26-25" aria-hidden="true" tabindex="-1"></a>  <span class="at">y =</span> word_coord[,<span class="dv">2</span>])</span>
+<span id="cb26-26"><a href="#cb26-26" aria-hidden="true" tabindex="-1"></a>texts_df <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb26-27"><a href="#cb26-27" aria-hidden="true" tabindex="-1"></a>  <span class="at">text =</span> short_fnames,</span>
+<span id="cb26-28"><a href="#cb26-28" aria-hidden="true" tabindex="-1"></a>  <span class="at">sub_corp =</span> sub_corp,</span>
+<span id="cb26-29"><a href="#cb26-29" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> text_coord[,<span class="dv">1</span>],</span>
+<span id="cb26-30"><a href="#cb26-30" aria-hidden="true" tabindex="-1"></a>  <span class="at">y =</span> text_coord[,<span class="dv">2</span>])</span>
+<span id="cb26-31"><a href="#cb26-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-32"><a href="#cb26-32" aria-hidden="true" tabindex="-1"></a><span class="co"># biplot, color coding sub_corp</span></span>
+<span id="cb26-33"><a href="#cb26-33" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> words_df, <span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> y)) <span class="sc">+</span></span>
+<span id="cb26-34"><a href="#cb26-34" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> word), <span class="at">col =</span> <span class="st">"gray"</span>) <span class="sc">+</span></span>
+<span id="cb26-35"><a href="#cb26-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> texts_df, <span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> y, <span class="at">col =</span> sub_corp))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="ca-trump-clinton_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Let’s inspect the most extreme items on the x-axis:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># So what are the 20 left-most words/items?</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>words_df <span class="sc">%&gt;%</span></span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(x) <span class="sc">%&gt;%</span></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="dv">20</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kbl</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_paper</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<table class=" lightable-paper" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> word </th>
+   <th style="text-align:right;"> x </th>
+   <th style="text-align:right;"> y </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> what_i </td>
+   <td style="text-align:right;"> -0.8633944 </td>
+   <td style="text-align:right;"> 0.1276805 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> i_want </td>
+   <td style="text-align:right;"> -0.7886084 </td>
+   <td style="text-align:right;"> 0.1443159 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> that_is </td>
+   <td style="text-align:right;"> -0.7007054 </td>
+   <td style="text-align:right;"> 0.3771214 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> you_can </td>
+   <td style="text-align:right;"> -0.6389464 </td>
+   <td style="text-align:right;"> 0.2878584 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> we_can </td>
+   <td style="text-align:right;"> -0.5819962 </td>
+   <td style="text-align:right;"> 0.3556833 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> donald_trump </td>
+   <td style="text-align:right;"> -0.5784849 </td>
+   <td style="text-align:right;"> 0.1438371 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> i_am </td>
+   <td style="text-align:right;"> -0.5776569 </td>
+   <td style="text-align:right;"> 0.5923678 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> got_to </td>
+   <td style="text-align:right;"> -0.5454734 </td>
+   <td style="text-align:right;"> -0.1374621 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> i_know </td>
+   <td style="text-align:right;"> -0.5293990 </td>
+   <td style="text-align:right;"> 0.0225182 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> to_work </td>
+   <td style="text-align:right;"> -0.5269444 </td>
+   <td style="text-align:right;"> 0.3186423 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> if_you </td>
+   <td style="text-align:right;"> -0.5026657 </td>
+   <td style="text-align:right;"> 0.0157725 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> we_need </td>
+   <td style="text-align:right;"> -0.4894685 </td>
+   <td style="text-align:right;"> 0.1162910 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> go_to </td>
+   <td style="text-align:right;"> -0.4645718 </td>
+   <td style="text-align:right;"> -0.0188610 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> all_the </td>
+   <td style="text-align:right;"> -0.4618047 </td>
+   <td style="text-align:right;"> 0.2396757 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> and_that </td>
+   <td style="text-align:right;"> -0.4491736 </td>
+   <td style="text-align:right;"> 0.2810332 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> that_we </td>
+   <td style="text-align:right;"> -0.4407226 </td>
+   <td style="text-align:right;"> 0.2482955 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> and_he </td>
+   <td style="text-align:right;"> -0.4208440 </td>
+   <td style="text-align:right;"> -0.2254588 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> i_was </td>
+   <td style="text-align:right;"> -0.4170452 </td>
+   <td style="text-align:right;"> -0.0981614 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> to_say </td>
+   <td style="text-align:right;"> -0.3915751 </td>
+   <td style="text-align:right;"> -0.0062662 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> and_i </td>
+   <td style="text-align:right;"> -0.3872131 </td>
+   <td style="text-align:right;"> -0.0457940 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># And the 20 right-most words/items?</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>words_df <span class="sc">%&gt;%</span></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(x)) <span class="sc">%&gt;%</span></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="dv">20</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kbl</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_paper</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<table class=" lightable-paper" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> word </th>
+   <th style="text-align:right;"> x </th>
+   <th style="text-align:right;"> y </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> trump_trump </td>
+   <td style="text-align:right;"> 0.8187234 </td>
+   <td style="text-align:right;"> 0.5183699 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> make_america </td>
+   <td style="text-align:right;"> 0.5400852 </td>
+   <td style="text-align:right;"> 0.2849046 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> believe_me </td>
+   <td style="text-align:right;"> 0.5121702 </td>
+   <td style="text-align:right;"> 0.0198096 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> to_happen </td>
+   <td style="text-align:right;"> 0.5011777 </td>
+   <td style="text-align:right;"> -0.1476437 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> we_will </td>
+   <td style="text-align:right;"> 0.4970674 </td>
+   <td style="text-align:right;"> 0.6588633 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> it's_going </td>
+   <td style="text-align:right;"> 0.4864332 </td>
+   <td style="text-align:right;"> -0.2339509 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> you're_going </td>
+   <td style="text-align:right;"> 0.4430175 </td>
+   <td style="text-align:right;"> -0.4902975 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> to_win </td>
+   <td style="text-align:right;"> 0.4074692 </td>
+   <td style="text-align:right;"> -0.2547543 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> are_going </td>
+   <td style="text-align:right;"> 0.3736414 </td>
+   <td style="text-align:right;"> 0.0263362 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> you_thank </td>
+   <td style="text-align:right;"> 0.3617676 </td>
+   <td style="text-align:right;"> 0.5438697 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> very_much </td>
+   <td style="text-align:right;"> 0.3517717 </td>
+   <td style="text-align:right;"> 0.3365334 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> care_of </td>
+   <td style="text-align:right;"> 0.3463811 </td>
+   <td style="text-align:right;"> -0.3014610 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> hillary_clinton </td>
+   <td style="text-align:right;"> 0.3437015 </td>
+   <td style="text-align:right;"> 0.2164817 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> not_going </td>
+   <td style="text-align:right;"> 0.3289399 </td>
+   <td style="text-align:right;"> -0.1410521 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> this_country </td>
+   <td style="text-align:right;"> 0.3070117 </td>
+   <td style="text-align:right;"> 0.2204555 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> will_be </td>
+   <td style="text-align:right;"> 0.3050483 </td>
+   <td style="text-align:right;"> 0.6344570 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> we_don't </td>
+   <td style="text-align:right;"> 0.3006749 </td>
+   <td style="text-align:right;"> -0.1571711 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> think_of </td>
+   <td style="text-align:right;"> 0.2827760 </td>
+   <td style="text-align:right;"> -0.2387252 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> these_are </td>
+   <td style="text-align:right;"> 0.2788452 </td>
+   <td style="text-align:right;"> 0.0445430 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> do_you </td>
+   <td style="text-align:right;"> 0.2682056 </td>
+   <td style="text-align:right;"> -0.1546786 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</section>
+<section id="a-fourth-ca-based-on-high-frequency-trigrams" class="level1">
+<h1>A fourth CA: based on high frequency trigrams</h1>
+<p>In our fourth approach, we work with trigrams. Our features are the top 150 items from the frequency list of trigrams. Notice the argument <code>ngram_size = 3</code>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>features <span class="ot">&lt;-</span> fnames <span class="sc">%&gt;%</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">freqlist</span>(<span class="at">ngram_size =</span> <span class="dv">3</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">drop_re</span>(<span class="st">"(applause|cheering|--)"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">keep_bool</span>(<span class="fu">ranks</span>(.) <span class="sc">&lt;=</span> <span class="dv">150</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_types</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Type collection of length 150
+                     type
+   ----------------------
+ 1            a_couple_of
+ 2            a_long_time
+ 3               a_lot_of
+ 4 a_trump_administration
+ 5             all_of_the
+ 6             all_of_you
+ 7           all_over_the
+ 8    america_great_again
+ 9             and_by_the
+10    and_hillary_clinton
+11             and_i_have
+12             and_i_said
+13            and_i_think
+14             and_i_want
+15             and_i_will
+16             and_we_are
+17            and_we_have
+18            and_we_will
+19        and_we're_going
+20           and_you_know
+...</code></pre>
+</div>
+</div>
+<p>The rest of the steps again is identical to what it was in the previous analysis, except for the <code>ngram_size = 3</code>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># build file by feature frequency matrix</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>d <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">row.names =</span> features)</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">seq_along</span>(fnames)) {</span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>  fname <span class="ot">&lt;-</span> fnames[[i]]</span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>  short_fname <span class="ot">&lt;-</span> short_fnames[[i]]</span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>  flist <span class="ot">&lt;-</span> <span class="fu">freqlist</span>(fname, <span class="at">ngram_size =</span> <span class="dv">3</span>)</span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a>  flist <span class="ot">&lt;-</span> flist[features]</span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a>  d[[short_fname]] <span class="ot">&lt;-</span> flist</span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a>d <span class="ot">&lt;-</span> d <span class="sc">%&gt;%</span></span>
+<span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.matrix</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb31-12"><a href="#cb31-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">t</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb31-13"><a href="#cb31-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">drop_empty_rc</span>()</span>
+<span id="cb31-14"><a href="#cb31-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-15"><a href="#cb31-15" aria-hidden="true" tabindex="-1"></a><span class="co"># conduct CA</span></span>
+<span id="cb31-16"><a href="#cb31-16" aria-hidden="true" tabindex="-1"></a>d_ca <span class="ot">&lt;-</span> <span class="fu">ca</span>(d)</span>
+<span id="cb31-17"><a href="#cb31-17" aria-hidden="true" tabindex="-1"></a><span class="co"># summary(d_ca)</span></span>
+<span id="cb31-18"><a href="#cb31-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-19"><a href="#cb31-19" aria-hidden="true" tabindex="-1"></a><span class="co"># preparations for biplot</span></span>
+<span id="cb31-20"><a href="#cb31-20" aria-hidden="true" tabindex="-1"></a>text_coord <span class="ot">&lt;-</span> <span class="fu">row_pcoord</span>(d_ca)  <span class="co"># coordinates of texts</span></span>
+<span id="cb31-21"><a href="#cb31-21" aria-hidden="true" tabindex="-1"></a>word_coord <span class="ot">&lt;-</span> <span class="fu">col_pcoord</span>(d_ca)  <span class="co"># coordinates of function words</span></span>
+<span id="cb31-22"><a href="#cb31-22" aria-hidden="true" tabindex="-1"></a>words_df <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb31-23"><a href="#cb31-23" aria-hidden="true" tabindex="-1"></a>  <span class="at">word =</span> <span class="fu">colnames</span>(d),</span>
+<span id="cb31-24"><a href="#cb31-24" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> word_coord[,<span class="dv">1</span>],</span>
+<span id="cb31-25"><a href="#cb31-25" aria-hidden="true" tabindex="-1"></a>  <span class="at">y =</span> word_coord[,<span class="dv">2</span>])</span>
+<span id="cb31-26"><a href="#cb31-26" aria-hidden="true" tabindex="-1"></a>texts_df <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb31-27"><a href="#cb31-27" aria-hidden="true" tabindex="-1"></a>  <span class="at">text =</span> short_fnames,</span>
+<span id="cb31-28"><a href="#cb31-28" aria-hidden="true" tabindex="-1"></a>  <span class="at">sub_corp =</span> sub_corp,</span>
+<span id="cb31-29"><a href="#cb31-29" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> text_coord[,<span class="dv">1</span>],</span>
+<span id="cb31-30"><a href="#cb31-30" aria-hidden="true" tabindex="-1"></a>  <span class="at">y =</span> text_coord[,<span class="dv">2</span>])</span>
+<span id="cb31-31"><a href="#cb31-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-32"><a href="#cb31-32" aria-hidden="true" tabindex="-1"></a><span class="co"># biplot, color coding sub_corp</span></span>
+<span id="cb31-33"><a href="#cb31-33" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> words_df, <span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> y)) <span class="sc">+</span></span>
+<span id="cb31-34"><a href="#cb31-34" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> word), <span class="at">col =</span> <span class="st">"gray"</span>) <span class="sc">+</span></span>
+<span id="cb31-35"><a href="#cb31-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> texts_df, <span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> y, <span class="at">col =</span> sub_corp))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="ca-trump-clinton_files/figure-html/unnamed-chunk-19-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Let’s inspect the most extreme items on the x-axis:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># So what are the 20 left-most words/items?</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>words_df <span class="sc">%&gt;%</span></span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(x) <span class="sc">%&gt;%</span></span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="dv">20</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kbl</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_paper</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<table class=" lightable-paper" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> word </th>
+   <th style="text-align:right;"> x </th>
+   <th style="text-align:right;"> y </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> i_want_you </td>
+   <td style="text-align:right;"> -1.7690854 </td>
+   <td style="text-align:right;"> 0.9118400 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> to_make_sure </td>
+   <td style="text-align:right;"> -1.5089293 </td>
+   <td style="text-align:right;"> 0.3027160 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> we_need_to </td>
+   <td style="text-align:right;"> -1.4904233 </td>
+   <td style="text-align:right;"> 0.4650320 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> we've_got_to </td>
+   <td style="text-align:right;"> -1.4879252 </td>
+   <td style="text-align:right;"> 0.0349691 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> want_you_to </td>
+   <td style="text-align:right;"> -1.4365131 </td>
+   <td style="text-align:right;"> 0.8496779 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> and_i_want </td>
+   <td style="text-align:right;"> -1.3096794 </td>
+   <td style="text-align:right;"> 0.3763469 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> want_to_be </td>
+   <td style="text-align:right;"> -1.0781004 </td>
+   <td style="text-align:right;"> 0.4017444 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> i_want_to </td>
+   <td style="text-align:right;"> -1.0121971 </td>
+   <td style="text-align:right;"> 0.0597054 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> all_of_you </td>
+   <td style="text-align:right;"> -0.9198963 </td>
+   <td style="text-align:right;"> 0.6134484 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> want_to_thank </td>
+   <td style="text-align:right;"> -0.8193288 </td>
+   <td style="text-align:right;"> 0.1699236 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> be_able_to </td>
+   <td style="text-align:right;"> -0.7595477 </td>
+   <td style="text-align:right;"> 0.3624721 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> and_i_think </td>
+   <td style="text-align:right;"> -0.6904624 </td>
+   <td style="text-align:right;"> -0.1876775 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> to_tell_you </td>
+   <td style="text-align:right;"> -0.6714615 </td>
+   <td style="text-align:right;"> 0.0817544 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> want_to_do </td>
+   <td style="text-align:right;"> -0.6644288 </td>
+   <td style="text-align:right;"> -0.1427927 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> and_i_will </td>
+   <td style="text-align:right;"> -0.6502944 </td>
+   <td style="text-align:right;"> 0.3658512 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> you_know_i </td>
+   <td style="text-align:right;"> -0.6027103 </td>
+   <td style="text-align:right;"> -0.4392379 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> and_i_have </td>
+   <td style="text-align:right;"> -0.5976618 </td>
+   <td style="text-align:right;"> -0.1374274 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> out_of_the </td>
+   <td style="text-align:right;"> -0.5355234 </td>
+   <td style="text-align:right;"> -0.2814176 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> we_want_to </td>
+   <td style="text-align:right;"> -0.5159298 </td>
+   <td style="text-align:right;"> 0.1795518 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> men_and_women </td>
+   <td style="text-align:right;"> -0.4913039 </td>
+   <td style="text-align:right;"> 0.7504628 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co"># And the 20 right-most words/items?</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>words_df <span class="sc">%&gt;%</span></span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(x)) <span class="sc">%&gt;%</span></span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="dv">20</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kbl</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_paper</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<table class=" lightable-paper" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> word </th>
+   <th style="text-align:right;"> x </th>
+   <th style="text-align:right;"> y </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> her_up_lock </td>
+   <td style="text-align:right;"> 0.7547149 </td>
+   <td style="text-align:right;"> 0.5360625 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> up_lock_her </td>
+   <td style="text-align:right;"> 0.7547149 </td>
+   <td style="text-align:right;"> 0.5360625 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> lock_her_up </td>
+   <td style="text-align:right;"> 0.7325581 </td>
+   <td style="text-align:right;"> 0.4721721 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> trump_administration_will </td>
+   <td style="text-align:right;"> 0.7150033 </td>
+   <td style="text-align:right;"> 0.4769604 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> a_trump_administration </td>
+   <td style="text-align:right;"> 0.7087748 </td>
+   <td style="text-align:right;"> 0.4634786 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> usa_usa_usa </td>
+   <td style="text-align:right;"> 0.6682345 </td>
+   <td style="text-align:right;"> 0.4832611 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> will_make_america </td>
+   <td style="text-align:right;"> 0.5907094 </td>
+   <td style="text-align:right;"> 0.6278780 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> trump_trump_trump </td>
+   <td style="text-align:right;"> 0.5826995 </td>
+   <td style="text-align:right;"> 0.5646066 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> build_the_wall </td>
+   <td style="text-align:right;"> 0.5499180 </td>
+   <td style="text-align:right;"> 0.3217104 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> we_will_make </td>
+   <td style="text-align:right;"> 0.5304179 </td>
+   <td style="text-align:right;"> 0.6576161 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> hillary_clinton_wants </td>
+   <td style="text-align:right;"> 0.5165276 </td>
+   <td style="text-align:right;"> 0.1111579 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> we_will_also </td>
+   <td style="text-align:right;"> 0.5080254 </td>
+   <td style="text-align:right;"> 0.8019046 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> hillary_clinton_is </td>
+   <td style="text-align:right;"> 0.4798830 </td>
+   <td style="text-align:right;"> 0.4714349 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> trump_thank_you </td>
+   <td style="text-align:right;"> 0.4613794 </td>
+   <td style="text-align:right;"> 0.6827729 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> can_you_imagine </td>
+   <td style="text-align:right;"> 0.4251246 </td>
+   <td style="text-align:right;"> -0.1739840 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> to_bring_back </td>
+   <td style="text-align:right;"> 0.4225572 </td>
+   <td style="text-align:right;"> 0.1275067 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> going_to_win </td>
+   <td style="text-align:right;"> 0.4154842 </td>
+   <td style="text-align:right;"> -0.1579659 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> thank_you_everybody </td>
+   <td style="text-align:right;"> 0.4066115 </td>
+   <td style="text-align:right;"> 0.2997203 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> the_middle_east </td>
+   <td style="text-align:right;"> 0.3999725 </td>
+   <td style="text-align:right;"> 0.5757124 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> she_wants_to </td>
+   <td style="text-align:right;"> 0.3873807 </td>
+   <td style="text-align:right;"> -0.1978743 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

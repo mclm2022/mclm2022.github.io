@@ -153,12 +153,32 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li class="nav-item">
     <a class="nav-link" href="./about.html">About</a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="./base.html" aria-current="page">Keywords and collocation analysis on the BASE corpus</a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-studies" role="button" data-bs-toggle="dropdown" aria-expanded="false">Studies</a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-studies">    
+        <li>
+    <a class="dropdown-item" href="./base.html">
+ <span class="dropdown-text">Keywords and collocation analysis on the BASE corpus</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./slides.html">Lessons</a>
+        <li>
+    <a class="dropdown-item" href="./genitive-alternation-retrieval.html">
+ <span class="dropdown-text">Genitive Alternation I: Retrieval</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./ca-trump-clinton.html">
+ <span class="dropdown-text">CA applied to the Trump-Clinton speeches</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-slides" role="button" data-bs-toggle="dropdown" aria-expanded="false">Slides</a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-slides">    
+        <li>
+    <a class="dropdown-item" href="./slides.html">
+ <span class="dropdown-text">Regression analysis</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
@@ -201,7 +221,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -219,19 +239,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
-<section id="setup" class="level1">
+<section id="setup" class="level1 page-columns page-full">
 <h1>Setup</h1>
 <p>This document illustrates a keyword analysis and a collocation analysis. They both use the BASE corpus and the same criteria for association strength. You may replicate the code by copy-pasting the snippets (clicking on the symbol on the top right corner of each) and running it on the console or, better yet, on a script or R Markdown file.</p>
 <p>For the analysis we’ll mainly use the <code>{tidyverse}</code> package and the <code>{mclm}</code> package. For the report itself, mostly when printing tables, we’ll also use <code>{kableExtra}</code>.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(mclm)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: package 'ca' was built under R version 4.2.1</code></pre>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(mclm)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(kableExtra) <span class="co"># for the report</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(kableExtra) <span class="co"># for the report</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<section id="association-strength-criteria" class="level2">
+<section id="association-strength-criteria" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="association-strength-criteria">Association strength criteria</h2>
 <p>Both of the studies rely on the <code>assoc_scores</code> objects of the <code>{mclm}</code> package, which return frequencies and association scores, i.e.&nbsp;measures based on the frequency of a certain event in a target context and in a reference context. For keyword analysis, the target context is a target (sub)corpus and the reference context is a reference (sub)corpus. For collocation analysis based on surface co-occurrences, the target context is the text surrounding the node term and the reference context is all the other text in the corpus.</p>
 <p>In order to define keywords (for the first study) or collocations (for the second study) we will filter the output of <code>assoc_scores()</code> based on the following three criteria:</p>
@@ -240,7 +257,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>A <strong>PMI score</strong> of two or higher</li>
 <li>A <strong>signed G</strong> score of two or higher</li>
 </ul>
-<p>A <strong>PMI score</strong> of two or higher means that the probability of the keyword in the target context is at least four times higher than its probability in all the data taken together.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<div class="page-columns page-full"><p>A <strong>PMI score</strong> of two or higher means that the probability of the keyword in the target context is at least four times higher than its probability in all the data taken together. </p><div class="no-row-height column-margin column-container"><span class="aside">Incidentally: a PMI of one indicated that this probability is twice as high, a PMI of two indicates it is four times as high, a PMI of three indicates it is eight times as high, a PMI of four indicates it is sixteen times as high, etc.</span></div></div>
 <p>A <strong>signed G score</strong> of two or higher is not a very strict criterion. With a signed G score of two there is only mild evidence for attraction. In a traditional G test (log likelihood ratio test) for a two-by-two contingency table, a G score of one would indicate no evidence for any association whatsoever and a G score of 3.84 would be needed for the test to indicate a significant association (at a 95% confidence level). So a value of two would indicate that there is not enough evidence to establish significance.</p>
 <div class="callout-tip callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
@@ -261,10 +278,10 @@ Selection criteria
 <p>The first step to analyzing the data is to read the corpus. The first line of the code below sets the path to the “BASE” directory where all the corpus files are stored, in this case inside the parent directory. In order to run this in your own computer, set <code>base_corpus</code> to the path from wherever you are running the code to where your copy of the corpus is stored.</p>
 <p>The second line of the code collects all the file names in that folder in an <code>fnames</code> object and keeps those with the “txt” extension.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>fnames_BASE <span class="ot">&lt;-</span> <span class="fu">get_fnames</span>(<span class="fu">file.path</span>(corpus_folder, <span class="st">"BASE"</span>)) <span class="sc">%&gt;%</span> </span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">keep_re</span>(<span class="st">"[.]txt"</span>)</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(fnames_BASE, <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>fnames_BASE <span class="ot">&lt;-</span> <span class="fu">get_fnames</span>(<span class="fu">file.path</span>(corpus_folder, <span class="st">"BASE"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">keep_re</span>(<span class="st">"[.]txt"</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(fnames_BASE, <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Filename collection of length 198
                              filename
@@ -299,20 +316,20 @@ Selection criteria
 <h1>Keyword analysis</h1>
 <p>For the keyword analysis, the target corpus will be the file <em>ahlct001.txt</em> and the reference corpus, the remaining 198 files. We will store the target filename in a variable called <code>fnames_target</code> and the reference corpus filenames in a variable called <code>fnames_ref</code>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># store names of target corpus files in fnames_target</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>fnames_target <span class="ot">&lt;-</span> fnames_BASE <span class="sc">%&gt;%</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">keep_re</span>(<span class="st">"ahlct001"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># store names of target corpus files in fnames_target</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>fnames_target <span class="ot">&lt;-</span> fnames_BASE <span class="sc">%&gt;%</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">keep_re</span>(<span class="st">"ahlct001"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Filename collection of length 1
                             filename
   ----------------------------------
 1 _corpora//BASE/txt/ah/ahlct001.txt</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># store names of reference corpus files in fnames_ref</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>fnames_ref <span class="ot">&lt;-</span> fnames_BASE <span class="sc">%&gt;%</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">drop_re</span>(<span class="st">"ahlct001"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="at">n =</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># store names of reference corpus files in fnames_ref</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>fnames_ref <span class="ot">&lt;-</span> fnames_BASE <span class="sc">%&gt;%</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">drop_re</span>(<span class="st">"ahlct001"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="at">n =</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Filename collection of length 197
                              filename
@@ -332,11 +349,11 @@ Selection criteria
 </div>
 <p>Such <code>fnames</code> objects can be turned into <code>tibble</code> objects and printed as tables for a nicer rendering in R Markdown file. The most basic way to print a table is with <code>knitr::kable()</code>, but we can also take advantage of the wide range of options of the <a href="https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html"><code>{kableExtra}</code> package</a>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>fnames_ref <span class="sc">%&gt;%</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="dv">10</span>) <span class="sc">%&gt;%</span>   <span class="co"># only keep the first ten items</span></span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kbl</span>() <span class="sc">%&gt;%</span> </span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>fnames_ref <span class="sc">%&gt;%</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="dv">10</span>) <span class="sc">%&gt;%</span>   <span class="co"># only keep the first ten items</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kbl</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 
 <table class=" lightable-minimal" style="font-family: &quot;Trebuchet MS&quot;, verdana, sans-serif; margin-left: auto; margin-right: auto;">
@@ -385,12 +402,12 @@ Selection criteria
 <h2 class="anchored" data-anchor-id="frequency-lists">Frequency lists</h2>
 <p>Next, we build the frequency lists, both for the target corpus and for the reference corpus. The former we store in a variable <code>flist_target</code> and the latter in a variable <code>flist_ref</code>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># build frequency list for target corpus</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>flist_target <span class="ot">&lt;-</span> fnames_target <span class="sc">%&gt;%</span></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">freqlist</span>(<span class="at">re_token_splitter =</span> r<span class="st">"--[(?xi)  \s+   ]--"</span>, <span class="co"># whitespace as token splitter</span></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>           <span class="at">re_drop_token     =</span> r<span class="st">"--[(?xi)  [:\[\]] ]--"</span>, <span class="co"># drop tokens with :, [ or ]</span></span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>           <span class="at">file_encoding     =</span> <span class="st">"windows-1252"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># build frequency list for target corpus</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>flist_target <span class="ot">&lt;-</span> fnames_target <span class="sc">%&gt;%</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">freqlist</span>(<span class="at">re_token_splitter =</span> r<span class="st">"--[(?xi)  \s+   ]--"</span>, <span class="co"># whitespace as token splitter</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>           <span class="at">re_drop_token     =</span> r<span class="st">"--[(?xi)  [:\[\]] ]--"</span>, <span class="co"># drop tokens with :, [ or ]</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>           <span class="at">file_encoding     =</span> <span class="st">"windows-1252"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Frequency list (types in list: 2528, tokens in list: 10361)
 rank type abs_freq nrm_freq
@@ -417,12 +434,12 @@ rank type abs_freq nrm_freq
   20  his       64   61.770
 ...</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># build frequency list for reference corpus</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>flist_ref <span class="ot">&lt;-</span> fnames_ref <span class="sc">%&gt;%</span></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">freqlist</span>(<span class="at">re_token_splitter =</span> r<span class="st">"--[(?xi)  \s+   ]--"</span>,</span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>           <span class="at">re_drop_token     =</span> r<span class="st">"--[(?xi)  [:\[\]] ]--"</span>,</span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>           <span class="at">file_encoding     =</span> <span class="st">"windows-1252"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># build frequency list for reference corpus</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>flist_ref <span class="ot">&lt;-</span> fnames_ref <span class="sc">%&gt;%</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">freqlist</span>(<span class="at">re_token_splitter =</span> r<span class="st">"--[(?xi)  \s+   ]--"</span>,</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>           <span class="at">re_drop_token     =</span> r<span class="st">"--[(?xi)  [:\[\]] ]--"</span>,</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>           <span class="at">file_encoding     =</span> <span class="st">"windows-1252"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Frequency list (types in list: 36491, tokens in list: 1614252)
 rank type abs_freq nrm_freq
@@ -452,11 +469,11 @@ rank type abs_freq nrm_freq
 </div>
 <p>Like with <code>fnames</code> objects, we can turn <code>freqlist</code> objects into tibbles and print them nicely with <code>{kableExtra}</code>. When the output is HTML, we can also print the table in a scrollable box.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>flist_target <span class="sc">%&gt;%</span> </span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span> </span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kbl</span>() <span class="sc">%&gt;%</span> </span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_minimal</span>() <span class="sc">%&gt;%</span> </span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scroll_box</span>(<span class="at">height =</span> <span class="st">"400px"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>flist_target <span class="sc">%&gt;%</span> </span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kbl</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_minimal</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scroll_box</span>(<span class="at">height =</span> <span class="st">"400px"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:400px; "><table class=" lightable-minimal" style="font-family: &quot;Trebuchet MS&quot;, verdana, sans-serif; margin-left: auto; margin-right: auto;">
@@ -15647,11 +15664,11 @@ rank type abs_freq nrm_freq
 <h2 class="anchored" data-anchor-id="association-scores">Association scores</h2>
 <p>Next, we calculate the association score with a call to <code>assoc_scores()</code>, providing first the target frequency list and then the reference frequency list. We store the result in a variable called <code>scores_kw</code>. Once we have our <code>scores_kw</code>, we can sort them by PMI and by signed G.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># calculate scores</span></span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>scores_kw <span class="ot">&lt;-</span> <span class="fu">assoc_scores</span>(flist_target, flist_ref)</span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="co"># print scores, sorted by PMI</span></span>
-<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(scores_kw, <span class="at">sort_order =</span> <span class="st">"PMI"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># calculate scores</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>scores_kw <span class="ot">&lt;-</span> <span class="fu">assoc_scores</span>(flist_target, flist_ref)</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="co"># print scores, sorted by PMI</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(scores_kw, <span class="at">sort_order =</span> <span class="st">"PMI"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Association scores (types in list: 575, sort order criterion: PMI)
           type    a   PMI G_signed|      b   c       d dir exp_a
@@ -15678,8 +15695,8 @@ rank type abs_freq nrm_freq
 ...
 &lt;number of extra columns to the right: 8&gt;</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># print scores, sorted by G_signed</span></span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(scores_kw, <span class="at">sort_order =</span> <span class="st">"G_signed"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># print scores, sorted by G_signed</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(scores_kw, <span class="at">sort_order =</span> <span class="st">"G_signed"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Association scores (types in list: 575, sort order criterion: G_signed)
         type     a   PMI G_signed|      b      c       d dir  exp_a
@@ -15712,12 +15729,12 @@ rank type abs_freq nrm_freq
 <h2 class="anchored" data-anchor-id="filtering-of-keywords-by-pmi-and-signed-g">Filtering of keywords by PMI and signed G</h2>
 <p>We use <code>filter</code> to filter the keywords (i.e.&nbsp;the object <code>scores_kw</code>) by PMI and signed G. We store the result in a variable called <code>top_scores_kw</code>. We again print the result, first sorted by PMI, then by signed G. This allows us to explore which words are ranked higher by each of the measures.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>top_scores_kw <span class="ot">&lt;-</span> scores_kw <span class="sc">%&gt;%</span> </span>
-<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(PMI <span class="sc">&gt;=</span> <span class="dv">2</span> <span class="sc">&amp;</span> G_signed <span class="sc">&gt;=</span> <span class="dv">2</span>)</span>
-<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="co"># print top_scores_kw, sorted by PMI</span></span>
-<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>top_scores_kw <span class="sc">%&gt;%</span></span>
-<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="at">sort_order =</span> <span class="st">"PMI"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>top_scores_kw <span class="ot">&lt;-</span> scores_kw <span class="sc">%&gt;%</span> </span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(PMI <span class="sc">&gt;=</span> <span class="dv">2</span> <span class="sc">&amp;</span> G_signed <span class="sc">&gt;=</span> <span class="dv">2</span>)</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="co"># print top_scores_kw, sorted by PMI</span></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>top_scores_kw <span class="sc">%&gt;%</span></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="at">sort_order =</span> <span class="st">"PMI"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Association scores (types in list: 269, sort order criterion: PMI)
           type    a   PMI G_signed|      b   c       d dir exp_a
@@ -15744,9 +15761,9 @@ rank type abs_freq nrm_freq
 ...
 &lt;number of extra columns to the right: 8&gt;</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># print top_scores_kw, sorted by G_signed</span></span>
-<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>top_scores_kw <span class="sc">%&gt;%</span></span>
-<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="at">sort_order =</span> <span class="st">"G_signed"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># print top_scores_kw, sorted by G_signed</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>top_scores_kw <span class="sc">%&gt;%</span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="at">sort_order =</span> <span class="st">"G_signed"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Association scores (types in list: 269, sort order criterion: G_signed)
         type     a   PMI G_signed|      b      c       d dir  exp_a
@@ -15798,12 +15815,12 @@ What does this regex mean?
 </div>
 <p>The rest of the arguments are the same that were set in <code>freqlist()</code>, as explained <a href="#data">above</a>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>coocs <span class="ot">&lt;-</span> fnames_BASE <span class="sc">%&gt;%</span> </span>
-<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">surf_cooc</span>(<span class="st">"(?xi)  ^ big $"</span>,</span>
-<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>            <span class="at">re_token_splitter =</span> r<span class="st">"--[(?xi)  \s+   ]--"</span>,</span>
-<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>            <span class="at">re_drop_token     =</span> r<span class="st">"--[(?xi)  [:\[\]] ]--"</span>,</span>
-<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">file_encoding     =</span> <span class="st">"windows-1252"</span>)</span>
-<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>coocs</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>coocs <span class="ot">&lt;-</span> fnames_BASE <span class="sc">%&gt;%</span> </span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">surf_cooc</span>(<span class="st">"(?xi)  ^ big $"</span>,</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>            <span class="at">re_token_splitter =</span> r<span class="st">"--[(?xi)  \s+   ]--"</span>,</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>            <span class="at">re_drop_token     =</span> r<span class="st">"--[(?xi)  [:\[\]] ]--"</span>,</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">file_encoding     =</span> <span class="st">"windows-1252"</span>)</span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>coocs</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>$target_freqlist
 Frequency list (types in list: 1013, tokens in list: 3949)
@@ -15866,11 +15883,11 @@ attr(,"class")
 <h2 class="anchored" data-anchor-id="association-scores-1">Association scores</h2>
 <p>Next, we calculate the association score with a call to <code>assoc_scores()</code>, providing the full object <code>coocs</code> instead of the separated frequency lists. We store the result in a variable called <code>scores_colloc</code>. Once we have our <code>scores_colloc</code>, we can sort them by PMI and by signed G.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># calculate scores</span></span>
-<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>scores_colloc <span class="ot">&lt;-</span> <span class="fu">assoc_scores</span>(flist_target, flist_ref)</span>
-<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a><span class="co"># print scores, sorted by PMI</span></span>
-<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(scores_colloc, <span class="at">sort_order =</span> <span class="st">"PMI"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># calculate scores</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>scores_colloc <span class="ot">&lt;-</span> <span class="fu">assoc_scores</span>(flist_target, flist_ref)</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="co"># print scores, sorted by PMI</span></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(scores_colloc, <span class="at">sort_order =</span> <span class="st">"PMI"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Association scores (types in list: 575, sort order criterion: PMI)
           type    a   PMI G_signed|      b   c       d dir exp_a
@@ -15897,8 +15914,8 @@ attr(,"class")
 ...
 &lt;number of extra columns to the right: 8&gt;</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># print scores, sorted by G_signed</span></span>
-<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(scores_colloc, <span class="at">sort_order =</span> <span class="st">"G_signed"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># print scores, sorted by G_signed</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(scores_colloc, <span class="at">sort_order =</span> <span class="st">"G_signed"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Association scores (types in list: 575, sort order criterion: G_signed)
         type     a   PMI G_signed|      b      c       d dir  exp_a
@@ -15931,12 +15948,12 @@ attr(,"class")
 <h2 class="anchored" data-anchor-id="filtering-of-collocatesby-pmi-and-signed-g">Filtering of collocatesby PMI and signed G</h2>
 <p>We use <code>filter</code> to filter the collocates (i.e.&nbsp;the object <code>scores_colloc</code>) by PMI and signed G. We store the result in a variable called <code>top_scores_colloc</code>. We again print the result, first sorted by PMI, then by signed G. This allows us to explore which words are ranked higher by each of the measures.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>top_scores_colloc <span class="ot">&lt;-</span> scores_colloc <span class="sc">%&gt;%</span> </span>
-<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(PMI <span class="sc">&gt;=</span> <span class="dv">2</span> <span class="sc">&amp;</span> G_signed <span class="sc">&gt;=</span> <span class="dv">2</span>)</span>
-<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a><span class="co"># print top_scores_colloc, sorted by PMI</span></span>
-<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>top_scores_colloc <span class="sc">%&gt;%</span></span>
-<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="at">sort_order =</span> <span class="st">"PMI"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>top_scores_colloc <span class="ot">&lt;-</span> scores_colloc <span class="sc">%&gt;%</span> </span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(PMI <span class="sc">&gt;=</span> <span class="dv">2</span> <span class="sc">&amp;</span> G_signed <span class="sc">&gt;=</span> <span class="dv">2</span>)</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a><span class="co"># print top_scores_colloc, sorted by PMI</span></span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>top_scores_colloc <span class="sc">%&gt;%</span></span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="at">sort_order =</span> <span class="st">"PMI"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Association scores (types in list: 269, sort order criterion: PMI)
           type    a   PMI G_signed|      b   c       d dir exp_a
@@ -15963,9 +15980,9 @@ attr(,"class")
 ...
 &lt;number of extra columns to the right: 8&gt;</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># print top_scores_colloc, sorted by G_signed</span></span>
-<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>top_scores_colloc <span class="sc">%&gt;%</span></span>
-<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="at">sort_order =</span> <span class="st">"G_signed"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># print top_scores_colloc, sorted by G_signed</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>top_scores_colloc <span class="sc">%&gt;%</span></span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="at">sort_order =</span> <span class="st">"G_signed"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Association scores (types in list: 269, sort order criterion: G_signed)
         type     a   PMI G_signed|      b      c       d dir  exp_a
@@ -16002,13 +16019,13 @@ attr(,"class")
 <h2 class="anchored" data-anchor-id="saving-the-results-to-file">Saving the results to file</h2>
 <p>We can use <code>write_assoc()</code> to write an <code>assoc_scores</code> object to a file. That file is a tab delimited text file. It can easily be imported in spreadsheet tools. It can also be read again in RStudio, in future sessions, with <code>read_assoc()</code>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>top_scores_kw <span class="sc">%&gt;%</span></span>
-<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">write_assoc</span>(<span class="st">"ahlct001_top_keywords.csv"</span>) </span>
-<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a><span class="co"># top_scores_kw &lt;- read_assoc("ahlct001_top_keywords.csv")</span></span>
-<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>top_scores_colloc <span class="sc">%&gt;%</span></span>
-<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">write_assoc</span>(<span class="st">"big_top_collocates.csv"</span>) </span>
-<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a><span class="co"># top_scores_colloc &lt;- read_assoc("big_top_collocates.csv")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>top_scores_kw <span class="sc">%&gt;%</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">write_assoc</span>(<span class="st">"ahlct001_top_keywords.csv"</span>) </span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a><span class="co"># top_scores_kw &lt;- read_assoc("ahlct001_top_keywords.csv")</span></span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>top_scores_colloc <span class="sc">%&gt;%</span></span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">write_assoc</span>(<span class="st">"big_top_collocates.csv"</span>) </span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a><span class="co"># top_scores_colloc &lt;- read_assoc("big_top_collocates.csv")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="a-nicer-way-of-showing-the-scores-in-a-report" class="level2">
@@ -16016,14 +16033,14 @@ attr(,"class")
 <p>We can turn the scores into a so-called <em>tibble</em> (i.e.&nbsp;a tidyverse style data frame) with the function <code>as_tibble()</code>. This allows people familiar with the tidyverse to use the rich set of tidyverse functions that are applicable to tibbles.</p>
 <p>Here we print the top thirty keywords (according to PMI, and sorted by descending PMI) the tidyverse way:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>top_scores_kw <span class="sc">%&gt;%</span> <span class="co"># also valid for top_scores_colloc</span></span>
-<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(type, a, PMI, G_signed) <span class="sc">%&gt;%</span> <span class="co"># select 4 columns</span></span>
-<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(PMI)) <span class="sc">%&gt;%</span>             <span class="co"># sort by PMI (descending) </span></span>
-<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="dv">30</span>) <span class="sc">%&gt;%</span>                       <span class="co"># select top 30 rows</span></span>
-<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kbl</span>(<span class="at">caption =</span> <span class="st">"Top 30 key words of the 'ahlct001' file in the BASE corpus, sorted by PMI."</span>, <span class="at">digits =</span> <span class="dv">3</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_minimal</span>() <span class="sc">%&gt;%</span> </span>
-<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scroll_box</span>(<span class="at">height =</span> <span class="st">"400px"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>top_scores_kw <span class="sc">%&gt;%</span> <span class="co"># also valid for top_scores_colloc</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(type, a, PMI, G_signed) <span class="sc">%&gt;%</span> <span class="co"># select 4 columns</span></span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(PMI)) <span class="sc">%&gt;%</span>             <span class="co"># sort by PMI (descending) </span></span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="dv">30</span>) <span class="sc">%&gt;%</span>                       <span class="co"># select top 30 rows</span></span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kbl</span>(<span class="at">caption =</span> <span class="st">"Top 30 key words of the 'ahlct001' file in the BASE corpus, sorted by PMI."</span>, <span class="at">digits =</span> <span class="dv">3</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_minimal</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scroll_box</span>(<span class="at">height =</span> <span class="st">"400px"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:400px; "><table class=" lightable-minimal" style="font-family: &quot;Trebuchet MS&quot;, verdana, sans-serif; margin-left: auto; margin-right: auto;">
@@ -16224,14 +16241,14 @@ attr(,"class")
 </div>
 <p>We can do the same sorting by G signed instead:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>top_scores_colloc <span class="sc">%&gt;%</span> <span class="co"># also valid for top_scores_kw</span></span>
-<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(type, a, PMI, G_signed) <span class="sc">%&gt;%</span> <span class="co"># select 4 columns</span></span>
-<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(G_signed)) <span class="sc">%&gt;%</span>        <span class="co"># sort by G_signed (descending)  </span></span>
-<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="dv">30</span>) <span class="sc">%&gt;%</span>                       <span class="co"># select top 30 rows</span></span>
-<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kbl</span>(<span class="at">caption =</span> <span class="st">"Top 30 collocates of 'big' in the BASE corpus, sorted by G signed."</span>, <span class="at">digits =</span> <span class="dv">3</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_minimal</span>() <span class="sc">%&gt;%</span> </span>
-<span id="cb36-8"><a href="#cb36-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scroll_box</span>(<span class="at">height =</span> <span class="st">"400px"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>top_scores_colloc <span class="sc">%&gt;%</span> <span class="co"># also valid for top_scores_kw</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(type, a, PMI, G_signed) <span class="sc">%&gt;%</span> <span class="co"># select 4 columns</span></span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(G_signed)) <span class="sc">%&gt;%</span>        <span class="co"># sort by G_signed (descending)  </span></span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="dv">30</span>) <span class="sc">%&gt;%</span>                       <span class="co"># select top 30 rows</span></span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kbl</span>(<span class="at">caption =</span> <span class="st">"Top 30 collocates of 'big' in the BASE corpus, sorted by G signed."</span>, <span class="at">digits =</span> <span class="dv">3</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_minimal</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scroll_box</span>(<span class="at">height =</span> <span class="st">"400px"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:400px; "><table class=" lightable-minimal" style="font-family: &quot;Trebuchet MS&quot;, verdana, sans-serif; margin-left: auto; margin-right: auto;">
@@ -16432,31 +16449,31 @@ attr(,"class")
 </div>
 <p>Alternatively, we can print the table with <code>DT::datatable()</code>, a wrapper for Javascript’s datatable. This interactive table (not available in PDF output) allows the user to select different sorting criteria.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>top_scores_kw <span class="sc">%&gt;%</span></span>
-<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(type, a, PMI, G_signed) <span class="sc">%&gt;%</span> <span class="co"># select 4 columns</span></span>
-<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(G_signed)) <span class="sc">%&gt;%</span>        <span class="co"># sort by G_signed (descending)  </span></span>
-<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="dv">30</span>) <span class="sc">%&gt;%</span>                       <span class="co"># select top 30 rows</span></span>
-<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a>  DT<span class="sc">::</span><span class="fu">datatable</span>(<span class="at">caption =</span> <span class="st">"Top 30 keywords of the 'ahlct001' file in the BASE corpus."</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a>  DT<span class="sc">::</span><span class="fu">formatRound</span>(<span class="at">columns =</span> <span class="dv">3</span><span class="sc">:</span><span class="dv">4</span>, <span class="at">digits =</span> <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>top_scores_kw <span class="sc">%&gt;%</span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(type, a, PMI, G_signed) <span class="sc">%&gt;%</span> <span class="co"># select 4 columns</span></span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(G_signed)) <span class="sc">%&gt;%</span>        <span class="co"># sort by G_signed (descending)  </span></span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="dv">30</span>) <span class="sc">%&gt;%</span>                       <span class="co"># select top 30 rows</span></span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>  DT<span class="sc">::</span><span class="fu">datatable</span>(<span class="at">caption =</span> <span class="st">"Top 30 keywords of the 'ahlct001' file in the BASE corpus."</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a>  DT<span class="sc">::</span><span class="fu">formatRound</span>(<span class="at">columns =</span> <span class="dv">3</span><span class="sc">:</span><span class="dv">4</span>, <span class="at">digits =</span> <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 
-<div id="htmlwidget-b8899e0632e52f290343" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-b8899e0632e52f290343">{"x":{"filter":"none","vertical":false,"caption":"<caption>Top 30 keywords of the 'ahlct001' file in the BASE corpus.<\/caption>","data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30"],["her","she","slavery","sea","manu","turner","gladstone","my","his","rohini","nigger","african","troilus","shah","dead","shop","guyana","him","fish","poem","thistlewood","mouth","awakened","guyanese","stillborn","write","land","white","miriam","man"],[106,81,24,28,15.5,17,13.5,62,64,10.5,11,15,9.5,10,19,15,9,36,13,15,7.5,13,7,6.5,6.5,26,18,18,6,20],[4.1380664362429,3.5478306461218,6.8777515317627,5.69075301696144,7.24684788135644,6.79528937157072,7.24018415107543,2.70202090863918,2.30410434426937,7.22553737511103,6.94486572762123,5.64509077497242,7.21865098952579,7.02975462520775,4.59820203914589,5.39232470459245,7.14078593759649,2.86466153232225,5.37851890506742,4.8073622038713,7.19954216657809,4.92713955872486,7.10014395309914,7.18573636705306,7.18573636705306,2.92983366789412,3.73479357792065,3.72124704608271,7.07039660970509,3.22669984058377],[420.149761593915,255.977315914464,206.806818674084,176.141915650009,152.280799961725,143.011756532074,132.191526738794,129.440527884686,103.90001537906,102.101503261121,96.7111950486052,93.2144833735021,92.0874812888154,90.3212143871352,87.5767540309021,87.1097796176042,84.5084663207459,82.2142679024924,75.2093324577534,73.7235147979673,72.0943357026625,66.2058683719726,64.7588310422957,62.1214372089262,62.1214372089262,61.4491591900586,61.2782510155849,60.9506282750771,54.9343269890671,54.7433673389951]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>type<\/th>\n      <th>a<\/th>\n      <th>PMI<\/th>\n      <th>G_signed<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"targets":3,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 3, 3, \",\", \".\", null);\n  }"},{"targets":4,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 3, 3, \",\", \".\", null);\n  }"},{"className":"dt-right","targets":[2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":["options.columnDefs.0.render","options.columnDefs.1.render"],"jsHooks":[]}</script>
+<div id="htmlwidget-e056e74c73ab708e3d28" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-e056e74c73ab708e3d28">{"x":{"filter":"none","vertical":false,"caption":"<caption>Top 30 keywords of the 'ahlct001' file in the BASE corpus.<\/caption>","data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30"],["her","she","slavery","sea","manu","turner","gladstone","my","his","rohini","nigger","african","troilus","shah","dead","shop","guyana","him","fish","poem","thistlewood","mouth","awakened","guyanese","stillborn","write","land","white","miriam","man"],[106,81,24,28,15.5,17,13.5,62,64,10.5,11,15,9.5,10,19,15,9,36,13,15,7.5,13,7,6.5,6.5,26,18,18,6,20],[4.1380664362429,3.5478306461218,6.8777515317627,5.69075301696144,7.24684788135644,6.79528937157072,7.24018415107543,2.70202090863918,2.30410434426937,7.22553737511103,6.94486572762123,5.64509077497242,7.21865098952579,7.02975462520775,4.59820203914589,5.39232470459245,7.14078593759649,2.86466153232225,5.37851890506742,4.8073622038713,7.19954216657809,4.92713955872486,7.10014395309914,7.18573636705306,7.18573636705306,2.92983366789412,3.73479357792065,3.72124704608271,7.07039660970509,3.22669984058377],[420.149761593915,255.977315914464,206.806818674084,176.141915650009,152.280799961725,143.011756532074,132.191526738794,129.440527884686,103.90001537906,102.101503261121,96.7111950486052,93.2144833735021,92.0874812888154,90.3212143871352,87.5767540309021,87.1097796176042,84.5084663207459,82.2142679024924,75.2093324577534,73.7235147979673,72.0943357026625,66.2058683719726,64.7588310422957,62.1214372089262,62.1214372089262,61.4491591900586,61.2782510155849,60.9506282750771,54.9343269890671,54.7433673389951]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>type<\/th>\n      <th>a<\/th>\n      <th>PMI<\/th>\n      <th>G_signed<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"targets":3,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 3, 3, \",\", \".\", null);\n  }"},{"targets":4,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 3, 3, \",\", \".\", null);\n  }"},{"className":"dt-right","targets":[2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":["options.columnDefs.0.render","options.columnDefs.1.render"],"jsHooks":[]}</script>
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>top_scores_colloc <span class="sc">%&gt;%</span></span>
-<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(type, a, PMI, G_signed) <span class="sc">%&gt;%</span> <span class="co"># select 4 columns</span></span>
-<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(G_signed)) <span class="sc">%&gt;%</span>        <span class="co"># sort by G_signed (descending)  </span></span>
-<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="dv">30</span>) <span class="sc">%&gt;%</span>                       <span class="co"># select top 30 rows</span></span>
-<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a>  DT<span class="sc">::</span><span class="fu">datatable</span>(<span class="at">caption =</span> <span class="st">"Top 30 collocates of 'big' in the BASE corpus."</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb38-7"><a href="#cb38-7" aria-hidden="true" tabindex="-1"></a>  DT<span class="sc">::</span><span class="fu">formatRound</span>(<span class="at">columns =</span> <span class="dv">3</span><span class="sc">:</span><span class="dv">4</span>, <span class="at">digits =</span> <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>top_scores_colloc <span class="sc">%&gt;%</span></span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(type, a, PMI, G_signed) <span class="sc">%&gt;%</span> <span class="co"># select 4 columns</span></span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(G_signed)) <span class="sc">%&gt;%</span>        <span class="co"># sort by G_signed (descending)  </span></span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="dv">30</span>) <span class="sc">%&gt;%</span>                       <span class="co"># select top 30 rows</span></span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a>  DT<span class="sc">::</span><span class="fu">datatable</span>(<span class="at">caption =</span> <span class="st">"Top 30 collocates of 'big' in the BASE corpus."</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a>  DT<span class="sc">::</span><span class="fu">formatRound</span>(<span class="at">columns =</span> <span class="dv">3</span><span class="sc">:</span><span class="dv">4</span>, <span class="at">digits =</span> <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 
-<div id="htmlwidget-1d0bce671705b8adefb3" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-1d0bce671705b8adefb3">{"x":{"filter":"none","vertical":false,"caption":"<caption>Top 30 collocates of 'big' in the BASE corpus.<\/caption>","data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30"],["her","she","slavery","sea","manu","turner","gladstone","my","his","rohini","nigger","african","troilus","shah","dead","shop","guyana","him","fish","poem","thistlewood","mouth","awakened","guyanese","stillborn","write","land","white","miriam","man"],[106,81,24,28,15.5,17,13.5,62,64,10.5,11,15,9.5,10,19,15,9,36,13,15,7.5,13,7,6.5,6.5,26,18,18,6,20],[4.1380664362429,3.5478306461218,6.8777515317627,5.69075301696144,7.24684788135644,6.79528937157072,7.24018415107543,2.70202090863918,2.30410434426937,7.22553737511103,6.94486572762123,5.64509077497242,7.21865098952579,7.02975462520775,4.59820203914589,5.39232470459245,7.14078593759649,2.86466153232225,5.37851890506742,4.8073622038713,7.19954216657809,4.92713955872486,7.10014395309914,7.18573636705306,7.18573636705306,2.92983366789412,3.73479357792065,3.72124704608271,7.07039660970509,3.22669984058377],[420.149761593915,255.977315914464,206.806818674084,176.141915650009,152.280799961725,143.011756532074,132.191526738794,129.440527884686,103.90001537906,102.101503261121,96.7111950486052,93.2144833735021,92.0874812888154,90.3212143871352,87.5767540309021,87.1097796176042,84.5084663207459,82.2142679024924,75.2093324577534,73.7235147979673,72.0943357026625,66.2058683719726,64.7588310422957,62.1214372089262,62.1214372089262,61.4491591900586,61.2782510155849,60.9506282750771,54.9343269890671,54.7433673389951]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>type<\/th>\n      <th>a<\/th>\n      <th>PMI<\/th>\n      <th>G_signed<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"targets":3,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 3, 3, \",\", \".\", null);\n  }"},{"targets":4,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 3, 3, \",\", \".\", null);\n  }"},{"className":"dt-right","targets":[2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":["options.columnDefs.0.render","options.columnDefs.1.render"],"jsHooks":[]}</script>
+<div id="htmlwidget-636feed1ea4fb46f1bae" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-636feed1ea4fb46f1bae">{"x":{"filter":"none","vertical":false,"caption":"<caption>Top 30 collocates of 'big' in the BASE corpus.<\/caption>","data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30"],["her","she","slavery","sea","manu","turner","gladstone","my","his","rohini","nigger","african","troilus","shah","dead","shop","guyana","him","fish","poem","thistlewood","mouth","awakened","guyanese","stillborn","write","land","white","miriam","man"],[106,81,24,28,15.5,17,13.5,62,64,10.5,11,15,9.5,10,19,15,9,36,13,15,7.5,13,7,6.5,6.5,26,18,18,6,20],[4.1380664362429,3.5478306461218,6.8777515317627,5.69075301696144,7.24684788135644,6.79528937157072,7.24018415107543,2.70202090863918,2.30410434426937,7.22553737511103,6.94486572762123,5.64509077497242,7.21865098952579,7.02975462520775,4.59820203914589,5.39232470459245,7.14078593759649,2.86466153232225,5.37851890506742,4.8073622038713,7.19954216657809,4.92713955872486,7.10014395309914,7.18573636705306,7.18573636705306,2.92983366789412,3.73479357792065,3.72124704608271,7.07039660970509,3.22669984058377],[420.149761593915,255.977315914464,206.806818674084,176.141915650009,152.280799961725,143.011756532074,132.191526738794,129.440527884686,103.90001537906,102.101503261121,96.7111950486052,93.2144833735021,92.0874812888154,90.3212143871352,87.5767540309021,87.1097796176042,84.5084663207459,82.2142679024924,75.2093324577534,73.7235147979673,72.0943357026625,66.2058683719726,64.7588310422957,62.1214372089262,62.1214372089262,61.4491591900586,61.2782510155849,60.9506282750771,54.9343269890671,54.7433673389951]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>type<\/th>\n      <th>a<\/th>\n      <th>PMI<\/th>\n      <th>G_signed<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"targets":3,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 3, 3, \",\", \".\", null);\n  }"},{"targets":4,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 3, 3, \",\", \".\", null);\n  }"},{"className":"dt-right","targets":[2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":["options.columnDefs.0.render","options.columnDefs.1.render"],"jsHooks":[]}</script>
 </div>
 </div>
 </section>
@@ -16464,14 +16481,14 @@ attr(,"class")
 <h2 class="anchored" data-anchor-id="plotting-the-association-scores">Plotting the association scores</h2>
 <p>If we store the tibble version of the results in a variable, such as <code>top_scores_df</code>, we can reuse that object in several subsequent instructions without having to recreate it time and again. Let’s look at the values for the keywords here.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>top_scores_df <span class="ot">&lt;-</span> <span class="fu">as_tibble</span>(top_scores_kw)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>top_scores_df <span class="ot">&lt;-</span> <span class="fu">as_tibble</span>(top_scores_kw)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>To illustrate the use of the <em>tibble</em> version of the results, we can, for instance, generate plots on the basis of the object <code>top_scores_df</code>. Below, we build a scatter plot of signed G scores (x-axis) by PMI scores (y-axis). The plot gives us an idea of to which extent both measures correlate.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="co"># plot PMI by G_signed (without names of the types)</span></span>
-<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>top_scores_df <span class="sc">%&gt;%</span></span>
-<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> PMI, <span class="at">y =</span> G_signed)) <span class="sc">+</span></span>
-<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="co"># plot PMI by G_signed (without names of the types)</span></span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>top_scores_df <span class="sc">%&gt;%</span></span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> PMI, <span class="at">y =</span> G_signed)) <span class="sc">+</span></span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img src="base_files/figure-html/plot-kw1-1.png" class="img-fluid" width="672"></p>
 </div>
@@ -16479,33 +16496,33 @@ attr(,"class")
 <p>We see that the measures do correlate a bit, but definitely not perfectly. In fact, should you build similar plots for other combinations of measures, you’ll find that some pair correlate much more clearly than what we see here.</p>
 <p>Let’s inspect to which extent absolute frequencies can explain the discrepancies between PMI and signed G. Below we have the frequencies in the target corpus (i.e.&nbsp;the values in the <em>a</em> cell of the contingency tables) reflect the size of the symbols. We see that high frequencies tend to relatively boost signed G scores and that low frequencies appear to relatively increase the probability of obtaining a high PMI score.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="co"># plot PMI by G_signed (size reflecting frequencies)</span></span>
-<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>top_scores_df <span class="sc">%&gt;%</span></span>
-<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> PMI, <span class="at">y =</span> G_signed)) <span class="sc">+</span></span>
-<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">size =</span> a))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co"># plot PMI by G_signed (size reflecting frequencies)</span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>top_scores_df <span class="sc">%&gt;%</span></span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> PMI, <span class="at">y =</span> G_signed)) <span class="sc">+</span></span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">size =</span> a))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img src="base_files/figure-html/plot-kw2-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 <p>We can also plot the names of the words instead of using symbols, using the <code>geom_text()</code> function. Notice that in <code>top_scores_df</code> the names of the types are stored in a column called <code>type</code>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co"># plot PMI by G_signed (with names of the types)</span></span>
-<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>top_scores_df <span class="sc">%&gt;%</span></span>
-<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> PMI, <span class="at">y =</span> G_signed)) <span class="sc">+</span></span>
-<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> type))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="co"># plot PMI by G_signed (with names of the types)</span></span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>top_scores_df <span class="sc">%&gt;%</span></span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> PMI, <span class="at">y =</span> G_signed)) <span class="sc">+</span></span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> type))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img src="base_files/figure-html/plot-kw3-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 <p>For a more sophisticated plot, the <code>{ggrepel}</code> package allows us to add text close to the position of their datapoints, avoiding overlap. We can combine text and points to only annotate the higher values.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>high_G_signed <span class="ot">&lt;-</span> top_scores_df <span class="sc">%&gt;%</span> </span>
-<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(G_signed <span class="sc">&gt;</span> <span class="dv">100</span>) <span class="co"># extract types with high G_signed</span></span>
-<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a>top_scores_df <span class="sc">%&gt;%</span> </span>
-<span id="cb43-5"><a href="#cb43-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> PMI, <span class="at">y =</span> G_signed)) <span class="sc">+</span></span>
-<span id="cb43-6"><a href="#cb43-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb43-7"><a href="#cb43-7" aria-hidden="true" tabindex="-1"></a>  ggrepel<span class="sc">::</span><span class="fu">geom_text_repel</span>(<span class="at">data =</span> high_G_signed, <span class="fu">aes</span>(<span class="at">label =</span> type))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>high_G_signed <span class="ot">&lt;-</span> top_scores_df <span class="sc">%&gt;%</span> </span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(G_signed <span class="sc">&gt;</span> <span class="dv">100</span>) <span class="co"># extract types with high G_signed</span></span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a>top_scores_df <span class="sc">%&gt;%</span> </span>
+<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> PMI, <span class="at">y =</span> G_signed)) <span class="sc">+</span></span>
+<span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb41-7"><a href="#cb41-7" aria-hidden="true" tabindex="-1"></a>  ggrepel<span class="sc">::</span><span class="fu">geom_text_repel</span>(<span class="at">data =</span> high_G_signed, <span class="fu">aes</span>(<span class="at">label =</span> type))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img src="base_files/figure-html/plot-kw4-1.png" class="img-fluid" width="672"></p>
 </div>
@@ -16515,13 +16532,7 @@ attr(,"class")
 </section>
 </section>
 
-
-<div id="quarto-appendix" class="default"><section class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1" role="doc-endnote"><p>Incidentally: a PMI of one indicated that this probability is twice as high, a PMI of two indicates it is four times as high, a PMI of three indicates it is eight times as high, a PMI of four indicates it is sixteen times as high, etc.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
