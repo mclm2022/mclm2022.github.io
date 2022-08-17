@@ -3,6 +3,8 @@ project:
 
 website:
   title: "Methods in Corpus Linguistics"
+  page-footer: "Methods in Corpus Linguistics --- Mariana Montes, 2022"
+  reader-mode: true
   navbar:
     left:
       - href: index.qmd
@@ -10,18 +12,18 @@ website:
       - about.qmd
       - text: Studies
         menu: 
-          - base.qmd
-          - genitive-alternation-retrieval.qmd
-          - ca-trump-clinton.qmd
+          - studies/base.qmd
+          - studies/genitive-alternation-retrieval.qmd
+          - studies/ca-trump-clinton.qmd
       - text: Slides
-        menu: 
-          - slides.qmd
-
+        href: slides/index.qmd
+    search: true
 format:
   html:
     theme: flatly
     css: styles.css
     toc: true
+    code-link: true
 
 editor: visual
 
