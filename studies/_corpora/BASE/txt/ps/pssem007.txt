@@ -1,0 +1,846 @@
+sm5382: well do you want to get out that handout that we got early on
+nm5380: oh yes
+sm5382: which says that it has to it has to have a fifteen-thousand word 
+summary and then a fifteen-thousand word technical report
+nm5380: right
+sm5382: which is not how we 
+sm5385: yeah its not the standard report layout that we've er 
+nm5380: oh right
+sm5385: been used to for over four years they've gone and changed it
+nm5380: okay
+nf5381: is that new this year
+sm5382: fifteen-thousand words summary and then up to another fifteen in 
+technical report
+sm5383: its more like
+sm5385: it says er its not quite like introduction and aims and objectives 
+isn't it
+nf5381: this is going to be
+sm5383: the first the first half group summary
+sm5384: it is quite open to er to sub-sections
+nm5379: so its its right yeah its its quite big thing really the group summary 
+report
+sm5382: it seems that the first half has to be the kind of thing you'd pr-, 
+present to like somebody who doesn't really have any you know deep technical 
+knowledge of it
+nm5379: i don't i don't think you would necessarily interpret it like that but 
+suppose it says venture capitalist doesnt it
+sm5385: yeah it also says down here something about
+nm5379: it's never going to be simple enough to do it is it
+sm5384: no
+sm5385: er research project should be laid out in an appropriate manner 
+suitable to what they've done if you
+nm5380: sorry y-, y-, you're referring to something here
+sm5385: yeah in ref-, in referral to research projects something something else
+nm5380: oh i'm hopeless at trying to find something in the same i think in the 
+group report well lets
+sm5382: for more research based projects something there
+su: right so
+nm5380: yeah right well okay that's a let out that's basically a let out clause 
+isn't it really
+su: yeah there's nothing we can do
+su: ignore the first bit and we'll do what we're hoping to do right
+nm5380: i mean business financial and management report er well i don't know 
+about a business report i mean this work is of use to people outside but not 
+necessarily to business i mean its to sort of technical busi-, i mean you know 
+er expensive
+su: its not like we're going to market it or anything
+nf5381: but that that's more appropriate for a group project where you're 
+developing
+nm5380: if you're doing a survey 
+nf5381: a product or so you know some the groups they work on developing some 
+sort of product for instance then so that so that's more appropriate then for 
+them to look at a sort of
+nm5380: i mean it does say detailing any business plan developed so i mean 
+clearly if there isn't a business plan you're not going to be talking about it
+nm5379: the-, the-, there are small issues aren't there of the cost i mean the 
+the the the the the price is 
+sm5385: well there's the cost of the boards and stuff like that yeah
+nm5379: and the implications as to why you went down a certain route you know 
+isn't it i mean why it sort of mentions if someone says well why didn't you do 
+this its expensive isn't it i mean its always going to be too expensive
+nm5380: yeah i mean there there are you know ri-, right at the beginning we 
+talked about the different approaches i mean you are going down as Mark said 
+you're going down a particular road with the er you know mapping onto a micro 
+er a D-S-P microprocessor there's still there's the optical route and ma-, 
+maybe one could have some some ideas about that you know er are you you you're 
+looking at that still
+sm5382: yeah i mean i was thinking that would have to go in the technical half 
+because it well because it seemed that er with that where it says research 
+projects could be laid out differently it it seemed to me to be referring tothe 
+layout of the summary not that er it would have to be split in half
+sm5385: yeah i thnk it would still have to be
+su: you'd still have to do the
+sm5385: the fifteen-thousand word summary yeah
+nm5379: but the thing is with the summary when you get to as long as that its a 
+bit more than a normal summary well you'd just structure it as you would
+nm5380: we mark it as well don't we so the basic thing is if we mislead you and 
+then mark it as down then you'd have a cause for complaint so if we if we guide 
+you in a certain direction we will then mark to that and we will we would take 
+the flack from the department because that was what we were supposed to do its 
+not you're fault its its our fault isnt it so so so you've done the best you 
+can given what we've told you
+sm5383: i think we could do much better if we could just follow a standard 
+nm5380: can you can you can you get access to previous 
+sm5382: well that's what we were going to ask you if there's any way that we 
+can get a
+nm5380: i'm i'm sure because you know
+nf5381: i have got a copy of one but its a few years old in my office a copy of
+nm5380: the undergraduate office i presume must hold these because certainly 
+certainly i i i i've encouraged third year students doing projects to get er 
+third year project reports from the previous years if its appropriate
+nm5379: which are held by the general office not by the undergraduate office
+nm5380: oh right well generally perhaps
+nm5379: no your supervisor has to sign it to to say i mean you know its quite a 
+procedure 
+nm5380: but really we're talking about those from last year i mean you just 
+need to see to see a guide of of course bearing in mind that there's been a 
+change but pos-, possiby not make much difference to us because this p-, this 
+project isn't really you know we're not manu-, manufacturing something for a 
+specific er er market if you like i think
+nm5379: mm mm i think i think er you know the the you could probably bring 
+yours into this this st-, we could argue that yours was in this structure 
+sm5382: we we've got a rough sort of structure thing but its sort of like we're 
+working what we do to to do this if we had to just do it it wouldn't be 
+anything like this
+sm5383: a kind of distraction
+nm5379: i think what you have to do is you have to try and do that unless it 
+really wo-, won't go because er we we'll we we'll accept an interpretation 
+we're not going to rigidly say oh well it doesn't have this that and the other 
+because we didn't write this really so er treat it in the spirit of perhaps 
+when you're asked to tender for business you'll have very strange ways of 
+asking you for tenders that youdn't yourself so you say well given like that 
+we'll er 
+sm5382: so are there any other any other assessors that mark it there are other 
+assessors aren't there other assessors do they mark ike totally independently 
+because they might er be expecting a particular thing like that and then if 
+they get it and its different they might go well you didn't follow the 
+instructions
+nm5379: well i think you may have to yes so so keep it so that it could be in 
+the spirit of that
+sm5382: yes
+nm5379: but push it as far as you can you know thats defensible er basically 
+you've got sort of t-, i mean those are almost like apend-, the technical ones 
+are almost like detailed apendices so you could argue that the you could argue 
+that the main the main mathematical bits and pieces were in were in the summary 
+and then that you know the fine detail of it was in was in that part so you 
+know i don't think that you've got to take all of of the maths out because we 
+would argue that it was a research-based project
+sm5385: so you have like the answer in the summary bit and how you get that 
+answer in the technical bit because it 
+nm5380: yes do remember that it says maximum though of fifteen thousand words 
+people have been saying you've got to right a fifteen thousand word report the 
+wording is maximum
+sm5382: maximum
+nm5380: so the maximum total is thirty-thousand as well isn't it the whole 
+portfolio
+nm5380: an upper an upper word count of thirty-thousand words excluding figures 
+and apendices right thats to keep it to keep it manageable but it doesn't mean 
+that you have to go you have to keep checking the word count to make sure you 
+are getting closer to thirty-thousand
+sm5383: and things like er wave-length theory and stuff like that would that 
+all go in the technical half do you think
+nm5380: i would think so yeah i would think so because the group summary report 
+might be correct me if i'm wrong i mean yeah i-, i-, it says this it it will be 
+going to somebody who maybe who might have done a degree in engineering but 
+would not be close wo-, wouldn't have a close relationship wi-, with wave-
+length analysis for instance so somebody who could see something th-, that is 
+feasible and a possible way of making money since it talks about venture 
+capitalism here and so on somebody who could see how it could be developed 
+exploited but maybe doesn't understand the finer points of wave-length theory 
+does-, doesn't wan-, to doesn't need to really but somebody who is interested 
+in the technical work would obviously go to the technical report so its really 
+that the group summary report is aimed at a particular group of people
+sm5384: well we said we could just refer to anything that we want to state in 
+the summary then we could just refer to the technical bit anyway couldn't we be 
+sort of er 
+nm5380: yes yes just as you would be in just as you would reference books 
+outside of those two documents so are there any other because you said you said 
+that this was the main point of discussion today was to talk about the group 
+summary sorry th-, th-, th-, the reports that you had to write
+sm5383: the report yeah
+sm5382: er well i've got i've got er something of a rough sort of layout that 
+we are talking through and me and Pete changed it a bit last night from what we 
+did on Tuesday but its roughly the same we're thinking with the summary we'll 
+just start off with aims adn objectives right and er and maybe some stuff about 
+sonar active versus passive and maybe a bit of history or whatever and then 
+we'll talk about all the different things we could have done like optical D-S-P 
+we'll do it quite briefly and then have er detailed er description of 
+particularly the optical stuff in the technical report then then talk about 
+what we did like mat-lab and the simu-link and then the C code which we haven't 
+done yet and then er the front end design which er we need to talk about as 
+well today because we were thinking that we need er something to communicate 
+with it like er a i don't know whether we write it in J-A-V-A or C-plus-plus or 
+something like that and then conclusions and applications and stuff and then 
+that will be the summary and then the report would be wave-length theory 
+details of the implementations like the optical stuff and details on like 
+testing and things like that and hopefully that's enough
+nm5380: it sounds it sounds fine from my point of view
+nm5379: yes sounds sounds okay
+nf5381: yeah
+sm5385: great
+nm5380: what what was that the end the end of the story then there's nothing 
+more to say or er can i i mean in terms of what's been going on in the last 
+week er you know i've been in contact with this guy Clayton Hudson well maybe 
+some of you well perhaps you all know by now Clayton Hudson of Motorola who was 
+very positive wh-, wh-, when do you remember was it last Friday or last Thursday
+sm5385: last Thursday i think
+nm5380: last Thursday okay and i did email him and er i haven't had an 
+acknowledgement but that doesn't mean anything necessarily but you know i'm i'm 
+hoping that in the post clearly not today but early next we will get little 
+parcel and that will be the boards that we want but i'll wait i don't like 
+hassling somebody particularly when they offered it for free
+nm5379: yes
+nm5380: so i think we just wait a couple of da-, may be to the middle of week 
+and then if i haven't received it i'll then phone and politely say did you get 
+my email or something you know i i'll perhaps phone him up
+sm5382: yeah
+nm5380: because maybe there's som-, somebody's had problems sending me emails 
+er although generally i get emails everyday but
+sm5382: i think its only James
+sm5383: yes its just James
+nm5380: no no not no some-, somebody from from from Amer-, from from the States 
+said that they kept sending emails and they got bounced back but maybe they 
+just chose times when our system was off the air i don't know
+sm5385: which is about half the time
+nm5380: half the time yes
+nm5379: internal ones are being lost as well
+nm5380: so maybe one should always send emails twice or maybe three times
+sm5383: irritate them 
+nm5380: so so this this interaction with with Clayton Hudson continues and as i 
+said i'll i'll wait if everybody's happy about that yeah we'll wait until the 
+middle of the week
+sm5382: do you know if its the eight-one-oh-one or eight-one-oh-two thingy
+nm5380: er well
+sm5382: just to find out where it comes from
+nm5380: i was talking i was talking to to Peter about this and i think looking 
+at the documentation myself on the on Metro Works website that it was going i-, 
+the eight-one-oh-one is this only one that seems to have any valuation module 
+which probably the cheaper thing
+sm5382: it is yeah
+nm5380: yeah so i think yeah if as i said in my email if if there was an eight-
+one-oh-two evaluation module yes please but if not we'll be very happy i i i'll 
+make that point very strongly you know that we'll be happy with the eight-one-
+oh-one
+sm5382: and it's free
+nm5380: and could we have two of them please even though even though i was 
+quite prepared to have one but Peter gave me this great
+sm5382: just push him
+sm5384: the guy did offer so
+nm5380: this great argument why we should have two so
+sm5384: make the most of it
+nm5380: in case we blow up one probably and then well we won't tell them that
+sm5384: as long as you don't let me near it and then it'll be fine
+sm5382: yeah apparently you've got previous on this
+sm5384: yes
+nm5380: oh really you didn't tell us that
+sm5384: you're ve-, ver-, i'm surprised Marina hasn't actually
+nf5381: don't let him anywhere near the equipment
+nm5380: is that right is he he blows things up does he
+sm5384: i don't know what happened
+nf5381: things happen to people heart attack
+nm5380: oh dear me
+su: its not proven is it
+sm5384: no its not proven yet i-, its not proven it was me yet
+nm5380: so i i think well you know i'm still confident i mean he was so 
+positive on the telephone and Peter was there listen-, well not listening in 
+but you could see the smile on my face
+sm5385: yeah 
+nm5380: as i was talking to him and i thought you know tell me how much it 
+costs and he said no we can we can send them to you for free er thankyou very 
+much
+sm5383: would we get would we get administrative rights on a P-C in order to 
+install the software as well
+sm5382: yes we'd need to
+nm5380: er which P-C do you mean
+sm5383: er any P-C in in engineering
+nm5380: ah y-, you mean one of ours rather than one of yours er well i think 
+we'll worry about that when we get the boards i mean we can find a machine 
+somewhere i'm sure
+nm5379: if you'll have it it would have to be installed but they'll come and if 
+you got it then
+sm5382: i mean if it's a problem then we can put it on one of our systems
+nm5379: i think it could be installed and i'm sure come in and login and do it 
+really just how they would with any other machine really if its just an 
+installation
+nf5381: wanted too Mark Hughson and Adrian they
+su: i'm not quite certain
+nm5380: but that P-C its not quite so bad is it really
+nm5380: where where were you thinking of installing
+sm5382: do it ourselves yeah
+sm5383: well it it would be better if it was in in here just so that we could 
+all have access to it at anytime just in case anybody went home or anything
+nm5380: er yeah well i mean there's ou-, our there's the research level on the 
+way there we can probably fi-, we can probably find somewhere to put it in 
+there we have to find a P-C first but
+sm5382: one thats not too old
+nm5380: one that's not too old yeah
+su: so that's an even bigger problem isnt it
+nm5380: but there is there is my old P-C which is in the room where my post-doc 
+works that he used because the simulations he was doing were taking so long 
+that he wanted a separate machine but we could probably borrow that its er its 
+its not a very old machine but you know its not you know state of the art so to 
+speak but a lot of the i mean its mostly C-programming that you're doing isnt it
+sm5382: yeah it is yeah
+sm5383: it will just be if there's any like testing software that's probably a 
+bit more
+nm5380: yeah
+sm5383: testing it on the P-C
+nm5380: well we'll have to play it by ear i don't know if we've got enough 
+money and it would take too long to buy a new computer we we really need to we 
+we really need action on all of these things don't we because we're in week 
+five this is the end of week five and er 
+nm5379: well you could buy a new computer on the budget i never thought of that 
+really
+sm5383: i can jog down to P-C World
+sm5384: i was going to say you can get one almost immediately can't you if you 
+want one
+sm5383: that's if if we wanted one we could get one that day couldn't we
+sm5384: i mean we have to we have to
+sm5382: P-C World
+sm5383: maybe not P-C World
+nm5380: de-, desperation i think er 
+su: if they've got them in stock a P-C is a P-C isn't it
+su: yes
+nm5380: no actually that's a good point
+nm5379: it would be a few hundred to get a desktop one state of the art is very 
+cheap now isn't really
+sm5383: mm yeah
+nm5380: okay well we'll bear that in mind i mean we haven't beari-, if we get 
+these boards for free i mean we haven't bear-, i mean that was going to be a 
+cost
+su: yeah
+nm5380: but it looks like that cost is zero and the software will also be
+su: yeah struck gold here
+nm5380: can i
+sm5383: sorry go on
+nm5380: can i say can i ask about about th-, th-, the software do we have has 
+some software been downloaded
+sm5383: we've got er the software but er we couldn't really we're not all-, we 
+can't use it and we couldn't find any facilities er to enable us to use it
+sm5382: its only a thirty day license
+nm5380: oh i see i don't know whether we er 
+sm5384: its a thirty day license so
+nm5380: oh right right
+su: and we've downloaded it
+nm5380: well hopefully within
+su: thirty days isn't that
+nm5380: well hopefully within thirty days we'll hear form Clayton and we'll get 
+the acc-, we'll be able to then talk to and then
+su: then it won't matter 
+nm5380: but i er i was really asking from the point of view of whether whether 
+you'd been able to do anything with it thats the
+sm5385: no no basically no
+sm5383: i have been reading the C-book recently
+sm5385: yeah apart from sitting there looking at the documentation for it all 
+which is somewhat daunting to say the least that's about it really
+nm5380: but i mean is it standard C or 
+sm5383: its standard yes
+nm5380: oh right right
+sm5383: but looking at all the memories and the registers of the four core 
+processes that the thing has is
+nm5380: well you would choose you would choose this
+sm5385: worrying
+nm5380: yeah i was reading up about this style its quite a its quite a 
+sophisticated thing
+sm5385: yes it is
+nm5380: so are they four identical processors or or
+sm5385: it has four which can do things at the same time so
+sm5382: lets just hope sort it all out
+sm5385: so its four which can do the multiply accumulate stuff so
+nm5380: that's pretty stunning really isn't it on one chip this is on one chip 
+quite amazing okay so tha-, that's one issue then er and then the other issue 
+was the er er sorry er kinetic you know th-, th-, the simulation stuff
+su: oh yeah
+nm5380: and again you know i i i'm hoping you know Rob-, Robert is the guy the 
+guy i know down there i mean he's he he he won't let us down but its a case of 
+him getting round to it and i don't want to hassle him because i i;ve known him 
+for a long time and i know he'll deliver and he knows the time scales and so on 
+so i would hope to find a C-D in my post next week and hopefully it will be
+sm5382: we changed the software didn't we to so 
+su: yeah
+sm5382: but we haven't had a chance to test it yet we just got it workign last 
+night
+nm5380: that's great
+sm5382: but we just need to plug in the starting length frequencies and the 
+length and what have you
+nm5380: well i i i'll give him a bit longer before i email him again i'll wait 
+until the end of the week but as i say Clayton i'll try and contact in the 
+middle of the week by telephone so i think that's probably as much as i can 
+contribute this this week er er and i really haven't done anything because i've 
+really been waiting for other people to
+sm5385: well yeah yeah so
+nm5380: well to return the favours so to speak
+sm5385: advanced
+nm5380: anyone else have any thoughts about it anything optics or
+nf5381: well i have found something that er i don't know how keen you are on it 
+well i'm keen you know to do something about it but i don't know how much time 
+you've got to do it
+su: stuff
+nf5381: er it's a very nice piece of work on er filters it's all there it says 
+what diagram is there and er architectures there you see flow plan is there so 
+i'm not asking you to copy it or anything just er to give it some thought you 
+know see what we can do implementation side of things its from Stanford 
+University its a fourth year project so it is students work and i don't know 
+how good that work is but it it probably looks quite quite good and on that 
+website if you go on the website they have also code for it as well so it could 
+be something that you would like to have a look since you are looking at 
+different options of so it might be worth
+sm5383: send everybody the er an email of the address
+sm5385: it's on the webpage
+nf5381: so i don't know who was looking was somebody looking at the 
+implementation or was it
+sm5382: no no we've sort of er i think i think er put it on hold because it was 
+just for the er poster but we do need to do a section on it for the report
+nf5381: mm
+sm5383: that would be good yeah
+nf5381: it would be nice if you do a sort i er i think it would if you have a 
+look at it and see how how you can implement it and er 
+sm5383: yeah
+nm5380: i don't feel there's enough material here to continue this you know to 
+another unit maybe but
+nf5381: mm yeah
+nm5380: and there's some areas we haven't we haven't really given much er 
+sm5382: shall shall we hang onto this
+nf5381: yes sure yes sure its for you i i mean er obviously five weeks isn't 
+much time to er to design anything
+su: but 
+nf5381: but it would be nice you know if you just explored 
+sm5385: well for the technical section we were just
+sm5383: we were just going to put that lot in there
+sm5384: about all the different types of things and possibilities of continuing 
+in different directions so that's easily
+sm5382: yeah so we'll talk about each each way we could have gone and then er 
+sm5383: so we could easily do something like that 
+nf5381: well you would have to put a section on all of them and then justify 
+why you have decided to what are the reasons behind behind the chosen path 
+whatever
+sm5382: the other thing which we never talk about yet is the er front end of it 
+like what program er we we'd actually use to communicate by the serial port 
+because remember a little while ago we were thinking that we'd need say er tha-,
+that it would just have to be a simple window really that that that took in 
+the er message of the chip
+sm5384: for the development board
+sm5382: yeah but we'd need something that could really go with the chip so its 
+maybe something that the chip that does this is
+sm5383: er er if we're talking about the er development board er it will 
+probably have a er program with it
+sm5382: er yeah but if we're talking about if you want this to be a standard 
+line program
+sm5383: er and and run it to another P-C it might only have that one er one 
+serial port connection to it an-, and that's the programming board
+sm5385: i i think you use the parallel port to
+sm5383: yeah it would be the parallel port
+sm5385: communicate to it
+nm5380: i'm not quite clear i'm not quite clear what what you're saying i mean 
+y-, obviously in a real situation er if if if this particular detection system 
+was install-, was implemented on a D-S-P processor obviously it would be part 
+of a lot more hardware
+su: mm
+nm5380: and clearly we haven't got the time to to look at all all the 
+ramifications of that but i would have thought as Ian was saying that er this 
+the evaluation module will give us everything we need for interaction between 
+it and the host processor
+sm5382: right are we just going to er leave it at that because er 
+nm5380: well clearly if we get the i mean we really need to get hold of that as 
+soon as possible don't we and if we get it hopefully it'd be next week
+sm5383: i think we tackle the situation when we get to it
+sm5385: i mean you can you can run it connect it up to your P-C so you can help 
+debug it so you can you can have the processor running and it communicates the 
+to your programs so you can see what's going on in each register
+nm5380: indeed indeed i-, i-, if it if its like certainly if its like things 
+i've used in the past yeah you can mod-, er you can downlo-, i mean you can 
+develop the software on the er on the host processor and then you know when 
+you're happy with it you download it i don't know whether there are simulation 
+tools or what i'm not certain or whether you have to just download it to the co-
+, you know the star core and then run it on the star core but the question is 
+where the data is coming from again i'm presuming that the data will be on the 
+host processor and that it will be downloaded to the star-core D-S-P
+su: well that's another
+sm5385: coefficients should be stored on the er on the chip right
+sm5382: yeah but the input wave whether that would be necessarily sent to it 
+via a serial port or whether there are other ports on the 
+sm5383: you couldn't er program it and send it using the same interface
+sm5382: er yeah i'm i'm assuming you could
+sm5383: in the end we could just like create a er er maybe stream a file of of 
+coefficients for er simulated waves er 
+su: do we have an er an on it
+su: yeah i i'd assume so
+nm5380: sorry sorry on evaluation module
+sm5382: er i yeah i suppose yeah
+sm5383: it-, its bound to if it's a D-S-P chip
+sm5385: well n-, not necessarily
+sm5382: i don't know
+nm5380: yeah i mean i i we're talking a bit vaguely i suppose because we don't 
+really we don't have that information but er some certainly the ones i've used 
+the T-I ones were designed you know they had A to B and D to A built in so that 
+you could put signals in from outside but th-, this is quite a sophisticated 
+beast and i would suspect that the data would have to come from the core pr-, 
+th-, the host processor
+sm5383: yeah
+nm5380: you can't just sort of have two co-, you know B and C sockets co-axial 
+sockets or something to put to put data in its but again i'm i'm only talking 
+from experience and its somewhat limited to the age of some of my books 
+sm5385: i think we just keep it as
+sm5383: we don't need to worry about it but i think it will happen
+sm5382: but i mean if its going to be if its going to be used in real life then 
+it would have to take in a signal from er er microphone or or you could go for 
+sm5383: if if it was to be used in real life it probably wouldn't be used in 
+this chip at all it would probably be used in the most advanced er er chip 
+which is probably about er er using it with a lot of other hardware as well
+sm5382: the eight-one-oh-four
+sm5385: the next one up from what we're using
+nm5380: er er sorry what you're suggesting we wouldn't be using this type a D-S-
+P processor
+sm5383: we'd be using a D-S-P processor but i think we'd be using quite er 
+other things as well
+nm5380: of course of course
+sm5383: like er C-P-Us and er maybe a maybe a whole er hardware setup 
+nm5380: yeah i think i think i think i think we sh-, personally i think we 
+shouldn't worry too much about that you know the you know actually 
+commissioning a piece of equipment you know for whatever application whether 
+its you know maritime or military or or whatever it's a it's a big job and you 
+know i've been down to Kinetic and and they have racks of equipment
+sm5383: yeah i've seen like er that on ships the computer the computer er just 
+sort of one radar fill up massive rooms
+nm5380: yes yeah yeah
+nm5379: so we argue it's a proof of principle isn't it
+nf5381: well there it works and you could scale it up using state of the art 
+su: 
+nm5380: well it would be incorporated into a bigger whole anyway this is this 
+is this is this is a small but significant part of a particular application in 
+sonar so i don't i don't think we should we should worry too much about that 
+but what we should be concerned about it obviously doing getting a realistic 
+simulation well but not exactly simulation because we're using a real processor 
+but getting the data to the processor and getting the data back so that we can 
+have a look at it and i would presume well i haven't obviously seen any details 
+about this that that that this would not be a problem otherwise how would its 
+called an evaluation module
+sm5385: its not the computer would talk to it 
+nm5380: yeah yeah yeah i mean its an evaluation module in order to evaluate the 
+processors so 
+sm5385: C code just stitch in one value
+sm5382: and it would send er send a discreet signal
+sm5385: yeah
+sm5382: through the chip
+sm5385: yeah
+nm5380: is it is it possible to get more information about the eight-one-oh-one 
+or er 
+sm5385: well i've been looking on their on their website i've got a got a load 
+of information on the on the sort of the core that it uses and so on but i 
+haven't really i haven't really figured how you sort of how you start 
+programming it and
+sm5383: i think its hard to realise that sort of thing until you actually get 
+it in front of you
+sm5385: yeah
+nm5380: yeah
+sm5385: because its about certainly the information on the core is about eight-
+hundred odd pages long
+nm5380: really
+sm5385: er tons of registers to look at
+sm5383: but if you read it all it would be totally irrelevant to what our what 
+we're wanting to do i would have thought so
+nm5379: okay
+sm5385: it starts off interesting and then
+nm5380: it gets very tedious
+sm5385: and you sort of start thinking well i'll miss that one and er 
+nm5380: but surely surely that's the advantage of writing in C though isn't it 
+that the the th-, you know that the cross assembler is taking the C-code which 
+is written in a you know independent code and it will then be mapped onto the 
+processor by their software so as far as use of register we hope that the that 
+their cr-, cross-assembler uses uses the registers in an efficient way and 
+hopefully the work will be done for us
+sm5383: hopefully a lot of the work will be done for us
+sm5385: but we still need to know the functions
+nm5380: yeah but you want some built-in D-S-P functions
+sm5383: yeah and if they're well written then it shouldn't be too difficult to 
+do it
+su: well yeah yes because there's something 
+nm5380: there's a lot of trust here isn't there
+nm5379: yes actually just the year the year before you were first years they 
+still had this difficult interfacing lab so you would have actually had some 
+experience it was far too difficult for first years it was one of the first 
+things i got given when i came here was there used to be a lab where you did 
+this kind of thing with a processor wasn't it i-, i-, i-, in F-two-eleven er 
+where you could see that you wrote some assembler and it was hard work and then 
+there was a C and it was compiled so
+sm5384: we had to do that in C-S
+nm5379: did you so you still so you still u-, have done
+sm5384: it was a real pain
+sm5382: we still do that
+nm5379: you've done that yes so it's a bit like just a grander version of that 
+but it's the same thing as if the students were given a a very small part of 
+the manual because that was really all that was relevant to what they were 
+doing to what they were doing they were playing with certain registers there's 
+a much thicker manual whichever it was probably something like this and gave 
+them this much and that was still too much for a first year lab if you want to 
+bottom out they couldn't fathom it at all you know the the various the the i 
+think there was only two accumulators and it wasn't a very complicated chip or 
+anything but that was still too much for people to take on board so you weren't 
+going very far reading it
+nm5380: yeah but i i i don't think one's sort of expecting expecting you to get 
+to grips with the instruction set for a processor like this i mean that's the 
+whole beauty of using a high-level language that we that we use their expertise 
+basically to map it onto the processor i mean clearly if you were if you were 
+trying to do a very optimised design you might want to try and get into the 
+innards of the process to try and cu-, cut down the time
+sm5383: cut down all of the things that we're not using functions
+nm5379: it's a bit like the cu-, you know whether you if in C-S whether you 
+write your own compiler isn't i y-, you know you're happy to use a compiler not 
+reinvent the wheel so it's a bit like that you say well you don't know 
+everything that goes on do you you're happy to use Windows on top of something 
+you don't know you don't want to write your own
+nm5380: we're not happy to use Windows
+nm5379: no what i mean is that you have a choice we don't write our own 
+operating system for the computer so you say oh i want to write my own 
+operating system my own language because that's then i know everything about it 
+you just have to live with it i suppose you don't know every fine detail really
+nm5380: mm mm
+nm5379: ve-, very few people do have time to go through that you just have to 
+trust that they've done their job without major bugs so that
+nm5380: mm indeed well i think i think Motorola have been in the business for a 
+a good many years so and they and they you know and this is the latest 
+generation of many generations of processors
+sm5382: so do you think they'll er er if we have a a lot of multiplications to 
+perform supposedly running at the same time that they'll er automate as it were 
+between the four er was it four multiply accumulators
+sm5385: four cores yes so you can only have
+sm5382: do you reckon that would would the compilers alternate would you guess
+nm5380: well i mean a gu-, a guess is what you're asking me for there
+sm5382: yeah
+nm5380: i don't i don't i don't know how you map you know i mean well basically 
+you've got a parallel processor haven't you effectively
+sm5382: mm
+nm5380: er i mean it may well be that that for you know practical designs you 
+might not just have one of these you may have several of them i mean maybe 
+you'd have f-, you'd have four of them and then you'd have sixteen or however 
+many you need you could have an F-R filter running in parallel on on each 
+processor but er i i don't know but that that would come into the programming i 
+would have thought and i don't know if you've ha-, somebody's looked at the C
+sm5385: i haven-, i haven't been able to find the actual C code that you that's 
+all 
+nm5380: oh right i thought maybe but are there not any examples that you can 
+just see how you know how closely it resemb-, whether there may be special 
+features that mightn't it
+sm5385: mm there are yeah we looked at an example yesterday
+sm5382: there was one project with flash gear L-E-Ds and stuff
+sm5385: yeah
+nm5380: okay er how how are we doing we've covered we've covered quite a lot of 
+different things er doe-, does anyone want to say anything particular Cory or 
+or Ian or
+nm5379: no
+nm5380: the short answer yes okay i don't think i've got any-, anything more to 
+add er you know obvious-, obviously we're sort of waiting a bit are-, aren't we 
+we're waiting we want to move on but until we get this other material
+nf5381: it would be nice to get on with some of the stuff that you need for 
+your report while we're waiting for this equipment to arrive
+su: true get it a bit sorted out
+nm5380: yes that would seem very sensible actually very sensible
+sm5385: we will get cracking on that
+nm5380: okay
+sm5384: we've got a lot of information already to write up so
+nm5380: and of course there will be presentation as well er at some point
+sm5384: it's week twenty-three or something like that i think or twenty-two
+nm5380: is that right er 
+sm5385: that's the least of our worries at the moment
+nm5379: a repr-, a report presentation to last thirty minutes
+sm5382: week twenty-three
+nm5380: plus twenty minutes for questions
+nm5379: yeah
+nm5380: all group must members must be present
+sm5382: is that up to you guys
+nm5380: pardon
+nm5379: its not up to us i don't think
+nf5381: yeah there will be a there will be another
+nm5380: is it any of us
+nf5381: second assessor plus moderator i think
+nm5379: its not us
+sm5382: what and you guys as well
+nm5380: well probably probably the guys who were at your poster presentation it 
+will probably be at least two people
+sm5382: oh so they do all of it i mean that was Godfrey and Tardy wasn't it
+nm5380: well it won't
+nf5381: it won't be Tardy
+nm5380: it won't be tardy because he's on study leave but certainly it'll er be 
+Keith Godfrey yeah it'll be him and somebody else i don't know who but yeah the-
+, i'm sure those two tho-, th-, you know there'll be those two or except of 
+course as i said Tardy's on study leave who will be at the presentation
+nm5379: in week twenty-three isn't it yeah
+nf5381: mm
+nm5379: assess-, assess-, assessors
+nm5380: we we do some assessment
+nm5379: yeah so its not directed is it
+nm5380: and obviously we are also part of the project to some extent
+nm5379: so its not the not the directors and the group oral it's the assessors 
+we won't be at the presentation because its the
+nf5381: well we can be there but its assessors that will be asking questions
+nm5379: the pos-, because the poster was the director and assessor i mean like 
+obviously i had a look at it and gave a mark when you were off with your
+nm5380: when i was off with my arm
+nm5379: with your broken wrist er er so its specifically said
+sm5384: did you actually get any feedback from that about marks because i know 
+some groups actually did get feedback from how that went but
+nm5379: er well are we not i mean you're happy i mean you know what i what i 
+put down first class marks as far as i was concerned
+su: i'm not going to complain
+nm5379: but i don't know what i don't know what er the other i haven't 
+officially had any report back on that from the other from the other as far as 
+i was concerned it looked very good so if you were saying that they were 
+marking all of them highly because they're all
+nm5380: i think i think i did comment i did comment to somebody what i thought
+nm5379: question really but
+nm5380: i have see-, i have seen i have seen something
+nm5379: because you would probably see it because you're listed as the official 
+director so i don't always get the stuff you know official stuff to me
+nm5380: but i was in but i was out of action wasn't i though
+nm5379: so it didn't go maybe it didn't go to anybody i'll ask namexi'll ask 
+namex
+nm5380: there was there was no the-, there was feedback that's right and 
+perhaps we should've we should've discussed this er from one from one of the 
+assessors who i think i mean may-, maybe er the prob-, there was a problem of 
+lack of understanding i think from his point of view
+sm5385: yeah yes that was obvious
+nm5380: yeah about the er i i i i had a feeling we'd discussed this but may-, 
+maybe not
+nm5379: i i think we've i think we've said something about it yeah
+nm5380: in rela-, in relation to he couldn't see that this was a wavele-, that 
+this was really wavelengths
+nm5379: it was about transform wasn't it he said that he couldn't see 
+nm5380: he couldn't see where the wavelength transform came in to it so er i 
+mean probably he was confused by something in the presentation i mean i wasn't 
+there so i can't comment but
+sm5382: it was the er it was the er graphs you know the three-D graphs in 
+MatLab and i was saying that it was a continuous wavelength transform and he 
+said it wasn't 
+sm5385: and you thought it was
+nm5380: yeah i think i think i have actually spoken to him since this sin-, sin-
+, since the your presentation er pointing out why i believed it was a well i 
+mean we know its we know it's a wave that transforms so i think probably it was 
+just a feeling that he got on the day and that there wasn't anybody there to 
+help him through this problem and so he he he was he then he he he then gained 
+the impression that that this was not a wavelength transformer
+sm5382: he's been doing so well that the the er the one with the high pass low 
+pass filters ones where you just er keep doing the low pass ones you know do 
+images
+nm5380: the disc-, you mean the discreet wavelength transform yes
+sm5382: well i don't know why but he er that's what he's lectured me on it 
+before so i don't know whether that's what he does but then he 
+nm5379: i think that
+nm5380: i don't know i don't know if he actually uses a discrete wavelength 
+transform for that i i i i've tended to use it for image compression er T-, 
+Tardy doesn't his interests are in other areas of image
+sm5382: in D-S-P i think i thought he lectured me on that
+nm5380: on no its g-, its g-, this
+sm5382: er he did it last year
+nm5380: last year right
+sm5382: in D-S-P because he did the second half of the course
+nm5380: the-, there certainly is some image compression in that D-S-P course 
+okay well i think we've drifted off a bit there but anyway er so were there any 
+oth-, any other comments on optical or not been any developments in that
+sm5384: there's masses of information just being written up at the moment er 
+nm5380: right
+sm5384: i've er you know i think James i can't ac-, James was supposed to be 
+giving you a list of some like some inter-library loans but i'm not sure if we 
+actually need to do that or not do you happen to
+nm5380: no
+sm5384: ah ok 
+nm5380: but it may it may be on the website but i haven't looked at it i must 
+admit this week so
+sm5384: oh right okay
+nm5380: yeah
+sm5384: er i think he was unless he's ch-, ch-, looked at them and then changed 
+his mind and decided they weren't worth it or not but as i say he's not here so 
+i can't really ask him at the moment but er its mainly just write up at the 
+moment of what we've got
+nm5380: are people are still putting putting stuff onto the onto the M-Eng 
+website
+sm5384: yeah i think yes i think so
+sm5384: i haven't put anything up for a while
+sm5384: Ja-, i think James James has put a few things on it i'm sure he has 
+we're slow-, slowly getting through and we have this to do as well so we'll 
+have some more to write up
+nm5379: yeah i think there's no problem with with plenty to write about
+sm5385: yeah there's quite a lot
+nm5379: you know emphasising the option of of and how the principle was proved 
+really i think
+sm5384: its more being selective of what's more ne-, or what's sort of worthy 
+of the project rather than what's sort of vaguely relevant sort of thing so 
+sifting through a lot of it is the main thing at the moment
+nm5380: indeed indeed okay any other
+sm5382: i don't think so i think this pretty much covers most of it
+sm5383: just send an email out when it arrives or 
+nm5380: i will as i've said the minute the minute i get any information i'll be 
+onto my computer wherever i am
+sm5385: we'll have to sort the software out as well i mean that shouldn't take 
+too long i take it
+nm5380: i would have though not its just i'm sure you can download the software 
+but we need to have presumably we need him to contact Metroworks or something 
+to tell them
+sm5382: shall we meet on Tuesday are you here at all
+sm5385: yeah
+nm5380: does anyone else have
+nm5379: no i think i think we've er 
+nm5380: okay good
+nm5379: got there
+sm5384: are you away again next Friday its 
+nm5380: er no not next Friday the Friday after
+sm5382: the twentieth the er er I-S-Ps cancelled isn't it
+nm5380: that's right yes
+sm5382: so is it that day
+sm5383: i can't do next Friday so
+nm5380: we don't have to meet on a 
+sm5384: next
+nm5380: next next Friday
+su: but that's i don't think we have anything major
+nf5381: i cant come next Friday i go to
+nm5380: do we have to i mean could we meet on another day or i mean its 
+obviously good to get most people to come well i me-, a-, all people to come 
+really but
+sm5384: if we wait for James we could send an email to him
+nm5379: i was wondering if you could agree a ti-, you know
+nm5380: okay well we we we use email anyway but er we-, we'll have a meeting 
+next Friday though yeah
+su: yeah yeah
+nf5381: i can't do next Friday but er 
+nm5380: you can't
+su: i can't no i can't either
+su: we could draw up a timetable
+sm5382: we could say what about Thursday afternoon
+su: i can't
+sm5384: there's always Wednesday afternoon
+nm5380: that's a good idea circu-, circulate something round
+nm5379: the problem with Wednesdays is that that you lose us in term to open 
+days and things er thats its
+sm5385: i'm in a school and have sessions Wednesday afternoons so i'm not 
+around so
+sm5382: what about Thursday afternoons
+sm5384: lets let Ian sort it out well i'll just send some emails and say some 
+times 
+nm5380: Thursday's afternoon's okay for me i i mean i normally see my project 
+students but i i can always reorganise and see them on Friday instead
+su: okay
+sm5382: till one for the second half of the week i've got lectures
+nm5380: okay it could be Thursday
+sm5385: Thursday's two o'clock onwards
+sm5382: Thursday two is fine
+nm5380: is that alright
+nm5379: for next Thursday yeah
+su: yeah yeah we we er s-, send the email round and check with James
+nm5379: because i tended to book the room that's the only danger it might have 
+to be somewhere else if if there's an open day because of course they have the 
+priority on this room so i mean Tuesday until Thursday this week we could be in 
+another room
+nm5380: well we'll try and plan it for Thursday we don't need this room do we
+nm5379: no no
+nm5380: i mean we only occupy a a small part of it
+nm5379: its just easy its just a nice place to sit isn't it because its got the 
+nice-, the nicest chairs in the department
+nm5380: so you you're going to deal with the
+nm5379: yeah yeah Thursday
+nm5380: to deal with the booking
+nm5379: yeah i'll book a room
+nm5380: okay good over and out then or
+nf5381: 
+nm5380: over and out then over and out
+su: i think so yeah
+su: yeah
+nm5380: okay then

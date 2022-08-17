@@ -1,0 +1,711 @@
+nf0440: if you're all ready to start [0.6] thank you [0.9] okay so we're 
+looking about how you concentrate your urine so we're going to look at 
+osmolarity and urine concentration [1.3] and then we're going to look at water 
+reabsorption and what actually regulates your water reabsorption from the 
+nephron [0.8] and this brings us on to the loop of Henle in the counter current 
+er [0.2] system [0.9] now you might remember that from A-level and hate it but 
+hopefully i'm going to explain it to you [0.4] but it's really quite important 
+to that you actually understand the principle behind it [0.4] i know it says in 
+your workbook you're not covering it that's because namex don't see any point 
+in teaching it [0.4] but i'm sorry everybody clinicians [0.2] and myself think 
+it's vital at this end so you do get taught it [1.2] and then we're just going 
+to finish up with what happens when it goes wrong [0.4] and the two clinical 
+conditions [0.5] and these are actually covered in case studies so [0.2] we 
+skip over the er clinical conditions we're just [0.4] 
+not too much detail in the lecture because you get them in case studies to 
+actually look at them in more depth [2.1] so if we have a look at [0.4] urine 
+production first off then [1.6] so this is your you've got a huge flexibility 
+in how much urine you do or don't produce [0.4] so you've got a minimum of 
+about [0.3] point-twenty-five er point-two-five mls per minute [0.5] and a 
+maximum of twenty-five [0.6] but twenty-five's a hell of a lot of urine if 
+you've got somebody producing twenty-five mls of urine a minute [0.5] er you 
+probably want to do something about it and it's not normal to produce that much 
+urine despite the fact that we can do [2.4] normal urine production [0.4] most 
+of you probably peeing somewhere between about fifteen-hundred and two mls a 
+day [0.7] and that works out to just if it's fifteen-hundred that's a ml per 
+minute is what you're actually producing in the kidney [0.8] now this is [0.2] 
+kind of an important number because if you were producing two litres of urine a 
+day [0.4] and you'll see why on the next couple of slides [0.3] that 
+actually means you're er peeing out isotonic urine compared to blood plasma [0.
+6] and that doesn't matter to us er [0.2] if your kidneys are operating 
+normally that's no problem [0.4] but if you're a renal patient with some 
+impaired function [0.4] er [0.3] drinking two litres and therefore peeing two 
+litres kind of [0.4] takes the strain off the kidney really so [0.4] if you've 
+got somebody with impaired renal function [0.4] two litres becomes more 
+important [1.3] and most of you will know this already [0.3] you make more 
+urine during the day than you do at night [0.4] because most of you will be 
+able to sleep through the night and not get up to go to the loo whereas you 
+might go three or four times during the day or even more [0.8] and if you're [0.
+2] pee-, if you're making urine less during the night you're also excreting 
+less salts because obviously the salts and the water go together so [0.4] you e-
+, excrete more salts during the day [0.2] and you pee more urine during the day 
+[0.9] now obviously this might change if you're a shift worker if you work 
+nights [0.3] your system's going to readjust to it [0.4] because you actually 
+produce more water during the day [0.3] because of what you do because of 
+eating [0.3] and metabolism [0.6] so if you're er [0.7] on the reverse system 
+because you're a night worker then you're going to be metaboli-, [0.2] meta-, 
+metabolically more active during the night [0.3] so you're going to pee during 
+the night because effectively their days are just reversed [0.4] but normal day 
+shift workers [0.5] we make more urine in the day than we do at night [1.6] and 
+this is just important here we're going to talk about A-D-H later antidiuretic 
+hormone [0.9] but the amount of solutes you excrete per day is fixed [0.3] 
+depending on your intake and what you need to get rid of [0.4] it's the amount 
+of water in your urine that varies which is why the osmolarity has to vary [0.
+6] you don't change your concentration the amount the quantity of solutes that 
+you want to excrete [1.4] so if we just look at how flexible it is [0.4] this 
+blue bar here [0.5] that's your plasma osmolarity remember i said [0.7] week 
+before last or [0.2] whichever week it was w-, session one or two [0.3] your 
+plasma osmolarity has to stay very fixed it's it's very narrow band [0.3] 
+around about two-hundred-and-eighty milliosmoles [0.8] in contrast your urine 
+can [0.3] have this great range [0.9] although it looks like it can make it [0.
+2] er more concentrated [0.3] relative to dilution actually it's a tenfold 
+dilution it can manage because it can er produce thirty milliosmoles [0.2] er 
+of urine er it has can be that dilute [0.6] this is er [0.8] a concentration 
+that's only four times the value of plasma but it's a huge range [2.1] now you 
+can actually work out [0.2] the concentration of your [0.3] er [1.2] osmolarity 
+of your urine if you want to [0.7] and this is what we averagely excrete a day 
+about six-hundred milliosmoles of salt solutes [0.4] er on an average normal 
+diet over here [0.3] and therefore you can just put the numbers into this 
+equation and come up with er [0.3] these simple answers so that if you excrete 
+fifteen-hundred mls of urine [0.4] then the concentration of urine's going to 
+be that [0.3] 
+obviously if you excrete double the amount of urine it's less [0.4] er so i've 
+just put that in [0.4] for you to know about [1.2] but this is important we're 
+not going to most of what we're going to talk about today is how you regulate 
+water [0.3] via hormones and osmosis et cetera [1.0] but the solute 
+concentration will [0.2] alter your alter er your urine excretion [0.4] on its 
+own independent of antidiuretic hormone and anything else that's going on [1.1] 
+so [0.5] just to get the the units up here [0.2] come like that but just 
+remember that a kilogram of water [0.3] is a thousand mls therefore you're 
+actually talking of the molarity effectively it's just that osmolarity comes 
+with slightly different units [0.8] so remember i said a normal person needs to 
+excrete on an average diet six-hundred milliosmoles [0.9] and then that's your 
+maximum urine concentration of twelve-hundred [0.3] so that means to excrete 
+that during the day [0.3] you have to pass five-hundred mls of urine [1.3] if 
+for some reason [0.4] you want to get rid of this num-, this amount of salt [0.
+5] 
+depending on your diet or various other conditions [0.9] the maximum urine 
+concentration's still only twelve-hundred [0.4] so in this case you have to er 
+pee fifteen-hundred mls [0.3] and that is totally independent of whatever else 
+is going on if your solute concentration goes up [0.4] you will need to pass 
+more urine if nothing else changes [2.5] and i've just said that [0.8] so let's 
+have a look what actually happens to water in the nephron [0.5] so here we have 
+your hundred-and-eighty litres of filtrate per day [0.5] but you only get rid 
+of one per cent which is one-point-eight here [0.2] or fifteen-hundred mls that 
+sort of [0.2] er quantity [1.7] now these two regions of the nephron [0.3] get 
+rid of somewhere between eighty-five and ninety per cent of the water they 
+reabsorb it [0.6] and this is done passively there's no regulation whatsoever 
+[0.5] now although [0.3] er from the diuretics lecture with namex if you can 
+remember [0.3] you can modify [0.3] the absorption of water in these parts of 
+the nephron [0.3] that's a drug action normally you don't regulate 
+it whatsoever [0.3] you just simply reabsorb [0.3] passively [0.3] all this 
+amount of water [2.0] but this is what we're going to look at [0.2] this part 
+of the nephron the collecting duct [0.3] you regulate the amount of water that 
+you reabsorb [0.8] and that's the bit that we're actually going to look at the 
+control of [0.4] so you only have control of a small amount of your filtrate [0.
+3] i haven't actually done the numbers but [0.2] most of that hundred-and-
+eighty litres is going to be reabsorbed here [0.6] relatively under no control 
+whatsoever [0.3] you only have control over the small proportion the sort of 
+ten per cent that actually gets to this part of the nephron [1.9] so how does 
+the er collecting duct regulate water reabsorption [1.5] so it's regulated by 
+this hormone you're going to see it called two things it's antidiuretic hormone 
+hence it's A-D-H [0.5] it's also called vasopressin and the abbreviation's A-V-
+P [0.3] that's simply 'cause we've got an arginine in the human form of 
+vasopressin [0.8] and depending on the age of the textbook or 
+the age of the clinician they might alternate between A-V-P or A-D-H so you 
+need to know both of them [2.0] and the water transport in the collecting duct 
+is also passive [0.6] so if it's passive you need water channels you need 
+something physically for the water to move through [0.7] so in response to 
+antidiuretic hormone so [0.3] antidiuretic it's going to stop you peeing it's 
+going to make you conserve water [0.5] you get water channels er transported 
+into the er [0.6] ch-, er the cells of the the membrane of the tubule cells [0.
+6] and we'll see exactly how [0.2] in a [0.2] bit later [0.9] but you also need 
+something else water's not going to move on its own [0.5] you need an osmotic 
+gradient [0.4] so you need there to be a difference in the concentration of the 
+[0.4] er solutes in the filtrate [0.4] compared to the concentration of solutes 
+in the interstitial er [0.4] tissues surrounding the nephron [0.7] so you need 
+to produce it [0.5] so you have there's two things you have to have you have to 
+have a very dilute urine [0.4] 
+going into the collecting duct [0.7] and you need to have this osmotic gradient 
+which is produced by the counter current system [0.5] and i've just put down 
+here A-D-H also activates the urea [0.2] er transporter [0.4] and you'll see 
+why that has a slight relevance later but don't get tied up on that [1.9] so if 
+we have a look at these water channels first we're going to take our [0.2] s-, 
+ways through we're going to look first at the water transport and antidiuretic 
+hormone [0.4] and then we're going to look at the generation of the osmotic 
+gradient [0.5] so it's at least five of them at the moment [0.5] four of them 
+are in the kidney [0.6] er [0.4] the [0.2] the type one [0.3] is in the 
+proximal tubule [0.3] and in the loop of Henle and this is what [0.2] er [0.2] 
+is involved in the unregulated water transport it simply flows through the A-Q 
+[0.3] A-P-Q-one [1.2] er three and four are also in the collecting duct [0.4] 
+er but these are in the basolateral membrane so that's the [0.2] interstitial 
+tissue [0.2] er [0.9] border with the tubule lumen remember [0.3] you've got a 
+kidney tubule cell water has to go into it [0.4] and 
+out of it [0.5] so these ones here are actually the er [0.3] aquaporins that 
+control the water release from the tubule cells back into the circulation [0.9] 
+and these are the ones we're interested in [0.4] the aquaporins two [0.4] and 
+these are the aquaporins that go into the lumenal membranes that's the side 
+where the filtrate is [0.4] and they control the loss of water or [0.5] er from 
+the filtrate [0.4] into the er eventually into the bloodstream [0.8] so it's 
+the A-P-Q-twos we're talking about today [1.5] so what's antidiuretic hormone 
+[3.4] it's a very small peptide [0.7] er [0.3] and in terms of i've i've put 
+down here details [0.5] but for your interest [0.2] it's made in the 
+hypothalamus [0.5] and it's released from the pituitary so you've got the 
+hypothalamus and the pituitary involved one makes it [0.3] and one releases it 
+[0.4] and that's important [0.4] and it's got a very short half-life with most 
+of these peptide hormones you expect them to have a very short half-life so the 
+control's quite fine [1.9] so how do we control its release [1.0] the main 
+mechanism by regulating A-D-H 
+release [0.4] is in the hypothalamus [0.4] and it has osmoreceptors up here 
+which detect changes in plasma osmolarity [0.9] so if the plasma osmolarity 
+goes up that means it becomes more concentrated [0.4] you want to dilute your 
+plasma so you want to retain water [0.5] you actually release A-D-H from the 
+pituitary [0.6] and this will then have the effect on the kidney [1.0] er [0.3] 
+you can see here you've also got this is er [0.2] obviously a diagram taken 
+from the textbook you've got a thirst centre up here [0.3] so the osmoreceptors 
+not only control A-D-H release which is what we're looking at today [0.3] but 
+they also regulate your thirst [0.3] so you've got the two aspects if you 
+become water depleted or your plasma osmolarity goes up [0.4] you release A-D-H 
+to regulate water reabsorption [0.3] or stop its loss from the kidney [0.5] but 
+you also stimulate your thirst reflex so you drink more so you're putting more 
+fluid in as well [1.0] er [0.2] there's also i'm not going to dwell on it and i 
+don't know whether you covered it in cardiovascular er 
+module but the heart also has stretch receptors in the right atrium [0.4] and 
+they respond to blood volume and they can also release A-D-H so that [0.5] if 
+you've got a large blood volume [0.2] so you want to lose some water they 
+switch off A-D-H synthesis [0.3] or release and vice versa [0.5] er but that's 
+not part of [0.2] this module [1.5] so what happens with A-D-H release then so 
+remember i said you want to keep your plasma osmolarity at about two-hundred-
+and-eighty [0.5] so you can see here [0.3] just above two-hundred-and-eighty [0.
+3] you suddenly see this er increase in [0.4] er A-D-H release [0.4] and this 
+is actually what we've normally got because our plasma osmolarity varies 
+between about two-hundred-and-eighty and [0.7] three-hundred if it has to it 
+doesn't it's happier nearer to two-hundred-and-eighty [0.4] we actually always 
+have some A-D-H circulating you would expect to find A-D-H in normal people [0.
+4] but you can see [0.4] as it goes up and this isn't a very big difference 
+remember your urine osmolarity can go up to twelve-hundred so this 
+is [0.4] up to three-hundred-and-ten is actually a relatively small change [0.
+4] you get er er a rapid increase in A-D-H release [1.8] so how does it work [0.
+5] so here's your er [0.4] tubule er er cell of the collecting duct [0.4] so 
+this side is the lumen so this is where the urine is now in the collecting duct 
+[0.4] and this is the blood side [0.6] but remember when talking about blood it 
+actually goes out of the tubule cell [0.3] into the interstitial fluid and then 
+into the blood er [0.3] vessel [0.4] and that'll become [0.2] even more 
+apparent as we go through today [0.8] so you've got vasopressin receptors on 
+the er cell surface [0.8] obviously they pick up er circulating levels of A-D-H 
+[0.6] and i've just put down here these are V-two receptors [0.4] A-D-H also is 
+a vasoconstrictor [0.6] in which case it acts via V-one receptors to modulate 
+er vasoconstrictions primarily in the skin [0.4] but in other parts of the er 
+body as well [0.5] and if it's acting as a vasoconstrictor it uses V-one type 
+receptors [0.7] and they signal fi-, through phospholipase C [1.1] whereas 
+these V-two 
+receptors which are in the kidney [0.4] er [0.2] as we'll see now signal via 
+cyclic A-M-P [0.7] and they also have er [0.4] a lower level of er [0.8] you 
+need less A-D-H for the V-two receptors to respond than you do for the V-one 
+receptors so they're more sensitive [1.6] so here you go so [0.4] the A-D-H 
+binds to the receptors cyclic A-M-P release [0.4] pro-, er [0.4] P-K-C 
+activation and protein phosphorylation that's ec-, your standard er [0.7] 
+activation pathway [1.2] what the protein phosphorylation does [0.3] is it then 
+allows these [0.3] inactive water channels er aquaporins [0.3] to be 
+translocated to the membrane [1.6] once they're inserted in the membrane this 
+then allows water to move from the urine [0.6] into the cell [0.7] and you 
+notice i'm actually talking about urine now because it's into the collecting 
+system so it's urine [0.3] not filtrate so we're actually concentrating our 
+urine [0.3] we're not concentrating our filtrate [0.7] so the water moves in [0.
+8] protein phosphorylation also longer term [0.3] regulates the er 
+transcription of the aquaporin gene [0.4] so er if you 
+have continued stimulation here you'll get aquaporin synthesis which again then 
+allows more [0.4] er water transport to occur [2.7] and if we look at what 
+happens to the er permeability of the tubules [0.4] so you can see here 
+remember i said the proximal [0.4] er tubule and we've got it split here into 
+two the proximal convoluted and the proximal straight [0.6] and the thin 
+descending loop of Henle [0.4] they've got a huge capacity to er reabsorb water 
+passively by osmosis [0.5] whereas these regions so you've got the thin [0.2] 
+ascending loop and the thick ascending loop [0.4] and parts of the distal 
+nephron and the collecting system [0.3] this is the cortical collecting duct [0.
+5] er are able to absorb small amounts of water whereas the inner medullary 
+collecting duct [0.4] has no water absorption normally [0.6] but under the 
+control of A-V-P [0.3] you can see both of these two [0.7] er collecting duct 
+regions er [0.5] the ability to reabsorb water increases dramatically [3.1] so 
+what stimulates its release i know i said er you've got osmoreceptors that er 
+detect changes in plasma osmolarity and that's what actually stimulates the 
+release of it [0.5] but what do [0.4] er [0.2] what's actually detected so 
+you've got changes here of plasma osmolarity [0.8] if you get alterations in 
+your extracellular volume [0.5] therefore you're becoming dehydrated that will 
+also er [0.5] change its er [0.4] release so in this case if you become 
+dehydrated [0.3] you want to retain water [0.3] so you produce A-D-H which 
+stops water secretion [0.6] thirst [0.5] nausea's quite interesting if you feel 
+sick you start producing A-D-H because your body assumes if you feel sick 
+you're going to be sick [0.3] and if you are sick [0.3] you lose water and lose 
+er [0.3] fluid volume from you so it kind of er [0.4] as a precaution [0.4] and 
+also some drugs [0.4] down here [0.9] so you kind of might need to be aware of 
+people if they're taking certain types of drugs and they come in with an 
+abnormal fluid volume [0.4] that might be why [0.8] so if we look at inhibition 
+of its release which will cause a fluid loss because you're not er causing 
+reabsorption [1.2] again [0.3] 
+plasma osmolarity [0.5] and then one we all know about alcohol [0.5] drink too 
+much alcohol you have to go to the loo constantly [0.7] and er [0.6] happens a 
+lot particularly to boys with pints i have to say [0.3] and the cold as well 
+you go out in the cold weather you end up peeing more than normal or you want 
+to [0.3] and stress will have an effect so they're they're the er [0.7] er [0.
+6] physiological stimuli that actually alter [0.3] A-D-H release [1.4] okay so 
+we've looked at the er [0.2] insertion of water channels into the tubular 
+membrane under the control of A-D-H [0.4] what about the concentration of an 
+osmotic gradient [1.0] so if we look here so this is like a cross section 
+you've got cortex outer medulla [0.5] inner medulla [0.4] and you can see if 
+you look at sodium and chloride they're almost the same [0.4] but they go up so 
+there's much higher concentrations in the medulla than in the cortex [0.4] and 
+urea goes up [0.5] and it's these three the combination of these three sodium 
+chloride and urea [0.4] that actually makes the inner medulla of the cor-, of 
+the kidney [0.4] very 
+concentrated osmoticallywise [0.3] so that's what generates an osmotic 
+difference [0.6] so how do we do this [3.9] so there's a number of mechanisms 
+if we look at urea first [1.4] now remember urea's freely filtered [0.4] so 
+everything that's circulating would potentially be filtered so that's a hundred 
+per cent goes into the er [0.5] nephron [1.3] of that fifty per cent is 
+reabsorbed early on in the proximal tubule so you've got fifty per cent of your 
+[0.3] total urea concentration going into the nephron down here [2.1] when that 
+goes it goes all the way round gets right round to the collecting duct [0.4] 
+and it's reabsorbed so [0.4] er [1.0] and you've got seventy per cent of that 
+remaining fifty per cent so the seventy per cent here is reabsorbed [0.2] goes 
+into the medulla [0.5] because you remember this is all interstitial space 
+between these parts of the nephron [0.9] but some of that is then secreted back 
+into the kidney so if you remember urea's one of those strange substances [0.4] 
+it's filtered here [0.5] it's reabsorbed here and here [0.3] and it's also 
+secreted so you've got b-, all three of the main mechanisms of er [0.5] urine 
+production going on with urea [0.9] so of this seventy per cent that it 
+secretes into the medulla [0.4] some of that is then taken back up into the 
+nephron [0.7] and sixty per cent [0.5] so you can see you've got ten per cent 
+difference between what you reabsorb and what you put back into the nephron [0.
+6] and that ten per cent [0.3] stays in the medulla [0.5] and because er and it 
+creates er a concentration gradient so you'll have less urea at this region [0.
+3] and more urea down here and you can see [0.4] er [0.5] you get ten per cent 
+in your [0.2] er [0.4] medulla [0.2] you retain that [0.2] that's part of your 
+osmotic concentration gradient [0.7] and then that actually means if you do the 
+sums that forty per cent of your filtered load actually ends up being excreted 
+by the kidneys [0.5] but it's this small percentage here that remains in the 
+medulla [0.6] that's important [2.5] okay [0.4] loop of Henle did you all do 
+this at A-level [1.7] no [0.4] yes [0.8] did you understand it [2.2] [laughter] 
+[laugh] [0.3] 
+i think that's probably a pretty mixed response [0.7] hopefully you will 
+[laughter] at the end of this [0.2] can't guarantee it there's always books or 
+you can come and ask me [0.7] but hopefully i'll take you through it [1.8] now 
+this is absolutely vital without a loop of Henle [0.3] we would not be able to 
+concentrate our urine [0.3] we'd be peeing out as much as we m-, er [0.3] we 
+filter [1.1] now it's only present in birds and mammals [0.6] so we're the only 
+er species [0.2] er birds and mammals that are able to actually concentrate 
+their urine anything else [0.4] what they filter is what they pass as urine [0.
+9] and that's because we have loops of Henle [1.3] so if we didn't do anything 
+[0.2] here's your isotonic urine 'cause you remember your filtrate's isotonic 
+to your plasma so it's going to come in at two-hundred-and-eighty [0.3] three-
+hundred millimol-, milliosmoles [0.5] and that's a hundred-and-eighty litres a 
+day [0.3] so if we didn't concentrate it at all [0.3] we'd lose a hundred-and-
+eighty litres a day which is about seven-point-five litres an hour [0.3] you'd 
+be
+sitting on the loo constantly [0.6] apart from the fact you couldn't drink 
+enough to replace all the water you were losing [1.7] so you have to split the 
+loop of Henle into three sections for this to work [0.9] and this is [0.2] this 
+is what the c-, sections consid-, er together actually do but don't worry about 
+that [0.5] so you have the thin [0.6] descending loop [0.9] and this is 
+permeable to water [0.7] and slightly permeable to sodium and chloride but it's 
+the permeability to water that's important [1.1] if we look at the er [0.3] 
+thin ascending loop [0.8] it's impermeable to water and there's a little bit of 
+salt and water transport here as well [0.4] er s-, er sorry [0.3] sodium 
+chloride transport [1.2] but the thick ascending loop is what's important as 
+well [0.6] you can see here it has sodium and chloride reabsorption but it's 
+completely impermeable to water [0.7] so you have to remember this side is 
+permeable to water [0.9] this part isn't [0.7] but this part transports your 
+sodium and your chloride [1.3] so if we have a look so this is basically [0.2] 
+reiterates what i've said [0.3] so 
+there's your water transport and if you take a section here [0.7] you can see 
+so this is the lumen so this is the side where the filtrate is [0.5] and that 
+has that takes up [0.4] it's got the sodium er [0.4] the potassium-two-chloride 
+sodium pump [0.4] which takes up [0.6] er all of these ions [0.4] the energy 
+for that comes from the sodium potassium A-T-P-ase [0.7] but the net effect of 
+this is that it transports sodium out [0.8] and chloride goes out through this 
+channel [0.7] so you take up [0.2] er sodium and chloride [0.4] from the er 
+filtrate [0.4] and you put it into the interstitial [0.5] tissue surrounding 
+the nephron [1.3] okay [0.6] so this is the counter current mechanism so this 
+is [0.2] this is your loop of Henle [0.2] thin bits [0.3] thick bits [1.1] and 
+the numbers kind of refer to the osmolarity but don't get tied up with specific 
+numbers it's just to illustrate something nobody's ever going to ask you what 
+[0.4] what the number down here should be or what the number up there should be 
+[1.5] so you have to remember [1.0] this part [0.3] is permeable to water [0.8] 
+er this part isn't permeable to 
+water [0.3] but has sodium pumps [0.3] okay [0.8] so this is what would happen 
+if nothing happened [0.3] you've got if i just go back one minute [0.4] if 
+nothing happened here this is water coming in [0.3] and you have to also 
+imagine this is static urine obviously the urine's flowing through your nephron 
+continuously [0.3] but you have to take snapshots at it to imagine how the 
+system works [0.4] so if nothing happened [0.5] three-hundred milliosmoles in 
+[0.2] i know it should be two-hundred-and-eighty but it's much neater to use 
+three-hundred for illustration purposes [0.5] so this is isotonic filtrate 
+coming in [0.5] and if nothing happened whatsoever you'd have isotonic filtrate 
+going out [1.5] flick through those [0.8] okay [1.2] so this is what happens 
+those the sodium pumps in this part of the er loop of Henle switch on [0.4] and 
+they pump sodium chloride [0.3] out into the medulla [0.7] and what they do 
+their aim is to keep a two-hundred milliosmole difference between the filtrate 
+coming round here [0.4] and the concentration in the medulla [0.7] so they s-, 
+they switch on these pumps [0.3] so the medulla becomes concentrated [0.3] 
+compared to the filtrate that's in the loop of Henle [1.2] now if you remember 
+[0.5] this part of the loop of Henle is permeable to water [0.8] so [0.3] at 
+the moment in this situation you have [0.3] dilute [0.3] filtrate here [0.4] 
+compared to the interstitial flui-, fluid concentration [0.6] so water flows 
+from [0.5] a high concentration of water [0.4] into a lower concentration to 
+try and equal it out [0.3] so water will flow [0.4] from here [0.5] into there 
+[0.4] which will make this more concentrated [0.8] is that clear [0.3] which is 
+what happens here [0.5] so then you end up with sort of one cycle of urine 
+moving round [0.4] you've got [0.3] dilute urine here compared to this part of 
+the loop of Henle [0.6] and [0.2] compared to when we started here where it 
+would have been three-hundred you've now got a t-, er [0.7] increased 
+concentration in the medulla [0.9] so if we move on one more time the urine 
+moves round a bit more so you've still got three-hundred coming in but if you 
+remember it was two-hundred here [2.4] pumps pump [0.6] 
+sodium out so that you get a two-hundred er [0.2] milliosmole difference [0.7] 
+this part of the nephron says hang on a minute i'm too conc-, i'm too dilute 
+now compared to the medulla [0.3] and water moves from that thin ascending er 
+descending loop [0.5] into the medulla [0.2] to equalize it so again [0.6] the 
+concentration in the thin descending loop [0.4] equals that in the medulla [0.
+6] whereas the thick ascending loop [0.5] is a two-hundred milliosmole 
+difference making this urine [0.3] or this filtrate more dilute [0.7] and 
+that's it that's all that happens [0.7] the consequences of this are [0.5] that 
+filtrate coming in here [0.3] is isoosmotic to your plasma [0.3] so two-hundred-
+and-eighty [1.1] by the time it gets down here [0.4] your filtrate er [0.3] has 
+become more concentrated because it's losing water all the way down here to try 
+and equalize the difference between the medulla [0.4] and the filtrate 
+osmolarity [0.6] and then when it goes up here [0.2] salt is pumped out which 
+means you have dilute urine [0.5] c-, er filtrate coming out [0.5] so you have 
+a difference at the top 
+wi-, compared to filtrate in [0.4] and filtrate out it's more dilute [1.3] is 
+that all clear [0.7] anybody want me to go over it again [2.1] okay [0.4] i'll 
+take your silence as that's all right and [0.4] if you don't understand it ask 
+me later [1.1] okay so we've now developed [0.4] what we've got now is we've 
+got lots of solutes in the medulla [0.4] and they get more and more 
+concentrated [0.2] the nearer the er [0.3] tip of the medulla that you get to 
+[0.9] now if you had normal blood flow if you had simply er a straight blood 
+vessel [0.4] going from the cortex through the medulla [0.4] and into the sort 
+of collecting region the the pelvis or the kidney [0.6] it's going to wash all 
+those solutes out because er [0.4] the water in the solute concentration is 
+simply going to er [0.2] er equalize as the blood vessel go-, travels down 
+through the medulla [0.3] and all that hard work by the loop of Henle is 
+completely obliviated [0.4] or alleviated [1.1] so remember the blood system's 
+set up differently in the kidney from what you'd normally expect [1.4] so we 
+have the [0.2] vasa recta remember i mentioned this right 
+back in the first er [0.2] microstructure lecture [0.5] and these are very 
+specialized blood vessels [0.3] and they parallel the er loops of Henle [1.2] 
+and they've got very low blood f-, er flow if you remember i mentioned that 
+although the kidney has [0.3] an extremely high blood flow for the size of the 
+organ [0.6] you only get five per-, [0.2] to ten per cent of this actually 
+going into the medulla so that's one of the way they conserve this osmotic 
+gradient [0.3] is not to put too much blood in the medulla and it's set just i-,
+un-, [0.4] er a high enough flow rate so that you can deliver the nutrients 
+and remove what you have to from the medulla [0.7] and they're also in this 
+hairpin arrangement [1.0] so just to remind you they look like this [0.4] so 
+you remember you have these er [0.5] bigger vessels coming in [0.4] and this is 
+the er a medullary pyla-, pyramid here [0.5] so the blood vessels come in and 
+they kind of go along [0.4] the cortex-medulla [0.3] border [0.6] and then you 
+get these loops [0.2] branching off the vasa recta which follow round [0.4] the 
+long loops of Henle [0.6] 
+remember some of the er nephrons have long loops and some have short loops [0.
+4] er when we're talking about concentration of urine [0.3] it's the juxta-, er 
+medullary nephrons that are important they're the ones with the very long loops 
+of Henle [0.5] and they have these blood vessels that parallel them [0.3] 
+around [1.7] so this is how the vasa recta works [0.3] now remember this is 
+slightly different from the er [0.2] nephron [0.4] because this is a capillary 
+[0.4] so it's semi-permeable [0.2] and doesn't have the pumps and the 
+impermeability to water that the nephron has so this is a semi-permeable 
+membrane now [0.5] permeable to both solutes and water [0.9] so here we have [0.
+3] this is the cortex this is the blood coming in [0.4] at er isoosmotic to 
+your filtrate [0.2] at this stage [0.6] and but remember in the medulla we've 
+now built up this concentration gradient so it's dilute at the tip [0.5] and 
+more concentrated at the bottom [0.8] and as the er blood flows in down here [0.
+5] what happens is that [0.4] from the er [0.4] dilute [0.3] filtrate you lose 
+water because [0.3] 
+it's simple diffusion the water wants to try and equate the balance and [0.5] 
+it's effectively [0.4] concentrated water in the filtrate so it flows to a 
+region of low water concentration so it flows [0.3] out of dilute filtrate [0.
+4] into concentrated medulla [0.6] and likewise the solutes do the opposite 
+there's lots of solutes here [0.4] not so many here [0.2] so to try and er 
+equilibrate that solutes move in [0.6] now this is what i was saying if it was 
+a straight er [0.6] capillary that then just went on out down here [0.5] all 
+you've done is negate this er concentration gradient you've built up [1.1] but 
+it's again it's arranged like er [0.9] the loop o-, the loop of Henle is and 
+its counter current system [0.4] so this is what would happen [0.4] so it 
+becomes more concentra-, your blood becomes more concentrated in here as it 
+flows down to the tip of the hairpin [0.4] and somewhere round here it reach-, 
+equi-, er a point of equili-, er equilibration between the [0.4] concentration 
+in the blood and the concentration in the medulla [1.1] but as it then flows 
+back up [0.4] 
+it's going up through a more dilute system [0.5] and [0.4] exactly the same 
+happens here in terms of the solutes and the waters try to compensate and equal 
+things out but they go in the opposite direction [0.6] so here [0.4] you've got 
+more solute than you have in the medulla so the solutes go out back into the 
+medulla [0.5] and likewise [0.3] the water from the medulla [0.2] flows in to 
+try and compensate [0.5] so the net effect here is that although you l-, lose 
+water here and gain solutes which is what you don't want [0.5] because it's a 
+hairpin and goes back up again [0.3] the opposite happens on this er [0.9] er 
+er [0.2] this direction [0.5] and you actually end up [0.3] with just a small 
+difference between your [0.3] concentration of your blood going in and the 
+concentration of your blood le-, [0.3] leaving [0.3] and that maintains [0.3] 
+the concentration gradient in the medulla [1.0] it also does one really other 
+important things 'cause if you remember from stones urea [0.4] and sodium and 
+chloride they're all things 
+that can crystallize out [0.6] so if you had a lot of urea [0.5] and sodium and 
+chloride just sitting in your medulla doing nothing statically they'd 
+crystallize and form er [0.2] crystals in the medulla [0.4] and stop it working 
+properly [0.9] if you imagine you've got a loop of Henle here [0.3] and you've 
+got urea going into this space and then [0.2] into here and then out again it 
+kind of keeps the circulation system going between the nephron and the blood 
+system and the medulla [0.4] and that circulation prevents any precipitation 
+occurring of the salts that you've got in the medulla [0.5] because this is 
+quite a high [0.3] you're talking of twelve fourteen-hundred [0.4] er conce-, 
+osmotic concentration here so that's quite concentrated [0.6] and they would 
+precipitate [0.7] so here you go so this is what you end up with you've got a 
+[0.3] osmotic gradient as you go through the medulla [0.9] and the thing that a-
+, then allows to happen [1.2] you've got this osmotic gradient here and this is 
+your collecting duct going through it [0.6] A-D-H is being 
+stimulated to insert water channels here [0.6] and because they work by osmosis 
+[0.4] the water can then flow from the collecting duct [0.4] back into the 
+medulla [0.3] and that then obviously gets taken away [0.4] er [0.5] back into 
+the blood supply and into the sys-, er body [0.5] so that's how it works [1.5] 
+okay [0.8] so that's the physiology [1.0] what happens when it all goes wrong 
+[0.5] and you get some [0.4] er diseased state [0.4] well basically you're 
+either going to make too dilute or too concentrated a urine [0.4] that's all 
+that happens [1.4] so this is the first condition we're going to look at this 
+is a syndrome of inappropriate secretion of A-D-H [0.4] means you're secreting 
+A-D-H when you shouldn't do [0.7] it's an antidiuretic hormone it's going to 
+stop you concentrating your urine [0.3] so your blood volume is going to go up 
+and you're [0.2] going to become fluid overloaded [0.9] so i've put up here 
+this is normally what happens it's often [0.4] er a pituitary tumour which is 
+secreting A-D-H [0.4] or you get them from er [0.3] ectopic sites some [0.5] 
+cancer remember a lot of these tumours 
+a lot of cancers produce hormones they're not supposed to [0.5] you get 
+parathyroid hormone related peptide produced by [0.4] er breast cancer [0.2] er 
+tumours of breast cancer origin [0.4] again some of them produce A-D-H [1.3] 
+likewise sometimes you obviously if you have a pituitary tumour [0.4] and that 
+metastasizes [0.2] it's the same cell type so that also would account for A-D-H 
+being produced [0.9] so what are the signs and symptoms [0.5] remember i said 
+you were going to get fluid lo-, overloaded but this is [0.3] only regulating 
+your water reabsorption [0.2] doesn't affect your sodium [0.7] so you become 
+hyponatraemia [0.6] er or dis-, you develop hyponatraemia [0.3] so that's low 
+sodium concentration in your blood [0.7] and that's simply because the sodium 
+has been diluted [1.0] if you look at the total body sodium of these people 
+it's exactly what you would expect it's normal [0.5] but because they've 
+retained more water [0.3] you've diluted the sodium [0.4] so when you send off 
+[0.9] i don't know ten mls or whatever to a lab and it 
+comes back as a [0.4] molarity of your sodium concentration [0.6] you're going 
+to think their sodium is low [1.4] now that has effect because low sodium will 
+er [0.6] have effects on your system's physiological systems and we do look at 
+these er [0.9] actually one of the case studies today is er [0.5] she's got low 
+sodium [0.7] er [0.7] but remember it's diluted [0.2] your actual blood body 
+sodium isn't low but you've diluted what you've got [1.6] again [0.5] er if 
+you've got too much er [0.5] A-D-H your urine's going to become too 
+concentrated when you're not expecting it to become concentrated [0.5] and 
+again the sodium's going to be high in your urine so these are s-, kind of the 
+classic symptoms [0.3] the hyponatraemic [0.6] the urine's concentrated [0.2] 
+and the urine sodium's quite high [2.1] and what are the causes [0.7] i've er 
+i've listed them here [0.5] er there's a range of things and i'll just take you 
+through them but if you simply remember it's likely to be a tumour [0.7] or an 
+inflammatory response [0.5] or drugs or stress that's kind of an easier way of 
+remembering the causes 
+of [0.5] er [1.4] syndrome of er A-D-H release [0.7] but if we look here [0.4] 
+obviously [0.2] you make and release it from the pituitary and hypothalamus [0.
+3] so any lesions in that region can have problems [0.5] inflammatory diseases 
+generally will cause A-D-H release or can do [0.3] but obviously if they're in 
+the brain that that's er more likely [0.7] and there's a whole range of other 
+things [1.2] problems with the lungs also er [0.2] tend to cause er A-D-H 
+release [0.4] C-O-P-D is a classic symptom where you get A-D-H release [0.5] er 
+and that makes it even worse because if they've got chronic obstructive er lung 
+disease already [0.3] the last thing you want to do is fluid overload these 
+people and give their lungs even more of a fluid challenge so that exacerbates 
+their problem [0.6] and tumours and particularly the small cell type in in 
+lungs are [0.2] are bad [1.1] and then also er [0.4] certain drugs [0.8] so 
+okay they've got mixed action so i've put a whole load here [0.3] there's far 
+far far more drugs than i've listed here but these are com-, some of the common 
+ones [0.6] 
+oxytocin's important [0.4] because that happens when you give oxytocin quite 
+often to pregnant women if you're inducing labour [0.4] and you have to bear in 
+mind the effect that will have on their fluid system so [0.4] sometimes you may 
+be inducing labour because of pre-eclampsia the last thing you want to do [0.3] 
+by giving them oxytocin [0.3] is to cause fluid retention as well so you have 
+to be careful [0.4] when you give oxytocin that the person's [0.3] or monitor 
+their fluid load [0.4] er [0.2] carefully [0.6] er Ecstasy as well [0.5] people 
+who take Ecstasy have a problem with fluid er loss they tend to retain it and 
+become very oedematous [0.4] and that's acting probably via A-D-H [0.6] and 
+then just down here post-operatively [0.5] obviously that's quite specialized 
+but [0.6] the case varies and this trauma would also go in there [0.5] a sudden 
+fluid loss may sometimes activate [0.3] A-D-H [0.3] now it may not because if 
+you lose blood you're losing isoosmotic [0.4] er fluid [0.5] so you're not 
+altering the ratio of er [0.5] the plasma osmolarity you might be getting low 
+plasma volume 
+but the osmolarity of it is normal [1.0] the slight trouble you have sometimes 
+post-operatively is if you give somebody glucose in the drip because glucose is 
+metabolized very quickly to water and whatever's left over [0.5] so sometimes 
+by giving glucose [0.4] you're er going to exacerbate the fluid overload [0.3] 
+that's already been caused by A-D-H release [0.8] er [0.4] and H-I-V people [0.
+2] the people that are H-I-V positive they have [0.2] problems about a third of 
+them [0.5] er produce er A-D-H [0.7] so just bear that in mind [1.4] so what's 
+the consequences the basic consequences are you end up with too much water [0.
+8] er so we've talked about having low plasma sodium [0.5] sometimes you get 
+oedema [0.5] sometimes you don't because this fluid overload is primarily a 
+circulatory problem [0.5] so the fluid overload is still in the blood vessels 
+and in your blood volume [0.5] but obviously sometimes that has the knock-on 
+effect of oedema [0.7] so if somebody [0.4] you suspect somebody of having S-R 
+S-I-A-D-H [0.5] and they haven't got oedema it doesn't rule it out but 
+they may have [0.8] and i've just mentioned here that if your plasma sodium 
+drops too low obviously you're then into problems and it can actually become an 
+emergency that you have to deal with [1.6] okay so that's if you have too much 
+A-D-H so you retain fluid what happens if you have the opposite condition [0.4] 
+you can't concentrate your urine and you lose loads of water [0.7] and this is 
+called diabetes insipidus [0.3] and this is why i keep stressing the importance 
+when you answer a question [0.8] particularly in this module but generally it's 
+a habit you should get into you have to [0.5] be careful that you tell me which 
+tal-, [0.2] type of diabetes you're going to be talking about because [0.4] er 
+diabetes mellitus has effects on the kidney [0.6] er so i will be asking you 
+questions about that and obviously diabetes insipidus so you have to tell me 
+which diabetic condition you're you're talking about [2.0] so there's two 
+conditions so you basically have central [0.3] or nephrogenic er [0.5] diabetes 
+insipidus [1.0] and what they 
+refer to obviously [0.5] nephrogenic is er a condition that refers to problems 
+with the kidney [0.5] and central [0.3] er is a a condition it's a bit 
+misleading it's nothing to do with central it's central as in your hypothalamus 
+or your pituitary it's your central control system [0.4] so if it's central 
+it's a problem with the [0.3] synthesis and release [0.3] if it's nephrogenic 
+it's a problem with the kidneys being able to respond [1.1] so here [0.2] 
+symptoms are obvious polyurea [0.4] they produce loads and loads of urine [0.3] 
+the consequences are they have to drink lots to try and compensate for this [0.
+6] now remember these are symptoms of diabetes mellitus as well somebody comes 
+in saying they're [0.5] you know into your surgery if you're a G-P and says i'm 
+drinking loads and i'm peeing loads you probably think they had diabetes 
+mellitus or you'd want to test their urine for glucose [0.8] but obviously if 
+they're drinking lots and peeing lots [0.3] no glucose in their urine [0.3] you 
+might start thinking about other forms [0.5] and they're going 
+to have er [0.7] a low pa-, a plasma os-, a low urine osmolarity because 
+they're passing lots out [2.2] okay so what's the defects so i've talked about 
+this so [0.2] central's a problem with the brain you either don't make it [0.3] 
+or you can't secrete it [0.6] so the obvious cause is allow for something like 
+trauma or injury or infection [0.5] and inflammation that are going to affect 
+your pituitary hypothalamic [0.2] er function [1.7] or nephrogenic now 
+nephrogenic it simply means you you're producing A-D-H correctly [0.3] as your 
+body wants it [0.4] but your sa-, your kidneys can't respond to it [0.5] and 
+there's a number of reasons for this they could be [0.2] congenital there are 
+people who have congenital problems [0.4] but also an infection or an 
+obstruction can do it [0.7] you might lack the receptor [0.4] er or you can't 
+form or translocate aquaporins obviously this isn't something that tends to 
+happen [0.4] late in life this is a [0.6] problem that will have been with you 
+a congenital problem from birth [1.5] er [0.4] sometimes i've just put down 
+here [0.4] if it's a problem 
+with aquaporin translocation remember cyclic A-M-P is important in this [0.3] 
+so things that interfere with the cyclic A-M-P signalling pathway [0.4] may 
+well interfere with er A-D-H signalling [0.3] and therefore interfere with er 
+aquaporin translocation so [0.3] if they're on drugs that you know might 
+inhibit that kind of pathway [0.4] that might er also be a cause of it [1.9] so 
+this is what you do you're going to want if you've got somebody you're pretty 
+certain has got diabetes insipidus you're going to want to know which form 
+they've got [0.4] so you do what's called a water deprivation test [0.8] so 
+here we have along the bottom [0.5] er [0.2] or at least up the up the side 
+here we've got er urine osmolarity [0.6] and this is A-D-H concentration [0.5] 
+i'm sorry i've cut off the units i have no idea what A-D-H is actually measured 
+in [0.4] er but this is A-D-H along here [1.7] so er [0.6] if somebody a normal 
+person [1.0] i'm sorry i'm telling you it's A-D-H i think i might be wrong now 
+i think that could be hours [1.6] sorry i can't remember it's er in the 
+textbook but ignore that 'cause it's totally irrelevant for the actual er [0.6] 
+what i'm going to tell you [0.3] but this is a normal person here [0.5] so [0.
+3] as their A-D-H [0.2] rises [0.4] yeah it must be A-D-H as their A-D-H rises 
+[0.5] their urine osmolarity [0.5] er [0.4] changes as well er sorry their 
+normal osmolarity changes [0.7] you give somebody A-D-H by injection [0.7] 
+they're going to stop their urine osmolarity increasing because you start to [0.
+3] retain [0.3] er [1.8] water [0.4] okay [0.4] so this is a person who's not 
+drinking remember water deprivation test [0.4] so if you're not drinking your 
+plasma osmolarity will go up [0.7] okay [1.0] you give them [0.2] A-D-H [0.8] 
+and they're going to stop their plasma osmolarity increasing because although 
+they want to [0.4] carry on because they're still not drinking [0.4] the A-D-H 
+will cause them to [0.4] retain water [1.3] okay is that clear on my second 
+time round [0.7] okay so this is somebody with er [1.0] er one of the forms or 
+both forms of diabetes insipidus you don't know which to this point [0.3] so 
+you deprive them of water [0.6] they still pee a lot of 
+urine [0.4] so their plasma osmolarity will not increase it doesn't go up at 
+all if you notice [0.5] they just still er maintain their er dilute plasma [1.
+2] you give them A-D-H okay [0.7] so if it's somebody who has a defect in the 
+brain who can't make or secrete A-D-H [0.3] you give it to them [0.3] they 
+respond as normal [0.3] remember they've got very er [0.4] dilute urine here [0.
+5] er you give them this [0.3] and they concentrate their plasma rather 
+concentrate their plasma [0.6] to er [0.3] as you would expect from A-D-H [1.7] 
+if you give er somebody with nephrogenic A-D-H [0.3] they have absolutely no 
+way of responding to it so you don't see any change in the response whatsoever 
+[1.2] okay [0.3] so this is the way you can tell them apart [0.3] deprive 
+somebody of water [0.5] then give them er an A-D-H injection [0.5] if you see a 
+change in the [0.2] er urine osmolarity [0.6] then they've responded to A-D-H 
+[0.4] and they've got central [0.2] diabetes insipidus [0.6] you give them er 
+an injection of A-D-H and they've got a problem with their kidney [0.4] you see 
+absolutely no change [0.3] yep sorry 
+sm0441: 
+with the [0.2] nephrogenic form do they hypersecrete A-D-H [0.2] do they have 
+like a lot of A-D-H in their blood that 
+nf0440: yep 
+sm0441: they start to respond to [0.7] 
+nf0440: probably yes [0.3] er if you were to actually measure their A-D-H they 
+will be producing lots because they're trying to [0.2] er [0.3] concentrate 
+their urine so they're [0.3] they're overproducing [0.2] to try and compensate 
+but of course it has no effect [0.4] wherever the defect is [2.4] but you 
+normally having said they [0.5] it's not [0.3] you wouldn't normally just 
+measure their A-D-H as a diagnostic er [0.3] tool it's a clue but you would 
+normally do a water deprivation test [3.2] okay [0.8] so just to reiterate [0.
+3] the important factors [2.9] the length of the loop of Henle is important [0.
+5] the longer the length of the loop of Henle [0.4] the more concentrating 
+ability you've got [0.7] and there's remember i said to you it's the juxta-, er 
+medullary er nephrons that are important there's only fifteen per cent of your 
+nephrons are of this strain this type [0.6] but those 
+are the ones that are actually important for forming the osmotic gradient 
+within the medulla [2.6] you've got the rate of sodium reabsorption so those 
+sodium pumps that are working in the thick ascending loop of Henle [0.6] the 
+more efficiently they work [0.3] the more the higher the osmotic [0.2] er 
+concentration in the medulla's going to be so if you inhibit those from working 
+for some reason [0.5] you don't develop such an osmotic [0.2] gradient [0.3] 
+and don't reabsorb so much water [0.5] so [0.3] er some diuretics [0.3] 
+interfere with these pumps [1.9] er obviously if you've got changes in the er G-
+F-R so your rate of sodium chloride delivery to that part of the nephron [0.5] 
+alters that will also alter your er [0.7] ability to er [0.7] reabsor-, to 
+create the osmotic gradient and therefore reabsorb water [2.7] the flow rate [0.
+7] if you've got very high filtrate flow rate [0.3] through the loop of Henle 
+[0.4] it's going to wash everything through the loop [0.5] more quickly [0.3] 
+than all the er functions can actually er the counter current mechanism can 
+work properly [0.6] so if it flows too quickly 
+through like you've got a really high G-F-R [0.5] er you don't develop a very 
+good er counter current system [0.6] the osmotic gradient is not as strong as 
+it could be [0.4] therefore you tend not to concentrate your urine so well so 
+you would produce dilute urine in that case [2.3] and the protein content of 
+diet [0.9] remember urea comes from protein it's a breakdown product [0.5] so 
+in theory if you have a high protein diet [0.5] there's high urea in the blood 
+[0.6] so that's more urea that can go into the er medulla [0.5] and in theory 
+that increases the osmotic potential and there is some evidence that people 
+with high protein diets do concentrate their urine [0.5] more efficiently than 
+people with low protein diets [0.9] having said that and we're not talking 
+about it yet in the module [0.4] but if you've got renal failure [0.4] remember 
+one of the things you look for is an increased in the urea in the er blood [0.
+4] and the plasma because you can't filter it and you can't deal with the urea 
+properly [0.3] so if 
+you've got kidney disease or kidney failure [0.3] you might actually want to 
+consider limiting the protein diet and certainly people [0.4] with er [0.4] end-
+stage renal failure have a low protein diet because they can't get rid of the 
+urea [0.6] so [0.2] normal people there's some evidence that if you eat lots of 
+protein [0.4] you'll concentrate your urine more and pee less [1.0] and then 
+you want the osmotic potential of the tubule cells so you obviously you need 
+antidiuretic hormone or A-V-P [0.4] to be present to allow the water 
+reabsorption to occur [0.3] so you've basically got the length of the tubule [0.
+4] the flow rate [0.3] and then the efficiency at how the water moves out of 
+the f-, [0.3] ur-, er filtrate or urine into the er [0.6] kidney [0.3] and the 
+efficiency of the sodium pumps and the counter current mechanism [1.2] and 
+that's it [0.5] oh and the medullary blood flow obviously if you've got very 
+high blood flow going through the vasa recta it will still wash stuff out [1.2] 
+so i just want to remind you next week's acid-base balance [0.5] and this kind 
+of fits in 
+with your respiratory module [0.3] so i think you do a bit of acid-base 
+tomorrow it's not kind of [0.8] i've looked at it in the module booklet and 
+it's not kind of listed as acid-base [0.4] but you do do some [0.3] carb-, er 
+some [0.3] tomorrow [0.5] and there is some following on from the urinary 
+module next week so [0.4] this week's respiratory [0.2] and next week's 
+respiratory kind of fit in slightly [0.4] with the er kidney acid-base because 
+the two of them work together the lungs and the kidney to regulate it so [0.8] 
+er [0.2] group work starts about quarter to eleven ten to eleven [0.4] okay and 
+if you've got any questions at all [0.3] come and see me 

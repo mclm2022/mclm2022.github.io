@@ -1,0 +1,651 @@
+nf0856: well good afternoon everybody [0.6] er today's lecture's topic [0.2] is 
+tension structures as you can see [0.8] er this term encompasses all kinds of 
+er [0.2] three-dimensional structural forms and two-dimensional structural 
+forms [0.7] er ranging from suspension bridges [0.4] cable nets cable trusses 
+[0.6] and [0.2] fabric fabric membranes [0.4] now all these terms will become 
+clearer as we go [0.2] through the lecture [0.3] we've got plenty of 
+illustrative examples to show you [1.1] the lecture falls into several parts [1.
+1] initially [0.3] namex is going to in-, introduce er [0.3] the basic 
+principles behind the structural actions [0.5] in tension structures [0.9] i 
+will then move on to discussing [0.6] fabric membranes [1.0] and then we 
+conclude the lecture or first part of the lecture [0.3] er with er [0.2] 
+pneumatic membrane structures [1.3] er in the second part of the lecture we're 
+going to show you a video [0.5] on tension structures [0.3] which will 
+reinforce some of the concepts ideas presented in the first part of the lecture 
+[0.7] and then finally 
+we're going to move on to a workshop where [0.4] we we're going to be 
+experimenting with er [0.2] tensegrities [0.9] and what else er [0.5] 
+reciprocal frames 
+nm0857: reciprocal frame structures yeah [0.5] 
+nf0856: er and so on so it's going to be an action packed [0.2] afternoon 
+[laugh] okay i hope [0.7] you're going to enjoy it [0.2] now over to namex 
+nm0857: right well as er namex has said i'm going to introduce some of the 
+basic principles [0.3] er [0.2] of tensile structures [0.5] and one of the [1.
+0] really basic principles is [1.2] the fact that they are tensile structures 
+[0.5] and you can demonstrate their efficiency [0.5] by something as simple as 
+a strip of [0.3] paper [0.6] which er [0.9] will carry quite a reasonable load 
+[0.3] in tension [0.5] but you try and 
+invert this structure so that it's carrying this load in compression [0.4] turn 
+it the other way up [0.3] and of course [0.3] it won't even support its own 
+weight [0.4] so [0.7] that's the first [0.3] lesson to learn that tensile 
+structures are highly efficient [0.4] because they they don't buckle [0.8] er 
+i'm sure you all know about buckling behaviour of structures [1.6] and the 
+majority of materials are actually reasonably strong in tension therefore [0.7] 
+er you can use most materials [0.3] as er for tension structures [1.5] er [0.3] 
+the [2.2] second thing we're going to look at is the [0.8] er behaviour of [0.
+9] horizontal [1.0] tension structures [0.5] and er the simplest form of that 
+is just a structure hanging under its own weight [0.5] and here i've got a [0.
+5] a chain [0.7] er which [0.8] is hanging under its own weight [0.4] and as 
+you can see it forms a curve [0.6] and this curve where it's er just acting 
+under its own [0.4] er self-weight [0.3] is known as a catenary curve [0.5] the 
+load is not quite uniform along 
+the structure as [0.5] a a metre of span at the end [1.0] is er [0.2] contains 
+a greater length of cable [0.4] than er a metre [0.2] in the middle [4.7] if we 
+then put some load on the structure [0.2] you see that er [0.2] in fact [0.3] 
+it's now changed [0.2] shape [0.7] and er a point load in the centre [0.2] 
+forms [0.2] approximately a V-shape [0.6] structure [3.0] if we then put er [0.
+2] an additional load [0.9] on the structure [1.4] we see that it's [0.9] 
+changed shape again [0.8] and er [2.6] forming [1.8] a trapezoidal [0.2] shape 
+[1.0] and er [0.2] in the handout you can see [0.4] that er i've given you the 
+different shapes that er [0.2] a cable actually takes up [0.7] er depending on 
+the loading [0.5] er the top there we have er the catenary under self-weight of 
+the cable [0.5] and as i said er the weight of the cable actually at the ends 
+is [0.2] greater per 
+metre of span [0.3] than it is in the middle here [0.5] er [0.2] if you take a 
+a uniformly distributed load [0.7] on [0.3] the [0.2] the cable or chain [0.4] 
+then it takes up a parabolic form [0.8] er if you have a load that's zero in 
+the centre and maximum at the ends then you get an n-, [0.3] an elliptical [0.
+7] er [0.5] form of the cable or chain [0.7] er point load gives you a triangle 
+[0.2] and that varies depending on the position [0.4] of the load [0.6] er 
+trapezoidal where you have two loads [0.4] and er [0.3] the more loads you add 
+[0.2] you get er [0.2] a polygonal sh-, [0.4] shape [0.6] so [1.1] that's er 
+the second leshon lesson to learn about er this type of structure [0.5] they [0.
+3] they are er [1.0] they change shape [0.3] as according to the load as the 
+load changes [0.4] the shape of the structure changes [1.7] and these are known 
+as funicular [0.2] structures [8.8] one thing that we we need to look at er [1.
+3] for tension structures they [0.2] can't just act [0.4] on their own in 
+tension they have to be restrained in some way [1.1] and er we can look at 
+various er [0.3] retr-, restraining systems [0.2] and again 
+you've got these [0.4] in the handout [0.6] er the most obvious [1.4] one the 
+most commonly used one [0.2] is to have [0.4] c-, cables supported on [0.6] 
+some mast [0.2] structures [1.2] and then to tie this structure back [0.6] er 
+to a foundation in the ground [0.4] with er another [0.2] tension element so 
+you have [0.3] a continuous cable round [0.6] er this acts [0.2] is acting in 
+compression the rest is in tension [0.5] and then you need some form of [0.2] 
+of anchorage [0.2] at the bottom [3.0] an alternative way of er restraining [0.
+2] this type of structure is to er [0.5] have some form of buttressing system 
+[0.7] er where you have inclined supports [0.5] and er this diagram shows [0.2] 
+a massive [0.3] buttressing system [0.3] where the self-weight of the buttress 
+[0.4] is causing an overturning moment [0.4] and that [0.6] tensions up the 
+cable [0.3] maintains it in position [0.3] so the cable's pulling here [0.2] 
+creating a moment in this direction [0.5] and the [0.8] supporting structure [1.
+2] the [0.4] eccentric self-weight [0.2] creates a moment in the other 
+direction [3.9] and the third type of system is to actually have a [0.2] some 
+[0.2] closed ring [0.2] round your tension structure [0.4] so in 
+this case here we've got er [0.6] a series of cables simply sp-, [0.3] 
+spanning [0.3] er a space here [0.5] and er these connect to a a rigid beam 
+round the outside [0.7] er er which would be in bending [0.3] and then [0.6] 
+the force from this side is carried in compression across to [0.2] the other 
+side so you actually form a [0.3] a closed circuit [2.5] so that's er [0.9] 
+three ways of retaining the structure [3.7] er these are all lightweight 
+structures [0.3] and therefore [0.7] er [0.8] a major problem is to [0.6] er [0.
+8] restrain [0.3] the structure [0.2] when you have wind loading [0.4] er as 
+you know [1.0] or i hope you know [0.5] by now [0.2] er on [0.3] structures 
+that are fairly flat [0.4] er you tend to get er [0.5] suction [0.3] wind 
+forces [0.4] and therefore [0.5] er [0.3] although the dead loads [0.2] of the 
+structure are acting downwards under gravity [0.4] the wind loads are trying to 
+lift the structure up [0.2] and a cable [0.7] is very resistant [0.2] when the 
+[0.4] loads are down [0.2] but it doesn't have [0.4] much resistance when 
+you're trying to [0.7] resist suction forces the structure will deform a lot [0.
+8] so er [0.2] there 
+are various ways of er [2.6] restraining [0.6] er the wind uplift forces [0.5] 
+the [0.9] obvious one [0.7] is to increase the self-weight of the structure [1.
+1] over the span so you in-, [0.2] increase the dead weight [0.4] er which to 
+me is completely opposed to the idea of having a tension lightweight structure 
+[0.4] if you then put a lot of load on it to [0.2] to stop it from [0.5] moving 
+about in the wind [0.6] so although that works and is used sometimes it's [0.2] 
+to me not the ideal solution [2.7] another way of restraining which is slightly 
+better is to actually put some [0.4] er [1.1] inverted arch or shell structure 
+[0.5] er around the cable [0.4] and that again is [1.4] a relatively 
+heavyweight structure [0.4] and er to me is not a [0.2] particularly good 
+solution although it's lighter than the first one where you're just using dead 
+load [0.3] you are are actually using a [0.5] a structure here to to resist the 
+uplift forces [2.5] er the third way is er to actually have [1.0] an opposing 
+cable so [0.3] you have a hanging cable [0.5] and then you have [0.4] er [1.3] 
+another cable which is curved in the opposite 
+direction [0.4] and between those in this case you have some struts [0.5] er 
+there are various ways you can do this you could actually have [0.3] a cable 
+which runs [1.2] on another profile down here [0.2] and have struts in the 
+middle and ties at the ends [0.3] so there are various combinations or 
+permutations of this but this is [0.2] forming what's known as a cable truss [0.
+2] system [0.4] and there you are actually having a lightweight [0.2] er 
+structure [1.5] this is in one plane [0.4] but er [0.6] also you have problems 
+you need to restrain the structure in the other direction [0.3] so a fourth [0.
+2] solution [0.2] which er [0.5] is probably [1.0] er [0.5] the best [0.3] is 
+to actually have some transverse cables [0.4] so you've got [0.4] one set of 
+cables hanging in one direction [0.4] then in the other direction [0.5] these 
+cables that ran [0.6] in the planar truss across the top here [0.4] are running 
+across your structure [0.4] so you have a system [0.8] in one direction hanging 
+[0.2] and in the opposite direction [0.4] these cables are [0.7] inverted [0.2] 
+and they are [0.6] actually prestressed [0.2] against each other [1.7] so 
+that's the the various sort 
+of stabilizing systems to resist [0.6] wind [0.2] uplift [2.6] right so er [0.
+7] that's the sort of theory and er [0.7] now i'll go on and show you some [0.
+5] slides er which demonstrate these types of structures 
+nm0857: er starting [0.2] with a [1.7] an early [0.6] form of tension structure 
+[0.6] er a sailing [0.2] sailing boat of course demonstrates [0.4] er [0.7] two 
+or three different types of tension structure the stays [0.5] er the mast [0.4] 
+and er the membranes the sails [1.0] very simple membrane structures [0.4] and 
+these would use er [1.2] cellulose fibre [0.7] e-, elements [0.4] er as the 
+tension elements [6.1] of course er suspension bridges were also made using er 
+[1.0] ropes [0.7] and er rattan [0.2] binds and so on [0.5] er to make simple 
+tension [0.2] er [0.3] suspension [0.3] bridges [1.1] but the [1.0] the 
+earliest long span bridges [0.4] were made using wrought iron [0.6] and er this 
+is the Menai Suspension Bridge [0.2] across to the Island of Anglesey [0.4] in 
+Wales [0.6] er [0.2] designed by Thomas Telford er finished in eighteen-twenty-
+six [0.4] using 
+wrought iron [0.2] which was [0.3] sort of the new strong tensile material [0.
+8] and er [0.3] it would actually work to the limit of the of the material [0.
+7] eighty-eight er newtons per square millimetre [0.3] as the tensile strength 
+[1.9] and this is hanging [0.4] in [1.7] a sort of [1.2] somewhere between the 
+parabolic and er catenary curve [3.1] er with er more modern materials high 
+strength steel once steel was developed in the eighteen-fifties [0.4] then [0.
+4] er various processes produced er high strength steel wires [0.5] and 
+Roebling [0.2] the er [0.3] North American engineer [0.5] er [0.9] made some [1.
+2] very elegant [0.3] er [1.1] suspension bridges including one over Niagara 
+Falls this is Brooklyn Bridge in er [0.5] New York [0.2] and you can see the 
+suspension cables and also some cable stays [3.3] er [0.2] as [0.4] er modern 
+materials and design methods have improved [0.4] we can see now this is [0.2] 
+the Severn Bridge which is one of the [0.4] longest spans in the world although 
+the Japanese have now got er [1.4] a bridge which is almost two kilometres 
+long [1.1] er you can see the [0.2] the size of the tension elements have gone 
+down [0.7] er over the years [1.2] as material strengths have improved [3.3] as 
+an example of the of the buttress [0.2] system this is er [0.2] Dulles Airport 
+[0.3] in Washington [0.7] where [0.5] er [0.2] you can see these inclined [0.5] 
+columns [0.4] are actually sort of tilted away from [0.4] the roof [0.9] span 
+[0.5] which is cables running between these columns [0.3] and then [0.5] to 
+stabilize it it does actually use the inverted [0.2] shell [0.6] type structure 
+[0.4] so you have [0.2] a system of cables enclosed by [0.6] er reinforced 
+concrete [5.8] er one of the [0.3] earliest er [2.1] enclosed ring type systems 
+was the [1.1] Raleigh [0.2] arena [1.4] where you have [0.2] a system of [1.1] 
+cables running in this direction [0.2] and another system of cables running in 
+a in the other dir-, [0.2] opposing direction [0.5] and that is actually 
+enclosed [0.2] within this ring [1.0] of two inclined arches [1.0] which are [0.
+2] self-stressing because the weight of the arch is trying to pull the 
+structure [1.7] this is tending to fall down in this direction tensioning the 
+er the cables [0.9] crossing the str-, [1.7] across the span [3.7] taking the 
+idea of the cable truss into er three dimensions [0.3] er the simplest [0.4] a 
+simple structure is er [0.5] the bicycle wheel type structure [0.4] where you 
+have [0.3] a n-, a node in the centre where all the cable trusses meet [0.3] 
+and you have a ring beam [0.3] which is in compression [0.4] and this is 
+exactly the same as a bicycle wheel [0.5] er [0.7] the bike that you ride [0.5] 
+er [0.4] you have [0.4] a similar sort of system [0.5] a compression ring round 
+the outside [0.5] and the hub in the middle [0.3] and you are actually [0.4] 
+riding on tension [1.1] when you ride a bicycle [1.4] er this is an example in 
+Tunisia [0.3] of er one of these bicycle [0.7] wheel type roofs [3.4] er other 
+[1.8] tension type structures you can have er straight [0.2] er cable stays [0.
+3] and these are used for bridges and for buildings [0.3] this is the [0.3] 
+Inmos factory [0.3] in er south Wales [0.4] and you can see this is almost like 
+an inverted tree 
+type structure [0.4] with all of these in direct tension [0.2] and then the 
+compression structure [0.3] supporting that in the centre [3.5] or the Renault 
+parts distribution factory [0.8] in Swindon [0.5] er architect er [0.2] Norman 
+Foster [0.9] and er [0.3] quite [0.5] well known among [0.2] in the 
+architectural world for the [0.2] bright yellow structure [0.5] the high-tech s-
+, [0.3] style [0.8] er [0.3] this again is cable-stayed [0.5] in three 
+dimensions [0.5] the the sort of cable trusses work across [0.6] and in three 
+directions [1.6] er [0.2] the Fleetguard f-, er Factory [0.4] in Quimper [0.3] 
+in er [0.5] France [2.0] er a Richard Rogers er project [0.8] er [0.5] this 
+again is er cable-stayed [0.5] and has cables that run [0.3] in er [0.5] 
+hanging and [0.2] in the inverted direction [0.4] to resist wind forces on the 
+roof [3.9] and er this slide also shows that you need some restraining s-, [0.
+2] system [0.2] for horizontal wind forces [1.0] in this type of structure [4.
+1] another form of er three-dimensional [0.4] er [0.4] 
+tensile structure is the cable dome [0.6] and this shows the principle [0.2] of 
+er the cable dome developed by er David Geiger [0.7] and used [0.2] for some of 
+the Olympic er structures in Seoul [2.2] and er here [0.6] shows the cross 
+section [0.7] the structure's originally hanging [0.2] and then you tension up 
+these cables on the outside [0.4] that lifts up this [0.2] ring of struts [0.5] 
+er this is in three dimensions [1.0] er [0.7] and then you taesio-, tension up 
+the next cable lifts up this ring of struts and so on until you end up with a 
+dome shape [0.8] er [1.6] in three dimensions [0.2] this er [0.3] i think i've 
+showed you before [0.2] in one of the earlier lectures [0.4] the er [0.3] 
+Atlanta [0.9] sor-, Georgia Dome in Atlanta [0.2] which er was used for the [0.
+8] er [1.3] last Olympic Games [0.5] and er here [0.5] a similar sort of cable 
+[2.2] cable dome was used [0.6] and this is the inside [0.2] you can see the 
+the struts and the [0.4] inclined cables and the rings of cables 
+nf0856: namex 
+introduced the general principles er [0.4] of tension structures but 
+concentrating on non-fabric [0.6] er [0.4] tension structures [0.4] what i'll 
+be talking about are fabric membranes tension membranes and by fabric i 
+understand [0.5] both the [0.2] material membranes [0.6] and cable nets [0.3] 
+as well [1.4] er if i can have the first slide now [3.6] er in general fabric 
+[1.9] fabric membranes offer limitless possibilities [0.3] to create large [0.
+5] unobstructive er [0.8] unobstructed areas to provide shelter from rain snow 
+wind [0.7] er [0.3] here we see er [0.7] a beach residence a beach palace in 
+Saudi Arabia built in er [0.7] i think nineteen-ninety [0.4] the [0.4] and 
+designed by a German firm Sonderkonstruktionen und Leichtbau [0.5] er [0.2] for 
+short S-L [1.0] er if you look at the [0.3] view inside [1.1] er you can see 
+lovely curvatures developing [0.5] but also what we see here [1.0] are [0.4] 
+the lines of the cutting pattern [0.6] this is something that i will er discuss 
+later [0.7] 'cause it's 
+one [0.2] thing to derive a shape of the membrane another one [0.2] is to 
+actually build it out of strips of fabric [0.5] as you can see here [2.2] er [0.
+4] another example [0.8] it's a convertible roof for an open-air thea-, [0.3] 
+air theatre in er [0.3] Luxembourg [0.6] er it's a hanging fabric structure in 
+unopened state [0.6] and here you'll see it in [0.4] open state [1.2] er again 
+it was designed [0.2] er by S-L and consultant i think Frei Otto from Stuttgart 
+[1.5] er that was a a [0.8] an earlier structure nineteen-eighty-eight [1.4] [1.
+2] these are convertible umbrellas for a mosque in Medina in Saudi Arabia again 
+designed by S-L [0.4] you see these umbrellas here in a semi-open state [1.1] 
+er [0.5] and then in fully open state [1.3] the fabric used [0.4] er was woven 
+Teflon [0.3] er it's the most expensive fabric you can have [1.1] er [0.7] and 
+it was coated [0.6] er with 
+tetrafluoride [0.3] coating to protect it from [0.4] er [0.4] sun degradation 
+[1.1] er [0.9] the posts are air-conditioned [0.6] they pro-, produce air 
+conditioning [0.4] er during the summer and during winter [0.6] as well 
+wouldn't it be lovely to have something like that in the middle of namex over 
+Lady Godiva [0.7] what a difference it would make [laughter] [1.0] but one 
+umbrella costs somewhere around one-million pounds because it's got gold and 
+precious stones there as well [0.9] er the reason why these structures are [0.
+5] seen [0.5] er in countries such as Saudi Arabia is because of the er the 
+religion there and the belief in purity of form [3.0] er closer to home [0.3] 
+er this is from [0.8] namex's town [0.3] i don't know if you want to be 
+associated with Nottingham but this is Inland Revenue in Nottingham [0.7] a 
+membrane structure the fabric used there is er [0.4] P-V-C coated polyester [1.
+8] er [2.9] the structure doesn't look particularly lightweight what creates a 
+an 
+image of of it being er light is that [0.3] all the steel elements [0.2] the 
+the [0.3] the masts [0.4] and the structure inside [0.4] er were painted white 
+[0.3] but there's a lot of steel in the structure [0.6] and it does not [0.3] 
+actually look lightweight [0.5] now here you see some detail [1.7] er between 
+the fabric panels er and again the [0.7] the seams [0.6] er cutting pattern 
+seams which are not very attractive to [0.4] to the eye [1.2] construction 
+detail [0.2] these are often very very important to prevent structure from 
+deterioration you can see the end detail here [0.3] and another one [1.6] which 
+shows a a sort of uniform distribution of [0.2] er stresses along the edge of 
+the [0.2] the membrane [3.3] and [0.3] moving on to er [1.6] cable nets now [0.
+2] er this is an example of a aviary in Munich [0.6] except it's not really a 
+cable structure [0.2] er [0.8] it's a mesh [0.8] er made of er [1.1] wires it's 
+a it's a wire mesh [0.6] stretched 
+over [0.9] over [0.2] some metal posts which are actually stabilized by means 
+of er cable stays [0.8] and you can see [0.4] er a construction process here [1.
+7] er [2.2] but the problems that these structure present are similar to those 
+[0.4] that fabric membranes er [0.3] present for designers that is [0.3] er 
+finding the shape and finding the cutting pattern [0.3] for the complete 
+structure [3.2] now [0.5] going to a more classical example of membrane 
+structures here we see [0.4] er Munich Olympic Complex [0.4] er the stadium [0.
+8] which sort of [0.3] resembles the shape of a caterpillar if if if you think 
+it does resemble a caterpillar the designers er [0.3] would be delighted 
+because it's supposed to resemble natural structures [0.4] a swimming pool [0.
+2] and a sports' stadium [1.0] er it isn't really a fabric [0.2] membrane it's 
+a cable [0.7] er roof [0.2] membrane can s-, [0.3] perhaps see a better [0.2] 
+picture of it here [0.5] er [1.5] 
+it's a s-, it's a a grid of cables [0.4] er overlaid with acrylic [0.5] panels 
+translu-, er acrylic cladding [0.7] there's a better slide of it here [0.3] as 
+you can see [2.8] er [1.9] Munich Olympic Complex marked a departure from [0.2] 
+er [1.3] physical modelling of this structure up until then up un-, until [0.2] 
+nineteen- [0.5] seventy-two [0.5] er [1.1] tension membranes were designed with 
+help of a physical model you can see a physical model [0.4] here [0.7] for the 
+er the Munich er [0.3] Olympic Stadium [0.7] and then measurements were taken 
+sort of painstaking [0.2] er [0.2] care [0.6] and then the dimensions of the 
+structure would be scaled up [0.7] but that of course created errors [1.6] er 
+[0.6] what we see here [0.2] is an earlier structure [0.5] it's Montreal [0.7] 
+er [0.3] it was German er pavilion for the Expo sixty-seven in Montreal it's a 
+[0.2] cable net and fabric structure [0.5] er designed by [0.6] er Frei Otto 
+and his team from the Institute of s-, of Lightweight Structures in Stuttgart 
+[1.5] er [1.6] this structure 
+was totally designed using fabric models and er [0.3] soap film models you can 
+see another view of the same structure here [0.9] er [0.6] w-, [0.7] what is of 
+interest are these eye loops here [0.2] and they are [0.8] there [0.2] purely 
+to distribute [0.2] the stresses because alou-, [0.3] around the masts we've 
+got concentration of stresses and this is to do [0.4] to to dissipate the 
+stresses [2.0] er this is a construction of the actual net [2.8] er a physical 
+model [0.7] with an eye loop which also serves as a window [2.3] and a soap 
+film model [0.5] i shall talk about soap film models a little bit more [0.2] 
+later on [0.5] because soap films are [0.5] a means of [0.2] er deriving the 
+shape deriving the form [0.4] the way in which this eye loop has been formed 
+was by placing a string on a soap film [1.8] and then drawing the er the soap 
+film up [0.7] as 
+far it could go to to derive the shape [5.5] er this is a a fabric model in 
+fact er [0.2] the earlier if i go back the earlier structure [1.3] is a 
+prototype for the Institute of er [0.4] e-, [0.3] Lightweight Structures in 
+Stuttgart which was a part of the er [0.8] er the complex for Montreal [0.4] 
+and the structure was actually transported [0.3] er [0.3] on the university 
+campus it is now [0.5] preserved as a historical building [0.3] if you ever 
+visit University of Stuttgart it really is worth a visit [0.2] going [0.5] to 
+look at the structure from outside and inside as well [1.0] er [1.2] okay and 
+that's [0.5] the shape was derived with the help of a soap film model [1.0] 
+here we've got a fabric model [0.4] with some instrumentation some load input 
+on it to take some measurements of how it would deflect [0.4] under loading [0.
+7] and a cable net model [0.5] as well [2.8] 
+and the cutting pattern model [6.5] there are various possibilities in which 
+you can [0.3] cut fabric [0.5] to get er the required form [0.6] but this 
+really er is an area of intensive research [2.0] now [1.0] i've already touched 
+upon the subject of er modelling er [0.2] indicating that one can er use fabric 
+models and soap film models to derive sh-, the shape of tension membranes [0.3] 
+but of course [0.4] nowadays what we tend to do is to model these shapes using 
+computer [1.1] er [0.8] so [1.1] here is a computational model of a a fabric 
+membrane [1.4] and [0.2] the same structure modelled using a soap film and 
+using fabric [1.6] okay [3.5] the problem with er [0.7] computational modelling 
+is that [0.4] tension membranes are geometrical non-linear structures they [0.
+6] er [0.8] deflect a lot under given loading [0.8] so [0.6] compared to the 
+traditional sort of rigid s-, er structural forms [0.3] in which the 
+displacement of 
+the structure corresponds to the amount of loading [0.4] er [0.2] this 
+relationship is actually [0.3] er [0.7] not valid for tension structures we 
+cannot describe er the behaviour [0.4] er by this equation stiffness matrix 
+multiplied by displacement [0.2] equals load [0.4] and from from that 
+relationship ship-, therefore we can d-, calculate displacements and we solve 
+the structure for loads and for displacements [0.7] if we did that with a 
+tension membrane what we would what we would find we calculate the 
+displacements we feed those displacements back to the original equation and we 
+find we get a different right-hand side not equal to the load [0.2] applied 
+load P [0.5] but [0.2] something [0.4] P [0.2] with a tilde [0.9] and then what 
+we have to do then [0.4] is to calculate the difference be-, between P and P-
+delta [0.5] P [0.2] P-tilde [0.5] to get an increment in displacement and we 
+have to keep accumulating this i-, [0.2] increments [0.6] and substituting [0.
+5] to this equation until we actually satisfy this equation so it's [0.8] the 
+modelling is done [0.3] in an iterative process and 
+on your handout [0.4] there is a full explanation of with what is actually 
+going on as far as [0.4] er mathematical modelling or computational modelling 
+is [0.4] concerned [0.9] to show you er a stages of numerical modelling i've 
+got a little example [0.2] er to show you next [0.2] er [0.5] if we were to 
+model a membrane such as you see here [1.2] er on plan [1.8] er what we would 
+do we would er [1.7] if we've got a powerful computer program [0.5] as a first 
+guess we would say [0.6] we want to stretch a membrane between these boundaries 
+[0.4] and it has to reach this [0.2] this boundary circle here [0.3] so 
+initially we we say it's flat except for the last roof elements [0.4] and if we 
+iterate [1.1] er [0.9] and start refining the shape until we get [0.6] an 
+equilibrium [0.5] then we get [0.9] er [2.0] the actual this is a plan view of 
+the shape we s-, we get a [0.4] elements which are distorting on on plan kind 
+of spider [0.2] 
+spider's web [0.5] initially if i look back [1.0] you see these lines were 
+straight [1.5] what we end up [1.6] is something like that [1.6] and the final 
+structure [1.3] looks like that [2.9] so that creates [0.4] problems keeping 
+the line the lines of the er [1.4] er of the elements straight because [0.7] 
+ideally we should [0.2] we would like to use those form as cutting pattern 
+lines as seam lines but it is not always [0.4] er [0.3] possible 
+nf0856: there is no denying that lightweight tension membranes are very popular 
+structures particularly amongst architects [1.0] because [0.4] they can convey 
+a very dramatic expression [0.2] you can create very exciting shapes [0.6] er 
+[0.4] utilizing fabric in tension [0.9] but also [0.4] er they have a great 
+potential [0.3] for [0.5] carrying loads efficiently [3.3] this brings us to 
+the point of what constitutes [0.3] an efficient structure [1.5] and [0.3] 
+to follow a quotation from [1.0] i forget who the author of this book is one of 
+the er recently published book on [0.6] er [0.8] structural architecture [2.2] 
+or structural art [1.0] er [0.6] the message that comes across is this for an 
+efficient structure use tension [0.2] rather than compression [1.0] and either 
+in preference to bending [1.2] ironically what we teach you here [0.7] is 
+nothing but bending bending bending bending of beams bending of columns bending 
+of slats [0.7] okay [0.3] so this course has been put on to [0.8] er [0.3] take 
+you away from this [0.2] a little bit [5.7] now [0.3] we need to consider the 
+difference the basic differences between tension membranes and conventional 
+structures so if we were to summarize [0.5] the main features of tension 
+membranes [0.4] the first point that has to be made is that [0.4] the shape of 
+a tension membrane has to be found [0.7] er [0.4] there is no mathematical 
+function that will describe the surface this is the problem [0.5] so you 
+have to resolve into some kind of form finding before you start [2.0] er [0.8] 
+the structure can increase its stresses under say wind loading given even 
+tenfold so initial [0.2] surface tensions have to be low [1.4] the structure 
+undergoes very large displacements which leads to geometrical non-linearity 
+which has to be modelled in [0.4] modelled on computer [0.4] er as an iterative 
+process [0.2] of satisfying proven equations [0.9] and finally because the [0.
+2] the design process is so complex [0.4] the analysis form [0.4] er the 
+analysis part forms a very significant cost [0.4] er [0.5] part of the whole [0.
+2] cost of the of the design [0.4] unlike for conventional structures when [0.
+3] er [0.2] the designer's fees are are very low compared to all the other [0.
+3] er costs [1.9] and these costs [0.4] are attributed mainly to [0.8] the fact 
+that we have a three stage design procedure [0.5] which involves form finding 
+[0.5] patterning and static analysis [0.4] now i only touched upon form finding 
+which means finding a three-dimensional shape under 
+tension [0.7] patterning [0.9] is the stage where you try to construct the 
+membrane [0.3] from finite strips of fabric and in they come about [0.2] two to 
+three metres wide [1.5] and then final s-, finally static analysis [0.3] we 
+have to see how the shape is going to behave under wind loading [0.4] er [0.5] 
+or snow loading [0.5] and if the deflections are excessive or if flat areas 
+will develop then you go back to form finding refining your form [0.3] again [6.
+8] how do we go about form finding the first stage well [1.0] we can resort to 
+er resort to construction of physical models [0.8] or we can use [0.7] er 
+computational model n-, models as far as physical models are concerned there is 
+a a variety of them here [0.5] these these were made [0.8] by your predecessors 
+as you can see [1.2] and each one of them [0.8] er has been arrived as [0.9] as 
+a result of sort of iterative process of refining the boundaries rethinking [0.
+5] the the the the function and so on [0.3] there are more models that we can 
+show you [0.4] er later on [0.4] 
+er [0.2] as well [1.5] so that's physical modelling [0.5] er [0.6] soap films 
+are a very good er material to use as well except that er [1.1] in order to 
+take measurements you have to be [0.4] er using specialist equipment for taking 
+photographs of soap film models [0.6] er but they certainly can be used to 
+verify your [0.2] computational modelling 
+nf0856: i've put this slide here because very often engineers [0.6] are unsure 
+what form finding means we're so used to [0.5] dealing with rigid forms where 
+we dictate the shape [0.4] we know what the building is going to look like [0.
+4] but unfortunately with membrane structures you have to find the shape [0.5] 
+the structure will adopt its own shape [0.6] it [0.3] the shape cannot be 
+dictated by the designer [0.7] er the only thing that can be dictated are the 
+boundaries of the structure [0.4] and to a s-, to a s-, to some extent you can 
+alter the shape [0.2] of the surface by differentially [0.3] prestressing er 
+membrane between the boundaries [2.0] now [0.5] if we concentrate just on 
+computer based form finding [0.9] what [1.8] what does it mean what does form 
+what can form finding computer based form finding produ-, [0.3] produce [0.4] 
+there are numerous computer programs now developed and in use all over the 
+world [1.2] and they can do the following [0.3] they can either find an optimal 
+shape for you [1.4] i will s-, [0.2] de-, [0.2] i'll [0.2] er describe what i 
+mean by optimal shape in a moment [0.8] they can find [0.2] a shape which is in 
+static equilibrium [0.2] but not necessarily an optimum shape [1.3] or this is 
+the worst case [0.3] they can find a shape for you [0.4] which only 
+approximates the state of equilibrium [0.7] and i've i've come across case 
+cases like that [0.5] this last case correspond to the situation where [1.0] er 
+[0.9] there are certain inherent assumptions in the computer program [0.4] er 
+which [0.2] er first of all [0.9] er [1.6] don't er allow the computer 
+algorithm to work very well so at the end of the iterative procedure you don't 
+get [0.3] get 
+a convergence [0.3] sometimes lack of er [0.2] experience of the analyst come 
+comes into it [0.8] er [0.8] and i've come across comments from er for example 
+Australian engineers who said well [0.4] we do our analysis we put the wind 
+load on the structure [0.3] if the program doesn't converge we just forget 
+about it [1.5] okay [0.9] er [1.0] an optimal shape of a tension membrane is a 
+shape [0.6] such that it usem-, uses a minimal amount of material [0.9] er [1.
+9] and this can only be achieved [0.5] if you have [0.9] a minimum surface area 
+[1.0] a minimum surface area corresponds to what's known a minimal surface [0.
+8] and the only structure that can reproduce minim-, [0.4] minimal surfaces are 
+soap film surfaces [0.8] so soap films are very good analogues for [0.5] er [1.
+3] finding shape of membranes [2.0] however [0.2] there's quite a lot of 
+controversy associated with soap soap film analogy and er [0.5] i think namex 
+witnessed some exchanges at conferences between me and various other engineers 
+about wer-, [0.2] 
+about this er [0.6] problem [0.5] because it is claimed that soap films [0.4] 
+are optimized only for one load case which is [0.3] its own surface tension [0.
+8] but to counteract these the these arguments [0.6] one can see [0.7] that the 
+the initial surface tension in a structure this is before you apply snow load 
+and wind load [0.2] is the only permanent load acting on the structure all the 
+other loads are temporary [0.3] so it makes sense to optimize for that load [0.
+3] load case so really there's no case made [0.6] er [0.6] there 
+nf0856: if i were to summarize er [1.1] what is actually going on in the field 
+of er the design of tension membranes [0.6] i would say that there is still a 
+lot of research needed i've got my research student here namex who's working 
+with me [0.7] on er [0.5] computer modelling of tension membranes but applied 
+to [0.3] automotive industry [0.6] er convertible car hoods [1.4] and the 
+factors that need to be considered are are first of all cost and durability 
+because [0.4] still despite their attractiveness tension membranes are not [0.
+6] er [0.2] 
+competitive against conventional roofing forms [0.8] er [0.7] the [0.7] design 
+process can take [1.7] deriving the shape on the computer is not too difficult 
+but cutting patterns [0.2] yes they create a problem it can take [0.3] up to 
+two days to [0.2] to to actually [0.3] come up with [0.2] a reasonable cutting 
+pattern and even then the designers are not sure whether they should cut the 
+fabric this way or that way [0.4] what would [0.2] give er a optimum use of the 
+material [0.6] er [0.5] while at the same time would reproduce er [0.5] you er 
+[0.8] the the surf-, the surface the form found surface [0.7] because [0.2] one 
+final point i would like to make is that even if we did [0.3] reproduce the 
+soap film surface on computer accurately [0.4] not everybody's capable of doing 
+that but even if we did [0.6] the second problem is we have to flatten this 
+surface [0.7] in order to get a cutting pattern [2.2] and [0.2] minimal 
+surfaces soap film surfaces are non-developable surfaces so inevitably there 
+will be d-, [0.2] errors involved and distortions involved and how you minimize 
+[0.2] these errors [0.4] er [0.2] is a problem [0.8] and as 
+far as durability's concerned one should avoid at [0.7] any cost [0.2] 
+differential prestressing of fabric but unfortunately [0.2] this is what the 
+designers do these days [0.4] if the shape doesn't look right [0.6] er [0.9] 
+because the boundaries were ill chosen [0.2] they tend to [0.3] prestress the 
+fabric in one direction more than in the other [0.2] to control the shape and 
+the result of that is that the structure with time will creep anyway will try 
+to adopt the minimum energy form anyway so such attempts are [0.4] are futile 
+[0.6] er and differential prestressing of fabrics will [0.4] lead to fatigue of 
+fibres as well [0.2] those which are stressed more are going to [0.5] er not 
+not going to last as as long [1.1] that is all i can say [0.6] er [0.5] what i 
+haven't talked about is er pneumatic membranes [0.2] everyth-, everything i've 
+said so far relates to [0.8] surface stressed membranes [0.4] where they are 
+stressed by means of tension [0.3] applied to the boundary [1.5] er [0.9] but 
+another category of structures [0.5] er [0.9] that i use [0.9] er are so-called 
+pneumatic structures and i think namex 
+namex would like to [0.2] show you a few slides about those [0.3] they are 
+stressed differently [0.4] they're not stressed at the boundary they're 
+stressed by air pressure inside them 
+nm0857: er [1.4] yes as namex's [0.3] just said the er [2.4] membrane 
+structures are [0.3] do have to be pretensioned in some way [0.5] and the 
+difference with inflated structures is this pretension [0.3] is actually 
+applied [0.4] by [0.6] er an air pressure [0.2] within somewhere within the 
+structure [0.6] so here's an example just to show what you can do with inflated 
+structures [0.5] er [0.6] you may just spot there's something like a [1.8] a 
+hoover motor down here blowing this [0.4] er dinosaur up [2.7] so you can see 
+the sort of thing that you can do with er [0.2] inflated structures [2.8] er [0.
+2] we've all [0.5] er come across inflated structures er blown up balloons for 
+parties even a simple [0.8] er [1.0] bag foil bag you can just blow that up 
+with air pressure [0.4] but if you have the wrong shape of structure [0.4] 
+then in fact you get these wrinkles which if you're having a permanent 
+structure [0.2] you don't really want [0.4] these these are undesirable [0.4] 
+er make the structure [0.2] a bit more flexible the surface of the structure 
+more flexible [2.6] and of course we er [1.3] every time we use er road 
+transport [0.6] er [0.2] we ride on inflatable structures the tyres of cars and 
+bicycles [0.5] are [0.7] load supporting inflated structures [2.2] er the forms 
+of inflatable structures can be modelled [0.4] er using soap [0.2] er soap 
+films [0.3] and this is er [0.4] these are [0.2] a slide of er some of the 
+experiments done by Frei Otto [0.8] er [0.3] in the nineteen-sixties [0.5] er 
+[0.2] showing how [0.2] you can combine [0.3] soap bubble shapes and these 
+could be used potentially [0.6] for inflated structures [3.3] right if i can 
+switch to the er [1.1] overhead now 
+nm0857: er [2.9] er there are various er types of [0.4] er [0.2] air inflated 
+structures [0.6] and i don't have 
+any fancy computer [0.2] generated pictures [0.5] er these are freehand 
+sketches [0.9] er [0.7] the simplest one is just [1.0] a single skin structure 
+[0.5] with [0.8] er air pressure inside and that's [0.2] what's known as an air 
+supported [0.4] structure [5.4] then [4.2] the the next type is an air inflated 
+structure where you have a double skin [0.5] and er generally this requires [0.
+2] a higher pressure [0.5] of air [0.6] in between the two skins [0.5] and that 
+that forms an [0.2] encloses the space then with a double skin [0.3] in this 
+case the air pressure is inside the structure [0.7] inside the complete volume 
+in this second case the air pressure is on the inside [0.5] in between those 
+two walls [2.3] they're the two basic types of structure [0.2] then there are 
+variations on that hybrids [0.5] er [3.8] you can combine [0.4] er high 
+pressure tubes [0.9] inflated tubes [0.5] and er in this case here evacuate a 
+double skinned membrane in between the [0.2] high pressure tubes [0.5] er to 
+form 
+an enclosed space [2.9] er the basic er [1.2] air supported volume [0.2] can be 
+restrained [0.4] and reinforced by er [0.4] cables [0.3] set within the 
+structure so you get this sort of [0.5] chrysalis type [0.2] form [0.9] er [1.
+1] quite organic looking structure [6.9] er an alternative form is to have er 
+[0.3] very similar to the [0.6] previous one here [0.3] is just to have er [0.
+5] high pressure tubes and a simple membrane [0.2] unpressurized in between the 
+two [2.1] and a final [0.4] hybrid type form [0.5] er is to have an air 
+supported structure but then to actually stiffen the walls [0.3] by having 
+those inflated [0.3] so in this case it's a [0.4] er sort of hemispherical 
+structure [0.3] you've got air pressure inside to maintain it [0.2] and then 
+these [0.6] are double skins [0.3] and er they're inflated with pressure [0.2] 
+as well [0.7] er [1.9] so [0.9] a combination of er support air support and er 
+[0.2] air inflation [0.3] various types of structure [0.7] right if i could go 
+back to the slides i'll show you a few examples [0.8] of er [1.0] those 
+structures [4.3] this is er [2.0] and the majority of them are actually yeah 
+inflated structures this is an air inflated structure [1.1] the [0.2] German 
+pavilion at the Expo nineteen- [0.3] ninety-two in Seville [0.7] where [0.4] 
+the [0.6] there were two [0.5] er steel rings [0.7] and er a double skin 
+membrane [0.9] er [0.4] spanning between those two rings and then that [0.2] 
+the [0.3] the space between [0.5] with two membranes was inflated with air [0.
+3] and that formed [0.6] er this sort of taurus type [0.3] structure [0.4] 
+which was then suspended with another tensile structure [0.6] er [0.2] from the 
+mast in the centre here [0.5] and with the stabilizing cables [0.3] to hold it 
+in position [0.5] so it does actually demonstrate [0.8] a couple of er [0.9] 
+tensile type structures [1.2] then in the United States er there are various [0.
+5] er [0.9] air [0.9] supported structures used for large stadiums [1.2] and er 
+[0.2] in these the air pressure is actually inside [1.2] the whole stadium [0.
+4] and er [0.4] to stop it going into a ballooning into a huge [0.3] roof [0.4] 
+there are restraining cables [0.5] er to hold the structure down [0.3] and 
+minimize the volume that has to be inflated [1.2] 
+er [1.1] problems occur with these these type of structures [0.2] where you can 
+get sort of [0.4] strange bulges [0.4] and er with er [0.2] ice and snow the 
+valleys fill up [0.5] and you can actually have rupture of the membrane [0.5] 
+due to overloading [0.4] er if you [0.3] the valleys fill with ponds [3.8] er 
+[1.0] you might recognize this person in the middle here [1.6] er this is er an 
+air [0.2] system of air inflated structures that were [0.5] er [0.7] assembled 
+at the University of Nottingham for a conference last year by students from 
+Stuttgart [0.6] er [0.5] i think i've shown you [0.2] just [0.2] a single slide 
+of this before [0.4] er these are actually salami skins [0.3] salami sausage 
+skins [0.5] er to demonstrate [0.4] er [0.8] how you can actually produce [0.5] 
+er quite large air inflated structures [0.6] er these were actually ten metres 
+high [1.7] er this is the basic material [3.1] and er this is how crude the 
+assembly method was just er [0.3] tying off the ends of the s-, [0.2] sausage 
+tubes [3.4] 
+er this gives you some idea of the scale of the structures [1.2] er [0.3] and 
+the air inflation is sufficient [0.2] for them to be [0.4] rigid [0.2] er self-
+supporting columns [0.4] ten metres high [0.4] er and and to resist [0.5] er 
+light breezes [0.4] as lateral loading [6.3] er this se-, shows what happens 
+with the tubes when they go into bending [0.3] er because [0.3] er as we were 
+saying bending actually is [0.5] a less efficient way of carrying loading but 
+if you want [0.4] curved-shaped forms you might actually have some bending in 
+your structure [0.7] and you might notice how this actually forms [0.8] er [0.
+9] what er i was talking about in one of the earlier lectures natural 
+structures the er [1.0] structure of er [0.8] cane [2.0] er where you have the 
+nodes at [1.0] er points [0.2] up the er [1.0] up a tubular structure and that 
+actually tends to reinforce it [0.3] and the same happens naturally in these 
+tubes [1.5] under pressure [3.2] er this also is an air inflated [0.9] sorry an 
+air supported structure [1.0] er [0.4] which was erected [0.2] at the 
+University of 
+Nottingham [1.1] er last Monday [1.5] er by [0.7] er [0.5] er an artist who 
+works solely with inflated [0.9] er s-, [0.9] air supported structures [0.7] er 
+[1.4] and it will be going on tour [0.6] er [0.8] in Germany [0.6] er as a 
+promotional [0.8] er exhibit for er er [0.9] a tour company [0.9] holiday tour 
+company [0.7] er it's er over a thousand square metres of structure [0.9] and 
+er [1.2] air supported [1.0] made out of er coloured [0.2] er P-V-C [1.2] 
+fabric [1.6] and er the cutting patterns here w-, earlier namex was talking 
+about cutting patterns were actually just [0.4] derived by [0.4] eye [0.7] and 
+by using books on welding practice [laugh] [0.8] how to cut tubes to join them 
+together [0.5] so no computer programs were used in this at all [0.2] [laugh] 
+[0.4] purely guesswork and er [0.7] simple geometry mathematics [0.7] er [0.9] 
+and as a result of that you can see there are actually wrinkles in the 
+structure [2.7] in certain places [5.1] and one thing about er [2.0] 
+inflated structures under pressure [0.5] the [0.5] er there is a relationship 
+between the pressure in the structure [0.9] and the radius of the curvature [0.
+5] and the tensile [0.4] er stress in the surface [0.5] and er [0.3] generally 
+the tighter the radius er [0.4] to maintain the same tension in the surface [0.
+4] you er actually need more pressure [0.4] so where [0.2] there is actually a 
+tighter radius here you can see it's not quite so inflated as the rest of the 
+structure [5.7] here where the cutting pattern has been derived quite well [0.
+2] and there is a bigger radius of curvature the the structure is actually 
+quite well [0.5] er [0.4] inflated [2.5] er just to show you how little [0.4] 
+you need to [0.7] er support [0.6] a structure of this size [0.4] er about six 
+of these er [1.8] fans were were installed to blow [0.3] air [0.3] warm air in 
+fact this was actually heating the air [0.5] er [0.3] as it was a very cold day 
+last Monday [0.4] er [0.9] blowing air into the [0.9] into the volume [0.3] 
+which took about an hour to inflate [1.2] er [0.3] 
+another problem of course with er air supported structures is holding them down 
+[0.5] and er [0.4] in this case as it was a temporary structure it's actually 
+held down with these bags full of water [0.8] er which are attached to the 
+structure on the outside 
+nf0856: and designed by Nowitzki i think in the fifties [0.6] and it's a self-
+stressing er structure [0.6] er you can see it doesn't have very heavy anchors 
+of foundation [0.9] because it works on the principle we could demonstrate of 
+two people [0.7] sort of [0.7] leaning like that [0.7] okay [1.3] so you don't 
+require very heavy [0.3] foundation level anchor so that's a very interesting 
+[0.5] saddle shape [0.2] structure 
+nf0856: so far as the membrane structure's concerned it's a very poor example 
+[0.5] er because the boundaries for the membrane are not very well chosen as a 
+result we get a very flat [0.5] surface so the student obviously did not 
+exploit [0.3] the 
+possibilities that exist [0.5] er when one experiments with [0.4] boundaries as 
+far as low and high points are concerned [0.5] er which [0.6] can alter the 
+surface er geometry dramatically [0.4] so it's not a very good example in fact 
+nf0856: inclined posts i suppose namex what else can we say about it [1.4] 
+should i go and get 
+nm0857: 
+nf0856: the other model but it will take about ten minutes [laugh] 

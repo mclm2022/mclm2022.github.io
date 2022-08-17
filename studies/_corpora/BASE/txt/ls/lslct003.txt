@@ -1,0 +1,745 @@
+nm0211: right as i [0.3] said to namex [1.3] i'm here [0.2] just for an hour to 
+start this morning [0.4] to give you some background [0.7] on experiences that 
+[0.4] we've had over the last [0.3] five or six years [0.5] in the discovery of 
+a particular set of protein families a [0.4] a new protein [0.8] superfamily so-
+called [0.6] in plants [0.5] you'll hear and you've heard previously [0.6] from 
+other people [0.4] some of the fundamental studies that underlie [0.5] protein 
+structure and function [0.8] i thought it would be useful to give you an 
+example [0.2] a worked example [0.9] of how [0.4] a particular practical 
+project with which i was associated [0.8] er [0.5] in my former life 'cause i 
+came from a commercial company [0.7] however that practical project led on [0.
+4] over the last few years into a [0.4] discovery of a completely unexpected 
+set of [0.4] related proteins [0.5] and it shows you how [0.7] the functional 
+activity of a protein [0.4] can be preserved [0.3] throughout evolution [0.7] 
+and something that's [0.3] can now be uncovered by this combination of [0.3] 
+bioinformatic [0.5] and protein structure study [0.5] relationships [0.8] some 
+of you might know a 
+bit of the background but i think you'll find it [0.3] hopefully an interesting 
+story [0.9] if you want to stop at any time [0.6] this is [0.9] an interactive 
+[laugh] [0.3] discussion with a group as small as this so [0.4] please if you 
+don't understand any of the background just [0.8] er [0.8] make yourself heard 
+[0.5] so this is where it started [0.9] and this is the [0.4] the one real 
+plant [1.5] er [0.3] that i'll show you [0.5] and this is the [1.0] the 
+commercial and agricultural [0.2] basis [0.2] of this whole academic project [0.
+8] you might not recognize the plant but it's an oilseed rape plant [1.0] and 
+the practical project was represented [1.1] by this area here [0.5] which is a 
+[0.2] completely diseased section [0.9] of an oilseed rape plant [0.8] and it's 
+a section of a stem [0.6] that's been attacked by a particular virulent fungus 
+[0.4] that's destroyed the stem [0.8] between these two points and it's gone 
+from [0.4] green to white [0.4] and the leaf that's attached to the stem [0.4] 
+has been destroyed by that process [0.9] and the fungus itself [0.6] is called 
+Sclerotinia [1.2] er there's no kind of real English name for it but [1.2] 
+that's what it's known as [0.2] and if 
+you're a farmer and you have this [1.2] i think we've got [0.3] [laugh] [0.5] 
+somebody else [0.2] okay [0.5] if you're a farmer and you [1.9] you have you 
+have this type of fungus in your crop [0.7] then [0.2] it's bad news [0.6] it 
+attacks [0.3] a whole range of agriculturally important crops [0.4] 
+particularly oilseed so [0.7] er [0.2] oilseed rape sunflower soya beans [1.1] 
+it's very difficult to control with fungicides [0.7] the [0.2] breeding 
+materials that are available [0.5] are very limited so [0.2] although plant 
+breeders have tried to [0.5] introduce resistance [0.6] they've er [0.4] really 
+rather failed [0.4] over the last ten to twenty years [1.6] the biochemistry of 
+the disease is what [0.7] er [0.6] is where [1.8] my interest lies [0.9] and 
+the biochemistry is represented here [2.3] this is the same disease fungus 
+growing on a petri dish [1.5] in the lab [0.5] and you can see that the colour 
+of this is very different [0.4] the outside is purple [0.4] the inside orange 
+[0.7] and the fungus is growing across the surface [0.4] and the reason that 
+there's a colour change is that the P-H is changing [0.5] the acidity of that 
+petri dish is changing [0.5] as the fungus 
+grows [1.0] and it's going from [0.8] neutral P-H represented by the purple [0.
+6] to [1.0] bright orange which means that the P-H has fallen [0.2] so acid is 
+being secreted by the fungus [0.2] and it's the acid [0.5] that's the major [0.
+4] key feature of this fungus [0.9] and the reason that these sorts of fungi [0.
+5] are so [0.4] successful is that they secrete [0.4] a lot of acid [1.5] 
+[laugh] [0.5] and [0.3] do we have somebody else [1.1] er [1.6] and the reason 
+they secrete acid [0.6] and the acid that they secrete is the basis of this [0.
+3] particular [0.7] story for the next [0.6] forty-five minutes [1.1] and this 
+er [4.9] this is the acid and this is how it works the acid is oxalic acid [1.
+7] and do any of you know [0.6] of any other plants maybe that [1.0] have 
+oxalic acid in it [0.5] in them [0.5] is it an acid that you [0.7] know 
+anything about in a biological context [1.7] no [0.8] okay well the m-, [0.3] 
+the most [0.5] famous source of oxalic acid are [0.5] green vegetables and 
+things like rhubarb [1.3] so [0.5] this is the method of [0.6] action [1.8] of 
+why oxalic acid is such a powerful toxin [0.6] why the fungi that secrete this 
+acid [0.3] are so successful [2.0] that they [0.5] primarily act by [0.6] 
+chelating the calcium [0.4] so the calcium binds to the acid [1.6] and it 
+removes the calcium from the cell walls in the plant [1.3] and cell walls of a 
+plant are [0.3] maintained [0.2] in structure [0.5] and the reason that they're 
+me-, [0.3] structure is maintained is [1.0] through these calcium containing 
+compounds called pectins and pectic acid [0.5] it's what you put in jam to make 
+it set [laugh] [0.6] it's a thickening agent that comes from plant wall [0.3] 
+cell walls [1.3] once you get the calcium out of the plant [0.8] cell walls [0.
+5] particularly out of these specialized cell types [0.8] then [0.2] air can 
+come into the plant [0.4] 'cause of [0.5] the rigidity of a plant is maintained 
+by the water inside it [0.6] once you let [0.4] air into the vessels in the [0.
+2] plant [0.2] then [0.6] the plant will start to wilt [1.0] which is what 
+happens [0.3] next [1.2] once the acid [0.5] re-, goes into the plant it 
+reduces the P-H [0.9] all the other enzymes then that are present in the f-, [0.
+9] that are secreted by the fungi [0.3] are activated at low P-H [0.4] and so 
+the plant then starts to rot [1.3] and once it's started to rot [laughter] [0.
+3] that's the end of the 
+plant [2.0] okay [1.1] so that's [0.7] how the oxalic acid works [1.3] and the 
+question was [1.6] what could you do about [0.2] overcoming the [0.6] the 
+problem [0.9] so about eight years ago [1.4] biochemists and the genetics 
+people [0.8] in [0.4] what was then Zeneca Plant Sciences at Jealott's Hill [1.
+3] were looking for [0.3] biochemical approaches to reduce the level of acid 
+secreted by the fungus and therefore perhaps to protect the fungus [0.5] pla-, 
+plant from the fung-, [0.6] the fungus [1.3] and the obvious thing to do was to 
+say [0.3] could we break down the acid [0.5] secreted by the fungus [1.0] and 
+there are two [0.4] enzymes that are known to [0.7] to break down [0.3] oxalic 
+acid [0.9] and these are [0.2] oxalate oxidase [1.5] which converts oxalate to 
+carbon dioxide and hydrogen peroxide [2.2] and oxalate decarboxylase that 
+converts [0.4] oxalate to formate [0.8] and carbon dioxide [0.6] so those are 
+the two main [0.5] pathways for breaking down [1.0] oxalic acid [0.8] so the 
+immediate question was [0.5] as a strategic question [0.8] could we identify 
+isolate [1.2] and then [0.2] introduce into a plant [1.2] one or more of these 
+two enzymes [0.6] and therefore 
+allow the plant [0.9] to protect itself from the fungus by degrading the acid 
+[0.8] it's a kind of simple [0.8] idea simple question [2.8] and the immediate 
+answer was [0.3] well we had to make a choice and the [0.2] first choice was [0.
+9] first enzyme which is a plant enzyme [0.9] the second enzyme here is a 
+fungal one [0.6] so [0.4] a lot more was known about this enzyme [1.6] and over 
+a period of a year or two [0.6] that enzyme was [0.9] er the gene that encodes 
+that enzyme was isolated [1.9] was put in back into a plant through genetic [0.
+3] manipulation methods [0.6] and we produced [0.5] many transgenic [0.3] 
+genetically modified plants that now [0.5] had [0.6] this enzyme [0.3] and 
+expressed this enzyme [0.5] its origin originally was from [0.3] cereals [0.2] 
+so we were taking a [0.5] an enzyme that was found in [0.4] wheat and barley [0.
+6] and introducing it into oilseed rape [0.5] and what you've then got [0.3] 
+and this is the end of the biology then [1.1] and go on to the chemistry [0.7] 
+what you've then got was this these were two leaves of [0.2] oilseed rape 
+plants [0.7] the one on the left [0.6] is the traditional variety [0.6] 
+infected by [0.9] er [0.2] a small sample of the fungus [0.6] and you can see 
+it's extended [0.6] and produced this so-called lesion this rotten area [0.4] 
+in the middle of the leaf [1.1] 
+and the acid is spreading out to the edge where it's come becoming crinkled [1.
+5] this leaf is a leaf from a transgenic or genetically modified variety [0.3] 
+where the fungus is [0.4] no longer growing [1.1] and this whole idea [0.2] has 
+been taken [0.8] and used in over the last five years [0.8] by companies in 
+North America in particular [0.5] and this isn't a G-M discussion today but [1.
+4] there's a good chance that [0.5] er [0.8] a sunflower variety containing 
+this gene [0.5] will be commercialized over the next few years and will [0.3] 
+provide [0.6] very good protection for the first time ever [0.3] against this 
+very [0.4] er [0.5] devastating [0.5] pathogen of plants [0.2] so that's the 
+background [1.4] and now we get to the chemistry [0.4] and the chemistry says 
+[1.7] okay what is this enzyme [0.7] er [0.4] that was where the practical 
+commercial work [0.7] er was going [0.5] from an academic perspective [0.9] 
+what is it about this enzyme that made it worth [0.3] studying in its own right 
+[0.6] and these are i-, the characteristics that made it so [0.5] interesting 
+and unusual [2.5] it was an enzyme [0.8] in fact that had been [0.8] 
+isolated previously [0.8] and had been given the name germin [0.5] about [0.2] 
+twenty years ago [0.9] and it was isolated from barley embryos [0.2] and wheat 
+embryos [0.7] at that time [0.7] the protein was isolated [0.2] but it wasn't 
+known to be [0.4] this enzyme [0.2] and we were [0.4] therefore left with a [0.
+4] strange situation of [0.8] a research group in Canada [0.3] who'd worked on 
+a protein that they'd [0.2] given the name germin to [0.4] and they'd found 
+that it had these characteristics [0.3] but they had no idea about its function 
+[1.9] they'd worked on it for a long period of time [0.4] because it was pepsin 
+resistant [0.4] most enzymes being proteins are broken down by [0.4] protein 
+degrading enzymes themselves [0.5] so [0.4] this particular germin protein [0.
+8] was almost completely resistant to [0.2] t-, [0.3] being broken down [0.5] 
+by normal [0.7] er [1.0] proteases [0.6] it was also resistant to hydrogen 
+peroxide [1.0] which again is unusual for a protein [0.8] usually these two 
+treatments would completely denature a protein [0.4] and make it unfold [1.2] 
+it was a glycosylated protein in other words it had sugars attached to it which 
+is [0.4] quite 
+usual in plants [0.7] it was a multimeric one in other words it had lots of 
+subunits [1.1] and [1.2] it was considered to be important because there was a 
+lot of it [laugh] [0.5] and biologists think [0.2] well if there's a lot of it 
+[0.4] it must be important it's a kind of [0.4] crude analysis of its [0.2] 
+significance [0.9] and so [0.3] the group in Toronto had worked for [0.6] ten 
+years or more [0.3] on this germin [0.8] they had the sequence of it but they'd 
+no way of finding the function [0.7] we were working on [0.9] the barley 
+equivalent of this [0.9] on [0.4] the idea that it was an enzyme and then we 
+went back to the gene [0.4] they had the gene and the protein but no function 
+[0.6] we put the two things together [0.4] and we were able to tell the group 
+in [0.2] Canada [0.3] what they'd been doing for the last ten years was working 
+[0.3] on an oxalate oxidase [1.2] and that was quite surprising to them because 
+[0.3] up to that point [0.2] nobody had ever isolated an oxalate oxidase from 
+plants [0.8] er [0.4] a-, and isolated the gene from a [0.5] this enzyme [1.6] 
+if you look [0.7] then [0.5] and using the [0.4] the er [0.4] bioinformatics 
+techniques [0.4] 
+at the structure of this protein [0.7] which is what was done [0.5] very simply 
+[0.6] it then became [0.6] quite clear that this protein wasn't [0.7] a unique 
+[0.4] protein but in fact had [0.5] lots of [0.4] quite close relatives [1.6] 
+and this is [0.4] the analysis as it was [0.2] [0.4] about [0.6] five years ago 
+[0.5] and at that time [0.5] in all the databases in the world [1.6] wherever 
+you looked you could find a total [0.3] of ten sequences [0.5] this is the 
+Prodom [0.8] er [0.2] protein [0.3] the main database [0.9] that showed [0.9] 
+this [0.5] pattern of ten proteins [1.7] but the eight at the top were from 
+plants [0.4] the two at the bottom were from slime moulds [1.5] the f-, 
+different colours here represent areas of conservation [0.7] the different 
+colours at the ends are where they're different so [0.4] we have this family of 
+ten proteins where there was quite a lot of conservation [0.5] in the middle of 
+them [0.7] the the blue area [2.3] some of them had diff-, had the same [0.3] N-
+terminus which is [0.3] labelled here [0.8] but the [0.9] they were different 
+at the [0.6] C-terminus at this end of the protein [0.8] so the cereal proteins 
+were different from the [0.9] the brassica [0.3] and dicot 
+proteins [1.1] the slime moulds [1.3] two on the bottom [0.8] and the slime 
+mould is one of these [0.7] er [0.7] eukaryotes that [0.7] not as m-, [0.2] 
+much is known about biochemically [0.8] but it was known that when this slime 
+mould [1.0] became [0.5] desiccated became starved [0.3] it produces very small 
+spores [0.4] and these spores [0.2] contained a lot of this protein [1.1] again 
+there was no particular function assigned to it [0.7] but it was known to be 
+somehow related to desiccation [1.1] so there are series of clues here being 
+built up [0.5] during this story that say [1.1] we've got a very resistant [1.
+0] heat stable pepsin resistant protease resistant [0.6] hydrogen peroxide 
+resistant [0.2] protein found in cereals [0.8] it seems to have some similarity 
+[0.5] to a desiccation tolerant [0.4] starvation induced [0.9] er [0.3] protein 
+from a very [0.5] primitive [0.5] eukaryote a pri-, very primitive [0.5] er 
+mould in this case a slime mould [0.9] so that [0.4] was interesting because it 
+said [0.6] there's a [0.6] a [0.2] protein connection between [0.3] a slime 
+mould [0.5] a barley plant [0.6] a-, and a wheat embryo [0.9] so [0.4] that's a 
+[1.3] an interesting position [0.7] and about 
+that time [0.2] a group in Germany [0.9] as well as ourselves [0.6] started to 
+think more about the evolutionary significance of this [0.6] and they also [0.
+4] found by repeated database searches [1.4] that this family of proteins which 
+[0.4] started to become enlarged as time went on from ten to twenty [0.7] and 
+er i'll tell you what the latest version is at the end of this story [2.4] they 
+were given the name [0.3] originally germin from the [0.2] germination [0.6] er 
+[1.1] association of the [0.3] of the wheat gene [0.7] these er related 
+proteins were then known as germin-like proteins [1.3] more and more detailed 
+[0.3] sequence similarity searches [0.4] showed that there were particular [0.
+6] amino acids [0.4] within these germins and germin-like proteins [0.4] that 
+were also found in yet another [0.9] much more distantly related group of 
+proteins that [0.7] er [0.3] are particularly interesting to [0.6] to plant 
+scientists [0.4] and those are the proteins found in s-, [0.2] in seeds in 
+storage proteins [0.6] proteins that are part of [0.5] all our diets [0.3] 
+because we [0.6] indirectly or directly [0.4] we rely upon eating seeds as a [0.
+5] form of 
+er pro-, er vegetable protein at least [1.4] and if you look at vegetable 
+proteins in seeds [0.7] particularly the so-called legumin vicilin proteins [0.
+6] then you'll see [0.4] you can identify particular amino acids that are also 
+found [0.4] in this group of proteins that i've just described [1.3] and this 
+was a simple attempt to look at [0.6] the evolutionary significance of these 
+families [0.5] during time [0.3] and this was put together [0.8] by a group in 
+Germany [1.2] again [0.7] around this period of [0.2] five to six years ago [0.
+5] and they started [0.3] with a hypothesis that said [1.9] if you believe in 
+evolution then at the beginning of time there sh-, [0.5] should be some so-
+called ancestral protein [0.6] from which all these other proteins [0.8] er 
+were produced [0.3] during evolution [1.5] we're i-, in a position that said [0.
+8] some of them evolved into these [0.3] slime mould proteins that are known as 
+spherulins [1.5] some of them [0.2] involved [0.6] evolved rather [0.4] into [1.
+0] what we now know as the germin [0.4] types of protein [1.1] some of them [0.
+6] evolved into [1.5] they're described here as C-globulins [1.4] but another 
+[0.2] 
+more important group [0.3] and these are the ones that [0.6] found in seeds now 
+[0.6] went through a duplication event at some stage [1.1] to form [0.6] these 
+legumin vicilin [0.8] er [0.3] precursor proteins [0.3] because what i haven't 
+said is that [0.6] the storage proteins are twice as big in length [0.7] as the 
+germins [0.5] so at some time [0.5] they seem to have doubled in size [1.2] so 
+they have [0.3] two halves and within each half [0.4] you can see [0.7] er the 
+the letters here represent the conserved [0.3] amino acid residues [0.4] during 
+this whole period of evolution [0.3] from [0.4] the primitive [0.4] slime mould 
+up to the [0.9] the higher plant [0.6] just a few amino acids particularly 
+glycines prolines glycines [1.0] we've seen phenylalanines [1.5] particularly 
+those amino acids were conserved in the same place [0.3] all the way through 
+this process [0.9] so although you look at these proteins and you don't see 
+very much [0.9] perhaps superficial [0.4] significance in similarity terms [0.
+4] they do have these conserved residues strictly conserved at particular 
+points [2.4] 
+so that was an outline a sort of sketch of what [0.4] the evolutionary pattern 
+might have been [2.0] and why was it possible to do that [0.3] was [0.8] 
+because this three-dimensional structure [0.4] of the storage proteins was [0.
+5] already known [3.1] and i'll say why that's important in a second [1.2] the 
+diagrammatic [0.3] version of that is [0.8] summarized on here [0.5] so again 
+we start with [0.3] something where there's an ancestor [0.4] you go through 
+duplications you then evolve into [0.6] a whole series of different families [1.
+2] and this covers a whole [0.6] a large period of time and it covers a lot of 
+different [0.3] potential functions [0.8] so [0.4] that's the [0.6] the outline 
+kind of cartoon of history [0.8] that [0.5] er [0.4] i want to build from [1.9] 
+okay [0.9] i said that the three-dimensional structure of [0.8] of the storage 
+proteins was known [3.4] and this is what you get if you look at the alignment 
+of different storage proteins [1.9] and i've marked on here just a [0.5] a 
+couple of the [0.4] globally conserved amino acids [1.4] these are two [0.4] 
+storage proteins [0.3] the first from [0.6] 
+soya bean [0.2] the one on the top is this [0.6] protein called glycinin [0.9] 
+and the second protein is a [0.5] storage protein from beans [1.1] and the w-, 
+[0.3] the pro-, the amino acids i've marked in red and blue [0.5] are two of 
+these globally conserved ones [0.3] so wherever you [0.2] find a storage 
+protein from whatever species [0.4] you'll always find [0.5] a proline at this 
+position [0.3] and a glycine here [0.4] and lots of variations in between but 
+there'll always be a [1.0] conserved residues another glycine here [0.6] so 
+these boxes represent these few key residues [1.3] but the question is w-, [0.
+3] what function do those few key residues have [0.2] in determining the 
+structure of a protein because [0.7] linear sequences of proteins are usually 
+[0.8] they're useful but they're [0.4] rather meaningless when you're trying to 
+relate [0.5] protein sequence to function [0.5] function depends upon the shape 
+of the protein [0.5] and the shape of the protein is determined by how it folds 
+up [1.1] how [0.4] this linear sequence becomes a three-dimensional structure 
+[1.4] and if you look at the three-dimensional structure [1.1] of a 
+storage protein [1.4] and this is a simple version of it [3.7] this is f-, [0.
+6] a sort of diagram of it being folded [0.9] er [0.3] it's obviously two-D to 
+f-, [0.6] to flatten out here but [1.3] it's meant it's composed of a series of 
+strands [0.5] you [0.2] probably know about [1.2] er the [0.3] components of 
+proteins that [0.7] are made up out of either [0.6] bet-, so-called beta 
+strands [0.3] or [1.1] or helices so there's curved [0.2] helix [0.6] er 
+components within a protein [0.4] or there are [0.5] there are strands which 
+are just short stretches [1.1] and these two [0.8] marked residues [0.9] that 
+were on the previous [0.4] er overhead [0.4] the blue and red ones [0.7] are in 
+key areas [0.3] that determine the three-dimensional structure of the protein 
+[0.5] so the glycine [1.3] is here [0.4] where the [0.2] protein bends [0.9] 
+and the proline is at a key area here [0.8] that forms an interaction between 
+this part of the protein and this part [1.4] so the moral [0.2] to remember all 
+the time is that [0.6] just [0.5] occasional amino acids at key points in a 
+protein [0.8] can determine the three-dimensional structure [0.4] it doesn't 
+matter too much [1.3] in many cases what's between [0.7] this corner and 
+this corner [0.4] as long as in three-dimensional space you can join up one 
+corner another corner [0.4] over a certain distance [1.3] so when you're 
+looking at proteins and the elution of proteins you th-, [0.5] have to think 
+all the time about [0.8] okay [0.2] linear sequences are fine [0.5] but it's 
+three-dimensional shapes which are the real key to biology [1.1] er [0.5] and 
+the it's the chemistry and the structure behind that that i'll [0.9] go on to 
+[0.2] to mention [0.8] so [0.3] that's a just a [0.4] a representation [0.3] of 
+these [0.2] two amino acids and the [0.6] the [0.2] key function that they play 
+[0.9] in determining [0.6] structure [1.7] so the question o-, [0.7] or the 
+next question was [1.2] if we looked at a similar alignment [0.2] of [1.4] the 
+germins and the germin-like proteins [2.2] what could we learn by first of all 
+at a [0.4] in-, initial alignment of the different [0.4] germin [0.3] family [0.
+4] and also [0.3] could we relate the germin structural [0.4] sorry [0.3] could 
+we relate the [0.3] storage protein structural information [0.6] to possibly 
+predicting [0.4] what shape of [0.3] protein the germin-like proteins might 
+have [1.7] so the next stage was to do a [0.6] simple 
+alignment of the [0.9] germin [1.1] proteins [0.3] er [0.6] you don't need to 
+read it just kind of look at the colours if you [0.7] can there [1.6] and the 
+colours as usual are colour coded according to the type of amino acid [0.9] so 
+the [0.5] the yellows are the [0.7] er [0.6] the sulphur containing amino acids 
+[0.5] prolines are the green [1.9] and [0.2] the dark blues are the [0.5] basic 
+amino acids [0.5] and you'll see if you go along this sequence there are areas 
+where [1.1] there are quite good stretches of similarity between all these 
+families [2.3] there are certain regions there where there's more [0.2] 
+conservation than others [0.8] and one area where there are series of 
+successive conserved amino acids is [0.5] is here [0.8] and particularly [0.5] 
+of interest to us because [1.2] again [0.7] if you're looking at amino acid you 
+have to think [0.7] okay some amino acids have an importance in structure [0.6] 
+some amino acids have an importance [0.5] in [0.4] say enzyme activity [0.4] in 
+things like [0.4] binding of metals inside a protein [1.5] and all our 
+particular attention was [0.4] er [0.4] was drawn to these [0.7] particularly 
+to these two [0.3] areas of [1.0] here 
+where there are [0.4] dark blue lines that you see [0.9] are conserved [0.5] 
+histidine residues [1.3] so there were two there [1.8] and there were also [0.
+3] if you went on through the protein [9.1] and this is towards the [0.3] the 
+end towards the C-terminus of the protein [0.2] you could see that [0.2] there 
+was another [1.7] histidine residue here [1.9] and the reason why [0.4] we 
+should always pay attention to [0.3] things like histidines i say they're [0.4] 
+well known to being [0.3] involved in [0.3] the active site of enzymes [1.3] so 
+[0.3] enzymes have a structure [0.8] but the structure is really only there [0.
+5] to form a scaffold [1.0] in effect [0.5] and the activity the chemistry in 
+the [0.2] protein in the enzyme [0.4] takes place usually in the middle of it 
+[0.7] where the active site of the enzyme is [0.5] so you have this [0.4] rigid 
+structure [0.8] which provides a shape [0.8] but the chemistry that goes on in 
+an enzyme [0.8] takes place in the active site in the usually in the centre [0.
+8] where the chemical reactions [0.5] er [0.3] occur [0.9] and many chemical 
+reactions particularly [0.4] if you remember this is an oxidase enzyme [0.3] an 
+oxalate oxidase [1.0] many 
+oxidases [0.6] require metals for their activity [0.5] so there's a [0.4] they 
+have a metal cofactor [1.6] so how do metals stick on to [1.1] on to the 
+insides of proteins [0.4] they have to be held in position [1.7] and they have 
+to be held in position through [0.6] particular amino acids that have a sor-, 
+[0.6] a very rigid geometry [1.7] so the distance between [0.2] specific amino 
+acids [0.6] will hold particular metals [0.4] and each metal [1.2] requires [0.
+3] different sorts of [0.4] binding amino acids [2.2] can anybody tell me what 
+kinds of metals there might be inside oxidase enzymes [2.7] any guesses [3.5] 
+sm0212: iron [0.8] 
+nm0211: yep [0.6] 
+su0213: [0.3] 
+nm0211: yep [0.4] er two [0.4] good ones 
+sm0214: zinc 
+sm0215: magnesium [0.4] 
+nm0211: sorry [0.3] 
+sm0214: zinc [0.3] 
+nm0211: yep [0.7] that's three of the major ones [0.2] pretty good [1.4] 
+sm0215: magnesium [1.3] 
+nm0211: er [0.5] not quite magnesium [0.2] something a bit like [laughter] [0.
+5] you start with the s-, first three letters [0.3] of [0.9] manganese is [0.9] 
+magnesium is [0.6] not usually found in [0.6] in oxidases [0.8] certainly iron 
+[0.7] zinc [1.0] particularly iron and copper [0.2] i suppose are the two most 
+common [0.8] zinc [0.3] not quite so much [1.8] manganese is often found as an 
+alternative to er [0.6] to iron [0.8] so [0.4] just think about those [0.5] 
+those 
+four components [0.6] things like er [0.9] amine oxidases are copper oxidases 
+[0.8] in each case though whether it's [0.8] iron [0.2] manganese or copper [0.
+6] they're always held in position [0.5] by [0.4] histidine [0.2] amino acids 
+so you get this [0.6] thing called a histidine cluster [1.1] and you should 
+always look very carefully if you start to see [0.7] conservation of histidines 
+[0.9] in a protein alignment [1.1] but that's [0.2] circumstantial evidence for 
+there being a metal binding site [0.5] and that was our prediction [0.4] on the 
+basis of this [1.2] 
+er [0.7] initial survey [1.3] so [0.3] were we dealing with a [0.3] copper 
+containing [0.4] iron containing or manganese containing [1.0] enzyme [2.4] 
+right [2.2] so how could we answer that without doing any [0.7] real [0.6] er 
+difficult [0.7] biochemistry [0.8] and the power now of [0.5] of computing 
+facilities in [0.5] structural biology [0.6] is so great that you can do a lot 
+of work [0.7] without actually going into the lab any longer [0.5] er [0.8] 
+many labs are being depopulated because [laugh] [0.2] computers are taking over 
+[0.6] and it's a lot easier to [0.5] run the [0.2] computer and use the 
+modelling programmes that exist [0.6] to answer some of these questions [0.4] 
+rather than saying [0.6] i want to know [0.5] whether these three histidines 
+possibly might form a binding site [0.3] i've got to purify the protein i've 
+got to add metals i've got to do very complex er [0.3] analytically [0.6] work 
+[0.4] and then i might be wrong [0.2] or i can't get the pure [0.3] protein 
+pure enough [0.5] but what you can do in a few days is to [0.2] say [0.8] well 
+let's [0.7] try and produce a model of the protein [1.3] i mean [0.5] the best 
+way to produce a model of a protein is if you have an existing structure to 
+work from [1.4] and the [0.4] great benefit for us is that we had the structure 
+of the storage protein [0.8] we had the idea that [0.4] the storage protein 
+structure was [0.3] probably related to the germin structure [0.7] so we take 
+[0.6] the crystal and the three-dimensional coordinates of the [0.6] pr-, of 
+the storage protein [0.4] and we would try and fit the germin [1.1] sequence on 
+to that [0.3] backbone [0.3] and see what we got [1.1] and this is what we did 
+[0.7] er [0.9] couple of years ago [0.4] and this is a summary of the [0.4] 
+conclusion [1.6] we used as a model [1.3] an average between [1.1] two existing 
+structures and these were the two storage proteins [1.0] and this case 
+canavalin and phaseolin [0.4] so we took from the databases [0.8] three-
+dimensional structure of the and coordinates of those [0.7] those proteins [0.
+7] if you remember i said that they had two halves to them because they were 
+twice as big as germin [0.7] so we treated them as independent halves [0.7] an 
+N-terminal half [0.4] an N-terminal domain and a C-terminal domain [1.1] and 
+the red and orange [0.3] one represents one protein and the other so [0.6] 
+that's just 
+to show if you look sideways at these proteins [0.8] that they have this [0.8] 
+beta barrel shape [1.5] and er [4.5] and we used the average of those [0.4] 
+shapes [0.9] to fit [0.5] the germin sequence on to [0.5] and you can this is 
+automatic you [0.6] do the alignment and the computer will come out and it will 
+try and fold the protein according to the [0.6] coordinates that are [0.3] it 
+knows exist here [0.9] and if you do that [0.2] you get [0.5] depending on the 
+[0.5] quality of the alignment you get a prediction then [0.5] of the three-
+dimensional structure of your [0.5] favourite protein [0.7] so you don't have 
+to crystallize it [0.5] you can [0.2] use the model [1.5] and the model 
+immediately told us something [0.4] very interesting [0.4] this is the crude [0.
+4] model here [0.6] that shows it is very similar to these two [1.1] but it 
+also told us that if we look in the [0.4] inside of the [0.2] barrel of this 
+model [1.1] and we ask [0.3] where are those three histidines [0.5] that we th-,
+[0.4] saw in the alignment [0.3] they were quite a f-, [0.5] they were too 
+close together [0.3] and there was one that was quite a long way apart [1.0] 
+but once you fold up the protein [0.9] you 
+find that those three [0.5] and they're represented here by green [0.6] those 
+three histidines [2.0] fold together so they're very [0.6] close to each other 
+[0.7] the they're adjacent amino acids then [1.0] so in folding the protein 
+we've brought the third histidine [0.4] close to the first two [0.5] which 
+confirms now that you have [0.6] three histidines together [0.6] and it's 
+further strong evidence [0.6] that that [0.5] is a histidine cluster [0.2] so-
+called [0.6] and that that could act as the site for binding the metal [0.5] 
+inside the protein [1.8] and all of that can be done now with [0.6] these very 
+powerful modelling programmes that [0.5] i'm sure [0.3] if you haven't heard 
+about them namex will [0.5] be showing you later [3.0] so that was the [1.0] 
+the computer based research [2.6] and er [0.3] just spend a couple of minutes 
+now with a [0.5] sort of interlude before i go on to [0.8] is that [0.2] 
+predicted research really been [0.3] proven by [0.5] what's happened recently 
+[1.7] and i'll go back a bit [0.3] to the question [1.6] that i was interested 
+in personally [0.4] which was if we could [1.1] imagine that there is an 
+evolutionary sequence 
+of these proteins that started [1.1] somewhere with a [0.5] ancestral a 
+hypothetical ancestral protein [0.6] that then evolved through a slime mould 
+protein [0.9] to things in lower plants and then eventually to seed proteins [0.
+8] logic would say [0.6] well all of those must have had some very ancient 
+ancestry somewhere [0.7] can can we identify [0.7] what the oldest surviving 
+member of this protein family is [2.0] and [0.6] most people would say well [0.
+6] would you go back to the early plants or you go back to the early fungi or f-
+, [0.5] from which [0.4] plants are [1.0] very distantly related [1.1] but i 
+wanted to push the boundary in time back a bit further [0.4] and so [0.3] i 
+started to search for bacterial and [0.5] primitive [0.4] archaeol which is a 
+[0.5] er [0.6] er a related form of primitive bacteria [0.5] could you find 
+these sorts of proteins [0.9] er even further back in evolutionary time [0.6] 
+because after all the [0.5] proteins that are found in plants and animals now 
+[0.6] didn't kind of arrive from outer space [laugh] [0.4] unless you [0.3] are 
+er [0.4] are a particularly strange religion they came from [0.5] some a-, 
+existing protein 
+structures [0.8] so plants and animals didn't evolve a whole set of new protein 
+structures [1.3] they took [0.4] existing ones from more primitive life forms 
+and they [0.5] amalgamated them they cut and they pasted them and they [0.5] 
+used them for different things but they didn't [0.5] in many cases they didn't 
+really invent [1.1] new [0.4] three-dimensional structures [1.2] and if nothing 
+else that's a sort of take home message that [1.0] every protein in you or i or 
+a [0.4] vegetable [laugh] [0.6] really [0.3] is made up out of [0.4] quite a 
+small number of [0.2] three-dimensional structures [0.5] there's probably [0.6] 
+you know you have about a hundred-thousand genes [1.7] er plants have maybe 
+forty or fifty-thousand genes [0.7] but er [0.2] each of which encodes [0.5] a 
+different protein [1.2] but there aren't a hundred-thousand different proteins 
+[0.6] in terms of their structures in a [0.3] in you and there aren't forty-
+thousand different proteins in terms of structure in a [0.4] in a plant [0.6] 
+there are probably five-hundred to a thousand [0.8] and all the other [0.3] 
+variation is just minor [0.7] sort of tinkering with the 
+edges or [0.4] duplications or [0.7] taking a bit out of a s-, existing 
+structure [1.4] there's a [0.2] really a v-, quite a small number of those 
+underlying structures [0.5] and now [0.6] as more [1.5] sort of organisms are 
+being sequenced it becomes clear that [0.8] in a f-, probably five years we'll 
+know what all those structures are [0.5] you'd be able to go and say [0.7] 
+there's [0.3] you know there's five-hundred structures and they make make life 
+[0.2] whether it's bacterial or a human [1.1] and everything else is just [0.7] 
+rearrangements of those existing [0.5] it might be less than five-hundred 
+eventually [1.4] and so [0.4] the conclusion must be [1.0] that you will find 
+in bacteria [0.8] the underlying three-dimensional components of all other 
+proteins that have [0.2] been produced [0.4] during evolution [1.4] and that's 
+in fact what we did do [0.5] we went back and we [0.4] looked in all the 
+databases now [0.7] there are fifty or sixty [0.2] bacterial species where the 
+complete gene sequence is known [0.8] therefore you know [0.3] all the genes 
+therefore if you predict [0.3] every protein sequence [0.5] so you know that [0.
+6] in E-coli or [0.7] or B-subtilis 
+the two best known [0.4] bacteria [0.5] you [0.2] can now predict [0.4] the at 
+least the primary sequence of every protein [1.1] and people are now trying to 
+model [0.4] and predict the three-dimensional structure of every protein in an 
+organism [1.2] and in the future [0.6] the idea will be that [0.4] you will 
+take a different cell from an organism and be able to say [1.0] a skin cell of 
+a human [0.3] has this set of proteins and we know the structure of all of them 
+[0.6] so that [0.4] that's [0.4] not far-fetched people are doing that now [1.
+3] so what we did was go back and say can we find these [0.7] ancestors of 
+these [0.2] storage proteins of these germins in bacteria [0.9] and [1.4] as 
+you might expect the similarities become more and more [0.3] limited as the 
+further y-, [0.3] back in time you go [0.4] so you have to look for [0.2] key 
+[0.6] conserved amino acids [0.6] and we knew [0.3] from this analysis that [0.
+4] clearly the conserved [0.6] er [0.8] histidines in the centre of the protein 
+[0.4] were [0.2] some of the most functionally [0.5] interesting of the amino 
+acids [0.3] because they're the ones that determine [0.5] potentially the 
+binding site to the 
+metals [0.4] and potentially the [0.6] the enzyme activity of the protein [0.4] 
+and this is a [1.3] initially just a brief [1.0] er [0.3] outline of that [1.4] 
+there's lots of letters on here which are just sequences but [2.8] we c-, we 
+categorized this and attempted to categorize it to make the analysis easier [0.
+7] and we divided [0.5] the conserved areas up into two groups [0.6] we said 
+that there was a conserved [1.5] er [0.6] motif here [0.5] with these two 
+conserved histidines which are the grey boxes [0.5] and there was a conserved 
+motif here [0.5] where the histidine was conserved all the way down there [1.8] 
+all the proteins at the top of this list are from bacteria [1.5] and [1.6] what 
+we also have in here is a [0.3] thing that i haven't mentioned [0.4] which is a 
+space between this motif and this one [3.1] so in other words the two motifs [1.
+2] were at different distances apart [0.8] in the plant proteins [0.2] the 
+germins [0.4] there are about [0.4] twenty or twenty-five amino acids [0.7] 
+from the end of this motif to the beginning of this one [1.0] in the storage 
+proteins that can vary as well [0.2] which are the book 
+bit on the bottom [0.9] but in these primitive [0.2] bacteria [0.6] that 
+distance was [0.6] was less [0.4] so again we have another [1.3] kind of 
+quantitative way of looking at [0.3] a protein evolution that we have these two 
+conserved motifs that both had histidines in [0.2] that we knew when they 
+folded up came together [1.9] 
+that in [0.2] plants were a certain distance apart in the linear sequence [0.4] 
+but if you look at the bacteria they were closer together [1.4] so during 
+evolution certain things had happened [1.9] the two motifs [0.5] had in effect 
+moved apart in sequence [1.8] the protein size itself had also changed because 
+[0.3] the bacterial proteins were only about a hundred amino acids in length in 
+total [1.3] whereas the plant ones were twice that length and [0.3] and the 
+protein [0.5] some storage proteins were double that length [1.1] so we had a 
+[1.1] a model now that said [0.5] in ancient bacteria we had a [0.3] s-, [0.7] 
+fairly small protein [0.7] with these conserved amino acids in it [1.0] as it 
+[0.7] moved from a bacteria to a fungus to a plant an animal [3.0] and this is 
+a representation of that [1.1] one 
+important thing happened [1.3] and again this is just a [0.2] look at the shape 
+rather than the detail [0.7] the two motifs are the [0.2] blocks [0.2] where 
+the yellow residues are [0.6] these two motifs [0.8] had moved apart [1.4] and 
+this is represented by the kind of [0.4] tower in the middle [1.3] the bacteria 
+[0.2] at the front at the top here [0.9] plants and animals towards the bottom 
+[1.0] these residues are ones which had been inserted [0.3] into the middle of 
+a protein [0.4] during the billions of years of evolution [0.7] there were also 
+residues [0.5] stuck on at each end that i haven't shown [0.3] at this end and 
+that end [1.9] but because we knew the significance of the two motifs and the 
+histidine residues we could trace them [0.9] but [0.9] during evolutionary time 
+[0.2] proteins had become more and more complex [0.4] they'd [0.3] had extra 
+residues inserted into them [0.4] and they'd had extra residues stuck on either 
+end [0.4] and then eventually the whole protein had doubled [0.6] and become a 
+storage protein [4.0] so we're getting kind of to the end of the [0.7] the 
+story now but [0.6] er [4.5] i just want to show you er [1.2] 
+this which was the next attempt at [0.7] at our model of [1.0] what [0.7] the 
+[0.5] the germin the oxalate oxidase might look like in real life i've told you 
+what the computer said it would look like [laugh] [0.5] i've told you the 
+prediction of how it might have changed during [0.4] evolutionary time [0.8] 
+but what did it really look like [1.5] and i go back to the comment that said 
+[0.4] this protein was a [0.6] multimeric protein it had different subunits in 
+it [1.7] for many years for about ten years [1.0] the biochemists in Canada had 
+said [0.9] we think that [0.8] the germin protein is made out of five subunits 
+because when we [0.2] separate them which you can do [0.3] we get kind of five 
+and we lo-, if we measure the molecular weight [0.5] we get something that says 
+[0.5] the molecular weight of the total protein's five times the weight of the 
+subunit [0.6] and that was [0.4] what the computer said would be the model of 
+[0.4] five subunits stuck together [2.4] we became a bit doubtful about whether 
+that was valid because [0.4] we already knew from the [0.6] storage protein 
+structures [0.9] that s-, [0.3] storage 
+proteins in seeds [1.3] are composed of three subunits [1.5] and we've [0.2] if 
+you remember that we said that [0.4] each subunit is about twice as big as [0.
+5] the germin subunit [1.0] so common sense [laugh] [0.2] if you believe in 
+biology having common sense would s-, [0.3] argue that [1.4] if we know that 
+there's a structure of three subunits in each one is twice the size of the one 
+we're interested in [0.5] it's kind of obvious that say [0.4] well wouldn't it 
+[0.2] make more sense to have six subunits of similar [0.4] size [0.3] that 
+would then give an equivalent shape [0.9] if [0.3] evolution had conserved 
+shapes and i've argued that [0.4] evolution does conserve protein shapes [1.3] 
+and the computer model then said [1.0] if we had [0.6] in fact six [0.6] 
+subunits in our shape [1.4] we would have then have something that we'd 
+described as a [0.2] trimer of dimers because [0.4] you have this triangular [0.
+9] shape [0.8] so there's two here two here and two here [0.6] so it's not [0.
+7] there isn't a sixfold axis of symmetry there's a threefold axis of symmetry 
+[0.4] so [0.6] and [0.4] that shape would look very very similar to what we 
+have in a seed 
+in a storage protein [0.7] but here we'd have six bits rather than [0.6] than 
+three [0.2] double-sized bits [0.7] and that's the [0.4] kind of simple maths 
+of it [1.0] so those were our two working hypotheses [0.3] and [0.4] the 
+Canadian group were said [0.3] oh sniff [0.6] we've spent ten years and we've 
+said it's a pentamer 'cause if you measure the weight [0.6] then that tells you 
+it's a pentamer [1.7] and er [1.2] what i'll now do is show you [0.9] how we 
+resolved that [1.5] and we did it through [0.6] conventional crystallography [1.
+1] we had a [0.9] student who's just finished s-, [0.2] his PhD successfully [0.
+3] who crystallized [0.9] the germin-like protein the [0.4] the oxalate oxidase 
+from barley [1.3] he purified it and purified it and eventually got a [0.8] a 
+[0.5] a source of protein that was sufficiently pure to [0.2] to produce 
+crystals from it [0.5] and that was a lot harder in this case than [0.6] than 
+in most cases and i won't go into the biochemistry but [0.4] eventually [0.5] 
+he found us [0.3] a crystal [0.3] that was good enough to [0.6] be able to 
+resolve [0.4] in the [0.8] in the X-ray beams that you use for this sort of 
+thing [1.0] 
+and this is [0.3] it's not published yet so [0.5] not many people in the world 
+have ever seen it before but [0.5] this is his resolution [0.9] of that [0.8] 
+now the definitive [0.6] three-dimensional structure [1.0] of oxalate oxidase 
+from barley [1.9] and [0.6] if we get it the right way round [2.0] well if 
+there is a right way round [1.8] you see there are six colours [0.6] so we've 
+confirmed absolutely that it is a hexamer [0.2] it's made of six subunits [4.1] 
+there are some other very [1.0] unusual or [0.2] sort of key features about 
+this that help to explain [1.1] its [0.5] er its biological [0.5] and its 
+chemical properties [1.7] one is that [1.2] if you [0.3] just take for example 
+there's three corners here [0.9] we've got one [0.9] two and three [0.6] these 
+are corners where this subunit [0.6] the light blue one [0.6] interacts with 
+the dark blue one [0.9] and they are held together [0.8] by [1.0] very [0.6] 
+tight [0.4] linking of the [0.4] of the helical [0.4] er [0.6] ends of the each 
+subunit so [0.3] they're called sort of [0.2] a-, [0.6] alpha helical clasps 
+they [0.4] join together [0.5] very tightly [0.9] so first of all it's held 
+very tightly at three corners [1.3] it's also [0.2] stuck 
+together in effect by [0.7] the centre of the protein [0.9] this is the 
+beginning of it this is the N-terminus of it [0.7] the C-terminus is the bit 
+down here [2.5] the N-terminus [0.9] is held together [0.5] in this case the 
+dark blue [0.9] subunit [0.4] is attached [0.2] to this er magenta coloured one 
+[1.5] and it's held together by very strong bonds between [0.7] the the amino 
+acids in the centre here [0.8] so you have [1.1] these subunits [0.4] at each 
+corner which are [0.2] holding each other together tightly [0.7] you also have 
+[1.4] the other [0.4] alternative [0.3] groupings of this subunit this one and 
+this one and this one or this one [0.3] are holding each other together [0.4] 
+so you have a [0.2] a intensively strong relationship that [0.4] holds these [0.
+2] different units together [0.4] and that's characteristic of the fact [0.3] 
+that this is very thermally stable [0.7] it's withstands eighty degrees and it 
+still survives [0.5] so it takes a lot of energy to break those [0.7] there's 
+the [0.7] links between it [1.3] also [0.3] it has the highest amount of [0.6] 
+hidden [0.3] surface if you can imagine this is just on a flat surface 
+but [0.2] you can look at this in three dimensions but [0.6] a lot of the [0.5] 
+the surface of each monomer [0.7] as you join it to the next monomer [0.8] is 
+not [0.6] therefore exposed to the outside world to the solvents around the 
+protein any longer [1.3] so as you stick things together if you can [0.5] hide 
+[0.3] the surface [0.2] by sticking them together [0.4] you reduce the exposure 
+of the whole protein to the solvents around it [1.0] and this has more than 
+half of [0.5] the area of each [0.2] subunit hidden [0.5] by the association [0.
+5] and that's [1.3] er i don't know whether it's the world record but it's 
+close to the world record of proteins of [0.8] of hiding [0.3] surface [0.5] by 
+[0.2] by assembling into a [1.0] er into a larger [0.7] er [0.2] order protein 
+[0.7] and because [0.2] it doesn't have [1.0] very many surface loops on the 
+surface these are the [0.7] the strands that joi-, sorry the loops that join 
+the strands together [0.4] because these are not very many or large [0.8] and 
+where they are large they're hidden in the middle [0.7] means that if you want 
+to dissolve this protein with a protease [1.0] you don't have many sites for 
+the proteases to attack [0.6] 
+so in other words it's a [0.4] it becomes resistant to degredation by [0.3] 
+protein attack [0.4] so it can withstand all sorts of chemical [0.5] thermal [0.
+9] and and other physical [0.3] breakdown because it's such a tightly conserved 
+[1.0] and that helps you understand why it's evolved [1.4] so successfully 
+during [0.3] throughout er [0.4] time [1.7] that in a seed what you want [1.2] 
+in [0.4] the proteins in seeds [0.2] seeds of the dried up part of the plant 
+they have to withstand dehydration desiccation [0.4] they have to withstand 
+high temperatures [1.2] and so the functional characteristics of this [0.5] 
+whole protein [0.4] superfamily [1.9] have these different [0.2] 
+characteristics that [1.4] it started off in a primitive bacteria [0.3] as 
+quite a small protein but it had this probably [0.4] the same thermally stable 
+[0.3] structure [0.8] and during evolution [1.4] where you'd need [0.2] a 
+desiccation tolerant thermally stable [0.4] protein structure [0.5] it's a lot 
+easier to use one that exists in that organism [0.4] rather than to invent one 
+[0.5] and it's a bit teleological but [0.6] er [1.1] plants [0.7] in seeds have 
+taken this [0.4] desiccation tolerant 
+protein [0.3] and multiplied it up enormously [1.1] and they've used it [0.5] 
+for a different purpose [0.8] what i'm ju-, [0.2] going to say now explains two 
+other bits of the [0.6] biology [1.8] and that is to take [3.9] in in effect a 
+third of that [0.2] structure that you saw before [0.5] and i'm going to 
+compare it exactly [0.5] with a [0.2] one unit of a storage protein [1.5] okay 
+[0.6] so if you can imagine the top here is oxalate oxidase but it's [0.6] it's 
+a third of the hexamer it's two [0.2] subunits [0.6] and we're comparing it 
+directly [0.7] with one subunit from the storage protein [0.7] and you can see 
+and you can superimpose this on this [0.3] and they're almost indistinguishable 
+[0.7] so although in primary sequence [0.5] if you match this to this you'd 
+have less than [0.5] twenty per cent similarity [0.6] we know that the 
+conservation is [0.5] er [0.3] important areas [1.5] we we've got the helices 
+here [1.0] in the same place [1.1] so we've got absolute now structural 
+confirmation that our hypothesis that storage proteins were related to this is 
+confirmed [0.4] by real measurement [0.4] in space [1.0] and the two other [0.
+3] 
+bits that i haven't mentioned are [1.0] if you can see the green blobs in the 
+middle here [0.4] that is our metal [2.6] there's one metal in each subunit [0.
+5] this is the [0.2] the metal that's held together by the histidine residues 
+[0.7] so manganese that's why i was k-, [laugh] [0.4] keen on mentioning 
+manganese at the beginning [0.5] so manganese containing oxidase [1.0] it's a 
+unique manganese containing oxidase 'cause there'd never been any described 
+like it before [2.9] storage proteins have one histidine [0.4] i didn't stress 
+that but you if you'd counted the number you might have seen that [0.9] storage 
+proteins have one histidine [0.2] they have no metal [0.5] so they've lost the 
+two other histidines during evolution [0.7] they've [0.3] preserved the 
+structure [0.7] they've lost the metal [0.4] they're no longer an enzyme [1.0] 
+so they don't have a f-, [0.4] a chemical function [0.4] they act as a store of 
+amino acids in a seed [1.0] so [0.3] what you eat [0.2] your diet [1.2] is made 
+up out of [0.4] in effect [0.2] deactivated enzymes [1.7] that have gone 
+through evolution [0.5] by maintaining a structure 
+that [0.5] can withstand heat [0.4] and temperature [0.7] but it's lost its 
+enzyme activity by losing the [0.4] histidines that bind the metal [1.8] the 
+other point i said [0.5] was if you imagine the [0.4] two motifs i said they 
+moved apart in evolution [1.6] they did move apart [1.2] and that's represented 
+by this loop here [1.7] the loop here [0.2] is the distance between the 
+conserved areas [0.3] and this loop [0.4] can really be quite large [0.3] 
+without disturbing at all [0.4] the structure of the protein [1.0] so [0.4] 
+this loop and some of the other loops [0.3] have changed in size [0.3] but they 
+haven't altered [0.5] the structure [0.7] and as an aside [0.6] if you're 
+interested in [1.1] in food studies at all [0.8] then you know that [0.2] some 
+storage proteins in seeds are powerful [0.2] allergens [1.0] and the best known 
+of those is the peanut allergen [0.3] if you [0.7] if any of you are allergic 
+to nuts [1.0] very dangerous for some people [1.1] part of the reason for that 
+is that the peanut allergen [0.5] has a very large loop in this position [0.6] 
+and that the allergenic [0.5] amino acids [0.4] are [0.7] in these loopy areas 
+[1.1] so during evolution some 
+subset of storage proteins have become allergenic [0.5] by putting in 
+unfortunately for humans [laugh] [1.0] rather unpleasant amino acids here [1.1] 
+that can be toxic to people [0.4] but now we understand the structure [0.7] 
+there are [0.4] er [0.2] G-M people [0.7] who are modifying peanut proteins to 
+remove those loops [0.3] and therefore remove the allergic potential [0.7] of 
+peanuts [0.5] so [0.5] the summary now says [4.6] that [2.3] er [2.0] which of 
+these shall i show you [0.5] is that something like this happened in time [1.2] 
+er [2.4] this is a f-, [0.4] brief phylogeny then of the whole story [1.8] but 
+you had [0.5] archaeol species you had [0.4] bacterial species [0.7] green 
+bacteria [2.1] fungi plants ferns [0.5] the it doesn't have animals on here [0.
+4] animals also have [0.5] proteins that are related to C-storage proteins [0.
+5] nobody knows what they do yet [laugh] [0.5] but if you look in a [0.9] in a 
+human or in a [0.2] nematode worm [0.5] they have a s-, protein sequence that's 
+quite like the storage proteins [0.5] we haven't got a clue what it does in an 
+animal [laugh] [0.4] 'cause er [1.0] we we suspect it's er 
+something to do with [0.3] with desiccation tolerance but [0.6] we don't know 
+yet [0.9] the other thing is that at certain times in evolution [0.6] we had a 
+duplication event [0.6] this duplication event led to C-storage proteins there 
+was another one i haven't had time to talk about [0.5] at the beginning here [0.
+4] that led to a different group of proteins [0.8] and amongst the ones that [0.
+7] this duplication led to [0.5] were [0.3] the other oxalate oxidase sorry [0.
+3] the other oxalate degrading enzyme i showed you [0.3] right back at the 
+beginning [0.6] so although we started ten years ago [0.2] nearly [0.9] with 
+the choice between [0.9] should we use oxalate oxidase or oxalate decarboxylase 
+[0.5] what we didn't have was [0.4] any clue that in fact [0.4] the two enzymes 
+[0.4] are probably very closely related [0.7] but [0.7] we go back to here [0.
+8] we now know through this evolutionary analysis [0.7] that oxalate 
+decarboxylase [0.4] is a duplicated version [0.6] of oxalate oxidase [0.8] it's 
+very limited [0.3] in its co-, [0.2] conservation [0.5] but we now know that 
+this [0.3] is twice of [0.9] of the size of that [0.3] and it's a member of the 
+same superfamily so there's a certain [0.4] kind of symmetry in the story [0.7] 
+that says [1.1] throughout all of 
+this [0.7] we followed a [0.3] kind of academic analysis but it's led to an 
+understanding of [1.0] of conservation of function [0.6] of conservation of [0.
+8] er [1.6] in some cases conservation of s-, sorry conservation of structure 
+[1.3] but at [0.4] of a rather broad diversification of function [0.6] and 
+that's the [0.5] a message in all of these evolutionary studies [0.9] that you 
+can start from very [0.8] apparently very different and distantly related 
+proteins and [0.7] if you know the structure [0.7] that's the key thing [0.9] 
+then you can find that [0.5] the diversification isn't very that great [0.3] 
+and that lots of proteins [0.5] are really members of this small subset of 
+families [0.7] so er [0.8] i should finish there [0.7] i'm sorry about the 
+confusion for the [laugh] at the beginning [0.9] er [0.6] [laugh] [0.9] namex 
+is [0.2] obviously the expert in the modelling and i'm sure he's going to [0.6] 
+tell you and and show you how some of the [1.0] er these techniques can be used 
+[1.1] but this is a [0.2] i think an [0.5] an interesting framework to build 
+from [1.1] and [0.5] i should finish there [0.3] anyway [0.9] thank you namex i 
+hope you have every word of that [laughter] 

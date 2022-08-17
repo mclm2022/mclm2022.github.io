@@ -1,0 +1,1356 @@
+<?xml version="1.0"?><!DOCTYPE TEI.2 SYSTEM "base.dtd">
+<TEI.2><teiHeader>	
+<fileDesc>
+<titleStmt>
+<title>Third Activity, Toxic Waste</title></titleStmt>
+<publicationStmt><distributor>BASE and Oxford Text Archive</distributor>
+<idno>pssem004</idno>	
+<availability><p>The British Academic Spoken English (BASE) corpus was developed at the
+Universities of Warwick and Reading, under the directorship of Hilary Nesi
+(Centre for English Language Teacher Education, Warwick) and Paul Thompson
+(Department of Applied Linguistics, Reading), with funding from BALEAP,
+EURALEX, the British Academy and the Arts and Humanities Research Board. The
+original recordings are held at the Universities of Warwick and Reading, and
+at the Oxford Text Archive and may be consulted by bona fide researchers
+upon written application to any of the holding bodies.
+The BASE corpus is freely available to researchers who agree to the
+following conditions:</p>
+<p>1. The recordings and transcriptions should not be modified in any
+way</p>
+<p>2. The recordings and transcriptions should be used for research purposes
+only; they should not be reproduced in teaching materials</p>
+<p>3. The recordings and transcriptions should not be reproduced in full for
+a wider audience/readership, although researchers are free to quote short
+passages of text (up to 200 running words from any given speech event)</p>
+<p>4. The corpus developers should be informed of all presentations or
+publications arising from analysis of the corpus</p><p>
+Researchers should acknowledge their use of the corpus using the following
+form of words:
+The recordings and transcriptions used in this study come from the British
+Academic Spoken English (BASE) corpus, which was developed at the
+Universities of Warwick and Reading under the directorship of Hilary Nesi
+(Warwick) and Paul Thompson (Reading). Corpus development was assisted by
+funding from the Universities of Warwick and Reading, BALEAP, EURALEX, the
+British Academy and the Arts and Humanities Research Board. </p></availability>
+</publicationStmt>
+<sourceDesc>
+<recordingStmt>
+<recording dur="01:16:04" n="14506">
+<date>01/10/2002</date>
+<equipment><p>video</p></equipment>
+<respStmt><name>BASE team</name>
+</respStmt></recording></recordingStmt></sourceDesc></fileDesc>
+<profileDesc>
+<langUsage><language id="en">English</language>
+</langUsage>
+<particDesc>
+<person id="nm5342" role="participant" n="n" sex="m"><p>nm5342, participant, non-student, male</p></person>
+<person id="nm5343" role="participant" n="n" sex="m"><p>nm5343, participant, non-student, male</p></person>
+<person id="sf5344" role="participant" n="s" sex="f"><p>sf5344, participant, student, female</p></person>
+<person id="sf5345" role="participant" n="s" sex="f"><p>sf5345, participant, student, female</p></person>
+<person id="sf5346" role="participant" n="s" sex="f"><p>sf5346, participant, student, female</p></person>
+<person id="sf5347" role="participant" n="s" sex="f"><p>sf5347, participant, student, female</p></person>
+<person id="sf5348" role="participant" n="s" sex="f"><p>sf5348, participant, student, female</p></person>
+<person id="sf5349" role="participant" n="s" sex="f"><p>sf5349, participant, student, female</p></person>
+<person id="sf5350" role="participant" n="s" sex="f"><p>sf5350, participant, student, female</p></person>
+<person id="sf5351" role="participant" n="s" sex="f"><p>sf5351, participant, student, female</p></person>
+<person id="sm5352" role="participant" n="s" sex="m"><p>sm5352, participant, student, male</p></person>
+<person id="sm5353" role="participant" n="s" sex="m"><p>sm5353, participant, student, male</p></person>
+<person id="sm5354" role="participant" n="s" sex="m"><p>sm5354, participant, student, male</p></person>
+<person id="sm5355" role="participant" n="s" sex="m"><p>sm5355, participant, student, male</p></person>
+<person id="sm5356" role="participant" n="s" sex="m"><p>sm5356, participant, student, male</p></person>
+<person id="sm5357" role="participant" n="s" sex="m"><p>sm5357, participant, student, male</p></person>
+<person id="sf5358" role="participant" n="s" sex="f"><p>sf5358, participant, student, female</p></person>
+<person id="sf5359" role="participant" n="s" sex="f"><p>sf5359, participant, student, female</p></person>
+<person id="sf5360" role="participant" n="s" sex="f"><p>sf5360, participant, student, female</p></person>
+<person id="su" role="participant" n="s" sex="u"><p>su, participant, student, unknown sex</p></person>
+<personGrp id="ss" role="audience" size="l"><p>ss, audience, large group </p></personGrp>
+<personGrp id="sl" role="all" size="large"><p>sl, all, large group</p></personGrp>
+<personGrp role="speakers" size="19"><p>number of speakers: 19</p></personGrp>
+</particDesc>
+<textClass>
+<keywords>
+<list>
+<item n="speechevent">Seminar</item>
+<item n="acaddept">Chemistry</item>
+<item n="acaddiv">ps</item>
+<item n="partlevel">UG1</item>
+<item n="module">unknown</item>
+</list></keywords>
+</textClass> 
+</profileDesc></teiHeader><text><body>
+<u who="sf5346">a container of highly toxic liquid has contaminated the marked area in front of you if the liquid is not transferred to a safe container within thirty minutes then it will explode and contaminate the population of an entire city </u>
+<gap reason="new phase of event" extent="uncertain"/>
+<u who="sf5348">the lives of thousands of people are in your hands inside the area you will find two containers one unsafe container holds the <trunc>toxi</trunc>  toxic liquid the other safe container is available for decontamination you must not enter the contaminated area or the space above it or you will be removed for hospitalisation you must find a way to safely transfer the toxic liquid from the unsafe container into the safe container using only the materials provided to you for your group this includes four short pieces of rope seven feet long one long rope and a bicycle inner tube </u>
+<gap reason="new phase of event" extent="uncertain"/>
+<u who="sf5346">it is vital that nothing or nobody touches the tape or the ground within it at any time during the operation the safe container may be moved anywhere in or outside the taped area</u>
+<gap reason="new phase of event" extent="uncertain"/>
+<u who="sf5348">the unsafe container must stay inside the area and not be moved more than one foot from it's centre you may only use the equipment that you have been given you have thirty minutes to complete the task before the liquid explodes</u>
+<gap reason="new phase of event" extent="uncertain"/>
+<u who="sf5346">you may only use the equipment you have been given you have thirty minutes to complete the task</u>
+<u who="sf5350">what's the time</u>
+<u who="sf5359">just gone twenty past</u>
+<u who="sf5346"># twenty past</u>
+<u who="sm5356">right # what's the stuff we got out there</u>
+<gap reason="new phase of event" extent="uncertain"/><u who="sf5348">get that </u>
+<u who="sm5353">okay </u>
+<u who="sm5354">anyone got an idea</u>
+<u who="sm5353">well let's go and see what we've got shall we that's a good idea</u>
+<u who="su">yeah have a look</u>
+<u who="sf5348">so basically it's got to go from that bucket to that bucket</u>
+<u who="nm5343"><gap reason="inaudible" extent="1 sec"/> that you can't take the off that square so it's got to remain on this part</u>
+<u who="sf5348">okay</u>
+<u who="sm5353">so we've got a bicycle tyre</u>
+<u who="sm5354">that's going to be useful</u>
+<u who="sf5348">four short pieces of rope</u>
+<u who="sm5353">an uninflated bicycle tyre</u>
+<u who="sf5348">is that the blue one</u>
+<u who="sm5353">two pieces three pieces of rope here</u>
+<u who="sf5348">four four short ones and one one long one that's seven feet long which is quite long really</u>
+<u who="sf5344">mm well if we tied them to the # if it made a big cross and then we all held the end and like we walked over it and then somehow picked up the handle and #</u>
+<u who="sm5354">cause you've got to try and get the handle of the bucket we need to move with the rope so the <trunc>id</trunc>  how are we going to thread it from this range</u>
+<u who="sf5348">mm</u>
+<u who="sm5354">is somebody got half an hour genuinely # does somebody want to have a look how long we've got roughly</u>
+<u who="sf5348">it's twenty past now nearly so </u>
+<u who="sm5353">i mean even if we thread the loop of the bucket how do we how do we pour</u>
+<u who="sm5354">if we had two people either side pulling it right just supporting it in the air then you could loop a rope around it from another side and if you pull that rope it will tilt</u>
+<u who="sf5348">and tip tip it yeah</u>
+<u who="sm5354">but i don't know much of it you'd be able to pour <trunc>p</trunc>  pour  before like the rope doesn't grip the bucket anymore and then some of it's still going to be in that container</u>
+<u who="sf5348">yeah yeah</u>
+<u who="sf5344">well if we blew up the bicycle tube and we threw that around it so it landed over it then when we're pouring it</u>
+<u who="sf5348">with the with the rope attached in case we get it wrong so we can pull it back again </u>
+<u who="sm5354">but we won't be able to blow it up cause you can't blow them up in your mouth</u>
+<u who="sf5348">but that's sort of like a strap rather than a rope </u>
+<u who="sf5347">yeah so maybe that's for the tilting thing</u>
+<u who="sm5354">that would be quite good because it's rubber as well so it would grip the bucket</u>
+<u who="sf5347">yeah</u>
+<u who="sm5353">yeah so if you we could get something to pick the bucket up this could tip it but we need to try and thread the loop <gap reason="inaudible" extent="1 sec"/></u>
+<u who="sf5348">if we attach two two short pieces of rope to either side of that to to reach out</u>
+<u who="sm5354">yeah we have to get the long rope but it's getting the long rope through the bucket so that two people can hold the bucket  while everyone else pours it that's going to be the hard bit plus we've got to move the little bucket a bit closer so we don't </u>
+<u who="sm5353">if we if we can if we can lift the lid up lift the handle up it might stay up then you can try and throw a rope through it tie a knot in the end of the rope and throw it</u>
+<u who="sm5354">throw a rope through it but then not only have you got to throw the rope through it you've got to get it out the other side of the barrier as well</u>
+<u who="sm5353">yeah no i think that'd be if you could if you stand # the handle up and throw it from this side it would you'd probably be able to throw it over the other side if you had a couple of goes you could pull it back and it try again i'd try that</u>
+<u who="sm5354">yeah</u>
+<gap reason="new phase of event" extent="uncertain"/><u who="sf5346">if you had say like three bits of rope around it like one there and one there they'd go under the lip and you could lift it up like that</u>
+<u who="sm5355">why've we got a huge piece of rope though</u>
+<u who="su">yeah</u>
+<u who="sm5356">or just one piece of rope that goes back # back</u>
+<u who="sf5346">yeah one yeah</u>
+<u who="sm5356">but we might drop it but we can bring it right to the edge can't we are can it not move off there</u>
+<u who="sm5355">we have</u>
+<u who="sf5346">no no that the middle one can't move off the squares but that other one can move as much as you want it to</u>
+<u who="su">why have we got an inner tube</u>
+<u who="su">no i don't know</u>
+<u who="sm5356">i <trunc>thin</trunc>  it might just even be there to make us think that</u>
+<u who="sf5350">we could improvise that thing the # long rope</u>
+<u who="sf5360">yeah yeah that would fit the bucket wouldn't it</u>
+<u who="sm5355">no if you get it over the bucket and then pull it like that you can tighten it <gap reason="inaudible" extent="1 sec"/></u>
+<u who="sm5356">yeah that's what we talking about with the rope yeah</u>
+<u who="sf5346">yeah yeah</u>
+<u who="sm5352">how far does it stretch</u>
+<u who="sf5346">using those ropes to pull it tight around the sides</u>
+<u who="su">the short ropes</u>
+<u who="sf5346">the short ropes yeah</u>
+<u who="sm5356">should we should we grab the other bucket</u>
+<u who="sm5355">no you</u>
+<u who="sf5346">we can practice on the other bucket yeah</u>
+<u who="sm5356">grab one i'll just grab it</u>
+<u who="su">hang on </u>
+<u who="sf5360">you can't go inside</u>
+<u who="sm5356">i'll get it </u>
+<u who="sf5350">you can't put you can't go anywhere over the top either</u>
+<u who="sm5355">you can't go inside</u>
+<u who="sf5360">and you can't touch the barrier</u>
+<u who="sf5346">no people can't go over the top</u>
+<gap reason="new phase of event" extent="uncertain"/><u who="sm5354">if we use the long rope somebody stays here somebody walks round so it's round the bucket and then we can pull the handle up just by pulling the rope up</u>
+<u who="sm5353">yeah</u>
+<u who="su">so we have to throw it across underneath the barrier</u>
+<u who="sf5348">shall i put this sort of <gap reason="inaudible" extent="1 sec"/> put that down there so</u>
+<u who="sm5354">and then yeah well that's true if you if you be careful cause if you want to go under a one of these you're not allowed to put your hands round it otherwise we won't be able to use you anymore in the team so</u>
+<u who="su">you have to throw it</u>
+<u who="sm5353">yeah</u>
+<u who="sf5348">okay how many people do we actually need to do to carry out </u>
+<u who="sm5354">i'd imagine that we need all of us </u>
+<u who="sf5348">could we sacrifice someone to to sort of</u>
+<u who="sm5354">run in and pour it you</u>
+<u who="sf5348">no just to thread it through and then if like the rest of us sort of</u>
+<u who="nm5343">i think you'd be dead before you got to the middle</u>
+<u who="sf5348">oh okay</u>
+<u who="sf5347">maybe if you leave that on the end of it when it's sort of it will be easier to throw under across</u>
+<u who="sm5354">oh yeah 'cause yeah but will that fit through the bucket handle</u>
+<u who="sf5347">you can take it off when it's over there</u>
+<u who="sm5353">how how are we picking up the the bucket handle</u>
+<u who="sm5354">if somebody <trunc>ho</trunc>  holds this end of the rope here i'll take the other end round there and then we should be able to lift the handle up</u>
+<u who="sm5353">oh yeah okay</u>
+<u who="sm5354">that's the plan</u>
+<u who="su">oh i see yeah oh no we've lost the instructions we all know what we're doing right</u>
+<u who="sm5353">oh no</u>
+<u who="sf5348">if you if you come more this way so you're sort of in line with the yeah</u>
+<u who="sm5353">yeah squarer</u>
+<u who="sm5354">that's if we can get it in that gap that's the one okay</u>
+<u who="su">back a bit</u>
+<u who="sm5353">pull it a bit tighter yeah</u>
+<u who="sm5354">let's get the rope tight yeah</u>
+<u who="sm5353">there we go</u>
+<u who="sm5354">it's not going to stay if we hit it with the rope though</u>
+<u who="sm5353">no</u>
+<gap reason="new phase of event" extent="uncertain"/>
+<u who="sm5356">yeah if we put another rope on the end we can</u>
+<u who="sm5352">yeah if you just put another one here on the end</u>
+<u who="sf5346">yeah that one there and that'll like</u>
+<u who="su">that's a really good idea</u>
+<u who="su">is it pretty secure</u>
+<u who="sf5360">but it's going to be quite heavy as well cause it's got loads of water in it</u>
+<u who="sm5355">right cause of we if we do that it tips like that</u>
+<u who="su">yeah it's well secure actually i think</u>
+<u who="sf5346">is it pretty secure</u>
+<u who="sm5356">yeah especially of you've got another rope on each end</u>
+<u who="sf5360">it's not very # the water's quite low level so</u>
+<u who="sf5346">yeah if we had <trunc>an</trunc>  another rope there that weren't being pulled they could control it and keep it flat</u>
+<u who="sm5356">actually i'm just thinking you've got to be careful you don't pull it out like that</u>
+<u who="sf5346">yeah they they'd have to</u>
+<u who="sm5352">we could probably put one here and then pull it round the other way underneath</u>
+<u who="sm5355">yeah but you'd have to get it over get it over the # bucket</u>
+<u who="sf5346">bucket yeah</u>
+<u who="sm5352">oh yeah</u>
+<u who="sm5355">yeah if you tie it tie it onto there</u>
+<u who="sf5350">if you tie one to here and tie one to there and then someone on this side that you know they go over tie one there and tie one there</u>
+<u who="sm5355">whoever's on this side has to pull it very very tight</u>
+<u who="sf5350">so if you pull that it's going to tip this way is it</u>
+<u who="su">yeah yeah it would yeah</u>
+<u who="su">okay</u>
+<u who="sm5356">should we try it</u>
+<u who="su">so should we tie these on there</u>
+<u who="sm5355"> so if we we try manoeuvring the bucket first sort of in there</u>
+<u who="su">go on then</u>
+<u who="su">we have to sort of</u>
+<u who="sm5352">yeah but don't we need to tie another bit on</u>
+<u who="sm5355">no if we try manoeuvring the bucket first before we do something else</u>
+<u who="sm5352">oh right</u>
+<u who="sf5346">this is the difficult bit that's why we need another bit of rope so someone can pull it</u>
+<u who="sf5359">to pull that bit out</u>
+<u who="sf5346">yeah see if that makes</u>
+<u who="sm5355">i have no idea what the long bit of rope's for</u>
+<u who="su">no</u>
+<u who="sm5355">if you then pull that out</u>
+<u who="sf5346">pull that out</u>
+<u who="sm5355">then let go and we</u>
+<u who="su">pull it tight</u>
+<u who="sm5355">cause it goes up pretty quickly and then it moves around</u>
+<u who="sf5346">so if you can pull that side like that you can</u>
+<u who="sf5359">but you don't want to spill any</u>
+<u who="sm5356">or pull it the use the other rope yeah cause actually i think i know why</u>
+<u who="sm5352">yeah <gap reason="inaudible" extent="1 sec"/></u>
+<u who="sm5355">yeah but if you have the other long rope on we have to get the other long rope underneath so you can sort of filter it</u>
+<u who="sm5356">shall we get the</u>
+<u who="sm5355">now if you get</u>
+<u who="sf5359">we could tie that rope on that yeah she's there's there's that we could tie it on there</u>
+<u who="sm5355">yeah if you tie that tie it to the other side and have one person holding that very lightly</u>
+<u who="sf5346">yeah the side one's held lightly just to keep it from flipping</u>
+<u who="sf5359">just to make sure it doesn't yeah</u>
+<u who="sm5355">so once so if we take it off again and try and get it over the top</u>
+<u who="sf5346">yeah</u>
+<u who="sm5355">so we need someone on that someone else</u>
+<u who="sf5346">should we move the bucket out a bit so we get like the full width</u>
+<u who="su">yeah </u>
+<u who="sm5352">yeah spread out</u>
+<u who="su">okay</u>
+<u who="sm5355">we've got that that's now open so we get two of us to pull it tight</u>
+<u who="sf5346">pull it</u>
+<u who="su">let this go slack</u>
+<u who="sm5356">not that central</u>
+<u who="sm5355">now you have to tip it</u>
+<u who="sm5356">one of you pull</u>
+<u who="sf5360">can my person not pull down <gap reason="inaudible" extent="1 sec"/></u>
+<u who="su">well i thought we should swap</u>
+<u who="sm5352">yeah i i throw this to you or whatever and then like you pull it</u>
+<u who="sm5356">yeah that's genius yeah</u>
+<u who="su">and then it goes <gap reason="inaudible" extent="1 sec"/></u>
+<u who="sf5359">no but we can do no we can do that before before we # pull it over</u>
+<u who="sm5352">can you just pull your side now pull the one you've got now and then i'll pull it over</u>
+<u who="sm5355">no that <trunc>m</trunc>  hang on</u>
+<u who="sm5356">or we just use the long rope and attach that <gap reason="inaudible" extent="1 sec"/></u>
+<u who="sm5355">no no no no no that's not working so what you have to what we have to do if you're holding that side</u>
+<u who="sf5360">can one person not pull up and one person pull down </u>
+<u who="su">you're holding that side</u>
+<u who="sm5352">you can use the long rope to get the other one underneath</u>
+<u who="su">yeah</u>
+<u who="sm5355">so if we but once we get it over the top then someone</u>
+<u who="sf5360">could you not push down can't we do it</u>
+<u who="sm5352">well yeah we could throw one over and use the long rope to get that like underneath</u>
+<u who="sm5355">if we throw if we throw it over we're going to run the risk of it getting trapped in the middle</u>
+<u who="sm5356">no it can it's always attached to the others though</u>
+<u who="sm5355">if we get get him <trunc>walk</trunc>  if you can get you walking around </u>
+<u who="sm5352">oh whatever John</u>
+<u who="sf5360">there must be a use for the long rope</u>
+<u who="sm5355">so if you yeah</u>
+<u who="su">i don't know</u>
+<u who="sm5355">unless of course unless of course you know you just have the</u>
+<u who="sf5346">somebody held the long rope and tied it on one of these sides yeah </u>
+<u who="sm5355">if you go on that side then you can</u>
+<u who="sf5346">then there's enough room to walk around the outside to take the rope to the other side and then flip it</u>
+<u who="sf5350">yeah okay</u>
+<u who="sf5346">do you reckon that would work</u>
+<u who="sf5350">if you tie that long rope to the end of that </u>
+<u who="sf5346">just one other side</u>
+<u who="sf5350">and what happens once we've put the the water in the in the safe one do you just leave it</u>
+<u who="su">that's it</u>
+<u who="su"> yeah we're done</u>
+<u who="sf5350">okay</u>
+<u who="sm5355">tie it to that one cause we've got these two are #</u>
+<gap reason="new phase of event" extent="uncertain"/><u who="sm5353">is this short piece of rope going to go all the way across</u>
+<u who="sm5354">no </u>
+<u who="sm5353">no</u>
+<u who="sm5354">i reckon that's got to be the short piece of rope's only seven feet long and that's got to be twelve</u>
+<u who="sm5353">if you can tie an end in that tie quite a think end sort of like a knot in that end so we should got something to throw it</u>
+<u who="sm5354">see if we can rescue our notes as well </u>
+<u who="sm5353">fish them out</u>
+<u who="sf5348">if i just tie like a really big knot</u>
+<u who="sm5353">yeah just as big a clump of a knot as you can i don't do knots i was never in the Boy Scouts</u>
+<u who="sf5348">i'll suddenly learn just keep going like this until </u>
+<u who="sf5347">so what are you going to do with that</u>
+<u who="sm5353">throw it through the loop of the bucket and then we can pick up the bucket</u>
+<u who="sf5348">you could start making the </u>
+<u who="sm5354">actually </u>
+<u who="sf5344">is that going to</u>
+<u who="sf5347">couldn't you throw that through the loop of the bucket</u>
+<u who="sm5353">i'd no it'd be i think it'd be too big because if you hit if you hit the thing it's going to knock it over</u>
+<u who="sf5348">and it'd it'd knock it over and each time you get it wrong</u>
+<u who="sm5353">but if we can tie the bicycle strap to one of there</u>
+<u who="sm5354">if if we need more long rope we can tie these one's together</u>
+<u who="sf5348">yeah tie two of those together and and tie the double length of those to the inner tube just to make the</u>
+<u who="sm5353">to this yeah</u>
+<u who="sf5344">i reckon we need four of those to make a big cross so that we can all hold an end wouldn't that be better than just two</u>
+<u who="su">oh</u>
+<u who="su">yeah and then you can lift it up</u>
+<u who="su">are they long enough to reach</u>
+<u who="sm5353">i don't i don't know if two are long enough together to to reach are they</u>
+<u who="sm5354">i don't know if you're going to be able to two of them probably is long enough they're seven foot each aren't they</u>
+<u who="sf5344">but then make one that way and then that way</u>
+<u who="sf5348">no this is the this is the seven foot one</u>
+<u who="sm5354">that's never seven foot these little uns are seven foot that's got to be seven metres</u>
+<u who="sf5348">oh is it seven metres</u>
+<u who="sm5353">yeah it doesn't say how long the long rope is just the short one's are seven feet and you've got a long one</u>
+<u who="sm5354">well we'll  just <trunc>a</trunc>  see if two is really <gap reason="inaudible" extent="1 sec"/> no two isn't long enough to <gap reason="inaudible" extent="1 sec"/> so you can't really make the cross</u>
+<u who="sm5353">two's not going to do it and we need two <gap reason="inaudible" extent="1 sec"/> the bucket then two to be able to reach the bucket</u>
+<u who="sm5354">it's going to be getting it through the handle though</u>
+<u who="sm5353">yeah just <gap reason="inaudible" extent="1 sec"/></u>
+<u who="sf5348">am i still sorry am i still meant to be doing this i was sort of like listening</u>
+<gap reason="new phase of event" extent="uncertain"/><u who="sm5355">now we have to get the</u>
+<u who="su">we have to keep this <gap reason="inaudible" extent="1 sec"/></u>
+<u who="sm5355">you have to go underneath if you go if you step <trunc>o</trunc>  if you bring the rope round and you step over it so you come round</u>
+<u who="sf5360">you can't touch the floor though</u>
+<u who="su">it needs to</u>
+<u who="su">why does it have to go underneath</u>
+<u who="sf5350">why does it <trunc>c</trunc>  cause</u>
+<u who="sm5355">so then you can pull it from underneath and tip it that way</u>
+<u who="su">yeah</u>
+<u who="sf5360">it might work you never know be optimistic about it</u>
+<u who="sm5356">yeah i think it will yeah cause it'll pull that rope round yeah</u>
+<u who="sm5352">yeah that'll work</u>
+<u who="sf5346">if you do that and then</u>
+<u who="sm5352"><gap reason="inaudible" extent="1 sec"/></u>
+<u who="sm5356">how how's</u>
+<u who="sm5356">that's really stable actually</u>
+<u who="sf5359">yeah but you'll have to # it has to tip like right to get everything out so it has to tip that far</u>
+<u who="sf5346">tip all the way out</u>
+<u who="sm5352"><gap reason="inaudible" extent="1 sec"/> if you could just loosen your rope a bit</u>
+<u who="su">yeah i let loosen my rope and it should be okay</u>
+<u who="sf5358">it might but it may fall out</u>
+<u who="sm5356">it might fall out but it doesn't matter that much really</u>
+<u who="sf5359">see if this will do it i think</u>
+<u who="sf5350">are you sure entire city here</u>
+<u who="su">that's really good actually</u>
+<u who="su">yeah</u>
+<u who="sf5350">wooo</u>
+<u who="su">let's practice it again</u>
+<u who="su">right okay</u>
+<u who="sm5356">have we got anything heavy we can put in it just to</u>
+<u who="sf5346">yeah to make it heavy</u>
+<u who="sm5352">put like a shoe in it or something</u>
+<gap reason="new phase of event" extent="uncertain"/><u who="su">how are you going to lift the bucket up</u>
+<u who="sm5353">well if we can get through there</u>
+<u who="su">through the <gap reason="inaudible" extent="1 sec"/></u>
+<u who="sm5353">it depends how heavy what's in in there is</u>
+<u who="sm5354">yeah well i mean it's what no more than half full</u>
+<u who="sf5348">what time is it <gap reason="inaudible" extent="1 sec"/> it's we've got about twenty minutes left so</u>
+<u who="sm5353">if you can pull this tight enough it <trunc>wi</trunc>  it will do this pick the bucket up <trunc>dan</trunc>  hanging in the middle</u>
+<u who="sm5354">so we've got to like try something</u>
+<u who="sf5348">is that alright</u>
+<u who="sf5344">so yet that end has got to go out the other side</u>
+<u who="sm5353">it's got to go through there</u>
+<u who="sm5354">the weight of the rope is we're never going to able to throw it through there</u>
+<u who="su">we're never going to get it out the other side</u>
+<u who="sm5354">and out the other side</u>
+<u who="sf5348"><gap reason="inaudible" extent="1 sec"/></u>
+<u who="sm5354">but having said that it's quite a big knot so if you got it through we could probably put it in like with like rubber tube or some sort of </u>
+<u who="sm5353">yeah means it could work let's see rope this way we need the slack to get through there anybody got a good aim to throw through there</u>
+<u who="sm5354">i'll have a go if you want</u>
+<u who="sf5348">i'm impressed if you do it i really will</u>
+<u who="sm5353">if we were American and we played baseball we'd be much better at this</u>
+<u who="su">and what if that drops into the liquid</u>
+ <u who="sm5353"># i don't know does that mean it's contaminated can we still touch it</u>
+<u who="nm5343">you've got all the information you needed on that bit of paper</u>
+<u who="su">i don't think you can touch it</u>
+<u who="sm5353">we've got to give it a go anyway</u>
+<u who="sm5354">yeah</u>
+<u who="sm5353">unless anybody else has got any ideas of getting that through</u>
+<u who="sm5354">does it actually say is it like if any of the so if we spill some outside the square do we fail</u>
+<u who="sm5353">yeah</u>
+<u who="sf5347">well it's toxic so i assume so cause <gap reason="inaudible" extent="1 sec"/></u>
+<u who="sm5354">so therefore if this rope falls in there and then we drag it back out again we're going to have failed cause we'll have dragged some of it to somewhere on the square</u>
+<u who="sm5353">yeah okay you get you get points for trying if you've got an idea come on</u>
+<u who="sm5354">so so not only have i got to put it through there i've got to do it first time without it dropping in oh right anyone else want a go</u>
+<u who="sf5348">i don't it doesn't </u>
+<u who="su">there must be an easier way of doing it though</u>
+<u who="su">i i think there's a there's</u>
+<u who="su">i think somehow we've got to lower something</u>
+<u who="sf5348">if we you know what who was saying about the four four points</u>
+<u who="su">yeah</u>
+<u who="sf5348">and sort of</u>
+<u who="su">these these four ropes</u>
+<u who="sm5353">but to get four points you need to do what we've done you need to do what we're going to do twice to get and somehow get it through the loop handle</u>
+<u who="sm5354">there's not going to be enough rope to do two points i don't think</u>
+<u who="sm5353">is there two short pieces</u>
+<u who="sm5354">and then still reach the bucket to do any kind of pouring cause we're allowed to move it outside that squarey bit</u>
+<u who="sf5348">no</u>
+<u who="sm5353">we've about quarter of an hour left as well</u>
+<u who="sf5344">difficulty is picking it up isn't it</u>
+<u who="sm5353">i think you could pick it up if you had a piece of rope through it</u>
+<u who="sf5348">do you have to pour it if you just put that bucket into that bucket</u>
+<u who="sm5353">no i think that's cheating</u>
+<u who="sf5348">but then that's to say it's it's all contained within a safe container</u>
+<u who="sm5354">that is the best idea i've heard yet you don't have to pour it do you</u>
+<u who="sf5348">because it's only like putting</u>
+<u who="sf5347">the safe container may not be moved anywhere in or outside the taped area the inside <gap reason="inaudible" extent="1 sec"/></u>
+<u who="sf5344">toxic waste sort of in a safe <gap reason="inaudible" extent="1 sec"/></u>
+<u who="sm5354">no no that would work</u>
+<u who="sf5344">it can't be moved out it can't be moved out of that blue square</u>
+<u who="sm5354">we can move the little bucket as much as we like</u>
+<u who="sf5344">oh so you're going to move the little bucket onto that blue</u>
+<u who="sm5354">yeah</u>
+<u who="sm5353">when it says you must you must find a way to simply transfer the toxic liquid from the unsafe container to the safe container does that mean</u>
+<u who="sm5354">yeah but then if like in reality if you had like a dodgy drum and you put it inside like a really well made drum it would be good enough wouldn't it because if the dodgy drum wasn't working the big drum would protect the people around it so that i reckon that in my opinion that's good enough</u>
+<u who="su">yeah</u>
+<u who="sm5354">and that's going to be so much easier to do if we try and pour it realistically we're going to spill some</u>
+<gap reason="inaudible" extent="uncertain"/>
+<u who="sm5353">but we we've still got to try and get through the <gap reason="inaudible" extent="1 sec"/> pick up the bucket</u>
+<u who="su">yeah</u>
+<u who="sm5354">yeah think about that right what we're going to have to do though</u>
+<u who="sf5347">could you sort of wrap the rope around it if you went round that</u>
+<u who="sf5348">sort of like a lasso kind of</u>
+<u who="sf5347">yeah if you sort of you know how if you like went round and sort of tied it like that in and if it was tight enough could you pick it up or</u>
+<u who="sf5348">yeah if someone held either side really taut and lifted that up</u>
+<u who="sm5354">underneath the bucket right </u>
+<u who="sm5353">what</u>
+<u who="sm5354">right if if we throw it round like like she had it you put it right round the lip of the bucket and then two people stand opposite it and just pull really hard it would be strong enough under the lip to hold the bucket in the air</u>
+<u who="sf5348">like what you did before but with a loop round the bucket so you sort of went round in more than one loop tie it to lift it up</u>
+<u who="sm5353">yeah oh i see</u>
+<u who="sm5354">right and then if we tie three of these blue ones together for the other people they can use them to push that bucket into like the middle of it </u>
+<u who="sf5348">the middle</u>
+<u who="sm5354">while we've got ours lifted up and then we'll just lower ours into it and then we'll be finished</u>
+<u who="sf5348">yes yes yes that sounds good</u>
+<u who="sm5354">okay we'll use the strong rope in case</u>
+<u who="sf5348">strong rope for the one the liquid yeah</u>
+<u who="sm5354">cause we don't really know how heavy that is</u>
+<u who="sf5348">should i go round one end then</u>
+<u who="sm5353">do you want me to tie that one onto those two cause <gap reason="inaudible" extent="1 sec"/></u>
+<u who="sm5354">go round you have to like take it underneath these though if you just go like that then you'll be alright don't try not to get in there</u>
+<u who="sm5353">i don't know about these knots with the weight of these knots</u>
+<gap reason="new phase of event" extent="uncertain"/><u who="sm5355">well see if can actually get the shoe out</u>
+<u who="su">yeah</u>
+<u who="su">oh</u>
+<u who="su">oh </u>
+<u who="su">oh a bit more</u>
+<u who="su">bit more</u>
+<u who="su">yes</u>
+<u who="su">oh it's dodgy</u>
+<u who="sm5356">it'll be easier with the water i think</u>
+<u who="sf5346">yeah the shoe makes a sudden movement</u>
+<u who="sm5355">first we have to get this bucket back in</u>
+<u who="sf5346">yeah</u>
+<u who="sm5352">or we could have just left it like that</u>
+<u who="su">right don't touch the tape</u>
+<u who="sm5355">you have to go round</u>
+<u who="su">to walk around</u>
+<u who="sm5352">oh yeah</u>
+<u who="sf5350">and this has to be about a foot away does it from there</u>
+<u who="sf5346"># </u>
+<u who="sf5350">cause that can't be more than a</u>
+<u who="su">that <trunc>c</trunc>  can't move a foot away</u>
+<u who="su">yeah</u>
+<u who="sm5355">oh crap</u>
+<u who="su">you alright</u>
+<u who="su">hang on </u>
+<u who="sm5355">we're going to if you put it down maybe we can move it later</u>
+<u who="su">ah okay</u>
+<u who="sf5360">it's got to be in front of the bucket though</u>
+<u who="su">put it over this side over this side</u>
+<u who="nm5342">John you are in quarantine you're well in well inside the area there you're <gap reason="inaudible" extent="1 sec"/></u>
+<u who="sm5356">pass me the rope</u>
+<u who="sf5346">oh the hand oh right i see</u>
+<u who="nm5342">right that's you out</u>
+<u who="sm5356">put it down just there the other side because </u>
+<u who="sf5360">that's the way</u>
+<u who="sf5359">yeah cause we're going to tip it that way aren't we so that it needs to go next to it there</u>
+<u who="sm5356">yeah so you want to <gap reason="inaudible" extent="1 sec"/></u>
+<u who="sf5350">this is going to drop</u>
+<u who="sf5360">so can the rope <gap reason="inaudible" extent="1 sec"/></u>
+<u who="sm5355">no hang on this isn't going to work</u>
+<u who="sm5356">sure it is</u>
+<u who="sf5346">how are we going to get <gap reason="inaudible" extent="1 sec"/></u>
+<u who="sm5355">unfortunately i can't go any further closer in in order to put it down i have to go closer in</u>
+<u who="sm5356">have you not got can you not even hold it on the end like that</u>
+<u who="sf5360">we can move that <trunc>buck</trunc>  thing a foot away</u>
+<u who="sm5355">i am holding it at the end</u>
+<u who="sm5356">if i can go back there </u>
+<u who="sf5346">will it will it can we get it to reach the floor using these ropes</u>
+<u who="sm5352">can't you go underneath it</u>
+<u who="sf5346">because then you have to put your hand over</u>
+<u who="sm5352">oh yeah yeah</u>
+<u who="sm5356">i'd say it's about to fall off so we want to put it down</u>
+<u who="sf5350">it is yeah i think so</u>
+<u who="sm5355">if you drop it from now</u>
+<u who="sf5350">right there okay</u>
+<u who="sm5355">just <trunc>low</trunc>  just</u>
+<u who="sf5359">don't let it touch the tape</u>
+<u who="sm5355">there we go</u>
+<u who="su">okay we can use the stretch</u>
+<u who="su">right this is</u>
+<u who="sm5355">can we</u>
+<u who="sf5360">we need to get cause we're not going to</u>
+<u who="sm5355">we need to get the bucket in closer</u>
+<u who="sf5360">yeah</u>
+<u who="sm5356">yeah # </u>
+<u who="su">or the <trunc>buck</trunc> </u>
+<u who="sf5346">we're going to have to use longer ropes now</u>
+<u who="sm5356">let go of your rope just let go</u>
+<u who="su">no i can't cause i can't let it touch the ground</u>
+<u who="sm5356">can't it can't it touch the ground</u>
+<u who="su">no</u>
+<u who="sm5356">oh that ruins my plan</u>
+<u who="sf5360">can we not move the mini-bucket this way slightly</u>
+<u who="su">can't move a foot</u>
+<u who="su">yeah</u>
+<u who="sf5360">how big's a foot</u>
+<u who="sf5346">we shouldn't move anything until we're sure mind because</u>
+<u who="sm5356">well we can can we get the</u>
+<u who="sf5346">we've got to got to make sure this device works first before we move anything</u>
+<u who="sm5356"><gap reason="inaudible" extent="1 sec"/> if you take that rope round the other side</u>
+<u who="sf5360">this</u>
+<u who="sm5356">there's no need for it yeah no need for that rope there</u>
+<gap reason="new phase of event" extent="uncertain"/><u who="sm5354">okay we're going to have to do another one of these with that other little red bucket just to move it into the middle</u>
+<u who="sf5347">yeah</u>
+<u who="sm5354">cause i don't reckon pulling it's probably going to fall over and then we're screwed</u>
+<u who="sf5347">no yeah</u>
+<u who="sf5344">it's got to go over that bucket</u>
+<u who="sf5348">oh i'm sorry</u>
+<u who="su">oh so do we need all of the blue one's tied together <gap reason="inaudible" extent="1 sec"/></u>
+<u who="sm5354">that's all you can have now let's see if it's going to work</u>
+<u who="sf5348">oh no i could go round <trunc>ag</trunc>  another couple of times with it</u>
+<u who="sm5354">why is it right at the bottom</u>
+<u who="sf5348">cause we've gone</u>
+<u who="sm5354">it's ever so not it's not very heavy</u>
+<u who="sf5348">i'll go and i'll try and get <trunc>k</trunc>  keep that tight i'll go</u>
+<u who="sm5353">you need to <gap reason="inaudible" extent="1 sec"/></u>
+<u who="sm5354">but we're going to need to have it near the top</u>
+<u who="sm5353">cause otherwise it's going to tip and it's just not going to work</u>
+<u who="sm5354">yeah</u>
+<u who="sf5348">how do we get the lip</u>
+<u who="sm5354">loosen it and then lift it #</u>
+<u who="sm5353">un-, unloosen it come back a bit and then <gap reason="inaudible" extent="1 sec"/></u>
+<u who="sm5354">no don't you still have to be round on that side but just loosen it as in don't pull tight and try and lift it </u>
+<u who="sm5353">just start from the bottom</u>
+<u who="sm5354">yeah i know</u>
+<u who="sf5348">what go back round to the the right side</u>
+<u who="sm5353">yeah try and sort of flick it or something</u>
+<u who="sm5354">i'll try if i can my ropes underneath it so if i can keep my rope and go underneath and bring it back up we'll alright right </u>
+<u who="sf5348">this is the one same position that we were just like #</u>
+<u who="sm5354">yeah i know but oh okay we have to start again and keep it tight around the top from the start</u>
+<u who="sm5353">the top yeah yeah come back all the way round then</u>
+<u who="sf5348">okay okay</u>
+<u who="sm5354">anyway does somebody want to have a go with doing the little bucket then</u>
+<u who="su">yeah</u>
+<u who="sm5353">yeah</u>
+<u who="su">cause we haven't got masses of time</u>
+<u who="sm5354">if you tie using this at the end of one of yours it's easier to play around with <gap reason="inaudible" extent="1 sec"/></u>
+<u who="sf5348">okay lift this up now</u>
+<u who="sm5354">okay</u>
+<u who="sf5348">and and you keep that really tight and i'll come round</u>
+<u who="sm5354">i'll keep it i'm not going to pull really hard cause we're going to pull it over but if you come round</u>
+<u who="sf5348">yeah</u>
+<u who="sm5354">we need a third person</u>
+<u who="sf5348">yeah someone get that</u>
+<u who="sm5353">to do what</u>
+<u who="sm5354">to just like be a thrower while everyone keeps it high</u>
+<u who="sf5348">can you sort of manage to rescue that</u>
+<u who="sf5348">okay you be the thrower and we'll we'll</u>
+<u who="sm5354">you'll need three of you to do it we'll wait until this one's sorted and two people can hold this one tight okay take get ready to take it i'll </u>
+<u who="sf5348">sure there's a the obvious way of doing it but</u>
+<u who="sm5354">sorry</u>
+<u who="sf5348">no no generally how you</u>
+<u who="sm5354">oh right when we've finished and they go well what you can really do</u>
+<u who="sf5348">follow me</u>
+<u who="sm5353">the easy way to do it</u>
+<u who="sm5354">i should go round because my rope's above yours so it's less likely to fall down no i haven't got enough rope to do it okay</u>
+<u who="sm5353">what</u>
+<u who="sm5354">don't worry keep going</u>
+<u who="sf5348">yeah okay</u>
+<u who="sm5353">keep going</u>
+<gap reason="new phase of event" extent="uncertain"/><u who="sm5356">so if you take this off and do the blue rope for the moment</u>
+<u who="sm5352">you could just tie the two blue ropes together i think</u>
+<u who="sf5350">so we're taking that blue rope</u>
+<u who="su">yeah</u>
+<u who="sf5360">we need to be doing # </u>
+<u who="su">#</u>
+<u who="su">is it going to work</u>
+<u who="sm5356">hopefully we'll just be able to walk around with the long rope</u>
+<u who="sm5355">so if we take the blue one off</u>
+<u who="su">i'm taking the blue one off and we're tying the the white one</u>
+<u who="su">tie the white bit on where the blue was oh right okay</u>
+<u who="sm5355">yeah tie the white one on we might have to tie two blue ropes together</u>
+<u who="sf5359">yeah and get a longer rope</u>
+<u who="su">but which side</u>
+<u who="su">will a triangle be able to pull tight</u>
+<u who="sm5355">if you make  a <trunc>tri</trunc>  if we we're doing it with a square if we make a triangle that'll be alright </u>
+<u who="sm5356"># but we've got to fit across the thing we won't be able to do it in the corners cause we can hardly reach it as can hardly reach it as it is so</u>
+<u who="su">should we see if that makes a difference using the white one if it's any easier to use</u>
+<u who="sm5352">can't you use the little bit of blue rope no its not going to work</u>
+<u who="su">yeah we'll have to <gap reason="inaudible" extent="1 sec"/> we can</u>
+<u who="sf5346">one of these bits is not too is too short we can use the other blue rope</u>
+<u who="su">yeah</u>
+<u who="su">okay</u>
+<u who="sf5360">i don't understand how we're going to be tipping oh move that right</u>
+<u who="sm5356"># we're going to move this first right </u>
+<u who="sf5346">okay</u>
+<u who="sf5360">practice with the thingy one first</u>
+<u who="sf5350">right we're going to get this one closer</u>
+<u who="sf5359">let this come</u>
+<u who="su">oh </u>
+<u who="sm5355">ah no we're going to have to tie two blue ropes together</u>
+<u who="sm5356">can you move forwards no it's alright</u>
+<u who="nm5342">Lucas you're in quarantine</u>
+<u who="sm5356">no i'm not</u>
+<u who="nm5342">out two minutes out</u>
+<u who="sm5355">tie that blue rope to that one</u>
+<u who="sm5352">it's like the danger zone here</u>
+<u who="su">why</u>
+<u who="nm5342">cause cause we're worried about being in danger of your life alright</u>
+<u who="sm5355">is that alright see if you can pick this bucket up now</u>
+<u who="sm5352">do you want to just open it out a bit </u>
+<u who="su">yeah pull it pull it out</u>
+<u who="su">pull it your way </u>
+<u who="su">okay tie in</u>
+<u who="su">right so where are going now we're going to have to get closer</u>
+<u who="sm5355"># put it next to that bucket so move it over here</u>
+<u who="su">oh</u>
+<u who="su">interesting</u>
+<u who="sm5355">hang on we if we just <gap reason="inaudible" extent="1 sec"/> can take it outside again</u>
+<u who="sm5352">yeah you can just drag it out you want to put the thing round it</u>
+<u who="su">try and tie <gap reason="inaudible" extent="1 sec"/></u>
+<u who="su"><gap reason="inaudible" extent="1 sec"/></u>
+<u who="sm5352">do you want to just drag it</u>
+<u who="sm5356">just thinking about the tilting thing</u>
+<u who="su">hang on a minute</u>
+<u who="sm5352">i mean we're not going to be able to do you want to just drag it get it by the handle and pull it up like</u>
+<u who="su">yeah</u>
+<u who="su">can't let it touch the floor</u>
+<u who="sm5352">if we get the whole thing round it</u>
+<gap reason="new phase of event" extent="uncertain"/><u who="su"> wow okay we can move that bucket</u>
+<u who="su">right if we if we untie the middle two and then we put that inner tube in and then it could sort of go round that bucket and move it</u>
+<u who="su">yeah good idea</u>
+<u who="sm5354">yeah but how's that going to be any more efficient at not knocking it over than a bit of rope</u>
+<u who="su">because we could have the rope on this side and pull and it would pull it all along wouldn't it</u>
+<u who="sm5354">it would probably pull it over wouldn't it</u>
+<u who="su">put there try it put your</u>
+<u who="sf5348">hang on we can get that we can bring that bucket out can't we </u>
+<u who="sm5353">yeah</u>
+<u who="sf5348">so if we right put the inner tube and and like lasso that bucket bring it out and tie thread the thread the handle through it</u>
+<u who="sm5354">and then take turns trying to throw to land it</u>
+<u who="sf5348">then we can lower it in </u>
+<u who="sm5354">lower it in</u>
+<u who="sf5348">lower it if we bring it out thread the the rope through the handle</u>
+<u who="su">yeah</u>
+<u who="sm5354">yeah go for it get it out we've only five minutes just flick it just flick</u>
+<u who="su">put the</u>
+<u who="sm5353">just pull this way just</u>
+<u who="sf5348">get this bucket out are you sure we're allowed</u>
+<u who="su">yeah </u>
+<u who="sf5348">yeah i'm sure where did the instructions go</u>
+<u who="sm5353">we're allowed to do that</u>
+<u who="sm5354">hang on wait</u>
+<u who="su">wait </u>
+<u who="su">wHY</u>
+<u who="sm5354">okay cause it does it say you're allowed to move it anywhere within the area </u>
+<u who="su">i'm sure it says in the blue zone</u>
+<u who="su">yeah within the area you're not allowed to take it out of the area</u>
+<u who="su">right</u>
+<u who="sf5348">the safe container may be moved anywhere in or outside the taped area</u>
+<u who="sm5353">yeah okay here we go</u>
+<u who="sm5354">oh right do do it once more so you don't get cause it's not worth losing</u>
+<u who="sm5353">i think it's outside anyway</u>
+<u who="su">are we allowed it out the area</u>
+<u who="sm5353">there we go</u>
+<u who="sm5354">right okay</u>
+<u who="sm5353">so what's this this crazy idea</u>
+<u who="sm5354">they're going to lower it in like this</u>
+<u who="su">lower it where we want it</u>
+<u who="sm5353">oh right okay i'll go with that </u>
+<u who="sm5354">but our rope's slipped down to the bottom in all that rigmarole so now we don't stand</u>
+<u who="sm5353">rigmarole</u>
+<u who="sm5354">yeah that's like #</u>
+<u who="sm5353">you've made that word up</u>
+<u who="su">oh damn it</u>
+<u who="su">no that's okay</u>
+<u who="su">right cause i've got this end</u>
+<u who="sm5354">yeah</u>
+<u who="su">oh yeah</u>
+<u who="sm5354">look there you go just have have have more of that before you throw it please</u>
+<u who="sf5348">no no if you lower it over the</u>
+<u who="sm5354">no you don't want to lower it over you they won't be able to get it low enough will they they'll just be dropping it in go round</u>
+<u who="sf5348">okay yeah</u>
+<u who="sm5354">okay</u>
+<u who="nm5343">mm mm</u>
+<u who="sm5354">see how serious</u>
+<u who="sm5353">that was allowed she was out</u>
+<u who="sm5354">right go on then let's see </u>
+<u who="su">we can put that</u>
+<u who="sm5354">you need to lift yours up higher so that it slides down towards you that'll do</u>
+<u who="su">yeah yeah yeah</u>
+<u who="sm5353">oh look at that</u>
+<u who="su">ah</u>
+<u who="sm5354">that's brilliant</u>
+<u who="sm5353">now we've got to pick up the other one</u>
+<u who="sm5354">that's all we've got to do</u>
+<u who="su">right should i just pull this rope through yeah so let go your end</u>
+<u who="su">yeah</u>
+<u who="su">as long as it doesn't the #</u>
+<u who="sm5354">can we get ours pulled up by turning it</u>
+<u who="sm5353">no it's not it's not going to corkscrew up is it it's just going to stay</u>
+<u who="sm5354">cause we're not going to get it round the now with that one there are we</u>
+<u who="su">we need to get the lid back down the # handle</u>
+<u who="su">oh yeah just get</u>
+<u who="su">how are we going to lift this bucket up</u>
+<u who="sf5348">go around again just with it higher cause we've got enough rope so</u>
+<u who="sm5354">okay then</u>
+<u who="sm5353">the handle <gap reason="inaudible" extent="1 sec"/> do you want to get the handle down on the other one first</u>
+<u who="su">yeah</u>
+<u who="sm5353">i'll throw this through if i had more rope</u>
+<u who="su">no there's not enough rope to do that</u>
+<u who="su">is that ought to be over or underneath</u>
+<u who="su">just go round the side it'll probably be quicker</u>
+<u who="su">i don't know</u>
+<u who="sm5354">go literally over me i've made a gap between the buckets</u>
+<u who="su">is that</u>
+<u who="sm5354">so that should be alright somebody can you help her because we need to keep the rope taut</u>
+<u who="sf5348">yeah can you i'll if you can go round with it</u>
+<u who="sm5353">we'll get this we're going to need to walk round with it walk round and knock that kind of and stretch the rope across so were not knock the handle down</u>
+<u who="su">has that got to go round here as well</u>
+<u who="su">yeah</u>
+<u who="sm5353">right right right round that the whole way</u>
+<u who="su">i'll just get it at the last minute when it's starting to come out i don't </u>
+<u who="sm5353">is that under their rope</u>
+<u who="sm5354">i'm keeping your rope high up</u>
+<u who="sf5348">sorry </u>
+<u who="sf5344">he can pick it up again</u>
+<u who="sm5354">take your rope underneath it and you can get it back up</u>
+<gap reason="new phase of event" extent="uncertain"/><u who="su">right</u>
+<u who="sm5355">okay now</u>
+<u who="su">right</u>
+<u who="su">now we have to get the strong #</u>
+<u who="su">do you want to try and walk that round</u>
+<u who="su">okay if we</u>
+<u who="sf5360">can you not put it down <gap reason="inaudible" extent="1 sec"/></u>
+<u who="sm5356">no i was thinking you just tie this here right there and</u>
+<u who="sm5355">if i come this way</u>
+<u who="su">oh yeah use the other side of the the rope</u>
+<u who="sm5356">then we've got this rope's so long</u>
+<u who="su">oh yeah</u>
+<u who="su">yeah</u>
+<u who="sm5356">okay i'm just pull it</u>
+<u who="su">woo</u>
+<u who="su">wow</u>
+<u who="su">yay</u>
+<u who="sm5355">alright now we have it <trunc>ins</trunc>  now we have back in there</u>
+<u who="sf5346">so which side should we put it on like behind the bucket over say where you were</u>
+<u who="sm5355">yeah so then we tip it away from the</u>
+<u who="sf5346">we we're going to tip it that way so i'm to go by there</u>
+<u who="sm5355">so we're probably going to go round the circle</u>
+<u who="su">okay right</u>
+<u who="sm5355">and you two have to keep tight otherwise it's going to fall over again</u>
+<u who="su">yeah</u>
+<u who="su">i've got to keep</u>
+<u who="su">where are we putting it</u>
+<u who="su">this side of it</u>
+<u who="sf5346">well we can we can swap around whichever side you put it as long as it's like next to it square</u>
+<u who="su">oops</u>
+<gap reason="inaudible" extent="uncertain"/>
+<u who="su">alright could you <gap reason="inaudible" extent="1 sec"/> </u>
+<u who="su">oh</u>
+<u who="nm5342">right you're in quarantine for two minutes mate</u>
+<u who="sf5359">is this out or in</u>
+<u who="su">the handle's out</u>
+<u who="nm5342">you've got to go to hospital</u>
+<u who="sm5352">that's the right attitude</u>
+<gap reason="new phase of event" extent="uncertain"/><u who="su">oh are you can you get that up</u>
+<u who="sm5354">oh man</u>
+<u who="su">go round again</u>
+<u who="su">yeah</u>
+<u who="sm5354">oh if you just put them above them we can just walk round if you put it above why do we need it below <trunc>th</trunc>  the tape people why do we need it below the tape cause i'm just walking round and it's really easy anyone else see the flaw if you just swing your thing round then you can walk round with it above it and we won't have to worry about that </u>
+<u who="sm5353">pull pull this a bit tighter pull the rope tighter</u>
+<u who="sm5354">that's it right go swing your thing round and do it over right then we need the blue rope</u>
+<u who="sf5348">i see how to get it yeah</u>
+<u who="sm5354">to support this so it doesn't tilt over now well they haven't said that if we just lift it might pour it straight in there what do you reckon the chances are</u>
+<u who="su">yeah</u>
+<u who="sf5348">it's hardly going to fit in with all the # the rope wrapped round it is it</u>
+<u who="sm5354">the blue rope's got to go across to support it</u>
+<u who="sf5344">no it's not is it i think you should try pouring it</u>
+<u who="sf5348">we could try <gap reason="inaudible" extent="1 sec"/> i think if we go round a couple more times and then try pouring it</u>
+<u who="sm5354">yeah but if we just pull like this do you reckon it's going to pour straight in</u>
+<u who="su">no no</u>
+<u who="sm5354">what do you reckon</u>
+<u who="sm5353">cause that bucket's the same height so if you tip it it's just going to pour down the side isn't it</u>
+<u who="su">especially if the handle maybe if the handle was #</u>
+<u who="su">i don't think that's going to work</u>
+<u who="sm5354">it's going to fit mostly in the bucket maybe he'll just like give us the benefit of the doubt even with the rope round it</u>
+<u who="sm5353">if you if you can get the bottom of the bucket in it'll fall in anyway</u>
+<u who="sm5354">yeah</u>
+<u who="sm5353">so but you just need to pick it up</u>
+<u who="sm5354">okay then okay we need the blue rope going across that way so when we lift it doesn't tilt</u>
+<gap reason="new phase of event" extent="uncertain"/><u who="su">okay</u>
+<u who="sm5352">has it gone</u>
+<u who="sm5355">put it around</u>
+<u who="su">other way</u>
+<u who="su">turn</u>
+<u who="sm5352">you've got to lower your side a bit</u>
+<u who="sm5355">okay we have to get this thing in</u>
+<u who="su">yeah</u>
+<u who="sm5355">before we do anything let's get this thing in okay where are we going to put it</u>
+<u who="su">okay Stuart</u>
+<u who="su">no sort of more that way so it's next to it like that</u>
+<u who="su"><gap reason="inaudible" extent="1 sec"/> closer</u>
+<u who="sf5360">no shouldn't it be there cause you're going tip it that way aren't you being over there</u>
+<u who="sf5350"># John do you want to pull that side a bit more <trunc>pu</trunc>  pull your <trunc>si</trunc>  that's it</u>
+<u who="sf5346">which ever side is we're going to adjust it</u>
+<u who="su">yeah</u>
+<u who="su">right should we put it by there</u>
+<u who="sm5356">we put it we might have to do it under the barriers</u>
+<u who="su">which side</u>
+<u who="sf5360">i think it should there cause you're not going to tip that there aren't you</u>
+<u who="sf5350">Charles' side Charles' side yeah</u>
+<u who="sf5359">hang on if Charles there so we need it there</u>
+<u who="sm5355">yeah we're going to have we <gap reason="inaudible" extent="1 sec"/></u>
+<u who="sf5359">so then we we put it that side of it near to Charles Charles' side</u>
+<u who="sm5355">yeah if we put it put it this of the bucket</u>
+<u who="sf5346">i can't this this side's not long enough to do it we'll have to put it there and then move around </u>
+<u who="sm5352">yeah i <gap reason="inaudible" extent="1 sec"/></u>
+<u who="su">oh yeah alright</u>
+<u who="sf5346">yeah no it won't go</u>
+<u who="sm5352">keep it in that corner just keep it in that corner</u>
+<u who="su">that's it so there</u>
+<u who="sf5359">yeah and then we can all sort of change ends</u>
+<u who="su">go round</u>
+<u who="sm5355">right you have to the <trunc>bl</trunc>  you have to pull your one so it comes open</u>
+<u who="sm5352">and you've got to pull yours as well</u>
+<u who="su">there we go</u>
+<u who="su">that's it</u>
+<u who="su">wahey</u>
+<u who="sm5355">we're going to have to we're going to have to go round</u>
+<u who="su">we've got five minutes</u>
+<u who="su">yeah we'll have to be opposite where we are now</u>
+<u who="su">#</u>
+<u who="su">i don't want to do this</u>
+<u who="su">no</u>
+<u who="sm5355"><gap reason="inaudible" extent="1 sec"/> the whole start</u>
+<u who="sf5360">right</u>
+<u who="sm5356">okay</u>
+<u who="sm5355">someone has to hold that bit</u>
+<u who="nm5342">check you're back in yeah</u>
+<u who="su">you can't reach it can you</u>
+<u who="su">there's a bit of a problem here</u>
+<u who="su">this bit's longer it's longer by here</u>
+<u who="sf5359">oh i have responsibility</u>
+<u who="sf5346">this bit of rope's not long enough to move it over and then tip it</u>
+<u who="sf5346">yeah okay we'll tie it on this side</u>
+<u who="sf5350">how long we got left</u>
+<u who="sf5346">five minutes<gap reason="new phase of event" extent="uncertain"/><u who="sm5353">probably won't be long enough to do it then</u>
+<u who="sf5348">i was going to go round again</u>
+<u who="sf5347">it's not that long</u>
+<u who="sm5354">we need to be on opposite sides the blue rope's got to go across</u>
+<u who="sf5347">are you just going to go over the top with the blue though</u>
+<u who="sm5354">the blue rope no stay that side now we're alright oh it's going outside the area </u>
+<u who="su"><gap reason="inaudible" extent="1 sec"/> better</u>
+<u who="sm5354">right the blue rope has got to go from here to where Rebecca's standing so that when we need lift it it doesn't tilt that way do you see what i mean </u>
+<u who="sf5348">so that the the meeting of the ropes is on the other side </u>
+<u who="sm5354">it doesn't have to go round it it just has to like hold it tight</u>
+<u who="sf5348">because here look if we pull that it's just lifting up one side so we need your sort of knot in a way to be on the other side of the bucket</u>
+<u who="sm5354">we need just to support it like hold <gap reason="inaudible" extent="1 sec"/></u>
+<gap reason="inaudible" extent="uncertain"/>
+<u who="sm5353">okay so <trunc>jus</trunc>  just straight across</u>
+<u who="sm5354">yeah i reckon it'll be alright</u>
+<u who="sm5353">yeah</u>
+<u who="sm5354">and we haven't got time to like</u>
+<u who="sm5353">so you like <trunc>jus</trunc>  just</u>
+<u who="nm5342">two minutes</u>
+<u who="sm5354">two okay let's just go for it</u>
+<u who="sm5353">carry it straight round over the top bit</u>
+<u who="su">yeah </u>
+<u who="su">are you doing it oh i see</u>
+<u who="sm5353">oh we need that underneath though don't we</u>
+<u who="su">they're not long enough</u>
+<u who="sm5354">just underneath the lip you'll get grip okay it's going to drop because our rope's gone underneath it now but let's try ready</u>
+<u who="sf5348">one two three</u>
+<u who="su">aahh</u>
+<u who="sm5354">okay so our rope's slipping</u>
+<u who="su">it's slipped <gap reason="inaudible" extent="1 sec"/></u>
+<u who="su">as as ours is lifting up all the rope's going</u>
+<u who="sm5353">it's spinning it's coming out</u>
+<u who="sm5354">yeah but it's not all going to do that it's going to do it one more time so if you just go for lifting again and then it'll grip</u>
+<u who="sm5353">yeah</u>
+<u who="sm5354">yeah kind of come more towards me</u>
+<gap reason="new phase of event" extent="uncertain"/><u who="su">okay</u>
+<u who="sm5355">so we going to really screw it to the bucket</u>
+<u who="sm5352">let it</u>
+<u who="su">i'm scared</u>
+<u who="su">i know it's like it's real</u>
+<u who="su">it is real</u>
+<u who="su">okay</u>
+<u who="sm5355">now we have to drop this down you have to get it over we're going to go go round middle bucket now get it over we're going to have to go this way</u>
+<u who="su">you have to go that way a little</u>
+<u who="sm5355">we have to to go that way you have to go out</u>
+<u who="su">okay</u>
+<u who="sm5355">we can get it down we have to get it down now</u>
+<gap reason="inaudible" extent="uncertain"/>
+<u who="su">right </u>
+<u who="sf5346">you have to let go of that that one a little bit</u>
+<u who="su">jus-, just let go like that yeah i mean basically</u>
+<gap reason="inaudible" extent="uncertain"/>
+<u who="su">okay  </u>
+<u who="su">right is it under</u>
+<u who="sf5360">no it's not under</u>
+<u who="su">no no </u>
+<u who="sm5355">down a down a little bit</u>
+<u who="su">that side needs to be</u>
+<u who="su">oh my god</u>
+<u who="su">take your hand out</u>
+<u who="su">oh no no</u>
+<u who="su">all this</u>
+<u who="su">be careful </u>
+<u who="sf5360">where the white rope is it's not quite under</u>
+<u who="sm5352">yeah okay hold on just a little bit</u>
+<u who="sf5358">okay that's</u>
+<u who="su">ah its really heavy no it's going to tip that way</u>
+<u who="su">hold on</u>
+<u who="su">we have to get it right</u>
+<u who="sm5356">pull harder and you'll get it</u>
+<u who="su">try and pull harder on your side</u>
+<u who="su">there you go</u>
+<u who="su">okay</u>
+<u who="su">right</u>
+<u who="sf5346">oh that's so not great</u>
+<u who="su">oh</u>
+<u who="sf5346">move it over that way a bit left there there that's good</u>
+<u who="sm5352">and just pull tight</u>
+<u who="su">it's not tipping</u>
+<u who="sm5356">yeah that's not going to work </u>
+<u who="sf5360"># yeah you need to go this way more if you can otherwise it's not going to</u>
+<u who="su">no go that way go</u>
+<u who="su">no no</u>
+<u who="sf5360">no that way</u>
+<u who="sm5355">no it does it has to go closer to the rope otherwise it's not going to tip you have to go closer to this white rope</u>
+<u who="sf5346">that that white rope's going to have to be moved</u>
+<u who="sm5355">so we're going to have drop this we're going to drop it down again</u>
+<u who="sf5346">yeah</u>
+<u who="sm5356">sorry i just i didn't think about that</u>
+<u who="su">right </u>
+<u who="su">okay</u>
+<u who="sf5360">we've got a minute</u>
+<u who="su">double quick time</u>
+<u who="su">a minute</u>
+<u who="sm5356">do you want to do it</u>
+<gap reason="new phase of event" extent="uncertain"/><u who="su">cross-over</u>
+<u who="sm5354">okay</u>
+<u who="sf5348">one two three</u>
+<u who="sm5353">we need this one tight</u>
+<u who="sm5354">no it's going to lift up completely</u>
+<u who="sm5353">we need this one underneath oh it <gap reason="inaudible" extent="1 sec"/></u>
+<u who="sm5354">if you go more round</u>
+<u who="su">me</u>
+<u who="sm5354">yeah right look we'll lift get our rope out just put our rope like theirs and see what we can do</u>
+<u who="su">okay</u>
+<u who="su">don't pull <gap reason="inaudible" extent="1 sec"/></u>
+<u who="sm5354">ours is right underneath it</u>
+<u who="sm5353">how did that happen the rope's got a mind of it's own</u>
+<u who="su">oh</u>
+<u who="sm5354">okay right get yours your rope that side of the bucket </u>
+<u who="sm5353">that side of the bucket</u>
+<u who="sm5354">yeah and we'll just pull like this </u>
+<u who="su">ah ah handle # why don't we this</u>
+<u who="su">why don't we go just we'll go on</u>
+<u who="su">do you want to let go of yours and put it through and do it again</u>
+<u who="sm5353">yeah</u>
+<u who="sm5354">okay right i'm </u>
+<u who="su"><gap reason="inaudible" extent="1 sec"/></u>
+<u who="sm5354">how much</u>
+<u who="sm5353">wow thirty seconds</u>
+<u who="su">thirty seconds</u>
+<u who="su">we can do it we can do it</u>
+<u who="sm5353">somebody run in come on</u>
+<u who="su">sacrifice someone</u>
+<gap reason="new phase of event" extent="uncertain"/><u who="su">right </u>
+<u who="su">right</u>
+<u who="sm5355">we have to get it so it's next to <trunc>wh</trunc>  where the blue rope can actually hit it</u>
+<u who="sm5352">or do you want that under a bit</u>
+<u who="su">it's cause of the weight</u>
+<u who="su">no no no</u>
+<u who="sf5360"><gap reason="inaudible" extent="1 sec"/> away now</u>
+<u who="sm5355">just try take the white rope and <gap reason="inaudible" extent="1 sec"/></u>
+<u who="sm5352">just bring it down a bit lower</u>
+<u who="sm5355">now okay go back right right back over this side</u>
+<u who="sm5352">you have to tip it what what lift it up a bit higher</u>
+<u who="sf5360">can you move it that way otherwise it's not going to go in when you tip it no no no come back to the same shape and then go walk this way closer that's it sort of </u>
+<u who="sf5346">it's too heavy oh oh no no no it's going to slip it's slipping it's slipping put it back down that side of it</u>
+<u who="su">put it on that side</u>
+<u who="sm5355">we have to get it so the white rope is right underneath it</u>
+<u who="sm5352">or loosen it a bit</u>
+<gap reason="inaudible" extent="uncertain"/>
+<u who="sm5355">we're going to have to take the whole thing this way so you pull tighter on that side than this</u>
+<u who="sf5360">we've got about thirty seconds so just try and see what happens</u>
+<gap reason="inaudible" extent="uncertain"/>
+<u who="sf5360">we might get some in there</u>
+<u who="su">get it so the rope's underneath it underneath the lip</u>
+<u who="sm5352">right really low go on</u>
+<u who="sf5346">no no no no</u>
+<u who="sf5346">that side pull your your side a bit Charles</u>
+<u who="sm5352"># is that alright</u>
+<gap reason="new phase of event" extent="uncertain"/><u who="sm5354">right we need two people with each kind of rope on each side of the side square on <trunc>opp</trunc>  diagonally opposite sides of the square the rope over the bucket realistically we're not going to do it people</u>
+<u who="su">i think Coventry's dead</u>
+<u who="sm5354">just try and flick the water in ready</u>
+TIM KELLY: we're all dead</u>
+<gap reason="new phase of event" extent="uncertain"/><u who="su">oh</u>
+<u who="su">try again</u>
+<u who="sm5355">it's the rope's that are the problem</u>
+<u who="sm5352">right a bit lower on your side Laura</u>
+<u who="sf5346">yeah i i can't it's the white rope that's holding it up yeah</u>
+<u who="sm5352">i'll loosen the white rope</u>
+ <gap reason="inaudible" extent="uncertain"/>
+<u who="sm5352">yeah okay</u>
+<u who="su">no it's going to go</u>
+<u who="sm5355"> it's not it's not just keep pulling very very tight oh there we go</u>
+<u who="su">very tight</u>
+<u who="sf5360">alright can i just tip see what happens</u>
+<u who="su">bang</u>
+<u who="su">maybe not</u>
+<u who="sm5352">well you tipped it</u>
+<u who="sm5355">ah it was a valiant effort</u>
+<gap reason="new phase of event" extent="uncertain"/><u who="nm5343">can i have one volunteer please</u>
+<u who="sm5354">yeah</u>
+<u who="nm5343">grab the end of that inner-tube let me show something put it round there</u>
+<u who="sm5354">oh no it's going to pull tight round it</u>
+<u who="nm5343">just a suggestion</u>
+<u who="su">okay</u>
+<u who="sm5354">it's cause none of us have physicists you see</u>
+<u who="su">yeah</u>
+<u who="sm5354">they'd have done it in about twelve seconds and gone oh yeah that's really easy it was nearly in the bucket # bonus points</u>
+<u who="sf5348">hey the team work was good</u>
+<u who="sm5353">we worked well as a team but we've got a poor team</u>
+<u who="nm5343">let me re-read something to you da da da the safe container may be moved # you must transfer the toxic liquid from the unsafe container to the safe container </u>
+<u who="sm5354">so ours wouldn't have worked</u>
+<u who="nm5343">wouldn't have been allowed i'm afraid</u>
+<u who="sf5348">ah</u>
+<u who="sm5354">ah</u>
+<u who="nm5343">it's alright when</u>
+<u who="sm5354">so how do you pour it then even with the inner-tube to pick it up</u>
+<u who="nm5343"><trunc>th</trunc>  there are many different ways of doing it we did it all last week and we got our thing lifted up and thought we'll just dump this bucket in here and then somebody said there's no hang on hang and we had our bucket literally hanging suspended above it and we had to put it down again</u>
+<u who="sm5354">oh right</u>
+<u who="nm5343">it's very easy to make</u>
+<u who="sm5354">but then it cause you you then if you turn it does it actually pour</u>
+<u who="nm5343">yeah we just tipped it up</u>
+<u who="sm5354">with another a bit of rope</u>
+<u who="su">with the rope</u>
+<u who="sm5354">how long did you do it in</u>
+<u who="nm5343">oh we did it in nineteen minutes thirty seconds</u>
+<u who="sm5354">ah</u>
+<u who="su">we failed</u>
+<u who="sm5353">ah well</u>
+<u who="sm5354">well we tried and yeah</u>
+<u who="su">failed</u>
+<u who="su">yeah failed</u>
+<gap reason="new phase of event" extent="uncertain"/><u who="nm5342">okay s</u>
+<u who="su">let's go in and flake</u>
+<u who="nm5342">let's go back inside and #</u>
+<u who="su">my arm's killing me</u>
+<gap reason="new phase of event" extent="uncertain"/><u who="nm5343">do want to # we need to do a bit of debriefing here do you want to do it here in the sun or do you want to go back into the </u>
+<u who="sm5354">here's cool</u>
+<u who="sm5353">yeah changing rooms</u>
+<u who="nm5343">right okay let's go round we're not quite in a circle <gap reason="inaudible" extent="1 sec"/> you all seem to be opposing me but anyway # reactions start with Matt Matt</u>
+<u who="sm5354"># well we didn't really work out a fundamental idea until quite late into the thing which is where we went wrong cause we would have come across the flaws earlier if we'd have known what we were going to do # so i reckon that we needed to talk about it for longer rather than just like ploughing on in there and wrap them ropes round</u>
+<u who="nm5343">okay</u>
+<u who="sf5348">and we didn't use the inner tube</u>
+<u who="nm5343">right</u>
+<u who="sf5348">yeah</u>
+<u who="nm5343">well there's chance just pull that back a second rather than actually think about what you actually did and what you didn't how do you feel </u>
+<u who="sm5354">i no not yeah a bit upset that i didn't do it</u>
+<u who="nm5343">upset one word Rebecca</u>
+<u who="sf5348">disappointed</u>
+<u who="nm5343">disappointed</u>
+<u who="sf5348">yeah </u>
+<u who="sf5347"># i don't know i don't know</u>
+<u who="sm5353">frustrated that it was so simple and we didn't do it </u>
+<u who="su">yeah</u>
+<u who="sm5353">if we'd just thought about it we had too many little ideas without just we tried too many different ideas</u>
+<u who="su">yeah</u>
+<gap reason="new phase of event" extent="uncertain"/><u who="sf5346">i don't think we did that one as well as the one before in like our planning and everything</u>
+<u who="nm5342"><gap reason="inaudible" extent="1 sec"/></u>
+<u who="sf5359">i thought the plan went really quickly and i felt # well that i'd missed out totally and i'm like i'm like what we doing what's going so</u>
+<u who="nm5342"><gap reason="inaudible" extent="1 sec"/> </u>
+<u who="sf5358"># i think that we <gap reason="inaudible" extent="1 sec"/> actually with the empty bucket too long</u>
+<u who="nm5342">mm mm</u>
+<u who="su">yeah</u>
+<u who="nm5342">okay that was kind of # yeah any others</u>
+<u who="sm5352">too much <gap reason="inaudible" extent="1 sec"/></u>
+<gap reason="new phase of event" extent="uncertain"/><u who="nm5343">so you all you all feel i mean you didn't actually succeed in the thing <trunc>s</trunc>  so you do actually feel frustrated disappointed and so on annoyed with yourselves</u>
+<u who="su">#</u>
+<u who="sm5354">well we didn't work badly as a team no so if if if we'd have actually gone this is how you do it i reckon we'd have got it done</u>
+<u who="su">no i thought it was it went quite well together if we'd had the right idea</u>
+<u who="sm5353">if we'd have figured it <trunc>o</trunc>  if we'd have figured out we would've done it as team we would have the communication and team work to do it we just didn't get the idea</u>
+<u who="su">yeah the team work side was fine yeah sort of you know everyone had a bit of rope at one point and all that kind of</u>
+<u who="nm5343">so what the thing you did do well is the team work</u>
+<u who="sm5353">yeah it's a team building exercise</u>
+<u who="sm5354">it sounds really stupid cause we didn't complete the task but yeah we milled about for half an hour but we were working as a team</u>
+<gap reason="new phase of event" extent="uncertain"/><u who="nm5342">okay how about general feelings about how the team was working well</u>
+<u who="sm5356">i don't think it was that well</u>
+<u who="nm5342">it didn't </u>
+<u who="sm5356">no</u>
+<u who="sf5350">communication was <gap reason="inaudible" extent="1 sec"/> this time</u>
+<u who="sm5356">i think it was just cause it was all going wrong that</u>
+<u who="sf5346">it was more of a complicated task to do as well cause like we had to try and make something out all all those bits</u>
+<u who="nm5342">it was more difficult</u>
+<u who="sm5356">i didn't actually i'm not even sure it was possible</u>
+<u who="sf5360">did the other teams do it do it</u>
+<u who="nm5342">i i don't know that's not important anyway i thought you i thought it was a very brave and elegant attempt yeah and you were really close it could've worked right it could've worked yeah yeah okay it was it was more difficult wasn't it so that's why you may be feeling a little bit more frustrated but # personally i don't think the team i thought that that watching you that the team plan planning and everything it was it was impressive to watch actually but anyway any any other feelings</u>
+<u who="sm5356">no i think we did do the whole modifying changing as we went along thing quite well</u>
+<u who="sf5350">yeah</u>
+<u who="sf5346">yeah</u>
+<u who="nm5342">i thought it was brilliant you were reviewing all the time that's what's going wrong <trunc>an</trunc>  and changing the plan <trunc>an</trunc>  and going absolutely you were really really good yeah that was really positive any any other particular positive aspects</u>
+<gap reason="new phase of event" extent="uncertain"/><u who="nm5343">you were working as a team</u>
+<u who="su">yeah</u>
+<u who="nm5343">what would you improve </u>
+<u who="sm5353">have better ideas</u>
+<u who="su">yeah</u>
+<u who="sf5348">the planning at the beginning like sort of </u>
+<u who="sm5353">yeah i think that's the thing </u>
+<u who="sf5348">we sort had an idea tried it out and then adapted it as we went along whereas we should maybe sort of spend a good five ten minutes really thinking would that actually work yeah</u>
+<u who="sm5353">thinking of something that would work instead of doing lots of different things yeah</u>
+<u who="sf5348">and then just getting on and doing it and trying it if it doesn't work right what should we do next try that #</u>
+<u who="su">sort of rather than it mess up <gap reason="inaudible" extent="1 sec"/></u>
+<u who="sf5348">well you you sort of wrap that round that way then that might work oh no that doesn't work but if you come under there that might work sort of as we go along</u>
+<gap reason="new phase of event" extent="uncertain"/><u who="nm5342">okay what about there's no more of these today but there's going to be some some real life things what about what what you would do better next time</u>
+<u who="sf5360">you've just got to put everything together in this one we weren't as good at communicating but we were good at changing it so just kind of put it together</u>
+<u who="nm5342">yeah so how how to ensure that you have that communication's effective something maybe that was coming out i think someone said it was your comments Karen when you you talked about your # # first talked about delegating roles and # # ensuring every member is aware of the task and roles where would what would those comments relate to i <trunc>w</trunc>  don't know whether it was you i just seem to remember someone saying oh that was Karen</u>
+<u who="sf5350"># i just think it's it's it may have been more efficient if if you have a leader somebody who says right you do this you do that someone who's delegated as a leader and is #</u>
+<u who="sf5346">someone who can say all the ideas can be put to them and they can put them back out to the group again</u>
+<u who="nm5342">right okay so do you did leaders naturally emerge among this group has anyone anyone observed people who are naturally leading who take</u>
+<u who="su">Charles</u>
+<u who="su">Charles is quite a natural leader</u>
+<u who="sf5350">Charles this time i got more of a feeling of Charles being a natural leader</u>
+<u who="nm5342"># any any other people feel that they were taking charge any any one want to make any comments it's interesting to observe what you've allowed to do all the time is leaders and # co-ordinators perhaps to emerge but not explicitly delegate it you've so listen the the delegating role this could could be really important do you think it's always important</u>
+<u who="sf5346">i think it's important that everyone knows you know what it is that they have to do specifically</u>
+<u who="sf5359">i think and also i think it's important that everybody thinks that they're a valuable member cause if they don't if they don't have a role then they might think oh i'm not doing anything i may as well just not bother and</u>
+<u who="nm5342">right</u>
+<u who="sf5359">cause i think it's good to make sure everyone feels part of the team</u>
+<u who="nm5342">yes that's that's really true # John do you have any observations about leaders co-ordinators what was was going on there</u>
+<u who="sm5352">not really no not the best</u>
+<u who="nm5342"><gap reason="inaudible" extent="1 sec"/> any comments Lucas <gap reason="inaudible" extent="1 sec"/> comments on who was emerging as </u>
+<gap reason="inaudible" extent="uncertain"/>
+<u who="nm5342">anyone else cause i was sitting watching right so i get a different view and i don't think it was only Charles there were but it's not really my role to</u>
+<gap reason="new phase of event" extent="uncertain"/><u who="nm5343">do you didn't notice any sort of people taking different roles in that team as you were going along or</u>
+<u who="sm5353"><gap reason="inaudible" extent="1 sec"/></u>
+<u who="su">i thought # Hannah was quite quiet #</u>
+<u who="sm5354">but helpful though she did know the stuff</u>
+<u who="sf5348">helpful yeah really helpful</u>
+<u who="sm5353">i think we all did something i mean we all it's not like all</u>
+<u who="sm5354">you're sort of a doing man you strike me as like you know </u>
+<u who="sf5348">yeah</u>
+<u who="sm5354">you get in there and like let's do an idea kind of thing which is good</u>
+<u who="sm5353">it's it's my fault that we didn't think about it let's get the stuff and do something</u>
+<u who="sm5354">but i i </u>
+<u who="sf5348">i mean we all had a role</u>
+<u who="sm5354">yeah</u>
+<u who="sf5348"># we were always none none of us were ever i mean i i've done stuff where you know you get people that sort of just stand there and and don't want to we all we all did something</u>
+<u who="sm5354">when i i've worked for like two years and we did team building then and i find that when i mean i noticed i was doing it then is i quite like you do this and then you do that and i don't really mean to be like that</u>
+<u who="sf5348">yeah</u>
+<u who="sm5354">so if i i see i'm doing it yeah</u>
+<u who="su">but it's better to have a leader sometimes isn't it</u>
+<u who="sm5354">but i did notice i was doing it</u>
+<u who="su">yeah we had a leader Matt</u>
+<u who="sm5354">thanks</u>
+<u who="sf5348">well if we're not happy with it we'll just tell you</u>
+<u who="sm5354">yes that's but that's what you need in a team isn't it cause if you just follow it blindly</u>
+<u who="sf5348">yeah i mean it would be worse if we were all like having different ideas and all arguing about it we all sort we all did agree</u>
+<u who="sm5354">yeah so at least we agree on an idea and try it and it doesn't work then you can go you know</u>
+<u who="sm5353">yeah if you're all doing your separate thing <gap reason="inaudible" extent="1 sec"/> follow somebody's idea </u>
+<u who="sf5348">yeah</u>
+<u who="sm5353">even if it's the wrong idea to a certain extent you need to give them a chance</u>
+<u who="sf5348">and i think we all we all had an <trunc>in</trunc>  we all i didn't feel that i couldn't say what i thought # </u>
+<u who="sm5354">no</u>
+<u who="sf5348">i don't know what <trunc>any</trunc>  about anyone else it wasn't like we had to do what you said even though you were sort of leading in a way it wasn't too controlling</u>
+<u who="sm5354">yeah i thought Christine was quite good at like risking herself by rescuing the rope and things when they were they were almost in the area but yeah so you need a bit of a daredevil so anyway</u>
+<u who="nm5343">well the sort of the sort of roles that you people adopt in teams is something we'll come back to later and you'll find we will give you a questionnaire to fill in of your own for yourself you do it yourself privately look at it and it'll tell you what sort of person you probably are in a team</u>
+<u who="sm5354">yeah</u>
+<u who="nm5343">whether you know whether you are somebody who tries things or somebody who sits back and sort of looks at things ah maybe that's a better way or there are clearly well psychiatrists i guess they are psychologists educationalists have identified clear types of personalities the way people behave in teams you'll have a chance to find out how that relates to yourselves and it can be quite a shock to some people so it doesn't all of sudden you do this sort of questionnaire and all of a sudden you think this says that that i'm always taking the lead and i'm always very quiet and everybody's saying no you're not you're always</u>
+<gap reason="new phase of event" extent="uncertain"/><u who="nm5342"># any other comments on on that i genuinely it was really really good to watch and it was a really elegant solution and i wish it had worked but it was great and your planning and review and everything was just was was exemplary very good very good indeed</u>
+<u who="sf5350">i think we were a lot more comfortable with each other this well i felt more comfortable with everybody this time</u>
+<u who="nm5342">yeah yeah that's good that's great</u>
+<gap reason="new phase of event" extent="uncertain"/><u who="nm5343">okay # what we i mean there is anything else anyone wants before i move on is there anything else you want to say about that last exercise</u>
+<u who="su">can i ask what what you thought of it how you thought we worked</u>
+<u who="nm5343">how i thought you worked </u>
+<u who="su">yeah</u>
+<u who="nm5343">ah okay i thought # i mean i've one of the reasons we do this is because you don't know each other and i it always strikes me is how five people like yourselves you just don't know each are very polite to each other and then and you you know i don't think any of you were biting your tongue and sort of thinking well this isn't going to work but didn't say it or not but i can assure you that five people who'd known each other they'd have been swearing no you can't bloody do it like that don't be stupid it's your stupid idea tensions # yeah tensions come to the fore very much more when people don't know each other so so whenever i do this sort of thing i am always struck by difference between i mean we did this ourselves last week and we the people who did it had known each other for in some cases ten years it was very fraught very well we did it but it was very very fraught</u>
+<u who="su">so we've got to be rude to each other no swearing</u>
+<u who="sf5347">oh yeah that's a good idea</u>
+<u who="nm5343">maybe maybe that's more about openly expressing </u>
+<u who="sf5348">yeah</u>
+<u who="nm5343">being honest that really does require a good # you you need to be very good friends to be able to shout at them like some of the shouting that went on and not get offended by it</u>
+<u who="sm5354">yeah</u>
+<u who="nm5343"># so what did i think i think you did very well </u>
+<u who="su">even though we failed</u>
+<u who="sm5353">we wiped out the West Midlands</u>
+<u who="nm5343"><gap reason="inaudible" extent="1 sec"/> the West Midlands you did very well because you were looking i mean even even towards the even as we went along you were sort of saying but we're working well as a team you're already thinking that way as you're doing the thing rather than sort of just concentrating on moving the bucket you know the content of one bucket to the other bucket you were still you were already thinking about how about how you were working together and that's more important than actually getting the contents of a bucket</u>
+<gap reason="new phase of event" extent="uncertain"/><u who="sf5360">i think it would be easier for him to tell us what he thought watching us</u>
+<u who="sf5360">yeah he doesn't seem to be wanting to tell us though ask him</u>
+<u who="su">i know what he'd say</u>
+<u who="nm5342"># we're going to have a sort of <gap reason="inaudible" extent="1 sec"/> bringing the whole group together in about ten minutes # at that at that stage what we'd like to do is from each group is <trunc>t</trunc>  to feedback three key points you've already you've already identified here # # a sort of plan # and what we'd like to do is for is for you to sort of # pull <trunc>ou</trunc>  pull out <trunc>th</trunc>  the three most important bits of that for your particular group now again would you rather do this in your separate fours or would you like to do it as an eight now to finish off the day separately together</u>
+<u who="sf5346">we may as well do it all together</u>
+<u who="su">yeah</u>
+<u who="nm5342">okay okay alright let's do this all together which is probably good because then you can look at the two the two that you put # which i think it's difficult for me to put side by side but # <trunc>an</trunc>  and and maybe just talk together and pull out three of the things that that out of all the things you've identified this particular group <gap reason="inaudible" extent="1 sec"/> be really important in the future <gap reason="inaudible" extent="1 sec"/> ten minutes have a chat about these discuss what you think the most three important things are and then decide whose going to come and stand at the front of the group and present your conclusions in whatever manner you see fitting to to the whole group so you've got ten minutes to have a chat decide who's going to present and prepare your presentation in whatever form you fancy okay</u>
+<gap reason="new phase of event" extent="uncertain"/><u who="nm5343">the first exercise this is the <gap reason="inaudible" extent="1 sec"/> first second and third just put them up here # what went well </u>
+<u who="su">team work</u>
+<u who="nm5343">team work</u>
+<u who="su">yeah communication</u>
+<u who="sm5354">nothing really </u>
+<u who="su">we failed</u>
+<u who="nm5343">so team work went well </u>
+<gap reason="new phase of event" extent="uncertain"/><u who="sf5346">well we always keep going on about communication so i reckon that's one of them</u>
+<u who="su">yeah</u>
+<u who="sf5346">that's pretty important</u>
+<u who="sm5356">that's pretty vague</u>
+<u who="sf5359">planning</u>
+<u who="sf5346">it is vague yeah so we'll have to like get like a idea and a #</u>
+<u who="sf5359">yeah planning is a good one</u>
+<u who="sf5350">it's just as important to be clear of what's to be done as well</u>
+<u who="su">yeah</u>
+<u who="sf5350">i think like you said earlier highlighting key issues and just</u>
+<u who="sf5360">and recapping it so we all know what we're doing sort of thing</u>
+<u who="sf5350">pardon</u>
+<u who="sf5360"># recapping type of thing so we all know</u>
+<u who="sf5350">yeah</u>
+<u who="sf5346">quite simple but yeah the reviewing and things</u>
+<u who="su">yeah</u>
+<u who="sf5360">planning communication and reviewing</u>
+<u who="sf5350">yeah</u>
+<u who="sf5346">planning communication and reviewing</u>
+<u who="sf5360">that's great isn't it</u>
+<u who="su">it's as simple as that</u>
+<u who="sm5356">is that what you're putting in just stand up and say that</u>
+<u who="sf5346">no we i suppose we can explain</u>
+<u who="su">got to explain</u>
+<u who="sf5346">let me just write them and decide what we're going to say about each one is it</u>
+<gap reason="new phase of event" extent="uncertain"/><u who="nm5343"># what've we improved</u>
+<u who="su">planning</u>
+<u who="su">planning</u>
+<u who="nm5343">okay</u>
+<u who="nm5343">planning # and what would you say that the key learning points </u>
+<u who="su">well we did the names so that <gap reason="inaudible" extent="1 sec"/></u>
+<u who="su">#</u>
+<u who="sm5354">we didn't use all the things so i reckon we can take from this that we do need to pretty much use everything or at least the key item which could be different <gap reason="inaudible" extent="1 sec"/></u>
+<u who="su">yeah so</u>
+<u who="sm5353">yeah people cause people give i think they you're provided you need aren't you they they've done this before they would have seen if it was possible and they would have used those things to do it so using all of them's probably a good start</u>
+<u who="su">yeah making use of</u>
+<u who="sm5354">unless they might have <gap reason="inaudible" extent="1 sec"/> but you've so in actual fact we didn't learn anything </u>
+<u who="nm5343">so what did you learn</u>
+<u who="sf5348"># how to do it better next time</u>
+<u who="sf5344">i reckon if we did it again though we'd just do the same because we you know we didn't have an idea of we just didn't think about</u>
+<u who="sm5354">i think that we learned that we need to think about what we're going to do so we can find what the like you know what the flaws were in our plan before we start rather than getting half way through like wasting fifteen minutes cause our first plan it turned out that it just spills the liquid everywhere</u>
+<u who="sm5353">yeah so</u>
+<u who="nm5343">so </u>
+<u who="sm5354">we learned that we need to plan better</u>
+<u who="nm5343">what you learnt is that # how do what's the best way your team work was good your planning needed improving so what you learnt was that well effectively you learnt those <gap reason="inaudible" extent="1 sec"/> is that the best thing to say that you learnt</u>
+<u who="su">yeah</u>
+<u who="nm5343">you learnt those two things there that's you've</u>
+<u who="sm5354">that we <trunc>c</trunc>  we can work well together if we have like the</u>
+<u who="su">have the right idea yeah</u>
+<u who="sm5354">yeah then we'd have got it sorted i reckon</u>
+<u who="su">yeah</u>
+<u who="nm5343">okay right</u>
+<u who="sm5354">fingers crossed anyway in no doubt we'll be back in here going ah well we should've really done this</u>
+<u who="sf5348">but we worked well</u>
+<u who="sm5354">by the end of it we'll be bickering and this is the way i'm doing it</u>
+<u who="nm5343">yeah </u>
+<gap reason="new phase of event" extent="uncertain"/><u who="sf5360">i think it's quite important to # delegate roles within the group</u>
+<u who="su">yeah</u>
+<u who="sf5360">and <trunc>possib</trunc>  possibly a leader</u>
+<u who="sf5350">or a co-ordinator as somebody'd say</u>
+<u who="sf5360"># communication you need to make sure you listen to everyone's views and people speak up</u>
+<u who="su">yeah</u>
+<u who="sf5346">in the planning deciding the the obstacles and the key points is important as well </u>
+<u who="su">yeah</u>
+<gap reason="inaudible" extent="uncertain"/>
+<u who="sm5356">this is going to make a great video</u>
+<u who="sf5360">so what's the other one planning communicating and reviewing</u>
+<u who="sf5346">yeah</u>
+<u who="su">reviewing as well</u>
+<u who="su">where are we going wrong</u>
+<u who="sf5346">yeah it's important not to just to review at the end though but throughout the whole thing </u>
+<u who="su">yeah</u>
+<u who="su">that's a good one</u>
+<gap reason="new phase of event" extent="uncertain"/>
+<u who="nm5342">we're about to find out from you # what you think about # your improving team team work # I so in a minute i'm just going to # <trunc>c</trunc>  call you up and # # # get your three key <trunc>l</trunc>  learning points and well i had loads of fun and watching you lot stumbling around with those blindfolds this morning was just # it was just brilliant and # # on that point # we we will i think get to see an edited version of the video at some time in the future but it's got to be properly edited and everything so it'll be a while but we'll let you know when we've got that back <trunc>an</trunc>  and i'm sure that'll be # hot property # and # <trunc>th</trunc>  there's been a lot of photos taken this morning by our chief photographer Andrew over there and # if he'll tell you just about how you can <trunc>g</trunc>  you can get hold of them</u>
+<u who="sm5357">basically when <gap reason="inaudible" extent="1 sec"/> you have to include the photographs and by this time tomorrow one person in each group will have in their pigeon hole a copy of all the photographs that have been taken okay and # all you have to do is pick one in your group and we will blow that up to A-four colour and get it back to your teams all the instructions <gap reason="inaudible" extent="1 sec"/></u>
+<u who="nm5342">so yeah we'll hopefully those hot off the press by this time tomorrow okay so to finish off we've said enough this morning the most important comments are probably from you guys so # what's let's start with # group's well group one the fused group one and two my lot do you want to come and tell us about your # three key learning points</u>
+<u who="su">have you got a pen</u>
+<u who="nm5342">and you need a pen </u>
+<u who="su">yeah</u>
+<u who="nm5342"># what an outrageous request</u>
+<gap reason="inaudible" extent="uncertain"/>
+<u who="sf5346"># okay our three main points were planning communication and reviewing okay # within planning we thought the most important things to do were to delegate roles and make sure you had a leader or co-ordinators within your group to make sure that # everyone's point gets put across everyone can tell it to the leader and they can report back what they think also # you have to make sure you identify all the obstacles that could be possibly be put in your way and the key points of the instructions that are given to you and # under communication it's important to make sure that all those key points and obstacles worked out in the planning that everybody in the group understands them and # any plan that you put together based on those also that everybody within the group can put forward their ideas and communicate them to everyone else in the group so that everyone's aware of what's going on and reviewing # we decided it's not just what you do at the end it's like a constant process and you can keep changing your plan according to any problems that you meet that you didn't expect # that's our team work ideas</u>
+<u who="nm5342">well thankyou very much Laura okay who else excellent thank you very much has anyone got any comments or questions for group one and two great i think it was really clear that's why you don't have any questions and i agree with everything you said i think okay # group have we got a group two</u>
+<u who="su">yeah</u>
+<u who="nm5342">okay group two</u>
+<gap reason="inaudible" extent="uncertain"/>
+<u who="sf5348">this is our learning spider that we've worked out and i'm going to talk about the planning which is the first thing we learnt we did the the exercise with bucket first and basically at the end of that we realised that our plan was rubbish because totally failed and we </u>
+<u who="su">shhhh</u>
+<u who="sf5348"># and that was because we hadn't # thought of enough ideas to start with and thought oh let's try this let's try this and we went in and did it and then sort of adapted the plan as we went along without really thinking and we all decided at the end that we <trunc>sh</trunc>  should have stopped and realised that this wasn't going to work but we didn't we tried to follow through with it so it didn't work</u>
+<u who="sm5354">yeah # in the second one we thought wow we've got ten minutes to plan so we tried to make a really good plan and then</u>
+<u who="su">it was a good plan</u>
+<u who="sm5354">but that fell down cause we got given numbers that we had no plan for # so we realised then that planning isn't just like you can't always get it right first time you have to have a bit of experience from situations to be able to plan for them properly so # we took from that that we would like we'd all have our own personal thoughts and then share them then you'd get other people's ideas rather than just one person's so your planning could be more # complete</u>
+<u who="sf5348">and then the third one we won so we <gap reason="inaudible" extent="1 sec"/> </u>
+<u who="su">that's all i'll say about that cause</u>
+<u who="sm5353">second point was # learning communication and we just sort of learning to # it's obviously pointless planning if you don't tell everybody else what you're planning so # communication's just basically that and understanding people from all round the country that you've never seen before with all the regional accents that you haven't got a clue what they're saying</u>
+<u who="sf5344">we learnt as we got to know each other <gap reason="inaudible" extent="1 sec"/> as we got to know each other we worked better together</u>
+<u who="sf5347">if a plan's not working then say so</u>
+<u who="sm5353">don't be afraid to say that this plan's terrible</u>
+<u who="sf5347">that's why the first one kept on going wrong cause it just carried on doing something that was just completely wrong</u>
+<u who="sm5353">carried on with a terrible plan</u>
+<u who="sf5348">cause noone said this isn't going to work this is a rubbish idea let's start again</u>
+<u who="sf5347">by the end we we all polluted the whole UK</u>
+<u who="su">yeah</u>
+<u who="sm5353">wiped out the West Midlands</u>
+<u who="sf5348">yeah so that's our learning spider</u>
+<u who="nm5342">okay any questions or comments so different # sort of <trunc>a</trunc>  approach to the thing but i think a lot # they were all <trunc>co</trunc>  common themes weren't there that's great # okay group do we have a group three</u>
+<u who="su">yeah</u>
+<u who="nm5342">yeah we do excellent group three is it in there somewhere</u>
+<gap reason="inaudible" extent="uncertain"/>
+<u who="nm5342">here's one i made earlier</u>
+<u who="sf5351"># # okay start with the okay # make sure everyone understands everyone completing the task so for # the first task we did the pipe </u>
+<u who="sf5345">pipe line</u>
+<u who="sf5351">the pipe line where you couldn't go into the sea without islands # for that one we it # mainly assigned roles according to different traits so we had someone at the end who was tall so they could hold it up so the balls could roll down so the task changed # no the roles changed depending on the task so not everyone was always the leader so allocated to people on the task</u>
+<u who="su"># </u>
+<u who="sf5345"># it's like our third task was the bucket with the water thing which didn't really work out but # we've learnt from that that if it isn't working then you know you shouldn't get all frustrated and agitated and get all aggressive and all that you should just # keep on going you know keep keep the enthusiasm going and try new things</u>
+<u who="sf5351">yeah don't be afraid to</u>
+<u who="sf5345">afraid to change your plan because oh no the first plan didn't work oh we can't change it you shouldn't do that you should just go with the flow and like maybe try something else</u>
+<u who="sf5351">and the third one is be aware of time cause on the first plan it didn't tell you the time that it until right at the end and we'd like already wasted like ten minutes of our time trying to read the sheet and it was like oh right so we've only got fifteen minutes to do it then so be aware of it but don't feel too pressured cause on the last one we didn't want to change it because it was like oh no the time's running out but maybe if we hadn't been so pressured by it we could've actually done it in time changed it and completed the task but we didn't and that's it</u>
+<u who="nm5342">brilliant so team four</u>
+<u who="sf5349"># our first point was fully understand the task and the rules # cause i think it saves time # it also saves you from breaking the rules which you know gets you disqualified and # and also it helps to get you involved in the task and so you know what you're doing and # particularly when you're doing the bucket and trying to pick the bucket and that you didn't know that you couldn't take it and put away from the centre or something like that and we had it managed to pick it up took it up and they said no stop and we finally read the rules so # also make a plan # so you can consider all possibilities # plan for the unexpected as well # with the blindfold one we didn't think well we probably should have done but we didn't think that everyone else would clap and so when you got taken away everyone else was clapping and we didn't have any idea where to go # you've also got to be flexible as well with your plan cause you don't know what's going to happen and also time management's quite important so you can work to the deadline and that's it</u>
+<u who="nm5342">thank you right any any questions or comments on any of those well time for me to step back finished in time for lunch # quickly # only final comment i can make is if all of you take the points you just mentioned and really do transfer them into the next challenge the next experience that comes along your way in a group</u>
+</body></text></TEI.2>

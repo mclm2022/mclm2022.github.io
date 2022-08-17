@@ -1,0 +1,1015 @@
+nm0757: er two three weeks is to [0.4] er [3.8] is to try and build up a 
+framework a a model that will allow us to understand how [0.3] consumers make 
+choices and [0.8] we've almost got to the end of [0.2] the [0.2] er what people 
+would like to buy [0.3] element er of the framework [0.3] and then what we're 
+going to try and do today when we've finished that off is to actually put it 
+together [0.3] to try and [0.2] er create a framework a model that will allow 
+us to understand the choices that actually made so we going to put together 
+that [0.3] availability set the things that people can choose [0.5] and the 
+part that looks at what they actually want to choose [0.3] to actually [0.3] 
+look at the choices that are actually made [0.8] and what we want to try and do 
+is to put that framework together in such a way that we can use it [0.3] not 
+just in an academic sense to [0.2] have some nice diagrams but to actually [0.
+2] predict what people will choose [0.4] er and [0.2] to look at what happens 
+when things change so if we can build this framework up [0.2] we can try and 
+understand well if prices change [0.5] 
+what's going to happen to the demand for a good is it going to go up is it 
+going to go down [0.3] and by how much likew-, wise with income [0.2] for 
+example [0.3] if income changes how will demand change [0.3] er and by how much 
+so [0.6] that's where we want to [0.3] to end up [1.0] now if you remember [0.
+4] where we got to er [1.1] at the end of [0.3] last week [4.7] was we we 
+started at the end of [0.4] last week hang on [0.2] try and remember which of 
+these light switches it is again [3.2] [3.3] where [1.4] we have all of this 
+this space these combinations of two goods X-one and X-two [0.3] okay [0.3] and 
+if you remember we said well we can represent it in two dimensions but really 
+[0.3] we're looking at the choices between all the goods and services that [0.
+2] consumers have available to them [1.5] and we started saying well what the 
+consumer can do [0.2] we assume [0.4] is [1.1] compare [0.2] any [0.2] 
+combination of these goods [0.7] wherever it is [0.7] and can say [0.3] i 
+prefer this point that combination of the two goods over this point [0.3] and 
+so on [0.2] and that they can [0.4] compare all the possible combinations of 
+the things [0.3] that are available 
+to them [0.6] okay [0.6] and say i prefer this combination to that combination 
+[0.9] and they do that [0.4] er they have these preferences they can say that 
+they have strong preference i prefer A over B [0.4] i'm indifferent i don't 
+care which i have [0.5] or weak preference i prefer A to B or i'm indifferent 
+between the two [1.7] and then what we we did was [0.3] we said okay that's 
+fine but what we want to try and do is to build up the model that will allow us 
+to predict choices [0.4] and to do that we have to make certain assumptions 
+about the preferences that consumers have [1.0] and we we had all these 
+assumptions of completeness there are no black holes there are no [0.5] er [0.
+3] combinations of the goods that the consumer can't express a preference over 
+[1.0] transitivity [0.4] that is that we have this rule that if you say [0.3] i 
+prefer A to B [0.2] and i prefer B to C we can assume that they prefer [0.4] A 
+over C [0.5] and we've we we said that [0.3] often that doesn't hold but [0.6] 
+er [0.2] at least logically it seems that a rational consumer might have 
+transitive preferences [0.6] 
+we then had the idea of reflexivity that if a if a consumer couldn't compare a 
+good [0.3] or combination of goods to any other [0.4] they could compare them 
+to themselves [1.8] and using that [0.4] okay [0.6] we said okay [1.0] every 
+single one of these points [0.6] er we can express a preference over [0.2] but 
+there won't be any inconsistencies [1.0] we then went on to say okay [0.4] can 
+we make any general rules about the direction of the consumer's preference and 
+we had the idea of non-satiation [0.6] which means that preferences go out in 
+that direction I-E [0.4] that [0.7] within the realms of most of the choices 
+that consumers make with lots and lots of goods and services available to them 
+[0.3] they will prefer more to less they prefer more of the goods to less of 
+the goods [0.4] and if that is the case [0.4] their preferences will go out in 
+that direction [0.2] and hence we automatically can say for example [0.2] that 
+this point here [0.5] is preferred to that point there [0.7] simply because it 
+has more of er both of [0.3] er [0.2] the goods [0.4] er and therefore [0.2] 
+automatically the 
+consumer will prefer more [2.4] we then said okay if that's the case then we 
+can start talking about indifference lines [0.7] and because that is the case 
+an indifference line or indifference curve must [0.3] have a negative slope [1.
+3] okay [0.2] that is if we combi-, if we we [0.3] draw a line that combines 
+all of the combinations of these goods [0.4] between which [0.2] the consumer 
+is indifferent [0.9] it must be the case that if you get more of one good you 
+have less of another [0.8] and w-, the measure of that [0.2] is the marginal 
+rate of substitution [0.4] okay the slope [0.2] of [0.6] the line [1.9] so 
+that's negative and it's a measure of the trade off between these two goods 
+which reflects [0.2] the relative preference that the consumer has [0.3] for 
+one good over another [0.3] so if a consumer really likes X-one [0.6] if they 
+give up one unit of X-one they're going to require a lot of X-two to take its 
+place [0.6] okay [0.4] for example [1.5] then we said okay [0.8] that's fine [0.
+3] but [0.4] looking at the way c-, they're looking at the sorts of preferences 
+that consumers have [0.6] what we tend to 
+find is that this rate of trade off this marginal rate of substitution [0.3] 
+isn't constant [0.9] okay [0.6] and we said in fact [1.4] that [0.5] we would 
+expect the indifference curve [0.3] to be [0.3] convex to the origin [0.8] 
+which means that [0.5] the rate of trade off [0.8] at this point here [0.2] 
+when you have a lot of X-two and not much X-one [0.2] will be different [0.4] 
+to the rate of trade off here [0.5] where you have a lot of X-one and not much 
+X-two [0.6] because we know that as [0.3] you get more of a good its marginal 
+utility declines [0.7] and and vice versa [1.3] so where we ended up [0.2] last 
+time [0.4] was [0.2] with [1.2] basically the ability [1.5] to [3.8] represent 
+sort of [0.2] colour [4.5] to represent the consumer's preferences [0.6] 
+between these two goods [1.5] okay [0.6] as a series [0.3] of indifference 
+curves [0.4] like this [0.3] that are [0.3] negatively sloped [0.4] convex to 
+the origin [1.3] the direction of the consumer's preferences [1.6] is out here 
+[0.5] so we automatically know [0.2] that [3.0] indifference curve [0.3] two [0.
+7] is preferred to indifference curve one [0.3] every single combination of the 
+two goods on [0.2] this indifference curve [0.9] 
+des-, is preferred to every single combination [0.4] on indifference curve one 
+[1.1] and likewise indifference curve three [0.3] every combination on that 
+indifference curve is preferred [0.2] to indifference curve two [0.8] okay and 
+so on [0.3] so the least preferred point is this point here zero consumption [0.
+5] 'cause the consumer gets no utility because they only get utility from 
+consumption from the goods [0.7] and the maximum is some infinite point up here 
+[0.9] okay [0.5] er [0.4] whoo-, [0.2] whoops where [1.0] they consume however 
+much [0.6] because at the moment they have no constraints [0.5] okay because we 
+haven't brought the availability set in [0.6] er [0.2] so this is what they 
+would like to do [1.3] okay [0.5] now [0.6] you may say okay that's totally 
+unrealistic because eventually the consumer will grow satiated [0.6] okay [0.3] 
+now that may be true with [0.2] er [0.2] two goods [0.4] but remember [0.5] if 
+we try and represent this with all the goods available [0.2] then we can have 
+very small substitutions between all the different goods that are available [1.
+0] and we would assume that normally within the realms of [0.3] of [0.8] 
+balanced consumption [0.9] of [0.4] consuming a large number of different goods 
+[0.4] that [0.3] the consumer 
+will operate within the context of not having great satiation [0.2] in most 
+circumstances [0.7] okay [1.5] so that's where [0.2] where we got to [1.5] and 
+[0.5] that's fine we can [0.2] so far wh-, if i could draw it [0.3] do it in 
+three dimensions we could do three goods [0.5] okay [0.9] but [0.9] that is 
+just a diagram it is it's just a representation a a theoretical [0.3] model [0.
+2] of [0.5] er the consumer's preferences [0.5] we can't use it at the moment 
+to do anything [0.2] except [0.3] er to to try and think about the way in which 
+choices are made [0.8] what we need to do is to be able to represent this [0.2] 
+numerically [0.2] we need to be able to represent [0.4] these indifference 
+curves [0.3] in a numerical form [0.7] 'cause if we can do that [0.8] if you 
+remember the availability set can be represented er [0.3] er mathematically 
+because you have the budget line [1.4] what we need to be able to do is to 
+represent these [0.5] algebraically mathematically [0.4] er and then we can 
+combine the two together and use that to actually predict the ch-, the co-, the 
+choices the consumer would actually make [1.5] if we can al-, also 
+if we can represent it algebraically of course we're not constrained to three 
+goods which is what we are in a three-dimensional diagram [0.3] we can have 
+however many goods [0.2] that the consumer has available to them [0.9] okay [0.
+3] so we need to [0.2] represent this in some other way [0.5] and so the final 
+assumption [0.2] is that we can represent [1.1] these indifference curves 
+algebraically [0.3] and that they are differentiable [1.1] okay [0.4] that is 
+that if [0.2] we we we can differentiate them so that we can derive an optimum 
+[0.8] okay we can derive a point [0.4] er a choice that the consumer will make 
+[0.2] when we put all of all all of the information together [0.2] the two 
+sides [0.6] so that's the final assumption [0.5] that [0.2] that we are we are 
+going to make [1.2] now we're not going to go into [0.3] er a lot of the m-, of 
+the mathematics [0.4] okay [0.3] it's it's [0.3] the basic principle that 
+really [0.3] matters here [1.0] okay [0.8] now [1.0] the complication we have 
+[1.5] is that we have said that utility is not [0.3] measurable [0.3] in a 
+cardinal sense that is [0.3] we cannot say [0.3] for example that if a consumer 
+[0.3] er has a certain consumes a 
+certain combination of goods their utility is level X [0.6] and then if they 
+consume another combination it's level Y [1.0] okay [0.2] we can't say there's 
+a l-, level utility ten [0.4] and another combination of goods gives you level 
+of utility twenty [0.4] we've said we can't do that we can't measure utility [0.
+5] er and even if we could we couldn't combine it across individuals because 
+it's totally individual [0.4] er to that consumer [2.3] that seems to fly in 
+the face of saying well we want to represent those indifference curves [0.4] 
+mathematically algebraically [0.2] and we want to be able to predict the choice 
+they make [1.1] that's because the reason for that conflict is that all of the 
+mathematical functions that you will have seen to date [0.5] are what called a-,
+are are are called cardinal functions that is functions where [0.2] the 
+numbers are measuring things so if we have a value of ten [0.3] we can say that 
+is half of a value of twenty [1.1] okay [0.8] now what we are going to do [0.9] 
+is to use a type of function that is called an ordinal 
+function [1.0] and an ordinal function [0.4] is a function where the numbers [0.
+5] only matter in terms of their relative position [0.5] so if you have values 
+of one and two [0.9] the two is greater than one [0.6] okay it doesn't matter 
+how much [0.2] but it's just greater [0.6] okay so that all that matters in an 
+ordinal function [0.2] is order [0.5] not relative position [0.8] 
+okay [0.7] so [0.2] what we want to do [0.6] is [1.2] we have our indifference 
+curves [4.0] like this [2.5] and we want to be able to represent those 
+indifference curves [2.0] with a number [0.5] okay algebraically [1.6] and [0.
+2] presume that we can represent that [1.8] utility function as er U-X-one-X-
+two [0.6] that is [0.3] utility [1.2] the satisfaction they get [0.5] is a 
+function of the amounts of these goods which is what we've said and don't get 
+they don't get satisfaction from anything else they just get it from 
+consumption [0.3] in [0.6] in the context of the market [1.9] and clearly the 
+amount of the utility depends on the quantities of those two goods and that's 
+exactly what this diagram says [0.9] okay it says that [0.3] er [1.6] [cough] 
+[0.4] if we have this combination [0.9] and this 
+combination [0.2] these two points here [0.7] the level of utility's exactly 
+the same [0.2] although the quantities of these two goods is actually different 
+[0.2] because [0.3] the consumer is indifferent between those two combinations 
+[0.6] and we've said that if we have a combination here [3.3] the the level of 
+utility is greater [0.8] again the quantities of the two goods are different [0.
+5] but the level of utility that the consumer gets is is greater because it's 
+on a higher indifference curve [1.6] and so what we want to do is to represent 
+these [0.2] these indifference curves [0.2] [cough] [0.3] as [0.4] what is 
+called a utility function [0.4] a function that simply says the utility the 
+consumer gets [0.5] is a function mathematically of [0.4] the [0.2] quantity of 
+X-one [0.5] and the quantity of X-two [0.9] okay the quantity the amount of the 
+two goods [2.1] one of these could be zero [0.2] [cough] so if the consumer got 
+no utility at all from [0.3] the consumption of that good [0.3] then simply [0.
+3] the [0.4] the expression relating to say X-one this good here would just be 
+zero [1.0] okay so that's possible [0.6] er [0.5] and if the consumer go-, got 
+no utility at all from these two [0.3] then [0.5] it would be zero for both [1.
+2] okay so we can represent that no no problem at all [1.7] but we don't we're 
+not going to represent [0.2] these indifference curves with a function [1.6] 
+which assumes that we're measuring utility [0.2] so we're going to use [0.5] er 
+what is termed a a an ordinal function [2.3] [cough] [0.2] okay [2.8] so [0.7] 
+we're not going back to a world where [1.5] yeah we can measure marginal 
+utility et cetera [0.4] we're still in a world of of indifference curves [0.2] 
+okay that's so that's [0.2] that's fine [1.6] okay [cough] [0.9] the type of 
+function we want is as is as follows [0.5] if we assume that we have two [0.5] 
+consumption bundles X-one [1.2] er and X-two [0.6] okay and these are the 
+utility functions that represent those two consumption bundles [0.3] so X- [0.
+6] one here is a combination of these two goods [0.5] and X-two here is a 
+combination of these two goods [0.5] a different combination [1.8] [cough] [0.
+8] and [1.0] what we want to do [0.4] is to effectively so U-X-one [0.8] okay 
+could be associated with this indifference curve here and U-X-two could be 
+associated with this indifference [0.2] 
+curve here [0.8] okay for example [2.0] what we want is to put numbers on these 
+things [0.3] so hence any combination of goods that lay on indifference curve 
+[0.3] two [0.2] would have a greater number [0.2] than any combination [0.4] on 
+indifference curve one [0.9] okay [3.2] now [0.7] let's assume that we give we 
+have a lar-, a larger [0.2] value [0.4] for U-X-one this combination [0.3] than 
+U-X-two [0.3] what that would mean of course is that the consumer preferred [0.
+3] this combination [0.2] to that combination that is [1.5] that [0.4] X-one [0.
+2] was preferred [1.0] to X-two [1.6] okay and that's what that would imply [0.
+5] is that the consumer strictly preferred X-one over X-two [2.9] the other 
+possible scenario [1.0] is that U [0.7] -X-one is equal to U [0.3] -X-two like 
+if two goods were on the same indifference curve [0.8] and that would assume [1.
+3] that the consumer was [0.3] indifferent [1.6] okay [3.2] so [0.2] we want [0.
+3] to represent these indifference curves in such a way [0.5] that either [0.7] 
+if the consumer is indifferent [0.9] the value we give the number we give is 
+exactly the same [1.8] okay [1.1] if the consumer prefers one bundle of goods 
+over another we will give 
+a bigger number [0.4] to [0.6] the er [0.8] bundle the consumer prefers [2.3] 
+what th-, th-, the the very important thing to get clear in your mind is it 
+doesn't matter what the number is [1.1] okay [1.0] all that matters is that we 
+give the same number [0.7] to bundles of goods between which the consumer is 
+indifferent [1.1] and we give a bigger number [0.7] to combinations of goods [0.
+2] that the consumer prefers [0.9] it doesn't matter how much bigger [1.6] okay 
+[0.5] and that is the crucial difference [0.2] if it mattered how much [0.2] 
+bigger the number was [0.2] we would be using it as a real measure of utility 
+we'd be saying that [0.3] if it was a value of ten [0.6] that would be half a 
+value of twenty [1.5] all we're saying is that if we give a value of ten [0.4] 
+that is less [0.2] than twenty [0.4] doesn't matter how much because we're not 
+measuring utility [0.3] we're just measuring order [0.4] hence it is called an 
+ordinal function [1.3] okay [0.5] so [0.3] any combinations on one indifference 
+curve will have the same number [1.2] any higher indifference curve any 
+combinations that are on a higher diss-, [0.2] indifference 
+curve will have a bigger number it doesn't matter how much bigger the number is 
+[1.5] okay [0.8] so [0.7] let's assume for example that we have [0.3] er three 
+[0.4] no sorry four [0.2] er [2.3] consumption bundles [0.9] okay these are 
+four different combinations of those goods [0.9] and we have a utility function 
+[1.5] U-X [6.8] okay [2.0] now [1.5] if we assume that X-one that that this 
+combination X-one and this combination X-two the consumer is totally 
+indifferent between them [0.3] they will have exactly the same number [0.2] say 
+five and five [3.5] okay [1.9] and let's assume that they prefer X-three over 
+those two [0.8] and it may then have a number of [0.2] ten [1.9] and they like 
+X-four even more [1.5] and that could have a number which is say twenty [1.6] 
+okay [0.9] so [0.2] X-one and X-two are indifferent [1.0] they pref-, thi-, 
+this consumer prefers X-three over two and one [0.6] and prefers four over 
+three two and one [7.4] let's assume that we have let's think say another 
+function [0.3] that we rec-, we could we and we give another numerical 
+representation [0.4] to [0.6] er [0.3] to this consumer's preferences [1.1] and 
+let's say 
+we have a value of er a thousand [0.7] here [3.9] again the numbers are the 
+same hence the consumer's indifferent [4.9] let's assume the number given to X-
+three is ten-thousand [2.4] that indicates the consumer prefers X-three over 
+two and one [1.7] it does not say [0.2] that they prefer the consu-, [0.2] X-
+two more [0.6] than when [0.2] we had a value of ten [1.0] okay [0.8] all that 
+matters [0.3] is that that number [0.3] is bigger [0.4] than the numbers given 
+to X-one and X-two [0.4] it doesn't matter how much because we're not measuring 
+utility [0.5] all that matters is relative [0.7] er positioning [0.6] and so we 
+could have a value of say a million [1.2] given to X-four [0.6] and again that 
+doesn't tell us anything more [0.7] than the values here [1.0] it's exactly the 
+same [1.2] because all that matters is relative ordering [0.6] hence it's an 
+ordinal function [0.7] the higher the number [0.8] the greater the consumer's 
+preference [1.0] okay that's true [1.6] but it doesn't say [0.2] how much 
+higher it is [0.2] it just says it is higher [1.9] so whenever a number is 
+bigger than another number it means the consumer has greater 
+preference they will go for that combination of goods [0.3] rather than one to 
+which we've allocated [0.2] a lower number [3.5] how much the number differs [0.
+3] is irrelevant [0.9] it could differ by [0.2] you know [0.3] one decimal 
+point [0.4] or it could differ by [0.8] a million [1.3] the information is 
+exactly the same because [0.2] what we're well what we're not saying is that 
+this how the consumer [0.4] chooses [0.3] you know they they think in their 
+head what is my utility function [0.7] how much utility do i get from these 
+combinations [0.3] what we're saying is that we want to represent [2.1] er 
+these [0.3] these ideas that we have about their preferences [0.5] in a 
+numerical way [1.1] okay [0.8] we don't want to measure utility because we 
+assumed that we can't do that [1.8] but what we do want to do is to say [0.2] 
+we want to give a bigger number [0.4] to [0.2] a higher indifference curve 
+because of course what we want to do [0.2] is to produce a model that says [0.
+4] the consumer [0.2] aims for the highest indifference curve [1.1] okay they 
+aim for the one [0.2] which is [0.6] furthest up [1.1] okay [1.7] we're not 
+saying [0.3] that [0.7] we can 
+measure their utility we're saying is that all they will do is to strive for 
+the highest indifference curve [1.0] okay and [0.7] that is er that is all [0.
+9] these are termed ordinal functions and they are [1.4] very different [0.3] 
+to [0.4] the sorts of functions that you see we can treat them in exactly the 
+same way as any other [0.2] mathematical function [0.5] we can do everything to 
+them that we can do to another [0.2] mathematical function [0.5] the only 
+difference is the interpretation we give to these numbers [0.6] all that 
+matters [0.2] is their relative position [0.8] okay [0.3] how much they are 
+different [0.4] does not matter [0.2] simply because [0.5] er [0.5] we're not 
+measuring their utility [0.2] we're just measuring [0.2] order [0.9] okay [1.6] 
+do you do you understand [0.2] that distinction [0.2] between the two types of 
+functions and and what [0.5] those functions are representing [0.2] yeah [1.1] 
+simply they're saying [1.0] if we get more preference we have a bigger number 
+[0.3] doesn't matter how much [0.2] that's irrelevant [0.4] okay [0.4] and it 
+does take you know given you've been used to using other the other functions in 
+in other ways [0.2] it does take some sort of [0.2] getting your head round but 
+er [1.3] okay that's th-, basically what what we want to do [2.8] once we once 
+we've said we can do that we can give a number to the preferences [0.2] then we 
+just have to decide what is the mathematical form [1.7] okay what is the 
+mathematical form [1.4] and i'm just going to quickly give you some [0.5] er 
+examples [cough] [0.4] okay [0.5] er [3.1] some some extreme [0.3] examples [0.
+2] okay th-, the normal case that we'd tend to find and then just some extreme 
+examples so that you [0.5] er [0.8] you understand [0.3] [cough] [1.3] now 
+you've been used to seeing [1.0] er [0.4] indifference curves like this [2.4] 
+okay [8.1] 
+fine [0.9] they represent the sorts of things th-, the sort of assumptions that 
+we've built up the sort of assumptions we built up last week [1.1] and which is 
+[0.3] a convex marginal rate of substitution changes [0.3] as the combinations 
+of the good change [0.3] tha-, tha-, it's negative [0.6] okay so there's a 
+trade off between the goods [0.3] the consumer prefers a higher indifference 
+curve to a lower one and so on [0.7] okay [1.4] if they're the assumptions we 
+make [0.8] then we want to be able to represent [0.3] those types of 
+preferences between the goods in some [0.4] mathematical form [1.6] and the 
+normal form that is used there [3.0] okay [0.2] is [0.7] er [4.4] is a 
+quadratic form of some kind [1.6] okay [0.3] that simply says that [0.4] er and 
+these here are your marginal rates of substitution alpha and beta [1.1] okay [1.
+3] so these are the marginal utilities of the goods the ratio of those will be 
+the marginal rate of substitution [0.7] okay [0.2] so alpha is the marginal 
+utility associated with X-one [1.0] er [0.2] and beta is the marginal rate of 
+substitution [0.3] associated with X-two [0.5] and of course the 
+ratio of those which is the slope of the [0.2] indifference curve [0.5] will 
+give you the marginal rate of substitution [0.8] okay [2.3] and all we've said 
+is okay [0.3] this mathematical function [1.8] okay will dem-, will will 
+display mathematical properties [1.2] like [0.2] we have here [1.4] okay [1.0] 
+I-E [0.2] that represents that will allow us algebraically to represent that [0.
+8] okay [1.2] the alpha [0.4] marginal utility of of X-one [0.2] -beta marginal 
+utility of X-two [0.6] the ratio between alpha and beta marginal rate of 
+substitution which is a piece of information we may want [0.4] and directly we 
+can represent this algebraically [0.2] we can get that marginal rate of 
+substitution [0.8] okay [0.9] of course it may change [1.5] according to which 
+point on the indifference curve we are because we've said that's what happens 
+[0.8] so it will change according to the absolute amounts of X-one and X-two [1.
+2] okay [0.8] er [0.4] but [0.9] that [0.8] would represent [0.2] that [0.5] 
+and so that is the normal form that is used [1.7] okay [0.4] okay it's a bit [0.
+2] er more difficult [0.2] er mathematically [0.4] to deal with [1.0] because 
+it's not linear [0.4] 
+but [0.2] in fact if you take the logs of that it becomes linear anyway [0.2] 
+so so it's relatively easy to use [0.3] but that is the sort of thing that we 
+might use to represent the normal types of preferences [0.3] that we assume 
+consumers have [1.6] okay [0.6] so that's [0.5] one form [0.6] that we might 
+use [0.3] and then what we would do [0.3] okay [0.4] is [0.4] X-one and X-two 
+will be the quantities of the goods [1.5] and of course if there are ten goods 
+there will be ten [0.5] of these X-one X-two X-three up to X-ten [0.3] and 
+there'll be ten of these [0.2] marginal utilities [1.3] okay [0.4] and then 
+again there will be a marginal rate of substitution between [0.4] all of the 
+pairs of goods that the consumer has available to them [0.5] so X-one and X-two 
+there'll be a marginal rate of substitution between X [0.3] -one and X-three [0.
+4] and so on [1.3] okay [1.0] and that will simply be these ratios the ratios 
+between these [3.3] but all we're saying is that that mathematical form [2.4] 
+can represent that [0.6] we're not saying that the consumer goes in the shop [0.
+5] and gets out a calculator [0.2] with that sort of 
+mathematical function imprinted in it we're saying that [0.2] that is a 
+mathematical way of representing the preferences that we've said [0.2] the 
+consumer might have the model that we've we've actually built up [4.1] okay [0.
+2] [cough] [5.5] an alternative form [3.9] might be as follows [12.1] these are 
+linear [0.7] indifference curves straight lines [7.3] okay [4.7] they're 
+different to the previous ones because the other ones are convex [1.1] they're 
+curved [0.6] these ones are straight lines [0.4] how much [0.2] or to what 
+extent does the marginal rate of substitution change as you go up and down on 
+the indifference curve like this [2.8] go up go down [0.2] 
+sm0758: constant 
+sf0759: constant 
+nm0757: it's constant yeah [0.2] so the marginal rate of substitution [0.2] 
+doesn't change [1.0] it's constant [2.2] okay [0.6] it's still going to be [0.
+5] that ratio al-, A alpha over beta [1.6] okay because the alpha the 
+coefficient of X-four [0.2] represented marginal utility of X-one [0.3] and the 
+beta represented marginal utility of X-two [0.2] so the marginal rate of 
+substitution is still exactly the same and in every one of these it's exactly 
+the same [0.4] 
+mathematically [0.5] but in this case it doesn't change [0.6] it's it's going 
+to remain exactly constant [0.3] what sort of goods demonstrate would have that 
+sort of [0.7] of er [0.2] indifference curve [3.3] what we're saying is [0.3] 
+that [1.0] your margin utility [0.8] okay [0.2] doesn't change according to how 
+much you have [0.9] and [0.2] the rate at which you substitute between the two 
+goods remains exactly the same [0.6] so if you alwa-, you will always require 
+for example [0.3] two units of X-one to replace one unit of X-two [2.8] have 
+you got any idea of the sorts of goods we might [0.3] see that with [4.0] how 
+substitutable are these goods [4.3] do you think [1.7] very substitutable or [0.
+2] not very substitutable [2.5] very [0.3] yeah [0.5] these are perfect 
+substitutes [2.1] okay [0.5] that doesn't mean that the marginal rate of 
+substitution is one I-E [0.4] one unit for one unit one unit of X-one for one 
+unit of X-two [0.2] but it does mean [0.2] that the rate of substitution 
+doesn't change at all [1.4] it remains exactly the same [0.3] hence they are 
+perfect substitutes for one another [0.6] and that remains exactly the [0.3] 
+the same 
+however much you have [2.2] and a function [0.8] that would represent that [0.
+9] is simply alpha-X-one plus beta-X-two [2.3] okay [2.3] the marginal rate of 
+substitution is again alpha over beta [0.6] it's the ratio [0.3] okay [0.2] of 
+of the two [1.8] because alpha's the marginal utility of X-one beta's u-, 
+marginal utility of X-two [0.2] but in this case it remains it's [0.2] it's a 
+constant [1.7] okay [0.6] er however much X-one or X-two the consumer has these 
+are perfect substitutes for one another [2.2] okay [2.2] these of course are 
+easy to handle 'cause they're linear [0.7] it's a very s-, simple function [0.
+4] but again all we're saying is that if that was [0.8] if we had two goods [0.
+6] for which the consumer [0.4] you know [0.4] er regarded them as perfectly [0.
+3] er substitutable [0.5] then that that would represent that [1.9] okay [0.6] 
+alpha-X-one plus beta-X-two [2.3] and [0.7] so that is the perfect substitute 
+case which is one extreme [0.8] away from [0.4] the convex [0.2] er [0.2] 
+indifference curves that we [0.8] we saw before [2.8] the other extreme [1.0] i-
+, is as follows [19.2] right-angled indifference curves [3.8] have you any idea 
+what sort of grid this 
+might be [5.5] because you may have seen demand curves that look exactly like 
+this in the past [0.6] 
+sf0760: right and left shoe [0.5] 
+nm0757: sorry 
+sf0760: [cough] left shoe and right shoe [1.1] 
+nm0757: left shift and right shift 
+sf0760: left left left shoe and right shoe 
+nm0757: oh left shoe and right shoe [0.4] er [1.0] not necessarily no [3.8] mm 
+[0.2] maybe [1.0] maybe [0.2] what [0.3] what do you mean by that [1.3] 
+sf0760: [2.5] 
+nm0757: okay yeah mayb-, yeah okay [0.3] so [0.2] what are you saying about the 
+two goods [1.3] 
+sf0760: [0.9] 
+nm0757: mm 
+sf0760: you mean like one or the other [0.3] 
+nm0757: okay [0.4] in which case yeah [1.0] can you think of any other examples 
+[5.9] these these goods are perfect complements [0.5] yeah [1.4] that is [0.2] 
+that they are consumed [0.6] in [0.2] certain combinations so in fact you're 
+right left shoes right shoes [0.4] er exactly the same [0.5] er if someone 
+likes er [0.5] black coffee [0.8] then they don't have any milk if they like 
+very milky coffee then they they [0.2] they consume a certain amount of milk in 
+their coffee [0.4] but the two [0.5] cannot compensate for one another [0.9] 
+okay they can't compensate for one another [1.8] so [0.3] if you have so you're 
+right if you have a left shoe then you have then have a right shoe [1.0] that's 
+fine but if you then have one extra right shoe that doesn't 
+actually give you any more satisfaction because you need another left shoe 
+presumably to consume with it [0.6] or [0.2] if you like [0.2] a certain 
+combination of of milk and and coffee in a drink [1.1] if you add more milk [0.
+6] then you don't get any extra satisfaction [0.6] and that combination [1.1] 
+is that point there [1.9] 
+okay that combination says well in this case you require equal amounts of X-one 
+and X-two so it could be left and right shoes for example [1.8] okay [0.3] er 
+[0.6] you have to consume them in that combination if you have more X-one [0.8] 
+okay which is going out along here [0.9] you don't get any more satisfaction at 
+all [0.9] it remains exactly the same 'cause you don't go to another 
+indifference curve [0.6] and likewise if you have more X-two [0.3] you don't 
+get any more satisfaction [0.2] you remain on the same indifference curve [1.2] 
+okay [0.6] so [1.7] the only way you get more satisfaction [0.5] is [0.7] to [1.
+1] move up [0.9] here [1.1] on a line [5.6] with the same combinations of X-one 
+and X-two [0.2] I-E [0.7] you need more [0.5] of both goods in exactly the same 
+ratio [0.2] to get more satisfaction [2.1] if you get more 
+of one and no more of the other [0.4] you don't get any more satisfaction at 
+all because you m-, you need to consume the two goods together [2.2] okay [0.9] 
+now [1.9] this [1.1] is the other extreme of course perfect complements perfect 
+substitutes [1.0] it is however slightly [1.0] er unrealistic [0.9] i-, in in 
+some senses because [1.2] what we're saying is that if the consumer has this 
+amount of the two goods so [0.5] like milk and coffee [0.8] so in this case the 
+consumer would have white very milky coffee in the sense that they require [0.
+3] the same quantities of both [0.7] okay half and half [1.9] what we're then 
+saying is okay if this consumer was given [0.3] coffee [0.2] with more and more 
+milk [1.2] the amount of satisfaction they get [0.7] doesn't go up it doesn't 
+go down [1.6] okay [0.9] so they don't get any extra satisfaction [0.5] but 
+they don't get disutility either [1.7] now [0.2] that is probably unrealistic 
+[0.3] because what probably happens actually is that they require in this case 
+same amount of milk the same amount of coffee [0.4] but if they get more or 
+less of one [0.3] their actual utility 
+goes down [0.4] okay because the coffee gets more and more milk they don't like 
+it [0.2] hence their level of satisfaction goes down [1.3] okay [1.4] and we're 
+assuming having the green lines here that that doesn't happen [1.3] okay so 
+they're perfect complements but if they get out of synch with one another [1.0] 
+they er you don't get disutility [1.1] if you get disutility [0.7] then in fact 
+the indifference curve would simply be [2.3] the points [1.4] okay [3.5] up 
+here [0.5] because [0.3] the goods would have to be consumed in absolutely 
+those quantities [0.8] any other [0.2] spoils everything [1.7] okay [2.4] so in 
+certain cases extreme cases it could be that [0.2] you have to consume them in 
+[0.2] absolute quantities [0.7] in the same ratio [0.2] or [0.5] you got no 
+utility at all [1.5] okay [0.2] [cough] [0.2] and we're assuming here that 
+that's [0.9] not quite [0.3] the extreme [0.6] okay there is [0.9] there are 
+these combinations you have to consume them in [0.4] but [0.4] if you don't [0.
+9] then [0.4] er you don't get disutility but you don't get any more utility [1.
+5] okay [1.8] how we represent this [1.1] algebraically is with a very strange 
+[2.0] function which is minimum [0.7] alpha-X-one [0.4] 
+comma [0.3] beta-X-two [3.9] that is the [0.4] again alpha is the marginal 
+utility of X-one beta is the marginal utility of X-two [1.7] the ratio between 
+them will give you the marginal rate of substitution [0.8] er [0.2] but [1.0] 
+imagine utility is entirely determined by [0.9] the [0.4] good [1.4] okay which 
+[0.4] is in the lowest amount [1.7] okay [0.2] so there may be excess amounts 
+of one good [1.7] so you might have say [0.2] ten units of coffee [0.5] and 
+thirty units of milk [1.4] but clearly you'd only use [0.3] er [0.8] ten units 
+of milk because you'd need it to go in the coffee [1.0] okay you'd you could 
+use them in [0.2] in equal amounts [1.4] the excess amount of milk doesn't give 
+any diss-, dissatisfaction but it doesn't give any satisfaction and so [0.2] 
+the amount of utility the consumer gets is entirely con-, er constrained by the 
+amount of coffee [0.3] the thing that's in short supply [0.9] okay [0.3] and 
+that's the sort of function that would [0.3] would represent that [1.3] okay [1.
+9] so what we're saying [1.7] is that [0.6] we can represent all types of [0.2] 
+of preference [0.6] er [2.1] perfect substitutes [0.6] like that [4.4] er 
+perfect complements [0.2] like that [1.0] 
+and the normal case [0.3] with convex indifference curves like that [0.9] and 
+what we do is to represent these [0.3] er [0.5] types of preference [7.8] okay 
+[0.2] mathematically [1.7] and all we're saying is that [0.6] if we look at [0.
+8] the preferences that consumers have [0.7] the way in which they trade off [0.
+3] between the goods that are available to them [0.6] and we observe that [0.2] 
+for some goods [0.2] that have o-, er substitutes that is the consumer [0.5] er 
+[0.2] doesn't really care which they have [0.3] and will trade off between them 
+at a rate that doesn't change [2.2] or if we observe their perfect complements 
+the other extreme [0.2] these goods are always consumed in exactly the same 
+quantities [1.0] okay [0.2] in a particular combination because that's how the 
+two go together [0.2] to produce something else and on their own they don't 
+give any utillity [0.9] or [0.5] the middle case which is w-, w-, what we would 
+normally er observe [0.3] we think [0.4] that in fact [0.6] the goods [0.8] are 
+not perfect complements or per-, perfect substitutes there is substitutability 
+[0.6] between the two goods the amount 
+of substitutability [0.4] will depend on the slope [0.7] so [0.2] the flatter 
+[0.3] this indifference curve is [0.7] this board's getting worse [0.3] so if 
+it was like that [1.8] that would mean act-, actually there's not that much s-, 
+er er [0.2] sorry there's a lot of substitutability between those goods [0.8] 
+okay [0.2] 'cause it's it's getting towards flat it does change [0.4] but not 
+that much [1.9] so we'd be erring in this direction here [1.4] okay [4.2] and 
+maybe if we had indifference curves that were like that [0.9] we'd now erring 
+in this direction here towards perfect complements [1.3] so the [0.2] the slope 
+of the indifference curve of course [0.2] differs [0.6] but we do have these 
+two extremes perfect substitutes and perfect complements [1.2] okay [1.1] er [2.
+8] we can represent [0.2] these so if we observe these types of preference [0.
+7] we can represent them [0.7] in an algebraic way [0.2] using functions that 
+we've just looked at [1.1] okay [0.3] they're ordinal functions which means 
+that all that matters is the higher the number [0.2] the higher the 
+indifference curve [0.4] it means that [0.5] if we have a number [0.3] er which 
+is higher [0.4] for example 
+we'd be on this indifference curve rather than that one [0.4] perhaps [1.8] 
+we're not saying how much [0.2] they differ [1.7] we're not saying we can 
+measure utility we are not saying that if the number is higher that means the 
+consumer gets [0.2] twice the amount of utility [1.7] we're not doing that 
+because we [0.3] know we can't measure utility [0.3] but also we don't need to 
+[1.1] if all we're interested in [0.2] is how much of the goods the consumer 
+consumes [0.3] 'cause that's what we're interested in [0.2] the choice the 
+consumer makes [0.3] which we assume is meas-, is driven by utility [0.7] okay 
+they want to maximize then the the degree to which they meet their needs and 
+wants [0.4] we measure that as this idea of utility or preference whatever [0.
+9] we don't actually need to measure [0.2] preference or utility [1.3] in a c-, 
+in a cardinal sense [0.3] all we need to know [0.7] is that the consumer does 
+get the highest level of utility they possibly can [1.0] okay [0.5] and to do 
+that we represent these preferences [0.5] using these mathematical forms [1.3] 
+okay [2.1] the mathematical form we use 
+depends on the type of preferences we see if they're perfect substitutes [0.4] 
+then we use the type of function [0.3] that we've just looked at [0.5] okay [0.
+3] er [0.9] alpha-X-one plus alpha er plus beta-X-two [1.1] if [0.2] we observe 
+they're perfect complements we use minimum [0.3] alpha-X-one [0.8] beta-X-two 
+[1.7] more normally we would [0.4] er we would have preferences like in in the 
+middle case [1.1] they would differ in the amount of substitutability 
+complementarity [0.4] and that would be represented in [0.2] the alpha and beta 
+values [0.2] but we would use a function which was [0.3] er X-one [0.3] -to-the-
+alpha [0.3] X-two-to-the-beta [0.3] which is the normal [0.2] form we would use 
+those am-, those the values of alpha and beta [0.2] represent the marginal 
+utilities [0.4] and therefore the ratio represents the marginal rate of 
+substitution and that will differ according to all the goods that the consumer 
+has [0.4] and will differ between every consumer according to their preferences 
+[1.2] okay [1.1] but all we're saying is that we can represent now [0.6] these 
+ideas that we've built up [0.3] the ideas on preference [0.3] 
+and the the the [0.2] properties that preferences have [0.5] in a in a 
+mathematical sense [0.8] which means we can do it for any number of goods we 
+want we're not constrained to three [0.2] which we are here [0.7] and we can 
+now put it together [0.2] and we can actually produce something that will allow 
+us to measure [0.2] the marginal rate of substitution [0.6] which is a useful 
+piece of information [1.0] to [0.2] predict [0.2] the choices that a consumer 
+will make [0.4] in particular circumstances [0.8] which is vaguely interesting 
+[1.2] most interesting [0.3] we can [0.2] put it together to u-, to build up a 
+model that allows us to predict [0.3] what happens if things change [0.3] if 
+this is what the consumer chooses now [1.3] what happens if [0.6] something a 
+factor that influences their choices [0.2] 
+changes [0.7] prices go up [0.2] income goes down whatever [0.4] that is very 
+useful [0.4] 'cause it allows us to derive elasticities [0.2] for example [1.0] 
+and that is useful information [0.4] somebody who wants to market a product 
+wants to know [0.3] if i increase my price ten per cent [0.3] how much does 
+demand change will my revenue go up or will my revenue go down [0.4] what 
+happens if my competitor [0.3] changes their price [0.2] reduces their price by 
+five per cent [0.3] how much is the demand for my product going to change [2.1] 
+so being able to represent all of this these notions [0.3] in an algebraic 
+sense allows us to [0.2] to produce that sort of model [0.9] okay and that's 
+what we want to do [0.5] okay let's take a a break there and then when we come 
+back what we're going to do is to put the two sides together [0.5] okay 
+nm0757: 
+this [0.4] choice process can be [0.2] broken down into two parts [1.2] the 
+things the the combinations of the goods that the consumer is able to buy [1.2] 
+and if you remember we said that that [0.3] the first of all the availability 
+part [12.7] is determined by [1.5] their [0.9] budget line [1.5] which is equal 
+to P-one-X-one [0.3] plus [0.2] P-two [0.6] -X-two [0.9] er is smaller or equal 
+to M [5.1] so they cannot consume any combination of these goods [1.3] which 
+they can't afford [2.1] the slope of that line [0.5] is is equal to [0.8] p-one 
+over p-two [1.2] the ratio of the prices [0.5] the price of X-one over the 
+price of X-two [2.7] this [0.2] is the same for every consumer [0.3] the 
+consumer is a minor part of the total market they [0.3] double their 
+consumption demand doesn't change price doesn't change [0.7] that is the same 
+for everyone [1.6] the position of this line is determined by their income [1.
+7] okay the higher their income [0.5] the further out it is [0.6] the lower 
+their income [0.7] the further in it is [0.4] if there's zero income then the 
+clearly they [0.4] will be at that point there [0.2] presuming there are no 
+free goods [0.2] there are no 
+goods that don't cost anything [1.4] okay [2.9] we also had these non-
+negativities [0.9] here [0.2] and here it's not possible to consume negative 
+amounts of [0.3] goods [1.6] and this one here we said X-two must be greater or 
+equal to nought [0.8] and here X-one must be greater or equal to normal so you 
+can't consume anything less than zero which is [1.3] at the origin [3.1] that 
+is [0.6] the availability set what they can consume [0.3] given the prices of 
+the goods [0.8] given their income [1.3] prices change [0.6] this changes [0.5] 
+and the slope of the budget line changes [0.2] their income changes [0.5] the 
+slope remains the same [0.6] and we just move in in and out [1.5] that's what 
+we looked at [0.3] er a while ago now [0.2] their availability set [2.2] then 
+the other part [2.6] their preferences [4.0] what do they want [0.7] to consume 
+[1.4] okay [1.7] and [0.4] just like here [0.2] we looked at what was available 
+to them [0.2] regardless of what they wanted to do [0.7] what we've just done 
+is to look at what they want to do regardless of what they can do [1.0] okay 
+regardless of what they [0.3] they have available to them [0.9] and we've said 
+that [0.8] that is 
+driven [0.3] consumption behaviour is [0.2] induced motivated by your needs and 
+wants consumers' needs and wants [0.5] and [0.3] we have the it's driven by the 
+idea of preferences that is a c-, the consumer prefers a good [0.2] that meets 
+more of their needs and wants [0.2] than one that pref-, that that meets less 
+of their needs and wants so it's totally motivated behaviour [1.8] and we can 
+represent [0.2] that [0.2] [5.0] through [0.7] indifference curves [5.1] and 
+the direction of the consumer's preferences given non-satiation is out in this 
+direction [0.2] so they want to get out as far as possible out here [0.2] as 
+they can [4.2] these [0.2] these preferences exhibit things like transitivity 
+[0.4] we have a convex [0.4] er indifference curve which means that [0.5] we 
+have a rate of trade off between the good and the marginal rate of substitution 
+[0.2] which changes according to the amount of the goods that they consume so 
+these are in this case [0.3] some substitutability between the goods but 
+they're not [0.2] they're not perfect [0.2] er complements [0.8] okay but 
+they're not perfect substitutes [1.5] and that 
+we can represent that [0.7] these these preferences [0.3] u-, using a utility 
+function an ordinal function [0.5] which is U [0.8] -X-one-X-two [3.4] and we 
+can [0.6] the mathematical form of that function will depend on [0.8] what the 
+preferences look like [0.5] whether they're perfect substitutes perfect 
+complements [0.6] or like this [0.5] in the normal type [0.8] and we'll use the 
+mathematical form [0.2] which [0.4] satisfies that [0.2] which which has that 
+that has those properties [3.4] given that the consumer [0.6] aims to [0.4] 
+consume as much of these goods as possible they're non-satiating [0.5] we said 
+the consumer [0.3] and the idea of rationality we came up with in the first 
+week [0.5] is that the consumer aims to maximize their satisfaction [0.9] okay 
+[0.3] aims to maximize the degree to which their needs and wants are satisfied 
+[2.4] and so [0.4] what we're saying is on this diagram [0.2] they've aimed for 
+the highest indifference curve [1.4] they want the one that's as high as 
+possible because that's the one that gives them [0.2] the highest level of 
+utility [0.8] or [0.8] we want to maximize the value of their utility 
+function [1.2] 'cause the higher that is [0.9] the higher the indifference 
+curve they're on [1.2] okay [2.4] putting it together [1.7] then [3.4] we have 
+[1.1] what they want to do they want to aim to get that [0.2] the the con-, th-,
+they want to consume as much X-one and X-two as possible [0.6] and in the 
+realm of all the goods as much of those goods as possible however many are 
+available to them [0.8] they want to maximize their utility [0.6] they want to 
+consume that combination of goods and services [0.3] that gives them [0.2] the 
+greatest satisfaction meets as much of their needs and wants as possible [2.1] 
+but they're constrained in doing so [0.8] because these goods are not free [0.
+7] they have to pay for them [1.3] and their ability to pay for them is 
+constrained by their income [2.2] okay [0.4] the extent to which they're 
+constrained depends on what their income is [0.5] and how much the goods are [0.
+2] but they are constrained [0.5] in doing this [2.7] and if we put [1.0] those 
+two together [12.4] okay [0.3] that's a consumer's budget line [0.2] f-, for 
+for an individual consumer [0.8] okay [0.6] and it will be the 
+same slope for all consumers but the position will depend on [0.3] how much 
+income they have so all the consumers have the same level of income [0.2] it'll 
+be in the same position [0.4] those that have more income [0.2] it'll be 
+further out those that have low income [0.2] will be further in [1.4] okay [0.
+4] that's their availability set [1.6] and we have [0.3] these indifference 
+curves [0.3] which represent their [0.3] preferences [6.3] okay [5.6] let's 
+just call them U-one to U-three [2.7] and what they will do is to choose [0.6] 
+that combination of goods [1.4] that gives them the highest level of utility [0.
+6] gives the maximum preferences [0.5] given the resources that are available 
+to them [0.5] and that will occur [0.5] at the point [1.7] where [1.2] the 
+budget line just touches the highest [0.2] indifference curve [2.5] and that is 
+the choice that the consumer [0.6] will make [2.6] so that's the quantity of X-
+one [1.0] and that's the quantity of X-two that the consumer will [0.9] be able 
+[0.2] to consume [1.7] okay [0.7] so what we're saying is that [2.1] given the 
+the constraints on the choice choices that the consumer can make which is 
+t-, t-, which are totally outside of their control [0.5] they are [0.2] 
+economic constraints [0.4] okay [0.4] on [0.5] er [0.3] basically how much of 
+these goods they can consume [0.4] determined by the market prices and by their 
+income [1.4] and at any point in time [0.9] those things are fixed [0.7] of 
+course someone can have influenced their income in the longer term [0.3] work 
+longer hours for example [0.3] er can save at one point in time [0.2] so they 
+have more resources in the future and so on [0.3] but at any point in time [0.
+3] when the consumer [0.2] chooses so when they're in the supermarket whatever 
+[0.7] then those are are fixed things the prices are fixed [0.2] and [0.2] 
+their income is fixed [1.2] and what we're saying is that how they [1.0] decide 
+[0.5] between all the combinations of goods they can buy [0.4] within those 
+constraints [1.2] is by [0.5] thinking about [0.3] how much all the different 
+combinations will meet their needs and wants and they will be driven to choose 
+[0.3] that combination [0.3] that provides [0.2] the greatest utility [0.6] 
+that combination that meets their needs and wants [0.2] most 
+effectively [1.4] we've represented [0.2] that [0.7] through a series of 
+indifference curves and they're i i o-, [0.7] we emphasize again [0.3] we're 
+not saying that the consumer goes into the supermarket with indifference curves 
+or utility functions whatever [1.0] what we're saying is we can represent [0.5] 
+how they make their choices in this way [0.8] okay in this s-, sort of [0.8] 
+abstract model [1.5] and putting the two sides together [0.2] it will be the 
+point at which [0.7] the budget line [0.3] just touches their highest 
+indifference curve [1.2] okay [0.3] and that will be the choice they make [0.6] 
+that amount of X-one [0.3] that amount of X-two [1.1] okay [2.4] if [0.5] their 
+income changes [0.3] the choice will change [0.9] if the price of any of the 
+goods changes [0.5] their choice will change [0.7] if their preferences change 
+[1.1] then the choice may change [0.5] okay so if [0.3] there's an advertising 
+campaign [0.2] about one of the goods say X-one [0.3] that shifts their 
+preferences so they like X-one more then their choice may change [0.7] okay [0.
+5] and we're going to look at those sorts of changes [0.3] er [0.6] next week 
+[1.1] er [0.3] but [0.6] those 
+are the sorts of [0.4] er [0.8] changes [0.3] that might go on [0.4] and that 
+would be reflected [0.4] in a shift in [0.4] the position of that point the 
+choice that the consumer actually makes [0.9] okay [3.2] now [0.8] we can 
+represent that also [0.8] er algebraically [1.3] by just putting together [3.1] 
+these elements here [1.0] okay [0.4] because we've been able [0.4] we've said 
+to represent [0.5] mathematically [0.2] these the indifference curves through 
+this utility function [1.0] and the availability set through [0.4] this budget 
+constraint [0.7] and through these non-negativities [0.3] so you can't consume 
+negative amounts [1.8] and [1.0] so we can represent this [1.1] mathematically 
+it is simply that we want to [3.1] maximize [0.9] that utility function [1.9] 
+okay we want to be on the highest indifference curve possible [0.5] that's how 
+you want to think about it [0.3] we want to maximize [0.4] the utility the 
+consumer gets and what we've done is to represent that [0.2] through this 
+utility function [1.2] whatever its mathematical form [0.5] and all that 
+mathematical form does is to represent [0.4] the way in which the consumer [0.
+3] thinks about the goods the preferences the consumer has [0.3] perfect 
+complements [0.2] perfect substitutes [0.4] anything in between [0.3] and that 
+will depend on the individual [0.4] one individual may regard [0.2] products as 
+[0.3] perfect substitutes and another individual may not [1.1] okay [0.4] but 
+all we're doing is representing how they see [0.3] those goods [0.4] in some 
+mathematical sense [1.9] and we'll maximize that [0.9] okay [0.4] and that 
+would go to infinity if they weren't constrained but they are [5.0] they're 
+subject to [0.3] two [1.0] basic constraints [0.3] the first [1.7] is the 
+budget line [6.4] so they can maximize this [1.3] freely [0.4] until they hit 
+this [1.5] they can't spend more than they earn [1.6] okay [2.4] so 
+they hit this budget line [1.4] and secondly [1.3] the non-negativities [5.6] 
+you can't consume [0.3] less than zero of a good however much you hate it [0.3] 
+[cough] [1.5] now that is obvious in real life but mathematically we have to [0.
+3] allow for all eventualities because [0.2] what we've now done [0.5] is to 
+say okay [0.4] we can represent all these things that we can see go on and the 
+assumptions we've made [0.3] and what we can do [0.3] is we can [0.4] er [0.8] 
+now represent that this in this way because it's now mathematical [0.2] we of 
+course have to stop it doing stupid things [0.6] okay [0.3] when we run this [0.
+5] and so we have to include those [2.4] and that is the basic model [0.8] that 
+says [0.3] what the consumer will do [0.6] when faced with all of the goods and 
+services that are available to them [1.2] is they will select between those 
+goods and services on the basis of their own personal preferences [1.6] and we 
+can represent those preferences [1.1] in [0.4] the mathematical sense [0.9] 
+okay [0.2] and that mathematical representation [0.2] will encapsulate will 
+include [0.3] all of the properties [0.3] that we [0.3] have observed [0.6] 
+okay in 
+consumer preferences things like transitivity [0.2] things like non-satiation 
+[0.5] things like the fact that the marginal rate of substitution diminishes [0.
+5] er as or changes as the amount of the goods change because the marginal 
+utility's changed [0.3] all of those things that we can see [1.4] okay [1.1] er 
+and which [0.3] we know we think [0.6] influence the way in which pe-, er 
+people trade off the goods that they based [0.6] we can represent that in 
+within this [0.6] and [0.3] the mathematical form we use [0.4] okay will depend 
+on what we observed [0.5] okay perfect substitutes we've one form [0.6] perfect 
+complements another form [0.3] any other [0.3] er type [0.2] we use another 
+form [1.3] relative values of alpha and beta will again reflect those trade 
+offs how much they like the two goods [0.3] and how that [0.2] rate of trade 
+off changes [0.2] as you get more and less of the goods [0.4] okay so all of 
+that can be represented [1.2] and that's all that is doing [0.5] is 
+representing the way in which the consumer makes those choices [1.1] again 
+we're not saying that's how they make them we're 
+saying that we can represent it in that way [2.1] and they can [0.5] do that 
+they c-, [0.2] they make their choices but they're constrained [0.8] in so 
+doing [0.9] because well first of all the non-negativities which are fairly 
+obvious [0.9] but they're constrained by [0.4] just economic facts of life [0.
+7] the fact that they [0.4] face these prices which are non-zero so they have 
+to pay for the goods [0.3] and that's out of their control as an individual 
+consumer [1.5] okay [0.7] and they also face their income which at any point in 
+time when they make a choice is fixed [0.8] okay [0.3] it will depend on [0.4] 
+their [1.3] money income from employment from other sources it will depend on 
+their savings decisions in the past [0.5] er access to credit and and all that 
+[0.4] but th-, at the point they make their choice will be fixed [0.9] okay [0.
+6] and so [1.0] what we've done is to break down [0.6] er [1.1] the choices 
+into these two parts [0.5] and [0.4] pu-, pulled together [0.4] er [0.3] the 
+parts that we consider most important [0.8] okay [1.4] now of course [0.4] this 
+model [1.5] er [0.3] includes and there are certain elements of it include an 
+awful lot of 
+factors [1.5] like utility preferences will include an awful lot of things that 
+influence preferences like advertising access to information [0.3] your own 
+attitudes and beliefs about er the product about the world whatever [0.6] and 
+those will change over time [1.0] and they will be different between 
+individuals every individual will be different [0.8] and hence [0.2] this will 
+change [0.9] but at the point where the consumer [0.2] stands in the 
+supermarket or or whatever [0.7] that is fixed [0.3] okay at the point at which 
+they make the choice [0.7] the next time they make the choice [0.3] that may be 
+different [0.4] that's okay [0.5] but at the point that they make the choice [0.
+5] that will be fixed [0.5] just like this is fixed [1.6] and we might be 
+interested in knowing [0.2] how this differs [0.4] and the impact of changes in 
+this [1.0] okay and that's fine so we might [0.2] be interested in looking at 
+[0.2] well if a consumer makes a choice now and then they make it next week 
+after there's been an advertising campaign whatever [0.3] we might be 
+interested in knowing how that has 
+changed [1.1] okay that may be one of the variables that we want to consider [0.
+8] but at the point they make the choice standing there [0.2] that is fixed [0.
+9] okay [1.2] likewise these may change from week to week month to month or 
+whatever [0.2] but at the point [0.4] where they're facing a choice at any 
+point in time [0.2] those are fixed [2.1] and so what we've done is represent 
+the choices that the consumer makes [0.4] in this this algebraic sense [1.5] 
+what that allows us to do [0.9] is to [0.4] mathematically [0.9] er [1.5] look 
+at the choices people make [0.4] we can look at [0.2] the prices people face [0.
+2] the incomes they face [0.3] we can represent their preferences through some 
+utility function [0.2] and we look at choice [1.6] okay [0.3] that combination 
+of the two goods in this case [0.5] that the consumer's likely to choose [0.4] 
+and we can then use that model [0.8] to look at [0.2] what happens if things 
+change if the price of X-one [0.2] doubles what's going to happen [0.2] are 
+they going to stop consuming X-one altogether [0.2] or do they like X-one so 
+much [0.3] that they only reduce their consumption by a little 
+bit [0.4] and so on [0.8] okay so that's what we can [0.3] we can do with this 
+[1.5] we can also represent [0.6] er [0.6] the optimal point [0.6] okay we can 
+consider [1.0] what happens at the point where they actually [1.8] made their 
+choices [12.5] let me er [0.7] quickly [0.3] put this down again [9.4] okay so 
+that's the point at which they make their [0.2] that's the optimal point [1.4] 
+okay [1.4] and we can consider [1.7] what are what [0.4] what are the 
+conditions [0.5] er which must be satisfied [0.7] for [0.6] for the consumer to 
+be at an optimum [0.2] for them to actually be ma-, [0.4] achieving [0.3] the 
+maximum level of satisfaction they can [2.5] and there are two [0.6] basic 
+conditions [2.7] first of all [0.5] they must be using all of their income [2.
+6] okay [1.1] because [0.6] we're assuming that we've included within [0.3] our 
+framework all of the things that give utility and remember this is a world 
+where [0.4] people get utility from consumption [1.7] we can include if people 
+like lots of money in the bank we can include that as well because we can 
+include savings [0.4] as a source of utility that's that's okay [0.7] but what 
+we have done is we've included [0.3] 
+within their utility function [0.2] within the idea of our indifference curves 
+everything that gives them satisfaction [0.2] and hence [0.6] at the end of the 
+day [0.3] they must allocate all of their incomings to to those things that 
+give them satisfaction [0.5] including maybe savings [1.3] so first of all that 
+must be the case their expenditure [0.6] which is this [1.3] that's their total 
+expenditure [6.1] must equal [0.9] their money income [4.5] okay [2.4] that's 
+the first thing that must be [0.6] er must occur [9.5] so that means they're 
+going to be on their budget line [1.9] okay [1.3] providing we've included 
+everything in the in here that gives them utility they must be on their budget 
+line because they don't get any utility from not allocating their income [1.4] 
+that's the first er [0.5] er [0.4] thing we would we would see [3.1] so their 
+expenditure's not going to be less than their income it's going to be exactly 
+equal to it of course it can't be more [1.5] the second [0.5] is that they are 
+at this point here [1.2] okay they're at that point there [7.0] okay that means 
+that the slope of the budget line [1.2] is 
+equal to the slope of the indifference curve [1.0] okay 'cause at that point 
+there [0.2] they're going to be exactly the same [0.9] the slope of their [0.2] 
+budget line [0.9] and the slope of their indifference curve [0.2] are going to 
+be exactly the same [2.3] and that's the second condition [0.9] okay [1.7] what 
+is the slope of the budget line [0.9] equal to [1.9] 
+sm0761: inverse price ratio [0.2] 
+nm0757: sorry [0.5] 
+sm0761: inverse price ratio [0.2] 
+nm0757: okay [0.2] so it's the ratio of the prices yeah [8.0] so the slope of 
+that at any point is equal to p-one over p-two [0.3] and it's exactly constant 
+of course it's a straight line the prices do not depend on how much the [0.2] 
+the er consumer chooses [0.3] so that one's linear that's a straight line [1.8] 
+what's the slope of the indifference curve [0.3] what's the marginal rate of 
+substitution [7.9] 
+sf0762: it's the ratio of marginal utility 
+nm0757: okay [0.4] it's the ratio of the marginal utility so the the slope of 
+this [1.6] is equal to marg utility of X-one [1.0] over marg utility of X-two 
+[2.2] and at the optimum [4.3] they must be equal [1.8] okay [0.3] the ratio of 
+prices must be equal to the ratio of the marginal utility [2.6] 
+okay [8.7] now [0.5] you you know that that is equal to the marginal rate of 
+substitution [0.5] okay [0.6] but in fact that is what is termed [0.2] the 
+marginal rate for substitution [1.0] in consumption what it is [0.3] is the 
+rate at which the consumer [0.3] wants to substitute [0.2] between the goods [1.
+2] given their preferences how they feel about the goods [1.1] that is the rate 
+at which they [0.2] are willing to trade off between them [1.5] okay or willing 
+to trade off X-one and X-two or whatever goods we're dealing with [1.4] okay [3.
+3] so given their preferences that is the rate at which they are willing to 
+trade them off [0.5] and at this and it this is at that point there [0.3] it 
+depends on how much of the two goods because [0.3] we this is convex to the 
+origin [0.5] so this differs this changes [0.3] when diminishes as we move from 
+the top to the bottom [2.1] this [0.8] is also the marginal rate of 
+substitution [1.3] this is the marginal rate of substitution in exchange [0.2] 
+it is the rate at which they are able [0.2] to trade off the two goods [1.6] 
+and that is [0.2] totally determined by their relative prices [1.4] so the rate 
+at 
+which you are able [0.2] to trade off [0.3] one good for another [0.2] depends 
+on their relative price if one good [0.3] is [0.2] er [0.3] costs you know a 
+pound [0.9] and another good costs fifty pence clearly then [0.3] you can have 
+you know two of the goods that cost fifty pence or one of the goods that cost a 
+pound [0.3] and that is totally determined by the prices out of your control [0.
+9] okay [0.2] but that is your your marginal rate of substitution [0.2] all 
+consumers' marginal rate of substitution in exchange [0.2] is determined by the 
+market place [0.2] determined by the collective decisions of the suppliers [0.
+2] and of all consumers [0.8] but for you as an individual it's fixed because 
+you are irrelevant within the market [0.5] as a consumer [1.2] and so at the 
+optimal point [0.5] we're saying [0.3] that [0.9] the rate at which the 
+consumer is able to substitute between the goods [0.4] determined by market 
+prices [0.4] is exactly equal to the rate at which they want to consu-, to to 
+substitute between them [0.5] which is determined by their ratio of marginal 
+utilities [1.1] okay [0.2] so at the 
+optimum [0.6] it is the case that the marginal rate of substitution in exchange 
+[0.4] is exactly equal to the marginal rate of substitution in consumption [0.
+4] the rate at which the consumers [0.2] are able to substitute between the 
+goods through market transactions [0.3] is exactly equal to the rate at which 
+they [0.3] wish [0.2] to substitute between them [0.3] given their preferences 
+[1.6] okay [4.7] the implication of that [0.2] is that [1.3] if we [2.7] we 
+order this we change this around [1.1] okay [1.2] what we find is that [14.5] 
+just rejigging this around we find that in fact that is equal to this 
+expression here [1.4] that at the optimum [1.0] the ratio of the marginal 
+utilities [0.2] to the unit prices of the goods is exactly equal for every good 
+that is [0.4] the amount of utility you get [0.9] for every unit of money spent 
+[0.7] is exactly the same for all of the goods [1.4] okay [0.4] so [2.1] the 
+marginal utility the amount of utility you get from consuming [0.2] one extra 
+unit of the good [2.3] the ratio of that to the price that is how much it costs 
+you [0.4] to consume [0.2] one extra unit of the good [0.7] at the optimum [0.
+6] is 
+exactly equal [0.5] for all of the goods you consume so the amount of utility 
+[0.4] for one unit of money [0.6] is the same [0.2] for X-one and for X-two [1.
+1] can anyone remember what that is called [1.9] you've done this in part one 
+[5.6] anyone remember [3.5] this is termed the equimarginal principle [0.8] 
+okay [0.7] if you remember you did it in part one with er looking at cardinal 
+theory wi-, of consumer choice [1.3] you said that what the d-, consumer does 
+is they allocate [0.3] their [0.2] the goods and we assumed then we could 
+measure it [0.3] but what they did was they do it in such a way that [0.2] the 
+amount of income sorry the amount of utility they get for each of the [0.3] for 
+for the er [0.2] unit amount of money they spend is the same for all the goods 
+[0.5] so it's not possible to allocate your money [0.3] between the goods [0.5] 
+and get any extra utility [1.1] so therefore you must be at the optimum [0.3] 
+okay you cannot reallocate your income [0.3] in any way [0.7] given the price 
+of the goods [0.2] and given the your preferences for those goods [0.2] and 
+achieve any [0.6] extra utility [0.4] this is called the 
+equimarginal principle [9.0] which you'll have met before [0.7] so we end up in 
+the s-, t-, in the same position [0.9] okay as with other ideas [0.6] but we're 
+not measuring utility now [0.4] we've represented it in a far more 
+sophisticated model that we can actually applo-, employ [0.4] to [0.4] estimate 
+things like elasticities to predict demand change in demand whatever [0.4] but 
+[0.5] fundamentally it's based on the principle that consumers [0.2] given 
+their choices are driven by preferences that are individual to them [0.4] and 
+given they're constrained by their economic circumstances [1.1] they will 
+allocate their income in such a way [0.3] given their preferences [0.3] that [0.
+2] they cannot achieve any extra utility they can't meet any more of their 
+needs and wants [0.3] by jigging around [0.3] their [0.9] er [0.4] their their 
+allocation of their income between the goods [3.7] this [0.5] is also equal [0.
+3] to [0.2] U-M [1.5] the marginal utility of their money income [0.7] if the 
+consumer was given [0.2] a [0.7] fractional increase in their money income [1.
+5] okay [1.2] at the optimum [1.3] it wouldn't matter which good [0.5] 
+they bought more of [0.8] their extra marginal utility would be exactly the 
+same because it has been equated [0.9] across [0.2] the groups [0.2] ratio of 
+the marginal utilities to their money their money to their prices [0.2] it's 
+exactly the same so if they were given [0.3] a fractional increase in income it 
+wouldn't matter which good they allocated it to [0.4] simply because the ratio 
+of marginal utility to prices is the same for every one of them [0.8] and so 
+that [0.3] is at the margin [0.5] the marginal utility of their money income [0.
+2] of money [1.6] okay [3.5] so [0.6] what we've done [0.5] is to build up [0.
+2] a model [0.9] which we can represent [1.0] okay [0.3] diagrammatically for 
+up to three goods [0.2] but we've built it up [0.2] taking account of [0.4] all 
+of the characteristics of consumer preferences [0.4] and of their economic 
+constraints okay that that [0.3] you know really matter [0.9] yes sure we have 
+[0.5] put a lot of things together like [0.5] the indifference curve represents 
+all of those things [0.2] well includes all those things that influence the 
+consumer's preferences every 
+one of those [0.3] is included within that [0.4] and any one of those [0.3] if 
+it changes will change [0.2] that indifference curve [0.8] okay [0.2] that's 
+fine [1.4] we've equally included the economic constraints [0.2] okay and [0.3] 
+what we've now done is put them together [0.5] to produce a model which we hope 
+will allow us to [0.4] okay on the f-, on the one hand predict the choice this 
+consumer will make in this circumstance which [0.5] is vaguely interesting [0.
+3] what is more interesting is if we then use this to say [0.3] okay [0.3] what 
+happens if things change can we use this [0.2] given that we can now [0.2] 
+represent it [0.4] er mathematically [0.8] so we can actually represent it like 
+this [0.9] so we could [0.4] given we can represent this mathematically we 
+could apply this [0.4] to [0.8] data from the real world price data [0.2] 
+income data et cetera we so we can actually [0.3] put [0.3] real data into this 
+when we've put it in an empirical model [0.4] a-, and predict what will happen 
+and what will happen if things change [0.4] so now we can do that [1.6] and to 
+prove that this model [1.5] er [0.6] really does 
+sort of encapsulate the way in which at least economists [0.2] see the choices 
+consumer makes [0.3] the consumer makes [0.2] again [0.2] we're not saying this 
+is how the consumer does make it [0.2] we're sort of [0.2] abstracting from the 
+real world and trying to encapsulate [0.2] how they make choices in a model 
+that we can [0.2] we can use [1.2] that at that point they will spend all their 
+income 'cause of another [0.4] black holes that give utility [0.3] and [0.2] at 
+that point [3.0] they will maximize [0.2] their utility [0.3] they will [0.6] 
+not be able [0.2] to reallocate their income in such a way [0.3] that they can 
+[0.7] meet more of their needs and wants and so [0.7] the rate at which they 
+are able [0.6] to substitute between the goods [0.3] within the marketplace 
+through [0.2] through their market transactions [0.4] is just equal to [0.3] 
+the rate at which they [0.3] wish [0.3] t-, to substitute between those goods 
+[0.9] and [0.4] that gives us [0.7] the principle the-, the marginal principle 
+which [0.3] says that [0.4] the ratio of the marginal utility to price is the 
+same for all of the goods [0.5] so if the consumer's given a fractional 
+increase in income [0.3] it wouldn't matter [0.3] which of the goods they 
+allocated it to 'cause it would be exactly the same [1.4] okay [2.8] so that is 
+the basic [0.4] the basic model [0.7] that we've built up and it encapsulates 
+[0.6] all of the things that we [0.2] we have said [0.7] we think we observe in 
+the real world [0.4] so [0.2] the ideas of diminishing marginal rate of 
+substitution because of changes in [0.3] er marginal utilities [0.6] okay [0.4] 
+er the ideas of non-satiation transitivity all of those are encapsulated here 
+[0.8] 'cause we've built up the indifference curves [0.5] and therefore are 
+encapsulated here [0.3] 'cause we can now represent them in a mathematical 
+sense [1.2] and the availability set [0.3] which we we've said [0.3] applies to 
+the consumer [0.6] the economic constraints they face [1.0] so we've put all 
+that together and we've produced this [0.6] rather simple model [1.1] the 
+complication with it [0.3] comes when you want to actually employ it in 
+practice and we're not going to look at that in great detail [0.2] because 
+there [0.2] you're getting into complex statistical 
+procedures econometric procedures [0.4] relating to the mathematical form that 
+this takes okay and [0.2] how we can [0.3] put it together into something we 
+can estimate [1.3] what we're now going to do [0.4] next week [0.3] is to look 
+at how we can use this [1.2] okay [0.2] we've said this is how we can model the 
+choice they make [1.1] okay [0.3] I-E [0.3] remember what we're saying is [0.2] 
+what we can observe in the real world is the prices [0.6] the income [0.3] and 
+what people choose [0.2] okay they're the things we can see [0.3] we can see 
+what people buy [1.4] because we can actually collect that information we could 
+do it on an individual basis 'cause we could ask people [0.3] we could er [0.3] 
+ask them to give us their till receipts from the supermarket [0.2] we could 
+follow them around the shop we can gather that information in many ways [0.3] 
+we can do it on a collective basis [0.5] of all consumers by looking at how 
+much [0.4] er how many bananas Sainsbury's and Tesco et cetera sell [0.4] or [0.
+3] at a national account level we can gather that information [0.8] so we can 
+look at what people choose [0.3] I-E the X-one 
+and X-two [1.6] we can look at prices because again we can gather that 
+information [0.9] what the prices are in the shops [0.5] and we can gather 
+information on income [1.1] so we can get all the variables income prices and 
+choice we can get all of those [0.3] and what we are go-, what we do [0.2] is 
+to use this model [0.3] to make sense of those choices [1.1] and when we've 
+used this model to make sense of those choices I-E we use this model [0.3] to 
+understand why they've made the choices they have [1.2] for example to discover 
+what their preferences are [1.0] we can then use that [0.2] to say okay [0.8] 
+how much do we what do we think the consumption of bananas is going to be next 
+year [1.0] if we expect the prices to go up ten per cent and we expect people's 
+incomes to go up say three four per cent [0.8] what's the demand for bananas 
+likely to be [0.2] is it going to be higher is it going to be lower [0.2] and 
+by how much [0.4] and that's useful [0.7] so we're going to look at [0.2] what 
+happens if things change [0.7] okay [0.2] and what measures can we produce of 
+[0.4] those changes [0.2] so things like elasticities [0.4] er for example [0.
+9] okay let's leave it there

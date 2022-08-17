@@ -1,0 +1,522 @@
+nf0704: yep [7.3] okay [0.2] today we're going to talk about searching over the 
+last few weeks i've talked to you about sorting [0.4] and er [0.5] having 
+sorted your list [0.2] or having [0.4] not bothered to sort it you might want 
+to look for a particular item [0.8] so i'm going to talk through the subject 
+today [0.4] what is searching and i'll give you some examples of searching 
+algorithms [1.8] next Wednesday i'll give you some examples of [0.2] even 
+cleverer techniques to find what you want quickly [1.2] so we've done sorting 
+we'll get on to searching [1.3] namex is sort of keeping up with this in the 
+formal methods stream [0.3] in the fact that he's talking about some things and 
+then he's going to be talking about the formal specifications [0.2] of sorting 
+[0.6] so hopefully it's coming together at least in our minds and hopefully in 
+your minds [0.9] so [0.3] searching [4.4] computer's still [0.2] not working [6.
+4] okay i guess you know what searching is really [0.5] we're looking at 
+locating a particular item in a list [1.3] we're looking [2.3] if you've 
+got a list of items you've got a pack of playing cards and you're looking for a 
+particular one [1.2] then [0.5] you can perhaps look at every one [0.2] until 
+you find [0.2] the one you want [0.2] oh look there's the ace of spades [2.3] 
+if the list is already sorted [0.9] so you've already got your cards in suit 
+order and rank order [0.8] er [0.6] you can look through the entire list until 
+you find either the one you want [0.5] or something that's bigger [0.5] oh 
+we've found the two of spades and [0.2] it's the ace mustn't be here [1.3] so 
+that's always the problem with searching [0.2] you hope what you want is there 
+[0.3] but it might not be [2.9] and you can get into really clever ideas 
+because if you know it's sorted [0.9] you can just flick through saying oh 
+there's the hearts there's the clubs oh here's the spades let's look for the 
+one i want [0.9] so [0.2] using the knowledge of the order [0.2] to find what 
+you want quicker [1.6] so that's where we're going [7.1] when we did sorting we 
+[0.2] looked at T-string list sort [0.3] and we sorted on [1.1] strings mainly 
+didn't we [0.2] so that [0.5] we were looking to get the strings in 
+order [1.1] today i'm going to look at [0.2] numbers in particular integers so 
+we're going to be searching for integers [0.6] er i wondered whether i should 
+have [0.2] gone with the same idea as whether we should have been looking for 
+strings and i got caught out [0.6] er [1.4] i had a random generator which was 
+generating [1.9] numbers between [0.3] one [0.2] and twenty [0.9] er [0.2] 
+eighteen [0.5] twenty [1.2] five [0.7] twelve [0.8] and [0.2] when i used 
+string list sort on it [0.8] it [0.2] gave me [0.2] an ordering [0.2] like this 
+one eleven [0.3] twelve [1.2] eighteen [1.6] er [0.5] two [0.3] twenty [0.8] 
+because when you're handling strings [0.4] it's looking at the strings and [0.
+6] i-, [0.2] it sees one as being followed by one followed by something else [0.
+4] so don't get caught out by that [0.8] er if you're going to use a sort make 
+sure you're using the right sort of sort [0.7] er [1.0] i've put my searching 
+algorithm to work working on my sort puzzles [0.5] so [0.2] i i hacked together 
+a new sort routine that sorts integers into the proper [1.7] range er [0.3] and 
+[0.2] you can use that in the examples that we have [0.6] today [1.0] 
+sm0705: sorry [2.9] 
+nf0704: there's some notes there [0.5] okay [1.9] two of the techniques that we 
+look at [0.4] you can generalize to string you can change [0.2] whatever string 
+comparison you're doing to it and see compare text and you can do the same [3.
+5] now yes [0.2] little message in there about case sensitivity [0.5] er you 
+got to remember if you're sorting strings [0.8] how have you handled case 
+sensitivity have you put capital-A [0.6] way up front and small-A [0.6] after 
+capital-Z [0.5] have you got small-A [0.2] and capital-A next to each other [0.
+7] if you have [0.2] then obviously your sorting technique has to work in the 
+same way [0.7] as your searching technique [0.2] 'cause if they're different 
+your algorithms will be up the chute [1.9] so searching for numbers [0.2] 
+exhaustive and binary will generalize to string [0.5] interpolation which is [0.
+2] tricky [0.2] but fast [0.5] works with numbers and it doesn't work well with 
+strings [0.3] so [0.6] if you're looking to search for strings [0.4] generalize 
+exhaustive or binary [0.2] don't try with interpolation [0.4] unless you're 
+very clever [0.2] in which case you can probably will do it [1.9] i tried i 
+couldn't do it [5.6] okay in the same way as 
+we've done over the last few weeks what i've [0.2] done [0.4] in the hope we'd 
+na-, have a nice computer to show them working [0.5] is [0.3] i've taken [0.2] 
+T-string list [0.4] and i've inherited a new class in this example it's called 
+[0.4] T-S-string list [1.0] i'm using a different class to the one we were 
+using for sorting [0.8] and [0.6] i'm doing this [0.3] in a vaguely object 
+oriented manner [0.9] okay [0.4] er [0.3] the function name's a bit long and 
+it's falling off the end of the slide [0.6] er [0.4] but [0.2] we we can go 
+through what it is [0.4] it's a function [0.3] exhaustive so it's a method of 
+this class [0.5] it's taking a single parameter target [0.2] which is what 
+we're searching for [0.9] and it's returning an integer [1.5] okay [1.3] little 
+bit of comment telling you what it does returns the position of the first 
+occurrence of target in the list [0.8] if it's not present [0.2] a negative 
+value is returned [0.8] my error handling [1.1] okay [0.4] local variable here 
+[0.5] integer [0.6] begin end [0.5] code on the next slide [11.6] okay degree 
+of [0.2] inconsistency with my [0.3] coding remember with functions in Pascal 
+[0.5] you either say the function name [1.2] and the return value [0.4] 
+or you say result [0.7] on the return value [0.7] good programmers wouldn't mix 
+it [0.2] in [0.2] one's [0.6] bit of [0.2] program so we probably [0.4] should 
+change that one to say result [0.5] although [0.2] the effect is exactly the 
+same [3.1] so result takes the value [0.2] minus-count [0.8] so if we get to 
+the end of a this function and we haven't changed the result of a function it's 
+going to return a negative value [1.1] i've said minus-count remember count is 
+the number of items in your string list [1.9] okay [1.2] a for loop we're going 
+to go through the loop going to go zero to count-minus-one [1.4] list start at 
+zero [0.3] they go to count-minus one so they've got count elements [1.0] okay 
+[0.7] and we say [0.5] if [0.9] we're working with integers so i'm converting 
+this string to an integer [0.5] is equal to a target [0.3] what we're looking 
+for [0.5] if this item's [0.2] equal to the target [0.5] put the result [0.6] 
+equal to I and exit [0.6] someone said what's exit mean [0.8] in Pascal [0.3] 
+exit [0.3] takes you to the end of the function the end of the procedure [0.7] 
+so [0.4] it saves you er [0.2] having [0.2] a more complicated if [1.9] good 
+programming practice [0.6] 
+possibly [0.2] not the best of programming practice [0.5] er [0.2] exiting out 
+[0.5] the trouble is that [0.6] otherwise you're into a complicated while loop 
+here [0.5] which is more difficult to understand so yeah it's a good 
+programming practice 'cause you can read that and say [0.3] oh when i've found 
+the value i've finished i'm off home [0.8] or i've finished the function anyway 
+[0.8] okay so [0.3] this is exhaustive search [0.3] i look at every item [0.9] 
+if [1.0] i find the item that i want [0.6] i said the result equal to that's 
+position [0.5] and i exit and that's the end of it [0.7] if the item i want 
+isn't in the list [0.2] i get right down to the end of the list [0.6] i've 
+never done this bit of code here [0.8] and i'm out of the bottom here [0.3] 
+result still equal to count-minus-one [0.7] and the function will return having 
+executed count times [0.8] found nothing and say oh [0.3] minus-count [1.4] 
+okay you happy with that [0.9] 
+sm0706: list [0.3] is [0.6] if there's nothing in your list if you have an 
+empty [0.8] list [0.3] you will [0.2] still going to return zero [1.2] if your 
+count's going to be zero [0.4] 
+nf0704: woo-hoo [0.3] yes [0.5] okay the point is that [0.3] if [0.2] count is 
+zero and my list [0.2] is [0.6] empty count will be zero [0.5] and so i'm going 
+to return zero [0.3] when you do testing you're supposed to 
+test with no elements aren't you [0.3] yes [0.2] well spotted [0.6] okay so er 
+[1.0] we probably [0.2] want to [0.9] add one [0.6] add one [0.6] subtract 
+probably subtract yes [7.1] i i had in mind when i was writing these bits of 
+code [0.3] that i'd return different negative values [0.3] depending 
+whereabouts it didn't find it and which method 'cause the other methods have 
+different ways of doing it [0.7] er [0.9] the same [0.2] mistake is in all the 
+programs [0.3] i i tell you guys to test [0.5] er i i i test by generating 
+little lists and seeing if it looks right er [0.9] okay [0.3] er [11.1] okay [0.
+6] the rest of it's mostly true anyway [0.8] okay [0.2] exhaustive search 
+because it examines each item in turn [0.6] items that are at the front of the 
+list [0.8] er are found more quickly than those at the rear [0.4] so [0.4] if 
+you had the whole of the telephone directory [0.3] sorted on your telephone 
+numbers and you were looking for a particular number [1.2] er [0.2] if it was 
+near the beginning of the list you'd find it in [0.2] seconds milliseconds [0.
+4] if it was near the back you'd find it in hours or days [1.0] 
+so [0.9] it's not altogether [0.2] the best [0.4] and of course if it's missing 
+[0.3] you've got to look at everything [0.2] before you find it [0.6] so that's 
+your worst case [0.4] and this is [0.2] in our big-O notation it's O- [0.6] N 
+[0.2] so however many items you've got [1.2] you have to look at each of them 
+[1.2] but for small lists it's adequate [0.2] especially if you write it 
+correctly [0.7] okay [0.3] easy to write and debug [2.6] and test [10.9] okay 
+same function [0.2] but this time [0.2] we're assuming [0.2] that we've already 
+sorted the list [0.7] er [0.2] T-string list sort wouldn't be enough 'cause 
+what i explained it sorts strings not integers [0.6] but we can [0.5] write a 
+little sort routine or we can find one elsewhere [0.7] er [0.3] that would do 
+the sort correctly so assume our list of integers is sorted into [0.6] numeric 
+order [0.4] okay [2.0] much the same as before [0.7] the [0.3] comment [0.3] 
+cut and pasted from before has the word [0.2] sorted inserted [0.4] here [2.0] 
+in a sorted list [1.2] returns a negative value [0.4] which we'll need to 
+change because it's not quite right [0.9] okay [0.8] two local variables [0.2] 
+I and J they're not important what they're called [0.6] er [1.0] code on next 
+slide [14.1] okay [0.6] 
+exhaustive searching on sorted list [0.2] we start off putting the result equal 
+to a negative number [0.5] more negative than anything that we will have seen 
+before [1.2] and [0.2] we've [0.4] got [1.3] here [0.3] er [1.7] we're using a 
+local variable which [0.7] i'm putting to the difference between [0.4] the item 
+i'm looking at and target [0.4] so i'm looking to see [0.5] whether [0.2] i've 
+passed the target or not because [0.9] if we're [0.2] earlier than target [0.7] 
+this value will be positive [0.7] if we're passed the target it'll be negative 
+[0.5] and if we're actually on the target if this value here [0.3] equals our 
+target [0.4] we've found the item [0.3] is that clear [0.9] yeah [0.4] yeah [0.
+9] okay [0.3] so we're looking to find the target [0.6] er [0.6] it just saves 
+having a complicated bit of code [0.5] where i've got [0.6] J here [0.2] and J 
+here [0.3] i'd have to say is this greater than that [0.9] or equal to that [0.
+3] so [0.7] just trying to save time [0.8] er an optimizing compiler would do 
+it for us anyway [1.0] so [0.7] if J is equal to zero [0.4] then this is equal 
+to this [0.2] and we've found it [1.2] so [0.8] if we come in here [0.3] we've 
+found it [2.1] we can put result equal to I [0.7] 
+because that's the position in the list it is [1.6] and exit [0.4] out the end 
+of the function without doing anything else [1.5] okay [0.8] if [0.2] J is not 
+equal to zero [1.3] but J is still positive [2.3] J is still positive J is 
+positive [0.4] if J is positive then this value [0.4] is [0.2] bigger than this 
+value [0.2] so this is bigger [0.2] than that means we've passed the point in 
+the list where our item should be [1.2] so if J's positive [0.2] because [0.2] 
+string [0.6] I is bigger than target [0.6] we've passed the point [0.2] and we 
+can also exit [1.0] so we go round our loop [0.4] round and round and round [0.
+6] comparing the current item [0.2] against target [0.7] if [0.2] target [2.9] 
+is less than what we're looking at we'll go round again [2.9] target is less 
+than [2.1] is that the right way round [2.8] are you certain it's the right way 
+round do we want to look at an example [4.4] okay we've got a list here [0.6] 
+suppose in this list here that we're looking at [0.2] we've got thirteen as the 
+target [5.3] what we do is we've got a target of thirteen [0.6] we compare it 
+to one [1.0] we say [0.5] one [0.3] minus thirteen [0.8] minus-twelve [0.9] 
+that difference is 
+negative [0.3] so we're going to [0.5] not be saying J is nought we're not 
+going to be saying J is positive [0.5] we're going to go round again so we're 
+going to look at the next item [0.5] so we're going to say one [0.2] minus 
+eleven [0.3] which is minus-ten [0.2] on a good day [0.8] and [0.5] we'll say 
+[0.2] hey that's still negative it's not equal to it it's not greater than [0.
+2] so we'll go round again [1.1] come to this item [0.4] one [0.2] minus twelve 
+[6.1] [sneeze] [1.9] are you are you watching what i'm doing or are trying to 
+er confuse me here [3.3] we start by saying [0.2] what's in strings I [0.2] 
+minus thirteen [1.7] then we say what's in strings I [0.3] minus thirteen [1.7] 
+yeah [1.3] and that's minus-two [5.6] and when we get to this point so Is 
+nought one two three [1.1] eighteen [0.2] minus thirteen is [0.2] positive [2.
+2] okay [0.5] and at that point [0.3] we're saying [1.8] J's not equal to zero 
+[1.5] J is greater than zero so we passed it so we'll go to exit [1.6] yeah [1.
+9] so we work out [0.2] this quantity each time [0.7] and [0.5] if it's equal 
+to it we've found it [0.5] if it's gone positive we've gone past it so it's not 
+there [2.3] now are you happy with that [5.5] mostly [9.3] okay [0.4] 
+exhaustive search [0.7] still [1.0] big-O- [0.2] N [0.9] worst sort of case is 
+we've got to go round looking at every item [1.3] could be O-N divided by two 
+but that still is O-N [1.5] it is faster [1.5] usually [0.5] when the item's 
+not there [0.6] because exhaustive searching without it being sorted you're 
+going to go past [0.5] everything and then say oh it [0.2] isn't here [0.7] if 
+it's sorted [0.4] normally [1.1] it'd be somewhere between [0.3] the beginning 
+and the end [0.2] on average in the middle [0.6] you'd only look at half the 
+list and say oh it's not there [0.2] i'm going home [2.0] but [0.2] there are 
+two things which will make it slower and you got to be aware of [0.8] one [0.2] 
+there is [0.2] a little bit more code [0.2] we've got a few more statements to 
+look at [0.4] each time we're doing this comparison this and that [0.7] is it 
+equal [0.2] is it greater than [0.9] and you've got the overhead of sorting [0.
+2] how long does your sort algorithm take [0.8] so [0.3] you've got both those 
+things to contend with [1.1] it's faster normally [0.5] but make sure when 
+you're saying it's faster [0.5] that you've remembered sorting takes some time 
+[9.2] okay [1.0] that's exhaustive search which effectively looks at everything 
+[1.1] binary search [0.4] works on 
+sorted lists your list has to be sorted for it to work [0.8] and what it does 
+[0.3] is [0.2] it starts [0.2] at the middle of the list [2.7] back to drawing 
+up the list on the board [1.3] it starts at the middle [0.3] can say that one's 
+the middle [1.2] and [0.2] it says is our target [0.6] if it was thirteen [1.2] 
+before or after this [0.9] thirteen [0.3] is bigger than twelve so we know [0.
+3] we only need to look in this part of the list [0.7] if our target was three 
+[0.3] we'd know [0.4] we only needed to look before it [0.4] oh [0.2] and if 
+our target was twelve it's a hey we've found it we can go home now [2.1] so [0.
+2] if it's equal we've found it [0.2] smaller [2.0] up [1.7] bigger [0.2] look 
+down [2.5] and if there aren't any items left in the bit of list that we're 
+looking at [0.4] it's not there [0.3] so we're finished [1.8] so it's doing the 
+chop we've seen sort routines that do this we [0.3] did with the [0.5] er [0.2] 
+quick sort we were effectively chopping the list in half and sorting that [13.
+4] okay so here's a bit of code that's going to do much the same [0.5] er [1.1] 
+this is going to be a method on this object here [0.6] called binary [0.6] bit 
+of comment which is exactly the same as the comment that we had before [1.2] a 
+few local variables here that we're going to 
+use [0.4] min mid max and J [0.7] er [2.9] min's going to tell us where's the 
+top of the bit of list we're looking at max is going to tell us the bottom [0.
+2] and mid's where we're going to compute the middle point [0.5] 'cause each 
+time we'll go for the chunks of list [0.5] and J is just the local variable [0.
+7] same as we had before [1.6] could have used more imaginative names [0.4] one 
+of the things we say about programs use [0.4] meaningful names [0.4] er [0.4] 
+the trouble with trying to fit everything onto a slide is that if your names 
+get very meaningful when you get if statements they fall off the end [8.8] 
+er [4.5] okay [0.2] it's [0.2] definitely a bit more complicated than the code 
+for the others it it takes more space [0.5] and i've shunted some things onto 
+two lines so that they fit [0.4] so [0.2] it's more complicated code we've got 
+here [3.1] but let's talk it through okay we're starting here [0.6] min equal 
+to zero max equal to count-minus-one [0.2] the top and bottom of our list [1.6] 
+and we got a while loop we're going to go through while min is less than equal 
+to max [0.2] we're changing those values in here [0.8] and [0.2] if they're 
+equal then our sublist has got nothing in [0.2] and we said [0.2] sublist 
+nothing in [0.3] it's empty [3.5] okay J is this difference between [1.0] the 
+item we're looking at and target [0.8] so once that becomes positive [0.5] 
+we're passed it [0.4] when it's negative we're earlier [0.4] and when that's 
+zero we've found it [1.5] and that's what the code says [0.8] if [0.3] J equals 
+zero [0.3] then we've found it [0.4] and 
+we can return [0.6] mid [0.2] which is our index for that middle point [3.6] 
+did we miss a line of code there [0.2] yeah we missed that line of code there 
+[0.9] this one calculates mid [0.2] and we just add max and min and divide by 
+two [0.6] we could have [0.8] copied the example from string list and done a 
+shift right two [0.6] er [0.9] but i hesitate to try that sort of thing in my 
+code [2.3] okay so we've found it [2.0] if [0.2] J is greater than zero [0.2] 
+we're later in the list than the item we're looking for [0.3] so we need to 
+search earlier [1.7] so [0.5] if we're [1.3] down here in our list [1.3] and 
+we're looking for thirteen we know we need to look earlier [4.1] okay [0.2] and 
+we look earlier by changing our value [0.2] of [0.4] max [0.5] we make it equal 
+to [0.6] not the middle point 'cause we know that's not the item [0.2] the one 
+before [4.6] if it isn't earlier [0.2] and it isn't this one [0.2] it must be 
+later [0.8] if it's there [1.0] and we handle that in the final else clause 
+here which puts min [0.8] equal to mid-plus-one [0.3] again we don't need to 
+include mid 'cause we know it's not that [0.6] so [0.4] search [0.3] earlier [0.
+3] search later [1.2] er [0.5] if it's not there [0.2] we 
+make it equal to count-er - [0.6] minus-one [2.9] so we'll return a negative 
+number [6.6] okay [0.2] are you happy with that as an algorithm [0.9] yeah [0.
+3] 
+sm0707: could we [0.3] write it a lot easier if we use recursion instead [1.5] 
+nf0704: couldn't we use it write it a lot easier if we used recursion instead 
+sm0707: then you've got [0.5] until you get down to the [0.8] 
+nf0704: yeah i i wondered about [0.2] writing a recursive version of this [0.5] 
+er [4.5] i am sure that you could write this as a recursive routine [0.7] er [0.
+4] 
+sm0707: [0.6] [0.4] well no this it would make sense to use them but [0.4] you 
+can use recursion to take a lot out and make it more simple [0.8] 
+nf0704: i'll tell you what [0.5] we'll have [0.8] three minutes till half past 
+[0.5] and if you're feeling adventurous [laughter] sketch out what we think is 
+a recursive one [0.3] i believe that you could make it recursive [0.4] er [0.2] 
+my my book [0.2] didn't make it recursive [0.4] we'll tr-, try and sketch one 
+out [0.2] as i say three minutes [0.4] er and we'll compare and contrast the 
+two [0.4] 
+okay 
+ss: 
+nf0704: anyway i'm hoping we're going to have a recursive algorithm soon 
+ss: 
+nf0704: okay have we have we got a a version that's recursive [0.5] 
+sm0708: er sort of 
+nf0704: sort of [0.6] do you want to write it up or do you want to dictate it 
+to me 
+sm0708: neither 
+sm0709: [0.3] 
+nf0704: [laughter] neither [0.3] okay 
+sm0710: it's not very 
+sm0711: we decided it's it because Delphi isn't [0.3] functional language it 
+wasn't actually very easy to do [0.6] [laughter] if it was list if it [0.2] was 
+a list based [0.5] like [0.3] namex [0.3] it would be a lot easier to do than 
+Delphi [1.2] 
+nf0704: okay the the the statement we've got 
+here [0.2] is [0.2] it's Delphi's fault for [laughter] not being a functional 
+language [0.5] and and if it was a functional language it'd be a lot easier to 
+write [0.4] er [0.2] i've got a version that i'll i'll try on you [0.4] er [1.
+5] what would the execution time be like if we compared MIRANDA with Delphi [0.
+7] answers on the back of a postcard to [1.4] whoever you want to send it to [0.
+8] er [0.8] i think that the [0.8] basic algorithm [0.7] but what would bother 
+me was that the sort of function level [0.2] of this binary [0.9] like the 
+quick sort i'd need quite a few [0.4] parameters into it [1.2] and i think what 
+i'd need is to be calling something well [0.4] like our min and max as 
+parameters in there [1.1] and our target [1.3] and make those all integers and 
+things like that [1.6] but basically the code would be [0.2] if this thing i've 
+called J [0.7] is greater than zero [1.5] so [0.7] i'd need to look earlier in 
+the list [0.4] i'd call binary [1.6] again [0.4] with min [1.1] er [0.2] min- 
+[0.3] minus- [0.2] one [0.3] i need to calculate min and J up here [0.6] 
+calculate them [1.2] past target [0.7] sorry my writing's falling to bits here 
+er [0.2] else [1.7] if it was [0.7] bigger [1.3] then i'd call binary [2.2] 
+with [0.3] mid- [1.3] plus-one [0.5] max [1.1] and [0.3] target [2.4] else [1.
+6] i've found it so result [2.3] will be equal to mid [2.0] i don't think 
+that's the whole code but i think the body is that what the sort of thing you 
+were aiming at 
+sm0712: yeah [0.2] 
+sm0713: yeah think we were trying 
+nf0704: i think you st-, you still [0.2] need the decorative bits 
+sm0713: we were trying to pass [0.2] we were trying to pass the list as a 
+parameter which didn't really work [0.8] 
+nf0704: ah yeah [0.2] now you see [0.2] that's where we had problems with the 
+quick sort algorithm and er and we made a a scratch list as well didn't we [0.
+6] er [0.2] the conventional algorithms that just use arrays [0.9] they just 
+sort of index into bis-, [0.2] different bits of the array and i think that 
+helps [0.7] i think you'd do it easier with link lists as well actually [1.1] 
+er [0.6] so i think [0.2] i think you're right i think you could write a double 
+Basic algorithm [0.9] i think the algorithm itself that i've given you is 
+flawed from what namex was saying here [0.5] er [0.8] if we only have one item 
+[1.4] and it's the item [1.4] fall [0.2] for the same problem that you were 
+telling me about earlier [0.5] if we have only one item [0.2] and it's the item 
+[1.5] then [0.8] min's zero max is zero so this while falls out [0.4] and we 
+pop down here [0.9] and we say result equals minus-count [0.8] now this 
+algorithm i i hi-, hijacked from Delphi three algorithms and only changed into 
+objects so i think he's wrong as well 
+sm0714: yeah it does [1.2] 
+nf0704: so let's choo-, 
+sm0714: i bet it does work 
+sm0715: nought is equal to nought [1.2] 'cause it would still run the middle 
+section [0.8] 
+nf0704: so it gives a right answer [0.3] 
+sm0715: yeah 
+nf0704: oh so Mr Delphi algorithms is right [0.2] oh i'm relieved [1.1] okay [0.
+2] er [0.2] but the bit of error checking we would put in to make everything 
+easier is we'd check if our list was empty and if it was empty we wouldn't 
+bother trying to search [0.2] or sort [1.4] okay [0.3] let's push on [1.6] 
+that's about half the slides we've done [4.8] okay [0.7] er [0.5] the next few 
+slides are just comparing the approaches [0.4] i decided that i wasn't er [0.2] 
+doing very well at drawing examples on the board and i'd do some [0.5] at home 
+[0.2] in advance [1.2] okay [0.5] binary search [0.7] at each s-, step [0.3] 
+whether re-, recursive or not [0.9] we're cutting the list in half [2.3] and 
+because we're cutting the [0.2] list in half at each step [0.4] we're [1.0] big-
+O log-N [0.8] 
+if you had [0.5] a million items [0.6] sorry i i spelled out a million because 
+when people say million i never quite see [0.2] how many zeros there are [0.7] 
+one followed by six [0.2] zeros [0.3] the most steps will be twenty [1.1] with 
+exhaustive search [0.2] it would have been a million steps [1.2] yeah [0.2] so 
+[0.7] a lot [0.2] faster [0.2] the most you're going to do is twenty 'cause 
+you're [0.6] cutting it in half cutting it in a half [0.4] and very quickly [0.
+2] you're down to having either found it [0.5] oh [0.2] or it's not there [3.7] 
+okay [5.7] as i said i i i i felt [0.2] last [0.2] time when i was talking 
+about sorting [0.4] and i started playing this game let's write a few lists on 
+the board [0.4] that i was always getting to a point where [1.1] the example 
+became more confusing so i thought i'll [0.3] knock one up and i'm try it with 
+this [0.6] er [0.8] as i implied earlier [0.3] i've got a random number 
+generator that just generates numbers in this instance [0.4] er [1.8] they've 
+got to be between one and nine don't they [0.6] think they're between one and 
+ten and we just didn't get ten [0.8] okay [0.2] so this [0.3] is just a random 
+list i've 
+generated for this example [0.7] this is the original list [0.6] we can't use 
+binary sort on that original list [0.2] because it's not sorted [0.4] binary 
+search sorry [0.2] binary search needs it to be sorted [0.8] if we were to use 
+exhaustive search [1.3] we would look at each item in turn [1.0] suppose we 
+were looking for the value five [0.7] we'd look first of [0.8] item zero which 
+is two [0.3] then we'd see [0.4] four [0.2] then we'd see nine then we'd see 
+five and say hey we've got it [2.9] okay [0.6] of course there's a few more 
+fives in there but er [0.8] this stops as soon as it's found one [0.2] so it 
+hasn't found these down here [1.7] okay so you're happy with that [1.1] if we 
+were to use exhaustive search on this [0.7] but [0.2] to take the sorted list 
+so we'd run our sorting algorithm [2.6] we'd look at this one we'd look at 
+element [1.1] zero [1.4] and say oh there's a one [0.3] then we'd look at 
+element one and there's a two [0.4] another two another two [0.5] and then we'd 
+[0.2] four's got a four in it element five's got a five [0.3] oh we've found it 
+[0.9] in this example [1.1] er [0.2] the exhaustive search on the non-sorted 
+list [0.2] found it 
+faster [1.1] because of the repeated instances [2.8] binary search would cut 
+the list into half [0.9] and it would see a four [0.2] there [0.9] and it would 
+then cut the remaining list [0.4] in half [0.2] which would be at this point 
+here seven so it cuts it [0.6] here [1.1] and then here [0.3] and it says [0.3] 
+oh i've found s-, five at position seven [0.2] so it finds [0.4] a different 
+instance [0.2] but since i'd asked for item five [0.8] it doesn't matter [2.9] 
+okay are you happy with that as an example [0.9] that's [0.5] just how it works 
+[0.6] if we took the same thing [0.2] and we're looking for six [4.3] if we did 
+the exhaustive [0.4] non-sorted [3.5] we'd look at all the items saying is this 
+six is it six where's that six gone [0.6] and we wouldn't find it [0.3] so we'd 
+look at everything [0.6] and not find it [1.6] this sorted list we've got here 
+[0.4] exhaustive search [0.6] again we'd start at item zero [0.3] look at one 
+[0.3] two [0.7] three [1.8] and would eventually find it here at position [0.5] 
+oh sorry i'm looking for six aren't i look at [0.5] five and it's not that one 
+you'd look at six and it's not that one you'd look at seven and it's not that 
+one [1.0] and eventually [0.2] here [2.7] when it got [0.2] to [0.4] index 
+eight there [0.7] it'd say ooh this is too big it can't be here [0.7] so 
+looking for six it'd look all the way down to nearly the bottom of the list and 
+then say oh it's not here anyway [2.1] the binary search would again split it 
+[0.2] here [0.2] at the middle say [0.6] that's item four is that it [0.9] no 
+[2.2] split it here [0.9] is that it [0.3] no [2.9] split it [1.2] probably 
+here [2.3] think the middle li-, the it's rounding down 'cause it's a div 
+operation [0.9] that's too big [0.6] the sub [0.3] list [0.2] between here and 
+here [0.2] it's got no elements in it [0.2] it'll fall out in that [0.5] min 
+max less than or equal to [0.6] empty result equals minus-count [0.4] minus one 
+[1.4] so [0.2] it's just different approaches [0.4] the binary is looking at 
+fewer items 'cause it finds the middle one [1.4] and then it says shall i look 
+at that half or this half [0.6] finds the middle one shall i look at this half 
+or that half [0.5] and so there's many less operations for it to do [6.4] okay 
+[0.4] the next one we're doing is [0.8] definitely [0.4] tricky [0.6] i don't 
+think we're going to [0.2] cover [0.2] all the code 
+today what i'll do [0.6] i'll tell you about the method [0.4] and vaguely how 
+it works [0.6] then i'll go on to talk about hunting which is another approach 
+[0.4] and then next week when we talk about hashing [0.2] i'll talk about 
+interpolation as well so if you can remember next Wednesday to bring these 
+notes with you as well [0.7] then [0.4] i won't need to copy more of them for 
+you [0.2] so i'll talk about the approach but i won't go into detail of the 
+algorithm just yet [7.5] okay [0.3] the approach of interpolation is similar to 
+binary [0.5] we might be able to write it recursively maybe i'll give you a 
+week to try that [0.6] okay [1.2] it's using known values to guess where an 
+unknown value lies [0.5] so [0.2] i've got a list of numbers between one and a 
+million [0.7] if they're actually evenly distributed [0.5] and i'm looking for 
+five-hundred-thousand [0.5] i'd guess it was in the middle [1.3] if i was 
+looking for two-hundred-and-fifty-thousand i'd guess it was quarter of the way 
+down [0.8] if it was evenly distributed [0.4] and that is the approach [0.6] 
+that we [0.8] use [0.4] what we know 
+about the top and the bottom value [0.5] to guess what [1.0] where the one we 
+want is [1.8] okay [0.4] er [0.2] if we then look in the middle and find that 
+it's actually seven-hundred-and-fifty-thousand in there [1.0] we'll change our 
+process [1.1] so [1.1] in searching it uses the indexes of known values [0.4] 
+to guess what the index of the one we want might be [1.5] it works well if your 
+list is evenly distributed [0.5] if you have all numbers from one to a million 
+then your guess is going to be [0.5] brilliantly right in that sort of list [1.
+2] if your list [0.2] isn't evenly distributed but it sort of is [1.2] er [0.3] 
+it'll work [0.5] quite well [0.9] if your list is [0.5] skewed and you've got a 
+lot of big numbers and hardly any small numbers it's telephone numbers sort of 
+[0.9] territory [0.5] er [0.2] it isn't so good [1.2] and it only works with 
+numbers [1.1] well i guess again if we're clever we could probably predict 
+strings we could probably if we had a list of surnames [0.5] we could probably 
+say if they're evenly distributed or beginning with A and B and C [0.6] we 
+could use this technique [0.2] but the 
+algorithm i'm going to show you [0.4] relies [0.2] on there being [0.3] integer 
+values in there [1.3] okay [0.8] i'll show you the outline of the code but i 
+know we're not going to [2.1] finish it [2.8] that's just the outside of the 
+function [0.5] er few variables [0.5] bits of comment [0.8] the next slide [3.
+7] gives a flavour but as i say we'll cover this next week so we won't go into 
+the details [5.6] 
+but it's a much like the other codes to start with in the fact that we're 
+looking [0.5] to see [2.1] if [0.3] we're on target [1.7] if we're on target [0.
+4] then we're done [1.6] and if it's absolutely not there we're going to do a 
+minus-count minus one thing there [1.3] so that's if it's there [2.8] but 
+before we can reach this point where this is true [0.9] we've got [0.7] three 
+subcalculations we'll need to do we will be going round the loop lots of times 
+[0.6] one we're going to calculate where the dividing point is [0.6] so [0.2] 
+how many items are there in the list [0.7] what are we actually looking for are 
+we looking for a value that we believe is halfway through [0.2] or quarter of 
+the way [0.3] through [0.6] so we're 
+going to work out [0.2] where we think [0.2] it'll be in the list [0.6] and 
+there's a calculation for doing that [0.9] then we're going to check that it's 
+not out of bounds 'cause there's no point in looking [0.5] if we've already [0.
+3] fallen off the end of our list [2.1] and when we've done that [0.2] we'll 
+create a new middle value we'll look and say [0.8] oh [0.3] is that it [0.4] if 
+it isn't it [0.2] we'll go round again [0.9] oh it sounds like recursion to me 
+[1.2] but we'll cover that in detail [0.6] next week [11.2] in theory [0.8] 
+it's [0.2] the same order of magnitude as binary [0.2] O-log-N [1.4] but in 
+actual tests with real data [0.5] it runs [0.3] on integer lists of a hundred-
+thousand items [0.5] three times faster than binary [0.2] it finds it quicker 
+[3.4] and that's particularly useful [0.5] er [0.8] the way that it works if 
+you're having to fetch your data from a slow device 'cause if you've got it on 
+a hard disk [0.6] or i don't know [0.4] something else that's relatively slow 
+to fetch it from [1.8] this is fetching what it thinks is the right area [0.6] 
+whereas binary you're finding the middle [0.3] when you're finding the middle 
+of the [0.4] 
+rest of it you'll [0.2] probably be rushing off somewhere to fetch it [0.8] 
+okay but more details of that as i say [0.5] next time [1.5] two more slides [4.
+5] hunting [1.4] if you need to locate many items within a list [0.9] a hunting 
+technique will make it better for you [0.7] er [0.3] in the fact that [1.3] if 
+you assume that the items you're looking for [0.9] are [0.4] either close 
+together [0.9] or even better that you've sil-, sorted the list of items that 
+you're looking for so they're in order [1.0] you can start your hunt from the 
+item that you've found so you find one item [1.3] and if the next item on the 
+list [0.6] that you're looking for [0.8] is smaller than the one you've found 
+you know to look in that bit of the list if it's bigger you know to look in 
+that [0.2] bit of the list [1.5] does that make sense so you just get your list 
+[0.7] you got all your items in your list [0.8] and [0.6] you've got a a list 
+up here with [3.8] er [0.2] lots and lots of items in [6.3] and then going down 
+to a hundred got an i-, a large list there [0.7] and you've got a smaller list 
+of things that you [0.4] want to [0.6] find from 
+there i think perhaps some of these are actually in the list [1.5] so if you 
+look for three first [1.4] having found it's not at that point [0.4] you can 
+look in the remainder [0.2] for the next one [1.2] so it's just [0.2] bringing 
+together [0.5] what are you using your list for why are you doing the searching 
+[0.6] is this the reason that directory enquiries lets you look for two [0.2] 
+phone numbers is it quicker for them [1.1] or is it 'cause they want to charge 
+you money [9.4] okay here we go [0.4] er [1.7] searching [0.3] is [1.3] 
+something that you need to do a lot of in your databases you've created large 
+amounts of data [0.5] and then you need to access it [1.3] er [0.6] why do you 
+need to access it [0.4] what sort of algorithms [0.6] well [0.7] if all you're 
+doing is looking at short lists and doing it occasionally [0.5] an exhaustive 
+sort [0.2] search whether on a sorted or unsorted list [0.3] is good [0.2] you 
+can write it easily you can test it you can debug it [0.5] and why do more [2.
+6] a binary search is good [1.5] on a large list [2.4] the other positive 
+thing about it is it's not dependent on data distribution [0.5] interpolation 
+works well [0.2] if we've got [0.5] a list [0.3] evenly distributed [0.4] if 
+it's not binary search will be faster [3.4] these two [0.4] work [0.3] well [0.
+2] for numbers [0.7] and for strings you can work with er [0.8] names as well 
+[1.4] interpolation [0.7] is very fast [1.1] it's not good on unevenly 
+distributed [0.2] and it's not good on strings [0.5] but remember three times 
+faster on a hundred-thousand items [0.7] it is [0.2] good [1.4] the trouble is 
+[1.0] you've seen two bits of [0.3] slide that represent it there are three 
+more slides on that [0.4] the code is longer [0.2] there's la-, many more bugs 
+that can come in there [0.5] while you're writing it [0.5] do you need it [1.4] 
+okay [0.8] right [0.2] so that's the end of today [0.5] on Monday namex will be 
+talking to you about formal methods [0.4] and on Wednesday i want to talk to 
+you about hashing and we'll include interpolation [0.6] so i think that covers 
+it thank you

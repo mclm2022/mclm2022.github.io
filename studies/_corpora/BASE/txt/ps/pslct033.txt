@@ -1,0 +1,555 @@
+nm0930: last time [0.2] we proved if i'm r-, [0.3] i hope [0.2] got it right [6.
+4] we proved this sequent as you remember [0.3] is one of the De Morgan Laws [7.
+1] er [0.8] i now want to [0.2] as it were [0.2] not [0.4] immediately do 
+another De Morgan Law [0.8] although you will find [0.2] several of them done 
+in the book [1.3] but to go on to something [0.4] er [0.5] directly from this 
+[5.3] to prove this sequent [1.3] it's not the case that [0.4] not-P and not-Q 
+[0.8] therefore [0.6] if not-P then Q [3.1] and so [0.3] here we've got [0.2] 
+go from here to here [0.4] and now we're going to 
+prove from [1.5] the conclusion of the previous argument [0.5] the [0.7] are 
+going to prove another [0.6] er conclusion [0.5] so and let's do that on the 
+centre board [10.3] remember [0.3] that [0.7] this [0.2] thing without any 
+parentheses in it means a conditional [0.4] that's the main connective a 
+conditional [0.3] in which the antecedent is not-P [0.4] and the consequence is 
+Q it's not [2.7] it's not the negation of a conditional [0.8] which we wanted 
+to write the negation of a conditional we would write it like that [1.9] so [0.
+6] how are we going to prove this [5.4] obviously [0.4] as usual we assume what 
+we're given [1.5] right so it's not the case that [0.4] not-P and not-Q [0.5] 
+remember you can't [0.6] that [0.3] you must respect all these m-, negation 
+signs and the parentheses [0.9] you can't just push the negation signs through 
+or anything like that [1.1] what have we got to prove [0.2] well [0.4] right 
+let's before we even go that far let's say to ourselves what sort of a sentence 
+is this it's a negation it's not only a negation [0.3] it's what [0.3] i 
+usually refer to as a compound negation [2.8] other words the negation [0.2] of 
+[0.2] an already complicated sentence [1.3] what can you do [0.2] with the 
+negation of an already complicated sentence [0.3] actually not very much except 
+[1.1] and this is the the standard way of proceeding in these cases if you've 
+got something like this [0.5] is to try to build up what's inside [1.0] the 
+parentheses [1.0] and get a contradiction [1.0] so if you res-, if you get a 
+compound negation [0.3] try to construct [0.2] whatever it is that is negated 
+[0.5] then you've got a contradiction [0.3] and with a contradiction you can 
+always deny something so you can always make some progress [0.6] so don't [0.6] 
+people often ask what am i going do when i've got a negation sign outside a set 
+of parentheses [0.3] the only [0.3] general advice i can give you is just what 
+i have given you [0.9] okay [0.4] so [0.6] we already know [0.4] that we're 
+going to head for R-A-A [3.3] what have we got to prove [0.6] well [0.4] we've 
+got prove a conditional [0.9] we know how to prove conditionals [1.6] we 
+assume the antecedent [0.5] that's [1.4] we're going to discharge it in 
+conditional proof we already know that [1.3] er [0.4] and it rests on itself [5.
+0] now what have we got to prove [0.5] we've reduced the problem [0.4] they've 
+put it before [0.3] having assumed this we've reduced the problem now to 
+proving Q [1.3] how are we going to prove Q [0.9] well [1.5] again [0.8] if you 
+look at this and think how am i going to prove Q [0.7] there's no [0.3] obvious 
+way of using this [0.2] there's no obvious way of using this except to build up 
+a contradiction [0.6] so [1.2] if nothing [0.3] as it were stares you in face 
+as to what you should do [0.4] the best thing to do [0.2] is to he-, [0.5] try 
+R-A-A [0.6] so i want to prove Q [0.2] how am i going to prove Q [1.3] yes [1.
+5] assume [0.9] not the Q [0.3] huh s-, [1.0] so i assume in [0.2] in th-, in 
+this case [0.2] i assume not-Q [1.1] for R-A-A [3.5] and now you can see it's 
+suddenly [0.4] all [0.4] come out nicely [0.3] because [0.4] what we're doing 
+we're in the middle of an R-A-A somewhere [0.2] we're looking for a 
+contradiction [1.9] that's not difficult is it to get a contradiction out of 
+that [0.3] remember a contradiction is of form A and not-A [0.9] this is a 
+compound 
+negation [0.3] we can get the thing of which lose the negation formula which er 
+which lose the negation [0.3] by conjoining two and three [1.2] and so we get 
+[1.8] not-P [0.2] and not-Q [1.6] two three and introduction [1.7] and [0.2] 
+whe-, now moving fast towards this contradiction [6.9] one two three [0.4] this 
+is going to rest on all of the the assumption which one and [0.6] and er four 
+rest on [0.3] and now we've got to conjoin these [1.1] and so we have to put in 
+some more parentheses to make it quite unambiguous [1.3] not-P and not-Q [0.2] 
+and [0.2] it's not the case that [0.3] not-P and not-Q [2.0] sometimes these [0.
+2] R-A-As you do find you get rather lengthy lines [0.3] so [0.2] er you m-, [0.
+6] try not to [0.2] start off [0.3] from now onwards [0.2] when you're writing 
+out proofs [0.2] don't don't [0.5] put the assumption numbers too close [0.3] 
+to the [0.5] er the as-, the annotations too close to the line numbers you may 
+need quite a bit of space [1.0] okay [1.8] so here i do have something of the 
+form A and not-A because if i take A and not-A and replace A by [0.8] not-P and 
+not-Q [0.4] then i will get [0.6] just that [0.5] okay [0.5] everybody happy 
+with 
+that [0.7] that's contradiction [2.8] and so [0.4] i've done what i was goin-, 
+said i was going to do here namely f-, [0.3] find get hold of the sentence that 
+is negated on line one [1.8] and then from here i introduced not-Q for R-A-A 
+i've got a contradiction [0.9] er [0.2] in the sense i have only to look back 
+to see which assumption has got R-A-A against it to see [0.7] what i expect to 
+do at this stage it's three that i'm going to deny [0.6] yes [1.4] mm [0.2] 
+right [0.3] no point denying one [0.3] one or two normally [0.2] it's three 
+that i'm going to deny [0.9] and so [0.6] oh sorry i haven't filled this in yet 
+have i [0.7] er what do i need here [0.6] i need [0.4] a one four and 
+introduction [4.4] i tend to take n-, at this stage in the term [0.5] tend to 
+assume that an-, the and rules are so straightforward that i hardly need to [0.
+6] mention them [2.9] so we're going to deny three that means we discharge 
+three in R-A-A [0.4] leaving ourselves [0.3] with just one and two as the 
+assumptions [0.4] denying three means what [0.2] it means [2.0] adding a 
+negation sign to the front of three [5.7] and the annotation is that [0.9] 
+the two lines namely [0.5] the line that we've just denied that's line three [0.
+5] and the contradiction that we used deny it to deny it in other words [0.3] 
+the [0.9] absurdum [0.6] ad which i can't get my Latin right [0.4] the absurdum 
+er er abs-, the absurdity to which we reduced it [0.3] mm [0.3] ad quem i 
+suppose [1.9] er so [0.5] that is going to be three [0.2] five R-A-A [1.0] 
+three is what we have now discharged by denial [0.3] five is the contradiction 
+that allowed us to do that [0.9] yes [3.7] well we don't want not-not-Q [0.4] 
+what we're looking for of course is Q [1.7] now again another [0.8] pretty 
+straightforward move [0.2] if i think [0.3] and don't need to [0.8] rabbit on 
+about very much [1.3] er last doesn't go to not-not-Q to Q [0.2] that's six 
+double negation [4.3] and now [0.7] we've proved the consequent of the 
+condition we're trying to prove [0.3] using the antecedent [1.4] yes [0.4] so 
+it's a straightforward conditional proof [0.4] we now [0.2] can discharge two 
+[0.7] in conditional proof [0.5] drop it from the list of assumptions [1.1] 
+okay [0.3] move it through into the antecedent position [0.5] if not-P then Q 
+[2.2] and that's two seven C-P because two is the antecedent [0.4] and seven is 
+the consequent [2.1] and 
+that's what we were [0.4] asked to prove [2.4] now [0.2] that's [0.4] i th-, i 
+think just a routine er [0.2] R-A-A really [0.5] don't think it's anyv-, 
+anything particularly exciting [0.3] or [0.2] intriguing or [0.3] interesting 
+about it [0.2] just a straightforward proof any [0.3] no problems with this [0.
+2] no cus [0.4] yes everybody understands that [0.9] i only did it [0.3] 
+because [0.7] it's [0.7] it's [1.2] on the way to something else that i want to 
+do [3.1] everybody happy with that [0.9] good [3.2] now [0.2] we've proved [0.
+7] P-vel-Q [1.0] arrow [1.2] er sorry [0.3] P P-vel-Q turnstile [0.6] yields [0.
+7] this [0.2] and we've proved this yields this i now ask [0.6] how we're going 
+to prove the following sequence let's put it in a different colour [0.6] P-vel-
+Q [0.3] therefore [1.0] not-P [2.1] arrow Q [6.1] now [1.1] if you have any 
+sense of what proofs were like in [0.2] elementary mathematics or calculations 
+and the like [0.3] you know [0.2] that you can put them together [0.6] all 
+right you can do a bit [0.3] and then you do another bit [0.4] mm [0.3] and 
+then you can put them together [0.3] and the whole thing is still a valid proof 
+or calculation [1.6] or if you've remember at school geometry you may have 
+started off with some postulates or axioms [0.6] prove various theorems and 
+then you call on theorems [0.5] to prove other theorems [0.6] mm so you don't 
+have to do it all again from scratch [0.7] this is [0.3] it's what we call 
+transitivity that proof is a transitive idea [2.1] now you can see that in 
+order to prove [0.3] this from this [0.4] w-, way one way we can do it would be 
+[0.2] first of all to write out [0.3] the proof [0.2] of this from this [1.0] 
+yes [0.7] which was [0.7] how many lines i eleven i think wasn't it [0.8] yes 
+[0.2] something like that the one we did at the end last time [0.7] and then [0.
+4] to add on the end [0.5] having got er line eleven to this [0.4] mm [0.3] 
+then [0.4] repeated this proof here [0.4] so we would have got [0.4] eighteen 
+lines and then we'd have got to the conclusion [1.4] if you don't believe me do 
+it [0.6] er you could write out [0.2] a perfectly valid proof [0.7] starting 
+from here [0.2] and let's say starting from here [0.3] and ending up with here 
+[0.5] by going first to there [0.6] and then from there to there [0.9] that's 
+[0.3] that's all right isn't it i mean that's [0.4] what you'd expect if this 
+[0.3] follows from this [0.2] and this follows from this then this 
+follows from this just by [0.6] going through the [0.2] the whole palaver [2.5] 
+still [0.2] you wouldn't want to have to do that yes [0.2] 
+sf0931: is it despite the er multiplier in the brackets [1.7] 'cause it's not 
+[1.0] 
+nm0930: i'm sorry [0.5] it's it's it's this that's wrong isn't it mm [0.3] 
+sf0931: yeah 
+nm0930: yes 
+sf0931: and then the next row it's not [0.5] 
+nm0930: it's this that should be be is is that the sh-, i'm sorry i didn't [0.
+8] it's that should have been there from the start mm [1.5] that was that was 
+the sequent we proved last time [1.1] thank you very much [0.4] you're quite 
+right i mean it's m-, [0.7] er [0.5] w-, what we have he-, now we do have now 
+[1.1] a case of going from here to here [0.2] and then from here to here [0.8] 
+t-, what we need [0.3] is a way of proving this by a short cut [1.6] because we 
+don't want to have to write the whole thing out every time [0.5] when you've 
+proved something [0.4] somehow you've got it [0.2] there [0.4] why should you 
+have to keep on proving it again [2.9] and so we're going to have a new rule [0.
+3] well let's first of all sketch how we might [0.5] how we might do it [1.2] 
+and then [0.2] introduce a new rule [0.3] that's [0.2] that's going to allow us 
+to do this [13.4] 
+we start off on line one with P-vel-Q [0.7] this is [0.3] this is a just a 
+sketch of what might happen [1.1] and then we consider [1.0] what was it was 
+eleven lines wasn't it [0.5] yes [0.5] so [0.2] at line eleven [0.2] resting on 
+line one [0.3] we had [0.8] er [0.2] get it right this time [6.3] okay and 
+whatever the annotation was there [1.6] it was a vel elimination i think wasn't 
+it [0.3] yes [2.2] that's right [0.3] something [0.5] something something 
+something something something [0.2] vel elimination [0.7] mm [2.4] and now [0.
+3] we do what we've just rubbed off the board [0.7] another [0.3] er seven 
+lines to line [0.2] eighteen [0.7] resting on that we can get to [3.6] and the 
+since eleven rests on one [0.4] then eighteen is going to rest on one [0.8] and 
+what was my last annotation it was two [0.4] seven [0.5] er [1.1] C-P and 
+therefore it's going to be twelve seventeen C-P [1.6] that would be the full 
+blood in proof [0.2] mm [0.3] just jamming the two together [5.8] and what we 
+want is a way of [0.4] abbreviating this [1.2] with a sort 
+of plug-in [0.3] effect [0.6] what we need is a [0.7] to re-, [0.3] regard this 
+as something like a modular system where you can [0.9] take bits [0.2] mm you 
+just plug them in [0.2] like little bit of circuitry that you [0.7] push into 
+[0.4] into a circuit [0.4] and [0.5] it's all done for you [0.5] and little 
+bits of programs and so on [2.3] and so we're going to repeat this proof let's 
+do it on this board [1.7] now [0.4] we're going to [1.0] re-, reduce it 
+drastically by means of a rule called [0.3] sequent introduction [10.0] S-I [1.
+4] actually sequent introduction has two forms [0.7] let's do the simple form 
+first [0.8] actually it has [0.3] in a way it has four forms [0.6] er [0.3] 
+let's er let's do the th-, the the most straightforward one first and then 
+we'll look at the others [1.6] sequent introduction said [0.2] if you have 
+already [0.2] this is just giving you an informal statement [0.3] if you have 
+[1.9] proved [1.4] a sequent [2.7] a [0.3] let's do write it rather generally 
+[0.4] A-zero through A-K-minus-one and therefore B [0.6] okay so you prove [0.
+6] a sequent with K premises [4.0] and let's call it [0.4] er what shall we 
+call this [0.2] er heart [0.6] mm [1.8] so that's on 
+most keyboards these days [0.8] so we call it heart if you've proved that 
+sequent and [0.6] in [0.4] a proof [1.5] you [0.7] have [0.9] A- [0.3] zero [0.
+8] A-K-minus-one [0.7] on [1.1] various lines [2.4] i don't say separate lines 
+because of course they may actually be the same [0.9] but [0.3] i mean in 
+effect it's er er it doesn't make any difference if we say separate lines [0.9] 
+right so [0.3] you've got all the premises of this sequent heart [0.5] proved 
+in your in your sequent [0.2] right [0.6] then you may proceed [3.2] may [0.5] 
+write [1.8] B [0.3] on [0.3] a separate line [8.1] the assumption numbers [6.8] 
+are [0.3] all the assumption numbers [4.8] of the A-I [5.7] in other words 
+you've bundled together all the assumption numbers [0.6] er [3.0] and [0.6] the 
+[0.2] annotation [2.8] is [exclamation] how can we des-, describe it [1.2] X-
+zero [0.6] X- [0.8] K- [0.2] minus-one [0.4] S-I [0.5] where [0.4] these are 
+the line numbers [0.2] of the [0.4] A er [0.4] er [0.2] where X-I is the line 
+number [6.9] of [0.2] A-I [1.3] in other words [0.3] when you call on this rule 
+[0.3] all you do [0.2] is write down the line numbers of all the premises [0.5] 
+and then [0.2] you go straight to the conclusion [1.3] so [0.2] 
+it's a rule [0.3] that's i mean this is rather a general statement you'll find 
+a simpler statement in the workbook and in Lemon [0.6] and [0.5] i think we 
+will learn it by example rather than trying to understand that [1.0] mm [3.4] 
+so [1.5] let us suppose [0.4] that we've got [0.4] we've now got the sequent P-
+vel-Q [0.7] er therefore not [0.5] if not-P and not-Q [1.0] yes that's the one 
+we proved last week [0.4] so we'll call that [1.6] diamond [1.9] sorry we have 
+to say here [0.4] S-I this [0.4] and then heart [0.6] and then say [0.5] you 
+then [0.4] give the name of the sequential calling them [2.2] so we'll call 
+this one diamond [0.8] and then the one we proved this morning [0.3] which we 
+will call er [3.4] club [1.5] was [9.0] was this [0.8] mm [4.2] diamond is what 
+licenses the move from here to here [0.4] and h-, club is what licenses the 
+move from here to here [0.6] and now we're going to turn the proof of this 
+sequent [1.0] which i suppose we'd better call spade since since er where we've 
+got to [5.8] namely [0.6] P-vel-Q [0.3] therefore if not-P then Q [5.5] we're 
+going to prove this sequent in three lines now [0.7] mm [1.0] 
+effectively [0.2] we don't have to [0.9] do very much here except for [0.4] 
+renumber things and [0.9] ignore the gaps [4.0] line two of this new proof [1.
+6] is going to [0.7] be an application of sequent introduction to line one [1.
+4] all right i've pr-, [0.6] okay i've got [0.7] i've got the premise of line 
+one on a line na-, er sorry the premise of diamond on a line [0.2] namely on 
+line one [0.6] i now can proceed immediately to the conclusion [0.7] by [0.2] 
+saying [0.3] one [0.2] sequent introduction [3.2] diamond [5.1] and the l-, the 
+line numbers are all the line numbers i need to get one and that's just one [3.
+7] so what this rule says is [2.7] in order to get from here to here [1.5] i 
+can do it via the sequent [0.7] diamond [0.5] all right if i wanted to [0.2] i 
+could fill in [0.2] those lines there [0.4] there's nine lines in between [0.3] 
+and i would get a straightforward proof using the primary rules [0.6] this is 
+just a short cut rule it doesn't add any strength to the system it doesn't do 
+anything new [0.4] it just saves time and effort [1.3] okay [1.4] and then line 
+three is done in the same way [2.6] still rests on one [1.5] and now [0.2] it's 
+two [0.9] sequent introduction [1.0] club [6.2] er [0.5] because it's 
+club now [0.2] that licenses [0.8] the move from it's not the case [0.2] that 
+not-P and not-Q [0.4] to if not-P then Q [3.0] er [0.5] and there we have a 
+proof of [0.5] spade [1.2] using [0.3] er which is just three lines long [0.7] 
+though [0.6] if you unpack it of course [0.7] it's going to be whatever it was 
+[0.8] er eighteen lines long [1.9] now [0.4] you never need to use this rule [1.
+6] say it's [0.4] it's a it's just an additional rule [0.2] that will save you 
+time and effort [1.7] and it's a very valuable rule for that [4.5] are there 
+any questions about [0.5] whole thing [2.2] well when i said there were various 
+versions of this rule [3.8] let's ha-, just mention one [8.6] to start with [1.
+9] the rule of theorem introduction [5.4] which is [0.5] indeed [0.4] just a 
+special case of this rule [0.4] where the number of premises is zero [0.6] a 
+theorem you'll remember [0.2] is a sequent with no premises [1.4] and so [0.7] 
+since sequent introduction said if you've got all the premises on line on 
+various lines then you can go to the conclusion [0.4] theorem introduction says 
+[1.4] you just go to the conclusion [0.5] so it just says you can introduce a 
+theorem wherever you like [1.0] mm [1.9] simply introduce it 
+wherever you feel like it [0.3] so [0.2] you can just a-, [0.3] on any line you 
+like [0.2] you can introduce for example [0.6] the theorem [0.3] we that we 
+proved last time [0.3] it's not the case that P and not-P [4.8] o-, [0.9] you 
+can just [1.0] it's a [0.5] [sigh] [1.1] in old-fashioned er er sense you might 
+say it's a like an axiom it's just something that you're it's [0.3] it's not [0.
+2] part of the premises of the sequent er sequent you're being given but it's 
+just something you're given [0.7] because it's already been proved you can just 
+use it whenever you like [0.4] so let's have a very simple example [1.2] er 
+well perhaps it's not so very simple after all [0.4] no [0.3] let's we'll go go 
+on a little bit and then we'll come back to a simple example using that [4.6] a-
+, [0.4] actually i can state something for example [0.2] sort of thing i ask 
+you to prove [6.7] that sequent [3.8] it's not the case that [0.3] not-P [0.4] 
+and not-not-P [3.4] now [0.9] if you understand what a substitution for a [0.2] 
+instance of a sequent is [1.2] you will see that this [0.3] is really the same 
+sequent as this [0.5] with [0.3] not-P [0.2] replacing P throughout [0.6] er [0.
+4] all right [0.8] that if i [0.4] if i take [0.4] P [0.3] er wherever it 
+occurs [0.2] and replace it by 
+not-P [0.4] then i'm just going to get this [0.4] and you can [0.5] it's the 
+sort of thing that wordprocessors [0.4] expected to be able to do [0.5] very 
+quickly to [0.4] do replacements of this sort [0.2] okay [1.5] therefore [0.4] 
+any proof of this [0.8] is really a-, a-, also a proof of this [1.1] because 
+you would just go through the proof [0.3] changing [0.5] P to not-P throughout 
+and it wouldn't make any difference [1.1] in other words if i've proved this 
+i've really proved this already [1.8] all right [1.4] i mean i've done all the 
+work that's needed [0.4] to prove this if i've proved this [1.6] so [0.3] this 
+gives us [0.5] actually a a variant of the rule of theorem introduction [0.2] 
+that we can look at now [0.3] theorem introduction [2.7] substitution [6.5] 
+which is [0.3] T-I- [0.7] S [2.8] rather ugly notation [2.5] what this rule 
+says if you've got a theorem [0.9] then you can introduce on to a line not any 
+line not just that theorem [0.6] but any substitutions and swap it [1.3] yes [1.
+5] so [0.2] here's a one line proof [0.4] of this [3.3] of [0.3] this s-, this 
+theorem [5.0] let's call what shall we call this [2.2] dollar [0.5] mm [1.3] so 
+that's the thing that we've proved 
+last time [0.5] and so i now ask you to prove [0.5] it's not the case that not-
+P and [0.3] not-not-P [0.3] and you prove it in one line as follows [4.9] 
+theorem [0.9] introduction [0.3] substitution [0.6] dollar [1.9] in other words 
+you [0.4] you er as you if you'd like to use these this jargon [0.2] you 
+justify [0.8] how you got there by saying that i obtained it [0.2] from a 
+theorem that i've already proved [1.3] by substitution the theorem i've already 
+proved is called [0.2] i've just [0.4] ad hoc called it dollar [0.6] and the 
+substitution is [0.2] the result of replacing [1.3] P by not-P [0.9] since it's 
+a theorem [0.3] it rests on nothing at all [1.3] and so we just put that over 
+there [6.1] so not only theorems [0.2] can be introduced wherever you like [0.
+2] but also [0.6] any substitution instance of a theorem of course a 
+substitution instance of a theorem is itself a theorem [0.8] mm but you may not 
+have proved it [0.7] the thing is that [0.4] you can't just introduce anything 
+you like [0.3] all the time in a sense the requirement is that you've already 
+proved it [0.8] and [0.3] in an 
+examination [0.2] typically for example [0.3] you [0.2] might be told that you 
+may use in a question [1.0] any sequent or theorem that you've already proved 
+[0.6] mm [0.6] if you were allowed to introduce any theorem then of course [0.
+4] everything can be reduced to one line [1.3] and that would be too easy er [3.
+4] so let's have a [0.3] there's also of course i e-, i expect you can guess 
+there's also [0.8] a sequent introduction substitution [0.7] S-I-S [1.9] that 
+is also sometimes useful [0.5] and let's see how we might [1.1] er [1.5] use 
+that [5.2] for example to prove the following [0.4] sequent [0.4] we'll call 
+pound [0.2] sterling [10.7] i want to prove [1.6] a sequent that is rather like 
+[0.6] spade [0.8] but is rather unlike it too [1.1] mm [0.5] this one has a 
+disjunction [0.7] and from it you prove a conditional whose antecedent is the 
+negation of the left disjunct [0.8] and this one also has a disjunction as a 
+premise [0.4] but here you prove a conditional [0.2] whose antecedent's 
+negation [0.2] is the left disjunct [1.8] mm [1.2] a proof of thi-, [0.2] this 
+is not [0.7] pound i hope is clear is not a substitution instance of spade [1.
+1] right [2.2] you can't [0.3] go through spade [0.3] replacing [0.2] Ps and Qs 
+[0.2] uniformly by 
+anything [0.2] and end up [0.4] with [0.7] with pound [0.7] you could of course 
+replace P [0.2] by not-P throughout spade [0.2] but this would give you [0.4] 
+not-not-P here [0.7] and not just P [0.6] mm [0.3] so it's not a substitution 
+instance [0.2] so [0.5] we can't [0.2] just call on one of these [0.2] short 
+cut rules to prove it we've got to do some work [1.7] and i hope [0.5] that [0.
+4] we'll find that we can do s-, we can [0.2] do it satisfactorily [5.6] we are 
+going to call on a short cut rule [0.7] but [0.7] not too much [0.9] so [0.7] 
+pound is not-P [0.2] or Q these names by the way are just for [0.6] for today 
+don't [0.3] take them seriously the only [0.3] two names that i will continue 
+to use [0.8] and not only now but in the examinati-, in the may may use in the 
+examination er i shall tell you what they mean if i do use them there [0.2] are 
+star and dagger [0.9] mm [0.2] well [0.3] there's one other [0.5] er theorem 
+that we're going to prove i hope before the end of the hour [1.2] but [0.4] all 
+these other things [0.2] go-, [0.6] er spades and er hearts and dollars and so 
+on are just ad hoc names [1.7] anybody like to suggest how we might prove this 
+[5.8] any ideas [13.2] don't [1.1] do y-, [0.7] do too much work [0.3] that's 
+my [0.2] advice here [0.4] how 
+can you [0.4] do this as quickly as possible [1.2] or [0.4] as slickly as 
+possible [1.9] any suggestions [2.8] using of course the short cut rules if 
+necessary [4.2] yeah [0.8] okay well there let me show you how you can do it [0.
+9] and [0.4] you'll kick yourselves [0.8] mm [5.5] not-P vel Q [1.4] okay [0.3] 
+on line [0.2] resting on line one [0.5] i'm now going to go to [3.3] if not-not-
+P then Q [2.0] and that is going to be [0.2] one sequent introduction [0.2] 
+substitution [0.9] spade [5.4] it's what i get [0.6] from [0.2] spade by 
+replacing P by not-P so i'm just automatically using the substitution rule for 
+sequents here on the assumption that you've already internalized this which 
+perhaps is a bit unfair [1.0] but nonetheless is er [0.6] er [0.5] i think it's 
+a straightforward idea [0.2] that [0.6] if you have a proof [0.3] as we have of 
+spade [1.2] and as we've already done that [0.3] then [0.2] you could just run 
+through the proof replacing P in every pla-, place it occurs by not-P [0.2] and 
+you would get a proof of this [0.6] yes [1.0] that's that's i hope that this is 
+obvious er [0.5] just by replacing it by s-, you could replace it by [0.3] the 
+rain in Spain s-, stays mainly in the plane throughout and you'd still have a 
+valid proof [1.0] 
+be t-, [0.4] tiresomely long and would look a bit odd with the combination of 
+words and symbols but it would still be valid [0.9] you could replace it by [0.
+6] the whole of the [1.2] er Declaration of inde-, well perhaps Declaration of 
+Independence contains imperatives [0.9] the whole of some [0.2] some [0.3] text 
+in the indicative mood [0.7] w-, [0.2] be the same [0.7] so [0.5] the the the 
+proof goes through like that [0.6] now what have we got to prove [0.2] we've 
+got to prove P arrow Q [1.6] so i assume P [1.3] for conditional proof [0.6] 
+that's how i prove conditionals the only way i know how to prove conditionals 
+[0.7] except trivial ones [1.2] er [0.9] so i assume P [0.2] can you now see 
+what i'm going to do [2.2] yes [1.3] now clear is this not [0.7] that [0.4] i'm 
+trying to get Q after all [0.4] because that's the consequent of the 
+conditional [0.3] i've assumed P [0.9] can i use these two to get Q [0.2] 
+surely i can [0.3] yes because in order to use this one [0.9] this is er 
+conditional [0.2] i would expect to use modus ponens [0.2] that means i want to 
+get the antecedent [0.2] the antecedent is not-not-P that's a double negation 
+[0.2] how do i get a double negation [0.9] 
+by taking getting the sentence of which it is the double negation that's P [0.
+3] have i how do i get P [1.7] [click] [0.7] all done [0.3] yes [2.3] in other 
+words [0.8] from P [0.2] i can go to not-not-P [1.5] by [1.0] three D-N [10.4] 
+and now i've got the antecedent of line two [2.1] and therefore from one and 
+three to one and three i can imply modus ponens [0.6] gives me not-not-P [0.3] 
+and if not-not-P then Q [0.5] that gives me Q [2.7] what did i say two four 
+modus ponens [2.6] resting on lines one and three [3.4] that's what i wanted 
+that's the consequent of the conditional i'm er trying to prove [0.3] it rests 
+on [0.3] line three [0.2] which is the antecedent of the conditional i [0.2] 
+want to prove [0.4] and therefore [0.2] conditional proof [1.0] that allows me 
+to prove [0.4] if P then Q [2.2] three [0.5] bec-, which is antecedent five 
+which is the consequent [0.5] C-P [3.7] mm [3.0] and therefore [0.4] from [0.2] 
+not-P or Q i've proved [0.2] if P then Q [0.8] now [2.5] the advantage of these 
+sequent introduction [1.3] rules and theorem introduction rules is that they 
+enable you to break [0.3] the job down into small parts that you can tackle [0.
+5] i gave the 
+analogy [0.3] last time of making a long journey [0.6] i don't know you're 
+driving to [sigh] Budapest [0.4] mm [0.8] you you're not going to do that [1.2] 
+er in one day you're going to have to stop one si-, without stopping [0.8] so 
+you break the journey down into manageable bits that you can see [0.2] how 
+you're going to do it [0.4] mm [3.2] Coventry to [0.6] i don't know [1.4] Dover 
+[1.0] Dover to [0.4] to o-, [0.9] Ostend [0.5] Ostend to [0.6] Cologne or 
+whatever i don't know what rou-, what the route would be [0.2] mm [0.5] and [0.
+2] then you can see how to do it so typically when you've got a g-, more 
+complicated proof what you do is try and break it down into little bits [0.4] 
+each of which you can see how to do [0.2] and then you can put them altogether 
+by sequent introduction if you want to [0.6] though [0.3] sometimes it's just 
+as easy to write the proof out [0.3] but sequent introduction is very helpful 
+[0.2] when you've got [0.6] some rather long [0.3] modules already [2.2] any 
+questions about this [0.4] this rule and how it works [1.6] there are some 
+exercises this week for you to try [0.7] involving this rule [0.8] one of which 
+[0.6] it's just slightly puzzling [2.3] mm [0.8] just slightly puzzling i don't 
+know why 
+it's slightly puzzling but somehow it always [0.4] it always er [0.5] er leaves 
+people wondering whether that can be right and yes it it is all right [0.8] any 
+questions there [1.7] no [0.9] everybody can do that [0.8] 
+sm0932: sequent introduction i'm not happy with it [0.4] 
+nm0930: you're not happy with it 
+sm0932: no i'm not 
+nm0930: w-, 
+sm0932: why is it not-not-P when you use S-I-S [0.7] 
+nm0930: er because [0.4] if i take [0.3] this sequent [0.3] which i'm given yes 
+[0.9] and everywhere [0.2] replace P [0.3] by not-P [0.3] sorry i shouldn't 
+have ri-, rubbed out that [0.6] everywhere replace P by not-P [2.3] then i get 
+this [0.5] 
+sm0932: right [0.3] 
+nm0930: yes [0.6] it's a [0.3] it's a substitution instance [0.2] of [0.6] 
+perhaps i could have done that in [0.4] in er [0.3] in different colours [5.7] 
+what's in pink there [1.4] er [1.0] is simply a re-, way of replacing uniformly 
+what was in green before and then with a P [0.3] mm [0.2] so this is just a 
+substitution instance and [0.4] proofs [0.3] of substitutions instances follow 
+the s-, exactly the same pattern as the proof of the original i mean [0.4] if 
+th-, you're not persuaded by that [0.2] just write out [1.3] a proof [0.6] some 
+proof of say half a dozen lines and then take a substitution 
+instance and write out the proof [0.3] of the substitution instance and and [0.
+3] about halfway through you'll say [0.2] why am i doing this [0.7] mm [0.4] 
+what's the point of doing this again [0.2] it's obviously the same proof [0.5] 
+er [0.9] sometimes it's [0.5] it's actually existentional [0.5] absorption into 
+the task does convince you in a way that no amount of theory would [0.4] mm [0.
+5] yes [0.3] 
+sm0933: can you substitute it with anything [0.5] 
+nm0930: you can substi-, [0.2] provided you substitute uniformly for letters [0.
+8] 
+sm0933: could you put Q [0.4] 
+nm0930: yes you could put Q [0.3] yes [0.3] indeed you could [2.6] if you put 
+[0.2] if you put let's choose another colour [0.4] if you put Q [0.5] shall we 
+[0.2] shall we go back to the [0.6] the the original version [4.2] i can 
+replace P by Q that would give me [1.1] Q-vel-Q [0.3] therefore [0.6] if not-Q 
+then Q [2.9] yes [2.3] and indeed [0.4] that [0.3] is a sequent that [0.3] in 
+effect we have now proved because we've proved spade [0.4] and this is a 
+substitution instance [2.8] mm [0.4] or we could have replaced it by not-Q [2.
+1] and then [0.9] or rather we er let well we could replace Q by not-P here and 
+that would give us [0.4] P vel not-P [0.9] therefore [0.4] if not-P [0.2] then 
+not-P [3.9] well [0.4] that is perhaps is not a very interesting sequent 
+because that 
+conclusion [0.6] is itself [0.2] provable [2.1] nonetheless [0.2] all these se-,
+these substitutions are possible [0.5] the two things i stress i str-, i 
+stress again [0.2] first of all it must be uniform [0.8] yes you must replace 
+every occurrence [0.5] by the same thing and secondly you can only [0.3] 
+substitute for letters [1.3] you can't s-, [0.3] i mean [0.2] i-, if [1.2] in 
+this formula i can't replace not-Q by P [1.9] that wouldn't be a substitution 
+instance [1.9] i can only replace Q [1.0] or any other letter by a formula but 
+not [0.5] er but not er [0.6] er a compound formula [1.3] because [0.7] this 
+formula has to be something that is a conditional [0.6] whose antecedent is a 
+negation [0.3] if i were allowed to replace this well let's say by R [1.1] i 
+would have now [0.4] gone to a case that wasn't necessarily a negation [0.8] so 
+i would have e-, [0.2] actually [0.3] gone to something more general [0.3] 
+rather than to something more specific which is what substitution is [1.0] okay 
+[1.4] it's the same [0.2] exactly the same in algebra [2.4] it's exactly the 
+same [0.5] thing that if you have an algebraic formula [1.8] X-plus-Y-all-
+squared [0.3] equals X-squared [0.4] plus two-X-Y [0.7] plus Y-squared [0.4] 
+you can replace X and Y [0.5] by anything you like [1.3] yes [0.2] for example 
+you can replace them both by [1.4] zero or [0.4] both by [0.4] minus-one or [1.
+0] both by X or both by Z [2.8] right well i think we've got [0.3] since we we 
+came across this [2.1] formula here [2.5] i think [1.0] it's now time to prove 
+[0.5] this [0.5] formula as a theorem [0.7] mm [0.3] this one is a theorem and 
+in fact this se-, this [0.2] implication this er [0.6] er derivation goes in 
+the other direction [1.0] but [1.5] rather than try to do all that i'll just [0.
+4] con-, [0.4] finish with the proof [0.6] of [0.4] P or not-P [0.2] because [1.
+0] P or not-P [0.4] is a it's a [0.3] it's a characteristic of a type of proof 
+[0.5] that is [0.4] has the [0.4] reaches the level of sophistication that i 
+think is [0.7] essential to [0.6] succeed in this course [0.6] you do you 
+understand how to do this [0.2] there are more difficult proofs [0.2] there's 
+no question [0.3] but [0.4] this is the the s-, the sort of level i would say 
+if you n-, if you know and understand how to do proofs like this [0.7] then 
+you've [0.3] you got the idea [0.3] mm [0.7] okay [1.2] P or not-P [0.2] is 
+called [2.3] the law of excluded middle [3.8] and that's a [0.6] that's of 
+course a [0.5] an old name [0.4] it's also the its medieval Latin name [1.1] 
+tertium [0.5] non [0.8] datur [3.6] it means the third is not given [2.4] so 
+it's an anti-Blairite [0.9] 
+er type er type of er [laugh] [0.3] of theorem it says [0.2] either P no-, or 
+not-P but [0.4] no third possibility [0.6] yes [1.8] there's nothing additional 
+to P and its negation [2.2] yes [0.2] and it's [0.3] it was regarded along with 
+the law of non-contradiction which i mentioned last time [0.2] which may even 
+still be on the board somewhere [0.5] well [0.2] yes here [0.4] yes [0.9] and 
+the law of identity as it was sometimes called if P then P [0.3] these were 
+regarded as [0.2] the fundamental laws of logic this was in a b-, b-, before 
+logic was properly developed but nonetheless [0.3] they do contain a lot of the 
+important [0.3] facts about it [0.9] and the question is [0.7] how are we going 
+to prove this theorem [3.0] you can see i've got six minutes to do this in [0.
+6] so [0.6] i'd better get my skates on here [3.6] right what do you do when 
+you've got to prove a sequent [0.7] you first of all [0.3] write down what 
+you're given [2.2] that's all right done that [2.1] then look at what we've got 
+to prove [1.7] what sort of a sentence have we got to prove [1.0] a disjunction 
+[0.3] how do you prove a disjunction [1.2] well the rule that allows you to 
+prove a disjunction is vel introduction [0.3] how do you 
+prove [0.3] how do you use vel introduction [0.2] you've got to get one of the 
+disjuncts first [0.8] can we get P [0.4] or not-P [1.5] well [1.5] obviously 
+not very straightforwardly [1.0] mm i can't i mean i just get P out of nowhere 
+[0.8] if i could prove P from nothing at all [0.5] then that would be logic 
+over [0.8] mm [0.6] you can prove everything [0.7] from nothing at all and we 
+could all go home and forget about it [0.5] mm [2.1] fortunately for us [0.7] 
+it's not as easy as that [0.8] mm [0.6] so [0.4] what do we do [1.0] we can't 
+look at our premises and [0.2] get some clues from them because there aren't 
+any premises [2.4] the conclusion doesn't [0.2] isn't at all helpful it just 
+tells us to prove a disjunction even though actually we can't prove either of 
+the disjuncts [2.1] well [0.5] what do i say you should do when you there's 
+nothing else to do [1.5] reductio ad absurdum you've just got to [0.4] somehow 
+[0.3] go for a contradiction [0.9] so [0.2] this is how this this proof goes [1.
+0] er [0.2] i think there's room on this board [0.3] line one [0.3] we assume 
+[0.2] it's not the case that P or not-P [1.9] and this is an assumption [0.3] 
+that [0.3] well the only way we know how to get rid of it is by R-A-A [1.2] 
+we're not quite 
+sure how we're going to do that yet [0.3] but that's the the beauty of R-A-A 
+you can as it were [0.2] set out on that journey [0.3] without having a very 
+any [0.2] very clear idea about how you're going to get to the terminus [0.7] 
+mm [1.9] well [0.2] now what sort of a sentence have we got on line one [1.3] 
+what i called earlier today a compound negation [1.0] what do what was my 
+advice in this when you've got a compound negation [0.6] try [0.3] to construct 
+[0.6] the formula [0.3] in the insides [0.9] that's P or not-P [0.6] how do i 
+construct a disjunction [1.9] by getting one of the disjuncts [0.2] we seem to 
+have gone round in a circle [0.6] but not quite because [0.6] if i try to 
+construct this [0.3] there's no reason why i shouldn't just assume P [4.4] this 
+is also an assumption for R-A-A [1.5] see that's the other beauty of R-A-A that 
+you can make all these assumptions [0.7] and [1.3] as long as you get a 
+contradiction you can start knocking them down again [1.1] so [0.2] here [0.6] 
+i've got an assumption P [3.4] now i can construct the sentence [0.3] that is 
+denied on line one [1.2] by vel introduction [3.6] P vel not-P [3.0] so [0.2] 
+lines one and three contradict each 
+other and so from lines one and two i've [0.2] i have P vel not-P [0.8] and 
+it's not the case that P vel not-P mind your parentheses [1.9] mm [1.4] make 
+sure you understand what you're writing down get the parentheses right [1.0] so 
+that's one and three and introduction [3.7] that's a contradiction [3.1] i can 
+deny therefore either one or two [1.1] now [0.5] if you think about it [0.4] 
+it's pointless to deny one at this stage [1.7] mm you would actually find you'd 
+got back where you s-, in effect to where you started [0.5] but we can deny two 
+at this stage [0.9] this you can change your colour to show how important it is 
+[0.5] and resting on one [0.2] we now get [0.2] not-P [2.2] er two four R-A-A 
+[6.5] now [0.8] we've made a tremendous advance here [0.3] at this stage we had 
+one of the disjuncts of what we're trying to prove [0.2] assumed [0.7] we had 
+to assume it [0.5] but at this stage [0.2] we've proved it from [0.2] from one 
+[1.1] that's mu-, that's much less commitment on our part [0.8] and we can now 
+repeat this process [0.6] exactly the same way [0.4] we now [0.2] introduce not-
+P on er P on the left i'm sorry [0.3] five vel introduction [1.5] so that gives 
+us [0.5] and now we can [0.4] do another reductio ad absurdum [1.7] resting on 
+one [0.3] we get P or not-P [0.8] and it's not the case 
+that P or not-P [2.0] all right that's a conjunction [0.3] of one [0.3] and six 
+[6.1] another contradiction [0.6] now we can [0.3] there's only one thing we 
+can deny now [0.4] and that's one itself [0.6] and so [3.2] we can [0.4] 
+eliminate [0.5] the function one [0.7] by denying it [0.4] now it's very 
+important here that you remember that [0.4] you must write [0.3] not-not-P or 
+not-P [2.0] er [1.4] one seven R-A-A [2.0] and then on the final [0.6] line we 
+can get rid of those negation signs [0.8] and we get P or not-P [1.5] eight D-N 
+[4.8] now that [0.3] proof certainly repays study [2.2] mm [2.9] it's theorem 
+forty-four in Lemon [1.7] i often refer to it as theorem forty-four for example 
+in the workbook [0.8] you could refer to it as the law of excluded middle L-E-M 
+[0.3] if you liked or [0.3] T-N-D [0.7] er provided you know what you're doing 
+[0.7] mm [0.5] it happens to be along with star and dagger [0.3] something that 
+is often useful to call on [0.2] when you're doing proofs [0.6] and [0.2] 
+through with sequent introduction and theorem introduction [1.1] well [0.5] 
+next time [0.4] we'll say a little bit more about this and show how we can 
+generalize it [0.6] mm [0.7] to prove other [0.6] other sequents with 
+disjunctive conclusions [1.7] well that was fairly [0.2] hard work this morning 
+[0.4] mm [1.4] thank you very much

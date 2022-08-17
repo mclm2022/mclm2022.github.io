@@ -1,0 +1,608 @@
+nm0938: can i [0.4] just back that up [0.2] Cumberland Lodge is the most 
+brilliant deal you could possibly imagine [0.7] it's the er [1.1] it's owned by 
+the er [0.2] the royal family it's actually owned by the Queen Mother i think 
+and it's where the royal family keep [0.4] a small portion of their fabulous er 
+art collection [0.7] er it's in the middle of Windsor Great Park which is er [0.
+4] tremendous as a er a place to go walking [0.5] and we've got a good [0.5] er 
+a good programme sort of shaping up [0.6] we've got er [1.0] er [0.4] Professor 
+er [1.3] er Ray Ball from York University who talks about political [0.4] er 
+rhetoric [0.4] about how different politicians er [0.6] conceal their 
+intentions and tell you lies all the time [0.7] er [0.3] we've got er somebody 
+coming to talk about er cognitive rehabilitation [0.6] er [0.3] that is how how 
+you help people to [0.6] er [1.1] get back on their feet after they've had 
+brain damage and so on [0.4] and there are lots of other lots of other events 
+er [0.2] that er [0.3] that [0.2] that we do at Cumberland Lodge [0.2] and [0.
+8] generally speaking [0.2] and people have a great time [0.4] and [0.3] if if 
+you are going 
+there as a part of a [0.5] it's it's the place is sort of hired out to 
+companies and if if er [0.2] if a company like I-C-I [0.5] er [0.5] send 
+somebody to Cumberland Lodge they pay a thousand pounds per person per day [1.
+1] and you get [0.2] three days there for fifty quid [0.4] er [0.2] again 
+courtesy of something called the Saint Catherine's Foundation [0.4] which again 
+is financed by the [0.3] the royal family [0.4] so i i strongly recommend it [0.
+9] and er [0.5] we we've got er [0.2] places are limited but you know the more 
+people apply [0.3] the more places we can have [2.5] okay now i'm to-, [0.2] 
+today [0.2] er i'm going to be talking about [0.3] artificial life [0.9] and er 
+[2.6] er i'm afraid that the [0.2] the sound system has packed up in here so 
+i'm afraid once again i this this mike is for the er camera here it's it's not 
+[0.5] er [0.8] er [0.2] the the audio [0.3] system in here [0.6] er so if if 
+people at the back can't hear me [0.4] er [0.2] just just shout out during the 
+lecture and i'll i'll raise the [0.4] er [2.5] i'll raise the volume a bit [11.
+9] i'm also going to 
+er slow show some slides and videos so i'm afraid there's going to be a bit of 
+er [3.1] er [3.0] fiddling about with er with with technical stuff [0.4] 'cause 
+i haven't had time to er [1.1] put it all together because the lecture theatre 
+was full [3.4] okay [3.3] for a long time [0.6] er [3.3] artificial 
+intelligence [0.7] has [0.9] er [2.7] dominated [1.6] er [2.4] the the study of 
+[0.9] of intelli-, of of [0.2] of the human mind [0.4] this is what i was 
+telling you [0.8] in the first lecture that i gave [1.0] that [1.2] we have [0.
+3] as it were a a [1.7] a new discipline [0.4] called cognitive science [0.9] 
+which brings together [0.3] all sorts of different disciplines neuroscience 
+anthropology linguistics psychology philosophy and artificial intelligence and 
+you'll notice that [0.7] there's there's quite a strong link between artificial 
+intelligence and psychology [1.7] and artificial intelligence [0.6] has [0.2] 
+as it were had a good run for its money about [0.5] er thirty years' worth 
+really [0.7] and [0.2] er [2.7] you'll find remarks like this being made [1.2] 
+artificial intelligence A-I is the single most important 
+d-, [0.2] development in the history of psychology [0.6] er the computer is the 
+last metaphor for the mind [0.5] er [0.8] we shall ever need [0.4] and at last 
+we know what the mind is [0.5] it's a symbol it's a physical symbol system [1.
+1] now this is this is the central idea in artificial intelligence and and and 
+what does that [0.8] what does that idea [0.2] really mean [9.8] well what it 
+what it means actually refers to that [1.0] picture i put up a while ago [1.1] 
+at the beginning [2.2] you remember [0.5] that [1.6] in the [0.6] fifteenth 
+century [0.7] the Christian mystic John Flood [1.7] he [0.4] asked us to 
+imagine [0.3] that the mind somehow reflected the external world [1.9] and the 
+external world was [1.1] ordered [0.2] structured [0.6] by [0.3] the Creator [0.
+8] and that somehow the [0.4] the microcosm what was in the head [0.5] 
+reflected the macrocosm [0.4] the the universe outside it [0.5] the senses were 
+[0.3] related to the different planets and [0.4] and a whole [0.5] integrated 
+[0.6] view [0.2] of [0.3] the mind and how it fitted into the universe [0.8] 
+but following the [1.8] industrial [0.2] scientific [0.4] and intellectual 
+revolutions following the [0.2] enlightenment [0.2] [0.2] the past three-
+hundred years [1.1] of European history [0.3] instead we tend to think of 
+ourselves now as [0.5] er [0.2] machines who think [0.5] the brain is some sort 
+of information processing device [0.7] and artificial intelligence is the most 
+[0.6] er [1.7] if you like [0.2] er [3.4] extended [0.2] attempt [1.0] to [6.3] 
+sorry i'm i'm [0.3] i'm faffing about here because i've realized i've forgotten 
+to bring [0.7] [2.5] some [0.4] er [2.0] some overhead transparencies but i i 
+can do without them [0.3] [2.7] the idea [1.0] behind [0.2] the [0.6] the mind 
+as computer [0.2] actually can be traced back [0.5] to [0.2] the [0.3] the 
+philosopher [0.3] Hobbes [0.2] Thomas Hobbes [0.3] whose great [0.7] er 
+political treatise [0.4] the Leviathan [0.6] actually began [0.9] with [0.6] er 
+[0.3] a long [0.7] discourse about the nature of the mind [0.6] his idea [0.4] 
+of [0.4] the [0.3] ideal [0.6] political [0.8] system [0.8] was based on the 
+idea that first we must understand what human beings are really like [0.5] and 
+how [0.2] their minds work [0.2] in order [0.3] to [1.8] devise a system within 
+which they can live together safely [1.8] and without going into his political 
+theory i just draw your 
+attention to [0.4] these [0.4] er remarks in effect [0.8] er [0.3] by 
+ratiocination [0.2] thinking [0.6] i mean computation and that is Hobbes 
+speaking in whenever it is [0.3] about the sixteen-fifties [3.0] that was the 
+[0.2] the centre of that diagram by Robert Flood ratio [0.6] ratiocination 
+rationality [0.4] a Cartesian idea [0.3] which says that the essence of the 
+human mind [0.3] is the ability [0.4] to manipulate clear and distinct ideas [0.
+6] and we have [0.6] a [0.2] a machine [0.4] nowadays [0.9] which does just 
+that that's exactly what the computer does [0.3] notice ratio [0.2] right in 
+the middle there [2.3] and so [0.5] the project of artificial intelligence [1.
+5] er and these are the slides i'm afraid i've forgotten to bring with me but 
+[0.3] G-P-S stands for General [0.2] Problem Solver [0.7] is a classic example 
+[0.4] of a program [0.5] which [1.0] behaves intelligently solves [0.2] 
+problems [0.4] and generally speaking [0.7] er [0.4] can be [0.4] applied to a 
+large variety of different situations [0.7] er [1.4] on the ba-, on the simple 
+basis that [0.7] it makes a representation [0.3] of the world [0.6] in terms of 
+[0.2] statements in a simple language [1.9] and these statements can 
+be manipulated [0.8] to produce [0.5] different representations [0.3] of [0.3] 
+of the world as it might be [1.6] and these are then checked against whether [0.
+3] this representation of the world as it might be is getting you towards your 
+goal [0.5] you give the program [0.3] a statement of the world as it is [0.5] a 
+statement of what you want [0.6] and you let the program work out [0.2] how to 
+get from where you are [0.3] to where you want to be [1.5] so the classic 
+example here might be something like a chessboard [1.4] you tell the machine [0.
+3] this is the way the chessboard is [0.7] and you give it a [0.8] er a general 
+abstract description of what you want which is a position [0.3] where [0.3] you 
+control the game [0.2] if it's chess [0.2] where [0.3] the opponent's king [0.
+4] is [0.4] in check [0.2] and can't move [0.2] out of check [1.4] and you win 
+[0.5] that's a statement an abstract statement of the goal you want to get to 
+[0.5] and [0.3] the general problem solver [1.0] would [0.4] get from where it 
+is [0.3] to where you want it to be [0.2] through a process of recognizing 
+subgoals [0.2] making moves and generally transforming the world until you get 
+what you want [1.5] now this is artificial intelligence [1.1] it can be applied 
+in all sorts of and and has been applied in all sorts of different [0.2] er 
+areas [1.0] to solve problems [0.4] to give medical diagnosis to er [0.2] 
+generally speaking [0.2] do what human beings do when they're acting 
+intelligently [0.9] and there have been some tremendous successes [1.7] but for 
+one reason or another [1.5] that [0.2] project [0.2] has run into trouble [1.7] 
+what we have discovered and that's the point i was making with those sentences 
+remember er [0.2] time flies like an arrow [0.8] the point i was making with 
+that example [0.3] in the first lecture is that [0.3] when you get [0.2] into 
+real [0.7] human intelligence [0.9] you find that [0.2] even the simplest 
+things like parsing a sentence [0.3] requires [0.8] a huge depth of knowledge 
+[1.5] and if you're going to approach [0.8] intelligence on the basis of 
+manipulating symbolic structures which represent that knowledge [0.3] the 
+machine has to get [0.4] enormous [0.2] huge [0.7] now some people are still 
+working on that basis they think they are going to produce [0.6] er [0.3] real 
+intelligence [0.5] 
+and Allen Newell [0.2] in fact [0.2] o-, on that er [0.4] that slide there [7.
+6] this fellow [0.7] Allen Newell [0.8] er [0.6] he died recently but just 
+before he died he he wrote a book called [0.3] er [0.5] A Unified Theory of 
+Cognition [0.7] and he and his [1.4] fellow [0.2] research workers [0.4] are 
+still working on the idea that if you produce a machine [0.5] with some [0.4] 
+symbolic manipulation capacity [0.3] and a huge memory full of symbolic 
+structures which represent everything it knows about the world [0.2] it will [0.
+3] like a k-, like a nuclear pile [0.3] you keep on throwing in knowledge and 
+eventually it sort of goes critical [0.2] and begins to glow [0.2] and begins 
+to be intelligent [3.8] now other people for different reasons [0.3] say [0.2] 
+this is bound to fail [0.6] we simply can't do it [1.2] it isn't going to be [0.
+3] that easy [1.4] and [0.9] a different er [0.7] two different approaches have 
+well [0.2] a number of different approaches have arisen [0.4] i want to wa-, 
+talk about one very [0.4] quickly [0.7] and that's connectionism [0.3] and then 
+i want to get on to the [0.3] last but the the the focus 
+of this [0.6] week's lecture which is [0.3] er artificial life and i have a [0.
+2] a video to show [0.4] of [1.0] er well [0.4] very nearly the latest a a a 
+humanoid [0.8] er robot [0.3] [1.2] connectionism [0.3] is [0.2] er a simple [0.
+2] but radical idea [0.6] which is that [0.2] instead of [0.7] trying to make 
+artificial intelligence [0.2] by programming it [0.6] instead [0.4] we can [0.
+7] in effect [2.9] we can grow it [2.6] connectionism [0.2] is sometimes called 
+[0.8] parallel distributed processing [0.2] P-D-P [0.5] and sometimes it's 
+called neural networks [0.6] what these networks are like [0.6] is [0.8] er a 
+series of units [0.3] some of which [5.2] are [0.4] connected [1.0] to [0.2] 
+the outside world so these units [0.3] which are [0.3] could be each one could 
+be a little computer or it could be some [0.7] er bundle of electronics or it 
+could be some [0.3] simulation [0.5] of er [0.2] electronics [0.3] are 
+connected to something like a camera [0.3] or a [0.6] er a microphone [0.5] or 
+in some way they are driven by the outside world [1.2] in between [0.4] there 
+are a number of [0.2] units which are connected to the inputs [0.2] and to each 
+other [0.5] and they're also connected to output units [0.9] and in effect [0.
+5] you allow these 
+units to adjust [1.1] their con-, their connectivity with each other [1.4] you 
+nobody intervenes in this network [0.2] the network learns [1.9] and [1.9] what 
+what connectio-, ha-, these connectionist systems work [0.3] by having [0.4] 
+networks of units with [0.4] dense connections between them [0.3] which can be 
+excitatory or inhibitory [0.5] or they can be [0.2] simply [0.4] er there or 
+not there [2.0] as the network [0.9] as it were [0.2] experiences inputs [0.8] 
+from here [0.3] [1.2] it also [1.8] er [0.2] is [0.2] trained [0.3] by inputs 
+which are not shown on this diagram [0.3] which in effect [0.6] er [1.2] tell 
+the units [0.9] what [0.3] is right and what is wrong [1.2] and [0.7] after a 
+while [0.5] the network [0.4] has learned [0.3] it it learns to for example [0.
+6] er [0.7] identify [0.8] faces [0.5] there's there's er er [0.2] Professor 
+Igor Alexander at er Imperial College [0.6] er has [0.3] built a number of 
+networks which for example [0.9] er i could er i could take somebody's face [0.
+5] er [1.0] take a number of [0.2] er different photographs of it [0.2] train 
+the network up [0.4] to ne-, [0.2] to recognize [0.2] that face [0.5] it would 
+then [0.2] recognize that face [0.5] in [0.4] er [1.0] profile for example 
+where it hadn't seen it before or it might 
+recognize it upside down or you can put on a false beard and glasses and it 
+still recognizes the face [0.9] and you can put the [0.4] network which is 
+trained to recognize this face into a camera [0.4] swing it around the crowd 
+and ding [0.4] it picks you out [1.1] and if you wonder what those [0.2] 
+cameras which you now see increasingly hanging below the [0.5] er [0.9] bridges 
+of [0.2] [0.6] motorway [0.5] u-, u-, under motorways are doing [0.5] [0.4] 
+what they're doing is using neural networks [0.2] to recognize [0.2] number 
+plates [1.5] and these things are extremely effective [0.3] they can recognize 
+fingerprints they can recognize voices they can recognize handwriting [1.1] er 
+[1.1] and this is something that [0.2] that good old-fashioned artificial 
+intelligence that's what GOFAI stands for [0.2] good old-fashioned artificial 
+intelligence [0.2] which recognize things on the basis of making a description 
+of your face [0.3] in some sort of [0.5] er [0.2] symbolic language [0.2] and 
+then trying to recognize it [0.3] it turned out to be extremely difficult [0.7] 
+but [0.2] training [0.2] artificial neural networks to recognize things [0.2] 
+turns out to be much easier and much more powerful [1.8] 
+sm0939: does one camera search for one number plate [0.2] or does it [1.1] 
+nm0938: no [0.3] you can 
+sm0939: well does one network search for one number plate 
+nm0938: no i mean once [0.4] you know let let's let's er let's assume that you 
+had a network for every face that you know [1.3] you there's n-, there's no [0.
+8] there's no problem in multiplying the networks [0.7] so then you take one 
+camera [1.9] parallel [0.3] the output of that camera to all these networks and 
+the one that lights up that's the person you've got in front of you 
+sm0939: do you have one network for each [0.4] face [0.4] or [0.3] whatever you 
+don't have networks which can recognize a number of different things 
+nm0938: well in fact a number of networks are [0.3] capable [0.4] of [0.3] for 
+example one of the networks that er [1.5] er [0.9] ic-, er [0.3] Alexander has 
+trained [0.5] er [0.3] can distinguish between men and women [1.4] so there's 
+one network [0.2] you show it a whole load of women [0.5] and you say that's a 
+woman [0.3] that's a woman [0.3] that's a woman [0.8] and then you show them a 
+whole load of m-, men 
+that's a man that's a man that's a man [0.3] then you show them [0.5] er a 
+gender specific [0.5] person [0.5] er who they haven't seen before and they say 
+that's a woman [1.0] and it's right [1.2] so networks are extremely flexible [5.
+9] let's t-, let's take this on in the the seminars i mean [0.5] al-, all i'm 
+putting in front of you here is the idea [0.3] that [0.3] instead of 
+programming intelligence [0.2] we can grow it [1.9] instead of [0.7] somehow 
+understanding intelligence in a formal [0.3] Cartesian way writing down the [0.
+3] the the [0.3] the procedures that underlie our ability to play chess or to 
+er have a conversation [0.6] we are [1.2] getting to the point where [0.3] 
+we're we're actually [0.6] simulating [0.6] the [2.0] the the [0.2] a b-, a 
+biologically plausible model of what the brain is doing [2.1] and notice 
+there's s-, there's some really quite interesting philosophical [0.3] 
+conundrums here because [0.2] say [0.3] you get some artificial network [0.2] 
+which does something [0.2] really quite interesting like recognize things [0.3] 
+and if someone comes up to you and says [0.3] how does the network do it [0.5] 
+you 
+actually can't say [1.2] all you can say is well it's trained to do it [0.8] 
+and if someone says [0.2] can you point to where the knowledge [1.2] is in this 
+network that allows us to recognize that face or that face [0.3] you you can't 
+you can just say well there's a whole mass of connections in there [0.5] er [0.
+3] and they do the job [1.6] er i mean here's [0.2] here's a [0.4] er [1.5] an 
+example of [1.5] er the idea that [0.2] you c-, you can have networks to 
+recognize letters [0.5] and then these [0.3] letters [0.4] as it were are 
+connected in the excitatory and inhibitory ways [0.3] to a whole set of word 
+recognition nodes in the network [0.6] and [0.3] simulating [0.3] what human 
+beings do [0.3] in experiments in recognizing words and letters [0.3] er can be 
+done using networks really quite effectively [2.2] so [0.7] i'm putting in 
+front of you here the idea that we're moving from [0.7] er [0.8] understanding 
+intelligence by [1.6] programming it [0.5] symbolically [0.5] towards 
+understanding intelligence in a more biologically plausible way [1.0] and in 
+connectionism [1.3] the [1.1] the [0.2] the knowledge [0.3] in a 
+connectionist system is distributed there's no particular place where it is [0.
+5] it runs in parallel [0.3] and it doesn't depend upon symbols [0.5] and in 
+many people have said [0.3] actually when you look at it that's the way the 
+brain works [0.7] when you open up the brain you don't see [0.4] the sort of [0.
+2] serial processor central processor structure that you [0.2] find inside a 
+normal computer [0.3] instead you see a dense [0.4] web [0.7] which you can't 
+understand simply by looking at it [1.1] and good old-fashioned artificial 
+intelligence [0.2] is very much [0.2] localized that is to say if you lose a 
+bit of an old computer's memory [0.3] you've lost that memory completely [0.6] 
+if you lose a bit of a connectionist network [0.2] you haven't lost anything 
+but the whole thing [0.9] has er lost a little bit [0.9] er good old-fashioned 
+[0.2] er artificial intelligence is definitely serial it's very fast but [0.3] 
+it's just one thing after another very quickly in a central processor [0.3] and 
+it depends essentially on [0.3] symbolic [0.3] representations of the 
+environment [0.3] and we strongly suspect [0.3] that many [0.4] good [0.8] 
+perfectly good cognitive beings like animals don't make [0.6] symbolic 
+representations of their environments at all [0.5] but their nervous systems [0.
+2] are tuned up to be able to act effectively [1.1] this is a quotation from [0.
+3] one of the people who [0.4] er invented P-D-P they say connectionist systems 
+don't contain knowledge just connections [0.7] and er another quotation a 
+similar one is that [0.3] connectionist systems [0.6] don't have any rules [0.
+3] inside them [0.2] they just behave as if they did [5.6] however [4.8] 
+compared [2.0] to connectionism [0.4] artificial life is a much more 
+fundamental break [0.7] with artificial intelligence and i'd like to spend the 
+rest of the lecture talking about that [0.9] now [0.2] what i mean by 
+artificial life is anticipated a bit by connectionism [0.6] for example [0.4] 
+some people have tried to build [0.3] small [0.2] walking [0.2] robots [0.8] 
+and [0.2] on the old idea what you did was [0.3] you wrote a program [0.3] 
+which [0.2] had instructions in it like lift the left leg [0.2] 
+move it forward [0.2] drop it again [0.3] and when you're stable [0.2] do the 
+same with the right leg [0.2] and so on [0.6] there's some sort of program [0.
+3] inside the machine and you could point to different bits of the program [0.
+3] and say [0.3] that's what moves the leg like this and that's what moves the 
+leg like that [0.9] instead [1.0] people have [0.4] begun to build machines 
+which [0.3] have legs [0.9] they have ways of moving those legs but they have 
+no program [0.7] instead [0.4] they have [0.4] a [0.8] er [2.3] a [0.2] a dense 
+[0.6] set of [0.2] connections inside them [0.4] which [0.8] gradually learn [0.
+8] to control [0.3] the organism [0.4] let me give you er a brief illustration 
+of this [10.5] er ne-, never mind the text for the moment [0.6] there's there's 
+er [0.3] a fish called a lionfish [0.5] which er [0.7] when it emerges from the 
+egg [0.3] it's simply got no idea [0.8] it swims up [0.2] down any which way it 
+looks [0.7] if they're very small and they look as if they're simply [0.4] er 
+[0.5] mess in the water just floating about [0.3] [0.7] but after er some hours 
+[0.9] you see that their [1.9] movements become less random [0.9] and [0.4] in 
+effect [0.9] what the [0.5] what the [0.4] the fish is doing [0.7] is [0.5] 
+flapping its control surfaces at random [0.7] and finding out the results [0.2] 
+of doing that [0.6] and then gradually becoming less random [0.6] to the point 
+where it can swim straight and level [0.4] now it has to have a balance organ 
+to do that [0.5] but [0.4] er [0.3] that's what it's doing [0.3] it's learning 
+about its own body [0.9] well [0.5] without [0.4] going into detail [0.9] this 
+is the control structure of er [0.3] an aquatic robot [0.2] which does the same 
+thing [0.7] you toss it in the water it thrashes about [0.5] you come back next 
+morning and it's swimming around straight and level [0.4] nobody has programmed 
+it to do that it's learned how to do it [0.9] this is artificial life [4.0] now 
+i'll i'll expand that [0.2] with some examples [4.0] in effect [0.3] the 
+program for artificial life [0.3] is [0.3] captured in these [0.8] two 
+quotations here [1.9] the project is to capture the logical form of life [0.3] 
+in artefacts [0.3] now logical form [0.4] might mean things as [0.7] er [0.2] 
+straightforward as let's say [0.5] [3.5] the growth 
+patterns of plants [0.6] now these these are plants which [0.4] are [1.4] 
+generated on a computer screen [0.5] but the manner in which they're generated 
+we're now discovering [0.4] can be described by very simple rules [1.3] what 
+you see as the complex structure of an organism [0.6] actually may be [0.6] the 
+[0.4] product [0.2] of rather simple [0.2] growth rules [0.5] and recent 
+developments in mathematics particularly to do with fractals and chaos [0.5] er 
+[0.2] are [0.3] helping us to understand [0.4] that [0.2] what we might think 
+of [0.2] as being [0.5] the [0.3] the result of a complex genetic program 
+actually might be the result of rather simpler [0.3] growth [0.3] patterns [0.
+8] and [0.2] here you have [0.2] er plants which [0.8] fundamentally the same 
+formula with a few [0.5] parameter changes produces different organisms and you 
+can even [0.3] account for the direction of the wind [0.8] now these things are 
+just structures inside computers but they could be actually [0.2] built as well 
+[4.5] likewise [3.5] here we have [0.3] er [0.2] real structures built by [0.4] 
+social insects wasps and bees [0.7] and [1.2] programming [3.3] 
+virtual insects as it were and allowing them [0.3] to [0.3] interact with each 
+other [0.8] produces structures which are beginning to capture [0.4] the the 
+sorts of patterns [0.2] that [0.3] we [0.2] we see in nature [0.6] these again 
+are virtual patterns inside a machine but once again [0.3] they could be built 
+[0.3] quite easily [2.2] what we're doing is we're [0.2] we're moving towards 
+capturing the logical form of life [0.3] in artefacts [0.5] and [0.6] well i'll 
+come on to this er at the end of the lecture but [1.3] not only the life that 
+we know about [0.7] but [0.2] the life that might be [0.2] that is to say [0.5] 
+we may be [0.2] on the brink of creating [0.2] life forms [0.4] which [0.6] in 
+a sense go beyond [0.4] the D-N-A based life forms that we know and love [0.3] 
+and [0.2] which we are ourselves [2.4] so [0.2] er i'm actually on to this [0.
+5] this point here [0.8] the examples of artificial life discovering the laws 
+of growth and form that's what plants are about [0.4] genetic algorithms and 
+comfuter computer viruses [0.5] these i mean you know about computer viruses [0.
+3] these are information structures which reproduce themselves in the 
+computer [0.2] domain [0.8] and [1.7] er [0.6] Thomas Ray [0.4] has actually 
+produced what he calls the Tierra Project [0.3] which are [0.4] th-, these are 
+not viruses these are actually [0.5] computational organisms that live on the 
+Internet [0.8] and they [0.7] they transmit themselves and reproduce themselves 
+in different computers wherever they can get [0.6] and [0.2] he sort of [0.4] 
+generated them and let them loose and now they are [0.2] they're out there [0.
+2] reproducing [0.8] er with slight variations evolving [0.2] some of them die 
+some of them find it easier to survive if they mutate slightly [0.8] er [0.6] 
+what are these things well [0.2] they're they're [0.3] they're digital 
+organisms [0.6] er it's been found that they tend to follow [0.3] the shadow [0.
+3] of [0.3] they they they tend to hover [0.2] the the the the [0.5] the 
+Internet covers the globe [0.8] and they tend to be found [0.3] in the dark 
+part [0.9] now why is that [0.4] it's because then people go to sleep [0.2] and 
+the computers have got more room [0.2] to host these organisms [0.5] so they've 
+actually developed [0.6] organic patterns [2.8] robots that learned to control 
+their 
+bodies that was that was the er the fish [0.4] and once you [0.2] er [0.3] 
+begin to [0.6] er [0.3] play with these sorts of things [0.5] you can actually 
+model [0.5] individual fish [0.4] like that [0.2] real ones [0.8] er [0.7] and 
+inside [0.6] there's [0.3] some sort of er [0.3] set of [0.4] program 
+structures [0.5] er [0.3] a-, [0.4] a [0.3] very useful thing intention 
+generators i [0.3] you know i wish i had one every time you're at a loss you 
+can just turn to your intention generator and have something new to do [0.5] 
+well [1.5] these these things er actually are not so [0.5] er extraordinary as 
+they might sound [0.5] er [2.4] here's an intention generator [0.8] er [1.3] 
+are are you er [0.5] [sniff] [0.7] are you on your own [0.9] er [2.2] sorry are 
+you inside the pack [0.7] is really what that statement is saying [0.6] well no 
+if you're not [0.4] er [0.8] find somebody and get close to them [0.3] if you 
+are [0.4] stay roughly speaking near the centre of gravity of the whole [0.7] 
+pack you're in [0.3] so if you if we produce a thousand virtual fish with these 
+little intention generators inside them [0.7] what they do is [0.2] they flock 
+[1.2] they shoal [0.4] they [0.3] they behave in an absolutely natural way [0.
+9] which is if you if you [0.2] 
+frighten them they they scatter and then regroup again [0.4] now nobody 
+programmed them to do that [0.6] all you did was put those little instructions 
+inside each one [0.7] and they [0.2] they [0.2] produce [0.4] the the [0.3] 
+resultant structure [0.5] er [0.2] emerges [6.3] [sniff] [1.1] so the point i'm 
+making there [0.4] is that you can get what might appear to be complex 
+behaviour from simple rules [0.5] flocks [1.0] of birds [0.2] swarms of bees [0.
+2] shoals of fishes [0.4] seem to behave [0.3] in an intelligent collective way 
+[0.4] well [0.5] that [0.8] collective intelligence emerges from very simple [0.
+9] intelligence in each member of the flock [0.5] or swarm or herd or whatever 
+[1.5] this is what the A-I project is about [0.3] capturing [0.3] the [0.3] 
+logical form [0.4] of [0.2] life in artefacts [5.0] now [0.3] what i want to [0.
+6] er [1.0] finish up with [1.0] er [0.7] is the [1.0] the most er radical [0.
+4] attempt [0.4] to [0.2] produce artificial life [0.4] namely [1.3] to produce 
+a humanoid [0.7] robot [0.3] [0.6] and this this is the the work of of Rodney 
+Brooks [0.5] who er at a at a conference a while back [0.2] was asked generally 
+[0.4] what [0.4] how he would describe his own work because sometimes he calls 
+himself a psychologist [0.3] sometimes he calls himself [0.2] an engineer [0.6] 
+what he's doing [0.5] is building [0.6] a humanoid robot which i'll 
+show you on a video in a minute [1.7] and er somebody asked him well [0.2] what 
+sort of a thing are you what are you what are you doing are you an engineer are 
+you a psychologist are you a philosopher what are you doing [0.4] and he said 
+well i'm a bit of everything [0.4] and if you want me to describe my work i'd 
+i'd put it like this [0.7] i'm making a hope [0.2] i'm making a [0.2] home [0.
+3] for the mind [0.5] and hoping that the mind will come [4.4] what he does is 
+he builds [1.1] he calls it behaviour based robotics he builds [0.5] complete 
+[0.2] creatures [0.8] and he [1.5] described his [0.2] er [1.4] work a little 
+bit like this [9.2] a project to capitalize on computation to understand human 
+cognition [1.1] we will build an integrated physical system including vision 
+sound input output [0.5] manipulation [0.7] er [0.7] the resulting system will 
+learn to think [0.4] by building on its bodily experiences [1.4] this is the 
+Cog Project [0.5] it's it's come to be known as the Cog project [0.4] and what 
+i'd like to do now is to show you it [0.8] now i don't know whether 
+this is er [0.6] how well this is going to work [0.2] but let's have a go [0.3] 
+[sniff] [12.0] okay i'll have to have the lights out to er [0.3] to do this 
+properly [0.7] Cog [0.3] is [0.2] er [0.4] a torso [0.5] it starts at the hips 
+[0.3] ends at the head it's got a pair of arms [1.1] un [0.2] like [0.2] most 
+[0.3] robotic research up to now it doesn't live in a laboratory [0.5] it 
+stands in the corridor at M-I-T [0.4] and people who come by [0.4] play with it 
+[1.3] and that's how it learns [0.5] and what we've got here is er [0.2] a 
+video [0.6] er this is Rod Brooks' work [0.5] er [0.6] a video [0.3] which [1.
+6] shows what Cog can do and i'll i'll it takes about five minutes [0.2] it's 
+got no sound i'll talk you through it [1.3] so [0.2] humanoid intelligence 
+requires humanoid interactions with the world [1.7] you'll see Cog in a second 
+[0.5] er [0.7] it's that head [1.6] there it is there's there's the head [0.4] 
+up there [1.2] it's er [1.3] it's not to clear in this er [0.6] thing but this 
+i-, this is Cog's [0.3] arm [0.7] and it's got er [1.0] it's got something in 
+it [0.4] which [0.2] er [1.0] it's trying to hand 
+to Rod Brooks but it's not doing too well at the moment [1.1] there's its head 
+[1.0] and notice that [0.9] as as it moves around the eyes [0.2] and the head 
+can move independently [0.6] notice here [1.5] the eyes [0.2] follow objects 
+around [3.1] if you move it slowly [0.2] the head follows it around [1.4] if 
+you move it quickly its eyes flick [0.6] if you move it slowly [0.2] it follows 
+it with its head [5.5] if you move its head [0.5] its eyes stay still [0.4] you 
+can't [0.3] you can't see this but [3.0] its its eyes are looking in one 
+direction [1.0] it's got in effect [0.4] er [0.2] an optical reflex [0.2] such 
+as we have if we move your eyes quickly [0.2] your head quickly sorry [0.3] 
+your eyes stay in the same place [0.3] lots of animals have got it [3.1] er 
+this is Cog i think trying to find something [0.3] it's looking for something 
+[5.0] [laughter] here we are [0.2] found it [0.9] and if you make a move it 
+picks up you [1.7] i've heard people who've interacted it [0.2] with it saying 
+that it's the first time they've felt like [0.4] they've they've been in the 
+room with something [0.9] it feels like [0.4] you're with something to be with 
+Cog [0.5] now most industrial 
+robots are very dangerous [0.8] you have to put them [0.6] behind [0.3] 'cause 
+they're so powerful you have to put them behind screens [0.4] Cog is safe in 
+the corridor [0.6] it's actually quite cuddly [4.7] [laughter] er [0.8] it 
+doesn't mind being wrenched about a bit [1.6] bit like a sort of friendly dog 
+[2.2] [laughter] and if you wiggle it [0.6] the actual mechanics of its body [0.
+3] are sort of humanoid too [4.9] and if given nothing to do it just sort of 
+nuh-huh-nuh-huh-nuh-huh [laughter] [4.1] however [0.2] if you leave it alone 
+once it's been doing something it practises [0.2] what it's been doing [3.3] 
+and you'll see in a second [0.4] what it's practising [1.5] but this is Cog [0.
+3] having a think about what it's been doing just a moment ago [1.9] [laughter] 
+oh [0.2] well we can fast-forward this little bit [0.9] this is this is a Cog's 
+eye view of the world [0.3] [1.0] let me er [4.2] aagh [1.4] [laughter] no stop 
+[1.8] [laughter] [laughter] [1.8] right [1.9] [laughter] this i-, 
+this is Cog [0.2] reaching [0.3] towards [0.3] something it sees [0.3] picks it 
+up with its head [1.0] and brings its hand out [0.9] and actually this i-, this 
+is a [0.7] that's what it was [0.2] that's what it was practising [0.5] now 
+here's somebody [0.3] just [0.5] playing around with Cog [1.2] putting 
+something in front of it and Cog [0.6] sort of looks at the person looks at the 
+object [3.6] now my kids grew up pretty normal but that reminds me exactly of 
+one of my daughters when she was about eighteen months old [0.6] [laughter] 
+she'd sort of push things around do it and then [laughter] [0.3] wait for me to 
+pick it up [3.4] [laughter] but this is this is Cog [1.5] learning to know its 
+body [0.9] here [0.8] okay now this is [1.0] what was that [0.2] was that a [2.
+4] was that psychology [0.9] engineering [0.4] er [0.7] what was it [0.5] well 
+i i suggest [0.2] it's [0.5] er [9.5] i i suggest it it's [0.4] you might say 
+[0.2] cybernetic philosophy [1.1] that is to say [1.4] the Cog project can 
+stand for a number of [0.2] of projects around the world now which [0.2] are [0.
+5] attempts to create [2.2] what in popular fiction would be called [0.4] the 
+[0.2] the cyborg [0.3] 
+the cybernetic organism [1.5] that is to say [0.4] Cog [0.4] begins to look [0.
+4] like [0.4] a a humanoid [1.5] it has nothing [0.2] inside it [0.2] which has 
+anything to do with artificial intelligence [0.2] there are no representations 
+[0.7] no [0.3] Cartesian [0.4] ratio right in the middle [0.6] it's just a [0.
+2] a seething mass of lots of different connectionist systems [1.1] different 
+[0.3] ways of getting [2.2] different aspects of intelligence to interact [0.2] 
+with [0.5] with [0.9] each other [0.9] and the the way that they interact is 
+structured [0.3] by Cog's interaction [0.4] with [0.2] the social world [1.4] 
+so what i'm putting in front of you is the proposition [0.3] that what we are 
+creating [0.8] is [1.5] artificial life [0.4] which will in some sense share [0.
+3] our [0.4] social world [1.3] and we will create [0.3] artificial 
+intelligence [0.3] not by [0.4] programming anything in explicit [0.2] symbolic 
+terms [0.3] but by building [0.9] machines which are broadly speaking organisms 
+[1.0] we are as it were [1.3] making [0.2] the artificial [0.7] er [0.6] 
+natural [0.9] by [1.9] creating [2.6] artefacts that can learn [0.2] a-, [0.2] 
+to be part of our social world [0.7] now [2.1] i want to finish this lecture by 
+[1.0] putting in front 
+of you [0.9] what may seem a rather odd proposition [0.3] but it [0.4] it is [0.
+2] the proposition [0.2] that actually [0.2] we [1.4] are such artefacts 
+already [2.8] this is Jonathan Kingdon who is a er [0.5] a biologist who's very 
+interested in evolution [0.7] and what he claims is that human beings [0.3] you 
+know that [0.2] our [0.7] er [0.2] genetic [0.6] material [0.5] overlaps with 
+that [0.2] of our [0.7] close [0.5] evolutionary relatives like [0.9] the 
+bonobo chimpanzees [0.4] to something like ninety-nine per cent [2.1] we are 
+very [0.4] similar genetically speaking to chimpanzees and yet we are 
+completely different [0.9] we have language we have culture and so on [0.9] now 
+i i should say incidentally that [0.8] ninety-nine per cent [0.3] might sound 
+like a lot but we're we're thirty- [0.3] three or so per cent [0.3] identical 
+with mushrooms [1.3] [laughter] so it it [0.5] it isn't er quite the drama that 
+it [0.2] might first appear [0.5] but what a lot of biologists are now saying 
+and Jonathan Kingdon is one of them [0.5] is that [0.7] we don't need to look 
+inside human beings for what makes us unique [0.2] and different 
+from animals [0.4] instead [0.3] we perhaps might look at what is outside [0.7] 
+and what [0.3] we grow up [0.4] within [0.5] and Jonathan Kingdon puts it like 
+this [0.3] that human beings [0.8] are in effect [0.3] artefacts [0.2] of their 
+own artefacts [0.5] now let me explain that [1.7] if you think about [0.6] er 
+[1.4] i-, what i what i'm playing with here is the idea that [0.6] artificial 
+life [1.0] may be creating cyborgs but we may be cyborgs already [3.3] cultural 
+evolution is much more important than biological evolution [0.2] for us 
+biological evolution stopped about two-hundred-thousand years ago [1.3] it 
+hasn't stopped but it's so slow [0.2] compared to the evolutionary process that 
+was unleashed [0.4] once human beings could transmit information [0.3] from 
+generation to generation using culture [1.3] that [0.9] if you think about it 
+wherever you look [0.4] you find something [0.2] that is made by human beings 
+for human beings [1.7] and [0.6] babies grow up [0.6] like the [0.6] the 
+lionfish there [0.8] finding out what their body will do [0.3] within an 
+environment [0.2] which is structured [0.3] to bring out [0.2] certain 
+capacities from 
+bodies [2.2] so [1.3] all the things that surround us [0.2] from [0.3] Stone 
+Age stone tools [0.2] up to [0.2] digital watches [0.8] are products of the 
+human mind [1.0] cultural [0.3] artefacts [0.2] are produced by minds [0.4] but 
+minds the human minds [0.6] are produced [0.3] by interacting [0.2] with those 
+[0.3] cultural artefacts [0.8] and so human the human condition [0.5] is in 
+fact intrinsically artificial [2.8] and i'd invite you to think about this [0.
+3] from the point of view of [0.4] literature [0.5] if we go back to [0.5] the 
+sixteenth century [0.6] Cervantes' Don Quixote [0.9] we find technology [0.3] 
+the windmills [0.2] turning peacefully in the wind [0.3] charged at [0.4] by 
+the sad knight [0.3] on the basis that they are giants which he has to slay [0.
+8] but the [0.4] the technology [0.5] is out there [0.2] and human meanings are 
+projected onto it [2.5] if we go [0.8] about three-hundyear [0.2] years later 
+to Charles Dickens in Hard Times [0.2] we find that the machine [0.3] is the 
+central metaphor [0.2] of Hard Times [0.4] machines [0.2] have now got their 
+own meanings which they project onto human beings [0.3] human beings have to 
+serve the machines [0.5] the 
+machines are a a current theme within the [0.4] a recurrent theme within the 
+novel [0.4] showing how people's lives are manipulated and warped [0.3] by the 
+powers of the machine and the needs [0.3] of the machine [1.5] and if we come 
+up to date [0.4] with contemporary cyberpunk fiction [0.4] somebody like 
+William Gibson [0.5] in his novel Neuromancer or Mona Lisa Overdrive [0.6] 
+you'll find that now the image is of human existence [0.3] passing [0.2] from 
+[0.3] flesh [0.4] into [0.2] the biolog-, into the digital domain of the 
+Internet [1.4] this [0.4] theme [0.4] this image [0.3] of the human condition 
+somehow becoming technologized [0.4] is a dominant theme [0.3] in [1.4] 
+cyberpunk fiction [0.8] as technology [0.6] has [0.8] developed so it has [0.2] 
+approached [0.7] and been assimilated by [0.2] the body [1.2] let me just er [0.
+3] give you a couple of [3.2] examples [0.8] if you think about what [0.2] we 
+[0.4] er [0.2] currently find around us in the the media [2.4] we find [0.3] an 
+enormous [0.4] enormously problematic control [0.5] of [0.6] let's say human 
+reproduction [0.4] we can now [0.2] choose the genetic make-up of the next [0.
+4] er generation [0.7] er [0.5] we are playing around with [0.7] the idea that 
+er [4.3] 
+i mean thi-, this was taken from the Guardian a few weeks ago [0.3] happened to 
+be on the same page [0.7] er spy camera matches [0.3] faces to police files 
+that's what neural networks are doing [0.3] but brain implants now allow [0.2] 
+patients to work computers without touching them which is true you can put 
+brains [0.2] you can put [0.3] er [1.3] chips into the brain [0.4] er in such a 
+way that they're biologically incorporated into the workings of the nervous 
+system [0.2] and then they transmit [0.4] er [0.4] through a radio link [0.3] 
+to a computer and you for example can drive the cursor around the screen by 
+thinking about it [0.2] which is pretty handy if your body's paralysed which is 
+what they're for [0.8] this is er [0.6] Kevin Warwick who's a [0.3] professor 
+of Computer Science at Reading [0.4] er that little thing that he's holding up 
+there [0.3] is a silicon implant which er [0.3] he put into his arm [0.3] and 
+whenever he approaches his department the computer in the department knows he's 
+coming [0.4] turns on his computer warms up his room [0.3] opens the door for 
+him [0.4] er and generally gets the er [0.8] intelligent department [0.3] ready 
+to er receive him [0.7] and er as he puts it here [0.5] 
+cybernetics is all about humans and technology interacting [0.4] for a 
+professor of cybernetics to become a true cyborg [0.3] part man part machine [0.
+3] is rather appropriate [2.0] so as [0.2] we are [1.1] technologizing [0.2] 
+the biological con-, condition [0.3] so we are [0.5] biologizing the 
+technologable [0.2] b condition [0.8] and as we assimilate [0.2] technology so 
+it [0.2] it somehow disappears [0.6] for example [0.3] i find [0.2] that people 
+of my generation [0.4] get bugged [0.3] by [0.4] computers er [0.6] by 
+telephone systems which are sort of complicated answering machines [0.3] that 
+er tell you [0.2] if you want this press that if you want that press this and 
+so on [0.9] but i find that er [1.5] younger people [0.6] and particularly very 
+young people [0.3] are beginning not to care [0.4] whether [0.3] they talk on 
+the phone [0.4] with a human being [0.4] or a machine [0.6] they don't make 
+that distinction [1.4] and in many ways [0.2] i [0.2] i think [0.3] this 
+assimilation of [0.3] technology is moving down [0.4] the age scale [0.3] at an 
+increasing rate [7.5] and [2.5] the idea that [0.3] somehow [0.3] the machine 
+[1.0] will become [0.9] human [0.9] may sound like a 
+contemporary [0.4] cyberpunk fiction invention [0.3] but in fact it was seen [1.
+1] many many years ago particularly by Samuel Butler [0.5] a Victorian [0.6] er 
+novelist and er [0.7] literary figure [0.4] friendly critic of the theory of 
+evolution [0.9] er [0.6] and in his famous er satire on Victorian society 
+Erewhon [0.8] which i-, which stands for nowhere [1.3] he [0.3] he says there's 
+there's no [0.6] reason [0.2] why machines couldn't develop consciousness [1.4] 
+in fact he he was the guy who said that a po-, even a potato has a sort of low 
+form of cunning [0.3] inside it [1.1] [laughter] and [1.8] he [1.2] he warned 
+against this [1.0] he said machines will become as it were a threat [1.3] and 
+if you look around now you'll find that machines are becoming intensely 
+personalized [0.3] people's [0.6] personal [0.7] computers are really personal 
+[0.3] that is to say [0.3] they have their own [0.4] er voice recognition 
+routines which recognizes your voice but not somebody else [0.3] it corrects 
+your spelling mistakes but not somebody else it has your diaries but not 
+somebody else [0.9] and very soon [0.7] well now [0.3] people [0.3] commit 
+themselves so strongly to partnership with machines [0.3] in which [0.2] most 
+of the artificial intelligence research is dumped [0.3] that's that's where [0.
+2] most of the M-I-T research used to be funded by the military [0.9] but it's 
+not any longer it's funded by Microsoft [0.5] who want to make machines people 
+[1.4] and so cyborgs [0.2] don't have to be [0.2] as it were [0.2] built in 
+laboratories like Cog [0.5] they will [0.2] they will appear [0.3] by humans 
+integrating their [0.2] everyday lives [0.2] with machines which [0.2] know 
+them as people [0.4] and you can see that happening [0.3] in the shape of 
+electronic pets [0.5] what are those little things called [0.5] 
+ss: Tamagotchi 
+nm0938: tam-, Tamagotchi things [0.3] well imagine [0.6] you know imagine what 
+they're going to be like in fifty years [0.2] when they actually run around you 
+know they'll be furry they'll have big eyes like this [laughter] [0.5] and 
+they'll know your voice and not somebody else's [0.4] you'll be able to teach 
+them tricks which nobody else will be able to make 
+them do [0.6] and for a lonely kid [0.2] they will be [0.6] extremely powerful 
+companions [0.6] and they will not be machines any longer [0.3] they will be 
+part of the social world [1.5] in fact [0.3] somebody [0.2] called Moravec who 
+was one of Brooks' er [2.3] research partners has written a book called Mind 
+Children [0.2] in which he claims [0.3] that it won't take very long [0.3] 
+before [0.3] artefacts computer artefacts [0.2] in a sense [0.6] continue the 
+life of individuals after they've died [0.8] computers will make us immortal [2.
+3] so i [0.2] i will finish with this [0.4] this idea [0.2] that artificial 
+life in its many forms [0.2] is actually [0.8] the making of artefacts which 
+are organic [0.5] and it's no accident that it's happening at a time [0.3] when 
+organic things [0.2] are being made into mechanisms [1.4] but all these things 
+[0.2] require some sort of [0.3] control [0.9] and [0.2] human beings have the 
+ability to control themselves [0.4] we call it [0.2] paying attention [0.3] and 
+we'll deal with that next week

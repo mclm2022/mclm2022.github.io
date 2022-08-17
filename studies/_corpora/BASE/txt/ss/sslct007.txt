@@ -1,0 +1,884 @@
+nm1112: let's make a start 
+su1113: 
+nm1112: if there's any [0.9] please look at them later all right and we will go 
+through them [0.8] okay well welcome to the second term of this course [1.6] er 
+[1.4] this cour-, this part of the course as i mentioned to you last term [0.3] 
+is concerned mainly with [0.2] con-, convergence last last term we looked at [0.
+8] how [0.2] accounting systems were different [1.1] we looked at France and 
+Germany and the Netherlands and so forth to see how the financial reports are 
+different [0.2] this term we're looking particularly at [0.5] what pressures 
+there are or have been in the world [0.7] to make [0.4] accounting comparable 
+between different countries [1.1] and we're going to do this in two stages 
+first of all we're going to look at [0.9] the process of trying to harmonize 
+accounting [0.2] within Europe [1.3] and that process has effectively ended so 
+we're really dealing with history [1.4] and then namex is going to talk to you 
+about current issues in [0.5] s-, bringing accounting systems together which is 
+[0.2] through the work of the I-F-C [0.3] and you'll have that in 
+two weeks time [0.5] and you've already had a lecture with him [0.8] so [0.2] 
+i'm going to spend this week and next week [0.2] looking at the European Union 
+[0.2] harmonization process [1.4] because it has [0.9] many er [0.2] points i 
+think that are important for the future about relative success and failure [1.
+7] er [0.8] and what we're going to do is it's going to be excruciatingly 
+boring [0.7] is we're going to come in we're going to look [0.7] at [1.5] two 
+of the main instruments of harmonization [0.7] within Europe [0.9] the first is 
+something called the Fourth Directive which i'm going to look at this week [0.
+7] and the second is the Seventh Directive that i'll look at next week and then 
+we shall look at some developments in the European Commission [0.8] er [0.4] 
+that [0.9] tie pieces together [1.0] right [0.2] so it's not i better warn you 
+it's not going to be a terribly exciting [0.6] area but i think it's good for 
+the soul [0.7] you may find it quite interesting [0.4] to see why these things 
+[0.5] have had relative success or failure [1.1] right well what i want to do 
+first is just to because i know [0.2] some of some of you are not from the 
+European Union at all [0.6] some of you are [0.6] from the European Union 
+countries [0.6] er i just want to take a very simple view [0.5] of what the 
+European Union consists of [0.9] and [cough] [0.3] the first point is that [1.
+3] it's been called various names in its history [0.9] the European Communities 
+Common Market the European Community the single market and we're now called the 
+European Union [0.9] but in its origin [1.0] it started [0.7] with a treaty [0.
+4] signed by [0.8] a small number of continental countries [0.2] basically the 
+Benelux countries [0.4] France Italy [0.2] and Germany [1.4] who signed a 
+Treaty of Rome [1.8] and the political aspect to it was [0.2] that of course it 
+was [0.7] the idea that there should be no more war in Europe [0.2] after the 
+Second World War but we're going back to nineteen-fifty-seven for that [0.2] 
+we're going some way [1.2] and the original Treaty of Rome had three [0.3] 
+central economic objectives [1.5] there was a political dimension but it had 
+three [0.3] basic objectives now [0.3] do you know what they are [0.3] what was 
+the original idea [0.4] come on you're you're from European [0.5] Union 
+countries what's the 
+sm1116: energy i think [0.3] someth-, something about energy [0.7] 
+nm1112: well there was 
+sm1116: steel 
+nm1112: yeah you're right in fact there were t-, that's why it's called 
+communities 
+sm1116: yeah 
+nm1112: 
+there was European Economic Community and the European Coal and Steel Community 
+[0.8] but if i take the European Economic Community what was the aim what were 
+the three central points [0.3] shh [1.6] what was the three central points 
+sm1117: is that the com-, [0.2] common policy er [0.4] [4.8] 
+nm1112: er very easy to remember honestly they all begin the word free [2.0] 
+free something [0.3] free something [0.4] free something [1.6] come on [2.7] 
+su1115: free [0.7] 
+nm1112: free [0.5] 
+sf1118: [0.7] 
+nm1112: you're on the right lines the word is free trade [0.6] it was the 
+removal [0.8] of [0.4] tariff barriers [0.5] and quotas between the member 
+states that would allow free trade without restriction [1.0] so that was one [1.
+3] the second one was [2.3] right i'll give you a clue [1.3] what is it that 
+underpins [0.3] the fact that you are soc-, the Socrates scheme [0.5] you're 
+here studying in the U-K [0.4] 
+sm1116: [0.8] movement of 
+nm1112: good free movement of labour [6.4] good [1.3] and there was a third one 
+[0.6] 
+sm1116: free transportation of goods [0.5] 
+nm1112: no i don't know 
+ss: 
+nm1112: well i think that comes under free trade doesn't it [1.2] free [0.6] 
+movement of [2.0] 
+sm1116: money [1.1] 
+nm1112: i like it [0.2] yeah [0.2] free movement [1.1] of [0.2] capital [1.0] 
+so these were the three central [0.7] ideas in ter-, economic terms before we 
+ever had the idea of a single market 
+before we had the idea of a euro [0.7] this was the starting point [0.7] of the 
+European Economic Community [0.5] right now i want to ask you this question i 
+want to think [1.4] the European Communities later Union [0.9] embarked upon a 
+process [0.2] of the harmonization of company law [0.7] in the member states [2.
+7] why [0.9] how [0.6] how did that they started right from the beginning [1.9] 
+what had that got to do with this [1.0] why would the European Economic 
+Community [0.3] be interested in trying to bring accounting systems company law 
+in each of the member states why would it think about [0.9] bringing them 
+together harmonizing them [1.7] can you construct a rationale [0.4] looking at 
+these [0.6] 
+sm1117: [0.9] 
+nm1112: a bit more 
+sm1117: in order to [0.4] come free movement of capital [0.4] only for someone 
+from England or [0.4] France and [0.5] invest in France [0.5] 
+nm1112: abs-, 
+sm1117: and share a common [0.5] government system [0.3] 
+nm1112: absolutely right [0.5] the idea was this the free movement of capital 
+was originally about [0.4] s-, [0.2] you know getting rid of th-, exchange 
+control so the money flows would be free within the European Community [0.7] 
+but then it led on to the the following idea [0.8] if i am somebody with some 
+funds in the U-K [1.1] 
+and i am thinking of investing in a company [2.0] this principle [0.2] should 
+mean that there should be no barriers to my investing in a British company or 
+French company or an Italian company [2.3] however the decision about where i'm 
+going to invest my funds is critically dependent [0.5] upon the fact that the 
+companies are comparable [1.8] and that the financial information that those 
+companies provide to me [0.7] are [0.3] of a kind and a nature that i can make 
+a comparison between them [0.7] to find the best investment opportunity [2.0] 
+so this argued therefore for harmonizing company law [0.9] and for getting 
+equivalent kinds of financial information for me to be able to make a decision 
+[0.9] that [0.2] was in a sense a consequence of this central principle [1.2] 
+and indeed we find this idea of harmonizing company law [0.5] in the Treaty of 
+Rome [0.3] in a very obscure section [0.6] article [0.5] fifty-four section 
+three subsection G [0.6] forever engraved on your hearts [0.7] this is the 
+origin [0.4] of [0.3] the company law harmonization 
+programme [0.8] now [0.9] again just by way of introduction [2.2] i don't know 
+how familiar you are with the [0.2] institutions of the European [0.4] 
+Communities or or [0.3] European Union [0.3] are you [1.8] isn't it i mean 
+isn't it shameful you should say that they should be ashamed here they are 
+parts of a European Union [0.5] with all kinds of political institutions and 
+they haven't the faintest idea what the what these institutions are [0.5] well 
+let's do it very quickly i'm not here to give you a course on Europe [0.6] but 
+i think it's important to understand the institutional background if we're to 
+get into the [0.8] to the actual things that govern [0.8] accounting or the 
+accounting harmonization [0.8] [cough] okay well s-, [0.5] let me [0.6] lead 
+you a little [1.1] centrally within the European Union [0.5] there are four [0.
+5] main institutions [1.4] can you guess what they might be [0.3] three main [0.
+5] institutions of the Union [0.5] or a-, of the European Communities as they 
+then was [0.3] [2.9] come on come on [1.7] 
+name anything that you remember from Europe [1.2] the cover 
+sf1119: parliament [0.3] 
+nm1112: good there you are it's not so difficult [0.5] directly elected 
+parliament [1.7] right [0.7] three more [1.2] 
+sf1120: justice court
+nm1112: yes a European Court of Justice [2.3] which was [0.3] is a court of law 
+[0.3] to deal with issues of European law [0.6] two more [3.7] if i say to you 
+Brussels [1.9] duh [1.9] big building [1.6] bureaucrats [1.4] what does that 
+tell you [0.9] 
+sm1116: commission
+nm1112: yes the European Commission [0.7] which is [0.2] a kind of [0.4] civil 
+service fonc-, the fonction publique [1.2] and [cough] [0.3] one more [1.2] in 
+fact the most por-, important one [1.5] but not one that most people know [1.3] 
+well it's called the Council [0.2] of Ministers [4.2] so [0.8] [cough] [0.6] 
+these are the four main institutions directly elected [0.6] court of law [0.2] 
+a civil service [0.8] and the Council of Ministers now the Council of Ministers 
+[0.7] is a body [0.3] that consists of the [0.8] national ministers 
+from each of the member states [0.2] and the council [0.2] then will reflect 
+the topic under discussion so if it's [0.4] if there is an agricultural issue 
+[0.9] that is to be decided like the common agricultural policy [0.5] the 
+council will consist of the Minister of Agriculture from Britain the Minister 
+of Agriculture from Belgium the Minister of Agriculture from [1.1] er Italy and 
+so forth [1.9] now [cough] these [0.8] are the four institutions [1.4] and 
+under the Treaty of Rome and everything subsequent to it [0.7] the European 
+Communities or as it's now called European Union [0.5] can produce law [1.2] 
+which [0.9] affects all of the member states of the Union [0.7] and [0.2] very 
+simply and i am oversimplifying here [0.5] there are two kinds of law [0.4] 
+that can be produced [1.6] and this law of course can be tested [0.5] in the 
+European Court of Justice [0.9] which is not the European Court of Human Rights 
+let me tell you [1.1] the first type of law [0.5] are something called 
+regulations [0.8] and the second type of law [2.1] is called directives so we 
+have [0.5] European Regulations and European Directives [0.5] does 
+anyone know what the difference is [0.6] you come across these phrases [3.6] 
+sm1121: [0.4] i see the directive's not as a obligation [0.7] it's just 
+nm1112: it's an interesting yeah
+sm1121: dire-, direction of [1.6] 
+nm1112: well it certainly it sounds right doesn't it for [0.8] i-, [0.3] 
+actually you there's something in what you say is right but something that's 
+quite wrong [0.2] but you so you've got it half right [0.9] well let me [0.3] 
+say [0.5] that [0.8] the first [0.5] deal with the the regulations these deal 
+with [0.6] minor [1.0] technical matters [4.8] and once they are decided [0.2] 
+once they are published in something called the Official Journal [2.0] they are 
+[0.3] immediately binding [3.4] they may go out for consultation [2.1] to [0.7] 
+the member states but once the u-, the European Union decides on a regulation 
+[0.2] by publishing it in the Official Journal [0.4] it has immediate legal 
+effect [1.6] 
+and the sources of regulations can either be the Commission [0.2] can issue one 
+[0.9] on its own [0.9] or [0.2] a Council of Ministers can issue one [0.3] on 
+its own [1.6] and once they are published in the Official Journal [0.8] they 
+have legal effect [0.9] and they tend to be [0.6] used for let's say minor 
+matters like [0.3] let's think of a silly example of one recently [0.2] the 
+amount of real cream [1.0] in the ice cream that you buy [1.1] the amount of 
+pig meat [0.2] in a sausage [1.1] all right [0.2] these are technical minor 
+things that come [0.5] and once the regulation has been issued that's it [0.2] 
+has effect in the U-K in Belgium and in Spain or wherever [1.7] so these are 
+minor matters [0.5] but for important issues [0.6] the legal instrument is a 
+directive [1.7] right [7.9] and these are only binding [0.4] i'll write it so 
+it's clear for you [3.2] and this is half your point actually [0.8] oh binding 
+only when [1.5] [cough] [1.2] they are [1.2] enacted [2.8] by [0.7] the 
+parliaments [5.1] of the 
+member states [1.4] i'm running out of [0.2] pens here [7.8] right [0.7] in 
+other words once a directive [1.2] is published in the Official Journal [0.5] 
+of the European Union [0.3] it has no legal effect [1.0] what has to happen is 
+that the [0.2] individual parliaments have to cr-, [0.4] put it into national 
+law [0.8] and they normally have a delay [0.9] in which to do it they must do 
+it [1.3] but they have time [0.4] to put it into national law using national 
+phrasing [1.2] right [0.7] now these are for important issues and the 
+procedures for [0.3] for actually [0.3] these directives being published or the 
+word is adopted [0.5] by the European Union [0.8] are quite complicated [0.3] 
+and [0.3] normally what happens is this [1.7] the commission the civil service 
+has an idea [0.4] for a directive [0.9] right [0.6] it publishes a draft [1.1] 
+first draft [0.6] the draft [0.4] goes to the parliament for consultation [0.8] 
+goes back to the commission [2.0] and then it may go backwards and forwards 
+several times [1.1] and then the commission [0.4] puts a draft to the Council 
+of Ministers and it goes [0.2] back [0.7] and it goes back again [1.8] and it 
+is a vote of the Council of Ministers [0.9] not the commiss-, the commission 
+can't do it on its own the parliament can't 
+do it on its own it's only the Council of Ministers [1.0] that [0.4] adopts 
+notice the verb [0.5] adopts the directive [1.0] once they adopt the directive 
+[0.2] it's published in the Official Journal of the European Communities [0.8] 
+or the European Union as it now is [0.5] and then there is an obligation on the 
+governments of the member states to put it into national law [0.5] into their 
+own national law [2.2] so very [0.2] are there any questions on that [0.4] 
+anyone i i'm sketching and oversimplifying [0.3] but i want you to understand 
+[0.5] what a directive is how roughly how it happens particularly the notion of 
+a draft [1.0] the notion of adoption [0.6] and then the requirement for 
+national legislates [0.4] to [0.2] enact it or put it into national law [2.0] 
+[cough] okay [0.5] no questions [0.9] it's a lot of fun isn't it [1.9] right [0.
+4] well let's look at what this [1.0] harmonization programme on company law [0.
+5] and the direct-, [0.2] under de-, the directive system has been [0.7] for [0.
+2] [cough] the European Communities [0.7] and if you look at the first page of 
+the handout 
+you'll see a list [0.6] of [0.2] the principal directives that [0.6] ac-, been 
+emitted [0.2] from or adopted and enacted [0.8] from er the European 
+Communities [0.3] and you'll see that they cover quite a long time period [0.7] 
+each directive the first one in sixty-eight the last one ten just over ten 
+years ago [0.8] and you'll see they're each given a number [1.4] you'll also 
+see that some of them [0.3] have never been adopted [0.6] in other words the 
+Council of Ministers has never said yes [0.9] they only exist in draft [1.0] so 
+for example the Fifth Directive [0.6] which would have brought [0.4] employees 
+[0.3] onto company boards of directors if they were public companies [0.8] has 
+never been agreed the Council of Ministers [1.6] actually that's Mrs Thatcher 
+[0.5] she wouldn't allow it to be a directive [0.5] to be adopted [0.8] and the 
+Ninth and the Tenth equally [1.6] well what i want to do is just to go through 
+and pick out the important ones [0.2] [cough] [0.8] first of all let me talk 
+about the First Directive very early on [1.2] it did three things two of which 
+are mentioned here and the third which isn't [1.5] first of all it defined what 
+companies could do [0.3] whether they were Italian [0.7] or French or 
+German or British or any of them [1.1] their powers [0.2] that defined also [0.
+3] the powers and duties of directors of [0.2] companies [0.9] those two points 
+are mentioned [1.4] the third point which is not mentioned is an accounting 
+point [1.6] the First Directive made it an obligation [0.8] on national 
+governments [0.5] to establish [0.2] a company registry [0.2] or registries [0.
+8] into which companies would file their accounts [0.7] for public disclosure 
+[2.3] now for some countries like [0.3] although the U-K wasn't a member of the 
+er the European Communities of that date [0.5] some countries there has always 
+been a company registry [1.2] there has co-, there's Companies House in the U-K 
+where companies must deposit their accounts [1.7] in France [cough] you've 
+always had some [0.8] but you know that that they are local [0.9] les Tribunaux 
+de Commerce [0.6] okay [0.7] in other countries like Greece [0.4] before this 
+was enacted in Greece [0.2] there there were never any company registries but 
+this was the first point [0.6] you know how could you ensure [0.3] to get 
+free movement of capital [0.8] then an investor could actually get hold of 
+accounts if there wasn't some place where they were deposited [0.4] the 
+accounts were deposited [0.7] and you know this is not common [0.5] well it is 
+common in some countries but there's plenty countries in the world [0.2] don't 
+have them [0.6] so for example if you wanted to look up the accounts of a 
+Vietnamese company [0.6] forget it [0.4] you're not going to be able to find it 
+[2.1] the Second Directive is one we've already come across [0.6] and it sets 
+minimum capital requirements on the formation of a company [0.7] it also 
+defined distributable profit although that's not mentioned here but more 
+importantly [1.0] it gave a common constitution throughout all the member 
+states [0.9] between a private company and a public company between a P-L-C 
+limited S-A S-R-L [0.3] A-G G-M-B-H [1.3] all similar [1.1] right [0.4] and 
+that's useful so that any investor now [0.3] will know what kind of company [0.
+4] he or she is dealing with [1.4] okay [1.2] the Third Directive was a one 
+that only affected 
+Benelux and France it's deals with something well you'll know about that [0.8] 
+er [0.2] in France it deals with something called fusion [1.0] and mergers [1.
+2] the Fourth Directive is the big one [1.1] dealing with [0.7] when the 
+accounts are published [0.4] what [1.0] financial information must be [0.3] 
+disclosed what the content of the annual accounts is going to be [0.7] and 
+that's where we'll be looking at a little later [1.1] but at the bottom of the 
+page you'll see [0.5] although the Fourth Directive was [0.3] adopted [0.7] by 
+the Council of Ministers in nineteen-seventy-eight [0.8] it was given a delay 
+was given [0.2] for [0.4] countries to put it into national law so [0.3] 
+Denmark and the U-K were the first countries [0.7] Sweden Austria and Finland 
+who joined quite recently [0.3] European Union of er just [0.8] recently [0.7] 
+and you may notice Italy [0.5] Italy [0.5] took [0.5] thirteen years [0.5] to 
+put this er directive into national law they were even going to be taken to the 
+Court of Justice [0.5] 'cause they were so late [1.4] [cough] so we're going to 
+look at the Fourth Directive today [0.4] the Fifth 
+hasn't been er adopted [0.2] the Sixth is a minor one that deals with something 
+called [0.3] again i just speak to the French scission [0.4] de-, de-mergers if 
+you've done scission [1.2] the Seventh Directive is the other great one it 
+deals with consolidated accounts [0.8] group accounts and we shall look at that 
+next week [1.1] and again if you look at the bottom of the page [0.6] you'll 
+see the dates of enactment there the Seventh was adopted in nineteen-eighty-
+three [0.9] and you'll see the dates [0.2] when it was put into national law [1.
+0] er [0.2] and you'll notice that some countries that you've dealt with [0.5] 
+actually put them in together [0.5] so if you look at the case of Germany [0.7] 
+Germany waited [0.3] to put [0.2] the Fourth Directive into national law [0.6] 
+into their national law [1.0] until the Seventh had come out [0.4] and then 
+they did the two together [1.0] and that you may remember when namex did 
+Germany [0.5] you came across the Bilanzrichtlinie-Gesetz of nineteen-eighty-
+five [0.5] that's the one [0.9] that [0.3] er puts in both [1.8] the Eighth 
+Directive is the third 
+is the third big one [0.6] Fourth the Seventh and the Eighth [0.2] and this 
+deals with [0.6] common qualifications for auditors [0.3] and their appointment 
+[0.3] procedures for appointment and procedures for their dismissal [2.0] Ninth 
+and Tenth [0.8] er aren't haven't been introduced [0.4] the Eleventh is very 
+minor [0.2] [cough] the Twelfth [0.6] is a minor one although it's had quite an 
+impact in some countries [0.9] er [1.0] the idea of a company is that you have 
+two [0.2] shareholders minimum of two [1.5] the Twelfth Directive introduced 
+the idea that [1.1] you can have a one-person company where there's only one 
+shareholder [0.4] and create company as a shell [1.0] er [0.6] in some 
+countries in the European Union there's a name for this i'm going to ask the 
+French [0.7] what's it called in France [1.4] E-U-R-L [0.8] Entreprise 
+unipersonnelle à responsabilité limitée [0.9] the U-E er E-U-R-L [1.1] you 
+can spot one of these if you see a French business and it's got the name and 
+it's got this behind the name [0.8] then it's a one-person company [2.1] right 
+[cough] so i mean that's the background now we're going to go 
+in [0.5] to the Fourth Directive 'cause that's the big one [0.7] and what i'm 
+going to do with you [0.2] and you're going to hate this [0.6] you really are 
+going to hate this [0.7] is i'm going to we are going to read [0.2] the 
+directive [0.2] together [1.4] we're going to go through a certain number of 
+articles and i'm going to ask questions and think i want you to think back [0.
+5] to France and to Germany [0.8] and to the Netherlands [0.4] 
+we did those countries [0.9] because it's by going through it [0.9] that you 
+can see [0.2] the potential for success and the potential for failure [0.7] in 
+terms of bringing accounting systems together [0.8] now what you have in front 
+of you is a copy of the Fourth Directive [0.8] i don't propose to go through it 
+all [1.5] i'm going to go through depending on the time we have [0.2] up to 
+about article forty-two i'm not going to consider each article [0.6] i'm just 
+going to pick out and ask you to think [1.1] about the consequences the 
+implications [0.4] of [0.4] the basic [0.8] [cough] [0.2] things that are 
+contained [0.8] right [laugh] how are 
+you feeling [1.3] happy [1.0] pleased [0.3] content it's a lovely new year and 
+we're going to enjoy ourselves [1.1] right [cough] let's just [0.8] start [0.3] 
+by looking just the words coming out Fourth Council Directive [0.5] 'cause it's 
+the Council of Ministers [1.1] based on article fifty-four-three-G of the 
+Treaty [1.6] and then this wonderfully pompous phrasing [0.3] the Council [0.7] 
+having regard to the Treaty [0.6] having regard to a draft from the Commission 
+having regard to an opinion of the parliament [0.3] all of this preliminary 
+stuff [0.9] then says [1.7] whereas the coordination of national provisions 
+concerning watch the words [0.7] presentation [2.1] content of annual accounts 
+and annual reports [0.7] valuation methods [0.6] and publication [0.4] is of 
+special importance [0.4] three [0.2] four key words there [0.7] the directive 
+is going to deal with the way the accounts are presented [1.5] what their 
+content is [0.7] what rules are going to be used for the valuation of assets 
+and liabilities [0.8] and [0.2] the details of publication [0.9] so in the very 
+first introduction you know what this is about [3.4] the next paragraph [0.3] 
+says [1.2] whereas [0.3] simultaneous coordination is necessary well try 
+telling 
+that to the Italians [0.7] they took thirteen years to put this in as i 
+mentioned [0.9] and then it goes dum-de-dum-de-dum-de-dum and then the last 
+part says [0.5] whereas moreover the necessity and the urgency of cu-, such 
+coordination has been recognized and confirmed [0.6] by article two of 
+Directive sixty-eight-one-five-one [0.9] what is Directive sixty-eight [0.3] -
+one-five-one [0.2] what would you guess [1.6] 
+sm1117: [0.3] 
+nm1112: yeah which which directive is it [3.8] 
+sm1117: first [0.3] 
+nm1112: it's the first now that's telling you something interesting it's 
+telling you that the European Communities as they we-, then were [0.9] were 
+trying to [0.3] they had in mind the Commission at least had in mind a whole 
+series of interconnected directives [0.8] they weren't just [0.5] oh that's a 
+good idea and now here's another good idea [0.6] they were thinking them 
+through [0.3] as they were [1.2] working on one they were thinking of the next 
+[1.3] right the next paragraph [0.7] whereas it is necessary moreover [0.5] to 
+establish in the community [0.3] now watch [0.3] 
+three [0.2] words [0.7] minimum [0.9] equivalent [0.7] legal [0.5] requirements 
+[0.8] as regards the extent of the financial information [1.3] right [0.7] 
+again this gives you a clue to the harmonization process first of all [1.4] 
+it's going to concentrate on basic things [0.2] minima [2.8] it's not intending 
+[0.2] to go through and lo-, cover all the accounting issues that are involved 
+[0.5] in the balance sheet P and L notes [0.7] it's minima [1.1] right [1.0] 
+second the second word is equivalent [0.3] it's not trying to make [0.4] the 
+requirements the same in each of the member states it's trying to make them 
+equivalent one to another [1.1] so that's actually quite a limited process [1.
+8] it's not saying that in France [0.5] you must depreciate buildings over 
+twenty years and also in England you must be-, depreciate buildings over twenty 
+years it's just trying to make things equivalent [1.4] and then the third thing 
+[0.3] is legal [0.9] the harmonization process is through the amendment of 
+company law [0.9] now [2.2] can you see a problem [2.9] with that word legal [0.
+6] can you see a problem [0.8] with 
+this [0.2] approach to bringing accounting systems together [0.8] making them 
+converge [0.6] using [0.6] a requirement of chan-, using legal requirements [1.
+4] come on [1.9] 
+sm1117: i think the problem is er who is er [2.0] er [0.2] who is giving the 
+law for accounting in this country [0.3] some in France come from [1.0] the [2.
+1] government [0.9] the government issues [0.5] er and from something in the U-
+K is coming from er they look at the [0.8] the boards of accountants [0.4] 
+nm1112: well not the boards of accountants come on what's it coming from [0.4] 
+[sniff] [0.4] you're right you're exactly on the right track [1.9] what's the 
+point y-, y-, you're absolutely right i just want i want the words
+sm1117: [0.6] er [1.4] the [0.5] 
+nm1112: [laughter] it's the Christmas holidays being too long [1.0] [laughter] 
+all right there you got the point i mean the 
+sm1117: SAPs and [0.5] 
+nm1112: yeah SAPs are a bit old 
+sm1117: yeah
+nm1112: we don't talk SAPs now [0.7] yeah the point is this in [0.6] in many 
+member states in the European [0.7] Communities as they then were [1.1] er [0.
+5] accounting regulation is entirely by law [0.9] in Germany [0.3] in Italy [0.
+2] in Spain [0.2] in France [0.4] 
+sm1117: Greece 
+nm1112: and the point about and in Greece thank you [0.8] and you you know in 
+France there's a Code de Commerce there's the Plan Comptable Général there's 
+the Comité de Reglementation Comptable all these things we've talked about 
+it's all government driven [1.1] but in the U-K and Ireland [0.3] and to a 
+lesser 
+extent in the Netherlands [0.3] the principal detail governing accounting [0.4] 
+doesn't come from law it comes from accounting standards [0.5] generated in the 
+U-K by the Accounting Standards Board [2.0] and that's the problem [0.9] 
+there's only a certain amount that's covered by company law [0.3] in the in in 
+the Anglo-Saxon element [0.2] of the European Community [0.7] so [0.3] it tells 
+you [0.2] [laugh] [0.3] you're not going to get harmonization [0.2] how can you 
+require how can you re-, [0.4] require U-K accounting to change by changing its 
+law [0.6] when for the actual thing that governs accounting in the U-K is not 
+law [1.4] and it changes very quickly we get more and more standards coming out 
+[1.8] it tells you in a sense that inherently in this process [0.6] the success 
+if any is going to be very limited [0.3] and it also re-emphasizes the point 
+about minima [0.2] you couldn't capture [0.6] accounting regulation by simply 
+changing the law [0.2] in the U-K [0.3] so i think that's a very significant 
+phrasing [1.4] right the next paragraph tells you a little bit 
+more about the content and it says whereas annual accounts must give a true and 
+fair view [1.1] right [1.1] so we got that's [0.2] that's Anglo-Saxon in origin 
+isn't it this notion of a true and fair view [1.2] next part whereas to this 
+end a mandatory layout a prescribed format [1.0] that's German [0.8] and French 
+[1.2] so there's an element of a compromise [0.2] coming and you see there's 
+both [0.7] Anglo-Saxon and continental inputs into this [1.3] whereas there is 
+a minimum content of the notes [0.2] and whereas [0.2] de-, derogations may be 
+granted and derogations means exemptions in English [0.7] er for certain 
+companies of minor e-, economic and so-, [0.2] social importance [1.7] and then 
+the next paragraph says [1.3] whereas the different methods I-E rules [0.3] for 
+the valuation of assets and liabilities must be coordinated [0.6] dum-de-dum-de-
+dum-de-dum [0.3] disclose [0.3] comparable [0.4] and equivalent [0.2] 
+information [2.4] comparable and equivalent [0.7] it does not say [0.9] 
+disclose the same information [1.2] it just means 
+that they should be comparable [0.4] one to another [0.6] and equivalent [0.5] 
+so again very limited objectives [0.6] so have to give it [1.5] and the next 
+paragraph [0.2] is well yes [1.4] whereas the annual accounts must be published 
+in accordance with the First Directive yes [0.4] whereas however certain 
+derogations [0.2] exemptions [1.1] can be given for small and medium-size 
+companies [0.5] now what's that telling us [1.7] what do you think that's 
+telling us [2.4] i know is this wording is strange and a little [0.2] official 
+but what's it telling us then [3.3] whereas the annual accounts of all 
+companies to which this directive applies must be pub-, must be published [0.2] 
+in accordance with [0.3] the First Directive [0.3] whereas however certain 
+derogations [0.6] may likewise be granted in this area for small and medium-
+size companies [0.5] what's that telling us [5.6] go on have a go [1.3] 
+sm1117: it's not very important so [0.5] er [0.8] because [1.5] maybe they'll 
+all think of cost so is one a medium-size company [0.2] matter four of clause 
+four [0.3] what 
+nm1112: well we haven't got to au-, you're right actually haven't got to audit 
+yet [0.4] but you're right [0.5] it is about costs [1.5] what it's basically 
+saying First Directive says if you are a company you 
+must file your accounts in the registry [0.9] what this is saying effectively 
+[0.2] is that if you are [1.0] under the criteria of size small or medium-size 
+you don't have to give so much detail [1.4] that's what it means all of the 
+detail [0.6] that you would normally publish [0.3] if you're small [0.6] er [0.
+2] not so much detail [1.5] and your audit point is the next point [0.6] 
+whereas annual accounts must be audited by authorized persons [0.9] whose 
+minimum qualifications shall be subject of [0.4] shall be the subject of 
+subsequent coordination [1.5] 
+which subsequent coordination [4.8] whereas annual accounts must be audited by 
+authorized persons whose minimum qualifications [0.6] will be the subject of 
+subsequent coordination [0.9] which [0.2] what are they looking forward to [1.
+0] go to your list of directives [0.4] 
+sm1117: er [0.9] 
+nm1112: which one [0.5] 
+sm1117: i think it's er [cough] [0.4] er 
+nm1112: which one [8.7] the Eighth [0.7] can you see it [0.5] look [0.2] on the 
+list of directives [0.4] so [0.3] this Fourth Directive is looking back to the 
+First and looking forward to the Eighth it's saying that the programme [0.8] of 
+harmonization is going to include the coordination between the member states of 
+[0.4] the qualifications of auditors [0.4] the Eighth [1.2] okay [0.2] again 
+emphasizing [0.4] that the programme is seen as a whole [1.3] so whereas the 
+annual accounts must be audited by authorized persons whose minimum 
+qualifications will be the subject of subsequent coordination whereas only 
+small companies may be relieved of this audit obligation [0.2] so what it's 
+saying is the Fourth Directive [1.1] is going to permit member states [0.8] to 
+allow small companies [0.3] 
+not to be audited [2.0] and that already is telling you there's going to be a 
+difference [1.4] in the U-K [0.9] all companies no matter what size [0.9] have 
+to have their accounts audited [1.5] and the Fourth Directive is going to al-, 
+may [0.3] er [0.5] is going to allow member states to relieve [0.3] very small 
+companies from having to be audited [0.5] can you give me an example of a 
+country that does that [3.5] 
+sm1117: [0.4] Greece [0.2] 
+nm1112: Greece [0.2] can you give me an example of a country that does that [0.
+6] 
+sf1118: 
+nm1112: France thank you [0.3] very good [0.4] come on a bit further [0.5] and 
+then we'll take a break [0.7] er [1.6] the next para-, the next paragraph at 
+the end [0.4] whereas when a company belongs to a group [1.2] right it's 
+desirable that group accounts should be published [0.7] whereas however pending 
+the entry into force of a Council Directive on [0.2] consolidated accounts 
+which directive [5.9] the [1.2] 
+sm1117: seventh
+nm1112: seventh yeah so again it's looking forward okay [0.9] er they're making 
+some transition arrangements [0.7] right well at that exciting point [0.9] 
+we'll [0.3] 
+take a break [0.3] for ten minutes and then we're going to dive in and as i 
+said i don't want you to be frightened by the words but i think it's quite 
+useful to do this because [0.4] at each stage you can stop and think okay now 
+how's that going to work [0.6] or what problems is that going to throw up and 
+in doing that [0.3] you actually see [0.7] as i say the [0.2] advantages and 
+disadvantages of the process [1.0] so [0.4] we'll meet again at [1.2] twelve 
+o'clock 
+nm1112: 
+clear what we're doing [1.6] okay leave the case studies we'll deal with them 
+later [0.2] let's go back [0.4] to [0.6] right so we looked at the preamble 
+we've already got some clues as to the way that this directive's going to shape 
+up [1.1] and what i want to do first is to look at article one which looks very 
+long [1.6] and it says [1.7] it's got two sections and it says the coordination 
+measures notice the word coordination what the directive is doing is not making 
+everything the same it's coordinating between the different member states [1.1] 
+coordination members shall apply to the laws [0.3] et cetera et cetera [0.4] of 
+the member states relating to the following types of [0.2] companies [1.2] and 
+then you've got the companies that were m-, the countries that were members of 
+the European Community then [1.6] and what do you notice about those companies 
+[1.3] either in France or [0.4] Greece or Germany or Britain [0.7] what's the 
+common characteristic [2.8] 
+sm1117: a a limited liability company 
+nm1112: yeah they're all limited liability companies [0.8] right [1.3] so it's 
+only 
+limited liability companies that are being captured by this directive as a 
+requirement [1.0] so general partnerships [0.7] no [0.5] sole traders [0.4] no 
+[1.6] unlimited liability companies no [0.3] they're not subject to this 
+directive [1.3] okay [1.2] however [1.0] and this is a point of difference [0.
+2] there's nothing in this dir-, in this article [0.2] that prevents member 
+states [0.3] from applying the directive [0.8] to these c-, [0.2] other sorts 
+of businesses [2.3] is there [1.2] all it says is that [0.4] this a-, must 
+apply to these limited liability companies but there's nothing to stop [0.2] a 
+country saying [0.3] oh well [0.3] we'll make it apply [1.1] to everybody [1.5] 
+and that's what's happened some countries [0.2] have applied the directive [1.
+0] aside from publication requirements [0.4] to every enterprise [0.9] that's 
+the case in France and the case in Greece [4.3] yeah [0.7] Greek businesses 
+even if [0.8] they [0.4] even if they're not limited liability companies [0.4] 
+will have [0.3] the basic rules here applied [0.4] through your [0.6] Greek [0.
+3] general accounting plan [0.5] the French [0.4] general accounting plan [1.3] 
+is 
+consistent with this [0.2] so the only difference is that that everybody uses 
+it in France and Greece the directive [0.5] the only difference is that [0.3] 
+if it's not a limited liability company [0.7] they don't have to publish their 
+accounts [0.8] okay [0.9] you might like to think about [0.3] why does this 
+directive only apply to limited liability companies [0.8] i'll leave you to 
+think about that [3.9] 
+sm1117: why [0.2] 
+nm1112: why [0.2] why only limited liability companies [8.2] limited liability 
+businesses [0.9] why doesn't it apply to everybody [2.0] why didn't why didn't 
+the European Communities make it apply to everybody [0.9] partnerships sole 
+traders unlimited liability companies nationalized industries [4.3] well it's 
+okay i said i'll let you think about it it's basically because when an earner 
+has limited liability [0.4] creditors need protection [1.7] because a 
+shareholder is only limited up to a certain amount [1.6] it [0.3] it's po-, 
+it's for the protection of creditors [1.4] that's why it's here [0.9] and 
+you'll notice in section two [1.6] that there is [0.2] 
+pending subsequent coordination the member states need not apply the provisions 
+of this directive to banks [0.6] or to insurance companies [0.5] why [1.9] why 
+do you think [0.9] that they w-, you know needn't apply to banks and insurance 
+companies [0.5] 
+sm1117: got special er [0.5] 
+nm1112: they've got special accounting special legal requirements to [1.0] 
+state-run banks [1.1] protection of depositors protection of policy holders the 
+accounting issues are very very different [0.7] but what's happened is th-, [0.
+3] the European Communities and then the European Union has published a Fourth 
+Directive [0.7] for banks and a Fourth Directive for insurance companies 
+separate [1.5] okay let's move to article [0.6] two which is section one 
+general provisions [0.7] and article two is really the heart [0.4] of the 
+directive [0.2] and it needs to be read very carefully i'm going to point out 
+some words to you and then i'm going to ask you to think [0.8] of the 
+implications and consequences [1.3] right [1.5] so the first one [0.2] the 
+annual accounts shall comprise the balance sheet [0.5] P and L 
+account [0.2] and notes [1.8] what's missing [1.6] 
+sm1117: cash flow [0.6] 
+nm1112: cash flow statement why is it missing [1.9] why do you think it's 
+missing [3.8] why didn't they put cash flow statement [0.8] as a requirement [4.
+2] well the answer is historical [0.8] the cash flow statement was really only 
+developed in the nineteen-nineties [0.4] the first requirement in the world for 
+a cash flow statement [0.5] was S-F-A-S-ninety-five in the U-S [0.3] they 
+didn't have it then [1.6] but in fact y-, [0.2] a country very re-, last year 
+[0.3] Norway which is not a country in the European Union [0.4] has actually [0.
+2] because of trading and all the rest and making sure funds can flow [0.5] has 
+enacted the into Norwegian law a Fourth Directive [0.2] but it's added [1.5] a 
+legal requirement for the cash flow statement [0.5] but cash flow statements 
+weren't around [1.1] and that's telling you something rather interesting [0.2] 
+it's telling that this is essentially a one-off directive [0.3] it hasn't been 
+amended [1.7] seventy-eight it was adopted [0.2] we're now two-thousand [1.0] 
+i'm not very good at sums but [0.3] that's [0.2] twenty-two 
+years isn't it [1.2] nothing's changed [3.1] telling you perhaps that the 
+process of getting agreement on these things is actually very difficult [1.4] 
+and then the second statement i'll just ask you to remember this these 
+documents shall constitute a composite whole in other words [0.5] the annual 
+accounts are not to be thought of individually as a balance sheet and P and L 
+notes they're [0.6] all together [0.2] they're a whole [0.2] you'll see the 
+importance of that in a minute [1.4] right article two says section two says 
+they shall be drawn up clearly in accordance with the provisions of this 
+directive that's German in origin [1.2] and now [0.4] look at this this is the 
+key one [1.0] the annual accounts shall give a true and fair view [0.5] of the 
+companies' assets comma liabilities comma [0.4] financial position and profit 
+or loss [1.3] where is this come from [1.2] from the U-K [0.2] okay [1.0] so 
+it's a true and fair view which comes from the U-K's Companies House [1.0] but 
+there are several things to say about this [0.8] first of all [0.2] 
+you're reading the English language version [2.1] of the Fourth Directive [0.8] 
+but there is obviously [0.7] a French version and a Greek version and a Finnish 
+version [1.8] and in the European Communities or European Union [0.2] they all 
+have [0.2] equal authority [0.8] the Finnish version is exactly the same 
+authority as the English version [1.3] it's exactly the same as the Greek or 
+the French [0.7] can you see a problem [1.1] 
+sm1117: translation of the true and fair view 
+nm1112: translation of true and fair view [0.5] di pragmatiki eikona [0.4] une 
+image fidèle [0.4] la [0.2] do you remember the Spanish case [0.5] la imagen 
+fiel [0.8] the you don't remember this i talked about it last time [0.6] 
+Spanish translated this phrase as [0.2] the [0.5] faithful picture [1.0] 
+there's only one [0.2] the [1.8] and you get it by applying the rules [0.2] in 
+the Spanish [0.4] law [0.9] whereas the English version says a true and fair 
+view [0.7] so you're going to get differences [0.7] and each version [0.5] is 
+equally authoritative [1.5] do you do you understand be-, because the the 
+criterion [0.3] is expressed in a different way [0.4] it could lead to 
+different numbers 
+in the accounts different ways of doing things [0.8] yeah [1.3] what about [0.
+2] i-, [0.5] you did a lecture with namex on the I-S-C [1.2] do different 
+languages have equal authority for international accounting standards [3.1] can 
+you remember [0.3] no they don't [1.0] they're published in English [2.5] so [0.
+2] that's quite interesting [0.8] because there's always a base [0.2] in 
+international accounting standards that you can refer to it's it's the English 
+version that has authority [0.6] and everything must fit with it [0.7] but in 
+the European Union the European Communities they're all of equal authority so 
+they can be taken [0.4] the phraseology can be taken differently [0.6] 
+and this is the first point [1.2] e-, despite despite it being of Anglo-Saxon 
+origin [0.7] the second point [0.2] is the words er see if you can remember 
+this [0.4] if i show this to British students [0.7] and i say [0.2] of the 
+company's assets liabilities financial position [0.9] they look a bit odd they 
+say to me [0.9] well [1.2] what's the difference assets and liabilities do 
+represent financial position [0.9] so why is the words being repeated [2.7] but 
+[0.3] in a lot of other language versions [0.2] assets comma liabilities are 
+translated by a single word [0.5] can you remember what it is [2.9] i'm looking 
+at the French [2.2] 
+sf1120: actif passif [0.8] actif passif
+nm1112: non [1.6] non that would be the straight translation actif passif [1.6] 
+here's the word you should remember it [9.7] you told me this is the same word 
+in Greek [0.8] i remember [1.6] the words assets comma liabilities translated 
+by the word [0.2] a single word [0.2] 
+patrimony now what's the significance of this patrimony idea [4.6] well it 
+refers to things that are legally owned [0.2] or legally owed [1.5] right [2.2] 
+take me a bit further [5.4] no you don't follow the point [0.6] what it means 
+is that you can only put something on the balance sheet if it's legally owned 
+it can only appear as an asset if it's legally owned [1.2] which is the reason 
+why you can't capitalize finance leases [2.3] but we don't have that 
+restrictive notion of patrimony [1.4] so we can put more things on the balance 
+sheet [1.5] do you not underst-, do you not follow don't you remember this [1.
+3] come on let me gi-, [0.3] you're sure [2.2] don't remember this [1.4] all 
+right let me give you a better example to make you remember [0.3] are you do 
+any do you know anything about co-, 
+sm1117: it's about leases [0.7] leases [0.2] 
+nm1112: lea-, finance leases absolutely right you can't capitalize finance 
+leases [0.4] under the restrictive notion of patrimony [0.4] and that's that's 
+what appears [0.4] in the French and Greek versions [0.8] and Spanish and 
+Italian [0.8] so it's telling 
+you that because of a for-, a lang-, a translation problem [0.7] you're not 
+going to get harmonization [2.1] do you understand this point about patrimony 
+[0.9] no all right well then i'll give you just just refresh-, i [0.3] i'm 
+going to take a football example [0.6] right [0.7] this foot-, do you know 
+anything about football [1.6] i [laughter] don't know i i don't know anythi-, 
+you know anything about football [1.0] all right well look [cough] i'll tell 
+you this 'cause this is what my son tells me [0.8] there is a famous football 
+player in the U-K called Alan Shearer [0.6] he's cap-, you're nodding your head 
+he's captain of the England football team [1.4] and [0.3] he [0.6] plays for [0.
+2] Newcastle United [0.6] doesn't mean anything to me 
+sm1117: 
+nm1112: you yeah er you remember the story ah the story is this [1.3] could 
+Newcastle United [0.8] put [0.3] Alan Shearer [0.2] as an asset [0.9] on 
+Newcastle United's balance sheet [0.8] [laughter] [0.8] now if i ask the 
+question to the French or Greeks [0.4] or to 
+the Chinese [0.6] you say [0.6] of course not [1.4] and you would say [0.3] 
+Newcastle United doesn't own [0.4] new-, [0.2] Alan Shearer he's not part of 
+the patrimony [1.5] right [0.7] but in the U-K [0.6] our notion of an asset [0.
+2] is far more flexible [0.3] to be an asset [1.0] 
+sm1117: 
+nm1112: you have to have a resource that you can control [1.1] and to which you 
+can give a reliable monetary value [0.5] does Newcastle United controlled [1.5] 
+Alan Shearer yeah he's under contract [0.7] can you give a reliable monetary 
+value yes he was transferred to Newcastle United for fifteen-million pounds [0.
+8] is he going to produce economic benefits for the club [0.2] yes [0.5] bang 
+[0.3] put him on the balance sheet [laughter] [2.0] yes [0.3] but you can't do 
+that when you have a notion of patrimony which is very restrictive [0.8] and 
+the fact that [0.7] you got a la-, you got a translation issue here [0.2] 
+assets comma liabilities is English patrimony [0.6] is French and Greek and 
+Spanish and Italian and Belgian [0.4] and almost e-, and Greek and ev-, almost 
+every other country in the 
+European Union [0.3] so it's already telling you that there's going to be a 
+problem [0.7] you're not going to get harmonization because of this conceptual 
+difference [1.0] yeah [0.8] now the third point [0.3] about this statement is 
+this i want you to connect [0.8] this section [0.7] the annual accounts shall 
+give a true and fair view [0.6] with the first section [2.2] can you see a 
+problem [2.3] the annual accounts shall give a true and fair view [0.2] 
+sm1117: accounts [0.8] 
+nm1112: a little more [0.3] yeah i like it [0.2] i like it
+sm1117: [0.4] sections there doesn't say a true and fair view in the notes of 
+the accounts [0.9] 
+nm1112: well what it s-, the first section says [2.7] therefore [0.3] from 
+section three [0.8] the accounts as a whole must give a true and fair view [2.
+1] right [2.5] what does that allow [3.6] think France think Germany [4.5] well 
+what it means is [0.3] it's possible [0.6] to have one part of the accounts [0.
+2] that is not true and fair [1.4] provided that another part of the accounts 
+[0.2] corrects it [0.7] so that overall [0.5] the accounts are true and fair [2.
+0] do you follow that [0.2] can you think of anything where that might apply [4.
+5] 
+three letters [1.5] T [0.4] 
+sf1118: tax [0.3] 
+nm1112: thank you [0.4] tax [0.6] it's possible for something to be tax-
+polluted in one part of the accounts provided [0.6] that the correction to that 
+tax pollution is made in the notes [0.3] so that overall [0.7] you give a true 
+and fair view [2.2] yeah [0.4] [laughter] [0.3] and it's only in close reading 
+of this that you see the potential [0.5] for divergence if i didn't make you do 
+this you wouldn't even think of it [0.2] so whereas you've got what seems to be 
+harmonization the words [0.7] are expressed in such a way that the potential 
+for divergence is there [2.7] okay [0.2] [cough] [0.3] let's [0.9] go on a bit 
+er sections four five and six say four says well if it you don't get a true and 
+fair view got to add additional information [0.7] that's [0.2] b-, [0.2] that's 
+section four section five says [0.7] where in exceptional cases [0.3] you don't 
+get a true and fair view by applying the provisions of the directive [0.6] you 
+must depart from the directive [5.8] but national governments have said [1.4] 
+in Germany [1.1] we don't have any 
+exceptional cases [1.3] so [0.3] section five doesn't apply [1.8] difference is 
+interpretation [0.9] we're getting [0.9] all right well that [0.5] is [0.2] 
+just giving you a flavour of some of the areas [0.5] er let's go on we've got 
+section two which is about some general provisions of the balance sheet [0.5] 
+er we'll leave [0.2] most of those away [0.7] er [2.7] look at article six [0.
+3] what does this remind you of [1.9] this is a potential for divergence [0.4] 
+i wonder if you can think of a difference [11.1] what's that remind you of [6.
+3] member states may authorize or require [1.6] adaptation of the layout of the 
+balance sheet and P and L in order to include the appropriation of profit or 
+treatment of loss [1.1] 
+sm1117: [1.0] 
+nm1112: yeah well a bit more you're right what you've just done the French case 
+study [2.1] what kind of balance sheet is a French balance sheet [0.6] 
+sm1117: tax [1.2] 
+nm1112: it's before appropriation [0.7] in other words the net profit [1.1] is 
+put straight into equity [0.2] without any appropriation 
+of that profit [0.8] yeah [0.5] and you had to do that little exercise of 
+finding the dividends do you remember [1.0] whereas in the U-K [0.5] which is a 
+which has taken article six [0.6] from the net profit after tax we show 
+proposed dividends we retain profits the retained profits slot into equity [0.
+7] and the proposed dividends go into [1.5] 
+sm1117: current liability [0.3] 
+nm1112: current liabilities [1.0] so you've got [0.2] already [1.1] an 
+exemption which is going to mean that the accounts are going to be different [2.
+3] one country's done it another country hasn't [2.3] okay section three [0.9] 
+says talks about the layout [0.7] of the balance sheet [0.4] right and 
+basically there are two layouts possible [2.5] article nine is the two-sided 
+balance sheet [0.2] assets on the left [0.4] capital and liabilities on the 
+right [1.2] and article ten [0.7] is the vertical balance sheet [1.5] right [0.
+3] so the [0.3] European Union [0.6] the European Communities as was are saying 
+you can choose your layout [0.6] horizontal [0.4] or vertical [1.4] and [1.5] 
+it's saying in article eight [2.0] that member states can say either one or 
+both [1.5] well that's 
+not going to make things very easy is it [4.4] i mean [1.0] you know in in [0.
+2] most continental countries [0.7] it's [0.2] horizontal [0.4] only one layout 
+[1.6] but in Denmark [0.2] and the Netherlands and Ireland and the U-K [1.2] 
+both [0.4] layouts have been permitted [1.2] and what do most British companies 
+choose [0.4] 
+sm1117: vertical [0.4] 
+nm1112: the vertical [0.6] so y-, you in practice then [0.3] you cry and 
+compare a French balance sheet with a with a British one or sp-, [0.6] 
+Portugese with a British one [0.5] we're going to be laid out in [0.2] in a 
+slightly different way which is not going to make it easy [0.5] to understand 
+the accounts [1.3] and even if you look at the detail of the ordering you'll 
+see that there are lots of strange things [1.6] look at article nine number B 
+[2.2] it says formation expenses [1.3] right start-up costs [1.3] as defined by 
+national law [0.9] and in so far as national law permits their being shown as 
+an asset [1.1] can you show it as an asset in Germany [1.3] 
+sm1117: mm [0.4] 
+nm1112: yes you can [0.2] 
+sm1117: yes [0.3] mm 
+nm1112: can you do it in France [2.9] yes you can can you do it in 
+Greece [1.3] yes you can can you do it in Britain [0.3] 
+sm1117: no 
+nm1112: no you can't [1.3] so the 
+sm1117: it's a tax [laughter] 
+nm1112: well i know it's a tax issue for you [0.7] but it it's just saying okay 
+here it's recognizing that there are going to be differences anyway [0.3] in so 
+far as national law permits their being shown as an asset [0.6] national law 
+may also provide for formation expenses to be shown somewhere else [0.7] well 
+this is pretty weak stuff isn't it [2.4] and if you read down the order you'll 
+see there are lots of alternative places [0.6] which doesn't actually help [0.
+7] if you're making things comparable [1.0] so you may say ask yourself the 
+question well look heavens if the European Community was trying to harmonize 
+couldn't they just at least harmonize this [1.6] couldn't they have just done a 
+common layout [1.0] why do you think it was so difficult [6.7] go on [1.9] 
+here are all these voluntary members of the European Union subscribing to [0.7] 
+nine years all of [0.2] signing up to the Treaty of Rome Treaty of Maastricht 
+and later on er why are they having so much difficulty [8.5] well i think i i 
+mean there are a number of reasons for it one the British didn't want to get 
+involved in too much regulation by law [1.5] secondly [0.2] each [0.8] each 
+country had a certain national pride in the way they had been doing accounts 
+and didn't see why they should change [1.9] right [2.2] and thirdly and perhaps 
+a very important point [2.4] well you've already se-, w-, w-, let me rephrase 
+the question you've already seen that there are going to be divergences [2.2] 
+and so [0.4] the effect has been that if i look at a set of French accounts or 
+Greek accounts or British or German or Italian they look different they got 
+different numbers in them [1.3] why [1.7] why do you think [0.9] you know at 
+root [1.3] the thing has proved to be so difficult [2.9] i know there are 
+different traditions i know that [0.7] i mean you have different regulatory 
+systems for accounting but what [0.2] what [0.3] what would you suggest is [0.
+2] er 
+is another reason perhaps more fundamental reason [0.2] 
+sm1117: tax [1.4] 
+nm1112: y-, [0.3] y-, you're right it is related to tax but go a bit further [3.
+1] you're you're you're right [0.5] 'cause we've seen that [0.5] several places 
+[3.0] think back to some [0.6] lecture lecture that namex gave [0.2] right at 
+the beginning of
+sm1117: er [0.4] number [0.2] so it's [0.4] better for this country's [0.6] of 
+this country's to [0.6] to begin a [1.3] something [2.4] 
+nm1112: yeah 
+sm1117: for example if the U-K has a go-, [0.2] very big er capital market and 
+in 
+nm1112: yes yes [0.2] it's th-, er [0.2] okay it's the capital market [0.6] tax 
+creditor orientation issue [0.7] 'cause underlying the problems in pulling all 
+this together [0.9] is the idea that [0.4] accounting serves [0.2] different [0.
+2] purposes in different [0.2] countries [0.2] the primary purpose [0.5] 
+historically [0.6] and currently [0.7] in France and Germany [0.9] and Greece 
+[1.3] for individual company accounts is to ensure that the tax authorities [0.
+6] have information [0.7] to make an assessment of taxable profit [1.9] and [0.
+2] also [0.6] to provide some creditor protection [0.7] the primary purpose of 
+accounts [0.3] in Anglo-Saxon countries [0.3] and the Netherlands [0.7] is to 
+provide useful information to shareholders [1.5] and that's the problem [0.4] 
+because no matter how much you try and regulate 
+or harmonize [1.1] those fundamental objectives will only change very slowly [1.
+1] and in accordance with [0.7] social and economic conditions that prevail so 
+you can [0.3] legislate as much as you like [2.6] but you're going to get those 
+interests being protected and particularly that orientation issue [0.6] and you 
+can see it all the way through as we go through [0.4] let's pick up some more 
+examples [1.1] er [1.8] if i [1.7] jump [0.2] to [0.4] let's see [3.2] if i [0.
+3] yeah if i jump to article twenty-two here's the P and L accounts [11.6] 
+[cough] [1.8] and what the Fourth Directive [3.7] says [1.7] if you look at 
+article twenty-two twenty-three twenty-four twenty-five twenty-six [1.4] is it 
+says [0.3] here are some layouts for P and L accounts [1.6] member states [0.6] 
+and there are four [0.3] member states can put into their law just one [0.7] or 
+two or three or all of them [1.4] and [0.7] here they are [8.4] vertical 
+horizontal [23.8] tell me which is which [0.3] article twenty-three twenty-four 
+twenty-five twenty-six [4.1] which one is article twenty-three [24.2] 
+sm1117: spoken by nature 
+nm1112: 
+it's vertical [0.4] and it's is it by nature or by function [1.9] by [2.5] 
+sf1118: nature [0.4] 
+nm1112: it's by nature yes [6.2] there's no gross profit figure [0.4] the 
+analysis of costs is by their nature [0.7] okay [0.8] which one is this one [1.
+0] by function [1.2] 
+sm1117: twenty-five [1.2] 
+nm1112: sorry [0.8] 
+sm1117: twenty-five [0.8] 
+nm1112: twenty-five very good [4.5] and this one it starts getting easy now [2.
+4] 
+sm1117: was it twenty-four [0.2] 
+nm1112: twenty-four [4.3] and [0.4] this one [0.3] is therefore by elimination 
+[0.9] article [1.2] twenty-six [1.1] now the point [0.7] here is [0.7] the [1.
+5] [cough] [2.4] the the Fourth Directive permits [0.4] countries to either say 
+just one [1.2] or some or all [1.4] right [0.2] so you have a situation where 
+[0.8] for example [0.5] if we take [0.3] opposites [0.6] er [0.8] Portugal [0.
+5] has just said [0.2] that's the only one [1.5] Denmark [0.2] has said [0.5] 
+companies can use any of them [2.6] and depending on whether you go for a by 
+nature or by function format [0.2] 
+you're not going to get a lot of comparability [0.7] because you you remember 
+[0.5] you know in a by nature format you can work out the value added the gross 
+operating profit [0.7] but because you don't have a g-, cost of sales you can't 
+work out the gross profit which you can in a by function format [0.7] so again 
+it's not being very helpful in making things comparable [0.9] and why did 
+Portugal want to have by nature [0.7] simply because there are so many small 
+and medium-sized companies [0.2] who couldn't afford the cost of running [0.6] 
+a costing system [0.5] which is what you need if you have that kind of [0.6] 
+structure of P and L [1.6] and it reflected if you like economic conditions it 
+also in tax terms is more tax transparent [0.8] so it fits very much with the 
+[0.8] particular economic conditions [3.1] right are you depressed [2.6] 
+[laughter] fed up [1.6] this is heavy stuff you know this is good stuff [1.0] 
+let's [1.0] let's just pick a [1.6] a few points [0.5] further on i'm just 
+picking things [0.5] just to illustrate what this problem of [1.2] 
+inherent or inherent problems in trying to get harmonization through law [0.7] 
+to emphasize the minimum minimal qualities of this and to show why [0.7] you 
+can look at a set of accounts from another European country and it's not [0.4] 
+easily comparable with another [1.0] er [0.2] ah here's another one let's take 
+[0.2] er [0.3] article twenty-nine [1.6] this concerns certain provisions 
+relating to special provisions relating to certain items in the P and L [0.9] 
+right [0.9] income and charges that arise otherwise than in the course of the 
+companies ordinary activities [0.5] must be shown under [0.6] extraordinary 
+income and extraordinary charges [1.2] unless the income and charges are 
+immaterial [0.7] explanations of their amount and nature [0.4] must be given in 
+the notes on the accounts [2.7] what's the problem [5.6] perhaps it's an unfair 
+question because you haven't read the whole of the directive [2.8] but you know 
+enough about for example you should know enough about U-K accounting and French 
+accounting [1.4] to recognize [0.2] one

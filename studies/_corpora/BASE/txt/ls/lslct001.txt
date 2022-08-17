@@ -1,0 +1,797 @@
+nm0187: so on the handout you've got this and i don't i'm not going to go 
+through every lecture and and start talking about it but [0.2] you have got 
+this and hopefully you'll see this develops come along so we'll cover the [0.2] 
+the general introduction [0.2] this week [0.2] and then there's the main [0.2] 
+types of breeding schemes [0.2] er and then [0.2] some more of the of the 
+techniques and backgrounds [0.3] er and ending up [0.3] with [1.1] the 
+releasing of varieties and all the things that go with that about patenting 
+plant breeders' rights and [0.5] a little bit about the ethics er [1.0] 
+particularly of course the [0.2] G-M-Os and this sort of thing [0.9] okay [0.6] 
+so hopefully that sort of structure will make sense as we [0.2] as we go along 
+[1.8] the [1.3] the other side of your sheet is trash you can [0.2] pretty well 
+ignore [0.2] it's about the er [0.7] the posters and i've changed it slightly 
+and i'll give you another sheet [0.4] er [0.3] just now [0.2] but but basically 
+[0.2] you've got [1.0] from this week after the lecture i'll [0.2] give you a a 
+a list and some information to pick a topic [0.7] and you each pick one topic 
+[0.2] you'll 
+do your poster and your essay on that one topic [0.4] you'll then [0.2] prepare 
+it during the time including using er [0.2] the computers over in P-S-L to to 
+produce the first draft [0.3] and then in weeks eight and nine [0.7] you'll 
+present the posters [0.5] before we'll ask you questions about and et cetera 
+and hopefully learn from them [0.4] er [0.4] and [0.4] then [0.3] week ten [0.
+6] if there's anything to pick up we can do [0.6] okay [1.0] yeah [0.3] 
+sm0188: er so we [0.3] give in the posters in week seven [0.2] er [0.6] 
+nm0187: er yeah you'll need to give us the er the posters i'll explain on a 
+disk [0.2] in week seven so that we can [0.7] get it er in a state that you can 
+present it on the on the next week [0.6] er [0.2] and then the er [0.3] the 
+essays need to come in [0.4] in week eight on the same subject area [0.2] i'll 
+go through it a bit more [0.2] er [0.3] just now okay [0.3] we'll come back to 
+that [1.3] okay so that's the main [0.9] outline of things [0.7] what i want to 
+do is to start off by giving you some [0.3] of the [0.6] general introduction 
+to plant breeding itself [0.7] okay [0.4] now if you do have questions then 
+please do feel free to ask them as we [0.2] go along and i will try and 
+remember 
+at the end of each lecture if i don't shout at me [0.3] to please ask whatever 
+questions you want to okay [0.5] but [0.4] otherwise just ask as we go along [8.
+9] okay [3.5] as i said i'm not sure if you were all here when i said [0.2] 
+what i'll try and do is to try and give you handouts of all the overheads so er 
+so you shouldn't have to scribble them down too much but [0.4] er [0.4] you may 
+want to add [0.8] more information in various ways [11.8] oh the other 
+important thing to tell you despite what it says on your timetable [0.7] next 
+week the lecture is also here [1.3] because they haven't finished the building 
+[laugh] [0.5] okay [0.2] so [0.3] so next week turn up here again [6.4] [hum] 
+[1.0] [hum] [7.6] okay [1.9] what i'd like to s-, [0.5] start by doing and i 
+hope you don't [0.3] regard this as too trivial [0.3] is [0.2] just to put 
+plants in context a little bit [0.4] as i s-, [0.2] as i see them [1.0] 
+certainly as far as [0.3] humans are concerned [1.5] what you have to remember 
+is that we are completely dependent on plants [1.2] okay [0.4] we're not 
+completely dependent on animals we are completely dependent on plants [0.6] we 
+either eat [0.3] them [0.3] or eat [0.5] the thing that ate them [0.9] 
+okay [1.3] so whatever happens [0.3] and whenever we're talking about [0.7] 
+even growing crops or whatever [0.3] er or whether we're growing ornamental 
+plants we are completely dependent on them in one one [0.5] sense or another [1.
+3] they are the only route [0.4] or basically the only route that we can go [0.
+2] from the inorganics [0.4] C-O-two et cetera [0.4] to [0.3] the organic [0.2] 
+and use [0.4] the products [0.3] okay [0.4] so they're extremely important in 
+their own right never mind what we're going to do or how we're going to exploit 
+them [1.0] and food is not the only product we get from [0.4] from plants [0.3] 
+i tend to to talk quite a bit [0.2] about [0.4] food crops [0.4] but that's not 
+because they're the only ones it's just it's it's slightly easier to talk about 
+and they're ones i'm more familiar with [0.5] but of course there are all the 
+ornamentals for a start which are [0.3] important certainly commercially 
+important [0.4] but there are also a whole range of other things that we get 
+from plants [0.6] drugs for instance clothing [0.7] paper rubber dyes [0.2] all 
+these sort of products [0.4] are come from 
+plants and are ones which can be subject of course to plant breeding [0.4] to 
+crop improvement et cetera [2.6] so [0.2] they're essential element to 
+sustaining [0.5] human life [0.9] and although other organisms has various 
+roles they really are s-, central [0.3] er [0.2] to what we're doing and for 
+our survival [2.4] so it's important when we go on to talk about cropping you 
+do [0.3] realize that central [0.2] role and [0.3] as i say a lot of the time 
+we may be talking about quite narrow things [0.3] but [0.2] you need to bear in 
+mind the broader context in which plants are [0.3] are there [0.7] and the ways 
+that we're going to be exploiting them or could exploit them [1.8] okay so 
+having [0.4] said that you'll not be [0.5] surprised [0.4] if [0.3] when we ask 
+the question how long has plant breeding been going on [0.2] the answer is as 
+long as we've been [0.4] practising settled [0.2] agriculture of any [0.3] 
+shape or form [0.6] okay [1.0] [cough] [0.5] so for instance if a farmer went 
+out and collected seed [1.1] grew them and they did relatively well [0.3] the 
+chances are he'd go back to the same place to collect seed or use the seed he'd 
+grown [0.8] okay [0.7] 
+if a neighbour [0.4] had [0.9] a crop that was growing particularly well you'd 
+not be surprised if his neighbours [0.2] had a-, [0.4] acquired seed [0.4] or 
+were given it [0.3] by him in one way or another [0.2] they would get it and 
+particular types [0.3] would therefore tend to be [0.2] er [0.3] multiplied [0.
+7] and so by this picking of the best [0.9] then [0.6] you'd start to get qu-, 
+[0.3] fairly quickly at least over a reasonable [0.2] times [0.3] types that 
+were different from the wild [0.5] er ones growing around them [0.2] in other 
+words you'd start to get domesticated forms [0.8] which were [0.2] different 
+from [0.4] the general population of of the wild plants around [1.6] and these 
+would then start to form almost exclusively the basis for [0.6] the p-, [0.3] 
+plants the crops that were cultivated [0.2] they would only use those because 
+they wouldn't get such a good yield or they wouldn't get the right sort of [0.
+4] er [0.4] product from them [0.7] from the the wild ones so they'd grow these 
+[1.2] so certainly before Mendel's experiments were reported most of the crop 
+plants had been domesticated [1.3] so most of the crops as we 
+recognize them today okay they may look s-, [0.6] different to some extent but 
+you'd recognize them as crop [0.4] were all carried out before we had any 
+knowledge whatsoever of genetics [1.2] so this was basically a lot of it 
+carried out [0.2] by people who were simply growing producing things and 
+knowing what they wanted to to grow and produce [1.4] so i talk about plant 
+breeding as a science and we do put science into it [0.2] but you do have to 
+remember that a lot of what was achieved [0.2] was before we even recognized 
+this so [0.4] i mean that is is the case and i'm not [0.3] er [0.3] in any way 
+belittling their contribution it's very very big [0.7] and they did it without 
+[0.2] the sort of knowledge that mostly we're going to talk about [1.8] so it 
+kind of puts us in context a bit [1.4] [cough] [1.1] okay [0.3] so moving on 
+from there [0.5] to ask really the next [0.2] general question you might ask 
+what would be the objectives [0.2] of [0.2] the crop breeder [2.0] [cough] [1.
+5] well [0.2] in many ways they're still the same objectives in broad terms 
+that were originally the driving force [0.6] and a major one is increasing 
+productivity [1.0] certainly in most of the crop plants that is still a major 
+consideration [1.5] the desire and need to produce more [0.4] per unit area [0.
+8] is really just as it's always been [0.7] in Europe [0.4] we do get and in a 
+number of the other developed countries [0.4] we do get surpluses of some crops 
+[0.6] and we do get [0.3] quite a lot of discussion about [0.4] whether this 
+means we should not [0.3] produce [0.8] cultivars or types that are more highly 
+productive et cetera [0.8] but if you think about it there's really no industry 
+no [0.2] i-, system [0.3] by which [0.4] increased [0.2] efficiency [0.3] and 
+productivity is not sensible [0.8] you'd be better to go for increased 
+productivity [0.3] but [0.6] growing a smaller area than you would the other 
+way around [0.2] profitability et cetera is still an important consideration [1.
+5] but i'm not suggesting that should be the only one i'm not suggesting that 
+we should ignore things like the environmental impact that we're having [0.5] 
+this is something else that we have to consider [0.5] but if we're talking for 
+instance about low input [0.2] 
+production [0.3] then we do need to have cultivars which are suited [0.3] to 
+that [0.5] there's no point thinking you can just take any cultivar and put it 
+in a low input system [0.6] you got to look for ones [1.1] that grow well for 
+instance [0.5] without high nitrogen inputs [0.6] that possibly do grow quite 
+[0.3] well competitively with weeds [0.4] that are [0.2] resistant to many of 
+the pests and diseases if you're not going to control these [0.2] by chemical 
+means [1.3] okay [0.3] so the need [0.9] for [0.4] the increase in production 
+is still there and is still a major driving force [0.3] the other thing which 
+you need to bear in mind this is that much of the world this is not the case [0.
+4] they do not have an over-production [0.4] that's absolutely sure [0.8] and 
+you can talk about the total world production and if you spread it out what 
+would happen but that's not reality [0.9] most of the food crops have to be 
+grown [0.3] locally [0.4] to be [0.2] used effectively [0.4] so many countries 
+there's still a very real need [0.2] to feed [0.2] the people that are there [0.
+9] and if you look at the projections for the world population you can see this 
+is not something that's going to go away very quickly or very easily [4.9] 
+so one of the objectives [0.6] of plant breeding [0.4] is really to produce 
+lines cultivars or varieties and i use those [0.4] terms interchangeably [0.8] 
+that are er better adapted [0.2] to the particular [0.3] environmental [0.7] 
+conditions under which they're expected to grow [1.7] okay so there's not a 
+universal [0.3] type of cultivar it's got to be [0.4] cultivars that are [0.3] 
+suited to the particular conditions under which they're going to grow [0.9] now 
+these might be climatic conditions which clearly [0.3] vary quite dramatically 
+[0.5] around the world they might be [0.3] er different day lengths [0.3] they 
+might be different temperatures [0.3] and just as easily they might be 
+different farming practices different husbandry techniques [1.0] these are the 
+sort of considerations [0.9] that you need when you're thinking about [0.3] 
+what they're going to be adapted to [2.4] so one of the questions that [0.3] 
+arises what do i really mean by better adapted [0.5] er [0.9] and mostly in 
+plant breeding terms 
+this has tended [0.5] previously [0.3] to simply mean whether they produce more 
+[0.2] crude yield [0.7] whether you get more [0.3] tatties on the bottom of 
+your plant whether you get more [0.2] grains of wheat [2.3] whether you get 
+more [0.4] tea leaves [0.2] off the bushes et cetera [0.3] but this has been 
+modified [0.5] recently to be [0.3] much more sensible [0.2] or at least i 
+think [1.0] it's more sensible [2.8] first of all the main [0.4] change has 
+been much more [0.3] towards usable yield rather than total yield [1.5] so this 
+is the amount [0.5] that you can actually [0.3] you get [0.5] for the purpose 
+that you're considering so [0.2] the amount that you actually get to eat off it 
+the amount you get [0.3] processed from it [0.8] the amount that you [0.3] can 
+actually use after storage [1.3] these sorts of considerations [1.2] so it 
+starts bringing in [0.3] important other factors like the nutritional [0.4] er 
+value [0.5] of the product [0.5] like [0.5] the er ability to withstand storage 
+diseases [1.7] like the reduction in [0.2] waste [0.6] for example if you take 
+potatoes if you peel them [0.3] how much do you lose [0.5] all these sorts of 
+considerations [0.3] now impose [0.4] 
+themselves [0.3] on usable yield [0.4] rather than simply [0.6] crude yield [1.
+2] okay [1.8] the next consideration that has become [0.4] much more recognized 
+[0.3] is the need for stability of yield [1.7] now in countries like this 
+mostly or quite a lot of this has been achieved [0.3] by [0.7] having inputs [0.
+8] chemical inputs mostly by using fertilizers [0.3] by using sprays [1.2] so 
+that is one way of stabilizing the the at least the gross [0.2] yield [0.5] on 
+a year by year basis [1.5] but the other [0.4] way that's also been done is to 
+look at the [0.3] er [1.2] plant breeding and the resistance to [0.4] things 
+like biotic and abiotic stresses [0.5] to cut down the year to year [0.3] 
+variation [0.6] i think it's fairly obvious particularly if you're depending on 
+a crop if one year [0.2] it yields a lot [0.5] the next year it yields a lot 
+and the one after [0.8] not very much at all [0.4] the average of those three 
+years might look all right and you might say that's quite a good variety [0.3] 
+but in realistic terms if you haven't got anything to eat in the third year is 
+is kind of a bit tricky [0.8] okay [0.6] so although it 
+seems obvious it's not something that's been too highly [0.3] er [0.7] stressed 
+before [0.8] so as i say one of the ways round this is to look very much at 
+things like disease [0.4] resistance and [0.2] tolerance to [0.2] abiotic 
+stresses temperature [0.5] er drought [0.4] water-logging [0.2] any of these 
+types of things [3.2] the next thing that [0.4] as i say has been having 
+increasing emphasis is the quality of the product [2.3] clearly one of the 
+important parts in a food crop is the nutritional [0.3] quality itself [0.2] 
+but also aspects like taste [0.7] i'm sure you've all heard the stories of how 
+the new [0.5] varieties do not taste anything like the old ones and we've got 
+rid of all the [0.4] good qualities of these and to some extent it's it's true 
+[0.4] er [0.5] but it's certainly something that is much more er [0.3] focused 
+on [0.2] now [0.4] there's also things like [0.2] the calorific value [0.3] er 
+[0.4] co-, protein content [0.3] fat level vitamin concentration [0.4] all 
+these things are aspects [0.4] that do vary [0.4] between different genotypes 
+and you can select for [0.8] within the [0.4] within the crop [2.1] [cough] [0.
+7] then there's the 
+environmental impact which we've [0.3] touched on before [2.9] agriculture [0.
+3] when it's practised [0.2] has raised [0.5] quite a considerable debate in in 
+quite a number of ways [0.4] and [0.2] in most developed countries we do the 
+work for intensive [0.5] agricultural production [1.2] there is very little [0.
+5] in this country which you could call a natural environment [0.5] it depends 
+er [0.3] to a despite [0.6] people protesting [0.4] about [0.3] er [0.5] the 
+effects on the countryside the countryside is almost completely agricultural [0.
+2] production it's certainly [0.3] framed and [0.3] a product of agricultural 
+production [0.7] so we do have to [0.2] to bear this in mind [0.2] when you 
+look at other countries and you talk about them [0.3] not destroying their 
+rainforests and all the rest of it which i [0.6] fully sympathize with [0.2] 
+you have to remember that's exactly what we have done [0.7] we have taken out 
+all our forests [0.4] and put in agriculture [1.5] but it's something that er 
+er say we need to to think [0.4] carefully about we need to think about inputs 
+[0.4] such as do we need high fertilizer levels do we need 
+chemicals et cetera one of the answers [0.3] is undoubtedly from plant breeding 
+[1.4] if we can produce yield without such a high level of [0.2] fertilizer [0.
+8] if we can stabilize yield without having to spray [0.2] pesticides then 
+clearly [0.3] that is something we should [1.4] or we could go for and to a 
+certain extent it is being done [2.0] again you have to [0.3] look [0.5] at it 
+in the context that you expect the thing to be grown [1.0] if it's going to be 
+grown in a high input system then you will have [0.8] cultivars that will 
+respond and grow in that situation [0.3] if you're looking at low input then it 
+must be in that if you're looking in a developing country [0.5] you have to 
+look [0.4] at what condition and husbandry practices they're going to do and 
+what effect that's going to have [7.3] as i said one of the primary aims [0.4] 
+is to produce varieties which are better adapted [0.8] but the second part of 
+that [0.4] is to the particular environmental conditions under which they're 
+expected to grow [3.5] to produce varieties that [0.6] are growing under [0.5] 
+these conditions 
+it's quite an easy thing to overlook [0.7] you do have to think of a whole 
+series of th-, of [0.5] things depending on how broadly you expect the [0.8] 
+the two that you're producing to grow [1.4] what are the soil conditions [0.8] 
+what sort of rainfalls [1.5] what sort of [0.4] basic environmental conditions 
+such as er [0.2] hours of sunlight [0.5] are you going to [0.3] be exposed to 
+[1.1] but very importantly is what type of [0.4] husbandry practice what type 
+of farming system [0.5] basically is it going to be [0.4] to be grown under [0.
+7] mostly of course [0.3] breeders are producing for [0.2] large-scale [0.2] 
+production they are not usually [0.3] selecting for smallholder production [1.
+7] but nevertheless there are quite a variety [0.3] of different ways [0.2] in 
+which [0.5] you can grow crops [1.5] okay so this [0.5] is something which is 
+important to bear in mind [3.5] so the [0.6] objectives of the plant breeder 
+are to increase usable yield [0.3] increase stability [0.4] make the crop more 
+nutritive reduce ecological disadvantages [0.5] and produce types [0.3] that 
+basically suit [0.2] the growing conditions and the needs of the 
+people who are growing them [2.3] there are however as i [0.4] pointed out at 
+the start were the number of other factors that you need to worry about and the 
+most difficult one [0.5] as i said from the start is that you're going to have 
+to predict [0.6] what [0.3] this is going to be like in the future not what it 
+is today [1.0] probably as i said to you the minimum is probably about seven 
+years [0.3] in the future [2.3] now [0.2] in some ways environmentally [0.4] 
+that might not be too bad even with global warming [0.2] seven years is a 
+moderately short [0.6] time scale so you could maybe [0.3] er [0.4] do a 
+reasonable job on that [1.6] but how are you going to predict what for instance 
+the political situation is going to be [1.0] what is going to be [0.4] the 
+position with regard for instance the subsidies or [0.5] what have you [0.2] 
+what crops will [0.3] farmers want to grow [3.8] what will the end-user want [2.
+0] you only have to think of the changes that have occurred in [0.5] food 
+consumption [0.3] in this country or [0.3] any of the developing ones to see 
+what happens [0.7] in the in the developed ones i mean in the
+developing ones the same thing is true [0.5] what [0.2] is going to be the 
+requirements when i started [0.4] as a plant breeder [1.0] as a potato breeder 
+at least [0.4] then [0.4] the selection was all for a medium-size potato tuber 
+[0.2] that was what were required by the housewife and all the rest of it [0.4] 
+all the small ones used to throw away [0.5] and the great big ones were useless 
+and they were also [0.3] given for [0.2] animal feed [0.8] because there was no 
+[0.2] real use for them so all the breeding was for [0.2] this size tuber [0.7] 
+within a few years [0.2] of course the big tubers [0.3] started getting a 
+premium because they're used for bakers [0.6] and you can sell those and throw 
+the rest away if you want to although you don't you use them so there's a 
+premium on those [0.3] and they even sell the small ones then they pretend 
+they're Earlies [0.3] and sell those at a premium [0.6] so the whole thing 
+reversed within [0.2] really a few years [0.2] now as a plant breeder adjusting 
+to that is really [0.3] quite difficult [0.5] okay [0.4] so you have to do some 
+crystal ball gazing and it's difficult 
+to get it right [0.2] you have to bear that in mind so of course one of your 
+strategies [0.3] may be [0.2] to put some adaptability into your breeding 
+programme so that you can [0.2] move in different directions not just [0.3] 
+selecting for a single [0.5] er [0.2] particular picture [1.9] another question 
+that you might [0.4] er try and ask as a plant breeder is what is going to be 
+the spectrum of [0.4] pests and diseases [0.4] in seven years' time [0.3] and i 
+can assure you these do [0.2] move and do change [0.5] quite a lot over [0.4] 
+time [0.6] er certainly [0.4] we produced varieties that by the time we got 
+them to the field [0.4] were susceptible to one of the most common diseases 
+around and they were useless [1.5] so [0.6] the reality of predicting is 
+difficult but you do need to do something about it [2.3] okay so they're real 
+problems in terms of [0.2] the breeder defining [0.4] the aims and objectives 
+[0.3] but if we ignore that [0.9] the next question is [0.3] really how do we 
+go about [0.3] trying to achieve these aims and objectives [0.4] and that's 
+really what what the course is about [1.9] now i'm sure [0.2] you've all 
+got some [0.2] reasonable ideas from the lectures you've already [0.4] er [0.4] 
+been to [0.2] about the some of the general features of [0.2] plant breeding [1.
+2] but basically one of you can break it down [0.4] into [1.9] really three 
+steps [3.2] and these are common [0.6] to [0.7] every breeding programme [1.1] 
+now the details of them may differ [1.3] but [0.4] nevertheless [0.3] you 
+require all these [1.1] all these three steps to be able to [0.2] to to carry 
+out plant breeding [6.3] the first thing [0.3] you need to do is to either 
+release or produce genetic variation [0.6] if you want to select for something 
+that's different [0.3] you've got to have a difference there to start with [0.
+9] if they're all the same then clearly there's no point doing anything [1.2] 
+now to do that as i say you need variation that is genetical [0.2] you need 
+things that are inherited [1.2] the two things may look different [0.3] and by 
+that we say the phenotypes are different in other words their appearance is 
+different [0.9] but they need to be genetically different if it's going to be 
+inherited by their offspring and therefore we make 
+progress with plant breeding [0.8] so we need [0.4] to be able [0.2] to produce 
+and release genetic variation [2.2] and i'm sure you're [0.3] all know [0.8] 
+very well what is the most [0.6] obvious and straightforward [0.3] way to 
+produce [0.2] genetic variation [2.5] and it is [1.2] [laughter] [2.6] no 
+sm0189: [0.2] 
+nm0187: sorry [0.6] 
+sm0189: it's hybrids [0.3] 
+nm0187: yeah [0.4] sexual reproduction [1.2] er i-, [0.2] i-, [0.2] i-, so yeah 
+it is a very obvious answer [0.4] so sexual reproduction [0.3] is the most 
+common [0.4] er [0.4] form of [1.5] releasing variation in plant breeding [0.4] 
+and in [0.7] virtually all plant breeding programmes that is the source [0.8] 
+of genetic variation [1.5] so we take [1.2] two lines [0.3] which have [0.2] 
+between them the characters [0.3] or the expressions of the characters we want 
+[0.3] we cross them [1.1] we produce [0.3] usually the first generation from 
+that [0.5] you then [1.1] have various options but one of the obvious things to 
+do is to sell [0.6] er [0.4] that [0.5] to produce [1.0] segregation [1.8] so 
+we [0.6] get the differences to segregate out and we try then to select the 
+ones which have [0.3] the right combination [0.4] characters all the plus [0.4] 
+points together [0.3] in one [0.3] in one particular 
+genotype [0.9] in other words we look for recombinants [1.2] okay [1.2] er [0.
+5] it sounds i know very simplistic but that [0.3] is basically [0.4] in w-, in 
+most plant breeding programmes what you're trying to do [0.8] you're trying to 
+put together the characters from different lines into one line [0.4] you have 
+to identify it [1.0] er [0.3] and therefore do something with it [1.7] okay so 
+that covers the second part in a way [0.3] we need to produce the variation we 
+need to select amongst it [0.8] okay [2.3] when we have selected amongst it we 
+need to stabilize it to do something with it [1.8] we're going back up to here 
+[1.4] sexual reproduction is the commonest [0.4] way of producing the variation 
+[0.3] but it's not the only way [1.2] there are other possibilities [0.6] one 
+is to induce mutations [0.4] and we'll talk a bit about [0.3] that and you can 
+do this [0.3] in various ways mutations are naturally-occurring events [0.3] 
+but you can increase their frequency [0.2] by using a mutagen [0.5] ionizing 
+radiation for example [0.3] here's one [1.0] and this is used in plant breeding 
+in a number of crops quite a few of the clonally-reproduced 
+crops like apples for example [0.6] mutations [0.2] er [0.4] are used and we'll 
+discuss that a bit in the [0.8] in the course [1.3] we can also try [0.3] and 
+although it's in some ways it's sexual reproduction it usually needs some [0.3] 
+help [0.2] we can use [0.3] wild ancestors or related species [0.2] to cross 
+with our [0.3] cultivated [0.8] species to [0.3] increase the amount of 
+variation we have 
+available [0.3] to try and perhaps [0.2] introduce characters where we don't 
+seem to have variation [0.6] in the domesticated forms [1.5] and the other 
+possibility of course now is the newer techniques such as for instance genetic 
+transformation [0.6] genetic manipulation whichever you want to call it [0.3] 
+and of course that provides us another [0.4] possibility [0.4] in this release 
+production of variation [7.5] really whatever [0.4] source of variation [0.3] 
+we use though the im-, or or [0.2] probably the most important [0.4] er 
+criteria is the selection of the parents [2.7] unless you selected what parents 
+to start with [0.3] you've already got [0.3] a major uphill [0.3] battle [12.7] 
+so on here [0.2] i've written it as the critical factor [1.6] okay [0.8] so 
+unless you have [0.4] good starting point you're always going to be [0.3] 
+struggling [0.3] so you need to choose [1.4] the parent [0.3] and that might 
+sound [0.5] relatively easy and it can be [0.4] if for example [0.2] you use a 
+cultivar that's been widely grown so [0.3] things are known about its 
+performance [1.5] because the difficulty and i hope this is 
+not [1.6] a [0.2] completely new concept to you you should have covered it 
+before [0.3] but what we see [0.8] is the phenotype [1.5] okay [0.2] so what 
+i'm [0.2] looking at in terms of seeing you is your phenotypes [1.2] okay [0.5] 
+it's what you see is the phenotype [0.5] the phenotype [0.8] is made up [0.6] 
+of [0.6] the genotype [0.7] what genes you've got [0.3] and how they're being 
+expressed [0.4] in other words what's [0.2] inherited [0.5] from your parents 
+[1.0] is being [0.2] [0.4] but it's also [0.4] a product of your environment [1.
+7] okay [0.8] what conditions you grow in what food you've had all these things 
+which determine [0.5] er [1.3] then [0.2] how you appear [1.0] you can easily 
+for instance affect people's height [0.4] by their nutrition or at least 
+relatively easily so you only have to look at their history [0.8] the other 
+complicated factor is that the genotype interacts with the environment [0.6] 
+different people given exactly the same food react differently [0.5] er [0.2] 
+different conditions et cetera [0.6] okay [0.4] so [0.5] when we look at 
+something unfortunately [0.3] we have this complex of underlying factors [1.1] 
+and the thing that's critical to 
+us as a plant breeder [0.2] okay we can exploit the [0.2] interactions [0.3] 
+geno times env [0.2] but really what we're interested in is this part [1.8] 
+okay [0.7] but these other things can be [1.2] major and mask [0.6] which bit 
+is genetic and you don't know [1.1] so [0.3] when we're talking about the 
+choice of parent this is a complicating [0.2] factor and it's a a factor that 
+will come in [0.3] elsewhere as well when we [0.3] are looking at this er [0.7] 
+but this business of wanting the genotype be-, [0.2] but only being able to [0.
+3] observe the phenotype is a [0.4] is a major drawback [1.6] okay [2.4] so [2.
+2] having done that we've chosen the parents we've [0.2] done something about 
+releasing the variation [0.2] probably sexual reproduction but [0.6] could be 
+other things [0.4] we now need to select amongst the variation [3.0] again [0.
+5] on first thought that seems [0.2] kind of easy [0.3] just go and have a look 
+see what's good and take it and all the rest of it [0.7] but the first thing 
+you need to decide is what characters [0.3] are going to be selected [2.2] 
+again this seems fairly straightforward [1.4] but first of all you have to 
+realize 
+that many characters are actually quite difficult to measure [0.8] they either 
+take a lot of time a lot of energy [0.5] expensive equipment [0.5] er [0.8] or 
+really just a very difficult t-, to do the second [0.3] er [1.4] thing [0.4] 
+you need to bear in mind is that you've got a lot of material to look at [0.4] 
+a lot of different ones that you want to assess [1.4] right something we'll 
+come to again [0.3] in the [0.2] course [0.5] and the other problem is that you 
+usually have small quantities of it [1.0] okay [0.2] so for instance i mean 
+taking the very obvious thing [0.7] you might have two plants how are you going 
+to assess yield [1.3] yield of two plants grown by themselves doesn't er [0.8] 
+doesn't tell you anything very much it's nothing about [0.3] er [0.3] what 
+it'll what it'll actually [0.2] er [0.2] grow like [0.7] and also for disease 
+[1.1] for instance [0.5] so quite often er [0.4] for disease assessment they 
+will take [0.2] er [0.4] detached leaves [1.6] because there simply isn't 
+enough material [0.5] you cannot have different densities of sowing you cannot 
+[0.2] er [0.2] plant material [0.2] er [1.1] that er [0.3] can be grown exactly 
+[0.2] as you would like [0.7] in agriculture [0.4] so [0.8] 
+the question is [1.1] how are you going to reproduce the conditions of 
+agriculture [0.3] you can't totally so you have to pick a single condition [0.
+5] and work on that basis and hope it's representative [0.5] you cannot [0.2] 
+as i say grow large plots and see how they behave [0.4] you've only got a small 
+amount of material [1.8] a small amount of material also means that you have 
+questions about the relevance [0.7] of what you're measuring [0.3] and the 
+characters you're assessing to agriculture itself [0.9] so you can talk to 
+pathologists and they can tell you how they can take [0.4] single leaves from 
+plants they can expose them to diseases [0.6] and they get a reaction to it [1.
+3] but this doesn't always tie up with field performance [0.7] so [0.3] the 
+relevance [0.2] of the characters as well [0.3] as the effectiveness that you 
+can measure them [0.2] is extremely important [4.5] the next problem we have [0.
+8] is really the one that we were talking about a few minutes ago and i said it 
+would come back up [0.5] and that is the efficiency with which we can select [2.
+1] so back to the 
+phenotype versus the genotype [1.7] [cough] [4.0] as i think is fairly obvious 
+from th-, [0.2] from the equation [0.5] the greater the environmental effects 
+[0.4] the more the phenotype [0.8] will be a poor reflection of the underlying 
+genotype [1.1] okay [0.4] so the more something's affected by the environment 
+[0.2] the less we can do anything about [0.5] er [0.2] picking it because we 
+won't be picking the genotype at all we'll just be picking the effect of the 
+environment all the time [1.8] so this creates [0.4] er [0.2] a real problem 
+particularly as [0.2] many of the characters we're dealing with are not the 
+simple ones that Mendel had you don't get [0.5] tall and short [0.4] pink or 
+white [1.3] these sorts of characters we get [0.3] characters [0.2] like yield 
+[0.3] like number of ears [0.6] so if you think for instance [0.2] the 
+character that's similar in humans is height [0.8] you are all different 
+heights [0.9] but [0.3] the fact there's not one of you here that's a major g-, 
+has a major gene difference for height in other words there's no achondroplasic 
+dwarves [1.0] but [0.2] they do occur [0.3] in the population there 
+are major genes for height [0.4] but most of you differ [0.3] for height [0.6] 
+by a lot of genes [0.7] there's a lot of different genes will affect your 
+height [0.8] and so what we're [0.3] seeing is the effect of all the genes okay 
+plus the environment and all the rest of it [0.5] but [0.6] there's a lot of 
+genes there so it's not easy [0.6] to say what's genotype and what's phenotype 
+[1.1] okay [1.6] [cough] [1.0] so to try and get out of some of those problem 
+we have to find ways of trying to get some sort of assessment [0.3] of what 
+amount of the variation [0.3] might be genetic and what might be [0.4] er 
+environmental [0.2] and we can get a measure of something [0.2] called the 
+heritability again which we'll [0.3] come to later [0.4] in the lecture course 
+[0.3] which effectively just measures the proportion of the variation or tries 
+to [1.0] of the total variation that's genetic [0.7] so it gives us some sort 
+of estimate of how efficient [0.3] or how effective our selection's going to be 
+[2.2] [cough] [4.1] it's something i'll talk about when we talk about 
+heritability [0.3] and you get various discussions of this mostly in [0.3] er 
+[0.4] not [0.2] 
+perhaps quite so much recently but [0.2] er not too long ago about I-Q in 
+humans of what heritability was and [0.3] what this meant and how this affected 
+racism and all the rest of it [0.6] the thing you have to remember is there's 
+no such thing as the heritability [0.4] the heritability is only estimated for 
+a particular population a particular point in time [0.6] er so there's no [0.3] 
+there's no general [0.2] measure for it [1.2] but it gives us some [0.3] some 
+idea about how [0.3] er [1.1] how we might proceed and the reason i'm stressing 
+that it changes is because we can change it as plant breeders [0.8] we change 
+it because we're doing the selection but we can also change it by the way we 
+carry out our trials [0.6] if we replicate things [1.0] okay [0.6] we replicate 
+things we can take the mean [0.3] if we take the mean we know it more precisely 
+[0.4] the more observations that go into the mean the more precisely we know [0.
+3] and the more precisely we know it [0.3] the more [0.5] we can increase the 
+heritability [1.0] okay we reduce the environmental effects [1.0] compar-, 
+compared to 
+the genotypic effects [1.3] now you can do this in various ways you can simply 
+replicate the trials so that [0.6] decreases the local environmental variation 
+[0.7] we could replicate it over different trial sites [0.2] so we start to 
+change [0.4] the [0.4] how sure we are about its repeatability [0.3] over 
+different regions we can do it in different countries we can do it in different 
+seasons [1.0] okay [0.5] so we can change [0.8] the heritability [0.4] and we 
+can also change the repeatability of our measurements but [0.9] [cough] [1.1] 
+but [0.2] the trouble is each time we do that we increase the workload [1.3] so 
+[0.2] if we have two replicates we've already doubled [0.2] the amount of 
+material we have to grow [2.1] you then grow it at another site you've doubled 
+it again [1.7] usually there is a very [0.5] real limit on how much you can 
+cope with or how much you can grow or how much seed you've got [0.6] so [0.2] 
+normally what it means is that you [0.9] look at less material [0.4] so if you 
+double the number of replicates you halve the amount of [0.6] lines you look at 
+[0.8] so you gain on one thing and you lose on 
+another [1.1] okay [0.5] so it's again it's something we need to consider as we 
+[0.3] er [0.4] go through the course that this is a [0.3] a problem we can 
+increase precision in one way but if we do that [0.4] we [0.8] then reduce how 
+much material we can look at and we then reduce the [0.3] efficiency of 
+selection [2.3] [cough] [3.7] [hum] [2.7] okay but we carry out our selection 
+in ways that we'll [0.2] er see as we go through the course [0.5] having done 
+that [0.6] you end up [0.7] with an amount of material [0.5] which you need to 
+stabilize you need to be able to repo-, reproduce [0.4] this material if it's 
+going to be exploited in [0.4] er [0.6] any way at all [1.3] and you need to 
+multiply it [0.8] so you'd need to multiply it stably [1.7] okay otherwise [0.
+3] i mean what's the point of having one seed which is just what you want what 
+can you do with it [1.1] [cough] [1.0] now this is where the different types [0.
+3] of [0.3] crop plants [0.2] er [0.6] tend to be more different [0.4] the main 
+[0.6] er [0.3] criteria that are used for separating plants in terms of plant 
+breeding [0.3] are to do with their breeding system [0.7] and three main [0.4] 
+er [0.5] types [0.4] that are recognized are [0.8] inbreeding [0.2] outbreeding 
+and 
+vegetatively reproduced crops [1.0] and we'll go into these in er [0.2] in in 
+the next lecture [0.4] they [0.2] i think are fairly self-explanatory [0.8] 
+inbred crops [0.3] mean that they can be selfed [0.4] you can [0.2] therefore 
+[0.3] make them true breeding [0.3] therefore of course you can multiply them 
+without too much problem [1.1] vegeti-, [0.2] vegetatively reproduced crops [0.
+4] are ones [0.2] which you reproduce asexually [0.3] and therefore you can 
+multiply them up without changing their genotypes at all [0.7] potatoes are a 
+good example they produce tubers you plant a tuber you get more tubers [0.3] 
+they're all the same genotype [0.9] so they're not too much of a problem [0.5] 
+the outbred ones [0.3] [laugh] we need to talk about as we go along [0.3] er 
+more these are really [0.4] because they're all genetically different [0.2] you 
+need to treat them more as a population so you try and keep the population the 
+same [0.3] rather than the individuals [0.8] okay [0.3] so with inbreeders we 
+can [0.5] have [0.2] individuals which are exactly identical [1.0] for the 
+outbreeders it's really the populations of the things that need to be
+stable [0.3] and you have to have ways of doing that [1.5] [cough] [3.9] okay 
+so that's [0.8] really i think [0.5] as much as i want to say [0.8] on that 
+part i don't know if there are any questions [0.4] so [0.3] as you might [0.2] 
+guess now if you look back [0.3] the next three weeks [0.2] what i'll try and 
+do is cover those three main groups to give you [0.3] the basis [0.2] of the 
+breeding of the different [0.6] groups and then we'll go on to other things [1.
+5] okay [0.7] so any [2.1] questions i've [0.5] completely confused you now [0.
+5] [laughter] [2.1] no [0.7] 
+sm0188: er you have one question [1.0] er can we just last minute [0.4] here's 
+the wheat [0.2] in Germany [1.3] and [0.2] look like a grass but has roots [0.
+9] and from the roots there comes another [0.3] 
+nm0187: yeah [0.4] 
+sm0188: and then it's like a potato common crop right 
+nm0187: yes [0.4] yeah [0.8] yeah i er [0.3] 
+sm0188: i know 
+nm0187: i'm not sure whether it's it's wheat or not but i mean i-, it it can be 
+from the same family but there are [0.3] quite a number of plant species 
+certainly a number of the grasses [0.3] that reproduce by stolons [0.5] er [0.
+2] the other way that you can get clonal crops of course is to take cuttings [0.
+4] 
+sm0188: just like apples yeah 
+nm0187: apples is a good example [0.4] you take cuttings put it onto a 
+rootstock [0.7] and you can reproduce them [0.4] er [0.2] various ways as is 
+say there are quite a lot of [0.2] er things sugar cane [0.7] you cut sugar 
+cane down chop it into pieces plant the 
+pieces and they all grow [1.3] yeah [0.7] ornamental c-, er plants quite a lot 
+of them are [0.3] vegetatively reproduced [1.5] yeah [3.3] okay well if there 
+are questions i mean c-, ask any time [0.3] about them [0.2] what i'd like to 
+do [0.7] then if we cover that is to tell you a bit more about the posters [0.
+4] and this sort of thing [0.3] er [0.9] yeah [0.2] is that okay [1.4] 
+right [1.6] oh no one more thing [0.7] sorry reading [1.1] list [0.2] there's a 
+list of er [1.6] they're really there's just books 'cause these are [0.6] are 
+general [2.2] i don't s-, suggest for one minute you have to go away and read 
+all these books [0.5] or you necessarily have to read [0.3] one of them all the 
+way through [0.3] but if you're looking [0.3] er [0.9] to cover the more 
+general things then [0.7] books are about the best way of er [0.3] of doing it 
+[0.3] er it's up to you [0.2] sh-, [0.2] i put all of these [0.9] i think all 
+apart from the first one on seven day [0.6] loan that's not to [0.3] restrict 
+you and i hope it doesn't cause you too much problems but it seemed the fairest 
+way of 
+making sure [0.3] people could all access them otherwise the first person there 
+takes the books out and [0.3] that's it for the term [0.4] okay [0.3] er [0.3] 
+and there are a number of copies of er a number of them [0.7] it's it's really 
+up to you which ones er you want if you want to talk about them at all i i can 
+do but i i just tried to give you some of the general [0.4] er [1.0] books the 
+book in fact by [0.6] Bosemark is probably the more specific or the more er [0.
+6] restricted [0.2] of the other ones the other ones are more general than that 
+[0.7] and that's why it was written [0.8] to be more restrictive [0.2] yeah [0.
+9] okay [2.3] good right [3.8] more paper [0.5] hopefully [0.4] most weeks 
+there won't be so much paper but [5.6] [hum] [5.0] okay so the first thing [0.
+8] that of course you need to do [1.8] is to pick [0.6] an area [0.5] or a 
+topic [0.4] on which [0.4] you're going to [0.4] do the necessary reading find 
+out about things and [0.6] then [0.9] produce [0.2] your poster and essay [2.4] 
+okay [0.2] now these are just ideas they're not [0.4] they're not the only 
+things [0.3] you can do but i thought rather than [0.4] present you with a [0.
+2] you know it's like at school they tell you can write an essay on anything 
+and that's the worst possible [0.2] situation [0.4] so these are ideas clearly 
+it's got to be a restricted area i mean you know you can't talk about er [0.3] 
+you know [0.3] plant breeding in general or er [0.5] micropropagating plants in 
+a you need to to talk about say micropropagation of strawberries or [0.4] you 
+know [0.5] breeding [0.5] sugar cane for [0.3] drought tolerance [0.3] y-, y-, 
+you need a fairly restricted area [0.3] and that's why i want to agree with you 
+what the topic is so that A it's not impossible for you to do [0.3] for being 
+too [0.3] wide [0.3] but on the other hand [0.3] there's enough chance of you 
+finding some literature [0.3] and something to say about it a [0.4] kind of [0.
+3] blank at the end is not going to be very useful [0.6] okay [0.5] so [0.5] 
+have a think about it i mean clearly to to a certain extent it depends on what 
+your interests are [0.4] er [0.5] and what have you [0.2] and hopefully we can 
+come 
+to [0.2] an even better topic which you can find enough about [0.3] you can 
+present it and i say what [0.4] er we want you to do is to produce the poster 
+and the essay which okay [0.3] is part of the assessment [0.3] but also [0.3] 
+other people can look at you can answer [0.3] questions about it and [0.4] all 
+learn from each other [0.9] okay [1.5] so to do that [2.3] just so that i can 
+th-, [0.4] also remember what the [0.4] there was happening [0.3] there's er [1.
+1] you need to [1.0] fill in a form one part [3.2] i'll keep and one part 
+you'll keep [0.2] so we need to do that probably [0.2] er [1.2] whenever you 
+wish but by [0.6] er [0.3] certainly by the end of next week [0.7] need to not 
+because i want to press you about it but clearly [0.3] if i leave it long 
+making the decision then you're not going to have much time to actually do the 
+[0.5] to do the er [0.2] research and produce the material [0.4] okay [0.8] so 
+we need to decide fairly [0.6] fairly quickly if you want to come and see me in 
+the week or anything that's fine [0.5] er [0.4] but have a s-, about it [0.3] 
+have quick [0.3] er [0.5] chat and if it's okay then you can go ahead on it [0.
+8] all right [0.2] 
+sm0189: 
+so any of these er [0.3] categories here you can just see just select this the 
+number of these [0.2] categories [0.5] 
+nm0187: yeah you cou-, y-, yes 
+sm0189: 
+nm0187: i mean it's just to give you a yes yeah yeah so i mean you can just 
+pick on to know for instance [0.2] transformation for drought resistance or er 
+sm0189: yeah so you wouldn't use a number you'd just use one of them or 
+nm0187: you'd use one of them or part of them i mean s-, s-, silly i mean [0.2] 
+you know a [0.2] a a topic called storage 
+sm0189: right okay 
+nm0187: is much too wide you know storage of apples or stora-, 
+sm0189: yeah
+nm0187: i [0.5] i just put down ideas to give something to to to start with 
+sm0189: [0.3] 
+nm0187: yeah [1.0] i mean do think about the reality of how much [0.3] you're 
+going to read about this and how much you're going to get written down 
+sm0189: yeah 
+nm0187: to make it sensible [0.2] yeah [1.0] okay [0.6] now to go a bit further 
+'cause in fairness to you [1.0] you need to know [0.6] what's [0.3] important 
+in [0.7] producing your [0.3] poster [0.7] and i'd 
+rather tell you about it [0.5] now [0.3] so that you know when you're doing it 
+[1.7] rather than spe-, [1.3] spring it on you at the end [1.3] okay [0.2] so 
+[0.5] as i say you'll present your [0.2] poster [0.2] to all the other people i 
+want each of you [0.2] then to mark [0.8] or give assessments of everybody 
+else's things [0.3] now this is not for you to be nasty to each other 
+[laughter] and it's no good then saying everybody's i-, is an A [0.4] er [0.2] 
+i want you to be realistic obviously [0.2] and [0.7] i've suggested here the 
+criteria that we'll use for this [1.2] there are th-, beally three [0.2] parts 
+to [0.4] the poster [0.5] first of all is the general appearance and 
+presentation of it [0.5] er [0.5] if you ever go to or you probably will start 
+going to scientific meetings [0.3] the [0.2] the first thing is there's you 
+know there may be a hundred of them there [0.5] you're not going to look at all 
+of them so the first thing you do is just got to see which ones look nice or 
+pretty or [0.2] something you know anything which will [0.2] which will 
+attract you [0.2] and so you go to it [0.2] okay so [0.4] i-, you know they 
+don't have to be pretty pretty or they don't have to be wild or anything but 
+they must be [0.3] visually [0.4] reasonable and p-, have some reason for you 
+would want to read it [0.2] you know there's lots of tiny little writing and 
+nothing much there you you actually don't spend much time with them [0.7] okay 
+[0.4] then [0.2] when you get that far the next important thing is the content 
+and the information that it [0.8] gives to you [0.6] okay [0.5] now you should 
+remember with a poster [0.3] that [0.3] and this is the difference between your 
+poster and your essay [0.5] the poster should be enough to interest people [0.
+2] and to make them want to ask you some more questions and be intelligible [0.
+3] they don't necessarily cover every last bit of the subject [0.9] okay [0.4] 
+because there really is a limit to how many words and things you should put on 
+the poster [0.4] it really should be [0.2] something that visually interests 
+people and [0.4] gets them interested [0.4] rather than answer every question 
+[0.6] okay so don't be tempted to try 
+and [0.6] cover every possible thing you found out about the subject cram it on 
+to your poster [1.1] okay [1.2] yeah [2.1] then [0.3] the next part or the last 
+part is is background knowledge and this is where [0.4] er [0.4] really [0.2] i 
+say [0.2] i want [0.5] the rest of you to ask questions er but not t-, to try 
+and catch them out [0.3] but just to make sure you've understood what they've 
+said [0.3] perhaps because [0.3] what they said is quite interesting and all 
+the rest of it and so [0.4] er [0.2] that's what that part is so that's the 
+three [0.4] er [0.3] major [0.3] er [0.9] parts that will be [0.8] assessed and 
+i tried to [0.3] er [0.6] on the back of the sheet [0.4] take out the 
+assessment criteria so that [0.3] er [0.4] you go from A to E all the time so 
+we keep it fairly consistent and give some ideas [1.1] so for appearance and 
+presentation A represents an excellent well presented poster wherea-, E one is 
+untidy poorly conceived with little appeal [0.6] okay [0.3] i mean it's perf-, 
+[0.3] i mean they're not [laugh] these are not strictly defined criteria but to 
+give you a kind of idea so the same for [0.2] content 
+and information [0.3] A is an informative poster which you gained an interest 
+with a satisfactory amount and level of information [0.6] whereas E is a poster 
+from which you gained little [0.2] if any useful information and not really any 
+interest [1.0] yeah [1.2] and for the background knowledge [0.3] represents a 
+well informed presenter whereas the presenter that has very little background 
+knowledge [0.6] so okay they [0.4] put the things down on the poster but [0.2] 
+that's about [laugh] all they can manage [0.7] yeah [0.6] is that [0.3] okay i 
+know it sounds a bit crude but i-, it's it's a [0.4] if you s-, bear that in 
+mind as a sort of criteria i think it'll become fairly obvious and [0.5] it'll 
+be fairly [0.6] easy to do it yeah [1.3] 
+sm0188: going to be a question about the poster [0.5] 
+nm0187: about the what [0.3] 
+sm0188: about the poster 
+nm0187: yeah [0.2] 
+sm0188: er [2.8] could be er [0.3] like a and [0.2] er [3.1] but it's not er [0.
+4] the [0.2] for example there is [0.9] there's a breeding sheep on it and [0.
+2] afterwards you tell people how it's going or [1.5] 
+nm0187: well that's part of how [0.2] and what i want you to think about about 
+designing the the poster [0.9] if you just put on something with no explanation 
+[1.4] people are not going to get anything from it [0.2] i mean you've got okay 
+you're going to be 
+there to answer questions but the poster has got to be free-standing [0.9] it's 
+going to be there and people can look at it and say oh yes you know that's u-
+huh [0.3] i see that's interesting i wonder what [1.5] et cetera [0.7] okay [0.
+2] so [0.2] it's getting a balance between having it [0.3] attractive enough to 
+look at and enough information [0.6] to convey to people the basics of the 
+subject area what it's about [0.3] what happens what's achieved [1.5] yeah [0.
+4] but not necessarily covering [0.7] all the things it doesn't matter that you 
+[0.5] need to produce twenty lines to do this the fact that you've used some 
+lines is okay rather than [0.4] specifically twenty [1.8] i-, [0.2] it's 
+something i think we'll have to see a little bit as it goes along you've got a 
+few weeks to [0.3] to do it till you get some help but it [0.2] it is that 
+balance is the difficult thing between [0.2] just providing loads and loads of 
+information which i-, is very relevant but is [0.3] usually boring and not very 
+er [0.8] easy to take in [0.5] and providing something which 
+is just one colourful picture and actually [0.4] you've really got no idea till 
+somebody tells you what it's about and what's achieved and how it gets done [0.
+5] 
+sm0188: is it a little bit like er produce [0.2] this [0.3] for example with 
+Powerpoint [0.2] 
+nm0187: yeah [0.2] you are going to use Powerpoint [laugh] t-, to produce it so 
+[laugh] er but it'll be a single [0.3] it'll be a single page with images on it 
+[0.2] if you imagine [0.4] at least a me-, we will actually or i'll t-, [0.2] 
+try [0.5] er [0.2] to get them printed [0.5] er for you so you've got a printed 
+poster at the end [0.3] and if you think of them [0.3] basically well we'll 
+tell you in the next few weeks but basically like that one board on the wall [0.
+9] you have to produce something which has the images and writing on it that's 
+that size [0.6] including the title your name and [0.5] you know these sorts of 
+things [1.1] yeah [0.4] so what you're aiming to do is produce something 
+physically [0.3] like that [0.2] okay quite a lot of the time you'll do it 
+electronically but [0.2] you've got to see it [0.6] as that [0.8] and what 
+we'll basically do is produce that er [0.2] and also probably 
+what we'll do is put it onto an acetate sheet so you'll [0.3] blow it up like 
+this actually to to talk to [0.2] because it's a bit easier for me to handle it 
+this way 
+sm0189: have you got an old one of these posters just so we can have a look at 
+it and so 
+nm0187: yeah 
+sm0189: is that all right 
+nm0187: yeah 
+sm0189: and we did say we'd give you numbers 
+nm0187: yeah 
+sm0189: and then 
+nm0187: yeah [0.9] yeah [0.3] er what i've [0.2] [laugh] [0.4] what i've do-, 
+i'll let me hand out this [0.2] it'll be easier if i t-, [0.3] talk about what 
+i'm [0.8] really thinking about [0.2] doing [0.7] this is the timetable [0.3] 
+er so f-, forget the other one this is what i'm [1.1] we shall be working to [2.
+3] so this week i've [0.3] done a bit of handing out the [0.3] the lists and 
+the forms and you've got them and you need to start thinking [0.5] er [1.5] 
+next week [0.3] if you've made the choice [0.2] then you can start doing [0.3] 
+some background [0.5] reading and thinking about the subject area [0.8] the 
+week after that [1.0] er [0.4] then in lab A in P-S-L [1.3] yeah [0.7] where 
+the computers are [0.2] 
+sm0189: yeah [0.5] 
+nm0187: then [0.3] i've got two people namex [0.2] namex and er [1.1] namex [0.
+7] who [0.4] will help with the [0.4] technical parts of the computer side of 
+things and answer questions and they've also got a sheet about producing the [0.
+2] posters and a few tips and these 
+sorts of things [0.5] er [0.4] and that's where you'll start actually [0.6] 
+producing and that's where also [0.3] we'll try and get [0.3] er and er i will 
+remember [0.2] to bring down copies of previous ones so that you can [0.5] 
+sm0189: 
+nm0187: have a look and [0.7] see [0.4] yeah in fact er i only if i remember 
+i'll bring them with me next week 'cause i've got some [0.2] on acetate 
+sm0189: yeah 
+nm0187: so we can just [0.4] quickly look at them here 
+sm0189: yeah [0.2] 
+nm0187: er [0.2] 
+sm0188: 
+nm0187: yeah [0.9] but if you go to the [0.2] P-S-L if you walk around the 
+corridors [0.2] 
+sm0189: yeah 
+nm0187: the things that are on the walls [0.4] are what i'm [0.3] talking about 
+you producing [1.0] okay [0.6] so that probably would be the best thing if you 
+had a look at that and i'll try and remember to bring some but if you look at 
+those [0.4] posters they're exactly the sort of thing [0.7] you know i don't 
+say all of them are good [0.6] so don't take it from me [laughter] that i'm 
+saying they're the models for it but then [0.2] they're the sorts of things 
+that you're aiming for the sort of thing that we expect er [0.6] 
+people to do [0.2] yeah [1.1] er [1.3] so [0.5] after week three [0.2] and from 
+week three onward there is [0.3] there are computers booked [0.3] in lab A so 
+that you get priority on them [0.7] and the software's there [0.2] what we'll 
+do is er [1.0] give you each a zip well [0.2] you'll have to give us a deposit 
+but we'll give you a zip disk each so you've got something to work on [0.5] the 
+software's there [1.2] okay [0.4] and then [0.4] you start to go from there [0.
+2] and we'll give you what help and advice we [0.6] we can on you know 
+presentation and things like that [0.5] come to week eight [0.4] well week 
+seven you need to hand it in week eight [0.4] we'll then start [0.3] presenting 
+it [0.3] it depends how many there ends up on the [0.4] course last year i only 
+had [0.3] about this number when i started by the next week i had nineteen so 
+[0.4] [laugh] we'll see how [0.3] how many we've got we might [0.3] just do it 
+in one week or two [0.5] okay [0.3] so as i say please don't feel [0.2] nervous 
+about presenting it y-, you know it [0.2] it [0.3] just [0.3] the poster up 
+there [0.2] tell people a little bit about it and they'll ask you questions 
+it's the same for everybody and it's really not a [0.8] a big problem okay [1.
+2] er [0.4] and then [0.2] i say we'll make the assessment of it and that's [0.
+6] that's it [0.3] and this your essay will be on the same [0.5] subject area 
+so you don't have to go [0.4] revise the whole or you could look up [0.2] 
+information on anything else [1.0] yeah [1.4] is that okay anybody got any [1.
+3] 
+sm0190: when does the essay have to be in [0.6] 
+nm0187: er in week eight [5.7] i'm doing that not [0.2] to make you have a 
+short time doing it but [0.4] as you know most assessments [0.9] start piling 
+up at the end of term [0.4] so [0.5] A because we need the posters in then [0.
+4] i was [0.5] trying to make it so that the essay [0.3] in at the same time [0.
+8] yeah [5.1] all right [2.5] okay [1.7] excellent well if there are any 
+questions [0.5] well most of you do you know where i am in [0.3] P-S-L [0.6] on 
+the [0.2] first floor anyway you'll find me if you ask okay if you want to come 
+and see me [0.7] okay 

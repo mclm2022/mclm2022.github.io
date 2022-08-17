@@ -1,0 +1,530 @@
+nm0940: today's lecture follows a [0.6] er very [0.2] directly on from what i 
+was saying [0.5] er yesterday and i'm afraid only one overhead is working so 
+i'll have to be over here all the time [1.1] er [0.5] er yesterday i was 
+introducing the idea of significance [0.5] and er [0.8] i i talked about five 
+key ideas which i'm going to run over very quickly to start with today [0.4] 
+and then today i'm going to add two more new ideas t-, [0.3] on the end [1.0] 
+well the five key ideas that i was talking about yesterday [0.4] was er the 
+null hypothesis [0.2] the [0.4] er test statistic [0.6] the er [0.6] P-value 
+the critical region [0.4] and a significant level [0.5] you know so those are 
+five key ideas [0.2] that we've got to [0.5] get on board [0.2] before er we 
+can we can go any further really so let me qui-, quickly review [0.4] er these 
+so first of all [1.4] the null hypothesis i'll just mention verbally what they 
+are null hypothesis H-sub-zero [0.2] so er a rather at a rather general level 
+the null hypothesis is just some statement [0.2] about the distribution of the 
+data we have observed [2.3] er test 
+statistic [1.8] that's the notation i used yesterday a test statistic [0.2] is 
+a function of the data [0.3] which we look at in order to inform us [0.3] about 
+whether we think H-nought is reasonable or not [0.3] in the light of the data 
+so usually the test statistic [0.2] is some kind of difference [0.3] between 
+what we've observed [0.2] and what we would expect under the null hypothesis 
+and the idea is that the the bigger the value of the test statistic i-, is [0.
+2] the more doubt we have that H-nought is actually reasonable in the light of 
+the data [0.6] so if we're going to be accepting and rejecting H-nought which 
+we're going to be [0.3] doing with ever increasing frequency as we go along [0.
+2] er [0.2] the the logic is that we will want to reject H-nought think H-
+nought is unreasonable [0.2] when T is large [0.7] and the larger it is [0.3] 
+the more [0.2] unreasonable we think H-nought is and that is encapsulated by 
+the [0.9] P-value the third thing [0.3] P-value is the probability [1.7] that 
+by chance [0.8] if the null hypothesis is 
+true [0.2] i would get a value of the test statistic [0.3] greater than than or 
+equal to the one i actually got so the notation [1.3] that i talked about [0.8] 
+yesterday [0.7] that's the probability [0.2] so [0.3] er we just pretend for a 
+moment that the null hypothesis actually is true [0.3] and we ask ourselves 
+well what's the chance [0.2] that we would have come up with a fairly good test 
+statistic [0.2] which i-, which is as or more extreme [0.4] than the one that's 
+er one we've actually got notice the convention capital letters [0.2] and small 
+letters that i keep on going on about [0.4] er well you really see the 
+importance of that [0.4] convention here [1.2] so that's the er [0.3] er [0.8] 
+that's the P-value [0.2] critical va-, critical region was the fourth [1.3] 
+idea i talked about yesterday so [0.2] er if we had a significance test for 
+that sum that sum procedure for deciding [0.3] on the basis of X whether or not 
+[0.3] H-nought is reasonable or 
+unreasonable [0.3] the critical region is just [0.4] the set of all possible 
+sets of data that would lead us to think [0.2] that H-nought was unreasonable 
+[0.2] or in the jargon [2.3] it would er [0.6] sets of data which would lead us 
+to reject [0.7] H-nought or if you like to decide [0.5] if H-nought [0.5] is [1.
+8] false [1.8] so er [0.8] so the first thing i'm really going to do today 
+formally is just to [0.2] just to point out that the the sensible critical 
+region should be those values of the data X such that the P-value's 
+sufficiently small [1.1] so that's the critical region that's that's a a 
+general concept applied with any decision procedure we might [0.5] er propose 
+[0.6] and er the significance level alpha [0.8] everybody uses that notation 
+the significance level is the probability [0.6] that if [2.5] if H-nought is 
+true [1.6] that we would by chance [0.4] get [0.3] a data set [0.3] that was in 
+the critical region [1.1] so these were the five things that i [0.3] i talked 
+about [0.3] er [0.2] yesterday and these are five 
+key ideas [0.3] er that understanding what these are [0.3] is absolutely 
+mandatory if we're going to get anywhere at all [0.3] in talking about er 
+significance [1.3] so first things first thing the first thing i want to do 
+today is to [0.3] is to formally [0.3] er try and explain what the connection 
+is [0.2] between the P-value [0.3] and the significant level [0.7] and the idea 
+is [0.4] i've already mentioned it very briefly idea is that [0.3] that a 
+sensible critical region [0.3] should be the sets of data whose P-values are 
+less than something [0.9] and that [0.3] is none other than the alpha [0.9] so 
+i'm going to set that round to [1.8] as a theorem [1.3] although you can really 
+hardly justify it in term-, [0.2] in a mathematical sense [0.6] the theorem 
+says [6.1] the significance test [2.1] given by [1.4] this in particular [1.0] 
+critical region and the critical region we're thinking about is the sets of 
+data such that the P-value is less than the threshold [0.7] so 
+it's the set of [0.4] data X such that the P-value [1.4] corresponding to [1.1] 
+X is less than or equal to [0.9] a threshold alpha [0.2] and the theorem says 
+[0.3] that if we take that as the critical region in other words if we [0.4] 
+decide H-nought is false when the P-value is less than alpha [0.3] that is 
+precisely a significance test [0.2] with significance level [0.2] alpha [2.7] 
+so this thing has [4.5] significance level [1.9] alpha [4.7] and the proof of 
+it [1.6] is is is [0.2] w-, once you see the idea if you prove it's completely 
+trivial and i-, and it's easi-, easier to rather rather than trying to write 
+write it out formally [0.4] it it's easiest just to [0.9] er look at a picture 
+so let's think of [0.3] let's think of the values of the test statistic [2.2] 
+so so er here's 
+the distribution [0.3] of the test statistic [0.2] we would expect to see [0.9] 
+if the null hypothesis is true [1.1] so [0.4] looks like a normal distribution 
+of course it doesn't have to be so we've got some distribution for T under H-
+nought now [0.2] what what are we what are we doing with the P-value what we do 
+is we [0.3] we locate on the scale [0.4] of the test statistic we locate [0.5] 
+a particular value [0.4] of the test statistic we've observed so notice a 
+little-X here [0.2] big-X is the general one [0.8] so er [0.8] so we locate the 
+value of the [0.2] test statistic we've actually observed [0.3] and then [1.3] 
+from the definition [0.2] which you can [0.3] just see still at the top there 
+on the screen [0.2] the P-value [1.0] is this area isn't it it's the 
+probability [2.2] it's the probability [0.2] of for getting by chance [0.2] a 
+value of T at capital-X bigger [0.3] than T [0.4] at little-X so what we have 
+to show [0.5] is that if we consider all possible sets of data [0.4] such that 
+this area is less than alpha [1.1] then that has significance level [0.2] alpha 
+[0.4] so what we have to show [1.1] and this black thing's getting a bit [1.2] 
+worn out with this i'm going to do it in blue now what what what we have to 
+show [0.7] is that the probability [2.3] of X belonging to the critical region 
+[0.9] calculated under the [1.1] assumption of H-nought is equal to alpha is 
+what we have to show [1.0] so what is this so from the [0.5] from the 
+definition of C in the same theorem this is the probability [1.0] that P-X [0.
+8] is less than or equal to alpha [1.8] by definition of what C is [1.8] and 
+that this is this is now where we use the picture when is [1.1] when is this P-
+value this area i shaded [0.2] when is this less than alpha [0.8] well o-, [0.
+2] obviously it's less than alpha [0.2] if the T [0.4] if if the er left-hand 
+end of the shaded area [0.2] is beyond the one-minus-alpha quantile [0.5] 
+remember about quantiles [0.2] so this is exactly the same thing as i say [0.3] 
+that the [0.5] this is the 
+probability [0.4] that the value T i get [0.4] is greater than or equal to [1.
+0] the point under this distribution [0.2] which cuts off area alpha to the 
+right and that's the [1.1] notation we used before that's the one-minus-alpha 
+quantile [0.4] of the distribution at T and that everything is calculated [0.2] 
+under the assumption [0.2] of the [0.5] null hypothesis okay so Q [1.1] Q this 
+is the one-minus alpha [2.3] quantile [1.2] of T [1.1] that's what Q is [1.8] 
+so what is the chance now [0.3] that a random variable [0.2] by cha-, by chance 
+[0.2] will give you a value greater than or equal to the one-minus alpha 
+quantile [0.3] well [0.7] the the the suffix one-minus-alpha means you have a 
+chance one-minus-alpha to the left [0.4] so the chance to the right is 
+therefore one minus one-minus-alpha [0.2] which is alpha- [1.7] T okay that's 
+the proof [0.3] it's kind of trivial really it's just a matter 
+of understanding [0.2] what probabilities we're [0.2] we're we're we're we're 
+talking about [1.3] so er so this shows that this significance test [0.2] 
+rejecting H-nought when the P-value is less than alpha [0.5] is a significance 
+test [0.3] with significance level [1.0] alpha now in a sense this is extremely 
+subtle because we n-, we are two interpretations [0.5] of of alpha [0.3] i'm 
+sorry i don't have another overhead to [0.8] switch over there so i hope you're 
+not losing too much of this on the screen [0.6] okay can i just emphasize this 
+by [1.9] just noting up here [1.9] that this theorem [0.3] gives us [0.2] two 
+interpretations [0.4] of this quantity alpha [2.4] the first interpretation [1.
+4] is the interpretation [1.5] just see it in the top there the first 
+interpretation [0.2] is alpha is a threshold [0.3] for the P-value [2.3] so 
+this is a threshold [2.2] for P-value [0.8] and the P-value [0.3] is a measure 
+of how surprised we are [0.6] to get a particular value of our test statistic 
+so so er this interpretation [0.6] is is is saying something like alpha is a 
+measure of how 
+surprised we've got to be [0.3] to reject [0.3] H-nought [4.9] so i'll write 
+that in [0.3] so how surprised [3.1] we have [2.1] got [0.6] to be [4.7] before 
+we reject [1.5] H-nought by reject i mean declare it to be false or think it to 
+be [0.5] [0.3] okay so first interpretation then [0.3] threshold of the P-value 
+how surprised [0.2] we have to be with the data set in front of us [0.2] in 
+order to think that H-nought is false [0.6] so it's a kind of measure of 
+surprise it's a measure of how we think [0.3] about the data [1.2] now the 
+second interpretation [0.3] is given by the result of the theorem that alpha is 
+a significance level now what is that [0.2] that is an error rate [1.8] so this 
+is the probability [0.9] that we're in the critical region given H-nought is 
+true now what do we mean to say [0.4] the test that it the data in the critical 
+region what we mean is that we reject [0.4] or decide H-nought 
+is false [0.6] so when alpha [1.5] is a probability [1.5] so [1.2] that you'll 
+decide H-nought is false [1.3] and that but that probability is calculated [0.
+2] on the assumption [1.0] that H-nought [1.9] is true [0.8] so you know it's 
+an error rate it it t-, tells you how often you make a mistake [0.6] if you use 
+this for a significance test [0.4] given by comparing P-values [0.2] with this 
+threshold [0.8] and so this is a [1.7] this is an error rate [0.7] it's a 
+natural [0.4] long run frequency probability [1.5] and er in order to exercise 
+this error rate [0.4] er [0.2] idea [1.3] a little bit more [1.0] carefully 
+some people er use the jargon type one error rate [7.9] it's a type one error 
+rate now [0.2] er why it's called type one error rate will be clear hopefully 
+in twenty minutes' time [0.3] when i've talked about a 
+type two error rate [0.6] but it's a type one error rate that's because it's 
+just [0.2] it's about making an error in one direction only [0.8] if there if H-
+nought is true what's the chance we think it's false [0.2] of course you might 
+make an error the other way round as well [0.5] and that's what i'm going to 
+talk about later but for the moment it's just one [1.0] thing okay so two two 
+subtly different interpretations [0.3] at this point here alpha [1.9] well let 
+me talk about an example now [4.3] just to reinforce again this idea of what H-
+nought is what a test statistic is and what P-values are et cetera [1.4] and 
+again i'm sorry this silly thing isn't working [1.0] well this is an example in 
+genetics and it it's an example of historical [0.6] er [0.3] interest i think 
+i've mentioned once or twice already [0.6] that er early work in bio-, biology 
+particularly in quantitative genetics [0.5] er [0.2] ha-, had a very 
+informative role [0.3] in the early development of statistics [0.9] and er in 
+example five which i [0.3] gave 
+out to you the other day [1.2] er [0.3] er there there there is a rather famous 
+experiment from Charles Darwin which i've put in one of the questions for you 
+to look at [0.7] and here's another famous experiment done [0.4] by a 
+geneticist in er the early nineteen-twenty [0.2] and and and this this work is 
+done by somebody [0.8] called er Frets who was a geneticist [0.4] and published 
+his paper in nineteen-twenty-one [0.2] and er Frets was interested in this er 
+question [0.2] of the inheritance [0.2] of human characteristics [0.5] we all 
+we're all very familiar with the idea [0.3] that er human characteristics like 
+[0.2] facial features for example [0.2] do tend to be inherited [0.4] how often 
+have we seen [0.6] mothers and daughters looking really very similar and 
+sisters looking similar and brothers looking similar of course we [0.2] see 
+that all the time don't we [0.2] so so there is a strong [0.2] inheritance in 
+facial characteristics and and Frets was one of the first [0.5] biologists who 
+really tried to get to grips with this [0.3] quantitatively he asked the 
+question well how can we measure how much [0.5] of facial features are 
+inherited [0.2] and how much are just [0.3] random occurrences that nobody can 
+explain [0.7] and er Frets did a a rather famous experiment he was interested 
+in [0.2] people's faces and and he [0.2] he took a number of families and tried 
+to compare faces of different brothers [0.2] in the same family [1.0] and er [0.
+9] and er [0.3] he [2.7] he w-, he was particularly interested in [1.4] head 
+length now length is a kind of funny [0.6] word to use but the head length is 
+actually the distance between you sh-, you shut your mouth you see you start i 
+stop talking [0.3] and it's the dista-, it's the distance between here [0.2] 
+and the top of my head okay and you measure that in millimetres [0.2] and 
+that's your head length [0.7] i suppose it's a length if the person's lying 
+down flat with a tape measure [0.4] it's a kind of natural length isn't it so 
+so what i'm trying to express here was he measured he measured people's [0.2] 
+head length he measured this er [0.2] 
+i call it height really [0.2] this measurement anyway [0.4] and er what he did 
+was he he he found a number of [0.3] he he he found a number of families a 
+sample of families where where he had [0.3] er [0.2] er two or more brothers in 
+the same family [0.5] and he measured the head heights or head lengths he 
+called them [0.4] er for the [0.2] first son and for the second son [0.8] and 
+he tried to see how similar they were [0.9] and er basically the idea is to is 
+to show that [0.3] that that brothers of the same family have faces which are 
+much more similar to each other [0.2] than just taking the sample generally 
+from the population [0.5] we know now that that is of course true [0.4] but a 
+hundred years ago it wasn't obviously true [0.3] and that's what he tried to do 
+[0.4] find out so so this is this is just a little extract from what what he 
+did so what so what what he er [1.1] what what he [0.2] what he measured which 
+i'll now call X [0.7] what he measured was the [0.6] the value of L this this 
+er this dimension of of of the head [0.3] for the first [1.2] son in a family 
+[1.1] and he also measured it for the second son and took the 
+difference [1.7] so the particular measure i'm going to talk about from his 
+work [1.5] is er the difference between the value for the first son [0.5] minus 
+the value [1.3] for the second son [0.5] and he did this for twenty-five 
+families [0.7] and so he got twenty-five values of X and these are my data [0.
+3] and i will tell you in the next few minutes er you know [0.4] er er talking 
+about now what what question was he interested in well what he's interested in 
+[0.4] is er how similar these things are in particular one thing he might want 
+to know [0.3] is er [1.0] obviously there are differences here 'cause there's 
+an order effect [0.2] this is the first son this is the second son [0.2] so 
+maybe [0.4] er [0.7] the m-, the mother by definition is getting older before 
+she gets her second son you see so maybe the son changed over time so one thing 
+he looked at was time trends [0.6] and so the the question [1.1] which i want 
+to [0.4] talk about now is the s-, surface question really of his work [0.2] 
+the 
+question is [0.3] er [0.7] okay [2.4] does L [1.9] tend to get bigger [2.3] or 
+smaller [1.9] is there any evidence [0.4] that the son the first son [0.2] has 
+a bigger head than the second son or vice versa [2.5] so if er [0.5] i-, if er 
+if the value of L gets bigger then of course X is negative [0.5] and if the 
+value of L gets smaller then [0.4] X is er positive so really he's interested 
+in [0.3] w-, the sign of X essentially [1.7] so er these are his data [1.2] so 
+i'm [2.1] somewhat frustrated i don't know if have a projector 'cause i al-, 
+really should have put the data on the other projector so [0.3] it's all got to 
+go here now i i'm going to arrange them there were twenty-five [1.6] twenty-
+five families he measured from these these were his er [0.4] h-, his data [1.2] 
+and i'm going to arrange these data [0.2] in the kind of way that statisticians 
+usually arrange data [1.3] in what's called 
+a stem and leaf plot [1.3] and you'll see [0.2] in a moment why it's a kind of 
+that's a sensible way of writing our data so here are three or four values [0.
+4] er minus-nine minus-nine minus-seven minus-six and i write them in order [0.
+2] from the m-, [0.2] biggest minus-one to big plus-one you see [0.7] and then 
+the then then there were some more families which [1.0] you you get two minus-
+four er two minus-fives two minus-fours a minus-three [0.6] and two minus-ones 
+[1.4] and then then then there was a nought there was a family where [0.3] 
+these are millimetre measurements by the way [0.3] so this is a family where to 
+the nearest millimetre their here might be two exactly the same [0.7] and there 
+was a one and there was a two and there was a four [0.9] and then there were 
+two [0.5] families with plus-five [0.8] seven [0.2] eight [0.8] and nine there 
+was a family with ten a family with twelve [1.0] family with twelve and a 
+family with thirteen [1.4] and 
+there was a family with sixteen difference [1.0] that's a stem and leaf plot [0.
+6] it's just writing down the data but it's kind of ordered in a nice little 
+way [0.5] ranking them from the smallest to the largest [0.2] and you notice 
+i've grouped them [0.3] in [0.2] class intervals of width five [1.6] see these 
+are the minus-ten to the minus-five minus-five to nought et cetera [0.8] and er 
+the the the the advantage of being able to do that is you can immediately spot 
+what the spot what the [0.3] histogram looks like [1.0] so if i just draw a [1.
+1] tiny little histogram down here you can immediately spot there are four [2.
+0] four er observations in the first group [0.5] there are seven in the second 
+[1.2] four in the third five [0.6] in the fourth and then another four [0.5] 
+and another one see so there's the [0.6] there's the histogram [0.2] of the [1.
+2] of er there it's a typical sort of histogram you get in biological 
+experiments [1.5] and er [0.4] and the 
+question is we we now want to analyse these data in such a way that we [0.2] we 
+try and shed light on the question [0.6] whether genetic longer [0.3] or [0.2] 
+or shorter now i want to talk about two [0.9] two approaches [1.3] er [0.2] the 
+first approach [1.2] is the T-test [2.7] and it's called the T-test [0.6] 
+because it's based on the T distribution and it's it's exactly the same really 
+as what i was talking about er last week i when i was talking about [0.2] 
+confidence intervals with a T [0.6] distribution so so the first approach is to 
+is to plot a er er a normal distribution over all this and to discuss it all in 
+terms of inference for a normal sum [1.5] so er [0.2] what would be [0.5] a 
+sensible way of [0.7] thinking about these data then from a [0.4] normal 
+perspective well [0.2] er there's er there's my histogram see it's a [2.6] sort 
+of normal shape [1.3] not very good really it's a got i mean i er we've only 
+got twenty-five observations so that's as close to as a normal 
+distribution as [0.3] in fact as you you could ever get [0.9] so normality [0.
+7] is er [0.3] probably a reasonable assumption [0.2] and all biologists assume 
+normality without worrying about it so [0.6] we will as well [0.5] so this is a 
+normal has a normal distribution [0.4] so in the usual notation [1.0] this 
+thing has mu [0.3] er mean mu [0.6] and variance sigma-squared [0.3] so there's 
+the model [1.1] so that's an to the ingredients i was talking about reminding 
+about earlier so ne-, so the next question is [0.4] what is the null hypothesis 
+[0.6] well the question [1.3] here we are just at the top there the question is 
+whether there any evidence that L gets longer or shorter so the natural null 
+hypothesis now [0.3] is that er L on average stays the same [1.0] so so [0.2] 
+er so that means the mean of X is zero [0.7] which is mu isn't it so the null 
+hypothesis [0.4] is that mu [0.3] is zero [1.6] so that's the null hypothesis 
+of a T-test [1.2] and er [1.0] next ingredient test statistic so what's a test 
+statistic [0.3] statistic are we going to take well we we need to [0.2] er [0.
+2] we need to analyse the data now [0.3] so we need to [0.7] er 
+work out the [0.9] sample mean [0.5] in order to [0.2] the T distribution and 
+er [1.0] and according to my [1.1] calculations the sample mean is one-point-
+nine-six [2.2] that's zero over there by the way isn't it so [0.3] so clearly 
+[0.3] the distribution tends to be pushed over a bit to the right so the mean 
+is [0.2] positive one-point-nine-six [0.9] and we also need the standard 
+deviation [0.5] sample standard deviation for the T [0.5] statistic so [1.7] 
+according to my calculator [0.7] this was seven-point-four-zero and of course 
+as i've alrea-, already said N is twenty-five [0.7] so we're all set now to 
+form the [0.9] T statistic [1.7] for the the the the the T random variable 
+which tells us about mean to a normal distribution so [0.2] remember what that 
+is so so that's just [1.0] we have temporarily to go to capital letters now 
+'cause i'm talking about the 
+random [0.5] distribution of these things so [0.2] remember it's it's the the 
+the T statistic standard normal random variable on the top so it's er [0.2] 
+it's the the the sample mean X-bar minus its mean [0.6] but [0.3] we're 
+constructing a test statistic now so we do that under the assumption of the 
+null hypothesis [0.2] and the mean is zero [0.3] so we don't have to divide by 
+[0.5] we don't have to subtract anything [0.4] 'cause it's zero [1.2] and then 
+we [0.2] er the-, then we scale that by dividing by the standard deviation [0.
+7] so we divide by the standard deviation [0.8] but the standard deviation of X-
+bar of course is X over square root of X so that's just the same thing as [0.5] 
+sticking an N [0.6] up there [1.1] and er [0.9] and er [0.3] le-, let's get the 
+numbers in so that one-point-nine-six [0.9] times five [0.5] square root of 
+twenty-five [0.8] divide by seven-point-four-zero [0.2] and according to my 
+calculator [0.5] that gives us one-point-three-two [0.9] 
+okay so we've got a [0.2] a value of the T [0.8] random variable now which is 
+one-point- [0.6] three-two so [0.5] so this is an intermediate set now we're 
+getting a test statistic so what are we going to take as the test statistic [0.
+6] well er this this quantity [0.2] intuitively measures the difference [0.3] 
+between X-bar and what we'd expect namely zero [1.0] and since the question [0.
+5] we're asking ourselves [0.5] here we are still at the top there the question 
+we're asking ourselves is whether there any evidence that it gets either bigger 
+or smaller [0.5] we put mod bars around this thing because it's deviations in 
+either direction [0.3] which are equally [0.3] interesting [0.2] er intere-, 
+equally interesting so the test statistic then is just the absolute value [0.3] 
+of this er T statistic [1.3] so we now go to the [0.2] calculating the [0.5] P-
+value now the third ingredient in this er [0.6] whole procedure so it's a [0.4] 
+l-, let me do that little diagram over here so here's a distribution [1.2] of T 
+[1.7] okay so 
+this is T [0.4] on how many der-, degrees of freedom [0.2] er twenty-five 
+observations so it's twenty-four degrees of freedom you remember [1.7] it's the 
+N-minus-one because of the chi-squared [0.2] argument behind [0.3] all this so 
+so there's a distribution [0.8] of er T or twenty-four degrees of freedom 
+centred on zero [0.7] that's the zero and then we we look at the value we've 
+got [0.3] which is up here somewhere one-point-three- [0.5] two [2.0] okay we 
+need some for this this is five really isn't it [0.4] okay so so so what what w-
+, what we the P-value then is the probability [0.6] of our test statistic 
+greater than or equal to the one we've got [1.0] and so i'll put in red now [0.
+6] that's going to be [1.2] that area there [0.9] probability of getting a T-
+value bigger than one-point-three-two [0.2] 
+but we're going to put mod bars around the test statistic [0.3] because 
+deviations in the negative direction [0.2] are also equally interesting [0.6] 
+so [0.5] so i i put this area down here as well [0.3] which is minus-one-point-
+three- [0.5] two [1.3] writers of [0.6] elementary textbooks like talking about 
+two-tails and one-tails and so on [0.2] this is a two-tailed test [0.4] because 
+we're interested in deviations in [0.4] both directions so so we we [0.3] we 
+work out [0.6] we work out the er P-value [3.2] which is the sum of these two 
+red things [0.4] and this is where you have to go to your statistical tables [0.
+5] or go to S-plus [0.5] if you have S-plus switched on in your desk which i do 
+[0.5] and so i ju-, i just get S-plus to work out for me the tail area [0.5] 
+the quantity the er [1.1] cumulative distri-, distribution from [0.3] T and er 
+[0.4] and i make that nought-point-one-eight-six [0.7] so this is about [1.6] 
+nineteen per cent [0.8] 
+okay so the P-value [0.8] is er [0.5] nineteen per cent [0.6] so what does that 
+tell us [0.5] general discussion over now what we're what we're trying to spot 
+is if the P-value is small [0.6] and this is this probability very small and 
+that's a measure of how much of a fluke it is to get this [0.4] value of T well 
+it's not really is it [0.5] it's sum of your chance nineteen per cent [0.5] is 
+er [0.6] not really very unlikely at all [0.2] so er so by any usual [0.9] 
+canons of significance testing whatever significance level you've used five per 
+cent or one per cent or whatever [0.2] you you wouldn't [0.5] declare this to 
+be significant so the conclusion is [0.2] although the data show [0.2] er the g-
+, data give a bit of a hint of a positive difference [0.9] which means that 
+face lengths tend to get smaller as you go from first to second son [0.3] it's 
+not significant [0.2] the difference is not big enough [0.3] to be clearly 
+evident [0.4] from such a small sample size [1.2] so that's the [0.5] that's 
+the first [0.7] approach to these [0.3] data with the T [0.2] T-test now let 
+let me just mention another one 'cause it's [0.2] i 
+wanted to get over the idea that the choice of a test statistic [0.3] is 
+somewhat arbitrary [1.3] and here's another [2.2] here's another [0.6] way of 
+looking at the data which is called the sign test [4.7] so it's another way of 
+looking at the data and the sign test [0.7] sign test is much simpler than the 
+T-test [1.0] the sign test just [0.5] just so it goes back to the original 
+question [0.2] here we are still up there does L tend to get smaller or longer 
+[1.2] the sign test simply looks at the sign of the difference [0.7] so if this 
+is positive [0.8] the [0.2] L is getting shorter isn't it and if this thing is 
+[0.2] negative [0.2] then L L is getting bigger [0.7] so a natural null 
+hypothesis now [1.5] just simply looking at whether [0.7] you get bigger or 
+less for a value of L [0.4] the [1.7] natural probability [0.5] er to look at 
+now [1.3] is let's look at the probability that X [0.8] is positive [0.3] okay 
+so that means that the [0.4] L is actually getting less [1.3] and al-, also we 
+could look at the probability that X is negative so that 
+means L gets bigger [0.8] and if there's nothing going on here if on average 
+there's no trend over time [0.3] you'd expect to see as often L getting [0.4] 
+bigger as it getting smaller you see so the [0.6] another way of formulating 
+the null hypothesis [0.2] is that the probability that X is positive [0.2] 
+should be the same as the probability [0.6] that X is negative [5.1] and er [1.
+2] if we have a normal distribution with mean zero then truly that satisfies 
+that requirement [0.2] but notice that this is a much more [0.3] this is a much 
+weaker null hypothesis than this one here the f-, the T-test puts all this 
+baggage on it like assuming normality and things and working out standard 
+deviation and things [0.4] this is a much more crude this is a much more 
+primitive [0.2] way of looking at the data just counting up how many positives 
+and negatives [0.3] and 
+testing [0.3] this hypothesis [1.2] so let's see [2.2] let's see how many 
+positives and negatives we've got so [0.2] so can i [1.0] F for frequency there 
+so let me put F- [0.3] sub-plus [1.9] is the number of positive [0.6] Xs [4.3] 
+and let let er F- [0.7] minus [1.6] be the number of negative [0.8] Xs [1.7] 
+okay [1.9] and er [0.4] er the probability of positive and negative should be 
+the same according to the nu-, hyer-, null hypothesis [0.2] so on average [0.6] 
+F-plus should be the same [0.3] as F-minus it w-, w-, never be exactly the same 
+of course but on average [0.4] er the the difference between these things would 
+be zero and one will be the same [0.6] as the other so so that's the null 
+hypothesis this is what we'll look at now [0.3] so we d-, we don't we don't 
+have Xs any more we just replace them by the frequencies [0.8] so so what is 
+what's going to be a suitable test statistic now [1.9] a test statistic 
+is a function of the data but now we're only looking at how many positives and 
+negatives there are [0.8] so it's really a function of F-plus and F-minus i'll 
+be looking at now [0.6] what is a suitable [0.5] te-, test statistic what is it 
+about these things that [0.2] would lead us to doubt the null hypothesis is 
+true [0.2] well it's the difference isn't it intuitively so if we just take F-
+plus [0.5] minus F-difference [0.4] absolute bars around that [1.3] then that's 
+a good test statistic [0.4] the more different [0.2] these two frequencies are 
+[0.2] the more evidence we have [0.6] that er [0.5] X is more likely to be 
+positive or negative [1.3] okay so this is the sign test now a completely 
+different way of looking at data [0.2] this is now the [0.5] test statistic so 
+how do we work out the P-value well let's get the data [2.6] let's look let's 
+let's look at the [0.4] and i'm really very fed up we haven't got the [2.0] 
+anyway there's the data again [0.3] how many positive and how many negative 
+we've got four and a seven [0.3] in the first two cells haven't we so we've got 
+seven [0.4] we've we've got eleven negatives [0.5] how many positives have we 
+got [0.2] all the rest are positive except for zero [0.7] we'll leave the zero 
+out 'cause that doesn't tell us anything about which way we're going [0.7] so 
+we've got eleven [1.9] we've got eleven negatives [2.6] and the number of 
+positives is the rest of them [0.5] which is fourteen 'cause the fifteen to 
+twenty-five [0.2] but we'll leave the zero out so the number of negatives [0.9] 
+is er [0.6] thirteen [5.4] i'm so sorry number of positives is thirteen see 
+that so we've got [0.5] er th-, three there [0.5] five there four there and one 
+there and [0.2] so we've got a total [1.8] okay so the P-value then what is the 
+P-value then [0.7] this 
+is the probability [0.7] that by chance [2.8] this is the probability that by 
+chance [1.1] F-plus [0.7] minus F-minus [0.8] is going to be [0.6] greater than 
+or equal to what we have observed and what we have observed [0.5] is two isn't 
+it there's only a difference only two between these two [1.0] these two things 
+[1.5] so this probability [0.2] going to be pretty big now [0.3] if you just 
+think about it [2.8] so so [0.5] how how are we going to get this probability 
+well easy way to think about it [0.2] is that we've got er fourteen positives 
+and eleven negatives so so think of tossing a coin twenty-four times [0.9] and 
+we get thirteen heads [0.2] and eleven tails that's essentially the same [0.7] 
+problem isn't it [0.3] recast in terms of coin tossing [0.5] so so this is the 
+probability of the number of heads minus the number of tails in twenty-four 
+tosses [0.6] is er [0.3] greater than or equal [0.2] to two [0.5] well two is a 
+pretty small number so the easiest thing is to work out the 
+opposite of that [1.4] so that's one minus the chance [0.4] that F-plus minus F-
+minus is strictly less than two [0.7] now F-plus minus F-minus [0.7] is always 
+going to be an even number isn't it [1.7] if you think about it 'cause if you 
+put the number of heads up by one the number of tails goes down by one [0.4] so 
+this is so so the only exception the only [0.5] possible sample result which 
+doesn't satisfy this inequality here [0.4] is if the two are exactly equal [1.
+1] so it's one minus the probability [0.4] that F-plus [0.6] equals F-minus and 
+therefore equals twelve [3.1] and we can [0.5] we know what that is don't we [0.
+2] what's the so so that's the chance that if you toss a coin twenty-four times 
+[0.2] you will get exactly twelve heads [0.8] and twelve tails in exact balance 
+and we know what that is don't we that's twenty-four [1.4] C twelve [1.7] times 
+one over two [1.4] to the power of twenty-four [1.7] 
+okay so it it follows down [0.4] to a binomial [0.3] er probability as it must 
+do 'cause we're talking about binomial distributions [0.4] basically and if you 
+work out that probability [1.1] this is about point-one-six [1.0] this 
+probability if you work it out on your calculator so one minus that [0.3] is 
+nought-point-eight- [0.2] three- [0.6] nine [3.7] so that's the P-value [0.7] 
+so that's the P-value calculated [0.4] by this other way [0.8] of er [0.8] 
+looking at it so the main point to note [1.0] is we've we've got exactly the 
+same data [1.0] both tests are doing something which is very sensible [0.6] 
+first test looking at the mean of the distribution [0.5] in the classical way 
+[0.3] the second test is looking at how many positives and negatives there are 
+both are [0.4] perfectly plausible [0.3] and yet they give different answers [0.
+7] and they give different answers [0.3] because they're using different test 
+statistics [0.4] this one's look-, looking at the T thing [0.2] with the 
+baggage of standard deviation [0.2] this test statistic is just 
+looking at the difference between [0.2] two [0.2] integers [1.2] so er [0.7] so 
+the so the moral of this [0.4] example is i-, is is is the point [0.3] that 
+significance levels are not everything [0.9] significance levels [1.1] isn't 
+really the full story we want we want to somehow get the idea here [0.2] that 
+the second test [0.2] is actually worse than the first test we want to [0.3] 
+somehow take into get get in [0.6] get get to grips with the fact that the 
+first test [0.2] looks at the data in much more detail [0.2] than the second 
+test we're making [0.2] lots of assumptions in the first test like normality 
+and things like that [0.5] so we would expect to get a premium [0.3] for doing 
+the first method [0.3] rather than the second method so in se-, there must be a 
+sense [0.2] in which the P-value for the first way method [0.2] is better [0.2] 
+than the P-value [0.2] for the second method [0.6] and the only way we can get 
+to grips with that [0.9] is er by looking at the error rate the other way round 
+[0.9] we're not just interested [0.3] in how often we reject the null 
+hypothesis when it's true [0.2] we've also got 
+to worry about [0.2] the sensitivity of the test we've got to worry about the 
+probability [0.3] that if ne-, if H-nought actually isn't true [0.8] we've got 
+to worry about the the probability that we'd actually detect that [0.8] and we 
+like a test [0.4] which has a a a good sensitivity which i-, er going to be 
+more likely to detect [0.8] the er lack of truth of H-nought rather than just 
+simply detect [0.2] its truth [0.7] and that's how the rest of the theory of [0.
+2] significance tests goes which is what i'm going to talk about [0.4] er [0.5] 
+just be-, beginning now and then er that's the main topic for next week really 
+and what i'm going to be talking about from now on [0.2] is much later work 
+actually historically [0.4] than P-value P-values goes back about a hundred 
+years [0.7] the idea of looking at these types of error [0.2] goes back to the 
+late nineteen-thirties so it's a a more recent [0.7] er [0.7] innovation [0.9] 
+so er finally today then [0.2] let me define [2.7] let me define er [0.2] two 
+more things i said i was going to have two more concepts to define [0.4] here 
+they are [1.1] so the first 
+thing to define [0.7] is er [0.6] i-, is i-, is what's called alternative 
+hypothesis [1.2] and er [0.4] you see why now i have H-nought 'cause i'm now 
+going to have H-one [2.2] H-one [2.4] is the [11.2] H-one [0.2] stands for the 
+alternative [0.3] hypothesis and H-one [0.5] H-one is simply the complement of 
+H-nought [7.1] in in the sets that i-, in the set [0.2] sets so [0.2] if H-
+nought is true [1.1] H-one is its opposite so H-one must be false [1.0] and 
+similarly is H-nought is false [0.6] then the opposite of it is true [0.9] so H 
+H-one is just the opposite of H-nought [1.0] so in set theory sense it's the 
+complement [3.8] so that's the first definition the alternative hypothesis so 
+we've got two hypotheses going on now [0.8] either H-nought or H-one and we're 
+trying to decide [0.8] which is which [0.4] and the er [1.2] the second 
+quantity is the error rate the other way around so everybody uses a simple beta 
+now instead of alpha [1.1] so so this 
+is now the probability [1.6] that we're going to [4.4] accept the null 
+hypothesis in other words believe the null hypothesis is true [0.5] but now 
+calculate it on the [0.9] assumption [0.2] that H-one is the [0.2] the the 
+truth [1.1] so this is the error rate the other way round this is the chance 
+that [0.4] H H-one actually is true in other words H-one r-, H-nought is really 
+false [0.4] but we conclude that it's true so we made a mistake of course [0.5] 
+so this [0.7] i defined alpha to be the type one error rate a moment ago this 
+is now the type two [1.0] error rate [10.1] so it's the probability of getting 
+things wrong [0.6] er the other way round and the theory of significance tests 
+[0.3] now goes down the route [0.4] of looking at values of alpha [0.2] and 
+beta [0.6] and now not only do we want to control alpha which i've talked about 
+so far [0.2] we also want to choose significance tests [0.2] I-E choose test 
+statistics [0.3] for which beta [0.2] is also small [1.0] and that's what i'm 
+going to talk about [0.6] er next Monday [0.6] and Thursday 

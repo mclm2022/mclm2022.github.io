@@ -1,0 +1,16 @@
+---
+title: "Slides"
+editor: visual
+---
+
+These are the slides of the course, Fall of 2022.
+
+# [Logistic regression](logistic-regression.qmd){target="_blank"}
+
+<div>
+
+```{=html}
+<iframe class="slide-deck" src="logistic-regression.html"></iframe>
+```
+
+</div>

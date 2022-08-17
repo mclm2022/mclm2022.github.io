@@ -1,0 +1,513 @@
+nf0934: holography is a very modern [0.3] part [0.4] in optics [0.6] it's very 
+complicated subject [0.4] as well as interesting [0.6] it's possibly one of the 
+most interesting things [0.2] m-, most of the interesting topics that [0.6] we 
+have discussed in the lecture [0.6] er [0.3] and er [0.3] it is going to be in 
+a very simplified manner [0.7] what i'm going to show you [0.4] so [0.2] don't 
+be surprised if y-, if i'm just [0.3] if i just throw formulas at you [0.6] er 
+that [0.2] are [0.2] are the final result don't expect any complicated 
+mathematics the mathematics in holography are very very complex [0.7] so the 
+intention that i have today with holography is to just [0.4] explain to you 
+what it is [0.6] er [0.2] make you understand the basic principles of 
+holography [0.4] and make you feel comfortable with the idea [0.5] so that's 
+the intention [1.4] there isn't much math [0.6] but [0.2] there are some very 
+interesting though complex ideas regarding [0.4] waves in optics [0.6] and er 
+[1.0] i would ask you to pay a little bit of attention and try to think [0.3] 
+on the way [1.4] okay [1.5] i am sure that you [0.2] all [0.3] have heard 
+before the word holography [0.5] you know that it 
+is technique that produces three-dimensional images [0.7] and er [0.2] the 
+question is [0.4] what is it that's different [0.2] in holography compared to 
+two-dimensional [0.4] photographs [1.5] what is that we miss [1.4] when we've 
+got a normal photograph [0.3] or we've got [0.2] our television screen [0.5] 
+what we see is just a two-dimensional flat image [0.4] we don't see depth [1.1] 
+basically what we see is just irradiance [1.0] so [0.6] light intensity [0.2] 
+goes on the screen it gets reflected and that information goes into our eye and 
+we see [0.3] a two-dimensional image [1.2] but [0.5] we miss something [1.1] 
+the what we miss is information [1.0] and that information that we miss [0.2] 
+is the phase [0.3] of the reflected [0.5] wavefront [2.2] as we all know [0.3] 
+a wave can be described by two things [0.8] can be described by [0.2] the 
+amplitude [0.5] which effectively defines the irradiance [0.6] and the phase [1.
+2] so in two dimensions [0.2] what we see [0.5] is simply irradiance [0.4] but 
+we don't see phase [1.2] with techniques of holography [0.5] what we see [0.2] 
+is both [0.4] irradiance [0.3] and phase [0.4] and this is how we end up seeing 
+a three-dimensional image [1.5] 
+now the question is [0.2] that if we want to see [0.3] both the irradiance [0.
+2] and the phase [0.3] we need to have a mechanism [0.4] from which we can code 
+[0.4] that information [1.9] and when we talk [0.2] about [0.5] phase [0.4] 
+then [0.6] sometimes it's easy to think [0.4] interference [2.8] and basic idea 
+of holography [0.3] is to encode [0.6] both information [0.5] phase [0.4] and 
+amplitude [0.7] in form of interference fringes [2.0] later on we'll see how [0.
+6] we can achieve that [1.5] right [0.6] and what i'm going to show you now [0.
+4] after i just made a [0.4] short introduction [0.6] is [0.6] give you a 
+schematic representation of what happens in holography [0.9] holography is 
+defined [0.2] er is separated sorry [0.4] into two parts [0.3] one part is [0.
+2] the recording of the information [0.9] the other part is [0.2] the 
+reconstruction [0.4] of the information [0.5] so keep that [0.3] balance [0.5] 
+so you can keep [0.3] good control on what's being said in the lecture [1.0] 
+right [0.9] now [0.3] here i'm going to show you two [0.8] figures [0.2] oops 
+[0.6] i don't want to ruin that [laughter] [1.8] so we've got two figures here 
+[1.1] i do not can you can you see it clearly [0.8] is it [0.3] okay [1.8] okay 
+[0.4] 
+no complaints so i can understand that [0.2] you can see everything clearly [3.
+4] now let's see what we've got here [3.5] before to those who didn't hear it i 
+said that [0.6] the basis of holography is storing [0.3] information [0.2] 
+about both [0.4] amplitude [0.2] and phase [1.6] and let's see what happens [1.
+8] we've got [0.6] here [0.4] a beam [1.1] that is broad [0.9] and it's coming 
+from a laser [2.2] that beam is split then in two [2.0] one part of the beam [1.
+2] gets reflected [0.2] on a mirror [1.0] and shines [0.3] on a photographic 
+plate [1.6] so that's one part of the recording [0.7] the other part of the 
+beam [1.2] carries on [0.7] shines on the object [0.2] that we're studying [0.
+9] and then [0.6] it gets reflected back [0.5] on the photographic plate [1.6] 
+so we've got two beams [0.8] coming from a laser [1.3] that travel [0.7] 
+different paths [1.5] and [0.3] what do you think [0.2] is going to happen on 
+that photographic plate [0.5] when these two beams come together [0.6] there 
+are two beams that are coherent [0.5] because they come from a laser [0.8] and 
+they travel different paths [2.2] and i'm sure you all know by now after the 
+exam that you did all your homework [0.5] that what we have [0.3] is 
+interference [0.6] these two beams are going to interfere [1.3] and what 
+happens when they interfere [0.4] we're expecting [0.3] on this photographic 
+plate [0.5] to have [0.4] a complex [0.3] set [0.5] of [0.8] dark [0.4] and 
+bright fringes [0.4] that's the result of interference [0.4] and take my word 
+for it at the moment [0.5] that these fringes [0.5] are a coded form [0.6] of 
+the information [0.6] that you need [0.5] to have a three-dimensional 
+reconstruction [0.2] of that object [0.8] these fringes [0.6] tell you [0.2] 
+everything you need to know if you want to have a three-dimensional 
+reconstruction of that object [0.4] we'll see later the explanation for that [1.
+5] right [0.4] so [1.1] then [0.6] when we [0.2] develop that [0.7] 
+photographic film [0.7] we say [0.6] that we can reconstruct [0.5] the actual 
+object [0.7] how [1.9] that is illustrated [0.5] on the second figure here [1.
+2] and what we have [1.0] is [0.4] a laser beam [0.3] again [0.2] shining [0.4] 
+on that [0.8] photographic plate [0.9] and these fringes that are there on the 
+photographic plates [0.9] make [0.7] an [0.6] a complex wave [0.7] to arise on 
+the other side of the plate [1.5] and [0.4] believe me at this stage [0.3] that 
+if you look [1.1] at an angle [0.6] through [0.4] that photographic plate [0.4] 
+you will see [0.2] a three-dimensional reconstruction of the original object [1.
+9] 
+so that is the basic idea the very [0.3] simplistic idea [0.3] behind 
+holography [1.6] now [0.6] what i'm going to do is i'm going to try to explain 
+to you [0.2] the mechanisms of holography [0.4] using two different ways [0.9] 
+one is a pictorial Fourier way [1.0] and the second one is going to be [0.3] a 
+direct [0.2] mathematical [0.2] simple [0.2] way [0.9] they're both important 
+to understand [0.7] so i'd like to ask you to pay attention to both [0.5] er 
+ways of dealing with the problem [1.3] my first explanation is going to be 
+based on [0.2] Fourier [0.2] analysis or [0.2] Fourier optics [0.5] i'm not 
+quite sure how many of you feel [0.4] familiar with [0.2] Fourier analysis [0.
+4] can you just [0.5] put your hands up the ones that feel comfortable with it 
+[1.5] have you heard of it before [0.4] at all [0.6] you have er [0.2] er 
+anybody else [0.5] is it totally new to you Fourier analysis [0.8] hands up to 
+those that don't know anything about Fourier analysis [1.1] ooh okay [0.9] okay 
+[0.8] now [1.5] because i wasn't certain [1.0] which of you know things and 
+which don't [0.7] i've added [0.2] an extra [0.3] some extra information [0.8] 
+regarding basic things about Fourier analysis [0.3] most 
+of them when they most the people when they hear about Fourier analysis they 
+panic they think it's too complicated [0.5] but [0.6] if you just try to 
+concentrate [0.5] on the idea [0.2] i'm sure that you will all be better than 
+experts [1.2] so what is Fourier analysis then [0.6] Fourier analysis [0.4] is 
+a way [0.6] to describe [0.6] an image [0.4] to describe [0.2] a signal [0.5] 
+to describe [0.3] a function [0.3] it's a language [1.0] nothing more or less 
+than that [1.0] for that particular case when we talk for images [0.3] we say 
+that Fourier analysis provides the tools [0.2] to analyse an image [0.6] how [0.
+6] i'll show you [0.4] first the horrid thing the mathematics [2.7] so that's 
+what it is [1.1] c-, [0.2] can you see it [2.9] i think it's quite [0.3] oops 
+[0.7] i don't see that [0.4] surviving [laughter] [0.8] okay [0.8] so what's 
+the first formula [0.7] the first formula shows you [0.5] how [0.2] a function 
+[0.2] F- [0.7] of-X-and-Y [0.5] with that particular function and that 
+particular case is an image [0.2] is an intensity [0.8] can be analysed [0.6] 
+in [0.6] Fourier [0.8] spatial frequencies [1.7] of a particular amplitude [0.
+2] and phase [0.6] you must have seen that [0.5] that [0.2] integration [0.2] 
+before i mean [0.4] it is very popular [0.8] here is in two dimensions because 
+we're talking about two-dimensional [0.3] images [1.6] so a scene [0.5] can be 
+expressed [0.3] as a series of some Fourier coefficients [1.0] the coefficients 
+are characterized with a capital letter [0.5] the spatial frequencies are U [0.
+2] and V [0.7] the integration is over the spatial frequencies i'll tell you 
+later what a spatial frequency is so don't [0.3] don't be demotivated [0.6] and 
+here is again another expression [0.3] where i show how these Fourier 
+coefficients [0.4] can be expressed can be calculated [0.3] when you know the 
+scene F-of-X [1.1] so that's [0.3] basically the mathematical idea [0.5] the 
+relation [0.3] between [0.3] the scene [0.6] and something [0.4] that we call 
+Fourier coefficients [1.3] the important thing about Fourier coefficients is 
+spatial frequency have you heard that term before spatial frequency [0.8] okay 
+[0.6] so [0.5] now let's forget the math [0.2] and see [0.3] in practice what 
+we mean [2.1] so what i've got here [0.6] is a very simple image [0.7] on the 
+right [0.4] which is a step [1.5] what i've got here 
+is let's say high intensity [1.0] what i've got here is no intensity [0.9] so 
+it's [0.9] high intensity [0.4] dark [0.3] high intensity dark and so on [0.3] 
+it's a simple function [0.8] the reason why i picked a simple function is 
+because it's easier to represent [0.4] but what holds for that particular 
+function holds for [0.2] the complex image [0.5] so it's the same thing [1.1] 
+now [0.5] to make it more simple [1.5] what i've done [0.3] is i've taken one 
+line [1.1] out of that image one line across that image [0.3] and that line is 
+shown here [0.7] as a one-dimensional image [1.3] and what i want you to see 
+now [0.2] is how we can reconstruct that [0.4] sort of complex [0.7] intensity 
+line [0.3] using Fourier [0.3] analysis [0.7] and that result [0.6] is shown [0.
+6] on the last figure here [0.9] and what i have [0.6] is [0.3] the square of 
+intensity [1.7] and on top [0.5] i've drawn a simple [0.5] sine function [1.9] 
+then [1.0] on top of that [0.3] basic simple sine function [1.0] i've drawn [0.
+4] another sine function of different [0.2] frequency [1.9] and on the last 
+figure here if you've got more than two [0.4] sine functions [0.6] and these 
+sine functions when you add them up [1.0] you're going 
+to have [0.6] their initial [0.2] intensity reconstructed [0.7] so what is 
+Fourier analysis [0.2] it's a way to break a complex scene [0.5] into simpler 
+things [0.4] that you can play with that you can work with [0.6] what [0.5] 
+simple sine functions [0.3] of different amplitudes [0.4] of different 
+wavelength [0.3] when you add all these sine functions [0.3] what's the idea [0.
+2] it's to reconstruct [0.4] your one-dimensional image [1.3] so that's Fourier 
+analysis [0.7] and it's shown here [0.3] in one dimension for a simple image [0.
+8] and [0.5] on the figure above [0.2] what i'm showing [0.4] is one sine [0.6] 
+function [0.4] shown in one dimension [0.5] and here it is how that function 
+shows on two dimensions [0.9] that represents [0.2] intensity [1.4] yeah [1.1] 
+so that's the idea behind Fourier analysis [0.3] now what [0.5] i'm wanting you 
+to concentrate if you want to understand the rest is [0.3] what is spatial [0.
+4] frequency [1.1] that's very important [1.6] and that is shown on the figure 
+below [1.0] so what i've done on the figure below [0.3] is i have taken [0.3] 
+one of these sine functions [0.5] and i've plotted it out [0.7] and i'm saying 
+that the period of that sine function [0.3] 
+is [0.3] T [0.7] the period [0.3] is [0.2] T [0.3] T is not time [0.3] just a 
+period of that time function [0.5] what is its spatial frequency [0.5] is one 
+[0.4] over-T [0.9] that's what it is [1.8] that's a spatial frequency and 
+spatial frequency [0.4] can be defined [0.7] linearly [0.2] as one- [0.2] over-
+T [0.7] or angularly [0.4] as i've [0.2] shown on that part of the figure [0.4] 
+where [1.0] the difference with angular spatial frequency is that [0.4] it's 
+important [0.2] from which position you're looking at something [0.6] so [0.2] 
+you've got this period [0.2] of that sine function [0.3] you're sitting there 
+[0.3] looking [0.5] at that sine function [0.5] and [0.2] that [0.3] period is 
+making an angle theta [0.7] with you with the observer [0.5] the angular 
+spatial frequency is one- [0.3] over-theta [2.5] so [0.2] what i'm wanting you 
+to remember out of that transparency is that [0.3] a scene can be analysed [0.
+2] in spatial frequencies [0.3] these spatial frequencies are a way to 
+reconstruct [0.3] a more complex scene [0.7] and why is it important to analyse 
+it [0.3] it is [0.3] because [0.2] as the light [0.3] falls [0.2] on an object 
+and then gets reflected [0.3] there is a theory in optics that say [0.3] that 
+what travels 
+actually [0.3] after the light has been reflected is the spatial frequencies [0.
+3] of that particular scene [0.3] and each spatial frequency [0.3] is [0.4] 
+travels [0.2] on a wave [0.4] and depending [0.4] on [0.6] th-, how big that 
+spatial frequency is [0.9] no [0.4] the angle that the spatial frequency makes 
+[0.3] with the central axis [0.5] is higher [0.2] for higher spatial 
+frequencies [0.8] so what i'm saying is that maybe i need to use blackboard for 
+that one [0.4] what i'm saying is that [0.9] when you have light reflected [0.
+2] off that scene [0.4] you've got [1.6] that's the central axis [0.4] you've 
+got [0.2] a spatial frequency [0.5] travelling [0.3] let's say straight through 
+[0.3] which is the zero order but [0.2] but don't worry about that at the 
+moment [0.4] you've got [1.2] another spatial frequency [0.3] travelling like 
+this [0.5] you've got another one [0.8] travelling like this [0.6] and so on [0.
+7] and they propagate [0.3] these spatial frequencies [0.2] and because of the 
+lens [0.6] they just come back together [0.2] on the image plane [0.2] they 
+recombine [0.2] and there you see the final image [0.9] okay [1.4] so [0.2] 
+that's something that we need to remember how the light propagates [0.2] in 
+terms of 
+spatial frequencies [2.5] now why is it important [3.3] is [0.2] shown [0.4] 
+and understood [1.3] from the following transparency [2.5] so [0.8] going back 
+to the dea-, the idea of holography [0.3] we said that we've got [0.3] two [0.
+2] parts of a laser beam [0.7] recombining [0.4] on a photographic plate [0.4] 
+and we said that there we've got [0.2] fringes [1.1] on that photographic plate 
+[0.5] and what i'm trying to go er what i'm going to do now [0.3] is to show 
+you the result of taking [0.4] one spatial frequency [0.6] and see the result 
+of that spatial frequency with the original laser beam [0.8] and if i [0.7] put 
+up [0.5] the figure it's going to be easier for you to follow [2.2] 
+right [0.4] so what do i have here [0.4] this is going to be an attempt to 
+explain to you [0.2] how the image is recorded [0.2] with holography [0.5] yeah 
+[1.8] so i am taking just [0.2] one [0.2] spatial frequency [0.6] of the scene 
+[1.1] yeah [0.6] that particular spatial frequency is shown here [1.0] in in [0.
+2] it is assumed that it makes an angle theta [0.6] with [0.3] the reference 
+wave [0.5] which is the part of the beam that comes straight from the laser [0.
+3] and is shown on the photographic plate [1.5] right [0.9] the straight 
+lines [0.4] represent [0.4] crests [0.8] and the dotted lines [0.2] represent 
+[0.5] troughs [2.0] and that is our photographic plate [0.2] and i need to 
+hurry [0.3] and that is our photographic plate [0.5] and [0.2] the reference 
+beam is assumed [0.3] in this figure to have a maximum [0.6] on that 
+photographic plate [1.8] now [0.5] what i'd like you to do is to tell me [0.3] 
+if you can see [0.6] at which points on the photographic [0.2] plate [0.2] i'm 
+going to have [0.3] maxima [0.4] occurring [0.3] from [0.2] interference 
+between the two beams [0.7] 
+sm0935: A B and C [0.3] 
+nf0934: that's excellent [0.5] this is where you have your maxima [1.6] A [0.2] 
+B and C [1.4] now [0.4] what is going to happen to the light intensity [0.3] in 
+between these points [0.8] 
+sm0936: [1.0] 
+nf0934: it will depend [0.2] on the phase difference between the two beams [0.
+6] the classic line from interference [1.2] so the next step is [0.2] is to 
+actually mathematically [0.4] try and calculate [0.4] how much that phase 
+difference is going to be [0.5] as a function [0.3] of position [0.3] on top of 
+that photographic plate [0.7] that's our next aim [0.2] that's what we need to 
+do [1.1] and [0.5] now [0.2] i've got [1.3] well [1.7] another figure [0.2] 
+which is basically [0.5] part [0.4] of the first one [0.5] 
+but only showing the interesting bits for the calculation [0.6] so again i've 
+got my photographic plate there [0.3] i've got an axis X on that photographic 
+plate [0.5] and [0.2] i've got the angle theta [0.3] that [0.2] the spatial 
+frequency makes with the reference wave [0.4] got the wavelength of my 
+radiation [0.3] and what i'm wanting to do is to calculate [0.2] the phase [1.
+1] phi [0.2] phi [0.2] how do you call it [0.2] phi [0.5] yes [0.2] phi [0.2] 
+along [0.3] that photographic [0.3] plate [1.5] now [1.1] you're not supposed 
+to see that bit yet [laugh] [0.9] so [0.7] how much do you think [0.3] that 
+phase difference is going to change [0.3] if i travel [0.3] from B [0.3] to A 
+[0.4] where the two maxima occur [2.4] 
+sm0937: two-pi [0.5] 
+nf0934: exactly [0.5] so when i go from the two maxima [0.4] the phase has 
+changed [0.3] by two-pi [1.5] therefore [0.2] taking that into consideration [0.
+4] one can write [0.2] that the phase [0.4] phi [0.3] at some point [0.3] X [0.
+5] satisfies that relationship [0.2] that analogy [0.6] if you want [0.7] but 
+phi [0.3] over two-pi [0.2] equals [0.2] X [0.3] over [0.2] the length [0.4] A-
+B [1.2] don't worry making notes about that because you've got everything in 
+your [0.2] handout [0.4] so [1.6] you don't you needn't worry about it [0.5] 
+unless of 
+course if it helps you learn things better to which is which is fine by me [0.
+7] and now what we want to do is to [0.2] isolate that phi [0.3] and we say 
+that the phase [0.7] is [0.4] two-pi [0.2] multiplied by X [0.2] divided [0.2] 
+by [0.2] A-B [1.3] that calculation though is not finished because what because 
+what we actually want to relate [0.4] is that phase difference [0.2] with the 
+angle [0.4] theta [1.2] that the spatial frequency makes with the reference 
+wave [1.7] and how do we do that [1.1] usual way [0.3] we use that triangle [0.
+9] yeah [0.6] and from that triangle we're going to substitute [0.6] the length 
+A-B that is not very helpful to us at the moment [1.2] and it's quite 
+straightforward to see that the sine of that angle theta [0.3] is the 
+wavelength lambda [0.2] over [0.2] A-B [0.3] therefore that length [0.2] A-B is 
+going to be the length [0.4] sorry the wavelength [0.2] divided by the sine [0.
+5] of the wanted angle [1.3] therefore [0.2] our final result is that [0.3] the 
+phase [0.2] along the photographic plate [0.2] as a function of position [0.2] 
+is going to be two-pi [0.4] over the wavelength [0.3] multiplied [0.2] by the 
+distance [0.2] 
+multiplied [0.2] by the sine [0.4] of the angle [0.4] that the spatial 
+frequency makes [0.2] with the reference wave [2.1] and now what is it 
+important to see [0.3] the calculation is quite straightforward i'm sure you 
+all [0.6] understood it [0.7] the important is [0.3] that [0.5] the phase [0.3] 
+X [0.8] that defines if we're going to have intensity maxima [0.2] or minima [1.
+2] is not only a function of position [0.3] X [0.7] it is a function [0.4] of 
+the angle [0.3] that the spatial frequency makes with the reference wave [1.2] 
+and what did we say before [0.3] that a complex scene [0.5] can be broken into 
+a number of spatial frequencies [0.2] that travel with different angles [1.4] 
+where do i want to end [0.2] i want to say that [0.3] for each spatial 
+frequency [0.5] that angle theta is going to be different [1.5] therefore [0.3] 
+what we're expecting to see [1.1] on the photographic plate when you've got a 
+complex object [0.5] is a very complicated [0.5] form of of of dark and bright 
+fringes [1.3] that's what we're expecting to see [5.6] but before [0.5] we go 
+to that point the next bit is [0.3] to see [0.3] what is going to be [0.3] the 
+light field on that 
+photographic plate [2.2] and the light field on that photographic plate [0.7] 
+is going to be given [0.3] by this [0.6] formula [0.2] that comes to you [0.3] 
+like [0.2] out of the blue now [0.3] but it really comes from interference [0.
+5] the point is not to go through all the steps [0.2] it's to make you 
+understand what's behind holography [0.7] yeah [0.5] and that's the resultant 
+[0.3] wave [0.5] of [0.7] two [0.6] beams [0.6] that have got the same [0.2] 
+amplitude [1.3] now what's the resultant intensity [0.7] when the field is like 
+that the resultant intensity [0.3] as we all know is going to be proportional 
+to the square of the wave time average blah blah [0.3] and believe me [0.2] 
+that is going to be given by that equation [1.7] so what do we see that for one 
+spatial frequency [0.3] the intensity on the photographic plate [0.3] is 
+expected [0.3] to have a constant term [1.3] and another term [1.1] who has got 
+a cosine [0.8] dependence [0.8] cosine dependence [0.2] on the phase [0.2] 
+difference [0.9] and enough about math how's it going to look like [1.7] i'm 
+going to show you [0.9] here [0.6] how the fringes are going to look like on 
+that photographic plate 
+for this simple case [0.8] and we said [0.3] that it's going to look like a 
+cosine [0.3] and indeed [2.4] it looks [0.2] like [0.6] that [1.2] which is [0.
+6] a cosine [0.4] function [4.1] okay [1.5] so that's [0.2] now [0.3] the 
+intensity on the photographic plate [0.3] and what do we do when we have that 
+information [0.5] we develop the film [0.6] and then we say okay [0.2] now 
+we've got our fringes [0.2] we want to reconstruct [1.3] what's the idea behind 
+reconstruction [0.8] that is very simply [0.4] shown on that one [0.3] where 
+you've got now another laser [0.3] shining on that photographic plate [0.3] and 
+because you've got intensity variations on that photographic plate [0.3] you've 
+got a complex wavefront arising [0.2] behind that plate [1.1] and you've got [0.
+2] a number of spatial frequencies [0.3] travelling in different [0.2] 
+directions [1.5] and what i'm saying is [0.3] that [0.3] if one [0.2] looks [0.
+5] from that position [0.4] he's going to see [0.3] a three-dimensional object 
+[1.1] the explanation about [0.2] reconstructing [0.7] is going to be [0.2] 
+from my point of view more successful [0.2] with the other approach with a 
+direct mathematical approach [1.1] but that's the end [0.3] of the first [0.2] 
+way of 
+dealing with holography [0.4] the Fourier way [2.4] how [0.3] are the fringes 
+going to look for [0.6] a more complicated object [2.9] 
+they're going to look more complex [1.5] and [1.9] they are bound [0.4] to look 
+[0.6] more complicated [0.5] the more complicated the object you are studying 
+is [0.4] so [0.8] i'm just showing you here two pictures to see [0.4] how do 
+they look like [3.8] one [0.2] finds it hard to believe that [0.3] out of that 
+[0.4] you've got so much information but [0.7] that's how it is in holography 
+[2.0] two more points that i need to make [0.3] is that [0.9] as we said before 
+[0.5] when you have a more complex [0.2] object [0.4] you're expecting [0.2] 
+the phase difference [0.6] phi [0.5] to give you a more [0.3] complicated 
+configuration of fringes [0.6] and [0.5] if the amplitude of the waves [0.3] is 
+not the same as we said before [0.3] then that is going to reflect [0.3] on how 
+bright [0.3] these fringes are [2.0] we'll see more details of that one [0.4] 
+on the second [0.2] part of [0.5] how to work with holography which is [0.4] 
+something that you may feel more comfortable which is direct [0.2] mathematical 
+[0.4] way [3.2] so [1.8] we're going back [0.5] to the usual [1.2] old known 
+ideas about [0.4] 
+waves [1.0] and [0.4] to remind you again [0.2] of the [0.4] idea of holography 
+[0.4] i'm just going to very briefly show you [2.5] what we said about 
+recording [0.2] we said we've got a laser beam it's been broadened [0.5] part 
+of it shines on that photographic plate [0.4] and another part [0.3] of the 
+beam [0.4] shines on the object and then ends up on the photographic plate [0.
+5] so what do we've got [0.7] we've got [0.2] two [0.4] electric [0.3] fields 
+[0.2] recombining on a photographic plate [0.2] usual interference problem [0.
+8] right [0.6] so what do we know about the usual interference problem we just 
+write down the two parts [0.3] of the wave [0.6] in a simple mathematical [0.2] 
+form [2.0] so what's the first equation represent [0.2] the first equation 
+represents [0.2] the part of the laser beam [0.2] that has not been reflected 
+[0.2] off [0.2] from the object [0.5] and that [1.0] part of the beam [0.2] we 
+call it the background beam or reference [0.2] beam [1.3] and [0.6] this is why 
+you've got the substr-, subscript- [0.2] B [0.5] for background beam [1.0] 
+that's the electric field [0.5] that is being produced [0.5] on the 
+photographic plate [0.6] and is [0.4] of constant amplitude [0.7] and [0.4] of 
+phase 
+that is a function [0.2] of position [0.7] on the photographic plate [1.5] 
+that's the description of the first part of the beam [0.8] now we've got [0.2] 
+the [0.2] beam [0.3] that has been scattered [0.4] by the object [0.7] that [0.
+2] we give the name [0.4] E- [0.2] O [0.4] O stands for object [0.9] and that 
+[0.2] is again the amplitude [0.2] which is now a position [0.8] of [0.8] i-, 
+it's a function sorry of position on the photographic fil-, on the photographic 
+film [0.6] and [0.3] a f-, er a phase [0.6] phi [0.7] with the subscript- [0.3] 
+O [0.4] for object [0.8] which is again a function of position on the 
+photographic field [0.8] and what we want to do is to calculate [0.3] the total 
+electric field [0.4] that arises [0.2] from these two fields overlapping [0.2] 
+adding with each other [1.6] and what we do is we say [0.3] that [0.9] the 
+field is going to be [0.2] the addition of these two [0.3] and [0.3] the 
+intensity [1.0] that it is what we are worried about [0.4] is going to be [0.2] 
+as we all know [0.6] the field squared [0.6] and then time averaged [2.2] and 
+[0.2] the result of that calculation [0.3] is going to be [0.7] as you all know 
+[0.5] the amplitude [0.4] of the background beam squared [1.3] plus [0.2] the 
+amplitude of the object beam 
+squared [0.8] plus [0.3] that [0.2] interesting bit here [0.6] which is a 
+cosine [0.4] of the difference [0.2] in phase these two beams have [1.5] now 
+never mind about amplitudes and about constants [0.4] that's [0.4] that's the 
+key point [0.6] here [1.3] so [1.0] we say then [1.3] we see [0.4] that [0.2] 
+the intensity [0.2] formed [1.1] on that photographic film [0.6] is really a 
+function [0.4] of the difference in phase between these two beams [1.2] so what 
+can we say [0.3] that the intensity [0.3] is [0.2] a coded [0.2] form [0.4] of 
+the phase difference [1.4] that's the whole point [0.2] that i want you to 
+remember on that one [2.4] right [0.3] we understood now the importance of the 
+phase [0.4] that the phase has been recorded [0.3] on the photographic film [0.
+2] but what about the other bit of information which is the intensity [0.9] and 
+we're saying that the intensity [0.7] in holography [0.5] defines the contrast 
+[0.4] as i said to you before [1.2] in the scene [0.9] and that contrast [0.2] 
+V [0.7] is [0.2] the maximum-intensity-minus-the-minimum-intensity over [0.5] 
+the maximum-intensity-plus- [0.3] the-minimum that's a simple definition of 
+what contrast is [0.8] and that contrast relates if you want to amplitude [0.5] 
+by 
+this [0.2] simple definition [1.3] and we see [0.3] that the amplitude [0.3] of 
+the object [0.3] E-O-O [1.1] indeed [0.2] defines the contrast of these fringes 
+[0.7] so the contrast [0.6] and the intensity really [0.2] of that photographic 
+plate [0.3] give you all the information you need [0.9] both [0.2] information 
+for intensity [0.2] and phase [0.7] to reconstruct [0.7] your original scene in 
+three dimensions [3.9] right [3.2] so that's the bit about [0.2] recording [0.
+4] for the direct mathematical approach [0.5] what about reconstruction [1.2] 
+again [1.0] i'm showing you very briefly [0.3] the figure for those that [0.8] 
+didn't pay that much attention before [0.5] you've got your [0.2] reference 
+beam on reconstruction [0.5] that shines on that photographic film [0.5] that 
+has all the information encoded [0.8] and [0.4] part of the beam [1.2] is going 
+through [0.2] and the wavefront that arises [0.7] behind that photographic 
+field [0.6] ph-, photographic film sorry [0.2] is giving you the information 
+you need [0.3] to see [0.4] that [0.5] three-dimensional image [0.5] now one 
+may say [0.2] hold on a minute [0.2] you've got two images there [0.9] you've 
+got [0.2] one [0.3] here [0.4] and [0.2] one [0.2] there [0.8] and indeed 
+you've got two images formed in holography [0.4] the thing is [0.2] that the 
+one of them [0.2] is not good [1.9] and i'll show 
+you later why [2.9] right [0.2] so let's go now [0.6] to the mathematics [1.3] 
+and i'm saying that we've got [0.2] one laser beam shown [0.4] on that [0.4] er 
+photographic film [0.9] a laser beam [0.6] and that's [1.8] its [0.4] formula 
+[0.5] how you define that [0.5] beam mathematically [0.7] we call it the 
+reconstructive [0.5] reconstructing [0.2] wave or reconstructive [0.2] beam [0.
+4] that's the name for it [0.3] and you've got this R-subscript there [0.8] and 
+it's [0.2] very simple to describe it [0.7] it's a wave [0.2] it's got its 
+amplitude [0.2] and it's got its phase [0.6] that's what it is [1.0] now that 
+beam [0.4] reads [0.3] the information [0.4] on the photographic plate [0.5] 
+that reading [0.7] is mathematically expressed [0.8] as [1.4] er multiplication 
+[0.9] of the [0.3] wave [0.4] the reconstructing wave [0.4] with the intensity 
+[0.7] on that photographic [0.3] plate [2.3] so what i'm saying is that the 
+final wave [0.3] the emerging wave behind [0.4] the photographic plate [0.7] is 
+going to be a multiplication [0.5] of the reconstructing wave [0.6] with [0.3] 
+the [0.2] intensity [0.4] of that [1.3] that is stored on that photographic 
+plate [2.0] that's how 
+it is [0.9] that's the starting point [0.4] now what's going to happen [0.6] 
+let's see [1.1] next bit is okay let's see what happens if we substitute [0.6] 
+the reconstructing wave [0.3] with its [0.5] analytical form [0.6] and [0.5] i 
+substituted here the intensity [0.6] with the formula that i've shown you on 
+the [0.2] on the previous page [0.5] nothing new [0.3] here [1.8] and what we 
+do [0.2] is we [0.2] multiply [0.4] all that [1.3] with a constant [0.5] 
+provided by these two terms [1.1] and [0.2] if we do that [0.8] multiplication 
+[0.5] we're going to see [0.2] that [0.5] it is the reconstructing [0.9] wave 
+[0.6] multiplied by this constant [1.0] and then [0.2] the second bit of the 
+multiplication is to take [0.2] all that [1.0] and multiply it [0.3] with [0.3] 
+all that [1.6] so what's interesting [0.2] in this multiplication [0.4] you've 
+got the multiplication of two cosines now [0.8] the cosine appearing here [0.6] 
+the cosine [0.6] there [1.2] and [0.3] the result [0.8] is shown [0.5] on that 
+[0.2] second line i'm showing [1.5] so what do you have here [0.5] you've got 
+all your constants [0.2] that you're not [0.3] particularly worried about at 
+the moment [0.5] and you've got the cosine [0.4] of the reconstructing [0.2] 
+wave [0.5] multiplied with 
+the cosine of that phase difference [0.3] between the reference beam [0.5] and 
+[0.6] the object [2.0] right [0.3] and when we see cosines multiplied together 
+[0.7] what do we do [0.3] we use the known [0.4] trigonometric formula [1.1] 
+and [0.3] finally [0.3] we've got here [2.0] the f-, [0.2] the result [1.5] 
+that [0.2] is telling you [0.6] that the final [0.2] E-F [0.3] wave that 
+emerges behind the photographic film [1.4] is [1.1] the first term [1.2] that 
+we saw here [0.6] the reference wave multiplied by constant but that's not 
+giving you any information so basically [0.4] you're not worried too much as a 
+physicist about that [0.7] and then you've got the interesting bits [0.6] 
+you've got [1.4] the constant here [0.4] which is [0.4] the [0.7] amplitude of 
+the wave arising from the object multiplied by something you're not worried 
+about [0.8] and you've got [0.5] the cosine [0.9] of the [0.2] summation [0.7] 
+of these two phase terms [0.8] do you see what i mean [1.5] i've taken the 
+multiplication of cosines [0.6] and i said [0.5] that cosine-A cosine-B is 
+going to be cosine A-plus-B [0.5] A being that [0.3] B being that big term [0.
+5] and then i've g-, ended up then with that expression [1.5] and on the third 
+term [1.0] 
+which is called [0.9] the difference [1.2] i've got [0.4] cosine [0.7] of [0.2] 
+A- [0.4] minus-B [0.5] so [0.3] cosine of [0.2] all that phase [0.3] minus [0.
+5] all that phase [1.2] and that's [0.7] the final wave that emerges [0.7] 
+behind the photographic plate [1.1] what does that mean [6.0] to make it more 
+easy [1.2] i've written out here [0.2] again [1.6] the three terms [1.1] and 
+we're going to make comments on these three terms [6.7] so the first term [0.4] 
+as we said before [0.5] contains not much interesting information [0.3] just a 
+constant [1.5] now the second term [0.9] which we called the sum [1.1] term [0.
+9] what does it contain [0.7] we saw here [1.2] it's got an amplitude [1.2] 
+which is a modified version of E-nought-nought but what does modified mean well 
+it's been multiplied [0.8] that's what it is [1.2] and it also [0.6] contains 
+the phase here [0.7] contains [1.0] the factor [0.5] two- [0.4] phi [1.1] i'll 
+remind you [0.2] that phi is the phase [0.3] of the wave [0.3] coming from a 
+laser [1.1] now it's getting a little bit complex [0.2] and trust me on that 
+stage [0.3] that that [0.2] term two-phi [0.3] is responsible [0.2] for the 
+separation of the two images [0.6] like i've shown you before [1.9] the 
+appearance of that term [0.3] makes the two images that 
+we've seen on the previous [0.8] figure [0.6] appear [5.5] and it also contains 
+information about the phase of the object [0.7] phi-nought [0.4] only [0.8] 
+what's the difference [0.2] it's got a minus there [1.4] so that particular 
+term [0.5] contains information about both the amplitude [0.3] of the object [0.
+4] plus [0.5] the phase [0.3] and somebody may say oh okay [0.3] i've got my 
+amplitude i've got my phase i've got my three-dimensional image [0.2] no [0.2] 
+it's not quite right [0.2] because the phase [0.2] appears here [0.2] with a 
+minus [0.7] what does that mean in practice [0.4] that that particular image 
+that we called the real image [0.2] is not right [0.4] it's upside down [1.0] 
+so [0.2] if in reality let's say [1.0] er [0.5] something is supposed to [0.2] 
+be closer to you [0.6] on that image that bit looks to be [0.2] further away 
+than you [0.6] it's the other way around [0.7] that effect is caused by this 
+minus- [0.4] phi [0.6] and the image occurring [0.4] due to that term [0.2] is 
+not [0.2] right [0.2] is not correct [1.9] the correct [0.5] three-dimensional 
+image [1.4] acu-, occurs [0.3] from the other term on the final wave [0.5] 
+which is the difference [0.6] term [0.8] and if you see [1.3] in that 
+difference term [0.2] you've got the amplitude [1.6] of the wave [0.9] coming 
+from the object [0.4] and now [0.3] you've got [0.2] the correct [0.4] phase [0.
+4] phi-nought [0.5] of the object [0.4] and that [0.7] part of the final image 
+[0.5] is the one that is given you [0.5] the three- [0.4] dimensional [0.2] 
+image in holography [4.0] so [0.6] to conclude what we've done today [0.8] is 
+[0.4] first thing [0.3] to remember [0.6] is the difference between two-
+dimensional and three-dimensional imaging [0.5] in two dimensions [0.3] what we 
+do [0.2] is we store [0.2] information about irradiance intensity however you 
+want to put it [0.3] but we have no information about phase [0.3] and 
+holography comes and says okay [0.5] there is a technique where [0.2] i can 
+store information [0.4] on both intensity and phase [1.0] then [0.7] we shown 
+the basic mechanism [0.4] of recording and reconstruction [0.4] in holography 
+[0.5] and we tried to explain [0.6] that idea [0.2] using two ways [0.3] one 
+way 
+was based on Fourier analysis [0.6] and we had to [0.5] say some things about 
+spatial frequencies and the way they propagate in space [0.6] and the other way 
+to do it [0.3] was direct mathematical way [0.4] by using simple techniques of 
+adding waves [0.3] and calculating intensities [0.2] and giving physical 
+meanings to various [0.4] mathematical results [1.9] and that brings this 
+lecture to an end [0.9] thank you for your attention [1.1] and er [0.4] i'm 
+sure you will [0.2] all be pleased to hear [0.3] that there is no workshop 
+today and there is no second hour today [0.3] so you're free to go home and 
+enjoy your weekend [0.7] and as about the marks because some people [0.2] asked 
+me [0.2] at the beginning of the lecture i haven't done your marking yet [0.4] 
+i will have by Monday [0.5] but [0.2] the gentleman who deals with giving you 
+the marks is Dr namex [0.3] so don't know when you will know the results of the 
+of the examination you have to ask him [1.2] that's it 

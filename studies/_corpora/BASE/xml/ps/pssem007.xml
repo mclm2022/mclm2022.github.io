@@ -1,0 +1,575 @@
+<?xml version="1.0"?><!DOCTYPE TEI.2 SYSTEM "base.dtd">
+<TEI.2><teiHeader>	
+<fileDesc>
+<titleStmt>
+<title>Engineering project meeting</title></titleStmt>
+<publicationStmt><distributor>BASE and Oxford Text Archive</distributor>
+<idno>pssem007</idno>	
+<availability><p>The British Academic Spoken English (BASE) corpus was developed at the
+Universities of Warwick and Reading, under the directorship of Hilary Nesi
+(Centre for English Language Teacher Education, Warwick) and Paul Thompson
+(Department of Applied Linguistics, Reading), with funding from BALEAP,
+EURALEX, the British Academy and the Arts and Humanities Research Board. The
+original recordings are held at the Universities of Warwick and Reading, and
+at the Oxford Text Archive and may be consulted by bona fide researchers
+upon written application to any of the holding bodies.
+The BASE corpus is freely available to researchers who agree to the
+following conditions:</p>
+<p>1. The recordings and transcriptions should not be modified in any
+way</p>
+<p>2. The recordings and transcriptions should be used for research purposes
+only; they should not be reproduced in teaching materials</p>
+<p>3. The recordings and transcriptions should not be reproduced in full for
+a wider audience/readership, although researchers are free to quote short
+passages of text (up to 200 running words from any given speech event)</p>
+<p>4. The corpus developers should be informed of all presentations or
+publications arising from analysis of the corpus</p><p>
+Researchers should acknowledge their use of the corpus using the following
+form of words:
+The recordings and transcriptions used in this study come from the British
+Academic Spoken English (BASE) corpus, which was developed at the
+Universities of Warwick and Reading under the directorship of Hilary Nesi
+(Warwick) and Paul Thompson (Reading). Corpus development was assisted by
+funding from the Universities of Warwick and Reading, BALEAP, EURALEX, the
+British Academy and the Arts and Humanities Research Board. </p></availability>
+</publicationStmt>
+<sourceDesc>
+<recordingStmt>
+<recording dur="00:42:34" n="8735">
+<date>06/02/2004</date>
+<equipment><p>video</p></equipment>
+<respStmt><name>BASE team</name>
+</respStmt></recording></recordingStmt></sourceDesc></fileDesc>
+<profileDesc>
+<langUsage><language id="en">English</language>
+</langUsage>
+<particDesc>
+<person id="nm5379" role="participant" n="n" sex="m"><p>nm5379, participant, non-student, male</p></person>
+<person id="nm5380" role="participant" n="n" sex="m"><p>nm5380, participant, non-student, male</p></person>
+<person id="nf5381" role="participant" n="n" sex="f"><p>nf5381, participant, non-student, female</p></person>
+<person id="sm5382" role="participant" n="s" sex="m"><p>sm5382, participant, student, male</p></person>
+<person id="sm5383" role="participant" n="s" sex="m"><p>sm5383, participant, student, male</p></person>
+<person id="sm5384" role="participant" n="s" sex="m"><p>sm5384, participant, student, male</p></person>
+<person id="sm5385" role="participant" n="s" sex="m"><p>sm5385, participant, student, male</p></person>
+<person id="su" role="participant" n="s" sex="u"><p>su, participant, student, unknown sex</p></person>
+<personGrp id="ss" role="audience" size="s"><p>ss, audience, small group </p></personGrp>
+<personGrp id="sl" role="all" size="small"><p>sl, all, small group</p></personGrp>
+<personGrp role="speakers" size="7"><p>number of speakers: 7</p></personGrp>
+</particDesc>
+<textClass>
+<keywords>
+<list>
+<item n="speechevent">Seminar</item>
+<item n="acaddept">Engineering</item>
+<item n="acaddiv">ps</item>
+<item n="partlevel">UG</item>
+<item n="module">unknown</item>
+</list></keywords>
+</textClass> 
+</profileDesc></teiHeader><text><body>
+<u who="sm5382">well do you want to get out that handout that we got early on</u>
+<u who="nm5380">oh yes</u>
+<u who="sm5382">which says that it has to it has to have a fifteen-thousand word summary and then a fifteen-thousand word technical report</u>
+<u who="nm5380">right</u>
+<u who="sm5382">which is not how we <gap reason="inaudible" extent="1 sec"/></u>
+<u who="sm5385">yeah its not the standard report layout that we've #</u>
+<u who="nm5380">oh right</u>
+<u who="sm5385">been used to for over four years they've gone and changed it</u>
+<u who="nm5380">okay</u>
+<gap reason="inaudible" extent="uncertain"/>
+<u who="nf5381">is that new this year</u>
+<u who="sm5382"><gap reason="inaudible" extent="1 sec"/> fifteen-thousand words summary and then up to another fifteen in technical report</u>
+<u who="sm5383">its more like</u>
+<u who="sm5385">it says # its not quite like introduction and aims and objectives isn't it</u>
+<u who="nf5381">this is going to be</u>
+<u who="sm5383"><gap reason="inaudible" extent="1 sec"/> the first the first half group summary</u>
+<u who="sm5384">it is quite open to # to sub-sections</u>
+<u who="nm5379">so its its right yeah its its quite big thing really the group summary report</u>
+<u who="sm5382">it seems that the first half has to be the kind of thing you'd <trunc>pr</trunc> present to like somebody who doesn't really have any you know deep technical knowledge of it</u>
+<u who="nm5379">i don't i don't think you would necessarily interpret it like that but suppose it says venture capitalist doesnt it</u>
+<u who="sm5385">yeah it also says down here <gap reason="inaudible" extent="1 sec"/> something about</u>
+<gap reason="inaudible" extent="uncertain"/>
+<u who="nm5379">it's never going to be simple enough to do it is it</u>
+<u who="sm5384">no</u>
+<u who="sm5385"># research project should be laid out in an appropriate manner suitable to what they've done if you</u>
+<u who="nm5380">sorry <trunc>y</trunc> <trunc>y</trunc> you're referring to something here</u>
+<u who="sm5385">yeah in <trunc>ref</trunc> in referral to research projects something something else</u>
+<u who="nm5380">oh i'm hopeless at trying to find something in the same i think in the group report well lets</u>
+<u who="sm5382">for more research based projects something there</u>
+<u who="su">right so</u>
+<u who="nm5380">yeah right well okay that's a let out that's basically a let out clause isn't it really</u>
+<u who="su">yeah there's nothing we can do</u>
+<gap reason="inaudible" extent="uncertain"/>
+<u who="su"><gap reason="inaudible" extent="1 sec"/> ignore the first bit and we'll do what we're hoping to do right</u>
+<gap reason="inaudible" extent="uncertain"/>
+<u who="nm5380"><gap reason="inaudible" extent="1 sec"/> i mean business financial and management report # well i don't know about a business report i mean this work is of use to people outside but not necessarily to business i mean its to sort of technical <trunc>busi</trunc> i mean you know # expensive</u>
+<u who="su">its not like we're going to market it or anything</u>
+<u who="nf5381">but that that's more appropriate for a group project where you're developing</u>
+<u who="nm5380">if you're doing a survey <gap reason="inaudible" extent="1 sec"/></u>
+<u who="nf5381">a product or so you know some the groups they work on developing some sort of product for instance then so that so that's more appropriate then for them to look at a sort of</u>
+<u who="nm5380">i mean it does say detailing any business plan developed so i mean clearly if there isn't a business plan you're not going to be talking about it</u>
+<u who="nm5379">the-, <trunc>the</trunc> there are small issues aren't there of the cost i mean the the the the the the price is <gap reason="inaudible" extent="1 sec"/></u>
+<u who="sm5385">well there's the cost of the boards and stuff like that yeah</u>
+<u who="nm5379">and the implications as to why you went down a certain route you know isn't it i mean why it sort of mentions if someone says well why didn't you do this its expensive isn't it i mean its always going to be too expensive</u>
+<u who="nm5380">yeah i mean there there are you know <trunc>ri</trunc> right at the beginning we talked about the different approaches i mean you are going down as Mark said you're going down a particular road with the # you know mapping onto a micro # a D-S-P microprocessor there's still there's the optical route and <trunc>ma</trunc> maybe one could have some some ideas about that you know # are you you <gap reason="inaudible" extent="1 sec"/> you're looking at that still</u>
+<u who="sm5382">yeah i mean i was thinking that would have to go in the technical half because it well because it seemed that # with that where it says research projects could be laid out differently it it seemed to me to be referring tothe layout of the summary not that # it would have to be split in half</u>
+<u who="sm5385">yeah i thnk it would still have to be</u>
+<u who="su">you'd still have to do the</u>
+<u who="sm5385">the fifteen-thousand word summary yeah</u>
+<u who="nm5379">but the thing is with the summary when you get to as long as that its a bit more than a normal summary well you'd just structure it as you would</u>
+<gap reason="inaudible" extent="uncertain"/>
+<u who="nm5380">we mark it as well don't we so the basic thing is if we mislead you and then mark it as down then you'd have a cause for complaint so if we if we guide you in a certain direction we will then mark to that and we will we would take the flack from the department because that was what we were supposed to do its not you're fault its its our fault isnt it so so so you've done the best you can given what we've told you</u>
+<u who="sm5383">i think we could do much better if we could just follow a standard <gap reason="inaudible" extent="1 sec"/></u>
+<u who="nm5380">can you can you can you get access to previous <gap reason="inaudible" extent="1 sec"/></u>
+<gap reason="inaudible" extent="uncertain"/>
+<u who="sm5382">well that's what we were going to ask you if there's any way that we can get a</u>
+<u who="nm5380">i'm i'm sure because you know</u>
+<u who="nf5381">i have got a copy of one but its a few years old in my office a copy of</u>
+<u who="nm5380">the undergraduate office i presume must hold these because certainly certainly i i i i've encouraged third year students doing projects to get # third year project reports from the previous years if its appropriate</u>
+<u who="nm5379">which are held by the general office not by the undergraduate office</u>
+<u who="nm5380">oh right well generally perhaps</u>
+<u who="nm5379">no your supervisor has to sign it to to say i mean you know its quite a procedure <gap reason="inaudible" extent="1 sec"/></u>
+<u who="nm5380">but really we're talking about those from last year i mean you just need to see to see a guide of of course bearing in mind that there's been a change but <trunc>pos</trunc> possiby not make much difference to us because this <trunc>p</trunc> this project isn't really you know we're not <trunc>manu</trunc> manufacturing something for a specific # # market if you like i think</u>
+<u who="nm5379">mm mm i think i think # you know the the you could probably bring yours into this this <trunc>st</trunc> we could argue that yours was in this structure <gap reason="inaudible" extent="1 sec"/></u>
+<u who="sm5382">we we've got a rough sort of structure thing but its sort of like we're working what we do to to do this if we had to just do it it wouldn't be anything like this</u>
+<u who="sm5383">a kind of distraction</u>
+<u who="nm5379">i think what you have to do is you have to try and do that unless it really <trunc>wo</trunc> won't go because # we we'll we we'll accept an interpretation we're not going to rigidly say oh well it doesn't have this that and the other because we didn't write this really so # treat it in the spirit of perhaps when you're asked to tender for business you'll have very strange ways of asking you for tenders that youdn't <gap reason="inaudible" extent="1 sec"/> yourself so you say well given like that we'll #</u>
+<u who="sm5382">so are there any other any other assessors that mark it there are other assessors aren't there other assessors do they mark ike totally independently because they might # be expecting a particular thing like that and then if they get it and its different they might go well you didn't follow the instructions</u>
+<u who="nm5379">well i think you may have to yes so so keep it so that it could be in the spirit of that</u>
+<u who="sm5382">yes</u>
+<u who="nm5379">but push it as far as you can you know thats defensible # basically you've got sort of <trunc>t</trunc> i mean those are almost like <trunc>apend</trunc> the technical ones are almost like detailed apendices so you could argue that the you could argue that the main the main mathematical bits and pieces were in were in the summary and then that you know the fine detail of it was in was in that part so you know i don't think that you've got to take all of of the maths out because we would argue that it was a research-based project</u>
+<u who="sm5385">so you have like the answer in the summary bit and how you get that answer in the technical bit because it <gap reason="inaudible" extent="1 sec"/></u>
+<u who="nm5380">yes do remember that it says maximum though of fifteen thousand words people have been saying you've got to right a fifteen thousand word report the wording is maximum</u>
+<u who="sm5382">maximum</u>
+<u who="nm5380">so the maximum total is thirty-thousand as well isn't it the whole portfolio</u>
+<u who="nm5380">an upper an upper word count of thirty-thousand words excluding figures and apendices right thats to keep it to keep it manageable but it doesn't mean that you have to go you have to keep checking the word count to make sure you are getting closer to thirty-thousand</u>
+<u who="sm5383">and things like # wave-length theory and stuff like that would that all go in the technical half do you think</u>
+<u who="nm5380">i would think so yeah i would think so because the group summary report might be correct me if i'm wrong i mean yeah <trunc>i</trunc> <trunc>i</trunc> it says this it it will be going to somebody who maybe who might have done a degree in engineering but would not be close <trunc>wo</trunc> wouldn't have a close relationship <trunc>wi</trunc> with wave-length analysis for instance so somebody who could see something <trunc>th</trunc> that is feasible and a possible way of making money since it talks about venture capitalism here and so on somebody who could see how it could be developed exploited but maybe doesn't understand the finer points of wave-length theory <trunc>does</trunc> doesn't <trunc>wan</trunc> to doesn't need to really but somebody who is interested in the technical work would obviously go to the technical report so its really that the group summary report is aimed at a particular group of people</u>
+<u who="sm5384">well we said we could just refer to anything that we want to state in the summary then we could just refer to the technical bit anyway couldn't we be sort of #</u>
+<u who="nm5380">yes yes just as you would be in just as you would reference books outside of those two documents so are there any other because you said you said that this was the main point of discussion today was to talk about the group summary sorry <trunc>th</trunc> <trunc>th</trunc> <trunc>th</trunc> the reports that you had to write</u>
+<u who="sm5383">the report yeah</u>
+<u who="sm5382"># well i've got i've got # something of a rough sort of layout that we are talking through and me and Pete changed it a bit last night from what we did on Tuesday but its roughly the same we're thinking with the summary we'll just start off with aims adn objectives right and # and maybe some stuff about sonar active versus passive and maybe a bit of history or whatever and then we'll talk about all the different things we could have done like optical D-S-P <gap reason="inaudible" extent="1 sec"/> we'll do it quite briefly and then have # detailed # description of particularly the optical stuff in the technical report then then talk about what we did like mat-lab and the simu-link and then the C code which we haven't done yet and then # the front end design which # we need to talk about as well today because we were thinking that we need # something to communicate with it like # a i don't know whether we write it in J-A-V-A or C-plus-plus or something like that and then conclusions and applications and stuff and then that will be the summary and then the report would be wave-length theory details of the implementations like the optical stuff and details on like testing and things like that and hopefully that's enough</u>
+<u who="nm5380">it sounds it sounds fine from my point of view</u>
+<u who="nm5379">yes sounds sounds okay</u>
+<u who="nf5381">yeah</u>
+<u who="sm5385">great</u>
+<u who="nm5380">what what was that the end the end of the story then there's nothing more to say or # can i i mean in terms of what's been going on in the last week # you know i've been in contact with this guy Clayton Hudson well maybe some of you well perhaps you all know by now Clayton Hudson of Motorola who was very positive <trunc>wh</trunc> <trunc>wh</trunc> when do you remember was it last Friday or last Thursday</u>
+<u who="sm5385">last Thursday i think</u>
+<u who="nm5380">last Thursday okay and i did email him and # i haven't had an acknowledgement but that doesn't mean anything necessarily but you know i'm i'm hoping that in the post clearly not today but early next we will get little parcel and that will be the boards that we want but i'll wait i don't like hassling somebody particularly when they offered it for free</u>
+<u who="nm5379">yes</u>
+<u who="nm5380">so i think we just wait a couple of <trunc>da</trunc> may be to the middle of week and then if i haven't received it i'll then phone and politely say did you get my email or something you know i i'll perhaps phone him up</u>
+<u who="sm5382">yeah</u>
+<u who="nm5380">because maybe there's <trunc>som</trunc> somebody's had problems sending me emails # although generally i get emails everyday but</u>
+<u who="sm5382">i think its only James</u>
+<u who="sm5383">yes its just James</u>
+<u who="nm5380">no no not no <trunc>some</trunc> somebody from from from <trunc>Amer</trunc> from from the States said that they kept sending emails and they got bounced back but maybe they just chose times when our system was off the air i don't know</u>
+<u who="sm5385">which is about half the time</u>
+<u who="nm5380">half the time yes</u>
+<u who="nm5379">internal ones are being lost as well</u>
+<u who="nm5380">so maybe one should always send emails twice or maybe three times</u>
+<u who="sm5383">irritate them <gap reason="inaudible" extent="1 sec"/></u>
+<u who="nm5380">so so this this interaction with with Clayton Hudson continues and as i said i'll i'll wait if everybody's happy about that yeah we'll wait until the middle of the week</u>
+<u who="sm5382">do you know if its the eight-one-oh-one or eight-one-oh-two thingy</u>
+<u who="nm5380"># well</u>
+<u who="sm5382">just to find out where it comes from</u>
+<u who="nm5380">i was talking i was talking to to Peter about this and i think looking at the documentation myself on the on Metro Works website that it was going <trunc>i</trunc> the eight-one-oh-one is this only one that seems to have any valuation module which probably the cheaper thing</u>
+<u who="sm5382">it is yeah</u>
+<u who="nm5380">yeah so i think yeah if as i said in my email if if there was an eight-one-oh-two evaluation module yes please but if not we'll be very happy i i i'll make that point very strongly you know that we'll be happy with the eight-one-oh-one</u>
+<u who="sm5382">and it's free</u>
+<u who="nm5380">and could we have two of them please even though even though i was quite prepared to have one but Peter gave me this great</u>
+<u who="sm5382">just push him</u>
+<u who="sm5384">the guy did offer so</u>
+<u who="nm5380">this great argument why we should have two so</u>
+<u who="sm5384">make the most of it</u>
+<u who="nm5380">in case we blow up one probably and then well we won't tell them that</u>
+<u who="sm5384">as long as you don't let me near it and then it'll be fine</u>
+<u who="sm5382">yeah apparently you've got previous on this</u>
+<u who="sm5384">yes</u>
+<u who="nm5380">oh really you didn't tell us that</u>
+<u who="sm5384">you're <trunc>ve</trunc> <trunc>ver</trunc> i'm surprised Marina hasn't actually</u>
+<u who="nf5381">don't let him anywhere near the equipment</u>
+<u who="nm5380">is that right is he he blows things up does he</u>
+<u who="sm5384">i don't know what happened</u>
+<u who="nf5381">things happen to people <gap reason="inaudible" extent="1 sec"/> heart attack</u>
+<u who="nm5380">oh dear me</u>
+<u who="su">its not proven is it</u>
+<u who="sm5384">no its not proven yet <trunc>i</trunc> its not proven it was me yet</u>
+<u who="nm5380">so i i think well you know i'm still confident i mean he was so positive on the telephone and Peter was there <trunc>listen</trunc> well not listening in but you could see the smile on my face</u>
+<u who="sm5385">yeah <gap reason="inaudible" extent="1 sec"/></u>
+<u who="nm5380">as i was talking to him and i thought you know tell me how much it costs and he said no we can we can send them to you for free # thankyou very much</u>
+<u who="sm5383">would we get would we get administrative rights on a P-C in order to install the software as well</u>
+<u who="sm5382">yes we'd need to</u>
+<u who="nm5380"># which P-C do you mean</u>
+<u who="sm5383"># any P-C in in engineering</u>
+<u who="nm5380">ah <trunc>y</trunc> you mean one of ours rather than one of yours # well i think we'll worry about that when we get the boards i mean we can find a machine somewhere i'm sure</u>
+<u who="nm5379">if you'll have it it would have to be installed but they'll come and if you got it then</u>
+<u who="sm5382">i mean if it's a problem then we can put it on one of our systems</u>
+<u who="nm5379">i think it could be installed and i'm sure <gap reason="inaudible" extent="1 sec"/> come in and login and do it really just how they would with any other machine really if its just an installation</u>
+<u who="nf5381"><gap reason="inaudible" extent="1 sec"/> wanted too Mark Hughson and Adrian they</u>
+<u who="su"><gap reason="inaudible" extent="1 sec"/> i'm not quite certain</u>
+<u who="nm5380">but that <gap reason="inaudible" extent="1 sec"/> P-C its not quite so bad is it really</u>
+<u who="nm5380">where where were you thinking of installing</u>
+<u who="sm5382">do it ourselves yeah</u>
+<u who="sm5383">well it it would be better if it was in in here just so that we could all have access to it at anytime just in case anybody went home or anything</u>
+<u who="nm5380"># yeah well i mean there's <trunc>ou</trunc> our there's the research level on the way there we can probably <trunc>fi</trunc> we can probably find somewhere to put it in there we have to find a P-C first but</u>
+<u who="sm5382">one thats not too old</u>
+<u who="nm5380">one that's not too old yeah</u>
+<u who="su">so that's an even bigger problem isnt it</u>
+<u who="nm5380">but there is there is my old P-C which is in the room where my post-doc works that he used because the simulations he was doing were taking so long that he wanted a separate machine but we could probably borrow that its # its its not a very old machine but you know its not you know state of the art so to speak but a lot of the i mean its mostly C-programming that you're doing isnt it</u>
+<u who="sm5382">yeah it is yeah</u>
+<u who="sm5383">it will just be if there's any like testing software that's probably a bit more</u>
+<u who="nm5380">yeah</u>
+<u who="sm5383">testing it on the P-C</u>
+<u who="nm5380">well we'll have to play it by ear i don't know if we've got enough money and it would take too long to buy a new computer we we really need to we we really need action on all of these things don't we because we're in week five this is the end of week five and #</u>
+<u who="nm5379">well you could buy a new computer on the budget i never thought of that really</u>
+<u who="sm5383">i can jog down to P-C World</u>
+<u who="sm5384">i was going to say you can get one almost immediately can't you if you want one</u>
+<u who="sm5383">that's if if we wanted one we could get one that day couldn't we</u>
+<u who="sm5384">i mean we have to we have to</u>
+<u who="sm5382">P-C World</u>
+<u who="sm5383">maybe not P-C World</u>
+<u who="nm5380"><gap reason="inaudible" extent="1 sec"/> <trunc>de</trunc> desperation i think #</u>
+<u who="su">if they've got them in stock a P-C is a P-C isn't it</u>
+<u who="su">yes</u>
+<u who="nm5380">no actually that's a good point</u>
+<u who="nm5379">it would be a few hundred to get a desktop one <gap reason="inaudible" extent="1 sec"/> state of the art is very cheap now isn't really</u>
+<u who="sm5383">mm yeah</u>
+<u who="nm5380">okay well we'll bear that in mind i mean we haven't <trunc>beari</trunc> if we get these boards for free i mean we haven't <trunc>bear</trunc> i mean that was going to be a cost</u>
+<u who="su">yeah</u>
+<u who="nm5380">but it looks like that cost is zero and the software will also be</u>
+<u who="su">yeah struck gold here</u>
+<u who="nm5380">can i</u>
+<u who="sm5383"><gap reason="inaudible" extent="1 sec"/> sorry go on</u>
+<u who="nm5380">can i say can i ask about about <trunc>th</trunc> <trunc>th</trunc> the software do we have has some software been downloaded</u>
+<u who="sm5383"><gap reason="inaudible" extent="1 sec"/> we've got # the software but # we couldn't really we're not <trunc>all</trunc> we can't use it and we couldn't find any facilities # to enable us to use it</u>
+<u who="sm5382">its only a thirty day license</u>
+<u who="nm5380">oh i see i don't know whether we #</u>
+<gap reason="inaudible" extent="uncertain"/>
+<u who="sm5384">its a thirty day license so</u>
+<u who="nm5380">oh right right</u>
+<u who="su">and we've downloaded it</u>
+<u who="nm5380">well hopefully within</u>
+<u who="su">thirty days isn't that</u>
+<u who="nm5380">well hopefully within thirty days we'll hear form Clayton and we'll get the <trunc>acc</trunc> we'll be able to then talk to <gap reason="inaudible" extent="1 sec"/> and then</u>
+<u who="su">then it won't matter <gap reason="inaudible" extent="1 sec"/></u>
+<u who="nm5380">but i # i was really asking from the point of view of whether whether you'd been able to do anything with it thats the</u>
+<u who="sm5385">no no basically no</u>
+<u who="sm5383">i have been reading the C-book recently</u>
+<u who="sm5385">yeah apart from sitting there looking at the documentation for it all which is somewhat daunting to say the least that's about it really</u>
+<u who="nm5380">but i mean is it standard C or <gap reason="inaudible" extent="1 sec"/></u>
+<u who="sm5383">its standard <gap reason="inaudible" extent="1 sec"/> yes</u>
+<u who="nm5380">oh right right</u>
+<u who="sm5383">but looking at all the memories and the registers of the four core processes that the thing has is</u>
+<u who="nm5380">well you would choose you would choose this</u>
+<u who="sm5385">worrying</u>
+<u who="nm5380">yeah i was reading up about this style <gap reason="inaudible" extent="1 sec"/> its quite a its quite a sophisticated thing</u>
+<u who="sm5385">yes it is</u>
+<u who="nm5380">so are they four identical processors or or</u>
+<u who="sm5385">it has four <gap reason="inaudible" extent="1 sec"/> which can do things at the same time so</u>
+<u who="sm5382">lets just hope <gap reason="inaudible" extent="1 sec"/> sort it all out</u>
+<u who="sm5385">so its four <gap reason="inaudible" extent="1 sec"/> which can do the multiply accumulate stuff so</u>
+<u who="nm5380">that's pretty stunning really isn't it on one chip this is on one chip quite amazing okay so <trunc>tha</trunc> that's one issue then # and then the other issue was the # # sorry # kinetic you know <trunc>th</trunc> <trunc>th</trunc> the simulation stuff</u>
+<u who="su">oh yeah</u>
+<u who="nm5380">and again you know i i i'm hoping you know <trunc>Rob</trunc> Robert <gap reason="inaudible" extent="1 sec"/> is the guy the guy i know down there i mean he's he he he won't let us down but its a case of him getting round to it and i don't want to hassle him because i i;ve known him for a long time and i know he'll deliver and he knows the time scales and so on so i would hope to find a C-D in my post next week and hopefully it will be</u>
+<u who="sm5382"><gap reason="inaudible" extent="1 sec"/> we changed the software didn't we to so <gap reason="inaudible" extent="1 sec"/></u>
+<u who="su">yeah</u>
+<u who="sm5382"><gap reason="inaudible" extent="1 sec"/> but we haven't had a chance to test it yet we just got it workign last night</u>
+<u who="nm5380">that's great</u>
+<u who="sm5382">but we just need to plug in the starting length frequencies and the <gap reason="inaudible" extent="1 sec"/> length and what have you</u>
+<u who="nm5380">well i i i'll give him a bit longer before i email him again i'll wait until the end of the week but as i say Clayton i'll try and contact in the middle of the week by telephone so i think that's probably as much as i can contribute this this week # # and i really haven't done anything because i've really been waiting for other people to</u>
+<u who="sm5385">well yeah yeah so</u>
+<u who="nm5380">well to return the favours so to speak</u>
+<u who="sm5385"><gap reason="inaudible" extent="1 sec"/> advanced</u>
+<u who="nm5380">anyone else have any thoughts about it anything optics or</u>
+<u who="nf5381">well i have found something that # i don't know how keen you are on it well i'm keen you know to do something about it but i don't know how much time you've got to do it</u>
+<u who="su"><gap reason="inaudible" extent="1 sec"/> stuff</u>
+<u who="nf5381"># it's a very nice piece of work on # filters it's all there it says what diagram is there and # architectures there you see flow plan is there so i'm not asking you to copy it or anything just # to give it some thought you know see what we can do <gap reason="inaudible" extent="1 sec"/> implementation side of things its from Stanford University its a fourth year project so it is students work and i don't know how good that work is but it it probably looks quite quite good and on that website if you go on the website they have also code for it as well so it could be something that you would like to have a look since you are looking at different options of <gap reason="inaudible" extent="1 sec"/> so it might be worth</u>
+<u who="sm5383">send everybody the # an email of the address</u>
+<u who="sm5385">it's on the webpage</u>
+<u who="nf5381">so i don't know who was looking was somebody looking at the <gap reason="inaudible" extent="1 sec"/> implementation or was it</u>
+<u who="sm5382">no no we've sort of # i think i think # put it on hold because it was just for the # poster but we do need to do a section on it for the report</u>
+<u who="nf5381">mm</u>
+<u who="sm5383"><gap reason="inaudible" extent="1 sec"/> that would be good yeah</u>
+<u who="nf5381">it would be nice if you do a sort i # i think it would if you have a look at it and see how how you can implement it and #</u>
+<u who="sm5383">yeah</u>
+<u who="nm5380">i don't feel there's enough material here to continue this you know to another unit maybe but</u>
+<u who="nf5381">mm yeah</u>
+<u who="nm5380">and there's some areas we haven't we haven't really given much #</u>
+<u who="sm5382">shall shall we hang onto this</u>
+<u who="nf5381">yes sure yes sure its for you i i mean # obviously five weeks isn't much time to # to design anything</u>
+<u who="su">but <gap reason="inaudible" extent="1 sec"/></u>
+<u who="nf5381">but it would be nice you know if you just explored <gap reason="inaudible" extent="1 sec"/></u>
+<u who="sm5385">well for the technical section we were just</u>
+<u who="sm5383">we were just going to put that lot in there</u>
+<u who="sm5384">about all the different types of things and possibilities of continuing in different directions so that's easily</u>
+<u who="sm5382"> yeah so we'll talk about each each way we could have gone and then #</u>
+<u who="sm5383">so we could easily do something like that <gap reason="inaudible" extent="1 sec"/></u>
+<u who="nf5381">well you would have to put a section on all of them and then justify why you have decided to what are the reasons behind behind the chosen path whatever</u>
+<gap reason="inaudible" extent="uncertain"/>
+<u who="sm5382">the other thing which we never talk about yet is the # front end of it like what program # we we'd actually use to communicate by the serial port <gap reason="inaudible" extent="1 sec"/> because remember a little while ago we were thinking that we'd need say # <trunc>tha</trunc> that it would just have to be a simple window really that that that took in the # message of the chip</u>
+<u who="sm5384">for the development board</u>
+<u who="sm5382">yeah but we'd need something that could really go with the chip so its maybe something that the chip that does this is</u>
+<u who="sm5383"># # if we're talking about the # development board # it will probably have a # program with it</u>
+<u who="sm5382"># yeah but if we're talking about if you want this to be a standard line program</u>
+<u who="sm5383"># and and run it to another P-C it might only have that one <gap reason="inaudible" extent="1 sec"/> # one serial port connection to it <trunc>an</trunc> and that's the programming board</u>
+<u who="sm5385">i i think you use the parallel port to</u>
+<u who="sm5383">yeah it would be the parallel port</u>
+<u who="sm5385">communicate to it</u>
+<u who="nm5380">i'm not quite clear i'm not quite clear what what you're saying i mean <trunc>y</trunc> obviously in a real situation # if if if this particular detection system was <trunc>install</trunc> was implemented on a D-S-P processor obviously it would be part of a lot more hardware</u>
+<u who="su">mm</u>
+<u who="nm5380">and clearly we haven't got the time to to look at all all the ramifications of that but i would have thought as Ian was saying that # this the evaluation module will give us everything we need for interaction between it and the host processor</u>
+<u who="sm5382">right are we just going to # leave it at that because #</u>
+<u who="nm5380">well clearly if we get the <gap reason="inaudible" extent="1 sec"/> i mean we really need to get hold of that as soon as possible don't we and if we get it hopefully it'd be next week</u>
+<u who="sm5383">i think we tackle the situation when we get to it</u>
+<u who="sm5385">i mean you can you can run it connect it up to your P-C so you can help debug it so you can you can have the processor running and it communicates the to your programs so you can see what's going on in each register</u>
+<u who="nm5380"> indeed indeed <trunc>i</trunc> <trunc>i</trunc> if it if its like certainly if its like things i've used in the past yeah you can <trunc>mod</trunc> # you can <trunc>downlo</trunc> i mean you can develop the software on the # on the host processor and then you know when you're happy with it you download it i don't know whether there are simulation tools or what i'm not certain or whether you have to just download it to the <trunc>co</trunc> you know the star core and then run it on the star core but the question is where the data is coming from again i'm presuming that the data will be on the host processor and that it will be downloaded to the star-core D-S-P</u>
+<u who="su">well that's another</u>
+<u who="sm5385"><gap reason="inaudible" extent="1 sec"/> coefficients should be stored on the # on the chip right</u>
+<gap reason="inaudible" extent="uncertain"/>
+<u who="sm5382">yeah but the input wave whether that would be necessarily sent to it via a serial port or whether there are other ports on the <gap reason="inaudible" extent="1 sec"/></u>
+<u who="sm5383">you couldn't # program it and send it using the same interface</u>
+<u who="sm5382"># yeah i'm i'm assuming you could</u>
+<u who="sm5383">in the end we could just like create a # # maybe stream a file of of coefficients for # simulated waves #</u>
+<u who="su">do we have an # an <gap reason="inaudible" extent="1 sec"/> on it</u>
+<u who="su">yeah i i'd assume so</u>
+<u who="nm5380">sorry sorry on evaluation module</u>
+<u who="sm5382"># i yeah i suppose yeah</u>
+<u who="sm5383">it-, its bound to if it's a D-S-P chip</u>
+<u who="sm5385">well <trunc>n</trunc> not necessarily</u>
+<u who="sm5382">i don't know</u>
+<u who="nm5380">yeah i mean i i we're talking a bit vaguely i suppose because we don't really we don't have that information but # some certainly the ones i've used the T-I ones were designed you know they had A to B and D to A built in so that you could put signals in from outside but <trunc>th</trunc> this is quite a sophisticated beast and i would suspect that the data would have to come from the core <trunc>pr</trunc> <trunc>th</trunc> the host processor</u>
+<u who="sm5383">yeah</u>
+<u who="nm5380">you can't just sort of have two <trunc>co</trunc> you know B and C sockets co-axial sockets or something to put to put data in its but again i'm i'm only talking from experience and its somewhat limited to the age of some of my books <gap reason="inaudible" extent="1 sec"/></u>
+<u who="sm5385"><gap reason="inaudible" extent="1 sec"/> i think we just keep it as</u>
+<u who="sm5383">we don't need to worry about it but i think it will happen</u>
+<u who="sm5382"> but i mean if its going to be if its going to be used in real life then it would have to take in a signal from # # microphone or or you could go for <gap reason="inaudible" extent="1 sec"/></u>
+<u who="sm5383">if if it was to be used in real life it probably wouldn't be used in this chip at all it would probably be used in the most advanced # # chip which is probably about # # using it with a lot of other hardware as well</u>
+<u who="sm5382">the eight-one-oh-four</u>
+<u who="sm5385">the next one up from what we're using</u>
+<u who="nm5380"># # sorry what you're suggesting we wouldn't be using this type a D-S-P processor</u>
+<u who="sm5383">we'd be using a D-S-P processor but i think we'd be using quite # other things as well</u>
+<u who="nm5380">of course of course</u>
+<u who="sm5383">like # C-P-Us and # maybe a maybe a whole # hardware setup <gap reason="inaudible" extent="1 sec"/></u>
+<u who="nm5380">yeah i think i think i think i think we <trunc>sh</trunc> personally i think we shouldn't worry too much about that you know the you know actually commissioning a piece of equipment you know for whatever application whether its you know maritime or military or or whatever it's a it's a big job and you know i've been down to Kinetic and and they have racks of equipment</u>
+<u who="sm5383">yeah i've seen like # that on ships the computer the computer # just sort of one radar fill up massive rooms</u>
+<u who="nm5380">yes yeah yeah</u>
+<u who="nm5379">so we argue it's a proof of principle isn't it</u>
+<u who="nf5381">well there it works and you could scale it up using state of the art <gap reason="inaudible" extent="1 sec"/></u>
+<u who="su"><gap reason="inaudible" extent="1 sec"/></u>
+<u who="nm5380">well it would be incorporated into a bigger whole anyway this is this is this is this is a small but significant part of a particular application in sonar so i don't i don't think we should we should worry too much about that but what we should be concerned about it obviously doing getting a realistic simulation well but not exactly simulation because we're using a real processor but getting the data to the processor and getting the data back so that we can have a look at it and i would presume well i haven't obviously seen any details about this that that that this would not be a problem otherwise how would its called an evaluation module</u>
+<u who="sm5385">its not the computer would talk to it <gap reason="inaudible" extent="1 sec"/></u>
+<u who="nm5380">yeah yeah yeah i mean its an evaluation module in order to evaluate the processors so <gap reason="inaudible" extent="1 sec"/></u>
+<u who="sm5385">C code <gap reason="inaudible" extent="1 sec"/> just stitch in one value</u>
+<u who="sm5382">and it would send # send a discreet signal</u>
+<u who="sm5385">yeah</u>
+<u who="sm5382">through the chip</u>
+<u who="sm5385">yeah</u>
+<u who="nm5380">is it is it possible to get more information about the eight-one-oh-one or #</u>
+<u who="sm5385">well i've been looking on their on their website i've got a got a load of information on the on the sort of the core that it uses and so on but i haven't really i haven't really figured how you sort of how you start programming it and</u>
+<u who="sm5383">i think its hard to realise that sort of thing until you actually get it in front of you</u>
+<u who="sm5385">yeah</u>
+<u who="nm5380">yeah</u>
+<u who="sm5385">because its about certainly the information on the core is about eight-hundred odd pages long</u>
+<u who="nm5380">really</u>
+<u who="sm5385"># tons of registers to look at</u>
+<u who="sm5383">but if you read it all it would be totally irrelevant to what our what we're wanting to do i would have thought so</u>
+<u who="nm5379">okay</u>
+<u who="sm5385">it starts off interesting and then</u>
+<u who="nm5380">it gets very tedious</u>
+<u who="sm5385">and you sort of start thinking well i'll miss that one and #</u>
+<u who="nm5380">but surely surely that's the advantage of writing in C though isn't it that the the <trunc>th</trunc> you know that the cross assembler is taking the C-code which is written in a you know independent code and it will then be mapped onto the processor by their software so as far as use of register we hope that the that their <trunc>cr</trunc> cross-assembler uses uses the registers in an efficient way and hopefully <gap reason="inaudible" extent="1 sec"/> the work will be done for us</u>
+<u who="sm5383">hopefully a lot of the work will be done for us</u>
+<u who="sm5385">but we still need to know the functions</u>
+<u who="nm5380">yeah but you want some built-in D-S-P functions</u>
+<u who="sm5383">yeah and if they're well written then it shouldn't be too difficult to do it</u>
+<u who="su">well yeah yes because there's something <gap reason="inaudible" extent="1 sec"/></u>
+<u who="nm5380">there's a lot of trust here isn't there</u>
+<u who="nm5379">yes actually just the year the year before you were first years they still had this difficult interfacing lab so you would have actually had some experience it was far too difficult for first years it was one of the first things i got given when i came here was there used to be a lab where you did this kind of thing with a processor wasn't it <trunc>i</trunc> <trunc>i</trunc> <trunc>i</trunc> in F-two-eleven # where you could see that you wrote some assembler and it was hard work and then there was a C and it was compiled so</u>
+<u who="sm5384">we had to do that in C-S</u>
+<u who="nm5379">did you so you still so you still <trunc>u</trunc> have done</u>
+<u who="sm5384">it was a real pain</u>
+<u who="sm5382">we still do that</u>
+<u who="nm5379">you've done that yes so it's a bit like just a grander version of that but it's the same thing as if the students were given a a very small part of the manual because that was really all that was relevant to what they were doing to what they were doing they were playing with certain registers there's a much thicker manual whichever <gap reason="inaudible" extent="1 sec"/> it was probably something like this and gave them this much and that was still too much for a first year lab if you want to bottom out they couldn't fathom it at all you know the the various the the i think there was only two accumulators and it wasn't a very complicated chip or anything but that was still too much for people to take on board so you weren't going very far reading it</u>
+<u who="nm5380">yeah but i i i don't think one's sort of expecting expecting you to get to grips with the instruction set for a processor like this i mean that's the whole beauty of using a high-level language that we that we use their expertise basically to map it onto the processor i mean clearly if you were if you were trying to do a very optimised design you might want to try and get into the innards of the process to try and <trunc>cu</trunc> cut down the time</u>
+<u who="sm5383">cut down all of the things that we're not using <gap reason="inaudible" extent="1 sec"/> functions</u>
+<u who="nm5379">it's a bit like the <trunc>cu</trunc> you know whether you if in C-S whether you write your own compiler isn't i <trunc>y</trunc> you know you're happy to use a compiler not reinvent the wheel so it's a bit like that you say well you don't know everything that goes on do you you're happy to use Windows on top of something you don't know you don't want to write your own</u>
+<u who="nm5380">we're not happy to use Windows</u>
+<u who="nm5379">no what i mean is that you have a choice we don't write our own operating system for the computer so you say oh i want to write my own operating system my own language because that's then i know everything about it you just have to live with it i suppose you don't know every fine detail really</u>
+<u who="nm5380">mm mm</u>
+<u who="nm5379">ve-, very few people do have time to go through that you just have to trust that they've done their job without major bugs so that</u>
+<u who="nm5380">mm indeed well i think i think Motorola have been in the business for a a good many years so and they and they you know and this is the latest generation of many generations of processors</u>
+<u who="sm5382">so do you think they'll # # if we have a a lot of multiplications to perform <gap reason="inaudible" extent="1 sec"/> supposedly running at the same time that they'll # automate as it were between the four # was it four multiply accumulators</u>
+<u who="sm5385">four cores yes so you can only have</u>
+<u who="sm5382">do you reckon that would would the compilers alternate would you guess</u>
+<u who="nm5380">well i mean a <trunc>gu</trunc> a guess is what you're asking me for there</u>
+<u who="sm5382">yeah</u>
+<u who="nm5380">i don't i don't i don't know how you map you know i mean well basically you've got a parallel processor haven't you effectively</u>
+<u who="sm5382">mm</u>
+<u who="nm5380"># i mean it may well be that that for you know practical designs you might not just have one of these you may have several of them i mean maybe you'd have <trunc>f</trunc> you'd have four of them and then you'd have sixteen or however many you need you could have an F-R filter running in parallel on on each processor but # i i don't know but that that would come into the programming i would have thought and i don't know if you've <trunc>ha</trunc> somebody's looked at the C</u>
+<u who="sm5385">i <trunc>haven</trunc> i haven't been able to find the actual C code that you that's all <gap reason="inaudible" extent="1 sec"/></u>
+<u who="nm5380">oh right i thought maybe <gap reason="inaudible" extent="1 sec"/> but are there not any examples that you can just see how you know how closely it <trunc>resemb</trunc> whether there may be special features that mightn't it</u>
+<u who="sm5385">mm there are yeah we looked at an example yesterday</u>
+<u who="sm5382">there was one project with flash gear L-E-Ds and stuff</u>
+<u who="sm5385">yeah</u>
+<u who="nm5380">okay # how how are we doing we've covered we've covered quite a lot of different things # <trunc>doe</trunc> does anyone want to say anything particular Cory or or Ian or</u>
+<u who="nm5379">no</u>
+<gap reason="inaudible" extent="uncertain"/>
+<u who="nm5380">the short answer yes okay i don't think i've got <trunc>any</trunc> anything more to add # you know <trunc>obvious</trunc> obviously we're sort of waiting a bit <trunc>are</trunc> aren't we we're waiting we want to move on but until we get this other material</u>
+<u who="nf5381">it would be nice to get on with some of the stuff that you need for your report while we're waiting for this equipment to arrive</u>
+<gap reason="inaudible" extent="uncertain"/>
+<u who="su">true get it a bit sorted out</u>
+<u who="nm5380">yes that would seem very sensible actually very sensible</u>
+<u who="sm5385">we will get cracking on that</u>
+<u who="nm5380">okay</u>
+<u who="sm5384">we've got a lot of information already to write up so</u>
+<u who="nm5380">and of course there will be presentation as well # at some point</u>
+<u who="sm5384">it's week twenty-three or something like that i think or twenty-two</u>
+<u who="nm5380">is that right #</u>
+<u who="sm5385">that's the least of our worries at the moment</u>
+<u who="nm5379">a <trunc>repr</trunc> a report presentation to last thirty minutes</u>
+<u who="sm5382">week twenty-three</u>
+<u who="nm5380">plus twenty minutes for questions</u>
+<u who="nm5379"><gap reason="inaudible" extent="1 sec"/> yeah</u>
+<u who="nm5380">all group must members must be present</u>
+<u who="sm5382">is that up to you guys</u>
+<u who="nm5380">pardon</u>
+<u who="nm5379">its not up to us i don't think</u>
+<u who="nf5381">yeah there will be a there will be another</u>
+<u who="nm5380">is it any of us</u>
+<u who="nf5381">second assessor plus moderator i think</u>
+<u who="nm5379">its not us</u>
+<u who="sm5382">what and you guys as well</u>
+<u who="nm5380">well probably probably the guys who were at your poster presentation it will probably be at least two people</u>
+<u who="sm5382">oh so they do all of it i mean that was Godfrey and Tardy wasn't it</u>
+<u who="nm5380">well it won't</u>
+<u who="nf5381">it won't be Tardy</u>
+<u who="nm5380">it won't be tardy because he's on study leave but certainly it'll # be Keith Godfrey yeah it'll be him and somebody else i don't know who but yeah <trunc>the</trunc> i'm sure those two <trunc>tho</trunc> <trunc>th</trunc> you know there'll be those two or except of course as i said Tardy's on study leave who will be at the presentation</u>
+<u who="nm5379">in week twenty-three isn't it yeah</u>
+<u who="nf5381">mm</u>
+<u who="nm5379"><trunc>assess</trunc> <trunc>assess</trunc> assessors</u>
+<u who="nm5380">we we do some assessment</u>
+<u who="nm5379">yeah so its not directed is it</u>
+<u who="nm5380">and obviously we are also part of the project to some extent</u>
+<u who="nm5379">so its not the not the directors and the group oral it's the assessors we won't be at the presentation because its the</u>
+<u who="nf5381">well we can be there but its assessors that will be asking questions</u>
+<u who="nm5379">the <trunc>pos</trunc> because the poster was the director and assessor i mean like obviously i had a look at it and gave a mark when you were off with your</u>
+<u who="nm5380">when i was off with my arm</u>
+<u who="nm5379">with your broken wrist # # so its specifically said</u>
+<u who="sm5384">did you actually get any feedback from that about marks because i know some groups actually did get feedback from how that went but</u>
+<u who="nm5379"># well are we not i mean you're happy i mean you know what i what i put down first class marks as far as i was concerned</u>
+<u who="su">i'm not going to complain</u>
+<u who="nm5379">but i don't know what i don't know what # the other i haven't officially had any report back on that from the other from the other <gap reason="inaudible" extent="1 sec"/> as far as i was concerned it looked very good so if you were saying that they were marking all of them highly because they're all</u>
+<u who="nm5380">i think i think i did comment i did comment to somebody what i thought</u>
+<u who="nm5379"><gap reason="inaudible" extent="1 sec"/> question really but</u>
+<u who="nm5380">i have <trunc>see</trunc> i have seen i have seen something</u>
+<u who="nm5379">because you would probably see it because you're listed as the official director so i don't always get the stuff you know official stuff to me</u>
+<u who="nm5380">but i was in but i was out of action wasn't i though</u>
+<u who="nm5379">so it didn't go maybe it didn't go to anybody i'll ask <gap reason="name" extent="1 word"/>i'll ask <gap reason="name" extent="2 word"/></u>
+<u who="nm5380">there was there was no <trunc>the</trunc> there was feedback that's right and perhaps we should've we should've discussed this # from one from one of the assessors who i think i mean <trunc>may</trunc> maybe # the <trunc>prob</trunc> there was a problem of lack of understanding i think from his point of view</u>
+<u who="sm5385">yeah yes that was obvious</u>
+<u who="nm5380">yeah about the # i i i i had a feeling we'd discussed this but <trunc>may</trunc> maybe not</u>
+<u who="nm5379">i i think we've i think we've said something about it yeah</u>
+<u who="nm5380">in <trunc>rela</trunc> in relation to he couldn't see that this was a <trunc>wavele</trunc> that this was really wavelengths</u>
+<u who="nm5379">it was about transform wasn't it he said that he couldn't see <gap reason="inaudible" extent="1 sec"/></u>
+<u who="nm5380">he couldn't see where the wavelength transform came in to it so # i mean probably he was confused by something in the presentation i mean i wasn't there so i can't comment but</u>
+<u who="sm5382">it was the # it was the # graphs you know the three-D graphs in MatLab and i was saying that it was a continuous wavelength transform and he said it wasn't <gap reason="inaudible" extent="1 sec"/></u>
+<u who="sm5385">and you thought it was</u>
+<gap reason="inaudible" extent="uncertain"/>
+<u who="nm5380">yeah i think i think i have actually spoken to him since this <trunc>sin</trunc> <trunc>sin</trunc> since the your presentation # pointing out why i believed it was a well i mean we know its we know it's a wave that transforms so i think probably it was just a feeling that he got on the day and that there wasn't anybody there to help him through this problem and so he he he was he then he he he then gained the impression that that this was not a wavelength transformer</u>
+<u who="sm5382">he's been doing so well that the the # the one with the high pass low pass filters ones where you just # keep doing the low pass ones you know do images</u>
+<u who="nm5380">the <trunc>disc</trunc> you mean the discreet wavelength transform yes</u>
+<u who="sm5382">well i don't know why but he # that's what he's lectured me on it before so i don't know whether that's what he does but then he <gap reason="inaudible" extent="1 sec"/></u>
+<u who="nm5379">i think that</u>
+<u who="nm5380">i don't know i don't know if he actually uses a discrete wavelength transform for that i i i i've tended to use it for image compression # <trunc>T</trunc> Tardy doesn't his interests are in other areas of image</u>
+<u who="sm5382">in D-S-P i think i thought he lectured me on that</u>
+<u who="nm5380">on no its <trunc>g</trunc> its <trunc>g</trunc> this</u>
+<u who="sm5382"># he did it last year</u>
+<u who="nm5380">last year right</u>
+<u who="sm5382">in D-S-P because he did the second half of the course</u>
+<u who="nm5380">the-, there certainly is some image compression in that D-S-P course okay well i think we've drifted off a bit there but anyway # so were there any <trunc>oth</trunc> any other comments on optical or not been any developments in that</u>
+<u who="sm5384">there's masses of information just being written up at the moment #</u>
+<u who="nm5380">right</u>
+<u who="sm5384">i've # you know i think James i can't <trunc>ac</trunc> James was supposed to be giving you a list of some like some inter-library loans but i'm not sure if we actually need to do that or not do you happen to</u>
+<u who="nm5380">no</u>
+<u who="sm5384">ah ok <gap reason="inaudible" extent="1 sec"/></u>
+<u who="nm5380">but it may it may be on the website but i haven't looked at it i must admit this week so</u>
+<u who="sm5384">oh right okay</u>
+<u who="nm5380">yeah</u>
+<u who="sm5384"># i think he was unless he's <trunc>ch</trunc> <trunc>ch</trunc> looked at them and then changed his mind and decided they weren't worth it or not but as i say he's not here so i can't really ask him at the moment but # its mainly just write up at the moment of what we've got</u>
+<u who="nm5380">are people are still putting putting stuff onto the onto the M-Eng website</u>
+<u who="sm5384">yeah i think yes i think so</u>
+<u who="sm5384">i haven't put anything up for a while</u>
+<u who="sm5384">Ja-, i think James James has put a few things on it i'm sure he has we're <trunc>slow</trunc> slowly getting through and we have this to do as well so we'll have some more to write up</u>
+<u who="nm5379">yeah i think there's no problem with with plenty to write about</u>
+<u who="sm5385">yeah there's quite a lot</u>
+<u who="nm5379">you know emphasising the option of of <gap reason="inaudible" extent="1 sec"/> and how the principle was proved really i think</u>
+<u who="sm5384"> its more being selective of what's more <trunc>ne</trunc> or what's sort of worthy of the project rather than what's sort of vaguely relevant sort of thing so sifting through a lot of it is the main thing at the moment</u>
+<u who="nm5380">indeed indeed okay any other</u>
+<u who="sm5382">i don't think so i think this pretty much covers most of it</u>
+<u who="sm5383">just send an email out when it arrives or <gap reason="inaudible" extent="1 sec"/></u>
+<u who="nm5380">i will as i've said the minute the minute i get any information i'll be onto my computer wherever i am</u>
+<gap reason="inaudible" extent="uncertain"/>
+<u who="sm5385">we'll have to sort the software out as well i mean that shouldn't take too long i take it</u>
+<u who="nm5380">i would have though not its just i'm sure you can download the software but we need to have presumably we need him to contact Metroworks or something to tell them</u>
+<u who="sm5382">shall we meet on Tuesday are you here at all</u>
+<u who="sm5385">yeah</u>
+<u who="nm5380">does anyone else have</u>
+<u who="nm5379">no i think i think we've #</u>
+<u who="nm5380">okay good</u>
+<u who="nm5379">got there</u>
+<u who="sm5384">are you away again next Friday its <gap reason="inaudible" extent="1 sec"/></u>
+<u who="nm5380"># no not next Friday the Friday after</u>
+<u who="sm5382">the twentieth the # # I-S-Ps cancelled isn't it</u>
+<u who="nm5380">that's right yes</u>
+<u who="sm5382">so is it that day</u>
+<u who="sm5383">i can't do next Friday so</u>
+<u who="nm5380">we don't have to meet on a <gap reason="inaudible" extent="1 sec"/></u>
+<u who="sm5384"><gap reason="inaudible" extent="1 sec"/> next</u>
+<u who="nm5380">next next Friday</u>
+<u who="su">but that's i don't think we have anything major</u>
+<u who="nf5381">i cant come next Friday i go to</u>
+<u who="nm5380">do we have to i mean could we meet on another day or i mean its obviously good to get most people to come well i <trunc>me</trunc> <trunc>a</trunc> all people to come really but</u>
+<u who="sm5384">if we wait for James we could send an email to him</u>
+<u who="nm5379">i was wondering if you could agree a <trunc>ti</trunc> you know</u>
+<u who="nm5380">okay well we we we use email anyway but # <trunc>we</trunc> we'll have a meeting next Friday though yeah</u>
+<u who="su">yeah yeah</u>
+<u who="nf5381">i can't do next Friday but #</u>
+<u who="nm5380">you can't</u>
+<u who="su">i can't no i can't either</u>
+<u who="su">we could draw up a timetable</u>
+<u who="sm5382">we could say what about Thursday afternoon</u>
+<u who="su">i can't</u>
+<u who="sm5384">there's always Wednesday afternoon</u>
+<gap reason="inaudible" extent="uncertain"/>
+<u who="nm5380">that's a good idea <trunc>circu</trunc> circulate something round</u>
+<u who="nm5379">the problem with Wednesdays is that that you lose us in term to open days and things # thats its</u>
+<u who="sm5385">i'm in a school and have sessions Wednesday afternoons so i'm not around so</u>
+<u who="sm5382">what about Thursday afternoons</u>
+<u who="sm5384">lets let Ian sort it out well i'll just send some emails and say some times <gap reason="inaudible" extent="1 sec"/></u>
+<gap reason="inaudible" extent="uncertain"/>
+<u who="nm5380">Thursday's afternoon's okay for me i i mean i normally see my project students but i i can always reorganise and see them on Friday instead</u>
+<u who="su">okay</u>
+<u who="sm5382">till one for the second half of the week i've got lectures</u>
+<u who="nm5380">okay it could be Thursday</u>
+<u who="sm5385">Thursday's two o'clock onwards</u>
+<u who="sm5382">Thursday two is fine</u>
+<u who="nm5380">is that alright</u>
+<gap reason="inaudible" extent="uncertain"/>
+<u who="nm5379">for next Thursday yeah</u>
+<u who="su">yeah yeah we we # <trunc>s</trunc> send the email round and check with James</u>
+<u who="nm5379">because i tended to book the room that's the only danger it might have to be somewhere else if if there's an open day because of course they have the priority on this room so i mean Tuesday until Thursday this week we could be in another room</u>
+<u who="nm5380">well we'll try and plan it for Thursday we don't need this room do we</u>
+<u who="nm5379">no no</u>
+<u who="nm5380">i mean we only occupy a a small part of it</u>
+<u who="nm5379">its just easy its just a nice place to sit isn't it because its got the <trunc>nice</trunc> the nicest chairs in the department</u>
+<u who="nm5380">so you you're going to deal with the</u>
+<u who="nm5379">yeah yeah Thursday</u>
+<u who="nm5380">to deal with the booking</u>
+<u who="nm5379">yeah i'll book a room</u>
+<u who="nm5380">okay good over and out then or</u>
+<u who="nf5381"><gap reason="inaudible" extent="1 sec"/></u>
+<u who="nm5380">over and out then over and out</u>
+<u who="su">i think so yeah</u>
+<u who="su">yeah</u>
+<u who="nm5380">okay then</u>
+</body></text></TEI.2>

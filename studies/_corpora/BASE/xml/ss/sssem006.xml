@@ -1,0 +1,341 @@
+<?xml version="1.0"?><!DOCTYPE TEI.2 SYSTEM "base.dtd">
+<TEI.2><teiHeader>	
+<fileDesc>
+<titleStmt>
+<title>Criminal Law: Accomplice Liability</title></titleStmt>
+<publicationStmt><distributor>BASE and Oxford Text Archive</distributor>
+<idno>sssem006</idno>	
+<availability><p>The British Academic Spoken English (BASE) corpus was developed at the
+Universities of Warwick and Reading, under the directorship of Hilary Nesi
+(Centre for English Language Teacher Education, Warwick) and Paul Thompson
+(Department of Applied Linguistics, Reading), with funding from BALEAP,
+EURALEX, the British Academy and the Arts and Humanities Research Board. The
+original recordings are held at the Universities of Warwick and Reading, and
+at the Oxford Text Archive and may be consulted by bona fide researchers
+upon written application to any of the holding bodies.
+The BASE corpus is freely available to researchers who agree to the
+following conditions:</p>
+<p>1. The recordings and transcriptions should not be modified in any
+way</p>
+<p>2. The recordings and transcriptions should be used for research purposes
+only; they should not be reproduced in teaching materials</p>
+<p>3. The recordings and transcriptions should not be reproduced in full for
+a wider audience/readership, although researchers are free to quote short
+passages of text (up to 200 running words from any given speech event)</p>
+<p>4. The corpus developers should be informed of all presentations or
+publications arising from analysis of the corpus</p><p>
+Researchers should acknowledge their use of the corpus using the following
+form of words:
+The recordings and transcriptions used in this study come from the British
+Academic Spoken English (BASE) corpus, which was developed at the
+Universities of Warwick and Reading under the directorship of Hilary Nesi
+(Warwick) and Paul Thompson (Reading). Corpus development was assisted by
+funding from the Universities of Warwick and Reading, BALEAP, EURALEX, the
+British Academy and the Arts and Humanities Research Board. </p></availability>
+</publicationStmt>
+<sourceDesc>
+<recordingStmt>
+<recording dur="01:20:16" n="8833">
+<date>07/03/2000</date>
+<equipment><p>video</p></equipment>
+<respStmt><name>BASE team</name>
+</respStmt></recording></recordingStmt></sourceDesc></fileDesc>
+<profileDesc>
+<langUsage><language id="en">English</language>
+</langUsage>
+<particDesc>
+<person id="nm5491" role="participant" n="n" sex="m"><p>nm5491, main speaker, non-student, male</p></person>
+<person id="sm5492" role="participant" n="s" sex="m"><p>sm5492, participant, student, male</p></person>
+<person id="sm5493" role="participant" n="s" sex="m"><p>sm5493, participant, student, male</p></person>
+<person id="sf5494" role="participant" n="s" sex="f"><p>sf5494, participant, student, female</p></person>
+<person id="sf5495" role="participant" n="s" sex="f"><p>sf5495, participant, student, female</p></person>
+<person id="sf5496" role="participant" n="s" sex="f"><p>sf5496, participant, student, female</p></person>
+<person id="sf5497" role="participant" n="s" sex="f"><p>sf5497, participant, student, female</p></person>
+<person id="sm5498" role="participant" n="s" sex="m"><p>sm5498, participant, student, male</p></person>
+<person id="sm5499" role="participant" n="s" sex="m"><p>sm5499, participant, student, male</p></person>
+<personGrp id="ss" role="audience" size="m"><p>ss, audience, medium group </p></personGrp>
+<personGrp id="sl" role="all" size="medium"><p>sl, all, medium group</p></personGrp>
+<personGrp role="speakers" size="9"><p>number of speakers: 9</p></personGrp>
+</particDesc>
+<textClass>
+<keywords>
+<list>
+<item n="speechevent">Seminar</item>
+<item n="acaddept">Law</item>
+<item n="acaddiv">ss</item>
+<item n="partlevel">UG</item>
+<item n="module">unknown</item>
+</list></keywords>
+</textClass> 
+</profileDesc></teiHeader><text><body>
+<u who="nm5491">right first question is # whether # or not # it's reasonable to make somebody # an accomplice criminally liable if # they have a power to prevent the crime but fail to do so as in the case between DuCross and Lambourne what do you think</u>
+<u who="sm5492">shouldn't it be only where they've actually got a duty to do something because otherwise if it's just if they can do something about it then that's a bit wide </u>
+<u who="nm5491">yes i suppose one oddity about the case between DuCross and Lambourne is that it almost imposes a duty by virtue of the power doesn't it # and it would be much more satisfactory if liability attached where there was a clear pre-existing duty # as in the ca-, the <trunc>ca</trunc>  case of the railway crossing keeper who seems to have a clear duty which we can all understand to people passing across the railway line</u>
+<u who="sm5493">i think also # if there's a danger to the person who's trying to # to stop the # crime i think they shouldn't be able they shouldn't you shouldn't try to stop it because # placing themselves <gap reason="inaudible" extent="1 word"/> in danger then # there's no point because a crime would already happen and might have a death it might have an injury it might have whatever so # i think the best thing that you could do is just call the police and stay out of it rather than trying to stop the criminals</u>
+<u who="nm5491">mm thanks James that's a great point # one thing about the DuCross and Lambourne principle is that its unclear # we know that DuCross did absolutely nothing and the courts held that he was liable as an accomplice because he did nothing the big question is well what did he have to do # what sort of endeavour to prevent the crime occurring by himself would have been enough to prevent him being liable # would it have been enough if he simply gave a clear order to his girlfriend to slow down and not drive like that or as you say should he have gone further if she'd ignored him probably not we'd have thought because but that does identify a clear area of of difficulty with the doctrine doesn't it </u>
+<u who="sm5493">yeah it's ambiguous </u>
+<u who="nm5491">mm mm</u>
+<u who="sm5492">well couldn't you say that he did have a duty there though because it was his car it was his girlfriend he was licensed he was paying the tax he bought the car and so surely he he would have a duty to do something about it</u>
+<u who="nm5491">well it's interesting this case almost seems to be quite reasonable because we are used to the idea that the motor car # is # # a rather dangerous object which is surrounded by all sorts of special legal rules we have to be qualified to drive it # we have to keep the car in good condition we have to observe all sorts of rules relating to the car so it doesn't seem unusual in a way to say that yes the owner has a duty in relation to somebody that might be driving it the problem is that that duty isn't specified in the statutes is it the statutes do create all sorts of duties # relating to # <trunc>t</trunc>  to most cars but not that one and </u>
+<u who="sm5493">isn't that implied surely that is implied <gap reason="inaudible" extent="2 words"/> that you're driving a car # you have duties that are implied not necessarily that don't have to only be statutory # possibility that they also have to be implied sort of thing</u>
+<u who="nm5491">well # i mean that's an argument although it is slightly odd isn't to base criminal liability on a duty that's merely implied </u>
+<u who="sm5493">when i say <trunc>impli</trunc></u>
+<u who="nm5491">that you may not realise you have from outset </u>
+<u who="sm5493"><trunc>whe</trunc> when i say implied i mean that # something within reason # you can't expect for example someone # to # do something completely unreasonable and and # and then accuse them that it was implied when i mean implied has to be within reason # it doesn't have to be within the <trunc>statut</trunc>  statutory within your statutory responsibilities</u>
+<u who="nm5491">mm mm</u>
+<u who="sm5493"># for example # apply brakes at the at at a at # a re-, a reasonable time to stop at the <gap reason="inaudible" extent="1 word"/> for example that's implied </u>
+<u who="nm5491">yes there's no problem there is there because the law does say that you've got to drive carefully and that if you fail to do so you commit various offences </u>
+<u who="sm5493">and within that </u>
+<u who="nm5491">yes i mean this is extending liability from the driver and we know he's liable for the way the car is driven to to somebody else who's there</u>
+<u who="sm5494">it's almost taking <trunc>so</trunc>  sole responsibility for somebody else's actions which you can't really enforce you know particularly</u>
+<u who="nm5491">yes it almost seems to weaken the notion that people are personally and autonomously responsible for their own actions doesn't it # DuCross is liable because he should have interfered with her </u>
+<u who="sm5494">mm</u>
+<u who="nm5491">prevented her from committing the crime and we don't normally require that in other contexts do we </u>
+<u who="sm5494">no </u>
+<u who="nm5491"># i suppose the other area in which this # principle is uncertain is # in relation to # how closely connected the owner of the property in question needs to be # what if DuCross was sitting on the side of the road and saw her driving in this way would he still have been liable for failing to try and stop her do you think </u>
+<gap reason="inaudible" extent="uncertain"/>
+<u who="sm5495">i mean unless he stood up and got knocked down because <vocal desc="laughter" iterated="y" dur="2"/>i wouldn't try to stop her </u>
+<u who="nm5491">well if he could have flagged her down or something </u>
+<u who="sm5495">oh well</u>
+<u who="nm5491">i suppose my question is more pertinent in relation to responsibility relating to premises as in the Tuck and Robson case where the the landlord was responsible for the after hours drinking who's said to be an accomplice to the people who are breaking the law # you know would he be responsible for people you know three rooms away in the premises you know or or should he only be responsible for those who are in his direct company </u>
+<u who="sm5492">what is the law though he can't sell drinks after hours or <trunc>th</trunc>  that they can't be drunk after hours </u>
+<u who="sm5496">you can't sell them because you can have private parties can't you after hours if they don't charge for it </u>
+<u who="nm5491">that's right</u>
+<u who="sm5492">so surely it wouldn't matter if they were drinking in different rooms so long as they weren't selling anything </u>
+<u who="nm5491"><trunc>th</trunc> there is a a period of drinking up time h-, he must stop selling at a particular time then under the Licencing Act again there is a period of drinking up time afterwards the customers may commit a crime # one of the arguments i think about Tuck and Robson was that the Courts were effectively filling in a gap in the Licensing Act # the argument was that the Licensing Act shouldn't make the licensee responsible for after hours drinking because the act didn't give cause for doing so i suppose if you are trying to prevent after hours drinking it's probably much more useful to make the licensee liable than the individual drinkers # because you know the drinker can commit a tiny offence be fined a little bit and walk off the licensee's stuck there he's got to <trunc>r</trunc>  run the pub if it happens more than a number of times he can end up with a <trunc>s</trunc>  substantial criminal record so he'd have a real incentive to prevent the crime occurring anyway let's move on to the problem having discussed some of the the issues relating to that rather odd principle right the problem # Albert's planning to burgle bank one day he saw Bill who was a bank employee in the pub Albert bought him a few drinks and persuaded him to draw a plan of the bank showing him the positions of the burglar alarms and security cameras Bill did this but the next day he became unhappy and wrote to Albert asking for the plan back Albert ignored the letter # Bill i think it should be telephoned the police anonymously to warn them that a burglary might take place at the bank but # although the police warned the bank they didn't take any further action because they didn't have sufficient details # Albert then asked Celia to help him # Celia realised that she was being invited to take part in a crime she said she'd be happy to give him a lift to wherever he wanted to go but didn't want to know the details of the crime on the night in question Celia gave Albert the lift to a <trunc>r</trunc>  a road near the bank and she waited in the car Albert went off to the bank # broke in but was disturbed by a security guard Albert then ran back to Celia's car with the guard in pursuit Albert pushed Celia into the passenger seat and himself jumped into the driver's seat as Albert began to drive off the guard jumped on to the side of the car Albert shouted get him off Celia pushed the door open and the guard fell off # and died from injuries incurred when he <trunc>h</trunc>  when he hit the road okay we've got to consider who might be liable for burglary or any offence involving the death first question in relation to any problem is how can we structure our answer to this problem Stephanie how would you do that </u>
+<u who="sm5497">break break the problem down into sections</u>
+<u who="nm5491">mm mm</u>
+<u who="sm5497">so something like divide the events up so you know which order they occurred in</u>
+<u who="nm5491">okay so where would you start i mean </u>
+<u who="sm5497"># in the pub where Albert asked Bill for a plan of the </u>
+<u who="nm5491">mm okay so one view is we start at the beginning of the story any other views as to how to start with this problem</u>
+<u who="sm5496">if we look at each individual and decide what their liability is based on their actions </u>
+<u who="nm5491">yes # which individuals would you start with </u>
+<u who="sm5496"># Albert or Bill </u>
+<u who="nm5491">okay <trunc>any</trunc>  anybody else like to suggest a way of going about this problem Laura where would you start </u>
+<u who="sm5494"># i suppose in establishing <trunc>wha</trunc>  what actual crimes took place so you've got the burglary and the # manslaughter i suppose and work out who was liable for those particular crimes </u>
+<u who="nm5491">good okay a <trunc>coup</trunc> </u>
+<u who="sm5495">how <trunc>ab</trunc> </u>
+<u who="nm5491">sorry </u>
+<u who="sm5495">how about if you take it the way its been given to us i mean like first you say maybe so and so's going to be liable and you just start actually the question according to the way it's been given the plot developing the plot the way its been given to us like right Albert might be liable because he produced the plan and maybe Bill because he did this and maybe not because </u>
+<u who="nm5491">mm yeah well that's the way Stephanie's suggested and its i think its its almost the natural way of doing it i think Laura's way # is probably the better way what you've got to remember is that accomplice liability is derivative # the accomplice is only liable if there is a principle crime committed by somebody else and there's no issue of somebody being just liable as an accomplice in the abstract they must be liable for a crime so the starting point is to work out what the crimes are and of course because of # the requirements of the Means Rea of the accomplice it may be important # to determine precisely what the criminal activity is before we can work out if somebody is an accomplice in it # i think in relation to his death you said well its probably manslaughter it doesn't have to be does it could be murder and the category of homicide offence may determine whether a particular individual can be involved in it or not so let's just talk about the principal offences as we always should do in relation to an accomplice problem first of all one of the principle offences is this burglary that's not on the course this year # so there won't be any technical issues about burglary burglary's entering a premises as a trespasser with intent to commit a crime therein crime could be theft so it's pretty obvious that Albert's committed burglary so that's one principle crime what about though the # death of the guard what can we say about that </u>
+<u who="sm5493">i i wouldn't consider it as murder i'd call it manslaughter because when # Albert all he said was get him off he didn't say kill him so all she tried to do was basically push him out of the car and # not to kill him so him dying # was not her intention so it was basically just manslaughter </u>
+<u who="sm5492">but i mean how obvious was that it he was going to die if i push someone off a moving car </u>
+<u who="sm5493">yeah</u>
+<u who="sm5496">she's got to have # foreseen the fact that its gonna serious injury</u>
+<u who="sm5492">yeah </u>
+<u who="sm5496">at least </u>
+<u who="sm5493">yes but i i wouldn't think that just by pushing someone off the car i mean okay if the car is speeding very fast at a hundred a hundred and fifty miles an hour then okay fair enough he's going to die but i mean it was it wasn't the acceleration and it wasn't a Ferrari that's for sure accelerate at a hundred miles an hour it must have accelerated at forty thirty fifty <gap reason="inaudible" extent="1 sec"/> like that</u>
+<u who="sm5496">well <gap reason="inaudible" extent="1 sec"/> could have <gap reason="inaudible" extent="1 sec"/> so she pushed her door open she's not just pushed him off she's pushed the door to throw him off </u>
+<u who="sm5492">he could have gone in front of the car under the wheels </u>
+<u who="sm5496">yeah i mean she's got to </u>
+<u who="sm5493">he fell <gap reason="inaudible" extent="1 sec"/> if the car <gap reason="inaudible" extent="1 sec"/> +</u>
+<u who="sm5492"><laugh></u>
+<u who="sm5493"> he must have <gap reason="inaudible" extent="1 sec"/> to the left into the </u>
+<u who="sm5496">in <gap reason="inaudible" extent="1 sec"/> he's been thrown off the car </u>
+<u who="sm5493">not into the wheels </u>
+<u who="sm5492">he could have gone under the wheels of oncoming traffic it's fairly obvious that if someone's clinging to a car and you shove them off as you're driving along they're going to be hurt</u>
+<u who="sm5495">but if yeah actually some </u>
+<u who="sm5494">is the car stationary though</u>
+<u who="sm5496">no </u>
+<u who="sm5495">no it's not </u>
+<u who="sm5493">it was on the acceleration </u>
+<u who="nm5491">no they were busy accelerating away i think <gap reason="inaudible" extent="1 sec"/> to get away</u>
+<u who="sm5495">yeah that makes it a little bit more obvious that this person could have suffered serious damage </u>
+<u who="sm5496">i mean it's gonna be </u>
+<u who="sm5495">because if you're gonna <gap reason="inaudible" extent="1 sec"/> someone off the door of a car that is definitely gonna hurt them there's no way </u>
+<u who="sm5493">it'll hurt them exactly not kill them </u>
+<u who="sm5496">but i mean he's gonna he's gonna land onto the pavement or road i mean </u>
+<u who="sm5493">i mean he wasn't he wasn't <gap reason="inaudible" extent="1 sec"/> going at a hundred miles an hour </u>
+<u who="sm5492">how do you know <gap reason="inaudible" extent="1 sec"/> </u>
+<u who="sm5493">because <gap reason="inaudible" extent="1 sec"/> the acceleration <gap reason="inaudible" extent="1 sec"/> </u>
+<u who="nm5491">well the guard did die didn't he </u>
+<u who="sm5495">let's not <gap reason="inaudible" extent="1 sec"/> the acceleration </u>
+<u who="nm5491">okay <trunc>le</trunc>  let's cut through this we're having great arguments for the defence and the prosecution here and these are exactly the sorts of arguments that we'd hear in court in this case but of course when we're doing the problem our job is to play the role of the judge not the jury i知 always warning people against doing what they naturally want to do which is to decide the open questions of fact which <trunc>y</trunc> you started by doing didn't you by saying it was not murder and siding with the prosecution in saying that it could be <gap reason="inaudible" extent="1 sec"/> the important question is that there is a question there to be decided by the jury and we play the role of judge in in in dealing with this problem and our job is to set out what the issues are what the result will be if the jury decide either way so if it was charged as murder what would be the issue for the jury </u>
+<u who="sm5498">whether Celia intended to cause G-B-H or death </u>
+<u who="nm5491">yes a simple question and i suppose you'd add to that a sort of extended meaning of intent wouldn't you which is <pause seven seconds> very pertinent to this case i mean we know what the motive is which is just to get rid of the guard so i mean maybe if you asked her at that moment do you want to you know is it your desire to hurt this person she'd probably say no i would i'd dearly like him to fall off without being hurt </u>
+<u who="sm5493">#</u>
+<u who="nm5491">but she still might be held to have intended his serious injury or death and how might that be </u>
+<u who="sm5498">is it foreseeability </u>
+<u who="nm5491">yes <t3</u>
+<u who="sm5492">recklessness </u>
+<u who="nm5491">not for murder </u>
+<u who="sm5492">#</u>
+<u who="nm5491"># and not really foreseeability foresight remember the subjective test not the objective test but foreseeability at what level of likelihood </u>
+<u who="sm5498">that it was # almost certain </u>
+<u who="nm5491">yeah virtual certainty so # if you foreseen virtual certainty that something will occur the courts following Hancock and Maloney and what's the name of the recent case no <pause eleven seconds> no forgotten it i致e forgotten it too <vocal desc="laughter" iterated="y" dur="2"/> the # yes the courts will equate foresight of virtual certainty with intent won't they so that could apply here if it's not murder i mean obviously the jury could accept that she didn't intend that level of harm death or grievous bodily harm if it's not murder # what will it be </u>
+<u who="sm5493">manslaughter </u>
+<u who="nm5491">ah yes but what sort of manslaughter </u>
+<u who="sm5496">unlawful and dangerous act </u>
+<u who="nm5491">yeah and what would the unlawful act be </u>
+<u who="sm5496">the fact that they've # robbed a bank or the fact that they've shoved him off a car </u>
+<u who="nm5491">well which which do you think </u>
+<u who="sm5496"># i知 not really sure </u>
+<u who="nm5491">they're linked aren't they would you say that robbing the bank was dangerous </u>
+<u who="sm5492">yeah</u>
+<u who="sm5495">it's against the law </u>
+<u who="nm5491">sure it's against the law but is it dangerous what does dangerous mean </u>
+<u who="sm5495">it might be dangerous because if you're gonna you might find some police guard or something and you and they might try to stop you and then you might have to either shoot them to slow them down again in the leg maybe they'll die </u>
+<u who="sm5492">in the foot </u>
+<u who="sm5495">yeah <general laughter></u>
+<u who="nm5491">but when we're asking our question was this # crime dangerous for manslaughter we're not hypothesising about what might have occurred are we we're not talking about burglaries or robberies in general we're talking about this burglary the burglary took place when he was in the bank is there anything apparently dangerous about that </u>
+<u who="sm5496">no so obviously the pushing off isn't <gap reason="inaudible" extent="1 sec"/> </u>
+<u who="nm5491">yes that's right so so the manslaughter charge will focus on <trunc>he</trunc> her action pushing him off the door wouldn't it </u>
+<u who="sm5494">is the fact that it was Albert who who was # performing the burglary and the fact that Celia pushed him off the car make it different because it's Albert's if if robbing a bank was considered dangerous that presumably is Albert's <gap reason="inaudible" extent="1 sec"/> dangerous</u>
+<u who="nm5491">that's right yes # but i mean i i don't think robbing the bank although it's a bank would be a cause of death either would it so to look at manslaughter you've got to focus on a a voluntary that was can be linked causally to the death and in this case i think again it's the pushing the guard off the door isn't it </u>
+<u who="sm5492">so even though it was Albert who wanted to do the burglary and Albert who did everything and she was just driving she'd be the one guilty of manslaughter </u>
+<u who="sm5496">yeah but he would be as well wouldn't he he'd be an accessory she'd be the principle but he'd be the principle of the robbery</u>
+<u who="sm5492">isn't that a bit harsh she's the principle and he's the accessory </u>
+<gap reason="inaudible" extent="uncertain"/>
+<u who="nm5491">well what is a principle offender a principle offender is a person who's conduct fulfils the definitional elements of the offence</u>
+<u who="sm5496">um</u>
+<u who="nm5491">for murder or manslaughter the starting point the actus reus is doing the voluntary act that causes death who's that </u>
+<u who="sm5493">Celia </u>
+<u who="nm5491">Celia yeah we we we stereotype her as the accomplice but when it comes to the the killing of the unfortunate guard she's <trunc>th</trunc> the principle isn't she </u>
+<u who="sm5493">#</u>
+<u who="sm5492">but was it a voluntary act if she's it could be almost a reflex if he says push him off and she could just immediately do it she's really scared </u>
+<u who="nm5491">okay what what is a voluntary act for criminal law purposes </u>
+<u who="sm5492"># something done without sort of threats or # if it's involuntary i don't know </u>
+<vocal desc="laughter" iterated="y" dur="2"/></u>
+<u who="nm5491">what's a voluntary act </u>
+<u who="sm5495">maybe something she would have initiated by herself </u>
+<u who="nm5491">what do mean by initiated </u>
+<u who="sm5495">no i mean like maybe she wouldn't have to be told to push him off the door she'd just do it </u>
+<u who="nm5491">well # for basic criminal liability a voluntary act means no more than willed muscular movement so if her brain responded to Albert's command and she pushed him off as long as her brain was saying open the door and push the guard off that would be a voluntary act # once you've got voluntary action at that very basic level of course there is the possibility of the defence of duress which we will <trunc>mo</trunc> look at later in the course and duress can arise where somebody acts but only because they themselves are under threat # but that wasn't the case here was it # she's definitely acting voluntarily she's associated herself with Albert she's made her own decision to abide by his # command and open the door throw off the guard okay let's have a quick look at the time we're doing alright # so unlawful and dangerous act i i think we've probably covered that we don't want to linger too long on it Celia would be guilty for that if she's found guilty of murder wouldn't she </u>
+<u who="sm5496">yep</u>
+<u who="nm5491">yeah # almost certainly the unlawful act would be an assault i suppose on the guard and the # the the very modest requirement dangerousness such as all reasonable and sober persons would recognise that it would involve some risk of harm not necessarily serious harm would be easily satisfied if you are trying to knock somebody off the side of a moving car good okay so we've got two principle crimes who are we going to look at as an accomplice and to which offences who do we pick 'Sophie' who would you go for as our first accomplice </u>
+<u who="sm5499"># Bill</u>
+<u who="nm5491">Bill in relation to the burglary </u>
+<u who="sm5499">yes for showing the plans </u>
+<u who="nm5491">okay what would you say about Bill</u>
+<u who="sm5499">well # he was aware that the burglary was going to be taking place so in that sense <gap reason="inaudible" extent="1 sec"/> mm actually taking place so he's the first one </u>
+<u who="sm5498">he did phone the police didn't he to warn them </u>
+<u who="sm5499">it says that Albert did is that a mistake </u>
+<u who="sm5498">that's a mistake <u who="nm5491"> yeah that's a mistake < general laughter > sorry a mistake of mine yeah it's Bill who phoned the police yeah it would be rather odd if the burglar phoned the police wouldn't it < laughter > okay so Bill was aware are we sure he was aware </u>
+<u who="sm5496">well he drew the plan </u>
+<u who="nm5491">he drew the plan but </u>
+<u who="sm5493">was he drunk </u>
+<u who="nm5491">but was he drunk </u>
+<u who="sm5498">this plan did show the position of burglar alarms and security cameras so he must have contemplated</u>
+<u who="sm5499"><gap reason="inaudible" extent="1 sec"/> people don't normally <gap reason="inaudible" extent="1 sec"/> </u>
+<u who="sm5498">a burglary <gap reason="inaudible" extent="1 sec"/> attempted</u>
+<u who="sm5492">he didn't know for sure i mean Albert could have been a burglar alarm fitter and just was enquiring for his own records </u>
+<u who="sm5499">no but he must have known cause he felt guilty <gap reason="inaudible" extent="1 sec"/> he felt unhappy <gap reason="inaudible" extent="1 sec"/> asked for the plan back the next day</u>
+<u who="nm5491">okay so he felt guilty the next day </u>
+<u who="sm5496">besides he phoned the police so he must have some idea there was going to be a burglary or something </u>
+<u who="nm5491">is it significant though that that feeling of guilt or worry occurred the next day </u>
+<u who="sm5499">yes</u> 
+<u who="sm5492">when he's not inebriated </u>
+<u who="nm5491">when he's not inebriated perhaps </u>
+<u who="sm5495">there's i think if you look at Anderson and Morris because they say something about # one of the <gap reason="inaudible" extent="1 sec"/> as part of the common enterprise <gap reason="inaudible" extent="1 sec"/> is not liable <gap reason="inaudible" extent="1 sec"/> so i think then he he withdrew it he's like no i think you shouldn't do this and <trunc>to</trunc> tried to tell him to stop and he still didn't and then he went ahead and called the police so i mean in a way he was i don't know</u>
+<u who="nm5491">okay well </u>
+<u who="sm5496">i don't think he's done enough to withdraw from it because # he's not made it very clear to Albert he's not said i am withdrawing i don't want anything to do with this </u>
+<u who="sm5492">he <gap reason="inaudible" extent="1 sec"/> to him </u>
+<u who="sm5496">no he didn't he said i want the map back he didn't say i知 withdrawing from this and # in Backker or whatever however you pronounce it Rosscule Lord Justice said you have to actually say i知 withdrawing i don't want anything to do with this make it clear in the in <trunc>ti</trunc> in time and so if he's not done that i'd have thought he's still an accomplice </u>
+<u who="sm5499">had he gone to the police would that have made any difference </u>
+<u who="sm5496">no because you've got to communicate to the other people in the plan that you are withdrawing </u>
+<u who="sm5493">and that <gap reason="inaudible" extent="1 sec"/> </u>
+<u who="nm5491"># just on that point # although that aren't any authorities on this in England authorities from the rest of the common world Australia New Zealand America seem to suggest that there are sort of parallel ways of effectively withdrawing and going to the police even if you don't tell your colleagues in the plan what is happening going to the police and giving them full them details and indicating a sort of clear intention that the police will frustrate the plan is good enough to withdraw and that sort of makes sense doesn't it because # the criminal law is all about incentives and deterrents and once a criminal plan has been set up i suppose the law of withdrawal should be concerned with setting up of incentives to those involved to kill off the plan and the most effective way of doing that might well be to alert the police rather than simply try and persuade the their colleagues in the plan to withdraw let me # just jump in and impose a bit of structure on our interesting discussion we've discussed what he did drawing a plan what he must have known or what he should have known the factor that he was drunk we discussed the fact that he seemed to have a change of heart from the night before to the morning after we've discussed the question whether what he did might be sufficient to withdraw what we've got to do is look at all these issues in a structured way first rule of course is that we never look at a defence before we've established the basis for an offence don't look at the defence before you've got potential criminal liability withdrawal of course is a big issue here but withdrawal is a particular defence to being an accomplice so we put that to the side until we've worked out whether Bill has done enough positively to become an accomplice in relation to accomplice liability as in relation to all other types of criminal liability there are two big questions we've got to ask what are those these are very simple questions </u>
+<u who="sm5493">what was the question again </u>
+<vocal desc="laughter" iterated="y" dur="3"/>
+<u who="nm5491">where the crime we're dealing with is a substantial crime like murder whether it's an incomplete crime like attempt or whether we're talking about accomplice liability we've got to ask ourselves two questions to to decide</u>
+<u who="sm5493">actus and mens rea </u>
+<u who="nm5491">ah very good has he co#itted an actus reus has he done the conduct necessary for the crime does he have mens rea so let's break that down for Bill first of all the actus rea question what what in Bill's conduct could be sufficient for the actus reus of being an accomplice </u>
+<u who="sm5493">drawing a plan </u>
+<u who="nm5491">drawing the plan yeah it's simple but don't miss it out <trunc>jus</trunc>  just follow this sort of schema of doing things yeah drawing the plan is is fine it's provided the tools for the job providing information or assisting it's clearly established as being enough what about his mens rea </u>
+<u who="sm5496">he's aware that Albert plans the robbery and he's encouraging it by drawing the plan </u>
+<u who="nm5491">okay but is he aware </u>
+<u who="sm5493">i think he is </u>
+<u who="sm5496">yeah</u>
+<u who="sm5492">yeah because he called the police</u>
+<u who="nm5491">we know he's aware next morning he's not reasonably aware that there's a risk the burglary might take place the next morning but the the world's changed overnight hasn't it </u>
+<u who="sm5492">he was drunk and it wasn't definite i mean at that point Albert might not have definitely been going to burgle the bank he might just have been in i don't know doing empirical research about it and so Bill can hardly be expected to know for sure when Albert doesn't necessarily know for sure </u>
+<u who="sm5496">yeah but i can't remember the name of the case you said in the lecture you # a bloke who sold cutting tools to someone was held to be an accomplice because he sold a tool to someone i mean he had a legal right to sell his tool to someone but because it was suspected that it might be used for an illegal act he was held as an accomplice so if you can do that you can surely hold Bill as an accomplice </u>
+<u who="nm5491">well good the case is Bainbridge the direction to the jury was did Mr Bainbridge know when he sold the cutting equipment that it was going to be used for a crime of the type which actually occurred so the jury must in order to convict Bainbridge have decided that he did know it was going to be used for a crime of the type that actually occurred <gap reason="inaudible" extent="1 sec"/> yeah </u>
+<u who="sm5493">how about encouraging </u>
+<u who="nm5491">well we don't need to worry about encouraging because he's clearly done that <gap reason="inaudible" extent="1 sec"/> the question is whether he had the mens rea # you've got to look at this like lawyers # i think before we've seen defence and prosecution arguments i think the defence argument might well be that when he drew the plan he wasn't thinking he didn't really recognise that it could be used for crime perhaps he only that only stuck him the next morning when he'd sobered up it's an argument the jury don't have to accept it do they but it it's an argument so the question is what does the judge tell the jury about what state of mind he needs what do think Phil</u>
+<u who="sm5498"># as long as he's aware of the type of crime that's going to be committed is going to be committed then he should be guilty as an accomplice but if he wasn't aware of the type of crime that was going to be committed at the time then he shouldn't be </u>
+<u who="nm5491">okay if he's aware that a crime's going to be committed and he knows the right type that would certainly be enough what if he's not sure # it's quite possible isn't it that when he draws the plan he might be saying well i am dealing here with someone who's fascinated by security systems or am i dealing with a burglar if he thought don't mind either way i'll give a plan to a burglar who's going to commit a crime or </u>
+<u who="sm5498">indifference does not negate abetting <gap reason="inaudible" extent="1 sec"/> </u>
+<u who="nm5491">good yeah it doesn't matter if he's indifferent if he gets nothing out of it # would he have sufficient mens rea though if only thought himself a chance that the plan could be used for assisting burglary</u>
+<u who="sm5496">yes if you're reckless to it you would be </u>
+<u who="nm5491">huh any cases on that </u>
+<u who="sm5496">somewhere</u>
+<u who="nm5491">somewhere</u>
+<u who="sm5492">was it Kay and Sutton</u>
+<u who="nm5491">yes what was that all about </u>
+<u who="sm5492"># # where the two defendants had laced # the plaintiff's soft drinks with vodka cause they wanted him to go home to spend the night with her and not with his wife and they were going to intercept him to make them go back with them # but he left before they could and he drove and they were done for he was done for driving with <trunc>exc</trunc>  excess alcohol and they were done for procuring this offence # and yeah the divisional court said that advertent recklessness was sufficient </u>
+<u who="nm5491">good yeah and what does advertent recklessness mean </u>
+<u who="sm5492"># they had to contemplate his act would or might bring about or assist in the commission of the principle offence</u>
+<u who="nm5491">yep would or might yeah so so here if Bill contemplated that # what he did might assist a burglar in committing the crime you know in real life that would be enough wouldn't it # or the type of crime issue it's one of these funny things i think that if he does contemplate that it might be a crime or will be used for crime then he he's almost certainly going to get the right crime isn't he # it's not like the cutting equipment in Bainbridge that can be used for any burglary anywhere it's pretty site specific good okay # the next question then is that if Albert may or may not be liable as an accomplice mightn't he if the jury decide that they accept the defence argument that on the night that he drew the plan he was inebriated and didn't really see what the plan might be used for if they decide that would it make any difference that the next morning you know he sobers up wakes up and suddenly thinks oh no i drew a plan surely that's going to be used for burglary would it make any difference what do think Julie would it make any difference if the next morning he suddenly sees the light </u>
+<u who="sm5497">possibly </u>
+<u who="nm5491">possibly should it make any difference </u>
+<u who="sm5497"># don't think so </u>
+<u who="nm5491">no could it <trunc>cha</trunc>  i mean if he hasn't co#itted a crime the night before or rather hasn't committed the basis for accomplice liability the night before could his realisation the next morning alter the position </u>
+<u who="sm5496">if he doesn't do anything to change it </u>
+<u who="sm5492"># <u who="sm5493"># <gap reason="inaudible" extent="1 sec"/> </u>
+<u who="sm5492">as soon as he was capable of feeling worried about it he did he did something about it i don't think just because he's now sober that can then change the change the definition of what happened previously don't know </u>
+<u who="nm5491">good okay we have a time framing problem here # criminal liability doesn't work on a sort of uh assessment of somebody's conduct over time whether or not somebody's a good bloke in the long run criminal conduct focuses on particular events particular occasions it's a little slice through time isn't it so in one incident you've got to show that the elements of criminal liability are established and that means the conduct element the actus reus and at the moment when the actus reus was there that the actor had the relevant mens rea if when he did the action which was assisting he handed over the map he didn't have mens rea perhaps because he was drunk then he can't have co#itted the basis of <trunc>cri</trunc>  or accomplice liability the night before and that can't change you can't supply an element merely because later on he he understands or or becomes aware of something which he wasn't aware of at the time if i知 driving along and i accidentally ran over somebody go to hospital the next and say i'm desperately worried about the person i ran over and the doctor says well this persons dead and i say well who was it and names my worst enemy and i say woopee i致e killed my worst enemy <laughter> it doesn't turn me into a murderer does it the question of whether i知 a murderer is frozen in time at the moment when i was driving when i did the voluntary act that caused the death did i have sufficient mens rea to be a murderer if i wasn't nothing can change it thereafter so his awareness the next day can't change an innocent action the night before into the basis of of criminal liability however is there some other route by which he might be liable when the next morning he realises that the plan might be used for use in a burglary </u>
+<u who="sm5494">is it the fact that he might not have done enough to ensure that the burglary didn't take place </u>
+<u who="nm5491">okay why should he do enough to ensure the burglary takes place </u>
+<u who="sm5494">i don't know ha huh </u>
+<u who="sm5494">cause he's i suppose he's got the start of the details hasn't he for the crime and to ensure that he isn't # liable as an accomplice he has to make sure that he's almost his conduct is sort of taken out of the picture and the only way he could do that was to take the details to the police </u>
+<u who="nm5491">okay you're sort of asking the question about withdrawal there or raising the issues relating to the the the defence of withdrawal but what we've suggested is that # we're assuming that he wasn't liable wouldn't be liable as an accomplice on the basis of what happened the night before cause he didn't have sufficient mens rea so the withdrawal question doesn't arise </u>
+<u who="sm5492">wouldn't it then fall into the category of preventing a crime where you've got # <gap reason="inaudible" extent="1 sec"/> </u>
+<u who="nm5491">could do under DuCross and Lambourne </u>
+<u who="sm5492">yeah</u>
+<u who="nm5491">how would that work </u>
+<u who="sm5492"># i dunno he i mean it <trunc>soun</trunc> even though he doesn't seem liable before hand afterwards as Julie said if you didn't do something then it would seem that he would be but if that isn't possible then i guess he is in a position to do something about it and so he's got a duty to cause he's an employee of the bank and he's given away secret information and it's his responsibility now no </u>
+<u who="nm5491">no no it all sounds fine to me next morning if if we ask well what happens next morning he does something does he do enough or not with Julie's question <trunc>whi</trunc>  which sounds eminently sensible but we're just trying to get it into a legal context if we're asking whether he's done enough we seem to be suggesting he's under a duty to act and if he really is under a duty to act you can be liable can't you for failing to fulfil a duty it's the law of omissions you have to identify a duty to act first of all </u>
+<u who="sm5494">does his duty not come because he's an employee </u>
+<u who="sm5492">#</u>
+<u who="nm5491">okay yeah </u>
+<u who="sm5494">as an ordinary person perhaps wouldn't have to because once he's sort of # established that he isn't liable then that's up to him and a moral judgement whether or not he should do anything about it because he's an <trunc>em</trunc> a bank employee <vocal desc="laughter" iterated="y" dur="2"/> an employee of the bank he should actually do something </u>
+<u who="nm5491">good yes well we've looked at sources <gap reason="inaudible" extent="1 sec"/> end up giving rise to criminal liability we've looked at cases like Pitwood the railway crossing keeper why was he liable what was the source of his duty to people passing across the crossing it was his contract of employment with the railway company so a contract of employment can pin you with duties which can end up making you criminally liable if you fail to fulfil them so it's possible that could be a source of duty depends in a way # there's never been a case quite like this has there but # it's quite possible </u>
+<u who="sm5495">what if but maybe he thought he'd done enough because he called the police and <trunc>h</trunc>  he might have thought maybe they were going to act on it then but they just discarded it and said well that's not enough information but </u>
+<u who="nm5491">yeah </u>
+<u who="sm5495">when you're in a panic and you think you've already done wrong and you're trying to right your wrong maybe you're not well composed enough to do something </u>
+<u who="nm5491">yes good point to some extent two issues come in succession first of all was he under a duty the question we're asking then has he done enough to fulfil his duty which is the question you're asking just to go back to the question of whether he was under a duty yes <trunc>i</trunc>  the duty may arise from his contract of employment what was the other thing you mentioned Julie </u>
+<u who="sm5492">he was the one that started it he gave the he drew the map in the first place </u>
+<u who="nm5491">yeah so what doctrine of law might suggest that's a the basis of a duty recognised by criminal law remember Miller the case of the tramp </u>
+<u who="sm5492">oh yeah when he started a fire and then <u who="nm5491"> yeah <u who="sm5492">+ didn't put it out <u who="nm5491">that's right started the fire accidentally couldn't be liable for that but was liable when he realised the fire was started did nothing to put it out bit like this case isn't it </u>
+<u who="sm5492">#</u>
+<u who="nm5491">Miller woke up and realised he'd set in train a dangerous state of affairs <gap reason="inaudible" extent="1 sec"/> House of Lords in Miller said you can be liable for failing to put right or failing to avert hazards which you have created and that could be applied here to Bill couldn't it so yes i think he could be liable for failing to act to prevent the risk he's created but says Julie surely he's done enough what do we think well i suppose <trunc>wh</trunc>  i'll cut that short i think under Miller we just don't know what's required do we Miller was a bit like DuCross DuCross did nothing Miller seems to have done nothing all we can surmise is that if Miller had called the fire brigade or had tried to smother the fire with his own coat or something like that that might have been enough we just don't know # here # you argue that he has done enough Jane /u>
+<u who="sm5495">beg your pardon</u>
+<u who="nm5491">you argue that he has done enough in this case </u>
+<u who="sm5495">yeah probably he thinks he's done just that because he's tried to ask for the plan back and he's not got the plan back then he calls the police he believes they've got more power so they can stop it he probably doesn't even know where it's going to end he doesn't know whether the police are going to act on it and go and find out about it or try to stop the crime from happening so he might assume he's done enough already </u>
+<u who="nm5491">yeah so it's at least arguable that that'll prevent being liable under Miller we don't know we we could certainly pick on things that he hasn't done giving the identity of Albert to the police might have helped mightn't it or what have you </u>
+<u who="sm5492">but if we don't know how much he has to do how's he who hasn't got any legal training i mean presumably he's not a lawyer # how's he going to know </u>
+<u who="nm5491">he can't can he you're right the law is uncertain in this area although even if the law did formulate a principle my guess is would be that it would be in general terms it would be something like do what is reasonable something like that which would leave a big discretion to the courts to decide what was reasonable in a particular case okay so Bill maybe liable we've raised the question of withdrawal if he if he may he may be liable as an accomplice what can we say about withdrawal as a defence <pause dur="10.0"/> nothing any idea</u>
+<u who="sm5498"># in the case of Rook there was an analogy that # declared intent to withdraw from a conspiracy to dynamite a building is not enough if the fuse has been set he must have done his best to step on the fuse so he's got to do the best to prevent a crime which i guess by not giving the police sufficient details he hasn't done his best </u>
+<u who="nm5491">he's done some thing</u>
+<u who="sm5498">he's done something</u>
+<u who="nm5491"> yeah </u>
+<u who="sm5498">but he hasn't done as much as he could </u>
+<u who="nm5491">yeah </u>
+<u who="sm5498">so i guess that isn't enough </u>
+<u who="sm5495">he might not know what his best is </u>
+<u who="nm5491">yes Rookes is a puzzling case in some ways that particular piece of dicta almost suggests that once the plan is rolling all those who are responsible for some aspect of the plan have a responsibility to to bring it to an end and prevent it turning into a crime and must do what ever they can to prevent the crime as a whole if that's right it would probably suggest that giving very full details to the police might be sufficient 'cause maybe that's the best thing he can do to prevent the crime taking place what's odd though about Rook is that # the particular facts of Rook where one of four conspirators to commit a murder decided not to turn up on the day the murder went ahead without him the court also suggested that the reason why he failed is that he didn't give clear notice to his colleagues that he was dropping out so the implication seemed to be that if Rook on the day before the murder had rang up the other three and said look i知 definitely not going ahead with this i知 not taking part you do this you're on your own and i advise you not to do it that would be enough to absolve him from liability </u>
+<u who="sm5496">and # Bekker one Roskill's quoting from Whitehouse which was a commonwealth case and said British law had or should adopt # that case as law and he said there there must be timely communication to abandon the common purpose between those who would carry on <gap reason="inaudible" extent="1 sec"/></u>
+<u who="nm5491">yes yes do think timely communication would be enough </u>
+<u who="sm5496">i don't know it does seem a bit odd i mean if their already in the house or something and their burgling or something it seems a bit </u>
+<u who="sm5494">i mean he's gone they've gone in to planning a crime anyway it's just the fact that they don't actually go through with it that surely means they still have a major part in it being especially if it's a murder or something as serious as that </u>
+<u who="nm5491">yes i mean it's interesting you say a major part of the crime if we look at Bakerra Bakerra had actually provided the knife to his colleague Cooper who did the stabbing at the outset he it's said he didn't do enough to withdraw and he merely said come on lets go and jumped out the window and there seemed to be two suggestions that he he would have had to have acted earlier and if if he'd allowed the plan to go that far he'd have to almost step in and negative his own contribution to the plan which was to supply the knife # so it it's all rather odd i mean could Bakerra have gone away a week before the planned burglary when he'd already given the knife over he'd said no i知 not going with you # would that be timely co#unication </u>
+<u who="sm5492">if then by the time <u who="sm5498">i suppose then he'd have top demand the knife back wouldn't he </u>
+<u who="nm5491">well the funny thing is if we followed the quote you gave us about stepping on fuse you've lit you'd think he'd have to do more than simply saying i知 not part of the plan anymore wouldn't you </u>
+<u who="sm5498">yes</u>
+<u who="nm5491">and in terms of the policy of the law you'd think he should be required to negative his own contribution wouldn't you </u>
+<u who="sm5493">yeah if there'd already been a house there and their doing a burglary and he thinks violence might well be used if someone turns up there's no incentive for him to leave and # i mean if he did leave then maybe the other one would give up as well but then he'd think i mean if he knows the law in and out then he's gonna know oh well it's too late now so i might as well stay and</u>
+<u who="nm5491">yes</u>
+<u who="sm5492">do the murder</u>
+<u who="nm5491">yes </u>
+<u who="sm5492">cause he's gonna be liable anyway </u>
+<u who="nm5491">yes it is a worry isn't it that if we if we say okay you've you've passed the point of no return you are now going to be a criminal </u>
+<u who="sm5492">so what the hell </u>
+<gap reason="inaudible" extent="3 sec"/>
+<u who="sm5496">but they're not gonna know that are they probably not gonna he's probably gonna think well i didn't kill him so i can't be liable </u>
+<u who="sm5492">i know but just cause they don't know it's still a weird fact isn't it </u>
+<u who="nm5491">yes right okay so we're coming to an end aren't we but withdrawal is eminently arguable because the cases don't give us a firm basis for principle do they just looking at some of the other issues in the case # i think it Celia's liability in relation to burglary # that's very much a Maxwell situation isn't it the question is really she knew she was going to help a crime did what <gap reason="inaudible" extent="1 sec"/> to crime she had in mind if yes she would be liable as an accomplice under Maxwell if for some reason or other she had absolutely no idea it was a bank robbery maybe she would be liable when she parked in the street fifty yards away form the bank then she maybe she got closer a closer idea of what the crime was of course as well as driving Albert to the bank it was also an act of assistance to be there waiting to pick him up wasn't it if you're a burglar in a bank it's a great comfort to you to there's a get away car outside so she was a continuing assistance so even if she didn't know the details or sufficient details earlier on she saw him go into the bank she would then surely know it was a bank burglary and that could be good enough to make her liable in relation to the killing the question whether Albert's liable will depend on his state of mind won't it # if the principal crime is manslaughter by an unlawful and dangerous act it's very likely the court will conclude that when he shouted get him off he contemplated almost exactly what Celia did pushing him so if he was Celia to do just this then he will he will be liable for the unexpected consequence of death just as she will if he's incited an unlawful and dangerous act pushing the guard off then he's liable <gap reason="inaudible" extent="1 sec"/> for that type of manslaughter if she's liable for murder because she intended she did this therefore grievous bodily harm he could be liable either if that was his intention himself or if he contemplated under thesort of Howell and English test that when she he she pushed him off she would have been acting with the intent to cause death or G-B-H okay well thanks for coming the next seminar is after Easter isn't it </u>
+<u who="sm5495">we don't have a seminar this week </u>
+<u who="nm5491">i don't think we do do we unless i致e missed something do you think we do</u>
+</body></text></TEI.2>

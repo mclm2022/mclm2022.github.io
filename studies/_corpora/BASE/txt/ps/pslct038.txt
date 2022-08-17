@@ -1,0 +1,375 @@
+nf0951: to start with [0.2] er [1.0] i gather that Newton-Raphson having 
+happened at A-level was rather a long time ago [0.6] and you had a bit of fun 
+with it on Friday [1.9] so i thought i'd just give you a [0.2] quick reminder 
+[1.2] the idea is we've got some sort of function [0.2] that crosses zero [1.3] 
+what we want to know is the point [1.4] X-star [0.4] such that [1.2] F-of-X-
+star equals zero [0.4] you shouldn't need to write this down by the way [1.0] 
+er [1.3] and there are all sorts of ways we could find that what Newton-Raphson 
+depends on is saying [0.7] well [0.4] we'll take a guess [0.3] at where we're 
+starting so we'll call that guess [1.2] X-zero [1.0] and we'll evaluate [1.9] F-
+of-X-zero [1.9] and then we have to decide what to do [0.8] having seen what 
+size it is [0.4] and Newton-Raphson is based on the principle that what we do 
+is look at the tangent at that point [1.7] and we follow the tangent down [0.9] 
+and that will bring us closer to this root [0.9] so we follow the tangent down 
+to X-one [2.8] well [0.3] [1.1] one way you can think about [2.0] that 
+obviously the tangent [0.7] is [0.9] F-of-X-nought which is the gradient [0.5] 
+and what is the gradient well the gradient is [1.2] F-of-X-nought [1.2] minus 
+zero [1.8] divided by [2.0] if we have mm [0.3] i don't know if we really need 
+an origin let's put an origin somewhere [0.4] but it's divided by [0.9] X-
+nought minus X-one [1.6] so one way of thinking of Newton-Raphson is precisely 
+this that we're taking a triangle [0.7] we then do the same thing we come here 
+[1.2] follow the gradient up and we're [0.2] very near a [0.2] 
+nearly at the spot [2.3] so conceptually that's what Newton-Raphson's doing if 
+you land up forgetting it [0.8] that's one way of remembering it if [0.4] if 
+you like the geometrical way of remembering it [0.6] an alternative is the 
+thing we were lo-, talking about a lot in the asymptotics [0.3] which was 
+series expansions [0.8] so [0.3] what we're interested in [1.0] is this point 
+where F-of-X equals zero [0.6] well let's do an expansion that's approximately 
+equal to [1.1] F-of- [0.4] X-nought [0.5] plus [2.2] X-star [0.2] minus [2.2] 
+er which way around is it X-nought minus [0.3] X-star [2.7] and then the first 
+derivative [7.9] and [2.1] in either case what we do is we basically just solve 
+[0.8] those equations so if we look at this equation [1.1] what we're saying is 
+that [1.4] X-star [0.2] minus [1.0] X-nought [2.3] so i've changed the sign [1.
+0] equals [1.5] F-of- [0.4] X-nought over [2.0] F-dashed-of-X-nought [1.8] and 
+then [6.3] [0.8] we're going to [2.7] actually i have a feeling [0.3] you might 
+have to 
+check me on the signs on this one [1.4] off [0.2] the top of my head [2.6] 
+we've got [1.6] a solution so typically we take this as our [1.0] X-one and 
+then we'd iterate [1.7] okay that that's the basic principle you can [0.5] 
+check whether i've memorized which way round that goes [1.0] er [2.1] by 
+looking at [0.3] solving for that one [1.1] X-one [1.9] yep [1.8] the other 
+point is that it's actually much easier to remember Newton-Raphson in a simple 
+form like this write it down [0.4] and then fill in what the function is in 
+that second exercise [1.1] rather than trying to write it in too full of 
+generality [2.2] and [0.4] in terms of tutorials the next tutorial's going to 
+be [0.2] a week on Wednesday [1.0] so you'll get another chance to [0.2] both 
+look at those exercises [0.2] or ask about the [0.5] projects [3.0] okay so 
+that was my way of being an aside because what [0.8] we're starting to talk 
+about now until [0.4] pretty well the end of term module the tutorials [0.7] 
+and [1.0] some lectures on [0.4] ethics [0.5] is [0.4] survival 
+analysis [2.3] so i'm just going to take you back to the first lecture [1.3] 
+where [6.6] we had a whole lot of lifetimes of people [2.8] and the reason for 
+the odd shape was these were all people who were dead [0.5] and these were a 
+mixture of people who are alive [0.2] and dead [0.8] and i showed you [1.5] 
+what a survival plot looked like [4.6] and [3.6] that's a fairly standard 
+survival plot [0.2] where we start with [0.8] everyone being alive [1.2] and 
+then [0.5] [1.3] we drop the estimates in a step function [1.7] so that if we 
+look at this group [0.4] those who are wheelchair-bound [0.9] we see that [1.3] 
+seventy per cent of them survive [0.7] to age ten [2.3] for this cohort [0.3] i 
+know the group who's studying cerebral palsy [0.2] er [0.4] somebody's got a 
+friend [0.6] who wasn't expected to live past primary [0.8] school age but you 
+can see from this that even quite severely handicapped people have got a good 
+chance of living beyond primary school age [5.6] right [0.5] so [0.5] er [0.3] 
+right [1.7] i'm actually going to [3.3] put this down now [0.6] you might 
+like to think about what the crucial elements of survival analysis are that 
+make it a different topic i'm just going to move the screen [1.5] which [0.6] 
+justifies [2.3] having a separate section about it [16.9] okay so [1.0] 
+cerebral palsy's rather a large dataset it's difficult to draw some examples so 
+what i'm going to do is give another couple of examples [0.6] of the data and 
+then i'm going to go into [0.7] a discussion of the crucial definitions and the 
+actual definitions themselves [0.8] so the topic's called survival analysis [8.
+8] and [0.6] most people tend to think of lifetimes are for d of human 
+lifetimes [1.4] with a [0.4] with the word survival you do tend to think of 
+death [0.7] it's also called failure time analysis because it's used in 
+economics [0.2] where [0.6] you stress test components see how long they last 
+[0.4] it's used in economics how long are people unemployed or [0.2] how long 
+are [0.6] do companies survive and is it different for [0.3] greenfield versus 
+brownfield sites [1.4] it 
+can even be used for lengths [1.8] how long a piece of wool can you get [0.2] 
+before it breaks [0.5] [1.0] if you're spinning it with one or two strands 
+that's going to be different from spinning with multiple strands [0.9] er [1.0] 
+and that's actually [0.4] Cox and [0.2] Oakes which is one of the books that's 
+mentioned [0.5] David Cox actually worked in the [0.6] Wool Research Institute 
+i think it was called [0.5] precisely on [0.3] lengths of yarn so that that is 
+actually [0.6] quite a major application [1.2] but as i say typically we're 
+going to be thinking in medical examples [0.5] of people doing something like 
+entering a screening programme entering a trial [1.1] being born [0.4] and then 
+we follow them up till an event [1.2] and [0.9] the reality of what will 
+actually happen [0.3] is that [0.9] we've got [0.3] calendar time so im-, [0.2] 
+got say [0.7] nineteen-ninety here [1.7] two-thousand here [1.9] but not 
+everybody turns up in nineteen-ninety at the beginning so we get people coming 
+in [0.7] maybe dying [0.6] coming in living [1.7] coming in dying at some 
+stage [1.0] carrying on living [1.5] er that person's just emigrated to 
+Australia [6.3] and [2.6] we've stopped the study [1.4] in two-thousand so [1.
+1] in calendar time that's the kind of pattern we've got [0.9] but in terms of 
+what we want to analyse [4.6] we'll much more typically just use [0.3] time 
+from zero up to [0.9] we'll try to draw this reasonably to scale [0.5] zero up 
+to ten so these first two points [0.7] whoops [0.7] [2.3] are [1.5] pretty much 
+at the same point [0.6] but then we start [1.9] having to think about these 
+points coming [5.0] back to being censored that point's [3.4] if you want to 
+draw yourselves a more accurate picture [0.9] er [5.3] you can so the idea is 
+that we can either measure on a scale of calendar time [3.3] or [1.1] in some 
+sense an exposed time [3.5] so if we're thinking of something like 
+hormone replacement therapy [0.3] and whether it carries a greater risk of 
+heart attack [0.4] or stroke [0.8] we're interested in the length of time [0.2] 
+women are [0.2] on hormone replacement therapy [1.3] we may secondarily be 
+interested in the date 'cause it'll change the prescriptions of the components 
+but primarily we're just interested in the length of time [2.2] another way you 
+may actually get data [0.5] er [1.9] is that [0.2] you don't actually get it in 
+that form [0.2] much more likely [0.2] in this example from kidney [0.5] 
+register data [4.8] it's quite a lot [0.4] quite likely that instead of 
+actually getting a graph like that somebody will have done the [1.3] the 
+summary [3.1] so this is [1.1] counter-registry type data [0.5] and the kind of 
+thing you would get is [1.6] year since diagnosis [0.9] zero to one [0.2] one 
+to two [1.8] two to three [0.7] three to four [4.3] so 
+you'd get subdivisions by year [1.4] and those of you who are going to do 
+actuarial science will find you [0.3] tend most typically to work [0.6] in 
+subdivisions of year as opposed to exact times that i've used there [1.6] then 
+you're going to have [0.3] the number [1.3] at the start [7.1] oh a hundred-and-
+twenty-six [1.0] the number of deaths in that year [3.9] was forty-seven [2.0] 
+and the number [0.4] what are called [0.8] lost [0.4] to follow-up [4.1] lost 
+to follow-up's meant to be quite a general term [0.2] because remember in the 
+cerebral palsy case [0.9] you're going to land up with people who are still 
+alive so you you're losing them in tha-, in that sense [2.2] okay so we had 
+nineteen [3.6] sixty [0.2] five [1.2] seventeen [4.4] thirty-eight [1.4] two [0.
+4] fifteen [1.8] er [2.2] twenty-one [0.5] two [1.5] nine [3.3] ten [0.7] zero 
+[0.4] six [1.7] four [1.0] zero [0.3] four [0.8] probably sh-, [0.2] gone up to 
+age [1.4] to year [0.3] six [12.6] and the kinds of questions you typically [0.
+5] find people interested 
+in this [0.2] are [5.4] well one thing that's very widely used in cancer [0.5] 
+er is one and five year survival rates so [2.4] what is [0.3] the [0.4] let's 
+just say five year [1.2] survival rate [11.1] you might think about medians [0.
+6] what is [1.7] the median survival [10.8] and what is the life expectancy [12.
+5] and take that to be the formal [1.5] mean [5.3] okay just so you can focus 
+on the kinds of problems [0.7] have a quick look at this data and [0.5] discuss 
+with the person [0.3] next to you [0.6] perhaps that first question how are you 
+going to estimate the five year survival rate [1.5] and can you think of 
+anything [0.6] that looks obvious but that's going to be wrong [2.5] and i'll 
+give you about half a minute on that [1.4] then i might ask somebody to answer 
+the question 
+nf0951: 
+anybody willing to o-, [0.2] volunteer an obviously wrong answer [1.7] simple 
+answer but that [0.2] is likely to be wrong [0.6] for the five year survival 
+rate [5.6] is ten out of one-twenty-six likely to be a good i-, estimate [2.1] 
+okay you agree it isn't a good estimate [0.6] why [0.3] broadly speaking [3.0] 
+sf0952: don't know why [0.7] 
+nf0951: 'cause of all the people you've lost to follow-up [1.1] so that's 
+basically why [0.7] all of these questions although they're quite [0.4] 
+reasonable questions [0.5] that's why they're going to need [2.1] some sensible 
+[0.6] er [0.9] methods that allows for all those people who get lost [1.1] so 
+[0.2] in order to define s-, survival times [1.3] there are three critical 
+elements so [6.2] for the definitions [2.5] of [0.6] i'm going to carry on 
+calling them survival times [0.8] every now and again 
+i'll make reference to these other things that aren't [0.6] necessarily 
+survival [11.6] very first thing we need to know for a survival time [1.3] is 
+[1.4] the start point [0.7] start point [3.9] for [2.4] each individual [13.3] 
+and the first examples we can think of [0.9] might make you wonder why we need 
+to discuss this [0.6] 'cause the kinds of examples you might like to think of 
+are [0.3] date of birth for cerebral palsy [1.1] or date of entry to a 
+randomized control trial [2.2] fairly obvious that that's the date you should 
+use randomized trials [0.4] accrue people over time [0.2] just as people come 
+in to [0.8] cancer registries over time or anything else [2.0] where it starts 
+[0.2] [cough] to be slightly more complicated is if you think of epilepsy which 
+i've mentioned before [1.8] and [1.3] by the time somebody who has epilepsy is 
+randomized into a trial [0.4] they've got to have shown symptoms of the disease 
+[0.9] so you might well think [0.5] shouldn't we [0.4] start from when they 
+first showed symptoms of the disease [0.7] rather 
+than just from [0.5] entry to the trial [1.6] the advantage of starting at 
+entry to the trial is it's going to be unbiased because of the randomization 
+mechanism [0.7] you should have equal lengths of time [0.3] before in both arms 
+[1.4] because recall of first events is going to be quite poor [0.5] and so in 
+fact with epilepsy what you do is you do start from [0.3] date of randomization 
+[0.8] you also take into account [0.4] when the first symptoms were and how bad 
+things have been [0.4] but as a covariate [0.2] not as the start point [1.1] er 
+[0.6] so if you want to put a n-, you know an aside [0.6] s-, some sort of 
+remarks on that it's not compulsory but [0.4] things like randomized control 
+trials are quite easy [1.4] something where it becomes much more critical to 
+define the start time [0.4] is something like screening for disease [0.6] 
+there's still quite a big debate about the value of screening [0.2] for breast 
+cancer [1.6] er it's been in the media a couple of t-, in the last couple of 
+years a fair bit because [0.3] Scandinavians have said [1.1] not only is this a 
+waste of money 
+it actually kills more people than it benefits [0.8] and the head of the U-K 
+breast screening has said [0.5] no no no we are wonderful [1.4] well what's the 
+problem [0.4] the thing about screening for a disease is the whole point is you 
+want to pick the disease up early [0.5] before there are symptoms [0.9] so you 
+can intervene [1.5] now what that means is if you think about it [0.2] even if 
+you did nothing [0.4] the time from first saying somebody's got breast cancer 
+to death [1.0] is going to be longer in a screening programme than if you wait 
+for symptoms [0.5] if you want to think of it as a line again [0.6] you think 
+of somebody ambling along [0.8] and [0.6] at this point [0.3] they have 
+symptoms and they go along to see their [0.3] G-P and at this point they die [1.
+0] and what a screening programme tries to do is to say [0.7] 
+let's see if we can [0.7] leap in here [0.7] with some kind of tests and pick 
+them up [1.0] so if you measure from [0.5] the time of screening [2.3] it's 
+always going to be longer than from symptoms [1.7] so the mere increase in 
+length of time doesn't tell you anything at all about the benefit of the 
+screening programme [1.0] fact the only real way you can tell about the 
+benefits of screening programmes is [1.7] i-, well ideally randomized control 
+trials but otherwise [0.4] you've got to have two populations one screened one 
+not [0.6] that's what all the debate is about [0.2] what does the evidence from 
+those kinds of trials show do they show a benefit to screening or not [1.9] and 
+the other occasion where [0.5] you would get [0.6] er [0.7] slightly [1.1] have 
+to think carefully about your defined point would be exposure to disease so the 
+[0.3] case control cohort studies we've talked about [1.1] if you're thinking 
+of something like asbestosis or [0.2] even s-, [0.2] exposure to cigarette 
+smoking [1.8] you want to [0.2] do it from the 
+start of the exposure [0.5] it may well be confounded with age [0.3] i-, you 
+may want to know whether [0.4] starting to smoke at age ten has a different 
+effect from starting to smoke at age twenty [1.5] but you need to think about 
+the exposure so if you like briefly the the kinds of issues here would be [0.6] 
+comparing a randomized control trial [0.2] versus screening [1.7] and [0.6] 
+exposures [1.0] so in ec-, exposure [0.2] to risk factors [5.5] and it's those 
+latter two that [0.3] that [0.4] warn you why this is [0.9] such an important 
+point [1.6] and then the thir-, second thing to think about is the [0.7] time 
+scale [5.4] or [1.6] we might change that to 
+saying the measurement scale [9.5] and again that's [1.0] essentially because 
+if we're thinking about the generality of survival analysis [1.4] typically 
+when we're thinking in medical terms we are just thinking of [0.2] days months 
+years that kind of thing [0.8] we could be thinking in engineering [1.2] about 
+the load on a spring [1.2] er that's what you do in stress testing [0.4] load 
+on a spring load on a bridge load on an aircraft wing to see when the rivets 
+pop out [0.9] er [1.1] that sort of thing what kind of impact [0.9] er concrete 
+can sustain [0.8] if you're dropping loads on it [1.4] and as i said things 
+like yarn you might have thickness you might have length before things break 
+down [2.0] er [0.4] and so you just [0.5] need to agree on that [0.4] this is 
+also incidentally one point where one of the statistical [0.8] er groups of 
+models come in [0.5] is whether you're going to transform the time scale [0.7] 
+so should you be modelling on actual time scale or on log of time scale [4.2] 
+so we've got a beginning we've got a time scale [1.3] clearly the thing we need 
+is an end [0.5] so we need [1.8] a well defined [4.2] unique [2.2] event [5.1] 
+death being the most common one that we'll be dealing with [3.8] but in fact 
+one of my [0.2] colleagues when i was doing a PhD [0.6] the er [0.6] [0.3] 
+failure point they were looking at was the birth of a baby they were measuring 
+length of labour [0.5] so rather ironically er [1.0] [0.3] the [0.2] failures 
+at that stage was a successful [1.3] live birth [2.3] er [6.7] where does this 
+get complicated [1.0] just as i point out a s-, a few issues here where you 
+might need to think carefully [0.6] well as i say if it's death it's not [1.1] 
+too tricky [0.4] but quite often we're going to be looking at things like a 
+recurrence of cancer [0.5] or you could look at that [0.9] and [2.2] there you 
+could have multiple events so you'd want to say first recurrence [0.8] if 
+you're going over to something like epilepsy or asthma where you have repeated 
+[0.2] er attacks [0.6] quite often you won't 
+be using survival analysis you'll be using [0.4] methods for modelling [0.6] 
+stochastic processes [0.2] which some of you will have studied [2.0] [cough] [0.
+8] and you may or may not want death from a particular cause you may only want 
+deaths from lung cancers [0.6] so any deaths from [1.1] heart attacks [0.2] 
+might not be of interest [4.3] well that's fine [1.9] the most the one that's 
+going to [0.2] mean that we've got complications in life is that [1.4] defined 
+end point [0.5] death [0.2] or [1.1] a recurrent [2.2] a recurrence of the 
+tumour or [0.6] as i said in the case of labour statistics birth can be your 
+end point [2.0] all studies of premature children and and delaying [1.1] er the 
+birth of the child birth will be an end point [0.7] er study that [0.2] 
+biological sciences was hoping to do [0.6] but of course the 
+whole point is lost to follow-up [0.5] and what do we do about loss to follow-
+up [2.0] well that brings us into the major [0.5] definition that we [0.7] have 
+in [2.2] survival analysis of censoring [2.1] and [4.5] so [0.9] i'll ca-, [0.
+5] call this four [0.2] it's the one first one two three that are the essential 
+things [1.3] to have survival analysis four is required to make sense of [0.2] 
+some of the rest of this which is [1.5] censoring [2.2] okay most of you might 
+have thought of censoring in terms of [0.9] governments telling you what films 
+you can't can or can't watch or extracting [1.5] parts of newspapers some of 
+some of most of you won't have but some of us have been in countries where the 
+newspapers appear with blank sections [0.7] 'cause it's been written out [0.9] 
+er [0.7] and that's [0.4] the same [0.3] [cough] 
+same meaning [0.4] the reason the word's choosed in this [0.3] chosen in this 
+context [0.5] censoring is just saying we have no more information [2.3] so 
+censoring [0.8] of [0.5] times [2.0] and the w-, mechanism in which this [0.2] 
+is viewed [0.4] is to say that [2.2] we have [0.8] for each individual [7.9] er 
+where am i going [0.4] oops up here i think [1.5] for each individual [2.0] a 
+time [1.7] C-I [2.9] m-, [0.2] beyond which we don't observe them [14.9] do not 
+[4.0] observe them [2.2] okay [0.6] so this means in fact that er [1.4] time [2.
+8] that we're actually going to observe is made up of [0.6] two parts so [0.6] 
+if we let [2.9] the [0.3] 
+or an individual's [6.0] actual lifetime [0.5] what would we we would see if we 
+were able to follow them up [0.3] indefinitely [4.1] be [1.7] X-I [5.0] then [2.
+0] we [4.8] observe [0.7] the survival time [8.9] so we're going to observe the 
+survival time [2.3] which we're going to call T-I [2.7] and T-I is a function 
+of two things [0.8] X-I [1.7] and C-I [3.0] so can you write down what that 
+function must be [2.9] the observed survival time is what function of the [0.5] 
+actual survival time and censoring [11.3] simple function [11.9] if you think 
+of that top left board [2.7] where we've got crosses and then we've got the 
+lines that go into circles or keep going on right [1.3] and if we were to 
+censor at two-thousand [3.2] what do we do [0.5] with any line that goes 
+through that two-thousand mark [4.5] we take the first line [1.5] are we going 
+to s-, observe the censoring 
+time or the death time [6.6] right we're always going to observe the [1.2] er 
+[0.7] i'm going to regret this aren't i [4.6] this person had a notional [1.3] 
+censoring time [3.5] we've got notional censoring times for these people [0.2] 
+and we'll al-, always observe the minimum [1.3] of [1.7] the death time [1.1] 
+and the censoring time because that individual [0.4] we'd stopped watching at 
+two-thousand so we wouldn't have seen them [0.4] so the [4.3] the function we 
+want here [0.3] is [1.6] min [5.3] ah [5.4] but we don't only observe the 
+minimum [0.4] 'cause that wouldn't be much use to us [0.9] we also need [0.2] 
+and [1.4] an indicator function [10.4] and this'll sometimes be [0.5] given as 
+a death and sometimes be given as censoring [0.6] we'll call it [1.1] delta-I 
+[1.1] which is going to equal one [1.2] if [2.8] X-I [0.2] is less than or 
+equal to [0.4] C-I [1.3] in that case you can think of it as indicating that 
+the death has occurred [0.8] and it's going to equal zero [0.3] if [1.9] X-I is 
+greater than C-I [0.7] 
+in other words we haven't actually observed the event [15.5] in all the 
+analysis that we do [0.3] we're going to be assuming [0.4] that censoring is [1.
+6] non-informative that we're not going to learn anything from the censoring [2.
+0] the ways in which censoring [0.7] turn up they actually are given the names 
+type one and type two [0.6] as i quite often find it difficult to remember 
+which one is which i'm not going to [0.3] ask you to do that [1.1] type one 
+censoring [0.6] is the kind of thing you most often get in medical statistics 
+[0.9] you have a study [0.7] it has to finish at some point [1.5] so if it 
+finishes at two-thousand or if it finishes [0.6] [0.7] at a series of dates so 
+it finishes in two-thousand [0.8] in [0.2] the Walsgrave Hospital but we carry 
+out data collection in one or two other hospitals at a later date [0.8] but 
+we're still finishing at fixed times [0.7] then that's called type one 
+censoring [0.4] the reason you don't observe people [1.0] isn't because [0.4] 
+[0.3] you've decided i'm going to ignore that person it's for a fixed time [0.
+2] you've 
+stopped the study [1.1] type two censoring [0.3] is [0.3] much less common in 
+medical statistics but it's very common in engineering [0.6] which is to say [0.
+7] i'm going to observe this cohort of individuals [0.4] until a certain number 
+or certain percentage of them have died [0.6] or failed [0.5] so i'm putting [0.
+3] twenty [0.3] items on test [0.7] at different loadings [0.8] and [0.3] once 
+we've [0.2] put the loads up to the point at which [1.1] ten of them have 
+failed [0.4] i'm going to stop the study [0.7] so type two censoring [1.0] is 
+dependent on the number of failures so it actually does depend on the whole [0.
+4] time process up to that point [1.3] the way in which it determines when the 
+tenth failure will occur [0.6] but what it doesn't do is depend on anything in 
+the future [2.1] and then you can get [0.3] other kinds of [0.2] censoring 
+mecha-, mechanisms [2.3] but [1.4] what's a s-, [0.2] crucial is that you want 
+your [2.4] so [0.3] i-, in this course [0.3] well there is research in other 
+things [0.4] but [0.9] in this 
+course and in most [0.6] of the work that you'll look at [2.9] we [0.5] assume 
+[4.5] that [0.9] er [9.0] right [0.9] assume that censoring [4.0] is [2.2] 
+independent [3.4] in a fairly general sense of [3.1] survival [11.6] what we 
+want more formally is that the probability that [1.1] T is greater than [0.6] 
+some value T [1.4] given that [0.9] this was censored [1.6] at [0.6] time [1.2] 
+C [2.2] well that shouldn't depend on C [2.4] as in that that [0.3] particular 
+point [0.5] the times have been [0.4] censored [1.2] so we just want that to be 
+equal to the probability that T is greater than T [0.7] given that we already 
+know that the time [0.8] is greater than C [2.4] not the fact of censoring just 
+[0.2] the sheer time so [1.5] this would hold true [0.8] true for all times 
+before that actual censoring time [4.4] so having got the [0.2] definition of 
+the survival time [2.7] the thing that we [0.2] the main [0.5] variable that we 
+use within survival is [1.2] 
+the survival function [0.4] is the focus [3.6] sorry survival function [2.4] 
+almost invariably called [0.8] S for survival S-T-of-T [1.1] is the probability 
+of [0.5] the random variable T [0.8] being greater than time T [0.2] 
+probability of surviving beyond time T [0.9] so what [0.4] how does that relate 
+to the functions you're used to dealing with with random variables [0.8] tell 
+the person [0.2] next to you [0.2] how you'd write that in terms of a familiar 
+function [1.4] and what the function is [24.3] any volunteers [2.3] apart from 
+the usual suspects [2.0] does it look like anything you recollect meeting 
+before [4.5] yes [2.6] puzzled looks [0.2] [laugh] [3.0] someone be kind to me 
+[0.2] where have you seen a function like this before [1.9] but what was the 
+function [6.0] you've all seen it [laugh] [10.7] some volunteer [2.8] no [0.3] 
+no idea [4.2] probabilities [0.2] what's one of the 
+standard things we know about probabilities [3.3] and so how can you convert 
+that probability statement into another probability statement [6.3] 
+sf0953: so if like S-T-of-T is one minus the probability of [0.9] T is less 
+than [4.5] 
+nf0951: thank you which is usually known as [0.4] 
+ss: 
+sf0954: density [0.7] 
+nf0951: cumulative density [0.5] cumulative density function or [1.2] 
+distribution function [1.1] so most of the things you'll have done before in 
+likelihood is [0.8] basically been worked on the density function [0.8] 
+survival works on [0.5] one minus the distribution function [3.9] in other 
+words [1.3] those [1.6] 
+plots i was showing you [1.5] where i talked about the probability of surviving 
+beyond some time [0.6] those were plots of [1.1] an empirical [0.2] survival [0.
+5] function [0.4] which was actually one minus your standard cumulative density 
+function [2.9] right [0.2] er [6.4] the next logical thing for me to do is to 
+start talking about how we do a life table analysis of that data [1.5] and 
+given that it's lunchtime and you've got a l-, other things to do i'm actually 
+planning [0.3] i said i'd try to finish these lectures slightly early most 
+times [0.4] so i think it's actually more sensible for me to stop at this point 
+[0.3] answer any questions [0.6] and see you again on Wednesday morning at [0.
+3] five past nine

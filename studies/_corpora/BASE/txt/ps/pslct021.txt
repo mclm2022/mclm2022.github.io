@@ -1,0 +1,514 @@
+nf0831: on [0.3] use of language in [0.5] lectures 
+om0832: yes 
+nf0831: er so er 
+om0832: for the benefit of international students 
+nf0831: sorry [0.2] 
+om0832: for the benefit of international students 
+nf0831: right [0.4] er so there's no need to sort of adjust your hair or or 
+worry that you wore the wrong clothes today [1.2] er [0.9] okay what i want to 
+do today is [1.2] to [0.5] er just go over again this idea of a a thermal 
+resistance model [0.7] and why it's so useful because [0.3] i think your group 
+like [0.2] er [1.3] er many [0.5] sort of groups at this stage think this is 
+getting all far too complicated and there are too many equations and i don't 
+know what goes where [1.2] er [1.2] i'll go back to [0.2] er an example [0.2] 
+we looked at [0.9] er earlier in the course of just what a real [0.2] heat 
+transfer problem might [0.5] get to [0.8] this isn't [0.2] a particularly 
+complicated system [0.5] it's just [0.4] er a sort of a building wall with a 
+window in it so something that you [0.3] you come across every day [0.9] but if 
+you look at it in heat transfer terms [0.4] there's many different sort of 
+pathways that the heat can go [0.8] so you've got a a sort of a channel through 
+here through the brick through the cavity insulation brick [0.4] with conduc-, 
+convection and radiation [0.4] to the surface from the inside [0.3] from the 
+surface from the outside [0.5] you've got a direct brick path here along the 
+window frame [0.4] you've got a conduction path through the 
+actual er so-, sorry on the on the window surround [0.4] you've got a a [0.3] 
+path through the window frame [0.8] there's the path through the window the 
+glass [0.3] whatever is in the gap [0.4] the glass on the other side [0.4] and 
+all the same down here [0.6] so trying to analyse this in heat transfer terms 
+[0.4] is rather difficult [1.2] i've drawn a resistance model out really just 
+to the t-, of of [0.2] er [0.4] essentially the top half of this because it's 
+symmetrical [0.5] to show all the different sort of thermal resistances that 
+you might put on this [0.6] so here is the convection radiation [0.2] from the 
+inside surface [0.4] here is the convection and radiation to the outside 
+surface [0.5] and here are the different heat transfer paths in thermal 
+resistance [0.2] notation so brick insulation brick [0.6] direct brick [0.2] 
+directly through the frame [0.5] glass convection and radiation these will be 
+different coefficients between the two plate panes of glass [0.4] and glass [0.
+2] on the other side [0.9] okay [0.2] the reason we go for that [0.3] er [0.2] 
+approach [0.4] rather than trying to 
+actually calculate individual [0.4] er components so the reason why we put 
+everything into a thermal [0.3] resistance form [0.7] is that once you've done 
+that [0.8] you've basically got a very simple equation if that was electrical 
+resistances you could add them up [0.3] you wouldn't need very complicated [0.
+3] er methods to do it it isn't like [0.4] er some of the er matrix circuits 
+that you've looked at that's just a straightforward electrical resistance 
+circuit [0.6] so you can add that up [0.7] you can write it as a total thermal 
+resistance [3.3] like that [1.7] [cough] [1.2] with the [0.2] inside here [2.3] 
+and the outside here [2.9] so this is the total thermal resistance [4.0] and 
+that's the [0.2] driving force like voltage in an electrical circuit [0.6] so 
+the reet h-, rate of head transfer Q-dot [1.1] is just the temperature 
+difference T-in-minus-T-out [2.9] over R-total [4.6] and when you write out [0.
+2] a heat transfer problem in that sort of form [1.3] what it enables you to do 
+is to see which [0.4] er components in that [0.4] are going to be important [0.
+3] for the overall [0.2] heat transfer [0.8] so you may have 
+to use you almost certainly will have to use [0.2] approximations [0.3] to find 
+[0.2] these thermal resistances [0.2] the conduction ones are quite 
+straightforward convection and radiation as we've looked at are more 
+complicated [0.7] but once you've got them and you've got some numbers on the 
+diagram [0.4] you can decide which are the sort of dominant [0.2] er issues [0.
+7] and [0.2] if [0.2] something isn't going to be important in the overall heat 
+transfer [0.4] for instance in this problem if you look at the thermal 
+resistance of the glass [0.4] it's very very small so in terms of changing the 
+heat transfer [0.3] it really wouldn't matter if you made the glass a bit 
+thicker or if you changed to a different sort of [0.3] glass [0.9] on the other 
+hand when you get to modern double glazed windows where [0.3] the actual glass 
+part of it [0.3] has been er optimized to reduce heat loss [0.5] you may 
+suddenly find that the dominant channel of heat transfer is going to be through 
+the [0.2] metal frame [2.6] so the reason for doing this is to get [0.2] what 
+may not be a completely correct 
+starting point but at least an approximate starting point [0.4] where you can 
+[0.2] approach [0.2] a real problem [3.4] the [1.2] driving mechanisms that we 
+looked at the mechanisms that you've got to get into [0.4] heat transfer format 
+[0.4] are conduction that we've looked at [0.3] er quite a bit earlier on 
+either for flat plates or for cylinders [0.5] and both of them you can just add 
+them up in series [0.4] er you can add them up in parallel as well although we 
+haven't looked specifically at that [1.0] convection [0.5] where the convected 
+coefficient which determines the [0.3] er [0.2] convective [0.3] resistance [0.
+4] er you need [0.2] to go through the procedures we've looked at over the last 
+two weeks [0.4] either free convection or forced convection [0.4] er and 
+working out [0.2] how this relates to the fundamental properties [0.3] of the 
+fluid [0.9] and the difficult one and the one that doesn't really fit [0.2] 
+into this linear model [0.3] radiation [1.2] and the reason why we ploughed 
+through last week looking at how we could write radiation into an approximate 
+linear form [0.5] is so that radiation can 
+fit into a resistance model [0.3] like everything else [0.3] so that instead of 
+having to write radiation as a fourth power relationship [0.4] we can write it 
+[0.2] at least approximately [0.3] as a linear relationship [0.4] then [0.3] 
+radiation is described by a thermal resistance [0.2] and a temperature 
+difference [0.3] to a first approximation [0.3] and then you can just slip it 
+in [0.3] in the model like everything else [0.5] and it's exactly the same in 
+an electrical circuit if you had a component [0.3] which didn't have a linear 
+relationship between [0.3] current and voltage [0.4] or i mean you can in heat 
+transfer like in electricity you can have er er things that are out of phase 
+you can use complex numbers to represent thermal storage in elements but [0.3] 
+fortunately i'm not going to do that [0.5] if you have something that doesn't 
+have a linear relationship between co-, er the the current and voltage [0.3] 
+then it's much more difficult to incorporate it into a sing-, a simple [0.2] 
+linear model [0.6] yes 
+sm0833: can i have another look at that model [1.0] 
+nf0831: the [0.2] th-, [0.3] this one [0.7] 
+sm0833: yeah [1.7] 
+nf0831: it was meant 
+as a sketch rather than a a sort of something to [0.2] take down in detail 
+really just to show how you can get [0.3] all the bits together [3.0] 
+sm0834: can you put that sheet back [laugh] [0.2] 
+nf0831: pardon [0.2] 
+sm0834: sheet back up [2.8] 
+nf0831: i can't get them both on at the same time i onl-, i only wanted 
+sm0835: [0.6] 
+nf0831: er [0.6] that one we have looked at several times before [0.3] er i 
+can't get them both on at the same time [0.4] er so we we will have a quick 
+sketch a a model sketch and er i'll leave that up whilst i say the next er 
+parts of what i want to do [0.9] so really what i'm saying is [0.2] you can 
+make [0.4] in principle quite a complicated model [0.5] but provided everything 
+is linear [0.3] it just simplifies to [0.2] total resistance [0.3] heat flux is 
+total is the temp-, overall temperature difference [0.2] divided by the total 
+[0.2] resistance [0.4] and then when you've est-, got you've worked through to 
+that level [0.3] you then start worrying about which of these components are 
+important and where you need to know things [0.2] more accurately [0.8] and 
+once you get to real problems there's obviously some heat transfer [0.4] er 
+going 
+perpendicular to the direction of the temperature differences odd edge effects 
+around corners [0.4] but at least if you've got a first stab you know [0.2] 
+which bits are important to look at [0.3] and which aren't [2.2] okay today i 
+want to look at two things [0.4] er the first is just to look at the second 
+problem [0.2] from the [0.3] problem sheet from the tutorial last week which i 
+didn't go over in the tutorial [0.6] and then to start building up this rather 
+open-ended problem [0.4] of designing the er cooling system for [0.3] er the 
+departmental [0.3] store [0.2] in time for the [0.2] strawberries at Wimbledon 
+[1.0] so we're going er if you want to be there's have you finished [0.4] m-, 
+[0.2] resistance model sketching [0.4] i'll just leave that up [0.5] for the 
+moment [0.7] er so problem two in the heat transfer er sheet [0.2] number four 
+[1.9] oh i'm just raise that slightly so i've got a bit of board [1.0] at the 
+[0.2] bottom [4.3] reason i'd hoped this would be on video is to to show people 
+how difficult it is if you don't have a separate whiteboard and a [0.2] er an 
+overhead projector but er [0.2] that will have to be for the 
+next one [4.4] okay so the second the the second problem [0.5] is one where in 
+fact you don't have to it's a it's a very straightforward problem you don't 
+have to do any [0.3] approximations [0.6] you're designing [0.2] an insulation 
+system for a furnace wall i'll do this down here and then move it up in a 
+minute [0.4] so this is er sheet four number two [7.8] 
+you've got a furnace wall at a thousand degrees C [6.3] and you [0.3] er have 
+got [0.3] er [0.7] an [0.2] environment around at forty [0.2] degrees C [2.8] a 
+nasty hot corner of a factory [3.8] you've been asked to insulate [0.2] the 
+furnace wall and you've got two [0.4] different types of [0.2] insulation [1.3] 
+i'm not showing these [0.5] necessarily to the right relative thickness [0.9] 
+you're starting with mineral wall because that will withstand high temperatures 
+[0.4] and this has got a thermal conductivity of seventy [1.8] milliwatts [3.1] 
+per metre [2.1] per degree kelvin [1.8] and you're following it with fibreglass 
+[2.9] which has got a better thermal conductivity so it's ge-, better 
+insulation material [0.5] but it can't go up to such high temperatures [0.4] so 
+it's to er it's got a thermal conductivity of forty [0.3] milliwatts per metre 
+per degree kelvin [10.8] and [0.5] conveniently somebody has estimated for you 
+the heat transfer coefficient [0.4] from the surface [0.4] so this sort of 
+first estimate of you know roughly what temperature it is so what heat transfer 
+coefficient 
+is it going to be [0.4] has been done for you [0.6] so H [0.2] for the surface 
+[0.5] has been estimated [0.3] at about fifteen watts per square metre [0.2] 
+per degree kelvin [4.6] and that includes both convection and radiation it's 
+the overall heat loss from the surface [14.3] and you've got two [0.4] er [0.4] 
+criteria two things to satisfy [0.3] on this [0.6] the first thing that you 
+must satisfy is that the outer surface [0.3] mustn't be more than [0.2] fifty-
+five degrees celsius [0.3] can i take the er [0.2] overhead off now [0.3] 
+sm0836: 
+nf0831: 'cause it means i don't have to go around on my knees [8.4] so the 
+conditions that this system has got to filfil fulfil [0.5] is that the 
+temperature at the interface between [0.2] the two media [0.4] has got to be no 
+more than four-hundred [0.2] degrees celsius [8.6] and the temperature at the 
+outside surface [0.3] has to be not more than fifty-five [0.2] degrees celsius 
+[8.8] so the surface temperature limitation is so that people don't hurt their 
+hands when they touch it [0.4] or bump into it by mistake [0.4] rather high for 
+a surface environment that people are going to be close but it's 
+obviously a very hot [0.2] environment that it's in [0.6] this interface 
+temperature [0.4] the reason there is so that the outer insulation material 
+doesn't work at a temperature [0.3] that it doesn't like to be at [0.8] and so 
+what you're asked to do is to calculate the thicknesses [0.4] of the [0.2] two 
+insulation materials or the minimum thicknesses [0.2] to achieve these [0.2] 
+obviously the more insulation you put on [0.3] the lower these two temperatures 
+will go the more [0.2] these surfaces will approach [0.3] the temperature [0.3] 
+of the surroundings [11.0] okay [0.2] how do you think you can go about [0.4] 
+doing that [1.5] any suggestions [0.6] this is an occasion where you don't have 
+to make any approximations any assumptions [0.4] you've got all the information 
+there to do an exact calculation [0.5] if you take this [0.3] er assumed value 
+for the surface [0.2] heat transfer coefficient [4.9] yes 
+sf0837: [0.3] 
+nf0831: have i indeed [0.8] thank you [1.3] that's a very good starting point 
+is to actually get your data correct [6.6] in fact fifteen is a is a more sort 
+of realistic value that you're likely to get in a [0.4] er 
+with convection and radiation combined thank you [2.2] okay what do you need to 
+know [1.2] in order to calculate [0.3] one or both of these [2.8] so the 
+thicknesses here i can call it X-A [8.7] and X-B [6.1] you could [0.4] for 
+instance write down the equation including one of those and then decide what 
+you knew in the equation [0.3] and what you didn't know [3.2] 
+sm0838: Q-N through the material [0.7] 
+nf0831: sorry 
+sm0838: 'cause [0.4] the conduction through the material [0.3] 
+nf0831: yeah [0.6] 
+sm0838: is going to be [0.8] the radiation and convection [0.6] 
+nf0831: that's right so you know that the conduction through the wall [12.8] is 
+equal to the [1.3] i'll do it with a Q-dot to say that it's a rate [0.9] a [0.
+5] flow per unit time is equal to the heat flux [0.3] er Q-dot loss [3.5] from 
+the surface [13.4] so you're making the usual assumption that you're in steady 
+state [0.8] so that's a good starting point [7.6] having made that start [0.2] 
+what can you do next [19.2] there's no [0.3] tricks there's no [0.3] er er 
+there's there's no [0.2] assumptions in this you've just got to decide [0.4] 
+how you can find a value for this thickness [0.6] and this thickness and once 
+you've done one it'll be perfectly obvious how to do the [0.4] the other one [5.
+1] 
+sm0839: do you need to get a value of the [0.9] each resistance [1.2] 
+nf0831: you need to get a 
+value of each resistance so you could say that Q-dot-N [4.0] is the [0.2] 
+temperature difference [0.6] er we've used A and B for the materials so if i 
+call this sort of T-one [1.0] T-two [2.2] T-three [2.1] we can say that Q-dot 
+[0.2] is equal to T-one minus T-two [1.4] over [0.8] R [0.2] the thermal 
+resistance of layer A [1.9] which is equal to [0.6] T-two minus T-three [0.8] 
+over the thermal resistance of layer B [1.8] how would you calculate the 
+thermal resistance [0.4] of each layer [10.5] 
+sm0840: i think it's something [0.5] multiplied by the [1.4] K-A [1.3] 
+nf0831: er [0.4] the thermal resistance is the thickness [1.5] any advance on 
+multiply [3.6] 
+sm0841: divide [0.5] 
+nf0831: divide [3.4] [laughter] okay the thickness is X divided by [0.3] K [0.
+7] and one more [0.6] 
+sm0842: A [0.4] 
+nf0831: A that's right so [0.2] the thickness is X over K-A [4.6] so are you 
+getting any [0.3] closer [1.1] to [0.5] er [0.3] a solution on this so you know 
+that Q-dot-N [0.3] is equal to Q-dot-loss [0.6] you know that the same Q-dot-N 
+is going through each [0.2] layer [0.6] so that you can write to the conduction 
+equation for the first layer [0.3] and for the second layer [0.3] and in each 
+case for each layer the [0.3] er the X-over-K-A is equal to the [0.5] 
+resistance [2.3] and the things that you know [0.5] on this 
+'cause they give it in the problem you know the temperatures [0.8] 'cause 
+that's what your [0.3] criteria that you're trying to set [0.8] you know [1.2] 
+the [0.2] K value [2.2] one problem with this is that nowhere in the [0.3] 
+question have you got anything [0.4] to do with the area [1.0] so you certainly 
+don't know [0.3] the area [2.0] and there's no information given from which you 
+can calculate [0.4] the area [1.3] 
+and if you think about it it shouldn't really matter [0.4] 'cause you're defi-, 
+you're designing something for a building wall [0.3] and you know it's got to 
+have certain temperatures [0.3] it shouldn't matter what area it is because 
+you've got to make sure it's got that temperatures whether you make it big or 
+small so [0.9] 
+sm0843: can could you work it out [0.6] per unit area 
+nf0831: you can work it out per unit area so that's that's the way that i would 
+approach this [0.3] you can say that you can't actually do the calculations 
+with an area and you don't you can't put a number in for the area [0.3] so you 
+can work [0.2] per unit area [0.8] so we've established this we've established 
+this [0.4] we've established that you need to work per unit area [8.1] 'cause 
+there's no value [3.6] for A [0.3] and it shouldn't matter [0.4] what the value 
+of A is you should have the same [0.3] temperatures at the interface if you 
+make the ar-, the [0.2] the wall twice as big in area or half as big [0.3] in 
+area [1.4] okay so you're still left with the problem though you know [0.3] 
+you're going to work per unit area [0.4] you want to know the [0.3] value [0.4] 
+of X [0.6] you know the temperatures [0.3] we've established you don't need the 
+area you'll work per unit area [0.8] how can you find 
+though the heat flux so the only thing you're really left with in one of these 
+equations [0.3] is to find the heat flux [0.3] per unit area [1.3] how can you 
+do that [14.4] and [0.2] it looks like you could do it either for the heat loss 
+from the surface or for the conduction through the wall [0.5] because they're 
+[0.6] the same [2.0] so [0.3] can you do either of those which one can you do 
+[13.9] anyone going to hazard a [0.2] a try [5.1] how do you calculate [0.8] 
+heat loss from the surface you you you've established that to calculate the 
+conduction [0.5] you need to know [0.7] the property that you've got to 
+calculate [0.5] so you can't calculate the conduction flux direc-, directly [0.
+7] how do you calculate the heat loss [0.3] from the surface [11.8] 
+sm0844: [0.2] [0.8] 
+nf0831: yes 
+sm0844: 
+nf0831: now you've got a con-, coefficient that's right so you've got a 
+coefficient that [0.5] tells you about both convection and radiation the sum of 
+them [1.0] so what equation can you do to write down [0.8] to give you the rate 
+of heat loss from the surface 
+sm0845: T-S minus T-A [0.4] [0.4] 
+nf0831: that's right so you can say that Q-lot-loss [3.2] is the [0.2] 
+temperature 
+difference [1.2] divided by [0.2] the [0.2] surface resistance [3.2] where [0.
+3] R-S [3.0] you could either you can either write it as a surface resistance 
+or the other way up as a surface heat transfer coefficient [0.5] in this term 
+[0.3] because you've got the surface heat transfer coefficient [0.3] it's 
+easier to say that R-S is one- [0.3] over-A [0.7] multiplied by [0.4] the [0.5] 
+heat transfer coefficient for the surface [0.7] so Q-dot-loss [0.2] is [0.4] A 
+[0.8] multiplied by H-S [1.6] er [0.2] multiplied by [0.6] T-S- [0.6] minus-T-A 
+[5.2] so finally you're getting somewhere that you can actually get some [0.3] 
+er numbers out [0.3] you can't get a value for A there's nothing given to give 
+you a value A [0.4] but if you calculate Q-dot-loss [0.2] over A [9.5] so the 
+heat loss per unit area [2.3] is therefore H-S multiplied by T-S-minus-T-A [0.
+4] sorry H-S has just gone off the top of the board as it always does when i 
+need it [0.3] so that's fifteen [0.2] watts [0.8] per square metre [1.0] per 
+degree kelvin [1.4] multiplied by the temperature difference fifty-five minus 
+forty [5.1] which is therefore fifteen multiplied by [0.4] fifteen [0.3] which 
+is 
+two-hundred-and-twenty-five [2.2] 
+sm0846: it's not fifty-five minus forty kelvin [1.4] 
+nf0831: er 
+sm0847: 
+nf0831: okay it's i-, it's fifty-five it's fifty-five of of if you if you get a 
+temperature interval [0.6] i should have said it fifty-five-minus-forty [0.6] 
+measured in units of degrees kelvin or in degrees celsius 'cause the 
+temperature interval is the same [0.3] whether you're in kelvin [0.4] or 
+celsius [3.8] so [1.0] when it's an absolute temperature you're you're 
+completely right you've got to be certain whether you're in kelvin or celsius 
+[0.3] when it's a temperature difference because the interval is the same [0.4] 
+er [0.2] the unit [0.2] can be either [1.0] so you've got fifteen watts per 
+square metre per degree kelvin [0.4] multiplied by a temperature interval [0.3] 
+of fifteen kelvin [0.3] or two-hundred-and-twenty-five watts [0.4] per [0.2] 
+square metre [5.5] okay so you know the heat loss [0.2] per unit area [0.4] and 
+if the heat [0.4] loss is equal to the heat conduction then the heat loss per 
+unit area [0.3] must be equal to the heat conduction [0.4] per [0.2] unit area 
+[0.8] so we can therefore say [4.8] the heat conduction [0.4] per unit area [0.
+3] through either of of the media [1.9] 
+is also two-hundred-and-twenty-five [0.3] watts [0.8] per square metre [5.5] so 
+finally we've said that the heat conduction [0.5] is the temperature difference 
+divided by [0.2] the thermal resistance [0.4] and we've said that the thermal 
+resistance is X- [0.3] over- [0.2] K-A [2.1] so the heat conduction per unit 
+area [2.3] is therefore for the first material [0.4] equal to the temperature 
+difference [6.4] divided by [0.8] X [1.7] and multiplied by [0.3] K [0.2] for 
+that [0.4] medium [1.4] so we're dividing by [0.5] X-over-K [1.1] and we've 
+taken the A on to this side because we're working with everything [0.4] per 
+unit area [2.8] so finally we have an equation where the only unknown [0.3] is 
+a thing that you want to calculate the thickness [0.3] of this [0.2] material 
+[1.6] this is for medium one the first one so i'll write this as X-A [0.4] and 
+K-A [1.3] so the thickness of the [0.4] mineral wall [12.7] X-A just [0.3] 
+cross-multiplying that equation [0.5] is therefore equal to the temperature [0.
+2] difference [0.7] that's the temperature difference [0.2] i'll just put this 
+down and see if the diagram will reappear [1.0] yeah there's a temperature 
+difference across the mineral wall 
+so it's a thousand minus four-hundred [7.6] again it's an interval so we can 
+write it as kelvin or degrees celsius [3.7] multiplied by the thermal 
+conductivity of that medium [0.4] seventy milliwatts per metre per degree 
+kelvin so [0.4] point ne-, zero-seven [1.7] watts per metre [0.9] per degree 
+kelvin [3.0] and divided by [0.4] the [0.2] heat flux per unit area [0.7] two-
+hundred-and-twenty- [0.3] five [1.8] watts [0.2] per square metre [3.6] okay 
+with a bit of luck that's going to end up with the right dimensions [0.4] er 
+although it takes a long time i always put dimensions in equations 'cause then 
+you can check [0.3] if you've lost a term [0.4] so the [0.4] K cancel out with 
+the [0.5] K-to-the-minus-one [0.6] watts cancel out [1.2] and you're left with 
+metres-to-the-minus-one divided by metres-to-the-minus-two [0.3] or therefore 
+metres [0.2] which is what you would want for a [0.4] thickness [0.4] so if you 
+can just [0.3] er do the calculation on that [43.2] a number [1.0] 
+sm0847: point-one-eight-seven [0.3] 
+nf0831: sorry [0.3] 
+sm0847: point-one-eight-seven 
+nf0831: point-one-eight-seven that's that's all right i [0.2] put left behind 
+where i did mine i calculated point-one-n-nine my number [0.5] so that's 
+point-one-eight-seven about point-one-nine [1.0] metres [0.3] always when you 
+get to this stage think about whether that seems reasonable or sort of point-
+one-nine metres twenty centimetres that kind of looks like a thickness [0.3] of 
+a wall [0.4] if you know you're insulating a high temperature furnace and you 
+get a wall thickness of a few millimetres then you suspect you've gone wrong [0.
+5] er equally if you get sort of ten metres then [0.3] you think this probably 
+isn't realistic so you go back again and calculate but [0.2] certainly that 
+looks like [0.3] a reasonable number [1.1] so just doing the same for the other 
+[0.2] er [0.2] er insulation material [0.3] the fibreglass [3.3] exactly the 
+same calculation [0.2] but X-B [1.8] is therefore equal to the temperature 
+difference across the fibreglass four-hundred minus fifty-five [1.3] degrees 
+kelvin [0.2] or celsius [0.4] multiplied by the thermal conductivity of the 
+fibreglass [0.3] point-zero-four [2.1] watts per metre per degree kelvin [8.7] 
+so a better insulation material [0.3] and again divided by two-hundred-and-
+twenty-five [8.5] 
+which is equal to [17.0] 
+sm0848: zero-six 
+nf0831: part-, point [0.4] 
+sm0848: zero-six 
+nf0831: that sounds about right [0.7] i was going to say was it's something 
+like [0.2] one-and-a-half times [0.4] point-zero-four so that's about point-
+zero-six [3.1] metres so again sort of numbers that look as if you could build 
+[0.3] an insulation system out of it 
+sm0849: what are they [0.4] 
+nf0831: sorry [0.2] 
+sm0849: what are they [0.5] blocks [1.4] wall blocks 
+nf0831: wall blocks [0.4] they're sort of s-, er compressed [0.2] er i mean 
+they're they're solid insulation [0.5] blocks [0.4] that you use for high 
+temperature [0.2] er sort of a first [0.3] li-, lining layer you you [0.3] you 
+would actually have a steel layer [0.8] or you you would have [0.4] a steel 
+layer or somewhere a firebrick layer on the very [0.3] inside [0.5] and then 
+they're they're sort of lightweight fibre [0.4] compressed fibre blocks [0.8] 
+that you can [0.6] build as a sort of an insulation wall [2.0] 
+okay [0.2] so [0.2] that's [0.2] big scale high temperature conventional 
+engineering [0.3] er sort of calculation [1.1] er [0.2] and the key thing is to 
+break it down into the you know look a-, look at the problem look at the bits 
+where you've got the information [0.4] decide [0.3] where [0.2] you need to 
+sort of go first to find the information [0.3] you don't have [1.6] the next 
+thing i want to do and we won't probably complete it in the we'll complete it 
+in the lecture next week [0.8] is to go back to this problem we've started to 
+look at in the last lecture [0.6] on designing whether you can design a [0.2] 
+little portable [0.4] er chilling system [0.4] er so that the department store 
+can [0.5] present flowers or strawberries [0.4] in its [0.2] er er appropriate 
+place to encourage people to [0.3] buy them [0.5] so this is example five-six 
+in your notes [5.2] and this is completely open-ended er i ha-, i deliberately 
+hadn't [0.3] done the calculations before we do this we may end up that 
+it's completely [0.2] not a good idea you can't it won't work [0.4] er and so 
+[0.3] er you go back and think about something else [0.6] so what we decided [0.
+5] is that this sort of chiller unit [6.2] is going to be made it's going to be 
+[0.2] cylindrical so that [0.2] people can sort of reach in easily [8.9] and 
+it's going to have [0.6] insulation on the outside we've in-, initially trying 
+[1.5] something like the insulation you'd put on a refrigerator [0.3] so about 
+sixty millimetres [14.7] we'd taken a total height [0.2] in the lecture last 
+week of one metre [6.8] er a total external [0.2] diameter [0.5] of six-hundred 
+millimetres [5.3] and an insulation [0.2] thickness [0.6] of [0.2] sixty [0.4] 
+millimetres [9.3] 
+sm0850: does that bit need to be sixty as well [0.7] that last one you've just 
+drawn [0.3] 
+nf0831: sorry [0.4] 
+sm0850: that last one you've just drawn [0.6] 
+nf0831: this last line i've not drawn doesn't matter this last line i have 
+drawn doesn't need to be sixty [0.5] because this thickness here there's ice in 
+here [2.6] and there's the fresh produce [0.2] sitting on top [1.3] think i've 
+got a a fresh produce colour that i can [0.3] draw in [9.9] don't think i can 
+draw anything like a rose so we'll have a sort of a [0.9] er [0.2] er [0.2] 
+nursery flower [0.7] and the the condition here [0.4] 
+is that you want you don't want it to be so cold here that the bottoms of the 
+flowers are going to freeze [0.4] so we've said that the condition here [0.8] 
+is [0.3] that [0.2] the [0.6] temperature [0.6] at this point [0.9] should be 
+[0.5] four [0.2] degrees [0.8] 
+sm0851: so we've got one work that out [0.3] 
+nf0831: so [0.8] 
+sm0852: that's too high [0.4] 
+nf0831: that's [1.6] the first [0.2] calculation to do is to find the thickness 
+[0.3] of [0.2] that bit [1.3] the ice is in here [0.8] and again first 
+approximation we'll assume that it stays exactly at zero degrees as it melts [0.
+5] which if you look at real melting ice is [0.2] almost true [0.3] so we've 
+got ice in here that we hope keeps this system cold [0.3] throughout the 
+working day [2.0] we've got sixty millimetres of insulation round all the other 
+[0.2] surfaces [0.4] of the ice [6.4] and [0.3] we'd established that to [0.5] 
+put the produce in [0.4] we need probably a height of about three-hundred 
+millimetres [0.5] here [9.2] okay like all real problems you look at that and 
+you say that's far too difficult to do i can't do that [0.4] er and er [0.2] so 
+[0.3] y-, you have to look at it and decide what you think are going to be the 
+[0.5] key [0.3] er [0.2] factors that determine the rate of 
+heat transfer [0.3] so that you can do your first calculation [0.5] 'cause your 
+first calculation says that you're going to need ten tons of ice [0.3] to 
+achieve this [0.3] then you know it's not going to work [0.2] whatever you do 
+[0.3] in your calculations [0.2] and so you go away and think about something 
+else [0.3] if your first calculation says yes this looks quite a good idea [0.
+4] then you think about doing the calculation better [0.4] to understand the 
+physical system [0.3] better [1.3] so [0.5] can you suggest any bit of this 
+that we can ignore 'cause in principle we've got heat transfer here we've got 
+some complicated heat transfer [0.4] through these sides [0.3] got heat 
+transfer from the ice across the [0.5] probably thin layer of insulation here 
+[0.3] heat transfer from the ice [0.5] across to the air round here [0.7] and 
+also [0.2] this is probably sitting on the [1.1] nice plush carpet in the [0.5] 
+soft [0.2] furnishings part of the [0.2] store [0.3] so we've got some heat 
+transfer by conduction [0.4] down [0.2] to the [0.3] ground or sorry conduction 
+actually [0.2] in positive heat transfer 
+the heat is all coming in to the ice which is gradually [0.2] melting 
+sm0852: can you not ignore that if it's on wheels [0.2] 
+nf0831: sorry [0.2] 
+sm0852: can you not ignore that if it's on wheels [0.5] 
+nf0831: that's a good point so if we if we put it on wheels [0.4] in fact it 
+makes sligh-, a calculation slightly more [0.2] more you're you're er you're 
+putting in an extra calculation so we'll put it on wheels [2.9] [0.6] 
+sm0853: [0.4] 
+nf0831: ah but do you need the sort of wheels that you're going to be able to 
+sort of sit it down 
+sm0853: no 
+nf0831: so that people don't your customers don't start pushing it around so [0.
+3] [laughter] perhaps you need some sort of retractable castors that [0.7] will 
+sit in here so that your customers don't wheel the strawberries out of the 
+store with their [0.3] [laughter] trollies [1.4] so we'll we'll put it back on 
+the carpet i think [1.2] that makes it easier 'cause if you've got a thick 
+layer of insulation [0.4] and a thick layer of carpet [0.3] and some flooring 
+here [0.4] my first sort of approximation was going to say let's forget about 
+conduction to the floor [0.3] to begin with [0.3] because [0.3] probably [0.4] 
+the [0.2] transfer [0.3] from the surface is going to be much more rapid than 
+the [0.2] transfer 
+through sort of whatever is down here [0.3] and that could be the next stage 
+that you go back and say well was that important [0.3] or [0.3] not [0.5] so my 
+sort of first approach on this would a-, actually be to [0.3] er quickly get 
+the trolley off its wheels [0.2] sitting on a a nice thick carpet and say [0.3] 
+er er sort of our first approximations [4.9] is to ignore the base [5.6] 
+anything else you think is going to be too difficult to worry about to begin 
+with and probably isn't going to be [0.3] er very important [5.0] 
+sm0854: the sides above our ice [0.4] 
+nf0831: yes i thought those will have tho-, those started to look very er [0.3] 
+difficult because there's going to be a sort of a temperature gradient up here 
+and we're not quite sure [0.4] er at all what's going to be in there [0.4] so i 
+think another very good approximation is to forget about these sides as a first 
+approximation you might want to come back [0.3] and do it later [0.9] so if we 
+now ignore the sides above [0.2] the level [0.3] of the insulation [9.3] er [0.
+2] i need a word to describe this if w-, if we [0.4] call this the [0.3] a 
+shelf [0.3] if you like [7.1] then in 
+fact you end up with [0.3] a much simpler problem [0.5] to deal with [0.7] 
+you've now got something that looks like this [2.9] this is the shelf with the 
+thickness that [0.2] keeps the [0.3] produce so it doesn't get too cold [10.4] 
+and this in cross-section [0.3] is a cross-section through a much shorter [0.5] 
+cylinder [2.5] and this is the ice [1.8] at [0.4] zero degrees [0.6] celsius 
+here [0.9] so you've made the problem [0.6] something [0.3] that you've only 
+now got [0.2] two different surfaces to worry about [0.5] there's the shelf [5.
+6] and then there's the cylindrical [0.5] sides the short length of them [10.1] 
+so that looks like the sort of thing that you've got the [0.2] er tools to [0.
+4] work with [0.6] er and in fact the shelf bit is very much like the problem 
+[0.3] that we've looked just looked at [0.5] so just getting down the basic [0.
+2] information that you've got on this shelf [0.5] you know it's six-hundred 
+millimetres [0.3] in external diameter and a wall thickness of sixty [0.6] so 
+that makes it [0.2] er four-hundred-and- [0.2] eighty thank you [0.6] 
+millimetres [0.7] diameter here [5.0] we don't know the thickness [0.4] that's 
+the [0.6] next thing to [1.0] 
+calculate so that's the first bit of the calculation [0.2] that we need to do 
+next week [2.4] because we don't know the thickness there we don't know [0.2] 
+the length down here [0.7] although you would [0.6] expect that that thickness 
+is going to be quite small so we're going to be looking probably at something 
+like seven-hundred [0.4] er sorry [0.4] seven-hundred millimetres less the [0.
+4] because of the insulation there it's not going to be [0.3] very large so 
+we've got a sort of feel for [0.3] what that height will be [1.2] and so what 
+we'll do in the next lecture [0.8] is to think about how we can describe 
+convection and radiation from the surface 
+here [0.6] er [0.3] initially thinking about this just as being a sort of a 
+bare plate which is the worst case [0.6] er [0.2] and then look at the [0.2] 
+convection and radiation [0.3] and conduction through [0.2] the [0.2] sides [0.
+5] i'll then finish off next week with the final calculation [0.3] on [0.2] the 
+er er a sort of a a complicated system of a double glazed window [1.1] okay [0.
+7] Friday is test day [0.4] please don't forget that [0.8] er [0.2] so come 
+with writing implements [0.3] er pen not red pen please [0.3] er [0.2] diagrams 
+in pencil but writing in pen [0.5] and also your university approved calculator 
+[0.6] okay thank you

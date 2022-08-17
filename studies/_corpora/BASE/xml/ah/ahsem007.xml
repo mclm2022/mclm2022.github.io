@@ -1,0 +1,913 @@
+<?xml version="1.0"?><!DOCTYPE TEI.2 SYSTEM "base.dtd">
+<TEI.2><teiHeader>	
+<fileDesc>
+<titleStmt>
+<title>Institutional Critique</title></titleStmt>
+<publicationStmt><distributor>BASE and Oxford Text Archive</distributor>
+<idno>ahsem007</idno>	
+<availability><p>The British Academic Spoken English (BASE) corpus was developed at the
+Universities of Warwick and Reading, under the directorship of Hilary Nesi
+(Centre for English Language Teacher Education, Warwick) and Paul Thompson
+(Department of Applied Linguistics, Reading), with funding from BALEAP,
+EURALEX, the British Academy and the Arts and Humanities Research Board. The
+original recordings are held at the Universities of Warwick and Reading, and
+at the Oxford Text Archive and may be consulted by bona fide researchers
+upon written application to any of the holding bodies.
+The BASE corpus is freely available to researchers who agree to the
+following conditions:</p>
+<p>1. The recordings and transcriptions should not be modified in any
+way</p>
+<p>2. The recordings and transcriptions should be used for research purposes
+only; they should not be reproduced in teaching materials</p>
+<p>3. The recordings and transcriptions should not be reproduced in full for
+a wider audience/readership, although researchers are free to quote short
+passages of text (up to 200 running words from any given speech event)</p>
+<p>4. The corpus developers should be informed of all presentations or
+publications arising from analysis of the corpus</p><p>
+Researchers should acknowledge their use of the corpus using the following
+form of words:
+The recordings and transcriptions used in this study come from the British
+Academic Spoken English (BASE) corpus, which was developed at the
+Universities of Warwick and Reading under the directorship of Hilary Nesi
+(Warwick) and Paul Thompson (Reading). Corpus development was assisted by
+funding from the Universities of Warwick and Reading, BALEAP, EURALEX, the
+British Academy and the Arts and Humanities Research Board. </p></availability>
+</publicationStmt>
+<sourceDesc>
+<recordingStmt>
+<recording dur="01:33:38" n="27943">
+<date>15/03/2001</date>
+<equipment><p>video</p></equipment>
+<respStmt><name>BASE team</name>
+</respStmt></recording></recordingStmt></sourceDesc></fileDesc>
+<profileDesc>
+<langUsage><language id="en">English</language>
+</langUsage>
+<particDesc>
+<person id="nf5151" role="participant" n="n" sex="f"><p>nf5151, participant, non-student, female</p></person>
+<person id="sf5152" role="participant" n="s" sex="f"><p>sf5152, participant, student, female</p></person>
+<person id="sm5153" role="participant" n="s" sex="m"><p>sm5153, participant, student, male</p></person>
+<person id="sf5154" role="participant" n="s" sex="f"><p>sf5154, participant, student, female</p></person>
+<person id="sf5155" role="participant" n="s" sex="f"><p>sf5155, participant, student, female</p></person>
+<person id="sf5156" role="participant" n="s" sex="f"><p>sf5156, participant, student, female</p></person>
+<person id="sf5157" role="participant" n="s" sex="f"><p>sf5157, participant, student, female</p></person>
+<person id="sf5158" role="participant" n="s" sex="f"><p>sf5158, participant, student, female</p></person>
+<person id="sf5159" role="participant" n="s" sex="f"><p>sf5159, participant, student, female</p></person>
+<person id="sf5160" role="participant" n="s" sex="f"><p>sf5160, participant, student, female</p></person>
+<person id="su5161" role="participant" n="s" sex="u"><p>sf5161, participant, student, unknown sex</p></person>
+<person id="of5162" role="observer" n="o" sex="f"><p>of5162, observer, observer, female</p></person>
+<personGrp id="ss" role="audience" size="m"><p>ss, audience, medium group</p></personGrp>
+<personGrp id="sl" role="all" size="m"><p>sl, all, medium group</p></personGrp>
+<personGrp role="speakers" size="11"><p>number of speakers: 11</p></personGrp>
+</particDesc>
+<textClass>
+<keywords>
+<list>
+<item n="speechevent">Seminar</item>
+<item n="acaddept">History of Art</item>
+<item n="acaddiv">ah</item>
+<item n="partlevel">UG</item>
+<item n="module">unknown</item>
+</list></keywords>
+</textClass> 
+</profileDesc></teiHeader><text><body>
+<u who="sf5152">Camden Arts Centre # went to it it's a great space it's sort of like the Mead sort of l-shaped with another room attached to it and #</u>
+<u who="nf5151">oh so it's # not # the sort of seventies White Cube #</u>
+<u who="sf5152">no</u>
+<u who="nf5151">you you do have the nineteenth-century feel to some extent still</u>
+<u who="sf5152">well you do but it is qui # it's sort of the White Cube yes exactly definitely</u>
+<u who="nf5151">although the blanks actually # been made the White Cube but we still feel the proportions of the rooms we feel that somehow don't you </u>
+<u who="sf5152">no it's true no you do but it is a nice <trunc>spa</trunc> i do like the space and i hate pronouncing his Name it's Lee Hue and Chia don't know how you pronounce it # but anyway beautiful work just frozen what beautifully created there was one really good bit at the end that showed # photographs # and it had three slide projection things working on three different sides of the wall and one reflected onto the floor one reflected onto the <trunc>ce</trunc> ceiling one reflected onto the # it was just really really powerful so it meant that you had to walk around to # and you couldn't look at everything at once and # they kept on switching at different times and it was the sound of the ticking of the actual slide thing that was really powerful that was probably my favourite room then we went into the last room which had these big metal circles hanging from the ceiling and on these big metal discs this is one of them you can't really tell cause # they're they're mostly red white gold really weird colours # they had these metal little circles which you could actually move around and it was so great cause this work was nineteen-sixty so it was what forty years old and you're allowed to still touch it and move the shapes around and it was all this interactive art which i think it's brilliant i don't think it can ever go wrong</u>
+<u who="nf5151">where did he live in the sixties when he made that</u>
+<u who="sf5152"># i don't know where he actually lived in that when that one was made</u>
+<u who="nf5151">right</u>
+<u who="sf5152">but # that was great i really enjoyed that then i went to the give and take exhibition at the # i went to not the Serpentine the V and A so now i've done both and i thought the V and A one was far better than the Serpentine one i really really enjoyed # </u>
+<u who="nf5151">oh really i completely i i disagree</u>
+<u who="su5161">i didn't think it was</u>
+<u who="sf5152">do you disagree </u>
+<u who="nf5151">yeah i really didn't think the V and A interventions worked at all i think they were shallow gimmicks but i why did you think that i think i've said that before anyway</u>
+<u who="sf5152">because # okay # well i think that because it was a sense that you were discovering something you didn't well in the Serpentine you were in a very small space well not a very small space but quite a small space and # you kind of knew exactly what was contemporary and what wasn't whereas in the V and A you were searching through and these you follow these bright red marker lines throughout the gallery and # it will take you wherever they wanted you to go they took you once to this empty cabinet where the work had been taken to the Serpentine so it made this empty cabinet into a piece of art which was brilliant it was really <trunc>re</trunc> # i think it was quite clever and then it took you to a like a sort of building site # and you didn't know whether that was art or not because it was just kind of like bound off like there was a hole in the floor or something and you didn't quite know what was going on and it was quite fun and also there were lots more <trunc>peo</trunc> there was a real mix of people there and there were kids there and it was interesting the kids knew exactly what art was contemporary you know you just watched them all just run up to the contemporary art they didn't even need to follow the line just showing that art is of its time and of its culture which i thought was pretty good but i mean i did like the Serpentine one as well i just did think that this was more of a discovery</u>
+<u who="nf5151">did # you saw it </u>
+<u who="sm5153">yeah i saw it at the Serpentine but i thought some of the juxtapositions were quite crass and # </u>
+<u who="nf5151">in the in the V and A </u>
+<u who="sm5153">in the in the Serpentine </u>
+<u who="nf5151">in the Serpentine oh right mm</u>
+<u who="sm5153">i mean i liked it # </u>
+<u who="nf5151">interrupting such as </u>
+<u who="sm5153">uh # the room which was kind of dealing with figures where you have all the human* figure in some of the display cases like # they had dolls and the dolls had been placed so # they were like a Barbie doll had it's like it's hand up another doll's skirt or something like a Ken doll and stuff and it's just like you know what point is he trying to make it was just a bit # </u>
+<u who="nf5151">mm </u>
+<u who="sm5153">and and there were like a few # # </u>
+<u who="nf5151">i think he has # doesn't he have i mean you really start to think about # </u>
+<u who="sm5153">some of the things i think worked really well like the colonial colonial room</u>
+<u who="nf5151">mm mm </u>
+<u who="sm5153">and and when you <trunc>fir</trunc> when you first walk in and you # </u>
+<u who="nf5151">so he has the he has the colonial he has the spiritual of this juxtaposition religion the role of religion and then he has the role of desire i suppose in in the other room and then he has the photo yeah walls</u>
+<u who="sm5153"># i found # the ones that dealt with race i found those quite interesting because i think they're the kind of # </u>
+<u who="nf5151">it's fundamental to the V and A</u>
+<u who="sm5153">you know with the V and A when you've got the colonial past and you have the kind of big picture of Queen Victoria and then in front of it you've got # a sculpture by a kind of post colonial sculptor of a a little child pooing in the gallery basically in front of this grand # and then and then the works around it where they had # # images dealing with and it and there were some advertising posters like black trying to sort of <trunc>per</trunc> <trunc>per</trunc> persuade people of African descent to join the army in Britain and they'd taken the <trunc>ku</trunc> # Kitchener poster of the army wants you and placed kind of things like that i thought those worked quite well together but some of it just didn't seem to work</u>
+<u who="nf5151">but didn't you think that sort of it's very subtly done i mean yes sometimes it's crass but also subtly done that you know these themes are not given you know they're not clearly signposted you wonder why this juxtaposition and you start thinking about why are we collecting these things why are they deposited in a national museum you know what motivates that and i suppose he he has all three answers to what motivates that comparative religion desire you know # the the the you know issues of race and this demarcation cultural demarcations i don't know but # have a look</u>
+<u who="sf5152">no it's true and i think what was also great # </u>
+<u who="nf5151">but what i didn't like in the # the the V and A was you know if you if you like you quite like that intervention as in itself but if you think about what the artists have done their intervention in themself you've you've said very little about that but i felt that was that stayed at the level of you know sort of joke</u>
+<u who="sf5152">yeah sure yeah okay. i was interested because i just read an article yeah on the Mark Quinn exhibition which was well i'll show you mm it was this one which was in <trunc>to</trunc> i don't know how many sculptures it was # of disabled bodies mixed with these ideal</u>
+<u who="nf5151">neo-classical</u>
+<u who="sf5152">neo-classical casts and mm you know when you walk through there it its really powerful you know you really do well i thought i thought it was quite powerful and its even more powerful when you actually read this article and it tells you why he actually did it and i kind of worked out why he did it it was obvious why he did it he's trying to say these people deserve the same kind sort of hierarchy that the you know the these sort fo ideal forms have because there's no difference they're all bodies they're just bodies </u>
+<u who="su5161">isn't isn't he also like playing with the fact that when you have a classical statue and its missing an arm you take it for the whole body</u>
+<u who="sf5152">yeah exactly its all well its the fact that you take it  that you still take it as am ideal form but that you take it as an idal form its exactly the same</u>
+<u who="su5161">yeah</u>
+<u who="sf5152">and they introduce five of the actual people who did it and why they did it and # it was really its a brilliant article that i think that if any of you want to read it you can read it and it really makes you appreciate <trunc>yourse</trunc> you know who you are and how fragile we are as people and why we actually to make ourselves on equal level to everyone well i <trunc>thou</trunc> i thought that was pretty good pretty clever so i liked that</u>
+<u who="nf5151">yeah but what i said before was that i don't like was the the ideal which is well # which those sculptures that were referred to were in any sense relevant today its a new classical era that is redundant and it doesn't rule so why do that why do that insertion at that point</u>
+<u who="sf5152">because i think they're trying to as i say we're giving them we're putting them on the same level there's no such thing as ideal you know</u>
+<u who="nf5151">yeah but shouldn't he investigate the you know the kind of fragmented bodies issue with regard to contemporary ideals of beauty rather than </u>
+<u who="sf5152">definitely no no i think that would be brilliant i think that would be really really good i agree but this is just</u>
+<u who="nf5151">the classical i'm not talking about now but how well thats part of what he does anyway with these sculptures i mean he refers to a new classical ideal which i think you know has been abundant in the nineteenth century</u>
+<u who="sf5152">no its true but just for that exhibition it worked</u>
+<u who="nf5151">but you know those kind of there were a lot of those you rather interacting but not very relevant or caring gestures</u>
+<u who="sf5152">right true</u>
+<u who="nf5151">which work well on that striking level but mm not more </u>
+<u who="sf5152">definitely there was one that was quite fun which was i was gonna show you it was a room about this size just made out of sequins which was pretty # </u>
+<u who="nf5151">made out of what </u>
+<u who="sf5152">made out of sequins </u>
+<u who="su5161">Hait looks really bizarre</u>
+<u who="sf5152">yeah i know it does look really bizarre but it's a full size room which was pretty amazing # # # </u>
+<u who="nf5151">that's the issue about craft craft in it</u>
+<u who="sf5152">exactly</u>
+<u who="nf5151">you know craft and women you come across that and because <trunc>th</trunc> the V and A is a craft museum just as much # there's that old feminist idea the seventies idea that you know that women # they are no great women artists because we are not appreciating their craft as sufficiently great art </u>
+<u who="sf5152">but i do think it's a good one to see give and take but both i think you need to see it both places to be able to make up your mind and as well it's a one exhibition isn't it really isn't it so it's just divided then i went to see Spirit of an Age # which was taken # </u>
+<u who="nf5151">all in one day Portia laughter </u>
+<u who="sf5152">no no this wasn't all in one day no no ha ha not all in one day # which was good and what they've done is they've taken the Berlin national gallery which is actually being renovated at the moment i believe and they've brought the works over to try and make well just really to put on an exhibition but to also make certain people like Menzel # more well known you know these artists that aren't which is pretty good # anyway very sort of traditional display was very effective but it wasn't # it didn't have the sort of buzz that contemporary art has but that was only my <trunc>opin</trunc> i think if you studied this work i think you would love it and there were some great Fredericks who i do love # and # # i just got some postcards so this one which i thought was pretty good muttered voices from group </u>
+<u who="sm5153">can we have the lights on Charlotte </u>
+<u who="nf5151">mm mm yeah sure suit yourself </u>
+<u who="sm5153">Louis Louis Coran is he he was said to influence quite a lot of Nazi art </u>
+<u who="sf5152">that's at the national yeah brand new show # he was a sort of # </u>
+<u who="sf5154">that's at the national gallery isn't it </u>
+<u who="nf5151">no i don't think so no i mean he was certainly i mean also one of the artists who they disliked as a i mean a degenerate </u>
+<u who="sm5153">ah i see okay right </u>
+<u who="sf5156">isn't it called Samson yeah </u>
+<u who="sf5152">yeah Samson blinded he saw himself in it </u>
+<u who="nf5151">it's a because it isn't i mean it's the kind of # it's what what impressionism became in Germany i mean you can see the fragment you know the sort of light # but it's it's quite expressive already i mean this is an Ein Culande actually </u>
+<u who="sf5155">nine that's Malaski or is it Malaski no but i've # </u>
+<u who="sf5152">yeah yep have you been in it oh you were in the Tate weren't you </u>
+<u who="sf5152"># anyway this is Menzel which i thought was a great work i mean their works were very different this was Studio One i thought it was so great cause if you think this is okay what date is this actual one well he was eighteen fifteen to nineteen oh five it doesn't have an actual date of when this was done but it was just # it's so abstract i think it's brilliant </u>
+<u who="nf5151">oh Menzel is an amazing artist </u>
+<u who="sf5152">he's great </u>
+<u who="nf5151">because he donates its obversive aura why is he focusing on the angles he does very odd</u>
+<u who="su5161">he's a freak</u>
+<u who="sf5152">i thought it was fantastic and then # these are three of his # </u>
+<u who="su5161">ah i love that one </u>
+<u who="sf5152">so they don't look very that looks really not very good there but # # </u>
+<u who="nf5151">you are very romantic huh laughter from group </u>
+<u who="sf5152">yeah romantics are great </u>
+<u who="nf5151">so this is # i mean look at that stuff and then you know because everybody always talks about Nan Goldin as # you know documentary i i think of German romanticism or its you know nineteenth -century sort of symbolism and then look at that at those pictures which he has which are you know what a <gap reason="inaudible" extent="1 sec"/> kind of image ha ha </u>
+<u who="sf5152">yeah that's true completely </u>
+<u who="nf5151">oh and this landscape where is this landscape think this is better not found ha ha that's a very sort of turn of the century symbolist kind of you know getting two dimensional very flat romantic landscape </u>
+<u who="sf5152">anyway it was a good show and they were showing their best art they also did have they had Paris based as well to show how they influenced them and # so it is good it's not really my cup of tea # it's not really my thing </u>
+<u who="nf5151">laughs</u>
+<u who="sf5152">but # but i do # but my favourite exhibition which you all have to go to # was at the Hayward gallery and # i thought it was fantastic it's this one # it's the i don't know how you pronounce his name is it Bressier i'm not sure but anyway i actually did a drawing for you but i've left it at home which was of how the paintings were arranged and you walk into the first room and you have this unbelievable red just that's projected out and it's just it's just this red screen that's absolutely huge it's like a red wall and the rest of the room is white and then what he's done is he's taken graffiti # oh sorry he's a photographer in Paris he wanted to show what life is really really about it was actually called No Ordinary Eyes which is a beautiful title for his sort of thing also Goya was there but he was upstairs so i'll tell you about him in a minute laughter from group but anyway you walk in and # i'll i'll show you some of his graffiti pictures # which don't look that powerful here i mean they are still incredibly powerful # but he divided them into three sections it was like love hate and no memories or something and there were # there are some more of them # oops here we go they were placed on the wall and so you imagine three grids you know two on one side but all different sized frames and all sort of jerking around so quite it created quite awkward shapes which they actually would have done on a wall so whoever curated this was just # it was first rate i mean it literally was it was amazing you were uplifted by it</u>
+<u who="nf5151">were they in the Parlour of Life exhibition</u>
+<u who="sf5152">i don't # </u>
+<u who="nf5151">when are the dates of these pictures you just showed</u>
+<u who="sf5152"># graffiti was # i'd better check cause i don't wanna get it wrong let me see let's have a look # right nineteen <trunc>eight</trunc> nineteen thirty-three to fifty-six they're quite they expand in like thirty years yeah a long long time # and there was like a beautiful thing written on the wall which i think we have here # i'm not gonna read it now but # just to do with why they've actually put Goya and Bressier together even though they were a hundred and fifty years apart in life # all his work was fantastic and when you look at like Mapplethorpe and i i really i love Mapplethorpe but you see this person as a photographer and he is just so amazing and you can see that Mapplethorpe is clearly being influenced by him by his use of form i mean # you can't really appreciate it i really think that everyone should go to the exhibition but i was just his i just love it i just think his his images are just amazing of the body and you also had the sculptures and it was just it was beautifully done so that's a must see then you go upstairs to Goya # and its interesting they completely change the atmosphere just by the colour scheme cos we're going from complete whiteness and sort of redness to a kind of green a lime green and they have these sort of panels that are about that thick they have quite a few of them in the room upstairs and inside the panels they've inserted the # the pictures and what's very clever is what they've done they've obviously got these pictures from different collectors from museums they all have different frames on them and people probably don't want their frames ruined because they're already you know they don't want their works damaged so instead of having to show the frames and having a messy composition they've stuck them in to the panels so that you can't see the frames so they're all framed by this lime green panel which is a really good idea # i thought # and you kind of # </u>
+<u who="nf5151">just to # what are they Goya's prints of the disasters isn't it or # </u>
+<u who="sf5152">yeah it's like a mixture you have drawings and # </u>
+<u who="nf5151">of the disasters or # </u>
+<u who="sf5152">i didn't actually spend very long in the Goya to be honest with you have a look # and then you walk walk through it and it was just it was pretty good but i did prefer the Bressier i really loved Bressier </u>
+<u who="nf5151">Portia </u>
+<u who="sf5152">i know sorry should i love the Goya </u>
+<u who="nf5151">yes laughter from group </u>
+<u who="sf5156">my friend she went to see exactly the same exhibition and i was talking to her yesterday and she was like enthusing about that bit </u>
+<u who="sf5152">oh it's amazing</u>
+<u who="sf5156">she loved it</u>
+<u who="sf5152">yeah i i # fashion i know loads of people who do fashion have gone to see it and it's yeah it's brilliant for everyone okay the Goya is brilliant as well the Goya is great laughter from group and the creating of the Goya is very interesting cause what they've done they've also put works sort of on tables not really flat tables but sort of tables like that so it's like they place works how the artist sort of actually painted them and that's quite <trunc>ni</trunc> you know putting them on different levels so you don't just see them on the walls around you as well i mean you see both so all in all that's a must see the Hayward and i think give and take also Camden's just fun and # the national if you like if you like #</u>
+<u who="nf5151"><gap reason="inaudible" extent="1 sec"/> actually before we now start we have to start # perhaps you know she gave you some ideas well not # or for people in the give and take and contemporary artists for next term have you had a thought about it who you want to do okay fine</u>
+<u who="sf5152">i'd like to do Mark Quinn if that's alright </u>
+<u who="nf5151">you want to do Mark Quinn okay</u>
+<u who="su5161">have you got them written down yeah yeah # yup</u>
+<u who="nf5151">anybody else =eh hum </u>
+<u who="sm5153">work on Cherry Nashdon work on can i either do her but could i bring possibly Merla Hatu yes in relationship to each other </u>
+<u who="nf5151">do them together that's actually lovely wonderful </u>
+<u who="sm5153">i think that would be really interesting </u>
+<u who="nf5151">yep mm mm </u>
+<u who="sf5157">can i do Nan Goldin please </u>
+<u who="nf5151"># yeah okay the problem is we have we don't have slides i don't think we have enough for Mark Quinn have a look before you go to # </u>
+<u who="sf5152">i could bring in loads if i can get any images </u>
+<u who="nf5151">okay everybody i mean Cherry Nashdon don't think i have done have asked them to before you leave into the vacation before you leave can you go and ask # Maureen to get slides made for whatever you choose yah # Nan Goldin i'll leave that with you the you know the thanks giving series is probably where we need the slides there is that okay and you ask for the slides to be made i think you are entitled to do that students normally don't do it but why not try Merla Hatu we have enough <gap reason="inaudible" extent="1 sec"/> </u>
+<u who="sm5153">right right </u>
+<u who="nf5151"># so it's Mark Quinn # Cherry Nashdon that's everybody there # Nan Goldin anybody else</u>
+<u who="sf5159">mm # i don't know if i should do Jamie Walts or Tracey Emin i dunno # </u>
+<u who="nf5151">who do you want to hear about </u>
+<u who="sf5158">what was the first one </u>
+<u who="nf5151"># Jamie Walts</u>
+<u who="sm5153">it might be more interesting to do someone we're less familiar with than Tracey Emin who gets so much media coverage anyway </u>
+<u who="sf5159">yeah but you have to have some books you know </u>
+<u who="sm5153">yeah that's true </u>
+<u who="sf5152">there isn't there aren't any books for Nan Goldin in the library by the way </u>
+<u who="nf5151">no no but you know you can start with there's a tiny bit in here but you know you can there # there was an interview with Simon Taylor Woods in one of the Tate magazines i think you know it's enough to go by and we can think about it </u>
+<u who="sm5153">there's a lot for all these on the internet though you just have to make type in the word and all the articles come up so # </u>
+<u who="nf5151">you just have to use it # i don't think that i mean it's ephemeral and there isn't any sustained i think there's enough i mean as i tried to hint at you know # people talk about it as documentary and autobiographic and i think they miss out the constructiveness of it and you know and there's much more to be thought i mean in fact all of these images could be thought about i mean now i have the uncensored version of this it's obviously cause there's a censorship this week ha ha they have to blank out this image</u>
+<u who="sf5155">do they </u>
+<u who="sf5157">really </u>
+<u who="nf5151">oh you don't know about that</u>
+<u who="sf5152">yeah i know about that but i didn't know they had to do that part # </u>
+<u who="nf5151">so they have they have to # various images and i think one of the Nan Goldin ones perhaps i don't know which one it is but # and # so you better not film it # them and the catalogue the the publishers of the catalogue have been approached to withdraw it and blank out these images this # </u>
+<u who="sf5152">are they allowed are they really allowed to do it </u>
+<u who="nf5151">well i i don't think it will actually really happen because you know the the guardian and the observer splash these images you know as soon as they've heard about it so its a more preempts the case i would have thought anyway # you know i i think there's a lot to be discussed perhaps we have some time either i dunno today or # because i i really do think there's a there's a i mean at the moment she says # they're just documentary but they are not i mean look how you know they aren't # </u>
+<u who="sf5154">have you got all the articles here </u>
+<u who="nf5151">you know they are they're something up # # they're certainly not pornographic you know what else are they # what's the difference between that and Billingham and Nan Goldin you know the whole issue there about what is what where we left off last week about where is identity where is auth authenticity of experience is it in the constructiveness is it in # you know where else i mean this is all about that you know constructiveness and finding gaps for authentic experience in that constructiveness and and they play all sorts of variants on this so i think there's a there there's base for discussion there but do you want to # do <trunc>sha</trunc> shall i # who who do you prefer to to talk about </u>
+<u who="sf5159">well # # # # i dunno # # # Tracey Emin </u>
+<u who="nf5151">Tracey Emin okay if <trunc>nobo</trunc> nobody else wants to do Anyi mean we've it's sort of enough having six artists for two sessions i suppose we have enough time if nobody else want s to do anybody urgently or has any idea okay then we'll leave it with those six artists and see perhaps Rachel has some ideas and wants to talk about some things it gives it leaves allows a large enough gap and more and deeper exploration and we certainly have very different positions here so that makes it quite interesting # bring it back </u>
+<u who="sf5157">yeah</u>
+<u who="nf5151">okay # let's get started with the session and the institutional critique my suggestion is that we first for a brief moment go round the room perhaps i mean and and think <trunc>wh</trunc> what is the institution critique try and gather some ideas about that together and then # and then # get some names to them who was involved what were they doing get them you know just collect a bit of that just what you've been reading about and then after that go to the artists to Michael Asher and Kristo and then start and see and start preparing them at a more in-depth level is that okay if we start just going around briefly thinking about # i mean think # who is involved i think is the easiest one to just come up with and then after that try and get together what is it about what were they doing what were they what were they criticising what was their main critique and perhaps see do we think they had a point you know or were they exaggerating aspects which weren't really there which were a figment of their imagination yeah do you want time to do this or can we just do it like that do you have it at your disposal okay who who was involved what were they doing and who would be the names you would associate with of late sixties </u>
+<u who="sm5153">Gordan-Matter-Clarke </u>
+<u who="nf5151">mm</u>
+<u who="sm5153"># Richard Serra </u>
+<u who="sf5157">Asher </u>
+<u who="sm5153">yeah </u>
+<u who="sf5157">and John Coals </u>
+<u who="nf5151">okay so those definitely </u>
+<u who="sm5153">John Coals yeah </u>
+<u who="nf5151">anybody else because i do think there's a number i mean almost more articulate than those you've just named </u>
+<u who="sm5153"># # you could use Klein or Klanz # no </u>
+<u who="su5161">Klein # yeah # </u>
+<u who="nf5151">did you get hold of this one did you get hold of Ben did anybody get hold of Benjamin Booklaw </u>
+<u who="su5161">no no </u>
+<u who="nf5151">aah well then you can fish endlessly for that because he has the best kind of survey of that i think because i mean the people i think about is Hans Harkel you know <trunc>Ma</trunc> Manzel Guortas that's very political artist # we haven't been able to really read about them a bit in Rosalind's class why didn't you get hold of that </u>
+<u who="sf5152">couldn't </u>
+<u who="su5161">i couldn't find it </u>
+<u who="sm5153">it didn't seem to be there </u>
+<u who="nf5151">but it is in the library isn't it on the <trunc>co</trunc> does it not come up on the computer </u>
+<u who="su5161">don't think so </u>
+<u who="nf5151">October the seventh decade </u>
+<u who="su5161">it was out </u>
+<u who="su5161">it was out </u>
+<u who="sm5153">it was out but a lot a lot of books seem to be out for like two months or something </u>
+<u who="sf5158">like the whole # </u>
+<u who="sm5153">sometimes some books are just gone for long periods of time </u>
+<u who="sf5155">so there may not be some from art history </u>
+<u who="sm5153">yeah </u>
+<u who="sf5155">psychology </u>
+<u who="nf5151">okay well shame well try and just for your own interest look at it when you're i mean recall it and then try and share the # and i haven't put a copy of it have i </u>
+<u who="sm5153">no </u>
+<u who="nf5151">i could photocopy it and put it in the box anyway so the ones you have read about what do you think they're about what about Daniel Brawhole have you come across him in Rosalind?s class </u>
+<u who="sm5153">yeah i mean yeah i mean they had some of his work at the conceptual art exhibition i went to at Norwich  i realised i didn't realise at the time and when i was reading about him about the green stripes idea i realised that the facade of the the gallery was actually covered in stripes until i realised that that was actually a Brawhole trademark  i didn't realise what what they were doing # i read about him was it was it Chicago the Chicago museum where he did the stripes on the steps i can't remember i can't remember where i read about it a few weeks ago # </u>
+<u who="nf5151">he does it all the time it could be cause he does it # i mean it started in the late sixties you know with those going out of Leo Castelli and bridging you know like so many flags the the the the street  and then he has done it ever since Matter-Clarke i mean what do you <trunc>thi</trunc> # describe their work what are they doing why do you think Sarra belongs there who said Sarra </u>
+<u who="sm5153">i did </u>
+<u who="nf5151">why do you think it belongs there </u>
+<u who="sm5153"> i mean the # i think a lot of it's to do with the question of the autonomy of gallery space and i think Gordon Matter-Clarke with his extractions bringing the outside landscape in to what can be conceived as the gallery is # # works together with kind of Richard Sarra kind of taking art in to the outside world and putting it in the Federal Plaza in New York # # yeah </u>
+<u who="nf5151">but artists have always done that i mean public sculpture i mean </u>
+<u who="sm5153">it's a different kind of public sculpture i think it's it's it's not it's not representative it's not it's not <trunc>perf</trunc> it's not functioning to glorify an individual or political # </u>
+<u who="su5161">it's almost more confrontational </u>
+<u who="sm5153">yeah </u>
+<u who="sf5157">yeah it dramatically effects the space whereas if you've got a sculpture that's just sitting in the middle you can kind of just pass it by whereas # </u>
+<u who="sm5153">and it's # yeah it's all very site specific </u>
+<u who="sf5152">but it also effects the self it's all to do with the self isn't it and the mind they're both obsessed with creating a sort of # a consciousness or unconsciousness </u>
+<u who="sf5160">they say that sculptures in public space don't do anything for that space around it or monuments public monuments which act as you know they're they're commissioned artists so either they're different then or different because </u>
+<u who="sm5153">well a <trunc>sta</trunc> a statue of a figure doesn't necessarily change the way you view the space it's it's often a monumental # figure that that's suited to a ceremonial space that doesn't necessarily change the <trunc>nat</trunc> the nature of a ceremonial space</u>
+<u who="sf5157">and often you're not really forced to look at them you just kind of wander past them and sit around them something like Sarra's arc or something # # you're forced to like kind of kind of confront it or it confronts you </u>
+<u who="sm5153">yeah it radically disrupts the whole nature of the square in a way that i # if you think for example of a square in Venice where you've got the <trunc>Corl</trunc> Corleone the Question statue it's it just fits in rather than # # questions yeah </u>
+<u who="nf5151">articulates # questions the space and articulates # so you think part of that # of of what you've just said # amounts to saying well the institutional critique has to do with drawing attention to the space in various forms </u>
+<u who="sm5153">yeah </u>
+<u who="nf5151">in what form for example i mean with the Serra </u>
+<u who="sm5153">with the <trunc>ser</trunc> with the # i mean with the tilted arc it's you've got this space that's between the business districts between the art districts # and office districts and he he he's placed this this barrier across what was essentially a very open space so people have to kind of</u>
+<u who="nf5151">come out of their office  instead of having a nice lunch break they're right against a steel wall thankyou very much </u>
+<u who="sm5153">but you know it # what am i trying to say </u>
+<u who="nf5151">is it intellectual is it textual is it phenomenological is it within a play room </u>
+<u who="sm5153">maybe it's <trunc>phenol</trunc> # # # phenomenological # # </u>
+<u who="nf5151">in his case in that one </u>
+<u who="sm5153">yeah </u>
+<u who="nf5151">and with Gordon Matter-Clarke what what are you thinking about what exhibitions what # </u>
+<u who="sm5153">i was thinking of # the Pier Work  where he cuts out the kind of big half moon # and with # i mean he's not actually dealing in most works with # accepted gallery spaces he's creating what turned out to be quite ephemeral art moments these gestures i think # # </u>
+<u who="nf5151">is that important to the institution critique to be iphemeral # ephemeral sorry</u>
+<u who="sm5153">well a lot of the the nature that they are so short looked was because # the police and # kind of stopped them <trunc>clo</trunc> closed them before the public got to see them but it didn't stop the actual gesture being important i didn't think </u>
+<u who="sf5152">isn't it brilliant what actually happened with that with the shooting i thought that was really fantastic i thought that was brilliant what a statement </u>
+<u who="sm5153">yeah shooting shooting windows in the gallery </u>
+<u who="nf5151">why did you why did you like that </u>
+<u who="sf5152">i liked it because # as it said this article said that he was actually he really did he made his point the fact that this building after he had done that they wanted to completely rid everything that he'd done and therefore they actually did what they were meant to do which was build it really quickly and get it sorted out really really quickly and the fact that it was all about housing conditions and in in the Brox # the Bronx they # this was # allowed you know everywhere they would shoot the holes through windows and buildings were destroyed and no one cared about them but the minute it happened to a building that was actually important it was horrendous and they wouldn't accept it and he was saying why why is there any difference here and i thought that was pretty clever and also the fact that he probably he lied and decided to call it a crack down the window so they've probably got little cracks in them laughter from group so i thought that was quite good but that's only my opinion</u>
+<gap reason="new phase of event" extent="uncertain"/>
+<u who="nf5151">anything else i mean i have now questioning of autonomy as an important thing i mean all of what you've so far talked about actually is what we've got out of the gallery leaving the gallery space behind going in to what kind of spaces and why </u>
+<u who="sm5153">i think a lot of it goes together with the kind of move into Soho in the sixties with the kind of loft and # warehouse # gallery style that you don't get with people like Saatchi in London  it's it's kind of an alternative to the accepted # institutions </u>
+<u who="nf5151">okay but they're not # they don't necessarily # i mean the works that we've talked about don't necessarily go in to # i mean that's that's where the artist eventually go # and but but # sure # i mean # </u>
+<u who="sm5153">yeah i think there's a move there i think # </u>
+<u who="nf5151">Robert Moores does this anti-form in a in a loft you know and that starts that cycle of galleries then # commercial galleries then opening lofts and # this kind of thing but # i think <trunc>pe</trunc> the the works we've talked about go in to particular # i mean what kind of areas do they seem to be situated in and what areas are chosen in contrast to # and why do they leave the gallery in the first place </u>
+<u who="sf5159">because they're too big </u>
+<u who="nf5151">huh </u>
+<u who="sf5159">because like # </u>
+<u who="nf5151">is it too big yeah # ha ha well i mean who could imagine Paul Matter-Clarke doing his stuff in a # you know splitting a gallery or something like this Asher did it later so # </u>
+<u who="sf5160">was it that the the point of # # carrying on the minimalist strain # doing kind of <gap reason="inaudible" extent="1 sec"/> which for a while were you know <gap reason="inaudible" extent="1 sec"/> their size huge and # gallery spaces tend to be more confined and # #</u>
+<u who="nf5151">no i don't think that works because since this kind of work has been recaptured for the for teh gallery space and been accommodated by i mean well look at the Tate Modern you know I mean what kind of work can be accommodated in the <gap reason="inaudible" extent="1 sec"/> halls you know the museums eventually catch up i mean i mean i think part of you know doing big gestures was was already a gesture against the museum you can't incorporate me # i'm going anywhere where i'm not being incorporated by you but then you know its proved a futile gesture i think galleries have been extremely adaptable to incorporating</u>
+<u who="sf5152">no they have # the fact that they made the gallery into an art form and they felt they wanted to make their own way as a an art form</u>
+<u who="nf5151">so who made the gallery into an art form</u>
+<u who="sf5152">well i # lots of them did # okay let's name some i've got the # </u>
+<u who="nf5151">and how</u>
+<u who="sf5152"># well some like okay let's say take the one who that Ourman's The Plan and when he took the gallery and he filled it with rubbish and you weren't allowed to enter the gallery space or anything you had to # you had to look in through the window and therefore he made the gallery as much of an art form as the rubbish inside it which was brilliant it's a great idea and also # other # okay other # </u>
+<u who="nf5151">continuing that Alizitski all those kind of # </u>
+<u who="sf5152">others others just had completely empty galleries they wouldn't even allow shadows and they wanted the people of the art gallery to turn in to the art and then another person went and blocked #</u>
+<u who="nf5151">who is that</u>
+<u who="sf5152">which one was that # i think i have to find it</u>
+<u who="sm5153">was it was it Daniel Daniel Burrow i think it was Burrow</u>
+<u who="sf5152">yeah it could have been Daniel Burrow</u>
+<u who="nf5151">no no that was # # sorry i know who who clothed the who <trunc>clo</trunc> clothed the # has anybody # Docherty here i've forgotten what is # </u>
+<u who="sm5153"># Portia has anyway he closed the gallery for for a bit of silence and the gallery's closed for the so the gallery's</u>
+<u who="sf5152">three weeks</u>
+<u who="nf5151">but is that putting is that making the gallery into an art form</u>
+<u who="sf5152">well kind of # well it's making a statement isn't it i mean it's an unbelievable statement and i think # </u>
+<u who="nf5151">of what kind what's it saying what's it doing</u>
+<u who="sf5152">it's making you as a person question what art is i think you would stand there thinking well if the gallery's closed what am i meant to be seeing and then you look around you and i think you see things becoming art that you wouldn't you wouldn't normally look at and # i don't i mean it's quite a difficult # i don't actually know why he # </u>
+<u who="sf5157">well it's questioning what the gallery is is it just a kind of shell that contains what you think should be art</u>
+<u who="sf5158">OR does it make it art</u>
+<u who="sf5152">completely that's the whole yeah</u>
+<u who="sm5153">but i think there's a way</u>
+<u who="su5161">so in the end you're #</u>
+<u who="nf5151">but where's the experience located is it in your mind is it in the object itself</u>
+<u who="su5161"> if it's in your mind #</u>
+<u who="sf5152">i think it's in your mind</u>
+<u who="sm5153">but also yeah</u>
+<u who="sf5157">yeah</u>
+<u who="sm5153">but also <trunc>als</trunc> also i think that goes very well together with the idea of the ephemeracy of Gordon Matter-Clarke's because regardless of whether you saw it or not it's a bit like the idea of whether you're in the gallery or not it's # # </u>
+<u who="nf5151">okay so # Portia says there is a wave in there and i think it starts with minimalism in a sense heightening you know Robert Moore's old beams you know heightening that experience of the container and then there's a sort of continuation going to the <trunc>radic</trunc> even to the radical denial of closing the gallery and saying this is this is the work you know that closing is the work # and from there or parallel to it at times you know is that other strand of leaving it behind entirely i still haven't and making ephemeral work which can't be collected and therefore not been # not not collected by museums not been re-incorporated i think that's part of the denial strategy but i'm not entirely clear or you haven't really made it clear to me why they gave to those spaces what did they hoped by leaving the gallery behind</u>
+<u who="sf5156">it it's looking at a different type of context on the idea of a work within a context</u>
+<u who="nf5151">okay go on</u>
+<u who="sf5156">oh # let's think # because someone like Sarra this is the one i can remember most he's building his sculpture he's commissioned to build the Tilted Arc in a square and what he was trying to do the reason he makes it so intrusive to the whole space he doesn't want to sort of integrate his work into this wonderful square into the road next to it he and it goes against the curve of the piazza so he's he's trying to make his work stand apart from the space it's in and say well just look at my my work of art as a work of art forget where it is forget the space so # </u>
+<u who="nf5151">do you agree that this is what he # </u>
+<u who="sf5157">no i think it's questioning the space</u>
+<u who="sm5153">no i don't think #</u>
+<u who="sf5157">for each different space that something's in you're gonna think of that object differently or you're gonna perceive it differently by the environment and # </u>
+<u who="sm5153">i think you can't forget the space in the Sarra works cos it's completely heightened by # </u>
+<u who="nf5151">two different interpretations here i think you had a different interpretation to that both i think are legitimate but i think # # # holds rich meaning only to the educated is there anything else you feel is important about the institutional critique the critique of museums and galleries why do <trunc>pe</trunc> people feel so compelled or artists feel so compelled i mean both in Europe and north America Japan to leave behind the the museum apart from what we've said so far</u>
+<u who="sf5156">maybe by # i think maybe by juxtaposing it in the space and it can go against the symmetry then yeah you could say he's</u>
+<u who="nf5151">nobody bought the slide</u>
+<u who="sf5156"><gap reason="inaudible" extent="1 sec"/> he's therefore drawing attention to the space so # that would go with your idea</u>
+<u who="su5161">but wasn't he didn't her think that sort of <gap reason="inaudible" extent="1 sec"/> way that he that he sculptured was # <trunc>ig</trunc> ignoring the environment that he could go that that</u>
+<u who="su5161">that he could transcend sort of the environment</u>
+<u who="sf5156">yeah in a way like # that he's that he wouldn't let his sculpture he he wouldn't let the environment define his sculpture his sculpture would define the environment </u>
+<u who="nf5151">yeah i mean i guess this is what people # it goes both ways because i mean you he's since gone on doing the same kind of you know precariously balanced steel huge heavy steel what are they called sort of sheets you know resting against each other # sort of taken as in urban environments sort of taken as responding to that <trunc>invo</trunc> ubran you know aspects of it but responding as well as you know not responding in the way that say mm Robert Moore's cubes respond by taking up the environment and repeating it or continuing it or you know making it ambiguous it # it is actually as you say a very clearly defined and distinguished form inserted but one that nonetheless i think is i think is a ground that articulates so its minimal and <trunc>articul</trunc> articulates the space in a manner that it defines which is sort of an authoritarian despot kind of argued and that comes quite clearly out of that i mean <trunc>ho</trunc> how democratic is it but # because thats part of the impulse isnt it to go out and put art in places that where its not normally viewed the expectation is that people engage with it that there's a prior meaning in those spaces established which allows access to art and you know allows gives it entry gives meaning to art that might be devoid of that in the gallery but that gallery gives it a particular # not that connection another meaning which is available to educated people while if you go in another environment there is a kind of meaning there the work <trunc>estab</trunc> the work <gap reason="inaudible" extent="1 sec"/> which is therefore acessible to those people who have access to that prior meaning of that place or inhabit it or live withi ti so thats very clearly a democratic gesture you know making art putting art into dialogue with you know non-elite a non-elite audience the assumption there is and i mean one that i think we should come back to the assumption is that the art context and the artiness is one which holds which meaning only to the educated is there anything else which you feel is important about this critique of museums and galleries why do people feel so compelled or artists feel so compelled i mean both in Europe and North America Japan to leave behind the the museum apart from what we've said so far</u>
+<u who="su5161">i don't actually think they</u>
+<u who="sf5152">i i actually read an article # which was written about a month ago and it was written on the exhibition at the Tate Modern and it was to do with New York # and cause i was reading one little section thet i think it's quite relevant to this actual question you've just asked Charlotte right # it was a period in which the act of destruction was <trunc>pa</trunc> was as vital as the act of creation when the art gallery became irrelevant to the <trunc>exhibit</trunc> exhibition oh i can't read today exhibiting of art that anyway could no longer be bought and sold for these young artists the city became both canvas and playground Gordon Matter-Clarke split whole buildings in two Robert Smithson and Mary Mis <trunc>prop</trunc> proposed to make art out of the land itself and on a scale never imagined before so i thought that was quite interesting and she goes on just to say # # # this is giving the work more sort of eminence than they felt that it ever deserved you know they wanted to give it a sort of a new angle # i mean this is the they interacted with the city in a way that the previous generation never did you have only to step in to the section of this show devoted to London in the nineties to see how relevant their work is to the art we live with today and i thought that was brilliant i thought that was very relevant cause that just shows what they were trying to sort of # </u>
+<u who="nf5151">so that takes up the point i made that by leaving the museum behind they felt they engaged with meaning which was available you know meaning which was established elsewhere in the city by the usage of the city by its inhabitants in it's very variant forms and therefore making that art also obviously communicate with these people who have access or constitute those <trunc>conte</trunc> contexts so i think that's a powerful motivation # do you think that goes hand in hand with questioning of the autonomy of the art world which you've said Simon or questioning of the autonomy of the art gallery what did you mean when you said that </u>
+<u who="sm5153">see i was thinking in terms of the idea of the kind of way white cubist kind of hermetically sealed from the outside world # where once you place an object in there it # can become art that it doesn't necessarily have to relate to the context outside # and with with relation i mean it's it's a case of placing it in a different context whereas actually placing the art in the context of the city so it kind of responds and engages with it as opposed to being in a space which basically decontextualises it but you know at the same time people enter a gallery with awareness of the outside world so it's quite i think it's quite subtle when #</u>
+<u who="nf5151">there's # do you think it's a fair # i mean this is clearly what people thought and still do often think i mean this is the whole point behind new modern contemporary art buildings trying to open out you know with windows to the city like Tate modern you know that it's this assumption that the art gallery # which is very much you know still stems from that point at time and people criticise it but the gallery # otherwise would be an autonomous space somehow aloof from the world do you think that's a fair criticism in the light # the history of the space we have looked at # i guess my question implies that this is pretty much a rhetorical question i don't actually think it you know because in the light that we've looked at the galleries cause we've seen how much actually is a historically contingently shaped space # # </u>
+<u who="sm5153">i mean yeah a lot of it's determined by the kind of sterility of whiteness</u>
+<u who="nf5151">everything mm</u>
+<u who="sm5153">and it's like the idea of hospitals being white or whatever i mean it's this kind of clinical nature that makes people you know think that it's not stained with outside influences and and context because it's so pure and and it doesn't necessarily work like that because people #</u>
+<u who="nf5151">which continues the idea that white is pure and virginal  rather than neutral in the way that everybody also talks about it if it was neutral then of course it could be open and # permeable</u>
+<u who="sm5153">yeah but you know it of course it doesn't work people empty their minds when they enter a gallery because you know they don't they they enter a gallery with assumptions cultural you know # <trunc>pri</trunc> prior knowledge so in some ways that doesn't work but it's quite convenient </u>
+<u who="nf5151">and the other the other linkage i mean look at the Tate modern again and look at how across the road the new lofts are done and the interior space of fashionable and and the same point was made about the museum of modern art you know <trunc>tha</trunc> that space and the design of that space sort of was fashionable and was echoed if not preceded by <trunc>int</trunc> by fashionable interior design but <trunc>none</trunc> nonetheless the less i think it's important i mean can we come back to that through out through the next term as well none the less it was a very clear instant still is i think a very clearly held assumption that somehow the gallery is a you know a world apart and therefore it needs to be either opened up or <trunc>le</trunc> abandoned left behind for the real world out there and i'm very uneasy with that because i think if anything museums are part of the real world i mean what else are they i mean it's like it's like this futile discussion about art and life and # you know how can that ever be distinct if art is in real life # i never really see the point of those kind of discussions but it doesn't mean that it was at at stake why then i think the one thing you haven't explained properly yet is why a lot of these gestures were ephemeral gestures why was that important</u>
+<u who="sf5154">it isn't very important they were talking about it because when some things are kept the same and and it just goes stale and it's the whole problem it's not # it's lost and it it it was talking about as well it doesn't matter if if anyone sees it</u>
+<u who="nf5151">why does it not matter <trunc>wha</trunc> # what you know it undercuts the sort of democratic move to reach a public beyond the elite</u>
+<u who="sm5153">what i found quite interesting was i think it was Thomas Crowe where he goes on to say that even this kind of hardened gallery visitor on the lines of Portia laughter didn't manage to get didn't manage to get to the
+space # get to the <trunc>wo</trunc> # the the # the pier before it was actually you know closed off # and how even even the elite didn't get there i mean it was it was very much such an ephemeral gesture that it was more the fact that the gesture had been done and photographed i mean once it had been photographed it didn't necessarily matter anyway i don't think people # were there</u>
+<u who="nf5151">so what does the photograph do</u>
+<u who="sm5153"># the pho # i mean #</u>
+<u who="nf5151">do you think that it's just futile heroic posturing because you are anyway at the object the photograph which actually heightens the heroic gesture</u>
+<u who="sm5153">yeah and and the way that the photograph then turns it into fine art cause then the photograph gets displayed in the White Cube gallery kind of thing so it kind of in a way it's # it's # yeah it tends to</u>
+<u who="sf5152">it goes back doesn't it it used to go and then it goes back it depends upon it exactly like minimalist is dependent on the gallery so # </u>
+<u who="nf5151">yes that's absolutely true but do you think it's it's just a lot of these gestures are simply posturing then or real enough and effective enough because it is true that a lot of that you know i mean the ephemeral also has to do with the fact that they didn't want the object to be re-cooped by the museum that it couldn't be become a commodity that precisely that impulse that art in the end is you know not all only sort of celebrated as a as a world apart but in the museum but also the commodity and that existence of the commodity is often denied and they try to undercut it so that it can't be commodified it can't be sold to a private collector it can't be sold afterwards # sure it was</u>
+<u who="sf5152">but yes it was like even afterwards there was like a postcard of it and the postcard obviously everyone buys when they go to see you know the Chicago so therefore it is a commodity like everything else but it's also an idea and it's a great idea and it's a statement at the same time so # </u>
+<u who="sm5153">but it makes me think of like Hamish Halton Richard Long where where you have the an object can't experience can't compete with an experience where which i mean which i think goes completely with the notion of temporary exhibitions because why do people go to temporary exhibitions they could they could get the book they could go and see the works individually it's it's the experience created of # and <trunc>wha</trunc> <trunc>wha</trunc> <trunc>wha</trunc> what what you create what you take in your mind of the art i think as much as what's actually there what how you perceived it how you kind of experienced it i don't know # </u>
+<u who="nf5151">what do the others think about # </u>
+<u who="sm5153">maybe you think i'm going off on one here</u>
+<u who="nf5151">is he going off</u>
+<u who="su5161">i think it's two things like if you if you if you go to a gallery to see you know the original work then one it could be because of the physical experience that you're gonna get and for example if it's like i dunno Kristo's work if you went to the actual site to see it then maybe you are looking for the the the experience but two it has to authenticity in the whole thing that you have to see the master's work and somehow that is more important than the # hyper-reality of the photograph i think</u>
+<u who="su5161">but it didn't properly work with his though did it because you couldn't see all the islands</u>
+<u who="nf5151">i think <trunc>beca</trunc> okay but then let's let's look at Kristo and and Asher properly and then have that discussion because it does arise with both of them and they're both # do you think i mean i think they're both very very to some extent they share at a certain point certainly with the engagement of the gallery and what they did to the gallery some aims but yet they they they are quite different and # do you did you feel that when you read about it in what they proposed to the spectator i think they are very different let's see you don't think they are very similar</u>
+<u who="su5161">we did we did Kristo</u>
+<u who="nf5151">so you didn't look at Asher</u>
+<u who="sf5160">oh no we we # laughter # i think it is what's the word # i mean Kristo's and I mean they all have a similar restrain with Gordon Matter-Clarke  and that idea of temporality and # <trunc>tha</trunc> that that the that that the fact that their works are temporary # heightens their prominance as as memory but # it's very different # in terms of the forms that they take also cause they are of different origins # i think with <trunc>w</trunc> with Asher he uses kind of different # both of them i mean Asher does like with taking the public sculpture of institutions inside you know the museum space he mm kind of moves around # kind of shuffles # spaces whereas i think Kristo doesn't really shuffle i think he uses the bigger world so # what i got out of when we read is that we make artworks # within the museum cause it's all contained and # inside also with these works of Kristo and Asher it becomes outside art and we learn to look more at the wider specimen so we have more of a # i think Portia used the # the term playground so whereas you know we are somewhat limited by these kind of in in terms of scale and size in our little spaces then they see # space not so much in little # boxes or<gap reason="inaudible" extent="1 sec"/> museums but in terms of the whole space<gap reason="inaudible" extent="1 sec"/> which is what Kristo does and # # </u>
+<u who="nf5151">i wonder how who it is it is i mean can you ever see but let's let's look at that # </u>
+<u who="sf5157">can you say with Asher just simply kind of tries to take the environment from the outside in to the gallery making it a kind of environment into the gallery a continuous thing whereas Kristo surely takes the work outside into the environment that's the basic difference</u>
+<u who="nf5151">mm i mean in a sense Asher makes that point you know that that space has never been autonomous and isn't autonomous # in through his various gestures and # and Kristo well with Kristo i think the complication starts at <trunc>ju</trunc> that work is out and you know deliberately although they are these <trunc>bi</trunc> you know there are there those words are you talking about those with his museum interventions</u>
+<u who="sf5160">shall # the book wasn't # </u>
+<u who="nf5151">well we come to them shall we do this shall we start with Asher because it's a smaller what's the time yeah let's do that</u>
+<u who="su5161">which one is that</u>
+<u who="sf5157">the tunnel one is that the one</u>
+<u who="su5161">the tunnel one <gap reason="inaudible" extent="2 secs"/></u>
+<u who="nf5151">no no</u>
+<u who="sf5157">okay # this is by Michael Asher and this is in the seventy-third American art exhibition # basically that sculpture up there is the sculpture of George Washington # it's a replica of a bronze of the eighteenth-century marble statue by Jean Huddel # and basically what Asher did was he moved the sculpture of Washington which is a sculpture of him as a war hero not as a president into inside into the gallery number two-one-nine and this gallery as you can kinda see # was a small room and it was purely devoted to # European painting of the same period when the sculpture was made which was the eighteenth-century # the accentation of the artwork on the walls wasn't installed by Asher it was already there # and was installed in nineteen-seventy-six by John maxim who was the vice president for collections and exhibitions # the way it's installed is somewhat obvious it's on the grey bluey green background it's a typical a typical eighteenth-century installation well a copy of one in the way that all the paintings are kind of symmetrical and they're all they cover the whole space # anyway the kind of point of this work sorry <gap reason="inaudible" extent="1 sec"/> # was that by placing George Washington into this room it completely changed the way you view the room as a whole # and also the sculpture lost it's previous meaning because whilst it was outside it was you know it was this monumental sculpture on the top of the stairs under the arch and you saw it in a completely different manner whereas once you placed it inside of these European eighteenth-century paintings it lost it's kind of monumentality and i don't know i'd say it looks kind of old</u>
+<u who="sf5158">it went off it's as well it was on a pedestal you look up to it</u>
+<u who="sf5157">it was on the <gap reason="inaudible" extent="1 sec"/> was on the eye level of # </u>
+<u who="nf5151">so it's lost it's you know sort of public monument punch hmm and become sort of artwork although it is of course a copy of an original it's sort of # copied</u>
+<u who="sf5158">= yeah it wasn't a monument it was an artwork yeah</u>
+<u who="sf5157">and basic # yeah so it's taking the exterior cause George Washington was always outside the gallery into the interior</u>
+<u who="nf5151">image man how probably</u>
+<u who="sf5157">=well no not # because also in the way that oh # i've lost my train of thought</u>
+<u who="sf5158">well i think one of the interesting things it does is it he used he put it back into it's sort of contemporary setting put it back into it's time not # geographically cause this was Europe but in time he put it back into it's space but made it contemporary because then he was using it as an artwork contemporary artwork</u>
+<u who="nf5151">yeah</u>
+<u who="sf5158">and that is really is playing really</u>
+<u who="nf5151">absolutely because it's so exactly because it is a gesture which is a <trunc>con</trunc> by a contemporary artist and mm do you think it highlights the fact that what what is this art context here i mean the artist we keep are talking about original i mean i to me it doesn't look anywhere near eighteenth-century setting <gap reason="inaudible" extent="1 sec"/> prints i mean do # it wants to be and it simulates it but it's a relation and that re-contextualisation is done by a contemporary artist so i i think at every stage there is this kind of fake building </u>
+<u who="sf5158">= mm yeah that's true and it's fake as well</u>
+<u who="nf5151">and it is fake as well</u>
+<u who="sm5153">it could it draws it draws attention to the fact that it's a top lit rectangular gallery without any coving without dado rails # without the crown <gap reason="inaudible" extent="1 sec"/> it draws attention yeah completely to the artificiality of it it always makes me think of when you walk into # the Serpentine you have the the two prints with the vases and you have the vase the vase the Antarga installation yeah</u>
+<u who="nf5151">the Antarga installation which is fake fake the nasticity of it all</u>
+<u who="sm5153">yeah well especially when it's placed in the White Cube i mean</u>
+<u who="sf5157">if you knew nothing about this and you just walked into it and you just saw this kind of sculpture in the middle and all the artwork round it you wouldn't think in the way that Asher wants you to that this is the whole i don't know if i would like this is a whole work if i hadn't read about it before i wouldn't see it as a whole work of art</u>
+<u who="nf5151">i think i tried to <gap reason="inaudible" extent="1 sec"/> of art covered before because you would still notice that this this is this is a is a bronze which is weathered you know it was a key</u>
+<u who="sf5157">no you would notice i don't know but then i just pause it just seems more like he just kind of curated it and it makes you kind of question</u>
+<u who="nf5151">but that's a question about context and contextualisation i think <trunc>a</trunc> and my hypothesis was that actually every stage # # it sort of tells you that historical context which the the museum the traditional museum <trunc>pro</trunc> supposes particularly in those sort of traditional hangs # is a fake one that in fact it does say well actually that its fake art art and art and history is a fake construct in the museum and then i think it does something to the outside by taking it into the what does he is there comment on the monument as public monumentality i mean Crow describes its then sort of looking down an avenue </u>
+<u who="su5161">well i think its just a question of why the monuments need to be on a pedastal to be even in that manner and once its taken away from that you just see it as i don't know as this funny little man standing in the middle of the room [laughter]</u>
+<u who="su5161">also it it loses its yeah it loses its political power i think a lot of the thing was the fact that you're placing Washington a statue of Washington in a room of European artwork there's kind of this it draws</u>
+<u who="nf5151">the founding father of the nation</u>
+<u who="su5161">yeah which draws attention</u>
+<u who="su5161">kind of your American history with all these little these peoples kind of own little life histories <gap reason="inaudible" extent="1 sec"/></u>
+<u who="su5161">but but doesn't it doesn't it also with the angles and things like that </u>
+<u who="nf5151">oh the David</u>
+<u who="su5161">yeah is it the David but it draws attention to the fact that # the political history is so tied up with European history at that point in time <gap reason="inaudible" extent="1 sec"/></u>
+<u who="nf5151">well do you think that it can getting get a French sculptor to do the the marble in the first place</u>
+<u who="su5161">yeah yeah and notions of # i think American taste which were based on copying European i think by placing it in this context it </u>
+<u who="su5161">but it takes away from like its saying that basically he's basically saying that like that that sculpture can't <trunc>ac</trunc> it takes away from the autonomy of it can't act on its own in the way it should surely you can make a monument to someone just a monument alone should be even a monument the actual sculpture # it shouldn't but then obviously the way you explain it oh yeah i just <gap reason="inaudible" extent="1 sec"/></u>
+<u who="nf5151">i think that # i think that # there's certainly a questionning of you know what kind of context can you know its a fake context the historical one in a museum but i think there's also clearly an engagement with the fakeness of public space you know the public space form as a sort of American national identity which getting a French sculptor to do the first president what before he became the first president and then place it in this sort of hierarchical position overlooking the avenue down into the city from that new classical temple the museum takes that away and therefore leaves a hole there you know in a way that when the sculpture arrives there what has given it the richness as public monument seems quite hollow and shallow in itself or compared to # i think what you're trying to say</u>
+<u who="sf5157">cause the sculpture says i mean the sound of it cause it's just a copy of it anyway so it kind of # </u>
+<u who="nf5151">yeah a nineteen-seventies copy</u>
+<u who="sf5157">yeah</u>
+<u who="sm5153"># <trunc>i</trunc> it's it's quite interesting how that's a work that can make you could be applied to a variety of gallery spaces like on Friday i went to the Asher monument and i found it quite interesting</u>
+<u who="nf5151">oh did you go to the Pistovus as well</u>
+<u who="sm5153">yes yeah # and they they had # had this hang and they had it newly i think it was last year they had it re-decorated newly and had yellow damask which was supposed to be of its time kind of yellow damask and all the pictures were hung in a single line hang the room is supposedly re-creating that era and kind of the way the work would have been hung but it wasn't when you then look at # pictures and when you think about what he's sort of highlighting here it it would work the same if you placed it into a lot of you know other kind of gallery spaces and # which are trying to be contemporary from our point stand point here at the end of the you know twentieth-century twenty-first century it's</u>
+<u who="nf5151">i think that i think that that is preceisely i mean lets see it <gap reason="inaudible" extent="1 sec"/> i think he highlights that what at any point should anchor the experience and give it richness is emptied out and hollowed out and shown as you know actually an imaginative construct an imaginary construct behind it anyway # go on with the others because # because i think we've come to more obvious </u>
+<u who="su5161">okay this one is untitled its just an installation from nineteen-seventy from the Mongomery Art Institute # and in this he completely altered the interior space of the gallery mainly by adding walls and lowering the ceiling and the idea was that he built actually we've got i can show you a plan do you know where that was</u>
+<u who="su5161">i think it was on <gap reason="inaudible" extent="1 sec"/></u>
+<u who="su5161">yeah that's what he built there inside the gallery so the sort of triangular shape yeah that comes up the sides of the doorway is the only part of the gallery that you can access all the other parts are they don't he doesn't use them so you just walk in there and the only light comes from the front door so that's why you go back to there so this must be at the front door where the light so you've got this areas lit then the next room's gonna be more or less dark but you can <trunc>ac</trunc> you can get into it through otherwise only lit by the outside the front door of the gallery he altered so throughout the whole exhibition it the door to it was shut so basically the space is altered but it's dependent on the outside of you being able to see anything it depends on the outside whether you'll always be able to access it from the outside it's the and the gallery doesn't become an isolated space it becomes dependent on the outside you being able to get in and being able to see what it's about and what else is there to say about it</u>
+<u who="nf5151">is it you know in a sense carrying the minimalist's phenomenological enquiries to it's upmost conclusion by you know shaping a whole room in so to speak in a minimalist's sculpture or is it doing something else that's a question you know how important is that <trunc>int</trunc> exterior</u>
+<u who="sf5158">mm</u>
+<u who="nf5151">element which he brings in</u>
+<u who="sf5157">also # it's in in said in Cray that there was a painting as you walked in of # # </u>
+<u who="nf5151">oh you misunderstood that it's Coi think</u>
+<u who="sf5157">oh i didn't get that</u>
+<u who="sf5158">yeah i didn't get that # painting</u>
+<u who="nf5151">i think what he's referring to is that it is # this point # you know it frames the outside and it is beautifully manicured cast <gap reason="inaudible" extent="1 sec"/></u>
+<u who="sf5158">cause that's the slide that goes with it but i couldn't</u>
+<u who="sf5157">yeah that's what we were # laughter students six and seven</u>
+<u who="nf5151">so well well what what so oddly i think what he says is that that what is framed in that space what is so to speak displayed is the outside view in its manicured gentle # peaceful # perfection</u>
+<u who="sf5157">yeah</u>
+<u who="sf5158">and he says and that makes him so professional or the gallery possible the idea of the viewer outside well i wasn't quite # </u>
+<u who="nf5151">what do you think what do the others think what's going on in there</u>
+<u who="sf5159">could i could i ask # that i had # was was was he # <trunc>re</trunc> removing the gallery or was this his artwork</u>
+<u who="nf5151">this was his artwork okay</u>
+<u who="sf5159">okay well in in was this a sort of suburban environment like</u>
+<u who="nf5151">in in a college</u>
+<u who="sf5157">it was in a college a small private college somewhere in </u>
+<u who="sf5159">in a safe environment</u>
+<u who="sf5158">oh so that's a safe environment is that what your saying the environment that the college was in was safe which would have allowed him to leave it open all the time was it to do with that it was in the #</u>
+<u who="sm5153">but isn't that actually irrelevant i mean whether it's safe or not it's the fact that it was open to the outside world and whoever wanted to could go in</u>
+<u who="sf5157">yeah and he didn't want the gallery to be a separate entity</u>
+<u who="sm5153">yeah and so if it was like a safe environment it kind of takes some of the grip away i think maybe # # i dunno the fact that anyone could enter at any time # </u>
+<u who="nf5151">okay well i me i wonder if safe is the is is important there rather than the fabrication of the exterior the artificiality # which is important to him i mean almost drawing the attention to you know normal # you have that traditional assumption of the you know the outside the world and the artifice inside in the gallery and it reverses it it entirely reverses it and throws its light on the artificiality outside</u>
+<u who="sm5153">so entirely they're both completely # i mean the <trunc>ide</trunc> the idea of the outside world as being natural # some yeah it draws attention to that but at the same time the inside of the gallery space is you your completely aware that it's an unnatural altered space # because # because we we tend to be entering it #</u>
+<u who="nf5151">depends okay carry this on it's a it's a it's a sort of # it's a heightened experience of the White Cube but you know what does this heightening leave you it's a heightened sensitivity of the outside instead of you know your own phenomenological experience so i think it's a it's # i mean it is i think quite a savage critique or on the phenomenological underpinnings of minimalism because you go through you have this heightened experience but at any one point it throws you back onto the outside world and then the outside world doesn't appear as the rough tough crowd of the # of Gordon Matter-Clarke but it's actually artifice architectured manicured created a pastoral vision</u>
+<u who="sf5155"><gap reason="inaudible" extent="1 sec"/> isn't it different in its set up the White Cube has stylised because it's in a contained space it has visiting hours the practicality of still being able to see it in context well at least without a door being there the continuity it's in the nature of the sunlight i mean you know you can only go there if there's enough light for you to go in so it is a bit more of that nature and perhaps that's more of a difference because the White Cube because of you seeing it as an isolated place you don't know what the light is outside whether it's raining it's snowing # </u>
+<u who="nf5151">yeah i think it's # this is the critique of minimalism in there that it isn't actually a heightened gallery it's it's a heightened <trunc>phil</trunc> # you know he doesn't want that he throws every one point he throws it back onto you know lift lift experience as such in the world rather than in our well in our container therefore i think it's it's important condition that it's out there at all times it's also the key to seeing the critique in there</u>
+<u who="su5161">you know this # exhibition # did it carry it round to other places or was it just completely dismantled after after it got put on display</u>
+<u who="nf5151">as far as i know yeah it's harder of that kind of ephemerality that these people didn't want # you know it's context bound the context is important you know having to or moving it around and re-creating it elsewhere would be would be # a non-starter</u>
+<u who="su5161">mm mm my friends got a picture of when she'd been to a similar one and we couldn't work it out it was a new one i think mm <gap reason="inaudible" extent="1 sec"/></u>
+<u who="nf5151">it was a stock of ideas which we produce ha laughter in group</u>
+<u who="sm5153"><gap reason="inaudible" extent="1 sec"/> words masked by laughter</u>
+<u who="nf5151">well i've actually met him and he's # you know you would have thought he's a sort of tough intellectual wouldn't you at least that's always what i've thought because it's a really really rigorous stance i mean it's continued and # # but he's this little very sweet tiny man you know you look he talks as if he he almost in this way that Americans can play dumb you know about about being quite intelligent he always goes 'yes' and 'no' yeah it's quite interesting cause i really had a very different idea of him and being much tougher and much more gritty</u>
+<u who="sm5153">you can imagine him greeting you with a sandblaster in his hand </u>
+<u who="nf5151">yes okay well you # do you want to go on perhaps the Milan piece might be important to mention you don't have more slides but # </u>
+<u who="sf5157">i've got # which one</u>
+<u who="nf5151">the Milan one with sandblasting with sand # and the plaster</u>
+<u who="sf5157">oh yeah</u>
+<u who="sf5158">yeah # # not that one</u>
+<u who="sf5157">i can't find my notes but anyway it was basically he tried to de-construct the idea of a white room et cetera so he sandblasted the walls so you could just see the <trunc>pla</trunc> well he wanted to sandblast the walls so you could see the plaster underneath basically saying that the plaster underneath was is <trunc>impor</trunc> # is as important as the white walls are so they're like # </u>
+<u who="nf5151">what do you make of that stupid revealing rich</u>
+<u who="su5161"> take a club round you</u>
+<u who="nf5151">sorry # [murmuring]</u>
+<u who="su5161">the wall that was there then the background's just the same as the white # </u>
+<u who="sm5153">but isn't it isn't it point yeah isn't it pointing to the fact that it's what it's what do we see as # the actual surface in the gallery i mean because because it's it's it's # isn't it dealing with the surface the whole idea where you have this kind of white paint layer but beyond that you've got plaster you've got bricks and things which are all part of the surface on which the art's displayed but we don't think about them and he's drawing attention to the the the the falseness # no but it's very like the falseness of this kind of sterility and that's not necessarily # really there it's it's kind of making us aware of the fact that it isn't this sealed off thing that it's located in material # the real world</u>
+<u who="sf5160">but isn't it just you know without stretching that far i mean the fact that it's plaster and bricks it's it's structure it's # as a building rather than # </u>
+<u who="sf5158">and he's saying that any surfaces are surfaces # and and he's not looking back cause whatever's exposed is what you see and what you see the artwork against so what's behind it is isn't what we track it's what makes the interior every time isn't it isn't that what he's saying</u>
+
+<u who="sf5157">he's # just showing that the gallery's just a kind of shell within which you think in a different way as you go in to it you think in a different way and # it doesn't # mm mm</u>
+<u who="sf5159">yeah but # i -,if you # there are two things really if he's if he's saying that you've got two sort of two sources and one's sort of that you can be surrounded by white sort of clinical walls and and that it just an illusion of purity and then if you take that away and just have plaster then it's more sort of real more more # it's not so artificial but if he's saying that then he's mistaken because # </u>
+<u who="nf5151">well we'll take this as he isn't saying that</u>
+<u who="sf5158">he isn't saying that it will always be #</u>
+<u who="sf5159">okay so you're saying he's suggesting the fact that no matter what environment you will always have some sort of meaning and yeah okay</u>
+<u who="sm5153">i mean there's a quote here that he said if the viewers are to assume that the space has been liberated from the white paint's support they only have to view the plaster to appreciate the inherent paradox that the plaster is now the support service and that it is as much an attainable pert of the gallery as the white paint which is # </u>
+<u who="sf5157">the gallery is just a building even though you've called it a gallery no matter fundamentally it's just #</u>
+<u who="sm5153">yeah well also also he's he's he's said about how plaster was the building material associated with the outside world and by exposing it in a way he was bringing the outside world in to the gallery which is the same which is the the same #</u>
+<u who="nf5151">yeah what do you make of that okay that's the same # and yes to holding to how much the out the outside world is not a real touchstone it's as much a support and as much as as the gallery Students six and seven: mm mm</u>
+<u who="sm5153"># how much # yeah but also also #</u>
+<u who="sf5155">isn't that just as much as the White Cube though because we wouldn't have we wouldn't display with what # oh it doesn't matter i've lost it</u>
+<u who="sm5153">it it isn't it about making you consciously aware of the outside world you you making you so you can't even sub-consciously forget about the outside world # so you?re you?re aware of this kind of physicality #</u>
+<u who="nf5151">why don't you follow this you you really do hang on to this # that there could be if it was left as a White Cube it could be making you forget about the outside world isn't all what he's doing saying # this isn't a futile division you know okay let's take the white away which you pointed before as the one thing which probably makes people think as a that it is an autonomous space because it's clinical it's pure you know take that away and you get another surface on to which you could easily hang pictures and you know it's # it's it's # and that surface is found outside and it's constructed outside i mean it's basically constantly saying that is a futile division just take a little bit of white away of the layers and you know you get the same kind of support and nothing's secret or mysterious or more real or less real #  and he does have a go # doesn't he with that other exhibition where he in the gallery where he simply removes the support wall i mean # another # </u>
+<u who="sf5158">moves the wall</u>
+<u who="nf5151">yeah</u>
+<u who="sf5158">we've got the slide of that he takes # this one his artwork is that he takes a temporary wall that's in a gallery that separates the office and the storage and everything from the exhibition space and he takes away the wall so the workings of the exhibition of the gallery become the artwork</u>
+<u who="sf5155">so he's taking like the gallery as an artwork</u>
+<u who="nf5151">well yeah i mean very literally revealing what makes the behind the the gallery function as a gallery pause i think that's the easiest gesture of all of them as opposed to some of the i suppose it would also have to be done once and then what else # quickly does he do</u>
+<u who="sf5157"># there was this was like also in Chicago at the Museum of Contemporary Arts and it was # the building had been unified with two because it used to be only one building and then another building near by and it was unified by putting # kind of aluminium and <trunc>ali</trunc> huh i can't say it aluminium panels over the outside of the building this is what the architects did to make it look like a <trunc>unif</trunc> unified fa?ade # and what # </u>
+<u who="sf5158">to make it look new and modern and # </u>
+<u who="sf5157">yeah so it wasn't like two separate diSjointed things that were from different periods and # # Asher took # which panels # did he take all of the panels</u>
+<u who="sf5158">no he took some of the panels</u>
+<u who="sm5153">he took the panels that lined up with the the new gallery</u>
+<u who="sf5157">he took the panels which lined up with the new gallery which you could see in from the outside sorry ha ha i keep hitting you # which was glass and you could see in through the outside he took the panels that joined up with that and put them in the same place on the inside and also # </u>
+<u who="sf5158">he's taken the inside # </u>
+<u who="sf5157">and also took the other panels that were i didn't think they'd slide really but the vertical panels put them in the same place on the inside as they were on the outside so basically he took the exterior # it he exhibited the gallery inside the gallery what you could see as the gallery</u>
+<u who="nf5151">do you find it effective you're nodding</u>
+<u who="sf5157">i just find it strange the whole way that that they then bought their own galleries i think laughter i couldn't understand that mumbling it was like on the outside and then when it was being exhibited you put it inside</u>
+<u who="sm5153">yeah it's it's the same with the Asher i mean they can they can it where it's the artwork is the situation as opposed to where # so if they wanted to put the Asher back in that context they could just do it by # </u>
+<u who="nf5151">buy your own gallery</u>
+<u who="sm5153">keep keep it in storage keep it in storage in in the plinth and then move it in the gallery it's the same thing</u>
+<u who="nf5151">yeah exactly if you want to save money store it in the plinth yeah laughter from group what is he highlighting here</u>
+<u who="sf5158">that # it's entirely about situation that # </u>
+<u who="nf5151">what do you mean by that</u>
+<u who="sf5158">cause # when it was on the outside of the gallery it was part of the gallery and when it moved inside the gallery it was an artwork</u>
+<u who="sf5157">yeah it was on the outside just architecture and then it became art when it was inside</u>
+<u who="nf5151">how did it become art why could it become art because people would view it in that way because they're expecting to see art</u>
+<u who="nf5151">oh because of the you know knowledge that # yeah</u>
+<u who="sm5153">and well the minimalists # kind of modular square idea but also also #</u>
+<u who="nf5151">undermines it like with the George Washington he undermines their the minimalist art aesthetic by you know making precisely undermining it in a way that the George Washington moving inwards undermined it's monument</u>
+<u who="sf5157">wh-, while they were on the exterior they were just seen as decoration cause they weren't actually any part of the structure of the architecture you didn't need them so surely just moving them inside they're still just a decoration on the inside of the wall so how how can that sort of change</u>
+<u who="sf5158">but it does and he said he sort of he suggested that the other walls be used for other artists so he could display them amongst the work of other artists</u>
+<u who="sf5157">yeah but i don't see how that can just suddenly change art</u>
+<u who="nf5151">well it's hard to visualise we don't have any interior shot of it i mean partly because it would look comparatively monumental inside so you know that exceeds the the decorative # simply by that gesture and then secondly if you have other artworks there particularly minimalist artworks during that time you know it does well at least that's what the <trunc>critiq</trunc> critics said said</u>
+<u who="sf5157">it's all just a way of you doing how you perceive things it's not</u>
+<u who="nf5151">well it's drwing attention to the context</u>
+<u who="sf5157">yeah</u>
+<u who="nf5151">and i think the context does make it seem # like a minimalist artwork # rather than</u>
+<u who="sf5157">yeah # yeah well i completely see that but</u>
+<u who="nf5151">and then there were the other gestures i think very quickly the trailer and the you know the telephone numbers and and i actually liked the private collectors wall bits i don't know if you # do you recall that</u>
+<u who="sf5158">don't think so do you remember it</u>
+<u who="su5161">i remember one of # # </u>
+<u who="sf5156">oh the gardeners who used part of the wall more than the rest of the wall</u>
+<u who="nf5151">the private collection as the boundaries opens a sort of shared problem you know what # well do you want to</u>
+<u who="sm5153">this private collector # commissioned this work and he he basically had this wall okay and he placed it</u>
+<u who="nf5151">a huge wall # to separate itself from the #</u>
+<u who="sm5153">a huge wall to <trunc>sep</trunc> #</u>
+<u who="sf5156">it had <gap reason="inaudible" extent="1 sec"/> or something didn't it at regular intervals</u>
+<u who="sm5153">yeah but he he moved it so instead of being in the private collectors garden it was actually on the boundaries so the private collectors work was being shared by the neighbours because it was # forming the boundary to their garden as well so it wasn't # it was a shared private collection collectors works</u>
+<u who="sf5156">yeah and that brings the whole issue of possessing art and # </u>
+<u who="sm5153">yeah</u>
+<u who="nf5151">and closing it off from the world yes exactly and then the telephone numbers i don't know what to make </u>
+<u who="sm5153"># he sold t-shirts on the Market where people can have # yeah buy their own telephone numbers</u>
+<u who="su5161">people can buy their telephone number laughter from group </u>
+<u who="nf5151">what why's he doing that</u>
+<u who="sf5156">well it's all to do with communication isn't it one of the critics said that there's the idea of communicating the number to everybody by wearing this t-shirt but it's also the that number itself is the real form of communication cause you can use the number and ring it up ring the person up</u>
+<u who="sm5153">doe doesn't it doesn't it work in the same way as selling the gallery their own work mm it's like selling the person their own telephone number on a t-shirt it's not a logo it's not a slogan or # </u>
+<u who="nf5151">undermines the idea of possession and i think that is is very dear to him the idea that something can be possessed and owned be it in a museum or by anyone # private collector any one person so how can you own the telephone number and make it private if it actually is something you acquire in order to communicate with the world i think it's about that and the trailer i actually find this i've actually seen it because he's redone it the trailer <gap reason="inaudible" extent="1 sec"/></u>
+<u who="sf5157">he redesigned it</u>
+<u who="nf5151">did he mm mm perhaps because he's re-done it it might be more interesting he used precisely that trailer again and was it in ninety-seven perhaps</u>
+<u who="sf5158">that's ninety-seven</u>
+<u who="nf5151">that is ninety-seven and he's done it in seventy-nine before because so that's ninety-seven that's where i and he moves around it that's this Munster # has this this culture exhibition which was very important because it happened very early on or relatively early on now everybody does does this this culture exhibitions where sculptures are not it's like we're now taking art this idea you know all the arts out at interventions with the public now so this was the first sculpture exhibition which commissioned artists to do precisely that and then people could rent bicycles and go round the town and visit the sites and you get you still and it gets repeated now and you get you know get little guide books given and little leaflets and and you go on search for these public interventions and his one was this trailer which was moved to different kind of contexts from the museum initially and then with that what do you make of that and then he's done it again ten years later has he run out of ideas or # [mumbling] you think that don't you [laughter in group]</u>
+<u who="sm5153">the the playing with juxtaposition you know the choices of places where he put it a it's it's the same artwork being put in a whole new # it's interesting you know his artwork placing it in all these different # # positions and seeing how it relates like he he used university and a shopping mall in contrast and # an an inner-city # estate and the <trunc>su</trunc> suburbs and i think he's was just playing around with the place and # </u>
+<u who="nf5151">and the with the Bronamics sort of closed psueudo-autonomous walls of the trailer inside</u>
+<u who="sf5157">but but if it wasn't for the exhibition and the idea of the exhibition in a museum then it wouldn't the work wouldn't exist so they kind of i think it depends on it even though it's trying to</u>
+<u who="sf5158">does depend on it</u>
+<u who="sf5156">did the trailer # did it start off at the museum so you could sort of connect it with the art the idea of the art</u>
+<u who="sf5157">it started close yeah</u>
+<u who="sm5153">it finishes at the museum as well</u>
+<u who="nf5151">why's he doing that</u>
+<u who="sf5156">perhaps it's measurative</u>
+<u who="sf5154">cause he's just seeing how far that you can take it away before it doesn't become art or nobody recognises it as art it's just a trailer on a random street it's not art is it</u>
+<u who="sm5153">mm mm in a way he uses the museum connection to to to be recognised as art otherwise #</u>
+<u who="sf5157">to be recognised you need to put a connection to it otherwise no-one would have gone to see it anyway so # </u>
+<u who="sm5153">yeah he needs to recognise it</u>
+<u who="sf5158">the situations changing</u>
+<u who="nf5151">so is he by that gesture revaluing the museum in the way that he's dismantled it before to some extent</u>
+<u who="sf5157">mm mm</u>
+<u who="sf5160">with # # the defining and questioning the museum as this concept of defining art and dividing actually with context and meaning and all the other artists Michael Asher and Robert Moore # so on and and # i think # the reason why i think sometimes think god and just shake my head at Michael Asher cause i do find yes i understand that he's addressing a serious question but it it's just a a problem with art and stuff where in <trunc>try</trunc> it's just a paradox in trying to question that you still like that it's necessary because his artwork exists in photographs and i mean as with Kristo's as with # # Gordon Matter-Clarke it it and in in a way it questions it re-defines things as a </u>
+<u who="nf5151">yeah that's a very interesting point but we we # it actually by questioning it almost re-emphasises it t to a certain extent which # </u>
+<u who="sf5159">mm mm yeah i think he's using art and things to emphasise his criticism on art i mean all his works are just criticism on on the galleries</u>
+<u who="nf5151">museums [laughter] sorry carry on</u>
+<u who="sf5159">museums it's like # so but he's he's all his works are a criticism on what is art and how we receive the gallery space and exterior interior and things but # but he's using i think things to do i mean he's he doesn't # i mean his trailer takes on meaning only because it can be seen as art and then because it's seen as art it's a criticism of art so it's just a vicious circle # if you it would have been if he had found a way to do it without using you know the the typical art things</u>
+<u who="nf5151">perhaps well it's like selling # on the global market of the telephone numbers you know that doesn't actually presuppose in the same manner the art context or the museum does it</u>
+<u who="su5161">i'd say it does</u>
+<u who="sm5153">in normal terms you think of museums selling t-shirts so well </u>
+<u who="nf5151">commercialisation</u>
+<u who="sm5153">commercialisation yeah</u>
+<u who="nf5151">and what is it for i mean he i think clearly says that if there's any value of spaces it's about communication and that's why he undercuts when artists see it off because then it's not about communication any more i think there is a bit of that pause in Asher do you # yeah</u>
+<u who="sf5154">i didn't really understand what you just # how i mean how far away from art can you get before # how can you criticise it by making artwork that's not artwork it's just</u>
+<u who="sf5159">do you # well # what he does is criticise the artwork  right and whatever goes with it like the fact that if you put anything in an art gallery people will see it as art right but his criticism is just can only be seen as criticism only when he places it in a certain position like did you say that this wasn't close to a museum or something he <trunc>ha</trunc> he had to put it in an exhibition if he had a trailer just # </u>
+<u who="sf5154">but how could he do it another way</u>
+<u who="sf5159">that's what i'm saying # he's still found a way #</u>
+<u who="sf5154">but there isn't a way you can't</u>
+<u who="sf5159">so to make <trunc>su</trunc> # </u>
+<u who="sf5154">yeah okay but you can't deny the fact that you can't # if you hadn't heard about that you just you know</u>
+<u who="sf5159">but he's # i'm just saying that he's just using the same means that are used for art and things</u>
+<u who="sf5154">yeah</u>
+<u who="sf5159">maybe for one moment we'll just be writing about it so creating <gap reason="inaudible" extent="1 sec"/> artwork maybe can demonstrate with a book or something</u>
+<u who="nf5151">oh endlessly coming Michael Asher's writing probably more abundant than his artworks and think he hasn't ever sold anything to a museum just to be sold so certainly he's you know famous for those gestures but he's never made any money out of them in a way that you know a lot of people # you know did by legal gestures but made sure that they could also earn a living by having photographs as documentary or drawings or maybe pictures as an example and they do it very boldly you know they want to recruit money that way for their projects he i think all those artists or all those monocle artists in a sense he is # he is the most consequential the most daring i think cause he really hasn't ever sold anything to a museum so all we have is a book with his writings there isn't one in the library but it does exist do you want to # break and then have Kristo and then a comparative discussion it seems to me that it's yeah okay how long</u>
+<u who="sm5153">ten minutes murmuring from group</u>
+<u who="nf5151">quarter of an hour then to allow # </u>
+<u who="sm5153">thanks a lot</u>
+<u who="nf5151">mostly # oh this is the one that #</u>
+<u who="sm5153">i mean here's one the independent they had a pullout and they showed all the pictures i mean</u>
+<u who="nf5151">yes i mean it's completely <trunc>pre</trunc> </u>
+<u who="sm5153">and i loved the fact that the independent was offering fifty percent off i wanted to i wanted to get i wanted to miss i wanted to miss this</u>
+<u who="nf5151">but look # isn't that annoying that and what we # they're having # </u>
+<u who="sm5153">i i i really wanted to go to the Saatchi gallery today to see what happens when it opens</u>
+<u who="nf5151">what happens mm i i mean the police have said # i mean they should have never done it they look really silly now but i mean # sorry we have to start with the second # but do you not see the point that if this is about anything it is not about it is about # she is wrong she now takes the stance it's not about sex at all but it is about that it's about gender identities which is not pornography it's about when children start playing gender roles all the time i mean you know it's all about that</u>
+<u who="sm5153">i i was talking to someone who</u>
+<u who="nf5151">i still didn't think its great art but thats not the point</u>
+<u who="sm5153">yeah # well i was talking to someone who does a course in <trunc>gend</trunc> gender law yesterday and they were saying that # it's a whole they'd just had a seminar and were discussing it about how it was about # they were discussing the role of identity in his works and how that was what was so problematic # it's the fact you've got specific children and</u>
+<u who="nf5151">yep that's exactly</u>
+<u who="sm5153">if if a child had been depicted in the Third World in an identical pose with # a cheap plastic mask # it wouldn't be so problematic because it would be seen as kind of #</u>
+<u who="nf5151">generic</u>
+<u who="sm5153">generic child where # but because they know that these are the children of that photographer they they know the identity of the children well that's why it's become so problematic</u>
+<u who="nf5151">mm but you don't necessarily know this i didn't know it when i when i saw the exhibition</u>
+<u who="sm5153">yeah it's # but #</u>
+<u who="sf5152">you didn't know they were children you didn't know the children</u>
+<u who="sm5153">well i found it really interesting</u>
+<u who="sf5159"> but doesn't # doesn't every one have pictures like that i mean everyone with sisters or brothers has pictures like that </u>
+<u who="sm5153">yeah # i mean every # yeah</u>
+<u who="nf5151">no actually no i mean come on but but this is what she says and everybody says they are not snapshots they're given very significant props you know i don't hand those out to my child [laughter] despite what people yesterday said when we were in the boardroom</u>
+<u who="sm5153">but i think #</u>
+<u who="nf5151">you know i mean this one</u>
+<u who="sf5152">i think it's very assumptious fact anyway to allow that for her children # because</u>
+<u who="nf5151">and this is the most obvious one here where is it</u>
+<u who="sm5153">i mean the posing of this one i mean it's it's</u>
+<u who="nf5151">it's about when you've chosen # and i think there's not a single parent # that's what i wanted to say not a single parent who doesn't at some time wonder when # you know i mean a friend of mine sort of painted her nails and her sons always did it until a certain point and she <trunc>didn</trunc> she had no clue why and how what the older ones suddenly said no this is not what what i'm supposed to do i'm not doing this any more and you know where does it come from when does it set in there's kind of i think every parent wonders about and i think these are the questions in here you know this is not the kind of snap shot the kind of prop you tend to give you know an overblown Barbie doll</u>
+<u who="sf5152">Take it on the ski slopes</u>
+<u who="nf5151">on the ski slopes</u>
+<u who="sf5155">the only thing that i found a bit weird was in the article that was written # about things like # the Barbie i # i they were talking about the political influences and the social influences but they didn't really mention anything about her views they had no quotes from her none of the artistic let's say of her view points i mean</u>
+<u who="sm5153">but there's a lot there's a lot there's a lot</u>
+<u who="nf5151">but does it matter i'm actually really irritated by everything now we get her all the time and she has nothing to say that is revealing at all</u>
+<u who="sf5155">but surely if it was # if there was controversy around her work i mean they had like # Saatchi guide doing you know why he put the exhibition blah blah blah but surely shouldn't she have a say in it i mean obviously she has now but when i was first reading about it you mean the effects of it yeah</u>
+<u who="nf5151">what say can she have now all the lines she says all the lines she says no i can't even see how people can think about gender and sex when they look at that i don't see it but that's the stance she has to take now</u>
+<u who="sf5155">yeah</u>
+<u who="nf5151">you know it's all in the mind it's all the twisted to the minds of the of the police i mean it's a great line to take at the moment but it's clearly not helping i mean there's clearly something else at work in the pictures which is something bad</u>
+<u who="sm5153">i find it quite interesting i was just saying to Cathy as we came up the # in the Houses of Parliament they've currently got an exhibition of # MP's photography i think it's i think it's James Healy or someone like that whose taken a picture of</u>
+<u who="sf5157">it is James Healy</u>
+<u who="sm5153">yeah # of a child in Bejing licking a lolly sitting down licking a lolly # and basically its just got a t-shirt on that's rise # risen up and basically all its genitalia are exposed and it's licking this lolly and it's in the Houses of Parliament when which in some ways is just as problematic if i think it's just as problematic as any of the images in the Saatchi gallery yet it's because it's in the Houses of Parliament it will never # be questioned or stormed you know by the police and i find that really interesting</u>
+<u who="nf5151">well the police can only do it if they get complaints from the public that's or the newspaper so it's not a publicly accessible space as such i suppose is it</u>
+<u who="sm5153">some parts are now but</u>
+<u who="sf5160">i think with this photography of naked children and the genitalia there's a difference between in the western world children come from homes rather than if you go to the Third World in Africa people se it as because it's not # it's not seen as # a first world then people said because oh because there's poverty so they're supposed you know they don't have any clothes because # they're poor so it it depends on how it's seen you compare you know nice neat photos to children who # are kind of from streets or who aren't who don't have clothes and from the Third World like <trunc>ex</trunc> people expect that these children won't have any clothes because they're Third World whereas in in # images of like</u>
+<u who="nf5151">it's exceptional if they're in Third World countries</u>
+<u who="sf5152">but # can i say something this is the actual image that there's been loads and loads of stuff about do you all know about this image because the fact that the actual angle she's taken looks like # well it was related to oral sex and it was related to the fact that this boy was obviously old enough to wash himself and that someone shouldn't be washing him and you when you first look at it you look at it really innocently but then when you have someone telling you this is actually what you see in it you start to look at it in that way that isn't so innocent and you do start to question why he's staring at his brother's genitalia or whatever's going on there which is #</u>
+<u who="nf5151">no hold on</u>
+<u who="sf5152">yep</u>
+<u who="nf5151">it's two it's a girl and a boy</u>
+<u who="sf5152">it's a girl and a boy how do you know</u>
+<u who="sm5153">cause she has two</u>
+<u who="nf5151">well this is actually really interesting can you go back to the pedestal one</u>
+<u who="sf5152">yeah it's here no its not</u>
+<u who="nf5151">being the corrupting mother that i am # i came back from the exhibition showing going through the catalogue cause you know lea wanted to know she's three what i'd been seeing and these were the first images in this book so we looked at them and she's # and i said what do you see there and she said a boy on a pedestal how does she know that this is a boy how do we know that this is a boy like in the other one we don't actually know</u>
+<u who="su5161">he has short hair</u>
+<u who="nf5151">lots of girls of that age he's four have short hair</u>
+<u who="sm5153">his shoulders don't look like overlapping voices</u>
+<u who="nf5151">oh this is what it's about</u>
+<u who="sm5153">isn't it the kind of isn't it the kind of like i mean it's a it's a it's a kind of curious kind of looking down at the woman but it's also a kind of he's-, it looks like he's been conditioned by # kind of conditioned by # masculine posturing it <trunc>it</trunc> in a way</u>
+<u who="nf5151">but would a three year old girl know about that see this is where exactly i think it's a pertinent question when does this</u>
+<u who="sm5153">but how how old is your daughter three</u>
+<u who="nf5151">three</u>
+<u who="sf5152">but don't we all # we all see it straight away as a boy don't we do you all see it as a boy</u>
+<u who="nf5151">yeah we have the connotation of adoring grandmother and you know sort of but</u>
+<u who="sm5153">but i don't necessarily think if you look i think overlapping voices</u>
+<u who="sf5152">even if you missed that out you'd still think it was a boy i think and now if you ask me why i have no idea why i thought that was a boy</u>
+
+<u who="nf5151">see this is what i mean even more okay we might say well you know because of some gender stereotype the boy's standing you know sort of confidently rather than you know in the other one sort of sticking a hip out or whatever but if why does a three year old girl recognise <trunc>a</trunc> actually i mean what they do at that age they play role particularly boys dress up as girls and they play around with various different gender stereotypes i was really bewildered by that and i think that's at stake here you know</u>
+<u who="sf5152">yeah definitely</u>
+<u who="nf5151">and the other one we don't really know do we how do we know <trunc>whi</trunc> which one is the girl which one is the boy i don't actually find this objectionable actually</u>
+<u who="sf5152">but it is quite # you don't find it objectionable</u>
+<u who="nf5151">well no i don't not at all no</u>
+<u who="sf5152">but would you take a picture like that of your children in the bath</u>
+<u who="nf5151">i think that parents do yes</u>
+<u who="sf5152">but without their # or did they just take the head off this one just for # i don't know because i # i mean of course every parent takes pictures of their kids in baths but not many of them are angled in this way are they</u>
+<u who="sm5153">bu-, but i think things yeah</u>
+<u who="nf5151">no absolutely</u>
+<u who="sm5153">and you normally get their heads in and you normally get both of them together playing </u>
+<u who="nf5151">but you see i think that the head is off is a comment about you know we don't know we we we assume that this is a boy because there is a focus an implicit focus on genitalia but we don't know and she withholds it she leaves it ambiguous in a way that children are i mean by seven it's different but in the earlier age play a round you know and are ambiguous</u>
+<u who="sm5153">i think mm i think the cropping works in the same way as it does with Craig <trunc>Mar</trunc> Martin's  and the others later on in the exhibition where you focus on certain things to make so it's unclear so you have to kind of create # in your mind you have to like think about it what's there and what isn't and it creates this big ambiguity</u>
+<u who="nf5151">i think we should leave it anyway we have to get back to Kristo # oh we have an assistant</u>
+<u who="of5162">yeah i'll switch them on whenever you need them</u>
+<u who="nf5151">yes thank you</u>
+<u who="of5162">but if you don't need them let me know cause it the sound is a bit it's a bit noisy</u>
+<u who="nf5151">yeah</u>
+<u who="sf5160">we've arranged the style into chronological # what did he do that way but in light of obviously the # the international critique we were quite confused how we should start because we we we had like stances and getting different points down about Kristo and questions about # his work</u>
+<u who="nf5151">well do do whatever you want i mean or what do you want me to # sorry i'm trying to find the slide do you want me to # how did you think about introducing him</u>
+<u who="sf5159">actually we've got a few themes on him # to talk about</u>
+<u who="nf5151">yeah then do that i mean you don't have to be comprehensive at all i think i have read you have</u>
+<u who="sf5159">i don't know if you # because there was #</u>
+<u who="sf5160">yes this was basically # this and this and this one came about yesterday</u>
+<u who="sf5159">yeah</u>
+<u who="sf5160">we just got this yesterday and this one was and all the others were gone</u>
+<u who="nf5151">oh well then ask them to because it is a shame have had a lot of work but #</u>
+<u who="sf5160">show you what we wanted but we'll show you the #</u>
+<u who="sf5159">so you have to just <gap reason="inaudible" extent="2 secs"/> okay but i have to so i so you # shall i say a few preparatory things about Kristo if the others haven't known anything about him</u>
+<u who="sf5160">mm</u>
+<u who="sf5159">okay basically it's Kristo and his wife # Jean-Claude and # they <trunc>hav</trunc> he comes from Bulgaria and she comes from France and they got married and they do all their art together but usually he's in the articles it it comes out as if he does all the #</u>
+<u who="nf5151">no there's a bit of confusion # for years and years it was just Kristo under his name and then when was it must be late eighties early nineties i think for whatever reasons they said from now on it is Kristo and Jean-Claude because they're always collaborating and and she's never got the <trunc>cre</trunc> credit it's always him and to some extent that happens with <gap reason="inaudible" extent="1 sec"/> as well you know many Kapankofts are not credited for but </u>
+<u who="sf5159">thank you # and we thought that we # # we've divided his work into sort of periods kind of the first one is has to do with # parcels and the whole idea of wrapping things up in a kind of rough manner like across like the bridge here # and the and and in a kind of # # surrealist # yeah <gap reason="inaudible" extent="1 sec"/> like that one like wrapping things up # and then the second period is all about beauty and that kind of renaissance you know sort of period of beautiful drapery and and # # monumentality like # like that one you see the that's kind of isn't it orange</u>
+<u who="sf5160">yeah</u>
+<u who="sf5159">yeah it's # sort of islands and that sort of thing so he moves away from the what we have called the parcel era</u>
+<u who="nf5151">the what</u>
+<u who="sf5159">parcel era it kind of #</u>
+<u who="su5161">the parcel era</u>
+<u who="sf5160">well # we we did take it into this # # he started off by wrapping all sorts of objects anything # you know so a cup a can # # and these are all kind of in in articles like you know later works which you know cost millions and are are are you know are are really being done on a big scale he # he we discussed his we we you know his modus <trunc>oper</trunc> of you know he has this fixation for wrapping things he likes small things and then he goes on and he starts wrapping like the the Chicago museum and it's just # you know it it's and # so and he says oh i'll just wrap bigger things and he covers # he he covers the # the inside # where is it the <trunc>th</trunc> <gap reason="inaudible" extent="1 sec"/> the interior view and # it's it's # very different cause there there there are two issues here its like why is he covering these objects or these buildings and and the second issue of lake brawn with the surrounded islands and the more say aesthetically # kind of fixed and colours really bold and scale is is # and # we were putting # his art certainly represents you know this one you could say is he criticising the whole idea of the museum whether it's still a museum because it's shut off from the public and it's concealed and # you know it's it it's denied it's function as a space for exhibiting art works and then obviously because he's covered it up and he's an artist then the museum itself becomes the art work # but you know we # # we # we find it very different from i think the Chicago museum from when he does the Reichstag much later on and it's very different we can't trace there isn't an evolution to his styles it's just he started off wrapping parcels then he'll do # in the kind of seventies and eighties these umbrellas in the US and Japan the surrounding islands in the eighties and then in nineteen ninety four i suppose because it's taken so long anyway to for his project to to be realised twenty-three twenty-five years</u>
+<u who="nf5151">the Reichstag</u>
+<u who="sf5160">the Reichstag twenty-three it took twenty-three years of Kristo # Kristo's pleading and being passed on et cetera we don't have a slide of the Reichstag we only have a drawing there isn't #</u>
+<u who="sm5153">you don't</u>
+<u who="nf5151">yes sure there is absolutely</u>
+<u who="sf5160">i know but i'm saying that there isn't # a photograph of the Reichstag</u>
+<u who="nf5151">itself no because it didn't i couldn't find a good image for the model i've got there is a model it's a good representation am i going back</u>
+<u who="sf5160">it's near the end there it is</u>
+<u who="nf5151">oh there's the drawing but haven't they got a model a scale model as a as a slide as well</u>
+<u who="sf5160"># don't know what that one is</u>
+<u who="nf5151">that's an important image # the scale model</u>
+<u who="sf5159">mm do do you want to</u>
+<u who="nf5151">perhaps leave it leave it today i'll i was in # when we do the the contempory artists # i want a comparison with that one the scale model and the # and the whose doing Rachel Whiteland</u>
+<u who="nf5151">Rachel Whiteland the Holocaust Museum i think there's a good comparison there and we need to get that clear</u>
+<u who="sf5159"># the the problem with it is that because it's so minimalist you have to be careful not to i mean it's it's kind of difficult but you have not to give too much not to make up meaning for it so <trunc>we</trunc> we've sort of tried to make a criticism on on his work but at the same time tried not to invent meaning because we thought minimalist work is so easy if you read the articles they just generalise that sort of i don't know</u>
+<u who="nf5151">absolutely particularly with Kristo he does seem really to invite these sort of complete projections of everything onto the work #</u>
+<u who="sf5159">i mean he has even been # categorised as the kind of central artist of of his era so # so he # mumbles to okay # basically #</u>
+<u who="sf5152">sorry my fault</u>
+<u who="sf5159">okay # basically his # wife has been # <gap reason="inaudible" extent="1 sec"/> that<gap reason="inaudible" extent="1 sec"/> things that the work # are that the works are a scream of freedom okay this is very # freedom is # one of the things that we sort of thought about discussing # it's a complicated issue because they're <trunc>thinkin</trunc> they're saying that they're actually freeing up the <trunc>wor</trunc> the object that they are covering up but it's kind of contradicted because when you're actually covering something up you're not exactly freeing it # you # it only comes free when you unwrap it but that that's when the work finishes it's not like they create the work and then they reveal it and that's that's somehow part of the exhibition when they when they when they take out the the the fabric the work is finished okay so it's kind of like saying it's not like if i cover my mouth with my hand and then take my hand off it's my mouth's not gonna look freer gonna look it's it's kind of contradictory and on the second # </u>
+<u who="sf5160">we were questioning the fact that i mean i'm comparing it to the Chicago museum the Reichstag was you know # everyone questioned because the C-D-U Christian Democratic Union were saying oh this is a very powerful symbol of Germany and you can't in in a way you know it's sacrilege to</u>
+<u who="sf5159">sorry shall i shall we say something about the Reichstag because not everybody</u>
+<u who="sf5160">okay yeah</u>
+<u who="sf5159">okay the Reichstag is this building in Germany in Berlin and i <trunc>ha</trunc> it it is it kind of # is a symbol of all the good and bad things of Germans # Germany's political history because it has been used by # both # Hitler and then the the Republic so and # for Germany it has you know it's sort of like both the good things and the bad things so it's a very powerful symbol</u>
+<u who="sf5160">it's got political # you know connotations and so yeah</u>
+<u who="sm5153">but you know isn't the whole point that point in the whole point was <trunc>a</trunc> that at that point in time it becomes a political gesture wrapping the Reichstag</u>
+<u who="sf5159">it's a it's really complicated because # #</u>
+<u who="sm5153">but the implication <trunc>an</trunc> </u>
+<u who="sf5159">he tried to he was trying for twenty-three years to get the acceptance from the government to wrap it upand he finally succeeded in ninety-four after twenty-three years and and the # the thing is that he's while he's wrapping it up he's not making any political statement right the only thing that he's doing is that he's identifying # a political symbol of the country he's not saying anything about the history or his beliefs or anything he's just like saying this is an important object i'll wrap it up as a present and then i'll reveal and it's gonna make him significant the # i have a quote of him saying we were the only ones who can turn the <trunc>Reichsta</trunc> the Reichstag into art okay which is # again problematic i would say because yeah it looks like art but what does that mean and then we move on to meaning right</u>
+<u who="sf5160">yeah # just with with art like the the the Kristo the the the complication with him is that when you start recognising that he's you know that's him and his works does he just wrap it and it's that whole act of wrapping it i mean for me you know just just the fact that he can actually wrap these massive buildings or the coastline <gap reason="inaudible" extent="1 sec"/> or the coastline of Australia oh i forgot we didn't see a slide of that one actually the coastline of Australia where he just wraps it with # these # sheets of polythene</u>
+<u who="sf5159">we have the the first slide of this one is similar it was kind of like these # those #</u>
+<u who="sf5160">barrels</u>
+<u who="sf5159">barrels were were kind of like imagine the coastline</u>
+<u who="sf5160">that's one of his very first works</u>
+<u who="nf5151">mm</u>
+<u who="sf5160">so one of his in which he # he started history he had a problem with # his work projects being approved cause he started off with there is a # the move where # he had a a a road in France in Visconti where he just had # barrels kind of blocking this # kind of street and in that so he's wrapping them and he's trying to make art by by making it <gap reason="inaudible" extent="1 sec"/> and blocking things ##</u>
+<u who="nf5151">what's he doing why's he doing on both sides is he doing and and what would he mean by that</u>
+<u who="sf5159">okay # the why is he doing # he he he wants a kind of partial explanation of of why he chooses the things he chooses is the fact that he moves on a lot a lot through Europe and america in his life and he he comes from Bulgaria so he like one explanation for that was that he was # # that the vision the block the division between the East and the West # the Eastern Block and the West so and by doing that that was # that was made in Paris on a very significant road very historical a lot of <trunc>fa</trunc> famous people live there so it was kind of and he blocked the road for eight hours so it was kind of like the iron wall that was built between the East and the West which had personal # significance for him because he came from Bulgaria and then moved to the West</u>
+<u who="nf5151">no personally not political at the time sixty-one when does the # i think this was the year when the when the wall the Berlin wall comes up and that wall i don't think there's a wall connection so that's clearly a social well personal but also social political connection you are not sure you are not sure</u>
+<u who="sf5159">yeah but not all not all of his works #</u>
+<u who="sf5160">mm not sure</u>
+<u who="nf5151">why are you not</u>
+<u who="sm5153">was Kristo left or right wing do we know</u>
+<u who="nf5151">we are just thinking about that</u>
+<u who="sm5153">because like in eighteen-seventy-one Paris the city had all those blockades and it it kind of makes you think of all the whole <trunc>barri</trunc> barricades position in Paris</u>
+<u who="nf5151">we just we'll try i'm asking them that they're not sure they don't know why are they not sure</u>
+<u who="sf5160">is # with with the Reichstag when he asked to wrap it up people said why not wrap the Berlin wall instead it's just come up i mean why not wrap it while it's still there and that obviously the Berlin wall at that time would be the more significant # you knowing historical symbol whereas the Reichstag it is the same but we were thinking that # it just just it it he he moves from having the the idea of beauty and and liking and some aesthetics #</u>
+<u who="nf5151">go to one of those only i mean because all his projects are always # and they talk a lot about the sheer beauty of it # and the question is the subject deflection of what they actually do or is this really at the heart of it and you know people who saw the Reichstag you know there the material was chosen very specifically you can see the seal the the this is a scale model too but the material go even to # to the fence because what they do choose is particularly shining which is very reflective of its environment and it has a flickering ephemeral element so everyone gets and raptures about the beauty of it when they're in front of it i mean the happened with the Reichstag a swell silvery sheen was</u>
+<u who="sf5160">i'll go to the # # i want the real one= yeah</u>
+<u who="sf5160">yeah <gap reason="inaudible" extent="1 sec"/> was the silvery sheen because this article says it's silvery blueish</u>
+<u who="nf5151">yes well it you know like that you know it has a reflective quality and so it takes on whatever light and #</u>
+<u who="nf5151">same as actually the environmental colours</u>
+<u who="sf5160">so comparing it to the Chicago museum where he just wraps up the building so there i mean the building is just very # dare i say it boring in terms of the shape that it comes up with it's just a wrapped up you know box looking building</u>
+<u who="sf5159">mm yeah and it's kind of rough looking wrapped up it's kind of like the early work</u>
+<u who="nf5151">that's his yeah you're not <trunc>cont</trunc> you're not contrasting the earlier work with the the later ones where beauty is much more paramount</u>
+<u who="sf5160">see so we should try well what he was trying to achieve well you know covering up art works and saying that you reveal the object then by concealing it and and this notion of # package and
+wrapping and # how later on we'll you know the difference between the Chicago museum and the Reichstag is that the Reichstag's form has this there's an aesthetic quality to the Reichstag that when he wraps it he obviously highlights the the the form of the Reichstag and even though it's a kind # kind of symbol # # # German # politics and history we weren't really sure whether you know he just used that to highlight his work today oh i'm covering up the Reichstag which is controversial and obviously it it's aesthetic # i don't know</u>
+<u who="nf5151">well hold on there for a moment i think we come back to that i think the process of production is important in trying <trunc>t</trunc> to see you know when you question is it is it just a celebration of beauty or is it actually a political commentary in the way that a lot of this institutional critique will will work</u>
+<u who="sf5159">in his first period when he just wrapped things up it # he wrapped everything from cans to
+ horses to buildings like everything and then and then he turned to this</u>
+<u who="nf5151">a portrait of his wife # which he did himself i mean as one of the early pieces he wraps</u>
+<u who="sf5159">and and and and then the second one it seems as if he's more concerned with the minimalist beauty like trying to make something</u>
+<u who="nf5151">although how does it # talk about running fence what does he need to do before # when an ambitious project like this can get realised and i think that's crucial <trunc>t</trunc> to the project and how it inflects the meaning</u>
+<u who="sf5159">i i think it was a i think it was a minimalist copy of the # long how is it called # China's # wall</u>
+<u who="sf5160">the Great Wall of China</u>
+<u who="sf5159">mm mm</u>
+<u who="nf5151">what did he do in order to get permission to do this what did he have to do</u>
+<u who="sf5159">#</u>
+<u who="sf5160">yeah i# mean as with the # # as with the # but as with many of his works # we we we get barraged with lots of information about # the amount of environmental reports you have to do which is like six inches thick just for the permit plus</u>
+<u who="nf5151">for each of these projects i mean for example here he had to negotiate with what thirty or forty land owners for the rights to</u>
+<u who="sf5160">forty individual land owners plus the government and local # supervisory </u>
+<u who="nf5151">and then he has to do environmental and he does they do them themselves in house projects just like any you know big undertakings and they go through that and it's a very strong part of their work actually</u>
+<u who="sf5160">they need attorneys and # you know engineers and they they they do require the help and and and # we were discussing and and it's a question of # its art because when he proposes this project he # he does meet kind of negative and # you know opposing # factors and saying well it costs so much money # the # how much one-hundred-twenty-six pounds  the surround # i'm not sure on dollars which one cost twenty-six</u>
+<u who="sf5159">well they're about like ten million at least and each project costs at least ten million but he funds it all they're all funded by himself and his wife because they ##</u>
+<u who="sf5160">produce drawings #</u>
+<u who="sf5159">yeah they produce mm loads of drawings # show us</u>
+<u who="sf5160"> they do like preparatory sketches like that</u>
+<u who="sf5155">wasn't gates done by funded by the government there was a lot of <trunc>con</trunc> controversy about the fact that they'd given so much money and that's why when he did the floating islands one it was a little bit relaxed for him because he said he got his own loan from the bank isn't that right</u>
+<u who="nf5151">i don't know i think he always # he always made a point of funding all these very expensive <trunc>proj</trunc> # so exactly that argument oh you know what a waste of tax payers money wouldn't apply they were always funding</u>
+<u who="sf5160">yeah from his set</u>
+<u who="sf5155">in that book there they said # that it was # they compared it with the gates</u>
+<u who="sf5160">yeah well <trunc>w</trunc> he he does the projects where he proposes these things to be done but the public nd the government refuses because it's all this money and they <trunc>the</trunc> <trunc>do</trunc> see they don't <trunc>init</trunc> initially see the point of what he's doing be because they just see well # you know this question of what are is he trying to do is not art because he's spent so much money on it and and then # the fact that it's temporary and it will kind of go in a while could even out it's the point of of it's futility of being done in the first place and in terms of say international critique where in museums you do get the public still questioning art works say well you know # say # one of the minimalists Karl Andrey this whole furore of of his hundred and twenty bricks and so you have the public questioning kind of # <trunc>tho</trunc> those bricks and the whole you know they're they they cost pay say two pounds in the local shop but in an art museum they cost thousands and for the Tate gallery to have bought # those works cost the public i don't know five-hundred-thousand # # but what we we were saying # is is tricky is that # # there's this progression where there's this negative # influx of on on Kristo's work initially but and which is why i i attempted to reply them it's this vision then when it's materialised and and and the whole idea of of of function and and use of whatever # you know contrasting that against # the experience of beauty of this ephemeral # you know novelty and # so so that plus the factor of whether it's political in its meaning it's # Kristo is just very complicated because you have kind of the practical side of it what are you trying to do it's it's not art and it's very expensive and it costs lots of money then there's this this vision and and this # enthusiasm driven because he's he # employs so many people to sew up the fabrics themselves # the engineers or the farmers # he he he employs and or he draws students to help him out with his works and they're you know crowds of people helping out with his art work round the islands so it becomes a social activity a kind of social # art # that he does with the stranded islands and all these projects # by the same token # you know perhaps it's just seen well apart from the fact that it's a a fifty kilometres big # then you get everyone talking about the surrounded islands discussing <trunc>mea</trunc> putting meaning to it because saying oh # he uses the pink to discuss the # euphoric artificiality of Miami so and and saying that the pink represents pink flamingos and # pink candy</u>
+<u who="sf5159">no he said # the pink used to represent flamingos and Miami but now represents Kristo</u>
+<u who="sf5160">mm so <trunc>w</trunc> <trunc>w</trunc> we <trunc>we</trunc> <trunc>we</trunc> the well they had campaigns where sink the pink according to those who didn't want his work and i dig pink so # and this was like all very eighties as well and so they went on to discuss it saying his art works also highlighted the area at the time because # because i think it was dilapidated and you had lots of # # old people's homes and they were saying oh yes we'd love to have Kristo at least it's something to do with # our spare time and something to to look at and # #</u>
+<u who="nf5151">could you # helicopter to us</u>
+<u who="sf5160">mm but there there are problems</u>
+<u who="nf5151">you know to see them i think that we quite i mean i think the question really you voiced it there very clearly there eloquently # is where's the <trunc>emph</trunc> # where should the emphasis # does it why do they do go through such elaborate you know political processes in order to get these ephemeral works happening in the first place where's the emphasis why you know is it a collaborative project or is it you know Kristo's just you know making his own side mark you know putting his own mark again sort of recognisable now on the world you know again where does the emphasis lie there and is it beauty or is it a political intervention what do you think from the evidence presented to the panel</u>
+<u who="sf5159">can can i add one more thing i think with all minimalist work there is a lack of # outside # because he's</u>
+<u who="nf5151">i wonder if you could really call it a minimalist work i mean it does take something of that aesthetic but it doesn't have that that same enquiry at the heart that's for sure</u>
+<u who="sf5159">okay but # when you <trunc>thin</trunc> okay then with Kristo's work there is a lack of <gap reason="inaudible" extent="1 sec"/></u>
+<u who="nf5151">you need a pigeonhole for it's a sort of environmental #</u>
+<u who="sf5159">yeah but just because there's</u>
+<u who="sm5153">there does seem to be though it's the difference between the kind of landscape # kind of nature aspect and the kind of urban aspect that that it's #</u>
+<u who="nf5151">he does get it through landscapes it's it's dramatic</u>
+<u who="sm5153">yeah it's it's it's it's that the kind of the urban one deals with a lot more recognisable these are kind of generic hills i mean i don't know kind of the # wh-, whereas whereas with #</u>
+<u who="nf5151">does it matter that he has to negotiate that he that this is a wall which goes across private property and he needs to negotiate between you know what is otherwise #</u>
+<u who="sm5153">yeah</u>
+<u who="su5161">well#</u>
+<u who="nf5151">fended off does it matter in this is this a part of it</u>
+<u who="sf5155">the process is really clever because like # i don't if iv'e got it wrong but it said in the beginning a lot of people were not oh the idea that it like they said they didn't like that because of the money so he kind of he said that he involved the community in his decision making which i don't know if's true if you would go like that far but because they started getting involved he started # getting the commission getting them working with the work sewing you know with the students towards the end they almost became possessive of it it became their art work for their community so it he he almost in a way i don't know if it's if it is like almost <trunc>publi</trunc> public manipulation but he managed to win them over by making them a part of the art by getting them involved in it so #</u>
+<u who="nf5151">but would you call it manipulation because it's a show very obvious very you know adopting the political strategies of you know almost any public project which needs to come off the ground</u>
+<u who="sf5155">well i mean i'm not sure if i'd put it yeah well he said like when we were talking about the money that he actually became a corporation because he had to buy get loans and sell his own things so in a way he is #</u>
+<u who="nf5151">the kind of stuff he sells and he sells his own i mean it's often a drawing and then a map next to it and then the model</u>
+<u who="sf5155">so in a way he is a he is a commercial businessman so obviously he would have had to have thought he thinks he's he's process with like getting i think it was # # <gap reason="inaudible" extent="1 sec"/> to do the photography through it getting him to watch it through it it's almost like a process that he dissects and separates out it's almost like a business strategy going through ah a i think i i like that rather than # more of a# not like # but i find it interesting</u>
+<u who="nf5151">you i mean it's a question of whether you talk about the end result or the process where do you think the emphasis lies does because it seems to <trunc>ha</trunc> what you've said that that has a strong clear impact of meaning where you put the <trunc>empha</trunc> emphasis</u>
+<u who="sf5155">mm i think the end process would not be the end process if it wasn't for the process of getting that community of getting that kind of # moving that dissecting from one to another it depends # the end pieces become what they are because of the process he takes them through i think they would i think from the way that i look at it from what i've read that it would be slightly different if he'd done it another way i would read the pieces slightly differently</u>
+<u who="nf5151">but although you think it's just you know a grand <trunc>meg</trunc> # it's the only way you can get a grand <trunc>megalomania</trunc> megalomaniac just like that off the ground is that what your saying</u>
+<u who="sf5159">i i i think there is # a few elements there</u>
+<u who="su5161">oh i just have to slightly move <gap reason="inaudible" extent="1 sec"/> that's it yeah</u>
+<u who="nf5151">well i have this slight <gap reason="inaudible" extent="1 sec"/> because it is the documentor of this castle i just can't resist it</u>
+<u who="su5161">where is it oh</u>
+<u who="sf5159">this was # the parcel of of hot air</u>
+<u who="nf5151">that's by the where the <gap reason="inaudible" extent="1 word"/> in the in the you know remember when i talked about the # the documentary where i lived and that's a seventy-two one with yes that's where the Henry Moore statue was the year before mm</u>
+<u who="su5161">what's the title </u>
+<u who="sf5160"># Cubic Metre Package it's from nineteen sixty seven</u>
+<u who="nf5151">and it hardly ever worked because i you know it always deflated so all the Freudian connotations of course</u>
+<u who="sf5160">ha ha ha mm</u>
+<u who="su5161">mm mm</u>
+<u who="nf5151">so that's wrapped air</u>
+<u who="sf5159">yeah hot air # yeah so # # his work has been described as having cough # uncanny beauty okay which is obviously a Freudian term and i think there should be more Freudian analysis even though it might seem obvious especially with <gap reason="inaudible" extent="1 sec"/> but # some sort of Freudian analysis would work in order to make a judgement on whether he's doing it just to # express power over landscape or something like that but as far as as far as meaning is concerned i think his work is # is very superficial in one way and the only thing that gives it gives it his work significance is the fact that it's all of his work is big scale like really really big scale work [cough] which makes people sort of think about it</u>
+<u who="nf5151">what do you think</u>
+<u who="sf5160">that's the # Pont Neuf</u>
+<u who="nf5151">let's look at the Pont Neuf before i start what do you think what how do you think why is he doing with the Pont Neuf</u>
+<u who="sm5153">the Pont Neuf it's # isn't it i just the Pont Neuf's like such a classic image in terms of # Parisian politics it's the point they storm to storm the town hall and then  </u>
+<u who="su5161">it's a sort of old bridge isn't it</u>
+<u who="sm5153">yeah i mean it's also it's it's bound up in history and he's literally wrapping history because it's the there's so many revolutionary prints of them storming this bridge and the same with the Reichstag it's it's it's kind of the seat of government kind of the centre of the German empire it's you know an an empire that's fragmented and when we were talking about # the whole idea of the barrels # this kind of #</u>
+<u who="nf5151">you know the history of the Reichstag</u>
+<u who="sm5153">it burned down and #</u>
+<u who="nf5151">well this # it was built # it's just sort of the first German empire in eighteen # # in eighteen-seventy-one and then it became of course it was central to to Hitler and there are famous shots you know and he had this grandiose idea of having spire built this Berlin #</u>
+<u who="sf5160">that was to declare the first # <gap reason="inaudible" extent="1 sec"/></u>
+<u who="sf5160">and then the Red Army raising their flag i think when they #</u>
+<u who="nf5151">and then the Red Army raised their flag when it when when finally the defeat happened and they arrived in Berlin so it's loaded with this you know with with the authoritarian fascist disastrous past of of Germany and then you know what happened when the wall went up it became it stood in no man's land and <trunc>ob</trunc> obviously the capital had moved to Bonn and just before they decided to move back he then got the permission to wrap it but that you know he had the idea of wrapping this building as it stood in no man's land and was i don't actually know it wasn't used at all for anything proper</u>
+<u who="sf5160">no but but this is what i was saying in in terms of this particular thing # you know he had a a <trunc>bu</trunc> <trunc>bu</trunc> but the thing with Kristo as well and the the writings that had # some # ideas about # circumstance high highlighting his his work so a sort of historical event about when they # put up the umbrella project in the US in California there were de i think two deaths # in trying to put up the work and # name referred to the previous works as with # i think # is it Serra who put with the plates and the the kind of layers of plates</u>
+<u who="nf5151">oh that that was Morris wasn't it Morris where there was a # yeah hmm</u>
+<u who="su5161">that's right</u>
+<u who="sf5160">layers mm and and how he killed someone and # it it his work is very difficult to define because obviously he cannot avoid political meaning when he wraps things like the Pont Neuf and and the Reichstag but but at the same time i mean he the these are projects which have been taking him years to oh achieve and so the <trunc>s</trunc> the the the the you know contemporary politics changes because say if if he vouched for it # ten years ago and the political <trunc>si</trunc> situation changes by the time he <trunc>ge</trunc> he gets the approval to have it put up then at the time at at at that time the the # the people at that time would think well why should that be # the meaning isn't # </u>
+<u who="sm5153">but isn't isn't what's more important the changing history over a longer period of time than the contemporary issue the fact that it's it's it's it's it's housed so much history of significance to the German state and and and i think there's something in the actual gesture of wrapping this historical #</u>
+<u who="nf5151">why wrap it is this depoliticising or is it highlighting the</u>
+<u who="sm5153">it's both i feel it's it's it's playing low it's almost you could see it as wrapping history and the fact is it has had to be un-wrapped as as well again because it's because it its you know</u>
+<u who="su5161"><gap reason="inaudible" extent="1 sec"/> at wrapping identity</u>
+<u who="nf5151">so did he allow the German nation to put a carte blanche to where previously the <trunc>car</trunc> the past was the heavily bloodstained past sort of right out with that wrapping my</u>
+<u who="sm5153">but by by by doing that he's also drawing attention to it</u>
+<u who="sf5155">yeah but wrapping it is negative</u>
+<u who="sm5153">so it's quite an ambiguous gesture it's #</u>
+<u who="sf5155">but wrapping it is negative opening it is to get it is is dissecting people antagonising people</u>
+<u who="sm5153">but if if if the past's a bad thing wrapping it it it's #</u>
+<u who="nf5151">it's now again of course used as the you know Parliament with fosters #</u>
+
+<u who="sf5159">yeah but every political building has a bad past i mean if he had wrapped up the White House then everyone would say oh you know i'm <trunc>ge</trunc> i'm going to a new era now though # i won't make any comments on Bush but # he's # every political movement with every political building will have # well you can make all sorts of interpretations so the the the thing is what what sort of things are we making and what sort of things were his intentions</u>
+<u who="nf5151">but what kind of thing is he wrapping up is i think precisely the question there it is not any political building i think he is interested in # i mean like the Pont Neuf in bridging borderlines i mean either he does the land ones which go across borders deliberately or coastlines you know it's always about borders it's always about you know if # <trunc>try</trunc> trying to transgress different states it's not an intervention in a status quo ever i think # so it is i think significant that the Reichstag at the time when he started it became you know it was in no man's land was you know caught between two sides and then later became available to him precisely at the moment of transition when you know unification re-unification happened again</u>
+<u who="sf5159">yeah but the only thing that he says was # yeah but <trunc>wou</trunc> wouldn't you say that that he's doing is just identifying that that was an important building at that time he's not saying anything about it</u>
+<u who="nf5151">i want the others to think</u>
+<u who="sf5159">yeah okay</u>
+<u who="sf5156">i think it was more to do with the identity</u>
+<u who="nf5151">do you find it beautiful i mean do you think actually the meaning is the sheer beauty it creates by minimal means although not actually so minimal i would have thought but minimal artistic content</u>
+<u who="sf5159">you <trunc>ha</trunc> you have to think that it was kind of #</u>
+<u who="sm5153">but there's lots there's pictures in <gap reason="inaudible" extent="1 sec"/> of it</u>
+<u who="nf5151">oh oh golly i had forgotten <gap reason="inaudible" extent="1 sec"/> mm</u>
+<u who="sf5152">i've got it here do you want to see it or</u>
+<u who="nf5151">yeah</u>
+<u who="sf5152">mm there it is</u>
+<u who="nf5151">ah yes # with a flag in front # crowds flocked it was the party of the summer</u>
+<u who="sm5153">how i mean how many days was this left for</u>
+<u who="nf5151">i've forgotten fourteen weeks a fortnight something like that mumbling round room so it's huge years and years so does it i mean again you know you're not really giving me a clear answer where do you put the emphasis years and years of work of really hard political work as well you know across parties and eventually it was the the socialist permitted who permitted that project to happen or enabled it at least so is it a political intervention or is it about making beauty possible where blood has reigned before</u>
+<u who="sf5152">i think it's both it's using that element of beauty as # </u>
+<u who="nf5151">you # it's the same answer can it be both</u>
+<u who="sf5152">yeah no of course it can because he's using that beauty to attract people who probably wouldn't normally look at what's underneath and that's what he's saying he's saying look what's underneath what i've just wrapped and you'll see the political situation but he needs the beauty to get people who wouldn't normally look # </u>
+<u who="nf5151">is it beauty do you see the beauty</u>
+<u who="sm5153">yeah</u>
+<u who="sf5152">definitely i think it's incredible it makes you look at something in a way you've never seen it before therefore you question it therefore you go deeper into it i think</u>
+<u who="sm5153">it makes it makes something that's # of like power a building about power into what's essentially a kind of decorative object</u>
+<u who="sf5160">but he does make it a decorative object</u>
+<u who="sm5153">yeah that's what i've just said</u>
+<u who="sf5160">the the thing with how he dealt with the politics side is that he could have wrapped it anyway wrapping the act of wrapping he doesn't just wrap it he curves it and and he uses specific fabrics specific fabrics that he has done and specific colours </u>
+<u who="sf5159">so will you turn to the Chicago museum so you can see # </u>
+<u who="sm5153">well also also the whole act of wrapping when you think about what things get wrapped normally # gifts and commodities and things are wrapped decoratively so #</u>
+<u who="sf5159">there is yeah i think we have to look at the act of wrapping like if i you know if i take this if i wrap this up and then bring it back on the table don't you see that you you pay more attention to it now right if it was always there you wouldn't notice it but now that i if i go like this and then reveal it you pay more attention</u>
+<u who="sm5153">partic-, particularly if if you wrapped this this cup in an aesthetically pleasing material </u>
+<u who="sf5152">or even not</u>
+<u who="sm5153">or even not i mean i suppose but the fact that he's used these materials that are essentially decorative that catch the light and reflect it</u>
+<u who="sf5152">but don't you think it's quite important that he's taken guys he hasn't taken just a normal little house he's taken a big building</u>
+<u who="sf5160">which is where we we questioned the idea of because you you agree that it's beautiful and it's you know a a he has this this element of aesthetics we question the fact that because people were saying but it's the Reichstag it's a political act politically you you have to think there's the point of because he's wrapped it mm if it was political he could have wrapped it in just any other way but because he's done it in an aesthetic manner <trunc>o</trunc> of of of kind of pleasing to the eye and all these specific folds then you question well did he use the Reichstag because the you know he has some political inclinations or because knowing the fact that it's a political symbol then it would draw attention to his art and then you know all those saying he believes in all this mm kind of the megalomania of the Kristoism it's mm you know all <trunc>psycholo</trunc> # logical stuff # so it's a very difficult thing to say because and so i don't think i it you know i # # you can't say that it's political and um you know kind of beautiful et cetera</u>
+<u who="sf5159">or art for art's sake in a way</u>
+<u who="sf5160">yeah</u>
+<u who="su5161">i don't think you could ever say that it's art for art's sake</u>
+<u who="sf5154">i don't know i just think it looks completely wasteful and because it's so beautiful you just think it's it's just such a waste </u>
+<u who="sf5160">why is it a waste </u>
+<u who="sf5154">well like even like you think of wrapping a present you you wrap it because you want it to be a surprise and nice but wrapping paper is just a complete waste it's a waste of money it's a waste of materials</u>
+<u who="sf5159">i think that's why that's why they fund their all their all their projects because they don't want the negative criticism if they had if they had if this project had been funded by the state then they would have the public against them because the public would say you've wasted all this money that could have gone into a whatever and it's such a waste so they # </u>
+<u who="sf5155">it still seems like a waste because it's still money going into it and you wonder there must be # i think that's why people want to find meanings because there's got to be a big meaning behind it if he's gonna waste all this money just to do that </u>
+<u who="sf5157">but how can it be a waste if all these people flock to see it like they found some # </u>
+<u who="sf5160">yeah no yeah act actually that was the initial # sort of #</u>
+<u who="sf5159">sorry the other thing is that the the the material gets recycled i think doesn't it well most of it i don't know if particularly for the Reichstag but most of them </u>
+<u who="sf5160">like Gaby was saying that lots of people did flock to see this and and you <trunc>wh</trunc> he which is what i think the #</u>
+<u who="sf5155">why because it was a big stunt </u>
+<u who="sf5160">no it wasn't just like # </u>
+<u who="sm5153">i think it was probably more the <gap reason="inaudible" extent="2 sec"/> </u>
+<u who="sf5159">i think the other thing right is that it is publicity strategies and how far and how much he's been influenced by publicity strategies and everything the marketing world i mean the whole the whole the e which brings us back to Andy Warhol and the way i mean you know we've got the professional # oh laughs the mm the professional artist and how he manages and goes about to do his work because Kristo and his wife have a <trunc>sor</trunc> sort of reputation of being very professional and very you know like Meena i said you know the thing like environmental studies for each one of their works and ha dealing with # debating with the government and having to get permissions and all those sort of things so # i think #</u>
+<u who="sf5160">yeah # in reference to your question of basically it's a waste of time and you know that was why people were opposed to it a and it took so long for the Kristos to actually # they they talked to people and and and # promote the work and and turn #</u>
+<u who="nf5151">this i think the irony is i mean you have to be fully entitled to that view # and i think some are quite # but the irony is that they can turn it against you and say well this is precisely the point you know everything is geared towards efficiency and use and money and you know we are doing this big project it's completely funded by our own you know by our own you know # which are ephemeral which are not to be held which are not to be owned financially it's that kind of impulse </u>
+<u who="sf5159">which brings us back to # freedom </u>
+<u who="nf5151">so it's a perverse kind of criticism of or so one could read it of capitalism </u>
+<u who="sf5154">i agree with that laughter round room</u>
+<u who="sf5159">in a way you could see it as a # because the only the only argument that he he usually mm says to or when when he's asked why he's doing his work is it's kind of like why not and he's using the notion of artistic freedom it's like why should i not be allowed to do whatever i want kind of thing </u>
+<u who="sf5160">and he you know he he asks people to # # </u>
+<u who="sf5154">oh yeah obviously if it's just that's i think that's the idea that it's just about beauty just about what # </u>
+<u who="sf5159">so are you so so are you # art for art's sake really so you're coming back to# what we said</u>
+<u who="sf5154">well perhaps but i really #</u>
+<u who="nf5151">time's running out and we we will stop here now # but you can mull it over because i think you've i think the contrast with Michael Asher and Kristo works well because they do share some of the same impulses and yet you couldn't have more different articulations and if you think about you know what you disliked about Asher you know it's almost a virtue when compared with with Kristo and what you dislike about Kristo or like about Kristo becomes a you know a non-virtue with Asher you can you know thinking about those i think will make it clear to you what is at stake in each</u>
+<u who="sm5153">mm what do you think the similarities are between the Cubic Metre Package and Asher's <gap reason="inaudible" extent="1 sec"/></u>
+<u who="nf5151">ah that's an interesting one we didn't talk about that did we </u>
+<u who="sm5153">well i didn't talk about it because i didn't think it was there was not entrance for it</u>
+<u who="nf5151">he bundled because it really is very clear that he doesn't want to add an extra object to the world Asher and Kristo has no hesitation adding not just an extra object but a gigantic one to the # you know there's an adage to the world</u>
+<u who="sf5152">but is it an adage or is it just wrapping </u>
+<u who="nf5151">yeah that is true</u>
+<u who="sm5153">wrapping something that's either there or could be seen as absent which is the same as Asher with his <gap reason="inaudible" extent="1 sec"/> in Germany</u>
+<u who="nf5151">what do you think </u>
+<u who="sm5153">i don't know i need to think about it a bit more i mean i just i just was looking through my notes and i suddenly remembered <trunc>bec</trunc> because it was only such a small mention in the literature and there was no #</u>
+<u who="nf5151">mm and that he didn't write that he added something at that point </u>
+<u who="sm5153">yeah</u>
+<u who="nf5151">you know that instead of making the the the circumstances of the gallery speak revealing its own support and speak of its own you know in its own voice so to speak the voice which is normally hidden he added something the stream the wind playing on you know perception philomonology well it's to do with containing and it's to do with that that Kristo does in a sense contain and produce an object despite by also making something absent you know Asher reveals and and and Kristo seals in order to reveal i mean there is something like that sort of parallels going on i'll come back to mm to Kristo and the Reichstag perhaps in the light of <gap reason="name" extent="2 word"/> and absence and distractions of absence as you know political commentary or not and then we'll see if it gets but you know that's another ambiguity to be left with to think about okay you # all remember you probably will be you know hopefully not in the last section of your dissertation but you all remember that we have the first week of term we have already two sessions although you hand in day for the dissertation's only the Friday so make sure your dissertation is well out of the way you have prepared your your artists and those of you who volunteered and you are coming to <gap reason="name" extent="1 word"/>'s talk on Wednesday mm mm before that don't forget that it would be really a shame</u>
+</body></text></TEI.2>

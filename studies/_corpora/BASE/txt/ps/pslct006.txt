@@ -1,0 +1,765 @@
+nm0693: i guess in the last three lectures what we've been looking at has been 
+has been the generality [0.2] of photochemical processes [0.5] and today [0.6] 
+i want to continue with the notion of [0.2] specific problems and looking [0.3] 
+looking at them in some depth as illustrating [0.4] er the sorts of things that 
+er [0.2] you can do with photochemistry [0.4] now last week we were looking at 
+the splitting of water [0.6] with [0.5] sunlight [0.5] and we recognized that 
+water [0.4] doesn't draw [0.5] sunlight at all [0.4] but if you put it in with 
+the right catalyst [0.5] and the catalyst we [0.6] talked about very much was 
+this ruthenium catalyst [0.4] then [0.2] provided you had a cocatalyst there as 
+well [0.6] then you had the [0.2] possibility of the ruthenium complex [0.3] 
+splitting the water [0.3] into hydrogen and oxygen [0.5] and this could be done 
+[0.5] but there were drawbacks and that the drawbacks you remember were that er 
+particularly [0.5] er the catalyst didn't go on for ever [0.6] the yields were 
+rather low [0.3] and you had to have a sacrificial donor in the system [0.3] 
+now if you were going to do that [0.3] well you might 
+as well say we'll go to biomass [0.4] but it looks as though 
+photoelectrochemistry [0.3] where you actually generated an electric current 
+from such a system [0.4] was a much better bet and work is still going on with 
+that [0.6] now what i'd like to talk about today is something [0.3] er [0.6] 
+which is [0.2] related but different [0.4] and that is the [0.3] use of 
+irradiated er [0.2] catalyst that absorbs the U-V components of sunlight [0.5] 
+to destroy organic pollutants [0.6] and er that will be the subject of today [2.
+2] and the f-, the first [0.3] question is [0.5] er why should one [0.4] er 
+choose titanium dioxide [0.2] as a [0.4] a a thing to do this [0.6] er [0.3] 
+there are various other things that one could have maybe thought about [0.5] 
+but er i'll [0.4] put down [0.3] er [0.3] almost a kind of summary of the 
+lecture [0.3] er before i begi-, [0.2] er before i've given it [0.3] and that 
+is that er [1.4] it's [0.3] very cheap and it's readily available [0.5] T-I-O-
+two as i said before is used as a er the whitener [0.3] in [0.3] emulsion 
+paints [0.5] er for getting a white finish [0.3] on any gloss paints as well [0.
+4] it's also environmentally harmless there's er [0.3] there's 
+sacks of titanium [0.3] all around the world [0.4] and nobody suffers from it 
+[0.8] we know f-, er that it's got a very good [0.4] turnover number [0.2] in 
+other words you can irradiate it again and again and again and again and again 
+and [0.4] it will still function [1.2] er it turns out to be efficient for a 
+wide range of pollutants and i'll illustrate that in the lecture [1.0] er [0.2] 
+another advantage is you can attach it to supports rather readily [0.3] in 
+other words [0.4] er if you take T-I-O-two which is a er a white [0.3] powder a 
+bit like talcum powder [0.3] and you stood it up in water [0.4] or even 
+sonicate it with s-, with a s-, with a sonicator you know sound wave emitter [0.
+4] er [0.4] you get a suspension [0.6] if you lay the suspension onto glass and 
+allow it to evaporate [1.0] the T-I-O-two powder sticks to the glass [0.6] 
+really very fiercely and it's really quite hard to get off [0.4] particularly 
+if after you've layered it you you heat it [0.5] maybe to er [0.3] a hundred 
+degrees or so for a [0.6] twenty-four hours [0.3] it becomes even more firmly 
+attached to glass [0.4] and it means that er you've got a stable [0.2] thin 
+layer [0.5] er which will be c-, [0.2] really quite a useful advantage [1.0] 
+you might have p-, [0.4] predicted at the outset from what we said last week 
+from the er [1.2] the other lecture [0.2] where we talked about T-I-O-two [0.2] 
+it's got rather a large band gap [0.8] er [0.2] under solar irradiation there 
+isn't a lot of U-V [0.5] but [0.3] there is some [0.5] so that there's a 
+reasonable chance that you'll get something out of it [0.2] but clearly [0.2] 
+if you could activate it [0.4] by er [0.5] putting in maybe a t-, an inorganic 
+ion strip in the lattice to move the action spectrum towards the visible [0.4] 
+then you could probably [0.4] increase its er [0.3] its efficiency [0.5] er as 
+i've as i've indicated there [0.4] so [0.3] those are the er [0.3] those are 
+the main features and i shall spend quite a bit of time [0.3] er [0.2] 
+underlining those notes er throughout the lecture [0.8] okay have you have you 
+[0.3] got have you got all that [0.5] 
+sm0694: not yet [0.3] 
+nm0693: not yet okay i'll hol-, i'll hold for on a sec [0.5] while you er [0.3] 
+try and get it down 
+nm0693: right [0.6] what i'd like to do next is t-, for us to sort of think 
+about what a T-I-O-two particle titanium dioxide particle is like [0.5] and we 
+have 
+here [0.4] a [0.3] very [0.2] er [0.2] schematic view of what it's like [0.5] 
+so it's irregular [0.2] it's roughly roughly kind of spherical [0.6] and [0.5] 
+essentially [0.4] the two points to [0.6] note [0.4] are these [0.5] you've got 
+within the crystal because it's a semiconductor [0.5] you've got a valence band 
+and a conduction band [0.5] got these two energy levels [0.7] but they're 
+really bands where i've just drawn them as lines for the to simplify things [0.
+7] and when you [0.4] optically pump the thing by shining light on it [0.3] you 
+push an electron [0.3] out of the valence band [0.3] into the conduction band 
+just as [0.2] just as i talked about last week [0.8] and [0.4] the [0.4] a l-, 
+hole [0.6] here this H-plus [0.6] or the absent electron [0.5] this will 
+migrate from within the crystal to the surface [0.3] so you've got to imagine 
+this in three dimensions of course [0.3] er so you can imagine to get to the 
+surface [0.2] and you've got holes dotted around the surface as i've indicated 
+there [0.6] the electrons [0.3] also [0.4] migrate to the surface [1.2] they 
+also of course stand a good chance of er recombining [0.6] and if you didn't 
+have [0.2] anything else in the system [0.4] they would recombine [0.3] and 
+nothi-, not very much would happen [0.6] but er [0.4] what happens is that 
+you're able to fix the charge separation [0.5] because [0.2] essentially it's 
+in water [0.9] and the water [0.5] is being purged with oxygen [0.4] or [0.8] 
+even less extreme if you've got some air in in the water and we would normally 
+have some air there [0.3] and certainly if you were talking about [0.3] er [0.
+5] river water lake water something like that [0.5] er [0.3] then [0.5] there 
+will be there would be oxygen present from the air [0.2] at about you know 
+twenty twenty per cent of the er [0.3] dissolved gases would would be oxygen [0.
+4] so the oxygen [1.1] in the solution [0.5] will migrate around of course it 
+will collide with the particles [0.4] and it will trap the electron [1.2] and 
+make it O-two-minus the so-called superoxide ion [0.9] and if it's trapped as 
+this [0.4] then the electron is no longer mobile because it's become O-two-
+minus [1.1] the other thing that happens [0.4] is that the H-plus [0.9] is a 
+very powerful oxidizing agent [1.6] and it will oxidize water [0.8] to [0.9] O-
+H radicals [0.4] so [0.4] quite quickly all of these H-pluses [0.8] will [0.3] 
+react with the water [0.7] on the 
+surface of the particle [0.4] and they will be converted to O-H [0.8] so you've 
+got O-H which is an oxidizing agent upon the surface [0.6] and you've got O-two-
+minus [1.0] which is [0.5] also [0.5] an oxidizing agent it's not as powerful 
+as O-H but it's still [0.8] certainly not a reducing agent [0.7] er [1.0] the 
+other thing that can happen [0.4] is that the O-H [0.3] is absorbed going to 
+move that into a solution [0.2] so you've got the absorbed O-H becoming a 
+solution O-H [0.5] the O-two-minus is absorbed and with that become [0.5] an O-
+two-minus in solution [0.6] so all [0.3] of the [0.5] species produced by 
+further excitation end up [0.4] either by being oxidizing agents absorbed on 
+the surface [0.4] or they become oxidizing agents out in solution [0.6] and 
+this is the [0.2] this is the basis of the [0.2] the photoreactivity [0.4] o-, 
+of T-I-O-two [0.4] you're generating all these oxidizing species [1.6] now 
+before [0.3] going any further into T-I-O-two and er [0.7] er its various 
+merits [0.3] i will er [0.3] briefly [0.5] er cast an eye over one or two 
+competitor type systems that you might have thought about [0.7] and these have 
+all been tried [0.5] er as 
+you can imagine [0.7] er this is quite a complicated er transparency you may 
+not be able to [0.2] draw all of this but i'll just [0.4] highlight [0.2] 
+what's important [0.7] so [0.3] what have i got down here [0.8] well this is 
+quite a [0.3] a complex picture [0.5] er [0.3] the point here is that er [0.4] 
+you can look at a whole series of other semiconductors [0.4] and all of the all 
+of these that are quite well known [0.4] because they've all been used [0.4] er 
+in photoelectrochemical cells so the technology has already been explored [0.3] 
+for these things [0.6] and what i've got here [0.2] are the band gaps [0.6] the 
+band gaps [0.3] er [1.2] the distance between the [0.3] valence band and the 
+conduction band [0.5] the T-I-O-two [0.3] is about three-point-two electron 
+volts [0.5] as you go to some of these ones then it's getting less one-point-
+seven one-point-four [0.3] er [0.2] two-point-four [0.2] these are coloured of 
+course because the band gap is now in the visible [0.3] and these things are 
+either orange or yellow [0.3] er or whatever [0.6] er zinc sulphide white 
+'cause you've got really really quite a big band gap there [0.3] and strontium 
+titanate is very similar to this [0.4] W-O-three [0.2] is probably just about 
+on the 
+edge of the o-, of the on the edge of the visible so it will have a faint maybe 
+a probably a [0.3] a a a a slight colour [0.8] you know slightly coloured 
+yellow [0.6] er [0.6] the point is that er [0.3] the the band gaps for these 
+are very attractive [0.4] but unfortunately [0.6] er [0.4] the [0.7] flip side 
+of having a narrow band gap which would be very sensitive to visible light 
+which is a good thing [0.4] is that you don't actually get enough [0.3] in the 
+way of potential [0.2] to [0.3] er [0.4] oxidize the water through to O-H [0.3] 
+you've got if you want to get O-H radicals [0.2] you've got to get past this 
+well this potential here [0.2] as we run across the bottom [0.6] so in a sense 
+[0.3] er [0.4] there's a whole all all of these ones are going to fail this 
+might just just about creep in [0.6] er [0.4] but [0.2] the ones that are going 
+to win on energy are those those three there [0.5] er [0.3] these [0.3] which 
+might have seemed attractive [0.7] simply don't win on potential [0.2] you've 
+got to get the oxidizing potential [1.3] to get the oxidation to O-H [0.5] but 
+you've [0.3] also got to try and match the band gap as best you can to what's 
+[0.3] in [0.2] sunlight if you're going to use 
+sunlight [0.6] now if you decide you're not going to use sunlight at all [0.3] 
+but you're going to use fluorescent tubes [0.3] you stand a much better chance 
+because here [0.3] you can make tubes emitting U-V [0.3] with a a a a high 
+level of efficiency [0.4] so [0.5] the way [0.2] thinking has gone is to move 
+away from [0.6] er using sunlight [0.7] er [0.5] not completely away by the way 
+but [0.4] more towards using U-, U-, U-V tubes [0.3] so the idea would be if 
+you had [0.4] er [0.2] a [0.3] a factory [0.5] emitting some polluted water say 
+polluted with low levels of [0.5] really [0.2] poisonous materials [0.4] but [0.
+5] down at say a micromolar [0.5] if you passed that [0.6] effluent past a bank 
+of U-V tubes all switched on [1.2] and [0.4] if you had the T-I-O-two present 
+in the system in some form [0.6] it wouldn't be a suspension obviously 'cause 
+it would be washed away [0.2] but if you can immobilize the T-I-O-two [0.5] on 
+[0.3] sheets [0.4] or rods or fibres [0.4] then you would destroy [0.5] the [0.
+2] polluting organic [0.5] and you stand a reasonable chance of cleaning up [0.
+4] because [0.5] i can s-, [0.2] i can tell you sort of in anticipation [0.4] 
+this is a remarkably 
+efficient system it works really quite well [0.3] and much better than you'd 
+ever believe [0.2] from the outset [0.5] okay [0.2] so [0.4] the the messa-, 
+the message from that slide really is that er [0.2] you got to get past this 
+point here to get O-H radicals [0.4] and those three work quite well this is 
+another possibility [0.3] and those don't really s-, [0.2] you know stand much 
+of a chance [0.8] okay [1.1] right so i'll take that off now hoping that you've 
+got the the the basic message without copying everything down furiously [0.5] 
+er [0.4] what i'd like to do next is er [0.3] perhaps show you [0.3] how some 
+of these er [0.2] semiconductors compare with each other [0.3] so you can just 
+see [0.3] whi-, you know which really are the good ones and and the not so good 
+ones [0.4] and what i've got here [0.6] is a slide [0.6] and this is where 
+we're looking at er [0.6] pentachlorophenol [1.1] now this is [0.4] all the 
+chlorophenols are quite good things to look at because [0.4] many [0.5] of the 
+[0.4] pollutants that er [0.9] er eman-, emanate from [0.2] er [0.6] waste 
+sites and dumps and the like [0.7] they've been partly converted by bacteria [0.
+4] from 
+something like [0.4] er polychlorobiphenyls [1.1] into chlorophenols [0.7] and 
+so the chlorophenols tend to be the water soluble form which gets leached into 
+the aquifers or the [0.4] water table [0.2] and get into rivers [0.5] so [0.4] 
+the chlorophenols have been looked at very closely [0.4] because they are 
+really ideal model compounds to work with [0.4] and here we've got 
+pentachlorophenol [0.6] er [0.6] and it's a concentration of about [0.2] i 
+suppose [0.5] four [0.2] times ten-to-the-minus-five mole per litre [0.4] this 
+has been irradiated various [0.4] semiconductors [0.3] are present [0.4] and 
+you can see [0.2] T-I-O-two is here [0.5] Z-N-O is there [0.5] this is cadmium 
+sulphide [0.4] and then up here you've got W-O-three [0.4] and tin oxide [0.3] 
+and you can see that by far the best two [0.4] are the T-I-O-two and the Z-N-O 
+[0.5] which the previous slide [0.3] would have would have led you to believe 
+[0.3] so the previous slide was a kind of theoretical prediction if you like 
+the rationalization [0.4] this is the experimental result [0.4] er i suppose 
+the thing is that er [0.5] er C-D-S is rather better than we might have thought 
+it was [0.3] but it's still nothing like as good [0.3] as T-I-O-two [0.2] 
+or zinc oxide [0.7] so er [0.2] that's er [0.3] a a a n-, a nice sort of 
+comparator experiment [0.3] on pentachlorophenol [1.9] the next question is i 
+suppose what actually happens [0.4] when [0.3] the er [0.5] the light falls on 
+the [0.3] particle what are the subsequent reactions [0.3] after [0.3] what 
+i've described so i'll er [1.6] i'll show you [0.2] er that as on on the next 
+slide this is quite a complicated one [0.4] and i'll follow it up with one or 
+two rather easier ones [0.4] so here we go [0.7] er [0.2] and i'll take you 
+through it [0.4] fairly slowly [1.0] okay [0.5] can you actually read read 
+those on there [0.4] yeah i'll i'll call them out anyway [0.3] so we start off 
+on with T-I-O-two with light [0.3] we get the whole [0.2] we get the electron 
+[0.5] so i said before the electron picks up O-two [0.3] to give O-two-minus [0.
+5] er [0.3] it's not very well [0.5] done as a as a minus but it ought to be a 
+minus dot really 'cause it's a free radical [0.5] this is a O-two-minus-dot [0.
+3] an O-two-minus-dot can go on [0.4] er it can react two of these react 
+together to give you these [0.2] it gives you H-O-two [0.6] you've got it can 
+react with protons and it's 
+slightly acidic to give you H-O-two radicals [0.4] and H-O-two itself [0.3] is 
+is er [0.3] a weak oxidant it can attack organics [0.4] in the absence of the 
+organics [0.2] er [0.2] the thing will go on it will form oxygen and hydrogen 
+peroxide [0.5] er [0.2] it can pick up electrons [0.2] to give this [0.3] 
+that's E-minus of the proton is equivalent of H atom [0.6] and H atom will 
+react with H-O-two to give you H-two-O-two [0.5] and then [0.2] further 
+electrons will give you [0.2] O-H radicals [0.5] and then you've got further 
+reactions here so you end up by making some more O-H radicals [0.5] if the 
+thing is not intercepted [0.4] by an organic [0.6] so that's the er [0.6] 
+that's what's happening to the electron it's being converted ultimately [0.3] 
+in a number of steps [0.2] through to [0.2] hydroxyl radicals [0.3] er [0.8] 
+unless the thing gets picked up beforehand [1.0] this side [0.2] you've got H-
+plus [0.7] and the H-plus surface gets on to the surface [0.3] it ma-, it the 
+contribution system gets to the surface [0.5] oxidizes the water to O-H 
+radicals [0.4] the O-H radical sticks [0.3] er on the surface [0.2] near to a 
+titanium [0.6] er what's going to happen then [0.4] well basically if you've 
+got 
+er in the system [0.5] er [1.4] an organic which we can denote R [0.4] or a f-, 
+organic radical [0.7] or just set it on carbon or another organic radical which 
+is basically a [0.3] a semi-oxidized alcohol [0.6] er all of these things [0.3] 
+react with er all of those things which have come from here you see all most of 
+these will spill down over into there now [0.3] and you get oxidized species [0.
+9] so ultimately [0.5] after many many steps [0.4] and if you think about it if 
+you've got something like pentachloro [0.3] phenol or even a thing like say 
+phenol itself [0.4] to get phenol through to carbon dioxide [0.5] you've got 
+many many electrons needed you need to take many electrons out of phenol [0.5] 
+to get it [0.4] to a point [0.3] where the phenol molecule [0.4] is often being 
+converted right through to C-O-two [0.6] the process of converting these 
+organics [0.2] right through [0.3] to either C-O-two [0.5] or [0.3] if you've 
+got a chloryl organic to chloride anion [0.3] which is harmless [0.5] er both 
+of these are p-, are pretty harmless [0.4] er compared with the start material 
+[0.5] then it's called mineralization [0.4] because [0.3] carbonic 
+acid and H-shell are mineral acids [0.3] so the whole process is called 
+mineralization [0.4] or if you like [0.3] photomineralization [0.7] so this 
+this is a f-, a a f-, [0.4] a fairly fairly complete mechanism [0.6] er [0.2] 
+it's told you what's happening to all these oxygen radicals [0.3] it hasn't 
+said very much of what what's happening [0.4] er department there [0.2] all you 
+can [0.3] er er [0.2] all this says at the moment is that these c-, these 
+carbon centres [0.4] are either organic [0.5] er [0.3] or an organic radical [0.
+3] or a hydroxylated organic radical [0.2] all of these three will all of these 
+will get oxidized [0.4] in in the process [0.4] so that's a k-, a kind of total 
+scheme [0.8] so it's an elaboration of my particle picture [0.2] i've now got a 
+lot more reactions there [1.4] okay [1.0] have you have you got that [2.0] well 
+[0.8] now just in slightly more detail [0.4] er i want to try and explain [0.7] 
+the kind of [0.4] reactions that go on [0.6] when any organic system is being 
+oxidized [0.3] so thi-, thi-, what i've got next is not just peculiar to this 
+system [0.5] this is [0.2] a generality [0.4] for the oxidization of all 
+organics [0.3] including polymers as it happens [0.6] so [0.4] 
+here we go [1.6] well the one i've got [0.2] i've put it down er [0.2] it's 
+actually for the [0.4] oxidation using hydrogen peroxide [0.5] er you can use 
+that instead of T-I-O-two [0.5] er [0.5] but it's not as good because you use 
+it up [0.8] but the chemistry is exactly the same [0.7] if you irradiate 
+hydrogen peroxide with pentachlorophenol you destroy it [0.7] er [0.9] but of 
+course you destroy the H-two-O-two as well [0.3] the T-I-O-two [0.3] you 
+constantly regenerate the T-I-O-two it goes on and on and on [0.4] er [0.2] 
+going through all these steps [0.3] but the the key point is this [0.6] right 
+so [0.4] we start with off [0.5] with an organic [0.4] and we'll call the 
+organic molecule [0.4] whatever it you know it can be anything you like phenol 
+benzene [0.5] er ethanol [0.6] a dye stuff [0.6] we'll call it H-R-H [0.3] 
+that's two hydrogens bonded to [0.8] quite a complex network of carbons [0.3] 
+but we'll just call it H-R-H [1.2] you've got the O-H radical formed [0.4] i've 
+got it formed from H-two-O-two there but of course it's formed as we've already 
+said from T-I-O-two under photolysis [1.2] so the O-H radical is formed here [0.
+6] and it attacks the H-R-H [0.5] it pulls a 
+hydrogen off [0.6] to give us water so the O-H becomes water [0.5] the H-R-H 
+comes through here [0.2] and becomes R-H-dot [0.4] so there's our organic 
+radical [0.8] the organic radical [0.4] if you didn't have any oxygen in the 
+system [0.5] it would almost certainly dimerize [0.3] to give you a polymeric 
+product [0.4] and you do actually get some [0.2] if you have a look at these 
+phenols you do get some er [1.6] polyphenols in the system you can get dimers 
+from trimers of phenol [0.3] as a side product [0.2] but they tend to be fairly 
+minor [1.2] normally of course [0.2] you make a point of having oxygen there 
+you make sure the system is has got air [0.5] absorbed in it [0.4] or if you're 
+a bit worried about that you can blow air through it [0.5] and if you want to 
+be really definite you can blow some oxygen through it because what we tend to 
+do in the laboratory [0.3] is not really [0.5] a viable proposition for [0.2] 
+an industrial plant [0.2] mind you could do it but it would make it more 
+expensive you don't need to really [0.7] R-H [0.5] will will react with oxygen 
+[0.5] to give [0.3] a peroxide radical [0.3] that's an organic 
+peroxide radical [0.4] and it's got er [0.5] normally it's written as R-O-two-
+dot [0.4] but because we've written this as R-H-dot we'll just put the oxygen 
+on and call it R-H-O-two-dot [0.4] so this is [0.4] this is a peroxyl [0.2] 
+radical R-O-two-dot [0.7] now the R-O-two-dot can do all sorts of things [0.4] 
+er [0.6] and there's a there's a variety of things that it can do there [0.4] 
+er [1.2] it can reverse [0.6] that is not [0.3] particularly important i will 
+say [0.7] er [0.2] but what it [0.7] can also do [0.4] and this is the 
+important one [0.5] it can attack another R-H-R-H [0.2] which i've written here 
+[0.5] by pulling off a hy-, a hydrogen [0.5] and we end up by getting R-H-O-two-
+H there [0.8] and we go back [0.5] to R-H here [0.2] so basically you've got 
+little a little chain reaction going along here [0.3] where you're constantly 
+diverting H-R-H through to the [0.3] this hydroperoxide [0.6] so you convert it 
+through to the hydroperoxide [0.5] and then you've got some other steps up here 
+[0.4] er [0.6] you've got various si-, scissions this is to actually cleave to 
+give an R-O radical [0.5] er [0.2] you can go up to R-H-plus [0.3] you can go 
+round to O-two-minus [0.3] 
+and get back to H-two-O-two [0.5] but i would say the important the really 
+important steps here [0.3] what the first one is the abstraction by O-H to take 
+you through to here [0.5] the next important step is the picking up of oxygen 
+to go through to there [0.4] the next step is to go round this way [0.3] to 
+give you [0.6] a hydroperoxide [0.2] so you've now taken your organic [0.4] 
+which started out like this [0.3] through to there [0.5] but of course it 
+doesn't stop there [0.3] because what then happens is [0.3] the the whole thing 
+starts all over again [0.2] this time you would write R-H-O-two-H in here [0.3] 
+and again you would pull off another hydrogen atom [0.3] and you'd take it to 
+one higher state of oxidation [0.3] so it goes round and round and round and 
+round [0.2] and every time it goes round [0.2] you strip one hydrogen out [0.3] 
+and you put an O-H on [0.3] so [0.3] you know you in the end you end up with if 
+you like [0.2] if you imagine a carbon with four hydroxy groups around it [0.3] 
+that's all that really is C-O-two and some protons so [0.3] er [0.2] you are 
+really you're really taking the through through the 
+thing through [0.4] from [0.2] a fully reduced form with carbons with lots of 
+hydrogens [0.3] through to a very highly oxygenated form [0.2] that finally 
+becomes C-O-two [0.6] so [0.2] that is the er [0.2] that's the sequence [0.2] 
+of reactions [0.4] in in the H-two-O-two U-V process [0.3] it's exactly the 
+same [0.4] if you have the T-I-O-two there as well [0.3] if i wrote T-I-O-two 
+for H-nu [0.6] it's ju-, it's exactly it's just the same sort of thing [1.0] in 
+fact people working on these systems there are three favourite things to work 
+on one's T-I-O-two [0.4] one's H-two-O-two and the third one's ozone [0.3] 
+'cause if you irradiate ozone [0.3] you get [0.2] O-two molecule [0.6] and an 
+oxygen atom [0.4] and the oxygen atom inserts into water [0.3] it's extremely 
+reactive [0.3] and gives you two O-H radicals [0.2] so [0.2] the whole thing is 
+centred on making O-H radicals [0.5] O-H radicals are the great purifying 
+radicals in this life [1.8] now this system has been looked at very very 
+extensively [1.3] er with all manner of pollutants [0.5] and i'll give you a t-,
+a a another slide now [0.2] with about a million compounds on [0.2] and you're 
+not to [0.2] try and write 
+all these down [0.5] but you could just maybe write down well well one or two 
+examples [0.4] so er [0.3] here we go [0.6] so these are [0.3] 
+photomineralization of organic pollutants [0.3] sensitized by T-I-O-two [0.3] 
+examples of compound studied [0.6] and the very simplest compound methane 
+pentane dodecane [0.4] they go [0.3] hologenated hologenated alkanes [0.4] 
+tetrachloroethane [0.3] dibromoethane so for all these rather [0.2] dangerous 
+solvents you know which at one time were very beloved of the dry cleaning 
+industry [0.3] er [0.2] can be degraded using the T-I-O-two system [0.7] 
+alcohols [0.2] absolutely no problem [0.6] acids the next stage up from 
+alcohols no problem [0.4] alkenes [0.6] straight away [1.2] chloroalkenes again 
+dry cleaning solvents [0.4] they can be destroyed [0.5] and the dreaded 
+aromatics like benzene [0.6] they can be destroyed [0.5] halogens [0.7] well 
+here we've got dichlorophenol dichlorophenol [0.3] these are all the de-, 
+degraded products [0.3] from things like polychloro [0.3] biphenyls [0.3] 
+they're also degraded products from dioxins the [0.2] famous er [0.2] Seveso 
+disaster in Italy [0.5] where [0.2] er [0.6] a whole [0.5] area er was heavily 
+contaminated 
+a lot of people [0.5] er died [0.3] from ingesting er the these toxic materials 
+[0.9] the straightforward phenols are vulnerable [0.9] carboxylic acids [0.5] 
+polymers are not they're not quite so easy to do with polymers but they you can 
+[0.4] degrade polymers with T-I-O-two [0.5] er 'cause these aren't water 
+soluble [0.2] so it's it's not it's not straightforward [0.2] you have to grind 
+them into a powder or do something to them [0.3] to [0.5] er [0.5] expose them 
+properly to the T-I-O-two but T-I-O-two will will will remove them [0.5] whole 
+series of er surfactants [0.7] er [0.5] all manner of surfactants of course get 
+out into the [0.9] aqueous systems into rivers [0.2] streams and lakes [0.5] er 
+[0.5] they're used very extensively in industry and also domestically [0.5] and 
+they're really quite di-, difficult things to get rid of [0.5] er [0.5] but T-I-
+O-two [0.2] will [0.3] er attack them all [0.4] then you get down to herbicides 
+[0.4] er [0.4] simazine and [0.2] things like that [0.7] the pesticides like D-
+D-T parathion and lindane [0.4] and then also dye stuffs they're quite 
+important because a lot of factories [0.5] that use dye stuffs [0.4] they're 
+only allowed 
+to discharge at very very low levels so they have to process their effluent 
+themselves [0.4] otherwise they're [0.2] subject to heavy fines [0.5] and 
+they're always looking for they normally do this by some sort of chemical means 
+[0.3] but if you get down to very low levels [0.4] then you can use T-I-O-two 
+[0.2] to finish off the [0.3] to finish off the job [0.5] so a vast array of 
+compounds [0.3] and they all go [0.3] through this organic radical route [0.4] 
+er by going to giving you er [0.2] O-H attack it to give a carbon radical [0.2] 
+which picks up oxygen to give a peroxy radical [0.4] and you get a 
+hydroperoxide [0.3] and then that [0.2] in turn is destroyed further [0.5] so 
+that's the kind of thing that er [0.3] that goes on [1.5] er [7.9] this is [0.
+6] er er [0.3] not as not as important a slide but i'll i'll i'll just er show 
+you the the type of thing that people [0.3] study here [0.6] er [0.9] there are 
+two ways of going at this really one is to try and analyse the pollutant 
+disappearance [0.5] er which you can do by monitoring the pollutant level by G-
+C-M-S or something like that [0.4] the other is to look at C-O-two evolution [0.
+5] and 
+er [0.2] here are we well beyond looking at C-O-two [0.2] er evolution [0.5] 
+and we are measuring [0.3] pollutants at various concentrations in milligrams 
+per [0.4] per [0.9] cubic decimetre [0.5] and [0.4] er [0.3] as you can imagine 
+[0.5] as you begin to increase the concentration of course [0.4] you'd expect 
+the thing to plateau out [0.4] because [0.6] as you raise the concentration [0.
+5] you're beginning to saturate the surface of the [0.2] T-I-O-two particle [0.
+3] with the thing you're trying to destroy [0.3] and so if you go to er [0.5] 
+er to [0.3] to levels more than [0.5] er around here [1.5] then [0.4] you're 
+not going to have such an efficient process [0.2] simply because [0.3] you've 
+reached [0.3] a kind of a [0.3] saturation of the level it's very much a kind 
+of [0.2] Langmuir type kinetics er whether you [0.4] can remember [0.3] i think 
+i talked about Langmuir kinetics even in first year to you [0.5] but er [0.9] 
+Langmuir's idea was that [0.3] every every surface of a catalyst [0.2] has a 
+certain number of sites [0.9] and when the sites were filled [0.7] then you've 
+got no more catalytic action [0.2] and you could double treble [0.5] multiply 
+this concentration by a ten or a 
+hundred [0.3] you'd get no more joy [0.3] in the way of them [0.2] producing C-
+O-two [0.4] or in this case or whatever it was [0.3] because you've s-, [0.2] 
+saturated the catalyst [0.3] you can see the saturation coming in here [0.3] so 
+this illustrates that the [0.3] the Langmuir [0.3] type of idea [0.4] is valid 
+for T-I-O-two [0.5] a lot of people have done done very detailed surface 
+kinetic study of these systems for a number of things [0.3] a number of 
+different pollutants [0.2] and they find all the time [0.3] the sort of 
+behaviour [0.2] i've illustrated here [0.4] you you plateau out [0.7] now this 
+doesn't matter too much because [0.3] industrially [0.3] the sorts of things 
+you're trying to remove [0.3] like the chlorophenyls and dioxins and things [0.
+3] surfactants [0.2] are actually at very very low levels [0.6] they're very 
+harmful [0.7] but they are at very very le-, very low levels and so [0.6] the 
+problem [0.5] is one [0.3] that you can reasonably attack [0.4] because you [0.
+3] do not normally have [0.3] for the pollutant levels [0.2] sort of [0.3] you 
+know [0.5] at this end you tend to be more towards that end [0.3] so the t-, 
+the the thing is in your sights [0.3] you can [0.4] er [0.3] stand a 
+reasonable chance o-, of getting a a conversion [0.5] to [0.6] er [0.3] free up 
+the system [1.9] the [0.7] question of [0.6] how [0.7] good a catalyst [0.2] i-,
+the the T-I-O-two is [0.3] of course [0.7] er also revolves around [1.0] does 
+it [0.7] wear out [0.9] do you [0.7] come up against having to replace it quite 
+frequently [0.2] how often does it turn over [0.5] and this is a a a n-, a nice 
+little slide here i think [0.4] er [0.4] it's only er [1.3] ten [0.3] cycles 
+but what what have we got here [0.4] well we've actually got four-chlorophenol 
+[0.5] which is again a very typical type of er thing to be looking at [0.3] and 
+we got one portion of T-I-O-two [0.2] only one portion [0.6] we start off [0.3] 
+er at [0.3] this concentration here of about er [0.2] three times ten-to-minus-
+er - [0.8] er - [0.2] six micromolar [0.5] you shine the light on [0.5] and you 
+see the level [0.4] falls away rapidly and as the f-, four-chlorophenol is is 
+being destroyed [1.2] then what you do [0.4] is er [1.8] inject [0.4] into the 
+system [0.6] er [0.4] a fresh [0.2] quantity [0.5] syringe the four-
+chlorophenol [0.4] away it goes [0.3] you inject f-, a fresh amount away it 
+goes [0.3] so you're you're acid we use in a catalyst to completely destroy [0.
+4] or very nearly destroy your four-chlorophenol [0.3] 
+then you if you use some fresh four-chlorophenol [0.4] and [0.2] you see it 
+goes on and on and on although i think they did they had ten goes at it and 
+then they probably got bored [0.2] er [0.3] after that 'cause they got up to 
+twelve-hundred minutes [0.6] er which is i suppose er [0.2] quite a long time 
+[0.4] and probably the graduate student who [0.3] er was doing this just got 
+tired and wanted to go home [0.3] so that er it w-, it wasn't taken any further 
+[0.4] but [0.2] i think you get the you get the picture [0.3] the thing is very 
+[0.5] er adaptable it's very recyclable [0.7] it takes a long time to exhaust 
+it [0.8] i [0.7] i i can add a sort of footnote to that even even when it 
+begins after many many many cycles maybe hundreds to become exhausted [1.0] you 
+can actually reactivate it you can you can er take it [0.3] wash it [0.4] er [0.
+6] and heat it to quite a high temperature [0.2] let it cool down [0.2] it 
+starts off [0.4] all over again [0.3] so you i-, it is really renewable [0.3] 
+so it it's really kind of er [0.5] er almost hypnotically successful you know 
+people [0.3] er really become very enthusiastic about it [0.3] a-, as a way of 
+er [0.7] er [1.4] trying to degrade [0.9] noxious organics [0.8] er [1.1] 
+how do you sort of set up things like this how do you get it to work these 
+these are some of the practical points now and then i n-, i g-, moving away 
+from theory [0.4] there are there are there are s-, various ways of doing it [0.
+5] er [0.4] what you can do [0.3] where we've got we've got er [0.2] two two 
+set ups and these are two flow reactors [0.7] flow reactors are probably much 
+better in a way because they model what you want to do [0.3] in treating 
+industrial effluent [0.4] much better than batch reactors [0.4] now you you 
+don't just sort of have to take er [0.5] a batch of water [0.4] purify it [0.6] 
+and then take another batch and purify it you want to be able to purify [0.2] a 
+constant stream [0.2] as it comes from some site or other [0.5] so what have we 
+actually got here [0.6] well [0.2] er you've got [0.3] er in this one [0.5] you 
+you're flowing your material [0.4] er [0.6] well you you've got you start o-, 
+to start off with you've got [0.7] your fluorescent tube [0.3] okay just like 
+an ordinary ordinary fluorescent tube [0.8] and then [0.4] coaxially [0.5] 
+positioned to this you've got an outer glass jacket [0.7] and you flow your 
+solution through 
+here [0.4] up there [0.2] and out the top [0.4] and all the way through here 
+these sort of things [0.4] are [0.3] a glass mesh [0.3] or they could be glass 
+helices [0.3] they're all coated with T-I-O-two [0.3] it's very easy to coat 
+the glass with that [0.5] er [0.5] you know we sort of do it all the time [0.4] 
+er [1.8] and [0.7] as the stuff flows up the fluorescent light is on [0.2] the 
+U-V is coming this way [0.2] it hits the helices [0.3] where the T-I-O-two is 
+layered [0.3] with a thin layer [0.6] the T-I-O-two becomes activated by the 
+light [0.3] you get the degradation occurring [0.2] so you pass in [0.2] the 
+chlorophenol or whatever it is at the bottom [0.3] and at the top [0.4] you get 
+C-O-two and chloride [0.5] and that's one way of doing it [0.4] er another way 
+of doing it [0.4] is in fact to [0.3] er [0.2] it would simply spiral [0.5] the 
+ethene [0.2] round the fluorescent tube [0.4] and the inside of the [0.4] glass 
+tube [0.5] is coated with the T-I-O-two [0.7] if you have a very thin layer [0.
+3] that's okay the light the light will get through [0.4] a very very thick 
+layer of T-I-O-two [0.5] so er you can you can do it this way so these these 
+are two kind of flow systems that you can [0.3] you can operate [0.7] so 
+that's a that's a kind of a [0.7] just just a technical point but i mean you 
+know you might wonder [0.3] how you're going to set about doing these things [1.
+6] er [0.8] if you want to [0.2] do a er a batch reaction [0.3] well you can do 
+it [0.4] er [0.5] i guess the first time you ever [0.2] study these things you 
+tend to do them in batch [0.4] so but you this would be n-, of not much [0.4] 
+help [0.3] in er [0.4] trying to er establish a kind of industrial process [0.
+5] but essentially here [0.4] you [0.5] er [0.3] have got er [1.6] er [4.3] 
+yeah you've got all your tubes [0.8] in here you've got a bank of tubes maybe 
+six or eight in in each of those you you sort of bring them together [0.5] er 
+[0.2] in a core here [0.4] B [0.6] is [0.2] where you've actually got your er 
+reaction where there's your sample [0.5] er and you're passing through some 
+oxygen continuously [0.5] er through through the top [0.3] through through this 
+er [0.2] this cylinder here [0.7] and er [2.9] it bubbles round and uses the 
+pumping system to pump it around [0.7] so [0.6] and you've also got the stirrer 
+wheel [0.5] okay so that that would be a typical batch thing [0.8] er i've got 
+a system here that er [0.2] i run from time to time which is slightly different 
+from that i blow the oxygen up [0.9] the bottom of the tube [0.2] and at the 
+sort of bottom of the vessel [0.2] through a glass sinter [0.3] and as oxygen 
+goes through [0.3] the oxygen pressure [0.5] er keeps the [0.2] aqueous 
+solution above the sinter [0.3] and the sinter the oxygen into thousands and 
+thousands of tiny streams [0.4] and so you get a very very good sparging [0.3] 
+of the oxygen as it goes up through the solution very good er [0.4] er [0.5] er 
+use uses of the oxygen because you you've broken it down into tiny bubbles [0.
+3] you get maximum [0.3] bubble exposure [0.4] to to the solution [0.9] er [1.
+7] another way of er [0.4] er i've got another another slide here [0.5] er [0.
+9] if you're looking at er [0.2] i mentioned before when you were trying to 
+analyse what was going on [0.6] you can [0.5] with [0.4] er [2.2] 
+pentachlorophenol you can [0.3] analyse it by G-C-M-S [0.4] but much easier is 
+to look at C-O-two evolution [0.7] and also [0.7] quite easy is to have a 
+sensor electrode for chloride [0.4] and again in the studies we do here [0.5] 
+we use a chloride unselective electrode [0.4] which simply d-, [0.2] measures 
+chloride as it's 
+developed [0.3] as the organic chloride breaks down to chloride [0.4] you can 
+follow the chloride [0.3] electrochemically [0.2] you might remember in the 
+first year i think there was a experiment [0.3] where you hydrolyse T-butyl 
+chloride [0.3] and you measure the chloride evolution [0.6] fro-, from the 
+hydrolysis [0.4] by [0.2] looking at the conductivity do you remember this 
+experiment from your [0.3] your misspent youths [0.5] well anyway [0.3] er that 
+used to be in the first year even if it's [0.2] isn't isn't now [0.5] it's 
+quite easy to have a a little sensor electrode [0.4] which is sensitive to 
+chloride you have this dipping in [0.3] and you simply measure the chloride 
+that's produced [0.5] if you're looking at dye stuff degradation it's much 
+easier [0.4] so this is if you've got a a a ni-, a nice big chromoform [0.2] on 
+your molecule [0.3] and here [0.2] this is metheylene blue [0.3] which is a 
+good model for quite a few dyes as quite a few dyes have got a structure 
+similar to metheylene blue [0.5] and metheylene blue [0.2] absorbs er well it's 
+blue of course it absorbs in the red [0.5] a bit of a bit like a sort of 
+solution [0.4] and you start off by having [0.4] an absorption band A there [0.
+2] and as you irradiate at various times [0.3] the thing falls away [0.2] like 
+so [0.2] so you end up with that as your baseline [0.5] and you you s-, you 
+your baseline's rather high 'cause you've got T-I-O-two [0.5] buzzing around 
+giving you a quite a bit of a background [0.5] and if you measure the [0.2] 
+peak maximum there the plot of the absorbence versus time [0.6] normalize it to 
+the baseline [0.4] you get that sort of thing occurring [0.2] and you can see 
+that er with this metheylene blue [0.3] that's [0.2] ten micromolar roughly [0.
+5] er [0.3] you only need to expose [0.4] er for [0.2] five minutes and it's 
+totally destroyed [0.7] er [0.5] i've seen this done as a demonstration [0.4] 
+it's quite effective starts off with deep blue [0.3] ends up [0.2] water white 
+[0.4] so it's really quite a good er [0.4] quite a good demonstration type 
+experiment [0.4] and here we're actually [0.3] we've got a a a project running 
+at the moment [0.3] with one of the M-chem students who's going to be looking 
+at other dyes [0.5] er [0.6] being destroyed by by this type of system [0.9] er 
+[1.1] one or two [0.2] 
+other small [0.4] er kinetic points [0.3] er [0.4] that er are p-, are probably 
+worth making [1.6] i mentioned before [0.2] that if you vary the concentration 
+[0.9] of the [1.1] molecule you're attacking your substrate [0.6] then [0.3] it 
+follows Langmuir type kinetics in other words to begin with [0.2] if you double 
+the amount of organic [0.3] you double the rate of degradation [0.3] but quite 
+soon [0.2] it turns over to a plateau [0.3] because you're saturating the 
+surface [0.7] of the particles [0.4] with the organic you're wanting to destroy 
+[0.3] and that any more isn't isn't mu-, really much [0.3] much use [0.6] the 
+other thing you can do is to look at the dependence on the light intensity [0.
+4] and you might say well if i go from a hundred watt bulb to a two-hundred 
+watt bulb to a four-hundred watt bulb to a kilowatt bulb [0.4] am i gaining [0.
+8] or [0.5] is it worth the extra energy input [0.4] there's been quite a bit 
+of work on that [0.3] and again we've done some work here on it as well [0.2] 
+this is not our results but our results are very similar [0.4] this is actually 
+degrading isopropanol [0.7] er [0.6] okay [0.2] and you're destroying 
+isopropanol [0.3] using T-I er well [0.4] it says rutile that's one of the 
+forms of T-I-O-two [0.3] and you can see [0.2] you what you what what's been 
+plotted here [0.3] is the log [0.2] of the rate of the acetone formation you 
+can measure acetone quite easily [0.4] by again by G-C [0.6] er [0.2] and here 
+is the log of the light intensity [0.8] and [0.3] if you've got if you remember 
+that's really if you remember from your again your again from your first year 
+kinetics [0.3] lectures that er [0.6] if you've er [2.4] got [0.5] a dependence 
+[0.6] which [0.2] is [1.4] like this and you've got [0.6] R [0.9] is equal to K 
+[0.6] times some sort of thing like concentration if i call it I for light 
+intensity [0.4] and you've got that power [0.4] A [0.4] okay [0.2] then what 
+you can do is take logs say log- [0.2] R [0.6] is equal to K [1.5] log-K sorry 
+[0.8] plus A- [0.5] log- [0.6] I [0.4] okay that's taking logs [0.5] that's 
+actually f-, you know first year type work [0.5] and [0.9] to find out what A 
+is [0.4] what is the value is it depending t-, on the light intensity of the 
+first power [0.2] the second power [0.9] no power at all it does it not depend 
+on the amount of light you put in [0.4] then you can 
+find that out by plotting [0.2] the log of the rate of the reaction [0.3] 
+photomineralization in this case [0.4] versus the log [0.8] of the light 
+intensity [0.4] okay [0.3] so that that that is er [0.4] first year revisited 
+[0.4] and you ought to keep you you rev-, revisiting first year chemistry [0.2] 
+for as long as you do chemistry because all the fundamentals come out there [0.
+3] you can see here [0.3] that this this line [0.3] going up here [0.2] is is 
+is a good nice forty-five degrees it's a forty-five degree line [0.5] it means 
+the thing [0.2] is strictly first order [0.2] the slope is one-point-nought [0.
+3] and so to begin with [0.8] the [0.2] and if you double the light intensity 
+[0.4] you double the rate [0.7] but [0.2] when you get past a certain point [1.
+0] you find that the slope [0.4] falls exactly [0.4] to half [0.2] it falls 
+from one-point-nought to nought-point-five [0.6] so it seems that we can go to 
+very high light intensities [1.6] that at the [0.4] rate of evolution [0.6] of 
+your product [0.4] is no longer first order in the light [0.4] it becomes half 
+order in the light [0.3] so if you double the light [0.5] you only increase the 
+intensity by one-point-four [0.9] er 
+that's an interesting observation [0.5] er [0.4] and you might think well i can 
+understand easily why it is if you increase the [0.7] organic [0.4] 
+concentration [0.3] you saturate the surface [0.7] but [0.6] surely [1.7] the 
+more light you put on the system surely all the time [0.2] the more efficient 
+the process would be 'cause you're getting more excited states [0.4] which 
+would give you more O-H radicals [0.6] et cetera et cetera [0.8] has anyone got 
+any idea why it is that it falls away [0.2] as you get to very high light 
+intensities [0.3] any thoughts on that [2.4] imagine you've got a particle [0.
+4] tiny particle [0.2] it's being irradiated with light [0.3] and you go on 
+increasing the light more and more and more these are logs here [0.2] you know 
+this is a [0.3] er enormous dis-, you're going through [0.5] between [0.4] 
+thirteen and eighteen that's five orders of magnitude [0.3] on the light 
+intensity [0.2] a hundred-thousand times this is a very detailed study [0.6] 
+when you go to extremely high light intensities [0.3] what do you think happens 
+to the [0.6] whole electron pairs formed in the [0.3] particle [0.5] any ideas 
+[4.1] 
+well you've got a plus and a minus [0.7] they're going to move to the surface 
+to s-, to [0.2] localize this plus and minus [0.3] but what happens when the 
+concentration of the pluses and the minuses on the surface [0.6] becomes 
+extremely large [0.5] what will they do to each other [0.4] 
+sf0695: they destroy each other [0.3] 
+nm0693: they yeah they they mutually destroy each other [0.5] if you get to 
+growing high light intensities [0.3] you get to the point [0.4] where [0.2] the 
+positive centres [0.3] and the negative centres although they want to react 
+with the water [0.3] they want to react with the oxygen [0.3] they're in such a 
+high concentration now [0.8] there's quite a good chance they'll actually kill 
+each other off [0.3] and so you actually begin to lose out [0.9] once you've 
+gone beyond a certain light intensity the benefits of going to even higher 
+light intensities and i mean [0.3] enormously powerful lamps [0.6] tend to be 
+lost [0.7] so [0.2] that that again that's an a a a an environmental point well 
+worth [0.4] kind of taking a note of [0.9] okay [0.7] er [2.6] i can er [0.7] 
+maybe er [0.7] finish off with a a few more advanced experiments 
+that have been done [0.5] and er [0.9] i'll just look at the kinetic-, i've ju-,
+[0.2] talked about the kinetics several times i'll maybe underline that now by 
+[0.3] putting up [0.7] the normal rate of degradation [0.8] okay so [0.5] this 
+is for any system now [0.4] er using a semi-, any semiconductor [0.4] under 
+illumination [0.5] and what i've got there [0.3] is the rate of degradation [0.
+7] we've got you see got a Langmuir term here for oxygen [0.4] and what this 
+what it is what this implies is [0.3] that [0.8] if you keep increasing the 
+oxygen [0.3] you gain benefit [0.2] but eventually you're going to saturate the 
+surface with oxygen [0.6] this is the organic chlorophenol [0.9] you can [0.4] 
+go on [0.2] adding chlorophenol but eventually [0.7] when it when it becomes 
+very high [1.4] er [0.4] that term there [0.2] one plus [0.2] you know on the 
+right here [0.2] if C-P is very very high [0.3] the one is almost negligible [0.
+3] and that will then cancel with the thing above [0.2] and so then it becomes 
+zero order in the chlorophenol in other words it's reached a plateau [0.4] same 
+with the oxygen [0.4] so [0.3] you can you can [0.4] oxygen is a good thing [0.
+3] and 
+chlorophenol's a good thing [0.3] but you can have too much of both [0.2] okay 
+that's the that's the message there [0.7] and then [0.2] er [1.0] you've also 
+well [0.6] if you've er [1.2] yeah i think [0.2] i'll i'll probably skip that i 
+mean er er [0.4] i think i mi-, i might skip [0.2] the next bit i think i'll 
+leave it at that [0.5] with just this warning [0.4] er [0.2] i've talked about 
+the light intensity before [0.4] er it's gamma-I-A-to-the-power-M [0.4] and M 
+is one-point-nought [0.9] low light intensities [0.9] and it's nought-point-
+five [0.5] at high light [0.2] high light intensities [0.3] okay [0.5] so [0.3] 
+i think that's m-, kind of summarizes what i what i said before [1.1] in trying 
+to go on and look at [0.8] er other [0.3] detailed [0.3] aspects [0.2] of the 
+process [0.5] one of the questions is this [2.0] does all the [0.5] reaction 
+take place at the surface [0.3] of the particle [0.9] or [0.4] do some of the O-
+H radicals escape into solution [1.5] and some of the superoxide ions escape 
+into solution as well [1.2] and do we have a solution process [1.0] as well as 
+a surface process [0.8] and the question [0.2] er is is [0.3] here again quite 
+an in-, quite an instru-, [0.3] important one mechanistically [0.3] is it [0.2] 
+the 
+whole thing [0.3] surface limited [0.4] or is we've got a surface process [0.7] 
+and [0.2] a degradation solution [0.5] so [0.6] we began to think was there a 
+way of probing this in some detail [0.5] and what i've got here [0.7] is [0.2] 
+an experiment [0.4] er [0.7] which has only been i've only done about two or 
+three years ago [0.6] and this is [0.2] er one where you've got er [1.8] this 
+glass slide here [0.2] with a very thick coating of T-I-O-two [0.7] okay [1.3] 
+inside [0.3] this little bath [1.8] you've got a dish [0.5] you've got solution 
+of chlorophenol [0.4] so the chlorophenol [0.4] is in there [1.6] here [0.2] 
+you've got a microelectrode [0.5] and if i say the word microelectrode you 
+ought to think of the w-, the two words namex 'cause he's the chap who makes 
+all the microelectrodes here he's one of [0.5] probably the U-K's leading 
+expert on microelectrodes [0.5] and this this electrode [0.4] here [1.1] is as 
+low as five microns in diameter [0.3] five microns [0.3] i think the one we 
+used was about twenty-five microns [0.4] but he's [0.2] improved them quite a 
+bit since then [0.3] this is simply the reference electrode saturated calomel 
+electrode in the 
+usual way [0.4] you always have to have a reference electrode [0.5] the light 
+comes from a lamp here [0.3] going through [0.3] a [0.7] bank of lenses [0.7] 
+and bounced off a mirror [0.5] to arrive there [0.2] so collect at a highly 
+focused [0.3] spot of light there [0.3] on the T-I-O-two film [0.5] and [0.2] 
+the experiment consisted [0.3] of looping this microelectrode [1.0] nearer and 
+further away [0.3] from the T-I-O-two [0.4] and the question was [0.2] would 
+you get [0.2] a bigger chloride ion development [0.4] very close [0.8] or would 
+you get any further away [0.2] and could you model it [0.4] with a computer [0.
+5] so this is er [0.2] a [0.3] er a probe [0.4] this is a probe type experiment 
+[0.2] these are becoming really [0.4] very important er [0.3] all manner of 
+probe apparatuses have been [0.5] er [0.9] designed and perfected in in recent 
+years [0.3] and people are now able to look at almost atomic resolution [0.5] 
+with some kind of probe [0.2] with this electrochemical probe rather than 
+optical probe [0.7] and this is the this is just the result of the experiment 
+[0.6] er [0.6] when [0.2] i-, if you turn the light on here [0.8] you watch the 
+voltage [0.3] develop here and the voltage [0.3] 
+records [0.5] the [0.2] amount of chloride that's developed [0.7] okay [0.4] 
+and you could see at ten microns [0.5] you turn the light on [0.2] very quickly 
+you get chloride developing [1.6] and then [0.2] gradually you e-, you're 
+exhausting the chlorophenol it tapers off [0.4] you turn the light off [0.7] 
+and the chloride ion [0.2] dissipates [0.2] and moves through the solution [0.
+3] so clearly mass transport's quite important the chloride ion [0.4] er [0.2] 
+moves away from the electrode tip [0.3] very soon after you turn the light off 
+[0.2] that's at ten microns [0.3] between the tip [0.7] and the T-I-O-two so 
+imagine [0.3] there's the tip [0.5] of the electrode [0.3] here is the T-I-O-
+two here [0.6] and you're measuring chloride [0.4] being produced [0.5] in that 
+region [1.0] if you move the tip [0.2] eighty microns away [0.6] then the 
+development is much much much smaller [0.6] and what this tells us is [0.3] 
+that virtually all of the action [0.5] is taking place [0.4] very close to the 
+surface [0.9] and we can model [0.2] these curves [0.6] very precisely [1.8] on 
+the basis of purely a surface process [0.6] you don't need [0.2] to invoke [1.
+0] a reaction occurring in solution [0.2] and 
+always in chemistry [0.6] and in science in general [0.3] if you've got two 
+possible explanations [0.6] one is simple [0.6] and one is more complicated [1.
+2] and the simple one is actually [0.2] works [0.3] slightly better than the 
+complicated one [0.5] then you always say the simple one is right [0.4] and 
+that's called the principle of Occam's Razor [0.8] er [0.4] after William of 
+Occam [0.4] who was from Northumberland [1.0] okay [0.3] er [0.3] i think the 
+[0.5] i've got about two minutes to go so i will er [0.8] er [1.2] try and er 
+[3.3] summarize things just er i haven't got a slide to summarize this up [0.3] 
+but essentially [0.6] there's a lot of interest in this area because of the 
+environmental possibilities of converting [1.9] very toxic organics [0.3] at 
+low concentrations in the aquatic environment [0.3] to harmless substances [0.
+3] by shining [0.2] U-V light on them [0.5] in the presence of various 
+catalysts [0.5] and what i've talked about today is T-I-O-two [0.7] er it's the 
+one that probably on which most work has been done [0.7] but you can also [0.7] 
+l-, use hydrogen peroxide [0.7] as a as a [0.2] that's not a catalyst [0.2] but 
+it gives you the O-H 
+radicals it will degrade the organics very well [0.6] you can also use ozone [0.
+9] all three of these systems [0.2] are called in the water industry [0.4] 
+advanced [0.2] oxidation processes [0.3] or A-O-Ps [0.5] so er [0.4] if you [0.
+2] get a if you get go to a job interview at Severn Trent [0.4] and they say 
+what do you know about purifying water [0.3] you can say i know about advanced 
+[1.0] oxidation [2.0] processes [2.3] or A- [0.5] O- [1.6] Ps [1.9] and all of 
+these fall er fall into that group [1.2] a lot of work going on [0.6] and the 
+work is interesting not merely from the point of view of the end product that 
+is that er one is trying to perfect systems [0.4] people are using light pipes 
+[0.3] to transmit the light [0.4] they are using er [0.5] glass wool [0.9] er 
+there are [0.4] hospital tiles that are being tried out in America [0.4] where 
+you take the ho-, you take the tile [0.9] and you coat it with a very thin 
+coating of T-I-O-two [1.9] and this tile [0.5] will absorb enough moisture from 
+the air to give a kind of thin monolayer or [0.2] a few layers of water on the 
+tile [0.8] and if there is a bacterium floating around [0.4] in 
+the hospital and it alights on the tile [1.0] then believe it or not [0.5] the 
+[0.4] action of the fluorescent tubes [0.5] in the room [0.6] on [0.6] the tile 
+surface [0.8] is to degrade the bacterium [0.3] the bacteria [0.2] are actually 
+killed [0.6] by [1.0] their location [0.5] on the surface of the semiconductor 
+[0.3] because it's able to produce O-H radicals in the thin monolayer [0.3] 
+which then attack the bacteria [0.4] so [0.2] these tiles are are are are have 
+been patented they're now being produced and they're being tried out in 
+hospitals in the States [0.4] you know [0.3] the so they're self [0.5] it's a 
+kind of self-cleaning tile [0.3] or self-sterilizing tile [0.3] obviously if 
+somebody [0.5] puts a muddy [0.3] muddy hand on the wall that's not going to [0.
+5] influence things very much but [0.4] it's the bacteria [0.2] that you're 
+interested in you want to sterili-, keep the hospital sterile [0.3] these tiles 
+are s-, autosterilizing [0.4] and also in the States [0.4] there are patents 
+taken out on light pipes made of [0.3] er very thin glass fibres [0.3] coated 
+with T-I-O-two [0.2] and you can [0.4] have these in a in the form of i think 
+if you 
+can imagine a mop [0.5] er [0.2] with with a handle and a whole series of er [0.
+5] er [0.3] fibres at the end of it that you normally use for mopping [0.3] 
+well if you imagine those are glass fibres [0.2] you could immerse that into a 
+tank of er [0.5] of toxic water [0.6] and just rely on sunlight actually [0.3] 
+and you actually autoclean the water [0.2] using a system like that so [0.3] 
+there are a lot there's a there's a lot of technology being developed [0.6] it 
+hasn't really hit the market place in a big way yet [0.4] but i think watch 
+this space five years down the line and you'll be very surprised [0.8] okay [0.
+2] has anyone got any questions anything [0.5] that er [0.6] that they [0.3] 
+didn't understand or would like me to go through again any points [1.6] no okay 
+well we'll [0.4] we'll wrap it up there [0.3] and i think er [0.4] we'll i 
+think tomorrow we got to start looking at the effects of er [0.7] alpha rays 
+beta particles on substances [0.5] okay 

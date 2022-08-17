@@ -1,0 +1,352 @@
+nm0716: looks as though i'm trapped here so i'll er [0.2] i'll leave the door 
+open [0.5] [laugh] [0.7] er [2.2] the last two lectures have been introducing 
+[1.5] er [0.6] basically [0.4] the model of the process of the memory [0.4] and 
+some simple addressing modes [0.3] and [0.4] we're looking at one particular 
+instruction [0.2] to see how [0.4] er [1.1] we [0.5] er place or find operands 
+[0.2] either in registers or in the memory [0.8] what i'm going to do now is to 
+[0.5] er [0.2] look at [0.2] writing programs in assembler [1.6] and er [1.0] 
+an assembler is is a program translation system just like [0.2] er a compiler 
+although [0.2] very much [0.3] more simple-minded [1.1] so [0.6] we start off 
+with a [1.0] er [0.4] source program file you created with an editor or 
+whatever [0.6] er [0.6] you invoke [0.6] the assembler program to assemble it 
+for you [0.3] and this will produce [0.2] typically two files a binary program 
+[0.4] and a listing file [1.4] now [0.3] the binary file [0.5] is the one that 
+you load into the machine and actually execute in other words [0.2] it's 
+producing an executable program for you [2.2] okay now [1.7] the [0.3] machines 
+that we'll use i i'll be arranging some 
+practicals a bit later on in the term [0.7] er [0.5] and [1.4] we'll be using 
+[0.3] the er [0.4] P-Cs [0.4] okay [0.4] now the P-Cs of course have [0.2] an 
+Intel architecture [1.2] but [0.7] i'm teaching you [0.2] sixty-eight-thousand 
+architecture [0.3] well [0.3] the [0.4] er way round that of course is to [0.2] 
+write a program or a a a package [0.3] which [0.2] will [1.4] er assemble [0.2] 
+and [0.2] emulate the sixty-eight-thousand machine [0.3] and that's what [0.4] 
+er we will use [1.4] it has a certain few little peculiarities but [0.6] it's 
+sufficient for the purposes [0.4] of [0.6] er this term [2.8] now [0.8] you've 
+been [0.4] used to writing [0.3] er [1.2] programs in er object- [0.3] oriented 
+Pascal [1.6] er [0.4] and they are free format that is [0.4] you can lay it out 
+any way you like [0.2] although [0.5] i'm sure [0.2] you've been [0.3] told to 
+indent [0.7] er [0.5] statements when they're in a loop and [0.5] and so on [0.
+2] all right so that you can read it easily [0.7] but [0.2] in principle [0.3] 
+you could [0.8] start [1.0] at the top you know at the top of the file and just 
+write it as [0.3] a single [1.1] er [0.2] complete [0.7] statement because [0.
+4] the or set of statements because in fact [0.4] er a Pascal program [0.3] is 
+in fact [0.3] er [0.3] one [0.7] er [2.4] single [0.4] er [2.1] er entity as 
+far as the 
+compiler concerned it will take everything up to a full stop [1.0] the [1.5] 
+assembler is different because [2.3] it's one statement per line [1.4] okay [1.
+5] and the statement [0.2] will have [0.7] fields [0.7] okay so immediately [0.
+2] position within the [1.2] the line is important [0.7] all right [0.2] 
+whereas before in Pascal it doesn't [0.8] matter [1.8] as far [0.4] here [0.6] 
+with assembler it does [0.4] and a field [0.7] obviously has to have a 
+terminator [0.3] you've got [0.7] and er [0.3] here [0.4] this can be either a 
+space typically a field will er have a [0.3] one or more spaces as a terminator 
+[0.7] or [0.8] end of line [1.5] so [2.0] there are three sorts of statement 
+we're going to to use [0.2] in in the assembler that you're going to [0.3] 
+employ [0.4] the first one [0.5] is an instruction statement [0.7] which starts 
+off [0.2] with a null field [1.1] okay [0.8] and then we'll have [1.0] three 
+fields [0.7] a mnemonic field [0.3] an address field [1.7] and [0.3] a comment 
+[0.4] now the comment itself [0.3] is [0.4] er begins with a [0.2] semicolon 
+but it's optional you can either put a comment in or not [0.8] now what i'll be 
+doing is [0.4] using the comment [0.3] er as a way of [0.5] er [0.3] writing [0.
+2] the [0.2] informal Pascal that 
+i'm going to use to [0.4] er [0.6] generate the assembler [2.8] you can have a 
+label statement [0.2] which is s-, [0.3] simply a name [0.2] followed by a code 
+[0.4] and you can have up to fifteen letters it's a very simple [0.3] assembler 
+as i said normally [0.5] one would be able to be a bit bit bit more flexible 
+than that [1.8] and directives [0.9] okay [0.6] these are [0.3] an instruction 
+to [0.2] the assembler program itself [0.8] okay to declare variables or [0.2] 
+symbolic [0.4] constants [2.4] so we're going to [0.9] er [0.3] construct [0.5] 
+programs [0.7] er from [0.7] sets of instructions [0.6] we'll need labels 
+because [0.5] er we'll have to have explicit jumps or branches and we'll need 
+labels to do that [0.5] and we'll also have to [0.2] declare [0.3] variables in 
+a simplistic way [2.1] so what is a [0.8] let's just have a look at one just to 
+sort of see [0.5] the shape we won't necessarily understand every statement in 
+it but [0.3] you can see [0.2] the three types here [2.1] okay [0.5] but first 
+of all [2.1] that's the [0.2] comment and er and it's a very simple program it 
+says [0.5] if A is greater than equal to B [0.2] R becomes A else R becomes B 
+[1.3] and there's one or two other 
+bits and pieces [0.4] okay so it's a very simple little program [1.3] here [1.
+4] the label field [0.3] the mnemonic field the address field [0.6] although 
+you don't have to line them up as long as you've got a terminator there [0.2] 
+it does make some sense to line them up so you can read it [3.3] okay so [1.1] 
+here [1.7] from the move [0.7] down J-S-R these are [0.3] instruction 
+statements [0.4] mm [0.2] so [0.2] there's a null field here [0.9] mnemonic [1.
+1] and the address [0.2] A-comma-D-nought some you get we're [0.2] fairly 
+familiar with already [3.7] down here [0.8] that's how we declare [0.5] 
+variables [0.6] okay so there's A-colon [1.2] it's got word [0.2] got to say 
+how long it is [0.5] and there's an integer value [2.1] the er [0.7] the 
+integer values [0.5] are [0.4] er [0.2] when the assembler generates the [0.5] 
+variables [0.2] it well space for the variables it initializes A B and C to the 
+values that we've put here [3.9] here is a [0.3] directive which is to to d-, 
+[0.2] er [0.6] declare constants [1.1] and this [0.6] is in fact how we're 
+going to interact with [0.3] in a very simple way with the [0.3] emulator [0.4] 
+okay [0.3] but the emulator's going to run this program [0.5] but [0.2] we've 
+actually got to 
+say [0.3] when to stop [0.7] so [1.0] you need to [0.2] have [0.4] an explicit 
+address of where to jump to [0.3] and here is [0.4] a jump to the subroutine or 
+procedure [0.4] which [0.2] will [0.2] stop the program [0.4] and [0.5] er [1.
+8] allow you to inspect what's gone on [2.5] so [2.0] there will always be [0.
+5] one of those in every program that you write [0.6] there'll be a few [0.3] 
+instructions like this [0.8] and then there'll be some [0.3] simple variables 
+[0.6] okay that's what we'll be doing [0.6] for the time being [16.8] just to 
+sort of [2.6] look at [2.2] instructions a bit more [0.8] so [0.9] the mnemonic 
+field contains the symbolic reputation of the operation you want [0.4] now 
+you've [0.4] had [1.0] er [2.3] a new set of notes given out [1.0] at the back 
+[1.2] if you'd like to have a look [3.3] okay [1.6] there's all [1.2] the 
+instructions [2.0] okay [3.0] th-, those are all the mnemonics [2.3] [cough] [1.
+7] now [1.0] er [0.6] the way [0.3] it's it's expressed is a series of columns 
+of course [0.3] there is a a name which is [0.3] er like add or [0.3] er [0.8] 
+er [0.2] branch always and so on [1.1] there's the assemble syntax for all of 
+the [0.5] instructions that you [0.3] er [1.4] are going to use for n-, or you 
+could use you you won't necessarily have to use all of these but i i've [0.2] 
+done a fairly complete set just to [0.5] er [0.7] er [1.2] for those who are 
+interested [0.7] and then [0.9] using the notation i developed in the first two 
+lectures [1.0] there is the operations [0.6] all right [0.3] that [1.6] er [0.
+4] occur [0.4] that that the the the er when you execute the instruction [0.7] 
+but finally [0.5] the illegal [0.8] effective addresses [0.3] if there are any 
+[2.4] okay [3.4] it would be a good idea if you [0.2] po-, possibly detach that 
+from the notes 'cause you'll need that for the [0.3] practicals [9.1] okay so 
+[0.7] the mnemonic field it's one of the you [0.2] select the operation you 
+want at any particular point [0.3] and [0.4] put it in the mnemonic field [0.5] 
+the address field [0.3] it's the operand addresses [0.3] okay [0.2] we've we [0.
+4] and it can be either in symbolic form we can use a name [1.3] or it's 
+constants [0.3] right the that's er [1.9] so [1.0] what would symbolic names [0.
+8] they can be [0.2] memory variables [0.7] okay [1.0] A B [0.2] C and so on [1.
+2] they can be [0.4] er [0.2] predefined [0.7] register names [0.3] D-nought D-
+one and so on [0.7] and [0.2] label names [0.7] which we saw in the example 
+program [3.1] decimal constants [0.6] oll constants can be either [0.4] er 
+decimal [0.3] or [0.2] hexadecimal [0.4] or in fact [0.4] character where we we 
+[1.1] enclose our [0.3] character within [0.5] er [0.6] quotes [8.3] 
+so the language isn't very extensive [0.3] right there's not [1.1] there's not 
+many rules [9.7] so [3.4] a symbolic constant [0.3] symbol name [0.5] equals a 
+constant value [3.6] the symbol name is the same as a [0.4] er a label but er 
+it doesn't have the [0.3] the the [0.2] colon after it [0.7] and a constant 
+value in this case is [0.5] restricted to pos-, [0.3] positive decimal or 
+hexadecimal so there are sort of funny [0.5] little inconsistencies here i i [0.
+8] er [0.6] if the [0.2] it er [0.2] i did write an assembler once and there's 
+no [0.4] particular reason why it should be so but that's what it is with the 
+assembler we've got [1.1] er [1.3] what the assembler will do just as it does 
+in a in in your Pascal program [0.3] it will [0.2] replace any [0.4] er symbol 
+name with that constant value [0.5] okay [1.2] so it it it works in in exa-, 
+exactly the same way in Pascal of course [0.8] [sniff] [2.4] er [0.6] one or 
+more [1.4] memory variables we can [1.9] say [0.2] we can add a label [1.0] 
+colon [0.4] dot type [0.2] 
+where [0.2] that's going to [0.2] determine how [0.3] long [0.4] the er [0.8] 
+operand is or or er or the variable is [0.3] and we can have a list of one or 
+more constants there [1.6] well what happens here is the [0.2] assembler will 
+reserve space at that particular point in the program [1.7] okay [0.5] and [0.
+6] what it will do is associate the name [0.9] with [0.4] the address in memory 
+[0.7] okay so what we've got [0.4] er [2.8] and that's the address of the most 
+significant byte [13.4] okay so let's so [1.7] here i'm [2.1] declaring [0.6] a 
+byte variable [0.3] a word variable [0.2] a long word variable [1.8] and if 
+those were three successive statements in the [0.3] er [0.8] er [0.7] in the er 
+[0.6] in the assembler then [0.9] what would happen [2.8] in memory [0.2] is 
+essentially you'd have [0.6] er [6.2] byte int [4.0] then there'd be a word int 
+[4.3] so that would be [0.6] two bytes [2.0] er and a long word int [10.8] four 
+bytes [3.1] and these would be initialized for the values you've got here [0.7] 
+if we're thinking about addresses this would be [0.3] some address and that 
+would be A [0.9] er [1.0] A-plus-one or A- [0.2] plus- [0.9] er -three [0.5] 
+right so it would associate [1.5] the name [0.6] for the particular address [1.
+9] one [0.9] er [1.2] issue [0.2] with er [0.6] er [0.4] 
+the assembler is that or or the machine is [0.3] that these have to be on word 
+boundaries so you have to do something about that [0.2] but [0.3] what i want 
+you to to [0.2] to go away with is the fact that [0.4] when you write the [0.2] 
+a [3.6] the word byte int or word int in in a in a an instruction [0.6] okay 
+what [0.2] happens is [0.4] the assembler will replace it with the address [0.
+3] that it's allocated the variable in [5.0] now you can [2.3] declare lists of 
+bytes and words and long words and there's li-, [0.6] er [0.6] a word list and 
+it will [0.6] reserve three words and initialize them to those [0.4] values [0.
+6] okay [4.3] so [2.5] that's how we [0.7] declare variables [0.8] and we will 
+normally declare them at the bo-, bottom of the program [6.3] we'll only need 
+[0.4] for [0.5] as i say the the examples and and from now on we'll only need 
+to declare [0.4] er [0.2] simple [0.4] er integer variables and er and and 
+we'll just take that on [0.5] for [0.4] er through the next few lectures so [0.
+5] we're only interested in word [0.2] integers [0.2] at this point [8.0] now 
+[2.1] what we're going to do [0.4] is to generate [0.9] all right take [3.9] 
+Pascal statements [0.2] 
+okay which [0.4] er [0.8] and [0.9] generate [0.5] templates or rules [0.9] for 
+[0.3] generating [0.2] the assembler [0.5] from them [0.5] okay [0.2] that's 
+the [0.9] er [0.7] technique we're going to use [0.3] and we're going to start 
+[0.3] with [0.4] assignment [1.0] now [0.2] the general Pascal statement [0.5] 
+er [0.8] is you assign an expression to a variable [1.1] okay [0.4] and [0.2] 
+to start with we'll [0.2] make the simplest expression we can [0.5] do is make 
+our expression either [0.3] a constant or [0.3] er [0.2] a variable [2.1] so [0.
+8] i-, in order to develop a template for this we've got to say what 
+instructions [0.2] will support this sort of activity [1.4] well of course [2.
+3] vary the move statement [0.5] okay and and you can look it up in your [0.2] 
+list of [0.6] whatever with there there's a move statement [0.7] and [0.4] this 
+will move [0.2] er [0.2] the contents of [0.9] the source operand [0.4] to [0.
+4] contents of the destination operand [2.6] okay [1.0] now [3.3] let's take [0.
+7] we want to do [0.5] er [1.1] an assignment which is just P becomes Q [0.5] 
+is that [0.2] very simple [0.7] then [1.0] P and Q [0.6] er [0.3] our memory 
+variables [0.4] and [0.4] this is [2.2] fairly straightforward you just have to 
+decide what [0.4] length [0.7] the wretched thing is [0.4] all right [0.7] 
+because [0.6] er you can either [0.3] er be a byte a word or a long word [0.5] 
+as i say we'll mostly [0.3] conc-, [0.2] concentrate on that [1.2] so P becomes 
+Q [0.4] but [1.6] that of course is the destination [1.7] and that's the source 
+[0.5] yeah [0.8] you agree [0.9] so [0.2] you have to reverse [0.5] P and Q [0.
+7] to what the Pascal is [3.1] yeah [2.9] contents of [0.6] Q [1.7] er if we 
+look at it the assembler instruction [0.4] the contents of Q is assigned to [1.
+1] contents of P [0.5] but of course in our [0.7] high level language we do it 
+the other way round [0.5] it's one of the [1.0] qualities of [0.2] of er [1.4] 
+working with a machine at this level [0.7] right that that's the one thing you 
+just that's just the that's the only re-, [0.5] all right [0.7] source [0.2] 
+destination just keep that [0.3] quote in your head [0.4] source [0.4] 
+destination [12.3] and of course [0.8] we could have some more examples of that 
+[5.8] flat screen [1.5] they're all of the same [0.7] type here [1.1] where [2.
+5] what i've done [0.3] is to [3.1] assign [0.7] move [0.9] er [0.2] whoops 
+i've got a dot there i don't need [2.4] er [2.2] first of all if i just write 
+move without a qualifier qualifier-dot-B-dot-W-dot-L [0.2] it takes a word by 
+default so [0.7] if 
+i don't [1.0] put anything in [0.2] it's a word [1.9] this is how we can move 
+[0.6] data between [0.8] registers [0.8] from a register to memory [1.1] er [0.
+4] and [0.7] er from memory to a register [0.4] which we will find we'll have 
+to do [0.5] er [0.6] not infrequently [6.9] and finally [0.3] how do we assign 
+the constants [0.7] well [0.8] you can [1.4] just use the immediate form of 
+addressing which we we introduced [0.3] last time [2.9] and [1.3] we would move 
+[0.2] twenty-one in [0.4] assign [0.2] twenty-one-P [0.2] and minus-thirty-four 
+to [0.2] D-four [0.2] so [0.9] that's one way [0.4] of [0.3] assigning [0.6] er 
+[1.1] constants [1.8] okay so we now know how to s-, assign constants and 
+variables [0.2] whichever they are [0.3] and what we'll do is treat [0.6] er [1.
+1] registers as just predefined [0.7] variable names [0.2] okay [1.7] from a [0.
+4] symbolic point of view that's all they are they're just predefined [0.5] 
+variable names [3.6] any questions so far [2.5] okay [7.0] now the one thing 
+about assembler is you can always do things in other ways okay [0.2] so there's 
+always [8.7] first of all [4.1] i guess you do write [0.8] initialize something 
+to zero quite frequently don't you [0.4] yeah [1.2] well there's a hardware 
+instruction 
+to do that [1.2] er [1.0] and er [0.2] it's called clear and you can clear [0.
+3] registers or memory that way [2.3] and so here is just [1.2] vision clear [1.
+0] and [0.7] the Pascal form [0.2] to the right [0.9] okay [10.6] now [3.5] if 
+a constant's less than two-hundred-and-fifty-six [1.0] why two-hundred-and-
+fifty-six [0.2] well why it's nought to two- [1.0] er -five-five [1.0] they use 
+a field within the instruction which is a byte long [3.7] yeah [3.0] you all 
+realize a byte can contain [0.2] up to two-five-five yeah [0.5] er [2.0] so 
+there's a field in the instruction [0.7] and what it is is [1.2] er [1.1] you 
+can use move quick [1.4] for for smaller constants [0.6] and what it does is to 
+[0.2] save space i-, the the r-, the instruction isn't as long [0.8] as [1.2] 
+er a move with an immediate form [1.2] okay [1.1] you don't have any extension 
+words in fact [0.7] and [1.3] this all comes about because [0.5] er [0.2] when 
+[1.2] the [0.3] s-, [0.8] sixty-eight-thousand and the Intel were all being 
+designed [0.5] it was very important to save memory i mean it's one of these 
+cases where [0.5] er [1.7] the constraints [0.8] of [0.2] er machines [0.3] at 
+the time [0.3] affected how the architecture was was put together [0.6] it was 
+very important to 
+try to keep [0.2] programs as small as possible [0.5] also [0.3] they tried to 
+[0.4] make [0.3] the instructions as short in terms of machine cycles as 
+possible 'cause they were very slow [0.8] all right [0.8] it was a [0.4] er [0.
+6] the er [1.9] early [0.5] er [3.8] micros [0.3] were extraordinarily slow [0.
+4] i mean you you just [1.1] well we were talking now typically [0.5] er [0.9] 
+er you know a gigahertz clock we were talking about two megahertz [1.2] all 
+right [2.5] 
+so [0.7] and memory [0.2] cost an awful lot of money [2.0] okay so [0.6] er you 
+wanted to [0.8] have [1.2] instructions as short a-, you know programs as short 
+as you can [0.2] so there were a lot of different variants of instructions and 
+that's why there's [0.2] partly why the sixty-eight-thousand looks like it does 
+[2.4] what we've done now in in the the last ten years or so [0.3] is to [0.6] 
+have a completely different architectural design and [1.3] where every 
+instruction has the same length [1.4] right as [0.6] we'd used instruction set 
+after it [0.4] in fact [0.4] we [0.3] er [0.7] can only do arithmetic for 
+example [0.2] using registers you can't [0.4] er do arithmetic involving memory 
+which you can with a sixty-eight-thousand [1.4] 
+what this means is is you can clock the [0.7] processor very much faster [1.5] 
+all right and as we m-, [0.3] make chips smaller and smaller [0.7] so the clock 
+rate goes up [0.3] so that's really what's been happening [1.1] okay [3.2] so 
+[0.2] the reason for all of this [1.0] is to [0.4] it was to try to [0.4] er [0.
+5] minimize programs er both in terms of space and execution time [8.2] what 
+we'll do [0.6] er [3.4] next is to to [0.4] just [0.6] look at [1.6] how do we 
+encode [0.6] s-, [0.2] er expressions [0.4] and assignment [0.2] where they 
+simple integer expressions [0.2] so [0.7] er [12.1] okay [0.4] now we looked [0.
+2] add was our running example for the first two [0.2] lectures [0.9] okay w-, 
+it and [0.4] we could write it in a form where [0.2] the [0.4] er [0.2] and 
+there there's a subtract which is very similar of course [1.8] and we can write 
+down [2.0] this is formally what happens that destination becomes destination 
+so [0.3] there is addition [0.2] but also an assignment [0.7] th-, [0.2] 
+there's as a single in er operation [2.5] but just as there are two [0.8] 
+variants of add so there are two variants of [0.5] subtract and we saw that we 
+needed that if we wanted to [0.4] add and subtract to [1.0] memory [4.8] 
+and [0.2] for this form [0.2] there were various illegal forms of [0.4] er [0.
+9] the [1.3] er effective address [0.5] in the [0.6] er [2.1] that's all 
+detailed on your instruction sheet [0.5] er for any particular instruction [1.
+8] now [3.5] if the operands are in the right place [2.2] then [2.2] simple 
+instructions [1.4] can be encoded [0.2] simple expressions [0.6] can be encoded 
+in one instruction [0.4] yeah 'cause [0.2] this looks [1.1] quite useful 
+doesn't it in terms of of how to encode a piece of Pascal [0.2] so [0.6] here 
+we are [1.3] this adds [0.6] contents of [1.5] a er memory variable to [0.6] er 
+[2.8] a data register [0.5] and here [0.4] we're using the second form [0.6] to 
+[0.2] whoops [11.8] and that would subtract it [3.4] but the [2.1] trouble is 
+[2.4] that [0.4] life isn't always quite as simple as that [0.4] but [0.6] okay 
+well [0.9] we'll just do another simple case which is just [0.5] how we add 
+constants [0.2] and then we'll come back to more complicated expressions [0.3] 
+and and we'll learn [0.8] a relatively simple technique which [0.4] er [0.3] 
+will [0.7] er [2.4] to evaluating [0.3] er expressions simple expressions [2.3] 
+we've already seen what's what's going on [0.2] am i [0.7] doing the encoding 
+all right the [2.4] source 
+destination so [0.9] D-six becomes D-six-plus-P [0.3] yeah [1.4] so i i take 
+that and look at that [0.9] generate A [1.4] it's B the source is P so i write 
+P [0.3] comma [0.4] destination is D-six [0.4] so i write D-six [15.3] well [5.
+8] we often add constants I becomes I-plus-one is fairly [0.3] familiar [0.3] 
+er [0.9] sort of a construction in Pascal [0.3] and here [0.5] we obviously can 
+use [1.7] the immediate [0.2] form [0.3] as well [2.2] just as we did with [0.
+8] assigning the constants so here we can just add a constant to [0.3] a 
+register [0.8] okay [3.5] now this form [1.6] obviously [2.2] in general its 
+sum becomes sum-plus-constant [1.7] there are [0.4] as before variants to [0.5] 
+er [2.9] produce [0.2] shorter or [0.5] er faster [0.5] er [1.0] instructions 
+[0.9] and there's [0.4] er an immediate [3.7] which we'll do add there's [0.4] 
+here we add [0.2] to memory [0.7] and [0.5] here [0.5] add quick we can add [0.
+8] again [0.6] er [1.8] add to [0.4] memory there [3.3] add quick [0.3] is in 
+fact very small 'cause we only got three bit field here [0.5] you can only do 
+between one and eight but if you think about it [1.0] it's it's a subset of [0.
+2] of all the the er additions that you do and those are the ones you probably 
+use [0.4] most frequently [4.3] okay [15.1] 
+now [1.1] of course [2.4] what if you've what got two [0.3] variables in memory 
+[2.2] okay what i've i've been doing at the moment i've had a variable in a 
+register [0.4] and a variable [0.3] in a memory location [1.5] okay [0.5] now 
+[2.3] you can't [1.8] have both a source and destination [0.3] as memory 
+variables the only instruction you can is move [0.4] and you can't [0.4] do it 
+[0.4] with the rest [1.7] so how are we going to do it [0.4] well what we've 
+got to do [0.2] is move the value of [0.2] one of the varia-, er variables into 
+a register [0.4] do and do the addition [2.7] okay so [0.3] essentially we've 
+broken it down [0.3] into [0.3] er [0.5] two things where [17.0] so we have to 
+[0.3] break it down into a simpler set of instructions but we haven't got [0.2] 
+a single instruction to do it [0.6] so we have to [1.9] this is why [2.4] 
+pretty much the [0.3] data register there [1.5] 
+sm0717: can i just 
+nm0716: yeah [0.6] 
+sm0717: the second line should be add shouldn't it [0.7] 
+nm0716: sorry [0.2] 
+sm0717: on the second line should it be add [1.8] 
+nm0716: yes [8.9] thank you [10.6] okay [1.0] now [0.6] in a very [0.2] simple 
+form we're using [0.2] the [0.2] data register as an accumulator as a [0.4] 
+temporary [0.2] scratch [0.7] piece of [0.2] me-, er [1.1] a temporary scratch 
+[0.4] variable [0.2] to [0.8] perform the addition [1.9] so let's look 
+at [0.9] a rather more complicated form [0.3] all right well [0.4] not too 
+complicated but [0.3] here we are [0.4] we've got [1.0] A-plus-B-plus-C-minus-
+eighty-seven [4.3] so [2.0] essentially [0.5] what we're going to have to do [0.
+2] we start off [2.6] assigning [1.5] A [0.2] to D-nought [8.1] then [0.3] add 
+[2.6] B [0.4] to D-nought [1.5] how about having a go at the next two [2.3] 
+yeah [0.6] how about trying to continue [0.3] you you got [0.4] you see what 
+i've done here i i've [0.2] added [0.3] i now want to add C [0.7] er [0.4] 
+minus-eighty-seven [0.2] from [0.2] D-nought so have just have a go 
+nm0716: okay [0.7] well [3.6] we add C [2.0] to D-nought [1.2] we then subtract 
+[1.9] eighty-seven [0.9] from D-nought [0.8] and then we assign [0.8] the 
+accumulator D-nought [0.2] to the sum [3.3] now that [0.6] is just a 
+straightforward way [0.2] of doing it [0.3] okay it's it's it's a [0.4] it's 
+obvious [0.2] well [0.5] you know you break it down into components and we we 
+we do that [0.8] there is a more sophisticated way of doing it which er [0.8] m-
+, [0.5] might be those who are re-, really interested [0.8] might like to look 
+up a book on a compiler [0.7] all right [0.9] how [0.7] there is a general [0.
+4] method [0.6] for [0.8] er [0.6] evaluating expressions [0.6] 
+with arbitrary sets of brackets and operators and [0.2] and so on [0.3] all 
+right [1.1] not [0.2] going to go into it here [0.7] but it is interesting [0.
+6] how to say [1.1] 'cause you can write [0.2] there's [0.5] a [0.5] pretty 
+complicated expression before the compiler will give up [2.4] i don't suggest 
+you do you can't read it i mean i i tend to [0.3] break [0.2] expressions up [0.
+2] just so that i can read what's going on [0.3] but [0.4] a compiler [0.5] has 
+to have a general way [0.2] and [0.3] in fact what it does [0.4] it [0.3] er [0.
+6] uses [0.2] a stack [0.3] method to [0.2] to do it [0.2] and [0.4] for those 
+who are interested any book in compilers will have a little section [0.6] on 
+this [0.6] so i'm not pretending to be a real compiler at this point [0.4] 
+we'll just take simple expressions and attack them in an obvious way [3.3] okay 
+looks like any questions then [0.2] er [5.7] looks like you're off for five 
+minutes early so [0.2] there we go [1.1] it must go quicker than i thought 

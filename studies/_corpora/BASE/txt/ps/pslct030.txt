@@ -1,0 +1,497 @@
+nm0919: well good morning everybody er just to start off [0.7] just like to 
+remind you of the misprint [1.5] we had in the er [0.2] on the notes on bottom 
+of page eight [0.6] equation four-seven [1.2] when we're doing the fit to the 
+exponential-Y-A exponential-K-X [0.8] what we do is we transform it by taking 
+natural logs of each side [0.6] which is log-Y is log-A [1.0] and i put l-, Ls 
+so that L-Ns of E to remind ourselves it's logs to the base E [1.7] log-A plus 
+K-X i think there was a log in there by mistake [0.7] and therefore if we plot 
+er of the individual data points Y-I and X-I those [0.7] pairs if we plot the 
+log of Y-I against X-I [0.6] then if this is a reasonable [0.7] law [0.5] we 
+would expect it to be something like a straight line the gradient would be K [0.
+4] and the intercept would give us an idea of [0.2] er [0.2] log-A [0.8] in 
+which case we can take the l-, [0.5] antilog and get [0.2] A [0.9] er [0.6] 
+just [0.9] realize [0.2] what might have been the confusion last year if we had 
+a power law which could also be a [0.3] quite a reasonable behaviour [0.4] for 
+some transducer [0.4] say Y equals A-X-to-the-K now instead of 
+E-to-the- [0.3] X [0.8] in this case [0.4] obviously when we take logs we get 
+log-Y [0.4] is log-A and this time it is of course plus K-log-X [0.5] and in 
+this case one er would indeed plot log-Y [0.2] against log- [0.5] X-I [1.7] 
+that should be X-I i suppose for each individual data point [0.5] K would be 
+now the gradient [0.3] which exponent the the power law here [0.4] and log-A [0.
+5] the intercept so hopefully [0.5] if you could correct your [0.4] written 
+copy there [0.3] from that misprint [1.7] er [0.2] next week is er [0.5] week 
+four [1.1] or is it week five [0.2] 
+ss: week five 
+nm0919: week five yes it's week four this week isn't it yes [0.3] next week is 
+week five thank you [0.7] and er [1.8] this is week four [0.8] so there's no 
+lecture next Thursday [0.6] i'm actually [0.6] not in Canada next Thursday i 
+actually arrive [0.4] back from Canada at about [0.2] seven-thirty A-M [1.0] so 
+er [0.3] i m-, thought i might not be tremendously alert [0.3] so we won't have 
+a lecture next Thursday [0.5] but what will occur next week since the lab is 
+going to start in week six [0.3] will be for the three groups [0.2] who you 
+know you are [0.5] you will have your lab briefing [1.1] er next 
+week before the week in week five before the labs start proper week six seven 
+eight nine ten okay five weeks [0.4] Tuesday ten A-M Thursday ten A-M [0.5] and 
+Friday for the easy people i'm not quite sure [0.9] presume you know what time 
+it is yeah [1.2] right [0.4] and then so next week i will be er recovering from 
+my jet lag in the morning [0.5] and we'll then have some lectures on [0.3] 
+twenty-second of Feb [0.6] and the first of March okay [1.6] right let me now 
+we'll go through we've got quite a few of these problems to go through so let's 
+go through those [0.2] er [0.4] take a c-, [0.9] couple of minutes now to hand 
+these out i'm afraid lo-, namex [0.8] sorry tho-, those of you who are 
+wondering what's going on er [0.6] if you want some [0.2] cut on the fee you'll 
+have to see my agent okay [0.7] for this er [0.2] sorry the last few minutes 
+hasn't been terribly interesting television has it [0.5] namex namex anybody [0.
+5] namex [0.4] no okay [0.8] let me also while we're doing that hand out this 
+attendance sheet [1.4] okay so let's just quickly have a look at these er 
+particular aspects and er [0.5] if you remember the first part of this question 
+[0.6] is to do with er [1.5] 
+if i can find the er [0.2] particular sheet i'm looking for [0.9] is to do with 
+er [0.2] yes er [1.6] we have er [3.7] twenty-five measurements we have T-bar 
+[1.3] er plus-or-minus sigma [0.8] and we're told that that is five-point-five 
+[0.2] degrees centigrade [0.6] and the standard deviation [1.8] is equal to one 
+degree centigrade [0.4] so that means that our distribution looks something 
+like this [0.4] this is five degrees [0.5] and sixty-eight per cent [0.5] of 
+our values are within one degree [0.4] and so the standard error [1.9] which is 
+how accurately we can work out this [0.2] bit at the top there [0.5] is 
+obviously equal to sigma [0.7] which is the standard deviation divided by root-
+N [0.4] and we have N is twenty-five [0.6] 'cause there are actually twenty-
+five readings in this frequency diagram against the temperature [1.5] that's T-
+bar [1.3] and so it's obviously not a smooth curve it's a bit of a histogram [0.
+3] and therefore that is er root of twenty-five is five [0.4] so the standard 
+[0.2] deviation standard error i should say [0.3] is plus-or-minus er [0.3] fi-,
+er [0.2] one [0.4] over five- [0.4] point-two degrees 
+centigrade [0.5] so we could say that the value of T [0.7] is [0.2] is equal to 
+five [0.4] plus-or-minus nought-point-two degrees centigrade with N equals 
+twenty-five [1.8] and we would expect sixty-eight per cent [0.2] with to be 
+within one standard [0.3] deviation of these twenty-five values [0.4] and what 
+are the assumptions we've made [0.3] well one or two people sort of said things 
+like oh well [0.4] sort of [1.4] things are pretty accurate and people have 
+been rather careful that's not the the as-, [0.2] i mean if you were not 
+accurate and you were not careful [0.4] then this sord-, it'd just be a broader 
+wouldn't it you'd have a bigger standard deviation [0.4] so the assumptions 
+that you've made [0.3] are two basically [0.3] one is that there are no 
+systematic errors [0.6] it's all random [3.5] in other words [0.5] it's not as 
+if the the mean is up here and they're all shifted there's no systematic errors 
+[1.2] and th-, that the errors are normally distributed [1.9] in other words 
+they obey this Gaussian curve those are the two [1.0] er normal distribution of 
+errors [0.5] okay [0.7] 
+those are the two assumptions [0.4] and all this business about that everyone's 
+been a bit accurate and you haven't been too careful [0.5] that's all in here 
+if you weren't very accurate and there was m-, [0.5] more spread that would 
+just come through on the standard deviation wouldn't it [0.5] so let's just go 
+through this a little bit i've been doing a little bit of re-, research as i 
+indicated i would over the weekend [0.8] so here we have our situation [1.9] 
+frequency of [1.1] time w-, of of er numbers of er values of X [0.5] this is 
+our mean [0.8] and they're spread in this bell-shape curve sixty-eight per cent 
+of them [0.4] should be in within sigma what we call the standard deviation [0.
+5] and of course as we get more and more and this gets smoother and smoother [0.
+4] we can tell where the peak is better and better [0.5] that's my [0.3] 
+standard error in the estimate S-M and that's sigma [0.4] divided by root-N [0.
+9] so the standard deviation doesn't [0.4] matter really how many [0.2] 
+readings you have [1.1] er but as you get more and more you should be s-, 
+define the peak 
+better and better so anyway i've done then a little bit of research here 'cause 
+as i was indicating [1.4] last week [1.1] er [1.3] there's a slight problem in 
+my opinion anyway in the er nomenclature here when you look at these two terms 
+they're not self-explanatory [0.6] and i promised you i'd do a bit of research 
+on this so i've asked one or two i was at an international meeting [1.0] er on 
+m-, in London on Monday so i asked the Italian people what the Italian terms 
+were to see if they were [0.5] any more self-explanatory and this was 
+absolutely hopeless [0.8] because [0.5] the Italian for standard deviation is 
+deviazione standard [0.4] and the Italian for standard error is errore standard 
+so those are not very much better [0.7] however the French term is much better 
+[1.5] the French term for mean is moyenne [0.6] and for standard deviation is 
+écart type [0.4] so écart actually means a sort of spreading out typical so 
+it's a typical spreading out [0.8] so that's quite a [0.8] i'm sure you'll 
+agree that's a very 
+logical term [0.5] and nobody as yet i've raised this with several people has 
+been able to tell me [0.3] got a few e-mails on the go [0.7] what the word for 
+standard error is and have you have you managed to [0.2] find this out 
+sm0920: no i haven't [0.7] 
+nm0919: i asked a few people [0.2] when i was [0.2] at a [0.4] dinner in Paris 
+and they [0.2] gave me some funny looks [0.3] when i raised it and started 
+talking about something else [1.6] right [0.3] what about the German term [1.0] 
+now the German for average is quite good i think it's durchschnitt [1.2] durch 
+[0.3] means er [0.2] through er cut through [0.7] right [0.6] so it's a cut 
+through the middle [1.1] and then the next term is s-, [0.2] standard [0.2] 
+abweichnung [0.9] okay [0.8] which means again deviation or divergence i'm 
+afraid doesn't it and then i asked these people that at were [0.2] big 
+statisticians and all they could come up with for standard error was [0.4] 
+normalisiert abweichnung well i don't think that's right actually [0.6] 'cause 
+i think the normalisiert abweichnung is sometimes you express a standard [0.4] 
+a fractional standard devation [0.5] in 
+other words what's the fraction of sigma- [0.4] over-X you know if X was ten 
+centimetres [0.5] and this is standard deviation is one you could say the 
+fractional standard deviation [0.9] i-, is is ten per cent [0.4] which i think 
+would be this normalisiert one [1.1] and nobody could tell me this one either 
+so obviously er [0.2] it's an international problem [0.7] what to call this 
+thing [1.9] 
+right let's go on to the er next one [0.7] okay [0.9] and in the next one 
+number two here [2.4] we have that the area [1.5] equals pi-R-squa one person 
+actually managed to get that wrong [0.5] pi-R-squared [1.1] and R D or equals 
+to [0.4] pi-D-squared over four if you like and D [0.5] apparently is equal to 
+twenty centimetres [0.7] plus-or-minus point-one centimetre [2.2] er [1.6] 
+right [0.9] that's what it says here which is one part [0.3] one in two-hundred 
+[2.3] that error [4.8] right so er [0.8] well we know what the error is it's er 
+[1.5] a hundred-pi [0.5] that's twenty metres squared [0.4] sorry we know what 
+the area itself is [2.4] which is three-hundred-and-fourteen [0.3] s-, square 
+centimetres so the question 
+now is what's the er error in that [2.0] and at this stage er we realize here 
+we've got a formula of the form Z [0.6] it's a product isn't it here [1.1] in 
+that er er my R is [0.2] squared [0.2] so the problem is if i've got an error 
+in R and i square it what happens to the error in R-squared [1.2] and er [0.2] 
+basically [1.1] well [0.5] what i'm going to do now actually [0.5] i presented 
+these formula before [0.5] er for combination of errors when you had a product 
+or a square or a power as you've got here [0.8] just er as er [2.0] out of the 
+hat so to speak [0.4] so let's actually just do [0.3] these things properly [0.
+4] which just involves a little bit of calculus [0.5] and is also what is 
+required [0.7] for question three [0.7] of the long problems that i'll hand out 
+in a few minutes okay [0.4] so [1.9] right let's just [0.6] go through these 
+errors a little bit more formally [1.4] and those [0.5] formula that are just 
+[0.2] quoted on the sheet let's just see where they come from [0.7] and let's 
+just have the formula Z [0.3] i'm going to derive [0.4] from A a constant time 
+some [0.9] thing i measure called X [0.5] and something 
+i measure called Y which could also be married by B [0.7] and i'm interested in 
+let's suppose there's an [0.5] so what's i-, the first thing is what's the 
+effect [1.2] on Z [0.6] of an error [1.3] D-X [0.7] okay [0.3] well i can work 
+that out by differentiating if i just differentiate this with respect to X and 
+i get D-Z D-partial [0.5] D-X [0.5] which means that means differentiate 
+keeping [1.6] keep Y constant when you do this [0.9] okay [0.4] because i'm 
+only interested in the effect of the error on X [0.5] so this is a constant [0.
+4] and that is of course equal to er A [1.3] and similarly [1.5] the effect [1.
+3] well i could do the same thing here [0.5] on Z [0.7] of an error [1.6] D-Y 
+[0.4] if X is constant [0.9] right [0.6] and that of course is D-Z [0.5] D-Y is 
+lo and behold equal to B [0.5] right [2.6] in other words i've got my error [0.
+3] one [0.6] shall we call it D-Z here [0.5] is equal to A-D-X [0.6] and the 
+error two [1.3] D-Z [0.5] is equal to B-D-Y [0.7] okay now we make the er 
+assumption [1.0] that er supposing er [0.3] if it's true [0.2] that the errors 
+in X and Y are independent [0.8] then if one is high the other can be low et 
+cetera et cetera [0.4] then 
+these two [0.3] error terms don't add up algebraically [0.4] they add up as the 
+sums of the squares don't they [0.2] okay [1.9] so er [1.1] whoops that's not 
+too good [0.8] the er [0.9] so we're now going to have these two error terms [3.
+8] that's not much better either [1.7] error one and error two [3.3] ah [1.8] 
+we'll go back to this one i think for the moment [1.8] error [0.6] one [0.2] 
+and error two [0.9] are independent [4.9] therefore total-error-squared [2.3] 
+equals error-one-squared [2.3] plus error-two-squa you can see what's coming 
+here can't you [1.0] two-squared and therefore [0.8] D-Z- [0.8] squared [0.3] 
+equals A- [1.8] D-X-squared [0.8] plus B- [0.8] D-Y-squared okay [2.6] that's 
+the first formula [0.7] right [0.9] now we can now go on to the second one [0.
+3] which i'll do under here [2.8] and this is a slightly more er complicated 
+one [0.2] er let's write up here [0.6] Z [0.6] equals er A [0.4] which A is a 
+constant [0.7] X- [0.2] to-the-alpha [0.2] Y- [0.5] to-the-beta [1.1] so this 
+is the general term now where we have a product [0.4] of two terms there could 
+be an X-variable and a Y-variable [0.9] raised perhaps to some term alpha and 
+beta [0.5] or there could be just one of 
+those which is the situation we've got there isn't it right [0.4] where alpha 
+is two [0.8] and now we're going to do exactly the same thing [0.6] right [1.3] 
+we're going to do D-Z D-X we're going to find the error due to the error [0.2] 
+error in Z due to X [0.5] and error in X [1.3] and the error due to an error in 
+Y okay [0.5] so we do the partials again here D-Z [1.3] how does e-, Z change 
+if there's a change in X [0.2] keeping Y constant [0.6] well that's A and then 
+X-to-the-alpha goes as al-, X- [0.6] alpha-minus-one [2.2] Y- [0.9] B [0.9] and 
+let's write that as [0.2] A- [0.2] alpha-X [0.2] over X i haven't done very 
+much there Y- [0.5] to-the-B [1.0] except i now realize i'm back where i 
+started with X-A [0.2] X-S [0.4] this thing here [1.5] X [0.2] whoops X-to-the-
+alpha [0.9] Y-to-the-beta [0.4] so what i've got there therefore [0.3] is alpha-
+[0.2] Z [0.7] over [0.2] X [0.5] okay [0.7] in other words D-Z-one [1.5] error 
+one [1.0] is equal to er [0.5] alpha-Z- [2.3] D-X [0.3] over X [0.6] there's my 
+fractional error coming in can you see [0.5] that's why it's a fractional error 
+in this term [0.4] when these two are multiplied okay [0.8] and i've actually 
+er so that's my 
+error there straight away [0.3] and in fact this is the one i want [0.2] over 
+here isn't it i could do this one now [0.4] straight away [1.9] if there's only 
+an error in X term here [0.2] then i've got that the error D [0.3] er error in 
+A the fractional error in A [0.6] is equal to twice [0.4] the fractional error 
+in D shall we say or er [0.9] B-B over D [0.2] okay [2.3] so [0.4] D-D the 
+error [0.3] in D [1.9] is one part in two-hundred [0.8] so the error in A is 
+worse [1.2] it's twice as bad 'cause we've squared it okay [0.3] so it's one in 
+one-hundred [0.9] so i can say my area [1.1] is equal to three-hundred-and-
+fourteen [0.2] square centimetres [0.4] plus-or-minus three-point- [0.6] one [0.
+2] square [0.6] centimetres [1.8] okay [4.4] er [1.2] the point about it as 
+you'll see when you get to question three on the other sheet [0.7] is that i 
+gave you some special formulae these two here [0.2] we haven't quite finished 
+this one yet [0.8] but in question three on the second sheet we have a slightly 
+different arrangement don't we [0.5] for the er [0.5] platinum resistance 
+thermometer [0.7] so if you understand what we're doing here no let's so that's 
+[0.3] 
+this is the [0.2] now let's next one oh good this one works [0.4] D-Z D-Y we'll 
+do now [0.9] what's the error change in Z [0.4] for a change in Y [0.5] okay [0.
+6] and that is er A-X-to-the-alpha 'cause that's constant for the moment [0.4] 
+beta- [0.3] Y-to-the-beta-minus-one [1.3] okay [1.1] er if i can [0.7] i can 
+now write this as A-X-to-the-alpha-Y er [0.8] we'll have a beta out here [0.5] 
+Y-to-the-beta [0.5] over Y and i realize this thing here is what i started with 
+Z [0.5] so the [0.4] D-Z error two if you like [0.6] the second error term due 
+to a change in Y [0.6] 'cause X and Y can have errors on [0.4] is now beta [1.
+4] er [3.6] and i'll i'll bring the Y over here Z [0.2] D-Y [0.3] over Y 'cause 
+there's a Y under there 'cause i've had to put a Y back in because i lost a Y 
+when i differentiated the beta-minus-one you see that's where the Y underneath 
+comes from [1.9] okay so now [0.2] if these are independent [3.9] 
+in other words [0.5] if [2.0] usual thing if Y goes high with an error or [0.3] 
+high there's no reason for X to have a high error [0.3] they're totally 
+independent [1.7] then i can say that the total error in Z-squared [5.3] is 
+those squared is alpha- [0.2] Z [1.0] D-X over X [0.8] all squared plus [0.5] 
+beta- [0.2] Z [0.6] D-Y over Y [0.4] all squared [0.6] and therefore i could 
+write this bring i'll take the Zs out here [0.3] and therefore D-Z over Z [1.2] 
+all squared is equal to alpha- [0.4] D-X over X all squared that's the [0.2] 
+term we were left with there when there was only X [0.6] and of course if two 
+things squared are equal to each other we can [1.7] then the things themselves 
+are equal if A-squared equals B-squared A equals B plus [0.5] we've got the 
+other one [0.3] beta [0.2] if that's the power [0.5] D-Y over Y [0.6] all 
+squared [1.6] and the we notice here [1.2] as we said before when we get these 
+product terms involved or power law [0.4] it's the fractional error that's 
+important can you see it here [0.5] D-Z over Z the 
+fraction D-X over X D-Y over Y [10.7] okay so er rather than producing them out 
+of the hat as before [1.0] it's little bit of calculus a nice little exercise 
+in calculus okay [1.0] just [0.7] differentiating [1.3] X-to-the-N is N-X minus 
+X-to-the [0.2] N-X-to-the-N-minus-one isn't it [3.7] right [4.2] everybody 
+happy everybody read that yeah [0.3] okay [1.0] no [1.7] yes no [10.1] sorry [7.
+1] shall we do number three [6.3] 
+sf0921: excuse me [0.2] 
+nm0919: yes [0.2] 
+sf0921: how did you get [0.2] error in A as one in one-thousand [1.7] 
+nm0919: sorry 
+sf0921: 
+sf0922: i got the answer as twenty-two [1.2] 
+sf0921: i got the error in B as one in two-hundred [0.5] 
+nm0919: okay i-, what 
+sf0921: and error in A is one in one-thousand 
+nm0919: oh sorry it was one in a hundred then sorry that's okay A equals pi-R-
+squared [0.8] twice over four [1.3] D-squared [0.6] so D-A [0.7] over A equals 
+twice [0.2] D-D [0.6] over D [0.2] okay [2.4] this one here was one in [0.6] 
+two-hundred [0.8] so this is one [0.5] in one-hundred [0.7] so A [0.5] equals 
+three-hundred-and-fourteen plus-or-minus three [0.4] did i write one in a 
+thousand there [0.7] 
+sf0923: yeah [0.2] 
+nm0919: okay so once i've done this right [9.0] this is half a per cent [1.5] 
+and twice it is [0.2] one per cent [4.0] so the other [0.2] this is the inverse 
+isn't it of the one we did [0.4] last week [0.6] where we had the t-, [0.2] the 
+the [0.2] period 
+of a pendulum [0.4] was proportional to L to the h-, the length to the half [0.
+7] in which case the period to the fractional error in the period was [0.3] 
+half [0.2] the error in the length [0.6] here since it's length's [0.9] squared 
+it's twice [1.0] just goes as the power law doesn't it [5.4] well i think most 
+people who got there got number three correct [1.4] got that far [0.6] it's V 
+[0.7] equals K-U-minus-C [0.5] and K here this is a velocity [0.7] in metres 
+per second [2.2] er K is er [0.8] three-point-two volts per metre per second [0.
+6] so no volts [0.2] sorry that's a voltage in volts [1.3] and C [0.4] was 
+equal to six-point-four volts [3.4] and if you think about that [0.6] you ou-, 
+you've got a [1.4] that means there's a a characteristic looking something like 
+this [0.5] if this is V [2.2] then er it's a straight line [0.4] er if we put 
+er [1.1] er [5.9] so we can substitute our value in here we're also given so 
+that er [0.3] yeah this er if if U is equal this is U [0.3] U equals to nought 
+that's minus-six-point-four [0.7] down there comes up here [0.4] and we're 
+interested in a point we're given the point U equals what is it [0.6] 
+U e-, U-I equals er [0.3] ten metres per second [0.6] and we measure a voltage 
+I equal to twenty-six volts [0.8] and if you substitute that point in there [1.
+1] what value do you get [0.2] in the formula [1.7] and then whereabouts is my 
+actual data point does it lie on that line or not [0.4] and that's the residual 
+i'm interested in [0.4] so if i substitute [3.1] U equals ten [0.2] metres per 
+second i get V [0.7] that's the one on the line [0.4] is equal to thirty-two [0.
+6] minus six-point-four [0.4] is twenty-five-point-six volts [1.0] so that's 
+the er formula [2.9] which is this point here [0.8] twenty-five-point-six [0.4] 
+and the actual data point is up here [1.1] at twenty-six volts so the residual 
+[0.8] which is how far my data point is off the line [0.4] is obviously equal 
+to [3.4] equals data point [1.3] minus er [1.1] er [1.0] fit [1.4] and that's 
+obviously equal to twenty-six minus twenty-five-point-six equals nought-point-
+four volts [0.5] i think everybody actually got that one right apart from the 
+odd person who got an arithmetic er [0.6] substitution er [0.5] in error [1.9] 
+right so next time let's go now we've got quite a few of these 
+to go through this time [1.0] some more problem sheets here these are the 
+longer ones er [6.3] well i think er [0.4] everybody who did question one [0.8] 
+which is really er [2.4] er i don't know if i really need to go through this in 
+all its gory detail because i think most people did get this one [0.2] correct 
+[10.7] i think everybody who tackled this clearly could er [0.5] work out we 
+had these [0.6] ten val-, [1.5] what did i do with my er [0.2] good one [2.0] 
+we had our ten values of er [0.2] T [4.8] 
+and people most people got that T-bar was equal to ten-point-two-four [1.2] 
+degrees centigrade [0.9] and that they got the standard deviation was equal to 
+what did i get er [0.8] plus- [0.3] nought-point-one-five degrees centigrade [1.
+1] okay [1.0] one or two people made an error but i think i've identified that 
+when they got the er [0.2] arithmetic wrong [2.0] and then er the stan-, the er 
+standard then we also found that seven [0.5] out of ten [1.6] were within [1.8] 
+sigma of [0.3] T-bar [1.8] and that seems it's fairly reasonable and were 
+supposed to mention there [0.5] that when we had this distribution [0.5] we 
+would 
+normally expect if you had ten [1.4] readings here you'd expect sixty-eight per 
+cent you'd expect seven within that so six you know [0.3] seven [0.3] you'd 
+expect sixty-eight per cent so seventy is pretty good [2.2] and then the next 
+thing you had was that er the standard error [0.9] was equal to nought-point-
+one-five over root- [0.2] ten [0.7] which is something like nought- [0.3] point-
+o-five degrees centigrade [0.6] so you could then say that your final error [0.
+4] if you like [0.4] is ten-point-two-four [2.8] plus-or-minus nought-point-
+nought-five [0.3] that's the standard error [1.4] that's how accurately you 
+think you've got [0.5] that mean [1.1] even though quite a lot most of the [0.
+5] points are [0.2] further away from that [0.6] what is the assumption you've 
+been making here [5.1] and again the assumption er is not that people are being 
+careful with the thermometer et cetera et cetera hopefully that's all in [0.5] 
+these standard errors and standard deviations [0.3] the sys-, [0.3] the er 
+assumetion is that it's a normal distribution [4.8] and that there's no 
+systematic error [3.8] if i was using the thermometer that was one degree out 
+because there was a break in the er mercury [0.5] then of course this would all 
+be invalid [0.4] so these are the two [0.9] that they're distributed [0.6] 
+according to this bell-shape curve they're random [0.5] like the property of 
+noise [0.7] and then the last question was if [0.4] if you have [0.4] you have 
+an eleventh reading T is eleven-point- [0.6] two degrees [0.6] what do you do 
+with it [1.6] and some people sort of wrote and said whoa [0.4] looks a bit far 
+out [1.6] you know this looks a bit dodgy that one it's a bit far from there [0.
+5] i'd probably throw it away that's not correct [0.5] the correct version here 
+is to say [0.7] what is the difference of that from that and the answer it's 
+one degree centigrade [0.7] different [1.1] the standard deviation is point-one-
+five so this is six standard deviations outside there [0.7] so this is one 
+standard deviation six is right out here [0.7] we know there's a ninety-nine-
+point-nine-and-a-half per cent chance of everything being within 
+three standard deviations [0.6] so you must say if this is six standard 
+deviations away from the mean [0.4] therefore i will reject it [0.5] that's 
+correct just to see ooh it looks a bit dodgy it's a bit [0.3] different from 
+all the others [0.2] is not correct [1.3] the whole point is we can do this 
+analytically [0.4] okay [2.8] that's what we're learning hopefully here [1.8] 
+right now we get to the rather amusing little bit number [0.2] two [0.3] number 
+one [1.6] most people [0.4] didn't have too much bother with that one okay [4.
+2] and i'm afraid no it wouldn't [0.7] i suppose the [0.3] advantage of number 
+[0.2] two [0.8] is if you struggled over it and got it wrong [1.4] and i [0.3] 
+and i explain or i've explained [0.7] on the sheet where you got it wrong [0.8] 
+y-, you'll certainly get the message as to what the difficulty is so basically 
+[1.4] we have [0.6] R equals [0.2] A- [1.0] exponential- [0.2] B- [0.2] T [1.3] 
+and what we have in this particular situation is the resistance [0.6] of a [0.
+5] thermistor yes [0.2] 
+sm0924: would it be over T too [1.0] 
+nm0919: it is indeed yes thank you [3.2] right [3.7] okay so [0.3] we're we're 
+trying to measure temperature and we've got 
+something in resistance and it's not linear [0.7] okay [1.2] in fact er if we 
+plot R [0.9] against T [0.4] it looks something like er [0.4] this [0.9] if it 
+was [0.3] B-T it would look something like [0.4] that [0.4] so thanks very much 
+for pointing out i've got it i've written i copied it down wrong [2.0] right so 
+the question is [0.2] what is the sensitivity of the device [3.2] what do we 
+mean by sensitivity [0.7] we mean what's the change in resistance [5.8] for a 
+change in temperature [3.0] in other words it's going to be in ohms per K shall 
+we say it's in [0.2] K is absolute temperature there T big-T is the absolute 
+temperature right [1.2] now everybody realizes that's what's we mean [0.9] but 
+the problem is that most people [2.7] have er remember [0.9] a little example 
+we did before where we had V against T [0.5] and V was equal to B-T [0.4] and 
+that was a straight line through the origin [0.6] so they then said the 
+sensitivity [2.8] is actually er the change in voltage here [0.4] over the 
+change in temperature [1.1] and they then said that's V-over-T well 
+in fact what you're interested in here clearly for a given temperature [0.7] is 
+the change in temperature [1.1] resulting in a change in voltage which is the 
+gradient [2.0] okay [0.7] and so you're interested in that gradient a little 
+change in V over a little change in T [0.4] and it so happens that this is a 
+straight line through the origin [0.4] so [0.3] er if you actually also [0.3] 
+work out er [0.4] V- [0.4] -over-T [0.3] you will also [0.2] get the right 
+answer [0.2] for the gradient [2.7] so something like er half the class here [0.
+4] said the sensitivity is gr-, equal equal to R- [0.4] over-T [0.5] and as we 
+take a point here [0.8] what we're actually interested in [0.3] is a change 
+delta-T here [1.5] what does that give [0.2] as a change delta-R [0.2] that's 
+what we really want isn't it [0.5] is D-R [0.2] D-T [1.6] okay [0.5] now if 
+it's linear that's constant and it's the straight line through the origin [0.6] 
+but if you then suddenly decide oh well let's say that's R-over-T [0.8] what 
+you're actually calculating the sensitivity i think everybody can see is this 
+local gradient [0.7] what most if you calculate R-over-T 
+you're actually calculating that gradient [5.0] which is [0.5] not the same 
+thing [1.2] so if you look back at the notes when we talked about that [0.6] i 
+think we did actually say that if it's a non-linear relationship [1.7] then 
+it's n-, [0.7] then this gradient you have to work out the gradient and the 
+gradient as you can see here [0.6] is changing that's because it's non-linear 
+isn't it [1.5] so as we [0.4] we got different gradients here [0.4] and 
+different gradients there [2.0] right so basically [2.3] hopefully those who 
+ploughed through this using the wrong values [0.5] when you see that diagram 
+you can see what you've done wrong okay [5.7] right so what we actually have to 
+do now [1.0] is to differentiate this thing here [0.9] in other words we have 
+to work out D-R D-T [2.2] okay and we realize that this is er [0.6] we have to 
+use the chain rule here [1.5] if it was D-D-X of exponential-X [0.2] we get 
+exponential-X [1.1] okay but it's exponential-B-over-T so we first of all 
+differentiate the exponential and get what we started with [0.7] which is A- [0.
+5] exponential- [0.6] B-over-T [0.2] 
+and then we have to differentiate what's in the exponential okay [0.8] and so 
+the D-D-T [0.4] of B-over-T [4.3] is equal to minus-B over T-squared [1.4] so 
+this is minus-B [0.3] over T-squared and i could if i wanted write that back as 
+minus-B over T-squared and this is [0.5] back what i started with times R [0.5] 
+probably makes [0.5] some people left it like that but this [0.6] is a bit 
+easier to see [1.8] this looks correct doesn't it because the gradient is in 
+fact negative okay [0.3] when D er [0.2] when D-T goes up [0.2] okay [0.9] and 
+we increase er [1.3] er [0.4] T when we decrease R [1.2] that is negative [3.4] 
+right [0.2] hopefully people [0.2] if you can't follow the maths there you'd 
+better have a word with your maths people [0.3] integrating differentiating a 
+function of a function [1.7] right so at this stage now er [0.5] we're asked 
+what is the sensitivity [0.5] so we have to work out [0.2] D-R D-T at two 
+temperatures [4.9] so D-R [0.8] D-T the first one we need to do is at er [2.4] 
+two-hundred-and-seventy-three [0.6] and then we also need D-R [0.5] D-T [0.6] 
+at er three-hundred-and-seventy-three okay so we're 
+interested in the gradient here at two-seven-three [1.7] and the one down here 
+which we think is probably a bit less at three-seven-three [1.7] what i need to 
+do also is to work out what the value of R is and if i substitute in there [0.
+9] er er the values i get two-thousand [0.5] twenty-three-thousand- [0.4] and-
+eighty-two ohms [1.0] is the value here [1.3] right [0.4] at two-s er whereas 
+at R th-, just putting A and B in with the values [0.2] on the sheet [0.8] 
+leave you to do that [0.6] R three-seven-three [0.4] is quite a lot less it's 
+only four-hundred-and-fifty-four ohms okay [2.7] so we could put those in in [0.
+8] green i suppose here [0.5] this one down here is actually four-hundred-and- 
+[0.8] fifty-four [0.6] this one up here [0.7] is twenty-three-thousand [1.6] so 
+it's a big change isn't it [1.2] and the question is now [0.7] so by changing a 
+hundred degrees i seem to have changed the resistance by about [0.3] twenty-
+three-thousand ohms [0.6] so it looks as if i'm going to get some rather large 
+changes in er [1.1] for a degree temperature change i'm going to get a lot of 
+ohms change so it looks potentially as if i've got rather a good er sensitivity 
+[1.8] 
+so this is equal to er [0.3] B [0.7] is equal to er [0.4] what is B equal to 
+four-thousand [2.0] and T is equal to in this one two-seven-three [0.5] so the 
+one the value here [0.4] is equal to er [0.6] let's do this er [0.2] this one 
+here R which is two-three [0.8] this is two-seventy-three so that's [0.2] the 
+value of the resistance twenty-three-thousand-and-eighty-two [0.6] then it's B 
+four-thousand [0.9] over two-seven-three [0.2] two-seven-three [0.4] minus [0.
+5] and that comes out to equal minus er [3.5] one-two-three-eight [0.3] ohms 
+per K [0.4] okay [5.2] this is [0.2] four-thou that's about twen-, yeah that's 
+about a twentieth of that number right [0.3] this one here [0.6] what i'm doing 
+is i'm substituting here obviously an R [0.7] minus R- [0.4] B over T-squared 
+so in this case [0.3] the resistance is at lot less [0.4] four-five-four [0.5] 
+so i think my gradient's also going to be a bo-, lot less [0.3] it's not quite 
+in the ratio [0.4] because my T is now three-seven-three- [0.4] squared [0.4] 
+instead of two-seven-three [0.8] and if i put those numbers you can see that 
+one there cancels with that [0.5] that goes into that it's going to be 
+about ten isn't it in fact it's [0.4] minus- [0.2] thirteen ohms per K [4.4] 
+right now the next thing i get here [0.5] is what happens if [0.2] A [0.6] 
+changes by one degree [3.4] okay [0.7] so let's have a look at this first one 
+here A changed by one degree [1.0] then this means [0.7] A changes by one per 
+cent [0.3] right [0.5] so what's going to happen here if A changes by one per 
+cent [0.5] is that my value of R is going to change by one per cent [8.3] so R 
+changes [1.6] by [0.3] one per cent [0.2] of [0.5] twenty-three-thousand ohms 
+[2.4] and that is going to equal therefore two-hundred-and-thirty ohms [6.9] 
+and what is that equivalent to in temperature [0.5] well twelve-thirty-eight 
+ohms [1.5] is equivalent to one K [0.5] so two-hundred-and-thirty ohms [2.7] is 
+equivalent to er [0.4] two-hundred-and-thirty over twelve-thirty-eight [0.6] 
+which i got to be nought-point-one-eight degrees centigrade [0.2] okay [4.1] 
+now you c-, you can you see that it's the A changing the R that's the big 
+effect we've also changed D-R D-T [0.4] by one part in a [0.2] hundred [0.4] in 
+other words this number [0.4] here [0.5] er [0.3] twelve-thirty-eight has 
+changed 
+by one per cent but that's rather a small change [0.6] changing twelve-thirty-
+eight by one per cent [0.9] the main thing is the change in the value of R [1.
+0] er [0.5] giving a drift [0.4] which looks like a change of temperature of 
+point-one-eight degrees centigrade [2.7] and then the last one here [1.2] let's 
+have a look at this one [2.3] now R changes by [1.9] one per cent [0.2] of a [0.
+2] four-hundred-and-fifty-four [1.4] and that to my reckoning is four-point-
+five ohms [1.7] and we've got thirteen ohms is e-, equivalent to one K [0.4] so 
+four-point-five ohms here [0.6] is equal to er [1.0] er [0.5] four-point-five 
+over thirteen [0.4] and that's actually almost [0.2] it's a it's a little bit 
+worse isn't it it's about a quar-, a third that [4.4] okay so basically [0.3] 
+this region here [1.2] at the lower temperature with the higher resistance and 
+the steeper slope it's more sensitive [0.8] and less sensitive at the higher [0.
+2] temperatures [0.8] i think you can see here that allegedly if you er [0.7] 
+you know if you had an ohmeter [0.9] that read to an ohm here [0.6] then you 
+might think you'd be able to measure [0.3] this 
+temperature that's a resolution problem isn't it [0.4] suppose i could reme-, 
+measure a change of one ohm [0.7] i might say to myself oh i can measure the 
+temperature to a thousandth of a degree K [0.8] 'cause that's the resolution of 
+the instrument [0.5] but in fact suppose A due to ageing and this is what 
+happens it changes by one per cent [0.8] and the fact i can resolve these ohms 
+to one ohm one part in a thousand [0.6] doesn't really tell me [0.4] it's just 
+like having a voltmeter and putting a few more extra decimal places at the end 
+[0.6] that doesn't mean to say i might have got a more accurate instrument [0.
+4] might have more resolution [0.6] but supposing that A is changing as the 
+thing ages from month to month [0.6] then that's my limit there [0.5] rather 
+than just saying i can measure ohms incredibly accurately [1.1] it's a 
+difference between resolution [0.5] and accuracy [3.0] right let's take a 
+little bit of a break then [0.4] now [0.8] hopefully er [0.6] having tried 
+these and struggled with them going through them [0.5] is helping you to follow 
+a little bit what's going on 

@@ -1,0 +1,551 @@
+nm0796: okay shall we start 
+sf0797: yes [0.7] 
+nm0796: yep [3.4] okay well you'll see that today we're [0.3] we have [1.2] a 
+silent visitor in the front row [0.9] what's actually happening today [0.4] is 
+that the lecture is being [0.5] recorded [0.4] and i think i mentioned to you 
+last week [0.2] the purposes [0.3] of this so you know what's happening [0.6] 
+er by and large i think we'll carry on as normal [0.3] and ignore what's going 
+on over here [1.0] and er [1.1] so [0.7] that's where we are if you can [0.9] 
+carry on like that [0.3] we'll work in a normal way [0.6] er what i wanted to 
+say to you this morning [0.3] is that i think w-, [0.5] today's session is 
+going to be [0.3] the last [0.3] of the lecture sessions [0.4] for the course 
+[0.6] or if it isn't there'll only be about ten or fifteen minutes next week [0.
+4] and we will then [0.6] come back and look at some example sheets [0.2] now 
+so far [0.5] i believe you've had [0.8] three example sheets am i right [1.9] 
+sm0798: yep 
+nm0796: have you had example sheet four 
+sm0799: yep [0.5] 
+nm0796: right [0.6] well then i've got [1.2] today for you example sheets five 
+[0.3] and six which makes the complete set [0.6] so i'll give those out [0.5] 
+at the end of [1.0] the lecture [1.3] 
+so apart from that we're [0.4] working on [0.4] i think page five [1.1] of your 
+printed notes [1.1] set three [2.9] and just to bring you back to where we were 
+last week we had looked at the [0.5] example [1.1] which was a quite a 
+complicated [0.2] one [0.7] at the top of that page [0.7] er to do with the 
+motion of the rocker arm and that was the last thing [0.6] we went through [1.
+0] so that's that's where we [0.4] are at [0.3] and now we're going to proceed 
+a little bit further [0.9] er [0.3] through these notes [0.3] [0.4] so the 
+first [0.3] thing we're going to do is take a look [1.0] at [0.5] a problem 
+which involves rotational momentum [1.5] and that's the next [1.0] problem 
+that's on the list [1.6] which is example three-E [1.6] and what we're doing 
+here [0.4] is looking at the rotational [0.3] equivalence of a collision [0.5] 
+so where [0.2] previously we've looked at collisions of particles one particle 
+[0.4] striking another [0.7] one body striking another [0.9] er here we're 
+looking at [0.2] collisions that occur in rotation [0.6] which is not nearly 
+such a common [0.3] idea [0.6] and it's a concept that perhaps is a little bit 
+difficult to perceive [0.7] what we are going to be 
+doing [0.5] here is looking at a problem [0.4] where a clutch of an engine [0.
+5] is put in [0.2] so that [0.6] what we're ha-, what is happening is there's 
+an [0.2] a an engine with its flywheel [0.2] has a certain amount of rotational 
+momentum [0.6] and then this is suddenly connected [0.5] to the drive shaft [0.
+3] and the wheels [0.5] er [0.2] of a vehicle [0.5] so in fact you have a 
+rotational impact between the engine system on the one hand [0.6] and the 
+driven system on the other hand [0.6] and what happens is that the total [0.4] 
+rotational momentum [0.6] of the system is conserved [0.4] although as we shall 
+see [0.4] the energy [0.7] is some of the energy is lost [0.2] in the process 
+[1.4] so it works [0.5] in exactly the same way [0.4] as linear [0.3] momentum 
+[0.4] problems work [1.3] so let's just take a quick look at what the [0.2] 
+problem says then [1.0] er the engine of a car is revved up to five-thousand R-
+P-M [0.6] which is slightly unconventional units [0.4] but i'll say a bit more 
+about that in a minute [1.0] the clutch is then engaged over a short [0.3] time 
+interval [0.4] to get [0.2] the vehicle moving from rest [1.8] we'll presume 
+that the vehicle's in 
+first gear [2.2] the effective [0.8] moment of inertia [0.4] in a flywheel 
+engine is given [1.1] the driven system is rather less [1.7] five times less [1.
+1] in first gear [0.6] er do note that when you've got a system like that when 
+you're in second gear or third gear or fourth gear [0.7] the effective [0.8] 
+moment of inertia of that system [0.5] becomes greater [0.6] as you go up 
+through the gears [2.4] that in fact is quite [0.2] a a complicated thing [0.3] 
+to work out and you have to know something about gear boxes and gear ratios [0.
+2] but we're not concerned with that here [2.2] er determine the speed of the 
+engine after clutch 
+sm0800: do we do that 
+nm0796: yes next year [1.6] determine the speed of the engine after clutch 
+engagement and the amount of energy lost [0.3] okay so there's our [0.4] 
+problem [5.1] let's take a look at how we solve this one then [8.1] now i'm 
+going to work in some [0.4] slightly unorthodox units here [0.5] just for 
+convenience [0.7] er if you don't like what i'm doing [1.6] er [0.9] by all 
+means [1.0] convert this problem for yourself [0.2] into S-I [0.2] units [1.4] 
+but i think when you see me go through this [0.2] 
+you'll realize that er [0.2] the mixed units that i'm using [0.3] are actually 
+very convenient for the first [0.2] part of this problem [5.8] so h-, here we 
+have then [3.2] first of all [0.3] a determination [0.3] of the [0.4] angular 
+momentum the I-theta- [0.2] dot [0.7] of the engine before [0.3] you engage the 
+clutch [3.2] the [0.4] angular velocity the theta-dot is five-thousand remember 
+that's in R-P-M [1.0] er the moment of inertia is point-five [0.3] which is in 
+standard S-I units [0.5] multiply the [0.9] two together [0.4] and you get a 
+figure of two-thousand-five-hundred [0.4] in some [0.3] hybrid [0.2] units [0.
+7] and provided i [0.2] stick with these hybrid units throughout [0.6] 
+everything will be all right [1.6] as i say you can convert to S-I if you want 
+to [1.6] er after [0.3] the so-called impact in other words [0.7] once the 
+clutch has been engaged [0.3] then you've got the two systems rotating [0.4] 
+together [0.9] at some speed [0.6] which we're about to determine [1.4] what 
+has happened is that the [0.2] moment of inertia of the total system has gone 
+up [0.7] to be the sum of the two [0.3] so [0.2] the total moment of inertia is 
+point-five [0.5] plus [0.2] point-one [0.9] for the driven system [3.2] so 
+we've got [0.2] moment of inertia point-six [2.3] this then is an expression 
+for the angular momentum after [0.4] engagement [0.7] and if you [0.3] equate 
+[0.9] this expression to two-thousand-five-hundred [1.3] presuming that we have 
+[0.4] conservation of angular momentum [0.4] then [0.4] the theta-dot works out 
+[1.1] to be four-one-six-seven [0.3] and because we're using these hybrid units 
+we know that that must be [0.4] also [0.5] in R-P-M [5.5] so that is a very 
+straightforward [0.4] calculation i hope you will agree [1.3] er [0.2] very 
+similar to [0.6] linear momentum conservation [3.8] now let's have a look [0.9] 
+at the energy [0.6] the second part of the problem [0.8] tell me if i move this 
+up too far [6.6] now at this point i've chickened out and i've gone into S-I 
+units 'cause i want to work in [0.3] straightforward joules [0.6] er in other 
+words S-I energy units [0.7] er [0.2] and here what i'm doing [0.2] is working 
+out the energy before [0.5] kinetic energy before [0.4] half-I-theta-dot-
+squared [0.3] and the energy after [1.1] so [1.0] this is an expression then 
+for [0.2] half- [1.1] I of the engine moment of inertia of the engine [0.3] 
+times the theta-dot-squared [0.2] 
+and you'll see [0.6] that i've made a conversion [0.4] from five-thousand R-P-M 
+[0.4] into radians per second [1.4] and five-thousand divide by [0.6] sixty [0.
+4] tells me how many radians per [0.5] sorry how many revs per second i've got 
+[0.8] and a rev is two-pi-radians [0.3] so [0.4] the conversion factor here is 
+[0.3] two-pi-over-sixty [1.8] then square it [1.9] if you put your calculators 
+around that one [0.4] you get this figure for the kinetic energy sixty-eight- 
+[0.8] odd-thousand [0.2] joules [2.1] er after the clutch has been engaged 
+we've now got [0.7] an increased [0.5] moment of inertia to point-six [0.6] but 
+a decreased [0.2] speed to four-one-six-seven [0.7] according to the 
+calculation we've just done [1.5] and that will tell us [0.8] the energy [0.8] 
+kinetic energy of the system [0.9] after [1.0] the clutch engagement [1.8] so 
+you see that we've got [0.8] a loss of something like twenty per cent [0.6] of 
+the energy in that process [4.2] which is probably a realistic [0.6] sort of 
+loss [0.4] where does where does the energy go to [0.7] 
+sf0801: heat [0.7] 
+sm0802: 
+nm0796: heat yeah [0.6] and where's the heat going to [0.2] appear [1.0] 
+sm0803: on the clutch plates 
+nm0796: on the clutch plates right [0.5] okay [5.0] so that 
+then is a fairly straightforward sort of problem isn't it but [0.2] the the key 
+thing here [0.3] is to see the parallel [0.4] here between linear [0.3] 
+particle motion [0.3] and rotational motion [0.7] and we did a very similar 
+thing for that trivial problem to do with [0.3] railway trucks colliding with 
+each other if you remember it [2.3] all right moving [0.5] on then [1.2] just 
+in passing [0.3] there is a chart at the back of your notes showing er [0.4] 
+the comparison between [0.6] translational motion [0.3] and [1.1] rotational 
+motion [0.4] i don't want to dwell on that [0.6] or to describe it in any 
+detail [0.4] but i would like you [1.0] er some time in your own time [0.3] 
+just to take a look at that [1.3] and see what is said there there are one or 
+two comments [0.3] about the vector [1.0] er [0.4] the vector properties of 
+some of these quantities [0.3] and as we said at the beginning of the course [0.
+2] you can ignore these for the moment but there are one or two little oddities 
+there [0.3] they won't concern you [1.0] just look at the [0.5] fact [0.4] er 
+[0.3] the key fact [0.3] that [0.4] there is a one to one [0.4] correspondence 
+between what happens in linear particle motion [0.2] and what happens in 
+rotational motion [0.5] 
+i know i've said that about ten times but [0.6] people do sometimes forget it 
+[0.2] even though i say it ten times [2.3] well now finally what we're going to 
+come on and look at [0.3] is er the general [0.2] type of motion [0.3] in which 
+we have got [0.3] a mixture [0.6] of linear motion [0.5] according to your 
+second set of notes and rotational motion [0.5] which is according to these 
+notes [0.4] and sometimes this can become [0.4] a little bit complex [1.0] er 
+the key features of this [1.4] and the key things that you need to remember [0.
+3] are first of all [0.5] that you need to work [0.7] as at the centre of 
+gravity of the system [0.4] that is the safest possible thing to do [1.5] just 
+occasionally though secondly [1.0] there is a fixed centre of rotation for a [0.
+4] a set of [0.9] bodies or a body [0.5] and we'll see one of those in a minute 
+[0.5] in that case it's sometimes more convenient [0.3] to work [0.2] at the 
+centre of rotation [0.4] but you have to be a little bit careful [0.3] how you 
+handle that [0.6] it's always safe to 
+work at the centre of gravity [4.6] all right so the first [0.6] problem we're 
+d-, we're going to look at this morning is example three-F at the bottom of 
+that page [0.7] er this one [0.6] is a [0.6] relatively straightforward [0.7] 
+problem of the [0.2] what i call the direct kind [0.3] the direct kind if you 
+remember [0.5] is where you know [0.4] forces applied and you can work out 
+accelerations [1.4] or vice versa [0.4] you know the motion and you have to 
+work out the forces [0.8] this particular one [0.4] is in the first category [0.
+6] what we've got here is a thing like a bobbin or a cotton reel [0.2] resting 
+on the surface [0.5] a piece of [0.2] cord ar-, [0.3] is wound around it and we 
+pull on the cord [0.5] and the bobbin is going to roll [0.5] along the surface 
+[1.8] that's the nature of the problem [1.5] and what we have to do [0.9] is 
+work out what that motion is going to be [0.4] under the [0.3] conditions that 
+are applied [3.0] now thi-, this problem [0.4] does get a little bit [0.3] 
+complicated for two reasons can you anybody think what those two reasons might 
+be [7.5] no [0.7] 
+sm0804: the mass has been reduced [0.7] has it [1.4] 
+nm0796: we're not going we're 
+not going to take that into account it could [0.4] be a problem yes if the cord 
+were heavy [0.6] we would have to take that into account but we'll assume it's 
+a light cord [3.1] 
+sm0805: as it unwinds so the radius reduces [1.2] 
+nm0796: no [1.1] we'll assume the cord's all on one radius [2.5] okay [0.2] 
+well i-, [0.4] just i'll tell you what they are [0.2] two things [0.3] first of 
+all [1.1] you don't know whether this thing [0.5] is going to slip on the 
+surface or roll [1.2] so somehow or other we've got to [0.4] cope with that [0.
+4] and the way in which we cope with it [0.4] is we assume one thing [0.7] work 
+out what the answers are going to be [0.6] and if they turn out to be daft [0.
+2] we've made the wrong assumption [0.4] and then we go back [0.6] and try the 
+other assumption [1.1] er usually if you get it wrong [0.2] something quite 
+inconsistent will appear [0.5] and you know that you've [0.2] got it wrong [1.
+3] so that's the first problem [0.3] slipping or rolling [2.0] er the second 
+problem is [0.2] which way is it going to roll if it's rolling let's assume 
+it's going to roll [1.2] is it is this bobbin going to roll [0.3] to the right 
+[0.2] or is it going to roll to the left [2.1] 
+sm0806: to the left [1.1] 
+nm0796: well 
+that's [0.2] you see the interesting thing 'cause [0.2] seeing that you think 
+[1.1] it's going to unwind so the bobbin's going to have to go to the left [0.
+6] in fact that's impossible [0.6] it always goes to the right [0.3] if you 
+pull on anything in one direction [0.7] it will go [0.6] in that direction 
+unless there's some other reaction [0.3] that stops it doing so [1.1] this 
+thing will roll to the right [3.7] and you'll notice that i put that [1.9] at 
+the bottom there [2.7] well you may not believe that [1.8] but just think about 
+it [1.5] okay [0.5] so [1.6] let's then see [0.3] how [0.6] we are going to [1.
+0] tackle the problem [3.6] as with any of these sort of problems we'll work 
+through this in a [0.7] fairly well [0.4] defined order [5.5] perhaps before i 
+[0.2] do that i should just recite [0.5] the main features of the problem to 
+you which are [0.5] written into it [0.6] er first of all [1.4] it's two-
+hundred millimetre radius [1.3] o-, or point-two of a metre [0.9] mass twenty-
+five kilograms [1.1] it tells you the radius of gyration [0.2] at one-seventy-
+five millimetres [0.3] poi-, point-one-seven-five metres [1.6] tells you the [1.
+0] radius of the groove [0.3] which 
+appears also on the [0.5] picture underneath [1.0] the force applied is twenty 
+newtons [1.5] and [1.0] what you're being asked is to calculate the angular [0.
+4] acceleration [1.6] and it tells you [0.2] the coefficient of friction if you 
+need [0.3] to know it [0.3] between [0.6] this bobbin [0.3] and the surface [5.
+3] right so [0.3] at the top here of the solution [0.2] first two things i 
+write down is first of all the mass [0.7] of [0.6] the bobbin [0.7] and 
+secondly [0.3] i need to calculate [0.2] the moment of inertia because we're 
+actually told [0.4] the radius of gyration [0.9] and remember that the [0.2] 
+moment of inertia about the centre is going to be [0.3] mass [0.2] times radius 
+of gyration squared M-K-squared [0.9] so [0.6] that [0.4] moment of inertia [0.
+4] is going to be twenty-five times point-one-seven-five-squared [0.4] and that 
+[0.3] result is given here [3.8] now i'm going to make my big assumption [1.2] 
+i'm going to assume [0.9] that [1.1] this thing rolls [1.7] and doesn't slip [1.
+7] and i've [0.2] put a note there that i must check [0.5] at the end [0.5] 
+that that is a reasonable assumption to make [2.3] or at least check for 
+consistency [1.4] we'll see how [0.3] we do that when 
+we get there [4.0] and then the next [0.6] and a final [0.3] preliminary to 
+looking at the dynamics [0.3] is to actually look at the kinematics i haven't 
+actually written that word on this overhead but [0.4] usually i do [0.4] you 
+might like to just [0.6] write [0.2] kinematics here [0.3] remember that 
+kinematics is looking [0.3] just at the motion [0.5] nothing to do with forces 
+or [1.1] anything [0.3] of that kind [2.3] so i'm assuming it's rolling [0.8] 
+here is a picture of what [0.3] is happening [0.5] if it's rolling there is an 
+instantaneous [0.4] centre [0.2] of rotation [0.7] at the point of contact 
+between [0.4] the bobbin and the surface [1.6] so in other words [0.5] looking 
+at that [0.4] bobbin it's just rolling about this point of contact [1.0] at 
+that instant [0.3] course as soon as it rolls a little distance [0.8] the point 
+of instantaneous centre is going to move round the rim but it's always at the 
+point of contact [1.8] so [2.1] if we assume that in this rolling the [0.2] 
+linear motion of the centre of gravity is X [0.8] to the right [1.1] and the [0.
+6] angular motion [0.4] angular displacement is theta [1.8] er angular motion 
+is not [0.4] confined to a single point on 
+the body [0.4] if you've got [0.3] what's called the rigid body in other words 
+it doesn't [0.6] change its shape [0.5] an angular motion [0.6] is the same for 
+any point on that body [1.4] so in fact the angular displacement about the 
+instantaneous centre is theta as well [0.6] which means that [0.2] the centre 
+is going to move by [0.3] the corresponding [0.2] value of R-theta [1.4] R is 
+point-two of a metre [1.6] so [0.4] there is a relationship here [0.3] between 
+the X [0.4] at the centre [0.4] and the angular movement [0.6] and X is going 
+to be point-two-theta that's the R [0.9] and that's the theta [3.8] the other 
+part of the kinematics that's important [0.7] is if we differentiate this twice 
+[0.5] so X- [0.2] double-dot [0.8] is then going to be [0.4] point-two-theta-
+double-dot [2.5] so that's the kinematics [4.8] now we move on to the dynamics 
+and we need the free-body diagram [0.6] for this [0.8] bobbin [0.5] remember 
+what [1.0] this is it must have all [0.5] forces [0.3] and moments shown [0.5] 
+including the inertia [0.3] force and the inertia moment [2.0] and according to 
+me there are six [0.5] such forces [3.8] only one of which is [0.4] explicitly 
+applied the only applied 
+force to this thing is the twenty newtons down here [0.9] all of the others 
+come about either [0.4] by virtue of contact [0.4] with other [0.2] poin-, 
+other [0.2] bodies [1.0] hence [0.9] the [0.3] reaction [0.7] and [0.3] the 
+frictional [0.2] traction force [3.0] and i've put a little note here that this 
+frictional traction force [0.2] ought to be less than mu-R [2.2] if it isn't 
+less than mu-R [0.5] then this thing is going to slip [0.6] so our assumption 
+is wrong [1.0] so [0.5] one of the checks that we have to do at the end [1.3] 
+is to check [0.6] whether [0.5] F actually is less than [0.2] mu-R [0.7] 
+[0.5] [6.4] then [0.9] the other [0.3] forces there are two inertia forces the 
+[0.9] M-X-double-dot which must be in the opposite sense to positive-X [0.2] or 
+positive-X-double-dot [0.5] and the I-theta-double-dot [0.7] in the opposite 
+sense [0.3] to positive-theta [2.8] and [0.3] last [0.5] but not least [0.9] 
+the weight of the object the M-G [0.6] downwards which acts at the centre of 
+gravity [3.4] well as always [0.3] it's important to get that [0.4] picture 
+right [0.3] once you've got that picture [0.2] right and complete [0.8] then 
+everything else should be easy [0.6] but it's always that first step [0.2] 
+where [0.4] things go wrong [1.1] you either forget one of the forces you ought 
+to [0.2] put in [1.4] or you get one of them wrong [0.4] there are there are 
+too many of them [1.5] so i hope that you agree [1.0] that i have got [0.3] the 
+correct number of forces [0.2] here [0.4] remember the things you have to check 
+inertia forces [0.4] wherever the body contacts something else [0.5] and any 
+applied forces [0.3] three [0.4] types and they're all there [6.6] so that is 
+your picture [1.9] and 
+i'll try and keep this on the screen at the same time as showing you [0.9] the 
+equations [3.2] so you can see where they've come from [16.7] can you can you 
+see that all right [1.3] er so the first and simple one is the horizontal [0.3] 
+equilibrium from the picture that's just disappearing [0.4] at the top [1.3] so 
+the t-, the twenty [0.7] is balanced by [2.4] the [0.2] er [0.4] M-X-double-dot 
+and the F so i've written it this way round [0.6] er F [0.6] equals [0.6] F to 
+the left is twenty to the right [0.4] minus [0.2] M-X-double-dot to the right 
+[2.8] the [2.5] M is twenty-five kilograms [0.8] the X-double-dot [0.5] we saw 
+from kinematics is point-two- [0.2] theta-double-dot [0.3] so [1.2] a fairly 
+simple expression for F [0.4] comes out of there [3.0] and then the other 
+equation that we need [0.4] is the moment [1.1] equation [7.6] i'll take that 
+off [1.5] i think [8.5] well you've got the picture in front of you haven't you 
+[0.8] i think i'll take the picture away and then this can go higher up [0.4] 
+you can see what's going on [8.1] right so i've i've taken moments about the 
+centre [1.9] of [0.2] the bobbin [0.3] now you'll notice that several of the 
+forces actually pass through that 
+centre [0.3] so they don't have moments which is handy [1.0] er the ones that 
+do [0.9] are the inertia moment I-theta-double-dot [0.2] which is [0.6] anti [1.
+4] anticlockwise is it [4.2] yep [0.8] and the twenty [0.4] times the [0.6] 
+radius [0.3] of the groove [1.3] which is anticlockwise [0.3] balanced by [1.5] 
+the friction or tractional force of F times that radius point-two [0.4] none of 
+the other forces [0.3] have a moment about them [0.2] in the middle [2.6] and 
+then i substitute directly for F from what we've found up here [2.8] and put 
+some numbers in [0.3] so there's the value of I [0.3] that i calculated [0.4] 
+right at the beginning [1.2] that comes to one-point-five [1.5] F [0.4] here 
+goes into there [1.7] and you end up there then [0.3] with [0.2] an equation 
+which is [0.4] solely in terms of the angular acceleration so we can work out 
+what it is [0.8] i haven't sho-, shown the detailed algebra [0.3] but that 
+tells you [0.7] what the result comes out to be [1.9] so that's the [1.1] 
+solution to the problem [0.3] except that we must now check [0.3] our 
+assumption [1.3] w-, and if you remember [0.8] what we need to check [1.4] is 
+that the traction force is less than mu-R [2.6] well the 
+traction force from [0.6] the equation for the horizontal equilibrium is twenty 
+minus [1.1] five- [0.4] theta-double-dot [2.0] and that comes to about thirteen 
+[0.3] newtons [0.4] so a traction force [0.4] if it's rolling is thirteen 
+newtons [2.2] the value of the reaction is the same as the rate which is twenty-
+five kilograms times nine-point-eight-one [0.9] in newtons which is ab-, [0.6] 
+more or less two-hundred-and-forty-five [1.6] so mu-R is point-one times that 
+[0.2] which is [1.0] twenty-four-and-a-half newtons [2.5] so [0.3] it is indeed 
+the case that the traction force [0.5] is [0.7] less than mu-R [0.4] it's about 
+a half of it [1.0] so in fact the assumption [0.5] that it's rolling [0.8] is 
+okay [9.2] right so what we've seen there then is a [0.4] mixture of linear [0.
+3] and rotational motion [0.9] a-, and it's [0.2] had a slight complication 
+because of this business of the rolling or slipping [0.2] which may not appear 
+in [0.8] many problems [0.3] but you often get a little [0.3] complication of 
+that sort to deal with [6.7] right so now if we turn over then [0.6] to the 
+final page of the notes [0.7] page six [12.8] and [0.7] here is a problem in 
+the [0.4] next [0.2] category that i [0.3] usually [0.8] look at [0.3] you 
+remember we have three k-, types of problems [0.5] direct problems of the sort 
+we've just solv-, solved [1.3] the [0.2] impact momentum type problems which 
+i'm about to do [0.6] and thirdly [0.4] the [0.2] energy [0.6] conservation of 
+energy type problems [0.4] which [0.4] is the final one so there are two 
+problems on this page [0.2] one is to do [0.3] with [0.4] impact [0.3] momentum 
+[0.8] on a mixed body in which we've got rotational and linear momentum going 
+on together [1.0] and the second problem [0.5] is of energy [0.4] conservation 
+problem [3.6] the [0.3] the thing that i've chosen for [0.2] this next problem 
+is what is sometimes known as the cricket bat [0.2] problem those of you who 
+play [0.3] cricket [0.7] will be familiar [0.6] with the fact that when you [0.
+7] are batting and you strike the ball [0.3] if the ball doesn't hit the right 
+place [0.4] on the bat [0.3] it stings your hands [0.6] and the reason for that 
+[0.3] is that you have an impulsive [0.5] reaction at your hands the ball 
+striking [0.3] the bat [0.4] i-, [0.6] causes an impulse [0.3] a linear impulse 
+on the bat [0.7] and [0.5] because of the [0.2] the way in 
+which equilibrium of imp-, of [0.4] impulses occurs [0.3] there will be [0.2] 
+in general [0.7] er an impulsive reactions where you're hanging on to it the 
+hinge if you like [0.3] of the bat [1.0] except in [0.3] certain very special 
+circumstances if you happen [0.5] to get the ball hitting the bat in the right 
+place [0.5] it doesn't sting [0.7] and such a [0.3] a place is called the 
+centre of percussion [0.5] and you can easily work out [0.3] from the dynamics 
+[0.2] where that position [0.8] happens to be [0.4] in the case of a cricket 
+bat [0.4] it's probably about that much from the bottom of the bat [0.5] which 
+if you look at the way in which [0.2] cricket bats are shaped [0.3] is where 
+the bat [0.5] is actually thickest and chunkiest and that's really where you 
+should hit it [0.6] if the ball comes up and hits it [0.6] er [0.3] higher up 
+the bat then you're [0.6] going to suffer [2.0] the ball goes even higher 
+you'll need your [0.4] guard on [0.2] but there you are [3.2] okay so let's 
+have a look see what the problem says [1.1] i've done this in very general 
+terms that [0.3] picture in the notes [0.4] is not meant to be a cricket bat [2.
+8] i 
+think i can draw a bit better than that [0.3] [laugh] [1.0] but essentially 
+it's the same [0.4] problem what we've got here [0.3] is a body that is [0.2] 
+hinged [0.7] at the top at O [1.6] centre of gravity [0.4] is somewhere [0.3] 
+further down distance L beneath [0.6] and we're actually going to strike [0.5] 
+the thing [0.3] with an impulse [0.4] at [0.6] a point H below the hinge [1.0] 
+er and there are one or two bits missing on the diagram [1.8] for which my 
+apologies [3.2] so i'd [0.2] like you to just add [8.1] the first thing that's 
+missing [0.6] is that there's an arrow round there [0.4] with nothing on it [0.
+2] that should have theta-dot [3.7] put against it that is the angular motion 
+that's going to occur [0.5] after [0.3] the impact now the impact is sh-, [0.3] 
+shown at the point [0.2] A here by a line [1.3] it's a very defective drawing 
+i'm sorry about this th-, there should be an arrowhead there [1.1] on there and 
+also that should be called P [0.6] P [0.5] is going to be [0.5] what i call the 
+impact the impulse [0.2] it's not a force it's an impulse [3.1] and then over 
+at the right of the diagram you see [0.7] hanging in mid-air [0.7] er [0.2] V 
+and theta- [0.2] dot [1.1] or actually i think it says 
+theta but there should be a dot over it [1.1] er [0.3] there should be [0.5] 
+again an arrow like that to show that theta-dot is clockwise as it is up here 
+[2.0] and V [0.8] is going to be to the left [3.3] so you want an arrow on 
+there [1.9] otherwise the picture is wonderful [0.5] 
+sm0806: what's an impulse [0.5] 
+nm0796: pardon [0.2] 
+sm0806: what's an impulse [1.1] 
+nm0796: an impulse if you remember [0.6] i hope you will do [0.2] when i tell 
+you [0.6] is [1.5] a sho-, a a force of short d-, duration [0.2] applied to a 
+body [0.4] and the impulse is the integral of that force over time [1.1] and 
+that [0.4] impulse applied to a body [0.3] causes a change in [0.2] linear 
+momentum [1.3] remember that [1.0] that was in our our second [0.6] set of 
+notes [2.3] okay [6.6] right just getting the bones out of the [0.2] example 
+i'm going halfway down it [0.6] er let's the body be struck by an impulse P at 
+A which we've shown on the diagram [1.8] find [0.7] find the value of H for [0.
+3] A to be the centre of percussion [0.4] now what that actually means [0.5] is 
+that we've got to find [0.8] H [0.3] such that [0.6] the reaction [0.7] there 
+[0.7] which [0.2] also you could add to your diagram if you want to [3.2] 
+what you want is to have H such that R is zero [3.4] so let's i'll just write 
+under here so you don't [1.0] have a misapprehension [1.5] P and R [4.6] are 
+impulses not forces [17.2] [2.9] all right can we just then [1.0] set off into 
+the problem [1.3] can i take that one away have you [0.8] got what you need 
+from that [2.6] right [1.9] [19.7] i don't think you need to draw the picture 
+again [1.8] you've got it in your notes [0.8] so don't waste time doing that [2.
+9] er key key thing here again is that we've got mixed motion the centre of 
+gravity [0.8] is moving linearly to the left [0.7] er but er we've also got 
+this rotation [0.7] theta-dot [2.0] and the point O is fixed [0.2] at the top 
+[0.7] or assume to be fixed [3.9] once again let's look at the kinematics first 
+[0.2] si-, the simple motion [0.6] the [0.6] the value of velocity V to the 
+left [0.5] at the centre of gravity [1.7] is going to be the corresponding 
+value of R-theta-dot like it was for the previous problem [0.5] only here [0.4] 
+the R is the distance L [2.3] so L-theta-dot [0.2] taken [0.3] from the centre 
+rotation at the top [0.4] tells you the value of V [7.6] 
+and now we do [0.5] a rather similar thing [0.4] to the previous problem we 
+look at the linear [0.2] motion [0.3] and then the [0.4] angular motion [0.5] 
+in the previous problem it was [0.7] linear equilibrium of forces and [1.4] 
+moment equilibrium [1.2] but you need to do the two because we've got mixed 
+motion [0.7] so the first [2.6] first thing [0.5] is looking at the linear 
+impulse the total linear impulse on this object [0.3] is [0.5] primarily the P 
+to the left [0.4] but we must [0.5] also [0.4] see that there is the reaction R 
+at the top [0.4] which is to the right so [0.3] the total linear impulse on the 
+body is P minus R [1.1] and that's going to result [1.1] in the linear momentum 
+[0.6] of this thing at the sin-, centre of gravity [1.0] so it's going to be 
+equal to M-V [2.6] i've used the kinematic straightaway [0.3] to find out an 
+expression for P [1.9] so that's a fairly simple one [1.6] slightly more 
+complicated the [0.4] angular [0.3] impulse now we haven't actually used this 
+before [2.2] er the angular [0.4] impulse [0.7] let me just recap on that for 
+you [0.8] the moment [0.2] of an impulse [0.2] gives you [0.4] a change [0.4] 
+in angular momentum [2.2] 
+so [0.2] what i'm doing here is taking [0.8] a moment [1.8] of the impulses P 
+and R about the centre of gravity i'm working at the centre of gravity [0.6] so 
+P [1.8] gives you [0.4] er a cl-, [0.3] a clockwise moment of impulse of P 
+times the distance H-minus-L [0.8] and the R gives you [0.5] a [0.2] also a 
+clockwise [0.4] moment of impulse [0.5] of R times L [1.1] so you've got these 
+two terms [4.2] in the expression for the moment of impulse [1.0] and that [1.
+0] will result in a change in angular momentum [1.0] I-theta-dot [0.6] so what 
+we're er assuming here is that the [0.4] object starts stationary [0.3] but is 
+struck [0.4] and then ends up with these velocities [1.4] [0.2] so we've got a 
+change of linear momentum and a change of angular momentum [0.3] both 
+determined [0.4] by these [0.4] er impulse equations [4.7] so that's what 
+happens in general [7.0] and now the problem becomes easy because what i'm 
+going to do [0.3] is to see [0.5] what the value of H has got to be [0.2] for R-
+equals-zero [1.4] so i simply put R-equals-zero in those two equations that 
+we've got [1.8] these two here [0.2] that one [0.2] put R-equals-zero [0.4] 
+this one put R-equals-zero [2.0] and 
+what will then happen is [0.4] that [1.4] a value of H [0.7] the height will be 
+defined [4.2] well how have i do-, [0.2] done this let's just have a [0.2] 
+quick [0.2] look [0.8] this [0.3] first equation here comes from this one [2.1] 
+er P [0.3] P is going to be M-L-theta-dot from there so [0.4] putting that into 
+there [0.5] M-L-theta-dot times H-minus-L [0.3] plus nought [0.6] is I-theta- 
+[0.7] dot [1.4] and you'll see that the theta-dots cancel out [2.1] and [1.9] 
+if we substitute I-equals-M-K-squared then the Ms cancel out as well [3.3] and 
+so you get a purely [0.5] geometric [0.2] equation [0.7] for H [0.6] the value 
+of H is in terms [0.3] of the radius of gyration [1.1] and [0.6] the L [1.2] 
+distance from the hinge [0.4] to the [0.2] centre of gravity [6.1] so this is a 
+rather general [0.4] abstract [0.5] sort of analysis [1.9] er probably more 
+usually [0.3] this would be couched in terms of a [0.3] very specific problem 
+[0.4] er an object of a specific size [0.4] and mass [0.7] and so on [1.0] but 
+what you've got here [0.3] is a general formula [0.5] that will enable you to 
+work out centre of percussion for any object you care to choose [1.1] and what 
+the problem f-, says in its final sentence is [0.3] apply the theory [0.3] to 
+find 
+the centre of percussion for a uniform bar [0.6] hinged at one end [0.6] so a 
+uniform bar at [0.4] hinged at one end we have to [0.6] decide what we mean by 
+K [0.4] and L [10.3] so this takes us back to something that i asked you to 
+remember [0.7] couple of weeks ago [9.1] i can get this lot to stay on board [9.
+0] i'll move it up in a minute if you can't see the bottom [3.5] right so if 
+you've got a uniform bar [0.2] length [0.5] big L [2.1] the the little L in our 
+picture is the distance from the hinge to the centre of gravity in other words 
+from the top of the bar [0.2] to a point halfway down it [0.6] so the little L 
+[0.8] that we had in the general formula [0.3] is going to be the big L divided 
+by two it's half the length [0.3] distance from the end to the middle [3.7] and 
+then the formula that i asked you to remember [1.1] was that [0.2] the moment 
+of inertia of a bar hinged about one end was M-L-squared-over-twelve [0.7] so 
+[0.5] K-squared [4.9] sorry about the centre i mean what am i talking about [0.
+7] er moment of inertia about the centre for a bar is M-L-squared-over-twelve 
+so the K-squared [0.3] is big-L-squared-over-twelve [1.6] and 
+all that remains to [0.2] work out the [0.2] corresponding value of H [0.3] is 
+to substitute these two [0.4] into that formula [1.5] and what you f-, [0.3] 
+find [0.4] is that the centre of percussion [0.4] is about two-thirds [0.2] of 
+the length [0.4] and the that [0.3] corresponds fairly well with a cricket bet 
+doesn't it [0.8] although a cricket bat isn't actually a uniform bar [8.6] all 
+right [1.8] now we're going to cheat [0.9] example three-H [0.6] is one which 
+i'm not going to re-, [0.4] do on the overhead at all [1.4] what i'm going to 
+do here [0.2] is give you a handout for your notes [3.1] and er [2.0] then 
+superficially i will work [0.4] through this [1.5] over the next two minutes 
+[14.3] er this problem is one in the final category of making use [0.4] of the 
+principle of conservation of energy [3.1] and it's also [0.8] closely related 
+to er a piston [1.9] mechanism [0.3] used in an internal combustion engine [0.
+4] so looking first of all at the picture in the notes [1.4] if i can find them 
+[4.2] sorry [1.2] er what you see here [0.6] is [1.1] a link A-B which 
+corresponds with a [0.2] connecting rod [0.5] in an engine [0.9] the force P 
+applied [0.2] would [0.5] correspond [0.4] to the [0.7] force 
+applied by exploding gases on a piston [0.9] er B-C is the crank [0.3] on the 
+crankshaft [0.3] so what is happening is that B-C is going round and round [0.
+6] er connecting [0.2] rod [0.4] is following it at B [0.3] but point A [0.2] 
+moves in a straight line in other words it moves up and down the cylinder [0.3] 
+so you can see the mechanism can you [1.5] right [0.4] so [0.2] the thing is 
+actually starting [0.5] with [1.0] a rotational velocity of ten radians per 
+second for B-C in other words the rotation [0.3] rate of the crankshaft [1.1] 
+and [0.3] a constant force is applied [0.2] through [0.3] half a cycle of the 
+engine [1.3] hundred newtons [1.1] er that means that that force moves [0.3] 
+through a distance of how much [2.5] i-, [0.4] if B-C goes all the way th-, [0.
+2] round through a hundred-and-eighty degrees [0.4] how far [0.3] has point [0.
+2] A moved [0.2] 
+sm0807: nought-point-four metres [0.2] 
+nm0796: yes [0.2] point-four metres [1.4] so [0.6] the work done by P is a 
+hundred newtons times point-four which is forty newtons [0.2] forty [0.5] 
+joules [1.2] so the work you're putting in is forty joules [0.2] and that work 
+is going to result [0.4] in an increase [0.5] in the kinetic energy of the 
+mechanism of the same amount [0.2] forty joules [2.4] and [0.3] the interesting 
+[0.4] feature of this type of calculation [0.4] is that you are not actually 
+working out anything to do with accelerations and what have you [0.3] during 
+the course of the process [0.3] if you did that it gets very complicated 'cause 
+you've got to take all the angles into account [0.8] and this is one of the 
+great virtues of using [0.5] the 
+conservation of energy [0.4] as a principle you simply look at the initial 
+state [0.2] and the final state [1.0] you don't worry at all [0.2] about what 
+happens in between [3.1] right so let's have a quick look then [0.6] at the 
+script [0.3] which i've just given out [1.8] principle at the top [0.4] now 
+there's a useful formula given here which you can work out for yourself [0.3] 
+if you have a bar hinged at one end [1.6] fixed at one end with a linear 
+velocity V at the other end [0.3] the kinetic energy of that bar is M-V-squared-
+over-six [1.8] that's a little magic formula [0.9] er [0.2] it actually is very 
+useful in this problem [0.3] because you can use it at every stage in what 
+happens [1.6] er [0.6] but you can easily prove it for yourself [2.7] the third 
+stage the initial kinetic energy [0.8] point B is moving down [0.4] at two 
+metres per second [0.4] that [0.3] arises from the fact that B-C is going round 
+at ten radians per second it's the [0.2] R-theta-dot [1.3] so [1.1] that 
+velocity V applies to both rods at that position [0.6] the left hand rod A-B [0.
+8] fits the category of [0.9] paragraph two [0.2] with a V of [1.0] whatever it 
+is two 
+metres per second [0.3] and it also applies to the other one the crank [1.1] so 
+we can very easily use the M-V-s squared-over-six [0.2] for both to tell us 
+what the total kinetic energy is [0.6] and that's at the end of section [0.2] 
+three [0.6] you'll see that the kinetic energy initially is quite small about 
+two joules [1.9] er this [0.2] works because the centre of gravity does not 
+have [0.3] any [0.3] horizontal [0.2] component of velocity [0.5] for this 
+particular problem [0.4] in either the initial or the final state [0.5] if it 
+did [0.3] working out the kinetic energy gets a bit more complicated [2.0] and 
+then the final kinetic energy [0.3] point B has gone all the way round through 
+a hundred-and-eighty degrees [0.2] and now it's moving upwards with a different 
+velocity which is unknown V [0.4] but we can use the same formula [0.6] same 
+formula is going to apply [0.4] to work out [0.2] kinetic energy [0.6] except 
+we simply put V [0.5] instead of two [0.7] in the expression above [1.6] five 
+is work done which we've just talked about [1.5] six is making use of the 
+principle at the top [1.4] which tells us that V 
+is nine-point-four-seven [0.3] so it's gone up from two metres per second [0.2] 
+downwards at the beginning [0.4] to nine-point-four-seven upwards at the end [2.
+5] and [0.6] then theta-dot comes directly out of that [0.5] by the same [0.2] 
+means [0.6] so actually when you get into it it's a very simple problem isn't 
+it [0.3] looks complicated to start with [0.3] but once you've got a few tricks 
+[0.4] in your armoury [0.8] it's very straightforward [4.7] thank you that will 
+[0.2] do us for today [0.4] now ne-, next week what we're going to do [0.3] is 
+take a look at some of the example sheets [1.1] er i've got [3.8] two [0.2] 
+more of these here for you today [0.3] can you [0.5] take one each of those [1.
+0] and next week i want you to come [0.4] prepared and ready to ask some 
+questions [0.5] about things that you've had a try at [0.4] so [0.4] if you 
+could put a little bit of effort [0.5] into looking at perhaps the earlier [0.
+2] example sheets [0.8] er particularly example sheet four [0.9] and we'll have 
+a look at that next week [0.8] and in the final week of term [0.2] we'll look 
+at these two [5.3] all right any anything else 

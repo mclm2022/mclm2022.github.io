@@ -1,0 +1,61 @@
+---
+title: "Visualization tips"
+number-sections: true
+---
+
+This document gathers suggestions for R packages and other resources for a richer and more varied experience with visualization. You don't need to use these tools, but if you're curious, here they are.
+@sec-gg lists R packages that build on `{ggplot2}` and [The Grammar of Graphics](https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448/ref=as_li_ss_tl) 
+
+::: column-margin
+
+Hadley Wickham's [article](https://byrneslab.net/classes/biol607/readings/wickham_layered-grammar.pdf) is a good start if you're interested in that philosophy, and you can also check [the ggplot2 book](https://ggplot2-book.org/index.html)).
+
+:::
+
+@sec-other mentions some other packages that can help with plotting, but instead of focusing on specific kinds of plots, they offer extra functionalities that are useful in presentation and publication. Finally, @sec-color lists some useful packages for color palettes and online resources to choose colors and create palettes.
+
+These lists are not exhaustive ---they are the packages that I am more or less familiar with and what I use them for. I encourage you to read up on those that you're interested in and look more into them.
+
+## GG extensions {#sec-gg}
+
+The packages listed in this section expand `{ggplot2}` to cover specific kinds of plotting.
+
+- [`{ggrepel}`](https://ggrepel.slowkow.com/) provides geoms for text labels that overlap each other. In `{ggplot2}`, `geom_text()` and `geom_label()` plot text, but the labels may overlap with each other. This package gives you a tool to minize this overlap.
+
+- [`{ggridges}`](https://wilkelab.org/ggridges/) provides geoms to create ridgeline plots, i.e. partially overlapping lineplots that create the impression of a mountain range. These are useful if you want to compare density plots across a groups of observations.
+
+- [`{ggparty}`](https://cran.r-project.org/web/packages/ggparty/vignettes/ggparty-graphic-partying.html) provides tools to implement `{ggplot2}` functionality to objects created with the `{partykit}` package, particularly conditional inference trees.
+
+- [`{gghalves}`](https://erocoar.github.io/gghalves/) provides "half" geoms so that they occupy half the space they would. In particular, if you are plotting boxplots, violin plots or scatterplots across multiple values of a categorical variable, they will occupy half the space and make it thus possible to combine two of them together. For example, instead of a boxplot you could have half a boxplot and half jitter or violin.
+
+- [`{ggmosaic}`](https://haleyjeppson.github.io/ggmosaic/) extends `{ggplot2}` to create mosaic plots, visualizing contingency tables. However, it does not provide an easy option to color based on the residuals.
+
+- [`{GGally}`](https://ggobi.github.io/ggally/) extends `{ggplot2}` to visualize networks. Another nice package to visualize networks is [`{visNetwork}`](https://datastorm-open.github.io/visNetwork/), although it is independent from `{ggplot}`.
+
+## Other plotting libraries {#sec-other}
+
+This section lists R packages that offer further extensions that are not related to particular geometries.
+
+- [`{ggpubr}`](http://rpkgs.datanovia.com/ggpubr/index.html) is based on `{ggplot2}` and its main goal is to produce publication-ready plots. It has handy functions for quick generation of basic plots, such as `ggdensity()`, `gghistogram()`, `ggboxplot()`, `ggdotchart()`... It also offers a ["balloon plot"](https://rpkgs.datanovia.com/ggpubr/reference/ggballoonplot.html) as an alternative way to plot contingency tables.
+
+    In addition it offers [publication-ready themes](http://rpkgs.datanovia.com/ggpubr/reference/theme_pubr.html), [a function for marginal histograms on a scatterplot](https://rpkgs.datanovia.com/ggpubr/reference/ggscatterhist.html) and a number of [pre-loaded color palettes](http://rpkgs.datanovia.com/ggpubr/reference/get_palette.html).
+
+- [`{cowplot}`](https://wilkelab.org/cowplot/index.html) is also a package with features to help create publication-ready plots. Useful functions from this package are [`plot_grid()`](https://wilkelab.org/cowplot/articles/plot_grid.html), to combine different plots into a grid, as well as [functions to add marginal plots](http://www.lreding.com/nonstandard_deviations/2017/08/19/cowmarg/).
+
+- [`{sjPlot}`](https://strengejacke.github.io/sjPlot/index.html) is a package for plotting and creating tables from statistical data; [`{ggeffects}`](https://strengejacke.github.io/ggeffects/) is a visualization package designed to plot effects from regression models. I am the least familiar with these packages, but they were created and are maintained by [Daniel Lüdecke](https://github.com/strengejacke), who also participates in the amazing easystats packages.
+
+
+## Color palettes {#sec-color}
+
+An important way to personalize your visualizations is to choose a color palette. Base R functions and `{ggplot2}` have their default colors and [a number of variations](https://ggplot2-book.org/scale-colour.html). For manually assigned colors, you can use hex codes or [pre-defined names](http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf). There are a number of HTML color pickers that return the hex code, such as [htmlcolorcodes.com](https://htmlcolorcodes.com/).
+
+There are also R packages dedicated to offering specific color palettes:
+
+- [`{ggsci}`](https://cran.r-project.org/web/packages/ggsci/vignettes/ggsci.html) gathers scientific journal and sci-fi themed palettes, which are also used by `{ggpubr}`.
+
+- [`{okabeito}`](https://malcolmbarrett.github.io/ggokabeito/) offers a single colorblind-friendly palette for categorical variables based on [Okabe and Ito's *Color Universal Design* proposal](https://jfly.uni-koeln.de/color/), which I like very much.
+
+- [`{MetBrewer}`](https://github.com/BlakeRMills/MetBrewer) offers color palettes inspired by works at the Metropolitan Museum of Art in New York.
+
+- [`{NatParksPalettes}`](https://github.com/kevinsblake/NatParksPalettes) offers palettes inspired by (US) National Parks.
+

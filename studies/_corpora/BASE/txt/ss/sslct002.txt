@@ -1,0 +1,1230 @@
+nm0976: what i'd like to do this morning is to get into the sort of practical 
+details of market research [0.6] if you remember what the [0.2] the programme 
+looks like [0.3] over the next few weeks [1.4] in the next few weeks starting 
+next week you're going to get quite involved with the [0.4] er the detail of of 
+er [1.9] methodology [0.2] so next week [0.4] Professor namex is going to be 
+talking about conjunct analysis which is a [0.4] quite a modern market research 
+methodology to [0.5] er [0.3] basically [1.0] find out what consumers like 
+about new products [0.3] er [0.2] potential new products [0.8] but before [0.2] 
+we do all that we've deliberately dealt with [0.3] last week the kinds of data 
+that you'll be [0.4] coming across in this er [1.4] er [0.6] course and the 
+sorts of data that market researchers deal with [1.1] and this week we want to 
+deal with the practical aspects of collecting that data [1.4] and there are in 
+a sense there are always [0.4] we always [0.5] deal with this in two ways [0.5] 
+and the first way [0.4] or or th-, th-, there are [0.2] in a sense two themes 
+to this [0.4] there's a qualitative stream of market 
+research [0.3] and there's a quantitative stream of market research [1.4] i'm 
+going to deal with the [0.2] basically the quantitative [0.2] stream of data 
+collection first [0.3] and then [0.3] look briefly at the k-, [0.3] the 
+qualitative stream but just to draw the distinction between the two [1.9] 
+qualitative research is essentially [0.2] exploratory [1.2] as i [0.2] i think 
+i mentioned in week one you're trying to find out ideas [0.2] concepts [0.4] er 
+[0.2] you might be testing people's reactions to certain things [0.6] but in a 
+qualitative way and what that [0.3] effectively means is that you will never 
+have [0.4] large enough numbers to do statistical tests [0.8] and this is why 
+we're going to try and get this out of the way [0.3] there are [0.2] ways of 
+dealing with you namex last week talked to you about attitude measurement [0.4] 
+and some of that verges on qualitative but [0.5] what she was referring to was 
+essentially building up enough information about people's attitudes to be able 
+to [0.8] render it useful for statistical analysis of one sort or another [0.2] 
+and attitudes [0.6] as you will see 
+fall into today's session as well attitude measurement [1.0] so qualitative 
+research [0.2] is about [0.7] basically exploratory work [0.8] today's the 
+first part of today's session is more about [0.4] quantitative [0.2] work and 
+[0.2] collecting enough data to be able to do something [0.4] statistical with 
+it [2.1] now qualitative research in some ways boils down to a f-, very few 
+basic techniques and [0.3] at the end of the morning i'm going to just show you 
+a video which [0.4] shows you how focus groups work [0.3] because focus groups 
+[0.5] are the er the main [0.7] vehicle that are used for qualitative research 
+[1.8] it's often said that qualitative research should come before quantitative 
+research [0.5] and for the sake of variety i'm doing it the other way round it 
+doesn't really matter [0.3] because [0.8] qualitative research can stand on its 
+own [1.8] you know as you'll see in a second in order to design a decent 
+questionnaire [0.3] you need to have some idea of [0.2] where people stand on 
+the issue you're looking at [0.6] it's dangerous of course to [0.5] er [2.1] 
+impose your views as a researcher [0.8] so 
+what you what what we'll be looking at are ways of [0.4] in qualitative work [0.
+2] ways of [0.5] prompting the sort of information we need to design 
+questionnaires [1.7] but we'll start off with [0.8] some thoughts and some [0.
+5] methods for [0.4] dealing with quantitative data [2.1] and just to give you 
+a flavour for what's [0.9] the sorts of problems and the sorts of issues that 
+we're [0.3] going to be looking at later on [1.9] these are common market 
+research problems [0.3] analysing product usage [1.2] very straightforward in a 
+way just saying okay how m-, how much [0.6] of th-, [0.3] this product do 
+people use why do they use it [0.5] how much more might they use and so on so a 
+fairly straightforward [0.4] er quantitative [1.0] assessment of of product 
+usage or sales [2.3] market researchers always talk about usage because it's [0.
+3] more than just sales sales is just a number so much was sold [0.3] usage is 
+far more concerned with [0.3] the way people [0.5] react to the product the way 
+people use the product what people do with it and so on [1.7] you're going to 
+get in [0.4] the next couple of weeks quite a lot on 
+market segmentation [1.0] so quantitative research to describe market segments 
+[0.6] and if you're trying to split a mass market into lots of [0.4] submarkets 
+or segments [0.5] you need quantitative research usually [0.5] because [0.2] 
+it's quantitative research that says [0.2] this many people are likely to be [0.
+3] in this segment if you're trying to [0.3] target market [0.6] if you're 
+trying to [0.2] focus on a particular segment [0.4] then you will need to know 
+[0.4] er basically how many people are in that segment or whether it's worth 
+your while [0.3] going for it [1.3] so describing market segments market 
+segmentation is usually [0.4] quantitative and you're going to look at [0.5] 
+cluster and factor analysis and other things [0.7] to [0.6] er [0.2] describe 
+market segments [0.6] assessing attitudes as namex spoke to you last [0.2] week 
+[0.4] er [0.7] attitudes of purchasers are assessed mostly by quantitative 
+research [1.6] describing product image [0.4] is er on the border [0.5] again 
+[0.2] quantitative research can be used you can collect data from large numbers 
+of people [0.5] er to descr-, and and see [0.3] what they think 
+of product image but there's a there's a qualitative [0.6] aspect to that as 
+well [1.7] identify market opportunities and redefine and reposition products 
+[0.6] namex talked to you about scaling well you're going to look later on at 
+ma-, er at multidimensional scaling [0.6] which [0.3] comes up with [0.3] er 
+ideas on those two those last two [1.4] er [0.4] items there [3.1] now a brief 
+recap on last week [0.5] namex talked about the types of data well [0.4] there 
+are different [0.9] types of data categories of data [0.3] and these [0.4] have 
+a big impact [0.5] on [0.4] er [0.3] how you collect [0.2] the information the 
+the the sorts of [0.7] er vehicles you can use for that [0.4] so [0.2] numbers 
+as labels is nominal data [0.2] ordinal data where you put it in order [0.3] 
+interval data where [0.3] there's some [2.5] implication of the distances 
+between each [0.2] point let's say on a scale [0.5] and ratio data where 
+there's some absolute zero point and [0.5] the [0.2] differences between the 
+the points means something [2.1] now [0.2] how are you going to [0.2] get hold 
+of people [1.3] we're looking at questionnaire design which is a sort of 
+general [0.3] er description of of [0.3] 
+of variety of different [0.4] ways of collecting information [0.5] but [2.2] 
+the method of contact is obviously important how are you going to get hold of 
+these people [0.5] and these are [0.3] the four [0.6] sort of most common ways 
+not [0.4] necessarily in order but if you're thinking of [0.3] how market 
+researchers collect their information [0.4] those are the ways they do it [0.3] 
+number four now [0.5] is [0.3] being used computers are being used to support 
+[0.5] er [1.7] market researchers [0.5] a great deal more and [0.4] the whole 
+business of [1.0] both selling things over the telephone and doing market 
+research over the telephone [0.5] has become [0.2] a very important issue in 
+market research [0.4] and you'll see reference to th-, [0.2] to er [0.9] terms 
+like C-A-T-I [2.8] computer assisted telephone interviewing [0.4] i me-, i 
+think it probably goes without saying now that when you're phoned up [0.8] and 
+somebody wants to conduct a market research interview with you [0.3] er they're 
+probably sitting in front of [0.8] a P-C and we'll we'll [0.8] look at some of 
+the [0.4] implications of that but [0.3] one of the main ones of 
+course is that [0.4] the [0.2] data entry [0.5] occurs at the same time as the 
+[1.2] asking of the questions so there's huge savings in terms of that and 
+indeed some of the analysis [0.3] can go on [0.2] more or less as you're 
+speaking [1.2] things like [0.6] you know in questionnaires you'll need to [0.
+4] need to skip [0.6] from one section to another well the [0.3] computer does 
+that automatically [0.6] next week you're going to hear about a technique 
+called adaptive conjoint analysis [0.4] and this is an analysis method that [0.
+5] i-, [0.3] as it suggests sort of adapts to the person who's being 
+interviewed [0.4] and starts to [0.3] er [0.3] react or ask different questions 
+depending on the [0.5] er the person [1.9] telephone interviewing [1.0] er is 
+[0.5] increasing in in er [0.2] its coverage its its importance [1.2] but [0.8] 
+in some ways [0.2] it's postal questionnaires that we [0.3] we want to [0.2] 
+concentrate on today because [0.3] it's postal questionnaires that in a sense 
+have to be the most accurate [1.1] because posnal k-, postal questionnaires [0.
+5] are [0.3] the ones where the respondent doesn't have any help at all [1.4] 
+er [1.6] there may be follow-ups and you may 
+follow up by telephone and so on [0.4] but [0.4] er [0.2] it's postal 
+questionnaires which need [0.3] to be the most accurate if you like [1.9] 
+personal interviewing [3.3] in some ways is very good very high levels of 
+response [0.6] because although you might have [1.2] told [0.4] somebody on 
+Broad Street who is trying to hassle you to answer a few questions to go away 
+[0.3] but at at that [0.2] the response rate for [0.4] er personal interviews 
+is actually far higher [0.5] than these other methods [0.9] people find it a 
+lot more difficult to turn away somebody who's [0.6] sort of standing there in 
+front of them [1.3] the problem with personal interviews of course is that [0.
+4] the interviewer is there [0.5] and the interviewer [0.2] themselves can [0.
+4] bias [0.3] the results and i think that's just [0.5] it's a it's a l-, it's 
+a lesson [0.4] in research in general [1.1] that [1.3] interviewer bias of 
+course is to be avoided [0.9] but if you've got somebody in person and and [0.
+7] i-, it's very interesting if you think about this perhaps [0.2] having done 
+this course you might think well [0.5] you know i i tend to submit to these 
+interviewers just 
+to see how they do it and whether they're any good at it [0.7] and [0.6] you 
+quite often find personal interviews where the interviewer is [0.3] hassling 
+you to answer the question [0.7] and so you you're you're you're sort of 
+thinking about your and they say [0.3] well [0.2] how about or do you mean [0.
+3] and this kind of thing and and this is where distortions can come in [1.0] 
+so [1.7] personal interviews [0.5] are [0.5] good high response rates [0.4] but 
+there is the problem of bias and of course they're very expensive you're em-, 
+[0.2] employing [0.6] real people [0.5] to ask these questions [2.5] telephone 
+interviewing less expensive but a less good response rate and again some 
+problems of [0.6] of bias [0.4] there's a there's a there's a problem whenever 
+you're a person who's asking another person questions [0.5] there's always a 
+problem of bias because [0.2] you want people to [0.5] er [0.3] expand on their 
+answers and you want people to [0.5] er sort of chat about what they're 
+interested in [0.3] and therefore you have to interact with them [0.4] and that 
+interaction is what can cause 
+the biases [1.4] er [0.3] the alternative is to have a very strict interviewing 
+schedule and a very strict questionnaire [0.5] and you do get this particularly 
+on the telephone where [0.8] you know you get this sort of automaton who's 
+actually a person but they're [0.4] they're [0.5] it's a very stilted kind of 
+interview and some would say that the quality of the data [0.6] that is [0.9] 
+collected as a result is not that high [1.4] so we're concentrating on postal 
+questionnaires but as-, accepting that you need good [0.6] a good [0.3] data 
+collection [0.5] er [1.1] device for all of those things [2.5] well sampling 
+you're probably all familiar with sampling but [0.3] you've got to make these 
+decisions [1.1] you've got to identify the population of people that you're [0.
+6] er [0.3] researching population of people you're talking to [0.4] you need 
+to draw up a sample frame that is [0.2] some device which says [0.2] here are 
+[0.3] er the rules that we're going to use in sampling these people [3.8] the 
+sampling unit are you going to sample households [0.5] or individuals [0.4] 
+males females and so on so picking 
+the [0.2] the people [2.7] the sampling method [0.8] well [0.6] statisticians 
+would love everything to be probability samples preferably random [0.8] er [0.
+3] in practice [0.4] i think most market researchers are much more pragmatic 
+than that [0.4] so [0.2] that pragmatism means that they [0.3] start [0.5] 
+looking at non-probability samples [0.7] quota samples saying right we'll have 
+certain numbers of people in each of these categories [0.4] er [1.1] when you 
+get on to things like consumer panels [0.5] they're probably sampled more [0.4] 
+er [0.6] accurately if you like or more scientifically [0.3] the only problem 
+with them is that you've got the same [0.4] people every time that's a good 
+thing but it's also a bad thing because they [0.6] they become their 
+characteristics [0.5] then get [0.4] er [1.4] er in a sense put into the the 
+the research process and they they [0.4] er may be atypical by [1.0] 
+cooperating with you [1.1] sample size you've got to decide [0.5] sample plan 
+how are you actually going to do it [3.9] now i'm going to show you lots of 
+examples of different types [0.2] of [0.3] questions that you can ask [1.6] 
+here are some very 
+general [0.3] design issues though [1.6] questions need to be precise as you'll 
+you'll see in a moment [1.0] they need to be [0.5] well-ordered [1.4] 
+incidentally s-, sorry i should have said this earlier [0.8] the [2.1] 
+assessment for this course [0.4] er [0.2] we will i think announce next week 
+formally but what it's going to be [0.6] is a [1.1] case study [0.3] basically 
+and you will be asked to [0.5] evaluate comment appraise the case study [0.4] 
+and it'll be a case study describing a sort of typical market research process 
+[0.9] er but it will also include data [1.2] so there will be data that you can 
+analyse to support your case [0.3] and you will be able to analyse it basically 
+in whatever way you want to [0.6] and that'll be up to you [0.7] i i say that 
+now because [0.4] you won't [0.9] if somebody was asking earlier about will we 
+have to do a questionnaire and that they've probably been talking to people who 
+did it last year where [0.4] we [0.2] everybody [0.2] every single individual 
+ran a questionnaire and it got [0.7] it actually got rather out of hand it was 
+[0.2] extremely difficult to mark because 
+people producing [0.3] huge volumes of things so [0.2] this is this session is 
+just to introduce you to how [0.6] this sort of data is collected but you won't 
+be doing this as part of the assessment [1.6] so questions have got to be 
+precise and i'm going to show you some examples of [0.2] good and bad questions 
+in a second [1.0] you need to decide [0.5] very [0.5] carefully on the ordering 
+[0.8] i think there's no excuse these days for [0.4] in a sense for getting 
+this wrong and certainly [0.2] presentation is really important [0.7] and so 
+we'll talk a little bit about presentation and how you order [0.3] the 
+questions to make sure that you get [0.3] there's a there are different schools 
+of thought [0.3] to make sure that you get [0.4] an optimum response [2.9] in 
+preparing yourself for this you need to [0.2] have some idea of what you think 
+people are going to [0.4] respond or how you think people are going to respond 
+[0.9] so the sort of categories the sort of ways people might respond [0.3] the 
+different possible answers to multiple choice questions for example [1.6] you 
+need [0.3] instructions [0.3] for interviewers [1.2] and as i say this can 
+range from [0.2] very [0.3] explicit [0.3] instructions to as to how somebody 
+should ask particular questions [0.4] or it could just be [0.3] er [1.7] 
+so some questionnaires as you'll see have very [0.5] er clear instructions for 
+interviewers some have [0.3] instructions that are really [0.5] may well be 
+over the top may well be too detailed [1.4] and then data processing 
+requirements [0.6] [cough] and you'll see some examples of how [0.5] er we [0.
+3] mark up questionnaires in order to [0.5] make them amenable to [0.5] data 
+processing [3.0] so how are we going to develop this thing [1.4] well [0.7] you 
+need [0.7] some kind of [0.7] er [0.8] statement of objectives the sort of 
+resources you have available [0.2] and the constraints to [0.2] the development 
+of the [0.3] the survey [1.5] so [0.5] you've got to set very clear objectives 
+as to what [0.4] your [0.5] er questionnaire is designed to achieve [1.2] you 
+need to say something about [0.4] how [0.6] you're going to collect the data 
+the sorts of [0.7] types of question that you're going to have the [0.2] the 
+way you word them [0.4] the flow of the questionnaire and so on [0.4] 
+obtaining approval is important [1.8] in the university we have er [1.0] a [1.
+7] body known as the Ethics Committee [0.8] and technically speaking if you [0.
+4] go out [0.5] well if you go outside the university [0.6] to [0.5] er [1.6] 
+research anything you need to get the approval of the Ethics Committee [0.7] 
+and the Ethics Committee is [0.3] in some ways is quite a good idea the 
+university and indeed [0.5] any market research body [0.4] doesn't want [0.3] 
+the [0.3] its name to be pulled down by the market research process of course 
+[0.7] er [0.2] and so we have to if we're going out and indeed if [0.3] 
+students are doing projects we have to [0.2] get the implicit approval of the 
+Ethics Committee [0.5] sometimes that can come from the head of department [1.
+0] but er [1.4] two or three years ago just [1.2] for your information the er 
+[0.4] this group [0.4] was actually a group of undergraduate students [0.9] 
+decided to do a [0.5] a market research project which was the assessment for 
+the course [0.6] er [0.4] and they were given a free choice as to what [0.2] 
+subject they wanted to [0.7] er [1.1] ask people about and [1.2] er the [0.5] 
+explicit [0.4] instruction was that the people 
+they researched should only be members of the course [0.7] and this group came 
+and said [0.3] we want to do [1.5] a kind of sex survey [1.2] and what this was 
+it w-, it was fairly innocent although [0.5] er i did say [0.5] you know this 
+must strictly be kept within the [1.2] group and it it sort of [1.3] i won't go 
+into the details but it it was asking various fairly personal questions [0.6] 
+and [0.2] the [1.0] first i heard well the next thing i heard of it was [0.5] 
+somebody called up from who'd been [0.2] accosted by one of these students [0.
+4] somewhere down in town [0.6] and had been asked these questions and [0.5] we 
+got into a little bit of trouble about it and [0.8] we hadn't cle-, i hadn't 
+cleared it with the committee because it wasn't [0.6] er [0.3] i didn't believe 
+it was going out so anyway [0.2] there are there are that's a a very obvious 
+problem but you do need to obtain approval [0.2] there is a market research 
+society code of practice [0.3] on [0.6] on asking [0.7] er [0.5] questions on 
+on [0.5] how to do research [2.8] you need to pretest the questionnaire this is 
+really important those of you some of you 
+will be doing this for [0.5] er [0.8] your [1.1] dissertations some of you i 
+know are collecting [0.2] primary data [0.6] you need to pretest the thing 
+because [0.4] you're the researcher you're very close to the subject you know 
+what you're talking about [0.3] but you've got to check that other people do as 
+well and if you want a [0.2] statistically valid sample of a hundred people or 
+two-hundred people [0.5] you've got to make sure you're collecting the data 
+properly [0.6] and it's [0.2] these pretests or pilots [0.5] that will tell you 
+whether it's [0.2] going to work or not [0.7] so make sure you do pilots and 
+and [0.4] you know this this can be up to s-, [0.3] sort of half a dozen [0.4] 
+different [0.6] er people that you question and you will soon find [0.5] if 
+you've got any doubts about the length of the questionnaire or the style of 
+particular questions or whether the sort of [0.3] issues you're asking them 
+about are valid [0.4] you'll soon find out [0.7] er from that [0.9] so [0.3] er 
+[0.5] piloting is really important [0.6] prepare the final questionnaire and 
+then implement the survey [1.6] this is the sort of [0.2] layout 
+that you might use [0.3] for [0.5] a questionnaire it's there are no [0.2] 
+right and wrong answers here really [0.6] but [0.2] er [3.5] this is a layout 
+[4.5] every questionnaire of course has to carry an identification number i 
+think i [1.6] in the first week i was talking about using [0.3] er a 
+spreadsheet [0.5] basically a a matrix to enter the data [0.9] a lot of people 
+[0.3] use Excel for that [1.0] which is fine [0.4] er [0.5] the bad thing about 
+Excel i think i mentioned is that it will let you sort the thing [0.7] in a 
+rather rudimentary way and if you're trying to sort [0.5] your data [0.5] er 
+and you [0.7] if you know in Excel [cough] [1.0] you can select [0.5] three or 
+four columns with the data in it and forget to select the others and if you 
+then sort it [0.3] all the data will be [1.2] out you you will [0.3] it will be 
+non-consistent [0.3] things like Access [0.4] and S-P-S-S don't let you do that 
+[0.4] if you're going to delete something or sort something it the whole row 
+would be sorted so [0.3] Excel is quite a good database but be careful because 
+you do have to [0.5] er [0.3] you do have to watch that [0.4] the ob-, [0.2] 
+obviously an I-D number is one way of 
+sorting things so [0.3] you sort by the order in which you collected the data 
+or something [1.8] screeners [0.2] are qualifying questions and this quite 
+often [0.3] er this is [1.0] quite often [0.4] important [0.2] because 
+sometimes [0.4] you'll be wanting to collect data on people [0.4] who [0.3] er 
+[0.4] have particular characteristics and you won't know [0.5] until you [0.5] 
+er ask them whether they have those characteristics one classic example is [0.
+5] and this this happens with student projects and other work we've done is [1.
+8] quite often with food products you want to talk to vegetarians because [0.4] 
+you think that they might [0.5] er [0.3] have well they obviously have 
+different [0.2] physically they have different [0.5] purchasing habits but they 
+might have different attitudes to food [0.8] but [0.3] you can't well i can't 
+spot a vegetarian just by looking at him or her [0.6] [laughter] er so you need 
+to ask s-, screening questions to find out [0.4] and quite often [0.3] you'll 
+er you may have come across this you'll get stopped in the street and someone 
+will say [0.3] you know [0.5] have you been to the cinema in the last six 
+months 
+if you say no they say right thanks very much [0.4] goodbye that's a it's a 
+screening question [0.9] [laughter] okay so y-, [0.3] those qualifying 
+questions are really important [1.8] er [1.1] i've got a a questionnaire to 
+show you in a second but we'll just go through this [1.8] [cough] you need some 
+introductory remarks and again this may well be a [0.2] er [0.2] a comment that 
+the [0.9] the personal interviewer [0.6] makes but if it's if you're if this is 
+a mail questionnaire you'll need some remarks to explain what you're doing [2.
+0] it's no good just having you know first question [0.4] how old are you or 
+something er you need some explanation of the work you're doing and why [0.5] 
+and all market researchers do this [0.4] there is one [1.8] i suppose one 
+exception to that there's a a [1.1] technique if you like called an omnibus 
+survey and this is where several firms pay [0.4] to [0.3] include questions 
+about their own interests on a big survey and you may [0.4] may well have come 
+across these 
+and these tend to be [0.3] very mixed and so [0.6] lots of introductory remarks 
+about the survey are not necessarily relevant [2.3] transition questions these 
+are ones that sort of take you from [0.2] one er part of the questionnaire to 
+another if you're asking people about [0.3] food consumption and you're [0.2] 
+you're starting off on pricing issues for example [0.3] then you might have a 
+question that [0.3] er links price with the amount they buy or something and 
+then you go on to [0.4] deal more [0.5] closely with the amount they buy and 
+demand and so on [1.4] difficult questions [0.7] [cough] [0.4] and this is [1.
+0] the textbook [0.3] er idea r-, really this depends on [0.6] er [1.1] the 
+practice on the ground if you like and what you're asking but [0.4] i don't 
+think you'd put difficult questions right at the top or very sensitive 
+questions right at the start of the questionnaire [1.0] 
+you need to distinguish questions [0.3] very clearly from instructions [0.7] 
+and you need to think about [0.2] classification data about the respondent [0.
+9] virtually all market research studies as you'll see [0.5] will and and 
+particularly when you get into market segmentation you need information about 
+the people [0.7] you're [0.3] asking you're not [0.3] you're very unlikely [0.
+4] to be [0.6] researching something related to some kind of mass market [0.5] 
+but you say [0.2] okay well it doesn't matter who these people are we just want 
+a hundred people and we'll ask them some questions [0.8] because [0.8] by far 
+ninety-nine per cent of the time you'll be saying well we need to know [0.3] 
+whether older people think this and younger people think that [0.4] or people 
+in the north think [0.2] one thing and people in the south think another thing 
+[0.9] so those [0.5] the the classification data or the demographic data is is 
+extremely important [0.5] and for for 
+clustering and factronizing various other things [0.3] as you'll find out [0.4] 
+this [0.2] data is is vital [2.7] there are various schools of thought on this 
+er [0.4] you know there used to be big debate about how you could ask people 
+their age and and [0.7] there was [0.4] sort of er [2.0] various schools of 
+thought like you you didn't ask people their age that would put them off 
+completely [0.5] so you just had a [0.6] er [1.5] you know you had a blank box 
+and you evaluated their age yourselves [0.2] but now the [0.6] it's current [0.
+2] idea seems to be you just ask people how old are you [0.8] er [0.8] same 
+thing about income [0.4] that is more sensitive it's very difficult to ask 
+people about incomes [0.2] so as you know you start [0.4] talking to people 
+about [0.5] er [0.3] either you have a range of incomes and ask people to fill 
+that in [0.5] or you talk about the occupation of the main income earner [0.7] 
+so if you ask about occupation you get r-, rather more of an idea of [0.9] what 
+people [1.1] earn [2.4] so allied to the [0.2] the types of 
+data [0.4] we were talking about earlier [0.8] this [0.5] really helps classify 
+the types of question [0.5] that [0.4] you ask [0.5] and they fall into various 
+categories [0.4] there are direct factual [0.2] questions [1.7] how much do you 
+earn would be one of them [1.1] you know are you male or female [0.7] how tall 
+are you this kind of thing it's all very factual [0.4] er [0.5] if you think 
+about it in data analysis terms [0.6] a lot of it is [1.2] quite quantitative 
+by which i mean [0.4] it's it's useful in further ana-, it's it's particularly 
+useful in further analysis so if you're collecting things on quantities or 
+prices [0.7] then [0.3] you know as economists you'll know that that's data 
+that can be used [0.5] er for other things [0.4] er personal details [0.3] if 
+you're [0.6] just collecting information on [0.3] you know whether somebody's 
+going to vote yes in an election or vote no in an election [0.4] it's very 
+simple data it's a dummy variable but it's it's [0.3] it can be useful [1.4] 
+however if you're ope-, asking open-ended questions [1.1] like [0.8] what do 
+you feel about the new building [1.8] er [0.4] right [0.5] 
+people could write an essay on that [0.8] er [0.4] would be very useful because 
+they'd give you loads and loads of information but it would be [0.4] extremely 
+difficult [0.4] to analyse [0.5] so you've got to [0.2] strike a balance [0.2] 
+there is the use of the data and [0.4] how easy it will be to actually use it 
+[0.5] multiple choice questions and dichotomous questions dichotomous being yes 
+or no [0.5] just look at the different characteristics in those [2.5] [cough] 
+so open-ended questions are great as first questions [1.2] they've still got to 
+establish [0.3] if you think of th-, the questionnaire remember it's postal [0.
+6] that's what we're looking at at the moment [0.6] you think of it as [0.3] 
+being you s-, you as the researcher speaking to people [1.4] then you need 
+something that establishes some rapport with people [1.5] and you'll see in a 
+second different ways of doing that [1.3] 
+so [0.3] they're they're good first questions for that reason [0.8] there's 
+very little influence on the response what do you think of the new building [0.
+6] is a very open question you can say exactly what you like [0.6] you can 
+write as much as you like you could give a one word answer or you could [0.4] 
+write an essay on it [1.5] so there's very little influence on the res-, you're 
+not saying what do you think of the new building [0.4] you know good bad or 
+indifferent [0.8] you're not [0.2] you're not [0.4] imposing on people [0.8] 
+and so you can get [0.3] insights [0.2] however [0.9] there can be [0.2] 
+interviewer bias certainly if it's a [0.4] a personal interview [0.5] but the 
+pr-, main problem with open-ended questions is [0.7] we're looking at [0.4] 
+quantitative methods we want to [0.4] quantify the results we therefore need [0.
+2] some form of computerized analysis [0.4] and coding the things coding [0.4] 
+open-ended questions [0.5] is [0.3] the main problem [0.3] that is [0.5] 
+putting a number really to the question [0.2] to the sorry to the answer that 
+you've been given [0.8] you can precode open-ended questions so you'd have a [0.
+3] a list of 
+things that you think people are going to respond but they always say [0.2] 
+different things [0.7] so you you you need to [0.6] er bear that in mind you 
+can [0.4] it's usually better to do it afterwards [3.5] multiple choice 
+questions [0.3] dead easy they reduce [0.3] interviewer bias [0.5] very easy 
+for people to [0.2] very easy and fast for people to answer [0.8] very easy for 
+data processing [2.0] but the argument goes that they are [0.9] rather 
+difficult to design the thing about multiple choice questions [0.5] is that you 
+are forcing people into certain [0.6] answers [0.7] if you do this is a good 
+reason for piloting if you have a multiple choice question [0.5] and [0.4] er 
+[1.4] you pilot it you may find that people are not [0.5] they don't put the 
+issue that you're asking them about into [0.2] that particular set of 
+categories that you've imposed [0.3] so that's where your pilots and 
+qualitative research will help [1.0] let me just show you an example of this 
+[21.2] so this is a [1.5] questionnaire was actually done out of this course a 
+couple of years ago [0.3] and it was to try to 
+ask [0.6] er [0.3] customers of a farm shop [0.2] what they thought of the [0.
+7] er outlet they were visiting [0.6] and we had a screening question because 
+[0.4] er [0.3] it's not actually on there but we had a screening process 
+because [0.2] we wanted to interview customers at the farm shop and non-
+customers so there was a [0.7] er [0.6] a screener for that but [0.2] these [0.
+3] are [0.4] basically multiple choice questions of various sorts [2.1] here's 
+one thinking about your visits to the shop do you visit at specific times of 
+the year [0.3] and there were [0.4] different options [0.2] and it's multiple 
+choice now if you're [0.2] asking do you visit at specific times of the year [1.
+4] summer autumn winter spring there are no other options [0.5] er [0.2] oh 
+except for all the year round [1.2] so [0.8] you know that's a a a relatively 
+simple example [0.9] er [2.4] we said thinking about your visits to the shop do 
+you [0.2] more often than not visit at specific times of the day [0.4] morning 
+lunchtime afternoon [0.4] now [0.4] for all we knew they might come in the 
+middle of the night [0.6] so we had [0.4] a category called other and this is 
+this is the sort of [0.7] 
+p-, a er a pilot would find out if people did unusual things or [0.3] did 
+things that were not [0.3] listed on here [1.2] er [0.3] what form of transport 
+did you use [1.3] car bus taxi foot bicycle [0.4] or other [0.3] so other in 
+multiple choice questions other is obviously a catch-all [0.4] er if you find 
+everyone's ticking other [0.3] then you've designed the thing badly [0.8] 
+because you haven't [0.4] obviously identified the right [0.8] answers that 
+people are going to give and this again is where piloting and so on will [0.6] 
+er help [4.1] the other thing is about bias [0.8] and it's said that [0.4] if 
+[0.4] you offer people options [1.9] er [0.2] the order you put them in does 
+make a difference [0.2] now this is a [0.3] this is all sort of fairly [0.2] 
+straightforward data i don't know if we can find [1.2] something else [1.8] 
+okay how did you hear about the existence of the shop [0.4] well on the radio 
+from friends newsp-, now if they're trying to think about oh how did i [0.3] 
+hear about this [0.7] you need to be careful about biasing the survey [0.3] 
+because of the order these are in and people might oh radio yeah [0.4] 
+i'll put radio down [1.1] okay and there's there's there's various ways of 
+getting round this and one is simply to [0.4] randomize the order and have 
+different [0.2] questionnaires with different orders [0.6] where do you do your 
+main food shopping for the week [0.7] again [0.2] the the order may well be 
+important [8.4] dichotomous questions this is yes or no male or female whatever 
+[1.1] er very easy [1.9] coding is very simple and it offers you the 
+possibility of [0.6] er [0.4] using dummy variables in this [3.1] so [0.4] you 
+can isolate how males and how females think about things [0.4] but [0.5] with 
+some issues the it may not be seen in this dichotomous way it may not be [0.6] 
+er an issue of [0.4] er either or [1.0] and the wording becomes very important 
+[0.5] in order to to get the right sort of response [0.4] just [1.1] one thing 
+i just forgot [0.7] while we're talking about multiple choice questions [0.8] 
+the analysis and coding of multiple choice questions is really crucial [1.2] 
+because [0.3] if you're thinking about [2.1] the [0.7] variables [1.7] remember 
+[0.6] you're putting this into a spreadsheet or into some sort of analysis 
+package [0.3] and you've got variables and the variable has got to [0.4] 
+identify [0.3] each of the bits of data that you're dealing with [2.4] and if i 
+just take one of these [1.3] says where do you do your main food shopping for 
+the week [0.2] or month that's a very deliberate question because [0.4] we felt 
+[0.3] that there should only be one answer to that [0.3] where do you do your 
+main food shopping [0.4] but if we'd said [0.2] where do you do your food 
+shopping [1.8] then these people could quite easily have ticked more than one 
+answer [0.7] and indeed they did even though we put the word main in there [1.
+2] so you then come up with a problem [0.5] because [1.0] the question [0.7] 
+arises what is the variable here [2.3] if we had one variable [0.3] to cover [0.
+4] main food shopping so we'd call it main food shop or something [0.3] as the 
+variable name [0.6] then you'd enter a number [1.0] dependent on which one of 
+these they ticked [0.5] but if they ticked two you're in real problems because 
+[0.5] you can't [0.6] if if you've just got the one variable about main food 
+shopping and then say i do my main shop-, 
+food shopping in Asda and Waitrose [1.7] then you can't interpret that [0.5] 
+and this is a key thing about multiple choice questions is that you [0.5] need 
+to decide whether it's tick one or tick more than one [0.7] and if it's tick 
+more than one [0.4] then each of these has to become a variable [2.0] and if 
+you're doing this later on it's really important to to get that difference 
+right [0.7] you you sometimes see people do [0.3] what [0.7] what are really 
+rather silly things like [0.8] if if it's a a tick once so this is one variable 
+called main food shopping [1.3] you then you you see people [0.3] trying to [1.
+3] create a number so right we'll say number seven [0.3] we'll call it number 
+seven if they tick Tesco and Asda [1.6] right and then we'll call it number 
+eight if they tick Asda and Sainsbury but then what if they tick three [0.3] 
+and so on it just gets out of hand so if [0.8] there's a possibility in a 
+multiple choice answer of them ticking more than one box you need to [0.3] 
+create [0.5] five [0.2] variables [0.3] and we've got some rather horrendous [1.
+2] things here [1.7] please 
+indicate [0.5] where you shop for the bulk [0.3] your needs for the following 
+products [0.2] there's an awful lot of data [0.3] that can be collected in a 
+table like that [0.7] and again [0.6] as long as people only tick one we're 
+we're all right but of course each of these is a variable [1.0] they start 
+ticking more than them then each cell [0.4] becomes a variable [0.6] and you 
+get [0.6] you can get very [0.6] confused and get an awful lot of variables [5.
+8] now there are lots of problems obviously in asking people questions [4.2] 
+they relate to things like sensitivity [0.5] is the issue a tricky one [3.3] 
+they relate to the complexity of the questions [1.7] they relate to the 
+applicability of the questions can people answer them [0.7] they relate to 
+length [1.0] so [0.2] the length of the questions themselves and the c-, the 
+length of the questionnaire [0.4] is [0.3] an issue [1.1] and then [0.7] as 
+you'll see [0.3] asking people hypothetical questions may be something that 
+they're not very good at [0.4] dealing with [0.5] and [0.4] asking people [0.2] 
+leading questions [0.4] as you'll see can bias your results [2.7] to help avoid 
+this there's a little list of things [0.5] that you need to avoid [1.0] follow 
+you want simple words you want clear words avoid things like leading people 
+biasing people [0.7] implicit assumptions like assuming somebody knows 
+something [0.6] er which they may not [1.6] 
+unnecessary estimation [0.6] double-barrelled questions and so on [1.5] you'll 
+see some examples of this now [0.4] so [4.9] you need [0.3] to be specific [0.
+2] that still on [3.0] what was that [2.2] would you here's here's a question 
+would you support increased taxes to pay for educational programmes for your 
+children [1.9] now [0.4] the trouble with this [0.3] topic if you like is it's 
+it's more of an art than a science and it's very easy to say here are some 
+precise rules about how you do it [1.0] er [1.0] but [1.6] it is an art and and 
+that looks a perfectly good question [1.3] but [1.4] and and in some ways 
+because it's an art you can go too far you could make this extremely precise or 
+you could leave it relatively vague like this [0.3] but some would say that's a 
+bit open-ended [0.5] increased taxes well how much [1.4] you could be a bit 
+more specific [0.4] i mean that also says increased taxes that could be 
+somebody else's [3.6] anybody explain where that's coming from [laughter] 
+ss: [0.5] 
+nm0976: what this thing [0.3] 
+ss: 
+nm0976: oh you think that's my [0.4] well that's 
+ss: 
+nm0976: gosh you can do far 
+more exciting things than that you can have a [laughter] gunshot going off or 
+something [laughter] [0.3] er [0.5] well sorry about that but [0.5] you'll have 
+to put with it [0.6] these [0.4] er P-Cs are too [1.3] efficient [0.5] er [1.1] 
+so there's a little bit more [1.1] it's a little bit more specific would you 
+support an increase in your taxes to pay for education programmes for your 
+children [2.2] [laughter] i'm sorry i'm going to have to turn that off [0.7] 
+can't cope with that [0.9] what is it it's in 
+ss: 
+nm0976: eh 
+ss: 
+nm0976: where is it
+ss: [laughter] 
+nm0976: says no sound look 
+ss: [0.5] 
+sm0977: turn the volume off [0.5] 
+nm0976: we could probably do that in a minute 
+sm0978: 
+nm0976: actually you can do volume here look [3.1] should do [1.4] sorry about 
+that [2.6] there we go [1.0] er [0.5] so [1.4] be s-, be relatively specific [1.
+2] you need to know your respondents' ability to answer the sort of questions 
+you're asking [0.5] and the context [2.6] that [0.2] is a very [0.5] is a 
+question that's very dear to my heart but it might not mean a lot to you i 
+don't know [0.9] the Dearing Committee was the body that a year ago [0.3] 
+reviewed higher education for the Higher Education Funding Council of 
+England [0.3] now i know that but [0.2] you might not [0.3] and your 
+respondents might not [4.1] you need to be specific about time and this is 
+something that [0.4] quite often [0.2] you're asking people questions about 
+things they've done well you [0.7] very very often asking people questions 
+about things they've done [1.3] so you need to be specific [2.5] again there's 
+a fine line between being specific and being either [0.4] you know overlong or 
+being patronizing [0.7] but how often did you exercise [0.3] in the past week 
+[0.2] start with today's date and count back seven days some would say well i 
+know what a week is thank you [0.4] [laughter] and i can count that but [1.1] 
+get the idea [1.7] that is a totally [0.4] inappropriate question [0.9] because 
+you're asking people [0.3] a question which really relies on you know enormous 
+memory and [0.4] you know er [0.2] how would they [0.2] work that out but you 
+see this sort of thing [3.4] again on this fine line between being [0.2] 
+overspecific and being er being too long and being too brief [0.6] here's one 
+place of residence well you could be a bit [1.0] more specific about that 
+what's the name of the city where you currently live [0.7] er [0.3] these open-
+ended things accim-, accidents among children are [0.4] you might want to be [0.
+4] more specific [0.3] and er indicating agreement with a statement or 
+something is [0.5] er a better way of doing that [2.2] here's another one for 
+you [1.2] in your view does the [0.2] U-O-R provide a service worthy of the 
+fees you pay [1.5] well of course that relates to the Union of Railworkers [0.
+5] but you may have thought it was relating to the University of Reading [0.2] 
+you need to be [0.8] specific [2.5] and this is something you must [0.2] have 
+views on [6.8] right i know what this means because [0.2] i've sort of been 
+involved in [0.9] educational research and stuff [0.4] but er you might prefer 
+[0.4] should each module tutor conduct a review of how students feel the course 
+has gone each term [0.4] it's the sa-, it's exactly the same question but [0.3] 
+you've got to phrase it in a way [0.5] that people understand if you were 
+asking [0.4] this if this questionnaire was aimed at a load of educational 
+specialists [0.2] no problem [3.9] this is 
+a classic sort of loaded question many prominent people have publicly admitted 
+they've sought help for problems relating to alcohol abuse [0.5] what about you 
+[1.5] [laughter] okay [0.4] it's a very [1.6] i'll give you another example [0.
+7] this is a very famous one [1.9] er it's out of a [0.2] ninety-fifties 
+article called [0.2] asking the embarrassing question [1.2] or the loaded 
+question [1.9] and just just to give you the context one virtually can 
+guarantee meaningless responses by direst-, [0.2] directly [0.3] asking 
+questions such as have you ever defaulted on a credit account [0.4] do you 
+smoke pot at least once a week [0.5] [laughter] or have you ever been involved 
+in an unreported [0.2] car accident [1.2] right they're stupid questions people 
+aren't going to [0.7] er [1.6] respond to them [0.3] but Alan Barton it says 
+here Alan Barton made the point best in ninety-fifty-eight when he [0.7] posed 
+the following [0.3] parody on ways to ask the question did you kill your wife 
+[1.7] [laughter] and the first approach that you might take to asking that 
+question is the casual approach [1.4] which is [1.0] do you happen 
+to have murdered your wife [2.0] [laughter] the second approach is multiple 
+choice [1.8] [laughter] would you please read off the number on this card which 
+[0.2] corresponds to what became of your wife [0.6] [laughter] you hand the 
+card to the respondents and the card has one [0.3] natural death [0.8] 
+[laughter] two i killed her [0.5] [laughter] and three other [0.7] [laughter] 
+whatever other might be [1.6] you could [0.3] have the sort of er [0.2] peer 
+group [0.2] approach [0.6] where you say to you you ask you say to people [0.4] 
+or you say to the respondent [0.7] as you know many people have been killing 
+their wives recently [0.7] [laughter] do you happen to have killed yours [1.7] 
+[laughter] er [2.2] and another other people approach would see [0.2] do you 
+know any people who've murdered their wives and how about yourself [1.7] 
+[laughter] er [0.5] and then finally it says stare firmly into the respondent's 
+eyes ask in simple clear cut language [0.3] such as that to which the 
+respondent is accustomed and with an air of assuming that everyone's done 
+everything [0.5] do you ever kill your wife [1.1] [laughter] so [0.5] 
+[laughter] [0.4] there are different ways of asking sensitive questions [1.4] 
+so on controversial subjects for example if you're talking to farmers about 
+their [0.3] attitudes to convers-, conservation [0.8] it's not particularly [0.
+6] 
+er [0.7] approachable to say how many kilometres of hedges have you taken out 
+in the past five years [0.7] so you might do this sort of thing it's the same 
+idea as [0.3] did you kill your wife [0.8] please describe your policy for 
+hedgerow removal [4.2] you've got to be as clear as possible again without 
+going over the top [0.5] daily newspapers read regularly [0.4] is a bit vague 
+[0.5] you might want to [0.5] specify [0.6] read or glanced through most days 
+of the week [0.5] you've got to adapt this question to how people [0.3] deal 
+with this kind of issue so [0.3] m-, maybe people you think maybe people just 
+have a c-, a quick glance at the paper and you'd call that reading [0.3] fine 
+[1.4] you could get even more specific do you read regularly any daily 
+newspaper at least three out of [0.2] and so on [1.8] but you've got to be 
+clear [3.8] if you're asking somebody about their [0.8] employment [0.3] their 
+job [2.6] just saying is yours an interesting job or a routine job [0.6] might 
+well [0.6] er [1.6] you might well find people a bit [0.6] unhappy about 
+answering that so you could [0.3] ask it another way is yours a job in which 
+you do a lot of hard thinking or a job which [0.5] once you've learned it you 
+always know 
+how to do it [0.8] it's a sort of flavour to how you ask this sort of question 
+you might argue that the answer you get from [0.4] from those two would be 
+rather different but [0.4] you get the idea you've got to ask the question in a 
+way that people will [1.6] be prepared to answer it [3.0] this is used [0.3] 
+consistently in advertising [0.8] prestige buyers in advertising or prestige in 
+advertising is used as a m-, [0.3] a major selling point obviously [1.0] so 
+doctors are always seen advertising headache remedies [1.9] er [0.4] sports 
+stars are always seen promoting sports drinks and so on [0.8] but [0.5] it 
+works against you if you're s-, trying to get [0.4] unbiased responses from 
+people so doctors say that increased fibre is good for your health do you agree 
+well [1.7] [laugh] [1.1] this week is probably not the week to talk about this 
+after [0.8] the Harold Shipman case [0.2] er [0.4] doctors say that a quick 
+injection is good for you do you agree [1.6] [laughter] er [0.6] have you 
+increased the fibre content of your diet over the last few months [1.2] would 
+be another way of putting it [0.7] and if you 
+wanted to be really vague about it [0.2] have you changed your shopping habits 
+over the last few months due to health concerns [0.4] what products have you 
+been buying more of if somebody says [0.3] i've been buying loads more [0.4] 
+products with fibre in them then you've really got them you've really got a [0.
+3] a valid answer there [0.2] so [0.4] the first one would certainly [0.4] bias 
+people's responses and and the others might be [0.3] better [1.9] now this is 
+another [0.4] one of the most famous [0.8] areas in which [0.2] well in Britain 
+anyway in which [0.6] sort of market research gets [0.2] condescending and 
+patronizing is in tax returns [0.5] the Inland Revenue [0.5] these days you 
+actually have to sort of do it yourself as well it's self-assessment [0.5] but 
+they send you forms and these forms [0.4] are [1.7] sort of aimed at [2.5] sort 
+of five year olds i think because they they [0.6] speak to you basically [0.4] 
+they're they're not done if anyone i don't know if anyone's filled in a tax 
+return [0.4] but they're not [1.2] they're not er [1.7] just [1.0] full of 
+information they're not f-, just far too long but [0.6] part of the 
+length is due to the fact that they're trying to explain things to you to the 
+sort of nth degree [0.5] and so you get things like this this is a [0.4] a [0.
+4] a th-, the the sort of spirit of it [0.7] you could say [0.4] instead of 
+machinery purchased before grant ninety-seven [0.4] please indicate below the 
+approximate value of any major items of machinery [0.9] before grant what the 
+tax return approach is [0.8] says [0.3] in the question below i'm asking you to 
+think back over the past [0.2] the tax return talks to you as if it's a person 
+or a friend of yours it's dreadful [0.4] it says now i would like you to turn 
+the page [0.9] well if i've got to the bottom of the page i probably would have 
+worked that out for myself [0.5] in the question below i'm asking you to think 
+back [0.3] and so on [1.1] er [0.2] so you s-, you just see the differences [2.
+2] this is the double-barrelled thing did you drink coffee with lunch and tea 
+yesterday [0.4] do you mean with lunch and tea or do you mean with lunch or tea 
+[0.4] or do you mean did you drink coffee with lunch and did you 
+drink coffee with tea [3.2] at tea [1.4] er avoid embarrassing questions 
+obviously [0.3] [laughter] or at least find a way of asking them [1.2] so a 
+sort of summary [0.2] of the way you can [0.5] design these questions [1.5] 
+they've got to be simple you've got this in front of you they've got to be 
+simple [0.2] direct familiar [0.4] words used should be clear specific avoid 
+ambiguity [0.7] cover one point with one question so don't say are you 
+satisfied with the cost and convenience of this product you've got to [0.4] ask 
+that separately [1.3] avoid [0.2] leading or loaded questions and [0.2] emo-, 
+emotional questions find ways of asking them [0.4] if you can't ask them in the 
+questionnaire then [0.3] you maybe have to resort to qualitative research [0.6] 
+which we'll look at in a minute some other ways of collecting that data [1.1] 
+short questions that are applicable to respondents avoid very complex 
+instructions [0.3] and various sorts of bias [0.7] check and recheck the length 
+of it [0.8] people are naturally going to be put off by anything very long it 
+depends who they are what you're asking them 
+about [0.8] and make sure it reads well and it's presented well as i say i 
+don't think these days there's any excuse for poor presentation of [0.5] 
+questionnaires because we've all [0.4] more or less got the tools to do it [0.
+2] properly [2.0] so i think it's important it does affect response rate [0.9] 
+if you it depends of course what you're asking but sort of consumer research if 
+you get a response rate from a [0.2] postal questionnaire of ten per cent 
+you're relatively happy [1.7] doesn't sound a lot but [0.4] you're relatively 
+happy with that [0.2] if it's up to sort of twenty or twenty-five that's pretty 
+good [2.0] i think we'll take a short break there are there any questions [0.7] 
+take a short break and come back to how you'd code this and i'll give you some 
+other examples before we look at [0.5] qualitative research [12.2] 
+right just to finish off the discussion of questionnaires we [1.8] have 
+collected the data let's assume that [3.0] when i first [0.4] [laugh] [0.4] 
+when i first arrived here [0.2] some years ago [0.6] there was a unit called 
+the data processing unit in our department [0.7] and they still operated [0.5] 
+or there was one at that time there was one P-C in fact it was a Macintosh in 
+the department [1.6] and i think it had [1.0] it had a hundred-and-twenty-eight 
+K of [0.6] RAM or something [1.1] er [1.0] anyway [1.2] there was the data 
+processing unit and they they still operated with punched cards [0.6] and quite 
+a lot of the terminology of [0.2] market research comes from [0.5] that [0.7] 
+that er [0.6] period and you still got talk about people punching data in [0.6] 
+which is [0.3] entering data in [0.7] common parlance but these punch cards 
+were [0.3] exactly that little cards with holes in them [0.9] er [0.3] and i 
+remember seeing them do do a sort on this data so you had [0.3] a hundred cards 
+each of which represented a respondent [0.5] and the sorting process if you 
+wanted to [0.4] take out the males or the females er [0.2] was more or 
+less a s-, [0.3] a simplification but it [0.3] it more or less involved 
+sticking a sort of needle through [0.5] the the hole that represented male [0.
+2] and all the female cards dropped out and you had the [0.6] the male cards 
+were hanging on this little pole [0.7] er [1.1] nowadays we're a bit more 
+sophisticated than that as you know [0.9] but it is important to get the 
+questionnaire properly coded it's very important that [0.4] the [0.3] as i i 
+mentioned with respect to multiple choice questions [0.4] er it's very 
+important that [0.2] the data is entered correctly [1.5] er [0.2] and in a way 
+that can be [0.7] relatively easily understood [0.5] and when we looked at S-P-
+S-S in the first week [0.7] i said things like making sure the variable names 
+are sensible [0.3] making sure the descriptions of those variables are then 
+even more sensible so you can [0.4] remember and understand what you're 
+analysing is v-, very important [0.7] var one to var twenty is not actually 
+very useful for anybody [1.6] but multiple choice and factual questions 
+basically [0.2] code themselves as you've seen [1.5] er [8.4] you've got little 
+coding [0.7] numbers in there and that's quite standard on a questionnaire [0.
+3] and they they code themselves and you use those numbers [0.3] in this case 
+[0.4] er [1.2] again if it's if it's a single answer in this case that will 
+just be a number representing [0.3] that answer it's simply a label it's 
+nominal data [4.4] factual questions code themselves [0.2] how many kilometres 
+of hedges have you removed [0.6] they just give you a number [0.6] open-ended 
+[0.3] as i said they need a coding frame in advance or [0.3] ex-post codings 
+after you've got all the [0.3] results in you sort things into categories [0.5] 
+with open-ended questions and indeed with qualitative data there are [0.2] bits 
+of software that can help you with this there's a thing called Nudist you may 
+have come across [0.4] which is for classifying qualitative data [0.8] largely 
+for classifying [0.5] data which is in the form of [0.6] er transcriptions of 
+recordings interviews focus groups or whatever [1.2] and what Nudist basically 
+does is pick out [0.6] key words and organise them in a sort of hierarchy [0.8] 
+to try to 
+establish what are the things that are most important to people [1.9] 
+dichotomous use basically done in variables ones or zeros [1.4] er [0.9] so 
+there's the questionnaire [0.4] you'll see [0.8] just remind you of the things 
+that we [0.5] were asking [0.3] so you've got [0.8] the questionnaire number 
+the interviewer the date the time [0.5] er how far have you travelled what form 
+of transport did you use [0.3] what that looks like [2.3] is that when you 
+collect [0.6] remember each [0.3] row is a [0.4] an observation each row is a 
+person [0.4] so you've got code number name date time [0.3] and then you have 
+to start getting into these [0.2] variable names which [0.5] i think it it 
+ought to be the next [0.7] innovation in computing i think [0.4] is that they 
+ought to be able to let variable names go over eight letters and S-P-S-S [0.5] 
+the next versions i think should work on that [0.2] because [0.2] how far and 
+transport and [0.8] M-U-M-U-eighteen [2.5] which must be number of [0.5] can't 
+even remember 
+ss: 
+nm0976: number of people under eighteen with yeah okay so [0.7] mm [0.5] it was 
+a few years ago but you do 
+forget and and you need to try and keep those as sensible as possible [0.5] but 
+as i mentioned [0.4] it's [0.8] variables across the top [0.4] observations 
+down the side [0.5] er and then you'll be [1.1] er [1.8] safe in in analysing 
+this [0.3] see some ninety-nines in there that's missing data [0.8] as long as 
+ninety-nine is not a valid observation you can use something like ninety-nine 
+[0.4] for missing data [0.3] S-P-S-S incidentally [0.4] prefers you to use a [0.
+4] er full stop [0.3] for missing data [1.0] you could always get Excel to 
+change the ninety-nines to full stops [0.6] again i think this is probably 
+harking back to the old punch card days when i think minus-ninety-nine was the 
+thing that they used [0.4] as something that would be unlikely to occur 
+anywhere else [0.6] and so all the variables are across there [1.2] there was 
+one [1.4] er [0.3] open-ended question and and you see they've [1.2] the 
+researchers have noted down [0.2] the [0.3] responses basically to the open-
+ended question but that needs some sort of post [0.5] er analysis [7.8] i'm not 
+going to c-, this is [0.3] part of this presentation but 
+namex was basically talking to you about this last time [0.4] scaling being 
+used to estimate [0.3] the extent of somebody's predisposition to act or their 
+attitude [0.7] er [0.3] and [0.6] i think you covered that [2.2] are there any 
+[0.3] questions on how you [0.5] ask questions [5.6] right we'll move on and in 
+some ways this is moving back [0.2] because [0.5] er [2.5] what i want to talk 
+about now is [0.5] qualitative [0.4] getting getting hold of qualitative 
+information [4.1] there are [0.3] a number of different ways these aren't in 
+your notes but i will add them to the web site [1.1] there are a number of ways 
+[0.5] does anyone get frustrated with this paperclip by the way [0.7] 
+ss: mm [0.7] 
+sm0985: 
+nm0976: it needs to be turned off and [1.3] i never know how to do it so i'll 
+just get it out of the way [10.6] er [2.4] qualitative research as i say [0.3] 
+is quite often used as a precursor to quantitative research [2.9] partly to 
+reassure yourself that you're asking the right questions [0.8] so you use [0.2] 
+qualitative research in a in an exploratory way [0.7] and [0.3] it helps to 
+sort of frame the [0.2] types of questions you're going to ask [6.9] there 
+are essentially three [0.2] broad methods [0.5] of [0.6] or broad schools of 
+thought with respect to qualitative research [0.4] and by far the most 
+important method [0.4] and of course these are sort of [0.6] er themes as well 
+is the whole [0.3] idea surrounding [0.3] focus groups [0.3] and focus groups 
+are by far these days by far the most [0.5] er [1.1] used [0.9] form of 
+qualitative research [0.6] but you also [2.2] hear of with y-, the-, there are 
+also [0.8] there's also the possibility of conducting depth interviews [3.7] 
+which i'll say a little bit about in a moment and then there's a a [1.1] area 
+of research called motivational research [4.6] which in some ways can be used 
+[0.5] as part of these two [2.9] so we'll just deal with [0.5] we'll deal with 
+these first get them out of the way and then talk about focus groups [2.9] just 
+to repeat the [0.5] objective of carrying out [0.5] er [1.2] qualitative 
+research [0.4] is [0.2] really to generate ideas [0.8] things like [0.5] 
+background information on a problem or a topic [1.7] identifying concepts so 
+concept identification i will as i said [0.5] put some notes up that refer to 
+this [1.7] identifying relevant behaviour patterns and themes in the way 
+people's b-, people behave [1.3] establishing priorities how people [0.5] 
+rate certain things or how important things are to people in a qualitative way 
+[1.0] preliminary screening focus groups and qualitative research are used a 
+lot [0.3] in [0.2] screening product ideas [3.1] new product development as 
+you'll hear from namex in due course is a [0.7] [laugh] [0.7] is a sort of 
+inexact science in that they use very detailed scientific methods [0.7] er but 
+[0.3] it's said in the food industry that eighty per cent of new product 
+introductions fail [0.9] er now not all of those will reach the [0.2] the 
+retailer [0.4] Marks and Spencer's are [0.5] famous for example of actually not 
+test marketing [0.8] Marks and Spencer's basically test market by putting [0.2] 
+products in store [1.0] and so [0.2] new product ideas like [0.4] er [0.7] M 
+and S are famous for ready meals and so on they they basically put them in 
+store see how they [0.3] go and if they're no good they pull them again [0.7] 
+so there's as it it's a relatively [0.4] er [0.5] inexact science [0.9] but a 
+lot of products fail [2.0] focus groups however are used sorry [0.6] er 
+qualitative research [0.3] however is used to try 
+to [0.4] er ensure that that doesn't happen [0.3] so screening of products [0.
+3] and concept testing is very important [0.4] er area [1.0] of this [0.7] also 
+post research investigations in other words to sort of back up the results of a 
+survey [0.4] you might well conduct some further qualitative research [1.2] 
+piloting as i mentioned [0.3] my pilot [0.4] questionnaires during the 
+qualitative phase [1.1] and as i also said [0.8] er talking about personal 
+issues and personal questions [0.4] they will be easier to do with some form of 
+qualitative research [0.6] now [0.6] depth interviews just to get them out of 
+the way [0.2] depth interviews are exactly as they sound [0.5] er [1.7] 
+relatively long [0.4] relatively [0.4] er [1.2] well very personal in other 
+words it's just one person plus the interviewer [0.7] trying to uncover 
+people's often people's motivations people's attitudes [0.4] and so on [0.4] 
+highly expensive of course 'cause it's very intensive you need a [0.4] highly 
+trained interviewer to do it to do it [0.3] and extremely difficult to evaluate 
+[0.4] the consequences because [0.4] each respondent basically has a [0.4] a 
+write-up of a rather [0.4] conventionally rather long discussion [0.6] so depth 
+interviews [0.3] i think to 
+some extent are [0.4] waning in in er [1.0] popularity amongst market 
+researchers [0.8] focus groups are not [0.6] the Blair government [0.5] er [0.
+4] has popularized focus group use in the U-K [0.6] in the sense that they were 
+very [0.6] er [0.4] open about having used focus groups to try to find out what 
+sort of image they ought to put across [0.3] so things like image [0.6] image 
+of a political party is something that lends itself very well [0.4] to a focus 
+group discussion [2.2] a focus group and i'll show you two examples in a moment 
+[0.6] is [2.8] usually a relatively small number of people [0.5] between [0.2] 
+six and ten [1.0] eight being the [0.3] probably the optimum in most cases [7.
+2] participants are brought together [0.4] under the direction of a [0.3] group 
+leader of some sort [0.9] er [1.7] a trained person who is usually [0.4] 
+referred to as the moderator [0.5] of the focus group [2.4] in fact to call 
+them the leader is probably wrong [0.7] they are the moderator they're trying 
+to moderate a discussion between [0.8] eight people [1.0] and [0.2] moderation 
+means that they shouldn't really be [0.4] too involved in it ideally [0.6] a 
+good 
+focus group would [1.1] last for an hour and a half and the moderator wouldn't 
+n-, need to intervene at all [0.8] that doesn't [0.4] often happen because 
+there needs to be some introduction there needs to be some direction [0.4] as 
+you'll see in a second [1.7] the group [0.5] the m-, the moderator [0.2] should 
+be just that they shouldn't intervene in the discussion they're not [0.3] there 
+to be part of the discussion [0.8] quite often [0.6] other members of a 
+research team want to be involved in the focus group they'll say oh i'll sit in 
+[0.6] but that [0.3] can distort the discussion as well it s-, [0.4] it should 
+be very genuinely a [0.3] an independent discussion between eight [0.3] people 
+who are [0.4] er [0.8] genuine respondents [4.9] the leader has various sorry 
+the moderator has various [0.4] er functions [1.1] the moderator has got to [0.
+2] make sure the discussion follows the route [0.5] that it's supposed to [0.3] 
+but [1.0] they need to do this in a relatively subtle way [0.6] we did some 
+work as you'll see [0.8] looking at [0.8] the attitudes of consumers to British 
+meat products [1.6] er now [0.7] we were actually 
+looking at the attitudes of Belgian consumers to British meat products [0.6] er 
+for the Meat and Livestock Commission [0.3] who [0.4] at the time of the B-S-E 
+[0.4] the height of the B-S-E affair were facing [0.4] an export ban on beef 
+and therefore were looking at [0.5] the [0.4] er prospects for other [0.9] 
+products like [0.5] er lamb and pork so we were looking particularly at those 
+products [1.2] er [2.2] we didn't [0.7] we or the the research team did not go 
+straight into a focus group and say right we're going to talk about British 
+meat [1.7] because what we wanted to do was to get people's confidence and to 
+build up [0.4] their [0.3] er or build up rapport with them so er okay they 
+knew it was about food consumption [0.6] er [0.2] what you ideally want in a 
+focus group [0.3] is for people to lead you [0.7] so if you're the moderator 
+and there's a group of people [0.5] chatting away about something and somebody 
+says [0.5] oh i'm not very keen on British meat [1.4] that is your cue to bring 
+them in and to s-, start the [0.2] the subject going on rather than saying 
+right it's [0.4] you know it's half past twelve now we're going to talk about 
+British meat [0.4] you want 
+to let people [0.5] er [0.8] guide you in some ways and the and the skill of 
+the moderator's in recognizing those signs and making sure that [0.4] er 
+they're picked up on and the the discussion is [0.5] er [0.7] or follows a [0.
+2] a [0.6] particular course [2.4] focus groups are popular for lots of [0.7] 
+perfectly valid reasons [1.3] in some ways they're relatively cheap [2.2] 
+certainly compared with individual interviews it's relatively cheap to get 
+eight people together [0.3] even so [0.5] the going rate at the moment for [0.
+7] participation in focus group is about twenty-five quid [0.5] we're trying to 
+recruit some people at the moment and [0.3] twenty-five quid [0.4] is er [0.3] 
+seen as [0.8] a reasonable rate to pay people for a [0.3] couple of hours of 
+their time [0.3] if you're doing this for a professional agency you probably 
+also [0.5] pay travel expenses and so on [0.4] you've got to [0.4] hire a [0.4] 
+facility [1.1] there's one in Reading called Sight and Sound [0.5] typical 
+facility would be [0.6] probably about the a room about this size but [0.3] 
+from here to the wall would be split off [0.4] and there'd be a big [0.5] er 
+single 
+way mirror [0.4] in the wall [0.5] and [0.2] the research group can sit behind 
+the mirror [0.4] and observe what's going on in the [0.3] in the room sometimes 
+video is used m-, more often than not [0.4] video is used either in addition to 
+that or instead of it [0.9] so focus groups are [0.4] tape recorded they're 
+videoed [0.4] and [0.5] er this this facility in Reading is extremely good and 
+you can [0.3] you can watch as a member of the research team [0.6] market 
+research code of ethics [0.5] says that people have to be informed [0.2] that 
+the research team is sitting behind the mirror [0.9] er which i think is fair 
+enough and [0.7] as as the [0.6] moderator says this they say oh [0.4] you know 
+you ought to know that behind that wall there's a few people there obser-, a-, 
+and [0.7] focus group goes completely quiet and oh my God you know can't [0.3] 
+you know can't put up with that and within five minutes they've completely 
+forgotten about it [0.4] as is as they've forgotten about the fact they're 
+being videoed [0.9] er [0.7] and then after two hours you sort of introduce 
+yourselves to them and like 
+oh yeah i forgot about you [0.9] er [1.8] focus groups [1.1] have [0.2] these 
+important advantages [0.3] the main advantage of a focus group over an 
+individual [0.2] interview is that [0.5] there is [0.5] interaction [0.9] 
+people stimulate ideas off each other [1.5] and that is the main [0.8] er [0.5] 
+the main advantage people are [0.3] interacting with each other it's very 
+dynamic [0.3] they can [0.5] er [0.6] prompt each other they can decide [1.0] 
+er [0.7] sorry they can they can er [0.2] grou or the group dynamic means that 
+the [1.1] er information you gain tends to be richer [2.7] it fosters 
+creativity [1.1] and they start thinking provided it's well moderated [0.2] 
+there's nothing worse than a focus group that is [0.4] er [1.6] badly mor-, 
+moderated i want to show you [0.3] two examples one that i consider is 
+reasonable and one that's [0.5] er not so good [0.8] er [1.4] but [0.2] yeah 
+the m-, the moderator is there to guide it [0.2] moderator's also there to 
+bring people out who are not [0.7] participating [0.3] or [0.4] to [0.4] shut 
+somebody up who is participating too much [0.4] and it's a question of [0.3] 
+trying to get the views of everybody [1.4] good focus group [0.3] spontaneity 
+candour 
+can produce really good results [0.5] after the focus group you need to write 
+the thing up it needs a [0.4] either a full transcription or some kind of 
+summary of it [0.4] er [1.3] the [0.2] the people who did this work in Belgium 
+were [0.3] they in fact conducted ten focus groups five in the French speaking 
+part [0.5] of Belgium five in the English speaking part [0.2] sorry in the 
+Flemish speaking part [0.6] and [0.4] er [2.5] the write-up of ten focus groups 
+is [0.3] not a trivial task these things some of them lasted three hours [0.4] 
+so [0.4] it's it's [0.2] it's a fairly large [0.3] er undertaking [0.3] but [0.
+2] the information you can get is very rich [0.4] what you can't say is that we 
+conducted ten focus groups [0.3] there were eight people in each one and 
+therefore [0.3] er we've got eighty respondents and that's a valid sample and 
+you start doing statistical analysis that is not the idea [0.6] it's 
+exploratory only it's [0.2] giving ideas and the output that they this group 
+produced [0.5] for the Meat and Livestock Commission were [0.4] just basic 
+ideas on how [0.3] you might market [0.3] British [0.7] er [0.9] lamb and pork 
+in 
+Belgium [1.4] i'll show you first of all what [0.2] i think is not the best 
+example [0.4] er of how to conduct a focus group [0.4] can you [0.3] namex can 
+you pull that blind right down and could you pull [0.4] those blinds down as 
+well please [55.7] 
+nm0976: right now i can't see what is happening so [laughter] [35.8] 
+nm0976: that was inspired timing they start talking about S-P-S-S [0.4] this 
+was er [0.3] work that was conducted actually for Microsoft [1.3] trying to 
+find out i think this w-, one is in Birmingham you probably [0.2] judge by the 
+accents in a minute [0.7] er [0.6] and it was trying to find out what people [0.
+2] thought of Microsoft software and it was a couple of years ago so some of 
+it's a bit [0.8] a bit dated [10.5] you'll find [0.3] i think that the room 
+looks a bit cramped it's not [0.2] an ideal location [0.6] and i don't know if 
+i've picked out the right bit but you'll [0.4] you'll find that the moderator 
+[0.2] i think tends to be very [0.3] intrusive and [0.3] he certainly at points 
+leads the respondents on [0.5] and it's more like a question and answer session 
+really than a discussion [8.8] 
+this is the moderator standing at the front bit like a sort of school teacher 
+[0.2] writing things up on a [0.7] er [0.6] flipchart [16.2] but you find that 
+[0.2] each time [0.3] one of them talks they're talking to the moderator which 
+is not the idea at all they should be talking to each other [12.6] moderator 
+has a rather tedious voice as well which doesn't i think help [12.4] but that's 
+a sort of typical scene [0.4] little rules simple things like you don't [1.9] 
+it's better not to serve alcohol [1.5] because after two or three hours 
+particularly with groups of men [1.0] er you tend to get slightly [1.2] excited 
+[0.2] respondents and it doesn't necessarily ne-, [0.2] lead to good answers [0.
+8] focus groups with men are [0.5] decidedly more difficult than focus groups 
+with women particularly on food [0.6] er [0.6] what we found [0.6] with this 
+Belgium work for example we were looking at [0.5] among other things we were 
+looking at ready meals [1.5] and [0.4] we were asking for people's impressions 
+[0.2] of [0.3] packages of [0.2] ready meal [0.3] pork and and lamb [0.8] and 
+er [2.2] women [1.8] i'm i'm now doing what i told you not to do i'm 
+generalizing over ten focus groups when you [0.7] you're not supposed to do 
+that but [0.4] in general the Belgian women [1.0] er [0.6] talked about the 
+product and talked about [0.3] you know what they would do with it how they 
+would cook it and the sort of image and so on the ideas that [0.5] er it [0.3] 
+gave them [0.4] the men [0.8] the Belgian men [0.2] and we had two groups of 
+men were [0.2] obsessed with the package and technical details of the package 
+and [0.4] oh yeah this is [0.2] gas atmospheric packaging and you know and it 
+[0.4] it rises here because there's [0.3] the product is [0.3] you know two or 
+three days old and it's giving off some blah blah blah [0.4] and and we got [0.
+5] quite distorted results because [0.2] the males didn't appear to want to 
+talk about the [0.4] product itself and the image which is what we were looking 
+for [1.5] okay that's one example you see they're very static the people are 
+very static the moderator is standing there [0.4] and and making notes [0.2] 
+now this is [0.7] an alternative approach now [6.1] 
+sm0980: would that have been because of [0.7] the people there didn't know each 
+other er er they were not comfortable speaking because 
+nm0976: i think 
+sm0980: although some people 
+nm0976: yeah 
+sm0980: [0.4] 
+nm0976: you you would aim to include people who don't know each other 
+in the sort of random sampling [0.5] kind of ideal [0.5] er [0.7] what [1.6] 
+quite often when we've done this on student projects and things [0.3] and and 
+it [0.3] moderation certainly takes [0.4] a bit of learning and so you're 
+throwing somebody in at the deep end if you ask them to moderate a focus group 
+[0.6] without having sort of practised it or not done it before [0.7] and [0.4] 
+people are most nervous about silence [1.3] and [0.2] you're right to start 
+with every focus group is a bit stilted [0.3] and you certainly start by sort 
+of going round the room saying who are you and maybe asking a particular 
+question of people [0.6] er [0.3] but [0.5] more often than not people get 
+talking [0.7] er [0.2] and that that's what you want [0.2] 
+sm0981: i suppose in the first guy was speak on like in the experience which 
+you had in Belgium [0.6] is that speaker speaking about [0.2] this chemical 
+reaction that's what has this [0.3] thing to swell 
+nm0976: i-, [0.8] yeah no it does happen [0.5] yeah 
+sm0981: your comments then become 
+nm0976: sure sure [0.8] but it's the role of the moderator to try and bring 
+people in [0.2] and to [0.3] to make sure it's a genuine discussion [0.4] 
+sm0982: [0.4] 
+nm0976: pardon [laughter] what did he say [0.2] were people taking 
+sm0982: [0.9] 
+nm0976: er i don't think in that one they were drinking alcohol it's certainly 
+[0.7] [laughter] er 
+sm0983: er how how do you identify the respondents er [0.3] especially given 
+that it's small like a specialistic area [0.8] 
+nm0976: 
+it's i mean the process that you use if you're working [0.4] there there is a 
+there's a commercial [0.4] er side to this if you working for a commercial 
+agency then they would use a commercial recruiting [0.6] firm [0.7] er [0.2] 
+and how these firms work the one we used in Belgium had fifteen-thousand on 
+their panel [0.6] and they were people [0.5] whose demographic characteristics 
+and sort of attitudes had been measured [0.7] so that when we said we want 
+people of a certain type and [0.5] you know we want people who definitely eat 
+[0.6] lamb and pork [0.3] then they could find these people for us [0.4] 
+otherwise it's sort of tramping the streets and trying to [0.4] trying to get 
+people it depends [1.2] quite often [0.2] we've used er if we haven't used a 
+dedicated facility we've used like training rooms in supermarkets or something 
+so you've recruited somebody from the supermarket [0.3] or sorry recruited 
+people from the supermarket but again [0.4] it's it's a fair question and 
+you're trying to get people with certain characteristics and [0.5] recruitment 
+is actually far more difficult than running the thing [1.1] 
+er [2.1] here's a different example [4.7] hope [22.3] 
+nm0976: this is something i want to mention in a minute the guy is handing out 
+things to try to [0.7] er [2.4] he's actually handing out things and people are 
+about to do [0.7] have a little activity basically to sort of [0.5] er [0.3] 
+reinforce the focus group let me just go back a bit and show you [1.1] 
+something else [6.9] i just wanted to emphasize the difference of approach for 
+the [0.3] moderator [10.9] incidentally those of you who're familiar with sort 
+of [0.4] participatory research approaches [0.5] this is this is very much 
+related to that and and [0.6] participatory approaches to [0.5] er [0.8] 
+looking into particular issues is is [0.2] very much uses these kinds of 
+techniques sometimes adapted but [0.5] focus groups or group [0.4] activities 
+are very [0.5] much to the fore now [0.7] this guy [0.7] insists on sitting on 
+the floor basically er [0.8] and his theory is that you should be [0.6] at the 
+same height or lower [0.2] than your [0.4] respondents now i just caught him 
+when he was actually handing something out but [0.6] the the Microsoft guy was 
+sort of standing there like a 
+school teacher this guy [0.5] is [0.4] very much trying to interact with people 
+[1.7] just you just have to watch him for a little while to see his sort of 
+style [6.7] he's trying to bring someone else in [8.6] i think this is probably 
+early on he's sort of going around the the room a bit [13.0] it was noticeable 
+that he didn't sit on the floor with the male group [4.5] he basically was [0.
+5] chatting these ladies up i think er [0.7] but they [0.2] they certainly 
+[laughter] responded and the results were good [12.1] very it's a very good 
+facility this very very sort of comfortable and [0.5] as you can see quite well 
+[0.6] appointed at that i'm not [0.5] quite finding what i wanted to show you 
+[20.6] 
+nm0976: you'll see on it we might not find it but you'll see on occasions that 
+this guy [0.6] if [0.2] later on in the group where people start talking [0.6] 
+at the moment he's going round the room but people start talking he sort of 
+stops them and and he's very [0.5] he's very er [0.2] sort of interactive but 
+very physical with people but it s-, actually seemed to work very well [0.7] er 
+[0.6] extremely experienced [0.6] market researcher [0.5] now the thing well 
+i'll just leave it going you can [0.3] keep an eye on it [0.4] er [0.8] the 
+final thing that i wanted 
+to [0.2] mention was that [1.7] a lot of [1.1] qualitative research is 
+impressionistic it is exploratory [0.7] and [0.6] there's a [0.2] a a range of 
+things under the title of motivational research [0.3] that can be used to 
+enhance [0.7] group discussions of one sort or another and he was handing out 
+cards [0.3] where [0.3] i think he got people into pairs to discuss a 
+particular topic so it's sort of breaking things up and and [0.4] there are 
+various ways of doing that [0.9] er [3.2] so subgroup [0.3] work or or er [0.4] 
+small group work is one way [1.4] but motivational research was a sort of 
+school of thought in the [0.3] the U-S in the nineteen-fifties which [1.0] took 
+[1.0] i mean there are there are lots also of sort of experimental ways of 
+doing market research where you set up [0.5] er [1.4] you know er simulated 
+shopping experiments and this kind of thing and experimental work is quite [0.
+5] common but [0.6] in the U-S in the in the fifties they really got into ma-, 
+motivational research trying to uncover people's sort of hidden motivations [0.
+5] there's lots of er [0.3] references [0.3] on the web site for that [0.5] but 
+[0.2] just 
+one or two techniques that are used in [0.5] focus groups and other qualitative 
+research to try to [0.5] er enhance [0.4] the [1.5] the er experience [6.7] 
+things like [0.6] simply [1.8] oh still leave them going behind there [0.4] is 
+just sentence completion test this is [0.5] i think it has two things it 
+collects data [0.3] it enables us to collect data [0.3] but it also [0.3] er [0.
+7] gives people something to do and it breaks up the discussion and [0.3] and 
+if they've [0.2] they've filled in this sort of thing [0.3] they can then [0.2] 
+s-, [0.4] sort of carry on with the discussion [3.6] there are techniques like 
+this [2.9] and on the face of it it looks a bit [0.2] sort of banal but in fact 
+[0.5] this sort of thing can produce extremely [0.3] useful results so [1.8] if 
+you fill in what [0.3] namex says and when i've done this with [0.4] groups of 
+students they usually [0.4] well there are usually two th-, [0.2] two types of 
+responses one [0.4] oh [0.2] stick it into the NatWest [0.4] bank [0.2] you 
+know they have a good interest rate and the other is [0.5] go and blow it at 
+the union on a Saturday night [0.8] er but [0.4] you get some impression as to 
+how 
+your respondents are thinking and how they're feeling about things [1.5] 
+personification or or er s-, story completion is another one [1.0] now you may 
+think this is a bit [0.3] strange but in fact this will uncover lots of [0.6] 
+different [0.6] er feelings that [0.2] that people have about food it says once 
+upon a time [0.5] woman decided to invite some friends round to their house for 
+dinner [0.5] so and so went off to buy the food at this will [0.3] say 
+something about who's [0.4] er who's the main food buyer and and whether 
+there's any [0.6] er implication about people coming for dinner so-and-so went 
+off to buy the food [0.3] they decided to serve [0.3] what [0.3] finishing off 
+with what because blah blah blah [0.3] the dinner went very well [0.3] but a 
+number of the guests began to feel unwell several had to go home early it was 
+because of [0.5] now when i've done this [0.2] in the last [0.4] two or three 
+years [0.8] food safety has sort of [0.5] become this big issue [0.2] so loads 
+of people say they decided to serve beef [0.4] and it was food poisoning 
+probably caused by B-S-E 
+well [0.3] [laughter] it's not strictly accurate i think [0.3] but [0.7] quite 
+often people put [0.2] you know it's eggs which must have been caused by salm-, 
+problem caused by salmonella and so on but i-, [0.3] it [1.8] in a qualitative 
+way in an exploratory way it reveals a lot about the way people are thinking [1.
+3] and of course this sort of thing is used for [0.5] advertising all the time 
+i'll just finish off with an example of [0.3] exploratory re-, research [0.8] 
+and this is [0.5] this is not personal experience it's p-, pinched out of a [0.
+5] textbook but it this is exploratory research which [0.5] can [0.6] as i say 
+it's used for advertising a lot so you you can sort of turn people's answers 
+into [1.2] elements of your [0.3] er [1.7] advertising campaign [1.7] let's 
+just see what this chap's [0.2] doing if we've got anywhere else [1.3] er [4.8] 
+okay see what i mean he gets rather physical and stares into their eyes a lot 
+[14.2] right there are three people talking at the moment at some point he's 
+got to [0.3] calm this down a little bit and [0.7] there you go [0.8] he 
+focuses in on one person [4.2] if any of you are going to do 
+focus groups as part of your dissertations or anything then [5.6] he's 
+recording the discussion [0.4] he's hearing what they're saying [0.7] 
+sm0982: [1.6] 
+nm0976: well [0.3] i i thought w-, what i was going to say was when three 
+people are talking it's very difficult to establish what each one of them is 
+saying [0.6] and and that's another problem [0.8] er [2.9] but he's sort of got 
+it calmed down again now as you can see
+sm0983: er [1.1] [1.4] 
+nm0976: this [0.9] this was just 
+sm0983: 
+nm0976: this was a static [0.4] camera it wasn't anybody writing anything down 
+[0.5] we were we were in another room [0.3] it was relayed to us on a T-V 
+screen [0.3] so there was a static camera obviously up this end [0.7] and [0.6] 
+it was actually quite a long way away from them they seemed to [0.4] sort of 
+get over any fears of [0.2] being recorded [0.6] er [1.4] but yes i mean the 
+transcription is after this and you use this as the basis of [0.3] your [0.5] 
+transcription [4.5] so just to finish off ideas for [4.8] just just [0.2] give 
+you an idea of how qualitative research can [2.1] help with er advertising so 
+[0.2] this was a [0.5] an American study of [0.6] er using open-ended questions 
+as a way of sort of prompting people and making them think about things [0.5] 
+people who drive 
+a convertible [0.4] are [0.5] factory workers usually drive most of the new 
+cars are when i drive [0.3] now [0.2] if you [1.4] if you are adverti-, think 
+about it you're you're thinking of the sort of segments you're appealing to you 
+need to [0.4] you want to think about [0.2] how people regard certain 
+categories of [1.1] of [0.9] the public and what they drive and blah blah blah 
+[0.5] this might have been for [0.2] some sort of market segmentation exercise 
+or it might have been to try and [0.3] establish people's responses to a 
+particular [0.4] vehicle [0.5] but they were finding [1.8] different responses 
+from men and women [2.8] so where the sentence stem was when you first get a 
+car [0.8] er this is [0.7] horribly out of date and i'm sure it wouldn't happen 
+these days [0.8] women's responses you can't wait till you drive you would go 
+for a ride you would take rides in it of course you would put gas and go places 
+so it's all about what you'd do with the car [0.9] er men [0.2] you'd take good 
+care of it you'd give it a good polish [0.5] you check the engine [0.5] now [1.
+0] [laughter] [1.0] er [0.4] as i say i'm 
+sure this was a few years back and it probably doesn't apply at all now [0.3] 
+but it actually [0.4] resonates with what i was saying about our [0.6] Belgian 
+males and females [1.1] er a car of your own [1.7] pleasant convenient say 
+women it's fine to have it's nice to have [0.8] er [0.4] men say i take good 
+care of it it's a good thing it's absolutely a necessity [0.5] so you get [0.4] 
+if you were an advertiser this would be really important and [0.3] let's face 
+it whatever you think about this and however out of date it is [0.6] er [0.9] 
+gender [0.2] is extremely important in advertising [0.6] you could you can 
+watch almost any [0.6] er [0.3] particularly T-V advert because they're the 
+most visual and the most active [0.4] you can watch almost any one and if you 
+start thinking about [0.3] what segment are they aiming at [0.6] and what is 
+the sort of message they're putting across [0.2] you'll soon find that [0.6] 
+things like this become very important [0.6] and [1.0] you know if [0.5] it's 
+certainly in the U-K [0.7] er [2.2] and i think i mean cars is always a good 
+example of this [0.4] but [0.5] you can i-, i'll i'll leave you to 
+draw your own conclusion but you can look at [0.5] car ads for things like the 
+Renault Clio [0.9] and Citroen Saxa [1.0] and you could [0.3] almost certainly 
+identify a gender bias in that sort of advertising [0.5] and same for different 
+models so [0.2] just keep an eye on that because [0.4] er [0.8] i can guarantee 
+[0.3] that [0.2] almost every T-V advert is backed up by qualitative research 
+of some sort where [0.4] the researchers have tried to establish [0.4] the sort 
+of basic motivations that people have [0.3] for dealing with that [0.5] vehicle 
+or 
+sf0984: i was going to say that there's direct correlation between that and 
+advertising cars is the new Fiat [0.2] we've got the woman talking about the 
+men the man's point of view er [0.6] the man talking about the woman's point of 
+view have you seen that one yet 
+nm0976: right is that [0.8] i mean the fi-, Fiat have have done a lot of this 
+they had that spirito di punto thing for the Fiat Punto 
+sf0984: mm [0.5] 
+nm0976: there's alwa-, there's often a male female thing in [0.2] car i mean [0.
+9] if you want sort of classic marketing texts you read something like [0.7] er 
+if there's a [0.2] book called the hidden persuaders i think i've got it on a 
+[1.3] on a reference list somewhere [0.6] by a guy called Vance 
+Packard which again is about nineteen-fifties America about how [0.3] car [0.3] 
+manufacturers persuade people to buy things and and [1.3] i mean at that time 
+if you think of American cars in the fifties and the sort of style and size and 
+[0.6] and shape of these things they were [0.2] they were making very [0.2] 
+definite sort of psychological claims on people [1.0] er [0.4] and where you [0.
+5] you know particularly sports cars [0.5] and the sort of [0.3] connotations 
+that go with owning and driving a sports car [0.5] which i'll leave to your 
+imagination [0.7] [laughter] but er [1.2] you know it's a lot of it would be 
+based on this sort of work definitely [2.6] okay so it's conjoint analysis next 
+week that's a way of [0.6] designing new products basically [0.5] common market 
+research problem [1.3] thanks [3.3] can you pull the blinds up [0.2] thanks

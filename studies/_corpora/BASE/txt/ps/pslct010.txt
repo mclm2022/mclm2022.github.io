@@ -1,0 +1,590 @@
+nm0718: how many people [0.2] looked at the examples that we covered last time 
+on [1.2] inheritance and abstraction [1.3] how many people didn't [3.2] good [4.
+6] we looked at [0.5] two [0.2] different ways in which you could [11.3] two 
+different ways in which you could have [1.2] subclasses [0.4] of other classes 
+so we looked at one case where we had [3.5] an alcoholic drink class [0.2] and 
+then we had [0.8] a subclass of wine [0.4] which was a particular case of an 
+alcoholic drink [1.5] okay and that was the example we've been working through 
+over the [0.6] a week or so [1.2] and then the last thing that we looked at 
+last time was [0.6] having a generic [2.0] abstract class [4.1] there are seats 
+around here [0.8] round the other side if you want to come down [6.2] the other 
+thing that we looked at was [0.9] an abstract class which could have several 
+different possible cases [0.5] of which there could be beer [0.4] wine [0.2] 
+spirits and so on [0.4] and they both do equiv-, roughly the same job [2.2] 
+okay [0.3] so those are alternative ways of looking at [0.6] inheritance and 
+abstraction [0.6] but the second one has this [0.3] 
+generic class and we'll look at that [0.7] a little bit later [0.7] in the 
+course [0.5] and we'll see why that's [0.8] quite useful in allowing you to [0.
+2] to do [0.4] a new [0.9] category of things on [0.5] er [0.9] the things that 
+are different but [0.4] are [1.2] broadly the same [0.3] have this [0.2] broad 
+abstract structure that's the same [3.0] how many people understood the 
+difference between the two ways of doing [1.2] inheritance [1.9] how many 
+people didn't [3.6] of those people that didn't how many of you looked at the 
+notes and tried to [0.6] work through an example [3.8] okay [4.1] the one thing 
+that we didn't do last time was the final [1.3] keyword [0.9] final [0.9] 
+modifier [0.8] and we encountered the final modifier over [0.6] several 
+previous cases several previous [0.6] slides [1.0] when we were looking at 
+modifiers [0.4] how many of you have done Pascal [1.9] okay so you'll know that 
+in Pascal [1.5] there are things called constants [0.6] okay and in general 
+there are things [1.0] that are constant that have constant value [0.4] like [0.
+7] pi [1.4] which is three-point-one-four-one [0.6] and whatever it is [0.5] er 
+and there 
+can be various other constants and i've avoided this up to now 'cause we can 
+deal with [0.7] all the uses of the final keyword er in one [0.5] chunk [1.8] 
+and [0.6] when you have a variable [2.2] just like any other variable [0.4] and 
+you know that its value isn't going to change [0.6] throughout a program [1.3] 
+then [0.4] by adding the keyword final [0.4] at the front of the declaration [1.
+0] you can say that that is a constant [0.3] so final int lucky number [0.5] 
+equals seven [1.9] which is assigned [7.1] is assigned the constant value [0.2] 
+seven and that value will never change throughout a program [1.2] i was going 
+to try and turn down the lights can you see this at the back [1.5] good [0.3] 
+okay [0.7] okay so that's [0.4] fairly straightforward [0.4] but in classes [0.
+3] in objects in classes it becomes rather different it has a very different 
+meaning [2.9] and that is that you can't [0.5] override [1.1] a method that is 
+final [0.4] in a subclass [2.9] okay [0.3] so [0.3] for example [0.2] one thing 
+that you've seen several times before is the two-string method [0.7] the two-
+string method [0.6] in the previous 
+examples that we've seen [0.2] allows you to print out [1.0] a representation 
+of an object [0.7] okay [0.4] and whenever you define [0.6] a [0.2] two-string 
+method in your objects in your classes [1.9] that overrides the previous two-
+string method the two-string method that is there by default [1.0] you've seen 
+the equals method we defined an equals method last time [1.0] okay and it's 
+used with strings [0.4] and there's a default equals method [0.3] and these 
+things are overridden [0.5] so that when you define your own equals method it 
+will override [0.3] any previous equals methods [0.3] that exist and there is a 
+default that exists [0.5] but you will [0.4] override that [1.3] what this says 
+is that [0.5] if you have a final [1.1] keyword with a method [0.2] definition 
+[0.6] in a class [0.3] you will not be able to override it [0.7] okay so if [0.
+5] in the default definition of equals or two-string [0.7] this keyword final 
+[0.3] was there [0.7] then we wouldn't be able to override that with our own 
+definitions of [0.7] equals and two-string [2.5] okay so that's all that final 
+means [1.3] and [0.4] we've seen several 
+different modifiers we've seen static and private as well [0.8] which are both 
+[0.4] final [1.0] by implication [0.4] so although [0.4] they don't have final 
+in them [0.5] they are [0.2] final methods [0.5] you can't override things [0.
+8] the reason for using [0.2] final is that [0.4] if the compiler knows [0.3] 
+that it's never going to have to redefine it it's never going to have to do 
+anything more [2.7] then it can optimize the code when it's converting it to [0.
+8] the thing that it actually executes [0.3] it can try and make it run quicker 
+faster better [0.9] okay [1.1] without that knowledge without knowing that we 
+won't override it it's very difficult to be able to do that [0.4] so it's quite 
+useful 'cause it allows the compiler [0.3] to optimize code [3.3] and because 
+[0.4] of the way it works which is all really a consequence of the fact that 
+you can't override things [1.0] a final class can't be a superclass [0.7] so in 
+the previous example the abs-, [0.2] alcoholic drink [0.4] the abstract alc-, 
+alcoholic drink [0.7] and the generic [1.0] alcoholic drink [1.3] you can't 
+have final for the methods that are [0.9] sorry for the 
+class [1.2] er that will then [0.6] er [1.5] generate subclasses like wine [0.
+9] and beer and so on [2.7] okay [2.7] any questions [1.6] how many people 
+understood that [1.4] okay [0.5] good [1.3] that's it that's classes [0.6] 
+they're done they're finished if you have questions problems ask your seminar 
+tutor [0.4] or ask me later [0.7] okay but that's it [0.2] that's essentially 
+all we're going to do on classes and objects [2.6] okay so i expect you now to 
+know it [2.6] and you have a test [2.0] gosh is it [0.2] next week [2.2] 
+someone's nodding [0.3] test next week how many of you remember you have a test 
+next week [0.9] hurray next Thursday i think [0.2] a test [0.3] in L-three [1.
+3] the second test [4.8] the second test for this course worth five per cent of 
+the marks [9.5] okay [2.0] so [10.1] the key thing that we're going to do today 
+[0.6] is to look at recursion [1.5] and recursion is a very simple [0.3] but 
+powerful [0.7] concept [1.1] but it's also something that people find quite 
+difficult typically to 
+deal with [1.7] okay and recursion [2.1] just refers to [0.3] something that 
+refers to itself [1.0] and this is repeated [0.2] over and over again [0.7] by 
+referring to itself [1.1] and so this [1.1] picture [1.6] of a television 
+screen [0.4] within a television screen within a television screen [0.6] is a 
+recursive picture [0.9] because it just keeps on going [0.8] until some point 
+at which we can't see it any more [0.9] okay and that's [0.4] all [1.4] that 
+recursion is it's just [0.2] defining something in terms of itself [0.2] so 
+this T-V picture contains a T-V picture [0.8] which in turn contains a T-V 
+picture and so on [3.4] how many people [6.7] have heard of the Towers of Hanoi 
+[1.4] wow [2.5] how many people can solve the Towers of Hanoi [2.3] mm [0.9] 
+this is my [1.3] i i [0.7] cheated earlier today [0.5] because i er [0.8] i 
+pretended to be a student [0.6] in the er [0.6] writing course that that [0.6] 
+C-S take [1.0] er and there were lots of exciting things happening in [0.6] in 
+that there was music being played 
+and [1.0] tenners being thrown up scrunched into balls and thrown [0.6] into 
+the corner [1.1] and it continues [0.2] the excitement of the day [0.8] 'cause 
+we have a [2.6] a prop [1.8] which is my [2.0] Towers of Hanoi [1.4] okay [0.4] 
+Towers of Hanoi [0.5] three poles [0.6] with [0.4] a number of discs [0.9] on 
+one end [0.3] and the idea is to take these three discs [0.2] and to move them 
+all [0.5] to the other end [1.7] okay [0.6] third pole [2.6] by placing taking 
+one at a time [0.5] moving them across [0.3] but not putting a smaller disc [2.
+4] a larger disc onto a smaller disc [0.4] okay so [0.4] that would be an 
+illegal move in the Towers of Hanoi problem [0.2] okay we can't do that [0.2] 
+we can only move smaller discs onto [0.5] larger discs [1.7] okay so we could 
+solve it in various ways it could be [0.5] quite tricky could be difficult [0.
+6] but [1.0] it's called the Towers of Hanoi because [0.4] apparently [1.3] 
+there's a er a monastery somewhere in the Far East [0.4] er i am told it's [1.
+4] in what is 
+now [0.3] Hanoi [0.9] er in Vietnam [0.6] but i don't know if that's right or 
+not [0.2] er [0.8] and the monks in this monastery [0.5] er [0.3] have a [1.3] 
+problem like this with sixty-four discs [1.2] okay so they've got [0.2] a stack 
+of sixty-four discs [0.3] and they make a move [0.3] every day they move one 
+disc onto a different pole every day [0.9] and supposedly when the [0.9] monks 
+finish the problem [1.4] the world will come to an end [0.9] so there are these 
+monks somewhere in the Far East [0.5] taking [0.4] a disc at a time [0.5] and 
+moving it across [0.3] and whenever they finish the problem [0.4] er [1.7] the 
+world will end now [0.5] the good news is that [0.2] that will take an 
+incredibly long time even if they [2.4] even if they do it in the most sensible 
+way possible [0.7] so [0.2] er [0.3] we still have a while to go yet [0.7] but 
+[3.6] the good thing about this particular problem is that it's a very good 
+example of how to [2.3] how recursion [0.3] can make something that looks quite 
+complicated very very simple [1.7] okay so [1.7] 
+there's a very simple way to do it if we have one disc [0.6] how many people 
+could solve the problem with one disc [1.9] how many people couldn't [1.6] one 
+disc is very easy 'cause there's no problem you can move it straight to the end 
+[2.2] very easy [0.7] now you get the people that didn't put up their hands [1.
+0] you can do it with [0.2] two discs [0.6] how many people can solve it with 
+two [1.1] how many people can't [2.5] okay so two is very easy 'cause we just 
+use the spare pole in the middle [1.9] and then move it across [1.2] and then 
+do that [0.2] very easy [0.4] how many people can do it with three discs [2.2] 
+so [0.7] this is when i get someone to do it [0.2] who did you did you put your 
+hand up [0.4] 
+sm0719: yeah [0.3] 
+nm0718: go for it [1.0] they're they're not in the right order by the way 
+sm0719: yeah 
+nm0718: so you 
+can sort them out first [4.4] okay so [5.2] 
+ss: 
+nm0718: st-, [2.6] you need to st-, [0.6] right [laughter] [0.3] you need to 
+start with st-, st-, [0.3] shall we start again 
+sm0719: yeah [0.2] go on 
+nm0718: i dare you 
+sm0719: let's go try again [1.1] 
+nm0718: start with them at one end [0.8] that might be easier [1.2] 
+ss: 
+nm0718: well done [2.5] thank you [0.8] er [1.3] it it's [0.6] that that was 
+i'm i'm [0.2] dead impressed with that actually [0.2] because it's very 
+difficult doing it when there are lots of people watching but [0.5] er [1.4] 
+can anyone do it with four [1.6] too far away i can't reach you anyone [1.7] 
+we'll have a go at four in a in a in a bit [0.6] er [0.4] but [0.6] if we break 
+this problem down into separate parts it's very simple [0.6] okay what we're 
+doing is [0.5] we're saying [1.1] the [2.7] the problem with [0.6] three discs 
+can be broken down into [0.8] the problem with two discs [0.2] and then one 
+disc [0.3] so [0.3] we need to move these three discs [0.3] over to here [0.6] 
+and we can say if we move [0.3] two discs across [2.3] okay we can just move 
+the one across there [0.9] and then we can move the two across [0.6] to there 
+[1.5] okay but we can't move two discs across 'cause we can only move one disc 
+at a time [0.9] so the problem is [1.1] then [0.3] how do we move two discs 
+from here [0.4] to here [1.6] well that's easy 'cause we know we can just move 
+two discs from one pole to another pole [0.9] using the spare pole [0.4] so we 
+want to move two from here to here using this spare pole [0.6] and [1.7] we can 
+do that [0.7] pretty easily [1.6] 'cause most of you said you could do it [0.4] 
+okay [0.2] that's fairly easy [0.4] the next thing that we can do [0.5] 
+directly we can 
+move this disc across to here [1.2] and then the next problem that we have is 
+to take [0.4] these two [0.8] and move them across to this pole [1.6] using the 
+spare pole [1.2] and we've just done that already [0.4] the other way round [0.
+7] and that's [1.2] fairly easy and straightforward [2.3] so we moved it across 
+[2.3] okay [1.7] does that make sense [2.5] how many people [0.3] think it 
+doesn't make sense [2.4] how many people think it does [0.9] hurray [0.6] okay 
+[0.7] four discs [1.8] the problem with four discs is the same as the problem 
+with three discs [0.6] except [0.4] we're now going to move [0.7] three at a 
+time [1.4] to the middle one [0.5] then the big one [0.9] all the way to the 
+end [0.6] then three [0.6] across [1.0] but we can't move three [0.4] so we 
+have to do it in terms of [2.2] two [0.8] so if we were starting with this one 
+and moving them across we would have to find a way of moving [0.5] three discs 
+to here [1.3] okay and we'd have to find a way of [0.4] doing that in terms of 
+two which would be done by moving two discs to here [1.8] 
+and then we'd have to find a way of doing that which would be by moving [0.4] 
+one to here [1.2] one to there [0.6] one to there so we've now moved two discs 
+[1.7] if we go back trying to move [1.2] the two discs back onto here [3.3] 
+we're okay [1.2] we can move this one directly [0.8] and now we're back with 
+the problem of moving these three [0.4] from here to here [1.1] okay and we 
+can't do that directly so we have to move [0.6] two [0.2] from here to here [1.
+5] and then move the [0.2] big one directly onto this one [0.3] and then move 
+the two back [0.2] so we have to go [1.2] two discs [0.4] to here [2.3] okay 
+those are our two discs [0.5] this one moves directly [0.2] and now we're back 
+with the problem of moving [0.5] two from here [0.4] to here [1.6] using the 
+spare pole [2.4] okay [1.8] how many people think they can do it with five 
+discs [2.2] how many people think they can do it with six discs [1.2] okay [0.
+9] [laughter] [0.3] we don't have time for six 
+discs or probably even five discs but it's exactly the same thing [0.6] the 
+problem to five discs [0.6] the problem with five discs is the same [0.4] thing 
+as moving four [1.1] to the spare pole [1.1] one across [1.5] and four [1.0] 
+back across and we can do the [1.4] problem of moving four from one to the 
+middle by using the spare pole [0.5] and then we [0.2] work that one out in 
+terms of moving three [0.5] and we work that one out in terms of using two [7.
+1] any questions about that [5.3] so [0.3] people you all think you can do it 
+in f-, [0.3] with three discs right [0.6] anyone does does anyone think they 
+couldn't do it with three discs [2.0] does anyone think they couldn't do it 
+with four discs if they had enough time [2.6] is that is that 'cause [0.2] you 
+don't understand how it's done or because [1.8] you'd get lost [0.3] 
+sm0720: did you say could or couldn't [0.4] 
+nm0718: sorry [0.2] 
+sm0720: did you say could or couldn't [0.2] 
+nm0718: couldn't do it [0.8] in four [0.4] couldn't do couldn't [0.2] move four 
+discs across [5.8] how many people s-, think they couldn't do it in with four 
+discs [0.4] can i have it hands up again [1.2] 
+is that [0.4] if you keep your hands up please [0.3] er don't want to er is 
+that because it's [0.3] the problem is difficult [2.1] or is it because [0.8] 
+do you think you'd you'd get lost on on the way [6.6] no answers [3.3] okay [1.
+7] i'll assume that means that you can all do it [1.1] and it's a very simple 
+thing to do [1.3] the solution [0.3] the general solution to this is [0.6] 
+simply to move the top [0.2] N-minus-one discs [0.8] from the source [1.0] to 
+the auxiliary if we have a source [0.6] tower [0.3] a destination tower [0.6] 
+and an auxiliary tower [0.9] okay the auxiliary being the one that we [0.2] 
+don't want to get things to but the one we're going to use [0.5] in the middle 
+[0.6] we simply move [0.5] the top N-minus-one discs to the auxiliary [4.6] and 
+we can use the destination to do that [1.9] the next thing we do is move the 
+bottom one [0.6] to the destination [2.9] and the next thing is to move the [0.
+8] top N-minus-one discs [0.4] these guys from the [0.6] auxiliary pole [2.0] 
+to the destination [2.3] okay and 
+these [0.4] green remarks here [0.4] about which pole we want to use [1.2] to 
+do that [0.8] is the spare pole that we will use each time round [4.3] okay [0.
+8] so the Towers of Hanoi [0.9] is a actually a very simple problem [2.0] but 
+it gets progressively bigger each time round [0.8] if we add another disc [0.4] 
+we double the size of the problem we double [0.5] the number of steps that we 
+need to [0.5] take to make it work [1.8] can i move this [12.5] okay [2.3] so 
+how do we do that [0.6] in Java [6.7] how many people have found have looked at 
+[0.2] at least one program [0.4] that i have made available online in my 
+filestore [1.6] how many people haven't [3.6] okay if you want to look at this 
+program it's in [0.2] tilde-C-S-rat-slash-Java-slash-five-slash-Hanoi-dot-Java 
+[1.8] with a capital H [6.2] and this [1.1] slide [3.2] is number forty [0.7] 
+this was given out with the methods [0.3] slides [14.4] okay in this program [8.
+8] i've set [0.2] N [0.8] to 
+be four and N just tells us [0.6] how many discs we have [1.2] to deal with [0.
+8] so in this particular example we have [1.1] four discs [2.6] and i've added 
+a final keyword here because we could make that a constant if we wanted [0.5] 
+'cause this value of N isn't going to change [0.4] inside the program [1.8] 
+okay this value of N is going to be constant throughout the program so you 
+could and it would be sensible in fact [0.5] to put [0.6] the final keyword [0.
+3] at the beginning there [3.4] okay and the main part of this program [5.2] 
+simply [1.7] prints out a heading [0.8] Towers of Hanoi for [0.8] four discs [1.
+1] and then calls [1.2] a method [7.2] it's a very old prop [5.0] then calls a 
+method [0.2] move [0.3] to move a disc from one pole [1.3] to another [1.7] 
+okay and this is the output [0.5] this slide over here [3.3] okay so [2.8] in 
+this program [2.5] which you have [1.2] this method move is the key thing that 
+we [0.2] are going to use [1.0] okay [0.3] and just as we 
+defined the problem [0.6] in terms of a [0.6] solution [0.3] the solution to 
+the problem in terms of the solution to an easier problem [0.3] so the solution 
+to four [0.5] was defined in terms of the solution to three [0.5] we will [0.5] 
+define a [0.3] method in terms of er [2.6] the method itself [0.3] is that is 
+that a hand 
+sm0721: yeah [0.6] can you refer to a method before you declare it [0.4] 
+nm0718: can i [0.4] 
+sm0721: refer to a method before you declare it [1.1] 
+nm0718: yes [1.3] yes you can call a method before it's declared [0.2] you have 
+to typically [1.7] 'cause you wouldn't be able to use any methods [0.7] er [0.
+6] unless they were [1.0] declared afterwards you couldn't use a method in the 
+main method [2.6] so all the examples that you've seen so far probably have 
+methods that are [0.8] used before they're declared [3.1] okay so we've got [0.
+2] simply the main method up here which is the main bit of the program [0.4] 
+and down here we have the [0.3] move method that we're going to use to do all 
+of the work of this particular [0.3] program to solve the Towers of Hanoi 
+problem [0.7] and [1.3] this 
+method move [1.6] it's a static method 'cause it's a [1.7] class method there 
+is no particular object that we're associating with it [1.5] and it takes [1.3] 
+one two three four parameters four arguments [0.3] the first is [0.4] N [0.5] 
+which tells us how many discs we want to move [1.6] okay [0.3] in the first [0.
+9] the first time round we use this the first time we call this thing we've got 
+four [0.6] discs so N is four [0.8] and then it takes [0.6] a letter a 
+character [0.6] referring to the source the auxiliary [0.4] and the destination 
+[0.4] poles [0.2] which i've called A B and C [1.2] okay so when we call this 
+first time round N is four [0.6] source is A [1.6] auxiliary is B [0.5] and 
+destination is C [2.4] okay [1.6] and trivially [0.8] we know the answer when N 
+is one [0.5] if we've got one disc [1.1] we can move it directly [1.2] okay 
+everyone can do that [1.0] 'cause you laughed when i asked if you could [1.0] 
+and we can write that out directly if N equals one [1.1] then simply print out 
+[0.4] move disc [1.1] and N refers to the the number of the disc [0.4] which is 
+one [0.6] from the source to the destination [0.4] directly [0.5] okay [0.4] 
+and [0.2] because source and 
+destination are variables referring to [1.3] which have the particular [0.3] 
+characters that we've got [2.6] it's fairly straightforward to do that [1.3] 
+okay so if we just had one disc [0.2] if N was one inside this program [0.4] we 
+would just simply have one [0.3] A B C [0.5] source would be A destination 
+would be B and we'd simply move [0.6] disc one from A to B [0.2] sorry from A 
+to C [0.5] right [2.2] but if we haven't got [0.3] one disc if we've got more 
+than one discs [0.6] then it becomes a little more difficult [0.7] okay [0.4] 
+but using recursion [1.2] all we need to do [0.2] is write down the form of the 
+solution [1.3] okay [0.2] and that's pretty much all we need to do [0.8] we 
+simply need to move [0.3] N-minus-one discs [0.5] so in the case where we had 
+[2.1] if i can reconstruct this particular thing [4.1] in the case where we had 
+f-, [0.7] four discs [0.9] the trick is to move three discs [0.4] to the middle 
+pole [0.9] which is what [0.2] this line says [0.4] move three discs N-minus-
+one [0.5] from the source [0.4] to the auxiliary [0.6] using the destination [1.
+3] okay [0.6] we've got source [0.5] auxiliary destination [0.6] and this [0.7] 
+says [0.2] move from here [0.3] to 
+here [0.5] using this [1.9] okay [0.3] and that's [0.5] all we're saying there 
+[3.8] then [0.8] write out [0.8] the solution to [0.4] moving one disc [0.2] 
+from [0.7] the source to the destination [1.3] okay [0.3] which is [0.3] disc N 
+disc four in this case [1.9] that's the bit in the middle [0.6] and then we 
+simply solve the problem [0.3] to move [0.2] three discs [1.2] from here [0.5] 
+from the auxiliary [0.7] to the destination [0.5] using the source [1.9] okay 
+[0.4] that's all that this says [3.6] but that's easy we know t-, how we can do 
+that 'cause we simply know [0.2] we simply need to say [0.4] how do we work out 
+[0.8] the solution with [0.8] three discs [0.4] that's the only thing we need 
+to work out to make this [0.2] complete solution work [0.8] and when we hit 
+move again the second time [1.7] all we do is [1.0] call this [0.5] method [1.
+0] with [0.4] this N [0.2] being set to be [0.6] the new N-minus-one [0.6] so 
+this is now the new time we call the next time we call move [0.5] N now has the 
+value of N-minus-one [0.3] which is three [1.0] the source [0.7] gets assigned 
+to [0.5] 
+this source the destination gets exsigned gets assigned to the auxiliary [0.8] 
+and the auxiliary [0.3] gets assigned to the new destination [0.6] so when we 
+were moving [0.5] three discs [0.8] at the beginning [0.9] if i can just swap 
+it around [1.3] okay we wanted to move [0.4] all of these to here [0.5] and the 
+way we did that was by moving these three the top three [0.5] to the middle 
+pole [0.8] we simply [0.3] changed the order of the arguments changed the order 
+of the poles so that [0.7] when we call it again we have to find the solution 
+to moving [1.1] from the source [0.3] to the auxiliary [1.2] okay [0.8] these 
+three moving to here [2.3] and if we [0.2] make those assignments [1.9] we can 
+[0.2] check to see if it's one disc that we're moving and it's not it's three 
+[2.5] so we [0.5] simply need to do that in terms of [0.5] moving N-minus-one 
+discs [1.3] which is two discs [2.2] from the [0.5] source [1.3] to the 
+auxiliary [0.5] using the [0.3] destination [0.7] well [0.6] the new auxiliary 
+[0.3] is [1.6] 
+this one [1.3] and the new destination is this one [0.3] sorry the new 
+auxiliary is this one and the new destination is this one [0.4] so we work out 
+the problem to s-, [0.2] to moving two across [1.2] then we can move [0.7] we 
+can write the solution to moving one directly [0.4] and then we can work out [0.
+6] the solution to moving [0.2] the last [1.6] two across [1.2] again [0.4] 
+okay [0.2] and eventually we'll get down to a point where we're only working 
+this out in terms of moving one disc at a time [0.8] when we're moving one disc 
+at a time [0.9] we have the solution directly [1.7] so [2.6] let's have a look 
+at how that works [7.1] can you see this at the back [3.0] okay [1.0] first 
+thing we do is to move [1.0] disc one from A to B [0.7] so it's [1.2] here to 
+here [0.3] disc two from A to C [1.4] disc three from A to B [1.3] sorry [0.2] 
+disc one from B to C [4.3] disc three 
+from A to B [0.3] and so on [0.5] okay it should be clear that [2.2] this [0.4] 
+solution is correct disc one from C to A [0.7] disc two from C to B [1.5] okay 
+[0.9] disc [0.6] one [2.2] from A [0.3] to [0.7] B [0.6] that's moved three 
+across [1.4] okay [1.1] this chunk of the solution [0.7] simply moves three 
+discs [1.6] across [1.2] from [0.4] the source [0.2] to the auxiliary [0.2] 
+using the destination [0.8] but if we examine that in more detail [0.5] we 
+would have to make a call [1.2] another move to move [0.2] N-minus-one discs 
+two discs [2.4] from A to C using B [0.6] okay and that's the solution that 
+we've got up there [0.6] if we change the N here at the beginning of our 
+program to be [1.1] two [0.4] we would just get a trace of three moves [1.1] 
+okay if it was two we would just simply [1.1] move N-minus-one discs [2.8] 
+which would be one [1.5] move the one in the middle [0.5] and then move [0.7] N-
+minus-one discs again which would again be the one [2.3] okay [0.4] so [0.2] 
+the solution to two discs is simply three statements [0.8] then we would move 
+the one in the middle [2.0] 
+okay [1.4] so it would be moving two to here [1.1] moving the one in the middle 
+[0.5] and then moving two back again [1.4] okay and you can see the structure 
+[1.8] of this as we build it up [0.9] is [1.2] there is a solution that is 
+defined in terms of [0.8] the solution to two smaller problems plus a direct 
+move in the middle [1.7] so all of this [0.3] is the solution [2.4] to four 
+discs [1.5] the green line [0.5] indicates the solution [0.4] to [0.4] three 
+discs [1.2] the red line indicates the solution to two discs [1.2] okay [0.3] 
+and if we look at the solution to three discs in terms of the solution to two 
+discs [0.3] it's simply [0.3] the solution to two discs plus a direct move [1.
+0] plus the solution to two discs again [0.4] if we look at the solution to 
+four discs in terms of the solution to three discs it's [1.3] the solution to 
+three plus a direct move plus the solution to three again [2.5] okay and that's 
+all there is [0.2] this program [0.3] 
+generates that output and it's probably one of the simplest programs you'll 
+find to do something quite complicated 
+nm0718: another example [9.4] and this example is in tilde-C-S-rat-slash-Java-
+slash-five- [0.7] slash-fact-one-dot-Java [0.3] and also fact-two-dot-Java [0.
+7] how many people [0.3] don't know what a factorial is [2.5] okay [0.9] 
+factorial [1.5] is simply [1.8] a very simple mathematical thing [3.4] four-
+factorial is simply [0.7] four [0.2] times three [0.3] times two [0.4] times 
+one [1.2] five-factorial [0.4] is simply five times four times three [0.3] 
+times two [0.2] times one [0.7] that's all factorial is [7.8] okay [0.3] so [0.
+2] iteratively [0.5] and iterative is just [0.3] looping around [2.3] in 
+circles iteratively the solution to N-factorial is simply [0.3] N times N-minus-
+one times N-minus-two [0.4] all the way through to one [0.8] so the solution to 
+six-factorial is [0.5] six times five times four times three times two times 
+one [0.3] and we could loop round [1.5] in a while loop 
+or a for loop simply multiplying numbers together [0.4] generating that kind of 
+[0.7] result [1.6] we know that [0.5] N-factorial is equal to one [0.2] when [0.
+4] N is zero [0.4] okay we're given that [0.2] we know that [1.4] and if we 
+wanted to write [0.8] a method [0.7] to do that [1.7] we could simply write 
+this [0.8] factorial method [0.6] which starts out by setting [0.4] F [1.4] an 
+integer F to be one [1.0] and then have a for loop looping from one [1.0] to N 
+[0.7] so [0.9] I is set to be one initially [0.4] we loop round while I is less 
+than or equal to N [0.3] and each time round the loop we add one to I [0.9] and 
+inside that loop we simply multiply [1.9] F [0.2] by I [1.9] okay so if we have 
+a look at [0.5] how that would work [6.1] okay [3.2] first of all [2.8] when we 
+call this method [0.3] N is five [3.2] which is [0.5] what's given to us as a 
+parameter [0.5] then we set F to be one [0.8] and then we loop round with I 
+taking values one two three four and five [0.6] and the first time through the 
+loop we simply multiply [0.5] F by I [0.4] and put the result in F [0.2] so [0.
+4] it's [0.2] one times one which is one [1.9] the second time round I is two 
+[0.5] so 
+we get [0.6] one times two [1.1] which is two [1.3] the third time round I is 
+three so we take the new [0.3] value of F which is two multiply it by three [0.
+8] and we get six [1.1] the next time round I is four [0.4] multiply that by 
+six we get twenty-four [0.4] the next time round I is five [0.3] multiply that 
+by twenty-four [0.4] and we get a hundred-and-twenty [0.7] okay and at that 
+point we find that [0.8] I is no longer less than or equal to N and so we stop 
+this [0.5] and we can return the value F at the end of this loop [1.0] as the 
+result [0.2] of calculating factorial [0.6] okay so that's just a loop that 
+will loop round [0.3] multiplying things together [0.9] now [0.8] we can also 
+do that recursively [0.9] recursively where we define the solution to one thing 
+in terms of the solution to a [0.3] simpler problem [0.8] okay [0.3] so we can 
+say that N-factorial [1.4] is simply [0.3] N times N-minus-one-factorial [1.1] 
+so six-factorial is simply [0.9] six times five-factorial [0.5] five-factorial 
+is simply five times four-factorial [0.6] it doesn't matter [0.2] how we get 
+those results [0.2] we can define it like that [0.7] and [1.4] we can 
+write a solution directly in those terms [0.2] as long as we have a base case 
+as long as there is something [1.3] that we understand how to solve directly [0.
+9] okay [1.0] so in recursion you have to have [0.8] a general case of how you 
+define [0.5] a more complex problem in terms of a simpler problem [2.2] and as 
+well as that [0.5] some simple problem that you can solve directly [0.6] and we 
+know that [1.2] N-factorial is one when N is equal to zero [1.9] and so with a 
+recursive [1.0] method [1.0] you have the same heading [2.0] we simply check at 
+the beginning to see if N is greater than zero [0.6] if it is [1.4] we have to 
+do some calculations [0.4] if it's not we'll return the value one directly [1.
+0] okay [0.4] but if it is greater than zero we simply return the value of N [0.
+4] times [0.3] the value that we get by applying this factorial method [0.3] to 
+N-minus-one [1.2] how does that work [3.9] okay so if N is [0.8] six we want to 
+return six times the result of doing factorial on five [0.9] okay and this [0.
+8] shows how the recursive method works [2.1] 
+with five [1.1] as an argument [1.6] okay so what we do is we start out by 
+saying [0.4] N is five [1.0] is N greater than zero [0.2] yes [0.4] so we 
+return [0.4] five times factorial of four [1.1] okay but we don't know what 
+factorial of four is yet [1.0] and at the point at which we hit factorial of 
+four there [0.4] we simply make another call [0.3] to this method [0.7] now 
+with N being four [0.4] and we do the same thing again [0.7] okay so we maintai-
+, we [0.9] we have to maintain these results bit by bit [0.7] okay we come down 
+[0.5] here [0.6] before we can [0.3] get the results to use back in these 
+calculations [1.5] when N is four [0.5] we return four times factorial of three 
+[0.4] and we have to go round again [0.3] when N is three we return [0.8] three 
+times [0.5] factorial of two [1.8] when N is two we return two times [0.4] 
+factorial of one [4.8] and at that point [1.4] when we come round again [1.7] 
+we do it once more [0.4] one times factorial of zero [0.6] and then [0.3] this 
+is no longer true [1.3] okay so at the point where we've got zero [0.8] in the 
+sixth call [0.8] to this thing [1.6] we've got a value for one [0.5] so we've 
+got a value for factorial of zero [0.3] which 
+we can use [0.8] when we're trying to work out [1.8] factorial of one [0.7] 
+factorial of two [0.3] factorial of three and so on okay [0.6] we get a value 
+of factorial-zero which is one [0.3] we pass it back up to the previous 
+calculation [0.7] so we now have a fac-, [0.3] we now have a value of [0.7] 
+factorial of one which we can use in the next [0.5] calculation [1.2] we have a 
+value of factorial of two which we can use in the previous one and so on so it 
+[0.6] keeps going back up so we have to go [0.6] all the way down [0.3] to the 
+bottom [0.8] before we can use those values that we've worked out [1.2] 
+substituting them back into these [1.6] calculations [1.2] to get out the 
+result at the top [3.2] how many people understand that [1.7] how many people 
+don't [2.5] how many people didn't put their hands up [2.9] yeah [laugh] [3.0] 
+always ceases [1.6] it never ceases [1.5] to amaze me [1.3] you know i'm going 
+to ask you a question [1.1] you know i'm going to ask you at the end how many 
+people didn't put their hand up [1.1] why [0.5] you don't [0.3] beats me [2.7] 
+okay [0.4] there's 
+something very important to note about this [0.5] yeah [0.7] 
+sm0722: is recursion more efficient than in terms of speed 
+nm0718: we'll get on to that [1.3] it's a very good question the question is is 
+recursion more efficient [1.0] and the answer is no but we'll get on to why [3.
+8] [laughter] the problem with this is that [0.9] we have to maintain all these 
+values we don't know what the solution to factorial-six is [0.7] until we've 
+worked out factorial-five factorial-four factorial-three factorial-two 
+factorial-one [0.4] and so on [0.4] and we have to maintain all of these values 
+[0.4] all at the same time until we find [0.6] the value of factorial-zero 
+which we can use to find factorial-one [0.4] and then to find factorial-two and 
+so on [0.3] so we have to maintain [0.5] six sets [0.7] of [1.8] all the 
+variables that are needed to work this out [1.4] okay so we have to maintain 
+six sets of that [0.5] whereas in the previous example the [0.4] iterative 
+solution [0.3] we only have to maintain five sets of things [1.5] sorry we only 
+m-, have to maintain one set of [0.4] er 
+variables [0.9] okay so [0.4] we need [0.3] much more memory [1.1] er [0.3] 
+with six [0.7] it's not a problem with five we we work these things out on on 
+five [1.1] with N being five it's not a big deal [0.2] because it's only about 
+thirty variables [1.4] okay [0.4] but when we start using [0.4] much larger 
+numbers [1.2] okay then it becomes prohibitive [1.4] okay so recursion which is 
+very very powerful [0.4] can take up a lot of space [0.3] and also [0.2] it can 
+take up a lot of time to do it [0.2] can be not very powerful because of that 
+[0.5] er we're going through all of these [0.8] iterat-, recursive calls [2.5] 
+but the key thing to note is that [2.9] it's much nicer to write down [0.4] 
+than the other solution the other solution required a for loop we had to work 
+various things out [0.6] this simply states what the problem is [0.5] it simply 
+states that if N is greater than zero [0.6] you got to work out N times 
+factorial of N-minus-one [0.4] otherwise you know the answer directly [1.3] so 
+it's much [0.4] nicer much neater much simpler [0.4] to do [1.6] than this one 
+[3.8] okay i've got 
+another example [0.9] you don't have [3.9] could someone tell me what these are 
+[2.9] er [2.8] how many people know what these are [2.3] okay how many people 
+don't [1.4] they're Fibonacci numbers [1.6] Fibonacci numbers are simply [9.7] 
+Fibonacci numbers are simply numbers that are defined as the sum of the 
+previous two numbers [0.6] so if we start with zero and one [0.4] then the next 
+one is [0.4] the sum of one and zero which is one the next one is [0.8] the sum 
+of one and one which is two the next one is the sum of two and one which is 
+three the next one is the sum sum of [0.5] three and two which is five and so 
+on [0.9] okay Fibonacci numbers [1.4] very simple [0.8] and this is a [0.5] 
+again something that's [0.2] recursive [0.7] we have to know the [0.5] previous 
+two numbers to be able to work out the next one [1.3] you don't have this [0.9] 
+if you're looking through your [0.8] through your [0.2] notes [0.2] you don't 
+have this [3.8] but it's 
+pretty much the same as the things we've seen before it's very simple [1.1] 
+here's the whole program [0.3] rather than just the method [0.6] i've just got 
+a heading [0.7] saying sixth Fibonacci number is [0.3] and then a call to the 
+[0.3] Fibonacci method that i've got below [1.3] okay [6.9] and this Fibonacci 
+method simply takes an integer N [2.1] and it [0.8] has three possible cases 
+one is that [0.5] N is zero [1.0] if N is zero then we return zero [1.3] 
+otherwise if N is one we return one [0.5] 'cause we have to have two numbers to 
+start with [0.7] zero and one we're going to start out with at the beginning [1.
+0] base case [0.6] and if not [0.6] if we're [0.2] anywhere up [1.0] further up 
+[1.2] then we simply return [1.5] the value that we get by calling the 
+Fibonacci method on [0.4] N-minus-one added to the value that we get by calling 
+the Fibonacci method on [1.8] N-minus- [0.9] two did i say N-minus-two before 
+[1.5] N-minus-one and N-minus-two [0.3] okay so we simply [1.5] work through 
+that [0.4] and that's all we have to do and that's simply [0.6] if you look at 
+it it's simply a statement of 
+the problem rather than doing [0.4] anything complicated anything sophisticated 
+in terms of [1.8] trying to work these things out [0.4] simply states [0.2] how 
+we define Fibonacci numbers [0.4] and Java [0.3] will solve that problem for 
+you [0.8] okay it will go through these reci-, recursive calls [0.4] trying to 
+work it all out [2.3] and again this program is in tilde-C-S-rat-slash-five-
+slash-jav [0.4] tilde-C-S-rat-slash-Java-slash-five- [0.8] er - [0.7] fibo- [0.
+2] dot-Java [3.0] are there any questions [4.5] how many people think they 
+understand recursion [1.5] how many people don't [2.3] okay [0.5] good [0.6] 
+let's write a little note [2.0] about when we would use this [8.4] can you see 
+that at the back [4.0] when should we use recursion and when should we use 
+iteration [16.0] okay because we can always [0.4] find an iterative way [1.7] 
+to solve a recursive problem [2.5] okay we can solve problems [0.3] either way 
+so the question is why bother to use recursion [0.7] and the answer is [1.7] 
+when it's most natural [5.1] and easily expressed [32.2] we'd use 
+iteration when efficiency matters [0.7] okay if we don't have enough [1.3] 
+memory [2.0] or if the solution is straightforward [0.5] iteratively [0.4] then 
+we would use [0.3] iteration [0.7] but recursion is most [0.6] useful when it's 
+[1.2] very easy to write it down [1.3] okay so when it's most natural [0.4] and 
+easily expressed [4.7] [1.0] in every test every second test [0.7] in the last 
+five years there has been a question on [0.3] recursion [1.3] every single one 
+[4.8] are there any questions [3.5] okay can i move this off [5.5] we got one 
+[0.3] or two things to say about the assignment before we finish today [11.8] 
+the first [1.9] is that you will have a new submission sheet [2.7] it'll be 
+it's a yellow one but it's new [0.5] and that's because [1.6] unless you are a 
+student who is not based in Computer Science [1.4] you will have shortly in 
+your pigeonholes some bar codes [1.3] okay [0.4] a sheet of s-, stickers with 
+bar codes on [0.4] identifying you [1.2] and what you have to do [1.0] 
+instructions are given to you but what you have to do is to take [0.4] a bar 
+code [2.3] and [0.3] fold up the bit of paper where it says [0.3] fold line [4.
+1] and then there's a box [1.6] which will be partially obscured [1.0] take 
+your bar code [0.7] and stick it [2.6] like that so that it holds the paper up 
+[2.6] that's what you do that means we can't see who you are [1.2] it's all 
+done anonymously [0.9] but it'll be more efficient [1.2] okay [0.6] so do this 
+if you are [0.7] not based in Computer Science you will fill it in as normal [0.
+5] and hand it in to the secretaries who will then [1.1] anonymize it for you 
+[0.2] we will not be giving you [2.5] bar codes [1.9] 
+sm0723: [0.7] 
+nm0718: sorry [0.6] 
+sm0723: [1.3] 
+nm0718: ah you'll have a pigeonhole they'll get them to you so it's C-S C-S-E 
+[1.4] C-M-S and C-B-S will all get bar codes and these are s-, distinct from 
+the engineering codes [1.1] that you h-, may already have [7.2] i haven't 
+finished [3.0] won't take long [1.6] i don't mind not doing it [3.5] there are 
+three parts to assignment three [1.5] you should do as many of them as possible 
+[0.6] the first part is worth seventy 
+per cent [0.4] for an extra fifteen per cent [0.3] you should do the second 
+part [0.4] and for an extra f-, fifteen per cent on top of that [0.8] you 
+should do the third part [0.2] that means that [2.0] you can improve your mark 
+continually so if you start early you have more chance of getting a hundred per 
+cent [1.4] okay you should be able to do all of them [0.5] but i understand 
+that for some of you it might be difficult [1.8] you will have to use erase 
+which we will cover in the next lecture [2.5] the output that is given on the 
+sheet the sample output [0.4] and the output that you should be producing [2.7] 
+has no trailing spaces at the end of a line [1.2] and the last line should be 
+properly terminated that means that if you use [0.6] system-dot-out-dot- [0.6] 
+print [1.0] 
+you should make sure that the last thing you do [0.5] is system-dot-out-dot-
+print-ln [0.9] to terminate your last line properly [0.5] otherwise there will 
+be problems [2.6] note the new submission sheet [1.4] and also [0.4] the bar 
+codes don't lose them [0.8] if you lose them you will have to pay for more bar 
+codes more bar code stickers [1.7] okay [1.9] the problem is in terms of 
+matrices [0.3] matrices are just collections of numbers [1.2] it's not 
+difficult if you haven't encountered matrices before [1.3] there are hints [1.
+9] on the back page [0.8] and your seminar tutor will explain anything to you 
+[1.5] if you don't understand how to do it [1.3] i will say a little bit more 
+about this next time [1.2] thank you

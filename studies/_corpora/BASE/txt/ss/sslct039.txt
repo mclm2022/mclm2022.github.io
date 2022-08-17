@@ -1,0 +1,761 @@
+nf1292: i thought what i'd do today having introduced to you [0.2] last week 
+the idea of er [0.3] measuring vocabulary do you remember do you remember the 
+er [0.4] do you remember the E er E-V-S-T [0.7] er [0.4] test [0.8] yes with a 
+yes-no the yes-no test [0.4] from last week [0.4] and you had a handout [0.4] 
+er with the words where you had to say whether you r-, [0.2] recognized them or 
+not [0.5] er [0.3] i thought i would show this week [0.5] some ways in which 
+that had been put [0.2] into use [0.3] as a means of research [0.4] by students 
+[0.2] here [0.8] right [0.2] and i've got three examples of [0.4] er [1.3] 
+research students here in CELTE who have used [0.4] er the [0.4] yes-no test 
+format [0.4] as part of their research [0.4] and then i thought if there's time 
+i'd show you [0.3] er i'd move on to show you [0.2] some research which went 
+beyond that and looked at [0.4] er vocabulary knowledge [0.2] more extensively 
+because [0.2] of course there's more to knowing a word than just being able to 
+recognize it on the page 
+nf1292: the handout er [0.2] that you've got in front of you is from [0.6] a 
+Chinese [0.5] student you can see [0.2] namex it 
+say-, says from namex and namex nineteen-ninety-nine [0.4] er this is a PhD 
+student that we had with us for quite some time she came from mainland China [0.
+5] then she er [0.4] she came here and now she she married an American she's 
+now living in Chicago so [0.4] [laughter] [0.3] er [0.4] and [0.6] she was 
+interested in Chinese students [0.4] er here at namex [0.3] er b-, [1.0] she 
+had to in the end she had to use Hong Kong Chinese students because they were 
+more of them and they were [0.3] there are a lot of Hong Kong Chinese students 
+in the Engineering department [0.5] i don't know if you've noticed them [0.2] 
+but there's lots of them [0.4] and they do have language problems [0.6] and [0.
+6] i-, er from her [1.0] er conversations with these students she got the 
+impression that [0.4] the [0.2] vocabulary [0.4] that they had greatest 
+difficulty with was the technical [0.2] vocabulary [0.6] now that's [0.8] 
+really flying in the face of [0.4] received [0.2] opinion [0.6] because [0.3] 
+it's generally thought that overseas students or [0.2] non-native speakers [0.
+4] have [0.5] problems with what's called subtechnical vocabulary [0.4] that is 
+[0.3] the language 
+of academic discourse words like [0.2] prioritize and analysis and [0.4] 
+distribute [0.2] those kind of words that are used [0.4] right across the range 
+of academic subjects [0.3] it's believed that those are the vocabulary items 
+that are difficult for non-native speakers [0.3] and that the [0.3] truly 
+technical terms don't pose a problem [0.6] that's the belief [0.5] if you read 
+about er [0.4] the vocabulary needs of university students [0.3] that is what 
+you will read [0.5] so the title of our [0.5] paper [0.2] is Are We Teaching 
+The Right Words [0.3] [laugh] [0.3] and i mean i don't know [laughter] [0.3] it 
+er i-, i-, it could be that her [sneeze] research [laughter] 
+sf1293: sorry 
+nf1292: was just a blip in the otherwise er [0.4] but not a great deal of 
+research has been done into this [0.4] she wanted to find out whether [0.2] it 
+was the subtechnical vocabulary or the technical vocabulary [0.2] that was 
+causing difficulties for the Hong Kong engineering students at namex [0.5] so 
+[0.4] she er [0.3] her first [0.6] the first thing that she did was to make a 
+corpus of engineering texts [0.5] er [0.5] some of you [0.3] i hope all of you 
+now have 
+heard about [0.7] er [0.3] corpus design [0.2] a little bit [0.5] we'll be 
+doing we'll be looking at it in the CALL option [0.5] this afternoon [1.0] and 
+[0.6] er those of you who do Use of English will have had a look at the British 
+National Corpus a little bit [0.4] and last week [0.3] i mentioned it as well w-
+, er er with regard to frequency lists because frequency lists are derived from 
+corpora [0.3] so everybody [0.7] feels that they know a bit about [0.7] corpora 
+language corpora [0.2] yeah [0.3] well [0.2] if you want to ask a question like 
+[1.4] do students know [0.7] er [0.5] what kind of words do students know in 
+their engineering programme [0.2] and what kind of words don't students know in 
+their engineering programme [0.3] it's no use taking a general frequency list 
+is it [0.4] because it won't contain [0.2] the words that they er read on their 
+engineering course [0.4] so she had to create her own corpus [0.7] and er [0.2] 
+er c-, how how would she do this any suggestions [1.9] [laugh] [0.9] 
+sf1294: looked at technical books and technical material 
+nf1292: 
+yes [0.2] 
+sf1294: mm 
+nf1292: yeah [0.7] she she actually took the any-, has anyone got any other 
+suggestions as how it might be done that's in fact what she did but has anyone 
+[0.8] got any 
+sf1295: did she use any technical dictionaries [0.7] 
+nf1292: er [0.2] er she didn't because [1.2] it would have been difficult to 
+know whether those were the actual words used [0.3] 
+sf1295: right [0.6] 
+nf1292: er on those particular courses in fact the M-A [0.3] in er [0.3] the M-
+S-C in Engineering at namex is a very complex course it's got [0.3] lots and 
+lots of different modules and [0.3] every student seems to take a different 
+pathway you know you can have so many choices [0.3] so it's a it's like [0.2] y-
+, your M-A but [0.4] more complicated because [0.2] every student might take a 
+different you know a different sets of options [0.3] and so er in fact there's 
+a lot there's a wery wide coverage of subjects [0.2] ranging from business 
+right through to very highly [0.3] sort of technical work on [0.7] s-, sort of 
+physics [0.8] er [0.9] no one's got any more s-, what about [0.3] what 
+sf1296: recording 
+sm1297: mm [0.4] 
+nf1292: yeah that would have been ideal if if we'd [laugh] [0.3] if er if we'd 
+been doing the C-D-ROM project [0.4] then [0.5] we would have be-, we would 
+have had access to recordings of lectures can you [0.4] give the handout to the 
+people who've just come in [0.9] er [0.2] we would have been able to use 
+recordings of lectures and that would have been brilliant [0.3] but at the time 
+i mean [0.6] er y-, [0.5] i must say that [2.4] corpora of this kind are very 
+new and i don't know if anyone has got [0.2] anyone in the world has got a good 
+corpus of [0.4] postgraduate engineering course English [0.3] so [0.3] er it's 
+not as [0.9] sh-, [0.2] it wasn't as though she was competing with other 
+products elsewhere [0.3] er she used textbooks she scanned in engineering 
+textbooks she used the recommended books from [0.4] from the reading list that 
+the students were given [0.7] and so she got her corpus in fact it ended up in 
+[0.3] here it says a hundred-and-ninety-seven- [0.4] thousand 
+i think it ended up as [0.2] larger than that but at the time when [0.4] this 
+experiment was done [0.5] and er [1.0] she [1.1] divided them up into technical 
+words and subtechnical words [0.8] and common words can anyone [0.4] any-, [0.
+2] any idea how she did that [0.6] she wanted to know whether [0.4] which were 
+the words that were causing difficulty [0.3] to these students [0.7] so first 
+of all she had to [0.4] categorize the words [0.2] anyone [0.2] got any 
+suggestions how you might go about doing that [0.7] 
+sf1298: got plastic 
+sm1299: [0.3] 
+sf1298: plastic industry if you divide it into industries or departments of the 
+engineering or 
+nf1292: they were [0.2] all the words [0.2] er [0.2] all the sources were [0.3] 
+er divided up according to modules 
+sf1298: u-huh 
+nf1292: yeah [0.4] but [0.3] so for example there is a module called Polymer 
+Materials Processes and Product 
+sf1298: mm-hmm [0.2] 
+nf1292: i don't know if they actually use that full term it would be [0.3] very 
+you t-, it's 
+a bit of a tongue twister but er [1.0] er there are about twenty modules of 
+that type [1.0] er [0.2] so [0.9] she looked [0.4] when she got m-, made her 
+corpus [0.3] she [0.4] marked up [0.2] the sources so that she knew whether a 
+text belonged to this module or another module [0.3] but that wasn't her 
+question [0.2] she didn't want to know [0.3] er [0.2] is the vocabulary of 
+polyem-, [0.2] polymer materials [laughter] easier than the vocabulary of er [0.
+5] plastics and erosion or something [0.2] she wanted to know whether technical 
+[0.3] vocabulary was more difficult than subtechnical 
+sf1298: but this is technical isn't it here 
+nf1292: this is technical yes 
+sf1298: yeah 
+nf1292: but how did she identify the [0.2] how did she distinguish [0.2] 
+between [0.7] the technical [0.6] the so-called subtechnical [0.4] and the 
+common everyday words because obviously [0.5] er [0.3] a lot of the text in any 
+subject is 
+sm1300: you can test the frequency of words 
+sf1301: mm 
+sm1300: used in a lecture [1.2] 
+nf1292: 
+well she didn't actually use lectures she could ha-, she wou-, she would have 
+done if she'd [0.2] had access to them but sh-, she didn't so she used [0.3] 
+textbooks [0.3] but ho-, how would you how would the frequency what would the 
+frequency tell you [1.0] 
+sm1300: you have to create a database you know er to count in all the words [0.
+5] most frequently used er [0.5] in one text or several texts there [0.6] 
+nf1292: but that would [0.3] er [0.4] i-, [0.3] sh-, [0.3] in fact she did that 
+she looked at frequency but how does that categorize words into technical [0.2] 
+subtechnical [0.6] and common [0.8] because in fact the most frequent words in 
+a in a [0.6] let's say you looked up in a t-, a textbook a chapter about 
+corrosion [0.3] probably corrosion [0.2] is the most frequent word [0.3] but of 
+course we know that corrosion is not a frequent word in the language in general 
+sm1300: you can check that out with research papers you know of course [0.3] in 
+the f-, from the field [0.7] 
+nf1292: 
+oh that would be great if you could but if you could do that you wouldn't 
+actually need to do the research yourself would you 
+sm1300: mm 
+nf1292: this is this is the [0.3] question that faces us all when we're doing 
+research that at at this level at postgraduate level [0.8] unfortunately [0.5] 
+there doesn't exist [0.4] any research which [1.0] says [0.6] which words are 
+[0.8] er technical and which are subtechnical [0.2] or if there does [0.3] then 
+[0.5] namex's research [0.2] is challenging it [0.7] 
+sf1302: did she have to [0.2] er [0.8] ask somebody in the department for some 
+kind of word list [0.5] and then tag them up herself 
+nf1292: yes 
+sf1302: when she devised the [0.3] the corpus 
+nf1292: that's an interesting notion do you think departments have word lists 
+[0.8] 
+sf1303: mm-mm [0.6] 
+nf1292: [laughter] 
+ss: no 
+sf1304: [0.2] 
+nf1292: it's perhaps some do er [0.2] er [0.2] er we don't if if someone came 
+to us at CELTE and said what's 
+your word list [laughter] for er [0.4] technical terms in applied linguistics 
+we'd [0.3] the all that we could say was well there are dictionaries of applied 
+linguistics 
+sf1305: yeah 
+nf1292: we couldn't actually say what we used or what we expect what words we c-
+, [0.4] we could recognize them [0.6] and in that it in in fact she did this [0.
+3] after having identified her technical terms she went back to the lecturers 
+[0.3] and asked them [0.4] to mark up the ones that they thought were most 
+important [0.4] but they couldn't she couldn't have spontaneously asked them to 
+compile a list [0.4] because [0.6] they wouldn't have been able to think i mean 
+she had [0.4] hundreds and hundreds and hundreds of technical terms [0.3] y-, 
+[0.2] her her the the lecturers wouldn't have been able to [0.9] m-, m-, dream 
+those up they wouldn't they wouldn't have remembered [0.5] 
+sf1306: have we got excuse me 
+nf1292: yeah 
+sf1306: have we got a list of the subtechnical words from this module because 
+[0.3] just with the 
+technical words you know doesn't help me [0.2] analyse how she did it [0.2] i 
+mean i know what a polymer is and i know what 
+nf1292: yeah 
+sf1306: is 
+nf1292: i'll i'll talk you through it shall i 
+sf1306: yeah 
+nf1292: er [0.2] er n-, nobody's g-, nobody seems to have any idea how it's 
+done so i'll tell you [laughter] [0.2] er 
+sf1307: 
+nf1292: you you see the problem don't you 
+sf1307: yeah 
+nf1292: she w-, er er sh-, the q-, the research question was [0.6] er [1.1] 
+there's tech-, [0.4] er [0.5] we have a notion we all have a notion i think [0.
+2] that some words are technical [0.7] yeah [0.4] everyone has a feeling for 
+that don't they [0.2] i mean if we look at this if we look at [0.3] 
+thermoplastics i think we'd all agree [0.5] that's not an everyday word [0.6] 
+and it's not a word that's used [0.3] in academic subjects generally [0.4] yep 
+er [0.4] this is the first time this word has ever been used in CELTE [0.3] we 
+we don't use the word thermoplastics does not pop up [0.7] in lectures in er [0.
+5] applied linguistics [0.7] right [0.2] so we sort of feel that that's 
+technical [1.0] er [0.2] we also have a feeling for words which are 
+academic [0.9] but are not technical [0.2] what we'd call subtechnical is that 
+true [0.3] everyone has a feeling for that [0.2] if you look over the page [1.
+4] table two [1.0] you'll see a er er a very small sample of the words that we 
+might think of as being subtechnical 
+sf1308: is this for the same module [0.8] 
+nf1292: er i'll explain in a moment 
+sf1308: oh okay [laugh] [0.6] 
+nf1292: er so it's ensure priority precise fundamental [0.3] those are words 
+which [0.2] you'd expect [0.6] you'd want people studying at university level 
+to know [0.5] yes [0.7] they're useful words for writing assignments [0.3] they 
+pop up in [0.6] er university level textbooks [0.3] they they come up in [0.3] 
+university level lectures [0.5] that's our subtechnical vocabulary [0.3] that 
+is usually the vocabulary that is [0.2] that [0.5] i-, [0.2] er [0.3] E-A-P 
+teachers try to teach [1.2] yeah [0.6] because it's the kind of vocabulary that 
+people don't learn at school [1.7] yeah [0.3] on the whole [0.4] or maybe very 
+at the top level [0.3] of s-, of secondary school [0.8] but it's the kind of 
+vocabulary 
+they need [0.3] for university level study so that's our subtechnical 
+vocabulary [1.6] we we feel this intuitively [0.6] but we want we don't want to 
+just take our corpus and go along and say oh that's technical that's 
+subtechnical that's technical that [0.2] that would be too intuitive [0.2] we 
+can't do that [1.0] we have to have some means of [0.8] defining [0.2] what is 
+a technical term and what is a subtechnical term [0.4] and what is an everyday 
+word [0.6] yeah [0.5] so er [0.2] it's namex isn't it [0.2] 
+sm1300: yeah 
+nf1292: yeah [0.2] so namex's idea of [0.3] going to another research paper 
+that's already done it [0.3] is a great idea but it's not possible [0.3] 
+because nobody else has done it [0.3] people will be coming to this research 
+paper [0.6] in the future [0.5] but [0.4] w-, w-, [0.5] when you d-, when 
+you're doing research you often have to just strike out at-, for something [0.
+3] you can take models of [0.3] er [0.3] previous approaches [0.3] but you 
+can't actually take the data because the data isn't there [1.2] so [0.3] w-, [0.
+2] what er what namex did in actual fact 
+was she took a [0.2] er a five-thousand word frequency list this Thorndike and 
+Lorge [0.3] yeah [0.6] it's a very standard word frequency list [0.3] and she 
+said okay [0.9] we're going to n-, [0.4] knock out [0.3] any word in the corpus 
+that is in Thorndike and le-, Lorge's frequency list of the most frequent five-
+thousand words in the language [0.3] yeah [1.2] why did she do that [0.8] why 
+did she knock those out why did she remove 
+sf1309: er was she doing a process of elimination [0.6] 
+nf1292: yeah but why did she do it 
+sf1309: 'cause they're not technical words [0.5] 
+nf1292: yeah [0.2] they're not technical [0.3] they're not subtechnical [0.6] 
+er and anyway [0.3] the students probably knew all those [0.8] you know you'd 
+expect them to have five-thou a five-thousand word vocabulary at least [0.5] so 
+you can just knock those out [0.3] so what do you do with the remainder [0.2] 
+the remainder presumably are [0.2] more difficult words some of them will be 
+subtechnical [0.4] some of them will be 
+technical [0.2] how do you distinguish between those two [1.5] except intui-, 
+apart from intuitively 
+sf1310: i-, is one actually a product [0.9] er that one's actually a product or 
+er [0.3] a specific process [1.0] 
+nf1292: well if you look at these words i mean [0.2] actually a l-, [0.2] these 
+ones here are [0.4] are nouns but [0.3] they er er [0.3] 
+sf1311: what are you talking about the subtechnical or the technical 
+nf1292: er [0.3] subtechnical or technical i mean they er [0.2] they don't seem 
+sf1311: 
+nf1292: to belong to a particular they could be er of any lexical word class 
+sf1311: so how do we divide the technical 
+nf1292: yeah 
+sf1311: words from the subtechnical words 
+nf1292: from the subtechn-, [0.3] i mean [0.2] it's a truism in i mean all the 
+time in [0.3] vocabulary teaching [0.7] we read about [0.2] 
+technical [0.3] terms we read about [0.2] subtechnical terms [0.2] we read 
+about core vocabulary [0.5] but [0.6] how do you know whether it's technical or 
+subtechnical 
+sm1312: intuitively [laughter] [0.3] 
+nf1292: it's always been done intuitively in the past but it's not very 
+satisfactory is it [0.4] 
+sf1313: would she somehow [0.3] is there any way she would link it to the 
+British National Corpus and [0.9] er [0.8] and use [1.2] 
+nf1292: you [0.2] 
+sf1313: use a way of [0.4] i mean i don't know if the British National Corpus 
+have a [0.5] a way of describing technical and non-technical terms 
+nf1292: no [0.3] no 
+sf1313: no [0.2] 
+nf1292: no [0.4] 
+sf1313: so she's not 
+nf1292: no 
+sf1313: sort of [0.9] 
+nf1292: it's there's no-, there's nothing like that tagged in [0.2] and [0.2] 
+if it was [0.2] how would they have done it 
+sf1313: 
+nf1292: it's the same question as namex [0.2] i mean 
+sf1313: yeah [0.2] 
+nf1292: you're you're saying [0.3] well we'll go back and look at what somebody 
+else has said [0.3] 
+but in fact i-, er [0.2] er with a lot of research you can't do that you have 
+to [0.2] make your own decisions [0.5] it's quite frightening really isn't it 
+when you do research and then you suddenly look round and [0.3] you're the one 
+who's making the decisions you can't just [0.5] say you ju-, can't just report 
+on what somebody else has said [0.5] 
+sf1314: maybe she compared it [0.4] to another course [0.2] and compared the 
+words that were similar [1.0] the technical 
+nf1292: that [0.3] yes 
+sf1314: one would have been the one of the 
+nf1292: the i think we're getting somewhere here aren't we [0.2] i th-, what 
+you're what you seem to be saying is that [1.0] technical words would [0.2] 
+only occur on an engineering course [0.7] 
+sm1315: 
+nf1292: and subtechnical vocabulary [0.2] would also occo-, occur on a course 
+in applied linguistics 
+sm1315: look at the interdisciplinary side [0.3] 
+nf1292: yes 
+sm1315: mm 
+nf1292: yeah [0.4] s-, what what we're actually talking about is the two [0.2] 
+er [0.7] parameters of frequency 
+and range [0.4] aren't we [1.6] er [0.2] subtechnical fa-, er vocabulary [0.6] 
+has a wide range [1.2] technical vocabulary [0.3] has a narrow [0.2] range [1.
+0] as far as frequency [0.3] is concerned [0.9] both sets of vocabulary [0.6] 
+are maybe [0.5] equ-, roughly equally [0.2] frequent [1.3] yeah [0.3] do you 
+see what i mean [0.2] 
+sf1316: mm-hmm 
+nf1292: it [0.3] er to go back to this idea of a frequency count [0.2] if you 
+did if you took a very large corpus like the British National Corpus [0.4] er 
+[0.4] you [0.6] the technical words and the subtechnical words would be equally 
+frequent [0.8] that is not very frequent at all in actual fact [1.1] but [0.2] 
+if you looked at their distribution patterns they would be completely different 
+[0.4] subte-, if you took a range of texts [0.3] and you too-, thought of a 
+graph [0.3] the subtechnical vocabulary would be [0.3] sort of f-, [0.4] f-, [0.
+3] fairly low frequency [0.2] right across a range of texts academic texts [0.
+2] have to be academic texts [0.5] whereas the [0.2] technical vocabulary [0.2] 
+would peak [0.7] in one [0.6] f-, [0.2] field [0.4] and would be virtually non-
+existent in any of the 
+oth-, [0.2] so on the first page things like thermoplastics [0.7] cur-, er 
+occurs [1.2] well b-, let's take polymer because that's a real example [0.4] it 
+has [0.3] it occurs a hundred-and-six times [1.5] but with a range of one so 
+only in one [0.4] only in one text [0.2] only one subject [0.8] right [0.3] er 
+in fact what namex did was take [0.6] i think there were twenty-odd modules and 
+as i say they ranged from physics to [0.2] business [0.5] and she said they it 
+occurs w-, in just one module so only [0.3] one module of the course ever 
+mentions polymer [0.5] but they but [0.3] in the sample of texts she took it 
+occurred a hundred-and-six times [0.7] right [0.3] so [0.2] but if you turn 
+over the page [0.3] a word like ensure [1.0] which is subtechnical [1.2] occurs 
+forty-six times [0.3] but across fifteen [0.2] modules [1.3] okay [1.8] yeah [0.
+2] so that answers namex's question she said are they all a-, are the 
+subtechnical vocabulary from one module [0.8] 
+sf1317: yes 
+nf1292: and no it's not it's from fifteen you know it's from fifteen sixteen 
+eighteen [0.4] seventeen 
+modules [0.4] because [0.4] in fact it would only probably i-, it only occurs 
+two or three times in each of those modules 
+sf1318: how many modules were taken to [0.7] 
+nf1292: well you know i can't [0.2] remember exactly but it must be it must be 
+over [0.6] 
+sf1319: over eighteen 
+sm1320: eighteen 
+nf1292: it must be over eighteen 'cause that's the largest number we have here 
+i've g-, i think it's about twenty- [0.2] one twenty-two different modules i c-,
+i can check for you 
+sf1319: 
+nf1292: if you like [0.6] mm [0.5] 
+sf1321: er for like tests kind of thing [0.9] 
+nf1292: er [0.2] you in you mean their productive use [0.4] 
+sf1321: no 
+nf1292: yeah [0.2] no she [0.4] that's an interesting research question [0.2] 
+and i-, [0.2] er somebody here might decide that they wanted to do just that [0.
+2] i mean [0.3] it would be [0.5] er [0.2] ideally [0.3] it [0.2] if you had 
+lots of time [0.3] it would be very interesting to compare [0.2] receptive and 
+productive [0.3] knowledge [0.4] but she only looked at receptive knowledge she 
+actually looked at [0.4] er [0.4] how [0.6] w-, [0.2] what words students could 
+recognize in actual fact [0.3] as an indicator of how [0.7] er [0.5] how 
+successful they would 
+be in reading their set texts [0.4] so [0.5] i-, the productive language is ma-,
+is rather difficult actually isn't it because [0.3] you can avoid [0.2] using 
+words [0.6] and it then it's impossible to measure whether you know them or not 
+we'll get on to that in just a moment because it is a problem [0.3] if you want 
+to find out whether somebody knows a word by examining their productive output 
+[1.6] you hit problems because just because [0.2] the word isn't in their 
+assignment [0.3] doesn't mean that they couldn't [0.7] write it [0.2] if they 
+wanted to [1.1] so it it is problematic isn't it [0.7] er [0.3] you know [0.3] 
+if we looked [0.4] i-, [0.2] in fact those of you who are in the CALL option [0.
+2] if you'd like to come along this afternoon with [0.5] er a disk full of your 
+own writing [1.0] we can try it out on a concordancer [0.5] and we you can have 
+a frequency list of all the words you use in your assignments if anyone would 
+like to do that [0.2] if who's in the CALL option or [0.6] anyone really if 
+they want to come along er sometime and try it out [0.5] er [0.5] you can 
+actually look at all the words you've 
+produced in your assignments so far this year [0.3] you if you have a corpus of 
+all your assignments [0.4] but [0.3] that's not a sum total of all the words 
+you [0.3] well you could use [0.7] 
+sf1322: i i [0.2] i think that's probably more [0.6] er [0.7] obvious [0.2] 
+with subtechnical than the technical 'cause they can't get away [0.2] with 
+writing about [0.3] plastics if they're going to use these words 
+nf1292: yes 
+sf1322: they can with the subtechnical 
+sf1322: yes yes that's an interesting point 
+sf1322: yeah 
+nf1292: that's an interesting question 
+sf1322: but they can't replace any of these with anything else but they could 
+some [0.2] subtechnical words 
+nf1292: yes [0.4] yes that's true [0.3] er [0.2] that's true [0.4] yes [0.4] 
+it's very i-, you start getting into subjective judgements about 
+sf1322: yes 
+nf1292: the subtechnical words 'cause you're you're start asking yourself well 
+would i-, [0.3] would 
+ensure have been a more appropriate word here and it's difficult to 
+sf1322: mm [0.9] 
+nf1292: okay so [0.3] having [0.5] so she identified o-, [0.2] on the basis of 
+frequency and range [0.5] her technical and her subtechnical [0.3] and having 
+done that [0.3] she [0.5] borrowed the ide-, [0.2] idea from the E-V-S-T [0.2] 
+remember E-, E-V-S-T [0.4] the yes-no vocabulary test [0.5] she just borrowed 
+that idea [0.2] she couldn't use that test because that test is for [0.2] very 
+frequent [0.2] knowledge of very frequent words the first ten-thousand words in 
+English [0.3] so obviously [0.2] words like polymer weren't tested there [0.4] 
+so she had to make her own tests [0.7] and she tested [0.4] everybody [0.3] for 
+[0.5] the technical vocabulary [0.3] in the modules they had taken it wouldn't 
+have been fair to test them on the technical vocabulary of the modules they 
+hadn't taken [0.6] and she tested [0.3] ev-, and everyone got the same test for 
+subtechnical vocabulary because [0.3] the subtechnical vocabulary occurred 
+across all the modules [1.6] er [0.5] and [1.1] you can see [0.4] table seven-
+point-one [0.7] the the numbers are not in order 'cause i just took 
+this from her thesis in actual fact [0.6] you can see down here [0.4] that this 
+is er [0.6] er er a yes-no test [0.3] for technical [0.2] vocabulary [0.4] can 
+anyone [0.3] [laugh] [0.3] recognize which the made-up words are [1.0] i'm not 
+sure if i can actually [1.1] can you see she's made some of those words are 
+made up [0.7] can anyone [1.2] 
+sf1323: is er circumhinge 
+nf1292: i think circumhinge is made up yes [0.7] 
+sm1324: 
+nf1292: [laugh] but you cannot be sure can you 
+ss: 
+nf1292: because there's a very funny 
+sf1325: i i i would say that [0.4] if somebody said to me what's a circumhinge 
+i could imagine on a car or a piece of machinery whatever 
+nf1292: yes yes [0.4] yeah [0.2] it's difficult to make up words isn't it [0.5] 
+it is difficult [0.4] er and [0.3] that's that could be a criticism of this 
+type of test because [0.6] when you see a a made-up word [0.2] you're being 
+asked whether you recognize it and you could say well [0.2] you know i can 
+imagine what it might be so yes 
+sf1325: mm 
+nf1292: 
+i recognize it [0.3] she used the same [0.2] system of scoring as the E-V-S-T 
+test did [0.2] in other words if someone [0.2] i think a [0.2] i think 
+circumhinge is made up [0.4] if someone said that they recognized that word [0.
+4] then [0.4] they would lose [0.3] marks on their overall score [0.2] because 
+it's made up [0.5] does that make sense to everybody [0.4] yeah [0.2] 
+sf1325: yes 
+nf1292: er [0.4] and you can see at the bottom [0.4] what her scores [0.2] came 
+to [1.2] what what do we conclude anyone [0.2] looking at that bottom 
+comparison of subtechnical and technical scores [0.5] c-, [0.2] can [0.2] can 
+anyone volunteer what conclusion she reached [0.2] on that 
+sf1326: that [0.5] what well you always thought is [0.2] it's completely 
+opposite [0.6] to what her results show in that students [1.0] don't know as 
+many technical terms as they do subtechnical terms and we spend more time [0.5] 
+teaching subtechnical terms when we really shouldn't be [0.2] 
+nf1292: yeah 
+sf1326: if the results 
+nf1292: yes [0.2] yes [0.3] not a popular [0.4] er [laughter] 
+sf1326: no but 
+nf1292: 
+not a popular finding i don't know whether [0.3] anyone will follow this up [0.
+9] er i-, of course E-A-P teachers don't like it because we don't know how to 
+teach words like er [0.2] prop-, polypropylene [0.3] [laughter] [0.5] er and [0.
+5] i-, i-, [1.9] it also engineering teachers don't lecturers don't like it 
+because [0.2] they've spent i-, i mean the this test took place towards the end 
+of their e-, M-S-C programme [0.7] in fact at the end of the taught course [0.
+5] so it's a bit worrying for the engineering lecturers [0.3] when when [0.3] 
+we passed back the scores to them [0.3] they were a bit taken aback [0.6] 
+because they said oh well you can't actually [0.2] pass this module without 
+recognizing the word polypropylene [0.4] and yet there were students who didn't 
+recognize it [0.3] and [0.6] had passed [0.2] 
+sf1327: i i think it's very interesting for teachers who are going into the 
+companies to teach [0.3] 
+nf1292: 
+mm 
+sf1327: the people [0.2] who are doing it at the time 
+nf1292: mm 
+sf1327: 'cause [0.3] we do tend to concentrate [0.7] on the subtechnical 
+because they say [0.3] oh the technical terms are international we know them 
+but [0.3] obviously [0.3] that doesn't follow so i i think 
+nf1292: well it [0.2] it depends i mean it it could be true for your students 
+in your [0.2] in that firm 
+sf1327: yes [0.5] 
+nf1292: er y-, it's [0.2] it would be interesting to find out i mean if you 
+could do that kind of research [0.6] that would be very i mean it'd be 
+interesting for a a dissertation [0.4] 
+sf1327: yeah [0.4] 
+nf1292: you know if [0.5] course you'd have to get your corpus that's the thing 
+sf1327: right [0.2] 
+nf1292: er [0.3] but nowaday-, it's getting easier and easier to make corpora 
+for w-, because there's it's easier to scan in and [0.4] er we have more access 
+to digital [0.5] recordings and so on [0.8] er [2.8] the next one i 
+wanted to show you [0.2] 'cause [0.2] m-, 
+sf1328: sorry i was just going to ask er were there any replies to these 
+results [0.2] because if [0.2] 
+nf1292: er 
+sf1328: i mean if they are [0.3] 
+nf1292: we [0.2] er 
+sf1328: correct then [0.2] then it's [0.3] you know it's quite [0.5] 
+fundamentally important 
+nf1292: well we didn't want to press it too hard on the Engineering department 
+in case they er [0.3] they got angry but [0.2] we d-, [laughter] we did send 
+the results out to er the Engineering department and [0.2] g-, we recorded some 
+responses from engineering lecturers [0.3] and they said [1.5] students ought 
+to know [0.2] [laughter] these words [0.4] they were listening in class [laugh] 
+[0.4] they didn't read the they obviously didn't read the set text [0.6] 
+[laugh] 
+sf1328: but i mean other responses from other academics in the field i mean has 
+anybody sort of s-, [0.5] said well you know 
+nf1292: well in actual fact this o-, this paper was given at a conference a few 
+years back and er [0.6] th-, but but because of the slow pace of things in [0.
+5] publishing [0.4] and [0.3] just general [0.7] apathy 
+[0.2] 
+sf1328: published 
+nf1292: er the the c-, the conference collection the p-, conference proceedings 
+are no-, are are haven't actually been published yet they're about to [0.4] 
+they're about to come out [1.0] but i don't know what response it will receive 
+er er you know things take a long time to trickle through and maybe it will 
+never trickle through and maybe it will just be drop [0.3] a drop in the ocean 
+never [0.3] never be heard of again [1.3] these [1.1] you know [0.7] it's [0.8] 
+so there you are that's that's the fate of research er don't know if you if 
+you're here for research methodology [0.3] you think you've discovered 
+something wonderful [0.2] you get it published somewhere [0.2] and no one ever 
+reads it and no one ever hears it [laughter] [0.2] or the opposite could happen 
+you could be made you could become famous on the strength of it [1.1] [laugh] 
+[0.3] we just 
+don't know what's w-, w-, what response it does take a long time my [0.4] er w-,
+when i did my PhD the s-, my supervisor said [0.2] allow a ten year [0.5] cir-,
+circle before [0.3] your [0.2] before what you have [0.2] actually [0.6] er 
+this is in the field of applied linguistics [0.3] from the time when you 
+conduct the experiment [0.2] to the time when people actually come up to you 
+and say [0.4] oh you know i've cited your work in my paper [0.4] allow a ten 
+year turnaround time [0.9] because you have to think of it [0.3] then you write 
+it up [0.6] then you get it published that's about three or four years [0.3] 
+and then [0.2] people have to find it [0.2] read it [0.2] think about it [0.2] 
+think about their own experimental designs [0.4] and then they publish and 
+people are alerted to yours and it [0.2] it [0.3] it really is quite a slow 
+process [1.8] shouldn't be should it but that but research is [1.0] so 
+sometimes when they announce [0.2] on er on the radio or on television that 
+there's been a new medical breakthrough [0.8] er [0.9] don't believe that it 
+happened that day [0.3] [laughter] [0.3] 
+it it probably [0.4] someone started thinking about it ten years previously [0.
+3] and they're just [0.5] it's been through a very slow process of being 
+presented at conferences discussed [0.5] published in its [0.5] in a a small 
+form in a journal [0.3] then going back and [0.3] to revision somebody else has 
+picked it up [0.3] it only appears on the news that day because they're short 
+of news [0.7] not because that's the day when [laughter] everyone discovered 
+the truth [0.4] er [laughter] [0.9] er er [0.9] here's another qu-, quick one 
+this is this i thought you'd be interested in this because it's er [0.3] it's 
+from a student who actually did his M-A last he did his dissertation last 
+summer [0.2] who did the M-A last year Alistair Van Moere [0.8] and er [0.5] he 
+was interested [0.3] in [1.0] completely different no-, not E-S-P at all he was 
+interested in children [0.6] er [0.2] and [0.4] how children learn vocabulary 
+[0.4] from reading [0.7] and [0.2] his [0.3] er thesis was [0.4] that if you 
+could [0.2] give [0.4] children [0.3] books [0.5] with glosses [0.2] in the 
+margin 
+to explain difficult words [0.6] they would learn the vocabulary in these books 
+much more easily [0.2] than if you [0.7] er [0.3] i-, they would learn 
+vocabulary much more easily than if you either gave them er [0.4] a s-, [0.3] a 
+simplified reader we discussed a little bit simplified readers last week didn't 
+we [0.5] or if you gave them [0.2] the original work without a gloss [0.8] 
+right [0.2] so we've got [0.2] normally we've got two choices when we're giving 
+these these children were aged about sixteen seventeen [0.3] and they were at 
+an international school in Britain [0.4] preparing for exams [0.2] with i-, 
+with a view to going on to British universities [0.5] and [0.5] they were being 
+set the book Animal Farm [0.4] to read [1.1] and er [0.5] there were two 
+choices you either gave them the simplified reader [0.5] or you gave them the 
+original [0.4] and Alistair said well if we could [0.5] if if publishers would 
+[0.2] start producing [0.3] versions of these books with a gloss [0.6] he 
+thought [0.5] that would be much more beneficial [0.2] for this type of student 
+[0.5] so [0.3] he wanted to find out whether people 
+with a who read the version with a gloss [0.2] learned more vocabulary than 
+people who read the original [0.8] but first of all he had to find out which 
+words they did or didn't know [0.3] in Animal Farm [0.4] so he took a chapter 
+of Animal Farm [0.4] took all the words this is just the first page of his test 
+[0.6] took all the er [0.5] took all the words [0.5] that he thought were 
+difficult [0.5] i think he probably [0.2] m-, made reference to a frequency 
+list for this [0.7] can't remember [0.5] and er [0.5] listed them i-, you see 
+this this [0.7] i think he probably in order of occurrence [0.3] in the text [0.
+5] and he they the students had to say whether they recognized them yes or no 
+[0.8] so you see this is just the first stage in the experimental design [0.7] 
+once he had found out [0.2] which words nobody knew [1.3] then he ha-, he 
+obviously couldn't gloss all the words in the t-, all the difficult words in 
+the text there were too many there would have been [0.3] hundreds of glosses 
+there would have been more gloss than text [0.4] so he [0.3] just [0.3] 
+t-, [0.2] picked out those words which none of the students [0.5] that he was 
+looking at knew [0.8] and he glossed those [0.8] and this is what his paper 
+looked like [0.2] he didn't he didn't use er made-up words [0.9] because [0.4] 
+it wasn't the students understood it wasn't a test they weren't being judged in 
+any way [0.6] didn't think it was ne-, i don't think he used any made-up words 
+[0.5] this is the text [0.3] er er [0.3] this is the first page of the ch-, of 
+er chapter one of Animal Farm [0.4] these are the glosses he put in the margin 
+[0.4] he gave half the subjects [0.4] er [0.8] this version [0.6] with the 
+glosses [0.5] and he gave the other half [0.6] er the same text without any 
+glosses [1.5] yeah [0.9] and they read it [0.5] and then afterwards he gave 
+them a series of er [0.6] tests [0.6] to see [1.1] er [0.6] to see w-, whe-, w-,
+how many of those words they'd learned [1.3] er [0.4] and some some of the 
+tests were of this type where they had to [0.3] place [0.4] er [0.3] the w-, [0.
+2] the glossed words back into [0.2] the gapped text [0.8] er [0.5] but we 
+argued we said well it's not really just about 
+learning those words is it [0.2] it's also about general comprehension [0.3] so 
+he tested them for general comprehension as well er er [0.6] he asked them 
+things like er [0.4] the pig making a speech is Old Major how does he feel 
+about man [0.4] you know [0.2] so those were sort of general comprehension 
+questions on the basis of the first chapter [0.7] right [0.5] and what do you 
+think the results were [2.2] 
+sf1329: [0.3] well the [0.2] the students who had the gloss had a higher rate 
+of [1.0] higher understanding than the students who hadn't 
+nf1292: yes 
+sf1329: the gloss 
+nf1292: yes [0.3] yeah [0.4] they l-, they remembered more words [0.9] they and 
+they [0.6] could answer the comprehension better [0.4] so it was all part of 
+his argument it's a nice piece of research isn't it because i don't think 
+there's anything [0.4] any other existing piece of research that's that shows 
+this [0.2] although there 
+has been an a tremendous amount of research into [0.5] er reading and 
+vocabulary [0.4] i don't think there's been anything quite like that before [0.
+4] 
+sf1330: they remembered and understood [0.5] 
+nf1292: yes yes [0.2] they scored better all round [0.2] they scored better on 
+comprehension [0.3] and they scored better on [0.2] being b-, able to place 
+those words in the text [0.7] and and they actually at one they are also asked 
+here [0.4] to write it er the meanings [0.3] so this c-, idea of learning from 
+context w-, we all know that [0.2] you can pick up words from context but [0.4] 
+it's [0.2] as we said at the beginning of the last lecture do you remember [0.
+5] how many words a native speaker child learns [0.6] per day for all of their 
+[0.2] childhood [0.5] we have to try and speed up that process don't we there 
+just isn't time [0.4] to let people learn from context [0.6] there wouldn't [0.
+2] you know 'cause 
+they've got so many words to make up if they're going to compete [0.5] with 
+native speakers [1.1] er [2.0] okay i'll just give ha-, [0.2] i'll give you one 
+more handout [1.9] or two more handouts [2.4] yeah [1.7] so far [0.3] we've 
+just been thinking about [0.4] in fact i'll take can i have one [5.6] er so far 
+i've just been talking about testing people on word recognition [0.7] well [0.
+2] just just started talking about [0.4] but many of you would be unhappy with 
+that in fact er [0.4] who was it who was saying is it productive [0.7] was it y-
+, was it namex or yeah [0.4] yes [0.2] i mean that that's a whole new question 
+isn't it [0.3] this there's [0.6] er be-, er it's one thing in being able to 
+recognize a word [0.3] it's quite another to really be able to say you know [0.
+3] that word [0.8] in fact [0.9] er [0.2] it's a cline like everything is in 
+applied linguistics isn't it [0.3] it's there's not just a yes or a no answer 
+to whether you know a word [0.4] er [0.2] all of us in our first languages too 
+[0.5] we know words words to 
+varying extents [0.3] s-, [0.2] on the first on one side you've got knowing a 
+word haven't you [0.6] 
+sf1331: mm 
+nf1292: yeah [0.4] and that's just if we'd had time i would have asked you what 
+you thought knowing a word meant but there isn't time [0.7] so [0.4] just have 
+a quick look at that [1.2] er [1.7] you may be able to think of more aspects to 
+knowing a word than are listed here [5.3] so there are many many [1.4] there 
+are many many er [1.8] aspects to knowing a word [0.6] and [0.6] there are many 
+words in English which i [0.7] can recognize [0.3] but i can't [0.2] answer all 
+those questions about and i'm sure that's true for everyone here for their 
+first language [0.4] as well as any other languages they may know [1.9] in fact 
+i heard on the radio they were interviewing someone [0.5] and they said [0.3] y-
+, [0.2] he said oh i w-, i we-, i studied languages [0.4] and the interviewer 
+said [0.3] well did you learn them [laugh] [0.2] i thought what a stupid 
+question because [0.2] [laughter] [0.3] i mean the you don't just sort of say 
+oh i've learned it now that's the end [laughter] [0.3] because everything is 
+ongoing 
+isn't it you're [0.3] you're learning more and more all the time in ev-, in 
+every language [0.6] er [2.2] so [0.3] [1.6] over the page [0.5] you've got [0.
+4] a suggestion for an interview format [0.4] if you were trying to find out [0.
+3] how much word knowledge [0.6] an interviewee had [0.7] yeah [0.7] and you 
+can see it's a much more complex business than simply saying do you recognize 
+this word yes no [1.0] and if as namex was suggesting you wanted to find out 
+about the productive knowledge [0.3] of [0.3] for example namex namex's 
+subjects [0.5] in the Engineering department [0.2] you'd have to [0.8] y-, 
+ideally [0.3] you'd get them all [0.3] in sh-, she [0.2] she er she asked 
+hundreds [0.4] of students i mean it would ta-, be very long [0.3] drawn out 
+process wouldn't it it er [0.2] hundreds of words for hundreds of students 
+you'd [0.4] you know you'd be take years and years and years but that i mean 
+that would be the ideal [0.9] and so just before we stop [0.3] does er anyone 
+got any questions on this do you do you understand [0.2] it in principle [2.1] 
+someone [0.6] o-, here [0.2] might be interested in doing er [0.7] a 
+piece of research of this nature [0.3] with a group of subjects for their 
+dissertation [1.0] no i mean [0.2] you'd have [0.3] on a small scale that 
+certainly would be an interesting experiment wouldn't it [0.3] to find out [0.
+4] in depth voco-, vocabulary knowledge for a small number of subjects 
+following this sort of model [2.1] er [1.3] i'll just hand i'll give you one 
+more [0.6] handout [1.1] because [1.0] er this is an experiment [0.2] f-, [0.6] 
+someone called er corso-, [0.4] i can't remember his first name [1.0] David [0.
+3] David Corson [1.1] er [0.6] who was [0.2] he wasn't working with er [1.1] he 
+wasn't working with [0.8] non-native speakers David Corson writes about [0.2] 
+native speakers of English [0.6] and he has [0.4] a kind of bee in his bonnet 
+about class [0.9] er i-, [0.3] and he argues that [2.2] children whose [0.3] 
+families [0.2] don't belong to the class where [0.4] Greek and Latin [0.2] was 
+taught in the past [0.5] are disadvantaged throughout their educational lives 
+[0.4] and that is why he says in [0.4] English speaking countries [0.2] lower 
+class working class children [0.4] don't succeed [0.4] academically on the 
+whole [0.7] this this is his thesis [0.6] he says [0.2] the real reason is 
+because they don't have [0.2] subtechnical vocabulary the kind of vocabulary we 
+saw on namex's list words like elude and what were they [0.5] elude and 
+sf1332: [0.9] 
+nf1292: can you remember 
+ss: ensure 
+nf1292: ensure it wasn't elude was it ensure [0.6] but those kind of words he 
+said [0.3] if you come from a kind of home where for generations your parents 
+and your grandparents and so on [0.3] ha-, have had access to gr-, Greco-Latin 
+words classical languages [0.4] then you learn these words in childhood [0.5] 
+but if you come from a background where your parents and your grandparents were 
+not educated in this tradition [0.3] you don't lea-, learn these words at home 
+[0.3] and therefore [0.2] you can't [0.3] succeed very at [0.5] at [1.0] in 
+your exams at upper secondary and a-, a-, at university [0.3] and so [0.3] 
+that's that's his argument now it's a very contentious one [0.4] but he has 
+this kind of [0.2] he ha-, you you see on the right-hand side column [0.6] 
+he's got er [1.3] i-, i-, they're called G-L words Greco-Latin words right 
+words from so you Greeks will be fine you [0.2] [laughter] you'll you'll you 
+haven't got any problems at all in fact on the whole [0.3] non-native speakers 
+don't have problems with this because they learn Greco-Latin words just as [0.
+3] quickly as Anglo-Saxon words [0.3] it's native speakers who speak [1.8] 
+without these words in the home that have the problems 
+sf1333: but doesn't doesn't that [0.4] contradict then exactly what he's [0.4] 
+he's saying [1.2] 
+nf1292: n-, [0.3] er well he's not talking about non-native speakers [0.2] he's 
+talking about native speakers 
+sf1333: right 
+nf1292: he's saying [0.4] if you come from [0.2] a working class family where 
+[0.3] nobody uses words like [0.9] er [0.2] what were the words [laughter] 
+ss: ensure 
+nf1292: ensure 
+ss: fundamental [0.3] 
+nf1292: fundamental [0.3] y-, you know [0.3] er [0.3] then [1.6] your family 
+won't use those words because n-, [0.4] they didn't 
+go to grammar school [0.5] they didn't study Latin and Greek and so on and 
+neither did your grandparents [0.2] and that means that you [0.3] you you [0.2] 
+you come into secondary and tertiary education without those words [0.4] and 
+you can't write your assignments [0.4] well [0.6] and [0.2] you can't express 
+[0.5] er [0.4] abstract thought [0.5] very successfully because these are the 
+words that carry [0.3] the argument is that these are the words that carry 
+abstract [0.3] thought [0.4] hypotheses [0.8] you know [0.3] mental processes 
+[0.7] right very difficult words to teach [0.5] you know how do you teach a 
+word like ensure it's much more difficult than words like [0.4] well polymer [0.
+5] polymer's an easier word to teach than ensure isn't it i think [1.0] if i 
+knew what it was [0.4] er [laughter] [0.6] er [1.4] is you can see here w-, 
+here's an argument er er on the [0.2] r-, right-hand column he's saying that [0.
+4] in philosophy of education forty per cent of words how he reaches these 
+figures i'm not sure [0.4] are oh it's a hundred a random hashes
+sm1334: yeah 
+nf1292: of a hundred consecutive words that's right [0.3] forty per cent of the 
+words were Greco-Latin [0.4] so if you're a working class kid who decides they 
+want to do philosophy of education according to David Corson [0.2] you don't 
+stand a chance [1.0] er [0.9] right but children's fiction has none [0.7] ages 
+five to six [1.1] okay [0.3] and what he did was [0.3] he w-, he tried to find 
+out the productive knowledge of the children [0.4] by going out and doing a bit 
+of this oral [0.6] interviewing [0.6] and [0.3] the words [0.2] er in table one 
+[2.0] i-, he wanted to find out whether they could produce sentences [0.2] with 
+divide in them for example [0.3] and he gave them [1.0] two words one was the 
+word he was testing and the other was the kind of er [0.3] the carrier word [0.
+3] so he said make a sentence using divide and fifty [1.6] and on the basis of 
+what they said he was able to judge whether they [0.3] had productive knowledge 
+of that gre-, [0.5] Greco-Latin word [0.5] very time-consuming [0.4] rather 
+subjective [0.8] when you when you er [0.5] er look at research method-, [0.2] 
+methods for quantitative [0.5] st-, er [0.3] 
+qualitative sorry studies [0.5] you will hear about [1.1] the problems with [0.
+2] ensuring the validity of qualitative data [0.2] you you know you'd have to 
+have [0.4] a second marker or possibly a third marker [0.3] and you'd have to 
+compare [0.3] to see whether you agree this a complex process it's [0.3] 
+sf1335: yes [0.6] 
+nf1292: but that way you're sort of building up a picture of productive 
+knowledge it's much more difficult than for pres-, receptive i think [2.3] okay 
+i'll have to stop there then

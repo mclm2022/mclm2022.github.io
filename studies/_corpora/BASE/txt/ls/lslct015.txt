@@ -1,0 +1,462 @@
+nf0273: okay you might notice a slight difference between [0.2] er this week 
+and last week that's because i am not namex [0.8] i'm namex i'm a lecturer in 
+medical statistics and i'm doing today's lecture and the next Sources of 
+Variation lecture [1.7] er first of all a couple of things i realize you've got 
+a lecture at quarter past one [0.5] so i will be trying to keep to time [0.2] 
+er [0.7] bear with me [0.7] the other thing to say [0.2] is that [0.2] the er 
+guest lecture from namex [0.2] is being swapped with Sources of Variation Three 
+[0.8] so namex was on the twenty-seventh and sorc-, Sources of Variation was on 
+the twentieth [0.4] they're now going to be swapped so namex will be on the 
+twentieth and Sources of Variation Three will be on the twenty-seventh [2.3] 
+okay so [0.5] sources of variation [1.9] hurray [0.4] the slide changed over [1.
+0] the informal [0.7] objectives of this lecture are to enable you to 
+distinguish between [0.2] observed data and underlying tendencies which give 
+rise to observed data [0.9] and to understand the concept of variation 
+and randomness [1.5] er you have some examples in your lecture notes on page a 
+hundred [0.6] er for example we might observe the proportion of people with 
+diabetes in a sample [0.6] and that would give us an idea of the underlying 
+prev-, prevalence of diabetes in a particular population [1.7] another example 
+would be breast cancer survival we might observe the proportion surviving who 
+were treated with tamoxifen [0.6] whereas what we're actually interested in is 
+the effect of survival on treating everybody [0.2] with tamoxifen [0.4] if they 
+have breast cancer [2.7] er [0.5] so that gives you an idea [0.6] quickly of 
+the difference between observed data and underlying tendencies [0.3] which give 
+rise to data [0.8] objective two of understanding concepts of sources of 
+variation and randomness [0.6] i would hope that [0.2] most of us have a [0.7] 
+fairly good appreciation that we're all different without really thinking about 
+it [1.1] the reason this kind of thing is important to take into account [0.2] 
+er [0.5] is basically when we're planning for er [0.9] predicting for 
+the future say for example for providing flu jabs [1.2] we can observe the 
+number of cases of flu per year in the last five years [0.7] and we wouldn't be 
+surprised [0.2] to see that those numbers in the last five years were different 
+year on year [0.7] wouldn't surprise us at all [0.9] er we we should all be [0.
+6] fairly fairly competent at realizing that [0.6] the number of cases of flu 
+would depend on various factors in a very complex manner [0.5] and simply 
+because of the [0.2] the fact that we're all different anyway [0.4] there'd be 
+a natural variation [0.2] component in that [5.5] so [0.9] the formal 
+objectives of this lecture [0.4] [sniff] [0.3] is first that you should be able 
+to distinguish between observed epidemiological quantities such as incidence 
+prevalence incident rate ratio things like that [0.7] and their true or 
+underlying values [1.5] and you ought to be able to discuss how observed 
+epidemiological quantities depart from true values [0.2] because of random 
+variation [1.5] unless we have large resources and can measure absolutely 
+everybody [0.2] in a particular population we're interested in [0.7] we'll only 
+ever see [0.2] an observed proportion of people with diabetes say [1.6] and 
+that may or may not be equal to the true prevalence of diabetes in our sa-, in 
+our population [0.8] but if we selected our sample properly [0.3] then that 
+ought to give us a fairly good idea [0.2] of the basic prevalence of diabetes 
+in the population [1.7] but that basic idea will vary [0.2] because of natural 
+variation [0.7] so consequently we want to be able to say something about [0.4] 
+how our basic idea of prevalence [0.4] will vary in reality [0.7] an idea of 
+the scale of the variation will help us with that [4.8] and statistical theory 
+will help us to do that [0.7] objective three we want to be able to describe 
+how observed values help us towards a knowledge of the true values [0.9] and 
+there are two basic statistical ways of doing that certainly in this module at 
+least [0.8] the first is to test a hypothesis about a 
+true value [0.6] and that's what we'll be dealing with in this lecture [0.9] 
+and the second is to calculate a range [0.2] in which that true value [0.3] 
+probably lies [3.2] so [0.7] today we'll just be talking about hypothesis tests 
+[1.7] just have a quick drink [4.5] so say we're interested for some reason [0.
+7] in the probability of getting a head when we flip a coin [1.3] so the 
+obvious thing to do do a quick experiment flip the coin ten times [0.7] see 
+what happens [0.8] suppose we observe seven heads and three tails [1.0] then 
+informally we could m-, draw several conclusions from that observation given 
+our prior belief [0.2] about [0.3] the probability of the coin [0.4] falling on 
+heads [1.8] first of all [0.4] we might suspect that our data was wrong [0.3] 
+it happens [0.7] er censuses get miscounted for [0.2] various reasons [1.5] er 
+[0.2] another thing could be that we could have artefact which [0.7] isn't very 
+easy to illustrate in the example of tossing a coin so i'll give you another 
+one [1.0] if we look at how er deaths from diabetes change with time i believe 
+we were discussing that in a [0.3] couple of lectures ago [1.6] one of the 
+things that altered [0.2] the number of deaths [0.2] o-, from diabetes with 
+time [0.5] was altering the definition of diabetes [1.6] that had an er an 
+effect on the conclusions that we made about the change in deaths [0.6] and 
+that is generally known as artefact [2.1] er another conclusion we might draw 
+is it's just chance [0.2] the coin's fair we're expecting five heads we've seen 
+seven [0.3] it's not all that surprising [0.6] we just put it down to chance 
+and [0.4] conclude that our coin is fair [1.5] on the other hand if we're 
+feeling particularly cynical [0.5] we might conclude that the coin is biased [0.
+5] it's difficult to tell seven is that different from five or not [1.2] we 
+don't know [7.1] so that provides a simple example [0.3] of what we observe not 
+being exactly what we expected [0.2] if we toss a coin ten times we expect five 
+heads given that it's fair [0.7] but we observe seven [1.5] the coin will tend 
+to produce an equal number of heads and an equal number of tails [0.8] but [0.
+2] we're not surprised when 
+random variation means that we observe something slightly different [1.3] and 
+[0.4] similarly it's no surprising that the health of people varies [0.7] on 
+average four cases of meningitis per month in Leicester some some months we 
+observe ten other months we observe none [0.7] nobody's terribly surprised 
+about that [1.4] again smokers tend to be less healthy than non-smokers but [0.
+4] if we pick a small sample [0.5] then we might for some reason have ended up 
+picking healthy smokers [0.4] just down to chance [6.4] so tendency versus 
+observations [1.5] what we practically want to know [0.6] [sniff] [0.8] is [0.
+3] what is going to happen in the future [0.4] what are the underlying 
+tendencies of health [0.3] in our population [1.5] for example er providing for 
+our flu jabs we want to plan [0.7] to buy enough flu jabs [0.2] to vaccinate at 
+least most people at risk in our population [1.1] we need the underlying 
+tendency of that population [0.2] to [0.2] being at risk at flu [0.8] of flu [0.
+3] from flu [0.2] even [1.1] so we might take the number of [0.2] er cases of 
+flu [0.2] in the previous years [1.0] and logically we might also use any other 
+information that we know to have a bearing on the number of cases of flu [0.2] 
+that we observe so [0.4] temperature would be an obvious one [0.9] er [0.3] the 
+underlying health of the general population [0.7] but that's slightly more 
+difficult to to quantify [0.9] so we would take what we've observed in the past 
+[0.5] and what we know to have a bearing [0.2] on our probability of someone 
+having flu [0.6] and try and use it to predict the future [4.3] so [1.0] some 
+further examples of [0.6] attempts [0.3] er of of the differences between [0.4] 
+the underlying tendency being related to the observed data [0.9] if we're 
+interesteded for some bizarre artificial reason of the proportion of red 
+marbles in a bag with a thousand red and black ones [0.8] then we could count 
+all thousand marbles [0.2] and [0.3] we would know exactly [0.2] what the 
+underlying proportion was [1.1] our underlying tendency [0.9] er [0.5] but 
+obviously we don't have all day and 
+we're not particularly interested in counting marbles [0.4] so we could just 
+take a sample [0.3] and measure the proportion of reds [0.4] in [0.2] that 
+sample that we pick at random [0.9] if we pick the sample sufficiently well [0.
+5] and sufficiently large we'll have a fairly good idea [0.2] of what the 
+proportion of reds is in the bag [1.2] similarly we can't ask everybody how 
+they voted in the general election [0.8] but [0.4] we ought to be intuitively 
+[0.2] er confident [0.4] that asking a thousand people how they voted assuming 
+they didn't lie to us [0.7] er that we have a fairly good idea [0.2] of the 
+result of the election [1.3] and again [0.5] we're interested in the total 
+number of Leicester diabetic patients who have foot problems [0.7] so instead 
+of asking all Leicester diabetic pr-, patients how their feet are [0.4] we 
+would just take er a random sample we don't have all day [0.4] we don't have 
+infinite time we don't have infinite money [3.5] so if we have an idea of the 
+underlying tendency of diabetes in a population [0.6] then 
+we can predict [0.2] what we may reasonably observe [0.2] using probability 
+theory [3.0] a further example [0.4] er working out the provision of neonatal 
+intensive care cots [1.5] we know from the past [0.3] data [0.6] that the true 
+requirement in nineteen-ninety-two [0.7] was about one cot per thousand live 
+births per year [1.7] and we also know from the past [0.5] that we observe 
+about twelve-thousand live births per year [0.8] so on average we'll need about 
+twelve-thousand neonatal intensive cots per year [0.6] that's the true tendency 
+[0.7] we've taken a lot of data [0.8] and [0.4] measured what we're interested 
+in [0.9] and that's what we've ended up [0.6] with [1.2] however just knowing 
+the average [0.5] isn't enough we need to know an idea of how it all varies [1.
+0] the er slide shows the [0.5] er [0.8] requirement of neonatal intensive care 
+[0.3] costs in the past [0.7] you can see that it varies quite a lot [1.0] it 
+gives us an idea of the variation in the need for a neo-, neonatal intensive 
+care cots in the past [0.8] this is what we've observed in the past not where 
+it what we're [0.4] 
+expecting in the future yet [2.0] and it has quite a large range [0.2] er [0.2] 
+we've in the past we've required between two and twenty-four neonatal intensive 
+care cots [1.2] and most of the time [0.2] we needed between about eight and 
+sixteen cots [1.1] so if we provided twelve if we'd just gone with the average 
+and ignored the variation [0.5] then quite a lot of the time [0.4] we'd be up 
+to about four cots short [1.6] so we need an appreciation of the variation [2.
+8] [sniff] [1.0] slide eleven [0.2] a slight repeat [1.4] neonatal intensive 
+care cots we often observe eight to six c-, er [0.2] eight to sixteen cots [0.
+2] being used [0.8] and on one day per month more having done some [0.2] mildly 
+complex calculations using the data in that histogram [1.4] we needed nineteen 
+or more cots [0.8] and on one per cent of the days we needed twenty-one [0.5] 
+er [0.5] cots [0.7] hardly ever did we need more than twenty-four [1.7] so 
+logically we provided [0.2] we w-, we looked at [0.2] that data and thought 
+right let's provide nineteen cots [0.7] and on average about twelve were 
+occupied so we had sixty-three per 
+cent [0.4] of those nineteen cots occupied [0.2] usually [1.7] now that was 
+taking [0.4] data from our true distribution [0.4] which we'd observed over a 
+certain period of time in the past [0.8] and used it to er work out what we 
+would expect to see [1.4] but in practice what we want to do is entirely the 
+other way round we want to observe something [0.3] and make an inference about 
+what we expect to see in the future [1.3] we want to reverse the direction of 
+inference from the observed distribution [0.4] to the true tendency [1.8] given 
+what we observe what we might [0.2] what might we expect to happen [0.2] in the 
+future [5.4] and hypothesis tests [0.2] allows us to do this in a formal way [1.
+5] we can take the observed data [0.4] and make an objective statement about [0.
+4] the er true situation [0.5] we can use we can describe how the observed 
+values will help us towards a knowledge of the true values by testing our 
+hypothesis [7.1] so formally [0.4] a hypothesis is a statement [0.4] that an 
+underlying tendency of scientific interest [0.3] takes a particular 
+quantitative value [3.0] we have 
+to state our beliefs in a quantitative way [0.3] in order to use [0.2] 
+quantitative methods [1.5] and on the slide are some examples of hypotheses 
+that we might test [0.9] so first of all we might say that the coin is fair but 
+to put that in a quantitative way [0.4] we have to put a value on the 
+probability of a head [1.3] so if the coin is fair [0.3] we'd expect to see er 
+heads about half the time [0.7] and that is equivalent to saying that the 
+probability of a head is a half [2.0] if we want to say that a new drug is no 
+better than a standard treatment then we would compare the survival rates by 
+calculating the ratio [1.1] if the new drug is no better then the survival 
+rates we would expect to be equal and consequently the ratio would be equal to 
+one [2.1] and again [0.2] er [0.2] if we want to make a statement about the 
+true prevalence of tuberculosis in a given population [1.5] then we have to put 
+a value on that we may observe from the past that it would be two in ten-
+thousand [0.5] and use that as our help-, [0.2] h-, our hypothesis to test [0.
+2] so 
+we're stating our beliefs [0.4] which may be [0.3] possibly informal [0.5] in a 
+formal quantitative way [0.4] in order to use quantitative methods [5.6] so now 
+we have our hypothesis what can we do with it [1.3] say er we have the 
+hypothesis that our success rate for aneurysm repair [0.2] is eighty per cent 
+[0.9] and we observe what happens to say six patients who have [0.2] an 
+aneurysm repaired [1.5] we need to use what we observe about those six patients 
+to test that hypothesis [0.4] that the success rate is about eighty per cent [0.
+5] is eighty per cent [1.6] now informally if we had observed [0.2] er one 
+death in a in those six patients [0.9] then er [0.3] we could be reasonably 
+confident [0.3] of a difference from eighty per cent [0.4] because that's quite 
+an obstre-, [0.2] extreme observation [1.1] if we observe four or five in six 
+[0.7] then we would be unsure what to conclude because the proportion of four 
+or five out of six [0.4] is [0.2] quite close to eighty per cent [0.2] we're 
+not totally sure [1.8] so that would give us an informal idea [0.7] but we want 
+[0.2] a way of objectively 
+distinguishing [0.8] the instances where our er our observed data is [0.2] 
+slightly different from our expected data [0.2] our our null hypothesis [0.8] 
+from the situations where we have [0.3] er data which is different from our 
+null hypothesis and constant [0.2] consequently quite extreme [0.6] and 
+hypothesis testing [0.4] allows us to do that objectively [2.6] so it allows us 
+to compare consistently what we observe [0.4] with what is actually happening 
+what we think is happening [9.6] so formally [1.2] in a hypothesis test [0.3] 
+we calculate the probability of getting an ar-, an observation as as extreme as 
+[0.5] or more extreme [0.6] than the one observed [0.2] if the stated 
+hypothesis was true [1.4] we have our stated hypothesis [0.5] in a quantitative 
+[0.5] fashion [0.8] and we can make some probability statement about that [0.7] 
+which we can then use to calculate the probability [0.2] of our observed data 
+[1.3] the idea is that [0.2] if what we observe is very unlikely [0.8] then [0.
+2] the probability will be very small [1.3] so if the probability is very small 
+[1.1] then either [0.5] under the null hypothesis something very 
+unlikely has occurred [0.9] or [0.2] the hypothesis is wrong [1.8] so then we 
+conclude that the data are inca-, [0.2] incompatible [0.2] with our null 
+hypothesis [1.0] and that probability is called a P-value [1.2] er another 
+example [0.2] of [0.2] how [0.5] er you might remember a P-value which is er a 
+slightly more [0.5] medical interpretation [0.4] would be to consider how 
+likely a patient having a blood pressure of [0.5] one-forty over ninety and 
+being healthy [0.2] would be [0.9] healthy patients don't nen-, generally have 
+blood pressures that extreme [0.7] so either [0.2] it's highly unlikely the 
+patient has [0.5] er is healthy and has an extreme blood pressure reading [0.8] 
+or the patient is not healthy [1.8] er so tha-, that that probability is a P-
+value [5.5] so take our extreme value [0.7] we have a hypothesis that a coin is 
+fair and we've tossed it ten times [0.8] we've observed ten heads and zero 
+tails [1.3] now under the hypothesis that the coin is fair [0.3] the 
+probability of a head [0.5] is [0.2] point-five a half [0.4] one in two [2.1] 
+then [0.5] assuming that the probability of a head is one if fi-, er one in 
+two even [0.2] a half [1.0] we can calculate the probability of getting ten 
+heads each with a probability of a half [1.1] and that translates to about 
+point-zero-zero-two one in five-hundred [0.4] exactly [0.7] two in one-over-one-
+thousand-and- [0.2] twenty-four [0.6] two times one-thousand one-over-one-
+thousand-and-twenty-four [1.1] that's our P-value [0.7] our probability [0.2] 
+of observing ten heads [0.5] given the probability of a head is a half [1.1] 
+the probability of observing the data [0.3] given that the null hypothesis is 
+true [1.9] now that's really unlikely [0.3] one in five-hundred [0.9] so [0.8] 
+either we've got an outstanding [0.2] chance result [0.8] or the data [0.2] o-, 
+or the hy-, the hypothesis [0.3] i-, er can be rejected [0.9] the data we've 
+observed is inconsistent with the hypothesis that we're testing [0.3] that the 
+coin is true [0.9] and therefore [0.2] we've got strong evidence against that 
+hypothesis [3.2] we've un-, we've observed something very unlikely [0.3] so 
+we've concluded that the hypothesis we were testing [0.3] is false [1.6] er [0.
+4] yeah [0.6] [sniff] [0.3] we've rejected 
+that that null hypothesis [2.2] prior beliefs are relevant here [0.5] er they 
+help us to set up the null hypothesis [1.2] er i-, i-, in in this example our 
+prior belief was that the the coin was fair so [0.4] we assume that the 
+probability of a head [0.2] was a half [0.8] and coc-, calculated the 
+probability of our o-, [0.3] observed data [0.4] in those circumstances [1.6] 
+the last example there where we have [0.5] er ten patients treated on er u-, 
+using new treatment X [0.4] and ten of them surviving [1.0] er [0.3] is exactly 
+the same as tossing a coin ten times where instead of tossing a coin we wait 
+and see whether the patient lives or dies [0.3] same as head or tail [0.8] and 
+historically if we've seen that fifty per cent die that's the same as expecting 
+[0.2] a head with probability point-five [1.5] so that might help put it in 
+context for you [12.2] so [1.1] we've set up our null hypothesis [1.2] we've 
+made some probability statements about the [0.2] observed data [0.5] given that 
+our n-, our null hypothesis is true we've got our P-value [1.2] if that P-value 
+[0.3] is less than or equal to 
+point-zero-five [0.9] then [0.5] we reject our hypothesis we say [0.3] one of 
+[0.2] one of several things [0.6] we could say that the data is inconsistent 
+with the hypothesis [1.1] we've assumed something is true we've observed 
+something [0.3] which is very like-, [0.2] very unlikely if it's true [0.5] 
+therefore what we're seeing is inconsistent with what we think [1.8] we could 
+also put that as saying that we have substantive evidence against the 
+hypothesis [0.8] er that it's reasonable to reject the hypothesis and that it's 
+a statistically significant result [1.3] at five per cent in this particular 
+example [1.5] if the P-value is greater than point-nought-five then we can't 
+say any of the above [1.9] er [0.5] what we can't say is that the null 
+hypothesis is false [0.6] absence of evidence against the null hypothesis [0.3] 
+isn't evidence of absence [0.9] we can't say that that gives us evidence to 
+conclude that the hypothesis is false for example [0.7] if er [1.0] the 
+probability under our null hypothesis [0.2] that the mean surface temperature 
+[0.6] er of the earth has 
+increased by only one centigrade over the last fifty years [0.3] [sniff] [0.5] 
+er our observed data has a probability of point-one [1.6] then that's greater 
+than point-nought-five so we reject that null hypothesis [0.6] it doesn't prove 
+that there is no global warming [0.2] it simply proves that what we've observed 
+is inconsistent [0.3] with what we believe that the temperature of the earth [0.
+2] has increased by [0.4] one per cent over the last er one degree-C by [0.4] 
+the last [0.3] in the last fifty years [2.3] another example which might be 
+particularly illuminating on this absence of evidence not evi-, [0.2] is not 
+evidence of absence would be the U-S's stance on Iraqi weapons [0.6] at the 
+moment [1.0] they're trying to say that [0.4] the absence of evidence [0.8] of 
+er weapons doesn't mean that that is evidence that there are no weapons [1.1] 
+that may help [0.2] to [0.2] illuminate for you [5.8] er further examples [0.2] 
+of i-, h-, hypothesis tests and P-values [1.3] the first example [0.7] the 
+incidence of disease X in Warwickshire significantly lower than the 
+rest of the U-K [0.5] P equals nought-point-nought-one [1.6] this means that 
+we've tested the hypothesis [0.4] that the incidence of disease in Warwickshire 
+[0.4] is equal to the incidence of disease [0.4] in the rest of the U-K [1.2] 
+and what we've observed [0.3] about the incidence of disease in Warwickshire [0.
+3] is very unlikely [0.2] under that null hypothesis [0.8] if the two 
+incidences were the same then what we'd observe would have a probability [0.3] 
+of point-nought-one [0.8] that's very unlikely it's less than point-nought-five 
+so we've rejected that null hypothesis [0.2] and we can say [0.5] that the 
+incidence of disease X in Warwickshire is significantly lower than in the rest 
+of the U-K [1.9] second example death rate from disease Y [0.5] is 
+significantly higher in Barnsley than in Leicester with P equals point-five [0.
+8] we've tested the null hypothesis that the two death rates are equal [0.7] 
+we've observed something about the death rates of both of them [0.6] and we've 
+concluded that what we've observed is very unlikely [0.3] under that null 
+hypothesis that they are the same [2.1] that's er [1.3] that particular example 
+what we've observed under our null hypothesis [0.4] has about a five per cent 
+chance of occurring [1.2] i'll talk a little bit more about [0.4] how we choose 
+a cut-off point P-values a bit later on [1.8] third example patients on the new 
+drug did not live significantly longer than those on the standard drug [0.8] 
+we've taken patients on the new drug and patients on the standard drug [0.8] 
+tested the hypothesis that they both lived the same amount of time [1.5] and 
+calculated under that hypothesis [0.6] the probability of the data we've 
+observed being about point-four [0.8] in other words about forty per cent of 
+the time we would observe data that extreme [0.7] that's not that unlikely [0.
+2] so we've rejected the null hypothesi-, er we've accepted the null hypothesis 
+in that case [12.1] so the null hypothesis [0.2] the hypothesis to be tested [0.
+2] is often called the null hypothesis oh i'm glad we've got H-nought on the 
+slides i occasionally call it that without 
+really thinking [1.0] er [2.0] this is [1.5] the pr-, the quantitative 
+statement about our tr-, our prior beliefs [1.1] so for example [0.3] if we're 
+supposing that death rates from er [0.4] a disease on treatment A and treatment 
+B [0.6] were the same [0.6] then we would calculate the ratio of the death 
+rates [0.5] to be [0.3] er one [1.3] that would be our null hypothesis we would 
+then observe data and [0.3] calculate the [0.2] probability of what we observed 
+occurring [1.7] for example again the prevalence er in in Warwickshire of a 
+particular disease is the same in Leicestershire another example of a null 
+hypothesis [2.3] and [1.2] P being less than or equal to point-nought-five [0.
+4] s-, is substantial evidence against the hypothesis being tested [0.8] not 
+that it's definitely false [0.4] it means what we've observed is unlikely [0.2] 
+given what we think [0.4] not that the hypothesis is untrue [2.1] again by the 
+same token [0.4] P being greater than point-nought-five [0.7] is that the data 
+is not inconsistent [0.6] with the er [0.5] hypothesis [0.4] that means that 
+there's not much evidence against 
+the hy-, the hypothesis being tested [0.5] but not that it's definitely true [0.
+6] meaning that what we've observed is reasonably likely [0.2] given what we 
+believe [6.5] as a further experiment again flipping a coin ten times [0.5] and 
+having our observed results being seven heads three tails [1.2] we suppose that 
+our null hypothesis is that the coin is is er [0.2] fair [0.9] so we make the 
+probability statement that the probability of a head is point-five as before [1.
+0] what we're interested in is whether or not the coin is biased [1.0] what 
+you're seeing there on the slide [0.9] is the probabilities of observing 
+various different events the first column [1.3] is the number of heads just let 
+me get the pointer up [0.5] oh [0.2] where's it gone [0.2] there we are [1.5] 
+so [0.4] the first column is the number of heads we may observe from zero to 
+ten [0.2] obviously [1.5] and the second column [0.6] is the probability of 
+that number of heads occurring [0.5] under our null hypothesis [0.7] so if our 
+coin is unbiased if our coin is fair and our probability of a head [0.5] 
+is [0.2] point-five [0.8] then [0.6] the probability of observing no heads [0.
+5] is point-zero-zero-one [1.2] the probability of observing one head [0.5] is 
+point-zero-one-zero [0.8] and [0.2] right the way up to [0.5] ten [2.2] now 
+what we want to know is how likely [0.2] is it that we observe [0.2] seven 
+heads and three tails [1.7] and we do that by adding up the relevant 
+probabilities and multiplying by two because this is a two-sided test [0.7] we 
+don't know whether the coin is biased in favour of heads or in favour of tails 
+[1.1] and that gives us a P-value of point-three-four-four [1.2] so [0.3] if 
+the coin were biased [0.4] about thirty-four per cent of the time [0.4] we 
+would expect to see [0.4] seven heads three tails [0.7] that's not particularly 
+unlikely [0.6] it's certainly not [0.2] five per cent unlikely [0.7] and so [0.
+6] we don't reject our null hypothesis that the coin [0.2] is biased [4.7] ah 
+[0.9] and there we are [0.8] we flipped a coin ten times [0.3] observed the 
+results seven heads three tails [0.5] calculated the probability [0.3] of what 
+we've observed [0.7] it's reasonably consistent with what we believe that the 
+coin 
+is unbiased [0.8] and that's fairly weak evidence against because it's 
+consistent with the nun-, null hypothesis [0.9] so we don't have an-, evidence 
+[0.2] that the coin is unb-, is biased [0.6] but it doesn't prove [0.3] that 
+the coin is not unbiased [0.3] er er th-, th-, [0.3] that the coin is unbiased 
+[0.6] all it does is provide evidence [0.5] in favour of that hypothesis [7.0] 
+so [3.1] just let me [0.2] collect my thoughts [1.4] [sniff] [1.7] [4.9] now 
+rejecting H-nought [0.2] is not [0.2] always much use this is [0.5] this is 
+what i was [0.4] said i'd get back to you about the P-equals-point-five 
+business [0.9] we simply choose that as an arbitrary cut-off point [0.5] there 
+there is nothing amazing happens [0.3] between [0.5] er point-zero-four-nine 
+and point-zero-five-one [6.9] and [3.2] [sigh] [1.1] hang on a second [6.5] [0.
+4] [sniff] [0.2] so [0.6] yeah [0.2] arbitrary P-values [1.4] we're not all 
+that interested [0.9] in [0.2] exact er differences 
+between [0.5] point-nought-five- [0.4] one and [0.6] point-nought-four-nine [0.
+8] it largely depends on the context of what we're thinking of [1.0] it it's an 
+arbitrary cut-off rule [0.4] which we'll use but it depends on our situation [1.
+1] if we're testing a hypothesis that a treatment for the common cold [0.7] er 
+is effective [0.9] and we observed er [0.6] a P-value of point-nought-five-one 
+[0.7] in that particular hypothesis test [0.6] then [0.3] because this isn't a 
+particularly you know [0.4] groundbreaking thing to be testing [1.5] the fact 
+that we've observed something fairly unlikely probably means that our [0.8] 
+cure for the common cold isn't [0.2] isn't all that effective [0.6] and so 
+we're not all that excited [0.7] however if we're looking at a cure for AIDS [1.
+2] and we observe a P-value of point-nought-five-one [0.8] then because this is 
+quite an im-, important and expensive problem [0.7] we've observed a fairly 
+unlikely result [0.2] and [0.3] we're really very interested in finding a cure 
+for AIDS [0.5] so even though it's not a significant result [0.7] it's still an 
+interesting thing [0.2] and we would want to 
+investigate further [2.1] er [3.4] false positive results [0.2] er [1.2] it's a 
+very strange slide i i i [0.4] can't quite see the connection between [0.3] 
+rejecting H-nought and and all the other points on the slide anyway [0.7] er 
+the P-value [1.0] gives us an idea of i-, i-, a probability of interpretation 
+of [0.5] how unlikely what we observe is given what we believe [0.9] er i-, i-, 
+it's a it's a simple [0.2] interpretation [0.6] er that that we can talk about 
+[0.9] it also has the nice probability interpretation [0.5] that it is the 
+probability of getting a false positive result [0.8] so in other words the P-
+value is also [0.4] the probability of rejecting the null hypothesis when it's 
+true [1.1] which is quite a handy interpretation [1.6] you should also note 
+that significance depends on the sample size [0.9] if we flipped a coin three 
+times [0.4] then the minimum P-value we could observe [0.3] would be er a 
+quarter [0.4] point-two-five [1.3] which [0.2] means that [0.4] we're never 
+going to observe a significant result in that test of whether or not that coin 
+is 
+unbiased [1.8] er and so er what we'd w-, obviously need there is is a larger 
+sample size for that test [2.3] er last point to note is that a stig-, a 
+statistically significant result is not necessarily a clinically important one 
+[1.2] er [0.2] again this depends on the context of the problem that we're 
+we're dealing with [0.8] one that i've er consulted on recently was about A and 
+E admissions [1.0] er alth-, although the result [0.4] the the reduction in er 
+[1.4] A and E admissions [0.5] was really quite small [0.8] this was actually 
+very very interesting [0.5] because even a tiny one per cent reduction in A and 
+E admissions rate [0.5] translated to quite a large money saving [0.6] and so 
+[1.1] we were actually very interested in a very small difference [1.2] however 
+in [0.2] other situations we might only be interested in a fairly large [0.3] 
+er [0.6] change in say diabetes prevalence [0.4] for for practical purposes [0.
+7] it's er it's rather down to down to context [0.5] another example would be 
+looking at a-, aneurysm repair er abdominal aortic aneurysm [0.8] if we have a 
+fairly rare [0.6] problem [0.3] er s-, er say abdominal or-, aortic aneurysm 
+having quite a low success rate of repair [1.7] then [0.9] sorry er er [0.2] 
+quite a low death rate of repair and we want to reduce that then if it's low to 
+start with [0.6] we can only really reduce a low rate [0.2] by a very small 
+amount simply because of the [0.2] amount we start with [0.4] if we start with 
+a five per cent death rate and we want to reduce that [0.5] for whatever reason 
+[0.7] er economic or whatever [1.4] then we can only er reduce a five per cent 
+death rate [0.3] by a maximum of five per cent [0.6] which may in other 
+contexts be quite a small reduction [2.2] so statistically significant does not 
+necessarily mean clinically important [0.5] but it largely depends on the 
+context of the problem [0.3] at the time [2.1] nevertheless P-values [0.2] are 
+used a lot [0.8] er most people i i have consulting me at er the Walsgrave 
+Hospital sorry the hospital formerly known as Walsgrave [0.8] er [1.1] get very 
+excited when they see P-values in papers most most people [0.4] are very 
+interested in seeing significant 
+results [0.4] but that does not necessarily mean that a significant result in a 
+hypothesis test [0.3] translates to something [0.2] which is clinically useful 
+or interesting [6.9] so to sum up [1.3] hypothesis tests allow us to describe 
+how our observed values [0.7] help us towards a knowledge of true values [0.7] 
+by testing [0.2] er [0.6] the probability of observing given what we believe [2.
+0] and in the next lecture [0.3] we'll look at how we calculate a range [0.6] 
+of er [1.2] in in which the true value probably lies [2.2] so [0.9] key points 
+to note in this lecture [1.0] are that variation exists that that people differ 
+we should all have a fairly good appreciation [0.4] that [0.3] such is life [0.
+2] that is the way it is [1.4] er our observed data because of that natural 
+variation [0.8] is often different from our underlying tendency [0.6] the 
+observed proportion of people with diabetes in a in a general practice [0.7] is 
+often different from the prevalence of diabetes in the area that that general 
+practice covers [0.6] just because of natural variation [2.0] er [0.9] various 
+sources of 
+variation [0.4] natural is is the most obvious one to think about [0.6] but our 
+[0.2] estimate of [0.3] er the proportion of people in diabetes in our general 
+practice [0.6] will depend on how we choose our sample [1.0] which is another 
+source of variation [1.1] and we may [0.2] test hypothesis about [0.3] 
+hypotheses [0.6] about our true value [0.2] of prevalence of diabetes in our 
+population [0.2] from our general practice area [0.7] by using what we observe 
+[0.3] given what we believe [1.0] and calculating the probability of what we 
+observe [0.3] given what we believe [1.8] and after next week's lecture you'll 
+be able to see how confidence intervals [0.3] can be calculated [0.8] those are 
+[0.2] an e-, give us an idea of where our true value may lie [0.5] with a 
+specific probability [1.4] and that's it for today so [0.5] you'll be pleased 
+you have a slightly longer break than usual

@@ -1,0 +1,1355 @@
+nm0260: can i just say a few words [0.7] before i actually formally start 
+lecturing [0.4] er [0.2] i want to explain just a little bit [0.3] about what 
+we're trying to do [0.3] er in these half-dozen or so lectures [0.5] er [0.7] 
+my [1.5] aim in a way with these lectures has been to try [0.3] and illustrate 
+a s-, [0.2] er a chunk of medical practice [0.4] er today now [0.3] er rather 
+than [0.3] have sort of all a lot of theoretical stuff about the epidemiology 
+of disease [0.3] and genetics of disease and so on [0.2] just trying to show 
+you how actually [0.3] er clinicians cope with disease [0.3] and try and relate 
+that to the science to the biology underlying the pathology of the disease [0.
+3] and the nature of the treatments they're using [0.6] so sometimes people 
+find this these few lectures a little bit [0.2] bitty [0.3] which i'm afraid 
+they are [0.4] er now you had Dr namex [0.5] er was it this morning [0.3] er 
+talking to you about the physiology of kidney [0.4] er kidneys [0.4] er and of 
+kidney disease the way kidney diseases develop [0.6] and talking you to you i 
+think in general terms about the nature of treatment of kidney 
+disease [0.3] now Dr namex is not er the usual lecturer i have to say that the 
+usual lecturer that gives those lectures is Dr er Dr namex [0.3] whom i know 
+very well and i don't know Dr namex [0.4] and i i'm er [0.2] told that he did a 
+good job and i sincerely hope he did [0.4] er but the point about that [0.3] is 
+to give you background in-, into the understanding of renal disease [0.5] now 
+[1.4] my colleague [0.2] Dr [0.3] er [0.5] golly my colleague Dr his name drops 
+out of my mi-, namex [0.3] er on Thursday will be talking to you about [0.2] 
+care and maintenance [0.2] looking after of [0.4] er patients who've been 
+transplanted for kidney disease [0.3] and he'll be talking to you a little bit 
+about the ethics of transplantation [0.3] and inevitably he will go over some 
+of the ground [0.3] that i'm going to present now [0.3] what i want to talk 
+about as you can see [0.5] is the science of transplantation in other words i'm 
+going to present to you the biology [0.4] underlying [0.3] transplantation of 
+organs and of bone marrow [0.4] er and how [0.4] the 
+physicians [0.4] er can cope with that and make it work [0.3] okay [0.7] so i'm 
+providing the scientific backup [0.3] er as it were [0.4] to the clinical side 
+[0.4] and a and as i say the aim is overall to get you some give you some feel 
+[0.4] for how modern clinical medicine works [0.3] in a rather [0.3] highly 
+technical biological area [0.4] now we can't hope to cover the whole of 
+medicine so we've honed in homed in i'm sorry [0.3] on this little area [0.3] 
+of [0.2] renal disease [0.3] and renal transplantation [0.6] okay [0.4] now [0.
+7] those of you and i know some of you have already looked at the web [0.3] may 
+have looked at my lecture notes er and i'm sorry [0.4] i but i've actually 
+revised the lectures and what i'm presenting this afternoon [0.5] is related to 
+what's on the web already [0.3] but is in fact [0.2] presented in quite a 
+different way [0.3] what i've deliberately done is actually cut down on the 
+detail and try i'm trying to bring out [0.3] a bit more clearly the principles 
+[0.4] because in my experience if i try and teach too 
+much [0.3] about histocompatibility [0.3] and about how [0.4] er T-cells 
+respond [0.3] to histocompatibility antigens in detail [0.3] er er people don't 
+really cope with that [0.4] er in the short period that i have to present it [0.
+3] so i'm giving it to you in rather more general terms today [0.5] er and i 
+know some people may not like that some people i know [0.3] prefer to have much 
+more detail well you can find detail in your textbooks i always say [1.3] these 
+[0.4] lecture notes will go up onto the web [0.2] er within the very next few 
+days [0.3] what i haven't done yet either [0.3] is revised er the reading [0.4] 
+that i have on the web [0.3] site [0.2] i will do that before the end of term 
+which i'm very much aware is Friday [0.7] okay [0.3] so i hope by Friday i 
+won't absolutely guarantee but i hope by Friday to have [0.3] some reading some 
+more up to date reading [0.2] some of the reading material as i say is still 
+perfectly valid [0.5] so it will remain there [0.3] but i will try to put some 
+new stuff on as well [0.6] okay 
+nm0260: we've got a 
+two hour slot [0.5] now the material i'm going to present i suspect will take 
+more than an hour but i'm hoping [0.2] very much that it won't take two hours 
+but in the past i've tried to present it in one hour [0.3] and i've had to rush 
+it so i've extended it to two hours but i don't think i need two hours [1.5] 
+right so let's actually get on with things [0.3] the title [0.2] of these 
+lectures is The Science of Transplantation [0.3] and that's very much what i'm 
+going to be talking about er rather than the medical clinical aspect of 
+transplantation which as i've said [0.4] i'm leaving to namex er namex [0.9] so 
+[0.8] the first point the first thing i want to do is just show you the aims a 
+little bit about the aims of these lectures [0.4] what i want to cover [0.4] er 
+is the range of transplant medicine the sorts of areas where transplantation is 
+done and why it's done [0.7] okay [0.7] secondly [0.4] i want to give you [0.4] 
+er an understanding [0.2] of the immunological basis of graft rejection [0.5] 
+i'll define these terms presently [0.4] er then i shall go on 
+to talk to you about immunosuppressive therapy and how that works to present 
+prevent [0.2] grant rejection [0.5] and finally a few words on what might be 
+the future [0.5] er the way forward for transplantation science [0.4] and its 
+application to medicine [1.7] so i shall start off [0.4] with a few [0.2] 
+simple definitions [0.5] er [1.0] couple of them are pretty obvious [0.8] we 
+talk about the host [0.9] that is the person who receives the transplantation 
+whatever it is [0.4] although in fact more commonly the term we use is 
+recipient somebody who receives [0.3] the graft [0.7] and then secondly [0.4] 
+the partner in this business of course [0.3] is the donor [0.6] and that is the 
+one who provides the graft [0.5] now donors [0.5] are going to fall into two 
+main categories those that are alive [0.6] and those that are dead [0.3] now 
+living donors [0.3] er would may be either unrelated to the recipient [0.3] or 
+related a sibling or or parent or whatever [1.5] obviously living donors can 
+donate things like blood [0.4] bone marrow [0.4] and one of your two kidneys 
+but they're going to 
+be hard-pressed [0.3] indeed [0.2] to donate [0.3] lungs or something like that 
+[0.4] so [0.9] more often in fact much more often [0.4] er in transplantation 
+medicine [0.5] the s-, donor [0.3] is dead [0.4] and is a cadaver [0.4] 
+cadaveric donor [0.3] and obviously under those circumstances [0.3] the whole 
+range of organs potentially is available for transplantation [0.4] now just [0.
+3] in passing [0.3] when i say d-, dead cadaveric [0.3] er r-, rather 
+ghoulishly w-, er it ha-, the the the the person has to be [0.3] somewhat 
+freshly dead because of course [0.4] er very shortly after death [0.5] the 
+tissues and the organs [0.3] of the cadaver start to decay [0.3] and and 
+disintegrate [0.3] and so [0.3] if somebody dies in a traffic accident [0.3] or 
+is in the intensive therapy unit or something like that and is on a heart lung 
+machine which they're about to turn off [1.2] okay [0.3] then the surgeons come 
+in [0.5] and whip out [0.4] the bits the kidney the liver the lungs and so on 
+[0.3] now i'm not going to go into the ethical aspects of that [0.3] but 
+obviously there's a lot of ethics [0.4] er which well namex will deal with 
+tomorrow [0.3] 
+Thursday rather [0.3] a lot of ethical issues are around about organ donation 
+[0.5] in both living [0.5] and [0.3] cadaveric donors [0.9] okay [2.9] more 
+simple definitions [0.3] the word transplant is er synonymous we use th-, them 
+synonymously [0.3] use it synonymously with graft [0.4] the transplanted graft 
+may be actually [0.2] tissue of some sort such as blood or marrow or indeed 
+skin [0.9] or may be er an intact whole organ such as kidney [0.6] all right [0.
+7] now there are three other [0.7] simple terms that i need to define [0.3] one 
+is autograft [0.5] that means that you're grafting from one part of the body [0.
+3] to another part of the body [0.3] and that's very commonly done for skin in 
+the case of burns [0.4] obviously autografting we er the [0.4] equivalent term 
+is autologous graft [0.3] autografting [0.3] presents [0.2] no immunological 
+differences because you're just moving a bit of tissue [0.4] from one part of 
+the body to another part of a body [1.3] autografting is actually very 
+important and i was talking to a surgical friend of mine 
+and she was describing to me the sort of facial reconstructions that happen in 
+severe burn patients [0.4] er [0.4] i-, or severe or in situations where 
+there's been a severe d-, dec-, severe accident and there's been extensive 
+damage say to the face [0.4] they transplant bits of bone [0.3] er from the 
+femur or a humerus or something like that to reconstruct the bone [0.4] and 
+muscle they get from somewhere else and skin from somewhere else and they 
+reconstruct [0.5] er the person's face [0.3] and that is of course [0.2] 
+autografting [1.4] [1.6] in the case [1.5] of things like kidneys [0.4] what's 
+much more often [0.3] done is an allograft now people [0.4] you will recollect 
+the use of the world word allele [0.3] which means different [0.2] an allograft 
+comes from a different individual of the same species [0.7] okay [0.8] er 
+allogeneic graft is a term which is often used simultaneously s-, synonymously 
+i'm sorry [0.8] and finally [0.7] in this sort of er hierarchy of grafting [0.
+3] we 
+have a xenograft now xeno [0.2] means foreign [0.6] and xenografts come from [0.
+4] or or xenogeneic graft [0.3] comes from a member of a different species [0.
+5] for example pig to man [0.6] yeah [4.5] so let's [0.2] [0.2] briefly look at 
+the range of transplant medicine what is done and why [1.0] [4.6] i'm going to 
+talk [0.2] briefly about currently successful grafts that is grafting 
+transplanting which [0.2] in which is [0.2] w-, which is in use in medical 
+practice today [0.3] right at the end i shall refer to perhaps [0.2] some 
+possible future types of graft [0.5] now blood transfusion [0.3] is obviously a 
+kind of graft which has been in use for a very long time [0.8] er [0.3] bone 
+marrow [0.5] or stem cell transplantation [0.4] is much more recently used [0.
+4] er and i'll describe that in a moment [0.4] and then finally [0.4] er we 
+have solid organ transplantation things like kidneys and livers [0.3] so there 
+are these three [0.3] broad areas of transplantation bone [0.2] sorry [0.2] 
+blood [0.3] 
+bone marrow [0.3] and solid organs [0.3] and they are actually [0.3] all of 
+them really [0.3] somewhat different in their characteristics [5.0] now blood 
+transfusions [0.6] er [0.4] have been attempted [0.3] were attempted in th-, in 
+in the nineteenth century [3.4] and th-, there were a number of problems 
+immediately discovered the major problem [0.5] comes from the A-B-O blood group 
+system [0.4] er which i guess many of you will be familiar with [0.3] there are 
+on the surface [0.2] there is on the surface of [0.3] red cells [0.2] an 
+antigen [0.3] which occurs in three er [0.2] allelic forms there's the A form 
+[0.3] the B form [0.3] and the null or zero form [0.4] okay [0.6] er obviously 
+you can get heterozygotes so you get A-A A-B B-B [0.3] A-BO and B-O and 
+whatever [0.5] now obviously if you transfuse blood [0.3] of one [0.5] er blood 
+group type [0.2] into an individual of another blood group type [0.6] the 
+immune system of the recipient will recognize the blood as foreign [0.4] 
+and you will get [0.3] an immune response typically [0.4] you will get an 
+antibody response to the [0.3] A-B-O antigen [0.3] and that will lyse the red 
+cells with the aid of complement [0.3] and do all sorts of serious damage to 
+the individual [0.4] er the consequence [0.3] o-, of the damage that's done is 
+often very severe illness [0.4] er indeed death in some cases if you transfuse 
+the wrong blood [1.1] once the A-B-O group [0.5] system [0.5] blood system is 
+properly was properly worked out [0.4] m-, early in the last century [0.5] er 
+[0.4] er s-, b-, blood transfusion is obviously a simple straightforward and 
+life saving [0.2] treatment [0.4] okay [0.3] so having overcome the A-B-O 
+problem [0.3] that's fine [0.3] but [0.3] still [0.3] you will [0.2] recollect 
+you will understand [0.4] er that there are residual problems [0.3] in blood 
+transfusion [0.4] particularly [0.2] this issue of the transmission of blood 
+borne pathogens [0.5] er and virologists will recognize [0.3] all those 
+acronyms [0.3] H-I-V [0.3] er er human immunodeficiency virus and H-B-V and H-C-
+V too [0.3] hepatitis viruses [0.3] and of course C-J-D [0.3] now these are 
+blood borne [0.3] pathogens [0.2] which of course if you transfuse blood 
+contaminated with those pathogens [0.3] you pass [0.2] the er transmit [0.3] er 
+the disease [1.2] obviously [0.3] er the viral problems can be resolved by 
+screening you check [0.4] the blood for the presence of the er viruses either 
+antigenically by serotype [0.5] se-, serological assays [0.3] or by some sort 
+of molecular assay [0.3] and if the blood is clear [0.3] then you're happy to 
+use it [0.5] C-J-D [0.6] Creutzfeldt-Jakob Disease is much more problematic [0.
+4] er because there's no simple test to detect C-J-D so you can't screen [2.0] 
+this [0.2] er problem if it is a problem [0.4] er has been solved [0.3] largely 
+by separating the leukocytes from the red blood cells [0.4] when you're doing a 
+regular blood transfusion what's needed is not the leukocytes but of course the 
+red cells for carrying oxygen around the body [0.9] you can eliminate the 
+leukocytes fairly straightforwardly by a a kind of er gradient [0.5] 
+centrifugation [0.5] so that 
+you can prepare blood which is essentially completely free of leukocytes now 
+prions [0.4] which are the C-J-D organism [0.5] er are in leukocytes if they're 
+in blood at all [0.4] not in the red cells so if you get rid of the leukocytes 
+then you can transfuse the blood [0.3] safely [0.7] okay [0.2] so blood 
+transfusion is a form of transplantation which is very [0.3] straightforward [0.
+5] er and sorted out [2.0] go on to bone marrow transplantation now everybody 
+is familiar with what bone marrow is bone marrow [0.4] is the [0.4] er or is 
+the tissue which generates all the haema-, haematopoietic tissues the blood and 
+the white blood cells [0.4] er and o-, other parts of the haematopoietic system 
+[0.7] er individuals [0.3] who have failed bone marrow [0.6] er are going to be 
+very sick [0.7] er and a life saving treatment is [0.3] the trans [0.2] 
+plantation of bone marrow into those individuals [0.3] now when i say [0.4] 
+bone marrow transplantation [0.5] actually i mean it [0.2] in a slightly wider 
+sense [0.3] it can be the actual bone marrow which is taken from 
+the donor's [0.3] bone [0.6] and i have had it [0.2] i have done it and i tell 
+you it is very painful [0.4] don't recommend it except for very close friends 
+[0.5] er [0.2] so you can take the actual bone marrow [0.5] or you can take [0.
+6] what are called C-D-thirty-four cells now [1.2] those of you who are 
+familiar with immunology will recollect [0.4] that [0.2] C-D-thirty-four [0.4] 
+is the antigen [0.2] which [0.2] defines [0.3] the [0.4] er pluripotent stem 
+cell which generates all cells [0.3] of the haematopoietic ser-, system [0.4] 
+now the C-D-thirty-four cells are normally within the bone marrow that's why 
+you go for the bone marrow [0.5] but you can get C-D-thirty-four cells [0.2] 
+out of the bone marrow [0.6] into the peripheral circulation [0.3] by treating 
+people with certain cytokines [0.3] which cause the C-D-thoity-fo thirty-four 
+cell [0.3] to proliferate [0.3] and move [0.2] from the bone marrow into the 
+periphery [0.2] into the circulation [0.4] so that's why we speak about [0.4] 
+mobilization [0.6] of C-D-thirty-four cells into the periphery [0.5] and then 
+of course you can get these cells by simply taking blood [0.7] and 
+that's much less painful than bone marrow donation [0.9] okay [0.3] so you can 
+get [0.3] the stem cells [0.2] of the haematopoietic system either from the 
+bone marrow [0.4] or [0.3] from the blood if you treated patients people [0.3] 
+with a cert-, with the cytokines [1.8] now bone marrow transplantation [0.5] is 
+used broadly in these two situations [1.0] [1.0] the one [0.8] major condition 
+[0.3] er where [0.2] the bone marrow [0.3] completely is non-functional is a 
+condition called SCID severe combined [0.6] immunodeficiency [0.4] okay [0.9] 
+and the other situation [0.4] er [0.4] where bone marrow fails completely [0.4] 
+is in certain therapeutic [0.9] manoeuvres carried out in the treatment of some 
+cancers and i'll talk about both these in a moment [0.9] so let's [0.2] go on 
+briefly and talk about SCID just for a moment [0.8] some of you writing the 
+essay on on gene therapy will have heard about [0.4] SCID in the context of [0.
+3] gene therapy [0.5] so you will recollect that SCID is an inherited failure 
+[0.3] of the ontogeny of T-cells individuals who've inherited this condition [0.
+3] 
+fail [0.2] to produce functional T-cells [0.7] what that means [0.3] is not 
+having T-cells is that essentially you have no immune responsiveness at all you 
+have [0.3] you have the non-adaptive immune system things like natural killer 
+cells [0.5] but your T-cell system has failed [0.2] and so the adaptive immune 
+system is essentially absent [0.3] you can neither generate [0.3] cell-mediated 
+immunity [0.3] nor can you make antibodies so you are [0.2] very sick extremely 
+susceptible [0.4] to infection [0.8] okay [1.4] quite simply in this situation 
+[0.4] bone marrow transplantation provides the patient with normal T-cells [0.
+3] which are of course derived from the donor [0.9] okay [0.3] so the 
+transplanted r-, the r-, r-, recipient's T-cells [0.4] after the transplant are 
+of course [0.3] of donor origin not his own [0.2] that goes without [0.4] 
+saying [4.7] now in certain cancers er [1.0] [1.7] the therapy of cancer [0.5] 
+often depends on the use of so-called cytotoxic drugs now these cytotoxic drugs 
+[0.4] are 
+designed [0.3] to kill the cancer cells [0.6] but they are never completely 
+specific well rarely are they even slightly sic-, specific in fact [0.4] er to 
+the cancer cells [0.3] and so if you treat patients with cancer [0.3] with 
+these drugs a consequence is damage [0.4] to all those organs and tissues which 
+are rapidly proliferating [1.0] all right [0.6] so if you give a large dose of 
+this sort of therapy [0.5] you will damage [0.4] er the bone marrow [0.3] of 
+the patient [0.3] to such an extent that the bone marrow [0.3] will no longer 
+function is no longer able to produce [0.3] haematopoietic cells [0.4] under 
+those circumstances the patient [0.3] will die [0.9] okay [0.4] so what we do 
+what is done rather [0.5] is that [0.4] the patients who are treated with very 
+large doses of therapy to destroy the cancer [0.7] are what [0.2] what is 
+called [0.2] rescued [0.5] by bone marrow transplantation now what that simply 
+obviously means [0.3] is that the bone the patient [0.3] is [0.2] in a se-, es-,
+essentially brought back to life by the transplantation of bone marrow [1.7] 
+now equally [1.4] transplanted marrow [0.5] in this 
+in some situations [0.3] also seems to have an anti-cancer effect which is a by-
+product a bonus if you like [0.4] in other words [0.2] the transplanted marrow 
+[0.3] seems to develop [0.6] some sort of immune response to the cancer and 
+that actually helps survival in some circumstances but i'm not going to talk 
+about that in detail [2.2] now [0.9] [1.4] talking about SCID [2.0] the graft 
+[0.3] obviously [0.2] has to be an allograft [0.7] because the patient has no 
+bone marrow of his own no no no [0.2] adequate bone marrow at least so the [0.
+3] situation there it has to be an allograft [0.6] in the case of the cancer 
+therapy [0.4] you can actually autograft in other words you can take the 
+patient's own bone marrow [1.0] treat the guy with cytotoxic therapy [0.3] and 
+then replace his own bone marrow [2.0] okay [1.0] [1.2] you can also do an 
+allograft in that situation [0.4] and both [0.2] these techniques have their ad-
+, [0.2] advantages and disadvantages [0.6] the advantage of the autograft is 
+you have er you no 
+immunological problems again [0.7] the disadvantage of the autograft [0.5] is 
+that potentially [0.7] the engrafted marrow carries with it cancer cells [0.9] 
+okay [0.6] which [0.2] of course is self-defeating [0.3] because the cancer 
+cells will then start growing again 'cause they haven't been subjected to the 
+therapy [0.6] so the autograft has the disadvantage that in fact you may be 
+grafting cancer cells at the same time [0.4] as you're grafting back [0.2] the 
+patient's marrow [2.3] in the case of the allograft you have immunological 
+problems which i'll describe presently [1.3] but the allograft seems [0.2] 
+surprisingly [0.3] to have a better [0.5] er anti-cancer effect [1.3] than the 
+autograft [0.3] so there are advantages both ways [1.4] from a clinical point 
+of view [0.2] er i think [0.8] the autograft generally is preferred because 
+it's easier to manage because the immunological consequences of the allograft 
+can be very severe which we'll get on to in a moment [1.7] okay [3.1] pause a 
+moment to let you catch up [5.3] so this [0.7] 
+is showing it [0.2] diagrammatically this is the sick patient [0.4] who has a 
+cancer say originating in the stomach [0.5] which has spread about the body now 
+this patient is going to die unless you can treat the cancer that's spread 
+about the body [0.5] so you give him very large dose of anti-cancer drugs [1.0] 
+sufficient to kill all the cancer cells but at the cost of destroying the bone 
+marrow [0.2] so that's what that bomb is [0.5] so this guy is flat out [1.0] 
+and you put back in stem cells by stem cells i mean either bone marrow [0.3] or 
+the C-D-thirty-four [0.2] cells [0.6] er and who from either i autograft or 
+allograft [0.4] to replace the haematopoietic system [0.4] and then [0.4] with 
+luck [0.3] the patient's cured and there is actually good evidence that cures 
+do occur under these circumstances [0.8] so this is a sort of therapy [0.9] 
+important therapy [3.2] so let's go on to solid organ grafts [1.6] and the idea 
+here is very straightforward and simple [0.6] er if an 
+organ fails [0.3] replace it [1.0] all right [1.3] straightforward [0.7] but we 
+do there are a number of problems as you imagine [0.3] the first [1.1] problem 
+er er and this was [0.2] and continues to be a very serious problem [0.4] is 
+that the success of the graft [0.4] depends on the feasibility of the surgery 
+[0.4] required to transfer [0.3] the solid organ from the donor to the 
+recipient [0.5] now in the case of things like kidney and liver [0.3] er to [0.
+2] a large extent lung and heart [0.5] the plumbing if you like the blood 
+vessels and the various [0.3] er er nervous connections [0.3] are relatively 
+straightforward [0.5] and so the surgeon can transfer an organ from one 
+individual to another [0.3] without too much difficulty [0.9] with other organs 
+and the arch-example is the pancreas it would be marvellous to transplant the 
+pancreas to treat diabetes remember [0.8] the pancreas [0.3] the plumbing [0.4] 
+is so complex [0.3] that [0.4] surgically [0.2] it's not feasible it's simply 
+too complex [0.3] for the surgeon [0.3] to be able successfully to transfer the 
+organ [0.3] it's just not possible [0.2] take too long [0.3] 
+too detailed too many tubes too many [0.3] arteries too many veins too many [0.
+4] this and that and the other [0.4] so it's not practical to transplant things 
+like pancreas [0.4] so this is the first consideration [0.3] is the surgery 
+practical [3.9] so [0.7] assuming [0.3] that we have got through to the 
+situation where we have [0.4] er [0.9] practical surgery [0.4] for the 
+transplantation of a tissue [2.4] [0.4] now i want to move along to [0.2] 
+talking about the immunological basis of graft rejection [0.6] now obviously 
+this is the scientific aspect [0.3] that i really need to [0.5] talk about to 
+dwell on [0.4] in some detail [1.6] right [0.7] do recommend [0.5] er that you 
+review your second year immunology notes and think about [0.5] er immunology [0.
+3] i should have should have said at the beginning [0.3] that some of the 
+material that i'm presenting now obviously is related [0.3] to what [0.4] i 
+presented to you in the second year so some of it will be familiar i hope it'll 
+be familiar [0.4] and you should also look 
+at your second year notes [5.3] so what's the problem [1.5] manifestly the 
+problem is graft rejection [1.4] graft rejection [0.4] is the [0.3] er 
+phenomenon [0.2] in which the transplanted organ [0.4] er is damaged [0.5] 
+fails through large-scale inflammation [0.4] er and then literally starts to 
+fall apart under immunological attack [0.9] okay [0.6] now the reason for this 
+is that [0.3] in an allograft not an autograft i should have included with 
+autografts [0.5] grafting from identical twins of course that's equivalent to 
+an autograft [1.0] but in the case of allografts [1.4] the immune system of the 
+recipient [0.8] sees the graft [0.6] as non-self [0.8] somebody else manifestly 
+[0.9] and this is because there are alloantigens on the in the and on [0.2] the 
+graft [0.3] which are different from the self-antigens [2.0] these alloantigens 
+[0.2] you see the word allo it's related to allele again [0.4] different 
+alleles of the same gene [0.5] okay related to allogeneic and allograft [0.3] 
+the alloantigens [0.8] are recognized by the host immune system [1.4] and 
+adaptive 
+immune [0.2] mechanisms [0.4] develop in the host [0.3] which will eliminate 
+the transplanted the non-self organ [0.3] non-self tissue [3.2] now [0.3] [1.2] 
+what we have to [0.4] recognize what you have to understand [0.4] is that the 
+situations with bone marrow transplantation [0.9] and solid organ [0.3] 
+transplantation [2.1] is that in the bone marrow transplantation [0.3] the 
+recipient [0.3] the host [0.3] doesn't have an immune system [0.9] so obviously 
+[0.3] the host is not going to recognize the engrafted marrow [0.4] as foreign 
+[0.3] got no ho-, go-, the host has got no immune system [0.4] but of course [0.
+4] the engrafted [0.3] marrow [0.3] is a source of immune cells [0.8] and those 
+immune cells [0.4] as they encounter the host's tissues [0.3] will recognize 
+the host [0.3] the recipient as foreign [1.2] so in bone marrow transplantation 
+and this is what makes [0.4] this such a hazardous situation [0.8] er [0.8] the 
+the bone marrow transplant [0.4] actually [0.5] rejects the host [1.4] a rather 
+unpleasant [1.0] thought [2.7] obviously in the situation of the solid organ 
+allograft [0.3] or indeed xenograft [0.5] er [0.5] the 
+host [0.7] er which has an intact immune system is rejecting [0.2] the graft [1.
+4] okay so we have these two different situations [0.4] in the bone marrow [0.
+4] and the solid [0.7] organ gr-, er graft [1.8] [1.8] so [0.9] in sort of [0.
+4] clinical terms [0.9] what's happening in graft rejection [1.4] basically 
+you're getting an immune response to the host tissue in G-V-H-D i should have 
+defined graft versus host disease is abbreviated as G-V-H [0.7] or G-V-D or G-V-
+H-D [0.4] okay [0.4] in this situation you get [0.3] severe damage to the host 
+epithelial [0.5] er tissues [0.5] the skin [0.5] er and the lining of the gut 
+[2.3] but perhaps more seriously you get [0.4] damage to the endothelium now 
+you remember [0.6] that the endothelium [0.4] er is the lining of blood vessels 
+and in the case of capillaries [0.7] the very fine blood vessels [0.3] the 
+endothelial cells [0.3] are the entire wall of the blood vessel [0.7] so if 
+you're getting an immunological reaction [0.6] er [0.3] to [0.7] the 
+endothelium [0.3] you're going to get extensive bleeding into the tissues [0.3] 
+and remember 
+that particularly in the kidney say [0.3] the endothelium provides a very has a 
+very important [0.4] functional role 'cause this the endothelium which performs 
+[0.3] the filtration [0.6] in the glomerulus [0.5] and the various other bits 
+and pieces of the kidney [0.7] so if you're damaging the glomerulus with immune 
+response [0.3] then the kidney function's going to fail [0.4] so in the case of 
+graft versus host disease the patient [0.5] has severe [0.2] er generalized 
+organ failure [0.8] and if it's not treated that will inevitably result er in 
+death of the patient [1.1] now in the case of solid organ rejection [0.6] of 
+course essentially the same thing is happening [0.4] and you're getting damage 
+[0.4] again particularly to the endothelium but also again [0.4] to the actual 
+cells within the organ [0.8] okay leading to failure of the organ [0.6] so that 
+[0.4] simply is the nature of rejection it's the destruction [0.4] of the cells 
+of the organ [6.3] right [0.3] now [0.2] 
+i'm going to [0.4] specialize now and talk particularly about kidney 
+transplantation because that's the subject of these lectures [0.4] and it 
+happens to be what i know about most [0.7] [1.4] so [0.2] we'll get on now and 
+talk specifically about kidneys [0.7] now [0.2] as you will have heard from Dr 
+namex [0.4] er earlier [0.5] er [0.4] kidney transplantation without any 
+question [0.7] is the best [0.5] er treatment for what is called end-stage 
+renal failure [0.6] end-stage renal failure is when you have irrespo-, 
+irreversible [0.3] and total failure of the kidney [0.9] okay [1.2] er [1.7] 
+because [0.5] transplantation allows the patient [0.3] to have essentially [0.
+2] normal function [0.2] normal functioning [0.4] they can walk around as usual 
+go swimming doesn't have to have the dialysis bag [0.5] er doesn't have to 
+worry about things like [0.3] haematopoietin injections [0.3] his diet can be 
+fairly free [0.4] he can drink reasonably [0.3] modest amounts of alcohol and 
+so on [0.3] so a kidney transplant patient [0.3] really has a [0.2] more or 
+less normal function [0.3] 
+whereas somebody on dialysis is severely limited [0.3] in lifestyle [0.3] and 
+in health [0.8] and i think the point has been made quite clearly [0.6] that 
+transplantation despite the initial costs of the actual operation [0.4] is in 
+the longer run [0.4] much cheaper [0.2] than dialysis dialysis i forget what it 
+costs [0.4] five-thousand a year something like that [0.3] whereas [0.2] once 
+you've done the transplant which maybe costs ten-thousand the cost of 
+maintaining the patient [0.4] is much less so over a period of ten years [0.4] 
+the transplant is teacher [0.3] and in our modern new up to date N-H-S it cost 
+that matters [0.3] very much indeed [1.9] the main limitation [0.3] as i 
+suspect [0.2] you are all familiar [0.6] is er the availability of donors [0.3] 
+now [0.3] again namex will talk about this more tomorrow [0.3] so i won't go 
+into that in detail [0.4] but the lack [0.4] of donors the [0.2] few number of 
+small number of donors means that there are [0.4] serious scientific 
+consideration [0.4] to other [0.3] ways and means [0.3] of 
+restoring organ function replacing organ function i should say [2.7] so [0.4] 
+[1.0] as i was saying just now [0.9] kidney transplantation is [0.9] surgically 
+straightforward surgically quite feasible [0.4] there's the ureter to reconnect 
+[0.3] there's a couple of arteries a couple of veins to reconnect [0.3] but 
+basically surgeons find this fairly straightfoward [0.6] er [2.1] so the main 
+problem [0.3] is as i've been saying [0.3] rejection of the graft [0.2] and 
+you've got to control that rejection [0.8] now [1.4] experience with [0.2] 
+patients who've been transplanted implies has told us taught us that there are 
+actually three [0.6] forms [0.6] of [0.2] rejection [1.0] three different kinds 
+of rejection [0.5] er which are described as hyperacute [0.6] and acute [0.5] 
+and chronic [2.7] [0.7] now the hyperacute rejection [0.4] happens more or less 
+immediately as soon as the kidney [0.4] is [0.2] plumbed into the recipient [0.
+3] and the veins and arteries are reconnected [0.3] and blood [0.4] starts to 
+flow 
+through the kidney the host's blood starts [0.3] the flow through the kidney [0.
+4] what happens is that if there is hyperacute rejection going on [0.3] 
+immediately or very very quickly before the [0.3] cessation of the operation [0.
+4] er it will be seen that the kidney starts to swell [0.2] become oedematous 
+[0.6] okay starts to swell [0.5] and [0.4] goes much darker in colour [0.7] er 
+and the consequence [0.4] of the rejection is that the organ very quickly will 
+fail [0.4] and immediately has to be replaced [0.3] and they have to rejoin the 
+various bits and pieces [0.3] close up the patient [0.3] and put him back onto 
+dialysis until a more suitable kidney comes along [2.3] okay [0.2] so that 
+happens immediately during the operation we'll talk about the causes in a 
+moment [0.9] acute [0.3] rejection [0.3] despite the term acute meaning again 
+more or less immediate acute rejection [0.4] tends to occur [0.3] some weeks 
+after the actual transplantation six to twelve weeks typically [1.2] what 
+happens in this situation of course you can't see [0.2] what's 
+happening [0.5] er [laugh] [0.7] obviously [0.3] er but [0.6] clinically what's 
+happening is that kidney function starts rapidly to decline [0.4] so it's all 
+the symptoms of end-stage renal failure that you will have heard from Dr namex 
+this morning [0.4] er where [0.3] you start to get [0.3] protein in the urea [0.
+3] er urine [0.4] er and you start to get [0.6] large amounts of creatinine [0.
+4] in the circulation because of damage to tissues and things like that [0.7] 
+okay [0.4] now [1.0] i should have said that hyperacute [0.3] rejection is 
+actually irreversible once it's set in there's nothing can be done [0.5] okay 
+and that's why you have to remove it and start again [1.4] in the case of acute 
+[0.2] rejection [0.6] usually [0.4] er it can be reversed we'll go on to why 
+and how if there's time presently [1.1] okay [0.9] 
+sf0261: does that if the [0.2] if the hyperacute one [0.4] does that kill the 
+kidney [0.2] 
+nm0260: yes 
+sf0261: so you can't use it 
+nm0260: can't use it it's dead finished [0.3] and i'll tell you why in a moment 
+[0.8] okay [1.6] now the acute rejection as 
+i say usually can be reversed by w-, adjusting the therapy that's being carried 
+out [1.1] [0.3] chronic rejection [1.0] happens years [0.2] after the 
+transplantation five years ten years [0.2] longer [1.8] what it is it's a 
+gradual slow [0.4] but [0.2] sadly irreversible decline in kidney function over 
+a period of years [0.3] and u-, ultimately the kidney fails completely [0.4] 
+and the patient is back [0.6] er in square one [0.8] okay [0.5] so let's go on 
+[0.5] er and actually talk about [0.4] the causes [0.3] the immunological [0.4] 
+causes [0.3] of these different kinds of [0.4] rejection [0.5] now [0.3] 
+hyperacute rejection is actually pretty straightforward [2.4] it's due to the 
+presence in the patient [0.3] of antibodies [0.4] circulating antibodies [0.2] 
+which are specific for the transplanted tissue which recognize antigens [0.3] 
+on a transplanted tissue [0.3] especially [0.4] by recognizing alloantigens [0.
+3] on the endothelium [1.1] of the transplanted tissue [1.0] okay [0.5] having 
+recognized antigens on the endothelium [0.5] er you remember complement [0.4] 
+okay [0.3] and how antigen-antibody 
+complexes [0.4] activate complement [0.5] and the co-, activated complement 
+destroys [0.3] cell membranes locally [0.9] so you've got [0.2] a complement-
+mediated [1.0] lysis [0.4] of the endothelium [0.4] of the organ [0.5] now i've 
+mentioned endothelium as a target for attack [0.4] er in rejection phenomena [0.
+3] the result is [0.4] loss massive loss [0.4] of fluid into the organ [0.3] 
+and that causes the swelling [0.3] okay the organ becomes oedematous [0.4] and 
+of course the damage to the glomerulus in this situaton completely [0.4] er 
+destroys the function of the kidney [0.3] so that kidney [0.4] is dead [0.7] 
+now [0.2] you might ask where did these antibodies arise [0.4] how do they 
+arise rather [0.6] er and the answer is [0.2] er [0.9] often through pregnancy 
+[0.9] the fetus [0.8] is in effect in effect an allograft [0.4] because 
+immunologically the fetus [0.3] is a hybrid between the father and the mother 
+[1.0] so the mother [0.3] will potentially become sensitized [0.4] to the 
+paternal antigens of the fetus now there is [0.3] a little bit of exchange [0.
+3] of [0.2] blood [0.3] across the placenta [0.3] there's no qu-, it it's quite 
+clear 
+that there will be fetal cells in the maternal circulation [0.4] so [0.2] the 
+mother will develop antibodies to the fetus [0.4] okay [0.3] now suppose [0.9] 
+that the transplant [0.5] for whatever reason maybe it comes from the husband 
+or father perhaps i should say partner [0.5] maybe that transplant comes from 
+the husband you wouldn't do this in fact for these reasons [0.5] er but 
+obviously er under those circumstances the transplant will share [0.7] antigens 
+with the fetus [0.3] and the mother's [0.3] antibodies will destroy it [0.9] er 
+the other situation where [0.2] you are likely to get these [0.2] antigens 
+antibodies sorry arising [0.3] is where there's been blood tranfusions now if 
+you've had blood transfusion [0.5] in the past that meant [0.3] you will have 
+had the leukocytes as well from the donor [0.8] er [0.9] and you obviously you 
+had the blood the red blood cells but the leukocytes will bear [0.4] antigens 
+that are shared by the endothelium [0.9] okay [0.3] so if by chance you've been 
+transplanted with blood [0.3] that shares antigens [0.3] with [0.3] your tran-, 
+sorry [0.3] so if by 
+chance you've been transfused [0.3] with blood that shares [0.3] antigens with 
+[0.4] the donor [0.6] tissue [0.2] then you will have antibodies to it [0.3] 
+okay [6.0] so how to avoid [0.2] hyperacute [0.5] [0.3] rejection [0.3] it is 
+actually very straightforward as i've said [0.3] there's obviously no point [0.
+5] in transplanting an organ if it's going to be immediately rejected [0.3] so 
+[0.3] quite simply you check in advance that the recipient does not have any 
+anti-donor antibodies [0.6] and that's actually very simply done by the so-
+called crossmatch test [0.9] [1.0] so you take donor leukocytes [0.7] all right 
+[0.8] and you incubate those leukocytes with serum [0.2] from the recipient [1.
+0] if the ser-, s-, recipient [0.8] a-, a-, a-, and sorry and a source of 
+complement [0.7] so if the donor cells lyse under those circumstances you know 
+[0.3] there are antibodies [0.3] in the recipient serum [0.5] which with 
+complement will lyse the target leukocytes [0.6] okay [0.2] so under those 
+circumstances if the crossmatch test fails [0.3] you would not transplant that 
+particular [0.3] organ into that particular recipient [0.5] okay [0.4] you may 
+ask where the leukocytes come from to do this test [0.4] in the case of a live 
+related live donor [0.3] it's [0.3] perfectly obvious you take a little bit of 
+blood [0.7] in the case of the cadaveric donor you use usually the spleen [0.4] 
+as a sort of l-, source of leukocytes for this test [0.5] okay [0.3] very 
+straightforward simple test [0.3] and if a-, and if if it if you fail then you 
+don't do the transplant [2.4] but [0.3] acute rejection [0.5] is a very 
+different situation [0.8] er and this is due to the development over a period 
+of weeks [1.1] cell-mediated responses to donor alloantigens [0.4] okay [0.4] 
+er [0.2] these [0.3] responses [0.3] particularly [0.4] are C-D-eight-positive 
+cytotoxic T-cells now you've all [0.4] come across [0.3] cytotoxic cells in 
+immunology before now [0.5] er [0.2] if you generate anti- [0.7] donor [0.6] C-
+D-eight cells [0.3] those will [0.8] obviously damage 
+the donor tissues [0.4] and in particular again [0.3] it's the endothelium 
+which is damaged [0.7] and a little bit of techno-, technical terminology here 
+if the endothelium is being damaged [0.6] this is r-, [0.2] er described as 
+vascular rejection for obvious reasons 'cause the endothelium is the 
+vasculature [1.9] and [0.3] may also [1.3] as well [0.4] or alternatively [0.3] 
+er damage the actual cells of the organ and that is described as cellular 
+rejection [0.6] after infiltrating into the organ [1.7] now i make this 
+distinction [0.3] er because [0.4] vascular rejection [0.4] is much more severe 
+[0.3] than straightforward cellular rejection [0.3] er celluclar rejection is 
+much more easily coped with [0.3] than is vascular rejection for the obvious 
+reason [0.3] that if you're getting vascular damage damage to the endothelium 
+[0.3] that is going to do much more severe damage to the organ [0.3] than a l-, 
+than damage to the er parenchymal cells of the organ [5.2] okay [0.5] few more 
+words about [0.3] the acute rejection [3.8] as a part of the diagnostic process 
+for 
+acute rejection [0.5] er perhaps i should say if a if a patient is [0.7] er 
+well i've already said that you get [0.4] er [0.3] protein in the urea and you 
+get an increase of creatinine [0.2] during acute rejection [0.3] but the 
+patient also becomes feverish [0.3] now you remember fever is a symptom [0.3] 
+of immunological activations and the patient is feverish has these other 
+problems [0.4] er now there are various reasons [0.3] why the patient may 
+become feverish and have these sorts of problems [0.3] not all of them are rec-,
+are rejection [0.4] so as a part of the diagnosis [0.3] of rejection [0.5] 
+what is done is that a biopsy is taken to do that [0.3] er the physician 
+inserts [0.4] a needle [0.5] er into the kidney under ultrasonic [0.3] er 
+direction [0.3] and takes [0.3] in the needle hollow needle obviously a 
+hypodermic needle [0.3] takes [0.3] a piece of core [0.4] a core of tissue [0.
+4] and removes that [0.5] and you can stain this and examine it histologically 
+[1.1] and if you do that [0.2] and there's rejection occurring [0.3] then you 
+see all the classical hallmarks of inflammation [0.8] which i hope you 
+recollect [0.3] are 
+things like leukocytic infiltration [0.5] into the organ [0.4] things like 
+activation of adhesion molecules remember [0.8] release of cytokines remember 
+[0.6] and chemokines [0.3] so if the biopsy [0.4] the histological [0.2] 
+appearance of the biopsy is that [0.3] then you've got a clear [0.4] er [0.6] 
+diagnosis [0.5] of rejection [0.3] and if it's vascular involvement it's 
+vascular rejection if it's just cellular involvement it's cellular rejection [0.
+4] i've already said about damage to the endothelium [0.5] that will lead to 
+kidney failure [3.2] so [1.7] the question that arises is how to avoid [0.5] 
+graft loss due to acute rejection [2.3] now since the point that i have been 
+making [0.6] is that [0.5] the immunological [0.8] response is due to allo-, 
+alloantigenic differences between the donor [0.4] and the recipient [1.2] 
+manifestly one of the things that is going to be done is to try and minimize [0.
+3] the differences the antigenic differences [0.4] between the donor [0.3] and 
+the host [0.7] okay [1.3] and this [0.7] you may understand is called tissue 
+type matching [0.9] tissue typing 
+for short [1.3] so you match as closely as possible [0.4] the antigenic 
+properties [0.3] of the donor tissue [0.4] to the antigenic properties of the 
+[0.6] recipient i'll go into this in more detail presently [2.2] and quite 
+obviously the other thing [0.5] that's done [1.8] is that in the case of these 
+patients [0.3] the immune response [0.3] will be suppressed [0.6] by drug 
+treatment [0.7] okay so you do have two [0.6] er two [0.2] strategies one is [0.
+2] reduce the antigenic differences by tissue typing [0.9] tissue matching [1.
+2] and suppress [0.3] the immune response so that the immune response when it 
+occurs and it will occur [0.7] er is minimized [0.8] doesn't do too much damage 
+[0.2] is the hope [1.9] so we go on to chronic rejection [0.7] now this [0.8] 
+is actually a somewhat different situation [1.2] er [0.8] histologically [0.5] 
+er that is microscopically [0.4] er the a-, [0.2] appearance of the tissue 
+undergoing chronic rejection [0.4] is quite different from the [0.2] t-, 
+appearance of tissue undergoing acute rejection [0.4] there is no clear-cut 
+evidence of inflammatory responses [0.3] there may be some 
+evidence of minor inflammation but not much [1.0] okay [0.4] so it's not really 
+[0.5] an immunologically-mediated rejection [1.0] but what is found is that in 
+these situations [1.5] that you get deposition [0.2] of [0.5] quantities of 
+fibrous scar tissue er collagen and [0.5] and fibres er fibroblastic [0.3] 
+cells in large numbers [0.4] and suchlike [1.8] obviously [0.4] if you have a 
+lot of fibrous scar tissue deposited in in in the organ er in the kidney [0.4] 
+whose [0.6] function is crucially dependent on the delicate structure of the 
+glomerulus [0.6] and the other bits and pieces [0.6] then [0.3] er you'll get 
+[0.3] literally quite literally clogging up of these parts of the organ [0.4] 
+and gradual [0.5] loss of function [1.0] okay [0.8] as i've already said [0.3] 
+this [0.3] is irreversible cannot be reversed [0.3] and once the organ has 
+failed it [0.2] has to be removed and you start again [1.0] [1.0] though i've 
+said [0.4] that it is probably not an immunological response immunological [0.
+2] er effect [0.3] because you see no real signs of inflammation [0.4] and 
+inflammation is 
+the hallmark [0.4] of an immune response [1.8] almost certainly this chronic 
+rejection is due to [0.2] a long period of chronic but low-level inflammation 
+there are there is a little bit of inflammation going on [0.4] so there is 
+continuous [0.3] minor damage to the tissues [0.3] okay [1.4] in order to 
+repair this minor damage [0.3] you have [0.3] what amounts to wound healing 
+responses occurring now wound healing [0.4] is a very interesting biological 
+phenomenon [0.3] you've all of you experienced wound healing [0.3] you cut 
+yourself [0.3] and a scar [0.3] develops [0.5] to [0.2] close up the tissue [0.
+4] the scar [0.3] is the deposition of fibrous tissue particularly collagen 
+collagen fibrals [0.6] and obviously [0.4] that happens in the kidney [0.2] or 
+the liver of whatever [0.3] you have the consequence of the failure of the 
+organ [0.6] so almost certainly [0.5] er [0.2] we've got [0.2] a wound healing 
+response generating [0.6] fibrous tissue in response [0.3] in as a consequence 
+of the chronic inflammation [1.3] so what can we do [0.8] about that [0.4] now 
+as i've said [0.4] there is [0.3] no 
+effective therapy [1.1] and [0.9] it is supposed that in fact [0.4] probably 
+all grafts eventually [0.5] are lost [0.2] through chronic rejection [0.3] but 
+[0.3] er it might be such a slow process that the patient [0.4] may actually in 
+fact outlive the graft and there is quite [0.3] good evidence that this does 
+happen people die from other causes [0.3] before [0.5] the organ fails [0.8] 
+now [2.0] if as i say the chronic rejection is due to [0.2] chronic [0.3] 
+inflammation [0.4] or is due to the inflammation which was generated perhaps in 
+the acute rejection [1.2] then [0.2] one supposes that chronic rejection is 
+less likely to develop if you can minimize [0.6] the acute rejection in other 
+words if you manage the patient carefully [0.3] so that the acute response [0.
+3] to the tissues [0.4] is minimized [0.3] so if you want to reduce [0.6] 
+chronic infection and this very much appears to be the situation [0.4] the way 
+to do that [0.4] is to [0.3] reduce the probability [0.3] of [0.3] acute infec-,
+acute rejection [0.3] at the early stage [0.5] of the transplantation [0.7] 
+okay [5.9] i will have a break 
+in a few minutes because Natalie has to change her [0.3] er tape in any case [0.
+9] so i'll stop in a few minutes and we'll have a short break [0.7] but i want 
+to talk first before i stop [0.4] a little bit about this issue of tissue 
+matching [1.7] and this is [0.3] where we [0.4] could [0.4] get into some 
+pretty heavy immunology i'm not going to [3.9] animal in animal models when you 
+graft from one mouse to another [0.7] it's long been established [0.3] that 
+there are two [2.3] antigenic differences which matter [0.6] and we talk about 
+major histocompatibility antigens [0.2] okay major histocompatibility [0.4] 
+alloantigens strictly speaking [0.8] you've heard of these [0.8] they are H-L-A 
+in the human [0.3] and H-two in the mouse [1.0] if [0.4] two individuals differ 
+in their H-L-A in their major histocompatibility antigens [0.7] what happens is 
+severe [0.3] and rapid rejection occurs that's why these things are called 
+major histocompatibility antigens [2.9] but they aren't the only 
+histocompatibility antigens they aren't the 
+only alloantigens which mediate [0.4] er tissue rejection [0.4] and there's 
+actually a whole bundle [1.4] of minor histocompatibility antigens [0.9] two 
+examples in the human are H-Y [0.3] and H-A-one [0.6] and in the mouse [0.3] 
+it's everything that's not H-two H-one H-three H-four H-five and so on [0.7] 
+okay if anybody had ever wondered [0.3] why the M-H-C of the mouse was H-two [0.
+5] it's because there are multiple loci controlling tissue rejection [0.3] 
+which were numbered one to N [0.4] and two happened to be the major [0.9] 
+complex [0.4] okay [0.5] now if you have [0.3] if you have [0.4] identity [0.2] 
+for the major histocompatibility antigens [0.4] for differences [0.3] in the 
+minor histocompatibility antigens [0.3] you still get rejection it still occurs 
+[0.5] but [0.2] as [0.8] the minor implies [0.6] er the rejection is less 
+severe [0.7] and rather slower [0.2] but [0.3] nonetheless quite short [5.5] 
+now [0.8] just very briefly [0.8] when we take [0.2] two individuals from a 
+population if we ask the question can we match [0.5] 
+absolutely [0.5] er tissues from those two individuals taken at random they're 
+not [0.4] twins [0.4] two individuals taken at random [0.4] and the answer is 
+that total matching of tissues [0.4] is in fact completely impossible [1.8] for 
+two reasons one is [0.2] i hope you recollect that the H-L-A system is 
+extremely polymorphic [0.4] what that means [0.3] is that there are many 
+alleles dozens of alleles [0.3] at any one locus and they are [0.5] not 
+randomly distributed amongst the population [0.4] but m-, [0.2] er [0.2] fairly 
+randomly distributed amongst the population [0.6] okay [0.6] and there are [0.
+2] six ma-, six major loci [0.3] on each chromosome [0.9] and there are two [0.
+3] chromosomes [0.3] so an in any in any individual [0.4] there's going to be 
+twelve loci [0.3] with dozens of alleles at each loc-, locus [0.3] so you can 
+quickly imagine [0.3] that the probability of finding 
+two identical individuals is going to be very small indeed [1.2] er i won't [0.
+4] well i will remind you class one and class two A B C D-R D-P D-Q [1.8] all 
+right [0.3] now even supposing by chance you're lucky enough to match all the 
+majors [0.5] the probability of matching all the minors [1.1] is nil [0.4] 
+because a minor antigen essentially [0.6] is [0.3] the product [0.3] of any 
+gene [0.5] for which you have [0.6] different alleles [0.4] okay now when you 
+think about the n-, [0.3] the way [0.3] genetics works [0.3] it's going to be 
+impossible to find two individuals that have no allelic differences at all [0.
+2] except twins [0.9] okay [0.2] so total matching is impossible [1.0] so that 
+is why in transplantation [0.5] you have to have [0.5] immunosuppression [0.8] 
+okay [0.4] we'll make a short break there er if you want to nip out and get a 
+cup of coffee [0.4] i will restart in ten minutes [1.2] okay 
+nm0260: 
+can we settle down [7.6] as i was saying at the end of the [0.5] previous [0.4] 
+hour [0.4] tissue matching total tissue matching is obviously impossible [0.6] 
+er for the reasons i've given you [1.5] that doesn't mean to say that [0.5] 
+partial matching is not impo-, not [0.3] is not possible [0.4] er [0.2] there's 
+a couple of phenomena [0.3] which make partial matching [0.2] quite possible [0.
+5] one is the the phenomenon of linkage disequilibrium [0.5] what that means is 
+that s-, er within a population [0.3] some sets of alleles tend to stick 
+together [0.4] okay [0.3] and occur [0.2] at a higher frequency than others [0.
+4] what i mean by the term of haplotype i think you'll probably [0.5] 
+intuitively understand [0.3] is you have a series of loci [0.4] along a 
+chromosome [0.4] linked along a chromosome [0.3] then a haplotype [0.6] is a 
+set of alleles [0.5] on along those particular [0.5] along that [0.3] along 
+those p-, of those particular loci and we'll talk about haplotypes [0.3] er 
+with namex next t-, on on Thursday [1.8] so [0.2] linkage diseq-, equilibrium 
+ensures that some [0.6] haplotypes are more common than others [0.7] okay so 
+the chance of getting a set [0.9] of [0.3] histocompatibility antigens together 
+in two individuals is rather better [0.3] than y-, than you'd expect if there 
+really was [0.3] random segregation now you remember that Mendel said that 
+traits [0.3] are randomly segregated that's not true as you know they are 
+linked [0.4] and so what we're talking about is linkage keeping together [0.3] 
+a chunk of the chromosome [0.3] so that the chances of having a set of [0.6] 
+alleles together is [0.3] actually much higher than you'd expect by chance [3.
+5] the second point that matters [0.2] that's important is although i said 
+there are six loci [0.4] er [0.5] some H-L-A antigens [0.3] i'm talking 
+exclusively about humans of course that's why i use the terminology H-L-A and 
+not M-H-C [0.8] okay [0.2] some H-L-A antigens seem to matter much more [0.4] 
+in transplantation [0.3] in particular it seems that the D-R [0.4] of class two 
+is very important [0.6] and A and B of 
+class one [0.3] is also very important [0.3] implying that D-P and D-Q [0.4] 
+and C don't matter so much which it seems to be the case [2.2] now another 
+point [0.5] er which [0.2] course you'll immediately understand [0.4] is that 
+if you're working with live related donors [0.6] er [1.2] those individuals 
+will have at least one haplotype in common [1.9] er er er perhaps i should be a 
+little bit careful what i say here but there's been one or two unfortunate [0.
+2] situations [0.5] where fathers and children are found not to be related [0.
+3] and that's always very embarrassing [0.4] for the transplant physician to 
+explain [3.1] the important [0.3] essential thing is that [0.5] if we can 
+partially match [1.5] and that does actually improve graft survival [0.2] again 
+namex will talk about this on Thursday [1.0] many other factors matter [0.4] a-,
+as well [0.4] m-, some factors perhaps matter more [0.5] er than matching but 
+matching is not unimportant so that [0.3] is [0.3] an end an aim [1.0] now how 
+is it done [1.2] how do you tissue match [0.4] the old-fashioned way [0.3] is 
+to use 
+antibodies specific for particular [0.3] H-L-A types [0.7] in much the same 
+sort of way as in the crossmatch test [0.4] if you have an antibody say to [0.
+5] H-L-A [0.3] B-twenty-seven [0.8] and that will lyse the target cells from 
+the donor [0.3] then those target cells must be H-L-A B-twenty-seven [0.6] so 
+there's a simple [0.6] serological test [0.3] the disadvantage of serological 
+tests [0.4] comes from the very polymorphism [0.3] that they use to detect [0.
+3] there are so many [0.4] different possible t-, antigenic types [0.3] that 
+you have to have very large batteries [0.5] of [0.4] er [0.4] antibodies [1.2] 
+and a worse problem [0.4] is that antibodies [0.4] do not cannot distinguish 
+between some closely related [0.4] allelic types [0.2] okay [0.3] so you have 
+an antibody that says two types are the same [0.3] whereas in fact they're 
+different [1.0] w-, don't want to go into that in any detail but [0.5] because 
+[0.3] er [1.6] what happens what happens now [0.4] is that P-C-R techniques are 
+used for typing [1.2] er [0.3] using allele specific primers okay [0.3] so that 
+primer [0.3] will only prime that particular allele [0.5] so you can only 
+detect that 
+particular a-, allele [0.5] and you set up the reactions [0.4] in a multiplex 
+fashion [0.3] so you can use use multiple primers in the same reaction [0.4] 
+and run just one track [0.2] on a gel and you see [0.3] various bands depending 
+on which one [0.4] is is there which [0.4] haplotype which which antigenic type 
+is there [0.6] and of course if you run multiplex reactions [0.3] er and 
+multiple gel tracks [0.4] you can very easily and quickly [0.3] analyse dozens 
+[0.4] of different H-L-A types [0.2] in the same [0.6] in in the same er [0.2] 
+test [0.8] so it's done by multiplex [0.3] P-C-R [0.3] which with [0.2] which 
+now makes [0.4] er antibody typing [0.2] quite obsolete [2.1] okay [0.8] so 
+there we are [0.3] we match as closely as possible [3.0] er but we can never 
+completely match so let's go on now and talk about how the immune system 
+actually does recognize the foreign tissue [0.7] er this is where we perhaps 
+get into slightly heavy immunology [2.7] i hope that you recogni-, r-, remember 
+recollect the classical paradigm of T-cell recognition of antigen [0.6] okay [0.
+4] cast 
+your mind back to the second year immunology lectures [0.4] where you were 
+taught [0.3] that the T-cell receptor for antigen [1.2] recognizes on the 
+surface of the target cell [0.3] or the antigen presenting cell call it what 
+you will [0.6] not [0.2] the antigen [0.5] not the foreign antigen i should say 
+[0.4] but a fragment [0.4] of the pep-, of the foreign antigen a peptide 
+fragment of the foreign antigen [0.4] in association with [0.2] the H-L-A 
+antigen [1.1] and the essential point with that [0.4] is that the T-cell will 
+only recognize [0.5] the foreign peptide in association [0.3] with self [0.2] H-
+L-A [0.5] this is the phenomenon [0.3] of H-L-A restriction [0.4] that the T-
+cell will only recognize [0.2] foreign antigenic peptides [0.4] in the context 
+of its own [0.4] H-L-A [0.8] own H-L-A [2.0] self H-L-A [2.1] that's what 
+happens for example in virus infections [0.8] now [0.7] in transplantation [2.
+1] there's a rather different situation [0.3] and on the face of it [0.3] it [0.
+2] contradicts this paradigm [0.5] because what is being recognized and this is 
+very well established [0.5] is not [0.3] self [0.5] plus [0.3] foreign peptide 
+but instead [0.4] is [0.5] the 
+foreign [0.8] M-H-C antigen itself the foreign H-L-A itself which is recognized 
+by the T-cell [1.4] so this is different from the classical paradigm of [0.2] 
+antigenic recognition by T-cells [2.1] okay [0.8] now [0.7] i know i talked 
+about this a little bit [2.2] in the second year [2.8] we distinguished [0.4] t-
+, actually [0.2] two forms [0.5] of [0.2] antigenic recognition and 
+transplantation [0.3] one is so-called [0.2] direct recognition [1.3] where 
+what is happening is what i've just said [0.5] is if the host and the donor 
+differ in H-L-A [0.5] and that the T-C-R [0.3] of the T-cell T-cell receptor 
+recollect [0.4] of the T-cell [0.4] is binding to the foreign H-L-A [0.3] now i 
+showed you this diagram and i probably didn't explain it very well [2.3] but 
+this is the classical situation [1.3] with viral antigens [0.4] this is the T-
+cell receptor of the T-cell [0.7] this [0.6] is the [0.2] is the self [0.7] H-L-
+A antigen [0.3] with which is associated [0.2] a peptide a foreign peptide [0.
+4] and these [0.4] double [0.3] lines [0.4] are supposed to imply [0.6] 
+recognition [0.8] by the T-cell receptor [0.2] of [0.3] 
+this target structure [0.6] okay [0.3] so that's what normally happens that's 
+what the T-cell receptor's for [0.8] now what we are saying [1.1] is [0.2] 
+where we have [0.5] er [0.2] foreign H-L-A being recognized [0.9] essentially 
+this same T-cell receptor [1.1] is cross-reacting [1.1] remember [0.4] 
+antigenic cross-reaction [0.6] this is an equivalent situation [0.5] it's cross-
+reacting [0.5] with the foreign H-L-A which as you can see has a different 
+shape [0.5] from the safe s-, self H-L-A [1.2] in conjunction with [0.2] a 
+different peptide [0.6] but the point is by chance [0.5] these two structures 
+are similar [0.5] by chance [0.3] so that the same T-cell receptor recognizes 
+both [2.9] and that is the basis [0.4] of so-called [0.4] allorecognition [0.4] 
+of foreign H-L-A [2.2] so that's direct recognition direct [0.4] because it's 
+the H-L-A [0.8] which is being recognized [3.0] should say in passing [0.3] 
+that H-L-A antigens [0.4] on the cell surface are never empty [0.5] they always 
+have a peptide associated with them [0.8] okay [0.2] so again the structure is 
+[0.2] always peptide plus [0.3] H-L-A [0.7] 'cause you never get empty H-L-A on 
+cell surface [0.5] so it's a 
+rather complicated situation [0.3] but there is good experimental evidence 
+plenty of good experimental evidence [0.4] that this actually is what's going 
+on and i don't want to go into the experimental evidence because it really is 
+too complicated [0.9] don't have time [3.2] now [2.2] having said that there's 
+direct recognition [1.7] that implies also that there is indirect recognition 
+[1.7] now this indirect recognition [0.4] is much more like [0.3] the classical 
+paradigm [0.3] of self H-L-A plus foreign peptide [0.8] 'cause the situation 
+here [0.6] is where the host [0.3] and the donor [0.5] have at least one 
+matched H-L-A antigen [0.7] okay now i've been saying [0.3] that you make an 
+effort to match H-L-A antigens for a transplant [0.6] so normally [0.5] you 
+transplant there will be matched [0.4] H-L-A antigens between donor [0.5] and 
+recipient [0.6] now the matched H-L-A antigen [0.9] will be seen as self [1.0] 
+by the host T-cell receptors [0.9] okay [1.7] and [0.4] if [0.4] you have [0.4] 
+shall we say a foreign peptide [0.9] in 
+the H-L-A groove in the peptide groove [0.3] that complex [0.2] of foreign 
+peptide [0.5] plus matched H-L-A [0.5] in effect [0.7] is equivalent to a say a 
+virus peptide [0.3] and self H-L-A [0.3] and potentially will activate the T-
+cell [0.7] now this [0.3] is exactly the same situation as with virus 
+recognition [0.2] exactly the same [2.0] the question that arises [0.3] is [0.
+2] where then does the foreign [0.2] peptide come from [1.5] okay [1.7] to sit 
+in the peptide groove [0.3] of the matched H-L-A [1.0] where does that foreign 
+peptide come from [2.0] and the answer is [0.3] that it is [0.5] potentially 
+derived from any [0.6] alloantigen [1.4] in the donor cell [1.2] now i've 
+talked about minor antigens remember [1.5] so if the minor antigen [0.3] 
+provides a peptide which can associate [0.3] with the matched H-L-A [0.4] that 
+[0.3] can drive the T-cell response in exactly the same way [0.3] as a viral 
+antigen will there's no difference [0.6] so the indirect recognition pathway [0.
+3] is actually equivalent [0.3] to the classical [0.8] virus [0.2] peptide [0.
+4] activation pathway [0.3] so it's [0.3] that's the simple one [0.4] the 
+complex one is the direct because you 
+have to think about [0.4] er cross-reaction [0.8] okay so i say the foreign 
+peptide can be derived from any alloantigen [0.3] i've said minor [0.2] 
+antigens or i'll [0.2] mention a a minor antigen in a moment [0.8] but 
+obviously [0.9] peptides derive from mismatched [0.6] H-L-A antigens in the 
+donor tissue [0.3] could also provide [0.6] er peptides [0.4] which would 
+function in this way [0.9] okay [1.0] so we have direct recognition [0.3] and 
+indirect recognition two different pathways [0.4] of T-cell activation [0.3] 
+which [0.5] essentially amount to the same end result which is activation of 
+the T-cell and damage to the tissues [1.9] i won't show you that again [2.2] 
+but i will give you an example of a minor antigen [0.7] now [1.5] again [0.4] 
+from your genetics you know that a major genetic difference between males and 
+females [0.4] is that males in addition to the X chromosome possess a Y 
+chromosome [0.6] now Y chro-, chromosomes don't [0.7] don't encode very much [0.
+5] they encode maleness [0.7] they do encode [0.4] what's called the male 
+specific antigen [0.9] 
+okay which is not surprising isn't it [0.3] the H-, the Y chromosome is going 
+to have [0.5] pro-, [0.2] going to encode proteins [0.2] which are not present 
+in the female [0.4] so you've got w-, male specific antigen which [0.4] er is 
+called the H- [0.2] Y [0.3] antigen [0.4] H for histocompatibility [0.3] Y for 
+the Y chromosome [0.5] encoded by the Y chromosome [0.4] it's expressed in all 
+male tissues [1.7] so you your kidney your liver [0.2] or my kidney my liver [0.
+3] er bear Y [0.7] antigen [1.9] and fragments [0.2] of that Y antigen [0.4] 
+can be presented by H-L-A A-one [0.5] or B-seven [0.4] or B-eight [1.3] what 
+does that point-two mean i can't remember [0.9] what i mean by that is 
+obviously different er [0.2] one fragment is presented by H-L-A A-one [0.3] 
+which is a particular [0.3] H-L-A A type [0.4] another fragment of the H-Y 
+antigen [0.3] is presented by B-seven [0.3] another fractio-, fragment of the Y 
+antigen is presented by B-eight [0.9] so [0.7] what happens [0.3] when you 
+transplant male tissues into a female [0.7] these H-Y antigens [0.3] will 
+activate [0.4] T-cell responses in the female [2.2] okay [1.3] and you can 
+demonstrate these T-cell responses [3.3] get a 
+C-D-eight T-cell responses to the female [0.7] to the male tissue [0.2] to the 
+male tissue [0.4] in the female [2.3] again for reasons that i'm not going to 
+go into at the present but b-, that namex will go into [0.4] er that actually 
+doesn't matter terribly much [0.4] so when you have the choice of a if you're a 
+a woman [0.3] and you have the choice of a male [0.3] or a female kidney it 
+actually doesn't matter [1.1] but in bone marrow transplantation it does [0.6] 
+'cause bone marrow transplantation [0.4] the matching actually is much more 
+critical [0.7] and it is clear [0.4] that if you have [0.3] Y or other minor 
+antigen mismatches [0.4] in bone marrow transplantations [0.3] that can cause 
+[0.2] distinct problems immunological problems [0.3] but in solid organ 
+transplantation it doesn't really matter [2.3] as things are clinically i 
+should say [1.5] but the point that i want to make there [1.2] that i'm leading 
+up to [0.6] is that you have a [0.5] in tran-, tissue matching [0.3] there is 
+[0.3] not not so much [0.3] a double whammy as the catch-twenty-two situation 
+[0.6] if you match [0.4] 
+H-L-A [0.8] completely which is not impossible but unlikely [0.7] er there'll 
+be no direct recognition [1.0] 'cause the H-L-As are all the same [1.8] but 
+there will still be indirect recognition [0.6] of minor antigens [2.5] on the 
+other hand [0.5] if you [0.3] completely mismatch so there are no shared H-L-A 
+antigens [0.6] there'll be no indirecognition because there'll be no [0.4] 
+inverted commas self H-L-A to present [0.3] the peptides [0.3] but there will 
+be massive direct rejec-, er recognition [0.9] okay [0.3] so [0.2] this just is 
+to reinforce give you a bit of background [0.3] to the science of immunology of 
+transplantation [0.4] a bit of background to why [0.4] how it [0.3] what are 
+the causes for rejection [0.6] and lead me [0.3] to this point [0.6] that under 
+any circumstances [0.4] immunosuppression [0.5] is going to be always necessary 
+to suppress [0.5] the immune responses [0.3] which are inevitably going to 
+arise to the transplanted tissue [3.9] so that logically brings me on to the 
+next section [0.3] which is [0.7] how does 
+immunosuppressive therapy work [3.0] quite simply immunosuppression is the use 
+of drugs [0.5] to prevent the development of the immune response [0.4] 
+obviously these drugs [0.4] had to be chosen so that they're not too toxic so 
+they don't damage the individual too much which they do they have side effects 
+[0.4] but they suppress immune responses [0.3] so that you do not [0.2] reject 
+the tissue [0.7] okay [3.2] there's actually lots and lots and lots of 
+immunosuppressive drugs available now many many many [0.2] er dozens [0.4] some 
+are fantastically expensive [0.5] er [0.5] none is completely effective [1.9] 
+all have more or less severe side effects some less severe some very [1.3] some 
+essentially trivial some really unpleasant [0.9] and [1.5] the worst thing 
+about them [1.0] is that all of them are non-specific by non-specific i mean 
+they suppress all immune responses [0.3] not just the immune response of the 
+grafted tissue which is what you want [0.4] you don't want to suppress immune 
+response to other things [0.4] obviously [0.6] so none of 
+these drugs is ideal [1.9] and just very quickly [0.4] er we talk about first 
+line drugs now first line drugs [0.4] are those that are [0.3] the first choice 
+of drugs in clinical treatment [0.6] and there are three types of drugs which 
+are in in [0.2] common use [0.7] er you'll get a bit more fr-, about this from 
+namex and there's plenty to read about about these drugs [0.4] there are the so-
+called calcineurin inhibitors [0.4] what these do is intervere [0.3] interfere 
+[0.5] with the activation of the I-L-two gene [0.6] okay [0.4] so I-L-two gene 
+I-L-two production [0.4] is blocked [1.3] okay [0.8] remember I-L-two [0.3] is 
+an essential T-cell [0.4] factor T-cell growth factor [0.3] so in the absence 
+of I-L-two T-cells will not proliferate [0.3] so that's why the calcineurin 
+inhibitors [0.4] are good [0.2] immunosuppressive drugs they prevent T-cell 
+proliferation [1.1] the second class [1.4] are the steroids things like 
+prednisolone [0.4] er which [0.9] fairly broadly suppress production of a range 
+of cytokines now you remember the importance of cytokines in immune responses 
+[0.6] so if you've suppressed cytokine production 
+you're going to generally [0.4] depress [0.3] er inflammatory responses across 
+the board immune responses across the board [0.4] so steroids are often used or 
+are used they're a front line drug [0.4] first line drug [0.9] and then the 
+third class [0.4] are inhibitors of D-N-A synthesis [0.4] which [0.6] block 
+cell proliferation in a non-specific way [0.5] now remember [0.3] in an immune 
+response [0.3] a major part of the immune response the development of the 
+immune response is clonal [0.5] proliferation [0.3] clonal expansion [0.3] so 
+if you have drugs which prevent cell proliferation you'll block clonal [0.5] 
+expansion [0.5] so [0.3] these three classes of drugs [1.1] ah [0.4] other 
+drugs [1.1] that are also used [0.5] tend to be [0.8] the expensive drugs which 
+are good drugs very effective drugs [0.3] but they're so expensive [0.5] er 
+that they're only used [0.2] if the other drugs aren't working [0.8] okay [0.3] 
+and they tend to be used transiently [0.4] examples of those are antibodies to 
+T-cells [0.4] you imagine perfectly well [0.3] if you treat an individual with 
+antibody to C-D-three antigen [0.4] that will lyse with complement [0.2] all 
+the T-cells [0.5] 
+so this [0.2] anti-C-D-three [0.3] or for that matter I-L-two-R [0.6] is going 
+to be a very potent immunosuppressive drug [0.5] but it's so expensive [0.6] er 
+monoclonal antibodies [0.6] er cost [0.2] if we have to use them in gram 
+quantities and in gram quantities they are very expensive [0.6] and there's 
+more drugs [0.4] which are coming into clinical practice now [0.4] rapamycin 
+looks like a favourite [0.6] which seems to be another inhibitor of self-
+proliferation [0.4] and this one works by blocking growth factor [0.5] er 
+signalling within the cell [0.8] okay [0.3] so these are second line drugs [2.
+4] how are they used [1.0] now the general principi for many kinds of 
+chemotherapy for all sorts of disease now [0.4] is to use combinations of drugs 
+not one drug alone [0.4] but two or three or four or five drugs together [1.3] 
+it's found that these tend to be more effective the combinations are more 
+effective than single drugs [0.2] now let's for example suppose that drug A [0.
+4] inhibits ninety per cent of the immune response drug B 
+ditto drug C ditto [0.6] supposing that these three drugs work in different 
+ways [0.4] you might expect that the combination [0.3] will inhibit ninety-nine-
+point-nine per cent of the immune reponse [0.5] okay [0.5] which is much better 
+[0.4] so they're used in combination [0.7] and it's also found [0.4] er that 
+using them in combination [0.3] you can actually [0.3] reduce the doses that 
+are used [0.4] and that reduces the s-, undesirable side effects of the drugs 
+which i'll come on to [0.5] so actually [0.3] this a-, [0.2] tells us er [1.5] 
+some important things about drug therapy generally in medicine [0.3] and i can 
+mention drug therapy for cancer for example [0.4] drug therapy for H-I-V 
+infections [0.6] the tendency is to use multiple drugs because in combination 
+[0.3] they're more effective than the single drugs alone [0.4] perhaps it's not 
+so surprising [1.9] now initially [0.7] the drugs are used in high 
+concentrations high doses [0.5] er er er and this is because [0.3] when the 
+patient has just been transplanted [0.4] obviously that's a situation [0.3] 
+where the immune system of the patient [0.3] is getting 
+this tremendous jolt half a kilo or so [0.3] of foreign tissue being put in [0.
+5] and so you get tremendous activation potentially [0.5] of the immune 
+response so that's the point [0.4] where you the s-, physicians come in with 
+very large amounts of these drugs [0.3] in order to suppress [0.5] the very 
+strong immune response [0.5] which will occur [0.6] initially [1.5] the happy 
+thing is that in fact [0.5] the drug doses can be tapered down and this tells 
+us actually something quite important [0.6] you can reduce over a period of 
+months the amount of drugs that are used [0.5] and this is telling us that in 
+fact [0.4] that the patient is becoming acclimatized if you like become adapted 
+to the graft [1.2] okay getting used to the graft immunologically speaking 
+that's an important observation [2.1] it's never reduce to zero because 
+generally if the drugs are abandoned then the tissue the the organ is rejected 
+so you er is what it means is that [0.5] the patients who have transplants [1.
+5] are going to be treated by im-, with 
+immunosuppression forever [0.8] or well the [0.2] continue the rest the rest of 
+the their life or at least the rest of the [0.7] graft's life [3.7] now i've 
+mentioned [0.9] this issue of acute rejection one wants to minimize acute 
+rejection [0.4] so as soon as patients start to show symptoms of acute 
+rejection [0.4] the dosage [0.5] of the drugs is increased [0.6] and if that 
+doesn't work to prevent the rejection [0.3] then the second line drugs like 
+anti-C-D-three [0.3] are used as well [1.0] so the acute rejection is a sort of 
+emergency situation [0.6] where the drug dosages are put up [0.6] in an attempt 
+to prevent rejection [2.1] and the fact is that the physicians have got so used 
+to using these drugs and so accustomed to their patients [0.5] that in fact [0.
+2] er [0.6] acute rejection is now quite rare er i can't remember the figures 
+but [0.3] the actual so-called episodes [0.3] where acute rejection occurs [0.
+3] when i say acute rejection i don't mean that the tissue is lost i mean that 
+symptoms of r-, rejection [0.2] develop [0.4] which have to be treated [0.3] 
+successful treatment of course prevents 
+the acute rejection so you don't lose the tissue [0.6] must make that clear [1.
+1] er and the physicians [0.4] have got this so well under control that graft 
+loss [0.5] to acute rejection almost never happens now it's very rare [0.5] 
+well not very rare but it's it's rare [6.3] okay [0.4] so that summarizes these 
+points really [1.7] in the absence of immunosuppression grafts are [0.3] 
+inevitably rejected [1.3] acute rejection occurs [0.9] after a delay i suppose 
+because in the presence of immunosuppression it takes a long time [0.4] for the 
+immune responses to develop [0.4] something that w-, should normally take a few 
+days [0.3] takes a few weeks because you're reducing the proliferation of the 
+cells [2.7] and that's what i'm saying in this last point that anti-graft T-
+cells grow more slowly under immuno-, immunosuppression [3.8] now [0.7] this 
+brings us to another point i mentioned [0.3] that there looks as if there's 
+some sort of adaptive phenomenon [0.4] which occurs [0.2] in the patient 
+because you can taper off the drug dosage without losing [0.4] the graft [2.2] 
+studies [0.2] 
+with mice and other rodents [0.2] have shown have suggested [0.4] that if you 
+graft foreign tissues into the animal [0.3] whilst that animal is strongly 
+immunosuppressed [0.7] okay [0.4] you indru-, induce [0.5] a condition called 
+tolerance which [0.5] i hope you're familiar with [0.4] in which [0.4] you do 
+not get an immune response with the foreign [0.3] antigen [3.1] in that 
+situation [0.3] you can stop all [0.2] the immune suppression and the graft 
+does not reject it because the animal is tolerant [1.6] okay and this has been 
+demonstrated repeatedly in mice [1.9] i will say [0.3] that mouse mice are 
+really very different from humans [0.3] and you cannot transfer [0.5] er 
+experimental data from murine models [0.3] directly to human [0.4] so it is not 
+the case [0.4] er that [0.3] tolerance [0.2] is sure to arise [0.4] and there 
+are many differences again i'm not got time to go into the differences between 
+the mouse models and the human situation but the differences [0.4] are 
+significant enough [0.4] to persuade one that the two situations are not the 
+same [0.9] but still the question 
+arises [0.4] does some sort of [0.5] tolerance phenomenon [0.3] arise in humans 
+[1.8] now i'm going to [0.5] dip into [1.2] a little bit of [0.9] my own 
+research [2.5] [0.4] er which we've done [0.3] here er in collaboration with 
+the local hospitals the local transplant unit [1.0] er [1.4] in principle [0.4] 
+you can [0.2] d-, [0.2] detect [0.3] the development of tolerance in [0.2] 
+transplanted humans [0.5] because what you can do [0.5] is measure [0.4] the 
+numbers of T-cells in the recipient [0.6] who are able which are able [0.4] to 
+respond [0.2] to the donor's antigens [0.6] okay [0.3] so if you can count the 
+numbers of [0.4] er T-cells that respond to the patient to to the donor [0.4] 
+tissues [0.5] enumerate them [0.4] er then [0.3] if you can show [0.4] that 
+these numbers are declining with time [0.9] okay [0.3] you can then argue that 
+tolerance is developing [0.9] but unfortunately in experimental terms this is 
+not an easy thing to do [0.6] and i just want to give you a little bit of the 
+technology [0.5] er c-, we are talking about science after all [0.8] okay [1.2] 
+the way this [0.4] has 
+been done is by the so-called lymphocyte dilution [0.2] assay [0.7] lymphocyte 
+dilution i've forgotten to write that down oh there it is lymphocyte dilution 
+assay i'm sorry [1.7] what we do here those of you that have done [1.0] some 
+tissue culture may be [0.3] familiar with ninety-six well plates you will have 
+done [0.4] those that are done by others you will have used them for the [0.3] 
+for the er [0.8] what's that red blood cell assay i've forgotten 
+haemagglutination assay [0.6] er so you can you take these ninety-six well 
+plates [0.7] er and you put [0.4] in each well [0.6] a fixed number of [0.3] 
+the cell of cells from the donor these we call the stimulator cells fixed 
+numbers same across the plate every well gets the same number [0.9] okay [1.7] 
+what you do then [0.2] is titrate [0.2] across the plate [0.5] er successively 
+reducing numbers [1.1] of the recipient cells which we describe as the 
+responder [0.7] cells okay 'cause they're going to respond to the antigens on 
+the donor cell [0.5] and you will have noticed i've made a [0.4] bog-up here of 
+these numbers [0.8] but what i'm trying to 
+show is [0.2] doubling dilutions as you go across the plate [1.2] okay [0.6] 
+now [0.6] if you score [0.4] some [0.3] measure [0.3] of T-cell activation [0.
+6] in these wells [0.3] and i should say [0.2] all this particular column has 
+got the same number of responder cells [0.4] all this column have got the same 
+number so you've got [0.2] twelve sorry eight [0.4] replicates [0.8] for each 
+column [0.4] okay so you do this [0.4] in eight replicates across the plate [1.
+2] if [0.5] the responder T-cell [0.3] does in fact respond if there is a 
+responder T-cell and it does respond [0.4] then if you have some sort of 
+readout for the response you can score [0.4] the well as positive [1.2] or 
+negative [0.7] okay [0.6] so if you go across the plate [0.4] at this very high 
+number of responder cells [0.5] all the wells [0.2] show response [0.5] the 
+next [0.2] all the wells show response again [0.2] the next [0.4] all the wells 
+show response [0.4] then [0.5] you find [0.5] a column on your plate [0.3] 
+where not all the wells show response okay so X is response [0.2] blank is no 
+response [0.8] so along here you've got one two three four five six out of 
+eight [1.0] has my arithmetic 
+gone wrong again [0.7] however many [2.8] a number [0.4] of responding wells [0.
+3] and in this column [0.3] you've got a smaller number of responding wells and 
+in this column you've got no responding wells [0.3] now what you can argue [0.
+5] is where there's a response there's at least one [0.8] responding T-cell at 
+least one [0.6] okay [1.4] so [0.4] by the application of simple statistical 
+methods [0.3] you can then calculate back [1.1] what is the proportion [0.3] of 
+responding T-cells [0.4] in the original starting population [0.4] now this [0.
+4] is [0.5] a classical dilution analysis assay [0.3] now you've done dilution 
+analysis [0.3] you did dilution analysis or the virologists did anyway [0.6] er 
+in your haemagglutination titrations [0.3] which is exactly the same principle 
+you dilute [0.6] across a plate [0.3] an indicator [0.4] and you score positive 
+or negative [0.4] and then you [0.9] have an end point [0.5] it's exactly what 
+we're doing here [0.3] but what we're doing in essence is counting [0.3] the 
+number of responding T-cells in the patient [0.5] okay [0.6] and i'll show you 
+[0.3] some 
+typical er [0.3] data slightly difficult [0.3] data to understand [2.0] the c-, 
+the rows [0.9] indicate [0.8] individual patients patients one to five for 
+ethical reasons i can't tell you who they were [2.5] this is the response [0.3] 
+to the donor [0.5] cells as i've just described [0.4] and as a control [1.0] we 
+have what we call the anti-third party response let's not worry too much about 
+that [0.9] er let's in fact leave the third party response out [0.4] because 
+what i want to concentrate on [0.4] is the anti-donor response [0.4] prior to 
+transplantation [0.3] and sometime post-transplantation [0.6] in some patients 
+you find that the number [0.3] of responding cells [0.4] declines these are 
+cells per million [0.4] C-D-three cells [0.4] going down roughly tenfold there 
+[0.3] and roughly tenfold there [1.0] in these other individuals they've stayed 
+pretty much the same [0.5] or gone down a little bit [0.6] okay [0.3] so there 
+clearly are differences between the individual patients [0.3] and in some 
+patients the numbers of responding cells [0.4] go down quite 
+dramatically [0.3] implying some sort of tolerance [0.5] and if we [0.4] put 
+together [0.3] the data [0.5] generally [0.4] er [1.1] again i don't want er 
+haven't got the time to go into detail here [0.4] but these [0.3] are the 
+responses that i've just been describing [1.2] in terms of [0.3] cells per 
+million [0.7] prior to the transplantation [0.6] and in the same patients 
+that's why they're joined up [1.3] okay [1.0] sometime after the 
+transplantation [0.3] now in these patients the numbers clearly have gone down 
+[0.3] in these patients they've stayed static or clearly gone up [0.9] now 
+again i'm not going to go into the clinical details of this [0.4] but [0.4] 
+these patients actually [0.5] are doing less well [0.4] than those patients [0.
+9] okay [1.1] so in experimental terms [0.3] one can demonstrate [0.3] that 
+some sort of tolerance does indeed develop [0.4] in some patients who have 
+transplanted [0.4] so in theory [0.5] these guys [1.9] do not need [0.4] full 
+[0.4] immune respon-, er er immune suppression [0.6] and indeed these patients 
+[0.5] er [1.1] there 
+were [0.4] steroids [0.4] were no longer used in their treatment [0.5] and they 
+got no worse so they were able to do without steroids so y-, they only needed 
+[0.3] two [0.3] of the three [0.2] drugs that are normally used [0.4] so these 
+patients who [0.2] appear tolerant [0.4] clearly are better [0.4] than those 
+patients that [0.2] that don't [0.4] okay [0.3] so you can do it [0.4] you can 
+demonstrate tolerance [4.2] so the implications of the development of tolerance 
+[0.2] in in patients then [0.6] er is that [0.5] at least in principle [0.4] 
+you can discontinue [0.6] the drug use [0.7] or perhaps [0.2] drastically 
+reduce the drug use you want to perhaps have a little bit of immunosuppression 
+but very much less than you would [1.1] normally [0.6] er [0.5] and in fact [0.
+4] very occasionally patients have abandoned the use of their drugs they get 
+fed up taking all these drugs all their life and say bugger it i'm not going to 
+take them any more [0.7] usually what happens then is that the graft is 
+rejected but in a few [0.6] lucky people [0.4] er the [0.4] graft is not 
+rejected and they are genuinely 
+obviously tolerant [0.5] okay [0.5] but [0.2] er if you talk to namex on 
+Thursday he will say this will be a very brave physician [0.4] that will say 
+okay we've got laboratory information that tells us the patients are tolerant 
+[0.2] therefore we shall stop the drugs [1.9] so there are ethical issues here 
+again [1.4] all right so that's a little bit of er [0.5] a sideway [2.3] 
+sideline [2.5] why would we want to discontinue drugs [0.6] it's because of the 
+side effects of drugs you don't want to use these nasty things you can avoid th-
+, avoid it [0.7] side effects [1.5] in increasing severity in fact are 
+hairiness [0.4] er [0.6] it wouldn't bother me so much but i daresay there are 
+some ladies that would [0.2] object to growing beards well they do don't they 
+[0.6] er [0.3] also [0.3] some of the drugs [0.2] are actually toxic [0.2] to 
+the kidney they damage the kidney that's not an ideal situation no [0.8] 
+there's even some argument that the development of chronic rejection is due to 
+the nephrotoxicity of the drugs that are used to prevent rejection [0.4] 
+i think that's not the case [1.1] obviously [0.6] a considerable [0.2] problem 
+is infection [1.3] okay [0.5] er patients on immunosuppression [0.4] by 
+definition [0.5] are susceptible to infection [0.3] in fact that's not too bad 
+[0.3] because by [0.2] and large [0.3] er the guys who are transplanted [1.5] 
+people that are transplanted are a little bit older [0.2] in their fifties 
+sixties usually [1.3] these guys have experienced most common infections [0.3] 
+and so they have lots of antibodies circulating [0.3] so they are essentially 
+[0.3] immune [0.3] to common infections like common colds or perhaps more 
+severe things like streptococcus sore throats and so on [0.7] one of the few 
+compensations for growing old [0.3] is that you tend not to get colds because 
+you're immune to all the cold viruses that circulate [0.5] so by and large 
+infection normally is not too much of a problem [1.1] but what is a very severe 
+problem is cancer [0.4] er and it turns out that in in [0.4] transplanted [0.2] 
+immunosuppressed individuals [0.4] can't forget can't remember the exact 
+numbers [0.4] the exact risk of 
+cancer but it's a significantly elevated risk [0.4] of cancer in patients who 
+are immunosuppressed [1.2] okay [0.4] er and the cancers that arise the most 
+common ones are skin cancers [0.7] those don't matter too much [0.6] because 
+they're [0.6] easily visible i'm not talking about melanoma if anybody has 
+heard of melanoma there are other skin cancers i'm talking about non-melanoma 
+skin cancers [1.5] these [0.7] are alarming [0.2] but not dangerous because 
+they're quite well treated and obviously they're easily recognized quickly and 
+easiy recognized [0.4] so skin cancers are not too much of a problem [1.6] but 
+what is a problem are B-cell lymphomas [0.5] er [0.4] and now those of you that 
+are virologists will recollect Epstein-Barr virus [0.7] and that this can 
+transform B-cells and make them into malignant cells [0.5] normally [0.3] the 
+immune system prevents [0.3] the transform the Epstein-Barr virus transform 
+cells from [0.6] cour-, [0.2] developing into a cancer [0.3] but if you 
+immunosuppress [0.6] then there is probability [0.7] er that the transformed 
+B-cells will develop into a lymphoma and that is a very serious situation [0.5] 
+very serious indeed for all sorts of reasons [0.4] so [0.4] these [0.3] side 
+effects [0.5] are all very undesirable so that is why [0.4] drug treatment is 
+tapered off [1.3] luckily that can be done [0.4] and ideally drug treatment 
+would be reduced to nothing [1.5] okay [0.4] so i'm close to winding up now we 
+will l-, [0.2] end a little before five o'clock [0.9] what may be the future [1.
+8] better drugs [0.3] okay [0.2] more effective [0.5] less toxic [0.3] ideally 
+graft specific [0.3] that's the ideal [3.6] there are [0.2] problems in the 
+development of new drugs and again from a pharmaceutical those of you who are 
+interested in the pharmaceutical industry this strikes me [0.5] as actually [0.
+3] really quite a problem for the pharmaceutical industry [1.0] present [0.6] 
+immunosuppressive regimes are very good they work very well as i've said you 
+almost never lose [0.2] transplants through acute rejection [3.9] so [1.2] to 
+demonstrate better drugs is going to take [0.2] years of 
+clinical study years v-, very long clinical trials [0.4] because i forget what 
+is the average survival of a graft nowadays but it's many years several years 
+five eight years something like that [0.4] so if you set up [0.4] a clinical 
+trial to compare two different [0.5] er drug regimes immunosuppressive regimes 
+[0.3] it's going to be years [0.4] before you're going to get a result and drug 
+companies are not happy with that [2.6] and the second thing [0.3] which 
+actually [0.6] in some ways [0.7] is more difficult [2.2] is that testing new 
+drugs [0.2] may well be unethical [0.4] now you will not have been exposed to 
+much ethics [0.4] sadly i think you ought to be [0.5] but the point is [0.3] 
+that if you have [0.4] a drug [0.5] regime [0.3] which is an effective therapy 
+[0.8] there is no way [0.3] that you can [0.2] say to a patient [0.3] we are 
+not going to treat you because we want to [0.2] test a new drug [0.9] so 
+inevitably [0.4] in [0.5] immunotherapy and other kinds o-, [0.2] sorry 
+immunosuppression [0.3] and in other kinds of therapy [0.4] if you want to test 
+a new drug that is usually 
+going to be [0.4] by adding it in [0.6] to the previous set of drugs [0.5] or 
+at best exchanging it [0.3] for one of the currently used drugs [1.0] for 
+ethical reasons [0.6] now [0.2] unless the new drug is significantly better [0.
+3] clearly better than the old drug [0.9] and remember the old drugs are very 
+good [0.5] then it's going to be extremely difficult [0.5] to demonstrate a 
+real difference because you can't leave the patient untreated except for your 
+new drug [0.7] in other words you can't and you cannot possibly [0.4] do 
+placebo trials people will have h-, have [0.4] heard of what a place-, or heard 
+of the term placebo [0.3] that's when you use a dummy drug [0.7] when you want 
+to test a new drug you couldn't possibly use dummy drugs in this situation [0.
+7] so there are ethical problems in testing new drugs [0.8] as well as [0.5] 
+straightforward practical problems [1.7] now [0.8] another severe problem which 
+i pointed out right at the beginning [0.4] is that actually transplantation [0.
+6] er is presently limited [0.4] not by the clinical [0.3] 
+skills [1.2] but by the numbers of donors i forget [0.2] what the numbers of [0.
+4] people on the waiting lists are locally it's large numbers [0.4] and after 
+the Alder Hey [0.4] thing that you [0.2] may have heard of [0.3] er numbers of 
+donors declined dramatically [0.2] in this country people decided they weren't 
+going to give up their [0.2] or-, organs even after death [1.3] and [laugh] [0.
+2] another [0.2] er significant thing is that with the reduction [0.3] of the 
+violence [0.2] in Northern Ireland which is an excellent thing [0.4] there are 
+fewer [0.2] freshly dead cadavers to provide [0.4] transplants so the numbers 
+of [0.4] organs from Northern Ireland has dried up [0.4] in fact i think namex 
+will be telling you [0.2] on Thursday [0.3] that one of the main sources of 
+organs is actually Spain [0.5] er where they drive so badly [0.5] that there 
+are [0.5] large numbers of traffic accidents which are a source of [0.9] 
+transplant tissues [0.5] okay [0.3] so there are things like that [0.2] anyway 
+[1.3] w-, we talk about xenografting [0.2] to overcome shortage of donors [0.2] 
+pig [1.1] kidneys [0.7] primates [0.6] are obviously [0.3] a potential source 
+of grafts because they're so closely related to us but they're ruled out for 
+all sorts of reasons [1.3] pig kidneys are about the same size as ours and 
+their biochemistry is similar [0.3] but [0.4] there is [0.2] a severe problem 
+of hyperacute [0.2] er rejection [0.5] for reasons which aren't very clear to 
+er to me [0.6] all of us or very nearly all of us have [0.2] large amounts of 
+circulating antibodies [0.3] which will react with pig tissues [0.3] and cause 
+hyperacute rejection [0.5] so this problem actually as you know has been solved 
+and i don't know if i [0.7] showed you this by humanizing kidneys [1.1] 
+basically what is done is that the kidney tissues are [0.3] genet-, kidney the 
+sorry the pig [0.5] is genetically engineered [0.3] so that the [0.2] the 
+tissues are not susceptible to complement lysis [0.5] and again the details 
+don't matter [0.3] but the t-, [0.2] tissues are not lysed by complement [0.5] 
+so humanization [0.3] of pigs [0.3] prevents [0.3] hyperacute rejection [0.4] 
+now [0.4] this has never been tested [0.6] in human [0.6] er [0.4] 
+transplantation [0.3] it has been tested in primate transplantation so you take 
+[0.3] humanized [0.6] pig kidney [0.3] and transplant it into a chimpanzee this 
+has been done on a smaller scale [0.3] half a dozen or so chimpanzees or 
+whatever [1.7] and you find that the hyperacute rejection problem is overcome 
+[0.4] but [0.3] er [0.6] the [0.4] the acute rejection which occurs [0.3] is 
+violent and cannot be controlled [0.4] with the immunosuppressive drugs [0.8] 
+so [0.2] any human trial [0.5] of xenografting [0.4] irrespective of any other 
+problems ethical or otherwise [0.4] any sort of xenograft trial in humans is a 
+long way off if ever [3.9] we have talked about therapeutic stem cell cloning 
+and i for one [0.4] have got [0.7] serious ethical reservations about stem cell 
+cloning [0.8] er sorry embryonic stem cells it depends how you go about it 
+perhaps but i have reservations [1.7] give it a little bit of thought [0.4] [1.
+8] you might be able to generate 
+stem cells we could regenerate say T-cells [0.5] which [0.3] as you appreciate 
+[0.3] will function in suspension you do not need to have an organized tissue 
+[0.5] for stem cells T-cells to work [0.4] well that's not quite true because 
+you know [0.4] know i i hope [0.4] that the main immunological interactions [0.
+3] occur in lymphoid tissues [0.8] so the T-cells do function [0.5] in an 
+organized tissue environment [0.4] but [0.2] T-cells are as you know able to 
+circulate [0.4] and put themselves into the tissues where they want to be [0.4] 
+so [0.2] you can well imagine [0.5] er that [0.5] T-cells which function in 
+this way [0.4] could be used [0.4] could be derived from embryonic stem cells 
+and effectively used [0.5] but i for one [0.3] i cannot see that you would be 
+able to generate in vitro [0.7] notice in vitro [0.4] an organ such as a kidney 
+which is a complex assembly of many different cell types [0.3] put together in 
+a very elaborate manner [0.9] okay [0.6] so i do not see that an organ can be 
+made in vitro even if [0.5] er we could genuinely m-, generate [0.4] stem cells 
+which could potentially [0.5] generate a kidney it's 
+just too complicated [0.8] so if you want a kidney that means you and you want 
+it by embryonic technology [0.4] that means you've got to grow the fetus [0.7] 
+to a point at which it has intact kidneys and that is to my mind [0.3] 
+ethically [0.3] obviously [0.2] completely [0.4] impossible [1.6] so [0.3] 
+therapeutic stem cell cloning there's a big question mark over that except in 
+perhaps in simple situations [4.2] now [0.2] if you think [0.3] i've talked 
+about [0.3] basically bone marrow blood bone marrow kidneys liver [0.6] er [0.
+4] heart and lung [2.9] and i've said that some kinds of [0.6] transplants are 
+impractical because the surgery is just too difficult [1.1] now [0.2] people 
+have talked about limb transplantation and and rather horrifying [0.2] to me [0.
+4] thought is face [0.2] transplantation has been talked about [1.2] the 
+surgeons say that this is technically possible and indeed a hand has been 
+transplanted [0.7] but i don't know if anybody recollects the patient got very 
+unhappy [0.5] and had it amputated [0.8] he was very unhappy with having 
+somebody else's hand [0.3] could see it all 
+the time [0.4] 'cause a kidney [0.3] okay [0.4] you can forget about it but not 
+a hand [1.1] so the guy had the hand [0.4] amputated [2.1] face transplants [0.
+5] it has been said they are technically possible the technology the surgical 
+technology there is very complicated because your face [0.4] has lots of 
+different muscles which work in a very complex way so we are [0.3] have very 
+expressive faces er most other animals [0.3] do not have expressive faces we do 
+[0.4] and that's because of the complicated nervous [0.5] er er er and and 
+vasculature [0.6] n-, nerves and vasculature in the face [0.4] okay [1.5] but 
+the surgeons say that it's technically possible [0.4] but again there's a 
+massive ethical problem here which doesn't seem to have been recognized [0.5] 
+is that what if [0.5] subsequently that patient [0.5] er [0.5] acute rejection 
+or chronic rejection occurred [0.5] and the face [0.2] [0.6] was rejected what 
+do you do you nip out and find another corpse [1.2] or what [1.0] so for 
+ethical reason although it's been discussed in the press [1.0] in the media a 
+face transplant is [0.2] not really on [1.3] pancreas [0.2] 
+that was the example that i used at the beginning o-, of something which is 
+surgically impractical [0.2] but highly desirable because of diabetes [0.7] if 
+you could transplant the pancreas into a into a diabetic [0.7] perhaps that 
+might er give you [0.4] er a cure for diabetes remember [0.3] diabetes is 
+treatable [0.3] by insulin but is not curable but if you can transplant a 
+pancreas [0.3] that would cure it [0.5] now what is being attempted [1.8] is to 
+[0.5] generate beta cells the islet cells which make insulin remember from the 
+pancreas [0.8] prepare those in vitro from a pancreas [0.3] and invue infuse 
+them [0.3] through the portal vein which takes them into the [0.2] liver [0.5] 
+er and with luck [0.5] the beta cells will [0.3] lodge in the liver tissue and 
+there be functional [0.9] er and secrete insulin [0.7] perhaps [0.3] in 
+brackets [0.3] this is [0.4] this sort of technology is just coming into 
+clinical testing [0.8] so that's a possibility [1.8] but [0.2] to bring my [0.
+3] me to the s-, final conclusion [0.8] er [2.4] plainly [0.3] spare part 
+surgery [0.3] and bone 
+marrow transplantation and things like that [0.3] does work [0.2] whereas [0.6] 
+technically a-, [0.2] and ethically possible it does work [1.1] er and it works 
+so well that in fact in many cases the graft as it were outlives the patient 
+patient dies from other some other cause [0.6] er and the kidney liver whatever 
+[0.3] is still functioning at the time of death [0.4] the other cause may be [0.
+4] due to the underlying disease perhaps [0.6] give you an example er d-, [0.5] 
+diabete-, diabetics sadly [0.4] er often have [0.7] kidney failure [0.6] er and 
+they can be treated obviously with kidney transplantation [0.5] but sadly they 
+tend to die [0.5] er from other complications of diabetes such as heart disease 
+[0.5] and if they die of heart disease their kidney may be still perfectly all 
+right [0.4] so spare part surgery [0.4] as we have it now is actually pretty 
+good [2.1] but [0.5] you might 
+might think me that i'm a [0.2] think of me as a bit of a sceptic er er er [0.
+2] and perhaps i am [0.4] but in fact [0.2] for [0.7] very good reasons [0.3] i 
+don't myself see any radical improvements likely in the near future [0.3] and i 
+think pretty well all [0.3] the clinicians i talk to and indeed the scientists 
+the rational scientists [0.4] that i talk to about this [0.3] tend to agree 
+that in in in in in [0.2] transplantation [0.3] and indeed in a number of areas 
+of modern medicine [0.4] we have reached [0.4] some sort of [0.4] er [1.0] 
+limit [0.5] which we seem [0.3] to be unable to get across all the simple sort 
+of problems have been solved [0.5] the hard problems [0.3] are too hard [1.4] 
+okay well i'll leave it there [0.4] er and as i say namex will be talking to 
+you about [0.4] more clinical aspects of how to care for transplant patients on 
+Thursday

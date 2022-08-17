@@ -1,0 +1,454 @@
+nm0696: morning everybody [1.1] last time we [1.3] it started to build a model 
+of the [0.7] Motorola sixty-eight-thousand [0.8] and er [0.9] this included two 
+models that we're going to l-, have to look at the memory model that was how 
+long [0.3] do we store information [0.5] in the memory [1.3] now they that can 
+be instructions or data [0.6] er [0.4] but [2.4] as far as the memory's 
+concerned they [0.2] are [0.4] synonymous they are equivalent [2.3] and er [1.
+4] we could store information as bytes words and long words [0.6] and [2.3] to 
+actually access that information [0.3] we have to specify [0.2] a memory 
+address [1.4] the processor [0.3] we started looking at the processor model [0.
+3] and here [0.3] looked at the [0.4] data registers [0.3] er address registers 
+although we're not terribly interested until [0.2] the next phase of the course 
+[0.7] and [0.5] some [0.3] detailed [0.6] er [0.5] look at the user byte of the 
+[0.3] status register [1.5] now what we're going to do today [0.3] is to [0.3] 
+refine that model [1.4] by [1.1] looking at a typical instruction i will use 
+add [0.2] as the er [0.4] running example [0.7] er [0.4] look at the 
+instruction format [1.8] both [0.2] as [0.2] the [0.3] assembler level [0.2] 
+and [0.4] er 
+eventually the [0.4] er instruction format level [1.6] we'll then [0.2] look at 
+[0.3] addressing modes which we'll find [0.6] this is how [0.3] we're going to 
+access the operands of the instruction [3.6] we'll also [0.2] define a notation 
+to describe the operation of the [0.5] er [0.2] of instructions [1.0] okay the 
+this this will [0.2] enable us to [0.5] have [0.2] a summary sheet of all the 
+instructions of the machine that you're going to need to know about [0.4] and a 
+precise [0.2] description [0.3] as to [0.2] what happens when they are executed 
+[1.0] and finally [0.7] we'll look at the [0.3] if i i hope i have time to look 
+at the instruction cycle [0.4] when [0.5] this is how [0.2] the processor 
+actually executes a program [1.2] okay [9.8] now [0.6] the [2.6] execution of 
+most instructions means that [0.5] an operation [0.2] is applied [0.2] to two 
+[0.2] operands [0.7] say most [0.2] because there will be [0.4] er other sorts 
+of instruction but let's focus on [0.6] the set of instructions which [0.2] 
+have [0.2] two operands [1.3] and [0.5] once that [0.6] er [0.3] instruction's 
+executed [0.2] that [0.2] delivers a result [1.5] as as i [0.3] said [0.4] a 
+minute ago [0.8] we'll use integer er addition [0.2] as our [0.2] running 
+example [0.3] to introduce the various concepts of this lecture [0.4] and here 
+[0.8] we've added two [0.3] er [0.5] integers together to get a result [2.0] 
+this will be operand one [0.5] the operation is plus [0.6] the operand is two 
+[0.5] and the result [0.6] is [0.2] i hope a thousand-and-eighteen [1.7] now as 
+far as the machine is concerned [0.6] the operands can be [0.3] located [0.5] 
+either in data registers [0.2] or [0.5] in [0.4] the memory [1.1] so there's 
+two places it can be [3.1] where [0.2] will the result be put [0.2] well in 
+fact [0.2] again [0.2] we want to [1.1] replace the result [0.3] in R or record 
+it [0.3] in [0.4] data register or a memory location [3.1] now [1.9] as i've 
+said we're not [1.1] terribly interested in address registers as yet [0.3] but 
+we'll be able to do similar things with those [0.2] as [0.2] well we're going 
+to defer that [0.4] and focus on [0.4] data registers only [0.8] or data 
+registers in memory locations shall we say [6.4] so the first thing is how does 
+the machine [0.2] add [0.4] two things together [1.2] well [0.7] first of all 
+[0.6] i'll put up a [1.6] a similar source instruction [0.2] okay because [0.6] 
+that [1.2] is one 
+level [0.3] of [0.9] understanding what an instruction is we can specify what 
+the assembler source is [1.2] in here [0.5] we said [0.5] add [1.0] dot- [0.3] 
+L [1.0] D-two comma [0.3] D-five [0.3] now [0.5] D-two and D-five [0.2] clearly 
+refer to two [0.4] specific registers in the machine [0.7] add is what we want 
+to do [0.4] and the L is the length of the operand in fact [0.2] it's [0.3] 
+added [0.2] two [0.3] long words together [1.7] now D-two [1.2] contains the 
+source operand [0.8] all this is now a technical term as far as the machine is 
+concerned [0.4] D-two [0.4] i-, will [0.2] er refer to a source operand [0.4] 
+and [0.2] D-five [0.3] a destination operand [2.4] so what actually happens [0.
+3] come on let's draw a little diagram [0.3] as to [0.9] what the [0.2] value 
+[0.2] of the registers data registers are before we execute the instruction [0.
+2] they will have some value [1.6] the value there are although i haven't 
+explicitly said [0.5] is [0.9] expressed in hex [0.4] hexadecimal that's right 
+we introduced that last term [0.6] and if you want to de-, describe precisely 
+what [0.3] thirty-two bit values are [0.3] then [0.3] we [0.4] use [2.0] the [0.
+5] er [0.2] hex to do it [2.2] so [0.3] the first thing is that the [0.3] 
+processor has to fetch the operands to do the 
+operation and so okay let's take copies of [0.7] D-two and D-five [0.8] all 
+right [0.3] which is here [0.7] and we add them together [0.8] and i hope i've 
+done the adda-, addition [0.4] correctly [1.4] now clearly [0.7] a processor 
+will have [0.2] internal registers [0.5] to store these things in [1.1] to do 
+the copying [0.3] 'cause it works on copies [2.0] however [0.3] we have no 
+access to that [0.4] and we don't need to [0.2] at this stage [0.4] go down to 
+that level of a model [0.2] we just have to [0.8] er [0.6] think well it's 
+there and that's how it does it [0.4] but [0.3] exactly how it does it is too 
+much detail for us [0.9] if you wanted to actually design a processor a half 
+adder and that sort of thing then [0.4] that's what's would be of interest [0.
+2] but [0.3] no we're staying at a higher level than that [1.6] so [0.3] it can 
+then do the the addition [0.8] and in fact [0.2] it stores the result back [0.
+4] in [0.4] the [0.5] er destination [0.2] operand which is in fact why [0.4] 
+here we go [0.2] why the [0.7] er [0.2] D-five is called the destination [0.2] 
+it's [0.6] the destination of the result [15.8] well let's [2.7] look at the [0.
+2] 
+structure of the assembler source [0.3] er in the first [0.4] er instance [1.5] 
+here [3.4] first of all [0.2] the add [0.5] is a mnemonic it's a mnemonic for 
+the operations [0.3] and all the operations of the machine had their own 
+mnemonic as far as the assembler is concerned [2.0] the [0.4] er [1.4] L as i 
+mentioned last time was the length of the operand [0.5] and here is the source 
+[0.7] and [0.6] the destination [0.5] er [1.2] operands but [0.7] note [0.6] 
+that they are specified [0.2] by [0.3] quoting [0.6] the [0.2] the address [0.
+2] of the registers [1.4] okay [1.0] the operands themselves are the contents 
+of registers [1.7] all right [0.2] but [0.2] but we write the instruction [1.6] 
+by [0.4] quoting [0.3] the address [0.5] where [0.3] the operand [0.2] can be 
+found [1.0] now this is an example of [0.7] what's called data register direct 
+[0.3] an addressing mode [2.1] and [0.7] we're going to construct instructions 
+[0.2] out of essentially [0.3] operands and addressing modes [1.8] all right [2.
+6] the addressing mode specifies how do i obtain the operand [2.2] now [1.3] 
+the assembler program [0.2] that is the the er will [0.3] take [1.4] this 
+source [0.4] and [0.2] map it [0.5] into or convert it into a single [0.3] 
+machine [0.6] code [0.6] word [2.6] okay so that [1.8] what we'll 
+look at first [1.0] is [1.0] how can we describe [0.6] that [1.1] er [0.8] 
+operation [0.4] execution [0.2] or the ar-, the instruction execution [3.6] we 
+need a notation [0.5] because [0.5] er [2.0] you can describe it in words and 
+[0.2] that's what i'm doing at the moment [0.2] but [0.3] always [0.3] it's [0.
+2] a lot easier if you have a notation [0.4] we would like a notation to [0.2] 
+have various properties and and [0.3] certainly the what the requirements here 
+would be is compact [0.3] all right we're always seeking [0.3] a compact 
+expression that's what [0.6] why mathematics is so important to physics it 
+allows [0.7] the expression the model [0.4] in [0.3] compact [0.3] terms [0.2] 
+and with [0.2] precision [2.7] so [0.8] we could [0.8] here we are [0.2] i'll 
+informally describe [0.5] the add instruction [1.1] by [0.7] er [3.1] here [0.
+8] all right [0.8] now [1.2] that [1.4] describes exactly what it does [0.4] 
+but we need to [0.2] explain [0.3] what are the brackets and so on [1.3] first 
+of all [0.6] interpret [1.1] brackets X [0.4] as being [0.2] the contents of X 
+[1.9] okay [0.5] plus [0.5] is the addition operator [1.0] and [0.4] becomes 
+equals is the assignment or replacement operator [0.8] so i've tried to make it 
+look [0.2] 
+like [1.4] an addition [1.3] in [1.1] back up [2.3] okay [4.0] it's not quite 
+the same [0.5] clearly [0.2] we have to be explicitive [0.2] we would normally 
+just quote [0.2] the variable name [0.4] yeah [2.1] but what we're doing here 
+[0.2] we had to say exactly [0.6] where [1.0] the operand [0.3] is [2.4] now 
+we'll need [0.5] in our notation we'll need somehow [0.3] to [0.5] er [0.2] 
+refer to [1.1] registers [0.2] constants [0.2] memory addresses [0.3] in a 
+generic way in other words [0.3] we'll [0.2] i-, or symbolic way [1.8] and [0.
+8] here [8.1] if you want to [1.1] refer to a register [0.5] data register then 
+it's [0.2] capital-D-N where [0.3] er that is any [0.6] data register [0.2] all 
+right [1.2] and A-N will be an address register [1.0] sometimes we'll want to 
+say it could be either [0.7] in which case we'll use X [1.7] and P-C [0.9] will 
+be [0.4] a program constant [0.2] so these these are the registers [1.0] memory 
+[1.3] we'll just say [0.7] a thirty-two [0.2] bit [0.2] memory address and 
+we'll call that [0.2] M- [0.4] subscript-thirty-two [0.9] 
+constants [0.9] with a vary we'll want to have eight [0.8] er sixteen and 
+thirty-two bit constants [0.3] and here [0.5] we'll just use D-sub- [0.4] eight 
+[0.3] sixteen and so on [0.6] and [0.6] D-N if you want to [0.8] refer to [0.5] 
+er any one of those [0.2] three [4.6] we need this because [2.8] let's move on 
+to say [0.6] we've looked at [0.4] informally one [0.9] er [1.0] simple 
+addressing mode [0.2] data register direct [0.5] as far as the first [0.3] or 
+the next [1.3] four or five lectures are concerned [0.8] then [2.5] we only 
+need [0.5] the following [0.6] er operands we can do all we need to [0.6] er [1.
+1] for that stage 'cause they we're excluding [0.2] address registers [1.8] 
+okay [1.4] now [3.4] this is where this notation starts coming in [0.5] okay 
+because [0.6] here [1.2] we can say [0.2] for a data register direct [1.2] then 
+[2.0] the operand [0.2] address [1.0] is D-N [1.0] okay [2.1] the operand value 
+[1.0] is [1.6] the contents [0.4] D-N [1.3] okay [1.0] and so this is [0.2] 
+essentially the [0.2] the usage [2.6] now [0.9] that's fine [0.5] er [0.4] 
+however [2.4] was [0.4] i would think one of the er [2.7] most frequent [0.3] 
+Pascal [0.8] statements you'll write is X becomes X-plus-one [0.2] yeah [3.1] 
+so [0.2] one 
+is a constant [0.3] so [0.6] we do need to have down at the machine level [0.7] 
+the ability to [0.5] er [1.3] incorporate [0.5] constants into instructions [1.
+3] okay so here [0.5] we'll call this is an immediate addressing mode [1.2] and 
+[0.2] the operand address is D-N [1.3] but that's [0.5] the s-, [0.2] we use 
+the address as the [0.5] operand [0.3] value [1.5] okay now this is slightly 
+different to [0.3] the notes i will issue a a correction to that [0.5] okay [2.
+4] er [3.6] the er [2.1] as [0.9] so far [0.7] how that's how we can [0.3] 
+incorporate constants [0.7] we can incorporate the contents of [0.2] er [0.5] 
+registers [0.2] what about the contents of memory location [0.5] well here [0.
+3] we use [0.2] addressing mode [0.2] absolute long address [1.5] here [0.3] 
+the operand [0.3] is M-thirty-two [0.3] thirty-two bit memory address [1.0] and 
+[0.3] the operand value [0.8] is [0.2] the contents [0.4] of that address [4.5] 
+now [2.9] in [1.6] developing our symbolic [0.2] er [0.5] operation [0.2] 
+description [1.1] if we want to put it any further then [0.6] we'll need to 
+relate [1.1] all of this to [0.4] the assembler form [1.6] okay now [0.5] let's 
+let's think what the assembler form was it was a mnemonic an operation [1.1] 
+okay [0.4] plus [0.4] an address part [0.3] which involved two 
+addresses [1.2] and [0.2] specifically [0.7] the addressing mode [1.4] and that 
+is the addressing mode [0.5] of the source operand [0.5] there's a comma [0.3] 
+and addressing mode [0.2] of the destination operand [1.8] okay [1.2] so [6.5] 
+so [3.1] let's look at our [2.9] how do are we going to [0.4] write in an 
+instruction to select the addressing mode that we want because that's what a [0.
+4] writing a machine or an assembler [0.2] instruction [1.3] pick the mnemonic 
+you want [0.9] and then the two addressing modes that you [0.2] need [3.9] data 
+register direct [0.5] here we are [2.1] assembler source is D-N [1.8] and 
+examples would be [0.2] D-five D-nought and so on [2.4] immediate [0.9] 
+essentially how are we going to write constants in the assembly language [2.0] 
+hash-D-N [0.7] or hash-dollar-D-N [1.2] don't [1.0] ask me why [0.2] people 
+select this it's n-, [0.9] er [3.2] partly historical [0.5] however [1.5] we 
+would actually write hash-two-four-seven or [0.4] hash-dollar eighty-three [0.
+6] there's two examples [0.9] absolute long address [1.3] M- [0.6] thirty-two 
+or dollar-M-thirty-two [0.4] and you so [0.3] we could write 
+hundred or [0.2] dollar-hundred so what does that mean [0.3] the hash character 
+[0.7] is how we specify in the assembly language that we want the immediate 
+address of that [0.7] all right [0.3] so that's the first bit [1.6] dollar [0.
+5] indicates [0.3] that it's a hex constant that follows rather than [0.3] a [0.
+4] er [2.7] a decimal [3.9] so [1.1] if we want to symbolically [0.3] in our 
+notation [0.2] er in [0.2] in er [0.2] our notation for operations then [0.5] 
+we will [0.9] er [0.9] if you want to refer to [0.2] an immediate mode we'll 
+write hash-data [3.9] but [1.9] there are [0.2] another four or five well may 
+maybe more [0.2] addressing modes to come all right we won't frighten ourselves 
+at this point to to before we do it but [0.3] there are [0.2] a whole set to 
+come [1.5] in the spirit that we want to have a truly general [0.6] symbolic 
+way of of describing things [0.8] we need a way to say [1.6] can i write down 
+something [0.2] which represents [0.3] any [0.6] addressing mode [2.1] and the 
+way that [0.3] Motorola choo-, chose to do it was to [0.6] er invent a a term 
+[0.4] called [0.2] effective address [1.5] right [0.4] so [0.5] effective 
+address [0.4] could be [0.7] any [0.5] of [0.8] these [0.5] addressing [0.3] 
+modes [8.1] we're now at a point where we can take our add and do a bit more [0.
+3] put it all together so let's try [0.3] er [0.5] move on to that [9.1] first 
+of all [0.2] there are [0.3] two [0.3] variants of add [2.4] okay [1.3] add [1.
+9] and now i'm using the notation [0.2] effective address [0.6] so it can be [0.
+6] in our terms [0.7] er [2.5] possibly [0.4] er [0.6] a data register [1.5] 
+address [1.6] hash-data or M-thirty-two and a memory address [0.8] so here [0.
+2] we can add [0.8] effective address D-N [0.2] and we can write using our 
+notation that the [0.5] contents [0.4] of [0.9] the data register becomes the 
+contents of a data register plus [0.4] the contents of the effective address [3.
+5] and [0.7] we reverse D-N and E-A [0.6] and now [0.4] we can add [0.2] the 
+contents of a data register [0.4] to anything else [0.7] our simple [0.3] 
+effective addresses [0.3] can be D-N- [0.3] hash-data and M-thirty-two [2.3] 
+why have we got two variants [0.5] right why are there two [1.1] well the 
+problem is is [0.2] how we get down to express things at the [0.9] instruction 
+format level [0.4] okay [1.8] because [0.3] if you look at [2.6] what the 
+instruction format [1.2] is like [0.3] you know [0.3] er what this is is a 
+number of fields bit 
+fields [0.7] within [0.7] er [0.6] either a word or a long word or certainly 
+can be more than that [1.6] first of all [1.2] an operation code and that [0.5] 
+corresponds to the fact that it's an adding structure [1.7] the register [0.2] 
+address D-N [2.0] okay [1.7] operation mode [0.6] which we'll [0.8] look at in 
+a minute [0.2] and an effective [0.8] address [1.8] well i want you do a little 
+bit now i've been talking for twenty minutes about time you did something [0.3] 
+so [0.5] write down all the possible [0.9] forms all right [0.9] for [0.2] 
+variants one and two [0.9] okay [0.5] so do that [1.3] write them down [28.0] 
+it's the same as last time [2.3] it is the same as last time i think [0.3] 
+sm0697: [0.3] 
+nm0696: mm 
+nm0696: okay [0.7] that's your lot [1.6] mine aren't [0.3] terribly neat [0.2] 
+but er [2.8] and i got one wrong while i was writing it out but i've got a 
+permanent pen so i can't [0.7] get rid of it [1.3] okay [1.4] if you look at 
+variant one then [1.3] the [5.2] i am trying to get it all on one [0.6] side 
+here [1.7] write down the ones at variant one then [0.3] just adding two 
+registers together [1.2] add D-one [0.3] hash-data [0.2] add D-one [0.2] M-
+thirty-two [0.3] yeah people get that [1.9] let me write the same thing down [0.
+6] for this one [3.6] what are the 
+limitations of variant one [0.4] anybody like to er [8.0] hazard a guess [12.0] 
+i've got one wrong again people aren't er [3.1] shall i start again [0.5] 
+[laughter] [1.3] 
+you're not very confident are you [7.0] er i hope i've got another slide here 
+[7.3] should have done it with a slide [4.1] if we're looking this one [0.5] we 
+would do [0.5] D-one [0.7] D-two [20.3] yeah [1.1] everybody got that [2.4] so 
+[0.8] what's missing [0.5] there's a [6.7] well i can add [1.2] here's the [0.
+2] the destination i can add to a register [0.3] the contents of a register [1.
+1] the [1.0] contents of another register [0.9] constant [0.8] the contents of 
+a [0.2] memory location [0.9] what would i like to be able to do [4.4] 
+sm0698: [1.9] 
+nm0696: you're you're halfway there [3.5] 
+sm0698: 
+nm0696: yeah you're you're you're you're you're getting there [0.4] i mean [0.
+2] if if we write them down formally [2.9] again [3.3] er [1.0] er D- [1.4] 
+three hash-data [8.8] okay [1.5] this one [2.5] is how we add to [0.3] memory 
+[0.2] we add a contents of a register to memory [0.5] right [0.3] just one of 
+the options that [0.5] we [0.8] didn't we can't have [0.2] you you you [1.2] 
+there is a restriction here [0.5] in terms of what we could do [0.7] so 
+that one [0.9] is a plus we need a variant two [1.4] to be able to add the 
+contents of a register to [0.5] a memory location [0.5] as opposed to [0.2] the 
+other way round [1.4] yeah [1.5] so [0.5] that's the limitations we've only got 
+[0.4] we can't add to memory [3.0] next thing [0.3] do all of these make sense 
+[1.0] well [0.2] by the fact i've asked the question the the answer is [1.4] 
+probably that not all of them do [0.5] so what's one that's look [0.3] looks 
+pretty nonsensical [0.2] to anybody [0.2] you know that just doesn't look right 
+[1.9] 
+sm0699: constant [0.4] 
+nm0696: constant yeah [0.2] you can't add to a constant [1.4] mm [0.6] can't do 
+it [1.4] so we'd rule that out [1.3] now [1.6] formally [0.5] in fact [0.4] 
+this one's wrong [1.3] although [0.4] it looks the same form as that in fact [0.
+7] it er [0.5] we'll need to think about that a little bit more and i'll i'll 
+ex-, [0.2] i'll explore that on the next transparency [4.8] so [6.3] to 
+summarize where where we've got to out of that slide [0.3] we've got [0.9] two 
+variants because of the astra-, the the fact you [1.8] have a fixed way of of 
+[0.6] er [1.4] encoding an instruction [1.9] here this form [0.5] there is no 
+restriction there are no addressing modes that 
+we can't use [0.9] in here [0.5] we can use all three that we [0.4] introduced 
+[0.5] here [0.4] we can't use [0.4] hash-data [0.2] D-N [0.5] and i've included 
+for competeless A-N [0.9] all right [1.7] now [3.4] the reason that you [0.6] 
+strictly speaking informally we we get rid of that is that [0.2] D-N [0.3] acts 
+as a destination in variant one [0.7] and a source [0.2] in variant two [0.4] 
+all right this this [0.4] this register address here [1.1] okay [3.2] the 
+operation mode field contains a bit to say [0.3] that's a direction which is 
+going that [0.3] that selects whether that register is the source or 
+destination [2.4] with me [4.1] so obviously as we saw the hash-data we can't 
+because it's a destination operand [0.6] we informally exclude D-N from the [0.
+4] here because [2.8] list of allowed [0.9] but [0.6] it's not really a problem 
+because the assembler will always select the right [1.7] binary for us [1.5] A-
+N [1.3] here [0.3] you [0.6] you've only got three bits to represent [0.8] a 
+register address [1.0] you can't tell whether it's a [1.7] data or an address 
+register [0.6] so you have to have another operation to do it [2.6] next time 
+i'll be handing out a list of 
+instructions [0.4] where [0.6] it includes all of these [0.7] lists [0.2] with 
+these operations and restrictions [0.5] and [0.6] this should be about two two 
+B-L to interpret it [2.5] any questions at this point [5.3] okay [15.9] okay [0.
+3] let's er [7.1] just look at some examples [0.2] with the the assembler and 
+the [0.4] er taking the [0.4] general notation [0.3] and then [0.2] making it 
+specific to this particular instruction [1.8] add D-two to D-six this is the 
+one we typically the one w-, we looked at before [0.8] D-six [0.3] becomes D-
+six plus D-two and in this case [0.2] E-A [0.3] is [0.4] D- [0.6] two [0.4] 
+yeah [1.2] the effective address is D-two [2.4] here [3.7] i've slipped in [0.
+9] dollar-a-hundred [1.0] all right [2.4] and what that means is [0.3] that i'm 
+going to add the contents [0.2] of memory address [3.3] a hundred hex [2.6] 
+come on [1.5] and add it to D-nought [1.2] okay in this case [0.3] the 
+effective address [0.6] is [0.3] a hundred [0.2] hex [4.0] okay [0.3] here [2.
+0] we want to add a constant [0.6] and so [1.7] i could just use add [0.3] hash-
+one-two-three [0.8] to [0.2] D-three [1.4] and there we can do add a constant 
+[1.3] we will see later on [0.3] that there are instructions which [0.4] er [6.
+9] let you [0.3] er specify [0.2] essentially [0.2] you want an immediate 
+address 
+form as well [1.1] they're there [0.4] for efficiency reasons the architecture 
+runs a bit faster for those [3.0] variant two [0.2] and this is the only one 
+that we can use with these [0.2] out of our [0.5] three [0.5] er [2.0] simple 
+addressing modes [0.3] here [0.3] we can add [0.6] the contents of a register 
+[1.6] and i'd always make a mistake on a slide so [0.3] here we go that should 
+be brackets [5.1] and the effect of address in this case [1.9] is [0.8] three 
+[0.4] [5.9] okay [0.4] write down all the addressing modes you can see there [0.
+3] what are they [3.0] for those four [0.2] just write them down [54.8] okay [0.
+9] so what have i got here [0.5] someone shout them out somebody [0.6] just 
+have a little bit of interaction [1.4] what have i got here then [1.3] what's 
+this one [6.1] oh dear oh dear [0.9] 
+sm0700: is it data register direct 
+nm0696: that's right [0.2] data register direct [0.5] and so is that one [1.8] 
+okay [3.7] what about that one [16.4] 
+sm0701: absolute long address [0.4] 
+nm0696: thank you [1.4] absolute long [0.2] address [1.0] we're adding the 
+contents of a memory register [0.2] it's absolute long address [0.3] again [0.
+5] we have [0.6] data register direct for the second one [1.3] 
+okay [0.8] this one [2.3] 
+sm0702: immediate [0.3] 
+nm0696: immediate [0.7] and [0.2] data register direct [1.1] and likewise here 
+[1.4] er [0.5] the [0.4] er [0.3] memory address is there as well [2.9] and so 
+you've do-, we've done that already [0.3] okay [0.6] so [3.3] and that's all 
+we're going to do [0.9] for [0.4] all the instructions we're going to do for 
+the first part of the course [1.0] those are the three ad-, addressing modes 
+we're going to do [0.3] we're going to [0.2] construct [2.2] all right [0.4] 
+the instructions from [1.2] two operands [0.3] of which [0.7] they'll be 
+selected from [0.7] one of those [0.8] er [0.2] three [0.8] each of those will 
+be one of those three [0.7] er [0.7] addressing modes [1.4] so that's got [0.2] 
+addressing modes and we've got our notation [0.3] going [2.2] what i'm going to 
+move on to now for the last part of the lecture is to [0.3] look at [1.2] 
+construction execution [2.2] 
+okay [0.4] which er [6.2] but first of all [1.5] just a little bit more [1.3] 
+on [0.6] how [7.3] binary instructions [3.2] the [1.8] we saw [0.8] there is an 
+operation word and this has got an operation code [0.3] add sub [0.4] et cetera 
+[1.3] it's [0.6] got a [0.8] either a b-, er it's got a register address [0.4] 
+it's got an operation mode [1.3] and then [0.3] there are two [1.3] things here 
+which essentially [0.4] this [2.8] is our [2.2] effective address [0.5] okay [4.
+2] or the start of it anyway [3.3] operation code [0.3] three bit [0.5] data or 
+address registers our op mode [0.6] there are three bits [0.6] okay [1.2] and a 
+one bit code for this sort of instruction [0.3] is a direction [0.3] is [0.7] 
+which of the [0.4] E-A and X-N [0.2] are [0.5] the source and destination [0.6] 
+right [0.4] one means X-N is the source [0.4] and nought means it's the 
+destination [1.1] size [0.2] 
+you got to [0.3] encode the fact of how long the operand is [1.1] so nought is 
+er [0.3] [cough] [0.3] bytes [0.7] one is words [0.3] and one-zero- [0.2] two 
+is long words [1.9] mode and register [0.3] that's the minimum [0.2] 
+specification [0.3] of [0.7] a [1.1] an effective address [0.7] and it would 
+select typically [0.5] the [0.4] er [0.9] our data register direct mode [1.0] 
+right [1.6] if [1.5] the er [1.3] we want to select [1.1] a [1.3] memory 
+address [0.3] then we've got to add some more information to the operation word 
+because we can't pack [0.2] the memory address in [2.8] so here [0.6] is [0.2] 
+the operation word [0.6] as a different op er [0.6] or the op mode has a 
+different er [2.2] mode has a has a different value [0.9] so that we can 
+complete [0.2] the effective address that we want [1.0] we'll come back to this 
+topic a little later but [0.5] essentially [0.6] what i'm saying is that [0.3] 
+er [1.3] you could have [1.2] a word [0.6] instruction [0.5] which is sort of 
+adding two data registers together [0.6] it would be [0.3] three words [0.2] to 
+[0.3] add [0.7] er to include a memory address for example in that instruction 
+[1.0] so there's a variable length of instructions [0.7] so that's all i want 
+you to get out of 
+this is [0.4] there are variable length instructions [5.2] now [8.2] as far as 
+the [2.0] instruction execution just let's look at one instruction [0.3] we've 
+got [1.2] an operation word [1.2] and zero to [0.2] four extension words [0.5] 
+depending [0.3] on what the operation word has in it [0.2] all right [1.5] this 
+has to contain all the information [0.4] that the processor needs [0.8] if 
+there are more extension words [2.7] what does the program look like well [1.8] 
+we'll just think of the simplest one we can [0.4] think of right [0.8] it's 
+it's er [0.4] and that [0.9] er [0.2] we could view [0.2] it as a sequence of 
+instructions [1.8] and also [0.8] a data area where all the variables [0.4] are 
+[0.3] yeah [4.3] now [1.8] the [2.9] instruction sequence the or the execution 
+sequence [0.4] will be different [0.3] to [0.2] how it's stored in memory [2.8] 
+now that's reasonable you write for loops don't you [0.2] yeah 
+su0703: mm [2.1] 
+nm0696: implicitly [0.2] you would expect [0.6] the body of the for loop to be 
+[0.6] kept being executed [0.3] so [0.7] where the [0.2] sequence of 
+instructions [0.7] what the body of the for loop is [0.4] yeah [1.3] you keep 
+running round those again and again [2.9] but [0.8] after you finish the for 
+loop you move on to 
+something else [0.6] so [1.8] the execution sequence will be different [0.2] to 
+the stored sequence [0.2] but let's go back to our stored sequence [0.3] then 
+[0.4] we can just say [0.3] here are some instructions we pack them together 
+one after the other [0.5] in the memory [0.4] and here's some d-, data 
+variables here [4.2] the first clue so so that's our model that's all we need 
+to know at [0.2] at the moment is that [0.3] there are [0.5] instructions 
+packed together [0.3] and there's some data somewhere else [3.8] the program 
+counter comes into play here [1.3] right [1.2] i said a little bit about it 
+last time [0.9] but [0.3] it contains [2.6] the memory address [0.2] of the 
+next instruction to be executed so if we can [0.2] freeze the machine [0.3] 
+this may be where [1.7] program [0.2] pointer points to [0.2] so it's got a 
+memory address that points to there [3.4] okay [7.3] any questions so far [0.3] 
+no [0.2] not today [5.8] well [2.3] one thing that a computer does when you 
+turn it on [0.2] is to start executing instructions [0.8] right [0.6] it will 
+continue doing that till you turn it off [2.6] mm [3.0] so [2.0] our processor 
+[0.9] has [0.2] an instruction cycle to do this [1.6] okay and [0.4] 
+what i've done is to say i will take [0.3] an informal [0.3] algorithm [1.8] 
+this is [0.3] so an approach that i frequently do if i want to encapsulate [0.
+3] er [0.7] er [1.3] the er something [0.2] like this [0.2] then an informal 
+algorithm [0.2] is a very [0.3] compact way [0.5] of an accurate way of 
+describing it [0.3] to [0.4] to write all those dow-, this down in words would 
+take a considerable [0.9] you know half a page [0.5] okay and [0.7] three or 
+four slides [1.2] so let's [0.8] let's look at [1.6] this this is the [0.4] 
+execution [0.6] all right [1.4] of a single [2.1] instruction [3.0] so [0.4] 
+first of all [0.9] what do we do [0.2] we use the [0.6] the [0.2] the processor 
+uses the [0.4] program counter [0.2] to fetch the operation word all right 
+that's the start of instruction or potentially the start of instruction [2.2] 
+it would have to increment the program counter by two because [0.8] if it's 
+going to fetch more things from the [0.4] er er more parts of the instruction 
+[0.3] then [0.4] this would now point to any possible [0.2] extension words [0.
+3] possibly a memory address [3.3] it would have to [1.7] split up the 
+operation words into its component [1.1] fields [0.3] operation [1.5] op mode 
+[0.8] data 
+register [0.6] okay [4.4] if [0.4] there's a memory address there [1.3] okay or 
+or a constant [0.8] then [0.6] it would [0.7] keep fetching the extension words 
+[0.8] er [1.0] incrementing the [0.2] program counter by two every time is does 
+one [0.5] mm [0.4] so it's now [1.0] building up all the information to get [0.
+2] the whole instruction so [0.3] what have we done [1.0] here [0.4] this part 
+[0.3] from here [0.4] to here [1.8] all right [0.7] simply [0.4] how do we get 
+[0.3] all of the components [0.2] of an instruction [0.6] to execute [2.7] now 
+[5.2] having [1.9] got all the various components we can now [1.2] get the 
+operands [1.0] because [1.3] all the op all the addressing modes in fact have 
+been [1.6] er [0.5] encoded it [0.9] in the operation word [1.3] we would then 
+use [0.3] the addressing mode [0.2] to get the operand [0.3] whether it means 
+fetching it from a register [0.2] or fetching it from memory [0.3] or [0.5] 
+taking a copy of what the extension words in the in the [0.7] er [2.0] to get 
+the immediate [0.3] er value of the constant [0.4] okay [1.7] and it's only at 
+this point we can actually execute it [3.3] okay so we can now execute the 
+instruction [2.1] it depends on the instruction but [0.7] at this point [0.2] 
+you can update [1.4] the 
+status register [0.2] the condition codes in [0.2] the status register [2.4] 
+all right [0.7] and we can now [0.4] keep on doing that [1.6] for ever [1.2] or 
+until we switch the machine off [2.0] now one of the things that that [0.5] er 
+[1.6] ironies of of er [0.3] computing is that most com-, most of the computers 
+you're using your own [0.2] P-C er [0.2] er [0.7] is not [0.2] execute is [0.5] 
+not doing any real work at all most of the time [3.5] processors are very fast 
+they do do [0.4] execute a lot of instructions per second [1.8] even a million 
+of them [0.2] or [0.3] more [0.8] er [0.5] the [1.5] so what does it do while 
+you're waiting to type something in some data for a program [0.4] just doesn't 
+do anything [1.0] but has to execute null instructions all the time [0.9] in 
+order [0.5] to [0.5] because [1.5] has to [0.7] execute that [0.3] all the time 
+[2.8] now [0.2] how do we cope with that how the the [0.2] the er [0.4] what 
+the machine does [0.4] er [0.5] to try to share out the all 
+users that really isn't the topic here but [0.3] clearly there is time [1.1] 
+between any [0.3] executing any given program [0.3] to go and execute other 
+peoples' programs [0.3] and that's not issue that is employed [0.7] but [0.3] 
+not for [0.4] [0.5] so what have we done today [1.7] we looked at identities 
+with particular instructions [1.0] er we've introduced three addressing modes 
+[1.4] and we've seen [0.3] how [0.3] the machine itself [0.6] executes 
+instructions [0.2] we have refined our model [1.0] of the process [1.7] we now 
+have enough [0.3] to go and write it in the programs but [0.9] all i have to do 
+is to introduce [0.9] a few more [0.7] er assembler [1.4] er instructions in 
+order to create that [0.9] so we'll start on that in a couple of weeks

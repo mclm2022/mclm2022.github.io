@@ -1,0 +1,495 @@
+nm0763: right well as you can see er [0.2] i'm all [0.2] wired up [1.1] for the 
+benefit of er posterity [0.9] er [1.1] the [0.2] synopsis of this lecture [0.2] 
+is in the handout [0.3] that i gave out at two o'clock today [1.0] and i'm 
+going to be [0.4] discussing the issue of [0.5] sequential games [0.5] er an 
+aspect which in a way develops [0.5] er quite nicely some of the issues that so 
+far [0.4] er have as it were cropped up [0.5] er in the course of these 
+lectures but have frankly [0.3] er rather been fudged [0.8] and the [0.2] key 
+[0.3] er issue that we really fudged [0.4] is exactly in what order [0.5] er 
+the moves are made [0.3] within a particular game [0.8] so what i now want to 
+just review [0.5] one or two basic concepts [0.5] er that relate to [0.6] 
+representing games in a sense a more explicit form [0.8] er this [0.3] form is 
+known as the extensive form of the game [0.5] and it differs from the normal 
+form [0.3] bit of jargon this the normal form [0.4] basically is the form of 
+that matrix [0.4] or bi-matrix that we've been working with in previous 
+lectures [0.3] we put up a table of rows and columns [0.3] er we have a pair of 
+numbers [0.3] in each of the cells in the table [0.3] 
+and that's how we represent the game [0.8] we then proceed to analyse the game 
+[0.3] as if each player decided on their strategies [0.4] independently [0.3] 
+of [0.2] what the other s-, [0.2] player decided [0.6] but it's quite possible 
+[0.4] that in many cases a game could be played in such a way [0.3] that one 
+player moves first and the other moves second [0.4] in which case the most 
+important point would be [0.4] that the player that moves second would know [0.
+2] the decision [0.4] that the first player had already made [0.8] and there 
+are then [0.2] two possibilities here [0.5] one is [0.5] that because the 
+second player [0.5] is [0.3] better informed [0.4] than that is he knows what 
+the first player's already decided [0.4] whereas the first player when he made 
+his move [0.3] did not know what the second player was going to do [0.4] that 
+therefore this gives an advantage to the second player [0.4] so you could say 
+[0.2] well the sequence will matter [0.4] er because [0.3] whoever moves second 
+is in a stronger position [0.4] because they have more information [1.1] but 
+actually there's another side to this [0.8] and this depends on the following 
+issue [0.6] 
+and that is [0.2] suppose that each of the players did know the other player's 
+pay-offs [0.8] you might be able to work out if you knew the other player's pay-
+offs [0.3] what they would do under certain conditions [0.3] given that they 
+knew what you had done [0.6] and therefore you might as it were have a degree 
+of power [0.5] because [0.2] by moving first you could frame [0.5] the context 
+in which the second decision was made [0.6] and if you knew the other player's 
+pay-offs [0.3] you could then [0.2] work out before you made your move [0.4] 
+how the other player would respond [0.5] so it's by no means clear when players 
+do make moves [0.4] whether the [0.2] advantage lies with the first mover [0.4] 
+or with the second mover [0.4] it all depends to some degree [0.2] on the 
+nature of the game the structure of the pay-offs on the one hand [0.5] and how 
+much the players know [0.3] before the game starts [0.3] about each other's pay-
+offs and that [0.3] brings me to the second point [0.4] about the [0.3] 
+information set [0.5] because [0.2] the information set is basically what each 
+player knows [0.6] and [0.3] er in a game 
+played out sequentially [0.4] the information set changes because as the moves 
+are made [0.4] new information [0.3] on what moves have been made [0.3] is 
+added to the information set [0.5] and what this means is [0.7] that the [1.0] 
+information set changes [0.4] as the game proceeds [0.8] now [0.2] in one sense 
+that then makes the whole analysis much more [0.3] complicated [0.5] but [0.4] 
+in another sense [0.3] it it actually makes it in some respect simpler too [0.
+5] the reason that it makes it in some sense simpler is this [0.6] that if 
+there is a a final stage of the game [0.6] then you can imagine [0.3] what the 
+players would be doing at this final stage of the game [0.6] if there were a 
+definite last play [0.6] er a last step in the game [0.5] then [0.2] both the 
+players would presumably know [0.3] everything that had happened up to that 
+stage [0.6] and you could then construct a series of scenarios [0.4] if a 
+certain sequence of moves had occurred [0.3] and the players knew this [0.3] in 
+the final step [0.4] they would [0.2] be equipped with the following 
+information and would [0.2] behave in the following way [0.7] so [0.4] you can 
+construct 
+a range of scenarios to work out in principle [0.3] how the various players 
+would move at the final stage of the game [0.5] depending on what had gone 
+before [0.7] and then if the players themselves [0.5] could work out what was 
+likely to happen at later plays [0.4] they could make their own [0.2] earlier 
+plays in the knowledge of what the consequences of those plays would be [0.4] 
+for later stages of the game [0.5] and that is basically what is meant by the 
+concept firstly of backward induction [0.4] that is to solve games that are in 
+a sequential form [0.3] what one does is begin with the final stage and work 
+backwards [0.4] towards deciding what each player will do at the outset [1.0] 
+and the allied concept of [0.3] subgame perfection [0.6] is that at any stage 
+in a game [0.5] each player will look ahead [0.6] at all the scenarios that 
+could develop [0.4] as a result of alternative decisions by they might make at 
+that stage [0.6] and therefore subgame perfection basically means [0.3] that 
+each player [0.3] er works [0.3] er with full use of the information they have 
+at any stage [0.3] as to what 
+the repercussions [0.4] of that move might be [0.6] in the context for example 
+of a game of chess [0.3] er [0.2] a chess player [0.3] who is operating with 
+backward induction and subgame perfection [0.4] basically tries to identify [0.
+3] all the possible endgames that might [0.2] develop [0.7] and then works back 
+to decide which of these endgames he would like to get into [0.7] and therefore 
+finally arrives at the question [0.3] if i make this move what endgame am i 
+likely to finish up with [0.4] if i make that move what endgame am i likely to 
+finish up with [0.4] and therefore solves the game in that way [0.4] now chess 
+is a notoriously complex game [0.4] and one of the [0.2] er attractive features 
+of it [0.2] is that it's in fact not normally difficult for people [0.3] with 
+finite human [0.3] er rationality [0.3] to actually approach a game of chess in 
+that way [0.4] but with the [0.2] simpler games certainly two by two games of 
+the kind that we've been discussing in this course [0.5] it is possible to 
+approach them in this way [0.3] and i will in fact illustrate [0.3] er how that 
+can be done [1.3] and er [0.2] finally this 
+analysis of [0.3] sequential [0.3] games also provides a discussion [0.5] of 
+issues relating to [0.4] credibility [0.7] and credibility is an important 
+issue in modern economics [0.4] for example we're told that [0.2] the 
+independence [0.2] of the Bank of England [0.3] gives [0.2] credibility [0.3] 
+to monetary policy [0.9] we're told [0.3] that er [0.8] for countries that 
+enter in to treaties [0.3] through the World Trade Organization [0.5] give 
+credibility to their competition and trade policies [0.4] because if they were 
+to change them at some future time [0.4] they would suffer severe penalties and 
+everybody knows this [0.9] we also discuss in industrial economics [0.4] issues 
+about whether [0.3] particular [0.3] strategies towards entry deterrents are 
+credible [0.7] if a firm in an industry [0.4] says to a potential entrant [0.7] 
+if you enter [0.5] i will cut price and that will put you out of business [0.6] 
+is that threat actually a credible threat which will [0.7] keep out the entrant 
+[0.6] or is it a not credible threat [0.3] because if the entrant were to 
+actually enter [0.4] they would call the incumbent firm's bluff [0.5] then the 
+incumbent would then be faced with the situation well given [0.2] that they've 
+entered [0.4] that we all know they've entered [0.5] it's no longer [0.3] er 
+rational for me to carry out my threat [0.6] so by looking ahead at later 
+stages of the game [0.6] one can investigate [0.3] what kind of promises 
+commitments [0.2] threats and so on [0.3] can economic agents make to one 
+another [0.5] and [0.3] which of them will be discounted [0.5] as being not 
+credible I-E [0.3] not rational in the light of [0.3] what will later 
+materialize [0.3] and which of them can be identified [0.3] as being er 
+rational [0.6] so let's start on this [0.3] er by going back [0.2] to er a very 
+simple issue [0.3] of some games we've already looked at [1.0] the first game 
+we've looked at [0.4] is the prisoner's dilemma [0.6] and in the prisoner's 
+dilemma as you will i hope recall [0.4] er the strategy of cheating [0.4] in a 
+one shot game is always dominant [0.5] now what that means is [0.4] that if you 
+say to one player [0.3] okay you go first [0.3] the other player will then go 
+after [1.0] neither player [0.5] minds what the other player is going to do 
+because 
+whatever the other player does [0.8] whatever the other player does it always 
+pays them to cheat [0.5] so the prisoner's dilemma is a special type of game [0.
+4] in which the sequence of moves [0.2] doesn't actually matter [0.5] because 
+each player has a dominant strategy whatever the other player does [0.6] they 
+do the same thing [0.4] so knowing what the other player's going to do [0.3] 
+doesn't alter [0.2] the way they will act at all [0.7] but there are other 
+games we've looked at [0.3] where the sequence does matter [0.5] and the 
+simplest example of this [0.4] is the battle of the sexes game [0.5] where we 
+have Jack and Jill [0.4] er going either to the wrestling or to the opera [0.7] 
+and we have two possible [0.3] scenarios that we can distinguish here [0.6] in 
+the first Jack [0.3] makes the decision [0.5] announces what he's going to do 
+and leaves Jill to respond [0.5] and in the second Jill moves first [0.7] now 
+the essence of this as i say [0.3] is based on the idea [0.5] that [0.2] each 
+player [0.2] may have a knowledge of the other player's pay-offs [0.5] so let's 
+suppose in this case [0.4] that Jack knows not only Jack's 
+preferences but also Jill's preferences [0.5] and that Jill knows not only 
+Jill's preferences [0.4] but also Jack's preferences [1.1] suppose now we er [0.
+3] look at the game and represent it in this [0.3] er what's called the 
+extensive form [0.4] the extensive form is usually portrayed [0.3] in the form 
+of decision trees [0.4] so if we look at this first decision tree [0.4] what 
+this says is we start up here [0.8] and the first person [0.4] to move to make 
+a decision [0.3] is Jack and Jack makes a decision [0.3] either to go wrestling 
+[0.4] or to go to the opera [1.1] that decision then becomes known it's 
+obviously known to Jack because he made it [0.3] but it also becomes known to 
+Jill [0.5] and when that decision's made [0.3] then Jill [0.4] er can decide 
+whether to go wrestling or go to the opera [1.0] but under these circumstances 
+[0.7] if [0.5] Jack [0.2] knows [1.5] that er [0.9] Jill [0.3] is [0.6] er 
+aware of his decision [1.0] then he can calculate what Jill will do [0.6] 
+because he can say if i go wrestling [0.9] then given her pay-offs [0.5] Jill 
+will want to go wrestling too because although she doesn't much like the 
+wrestling [0.4] she'd rather g-, be same place i am [0.4] rather than somewhere 
+completely different [0.9] so if i go wrestling [0.5] then [0.8] Jill will go 
+wrestling too [0.9] on the other hand if i go to the opera [0.9] Jill will also 
+go to the opera she likes going to the opera [0.4] but she'll go there [0.2] 
+just to meet me how nice [0.7] 
+so [0.2] in that case [0.2] Jack knowing Jill's preferences [0.4] knows [0.4] 
+that whatever he does [0.4] it will pay Jill once she knows what he's done [0.
+4] to do the same [0.6] but he can then use this information to his own 
+advantage [0.7] because by moving first he can say aha [0.8] i can go wrestling 
+[0.6] because i know that even though Jill would rather go to the opera [0.7] 
+if she knows i am going to the wrestling she'll go to the wrestling too [0.5] 
+so as long as he makes sure that Jill knows the decision [0.5] the ability to 
+move first [0.4] means that he can go to the wrestling [0.6] er and then Jill 
+goes to the wrestling and he's better off [0.9] he gets a pay-off of two [0.6] 
+whereas if [0.3] he'd gone to the opera [0.3] he could predict that Jill would 
+go to the opera [0.3] but he would only get a pay-off of one [0.8] so here is 
+an example of first mover advantage [0.3] the advantage here is that [0.3] 
+although Jill is better informed [0.7] Jack can anticipate Jill's responses to 
+his actions [0.4] and therefore he can as it were endogenize Jill's response to 
+his action [0.5] er in in deciding what he 
+will do [1.7] and if Jill moves first instead [0.3] then we get a different 
+result [0.8] because now if Jill [0.4] can work out [0.7] how Jack will behave 
+[0.2] from her knowledge of [0.6] his preferences [0.9] then the situation is 
+as follows [0.6] Jill moves first and if she goes to the wrestling [0.4] she 
+can predict that Jack will go to the wrestling because [0.3] he likes to meet 
+her and he likes wrestling [0.9] but if she goes to the opera [0.4] Jack will 
+go to the opera because although he doesn't much like opera [0.4] he'd rather 
+go there [0.2] than miss meeting her all together [0.7] so Jill knows that if 
+she goes to the opera Jack will go to the opera provided he knows she's gone to 
+the opera [0.6] and she [0.3] will then [0.3] er get [0.4] a pay-off of two [0.
+3] whereas if she goes wrestling Jack will go wrestling [0.4] and she will only 
+get a pay-off of one [0.6] so [0.3] Jill will then go to the opera [0.6] so the 
+decision is different [0.5] according to the sequence [0.3] in which the game 
+is played [0.8] so sequence does in fact matter [0.7] now [0.5] the only 
+difficulty with this [0.4] is that it imposes a sequence in 
+which one does go first [0.4] and the other [0.3] then knows about it [0.6] 
+this [0.7] extensive form representation [0.4] would be a good deal more useful 
+[0.4] if it also contained the previous kind of game [0.4] where the two 
+players didn't know what each other had done [0.4] er within it as well [0.4] 
+and so what people have done [0.4] is to [0.3] take this sequential er approach 
+[0.3] but to introduce a particular [0.3] refinement of it [0.5] which is to 
+group together [0.7] particular [0.6] er nodes in the decision tree [0.5] where 
+people in fact do not have the information [0.4] about the decision that has 
+been made [1.2] so if we wanted to portray [0.5] simultaneous moves [1.8] that 
+is moves where neither party knows the other [0.4] what we can do [0.3] is 
+suppose [0.4] that they actually take place in sequence [0.4] but that the 
+first decision is not known [0.7] to the person who acts later [0.8] so we [0.
+2] allow a temporal sequence [0.4] but we allow a veil of ignorance to surround 
+[0.3] the initial move [0.6] and that veil of ignorance is illustrated by 
+drawing this line [0.3] round these two points [0.3] implying [0.2] that Jill 
+cannot 
+distinguish between them [0.6] in other words Jack's moved first he's made his 
+decision [0.4] Jack knows what he's done [0.5] but Jill doesn't [0.7] under 
+these circumstances we're back to the previous [0.4] er indeterminacy [0.4] er 
+in the outcome we're back to the previous situation of multiple outcomes [0.4] 
+because [0.8] if Jack moves first but [0.2] but Jill won't know what he's 
+decided [0.8] then Jack [0.3] can't really infer exactly what Jill will do [0.
+3] unless he has a theory [0.5] about what beliefs Jill forms in the absence of 
+any information [0.4] on what he has done and that takes us straight back to 
+the probability [0.5] calculations [0.3] that we've been using in the previous 
+lectures [0.7] but the point is this [0.3] with the aid of this [0.3] er device 
+[0.3] we can now represent any game involving simultaneous moves [0.5] as a 
+game involving sequential moves [0.4] and therefore this extensive form of the 
+game [0.3] which portrays games in the form of decision trees [0.3] is indeed 
+more general [0.5] and [0.2] where we are dealing with truly sequential moves 
+[0.3] it's much more advantageous [0.5] er than the [0.3] er alternative 
+approach [0.7] what i now what to do is simply give an example [0.4] of a 
+sequential game [0.4] and link it in [0.3] to the point that i made [0.4] about 
+[0.2] the credibility [0.5] er [0.3] of commitments and and and threats [0.3] 
+within the context of a sequential game [0.5] i am going to take this game 
+because it's a microcourse [0.4] from [0.2] microtheory [0.4] and we're going 
+to look at a standard issue [0.4] in industrial organization [0.5] er an entry 
+game [1.1] and [0.3] what i'm going to do is i'm first going to look at the 
+game [0.4] in the ordinary normal form that we've used before [0.5] and see how 
+far you could get [0.3] using that ordinary [0.3] normal form [0.3] and the 
+equilibrium concepts that we've been employing up till now [0.8] i'll then 
+argue [0.4] that this game is inherently sequential [0.7] and that to represent 
+it as if the moves were simultaneous [0.5] er is really quite misleading [0.4] 
+and that a good deal of additional insight [0.3] into what actually goes on in 
+these situations [0.4] er can be obtained [0.4] if you switch [0.3] er to using 
+the extensive form [0.3] which allows for people to make their moves in their 
+natural 
+sequence [0.9] so [0.8] let's portray the game in the following way [0.4] the 
+entrant has a choice of two strategies [0.3] one of which is simply not to 
+enter [0.3] the other of which is to enter [1.4] the incumbent [0.5] er has a 
+choice of strategies [0.3] if entry occurs [0.7] that is he can either [0.4] 
+acquiesce in the entry [0.9] or he can fight it [0.7] if he acquiesces [0.3] 
+then basically he accepts that the [0.4] market power that he had before [0.5] 
+is to some extent diminished by a rival [1.8] or alternatively [0.4] he can [0.
+4] fight [0.7] and fight basically means precipitate a price war [0.5] with a 
+view to damaging [0.4] the rival's [0.2] th-, d-, dama-, damaging the entrant's 
+profitability [1.8] so [0.8] i've got here a structure of pay-offs what does 
+this structure of pay-offs symbolize well firstly [0.6] if the entrant stays 
+out [0.6] the entrant is the row player [0.3] so their numbers are the first in 
+these pairs [0.6] if the entrant stays out then he gets no profits i mean 
+that's just [0.2] a a a null strategy [0.5] so there's nothing for the entrant 
+if he stays out [0.4] so far as the incumbent is concerned [0.4] he retains his 
+dominant position in the market [0.4] and so he gets a handsome return [0.4] of 
+[0.2] thirteen units [0.5] so that's just fine [0.3] for the [0.3] er incumbent 
+firm [0.7] if the entrant enters [0.7] then the incumbent can acquiesce [0.5] 
+that means that the incumbent [0.3] simply switches if he was a monopolist [0.
+5] to [0.3] some form of duopolistic behaviour [0.6] so perhaps instead of 
+having strong monopoly power [0.4] there's now some degree [0.5] of tacit [0.5] 
+duopolistic collusion [0.4] the result is that the [0.4] two firms [0.3] share 
+a rather diminished profit [0.6] they share a diminished profit a total profit 
+of six [0.4] as opposed previously to the profit of thirteen [0.4] that the 
+incumbent had all for themselves [1.4] alternatively [0.4] the e-, incumbent 
+can fight [0.4] and if the incumbent fights then basically he drops the price 
+very dramatically [0.4] saying to the incumbent basically there's no way you 
+are getting a foothold in this market [0.4] unless you're prepared to buy 
+market share [0.4] at a loss-making price [0.6] as a result of which he can 
+inflict a loss [0.4] of five [0.4] on the entrant [0.3] but only at the expense 
+of 
+inflicting a loss [0.3] of five [0.3] on himself [1.2] now [0.4] if we just 
+look at this in its present form [0.6] er as a two by two game [0.5] er with 
+sequential moves [0.4] then [0.2] we would proceed to calculate the equilibria 
+[0.4] er in the usual way i'm only interested here [0.3] in pure strategy 
+equilibria [0.4] so we can do that quite simply in terms of best responses [0.
+8] er and we can suppose to begin with [0.3] that the entrant stays out [0.7] 
+er if the entrant stays out [0.3] then the incumbent [0.7] doesn't have to do 
+anything [0.5] so it doesn't really matter whether he acquiesces or fights [0.
+9] er either is a response because nothing has happened [0.5] so [0.4] both of 
+these are underlined they're both possible responses [0.4] to the entrant 
+staying out [0.4] that's a weakness of the normal form [0.3] it doesn't really 
+capture the fact [0.3] that these strategies only really come into being [0.3] 
+if the entrant really does enter [0.5] but technically [0.4] both of these are 
+best responses to the [0.4] er entrant's play out strategy [0.8] so far as the 
+incumbent is concerned if the entrant enters [0.4] this is quite important [0.
+4] it pays to acquiesce [0.3] because three [0.4] is [0.2] better than minus-
+five [0.6] so [0.2] if [0.3] the entrant were to enter [0.5] and the incumbent 
+[0.3] er knew that he had [0.5] then [0.2] the incumbent would [0.4] acquiesce 
+[1.5] 
+so far as the entrant is concerned [0.4] if he thinks [0.4] the incumbent will 
+acquiesce [0.5] then he'll enter [0.7] because if he stays out he gets zero but 
+if he enters and the incumbent acquiesces he gets three [0.8] so if he thinks 
+[0.5] that the [0.8] incumbent will acquiesce then entry will occur [1.3] 
+alternatively if he thinks that the incumbent will [0.2] fight [0.7] then it's 
+better to stay out [0.4] because he will get zero if he stays out but incur a 
+loss [0.4] of five if he goes in [0.7] and so if we now just look at where the 
+equilibria are [0.5] we see that there are two equilibria [0.4] in one of which 
+entry [0.5] er [0.4] is combined with acquiescence [0.8] and [0.2] the other is 
+that the entrant stays out [0.3] because in some senses [0.4] the [0.4] the 
+table suggests [0.3] that the [0.3] entrant [0.2] that that the incumbent will 
+be prepared [0.4] to fight [0.8] now that discussion [0.3] isn't is partly 
+adequate it's partly adequate because it does capture one insight [0.4] it 
+captures the insight that [0.4] if the entrant were to enter [0.4] it would pay 
+the incumbent to acquiesce which is an important result [0.8] but it's also [0.
+3] er 
+a bit unsatisfactory [0.5] and it's unsatisfactory [0.3] because the method of 
+analysis we're using [0.3] suggests [0.4] that as it were [0.3] the moves are 
+simultaneous [0.4] but in fact [0.4] when you think the situation through [0.4] 
+this is inherently a sequential game [0.5] because inherently what happens is 
+[0.4] that the entrant makes a decision [0.7] and then the incumbent can decide 
+[0.4] the incumbent can decide what to do [0.4] once he knows [0.2] whether or 
+not entry has occurred [0.5] that is to say [0.2] there's no reason [0.4] for 
+[0.3] er [0.5] the incumbent to start fighting an entrant who hasn't actually 
+appeared [0.8] so [0.3] really [0.3] er what we need to do is to move [0.4] to 
+the sequential [0.2] form [0.4] in order to get a more realistic picture [0.6] 
+what this sequential form does [0.3] is it recognizes [0.4] that the entrant 
+does indeed move first [1.1] and the incumbent then moves second [0.6] and the 
+incumbent only has a choice [0.4] if the entrant enters [0.4] so so this 
+representation based on the extensive form [0.4] with its decision tree [0.5] 
+says [0.2] okay the entrant makes the first decision [0.4] the entrant stays 
+out there's nothing 
+more to be said [0.7] the er incumbent firm retains its market power [0.4] the 
+entrant gets nothing [0.5] but if [0.2] the entrant enters [0.3] then the 
+incumbent has the choice [0.4] and that's where the pay-offs come in [0.3] he 
+can then either acquiesce or he can fight [1.3] now [0.3] how will this game 
+then be played [0.4] given [0.5] that the sequence of moves is in this way [0.
+8] well [1.2] if [0.7] we invoke the assumption that both players know the 
+other player's pay-offs as well as their own [0.9] then the entrant can 
+calculate [0.4] what the incumbent will do [0.9] because [0.4] the [0.3] 
+entrant knows [0.4] these pay-offs he knows both [0.7] all the numbers [0.9] so 
+he can say well right once i enter [1.2] once i've entered the incumbent knows 
+i've entered [0.6] and if he acquiesces he gets three [0.7] and if he fights he 
+gets minus-five [0.2] so once i've entered [1.5] he will acquiesce [0.2] i know 
+that [0.4] he will acquiesce [0.5] suppose then that the incumbent [0.8] says 
+to the entrant if you enter i will fight [1.0] what does the [0.9] entrant do 
+just discounts it one-hundred per cent it's just cheap talk [0.6] it means 
+nothing why because [0.5] the 
+entrant knows the incumbent's pay-offs [0.4] and knows that although the 
+entrant would like him to believe [0.5] that he would fight [0.8] the threat is 
+not credible [0.4] because once the entrant has entered and the incumbent knows 
+it [0.3] it won't pay him to implement his threat [0.3] it'd be stupid of him 
+to implement his threat [0.3] only if there were further plays [0.4] in which 
+reputation effects became important [0.3] might the incumbent wish to implement 
+the threat [0.3] for the sake of what might happen in some subsequent entry 
+context [0.4] but if we ignore [0.4] the the repetition of the game [0.4] then 
+basically [0.5] the incumbent's threat [0.3] has no credibility [0.5] the 
+incumbent's threat has no credibility [0.3] because it's not in line with the 
+structure of pay-offs [0.3] that the entrant knows [0.7] so what does the 
+entrant do [0.6] well the entrant knows that if he enters [0.5] the incumbent 
+will acquiesce and therefore he'll get a pay-off of three [0.7] whereas if he 
+stays out he will get a pay-off of zero [0.6] so he enters [0.7] so in fact we 
+have a unique 
+equilibrium [0.4] we had [0.2] er multiple equilibria [0.3] in that rather 
+unsatisfactory analysis based on the normal form [0.3] once we introduce the 
+sequential structure explicitly [0.4] we move to a plausible [0.3] and unique 
+equilibrium [0.4] of entry [0.3] followed by acquiescence [1.8] the question 
+then [0.4] arises [0.7] as well is there anything that the incumbent can do [0.
+4] about this [1.0] i mean we've seen that the incumbent can't just make 
+threats [0.8] because they won't believ-, be believable [0.5] under these 
+conditions [0.4] is there anything the incumbent could do [0.8] well people 
+who've studied these situations have argued yes there are certain things [0.4] 
+the incumbent can do [0.8] and basically [0.4] er [0.3] the kind of thing that 
+the incumbent can do [0.7] is to say well look [0.5] part of the problem in the 
+story i've just told [0.7] is that the entrant gets to make the first move [0.
+3] and therefore frames [0.7] the decision that i then have to make and he 
+knows that [0.4] that that he can frame my decision [0.7] suppose that i as 
+incumbent [0.4] could do something could could [0.2] i could make the first 
+move 
+before any entrant appears [0.5] could i do something [0.4] before the entrant 
+appears [1.0] in such a way that when an entrant looks at the situation [0.7] 
+they'll say oh dear i don't want to enter [0.5] because under the conditions 
+the incumbent has set up [0.3] it will pay him to fight [0.4] is there 
+something the incumbent can do while he's incumbent before the entrant appears 
+[0.5] that w-, can be [0.2] set up to give credibility [0.4] to threats that 
+they [0.3] lacked under the present situation [0.9] well [0.3] we can make one 
+or two observations [0.3] one thing is this [0.9] that that if the incumbent is 
+going to do this thing at the outset [0.8] it should ideally be irreversible [0.
+8] because if for example the incumbent does something [1.2] but [0.4] if the 
+entrant enters [0.5] it just pays the incumbent to undo it [0.9] then of course 
+it's as if it'd never been done [0.4] so it's got to be something that the 
+incumbent does at the outset [0.5] the entrant comes in [0.4] but [0.7] the [0.
+3] the [0.4] the incumbent can't then simply say [0.5] ah well forget that i'll 
+go back to what i was doing before [0.3] because the 
+entrant would know that [0.3] and would know then that the circumstances would 
+revert [0.4] to the original ones [0.4] so the incumbent if he's going to deter 
+the entrant has to do something [0.4] and do something in a clearly 
+irreversible fashion [0.4] what's the most irreversible thing most people can 
+do in an industry [0.4] is invest [0.5] invest in highly specific [0.3] 
+capacity [0.8] capacity that has no use [0.3] outside the industry [0.5] so 
+what you do [0.3] is you build a plant [1.8] and you build it in such a way [0.
+3] that its scrap value [0.4] or its value in producing any alternative product 
+[0.4] is [0.3] virtually zero [0.7] 
+so that means that once you've built this plant [0.3] you might as well operate 
+it [0.5] now under what conditions would that work [0.5] that would work under 
+conditions really [0.3] in which [0.2] firstly the equipment itself [0.3] is 
+very rigid not flexible [0.6] specific not versatile [0.6] but secondly why you 
+would want it in the first place [0.7] one reason why you might want it is that 
+although it costs you a lot of money to buy it [0.4] it brings down the 
+marginal cost of production [0.4] to a very low level [0.8] because what this 
+means is that by investing in this very specific equipment [0.4] that will 
+reduce variable costs [0.3] by incurring large sunk costs [0.4] it means that 
+once you've put that [0.4] spent that money [0.4] you can't get it back [0.3] 
+you're simply left with very very low variable costs [0.6] and this would mean 
+that you could profitably fight a price war [1.1] so [0.3] an entrant therefore 
+confronted [0.4] with an incumbent that has made a very large [0.4] 
+irrecoverable investment [0.3] in an asset [0.2] that will reduce the marginal 
+costs of 
+production [0.4] knows that if they enter [0.3] they face an entrant who has an 
+economic incentive [0.4] very probably [0.4] to actually fight a price war even 
+if [0.5] entry did occur [0.4] and that's what this [0.2] er example shows [0.
+4] er [0.2] i don't want to go through all the [0.3] er precise er [1.2] 
+numerical details of it [0.4] but suffice it to say that what we imagine [0.3] 
+going on here [0.6] is that [0.4] the [0.3] incumbent [0.4] sinks [0.4] er nine 
+units of cost [1.4] into [0.5] er [0.2] a [0.5] specific [0.5] er [0.2] i-, i-, 
+i-, i-, into a specific piece of equipment [1.0] and what this specific piece 
+of equipment allows the entrant [0.3] th-, allows the incumbent to do [0.4] is 
+to [0.2] fight a price war [0.5] without making [0.4] er [0.5] any er losses [0.
+9] and [0.3] if you then [0.4] er study the pattern of pay-offs [0.5] er what 
+you find is [0.5] that the modification of the pay-offs [0.4] effected [0.4] by 
+the [0.3] investment in the [0.3] er specific piece of capital equipment [0.4] 
+means that the entrant's best response [0.4] to [0.5] entry the incumbent's 
+best response to entry [0.4] is to fight [1.5] that then translates into the 
+fact that the entrant [0.2] who has the full information available [0.4] knows 
+that the incumbent now [0.4] faces 
+a situation where the best response to entry [0.7] is to fight [1.5] now [0.5] 
+also [0.7] the [0.4] incumbent [0.3] knows that [0.2] the entrant will know 
+that he has invested in the equipment [1.0] and so [0.6] the [0.4] incumbent 
+knows that if he buys the equipment [0.4] the entrant [0.3] looking at the 
+consequences of entry [0.4] will see that the consequences of entry will be a 
+fight [1.1] and therefore [0.7] the implication of this is [0.4] that if [0.3] 
+the incumbent invests [0.3] the entrant will be deterred from entry [0.5] 
+because if the entrant tries to enter [0.3] he will incur losses [0.4] because 
+it will pay [0.2] the incumbent to fight [1.0] on the other hand [0.5] if the 
+incumbent doesn't invest [1.1] then he knows that he's back with the game we 
+just discussed [0.7] back with the game where [0.3] the entrant will not [1.1] 
+stay out but will enter [0.5] and where it will then pay him to acquiesce [0.7] 
+so what he has to do [0.4] as the incumbent [0.6] er is to work out [0.4] er 
+what [0.4] er the best strategy is [0.4] if he doesn't invest [0.3] then entry 
+will occur [0.4] and he will [0.4] acquiesce [0.9] on the other hand [1.4] if 
+he does invest [0.8] then [0.2] the entrant will stay out [0.6] and he 
+won't in fact [0.3] have to fight [1.0] now the incumbent's [0.4] er pay-offs 
+are the second in these pairs of [0.3] numbers [0.6] and if he doesn't invest 
+[1.2] and entry occurs and he acquiesces he gets a pay-off of three [1.0] 
+whereas over here if he invests [0.6] then it will pay the entrant to stay out 
+[0.7] and he will get a pay-off [0.3] of four [0.8] yeah [0.8] 
+sm0764: why do we not count on the bottom right on the slide 
+nm0763: yeah 
+sm0764: why do we not count the investment on that one [1.7] 
+nm0763: because of [0.2] the er [0.6] saving [0.2] in costs that's effected by 
+[0.2] utilizing [0.6] the investment the investment is a specific investment [0.
+6] that [0.4] reduces marginal costs [0.8] that reduction in marginal costs [0.
+4] is of particular value [0.4] when you are wishing to expand capacity 
+dramatically [0.6] in order [1.3] expand output dramatically because you have 
+effected a major reduction in price [1.7] so so the so the outlay on sunk cost 
+is recovered [0.7] by savings in variable costs [0.3] under the conditions [0.
+3] where the [0.4] entrant enters the market and you fight [0.7] if you decide 
+not to fight [1.4] then [0.2] you don't drop the price [0.3] the output doesn't 
+need to increase [0.3] and therefore [0.2] you don't get substantial 
+savings so the savings only accrue [1.0] in the event of a fight occurring [1.
+2] you undertake the investment [0.4] in order to give credibility [0.5] to 
+fighting [1.1] but you don't in fact have to fight because your threat is 
+credible [0.7] so this is in fact an argument [0.3] why firms will invest in 
+unused capacity [0.5] the final punchline of this model [0.5] is [0.2] with the 
+firm investing capacity [0.6] in order [0.4] to reduce marginal cost [0.4] 
+which will give it a return [0.5] in the case [0.3] that it has to fight [0.5] 
+but the very fact that it has invested [0.6] in [0.7] reducing marginal costs 
+[0.3] means that its threat to fight an entrant is credible [0.4] and that 
+keeps the entrant out [0.4] so what the incumbent has done is invest in 
+capacity [0.3] with the specific objective of not using it [0.6] not having to 
+use it to its full capacity [0.4] in other words incumbent firms it is said [0.
+5] it may invest [0.3] in highly specific [0.6] excess capacity [0.5] 
+specifically to keep the incumbents out [0.5] and this [0.2] as it were is 
+quite useful because it explains a paradox that one or-, does observe [0.4] in 
+a number of 
+industries [0.6] where they appear [0.4] to have made investments that are [0.
+3] unnecessarily specific [1.0] unnecessarily large [0.4] and not properly 
+utilized [0.4] and yet the firms are relatively profitable [0.8] and [0.4] the 
+question why do they do it [0.3] one answer may be [0.3] that in fact it's not 
+a case of a firm [0.3] being incredibly inefficient and still managing to make 
+a profit [0.6] it actually makes a profit [0.5] because although the wasted 
+capital [0.3] underutilized capital is socially inefficient [0.8] privately 
+it's efficient [0.4] because it supports credible threats against entrants [0.
+3] and therefore sustains the incumbent's monopoly power [0.6] and so [0.2] 
+another consequence of that is [0.3] the social costs of monopoly [0.6] not 
+only include [0.4] the costs of higher prices [0.3] the distortion [0.3] of [0.
+3] er buyers and consumers' decisions [0.3] the social costs of monopoly are 
+not merely to be found [0.4] 
+in in price distortion [0.4] and the distortion of consumer buying decisions [0.
+4] they're also to be found [0.3] in the fact that [0.2] monopolized industries 
+[0.2] may well [0.3] er [0.8] employ [0.4] excess [0.2] and overspecialized 
+capital [0.4] for the specific purposes of deterring entry from the industry [0.
+4] so those who are concerned [0.4] er with er [0.2] amplifying or [0.2] 
+finding the maximum possible social costs of monopoly [0.3] often employ these 
+kinds of arguments [0.3] to suggest that the [0.2] social costs of monopoly are 
+found not only [0.4] er on the consumer side of the situation [0.4] but also on 
+the capital investment [0.3] er side of an industry as well [1.2] okay [0.2] 
+it's quarter to five [0.3] er i've had er six hours of lecturing today [0.3] 
+and i'm going home 

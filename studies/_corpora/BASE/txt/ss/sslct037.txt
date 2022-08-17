@@ -1,0 +1,650 @@
+nf1263: okay right [0.3] so [0.6] moving on from the last few weeks where i've 
+been [0.2] talking about other empirical work [0.3] that [0.3] relates to 
+either navigation or things like that [0.6] so in previous weeks i've talked 
+about either usability studies which sort of check out individual products [0.
+7] or [0.5] er evaluations doing analyses that sort of thing [0.2] and research 
+into different types of navigation [0.5] and last week presentation this one's 
+going to focus very much on [0.2] reading from screen [0.7] okay [0.4] and the 
+model for the [0.4] the second half of it that's the time [1.3] show you what i 
+mean by the second half [0.4] the model for this part is definitely legibility 
+studies so [0.3] if you can recall the sort of things that you might have read 
+about in the first year [0.6] in terms of er legibility of print then this is 
+the the equivalent in a way [0.3] although it takes a slightly different form 
+[0.8] and i'm going to start off by [0.2] er sort of putting the bigger picture 
+and also describing [0.5] what was [0.3] researched in the nineteen-eighties 
+and that tended to be [0.4] making a comparison 
+between reading from screen and reading from paper [0.8] er the second part is 
+just reading from screen [0.6] and apologies because these case studies in 
+reading from screen are my own work the reason being 'cause not very much has 
+been done [0.3] er [0.9] it's a shame about that [1.2] okay [0.3] so [0.4] 
+looking at reading from screen [0.4] compared with reading from paper [1.7] 
+right [0.2] first it's useful to really remind ourselves about what the basic 
+differences are [0.4] and that they are fairly obvious [0.3] er but they're 
+listed here and i'll go through them and [1.0] they're here also because some 
+research in the nineteen-eighties [0.2] was essentially trying to find out [0.
+9] what might be [0.7] what might account for the differences that there are 
+between reading from screen and reading from paper [0.6] so to pre-empt the the 
+results essentially you read slower from screen [0.2] and so [0.4] a group of 
+researchers based at I-B-M [0.5] wanted to find out [0.8] what could it be that 
+is different about [0.3] a screen compared with [0.6] a piece of paper reading 
+from print [0.4] that might be 
+responsible for these differences so why is it harder to read from screen [1.1] 
+so what we know are are different is the orientation because screens are most 
+of the time upright in front of us whereas paper [0.6] can be held like that 
+but a lot of the time it will be [0.4] down [0.8] on the table [0.2] so there's 
+the orientation difference [1.4] er [0.2] the visual angle is different that's 
+measuring from [0.3] the text or whatever on the screen [0.7] or on paper and 
+how far we sit away from that and measuring that angle [1.2] we tend to sit 
+further away [0.2] from screen [0.5] than we do [0.2] from [0.5] from paper [0.
+6] er and therefore the visual angle's different so that might be a possibility 
+[1.2] the aspect ratio is different in other words most screens tend to be [0.
+2] it's true of this one [0.4] landscape rather than protrait [0.6] er [0.3] 
+that's [0.4] that's generalizing and talking about the average sort of screen 
+so you'll have a wide screen [0.3] but it won't be particularly deep so there's 
+a difference [1.1] and we've got difference that re-, that relate to how the [0.
+6] er how the 
+text how the pixels are put onto the screen that's the dynamics so that the 
+screen is refreshed rather than having something sort of solid in front of you 
+[0.5] on paper [0.5] and you get flicker with screen [1.4] er the image 
+polarity now that's [0.7] less the case now a difference it's less likely to be 
+different now when we read from screen than print [0.5] but it used to be the 
+case that there were all sorts of [0.6] colours i suppose used on screen [0.4] 
+so now we're [0.2] m-, more likely to see black text on a white background on 
+screen just like we have in print [0.5] but [0.3] people tried white text on a 
+black background and green text on a [0.2] black background [0.7] er as i say 
+now it's more likely that we're we're reading the same because they did find 
+that black on white is better [1.6] and then we've got all sorts of typographic 
+characteristics that that might [0.4] that once in the nineteen-eighties were 
+different on screen compared with print [1.2] so actually what these 
+researchers did was to [0.2] look at each particular [0.2] variable 
+or each particular [0.2] difference and to try and isolate whether that one was 
+the one [0.4] that was responsible [0.3] for it being more difficult to read 
+from screen [0.7] and they found out that none of them seem to account for it 
+[0.6] er but when you put them all together [0.2] then there is this [0.3] this 
+problem [0.8] so they couldn't actually say [0.4] what it was in particular 
+that accounted for that [0.5] and it's er [0.4] just like yeah namex you said 
+that last week [0.2] didn't you when you put lots of things together [0.4] it 
+improves the design but thing [0.6] individually those things might not make a 
+difference it's sort of the same thing in reverse [0.7] you remember [0.6] you 
+do [laughter] [0.7] right [0.4] along the bottom here [0.5] there is er [2.0] 
+this this is going back to Jakob Nielsen who i've [0.2] mentioned quite a few 
+times he has this sort of [0.2] column i suppose called Alert Box [0.6] it's [0.
+3] it's quite an interesting thing to read so i would just recommend er casting 
+your eye over that so you'd be able to get to that from the web 
+pages it's just quite a good reference [0.5] it feels sort of a bit naive in 
+relation to print the first part of it but as you [0.5] get lower down it's 
+really pointing out some of the differences which is a [0.4] think there's some 
+useful things just to to remind you so that might be worth [0.5] following up 
+[2.5] okay so the conclusions of this were and and should repeat it was in the 
+n-, late nineteen-eighties so we were talking about [0.4] different sorts of 
+screens to the sorts of screens we have now [0.6] but you can't find a single 
+factor responsible and if [0.4] if the quality is improved there there ought to 
+be [0.3] smaller differences between reading from screen and from print [2.7] 
+right so if we move on to some of the research that's been done that has [0.7] 
+compared [0.9] how we read from screen [0.6] er or the outcomes when we read 
+from screen compared with paper [3.0] people have divided up [0.2] the way in 
+which you measure this into two categories [0.4] and these are outcome measures 
+and process measures so i'll start with the outcome 
+measures [0.7] i suspect this is all terribly familiar to you namex isn't it 
+'cause you've done an essay on this yeah [1.2] there's a review article [0.3] 
+by [0.2] Andrew Dillon [0.2] that i just noticed just now is not on your 
+reading list but it's a good one that does actually summarize all of this [0.4] 
+what i've put on your reading list is the book that [0.5] er is much more 
+comprehensive [0.3] so [1.2] right so [0.8] this er these are sort of summaries 
+of or [0.3] bringing together er the various studies that have been done [0.6] 
+and it seemed to be the case that [0.4] all the research that was done [0.5] 
+initially [0.4] er in relation to reading from screen [0.4] were making 
+comparisons with print it seemed that that was the only interest you know why 
+is it different let's always make this comparison [0.9] so most of the [0.3] 
+studies that were done found that [0.2] people read more slowly from screen 
+than they do from paper [0.3] or from print [0.5] and it's about twenty to 
+thirty per cent slower so that's that's reasonably substantial [1.8] er [0.2] 
+there were [0.6] or there was an odd study er as in the 
+case of just one study it wasn't particularly odd [0.5] er that found that 
+reading speed wasn't affected so there wasn't a difference between print and 
+between [0.2] and screen [1.0] and it was [0.3] in in bringing them together 
+and seeing that this particular study was different it's probably the case that 
+[0.2] the texts were too short [0.5] because if you don't give [0.2] a long 
+enough time period for people to read then you're not actually going to pull 
+out these differences [0.4] so i would say it's a pretty reliable finding that 
+we read slower [0.3] from screen [1.9] terms of accuracy one of the ways that 
+you can see there the accuracy is measured is by giving a proofreading task [0.
+4] which is a different type of accuracy to saying [0.2] well can you 
+acculatery accurately remember what you've read [0.4] er it is obviously 
+looking for errors on screen [0.9] and [0.8] those studies found that it you 
+weren't people weren't finding it more difficult to proofread from screen [0.5] 
+than from paper [0.7] and i don't know about you but that seems to me a rather 
+surprising finding [0.6] because how many times do you [0.3] look at something 
+on screen print it out and then find that there are typos [0.6] now [0.3] 
+either we [0.4] don't put the same sort of [0.2] attention into [0.6] checking 
+on screen [0.4] or [0.3] it is more difficult [0.5] now i i'm not saying that 
+that study is er [0.9] that there's anything wrong with that study [0.5] er the 
+result still [0.2] or the results still stand but i suspect that the particular 
+task wasn't sensitive enough to pick out [0.3] the differences that i think [0.
+5] are probably there [1.1] 
+sm1264: [0.5] all of them the results were so dependent on the task [0.4] 
+nf1263: yeah 
+sm1264: some of them require them to read [0.4] the screen and then write an 
+essay on it [0.5] 
+nf1263: yeah 
+sm1264: and the task and that will be dependent on the person's er ability to 
+write an essay you see and have different results [0.6] just from that [0.3] 
+nf1263: you mean they didn't [0.4] compare that with them reading from print 
+and writing an essay they just [0.2] 
+sm1264: yeah they did it both ways but often the tasks in the experiments were 
+completely different from each other so it really depended on individual's 
+ability [0.3] 
+nf1263: yeah 
+sm1264: ability of the task as well [0.3] 
+nf1263: yes right so maybe the [0.2] the [0.4] the tasks are questionable then 
+in themselves they're 
+sm1264: that's the er thing [0.2] i think in that they found the tasks were 
+more [0.3] 
+nf1263: yeah 
+sm1264: problems [1.8] 
+nf1263: yeah can [0.4] 
+sf1265: i think also you find that er [0.5] when you [0.2] if you're [0.6] on 
+you know you're on screen [0.5] people rely on the [0.3] spellchecker [0.7] 
+nf1263: that's true 
+sf1265: to [0.2] for everything whereas they actually [0.8] and it's only when 
+you've [0.2] got it you know in your hand reading it that you realize you 
+haven't covered all the [0.7] you know grammar 'cause they don't [0.2] they 
+can't pick it up [0.2] all the time with spellcheckers [0.4] 
+nf1263: yeah so that suggests that there's probably [0.2] both things going on 
+we're not [0.5] necessarily [0.2] trying so hard i mean maybe 
+sf1265: lets you think the spellchecker will pick it up 
+nf1263: because we think it pick it up [0.2] but maybe also i mean [0.6] the 
+main thing is that the resolution is poorer [0.2] isn't it and so it's it's 
+harder [0.8] i would say that has to make it slightly harder to read and 
+because of that [0.7] er i suspect there's there's an influence [0.3] so if we 
+get to screens of [0.5] six-hundred dots per inch [0.2] then maybe [0.4] we 
+would expect not to have the problems [0.3] but we would still have them if [0.
+6] say we we're relying on [0.2] er [0.4] on automatic checks that aren't [0.2] 
+going to be infallible [0.2] you know [1.3] yeah [0.4] so i i [0.2] it's also 
+'cause we mentioned fatigue as well y-, it's also the case i would [0.2] i mean 
+i would feel that it's it is more tiring [0.6] reading for a long time on 
+screen [0.4] but can you put [0.2] people in an experiment and try and simulate 
+the sort of natural tasks i'm not sure that you can [0.9] so [0.7] er [0.2] so 
+there's suggestions there [0.3] that if you [0.7] carry on reading for longer 
+maybe there are [0.3] er [0.2] fatiguing effects [0.4] and if you have a 
+demanding 
+task then you're less accurate but er [1.7] who knows so those are are outcome 
+measures because they're measuring sort of performance how quickly you do 
+something or whether it's got [0.5] there are errors or things like that think 
+i've got a few more [0.2] yeah continue with the outcome measures [0.4] another 
+outcome measure is whether [0.7] you can recall [0.2] and understand what 
+you've read [0.8] and again the studies have shown that there isn't a 
+difference so we're equally as good at understanding what we've read on screen 
+and on paper according to that [0.7] but there is always in this sort of work 
+the possibility that [0.4] we trade-off how quickly we read with [0.3] how well 
+we take it in this is the speed-accuracy trade-off [1.0] so that for example we 
+might decide to slow down our reading from screen [0.5] to make sure that we [0.
+3] take it all in because we're going to be asked questions afterwards [0.5] or 
+if we speed up reading we might actually get worse in terms of comprehension [1.
+5] so it's important in in sort of assessing whether 
+something [0.7] is legible i suppose we're saying i-, is it [0.3] is the screen 
+legible but you [0.2] you bring you take into account not only how quickly you 
+read but whether people [0.6] also understand what they've read [0.7] and 
+that's true of all legibility research [1.4] and then people were asked for 
+preferences and this is where in a a very strange sort of experiment it seems 
+to be the [0.7] the outcome is that if you use high quality you've got high 
+quality screens high quality paper [0.2] then no preference [0.3] but people 
+were preferring paper because it was a higher quality [0.5] er output [0.7] so 
+[0.7] don't think that's surprising at all that says nothing about the 
+differences between [0.4] screen and paper [0.4] just a preference for higher 
+quality higher resolution [1.6] 
+right so the other comparisons are the the process measures and we've got fewer 
+of those [0.3] these are harder to measure but it's as it sounds you're [0.5] 
+they're looking at how people are doing something rather than what the end 
+result of that doing is [0.5] so as you probably recall eye movement studies 
+have been done for reading print [1.1] looking at [0.3] er how big the the 
+saccades are the [0.2] the way wh-, when we jump from one part of a word to 
+another part [0.5] er how long we fixate for whether we need to go back if 
+we've missed something [1.0] er so those sorts of studies have been done for 
+reading from screen as well but not found a a big difference [0.5] er i suspect 
+i wouldn't have predicted that because i s-, [0.2] i guess we're [0.3] so 
+practised at reading print that this sort of automatic process will [0.6] er [0.
+2] take effect from reading from screen as well but [0.6] that's my guess looks 
+like there's no 
+differences there [1.5] er and then some fairly obvious things the manipulation 
+is less direct that's really just pointing out what we know anyway that when 
+you've got paper [0.4] you turn over a page by [0.4] er sort of picking it up 
+or whatever [0.3] whereas we've got the mouse as the intervening variable or 
+the keyboard or whatever [0.2] that's in between [0.5] us and the action [0.3] 
+taking effect [1.4] er [0.2] but basically if the appropriate tools are there 
+then there's not a [0.2] particular problem [0.6] and i guess we're getting 
+past the time when [0.6] er [1.0] you come across people [0.5] well when you 
+come across a lot of people that aren't able to to use a mouse [0.6] i mean i i-
+, [0.2] y-, don't have to go back too far in teaching in this department to 
+have [0.4] people not able [0.7] initially to use a mouse but i don't think 
+we're going to [0.2] get that sort of thing any more [0.9] er but actually in 
+the experiments that i'm going to describe in just a moment we didn't use the 
+mouse because we wanted to [0.4] have someone [0.3] come in to do our 
+experiment and not have to 
+say well you know when you move this up the cursor will go up sort of thing [0.
+4] so we [0.7] only let people use the keyboard [0.6] 'cause there is that 
+initial learning [0.5] do any of you remember when you first used a mouse [0.4] 
+what it felt like [1.9] [laughter] [0.2] 
+sf1266: [0.8] 
+nf1263: did you have any trouble [0.5] did you [0.3] 'cause some people are er 
+are sort of [0.6] like this [0.3] yeah [0.2] when they s-, first start because 
+[0.8] because you don't realize you can [0.2] if you get to the edge of the 
+table you can pick the mouse up and [0.2] put it back where it was and still go 
+down again [0.5] you don't have to have the same amount of movement as as you 
+have on the screen [0.6] none of you did that did you i don't know [0.5] i've 
+seen quite a lot of people doing that [0.9] you're all very quiet as well [0.9] 
+[laughter] [0.9] er [1.2] and then finally what i've talked about quite a lot 
+is the is the navigation [0.2] that it's more complicated than [0.3] in [0.2] 
+in books we've got i suppose more things that we can do moving forwards 
+backwards previous [0.2] pages and things like that [0.4] 
+and we might get lost [0.3] so those are just sort of summarizing some of the 
+[0.3] the main differences [1.4] okay so those [0.2] that is what [0.4] people 
+were interested in making the comparisons between [0.5] reading from screen and 
+reading from print [0.3] this is moving into the second [0.7] section which i-, 
+[0.4] are [0.3] it's basically two case studies of [1.1] reading from screen [1.
+1] er [0.5] so i decided that i didn't want to compare [0.5] reading print and 
+reading from stree-, [0.2] screen because i didn't actually see the point of 
+that [0.4] because yes you find it's different [0.2] but really it seems to me 
+[0.3] what we want to do [0.3] is to find out how we can [0.3] make it better 
+or easier for us to read from screen [0.6] rather than worry about how it's 
+different from print [0.8] and as i said at the beginning there wasn't [0.8] or 
+there still isn't very much done on [2.1] typographic [0.2] variables or things 
+that i would call typographic in relation to to reading from screen [0.5] so 
+we've got all this stuff on the legibility of print [0.2] admittedly a lot of 
+it done by Tinker [0.2] and coworkers [0.8] 
+but there's not the volume that's of research for for reading from screen and 
+so you have to think about why and i suppose one obvious reason is that [0.7] 
+it's more recent [0.6] and so maybe there hasn't been time for people to do the 
+research [1.2] or [0.7] maybe [0.2] people think well we know it all because 
+we've got the the legibility of print research so [0.3] we'll just use that [1.
+0] or [0.6] maybe [0.2] people get [0.5] er frustrated by the fact that screens 
+are changing and so they think well what's the point of doing this research 
+because in five years time [0.4] it'll be obsolete because there'll be a 
+different screen [0.6] and certainly [0.2] the the s-, [0.2] some of the stuff 
+that has been done [0.4] again from the nineteen-eighties early nineties [0.6] 
+doesn't use [0.2] d-, [0.2] the same sort of screens as we have now so you do 
+think [0.3] well is it [0.4] is that useless because [0.2] it's a different 
+sort of screen [1.8] or [0.4] i've got one more [0.2] up my sleeve as to why 
+people don't do this sort of research [0.5] people don't think [0.3] typography 
+is important coming back to our theme of last 
+week but is it this is a variation on it [0.7] because [1.1] people that work 
+on [0.5] computer stuff or human-computer [0.2] interaction stuff [0.4] tend 
+not to be typographers they're not okay [0.3] so they might be computer 
+scientists or they might be psychologists or whoever [0.9] and i do have some 
+evidence that they they don't [0.2] really think that the sort of factors that 
+we're interested in i hope like let's say line length 'cause that's what we're 
+going to be talking about [0.6] they sort of think well yes so what [0.6] er so 
+this is sort of the same theme as last week [0.6] so you're not going to find 
+people that are going to put together it seems to me the typography with [0.2] 
+the [0.3] the screen stuff [0.2] so [0.3] i should say well great that's lucky 
+because i'm doing that and [0.4] there's not many [0.2] many more people doing 
+it [0.5] but when people say the sort of so what it's a bit disheartening [0.9] 
+well that's enough of the preamble though [0.5] so [0.2] i wanted to find out 
+really [0.6] er answers to questions about the legibility of text on screen [0.
+4] and i 
+phrased the first question in a fairly general way by saying what amount of 
+text [0.5] really is best for maximum legibility [0.3] and that's 'cause i'm 
+talking about layout but i'm talking about things like the line length or the 
+number of columns [0.5] so there is a different volume of text on screen [0.2] 
+if you've got a long line length [0.3] as compared to a short one [0.7] now i 
+know you know what line lengths look like but i will be showing you the 
+material in a bit [0.4] so that was the first question [0.3] and that was 
+combined with [0.2] er what i've called method of movement or the person i 
+worked with called [0.4] and all of that is either scrollling [0.4] going down 
+line by line through the text or paging [0.4] which is [0.3] going from one 
+screenful of text pressing a button and getting a second screenful [0.3] so 
+it's equivalent to turning over the page yeah so you don't gradually scroll 
+through [0.7] so those two things er were varied and i looked at [0.2] in the 
+first [0.7] experiments that i did [3.2] right so [0.6] what was i measuring 
+and basically i 
+was trying to measure lots of things because [0.3] as i sort of mentioned last 
+week it can be very difficult to find [0.6] any differences [0.3] so if you [0.
+2] have quite a broad spectrum [0.3] of er measures then you hope that 
+somewhere something will come out of it [0.7] and i wouldn't dream of comparing 
+typefaces 'cause i don't think anything would come out of it [0.8] so [0.3] got 
+people to read from screen [0.2] and timed how long it took them to silently 
+read from screen [0.4] and the way that we did that was basically the the 
+computer started the clock at the beginning [0.3] and when they got to the end 
+it stopped the clock [0.5] so [0.3] i didn't even have to sort of sit there and 
+watch them [1.6] i [1.3] checked their comprehension and i wouldn't say i 
+tested their comprehension because [0.5] it was [0.4] not a particularly 
+sensitive way to measure comprehension [0.6] what i did was er borrowing from 
+some other people [0.8] i asked [0.3] or i put a set of questions [0.3] and 
+said [0.2] could you answer these questions from what you've read [0.6] so they 
+didn't have to answer them [0.5] but they could 
+they just had to say yes or no [0.6] so there would be a question like you know 
+did [0.5] Fred fall down the hill [0.4] now if that had been included in what 
+they had read then they could say yes i could answer that [0.3] if it hadn't 
+been they would say no [0.5] now it might sound an extremely obscure way of of 
+checking comprehension [1.0] but the reason to do it this way is that is does 
+check whether someone's read because if they get fifty per cent right [0.2] 
+then [0.2] they're guessing [0.2] so they haven't [0.5] or they haven't taken 
+it in properly [0.8] and the other thing is that it's very easy to mark [0.2] 
+because if you [0.5] ask the question er [0.4] what did Fred do [0.9] then you 
+have to decide whether what someone answers is correct or not because they're 
+not going to use exactly the right wording [0.4] so it's essentially just 
+easier to do this sort of thing [0.6] 
+sf1267: do they know they're being timed [0.3] [0.2] 
+nf1263: yeah they did yeah [0.2] yeah that's a good point to make though [0.4] 
+i think we sort of said they also knew they had to answer questions so that th-,
+you got to [0.5] think are they going to 
+speed through or [0.3] and think that's more important or [0.3] or sort of [1.
+0] or [0.2] try and make sure they understood the questions [0.2] no could 
+answer the questions [1.2] er the other thing we did i've called it record of 
+keystrokes was again the computer [0.4] sort of recorded how they moved through 
+the document [0.5] so [0.4] we took the mouse away and they had to use the 
+cursor keys so you go down with the pointer [0.4] and and back up with the 
+pointer [0.4] and every time they pressed a key [0.2] there was a record of 
+when they pressed it and the fact that they had pressed it [0.5] so what you 
+can map out is whether someone is [1.2] scrolling through fairly slowly so 
+perhaps moving a little bit [0.2] reading a little bit moving a little bit [0.
+4] or perhaps whether they're reading a whole screenful [0.5] and then 
+scrolling [0.2] through a whole screenful [0.6] for the page [0.6] pages that's 
+not particularly interesting but it is for the scrolling [0.6] you can't tell 
+when someone is reading but you can tell when they're not scrolling and you 
+might guess that they're probably 
+reading if if they're not scrolling [0.4] 'cause otherwise they'd just be 
+looking out the window [0.5] which is a possibility of course we can't help 
+that [1.5] and then finally we we got the s-, the s-, [0.2] in a sense the 
+preference although that wasn't quite the question but [0.3] after they'd done 
+the reading [0.5] er then [0.6] they were shown [0.2] pairs of things they'd 
+read and said which do you think is easiest to read [0.3] and they get all of 
+the combinations of pairs [0.4] so you might think that they would base that on 
+[0.5] their [0.4] feelings about having read it or maybe they'd just base it on 
+what they [0.4] s-, th-, see in front of them [0.2] but certainly they had 
+experienced the reading at that point [1.1] so these these are sort of methods 
+for for this lot of work [0.5] so [0.9] first one looking at line length [0.4] 
+and [0.5] trying to show you what it looks like [2.7] this is the shortest line 
+length you'll be pleased to hear [0.5] and i can't simulate it exactly 'cause i 
+don't know how to get rid of the two er menus at the top [0.3] but essentially 
+there were no menus at all [0.4] 
+so you've got er a screen that only has the text on it [0.6] and it was in this 
+typeface and the paragraphs were like this so this is approximately twenty-five 
+characters per line the narrowest [0.8] and [0.3] i can't also ca-, show you 
+the scro-, the er the paging but if you were scrolling [0.9] mm then you would 
+go down [0.3] line by line and then when you got to the [0.2] bottom [0.6] it 
+would start to to move up [0.3] but in fact in the paged version it would jump 
+[0.2] from the top to the bottom [0.6] 
+so this one's [1.0] the narrow one [0.2] there were six line lengths i'm so i'm 
+showing you the narrowest [0.2] one vaguely in the middle [0.5] oh that's if i 
+can find it [0.4] er [3.3] right that's twenty-five the one in the middle and 
+then i'll show you the the the extreme one the longest line length [0.3] so 
+that's fifty-five characters per line so you're probably feeling a bit more 
+comfortable with this one [0.8] er [1.1] and then [0.7] the the widest one 
+which essentially was done to fill the whole screen [0.7] okay [1.7] so [3.0] 
+if we get back [10.4] right so there were six line lengths and they 
+could either be in a scrolling version or in er a paged version [0.5] and did 
+you expect this that the one that was read the fastest was that one that filled 
+the screen [0.5] one-hundred characters per line [1.9] i didn't [1.0] er [0.4] 
+to be fair er [0.8] although it was read [0.4] it was the fastest i think if 
+you [0.2] 'cause you know a little bit about statistics it was only [0.8] 
+significantly different from the very narrowest one so er [0.3] but it was 
+still if you looked at at [0.2] looked right across the six of them it was the 
+[0.3] the fastest one [0.4] so i've thought ah well maybe i've got something 
+here [0.8] er [0.3] but when people [0.4] making their judgements about what's 
+easiest to read they did not consider that the easiest to read they thought it 
+was [0.6] the least [0.2] easiest to read so they probably had the sort of 
+reaction that you would have i think that er [0.3] that really looks quite 
+overwhelming [1.6] er the check on comprehension ju-, didn't show any 
+differences because of course there is the possibility of this speed-accuracy 
+trade-off [0.5] you see [0.6] a screen full 
+of text and you think ergh i'm just going to try and get through that ge-, [0.
+2] er and then you you don't actually take it in [0.5] but it appeared not to 
+be the case [1.3] er [0.4] now needless to say you know sort of [0.3] 
+colleagues didn't [0.6] think this was [0.2] the result that i should find or 
+it's the sort of thing that you think know can you really go around 
+recommending these long line lengths on screen [0.4] certainly before i did 
+this research [0.2] i was giving tutorials saying [0.3] use quite short line 
+lengths on screen probably shorter than in print because [0.2] it's more 
+difficult to read from the screen [1.0] er [0.3] so you look for reasons why 
+you might get something like this was there something about the experiment [0.
+4] and if you can i won't go back to it but if you can think back to that 
+narrow line length there was a screen [0.6] the screen was all white the 
+background was white and certainly some of the people found it quite glaring [0.
+3] so there might have been a problem [0.6] with line lengths that don't fill 
+the screen because 
+it's bright and it's glaring [0.4] so we changed to grey [0.2] and just to show 
+you as an image of what that looked like rather than the actual screen [1.5] so 
+now we've just got the background as grey [0.4] and didn't go through all six 
+line lengths just went through the twenty-five the s-, the shortest the middle 
+and the longest [0.6] and er well it got a bit more blurry [0.3] er now er not 
+the screen the results got er [0.3] got blurred [0.5] er and it wasn't so 
+obvious that this long line length was speeding people up [0.7] what was 
+certainly [0.4] obvious and it again is logically the case anyway [0.4] is that 
+if you've got a very narrow line length you've got to scroll down [0.4] sort of 
+screens and screens [0.2] for the same length as document if [0.4] if you've 
+got a wide line length you've only got a few screenfuls [0.3] so it's actually 
+quicker mechnically [0.5] to get through [0.5] er [0.4] a short fat [0.2] a 
+sort of a wide [0.4] er not particularly tall document [0.2] so maybe that's 
+all it it was i didn't think it was but that certainly was contributing [0.3] 
+having to scroll 
+through a long document [3.0] right it sort of [0.2] that never became totally 
+clear but i moved on to something related although not exactly the same [0.4] 
+which was to compare [0.9] columns of text [1.3] because and i forgot to 
+mention this bit earlier [0.5] this work was funded by Microsoft Corporation 
+because they really [0.4] wanted to find out about [0.2] how people read from 
+screen or rather what's er useful layouts and so on and so forth [0.8] and i 
+know last week we talked about sort of [0.4] who does experiments influencing 
+er the results but fortunately they [0.4] there was [0.2] no way in which they 
+they influenced these 'cause they couldn't really [0.3] except to say the sort 
+of things they were interested in looking at [0.7] and about this time which 
+was [0.7] probably about five years ago [0.5] er they were starting an online 
+magazine web magazine called Slate and they were interested in whether to use 
+single columns or multiple columns for that [1.3] now [0.9] my my view is [0.2] 
+that you can't [0.7] put text on screen in three columns and have it scrolling 
+[1.0] er [0.2] now i 
+know thi-, this [0.5] is true on the web [0.2] but if you think about what 
+you're having to do then you're having to read down [0.5] scroll down get to 
+the bottom of a column [0.2] scroll back up [0.4] come down again scroll back 
+up [0.5] so my reckoning having [0.2] three columns it's got to be in a paged 
+format you've got to be able to read what's on screen [0.3] and then get the 
+next [0.7] page as such the next screenful [0.4] 
+sm1268: can you not have three columns and just wait for them [0.2] [0.6] [1.2] 
+nf1263: you wa-, right yeah [0.4] [laughter] the trouble is i'm ass-, i'm 
+assuming that everyone has the same size screen of course because if you've got 
+a tiny one you're going to have to scroll down anyway [0.6] but [0.3] that was 
+where i started from that three columns has got to be paged [0.7] since i was 
+comparing it with a single column i then compared it with that column [0.3] 
+being scrolled or being paged [0.2] so that finds out whether it's scrolling 
+that's causing something or whether it's the columns [1.1] er [0.8] right [0.3] 
+show you the sort of size that i was working with so there [0.3] gone 
+back to the [0.3] the grey surround er [0.3] and [0.2] the three columns yeah 
+[0.3] so for those that you probably did all get it by then i i think you can't 
+sort of carry on [0.4] having to scroll down and come back up here [0.3] so you 
+do all three [0.4] and then you press somethng and you get another screenful [1.
+2] and the single column was about eighty characters per line so we're probably 
+talking [0.4] yeah it covered the same sort of area [0.4] it's a pretty [0.4] 
+pretty long line again [3.3] right [0.2] so what we found there was that the 
+the [0.2] it was the single [0.5] column the fairly long line [0.3] length that 
+was read fastest faster than three columns [0.4] er and it was faster in paged 
+because i think you basically it's faster because you haven't got to scroll so 
+you just save time on [0.3] having to do that mechanical thing [1.4] but we 
+happened to be recording how old p-, [0.2] our [0.3] participants were [0.5] 
+and most of them were within this age range we didn't take exact ages within 
+the age range eighteen to twenty-four because we recruited from within the 
+university [0.6] but we 
+did have some that were [0.3] twenty-five [0.2] plus [exclamation] [0.5] and 
+they showed a different pattern or rather the [0.4] the younger ones the 
+eighteen to twenty-four year olds [0.5] were [0.8] showing this [0.4] this 
+pattern and not everyone else [1.1] so why is it that a particular age group 
+should read a single column faster [0.3] than [0.5] than everyone else [0.2] 
+basically [0.4] so everyone else didn't show a difference between [0.3] 
+everyone else being the older people [0.8] didn't show a difference between 
+three columns and a single column [0.8] but eighteen to two-, twenty-four year 
+olds did [1.5] i've only had [0.3] i've i've made one guess at this but i i've 
+[1.2] you're eighteen to twenty-four year olds aren't you [0.7] mostly [0.9] 
+does anyone squeeze out the top [2.5] 
+sm1269: so what's your guess [0.4] 
+nf1263: my guess is that they were more used to reading [0.5] web pages [0.2] 
+and that [0.2] the [0.6] the text could have looked pretty similar to that [0.
+3] and not in [0.2] three columns 
+sm1270: were they eighteen to twenty-four year olds 
+nf1263: eigh-, twenty-four four year olds were more used to than the 
+older people [0.3] yeah [0.3] and so it was kind of a 
+sm1270: well 
+nf1263: familar-, familiarity [0.2] thing [1.1] 
+sm1270: and they read less newspapers [0.9] 
+nf1263: yeah d-, if it if it [0.3] does generalize from print yeah you would 
+think that the column thing would come out yeah [1.4] it [0.2] it [0.3] sligh-, 
+[0.2] gets slightly more [1.0] complicated er [0.2] no i haven't put it on an 
+overhead [0.5] but if you [2.1] if you also what i did was to divide the group 
+into [0.2] faster and slower readers basically just because you've got the 
+times and looked at whether there were differences [0.6] er there [0.3] make 
+sure i get this right 'cause it's complicated [0.8] er [1.4] faster readers 
+were showing although generally there were no differences in comprehension 
+faster readers were [1.1] showing better comprehension when they were reading 
+the three columns [2.3] so the-, there's two funny things happening here 
+there's an age differential [0.5] and faster readers seem to be [0.6] showing 
+something a bit different to slower readers as well [0.8] er now those were 
+sort of indications and i i just put them in now because 
+they did er feed in to what i went on to do after that [0.4] but just to 
+conclude this part before moving on to the second case study [1.1] i would say 
+that these together have suggested that [0.4] longer line lengths may be okay 
+on screen there is this problem that people are definitely saying [0.5] well i 
+don't think it's easier to read [0.4] but they are reading them fairly fast and 
+they don't apparently ap-, [0.3] be [0.5] reading them without taking in what 
+they read because they appear to be able to [0.4] to answer questions [0.7] 
+however my second point there may be different levels of comprehension [0.3] i 
+don't think what i wa-, [0.4] the way i was measuring comprehension was 
+particularly sensitive [0.5] so my feeling is that [0.6] maybe [0.6] er with a 
+long line length there's a possibility that [0.3] they're they're skimming it 
+because it's rather uncomfortable but i can't pick that up because of the way 
+i'm testing it [1.3] and i'm suggesting maybe different reading patterns 
+according to age or according to how fast you read sort of from the last 
+results there [0.7] but what seems to be absolutely certain is that we can't 
+say we've done all this research in print let's use those results [0.3] we 
+don't know what the optimum line length is for reading from screen [0.4] my 
+research hasn't shown it but my research has questioned [0.4] that [0.3] fifty-
+five characters or seventy characters the sort of thing that that comes out of 
+print is the right line length for screen [0.6] so we shouldn't rely on that [1.
+1] 
+er but the reason to go on with the next s-, sort of series of studies was [0.
+6] c-, i suppose my uncomfortableness with this one-hundred characters per line 
+and and reco-, and recommending that [0.3] and also [0.2] other people being 
+uncomfortable [0.8] other colleagues [0.4] so my thoughts were [0.4] that [4.0] 
+long line lengths [0.6] can be read as far [0.4] can be read as fast but 
+they're perhaps that we definitely not perceived as easy to read so perhaps 
+there is a problem with comprehension that's really just summarizing already [0.
+5] and perhaps there's something happening [0.5] with [0.3] faster reading [0.
+2] 
+because we're finding some sort of differences there [1.4] so [1.9] what i went 
+on to do was to [0.7] essentially look at different reading rates so [0.2] to 
+get people to first of all read at their normal speed [0.5] and then to [0.2] 
+try and speed them up [0.3] er this is the fast reading rate [0.7] and the way 
+that we did that was essentially to train people to read faster than they do 
+normally [0.4] so we're not trying to get everyone to a certain reading speed 
+but we tried to get people [0.3] to a speed that was twice as fast as they 
+normally read [1.2] so [0.2] get them to read something and then you say okay 
+try reading the next document faster than that and you see how fast they read 
+it [0.3] and then say okay well try reading a bit faster than that if they 
+haven't got up to [0.5] twice the speed [0.6] and what we found [0.3] perhaps 
+not too surprising it is very difficult to read at twice the speed [0.4] that 
+you normally read at [0.3] if you're still trying to take in [0.2] what you're 
+reading [0.5] so we actually stopped at [0.2] allowing people to read [0.8] at 
+seventy seventy per cent faster not twice as fast [0.3] sounds like it's more 
+[0.2] but they wouldn't have to speed up quite as much as that [1.5] er still 
+interested in line lengths 'cause i had some sort of idea that different line 
+lengths might be [0.5] more useful at different speeds and maybe it's handy to 
+have a long line length when you read fast but it's not when you're reading at 
+a normal speed something like that [1.3] but because i thought well this 
+comprehension thing isn't really working [0.2] that i set out to measure 
+comprehension in a different way [0.6] and [0.2] to try and to tease out 
+perhaps different things that might be [0.4] lost [0.2] when you read fast [0.
+5] so there were various different types of questions [0.9] one referring to 
+the title one to a main idea [0.2] and i'll show you what those are it's 
+probably [0.4] easier than er [1.0] course you don't know what the text is all 
+about so this is [0.2] slightly abstract here [0.7] er multiple choice 
+questions which [0.2] believe me are incredibly hard to set because fair enough 
+you can 
+do the right answer [0.2] but [0.3] there's a real problem in getting [0.6] two 
+alternatives that are [0.6] vaguely plausible [0.2] so essentially these [0.2] 
+these two alternatives that are wrong have come from somewhere in the document 
+[0.4] so that people might be fooled by them [0.8] so this was a document all 
+about Monaco and [0.2] casinos and stuff like that [0.3] so you there's a qu-, 
+one question which says which is the best title which i-, which is best fits 
+the text [0.3] so you've got to have got a sort of overview of what you've read 
+to be able to answer that 'cause it doesn't exist within the document [1.3] 
+then there's a question that's a main idea so what the sort of gist is of the 
+document [0.6] er [0.3] and [0.2] Monaco is either dedicated to the principle 
+of fabulous excess motor sport or strength in the continuity of the monarchy [0.
+5] course you might be able to answer these without reading [0.6] there's 
+always a danger without reading the document [1.2] structure question [0.2] 
+that's that's an important one because it came out very very badly [0.4] and 
+this is actually just asking the question as to [0.3] what happened when or 
+what happened before something else [0.4] so what you've got to remember is the 
+sequence of events in something that you've read [0.5] so who does the autor 
+author interview just before blah blah blah [0.3] so these three people would 
+have come up somewhere in that document [1.2] then you've got incidental sort 
+of detailed questions h-, [0.2] er with some a number in that case [0.6] er [0.
+2] and there was also one that didn't refer to a number [0.3] and then a main 
+factual question which wasn't the main idea but was still something fairly 
+major [0.6] and then finally [0.4] this is remembering precise wording so you 
+have to say whether this precise wording was in something that you've read [1.
+1] and the ones that weren't in there were taken from another part of the 
+document so you've got the same writing style [0.8] so what i hoped to find was 
+well i thought this must be really sensitive so maybe people'll lose some of 
+these things they wi-, won't be able 
+to answer some of them but they will be able to answer others [3.3] right [0.3] 
+so [0.4] still found that short line lengths are read slower [0.2] this had [0.
+3] twenty-five fifty-five and one-hundred again so your very short [0.3] your 
+medium line length and your long line length [0.7] but the long ones [0.3] the 
+long line length wasn't coming out much much better it was the same as the 
+medium line length so i'm losing [0.2] my [0.7] my good effect of a long line 
+length it just doesn't seem to be coming out in the same way as it did in the 
+first experiment [1.7] but there were differences in comprehension [0.2] which 
+was good because that was something that i hadn't found before so this was more 
+sensitive [3.0] and [0.2] it's the middling line length that essentially is 
+coming out [0.2] better [0.3] so comprehension's better [0.4] and those line 
+lengths are read reasonably fast [2.8] er [1.5] when people read fast as you 
+might expect their comprehension is poorer [0.3] so that that [0.5] you want to 
+find that because it makes sure that what you're you actually got a sensitive 
+measuring instrument that was found [0.6] and people recall less detail rather 
+than the main facts so what goes is the detail [0.6] but the one that i sort of 
+[0.2] mentioned just now [0.4] for some reason [0.2] people had [0.2] much more 
+difficulty with remembering where something came within the text the structure 
+question [0.6] than they did any of the other questions and that's regardless 
+of how fast or or slow they were reading [1.3] and [0.5] again giving a stab at 
+why this might happen [0.5] all of this was scrolling text and i think i've 
+referred to this before what you lose in scrolling text that you have in books 
+[0.5] is any [0.7] cue to where something sits on a page so whereas in a book 
+you might think oh yes that idea came on [0.5] er a left page near the top [0.
+4] you haven't got that [0.2] sort of indication when you've got [0.3] text 
+that you just scroll through [0.4] and maybe that somehow influences you 
+recalling [0.3] where certain things happened within the text [0.4] that's one 
+of those guesses that i haven't [0.2] got any f-, more evidence for [1.4] and 
+the final 
+thing that i was trying to do by looking at [0.2] how people scrolled was to 
+say [0.4] well is there [0.7] are there good ways of scrolling through text 
+that either speed us up [0.2] so we can read faster if we want to do that 
+'cause maybe we want to just skim read [0.3] or are there [1.1] other [0.3] 
+maybe the same methods or different methods that enable us to understand better 
+[0.7] so i was looking for [0.8] the characteristics of effective readers an 
+effective reader might be a fast reader [0.3] or an effective reader might be 
+someone that's [0.2] good at understanding what they've read [0.3] and maybe 
+depending on the task you have [0.5] different different demands maybe you want 
+to read quickly or maybe you want to [0.4] to [0.2] study it more and get more 
+out of it [1.0] and there are different scrolling patterns that do match up but 
+they are different 
+depending on whether you want to read fast or understand [0.7] i've just got 
+the fast one here [0.6] so [0.2] those people that are reading fast were [0.3] 
+spending less time between scrolling [0.2] so they were also making only a few 
+scrolling movements [0.2] so essentially they weren't [0.2] pausing for very 
+long to read [0.3] they were keeping the text [0.5] moving [0.5] and that 
+speeds up reading [0.6] whereas people that showed better comprehension were [0.
+4] sort of doing the opposite they were pausing for longer [0.4] in between 
+scrolling [1.1] so [0.2] what that might mean if i carry on and do some 
+research is that [0.2] you can manipulate how people scroll through text and 
+see whether it does improve [0.6] either their speed of reading [0.5] or [0.9] 
+their [0.4] comprehension [0.3] because this doesn't do that that this just 
+said [0.3] says those readers that did that [0.2] came out well [0.2] it 
+doesn't 
+say that if [0.2] if i ask you to do that [0.2] then [0.2] then [0.2] you'll [0.
+2] you'll come out well from that [1.3] so in conclusion my always my 
+conclusions are there's room for lots lots more research and [0.5] what i can 
+say definitely from this and it's probably the only thing [0.4] is that i you 
+cannot predict from [0.6] print legibility research [0.2] how people are going 
+to read from screen [0.8] and [0.6] that [0.3] ought to be obvious because 
+we've got a more interactive way of reading we can manipulate the text in 
+different ways [0.5] but there seems to be something a bit more [0.9] perhaps 
+basic in relation to the lengths of lines that [0.3] that affects how we read 
+from screen [1.8] okay 

@@ -1,0 +1,515 @@
+nf0279: i'm [0.2] namex [0.8] and [0.6] i'm very pleased to be lecturing in 
+this course and i [0.3] saw some of the things on the board [1.1] and i thought 
+probably what i'd do is start with a single equation [0.3] and this is the only 
+equation you're going to see in this lecture [0.2] and it's on the board there 
+now [0.7] now what does that tell you [2.8] does it look even vaguely familiar 
+[0.6] to anyone [6.2] [laughter] no i've probably got it wrong [0.2] i thought 
+it was something like the equation of relativity [0.4] and the real reason i 
+put it up there is that [0.2] Albert Einstein [0.5] was one of the very famous 
+people [0.3] to have an abdominal aortic aneurysm [1.2] and i'm going to talk 
+to you [0.6] about [0.2] abdominal aortic aneurysms [0.3] so a more clinical 
+flavour [1.0] and how we use trial [0.2] error [0.4] and statistics [0.6] in a 
+real health [0.2] problem [3.5] i've sorted myself out with how to use this but 
+i don't know whether i've got [0.4] any sort of pointer [0.3] 
+nf0280: 
+yes there's a mouse [0.9] 
+nf0279: i use the mouse [0.2] 
+nf0280: yeah [0.7] 
+nf0279: er well that's great 'cause the screen's gone off so i er [0.2] oh okay 
+[0.2] right fine i've got you [2.0] this is a cartoons of the aorta [0.4] this 
+is your aorta's nice and young and healthy [1.8] these are the main branches of 
+th-, the renal arteries [0.3] this is the diaphragm [1.9] as you get older the 
+i mean i suppose one of the most obvious facial characteristics when people get 
+older [0.2] apart from greying hair like mine is wrinkles [1.1] well just like 
+your face wrinkles [0.2] your blood vessels wrinkle too in a sense [0.4] and 
+they start sagging [0.2] and this is what we call ectasia [1.9] but in some 
+people [0.2] when they get older [0.6] they actually balloon out [0.5] their 
+abdominal aorta [0.6] and you probably remember from your anatomy if you've got 
+that far [0.4] that this bit [0.3] the but-, the iliac bifurcation is about at 
+the level of your umbilicus [3.8] this nice little swelling of the aorta [1.5] 
+doesn't do anything you don't feel it usually [0.4] no problems [0.5] 
+in fact many [0.3] people have no problems [0.4] until it grows so big [0.4] 
+that it bursts [3.1] and the diameters here [0.9] whoops [2.1] normal aorta [0.
+4] somewhere between one-point-six and two-point-two centimetres [0.7] and we 
+start to call it an aneurysm [0.3] when the diameter here exceeds three 
+centimetres [1.0] and they can grow really very big [0.2] up to fifteen 
+centimetres or more [2.3] so this may not provide any symptoms [0.4] but when 
+this happens [0.7] and the blood pours out into your belly [0.3] onto the 
+retroperitoneum [1.5] extreme pain [0.5] and collapse [0.7] and the survival 
+rate [0.2] is very poor [2.4] we can detect [0.9] aneurysms [0.9] using 
+ultrasonography [0.7] even though a person may not know they've got them [0.5] 
+if we do an ultrasonogram [0.2] of the aorta [1.2] we can see here [0.3] this 
+is an example of a very large aorta [0.6] and in the middle here you've got 
+colours 'cause this is colour flow showing the blood flow [0.9] so here you've 
+got an aorta [0.2] slightly irregular [0.4] but probably about seven 
+centimetres in diameter [2.7] if you go and do this to the general population 
+[1.2] and you choose men over 
+sixty years [1.0] you'll find that five per cent of them [1.6] have a small 
+swelling of the aorta [0.2] or an [0.2] occult [0.3] abdominal aortic aneurysm 
+[1.5] so it's not rare [0.3] it's quite common [0.7] and rupture of an aortic 
+aneurysm [0.9] is a common cause of sudden death [1.1] and often [1.0] you will 
+see on a death certificate [1.2] died from a heart attack or myocardial 
+infarction [0.5] actually it would be very difficult to discriminate if you 
+didn't know anything about the history [0.8] whether it was from a sudden major 
+heart attack [0.4] or a ruptured aortic aneurysm [3.2] now the natural history 
+[0.7] of this condition [0.5] is that once you've got a swelling [0.7] it 
+gradually increases in size [1.3] and just like a balloon [0.2] you might 
+suspect that as it increases in size [1.7] there's a bigger chance of it 
+bursting [0.3] or rupturing [1.5] we've actually quantified this [1.0] in [0.2] 
+over seventeen-hundred patients [1.3] and the way we've done this [0.4] is to 
+break these [0.4] aneurysms down by size [0.4] we've put them into three groups 
+[0.5] very small [0.4] small [0.5] and larger [1.9] and we've looked at a crude 
+rupture rate [0.4] 
+per a hundred person years [1.9] very very small for these aneurysms [1.5] 
+becoming significant for these aneurysms [2.2] and [1.1] more than one in four 
+likely to rupture [0.6] for these larger aneurysms [1.5] i understand you 
+haven't learned about hazard ratios [0.5] but this is another way of 
+quantifying the risk [1.3] as to how much the risk increases for each 
+centimetre in diameter of the aorta [1.9] and because various other things 
+might influence rupture [0.4] such as smoking status and blood pressure [0.7] 
+we've needed to adjust for those [5.3] and from these series we looked at a 
+hundred-and-three patients with ruptured aortic aneurysm [0.2] and this was 
+their fate [1.8] twenty-six [0.2] or [0.5] about a quarter died without even 
+reaching hospital [2.0] fifty-three arrived in hospital [0.5] but were too sick 
+or ill to contemplate corrective surgery [2.5] corrective surgery was planned 
+in less than a quarter [2.0] and er only a very small proportion [0.5] about 
+ten per cent [0.6] were alive thirty days after the surgery [1.6] so [0.6] 
+pretty dire consequences [0.3] if your 
+aneurysm ruptures [1.3] what does the surgeon do [0.9] well the surgeon opens 
+you up and has a look at your aneurysm and this is one here [2.5] and he opens 
+it up [1.1] and he corrects it by inserting a Dacron tube [0.2] or she 
+preferably [1.5] she's have got much better hands and more nimble hands than 
+men [0.2] whatever namex might say in namex [3.3] [laughter] so this is a 
+cartoon of the operation [2.0] now then [0.2] you can't do this operation [0.9] 
+without some risks [1.6] and it's quite difficult to ascribe [0.3] a risk to 
+this operation [1.1] 'cause you can do this operation [0.5] electively [0.7] 
+that is if you find [0.3] by chance [0.3] a large aneurysm in a patient [0.8] 
+say an eight centimetre one [0.3] you might think the risks of this bursting 
+are so high [0.7] i need to do an operation to correct it [2.9] if you go and 
+read all those learned journals [0.7] you will see [0.4] that the risk of this 
+operation [0.9] depends very much on the type of study [0.4] whether it is [0.
+2] prospective [0.4] or retrospective [1.6] whether it's population [0.3] based 
+[0.6] hospital based [0.8] or 
+comes from a very selected hospital [0.4] such as [0.2] the National Heart and 
+Lung Hospital [3.0] and [0.2] perhaps what you'll notice here [0.7] is that the 
+As [0.3] the population based studies [0.7] indicate that the mortality rate 
+for this operation [0.7] is quite high [0.4] it's er probably somewhere in the 
+region of eight per cent [1.8] if you go and look at hospital based studies 
+particularly retrospective ones [1.3] the mortality rate drops [1.6] and 
+selected series [0.7] published in the nineteen early nineteen-nineties [0.8] 
+from a very smart important hospital suggested that the mortality rate [0.6] in 
+really good surgeons' hands was only about two per cent [2.2] now of course how 
+do you report your r-, [0.2] mortality rates [2.4] you usually keep [0.5] a 
+record of consecutive patients that come to see you with this condition [2.4] 
+you can start that record [0.3] when you like [0.9] and you can stop it when 
+you like [2.6] so supposing [0.9] that i have [0.2] approximately two-hundred 
+patients like this come to see me each year [1.5] at the beginning of two-
+thousand-and-two [1.3] the first two patients 
+operated on [1.5] died within thirty days after surgery [0.8] so i thought it 
+would be better to start my series on the first of February [0.4] two-thousand-
+and-two [2.0] we then did a hundred operations [0.8] and [0.2] all the patients 
+survived and did wonderfully [3.1] by the time we came to patient a hundred-and-
+three in October two-thousand-and-two [0.6] we had a little bit of run of bad 
+luck [0.9] and a few more patients died [1.7] so when we wrote up this series 
+for a learned journal [0.7] we decided only to include those consecutive 
+patients [0.4] between the first of February two-thousand-and-two [0.8] and the 
+thirtieth of September two-thousand-and-two [0.4] 'cause this gave us a perfect 
+record [1.6] it's very difficult to work out what the true mortality rate is [0.
+5] for this operation [3.6] but quite clearly [0.2] given that there is a 
+significant mortality rate [1.2] if you find one of these aneurysms in somebody 
+[0.8] what do you do [0.9] do you let it grow and rupture [1.7] or do you offer 
+them an operation [1.1] and where's the balancing point [0.5] in terms of the 
+size 
+of this aneurysm [1.3] and what else does it depend on [1.2] and if you ask a 
+vascular surgeon [0.4] this person who operates on these [0.7] they'll think 
+it's going to be depend on the age perhaps the sex [0.4] how fit are these 
+patients can they still walk about [0.8] have they got very good lung function 
+[0.3] and other physiological parameters [1.6] so to find out about this and 
+this was now about twelve thirteen years ago [0.4] we did a survey of vascular 
+surgeons in Britain [1.2] and it's very useful [0.3] to get information [0.3] 
+via professional bodies [2.8] and it turned out [0.2] that surgeons really [0.
+2] had no idea what to do [0.7] what was the best policy [0.5] if they found a 
+patient who had one of these swellings which was between [0.4] four and five-
+and-a-half centimetres in diameter [1.3] they didn't know [0.4] this is a grey 
+area [0.5] and therefore [0.3] it's an excellent area [0.6] for a clinical 
+trial [1.6] and you might ask whether it was better [0.4] to have a policy of 
+early elective surgery [1.0] or just monitor the size of the aneurysm there [1.
+7] and see [0.6] which was the best [0.5] 
+treatment method [0.6] with respect to [0.2] how many deaths occurred [3.0] 
+vascular surgeons can't do this by themselves [0.9] they need a lot of skills 
+to put together a clinical trial [0.3] including a statistician [0.7] very good 
+to have an important statistician [0.4] however much you may think that st-, 
+statistics is very difficult [3.0] once you're doing a big complex trial it's 
+useful to look at more than mortality [1.7] and we wanted to look at quality of 
+life of two treatments [0.5] the costs of two treatments [0.9] and the cost-
+effectiveness of two treatments [2.8] also allowed us to look at other things 
+[1.1] such as the risk of aneurysm rupture [0.4] perhaps some biological things 
+as genes [0.6] predicting [0.3] prognosis or the rate of aneurysm growth [0.6] 
+and it allowed us to do some real statistical work [0.6] which the 
+statisticians did [0.4] on how you model aneurysm growth [0.6] and depending 
+how the time goes as to whether i'll talk about that later [2.3] design [0.4] 
+is always best when it's simple for something like this [1.3] and [0.2] from 
+our poll of vascular 
+surgeons this was the grey area [0.5] this was the area where they didn't know 
+what to do so they could put their hands on their heart and say to the patient 
+[0.5] i don't know what to do [0.9] i think you [0.2] might have just as good a 
+chance with early surgery [0.5] or observation surveillance for growth [0.9] 
+and i'd like you to join us in a trial [0.4] to see what's best for patients [4.
+4] we had to try and work out before we started [0.6] how many patients we 
+would need [1.4] and because you'd seen that on the group of people doing this 
+[0.9] the most populous group was vascular surgeons [0.4] there was the 
+automatic assumption [0.6] that surgery [0.4] would be best for these patients 
+[2.0] and i said it's quite difficult to know what the operative mortality is 
+[0.9] but they thought they'd go with the [0.2] figures that suggested [1.3] if 
+you did an er [0.2] operation electively [0.4] two per cent of these patients 
+would die [0.5] within thirty days thereafter [1.2] and because this is an [0.
+4] older group of people [0.9] there's a general mortality which they thought 
+was six per cent per annum [2.6] 
+they thought if you just had your aneurysm watched [0.8] you probably had a two-
+and-a-half per cent per annum [0.3] chance of your aneurysm rupturing [0.4] and 
+most of you would die if your aneurysm ruptured [0.5] plus [0.4] the normal six 
+per cent per annum [1.4] and on that basis [0.9] we thought [1.2] that after 
+five years [0.4] the survival [1.5] and the survival is here on the vertical 
+axis [0.4] would be seventy-one per cent in those that had an early operation 
+[1.2] and [0.2] sixty-two per cent [0.7] in those that were just monitored to 
+see whether they grew bigger [0.3] to arrange where surgeons were convinced you 
+needed an operation [2.1] i understand that this is something you haven't dealt 
+yet [0.3] with yet is power [1.0] but [0.4] this is something we needed to have 
+any chance of showing this definitively [0.4] we had to recruit about a 
+thousand patients [2.7] we had to be careful about how we randomized these 
+patients [0.7] we couldn't allow any fiddling we couldn't have a series of 
+closed envelopes in each centre [0.3] where we were going to recruit patients 
+[0.3] 'cause we had 
+to do this through lots of hospitals [0.3] and in fact we did it through ninety-
+three hospitals in Britain [1.3] and so we used a central [0.5] computer [0.3] 
+for randomization [0.4] to avoid bias [5.0] measurement [0.8] trial and error 
+[0.3] and this is where we start talking about error [0.9] and again this is a 
+cartoon [1.0] of using an ultrasound probe [1.3] to measure both the maximum 
+diameter [1.0] and to see whether we could work out the ratio [0.3] of the 
+normal diameter here [0.5] to the maximum diameter here [1.7] and although it 
+would be very nice to do this [0.4] it turns out that here the er images are so 
+fuzzy [0.7] it's very difficult even for experienced people to measure [1.9] 
+and if you do it here [0.5] you can measure the diameter either from front to 
+back [0.4] A-P [0.2] anterior posterior [0.8] or from side to side [1.0] and 
+because of the actual physics of ultrasound [0.6] you can measure it more 
+accurately [0.2] from anterior [0.2] to posterior [2.8] but we wanted to design 
+this trial to work through five regions in Britain [1.1] and each one have a 
+dedicated trial coordinator who are going to 
+look after the patients and measure the size of their aneurysm [1.1] so a 
+question that [0.3] came to our mind was [1.2] could we be sure that different 
+people [0.4] would measure an aneurysm [0.2] in the same way [1.7] so we 
+actually did [0.2] a little experiment [0.7] taking [0.2] different people [0.
+2] who knew how to use an ultrasound machine observers [0.4] giving them [0.3] 
+an array of patients [0.4] with different diameter aortas [0.3] to see how well 
+they did [2.2] and we h-, [0.6] the first study we did we had ten patients [0.
+3] and then we increased the number of patients [1.6] and we also looked [0.3] 
+and i'll tell you about that later on [0.3] er looking measuring aneurysm 
+diameter using a different modality [0.2] computed tomography [0.3] or C-T [2.
+5] right [0.6] here's the ultrasound [1.2] the one you saw before [0.3] you can 
+measure this either in this dimension transverse [0.5] or this dimension [1.1] 
+A-P [4.0] using A-P [1.1] and a large number of different patients [0.4] we 
+took just two [0.3] single [0.2] experienced ultrasonographers [1.6] and we 
+said [0.4] measure these aneurysms for us and record them [1.9] and this shows 
+that data [1.4] this is the 
+difference in aneurysm diameter [0.3] recorded between [0.2] ultrasonographer A 
+and ultrasonographer B [0.8] against the mean aneurysm diameter [0.8] the mean 
+of those two observers [4.5] you can see [0.3] that the distribution [0.4] of 
+results [0.2] is around the zero line [1.2] but for instance [1.0] in this 
+particular case [1.2] observer A [0.2] measured the aneurysm diameter [0.9] at 
+[0.3] point-four of a centimetre bigger than observer B [1.8] whilst here [0.8] 
+they had measured it point-four of a centimetre [0.4] smaller [2.6] this type 
+[0.2] of display of data [0.3] is known to me at least as a Bland Altman plot 
+[0.3] after two [0.3] quite famous [0.2] British statisticians [0.4] Martin 
+Bland [0.4] and his partner Altman [1.2] not partner [0.8] domestic partner 
+statistical partner [2.9] [laughter] and it's a very useful way [0.2] of 
+displaying measurement data [0.3] for error [1.4] so [0.3] we looked at this 
+and we were appalled [0.4] how could we hope to recruit patients from all over 
+Britain [1.3] measure aneurysms to make sure that they didn't grow bigger than 
+five-point-five [0.4] and have 
+this done reliably [1.8] how do you think we could improve on this [4.0] 
+sm0281: [2.6] 
+nf0279: one suggestion [2.4] 
+sm0282: use the same person to measure all your aortas [0.8] 
+nf0279: yes [1.5] now if we're going to recruit people in Edinburgh and 
+Plymouth [0.2] 
+sm0282: 
+nf0279: they're going to be [0.2] pretty busy aren't they [1.2] and 
+interestingly [0.7] a good way to reduce error [0.2] and it must be very 
+obvious to you when i say it [0.3] is training [1.1] in fact we wanted to make 
+this trial work using just five people [1.2] and we found if we trained them 
+and trained them and trained them [0.6] you use this part of the line [0.3] to 
+place your cursor [0.6] for your measurement [0.6] you angle the probe this way 
+so you make really sure [0.3] you've got the maximum diameter [0.7] we found 
+that we could do much better [1.0] and here are just ten patients and five 
+coordinators the ones we used for the trial [1.3] and you can see that you 
+still get a spread of aneurysm diameter this is now the patient number [0.8] 
+and this is the aneurysm diameter [0.8] 
+measured by [0.3] five different coordinators in different colours [0.6] and 
+you're still getting a spread of about [0.4] point-three point-four millimetres 
+[0.7] but it's a lot better [0.2] than the previous one [0.7] with no training 
+and no training together [3.1] so [0.8] i haven't shown you all of this but you 
+need to measure the anterior posterior diameter [1.4] you can't measure 
+diameter that re-, reproducibly [0.7] and this measurement error [0.3] is 
+really important in the way you design [0.5] any work you do [2.7] and what 
+about computer tomography [0.7] this is a C-T scan of an abdomen [0.7] and this 
+is the abdominal aorta here [1.5] this red line is the transverse diameter [1.
+7] this grey stuff round the side here [0.3] is mainly laminated thrombus 
+filling up [0.2] the centre of the aorta [1.7] and this is the outline it looks 
+a little bit dark partly [0.4] and white because partly because this is 
+calcification in the aortic wall [4.2] here we have [2.9] a limited number of 
+patients [0.8] with known C-T aneurysm diameter [1.2] we've taken our five 
+observers 
+we used in the trial [0.7] and we've asked them to measure it by ultrasound 
+using the anterior posterior diameter [1.0] and this is what we come up with [2.
+6] first of all you will see that this line [0.8] lies above the zero [1.0] so 
+the difference between ultrasound and A-P [0.5] A-P in the C-T diameter [0.4] 
+is usually positive [0.9] I-E [0.3] we appear to be measuring the aneurysm 
+larger when we use ultrasound [0.3] than we u-, when we use C-T scan [2.1] in 
+addition there is something we haven't seen before [0.8] in that there appears 
+to be a positive skew up here [1.5] that the difference [0.8] between 
+ultrasound [1.5] and C-T appears to increase [0.3] with increasing aneurysm 
+diameter [1.8] so here we have some evidence that there's some magnification [0.
+3] or relative magnification [0.5] associated with ultrasound [0.8] but we 
+don't actually know which the gold standard is [0.3] and which is better [1.6] 
+this is again is a kind of Bland Altman plot [0.9] and i suggest to you is much 
+more informative [0.4] than a straightforward correlation 
+line [1.1] if we'd done a correlation line [0.3] we'd have seen something lice 
+nice like this [0.5] oh [0.3] fantastic agreement between the two different 
+sorts of measurements [0.8] and when you think about it [0.3] you're measuring 
+exactly the same thing [0.3] you're measuring how wide the aorta is [0.4] and 
+just one you're using a C-T scanner and one you're using ultrasound [0.7] so [0.
+2] if it didn't agree very well [1.0] well it wouldn't look very good would it 
+[0.9] and you ca-, [0.4] not very informative at all [1.5] so [0.6] measurement 
+[0.6] repea-, [0.6] random error [0.3] reproduceability [0.5] very very 
+important [1.5] but [0.3] because ultrasound is safe [0.4] it's cheap [0.2] 
+it's non-invasive [1.0] and there are very few false positives or false 
+negatives [0.9] and it can detect ninety-nine per cent of aortas [1.1] it's the 
+chosen method [0.8] for screening and surveillance [0.7] of aortic aneurysms [2.
+8] right [0.6] so we did this trial [1.2] we recruited patients w-, slightly 
+more than the thousand we thought we needed [0.4] over a four year period we 
+followed them up to see how they did [1.9] we flagged these patients with the 
+Office of National Statistics and this is a very valuable resource that we have 
+[0.4] in Britain [1.4] whereas you can get [0.3] at the end of a research 
+project [0.9] the date of death [0.3] and the cause of death [0.3] of patients 
+entered into this 'cause they're all recorded centrally in Southport [3.6] and 
+this was the principal results of the trial [0.3] as reported in the Lancet in 
+nineteen-ninety-eight [0.7] on the vertical axis here [0.4] we had the 
+proportion of patients surviving [0.9] this is the time in years [0.7] and this 
+is the number of patients at risk at each time interval [2.0] this kind of 
+display is known as a life table [1.4] we can see here in yellow the patients 
+[0.3] undergoing [0.3] surveillance of their small aneurysm [0.3] as opposed to 
+those with early surgery [1.2] and what we'd predicted was [0.6] that the [0.2] 
+blue line would h-, be up here at five years [0.3] and the yellow line [0.5] 
+would be [1.0] down here [0.2] dow-, way down here at five years [2.4] we 
+didn't find that [2.6] fairly f-, steady attrition in the surveillance arm [2.
+7] surgery arm [0.9] marked attrition early [0.9] levelling 
+off [1.8] bearing in mind that [0.3] out here having started with more than 
+five-hundred patients in each arm of the trial [0.4] not very many patients [0.
+9] with so few patients the error around here [0.3] is probably quite large [2.
+6] but [0.2] the statisticians the trial steering committee [0.6] the journals 
+and the public [0.8] were convinced enough to s-, [0.4] that this result 
+suggested [0.8] that there was no difference [0.4] in survival [0.7] if you 
+operated early [0.8] on this condi-, for this condition [0.2] or whether you 
+left it till later [2.4] now very often one trial isn't en-, [0.6] sorry [1.5] 
+we also looked at the health service cost 'cause i said we wanted to look at 
+more things [0.6] and this were the costs of the two treatments [1.5] here [0.
+2] early surgery and surveillance and you can break this down into how much the 
+surveillance costs how much the hospital treatment for repair costs [0.5] how 
+much other health service costs are [0.8] and the bottom line for this is [1.1] 
+that surgery is a much more expensive treatment option [0.4] than surveillance 
+[1.3] and of course we live in 
+a [0.2] cash-strapped [0.3] National Health Service [0.4] so this is important 
+[1.5] it perhaps wouldn't have been so important [0.3] if quality of life [0.8] 
+had been [0.5] different [0.3] in the two treatment arms [0.9] but there was 
+almost no different in quality of life between the two treatment arms [1.8] so 
+therefore with a similar survival [1.0] similar quality of life [0.7] but one 
+treatment [0.5] costing [0.2] much more [0.2] than the other [1.5] what do you 
+think the National Health Service wants [1.6] surveillance [1.8] and in fact 
+vascular surgeons across Europe [0.6] were quite happy [0.3] with this result 
+[1.1] and for these reasons [0.8] probably wouldn't [0.4] would no longer 
+recommend [1.3] elective surgery [0.7] for patients with aneurysms less than 
+five-and-a-half centimetres [2.1] but you see here [1.7] that the operative 
+mortality rate [0.4] in this population based study [0.8] was far more [0.2] 
+than we'd used in the power calculations [0.4] we'd expected two per cent [0.4] 
+taking from best vascular surgeon series [0.6] and in fact it was five-point-
+six per cent [5.5] and when since we started the trial [0.2] there were several 
+other [0.4] 
+population based studies [0.3] reporting the mortality [0.4] for this operation 
+[2.2] turns out it for some reason it's lowest in Western Australia [0.7] and i 
+don't think it's just 'cause they have the most fantastic surgeons in the world 
+in Perth [0.4] or that it's the most fantastic place in the world to live [2.1] 
+i think very much probably most of these are very similar [2.9] and the 
+mortality associated with the elective repair of this condition [0.5] is 
+probably somewhere between five and six per cent [1.3] it's not such a safe 
+operation [1.9] if you thi-, think of it another way [1.1] probably somewhere 
+between one in seventeen and one in eighteen patients [0.9] that you operate on 
+[0.5] electively is going to die [3.9] so we'd er managed to convince Britain 
+and Europe that perhaps you shouldn't operate on these small aneurysms [0.9] 
+the Americans of course weren't convinced they don't have [0.3] a [0.2] 
+National Health Service [0.4] they have insurance based private [0.2] care for 
+most of their patients [1.1] and they mounted a very similar trial [0.3] 
+started the same time as the British trial [0.8] and it's always nice to beat 
+the Americans [0.5] 'cause they didn't report their results until two-thousand-
+and-two [0.2] four years later [2.4] but they found exactly the same thing [2.
+1] er [0.3] almost exactly the sa-, er s-, s-, [0.2] same numbers of patients 
+[1.4] that in terms of mortality [1.1] although this is plotted as survival [0.
+4] no difference [1.4] depending whether you operate early [0.6] or you don't 
+you just watch it [2.3] but however this was four years later [0.8] and by that 
+time [0.2] because of the Office of National Statistics [0.4] we had four years 
+more information [0.4] on the patients that we'd had in the British trial [2.0] 
+and what i'd said to you before was that we didn't have very many numbers out 
+here [1.6] we didn't we only had about fifty-two and sixty-three [3.0] by the 
+time we get to two-thousand-and-two [0.4] we've got large numbers of patients 
+out here [0.5] we've removed some of the noise in these curves [1.0] and we can 
+see that these curves appear to be [0.3] starting to separate [1.1] ah and the 
+vascular surgeons shout with 
+glee [0.3] now we've got evidence that we can operate on these people [0.3] 
+'cause they like operating [1.6] but actually caution caution caution [0.3] it 
+doesn't really show that at all [1.6] and you can look at this data another way 
+[0.4] you can integrate the areas under those curves [0.5] and you can look at 
+the average life expectancy of patients since their ori-, original enrolment in 
+the trial [1.6] and you can see that if you have early surgery [0.3] that's 
+your life expectancy [0.6] if you have surveillance [0.4] that's your life 
+expectancy [0.5] and there's absolutely no difference between the two of them 
+[1.5] again [0.2] right out at the long time periods we don't have that many 
+patients [0.4] there's a large degree of error [1.8] but there are some 
+interesting reasons [0.3] as to why those curves [0.3] might diverge at a late 
+[0.2] time points [0.6] and those reasons are principally attributable to the 
+fact [1.1] that the operation [1.6] is quite a major trauma [0.7] patients are 
+in hospital for more than a week [1.1] and the one thing it really f-, 
+does force them to do is to stop smoking [1.6] and most of these patients [0.4] 
+smoke [1.8] or have smoked [1.0] or will tell you they've stopped smoking and 
+are still smoking [1.2] a prolonged hospitalization of seven to ten days [0.3] 
+really enforces that [0.6] and a lot of the late benefit we might see [0.4] 
+might be simply attributable to the fact [0.3] that those who have their 
+operation early [0.3] stop smoking early [4.6] so [1.5] if you come to a 
+consultation at the end of last year or even at the beginning of this year [0.
+9] and what's the evidence [0.7] we've now got two trials [0.6] and i think the 
+evidence from both trials is [1.1] don't operate on these aneurysms when 
+they're small [0.4] the risks [0.4] of your patient dying [0.6] afterwards are 
+too high [3.9] recently we've seen reported [1.3] a trial of screening 'cause 
+obviously one of the important questions would be [0.3] well [0.3] 'cause we 
+can detect these and five per cent of people over sixty have got them men [0.5] 
+do we need to do a screening programme for them [1.4] a screening trial was 
+reported recently and suggested [0.4] might 
+be cost-effective [2.0] er [0.7] but of course if a screening trial's really 
+going to be cost-effective you need to find these things when they're small [0.
+3] and you need to stop them growing [0.9] how can we stop them growing if we 
+don't know how to measure growth [2.7] now there's a suggestion [1.8] from 
+retrospective studies [1.0] that small aneurysms [1.4] grow [0.2] s-, [1.0] 
+more slowly [0.4] than medium s-, [0.4] size aneurysms [0.5] and the largest 
+aneurysms [0.3] grow fastest of all [3.0] we looked at growth rates [0.6] of 
+again [0.3] seventeen-hundred patients [0.6] this was their starting aneurysm 
+diameter so that you can see that the main aneurysm diameter at the start [0.4] 
+is somewhere about four-and-a-half centimetres [1.2] this was the nine longest 
+series for aneurysm growth [1.6] and the first thing you can see is just by 
+looking at the shapes is [0.5] that actually they're all different [0.3] and 
+actually [0.4] one of them even gets smaller [2.2] tells you we don't know very 
+much about this condition [1.7] some of them seem to fit nicely to exponential 
+curves some to straight lines [2.1] if you 
+look in the literature the only thing that had ever been used before [0.4] for 
+modelling aneurysm growths and taking [0.2] data points and working out how 
+fast do they grow [0.3] was linear regression modelling [0.8] and i'm sure 
+you'll have heard of that [0.5] trying to draw a s-, [0.6] the best straight 
+line [0.5] between your points [1.0] and i've drawn three lines on here [0.4] 
+four lines [0.2] and you can see how bad they are [0.5] for most of the cases 
+[0.5] if you draw just straight lines [3.1] there's another problem [1.0] when 
+you've got real people [0.5] and you've got continuous measures of data [0.5] 
+and i'm going to talk about aneurysm diameter but it could relate to anything 
+[0.8] and that's to do [0.2] with truncation of series [0.4] what makes [0.2] 
+you stop looking at someone [2.5] going to consider a [0.9] conceptual patient 
+here or a virtual patient who starts with an aneurysm diameter of four 
+centimetres [0.8] has that diameter measured every six months [0.7] no change 
+no change [0.9] no worries [0.4] suddenly [0.5] eighteen months [1.1] there's a 
+high reading and they've gone to 
+the five-point-five centimetre threshold where you might think about surgery [1.
+1] the person's nice and fit [0.3] still plays two rounds of golf a week or 
+whatever [1.2] and the surgeon says [0.4] come in for an operation [2.4] now 
+perhaps if that [0.2] patient had been coughing and spluttering [1.4] the 
+surgeon would have said [0.6] i think we need to have a some sort of fitness 
+programme before i think about operating on this [0.4] come back and see me do 
+this this and this we'll have some physiotherapy [0.6] come back in so many 
+months [0.7] next time they come back [2.3] the reading is [0.3] ah [0.4] just 
+under four centimetres [1.5] trial and error [0.2] measurement error [0.5] we 
+can't measure it exactly [1.7] ah [0.4] not to worry now [0.7] we'll keep on 
+following you up [0.3] and this is what happens [1.8] and you can see that if 
+you draw straight lines between these points [0.3] you get quite slow aneurysm 
+growth [1.0] if you draw it between these [0.5] you get quite high aneurysm 
+growth [0.8] you truncated your series here [0.5] and you've got an artifically 
+high growth rate [0.4] using this approach [1.7] of course 
+that's not the only thing that happens to patients [0.6] patients die [1.7] 
+let's take another patient [2.0] four measures [0.8] and suddenly they die [0.
+3] from a myocardial infarction [1.5] so [0.7] you simulate their growth [1.2] 
+you get a nice line across here [0.9] but if they hadn't died [0.5] perhaps 
+this would have happened [1.2] and the growth rate would have been quite 
+different [1.3] so by not having this [0.2] continuity that you can have in 
+laboratory experiments [0.3] where you can go and watch cells dividing [0.7] 
+for [0.2] days on end [0.9] people are different and there are other problems 
+[0.3] when it comes to trying to measure things and work things out [1.5] 
+statistician very clever no equations here [0.4] use some flexible modelling [0.
+5] i don't understand what any of this means and if [0.2] you do you're all h-, 
+absolute heroes and heroines [1.6] but [0.2] we can try and make some pragmatic 
+rules [0.6] using this modelling [0.4] we want to know how to use data in 
+clinical practice [1.6] and we can therefore say that if you've got an aneurysm 
+of four centimetres [0.9] on average [2.4] after five 
+years [0.5] seventy per cent of them [0.4] will have reached the five-point-
+five centimetres threshold where you can consider surgery [2.6] if you start [0.
+2] at four-point [0.4] sorry i showed you four-point-five centimetres [0.6] if 
+you start higher er bigger find aneurysms bigger [0.4] you'll probably know 
+that [0.3] your chance of reaching [0.3] the fi-, [0.2] the threshold [1.8] the 
+surgery [1.0] within five years is almost a hundred per cent for big aneurysms 
+[1.1] so it can tell you [0.6] start to be able to give you information so that 
+you can sit down with a patient with a five centimetre aneurysm and say [0.6] 
+well i suspect your aneurysm's going to keep on growing [0.3] and the 
+likelihood is [1.0] that probably in about five years' time [0.3] we might have 
+to think of an operation [0.7] but don't worry about it at the moment [0.5] and 
+there's another reason not to worry about it at the moment [1.1] now i'm going 
+to go quite quickly [0.3] 'cause having said that i want to get to the end [0.
+4] and i know that it's nearly lunchtime [2.1] but just to reinforce [0.2] 
+let's show you what [0.2] 
+smoking does to aneurysm growth [0.5] flexible modelling [0.5] most of these 
+patients with aneurysms have smoked [0.7] this is the growth rate millimetres 
+per year [0.6] people who never smoked [0.7] only twelve of those might as well 
+forget about them [0.7] ex-smokers [0.4] some of these probably still smoking 
+smokers don't like to tell you they can't stop smoking [1.5] growth rate [0.2] 
+about two-point-four millini-, metres a year [1.0] those who are actively 
+smoking [1.3] two-point-nine millimetres a year [0.4] big difference [0.3] so 
+if you keep smoking [0.3] you're going to grow faster [0.3] you're going to 
+come to surgery faster [1.1] your lungs are going to be in worse shape [0.2] 
+and you're probably more likely to die [2.0] if you'd used linear regression 
+modelling [0.4] this is what we'd have seen [1.4] linear regression modelling 
+[1.2] exaggerates [0.5] the effects of smoking [1.4] and the possibility of 
+giving up smoking [0.7] in terms of helping your aneurysm growth [1.6] and if 
+we're going to be fair to patients we have to tell them this is what happens [0.
+9] and not this [0.6] and the reason this has 
+arisen [0.6] is probably because of truncation of patients [4.5] right [0.3] 
+good reasons for your patients to wait [1.0] technology [0.5] is moving very 
+very fast [1.9] you no longer have to repair aneurysms using conventional open 
+surgery [0.6] and you can use endovascular repair [1.9] you can insert a device 
+[1.1] through the femoral artery [1.3] sometimes under local anaesthesia [1.6] 
+anchor it here with expandable stents [2.1] probably don't anchor it here y-, 
+most of the new devices come down into the iliac arteries [0.4] and look a bit 
+like this [0.2] pair of trousers [0.5] or like this [0.8] and you can s-, 
+insert these [0.5] through quite small catheters through the femoral artery [1.
+1] new technology [1.6] how do we find out whether it works [8.3] blind faith 
+from the manufacturers [1.3] Johnson and Johnson to the success again making 
+more money [0.5] i'm now going to charge you [0.6] oops [0.9] i'm now going to 
+charge you five-thousand pounds for one of these [0.3] whereas a little bit of 
+Dacron tube i sold you previously was only fifty quid [1.1] fantastic [2.1] 
+this is one of those er [1.5] 
+endovascular grafts being placed with a measuring device you can see all the 
+little buttons going up there in the aorta to try the thoracoscopy when you 
+place one [1.1] and actually [1.5] in population terms the health of the 
+population [0.3] we've got to find out [0.6] whether the new technology is any 
+good [1.2] so we're starting all over at the beginning again [0.2] although 
+it's now been ongoing for two or three years [0.5] with a new [0.3] trial [1.3] 
+this time [0.2] surgeons don't know whether it's better [0.4] to treat these 
+larger aneurysms [0.5] with either the conventional open [0.3] operation which 
+everybody's been trained to do [0.4] or with the new technology [0.9] and this 
+is being evaluated [1.2] again [0.2] we have to be aware of trial and error [0.
+4] and measurement [0.9] and we're very reliant on our statisticians [0.9] to 
+keep us in order give us the correct trial design [0.3] and analyse the results 
+correctly [1.5] and even though i haven't referred to you [0.3] any equations 
+[0.5] statisticians are absolutely vital [0.5] for getting it right [0.5] and 
+getting the right information for the patients [1.2] thank you for your 
+attention 
