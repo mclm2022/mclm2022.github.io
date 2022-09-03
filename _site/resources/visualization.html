@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Methods in Corpus Linguistics - Visualization tips</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Methods in Corpus Linguistics</span>
+  </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html">About</a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-studies" role="button" data-bs-toggle="dropdown" aria-expanded="false">Studies</a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-studies">    
+        <li>
+    <a class="dropdown-item" href="../studies/base.html">
+ <span class="dropdown-text">Keywords and collocation analysis on the BASE corpus</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../studies/genitive-alternation-retrieval.html">
+ <span class="dropdown-text">Genitive Alternation I: Retrieval</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../studies/ca-trump-clinton.html">
+ <span class="dropdown-text">CA applied to the Trump-Clinton speeches</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../slides/index.html">Slides</a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-reader-toggle nav-link" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#sec-gg" id="toc-sec-gg" class="nav-link active" data-scroll-target="#sec-gg"> <span class="header-section-number">1</span> GG extensions</a></li>
+  <li><a href="#sec-other" id="toc-sec-other" class="nav-link" data-scroll-target="#sec-other"> <span class="header-section-number">2</span> Other plotting libraries</a></li>
+  <li><a href="#sec-color" id="toc-sec-color" class="nav-link" data-scroll-target="#sec-color"> <span class="header-section-number">3</span> Color palettes</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Visualization tips</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<p>This document gathers suggestions for R packages and other resources for a richer and more varied experience with visualization. You don’t need to use these tools, but if you’re curious, here they are. <a href="#sec-gg">Section&nbsp;1</a> lists R packages that build on <code>{ggplot2}</code> and <a href="https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448/ref=as_li_ss_tl">The Grammar of Graphics</a></p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Hadley Wickham’s <a href="https://byrneslab.net/classes/biol607/readings/wickham_layered-grammar.pdf">article</a> is a good start if you’re interested in that philosophy, and you can also check <a href="https://ggplot2-book.org/index.html">the ggplot2 book</a>).</p>
+</div></div><p><a href="#sec-other">Section&nbsp;2</a> mentions some other packages that can help with plotting, but instead of focusing on specific kinds of plots, they offer extra functionalities that are useful in presentation and publication. Finally, <a href="#sec-color">Section&nbsp;3</a> lists some useful packages for color palettes and online resources to choose colors and create palettes.</p>
+<p>These lists are not exhaustive —they are the packages that I am more or less familiar with and what I use them for. I encourage you to read up on those that you’re interested in and look more into them.</p>
+<section id="sec-gg" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="sec-gg"><span class="header-section-number">1</span> GG extensions</h2>
+<p>The packages listed in this section expand <code>{ggplot2}</code> to cover specific kinds of plotting.</p>
+<ul>
+<li><p><a href="https://ggrepel.slowkow.com/"><code>{ggrepel}</code></a> provides geoms for text labels that overlap each other. In <code>{ggplot2}</code>, <code>geom_text()</code> and <code>geom_label()</code> plot text, but the labels may overlap with each other. This package gives you a tool to minize this overlap.</p></li>
+<li><p><a href="https://wilkelab.org/ggridges/"><code>{ggridges}</code></a> provides geoms to create ridgeline plots, i.e.&nbsp;partially overlapping lineplots that create the impression of a mountain range. These are useful if you want to compare density plots across a groups of observations.</p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/ggparty/vignettes/ggparty-graphic-partying.html"><code>{ggparty}</code></a> provides tools to implement <code>{ggplot2}</code> functionality to objects created with the <code>{partykit}</code> package, particularly conditional inference trees.</p></li>
+<li><p><a href="https://erocoar.github.io/gghalves/"><code>{gghalves}</code></a> provides “half” geoms so that they occupy half the space they would. In particular, if you are plotting boxplots, violin plots or scatterplots across multiple values of a categorical variable, they will occupy half the space and make it thus possible to combine two of them together. For example, instead of a boxplot you could have half a boxplot and half jitter or violin.</p></li>
+<li><p><a href="https://haleyjeppson.github.io/ggmosaic/"><code>{ggmosaic}</code></a> extends <code>{ggplot2}</code> to create mosaic plots, visualizing contingency tables. However, it does not provide an easy option to color based on the residuals.</p></li>
+<li><p><a href="https://ggobi.github.io/ggally/"><code>{GGally}</code></a> extends <code>{ggplot2}</code> to visualize networks. Another nice package to visualize networks is <a href="https://datastorm-open.github.io/visNetwork/"><code>{visNetwork}</code></a>, although it is independent from <code>{ggplot}</code>.</p></li>
+</ul>
+</section>
+<section id="sec-other" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="sec-other"><span class="header-section-number">2</span> Other plotting libraries</h2>
+<p>This section lists R packages that offer further extensions that are not related to particular geometries.</p>
+<ul>
+<li><p><a href="http://rpkgs.datanovia.com/ggpubr/index.html"><code>{ggpubr}</code></a> is based on <code>{ggplot2}</code> and its main goal is to produce publication-ready plots. It has handy functions for quick generation of basic plots, such as <code>ggdensity()</code>, <code>gghistogram()</code>, <code>ggboxplot()</code>, <code>ggdotchart()</code>… It also offers a <a href="https://rpkgs.datanovia.com/ggpubr/reference/ggballoonplot.html">“balloon plot”</a> as an alternative way to plot contingency tables.</p>
+<p>In addition it offers <a href="http://rpkgs.datanovia.com/ggpubr/reference/theme_pubr.html">publication-ready themes</a>, <a href="https://rpkgs.datanovia.com/ggpubr/reference/ggscatterhist.html">a function for marginal histograms on a scatterplot</a> and a number of <a href="http://rpkgs.datanovia.com/ggpubr/reference/get_palette.html">pre-loaded color palettes</a>.</p></li>
+<li><p><a href="https://wilkelab.org/cowplot/index.html"><code>{cowplot}</code></a> is also a package with features to help create publication-ready plots. Useful functions from this package are <a href="https://wilkelab.org/cowplot/articles/plot_grid.html"><code>plot_grid()</code></a>, to combine different plots into a grid, as well as <a href="http://www.lreding.com/nonstandard_deviations/2017/08/19/cowmarg/">functions to add marginal plots</a>.</p></li>
+<li><p><a href="https://strengejacke.github.io/sjPlot/index.html"><code>{sjPlot}</code></a> is a package for plotting and creating tables from statistical data; <a href="https://strengejacke.github.io/ggeffects/"><code>{ggeffects}</code></a> is a visualization package designed to plot effects from regression models. I am the least familiar with these packages, but they were created and are maintained by <a href="https://github.com/strengejacke">Daniel Lüdecke</a>, who also participates in the amazing easystats packages.</p></li>
+</ul>
+</section>
+<section id="sec-color" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="sec-color"><span class="header-section-number">3</span> Color palettes</h2>
+<p>An important way to personalize your visualizations is to choose a color palette. Base R functions and <code>{ggplot2}</code> have their default colors and <a href="https://ggplot2-book.org/scale-colour.html">a number of variations</a>. For manually assigned colors, you can use hex codes or <a href="http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf">pre-defined names</a>. There are a number of HTML color pickers that return the hex code, such as <a href="https://htmlcolorcodes.com/">htmlcolorcodes.com</a>.</p>
+<p>There are also R packages dedicated to offering specific color palettes:</p>
+<ul>
+<li><p><a href="https://cran.r-project.org/web/packages/ggsci/vignettes/ggsci.html"><code>{ggsci}</code></a> gathers scientific journal and sci-fi themed palettes, which are also used by <code>{ggpubr}</code>.</p></li>
+<li><p><a href="https://malcolmbarrett.github.io/ggokabeito/"><code>{okabeito}</code></a> offers a single colorblind-friendly palette for categorical variables based on <a href="https://jfly.uni-koeln.de/color/">Okabe and Ito’s <em>Color Universal Design</em> proposal</a>, which I like very much.</p></li>
+<li><p><a href="https://github.com/BlakeRMills/MetBrewer"><code>{MetBrewer}</code></a> offers color palettes inspired by works at the Metropolitan Museum of Art in New York.</p></li>
+<li><p><a href="https://github.com/kevinsblake/NatParksPalettes"><code>{NatParksPalettes}</code></a> offers palettes inspired by (US) National Parks.</p></li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+      <div class="nav-footer-center">Methods in Corpus Linguistics — Mariana Montes, 2022</div>
+  </div>
+</footer>
+
+
+
+</body></html>

@@ -1,0 +1,2247 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.38">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Methods in Corpus Linguistics - CA applied to the Trump-Clinton speeches</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script><script src="../site_libs/kePrint-0.0.1/kePrint.js"></script><link href="../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><link rel="stylesheet" href="../styles.css">
+</head>
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg navbar-dark "><div class="navbar-container container-fluid">
+      <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Methods in Corpus Linguistics</span>
+  </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+<li class="nav-item">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html">About</a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-studies" role="button" data-bs-toggle="dropdown" aria-expanded="false">Studies</a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-studies">
+<li>
+    <a class="dropdown-item" href="../studies/base.html">
+ <span class="dropdown-text">Keywords and collocation analysis on the BASE corpus</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../studies/genitive-alternation-retrieval.html">
+ <span class="dropdown-text">Genitive Alternation I: Retrieval</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../studies/ca-trump-clinton.html">
+ <span class="dropdown-text">CA applied to the Trump-Clinton speeches</span></a>
+  </li>  
+    </ul>
+</li>
+  <li class="nav-item">
+    <a class="nav-link" href="../slides/index.html">Slides</a>
+  </li>  
+</ul>
+<div class="quarto-toggle-container">
+                  <a href="" class="quarto-reader-toggle nav-link" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc"><h2 id="toc-title">On this page</h2>
+   
+  <ul>
+<li>
+<a href="#setup" id="toc-setup" class="nav-link active" data-scroll-target="#setup"> <span class="header-section-number">1</span> Setup</a>
+  <ul class="collapse">
+<li><a href="#activate-packages" id="toc-activate-packages" class="nav-link" data-scroll-target="#activate-packages"> <span class="header-section-number">1.1</span> Activate packages</a></li>
+  <li><a href="#collect-the-corpus-filenames" id="toc-collect-the-corpus-filenames" class="nav-link" data-scroll-target="#collect-the-corpus-filenames"> <span class="header-section-number">1.2</span> Collect the corpus filenames</a></li>
+  <li><a href="#sec-code" id="toc-sec-code" class="nav-link" data-scroll-target="#sec-code"> <span class="header-section-number">1.3</span> General code</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#sec-function" id="toc-sec-function" class="nav-link" data-scroll-target="#sec-function"> <span class="header-section-number">2</span> Function words as features</a>
+  <ul class="collapse">
+<li><a href="#specifying-the-features" id="toc-specifying-the-features" class="nav-link" data-scroll-target="#specifying-the-features"> <span class="header-section-number">2.1</span> Specifying the features</a></li>
+  <li><a href="#building-the-file-by-feature-matrix" id="toc-building-the-file-by-feature-matrix" class="nav-link" data-scroll-target="#building-the-file-by-feature-matrix"> <span class="header-section-number">2.2</span> Building the file-by-feature matrix</a></li>
+  <li><a href="#running-correspondence-analysis" id="toc-running-correspondence-analysis" class="nav-link" data-scroll-target="#running-correspondence-analysis"> <span class="header-section-number">2.3</span> Running correspondence analysis</a></li>
+  <li><a href="#biplot" id="toc-biplot" class="nav-link" data-scroll-target="#biplot"> <span class="header-section-number">2.4</span> Biplot</a></li>
+  <li><a href="#typical-clinton-features-vs.-typical-trump-features" id="toc-typical-clinton-features-vs.-typical-trump-features" class="nav-link" data-scroll-target="#typical-clinton-features-vs.-typical-trump-features"> <span class="header-section-number">2.5</span> Typical Clinton features vs.&nbsp;typical Trump features</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#sec-content" id="toc-sec-content" class="nav-link" data-scroll-target="#sec-content"> <span class="header-section-number">3</span> High frequency content words as features</a>
+  <ul class="collapse">
+<li><a href="#specifying-the-features-1" id="toc-specifying-the-features-1" class="nav-link" data-scroll-target="#specifying-the-features-1"> <span class="header-section-number">3.1</span> Specifying the features</a></li>
+  <li><a href="#next-steps-and-plot" id="toc-next-steps-and-plot" class="nav-link" data-scroll-target="#next-steps-and-plot"> <span class="header-section-number">3.2</span> Next steps and plot</a></li>
+  </ul>
+</li>
+  <li><a href="#sec-bigrams" id="toc-sec-bigrams" class="nav-link" data-scroll-target="#sec-bigrams"> <span class="header-section-number">4</span> High frequency bigrams as features</a></li>
+  <li><a href="#sec-trigrams" id="toc-sec-trigrams" class="nav-link" data-scroll-target="#sec-trigrams"> <span class="header-section-number">5</span> High frequency trigrams as features</a></li>
+  <li>
+<a href="#sec-custom" id="toc-sec-custom" class="nav-link" data-scroll-target="#sec-custom"> <span class="header-section-number">6</span> Extra: writing functions</a>
+  <ul class="collapse">
+<li><a href="#compile-frequencies" id="toc-compile-frequencies" class="nav-link" data-scroll-target="#compile-frequencies"> <span class="header-section-number">6.1</span> Compile frequencies</a></li>
+  <li><a href="#obtain-coordinates" id="toc-obtain-coordinates" class="nav-link" data-scroll-target="#obtain-coordinates"> <span class="header-section-number">6.2</span> Obtain coordinates</a></li>
+  <li><a href="#plot" id="toc-plot" class="nav-link" data-scroll-target="#plot"> <span class="header-section-number">6.3</span> Plot</a></li>
+  <li><a href="#example-first-case-study" id="toc-example-first-case-study" class="nav-link" data-scroll-target="#example-first-case-study"> <span class="header-section-number">6.4</span> Example: first case study</a></li>
+  <li><a href="#full-code" id="toc-full-code" class="nav-link" data-scroll-target="#full-code"> <span class="header-section-number">6.5</span> Full code</a></li>
+  </ul>
+</li>
+  </ul></nav>
+    </div>
+<!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<h1 class="title">CA applied to the Trump-Clinton speeches</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header><p>This document illustrates how to use <em>correspondence analysis</em> (CA) to investigate the similarities between Clinton speeches and Trump speeches in a corpus that collects them. The approach adopts a bird’s-eye perspective, looking at the broad picture we get if we aggregate over a wide range of <strong>features</strong> of the speeches.</p>
+<p>A major advantage of the technique is that we can both compare the different documents based on the selected features, but also compare the features based on the documents they occur in and also see which features or groups of features are the ones that account for the most important dissimilarities between the documents.</p>
+<p>We will illustrate four analyses with only minimal differences between each other. In all of them, the workflow consists of collecting frequency lists from each of the files in our corpus and create a matrix with one row per document and one column per type that occurs in the corpus. The cells contain the occurrence frequency: a cell <span class="math inline">\(ij\)</span> will contain the occurrence of type <span class="math inline">\(j\)</span> in the document <span class="math inline">\(i\)</span>. Such <strong>matrix of counts</strong> will be given to <code><a href="https://rdrr.io/pkg/ca/man/ca.html">ca::ca()</a></code>, a function that runs correspondence analysis and returns, among other things, the coordinates of row items and of column items in the principal components as well as the variance covered by each dimension. <a href="#sec-code">Section&nbsp;1.3</a> will show the full code to obtain the data and plot it before delving into the actual case studies.</p>
+<p>The difference between the analyses is the definition of the types collected in the frequency lists. <a href="#sec-function">Section&nbsp;2</a> will select only function words from a predefined list as features, since they have been shown to reliably discriminate between different authors and registers. <a href="#sec-content">Section&nbsp;3</a>, on the other hand, will rely on high frequency content words by first excluding the types in a stoplist and then only keeping the top 150 items. Finally, <a href="#sec-bigrams">Section&nbsp;4</a> and <a href="#sec-trigrams">Section&nbsp;5</a> will use bigrams and trigrams as types, respectively.</p>
+<section id="setup" class="level1" data-number="1"><h1 data-number="1">
+<span class="header-section-number">1</span> Setup</h1>
+<section id="activate-packages" class="level2" data-number="1.1"><h2 data-number="1.1" class="anchored" data-anchor-id="activate-packages">
+<span class="header-section-number">1.1</span> Activate packages</h2>
+<p>We start by activating the R packages we will use, namely <a href="https://tidyverse.tidyverse.org">tidyverse</a>, <code>{mclm}</code> and, for nice tables when reporting, <a href="http://haozhu233.github.io/kableExtra/">kableExtra</a>.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>While we conduct correspondence analysis with <code><a href="https://rdrr.io/pkg/ca/man/ca.html">ca::ca()</a></code>, we don’t need to attach the <a href="http://www.carme-n.org/">ca</a> package separately, since it’s already loaded with <code>{mclm}</code>.</p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org">tidyverse</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">mclm</span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="http://haozhu233.github.io/kableExtra/">kableExtra</a></span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section><section id="collect-the-corpus-filenames" class="level2" data-number="1.2"><h2 data-number="1.2" class="anchored" data-anchor-id="collect-the-corpus-filenames">
+<span class="header-section-number">1.2</span> Collect the corpus filenames</h2>
+<p>First, we collect the names of the corpus files and store them in an object called <code>fnames</code>. From this we also derive the short filenames (stored in <code>short_fnames</code>) and a character vector with, for each filename, the subcorpus (stored in <code>sub_corp</code>). The first variable, <code>short_fnames</code> is also an <code>fnames</code> object and will provide more practical names for plotting. The second variable, <code>sub_corp</code> is a character string and will help us assign colors in the plots based on whether the documents correspond to Clinton or Trump speeches. <a href="#tbl-fnames">Table&nbsp;1</a> illustrates a few of these values.</p>
+<div class="cell">
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">fnames</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/fnames.html">get_fnames</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/file.path.html">file.path</a></span><span class="op">(</span><span class="va">corpus_folder</span>, <span class="st">"clinton_trump"</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="va">short_fnames</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/short_names.html">short_names</a></span><span class="op">(</span><span class="va">fnames</span><span class="op">)</span></span>
+<span><span class="va">sub_corp</span> <span class="op">&lt;-</span> <span class="va">fnames</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/re_convenience.html">re_retrieve_first</a></span><span class="op">(</span><span class="st">"/clinton_trump/([^/]+)"</span>, requested_group <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-fnames" class="anchored">
+
+<table class=" lightable-paper" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto;">
+<caption>Table 1:  Five random filenames and their corresponding values in short_fnames and sub_corp </caption>
+ <thead><tr>
+<th style="text-align:left;"> fnames </th>
+   <th style="text-align:left;"> short_fnames </th>
+   <th style="text-align:left;"> sub_corp </th>
+  </tr></thead>
+<tbody>
+<tr>
+<td style="text-align:left;"> _corpora/clinton_trump/Trump/Trump_2016-08-16.txt </td>
+   <td style="text-align:left;"> Trump_2016-08-16 </td>
+   <td style="text-align:left;"> Trump </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> _corpora/clinton_trump/Trump/Trump_2016-09-06-A.txt </td>
+   <td style="text-align:left;"> Trump_2016-09-06-A </td>
+   <td style="text-align:left;"> Trump </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> _corpora/clinton_trump/Trump/Trump_2016-11-01-A.txt </td>
+   <td style="text-align:left;"> Trump_2016-11-01-A </td>
+   <td style="text-align:left;"> Trump </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> _corpora/clinton_trump/Clinton/Clinton_2016-09-29.txt </td>
+   <td style="text-align:left;"> Clinton_2016-09-29 </td>
+   <td style="text-align:left;"> Clinton </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> _corpora/clinton_trump/Trump/Trump_2016-09-01-A.txt </td>
+   <td style="text-align:left;"> Trump_2016-09-01-A </td>
+   <td style="text-align:left;"> Trump </td>
+  </tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section><section id="sec-code" class="level2" data-number="1.3"><h2 data-number="1.3" class="anchored" data-anchor-id="sec-code">
+<span class="header-section-number">1.3</span> General code</h2>
+<p>The code below will be implemented in each of the case studies below with the only difference in the <code><a href="https://rdrr.io/pkg/mclm/man/freqlist.html">freqlist()</a></code> call in line 5.</p>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In practice, if you were to run an analysis where this much code will be used over and over again with multiple modifications, it would be preferable to wrap it in functions. <a href="#sec-custom">Section&nbsp;6</a> will show you how, if you’re interested.</p>
+</div>
+</div>
+<p>The first part of the code builds the matrix that we will apply the correspondence analysis to. This is an object of the data type <code>matrix</code> with as its rows the files and as its columns the features, and in the cells the absolute frequencies of the features in the files.</p>
+<p>A convenient way in R to incrementally build that dataset, file by file, is to first store the data in a data frame with as its rows the features and as its columns the files. This is convenient, because we will ‘grow’ the data set file by file, and adding new columns to a data frame is a straigthforward and (in most situations sufficiently) time- and memory-efficient procedure in R. So that’s how we will go about. This is what lines 2-8 do in a loop along the filenames.</p>
+<p>Lines 9-12 turn this dataframe into a matrix, transpose it and drop the rows and columns with only zero frequencies.</p>
+<p>In line 14, we run correspondence analysis on this matrix, which we store in the variable <code>d_ca</code>. We could then inspect it by calling <code>d_ca</code> or <code>summary(d_ca)</code>.</p>
+<p>Then, lines 16-21 extract the coordinates of the rows and columns for plotting and create tibbles with the labels, positions and, in the case of the rows, the color coding based on the subcorpora. <code><a href="https://rdrr.io/pkg/mclm/man/ca_help.html">mclm::row_pcoord()</a></code> and <code><a href="https://rdrr.io/pkg/mclm/man/ca_help.html">mclm::col_pcoord()</a></code> extract the coordinates of the rows and columns from the object <code>d_ca</code>; we are only interested in the first two columns, which are the coordinates of the two first principal components, therefore we add <code>[,c(1,2)]</code>. We then turn the matrix into a tibble assigning the column names “text” and “word” to the rownames, since tibbles don’t use rownames. In the case of the documents, we also add the color coding column by creating a column “Subcorpus” and filling it with the vector <code>sub_corp</code>.</p>
+<p>Lines 23 and 24 use the variance information from <code>summary(d_ca)</code> to enrich the labels of the axes in the plot.</p>
+<p>The rest of the lines create a biplot.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>d <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">row.names =</span> features)</span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">seq_along</span>(fnames)) {</span>
+<span id="cb3-3"><a href="#cb3-3"></a>  fname <span class="ot">&lt;-</span> fnames[[i]]             <span class="co"># identify i-th filename</span></span>
+<span id="cb3-4"><a href="#cb3-4"></a>  short_fname <span class="ot">&lt;-</span> short_fnames[[i]] <span class="co"># identify i-th short filename</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a>  flist <span class="ot">&lt;-</span> <span class="fu">freqlist</span>(fname, ...)    <span class="co"># build frequency list for file</span></span>
+<span id="cb3-6"><a href="#cb3-6"></a>  flist <span class="ot">&lt;-</span> flist[features]         <span class="co"># filter that list to just features</span></span>
+<span id="cb3-7"><a href="#cb3-7"></a>  d[[short_fname]] <span class="ot">&lt;-</span> flist        <span class="co"># add column to d named after filename</span></span>
+<span id="cb3-8"><a href="#cb3-8"></a>}</span>
+<span id="cb3-9"><a href="#cb3-9"></a>d <span class="ot">&lt;-</span> d <span class="sc">%&gt;%</span></span>
+<span id="cb3-10"><a href="#cb3-10"></a>  <span class="fu">as.matrix</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb3-11"><a href="#cb3-11"></a>  <span class="fu">t</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb3-12"><a href="#cb3-12"></a>  <span class="fu">drop_empty_rc</span>()</span>
+<span id="cb3-13"><a href="#cb3-13"></a></span>
+<span id="cb3-14"><a href="#cb3-14"></a>d_ca <span class="ot">&lt;-</span> <span class="fu">ca</span>(d)</span>
+<span id="cb3-15"><a href="#cb3-15"></a></span>
+<span id="cb3-16"><a href="#cb3-16"></a>texts_df <span class="ot">&lt;-</span> <span class="fu">row_pcoord</span>(d_ca)[,<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>)] <span class="sc">%&gt;%</span> </span>
+<span id="cb3-17"><a href="#cb3-17"></a>  <span class="fu">as_tibble</span>(<span class="at">rownames =</span> <span class="st">"text"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb3-18"><a href="#cb3-18"></a>  <span class="fu">mutate</span>(<span class="at">Subcorpus =</span> sub_corp)</span>
+<span id="cb3-19"><a href="#cb3-19"></a></span>
+<span id="cb3-20"><a href="#cb3-20"></a>words_df <span class="ot">&lt;-</span> <span class="fu">col_pcoord</span>(d_ca)[,<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>)] <span class="sc">%&gt;%</span> </span>
+<span id="cb3-21"><a href="#cb3-21"></a>  <span class="fu">as_tibble</span>(<span class="at">rownames =</span> <span class="st">"word"</span>)</span>
+<span id="cb3-22"><a href="#cb3-22"></a></span>
+<span id="cb3-23"><a href="#cb3-23"></a>dim_1 <span class="ot">&lt;-</span> <span class="fu">sprintf</span>(<span class="st">"Dimension 1 (%.2f %%)"</span>, <span class="fu">summary</span>(d_ca)<span class="sc">$</span>scree[<span class="dv">1</span>,<span class="dv">3</span>])</span>
+<span id="cb3-24"><a href="#cb3-24"></a>dim_2 <span class="ot">&lt;-</span> <span class="fu">sprintf</span>(<span class="st">"Dimension 2 (%.2f %%)"</span>, <span class="fu">summary</span>(d_ca)<span class="sc">$</span>scree[<span class="dv">2</span>,<span class="dv">3</span>])</span>
+<span id="cb3-25"><a href="#cb3-25"></a></span>
+<span id="cb3-26"><a href="#cb3-26"></a><span class="fu">ggplot</span>(words_df, <span class="fu">aes</span>(<span class="at">x =</span> V1, <span class="at">y =</span> V2)) <span class="sc">+</span></span>
+<span id="cb3-27"><a href="#cb3-27"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> word), <span class="at">col =</span> <span class="st">"gray60"</span>) <span class="sc">+</span></span>
+<span id="cb3-28"><a href="#cb3-28"></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> texts_df, <span class="fu">aes</span>(<span class="at">x =</span> V1, <span class="at">y =</span> V2, <span class="at">col =</span> Subcorpus)) <span class="sc">+</span></span>
+<span id="cb3-29"><a href="#cb3-29"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"#0000CD"</span>,<span class="st">"#DC143C"</span>)) <span class="sc">+</span></span>
+<span id="cb3-30"><a href="#cb3-30"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>, <span class="at">color =</span> <span class="st">"darkgray"</span>) <span class="sc">+</span></span>
+<span id="cb3-31"><a href="#cb3-31"></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> <span class="dv">0</span>, <span class="at">color =</span> <span class="st">"darkgray"</span>) <span class="sc">+</span></span>
+<span id="cb3-32"><a href="#cb3-32"></a>  <span class="fu">theme_bw</span>(<span class="at">base_size =</span> <span class="dv">12</span>) <span class="sc">+</span></span>
+<span id="cb3-33"><a href="#cb3-33"></a>  <span class="fu">labs</span>(<span class="at">x =</span> dim_1, <span class="at">y =</span> dim_2) <span class="sc">+</span></span>
+<span id="cb3-34"><a href="#cb3-34"></a>  <span class="fu">coord_fixed</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Parsing the <code><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot()</a></code> call
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>What does each line from 26 to 34 do in the code chunk above?</p>
+<ul>
+<li><p>Line 26 calls <code><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot()</a></code> with the dataframe of columns (the features), assigning the variables “V1” and “V2” to the <code>x</code> and <code>y</code> coordiantes respectively. These are the automatic names given by <code><a href="https://tibble.tidyverse.org/reference/as_tibble.html">as_tibble()</a></code> in line 21 when we converted a matrix without column names.</p></li>
+<li><p>Line 27 plots the items of the variable “word” (the types of our features) as text, in the color “gray60”.</p></li>
+<li><p>Line 28 plots the items of the dataframe of rows (documents) as dots, also with “V1” and “V2” in the axes but moreover with “Subcorpus” providing the color aesthetics.</p></li>
+<li><p>Line 29 defines manually the colors to map to the “Subcorpus” variable. We could also use a variety of palettes, different colors, or remove the line and use the default color scheme of <a href="https://ggplot2.tidyverse.org">ggplot2</a>.</p></li>
+<li><p>Lines 30 and 31 add a horizontal and vertical line respectively, the former where <code>y = 0</code> and the latter where <code>x = 0</code>, both in dark gray.</p></li>
+<li><p>Line 32 sets the theme and the base size for the font. This only matters aesthetically and could be made different.</p></li>
+<li><p>Line 33 assign the variables <code>dim_1</code> and <code>dim_2</code>, defined in lines 23 and 24, as the labels of the <code>x</code> and <code>y</code> axes.</p></li>
+<li><p>Line 34 indicates that the units of both axes should be the same, which is not the default case for <a href="https://ggplot2.tidyverse.org">ggplot2</a> plots. The numbers themselves of the coordinates are not meaningful, but the distances between the points are, and they assume that the distance between the point in <span class="math inline">\((0,1)\)</span> (where <span class="math inline">\(x = 0\)</span> and <span class="math inline">\(y = 1\)</span>) and the centroid <span class="math inline">\((0, 0)\)</span> is the same as the distance between the point <span class="math inline">\((1,0)\)</span> and the centroid <span class="math inline">\((0,0)\)</span>. <code><a href="https://ggplot2.tidyverse.org/reference/coord_fixed.html">coord_fixed()</a></code> makes sure that’s the case.</p></li>
+</ul>
+</div>
+</div>
+</div>
+</section></section><section id="sec-function" class="level1 page-columns page-full" data-number="2"><h1 data-number="2">
+<span class="header-section-number">2</span> Function words as features</h1>
+<div class="page-columns page-full"><p>In a first approach, we use so-called <em>function words</em> as features. In the field of <em>stylometry</em>, which is devoted to the quantitative study of linguistics style (e.g.&nbsp;in support of authorship attribution), it has long been established that function words are a powerful instrument in support of the identification of typical or even unique characteristics of the style of a specific author (or group of authors).</p><div class="no-row-height column-margin column-container"><span class="aside">Function words include closed word classes such as pronouns, prepositions, auxiliaries, etc., as opposed to so-called <em>content words</em> such as nouns, verbs, adjectives…</span></div></div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Zooming in on function words steers the analysis away from differences related to topic/content and foregrounds differences related to style. Using function words by no means is the only way to do this (alternatives are (i) zooming in on longer n-grams, e.g.&nbsp;3-grams, 4-grams, or, (ii) if the information is available, looking at the frequencies of POS tags or POS tag n-grams, or (iii) looking at derived features such as lexical density, word length, sentence length, etc..</p>
+</div>
+</div>
+<section id="specifying-the-features" class="level2" data-number="2.1"><h2 data-number="2.1" class="anchored" data-anchor-id="specifying-the-features">
+<span class="header-section-number">2.1</span> Specifying the features</h2>
+<p>We start by reading the names of the features for this analysis from the file <em>function-words.txt</em> and storing then into an object called <code>features</code>.</p>
+<div class="cell">
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">features</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/read_types.html">read_types</a></span><span class="op">(</span><span class="st">"assets/ca-trump-clinton/function-words.txt"</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/base/print.html">print</a></span><span class="op">(</span>n <span class="op">=</span> <span class="fl">10</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Type collection of length 149
+      type
+   -------
+ 1   about
+ 2  across
+ 3 against
+ 4   along
+ 5  around
+ 6      at
+ 7  behind
+ 8  beside
+ 9 besides
+10      by
+...</code></pre>
+</div>
+</div>
+<p>As shown when printing it, the object <code>features</code> contains 149 function words.</p>
+</section><section id="building-the-file-by-feature-matrix" class="level2" data-number="2.2"><h2 data-number="2.2" class="anchored" data-anchor-id="building-the-file-by-feature-matrix">
+<span class="header-section-number">2.2</span> Building the file-by-feature matrix</h2>
+<p>Once we have collected our features we can create the matrix with one row per document and one column per feature.</p>
+<div class="cell">
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html">data.frame</a></span><span class="op">(</span>row.names <span class="op">=</span> <span class="va">features</span><span class="op">)</span></span>
+<span><span class="kw">for</span> <span class="op">(</span><span class="va">i</span> <span class="kw">in</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html">seq_along</a></span><span class="op">(</span><span class="va">fnames</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span></span>
+<span>  <span class="va">fname</span> <span class="op">&lt;-</span> <span class="va">fnames</span><span class="op">[[</span><span class="va">i</span><span class="op">]</span><span class="op">]</span></span>
+<span>  <span class="va">short_fname</span> <span class="op">&lt;-</span> <span class="va">short_fnames</span><span class="op">[[</span><span class="va">i</span><span class="op">]</span><span class="op">]</span></span>
+<span>  <span class="va">flist</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/freqlist.html">freqlist</a></span><span class="op">(</span><span class="va">fname</span><span class="op">)</span></span>
+<span>  <span class="va">flist</span> <span class="op">&lt;-</span> <span class="va">flist</span><span class="op">[</span><span class="va">features</span><span class="op">]</span></span>
+<span>  <span class="va">d</span><span class="op">[[</span><span class="va">short_fname</span><span class="op">]</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="va">flist</span></span>
+<span><span class="op">}</span></span>
+<span><span class="va">d</span> <span class="op">&lt;-</span> <span class="va">d</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/base/matrix.html">as.matrix</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/base/t.html">t</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/drop_empty_rc.html">drop_empty_rc</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The top-left part of the resulting matrix (first ten rows, first ten columns) is shown in <a href="#tbl-mtx">Table&nbsp;2</a>.</p>
+<div class="cell">
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/kableExtra/man/kbl.html">kbl</a></span><span class="op">(</span><span class="va">d</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">10</span>, <span class="fl">1</span><span class="op">:</span><span class="fl">10</span><span class="op">]</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="tbl-mtx" class="anchored">
+
+<table>
+<caption>Table 2:  First rows and columns of a document-by-feature matrix where the rows are Clinton and Trump speeches and the columns are function words. </caption>
+ <thead><tr>
+<th style="text-align:left;">   </th>
+   <th style="text-align:right;"> about </th>
+   <th style="text-align:right;"> across </th>
+   <th style="text-align:right;"> against </th>
+   <th style="text-align:right;"> along </th>
+   <th style="text-align:right;"> around </th>
+   <th style="text-align:right;"> at </th>
+   <th style="text-align:right;"> behind </th>
+   <th style="text-align:right;"> besides </th>
+   <th style="text-align:right;"> by </th>
+   <th style="text-align:right;"> despite </th>
+  </tr></thead>
+<tbody>
+<tr>
+<td style="text-align:left;"> Clinton_2016-07-28 </td>
+   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 26 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 20 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> Clinton_2016-07-29 </td>
+   <td style="text-align:right;"> 24 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> Clinton_2016-08-01 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> Clinton_2016-08-05 </td>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 30 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 17 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> Clinton_2016-08-10 </td>
+   <td style="text-align:right;"> 19 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 9 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> Clinton_2016-08-11 </td>
+   <td style="text-align:right;"> 18 </td>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 17 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> Clinton_2016-08-15 </td>
+   <td style="text-align:right;"> 41 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 30 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 18 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> Clinton_2016-08-16 </td>
+   <td style="text-align:right;"> 16 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> Clinton_2016-08-17 </td>
+   <td style="text-align:right;"> 34 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 19 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> Clinton_2016-08-25 </td>
+   <td style="text-align:right;"> 17 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 9 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section><section id="running-correspondence-analysis" class="level2" data-number="2.3"><h2 data-number="2.3" class="anchored" data-anchor-id="running-correspondence-analysis">
+<span class="header-section-number">2.3</span> Running correspondence analysis</h2>
+<p>Then we run the actual correspondence analysis and store the result in an object called <code>d_ca</code>. For reasons of brevity, we will skip the inspection of the summary report of the analysis, which we would normally do with <code>summary(d_ca)</code>.</p>
+<div class="cell">
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d_ca</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/ca/man/ca.html">ca</a></span><span class="op">(</span><span class="va">d</span><span class="op">)</span></span>
+<span><span class="co"># summary(d_ca)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section><section id="biplot" class="level2" data-number="2.4"><h2 data-number="2.4" class="anchored" data-anchor-id="biplot">
+<span class="header-section-number">2.4</span> Biplot</h2>
+<p>Next, we build the biplot, with color indicating the subcorpus that each file belongs to. First, we prepare the data needed for the plot. If you wanted to inspect the full output of <code><a href="https://rdrr.io/pkg/mclm/man/ca_help.html">row_pcoord()</a></code> or <code><a href="https://rdrr.io/pkg/mclm/man/ca_help.html">col_pcoord()</a></code>, you can run them separately first (e.g.&nbsp;<code>row_pcoord(d_ca) %&gt;% View()</code>).</p>
+<p><a href="#tbl-carows1">Table&nbsp;3</a> shows a random sample from <code>texts_df</code>, i.e.&nbsp;the rows of the dataset with their principal component coordinates and the corpus they correspond to. The columns “V1” and “V2” contain the positions in the first and second dimension respectively.</p>
+<div class="cell">
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">texts_df</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/ca_help.html">row_pcoord</a></span><span class="op">(</span><span class="va">d_ca</span><span class="op">)</span><span class="op">[</span>,<span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">2</span><span class="op">)</span><span class="op">]</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://tibble.tidyverse.org/reference/as_tibble.html">as_tibble</a></span><span class="op">(</span>rownames <span class="op">=</span> <span class="st">"text"</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span>Subcorpus <span class="op">=</span> <span class="va">sub_corp</span><span class="op">)</span></span>
+<span><span class="va">words_df</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/ca_help.html">col_pcoord</a></span><span class="op">(</span><span class="va">d_ca</span><span class="op">)</span><span class="op">[</span>,<span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">2</span><span class="op">)</span><span class="op">]</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://tibble.tidyverse.org/reference/as_tibble.html">as_tibble</a></span><span class="op">(</span>rownames <span class="op">=</span> <span class="st">"word"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-carows1" class="anchored">
+
+<table class=" lightable-paper" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>Table 3:  Subset of rows with principal components. </caption>
+ <thead><tr>
+<th style="text-align:left;"> text </th>
+   <th style="text-align:right;"> V1 </th>
+   <th style="text-align:right;"> V2 </th>
+   <th style="text-align:left;"> Subcorpus </th>
+  </tr></thead>
+<tbody>
+<tr>
+<td style="text-align:left;"> Clinton_2016-07-28 </td>
+   <td style="text-align:right;"> 0.0579311 </td>
+   <td style="text-align:right;"> -0.2679061 </td>
+   <td style="text-align:left;"> Clinton </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> Clinton_2016-07-29 </td>
+   <td style="text-align:right;"> -0.1143544 </td>
+   <td style="text-align:right;"> -0.1454011 </td>
+   <td style="text-align:left;"> Clinton </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> Clinton_2016-08-01 </td>
+   <td style="text-align:right;"> -0.0449594 </td>
+   <td style="text-align:right;"> -0.3173496 </td>
+   <td style="text-align:left;"> Clinton </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> Clinton_2016-08-05 </td>
+   <td style="text-align:right;"> -0.1063086 </td>
+   <td style="text-align:right;"> -0.1732206 </td>
+   <td style="text-align:left;"> Clinton </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> Clinton_2016-08-10 </td>
+   <td style="text-align:right;"> -0.0437642 </td>
+   <td style="text-align:right;"> -0.2394833 </td>
+   <td style="text-align:left;"> Clinton </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> Clinton_2016-08-11 </td>
+   <td style="text-align:right;"> -0.0171809 </td>
+   <td style="text-align:right;"> -0.2379479 </td>
+   <td style="text-align:left;"> Clinton </td>
+  </tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>Then we build the plot, shown in <a href="#fig-caplot1">Figure&nbsp;1</a>. We can see that 16.61% of the variation is covered by the first dimension and 12.99% by the second dimension. In addition, both subcorpora form very clear clusters, mostly divided by the second dimension: features higher on the y-axis are more characteristic of Trump’s speeches, and those lower on the y-axis are more characteristic of Clinton’s.</p>
+<div class="cell">
+<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">dim_1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/sprintf.html">sprintf</a></span><span class="op">(</span><span class="st">"Dimension 1 (%.2f %%)"</span>, <span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span><span class="op">(</span><span class="va">d_ca</span><span class="op">)</span><span class="op">$</span><span class="va">scree</span><span class="op">[</span><span class="fl">1</span>,<span class="fl">3</span><span class="op">]</span><span class="op">)</span></span>
+<span><span class="va">dim_2</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/sprintf.html">sprintf</a></span><span class="op">(</span><span class="st">"Dimension 2 (%.2f %%)"</span>, <span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span><span class="op">(</span><span class="va">d_ca</span><span class="op">)</span><span class="op">$</span><span class="va">scree</span><span class="op">[</span><span class="fl">2</span>,<span class="fl">3</span><span class="op">]</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">words_df</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">V1</span>, y <span class="op">=</span> <span class="va">V2</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_text.html">geom_text</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>label <span class="op">=</span> <span class="va">word</span><span class="op">)</span>, col <span class="op">=</span> <span class="st">"gray60"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html">geom_point</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">texts_df</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">V1</span>, y <span class="op">=</span> <span class="va">V2</span>, col <span class="op">=</span> <span class="va">Subcorpus</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_manual.html">scale_color_manual</a></span><span class="op">(</span>values <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"#0000CD"</span>,<span class="st">"#DC143C"</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_abline.html">geom_hline</a></span><span class="op">(</span>yintercept <span class="op">=</span> <span class="fl">0</span>, color <span class="op">=</span> <span class="st">"darkgray"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_abline.html">geom_vline</a></span><span class="op">(</span>xintercept <span class="op">=</span> <span class="fl">0</span>, color <span class="op">=</span> <span class="st">"darkgray"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_bw</a></span><span class="op">(</span>base_size <span class="op">=</span> <span class="fl">12</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">dim_1</span>, y <span class="op">=</span> <span class="va">dim_2</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/coord_fixed.html">coord_fixed</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-caplot1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="ca-trump-clinton_files/figure-html/fig-caplot1-1.png" class="img-fluid figure-img" alt="Biplot of correspondence analysis of Clinton and Trump speeches based on function words. The dots corresponding to Clinton, in blue, form a group on top of the group of Trump speeches, in red. The features are plotted as text in gray and are all over the place. The axes read &quot;Dimension 1 (16.61%)&quot; and &quot;Dimension 2 (12.99 %)&quot;." width="672"></p>
+<p></p><figcaption class="figure-caption">Figure 1: Biplot of correspondence analysis of Clinton and Trump speeches based on function words.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section><section id="typical-clinton-features-vs.-typical-trump-features" class="level2" data-number="2.5"><h2 data-number="2.5" class="anchored" data-anchor-id="typical-clinton-features-vs.-typical-trump-features">
+<span class="header-section-number">2.5</span> Typical Clinton features vs.&nbsp;typical Trump features</h2>
+<p>Since the dimension that sets apart the Clinton speeches (top) most clearly from the Trump speeches (bottom) is the second dimension (y-axis), we may want to inspect the features that occupy extreme positions on the y-axis (and that hence contribute importantly to the y-axis). This is shown in <a href="#tbl-extremes1">Table&nbsp;4</a></p>
+<p>The code below selects sorts the dataframe with features information based on their coordinates in the second dimension (“V2”) and extracts the first 20 elements. <a href="#tbl-extremes1-1">Table&nbsp;4 (a)</a> has the highest values in the y-axis, i.e.&nbsp;the 20 features most typical of Clinton’s speeches, whereas <a href="#tbl-extremes1-2">Table&nbsp;4 (b)</a> has the lowest values in the y-axis, i.e.&nbsp;the 20features most typical of Trump’s speeches.</p>
+<div>
+<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">words_df</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/arrange.html">arrange</a></span><span class="op">(</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/desc.html">desc</a></span><span class="op">(</span><span class="va">V2</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="fl">20</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/kableExtra/man/kbl.html">kbl</a></span><span class="op">(</span>digits <span class="op">=</span> <span class="fl">3</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/kableExtra/man/kable_classic.html">kable_paper</a></span><span class="op">(</span>full_width <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
+<span><span class="va">words_df</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/arrange.html">arrange</a></span><span class="op">(</span><span class="va">V2</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="fl">20</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/kableExtra/man/kbl.html">kbl</a></span><span class="op">(</span>digits <span class="op">=</span> <span class="fl">3</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/kableExtra/man/kable_classic.html">kable_paper</a></span><span class="op">(</span>full_width <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="tbl-extremes1" class="cell tbl-parent quarto-layout-panel anchored">
+<div class="panel-caption table-caption">
+<p>Table 4: Words most characteristic of Clinton’s or Trump’s speeches.</p>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div id="tbl-extremes1-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-extremes1" style="flex-basis: 50.0%;justify-content: center;">
+
+<table class=" lightable-paper" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>(a) Clinton </caption>
+ <thead><tr>
+<th style="text-align:left;"> word </th>
+   <th style="text-align:right;"> V1 </th>
+   <th style="text-align:right;"> V2 </th>
+  </tr></thead>
+<tbody>
+<tr>
+<td style="text-align:left;"> anyway </td>
+   <td style="text-align:right;"> -0.316 </td>
+   <td style="text-align:right;"> 0.484 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> little </td>
+   <td style="text-align:right;"> -0.320 </td>
+   <td style="text-align:right;"> 0.386 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> mine </td>
+   <td style="text-align:right;"> -0.301 </td>
+   <td style="text-align:right;"> 0.370 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> they </td>
+   <td style="text-align:right;"> -0.110 </td>
+   <td style="text-align:right;"> 0.357 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> over </td>
+   <td style="text-align:right;"> 0.126 </td>
+   <td style="text-align:right;"> 0.323 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> twice </td>
+   <td style="text-align:right;"> 0.201 </td>
+   <td style="text-align:right;"> 0.307 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> myself </td>
+   <td style="text-align:right;"> -0.289 </td>
+   <td style="text-align:right;"> 0.299 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> second </td>
+   <td style="text-align:right;"> 0.090 </td>
+   <td style="text-align:right;"> 0.286 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> anything </td>
+   <td style="text-align:right;"> -0.065 </td>
+   <td style="text-align:right;"> 0.278 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> though </td>
+   <td style="text-align:right;"> -0.176 </td>
+   <td style="text-align:right;"> 0.273 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> otherwise </td>
+   <td style="text-align:right;"> 0.023 </td>
+   <td style="text-align:right;"> 0.265 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> onto </td>
+   <td style="text-align:right;"> 0.823 </td>
+   <td style="text-align:right;"> 0.265 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> along </td>
+   <td style="text-align:right;"> -0.234 </td>
+   <td style="text-align:right;"> 0.242 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> never </td>
+   <td style="text-align:right;"> 0.074 </td>
+   <td style="text-align:right;"> 0.240 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> such </td>
+   <td style="text-align:right;"> -0.055 </td>
+   <td style="text-align:right;"> 0.236 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> them </td>
+   <td style="text-align:right;"> -0.040 </td>
+   <td style="text-align:right;"> 0.226 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> her </td>
+   <td style="text-align:right;"> 0.244 </td>
+   <td style="text-align:right;"> 0.219 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> two </td>
+   <td style="text-align:right;"> -0.187 </td>
+   <td style="text-align:right;"> 0.207 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> but </td>
+   <td style="text-align:right;"> -0.223 </td>
+   <td style="text-align:right;"> 0.207 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> ones </td>
+   <td style="text-align:right;"> 0.330 </td>
+   <td style="text-align:right;"> 0.204 </td>
+  </tr>
+</tbody>
+</table>
+</div>
+<div id="tbl-extremes1-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-extremes1" style="flex-basis: 50.0%;justify-content: center;">
+
+<table class=" lightable-paper" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>(b) Trump </caption>
+ <thead><tr>
+<th style="text-align:left;"> word </th>
+   <th style="text-align:right;"> V1 </th>
+   <th style="text-align:right;"> V2 </th>
+  </tr></thead>
+<tbody>
+<tr>
+<td style="text-align:left;"> someone </td>
+   <td style="text-align:right;"> -0.474 </td>
+   <td style="text-align:right;"> -1.477 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> himself </td>
+   <td style="text-align:right;"> -0.570 </td>
+   <td style="text-align:right;"> -1.399 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> toward </td>
+   <td style="text-align:right;"> -0.246 </td>
+   <td style="text-align:right;"> -0.979 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> each </td>
+   <td style="text-align:right;"> 0.181 </td>
+   <td style="text-align:right;"> -0.930 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> shall </td>
+   <td style="text-align:right;"> 0.536 </td>
+   <td style="text-align:right;"> -0.867 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> everyone </td>
+   <td style="text-align:right;"> -0.073 </td>
+   <td style="text-align:right;"> -0.846 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> ourselves </td>
+   <td style="text-align:right;"> 0.050 </td>
+   <td style="text-align:right;"> -0.742 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> ours </td>
+   <td style="text-align:right;"> 0.650 </td>
+   <td style="text-align:right;"> -0.736 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> his </td>
+   <td style="text-align:right;"> -0.414 </td>
+   <td style="text-align:right;"> -0.726 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> anyone </td>
+   <td style="text-align:right;"> 0.150 </td>
+   <td style="text-align:right;"> -0.687 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> often </td>
+   <td style="text-align:right;"> 0.176 </td>
+   <td style="text-align:right;"> -0.656 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> several </td>
+   <td style="text-align:right;"> 0.512 </td>
+   <td style="text-align:right;"> -0.610 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> own </td>
+   <td style="text-align:right;"> 0.175 </td>
+   <td style="text-align:right;"> -0.527 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> across </td>
+   <td style="text-align:right;"> 0.130 </td>
+   <td style="text-align:right;"> -0.510 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> both </td>
+   <td style="text-align:right;"> -0.068 </td>
+   <td style="text-align:right;"> -0.491 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> sometimes </td>
+   <td style="text-align:right;"> -0.043 </td>
+   <td style="text-align:right;"> -0.470 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> whose </td>
+   <td style="text-align:right;"> 0.523 </td>
+   <td style="text-align:right;"> -0.470 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> may </td>
+   <td style="text-align:right;"> -0.325 </td>
+   <td style="text-align:right;"> -0.422 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> should </td>
+   <td style="text-align:right;"> -0.041 </td>
+   <td style="text-align:right;"> -0.410 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> my </td>
+   <td style="text-align:right;"> -0.047 </td>
+   <td style="text-align:right;"> -0.407 </td>
+  </tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</section></section><section id="sec-content" class="level1" data-number="3"><h1 data-number="3">
+<span class="header-section-number">3</span> High frequency content words as features</h1>
+<p>In a second approach, we look at <em>content words</em> instead. Obviously, then, topic will start playing an important role (although some stylistic differences may still be present in the patterns that emerge). The nature of this analysis is very different to the one shown in <a href="#sec-function">Section&nbsp;2</a>, and it serves different purposes. Even so, it is a legitimate question whether the Clinton speeches and the Trump speeches turn out to be as clearly separated as in the previous analysis from the perspective of content words. Moreover, we can inspect which (groups of) content words will emerge as the ones that are most characteristic of the different areas in the resulting map.</p>
+<section id="specifying-the-features-1" class="level2" data-number="3.1"><h2 data-number="3.1" class="anchored" data-anchor-id="specifying-the-features-1">
+<span class="header-section-number">3.1</span> Specifying the features</h2>
+<p>From a technical perspective, the only difference with the case study in <a href="#sec-function">Section&nbsp;2</a> is how we define the features. This time, we build a complete frequency list of the whole corpus, we then remove a number of stop words (mostly function words, but also some undesired types such as <code>000</code> and <code>--</code>), and finally we treat the top 150 (i.e.&nbsp;the 150 highest frequency items) of the remaining items as our features. The number 150 is an arbitrary choice. We chose it so we could make a fair comparison to the performance of the analysis that used function words.</p>
+<div class="cell">
+<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">stop_list</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/read_types.html">read_types</a></span><span class="op">(</span><span class="st">"assets/ca-trump-clinton/stop_list.txt"</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/print.html">print</a></span><span class="op">(</span><span class="va">stop_list</span>, n <span class="op">=</span> <span class="fl">5</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Type collection of length 154
+     type
+  -------
+1     000
+2   about
+3  across
+4 against
+5   along
+...</code></pre>
+</div>
+<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">features</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/freqlist.html">freqlist</a></span><span class="op">(</span><span class="va">fnames</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/keep_types.html">drop_types</a></span><span class="op">(</span><span class="va">stop_list</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/keep_pos.html">keep_pos</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">150</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/as_types.html">as_types</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/base/print.html">print</a></span><span class="op">(</span>n <span class="op">=</span> <span class="fl">10</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Type collection of length 150
+        type
+   ---------
+ 1     again
+ 2       ago
+ 3      also
+ 4   america
+ 5  american
+ 6 americans
+ 7  applause
+ 8       are
+ 9  audience
+10      back
+...</code></pre>
+</div>
+</div>
+</section><section id="next-steps-and-plot" class="level2" data-number="3.2"><h2 data-number="3.2" class="anchored" data-anchor-id="next-steps-and-plot">
+<span class="header-section-number">3.2</span> Next steps and plot</h2>
+<p>The next steps, all the way up to the creation of the plot, are completely analogous to the previous analysis. <a href="#fig-ca2">Figure&nbsp;2</a> shows the biplot.</p>
+<div class="cell">
+<div class="sourceCode" id="cb16"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html">data.frame</a></span><span class="op">(</span>row.names <span class="op">=</span> <span class="va">features</span><span class="op">)</span></span>
+<span><span class="kw">for</span> <span class="op">(</span><span class="va">i</span> <span class="kw">in</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html">seq_along</a></span><span class="op">(</span><span class="va">fnames</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span></span>
+<span>  <span class="va">fname</span> <span class="op">&lt;-</span> <span class="va">fnames</span><span class="op">[[</span><span class="va">i</span><span class="op">]</span><span class="op">]</span></span>
+<span>  <span class="va">short_fname</span> <span class="op">&lt;-</span> <span class="va">short_fnames</span><span class="op">[[</span><span class="va">i</span><span class="op">]</span><span class="op">]</span></span>
+<span>  <span class="va">flist</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/freqlist.html">freqlist</a></span><span class="op">(</span><span class="va">fname</span><span class="op">)</span></span>
+<span>  <span class="va">flist</span> <span class="op">&lt;-</span> <span class="va">flist</span><span class="op">[</span><span class="va">features</span><span class="op">]</span></span>
+<span>  <span class="va">d</span><span class="op">[[</span><span class="va">short_fname</span><span class="op">]</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="va">flist</span></span>
+<span><span class="op">}</span></span>
+<span><span class="va">d</span> <span class="op">&lt;-</span> <span class="va">d</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/base/matrix.html">as.matrix</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/base/t.html">t</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/drop_empty_rc.html">drop_empty_rc</a></span><span class="op">(</span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">d_ca</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/ca/man/ca.html">ca</a></span><span class="op">(</span><span class="va">d</span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">texts_df</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/ca_help.html">row_pcoord</a></span><span class="op">(</span><span class="va">d_ca</span><span class="op">)</span><span class="op">[</span>,<span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">2</span><span class="op">)</span><span class="op">]</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://tibble.tidyverse.org/reference/as_tibble.html">as_tibble</a></span><span class="op">(</span>rownames <span class="op">=</span> <span class="st">"text"</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span>Subcorpus <span class="op">=</span> <span class="va">sub_corp</span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">words_df</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/ca_help.html">col_pcoord</a></span><span class="op">(</span><span class="va">d_ca</span><span class="op">)</span><span class="op">[</span>,<span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">2</span><span class="op">)</span><span class="op">]</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://tibble.tidyverse.org/reference/as_tibble.html">as_tibble</a></span><span class="op">(</span>rownames <span class="op">=</span> <span class="st">"word"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode" id="cb17"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">dim_1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/sprintf.html">sprintf</a></span><span class="op">(</span><span class="st">"Dimension 1 (%.2f %%)"</span>, <span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span><span class="op">(</span><span class="va">d_ca</span><span class="op">)</span><span class="op">$</span><span class="va">scree</span><span class="op">[</span><span class="fl">1</span>,<span class="fl">3</span><span class="op">]</span><span class="op">)</span></span>
+<span><span class="va">dim_2</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/sprintf.html">sprintf</a></span><span class="op">(</span><span class="st">"Dimension 2 (%.2f %%)"</span>, <span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span><span class="op">(</span><span class="va">d_ca</span><span class="op">)</span><span class="op">$</span><span class="va">scree</span><span class="op">[</span><span class="fl">2</span>,<span class="fl">3</span><span class="op">]</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">words_df</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">V1</span>, y <span class="op">=</span> <span class="va">V2</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_text.html">geom_text</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>label <span class="op">=</span> <span class="va">word</span><span class="op">)</span>, col <span class="op">=</span> <span class="st">"gray60"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html">geom_point</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">texts_df</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">V1</span>, y <span class="op">=</span> <span class="va">V2</span>, col <span class="op">=</span> <span class="va">Subcorpus</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_manual.html">scale_color_manual</a></span><span class="op">(</span>values <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"#0000CD"</span>,<span class="st">"#DC143C"</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_abline.html">geom_hline</a></span><span class="op">(</span>yintercept <span class="op">=</span> <span class="fl">0</span>, color <span class="op">=</span> <span class="st">"darkgray"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_abline.html">geom_vline</a></span><span class="op">(</span>xintercept <span class="op">=</span> <span class="fl">0</span>, color <span class="op">=</span> <span class="st">"darkgray"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_bw</a></span><span class="op">(</span>base_size <span class="op">=</span> <span class="fl">12</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">dim_1</span>, y <span class="op">=</span> <span class="va">dim_2</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/coord_fixed.html">coord_fixed</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-ca2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="ca-trump-clinton_files/figure-html/fig-ca2-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption">Figure 2: Biplot of correspondence analysis of Clinton and Trump speeches based on content words.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>We can see that 14.09% of the variation is covered by the first dimension and 10.69% by the second dimension. This time it is the combination of the two dimensions that sets apart the two groups of speeches. This makes it a bit more difficult to select the items on the basis of their co-ordinates. We will do so in a minute, but first, we use a more visual approach. We will demonstrate how we can zoom in on a specific area, if we want to be able to better read the words in that area. This is demonstrated in <a href="#fig-ca3">Figure&nbsp;3</a> for the region of x-values ranging from <code>0</code> to <code>0.5</code> and y-values ranging from <code>-0.5</code> to <code>0</code>.</p>
+<div class="cell">
+<div class="sourceCode" id="cb18"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">words_df</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">V1</span>, y <span class="op">=</span> <span class="va">V2</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_text.html">geom_text</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>label <span class="op">=</span> <span class="va">word</span><span class="op">)</span>, col <span class="op">=</span> <span class="st">"gray60"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html">geom_point</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">texts_df</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">V1</span>, y <span class="op">=</span> <span class="va">V2</span>, col <span class="op">=</span> <span class="va">Subcorpus</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_manual.html">scale_color_manual</a></span><span class="op">(</span>values <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"#0000CD"</span>,<span class="st">"#DC143C"</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_abline.html">geom_hline</a></span><span class="op">(</span>yintercept <span class="op">=</span> <span class="fl">0</span>, color <span class="op">=</span> <span class="st">"darkgray"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_abline.html">geom_vline</a></span><span class="op">(</span>xintercept <span class="op">=</span> <span class="fl">0</span>, color <span class="op">=</span> <span class="st">"darkgray"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_bw</a></span><span class="op">(</span>base_size <span class="op">=</span> <span class="fl">12</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">dim_1</span>, y <span class="op">=</span> <span class="va">dim_2</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/coord_fixed.html">coord_fixed</a></span><span class="op">(</span>xlim <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">0.5</span><span class="op">)</span>, ylim <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">0.5</span>, <span class="fl">0</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-ca3" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="ca-trump-clinton_files/figure-html/fig-ca3-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption">Figure 3: Biplot of correspondence analysis of Clinton and Trump speeches based on content words, zoomed in for the bottom right quadrant.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Identifying the same items by co-ordinates can be done by filtering the items based on their values in the x-axis (“V1”) and y-axis (“V2”); the output is shown <a href="#tbl-words2">Table&nbsp;5</a>:</p>
+<div class="cell">
+<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">words_df</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span><span class="op">(</span><span class="va">V1</span> <span class="op">&gt;=</span> <span class="fl">0</span> <span class="op">&amp;</span> <span class="va">V1</span> <span class="op">&lt;=</span> <span class="fl">0.5</span> <span class="op">&amp;</span> <span class="va">V2</span> <span class="op">&gt;=</span> <span class="op">-</span><span class="fl">0.5</span> <span class="op">&amp;</span> <span class="va">V2</span> <span class="op">&lt;=</span> <span class="fl">0</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/kableExtra/man/kbl.html">kbl</a></span><span class="op">(</span>digits <span class="op">=</span> <span class="fl">3</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/kableExtra/man/kable_classic.html">kable_paper</a></span><span class="op">(</span>full_width <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/kableExtra/man/scroll_box.html">scroll_box</a></span><span class="op">(</span>height <span class="op">=</span> <span class="st">"400px"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="tbl-words2" class="anchored">
+
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:400px; "><table class=" lightable-paper" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>Table 5:  Words from the bottom right quadrant of the biplot with content words as figures. </caption>
+ <thead><tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> word </th>
+   <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;"> V1 </th>
+   <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;"> V2 </th>
+  </tr></thead>
+<tbody>
+<tr>
+<td style="text-align:left;"> ago </td>
+   <td style="text-align:right;"> 0.329 </td>
+   <td style="text-align:right;"> -0.030 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> back </td>
+   <td style="text-align:right;"> 0.039 </td>
+   <td style="text-align:right;"> -0.133 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> bad </td>
+   <td style="text-align:right;"> 0.457 </td>
+   <td style="text-align:right;"> -0.113 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> been </td>
+   <td style="text-align:right;"> 0.003 </td>
+   <td style="text-align:right;"> -0.033 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> big </td>
+   <td style="text-align:right;"> 0.156 </td>
+   <td style="text-align:right;"> -0.007 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> build </td>
+   <td style="text-align:right;"> 0.071 </td>
+   <td style="text-align:right;"> -0.179 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> countries </td>
+   <td style="text-align:right;"> 0.160 </td>
+   <td style="text-align:right;"> -0.227 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> deal </td>
+   <td style="text-align:right;"> 0.284 </td>
+   <td style="text-align:right;"> -0.171 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> ever </td>
+   <td style="text-align:right;"> 0.051 </td>
+   <td style="text-align:right;"> -0.251 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> folks </td>
+   <td style="text-align:right;"> 0.347 </td>
+   <td style="text-align:right;"> -0.233 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> four </td>
+   <td style="text-align:right;"> 0.176 </td>
+   <td style="text-align:right;"> -0.284 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> going </td>
+   <td style="text-align:right;"> 0.246 </td>
+   <td style="text-align:right;"> -0.128 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> gonna </td>
+   <td style="text-align:right;"> 0.404 </td>
+   <td style="text-align:right;"> -0.147 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> great </td>
+   <td style="text-align:right;"> 0.175 </td>
+   <td style="text-align:right;"> -0.056 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> happen </td>
+   <td style="text-align:right;"> 0.227 </td>
+   <td style="text-align:right;"> -0.244 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> hillary </td>
+   <td style="text-align:right;"> 0.002 </td>
+   <td style="text-align:right;"> -0.295 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> isis </td>
+   <td style="text-align:right;"> 0.131 </td>
+   <td style="text-align:right;"> -0.047 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> it's </td>
+   <td style="text-align:right;"> 0.213 </td>
+   <td style="text-align:right;"> -0.022 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> love </td>
+   <td style="text-align:right;"> 0.121 </td>
+   <td style="text-align:right;"> -0.003 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> mexico </td>
+   <td style="text-align:right;"> 0.444 </td>
+   <td style="text-align:right;"> -0.276 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> military </td>
+   <td style="text-align:right;"> 0.043 </td>
+   <td style="text-align:right;"> -0.098 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> money </td>
+   <td style="text-align:right;"> 0.323 </td>
+   <td style="text-align:right;"> -0.089 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> obama </td>
+   <td style="text-align:right;"> 0.089 </td>
+   <td style="text-align:right;"> -0.067 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> percent </td>
+   <td style="text-align:right;"> 0.206 </td>
+   <td style="text-align:right;"> -0.420 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> remember </td>
+   <td style="text-align:right;"> 0.067 </td>
+   <td style="text-align:right;"> -0.220 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> seen </td>
+   <td style="text-align:right;"> 0.088 </td>
+   <td style="text-align:right;"> -0.036 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> she </td>
+   <td style="text-align:right;"> 0.209 </td>
+   <td style="text-align:right;"> -0.239 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> she's </td>
+   <td style="text-align:right;"> 0.358 </td>
+   <td style="text-align:right;"> -0.140 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> stop </td>
+   <td style="text-align:right;"> 0.160 </td>
+   <td style="text-align:right;"> -0.335 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> these </td>
+   <td style="text-align:right;"> 0.157 </td>
+   <td style="text-align:right;"> -0.085 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> they're </td>
+   <td style="text-align:right;"> 0.496 </td>
+   <td style="text-align:right;"> -0.013 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> trade </td>
+   <td style="text-align:right;"> 0.275 </td>
+   <td style="text-align:right;"> -0.384 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> trump </td>
+   <td style="text-align:right;"> 0.074 </td>
+   <td style="text-align:right;"> -0.009 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> very </td>
+   <td style="text-align:right;"> 0.181 </td>
+   <td style="text-align:right;"> -0.072 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> wall </td>
+   <td style="text-align:right;"> 0.248 </td>
+   <td style="text-align:right;"> -0.412 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> wants </td>
+   <td style="text-align:right;"> 0.128 </td>
+   <td style="text-align:right;"> -0.156 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> we'll </td>
+   <td style="text-align:right;"> 0.200 </td>
+   <td style="text-align:right;"> -0.235 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> we're </td>
+   <td style="text-align:right;"> 0.249 </td>
+   <td style="text-align:right;"> -0.111 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> what's </td>
+   <td style="text-align:right;"> 0.339 </td>
+   <td style="text-align:right;"> -0.026 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> win </td>
+   <td style="text-align:right;"> 0.297 </td>
+   <td style="text-align:right;"> -0.264 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> years </td>
+   <td style="text-align:right;"> 0.091 </td>
+   <td style="text-align:right;"> -0.108 </td>
+  </tr>
+</tbody>
+</table></div>
+
+</div>
+</div>
+</div>
+</section></section><section id="sec-bigrams" class="level1" data-number="4"><h1 data-number="4">
+<span class="header-section-number">4</span> High frequency bigrams as features</h1>
+<p>In our third approach, we work with the 150 most frequent bigrams. Notice in the code snippet below how we use the argument <code>ngram_size = 2</code> to make sure that <code><a href="https://rdrr.io/pkg/mclm/man/freqlist.html">freqlist()</a></code> builds a frequency list of bigrams instead of single word forms. Notice also that prior to identifying the top 150, we remove all bigrams with either <code>applause</code>, <code>cheering</code>, or <code>--</code> in them. We do this because in this corpus those items (almost always) are part of the annotation instead of real tokens.</p>
+<div class="cell">
+<div class="sourceCode" id="cb20"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">features</span> <span class="op">&lt;-</span> <span class="va">fnames</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/freqlist.html">freqlist</a></span><span class="op">(</span>ngram_size <span class="op">=</span> <span class="fl">2</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/keep_re.html">drop_re</a></span><span class="op">(</span><span class="st">"(applause|cheering|--)"</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/keep_bool.html">keep_bool</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/pkg/mclm/man/ranks.html">ranks</a></span><span class="op">(</span><span class="va">.</span><span class="op">)</span> <span class="op">&lt;=</span> <span class="fl">150</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> <span class="co"># or keep_pos(1:150)</span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/as_types.html">as_types</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/base/print.html">print</a></span><span class="op">(</span>n <span class="op">=</span> <span class="fl">10</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Type collection of length 150
+       type
+   --------
+ 1  a_great
+ 2    a_lot
+ 3   a_very
+ 4 about_it
+ 5   all_of
+ 6  all_the
+ 7   and_he
+ 8    and_i
+ 9   and_it
+10 and_it's
+...</code></pre>
+</div>
+</div>
+<p>The rest of the steps again is identical to what it was in the previous analysis, except that when we build frequency lists for each file, we must make sure that here too we build a frequency list of bigrams.</p>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The step <code>drop_re("(applause|cheering|--)")</code> is not necessary here, because bigrams containing <code>applause</code>, <code>cheering</code>, or <code>--</code> are not part of the feature list anyway.</p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode" id="cb22"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># build file by feature frequency matrix</span></span>
+<span><span class="va">d</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html">data.frame</a></span><span class="op">(</span>row.names <span class="op">=</span> <span class="va">features</span><span class="op">)</span></span>
+<span><span class="kw">for</span> <span class="op">(</span><span class="va">i</span> <span class="kw">in</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html">seq_along</a></span><span class="op">(</span><span class="va">fnames</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span></span>
+<span>  <span class="va">fname</span> <span class="op">&lt;-</span> <span class="va">fnames</span><span class="op">[[</span><span class="va">i</span><span class="op">]</span><span class="op">]</span></span>
+<span>  <span class="va">short_fname</span> <span class="op">&lt;-</span> <span class="va">short_fnames</span><span class="op">[[</span><span class="va">i</span><span class="op">]</span><span class="op">]</span></span>
+<span>  <span class="va">flist</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/freqlist.html">freqlist</a></span><span class="op">(</span><span class="va">fname</span>, ngram_size <span class="op">=</span> <span class="fl">2</span><span class="op">)</span></span>
+<span>  <span class="va">flist</span> <span class="op">&lt;-</span> <span class="va">flist</span><span class="op">[</span><span class="va">features</span><span class="op">]</span></span>
+<span>  <span class="va">d</span><span class="op">[[</span><span class="va">short_fname</span><span class="op">]</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="va">flist</span></span>
+<span><span class="op">}</span></span>
+<span><span class="va">d</span> <span class="op">&lt;-</span> <span class="va">d</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/base/matrix.html">as.matrix</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/base/t.html">t</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/drop_empty_rc.html">drop_empty_rc</a></span><span class="op">(</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># conduct CA</span></span>
+<span><span class="va">d_ca</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/ca/man/ca.html">ca</a></span><span class="op">(</span><span class="va">d</span><span class="op">)</span></span>
+<span><span class="co"># summary(d_ca)</span></span>
+<span></span>
+<span><span class="co"># preparations for biplot</span></span>
+<span><span class="va">texts_df</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/ca_help.html">row_pcoord</a></span><span class="op">(</span><span class="va">d_ca</span><span class="op">)</span><span class="op">[</span>,<span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">2</span><span class="op">)</span><span class="op">]</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://tibble.tidyverse.org/reference/as_tibble.html">as_tibble</a></span><span class="op">(</span>rownames <span class="op">=</span> <span class="st">"text"</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span>Subcorpus <span class="op">=</span> <span class="va">sub_corp</span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">words_df</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/ca_help.html">col_pcoord</a></span><span class="op">(</span><span class="va">d_ca</span><span class="op">)</span><span class="op">[</span>,<span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">2</span><span class="op">)</span><span class="op">]</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://tibble.tidyverse.org/reference/as_tibble.html">as_tibble</a></span><span class="op">(</span>rownames <span class="op">=</span> <span class="st">"word"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode" id="cb23"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">dim_1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/sprintf.html">sprintf</a></span><span class="op">(</span><span class="st">"Dimension 1 (%.2f %%)"</span>, <span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span><span class="op">(</span><span class="va">d_ca</span><span class="op">)</span><span class="op">$</span><span class="va">scree</span><span class="op">[</span><span class="fl">1</span>,<span class="fl">3</span><span class="op">]</span><span class="op">)</span></span>
+<span><span class="va">dim_2</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/sprintf.html">sprintf</a></span><span class="op">(</span><span class="st">"Dimension 2 (%.2f %%)"</span>, <span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span><span class="op">(</span><span class="va">d_ca</span><span class="op">)</span><span class="op">$</span><span class="va">scree</span><span class="op">[</span><span class="fl">2</span>,<span class="fl">3</span><span class="op">]</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">words_df</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">V1</span>, y <span class="op">=</span> <span class="va">V2</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_text.html">geom_text</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>label <span class="op">=</span> <span class="va">word</span><span class="op">)</span>, col <span class="op">=</span> <span class="st">"gray60"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html">geom_point</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">texts_df</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">V1</span>, y <span class="op">=</span> <span class="va">V2</span>, col <span class="op">=</span> <span class="va">Subcorpus</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_manual.html">scale_color_manual</a></span><span class="op">(</span>values <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"#0000CD"</span>,<span class="st">"#DC143C"</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_abline.html">geom_hline</a></span><span class="op">(</span>yintercept <span class="op">=</span> <span class="fl">0</span>, color <span class="op">=</span> <span class="st">"darkgray"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_abline.html">geom_vline</a></span><span class="op">(</span>xintercept <span class="op">=</span> <span class="fl">0</span>, color <span class="op">=</span> <span class="st">"darkgray"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_bw</a></span><span class="op">(</span>base_size <span class="op">=</span> <span class="fl">12</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">dim_1</span>, y <span class="op">=</span> <span class="va">dim_2</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/coord_fixed.html">coord_fixed</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-ca4" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="ca-trump-clinton_files/figure-html/fig-ca4-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption">Figure 4: Biplot of correspondence analysis of Clinton and Trump speeches based on frequent bigrams.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>We can see that 14.29% of the variation is covered by the first dimension and 12.50% by the second dimension. Moreover, Clinton’s speeches are tightly grouped on the left side of the plot whereas Trump’s extend over the right side, so the x-axis is now the relevant dimension. <a href="#tbl-extremes2">Table&nbsp;6</a> shows the most characteristic bigrams for each of the authors, identified by having the lowest values in the first dimension (for Clinton’s) or the highest values (for Trump’s).</p>
+<div>
+<div class="sourceCode" id="cb24"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">words_df</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/arrange.html">arrange</a></span><span class="op">(</span><span class="va">V1</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="fl">20</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/kableExtra/man/kbl.html">kbl</a></span><span class="op">(</span>digits <span class="op">=</span> <span class="fl">3</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/kableExtra/man/kable_classic.html">kable_paper</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="va">words_df</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/arrange.html">arrange</a></span><span class="op">(</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/desc.html">desc</a></span><span class="op">(</span><span class="va">V1</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="fl">20</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/kableExtra/man/kbl.html">kbl</a></span><span class="op">(</span>digits <span class="op">=</span> <span class="fl">3</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/kableExtra/man/kable_classic.html">kable_paper</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="tbl-extremes2" class="cell tbl-parent quarto-layout-panel anchored">
+<div class="panel-caption table-caption">
+<p>Table 6: 20 most characteristic bigrams of Clinton’s or Trump’s speeches.</p>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div id="tbl-extremes2-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-extremes2" style="flex-basis: 50.0%;justify-content: center;">
+
+<table class=" lightable-paper" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto;">
+<caption>(a) Clinton </caption>
+ <thead><tr>
+<th style="text-align:left;"> word </th>
+   <th style="text-align:right;"> V1 </th>
+   <th style="text-align:right;"> V2 </th>
+  </tr></thead>
+<tbody>
+<tr>
+<td style="text-align:left;"> what_i </td>
+   <td style="text-align:right;"> -0.863 </td>
+   <td style="text-align:right;"> 0.128 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> i_want </td>
+   <td style="text-align:right;"> -0.789 </td>
+   <td style="text-align:right;"> 0.144 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> that_is </td>
+   <td style="text-align:right;"> -0.701 </td>
+   <td style="text-align:right;"> 0.377 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> you_can </td>
+   <td style="text-align:right;"> -0.639 </td>
+   <td style="text-align:right;"> 0.288 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> we_can </td>
+   <td style="text-align:right;"> -0.582 </td>
+   <td style="text-align:right;"> 0.356 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> donald_trump </td>
+   <td style="text-align:right;"> -0.578 </td>
+   <td style="text-align:right;"> 0.144 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> i_am </td>
+   <td style="text-align:right;"> -0.578 </td>
+   <td style="text-align:right;"> 0.592 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> got_to </td>
+   <td style="text-align:right;"> -0.545 </td>
+   <td style="text-align:right;"> -0.137 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> i_know </td>
+   <td style="text-align:right;"> -0.529 </td>
+   <td style="text-align:right;"> 0.023 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> to_work </td>
+   <td style="text-align:right;"> -0.527 </td>
+   <td style="text-align:right;"> 0.319 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> if_you </td>
+   <td style="text-align:right;"> -0.503 </td>
+   <td style="text-align:right;"> 0.016 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> we_need </td>
+   <td style="text-align:right;"> -0.489 </td>
+   <td style="text-align:right;"> 0.116 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> go_to </td>
+   <td style="text-align:right;"> -0.465 </td>
+   <td style="text-align:right;"> -0.019 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> all_the </td>
+   <td style="text-align:right;"> -0.462 </td>
+   <td style="text-align:right;"> 0.240 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> and_that </td>
+   <td style="text-align:right;"> -0.449 </td>
+   <td style="text-align:right;"> 0.281 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> that_we </td>
+   <td style="text-align:right;"> -0.441 </td>
+   <td style="text-align:right;"> 0.248 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> and_he </td>
+   <td style="text-align:right;"> -0.421 </td>
+   <td style="text-align:right;"> -0.225 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> i_was </td>
+   <td style="text-align:right;"> -0.417 </td>
+   <td style="text-align:right;"> -0.098 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> to_say </td>
+   <td style="text-align:right;"> -0.392 </td>
+   <td style="text-align:right;"> -0.006 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> and_i </td>
+   <td style="text-align:right;"> -0.387 </td>
+   <td style="text-align:right;"> -0.046 </td>
+  </tr>
+</tbody>
+</table>
+</div>
+<div id="tbl-extremes2-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-extremes2" style="flex-basis: 50.0%;justify-content: center;">
+
+<table class=" lightable-paper" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto;">
+<caption>(b) Trump </caption>
+ <thead><tr>
+<th style="text-align:left;"> word </th>
+   <th style="text-align:right;"> V1 </th>
+   <th style="text-align:right;"> V2 </th>
+  </tr></thead>
+<tbody>
+<tr>
+<td style="text-align:left;"> trump_trump </td>
+   <td style="text-align:right;"> 0.819 </td>
+   <td style="text-align:right;"> 0.518 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> make_america </td>
+   <td style="text-align:right;"> 0.540 </td>
+   <td style="text-align:right;"> 0.285 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> believe_me </td>
+   <td style="text-align:right;"> 0.512 </td>
+   <td style="text-align:right;"> 0.020 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> to_happen </td>
+   <td style="text-align:right;"> 0.501 </td>
+   <td style="text-align:right;"> -0.148 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> we_will </td>
+   <td style="text-align:right;"> 0.497 </td>
+   <td style="text-align:right;"> 0.659 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> it's_going </td>
+   <td style="text-align:right;"> 0.486 </td>
+   <td style="text-align:right;"> -0.234 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> you're_going </td>
+   <td style="text-align:right;"> 0.443 </td>
+   <td style="text-align:right;"> -0.490 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> to_win </td>
+   <td style="text-align:right;"> 0.407 </td>
+   <td style="text-align:right;"> -0.255 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> are_going </td>
+   <td style="text-align:right;"> 0.374 </td>
+   <td style="text-align:right;"> 0.026 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> you_thank </td>
+   <td style="text-align:right;"> 0.362 </td>
+   <td style="text-align:right;"> 0.544 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> very_much </td>
+   <td style="text-align:right;"> 0.352 </td>
+   <td style="text-align:right;"> 0.337 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> care_of </td>
+   <td style="text-align:right;"> 0.346 </td>
+   <td style="text-align:right;"> -0.301 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> hillary_clinton </td>
+   <td style="text-align:right;"> 0.344 </td>
+   <td style="text-align:right;"> 0.216 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> not_going </td>
+   <td style="text-align:right;"> 0.329 </td>
+   <td style="text-align:right;"> -0.141 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> this_country </td>
+   <td style="text-align:right;"> 0.307 </td>
+   <td style="text-align:right;"> 0.220 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> will_be </td>
+   <td style="text-align:right;"> 0.305 </td>
+   <td style="text-align:right;"> 0.634 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> we_don't </td>
+   <td style="text-align:right;"> 0.301 </td>
+   <td style="text-align:right;"> -0.157 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> think_of </td>
+   <td style="text-align:right;"> 0.283 </td>
+   <td style="text-align:right;"> -0.239 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> these_are </td>
+   <td style="text-align:right;"> 0.279 </td>
+   <td style="text-align:right;"> 0.045 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> do_you </td>
+   <td style="text-align:right;"> 0.268 </td>
+   <td style="text-align:right;"> -0.155 </td>
+  </tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</section><section id="sec-trigrams" class="level1" data-number="5"><h1 data-number="5">
+<span class="header-section-number">5</span> High frequency trigrams as features</h1>
+<p>In our fourth approach, we work with the 150 most frequent trigrams; the workflow is the same as in <a href="#sec-bigrams">Section&nbsp;4</a>, but with <code>ngram_size = 3</code> instead of 2. <a href="#fig-ca5">Figure&nbsp;5</a> shows the biplot.</p>
+<div class="cell">
+<div class="sourceCode" id="cb25"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">features</span> <span class="op">&lt;-</span> <span class="va">fnames</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/freqlist.html">freqlist</a></span><span class="op">(</span>ngram_size <span class="op">=</span> <span class="fl">3</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/keep_re.html">drop_re</a></span><span class="op">(</span><span class="st">"(applause|cheering|--)"</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/keep_bool.html">keep_bool</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/pkg/mclm/man/ranks.html">ranks</a></span><span class="op">(</span><span class="va">.</span><span class="op">)</span> <span class="op">&lt;=</span> <span class="fl">150</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/as_types.html">as_types</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/base/print.html">print</a></span><span class="op">(</span>n <span class="op">=</span> <span class="fl">10</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Type collection of length 150
+                     type
+   ----------------------
+ 1            a_couple_of
+ 2            a_long_time
+ 3               a_lot_of
+ 4 a_trump_administration
+ 5             all_of_the
+ 6             all_of_you
+ 7           all_over_the
+ 8    america_great_again
+ 9             and_by_the
+10    and_hillary_clinton
+...</code></pre>
+</div>
+<div class="sourceCode" id="cb27"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html">data.frame</a></span><span class="op">(</span>row.names <span class="op">=</span> <span class="va">features</span><span class="op">)</span></span>
+<span><span class="kw">for</span> <span class="op">(</span><span class="va">i</span> <span class="kw">in</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html">seq_along</a></span><span class="op">(</span><span class="va">fnames</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span></span>
+<span>  <span class="va">fname</span> <span class="op">&lt;-</span> <span class="va">fnames</span><span class="op">[[</span><span class="va">i</span><span class="op">]</span><span class="op">]</span></span>
+<span>  <span class="va">short_fname</span> <span class="op">&lt;-</span> <span class="va">short_fnames</span><span class="op">[[</span><span class="va">i</span><span class="op">]</span><span class="op">]</span></span>
+<span>  <span class="va">flist</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/freqlist.html">freqlist</a></span><span class="op">(</span><span class="va">fname</span>, ngram_size <span class="op">=</span> <span class="fl">3</span><span class="op">)</span></span>
+<span>  <span class="va">flist</span> <span class="op">&lt;-</span> <span class="va">flist</span><span class="op">[</span><span class="va">features</span><span class="op">]</span></span>
+<span>  <span class="va">d</span><span class="op">[[</span><span class="va">short_fname</span><span class="op">]</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="va">flist</span></span>
+<span><span class="op">}</span></span>
+<span><span class="va">d</span> <span class="op">&lt;-</span> <span class="va">d</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/base/matrix.html">as.matrix</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/base/t.html">t</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/drop_empty_rc.html">drop_empty_rc</a></span><span class="op">(</span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">d_ca</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/ca/man/ca.html">ca</a></span><span class="op">(</span><span class="va">d</span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">texts_df</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/ca_help.html">row_pcoord</a></span><span class="op">(</span><span class="va">d_ca</span><span class="op">)</span><span class="op">[</span>,<span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">2</span><span class="op">)</span><span class="op">]</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://tibble.tidyverse.org/reference/as_tibble.html">as_tibble</a></span><span class="op">(</span>rownames <span class="op">=</span> <span class="st">"text"</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span>Subcorpus <span class="op">=</span> <span class="va">sub_corp</span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">words_df</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/ca_help.html">col_pcoord</a></span><span class="op">(</span><span class="va">d_ca</span><span class="op">)</span><span class="op">[</span>,<span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">2</span><span class="op">)</span><span class="op">]</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://tibble.tidyverse.org/reference/as_tibble.html">as_tibble</a></span><span class="op">(</span>rownames <span class="op">=</span> <span class="st">"word"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode" id="cb28"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">dim_1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/sprintf.html">sprintf</a></span><span class="op">(</span><span class="st">"Dimension 1 (%.2f %%)"</span>, <span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span><span class="op">(</span><span class="va">d_ca</span><span class="op">)</span><span class="op">$</span><span class="va">scree</span><span class="op">[</span><span class="fl">1</span>,<span class="fl">3</span><span class="op">]</span><span class="op">)</span></span>
+<span><span class="va">dim_2</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/sprintf.html">sprintf</a></span><span class="op">(</span><span class="st">"Dimension 2 (%.2f %%)"</span>, <span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span><span class="op">(</span><span class="va">d_ca</span><span class="op">)</span><span class="op">$</span><span class="va">scree</span><span class="op">[</span><span class="fl">2</span>,<span class="fl">3</span><span class="op">]</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">words_df</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">V1</span>, y <span class="op">=</span> <span class="va">V2</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_text.html">geom_text</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>label <span class="op">=</span> <span class="va">word</span><span class="op">)</span>, col <span class="op">=</span> <span class="st">"gray60"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html">geom_point</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">texts_df</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">V1</span>, y <span class="op">=</span> <span class="va">V2</span>, col <span class="op">=</span> <span class="va">Subcorpus</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_manual.html">scale_color_manual</a></span><span class="op">(</span>values <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"#0000CD"</span>,<span class="st">"#DC143C"</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_abline.html">geom_hline</a></span><span class="op">(</span>yintercept <span class="op">=</span> <span class="fl">0</span>, color <span class="op">=</span> <span class="st">"darkgray"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_abline.html">geom_vline</a></span><span class="op">(</span>xintercept <span class="op">=</span> <span class="fl">0</span>, color <span class="op">=</span> <span class="st">"darkgray"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_bw</a></span><span class="op">(</span>base_size <span class="op">=</span> <span class="fl">12</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">dim_1</span>, y <span class="op">=</span> <span class="va">dim_2</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/coord_fixed.html">coord_fixed</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-ca5" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="ca-trump-clinton_files/figure-html/fig-ca5-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption">Figure 5: Biplot of correspondence analysis of Clinton and Trump speeches based on frequent trigrams.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>We can see that 12.48% of the variation is covered by the first dimension and 8.53% by the second dimension. Moreover, Clinton’s speeches are again tightly grouped on the left side of the plot whereas Trump’s extend over the right side with an impressive proportion of features, so the x-axis is now the relevant dimension. <a href="#tbl-extremes3">Table&nbsp;7</a> shows the most characteristic bigrams for each of the authors, identified by having the lowest values in the first dimension (for Clinton’s) or the highest values (for Trump’s).</p>
+<div>
+<div class="sourceCode" id="cb29"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">words_df</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/arrange.html">arrange</a></span><span class="op">(</span><span class="va">V1</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="fl">20</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/kableExtra/man/kbl.html">kbl</a></span><span class="op">(</span>digits <span class="op">=</span> <span class="fl">3</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/kableExtra/man/kable_classic.html">kable_paper</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="va">words_df</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/arrange.html">arrange</a></span><span class="op">(</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/desc.html">desc</a></span><span class="op">(</span><span class="va">V1</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="fl">20</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/kableExtra/man/kbl.html">kbl</a></span><span class="op">(</span>digits <span class="op">=</span> <span class="fl">3</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/kableExtra/man/kable_classic.html">kable_paper</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="tbl-extremes3" class="cell tbl-parent quarto-layout-panel anchored">
+<div class="panel-caption table-caption">
+<p>Table 7: 20 most characteristic bigrams of Clinton’s or Trump’s speeches.</p>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div id="tbl-extremes3-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-extremes3" style="flex-basis: 50.0%;justify-content: center;">
+
+<table class=" lightable-paper" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto;">
+<caption>(a) Clinton </caption>
+ <thead><tr>
+<th style="text-align:left;"> word </th>
+   <th style="text-align:right;"> V1 </th>
+   <th style="text-align:right;"> V2 </th>
+  </tr></thead>
+<tbody>
+<tr>
+<td style="text-align:left;"> i_want_you </td>
+   <td style="text-align:right;"> -1.769 </td>
+   <td style="text-align:right;"> 0.912 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> to_make_sure </td>
+   <td style="text-align:right;"> -1.509 </td>
+   <td style="text-align:right;"> 0.303 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> we_need_to </td>
+   <td style="text-align:right;"> -1.490 </td>
+   <td style="text-align:right;"> 0.465 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> we've_got_to </td>
+   <td style="text-align:right;"> -1.488 </td>
+   <td style="text-align:right;"> 0.035 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> want_you_to </td>
+   <td style="text-align:right;"> -1.437 </td>
+   <td style="text-align:right;"> 0.850 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> and_i_want </td>
+   <td style="text-align:right;"> -1.310 </td>
+   <td style="text-align:right;"> 0.376 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> want_to_be </td>
+   <td style="text-align:right;"> -1.078 </td>
+   <td style="text-align:right;"> 0.402 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> i_want_to </td>
+   <td style="text-align:right;"> -1.012 </td>
+   <td style="text-align:right;"> 0.060 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> all_of_you </td>
+   <td style="text-align:right;"> -0.920 </td>
+   <td style="text-align:right;"> 0.613 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> want_to_thank </td>
+   <td style="text-align:right;"> -0.819 </td>
+   <td style="text-align:right;"> 0.170 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> be_able_to </td>
+   <td style="text-align:right;"> -0.760 </td>
+   <td style="text-align:right;"> 0.362 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> and_i_think </td>
+   <td style="text-align:right;"> -0.690 </td>
+   <td style="text-align:right;"> -0.188 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> to_tell_you </td>
+   <td style="text-align:right;"> -0.671 </td>
+   <td style="text-align:right;"> 0.082 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> want_to_do </td>
+   <td style="text-align:right;"> -0.664 </td>
+   <td style="text-align:right;"> -0.143 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> and_i_will </td>
+   <td style="text-align:right;"> -0.650 </td>
+   <td style="text-align:right;"> 0.366 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> you_know_i </td>
+   <td style="text-align:right;"> -0.603 </td>
+   <td style="text-align:right;"> -0.439 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> and_i_have </td>
+   <td style="text-align:right;"> -0.598 </td>
+   <td style="text-align:right;"> -0.137 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> out_of_the </td>
+   <td style="text-align:right;"> -0.536 </td>
+   <td style="text-align:right;"> -0.281 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> we_want_to </td>
+   <td style="text-align:right;"> -0.516 </td>
+   <td style="text-align:right;"> 0.180 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> men_and_women </td>
+   <td style="text-align:right;"> -0.491 </td>
+   <td style="text-align:right;"> 0.750 </td>
+  </tr>
+</tbody>
+</table>
+</div>
+<div id="tbl-extremes3-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-extremes3" style="flex-basis: 50.0%;justify-content: center;">
+
+<table class=" lightable-paper" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto;">
+<caption>(b) Trump </caption>
+ <thead><tr>
+<th style="text-align:left;"> word </th>
+   <th style="text-align:right;"> V1 </th>
+   <th style="text-align:right;"> V2 </th>
+  </tr></thead>
+<tbody>
+<tr>
+<td style="text-align:left;"> her_up_lock </td>
+   <td style="text-align:right;"> 0.755 </td>
+   <td style="text-align:right;"> 0.536 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> up_lock_her </td>
+   <td style="text-align:right;"> 0.755 </td>
+   <td style="text-align:right;"> 0.536 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> lock_her_up </td>
+   <td style="text-align:right;"> 0.733 </td>
+   <td style="text-align:right;"> 0.472 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> trump_administration_will </td>
+   <td style="text-align:right;"> 0.715 </td>
+   <td style="text-align:right;"> 0.477 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> a_trump_administration </td>
+   <td style="text-align:right;"> 0.709 </td>
+   <td style="text-align:right;"> 0.463 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> usa_usa_usa </td>
+   <td style="text-align:right;"> 0.668 </td>
+   <td style="text-align:right;"> 0.483 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> will_make_america </td>
+   <td style="text-align:right;"> 0.591 </td>
+   <td style="text-align:right;"> 0.628 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> trump_trump_trump </td>
+   <td style="text-align:right;"> 0.583 </td>
+   <td style="text-align:right;"> 0.565 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> build_the_wall </td>
+   <td style="text-align:right;"> 0.550 </td>
+   <td style="text-align:right;"> 0.322 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> we_will_make </td>
+   <td style="text-align:right;"> 0.530 </td>
+   <td style="text-align:right;"> 0.658 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> hillary_clinton_wants </td>
+   <td style="text-align:right;"> 0.517 </td>
+   <td style="text-align:right;"> 0.111 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> we_will_also </td>
+   <td style="text-align:right;"> 0.508 </td>
+   <td style="text-align:right;"> 0.802 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> hillary_clinton_is </td>
+   <td style="text-align:right;"> 0.480 </td>
+   <td style="text-align:right;"> 0.471 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> trump_thank_you </td>
+   <td style="text-align:right;"> 0.461 </td>
+   <td style="text-align:right;"> 0.683 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> can_you_imagine </td>
+   <td style="text-align:right;"> 0.425 </td>
+   <td style="text-align:right;"> -0.174 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> to_bring_back </td>
+   <td style="text-align:right;"> 0.423 </td>
+   <td style="text-align:right;"> 0.128 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> going_to_win </td>
+   <td style="text-align:right;"> 0.415 </td>
+   <td style="text-align:right;"> -0.158 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> thank_you_everybody </td>
+   <td style="text-align:right;"> 0.407 </td>
+   <td style="text-align:right;"> 0.300 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> the_middle_east </td>
+   <td style="text-align:right;"> 0.400 </td>
+   <td style="text-align:right;"> 0.576 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> she_wants_to </td>
+   <td style="text-align:right;"> 0.387 </td>
+   <td style="text-align:right;"> -0.198 </td>
+  </tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<p>If you’re curious about a specific item, you can use <code><a href="https://rdrr.io/pkg/mclm/man/conc.html">mclm::conc()</a></code> to collect its occurrences. Notice that even infrequent expressions can be typical if they are significantly more frequent in one group of documents than in the other.</p>
+<div class="cell">
+<div class="sourceCode" id="cb30"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/mclm/man/conc.html">conc</a></span><span class="op">(</span><span class="va">fnames</span>, <span class="st">"(?xi) i \\s+ want \\s+ you"</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/print_kwic.html">print_kwic</a></span><span class="op">(</span>n <span class="op">=</span> <span class="fl">5</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>idx                           left|  match   |right                         
+  1 ...ere and around the country,|I want you|to know I've heard you. You...
+  2 ...that way. Well, here's what|I want you|to know. You deserve a pres...
+  3 ...ou what I would do, because|I want you|to hold me accountable, pre...
+  4 ...table twists and turns. But|I want you|to imagine what you will fe...
+  5 ...t ideas out in America. And|I want you|to have a say. And that mea...
+...</code></pre>
+</div>
+</div>
+</section><section id="sec-custom" class="level1 page-columns page-full" data-number="6"><h1 data-number="6">
+<span class="header-section-number">6</span> Extra: writing functions</h1>
+<p>If you have a lot of code that needs to be run over and over again with minimal modifications, writing a function is a good idea. However, putting <em>everything</em> into one overarching function is not always the best solution. Both to facilitate debugging and to give you the opportunity to inspect elements at different stages, you might want to write smaller functions for functional units of code.</p>
+<p>One way of going about this with the code in this document is by writing one function to compile the frequencies, one to preprocess the result for plotting and one to generate the plot.</p>
+<section id="compile-frequencies" class="level2" data-number="6.1"><h2 data-number="6.1" class="anchored" data-anchor-id="compile-frequencies">
+<span class="header-section-number">6.1</span> Compile frequencies</h2>
+<p>The function below, <code>compile_frequencies()</code>, takes as arguments the <code>features</code>, the <code>fnames</code>, the <code>short_fnames</code> and the different arguments we want to give to <code><a href="https://rdrr.io/pkg/mclm/man/freqlist.html">freqlist()</a></code>, since that will change in each case study.</p>
+<p>Line 5 creates the empty dataframe with the <code>features</code> as rows. Lines 6 through 12 run the for loop across filenames that creates one frequency list per document, filters it by the features and adds them as a column to the dataframe. The <code>...</code> in the <code><a href="https://rdrr.io/pkg/mclm/man/freqlist.html">freqlist()</a></code> call in line 9 provides whatever arguments we have given at the end of <code>compile_frequencies()</code> (other than the three main ones), if any, to <code><a href="https://rdrr.io/pkg/mclm/man/freqlist.html">freqlist()</a></code>. Finally, lines 14 through 17 turn the dataframe into a matrix, transpose it and remove all empty rows and columns. This is what is returned by the function: the output of <code>compile_frequencies()</code> is a matrix of frequencies that we can inspect and manipulate as needed, and that would be given to <code><a href="https://rdrr.io/pkg/ca/man/ca.html">ca()</a></code>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1"></a>compile_frequencies <span class="ot">&lt;-</span> <span class="cf">function</span>(features,</span>
+<span id="cb32-2"><a href="#cb32-2"></a>                                fnames,</span>
+<span id="cb32-3"><a href="#cb32-3"></a>                                short_fnames,</span>
+<span id="cb32-4"><a href="#cb32-4"></a>                                ...) {</span>
+<span id="cb32-5"><a href="#cb32-5"></a>  d <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">row.names =</span> features)</span>
+<span id="cb32-6"><a href="#cb32-6"></a>  <span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">seq_along</span>(fnames)) {</span>
+<span id="cb32-7"><a href="#cb32-7"></a>    fname <span class="ot">&lt;-</span> fnames[[i]]</span>
+<span id="cb32-8"><a href="#cb32-8"></a>    short_fname <span class="ot">&lt;-</span> short_fnames[[i]]</span>
+<span id="cb32-9"><a href="#cb32-9"></a>    flist <span class="ot">&lt;-</span> <span class="fu">freqlist</span>(fname, ...)</span>
+<span id="cb32-10"><a href="#cb32-10"></a>    flist <span class="ot">&lt;-</span> flist[features]</span>
+<span id="cb32-11"><a href="#cb32-11"></a>    d[[short_fname]] <span class="ot">&lt;-</span> flist</span>
+<span id="cb32-12"><a href="#cb32-12"></a>    }</span>
+<span id="cb32-13"><a href="#cb32-13"></a>  </span>
+<span id="cb32-14"><a href="#cb32-14"></a>  d <span class="sc">%&gt;%</span></span>
+<span id="cb32-15"><a href="#cb32-15"></a>    <span class="fu">as.matrix</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb32-16"><a href="#cb32-16"></a>    <span class="fu">t</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb32-17"><a href="#cb32-17"></a>    <span class="fu">drop_empty_rc</span>()</span>
+<span id="cb32-18"><a href="#cb32-18"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section><section id="obtain-coordinates" class="level2" data-number="6.2"><h2 data-number="6.2" class="anchored" data-anchor-id="obtain-coordinates">
+<span class="header-section-number">6.2</span> Obtain coordinates</h2>
+<p>By giving the output of <code>compile_frequencies()</code> to <code><a href="https://rdrr.io/pkg/ca/man/ca.html">ca()</a></code>, we obtain a correspondence analysis object that we could call <code>d_ca</code>. Next, we might want to write one or two functions to create the small tibbles with the row and column coordinates and the variables for plotting. Here I will show how to create one function <code>get_coords()</code> that takes the object <code>d_ca</code> and the subcorpora vector and returns a named list with two elements. Alternatively, you could also write two separate functions: one for the rows and one for the columns (the latter wouldn’t need the subcorpora vector).</p>
+<p>Here, lines 2-4 replicate the <code>texts_df</code> definition and lines 6-7, that of <code>words_df</code>. Lines 9-12 create and return a named list with both elements.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1"></a>get_coords <span class="ot">&lt;-</span> <span class="cf">function</span>(d_ca, sub_corp) {</span>
+<span id="cb33-2"><a href="#cb33-2"></a>  texts_df <span class="ot">&lt;-</span> <span class="fu">row_pcoord</span>(d_ca)[,<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>)] <span class="sc">%&gt;%</span> </span>
+<span id="cb33-3"><a href="#cb33-3"></a>    <span class="fu">as_tibble</span>(<span class="at">rownames =</span> <span class="st">"text"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb33-4"><a href="#cb33-4"></a>    <span class="fu">mutate</span>(<span class="at">Subcorpus =</span> sub_corp)</span>
+<span id="cb33-5"><a href="#cb33-5"></a>  </span>
+<span id="cb33-6"><a href="#cb33-6"></a>  words_df <span class="ot">&lt;-</span> <span class="fu">col_pcoord</span>(d_ca)[,<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>)] <span class="sc">%&gt;%</span> </span>
+<span id="cb33-7"><a href="#cb33-7"></a>    <span class="fu">as_tibble</span>(<span class="at">rownames =</span> <span class="st">"word"</span>)</span>
+<span id="cb33-8"><a href="#cb33-8"></a>  </span>
+<span id="cb33-9"><a href="#cb33-9"></a>  <span class="fu">list</span>(</span>
+<span id="cb33-10"><a href="#cb33-10"></a>    <span class="at">rows =</span> texts_df,</span>
+<span id="cb33-11"><a href="#cb33-11"></a>    <span class="at">cols =</span> words_df</span>
+<span id="cb33-12"><a href="#cb33-12"></a>  )</span>
+<span id="cb33-13"><a href="#cb33-13"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>If you wrote two separate functions, you could call them to generate <code>texts_df</code> and <code>words_df</code> separately. Instead, the output of <code>get_coords()</code> will be a list, let’s say <code>ca_coords</code>, of which the element <code>ca_coords$rows</code> will correspond to <code>texts_df</code> and <code>ca_coords$cols</code> will correspond to <code>words_df</code>.</p>
+</section><section id="plot" class="level2" data-number="6.3"><h2 data-number="6.3" class="anchored" data-anchor-id="plot">
+<span class="header-section-number">6.3</span> Plot</h2>
+<p>Finally, we can write a plotting function that covers everything we need to generate our plot. Such functions are extremely useful when writing papers in which you need to print multiple different plots with similar aesthetic characteristics. Moreover, if you have one function to generate a lot of different plots, i.e.&nbsp;scatterplots for different datasets, and you decide to change the color palette, the background color or the size of the points, you can simply adjust the function, and all the plots generated with it will change in response.</p>
+<p>The function below, <code>plot_ca()</code>, takes the result of <code>get_coords()</code> and a list with variance data extracted from <code>summary(d_ca)$scree[,3]</code>. Lines 2 and 3 take the variance information to include it in the axis labels, later defined in line 12. In lines 5 and 7, what used to be <code>texts_df</code> and <code>words_df</code> are now <code>ca_coords$rows</code> and <code>ca_coords$cols</code>, i.e.&nbsp;the elements “rows” and “cols” from the output of <code>get_coords()</code>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1"></a>plot_ca <span class="ot">&lt;-</span> <span class="cf">function</span>(ca_coords, variances) {</span>
+<span id="cb34-2"><a href="#cb34-2"></a>  dim_1 <span class="ot">&lt;-</span> <span class="fu">sprintf</span>(</span>
+<span id="cb34-3"><a href="#cb34-3"></a>    <span class="st">"Dimension 1 (%.2f %%)"</span>,</span>
+<span id="cb34-4"><a href="#cb34-4"></a>    variances[[<span class="dv">1</span>]]</span>
+<span id="cb34-5"><a href="#cb34-5"></a>    )</span>
+<span id="cb34-6"><a href="#cb34-6"></a>  dim_2 <span class="ot">&lt;-</span> <span class="fu">sprintf</span>(</span>
+<span id="cb34-7"><a href="#cb34-7"></a>    <span class="st">"Dimension 2 (%.2f %%)"</span>,</span>
+<span id="cb34-8"><a href="#cb34-8"></a>    variances[[<span class="dv">2</span>]]</span>
+<span id="cb34-9"><a href="#cb34-9"></a>    )</span>
+<span id="cb34-10"><a href="#cb34-10"></a>  </span>
+<span id="cb34-11"><a href="#cb34-11"></a>  <span class="fu">ggplot</span>(ca_coords<span class="sc">$</span>cols, <span class="fu">aes</span>(<span class="at">x =</span> V1, <span class="at">y =</span> V2)) <span class="sc">+</span></span>
+<span id="cb34-12"><a href="#cb34-12"></a>    <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> word), <span class="at">col =</span> <span class="st">"gray60"</span>) <span class="sc">+</span></span>
+<span id="cb34-13"><a href="#cb34-13"></a>    <span class="fu">geom_point</span>(</span>
+<span id="cb34-14"><a href="#cb34-14"></a>      <span class="at">data =</span> ca_coords<span class="sc">$</span>rows,</span>
+<span id="cb34-15"><a href="#cb34-15"></a>      <span class="fu">aes</span>(<span class="at">x =</span> V1, <span class="at">y =</span> V2, <span class="at">col =</span> Subcorpus)</span>
+<span id="cb34-16"><a href="#cb34-16"></a>      ) <span class="sc">+</span></span>
+<span id="cb34-17"><a href="#cb34-17"></a>    <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"#0000CD"</span>,<span class="st">"#DC143C"</span>)) <span class="sc">+</span></span>
+<span id="cb34-18"><a href="#cb34-18"></a>    <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>, <span class="at">color =</span> <span class="st">"darkgray"</span>) <span class="sc">+</span></span>
+<span id="cb34-19"><a href="#cb34-19"></a>    <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> <span class="dv">0</span>, <span class="at">color =</span> <span class="st">"darkgray"</span>) <span class="sc">+</span></span>
+<span id="cb34-20"><a href="#cb34-20"></a>    <span class="fu">theme_bw</span>(<span class="at">base_size =</span> <span class="dv">12</span>) <span class="sc">+</span></span>
+<span id="cb34-21"><a href="#cb34-21"></a>    <span class="fu">labs</span>(<span class="at">x =</span> dim_1, <span class="at">y =</span> dim_2) <span class="sc">+</span></span>
+<span id="cb34-22"><a href="#cb34-22"></a>    <span class="fu">coord_fixed</span>()</span>
+<span id="cb34-23"><a href="#cb34-23"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section><section id="example-first-case-study" class="level2 page-columns page-full" data-number="6.4"><h2 data-number="6.4" class="anchored" data-anchor-id="example-first-case-study">
+<span class="header-section-number">6.4</span> Example: first case study</h2>
+<p>With these functions, the code for the case study in <a href="#sec-function">Section&nbsp;2</a> (after loading <code>fnames</code>, <code>short_fnames</code> and <code>sub_corp</code>, of course) becomes the one below. After each line, we have a significant unit that we might want to inspect or manipulate.</p>
+<div class="cell page-columns page-full">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1"></a>features <span class="ot">&lt;-</span> <span class="fu">read_types</span>(<span class="st">"assets/ca-trump-clinton/function-words.txt"</span>)</span>
+<span id="cb35-2"><a href="#cb35-2"></a>d <span class="ot">&lt;-</span> <span class="fu">compile_frequencies</span>(features, fnames, short_fnames)</span>
+<span id="cb35-3"><a href="#cb35-3"></a>d_ca <span class="ot">&lt;-</span> <span class="fu">ca</span>(d)</span>
+<span id="cb35-4"><a href="#cb35-4"></a>ca_coords <span class="ot">&lt;-</span> <span class="fu">get_coords</span>(d_ca, sub_corp)</span>
+<span id="cb35-5"><a href="#cb35-5"></a><span class="fu">plot_ca</span>(ca_coords, <span class="fu">summary</span>(d_ca)<span class="sc">$</span>scree[,<span class="dv">3</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+<div class="no-row-height column-margin column-container"><div class="cell-output-display">
+<div id="fig-redo" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="ca-trump-clinton_files/figure-html/fig-redo-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption">Figure 6: CA plot with function words as features.</figcaption><p></p>
+</figure>
+</div>
+</div></div></div>
+<ul>
+<li><p>Line 1 reads the files with features; after it we can check whether it actually contains the items we wanted.</p></li>
+<li><p>Line 2 creates the matrix of documents by features, and we can inspect it afterwards with something like <code>d[1:10,1:10]</code> or <code>dim(d)</code>.</p></li>
+<li><p>Line 3 runs the correspondence analysis and we can inspect the output with <code>d_ca</code> or <code>summary(d_ca)</code>.</p></li>
+<li><p>Line 4 prepares the coordinates for plotting. We can then also check the most extreme features with <code>head(arrange(ca_coords$cols, desc(V1)))</code>, for example.</p></li>
+<li><p>Line 5 plots the dots on the components (<a href="#fig-redo">Figure&nbsp;6</a>).</p></li>
+</ul></section><section id="full-code" class="level2" data-number="6.5"><h2 data-number="6.5" class="anchored" data-anchor-id="full-code">
+<span class="header-section-number">6.5</span> Full code</h2>
+<p>The full code of this document could then be compressed as in the chunk below. Notice that here I have excluded all calls to <code><a href="https://rdrr.io/r/base/print.html">print()</a></code>, <code><a href="https://rdrr.io/pkg/kableExtra/man/kbl.html">kbl()</a></code> and <code><a href="https://rdrr.io/pkg/kableExtra/man/kable_classic.html">kable_paper()</a></code>. I have also used different variable names for the different studies instead of overwriting variables, since it can cause problems when you lose track of what is stored as what. Finally, I dedicated a line to define the path to the corpus and one to define the path to the lists of function words and the stoplist.</p>
+<div class="cell">
+<div class="sourceCode" id="cb36"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">assets</span> <span class="op">&lt;-</span> <span class="st">"assets/ca-trump-clinton"</span></span>
+<span><span class="va">ct_corpus</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/file.path.html">file.path</a></span><span class="op">(</span><span class="va">corpus_folder</span>, <span class="st">"clinton_trump"</span><span class="op">)</span></span>
+<span><span class="va">fnames</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/fnames.html">get_fnames</a></span><span class="op">(</span><span class="va">ct_corpus</span><span class="op">)</span></span>
+<span><span class="va">short_fnames</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/short_names.html">short_names</a></span><span class="op">(</span><span class="va">fnames</span><span class="op">)</span></span>
+<span><span class="va">sub_corp</span> <span class="op">&lt;-</span> <span class="va">fnames</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/re_convenience.html">re_retrieve_first</a></span><span class="op">(</span></span>
+<span>    <span class="st">"/clinton_trump/([^/]+)"</span>,</span>
+<span>    requested_group <span class="op">=</span> <span class="fl">1</span></span>
+<span>    <span class="op">)</span></span>
+<span></span>
+<span><span class="co"># First case study ----</span></span>
+<span><span class="va">features1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/read_types.html">read_types</a></span><span class="op">(</span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/base/file.path.html">file.path</a></span><span class="op">(</span><span class="va">assets</span>, <span class="st">"function-words.txt"</span><span class="op">)</span></span>
+<span>  <span class="op">)</span></span>
+<span><span class="va">d1</span> <span class="op">&lt;-</span> <span class="fu">compile_frequencies</span><span class="op">(</span><span class="va">features1</span>, <span class="va">fnames</span>, <span class="va">short_fnames</span><span class="op">)</span></span>
+<span><span class="va">d1</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">10</span>, <span class="fl">1</span><span class="op">:</span><span class="fl">10</span><span class="op">]</span></span>
+<span></span>
+<span><span class="va">d_ca1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/ca/man/ca.html">ca</a></span><span class="op">(</span><span class="va">d</span><span class="op">)</span></span>
+<span><span class="va">ca_coords1</span> <span class="op">&lt;-</span> <span class="fu">get_coords</span><span class="op">(</span><span class="va">d_ca1</span>, <span class="va">sub_corp</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">ca_coords1</span><span class="op">$</span><span class="va">rows</span><span class="op">)</span></span>
+<span><span class="fu">plot_ca</span><span class="op">(</span><span class="va">ca_coords1</span>, <span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span><span class="op">(</span><span class="va">d_ca1</span><span class="op">)</span><span class="op">$</span><span class="va">scree</span><span class="op">[</span>,<span class="fl">3</span><span class="op">]</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co">## Inspect extremes ----</span></span>
+<span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/arrange.html">arrange</a></span><span class="op">(</span><span class="va">ca_coords1</span><span class="op">$</span><span class="va">cols</span>, <span class="fu"><a href="https://dplyr.tidyverse.org/reference/desc.html">desc</a></span><span class="op">(</span><span class="va">V2</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="fl">20</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/arrange.html">arrange</a></span><span class="op">(</span><span class="va">ca_coords1</span><span class="op">$</span><span class="va">cols</span>, <span class="va">V2</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="fl">20</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Second case study ----</span></span>
+<span><span class="va">stop_list</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/read_types.html">read_types</a></span><span class="op">(</span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/base/file.path.html">file.path</a></span><span class="op">(</span><span class="va">assets</span>, <span class="st">"stop_list.txt"</span><span class="op">)</span></span>
+<span><span class="op">)</span></span>
+<span><span class="va">features2</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/freqlist.html">freqlist</a></span><span class="op">(</span><span class="va">fnames</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/keep_types.html">drop_types</a></span><span class="op">(</span><span class="va">stop_list</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/keep_bool.html">keep_bool</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/pkg/mclm/man/ranks.html">ranks</a></span><span class="op">(</span><span class="va">.</span><span class="op">)</span> <span class="op">&lt;=</span> <span class="fl">150</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/as_types.html">as_types</a></span><span class="op">(</span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">d2</span> <span class="op">&lt;-</span> <span class="fu">compile_frequencies</span><span class="op">(</span><span class="va">features2</span>, <span class="va">fnames</span>, <span class="va">short_fnames</span><span class="op">)</span></span>
+<span><span class="va">d_ca2</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/ca/man/ca.html">ca</a></span><span class="op">(</span><span class="va">d2</span><span class="op">)</span></span>
+<span><span class="va">ca_coords2</span> <span class="op">&lt;-</span> <span class="fu">get_coords</span><span class="op">(</span><span class="va">d_ca2</span>, <span class="va">sub_corp</span><span class="op">)</span></span>
+<span><span class="fu">plot_ca</span><span class="op">(</span><span class="va">ca_coords2</span>, <span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span><span class="op">(</span><span class="va">d_ca2</span><span class="op">)</span><span class="op">$</span><span class="va">scree</span><span class="op">[</span>,<span class="fl">3</span><span class="op">]</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co">## Zoomed-in plot ----</span></span>
+<span><span class="fu">plot_ca</span><span class="op">(</span><span class="va">ca_coords2</span>, <span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span><span class="op">(</span><span class="va">d_ca2</span><span class="op">)</span><span class="op">$</span><span class="va">scree</span><span class="op">[</span>,<span class="fl">3</span><span class="op">]</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/coord_fixed.html">coord_fixed</a></span><span class="op">(</span>xlim <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">0.5</span><span class="op">)</span>, ylim <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">0.5</span>, <span class="fl">0</span><span class="op">)</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co">## Select items ----</span></span>
+<span><span class="va">ca_coords2</span><span class="op">$</span><span class="va">cols</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span><span class="op">(</span><span class="va">V1</span> <span class="op">&gt;=</span> <span class="fl">0</span> <span class="op">&amp;</span> <span class="va">V1</span> <span class="op">&lt;=</span> <span class="fl">0.5</span> <span class="op">&amp;</span> <span class="va">V2</span> <span class="op">&gt;=</span> <span class="op">-</span><span class="fl">0.5</span> <span class="op">&amp;</span> <span class="va">V2</span> <span class="op">&lt;=</span> <span class="fl">0</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Third case study ----</span></span>
+<span><span class="va">features3</span> <span class="op">&lt;-</span> <span class="va">fnames</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/freqlist.html">freqlist</a></span><span class="op">(</span>ngram_size <span class="op">=</span> <span class="fl">2</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/keep_re.html">drop_re</a></span><span class="op">(</span><span class="st">"(applause|cheering|--)"</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/keep_bool.html">keep_bool</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/pkg/mclm/man/ranks.html">ranks</a></span><span class="op">(</span><span class="va">.</span><span class="op">)</span> <span class="op">&lt;=</span> <span class="fl">150</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/as_types.html">as_types</a></span><span class="op">(</span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">d3</span> <span class="op">&lt;-</span> <span class="fu">compile_frequencies</span><span class="op">(</span></span>
+<span>  <span class="va">features3</span>,</span>
+<span>  <span class="va">fnames</span>,</span>
+<span>  <span class="va">short_fnames</span>,</span>
+<span>  ngram_size <span class="op">=</span> <span class="fl">2</span></span>
+<span>  <span class="op">)</span></span>
+<span><span class="va">d_ca3</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/ca/man/ca.html">ca</a></span><span class="op">(</span><span class="va">d3</span><span class="op">)</span></span>
+<span><span class="va">ca_coords3</span> <span class="op">&lt;-</span> <span class="fu">get_coords</span><span class="op">(</span><span class="va">d_ca3</span>, <span class="va">sub_corp</span><span class="op">)</span></span>
+<span><span class="fu">plot_ca</span><span class="op">(</span><span class="va">ca_coords3</span>, <span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span><span class="op">(</span><span class="va">d_ca3</span><span class="op">)</span><span class="op">$</span><span class="va">scree</span><span class="op">[</span>,<span class="fl">3</span><span class="op">]</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co">## Inspect extremes ----</span></span>
+<span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/arrange.html">arrange</a></span><span class="op">(</span><span class="va">ca_coords3</span><span class="op">$</span><span class="va">cols</span>, <span class="va">V1</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="fl">20</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/arrange.html">arrange</a></span><span class="op">(</span><span class="va">ca_coords3</span><span class="op">$</span><span class="va">cols</span>, <span class="fu"><a href="https://dplyr.tidyverse.org/reference/desc.html">desc</a></span><span class="op">(</span><span class="va">V1</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="fl">20</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Fourth case study ----</span></span>
+<span><span class="va">features4</span> <span class="op">&lt;-</span> <span class="va">fnames</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/freqlist.html">freqlist</a></span><span class="op">(</span>ngram_size <span class="op">=</span> <span class="fl">3</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/keep_re.html">drop_re</a></span><span class="op">(</span><span class="st">"(applause|cheering|--)"</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/keep_bool.html">keep_bool</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/pkg/mclm/man/ranks.html">ranks</a></span><span class="op">(</span><span class="va">.</span><span class="op">)</span> <span class="op">&lt;=</span> <span class="fl">150</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/as_types.html">as_types</a></span><span class="op">(</span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">d4</span> <span class="op">&lt;-</span> <span class="fu">compile_frequencies</span><span class="op">(</span></span>
+<span>  <span class="va">features4</span>,</span>
+<span>  <span class="va">fnames</span>,</span>
+<span>  <span class="va">short_fnames</span>,</span>
+<span>  ngram_size <span class="op">=</span> <span class="fl">4</span></span>
+<span>  <span class="op">)</span></span>
+<span><span class="va">d_ca4</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/ca/man/ca.html">ca</a></span><span class="op">(</span><span class="va">d4</span><span class="op">)</span></span>
+<span><span class="va">ca_coords4</span> <span class="op">&lt;-</span> <span class="fu">get_coords</span><span class="op">(</span><span class="va">d_ca4</span>, <span class="va">sub_corp</span><span class="op">)</span></span>
+<span><span class="fu">plot_ca</span><span class="op">(</span><span class="va">ca_coords4</span>, <span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span><span class="op">(</span><span class="va">d_ca4</span><span class="op">)</span><span class="op">$</span><span class="va">scree</span><span class="op">[</span>,<span class="op">]</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co">## Inspect extremes ----</span></span>
+<span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/arrange.html">arrange</a></span><span class="op">(</span><span class="va">ca_coords4</span><span class="op">$</span><span class="va">cols</span>, <span class="va">V1</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="fl">20</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/arrange.html">arrange</a></span><span class="op">(</span><span class="va">ca_coords4</span><span class="op">$</span><span class="va">cols</span>, <span class="fu"><a href="https://dplyr.tidyverse.org/reference/desc.html">desc</a></span><span class="op">(</span><span class="va">V1</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="fl">20</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+
+
+</section></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer"><div class="nav-footer">
+      <div class="nav-footer-center">Methods in Corpus Linguistics — Mariana Montes, 2022</div>
+  </div>
+</footer>
+
+
+</body></html>

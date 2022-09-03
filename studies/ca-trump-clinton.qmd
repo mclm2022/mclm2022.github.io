@@ -3,8 +3,7 @@ title: "CA applied to the Trump-Clinton speeches"
 number-sections: true
 ---
 
-This document illustrates how to use *correspondence analysis* (CA) to investigate the similarities between Clinton speeches and Trump speeches in a corpus that collects them.
-The approach adopts a bird's-eye perspective, looking at the broad picture we get if we aggregate over a wide range of **features** of the speeches.
+This document illustrates how to use *correspondence analysis* (CA) to investigate the similarities between Clinton speeches and Trump speeches in a corpus that collects them. The approach adopts a bird's-eye perspective, looking at the broad picture we get if we aggregate over a wide range of **features** of the speeches.
 
 A major advantage of the technique is that we can both compare the different documents based on the selected features, but also compare the features based on the documents they occur in and also see which features or groups of features are the ones that account for the most important dissimilarities between the documents.
 
@@ -25,9 +24,7 @@ var_percent <- scales::label_percent(scale = 1, accuracy = 0.01)
 We start by activating the R packages we will use, namely `{tidyverse}`, `{mclm}` and, for nice tables when reporting, `{kableExtra}`.
 
 ::: callout-note
-
 While we conduct correspondence analysis with `ca::ca()`, we don't need to attach the `{ca}` package separately, since it's already loaded with `{mclm}`.
-
 :::
 
 ```{r}
@@ -70,9 +67,7 @@ tibble(
 The code below will be implemented in each of the case studies below with the only difference in the `freqlist()` call in line 5.
 
 ::: callout-tip
-
 In practice, if you were to run an analysis where this much code will be used over and over again with multiple modifications, it would be preferable to wrap it in functions. @sec-custom will show you how, if you're interested.
-
 :::
 
 The first part of the code builds the matrix that we will apply the correspondence analysis to. This is an object of the data type `matrix` with as its rows the files and as its columns the features, and in the cells the absolute frequencies of the features in the files.
@@ -134,33 +129,29 @@ ggplot(words_df, aes(x = V1, y = V2)) +
 
 What does each line from 26 to 34 do in the code chunk above?
 
-- Line 26 calls `ggplot()` with the dataframe of columns (the features), assigning the variables "V1" and "V2" to the `x` and `y` coordiantes respectively. These are the automatic names given by `as_tibble()` in line 21 when we converted a matrix without column names.
+-   Line 26 calls `ggplot()` with the dataframe of columns (the features), assigning the variables "V1" and "V2" to the `x` and `y` coordiantes respectively. These are the automatic names given by `as_tibble()` in line 21 when we converted a matrix without column names.
 
-- Line 27 plots the items of the variable "word" (the types of our features) as text, in the color "gray60".
+-   Line 27 plots the items of the variable "word" (the types of our features) as text, in the color "gray60".
 
-- Line 28 plots the items of the dataframe of rows (documents) as dots, also with "V1" and "V2" in the axes but moreover with "Subcorpus" providing the color aesthetics.
+-   Line 28 plots the items of the dataframe of rows (documents) as dots, also with "V1" and "V2" in the axes but moreover with "Subcorpus" providing the color aesthetics.
 
-- Line 29 defines manually the colors to map to the "Subcorpus" variable. We could also use a variety of palettes, different colors, or remove the line and use the default color scheme of `{ggplot2}`.
+-   Line 29 defines manually the colors to map to the "Subcorpus" variable. We could also use a variety of palettes, different colors, or remove the line and use the default color scheme of `{ggplot2}`.
 
-- Lines 30 and 31 add a horizontal and vertical line respectively, the former where `y = 0` and the latter where `x = 0`, both in dark gray.
+-   Lines 30 and 31 add a horizontal and vertical line respectively, the former where `y = 0` and the latter where `x = 0`, both in dark gray.
 
-- Line 32 sets the theme and the base size for the font. This only matters aesthetically and could be made different.
+-   Line 32 sets the theme and the base size for the font. This only matters aesthetically and could be made different.
 
-- Line 33 assign the variables `dim_1` and `dim_2`, defined in lines 23 and 24, as the labels of the `x` and `y` axes.
+-   Line 33 assign the variables `dim_1` and `dim_2`, defined in lines 23 and 24, as the labels of the `x` and `y` axes.
 
-- Line 34 indicates that the units of both axes should be the same, which is not the default case for `{ggplot2}` plots. The numbers themselves of the coordinates are not meaningful, but the distances between the points are, and they assume that the distance between the point in $(0,1)$ (where $x = 0$ and $y = 1$) and the centroid $(0, 0)$ is the same as the distance between the point $(1,0)$ and the centroid $(0,0)$. `coord_fixed()` makes sure that's the case.
-
+-   Line 34 indicates that the units of both axes should be the same, which is not the default case for `{ggplot2}` plots. The numbers themselves of the coordinates are not meaningful, but the distances between the points are, and they assume that the distance between the point in $(0,1)$ (where $x = 0$ and $y = 1$) and the centroid $(0, 0)$ is the same as the distance between the point $(1,0)$ and the centroid $(0,0)$. `coord_fixed()` makes sure that's the case.
 :::
 
 # Function words as features {#sec-function}
 
-In a first approach, we use so-called *function words* as features.[Function words include closed word classes such as pronouns, prepositions, auxiliaries, etc., as opposed to so-called *content words* such as nouns, verbs, adjectives...]{.aside}
-In the field of *stylometry*, which is devoted to the quantitative study of linguistics style (e.g. in support of authorship attribution), it has long been established that function words are a powerful instrument in support of the identification of typical or even unique characteristics of the style of a specific author (or group of authors). 
+In a first approach, we use so-called *function words* as features.[Function words include closed word classes such as pronouns, prepositions, auxiliaries, etc., as opposed to so-called *content words* such as nouns, verbs, adjectives...]{.aside} In the field of *stylometry*, which is devoted to the quantitative study of linguistics style (e.g. in support of authorship attribution), it has long been established that function words are a powerful instrument in support of the identification of typical or even unique characteristics of the style of a specific author (or group of authors).
 
 ::: callout-note
-
 Zooming in on function words steers the analysis away from differences related to topic/content and foregrounds differences related to style. Using function words by no means is the only way to do this (alternatives are (i) zooming in on longer n-grams, e.g. 3-grams, 4-grams, or, (ii) if the information is available, looking at the frequencies of POS tags or POS tag n-grams, or (iii) looking at derived features such as lexical density, word length, sentence length, etc..
-
 :::
 
 ## Specifying the features
@@ -264,7 +255,7 @@ ggplot(words_df, aes(x = V1, y = V2)) +
 
 Since the dimension that sets apart the Clinton speeches (top) most clearly from the Trump speeches (bottom) is the second dimension (y-axis), we may want to inspect the features that occupy extreme positions on the y-axis (and that hence contribute importantly to the y-axis). This is shown in @tbl-extremes1
 
-The code below selects sorts the dataframe with features information based on their coordinates in the second dimension ("V2") and extracts the first 20 elements. @tbl-extremes1-1 has the highest values in the y-axis, i.e. the 20 features most typical of Clinton's speeches, whereas @tbl-extremes1-2 has the lowest values in the y-axis, i.e. the 20features most typical of Trump's speeches. 
+The code below selects sorts the dataframe with features information based on their coordinates in the second dimension ("V2") and extracts the first 20 elements. @tbl-extremes1-1 has the highest values in the y-axis, i.e. the 20 features most typical of Clinton's speeches, whereas @tbl-extremes1-2 has the lowest values in the y-axis, i.e. the 20features most typical of Trump's speeches.
 
 ```{r}
 #| label: tbl-extremes1
@@ -305,7 +296,6 @@ features <- freqlist(fnames) %>%
   as_types() %>%
   print(n = 10)
 ```
-
 
 ## Next steps and plot
 
@@ -398,7 +388,6 @@ features <- fnames %>%
 The rest of the steps again is identical to what it was in the previous analysis, except that when we build frequency lists for each file, we must make sure that here too we build a frequency list of bigrams.
 
 ::: callout-tip
-
 The step `drop_re("(applause|cheering|--)")` is not necessary here, because bigrams containing `applause`, `cheering`, or `--` are not part of the feature list anyway.
 :::
 
@@ -564,8 +553,7 @@ One way of going about this with the code in this document is by writing one fun
 
 The function below, `compile_frequencies()`, takes as arguments the `features`, the `fnames`, the `short_fnames` and the different arguments we want to give to `freqlist()`, since that will change in each case study.
 
-Line 5 creates the empty dataframe with the `features` as rows. Lines 6 through 12 run the for loop across filenames that creates one frequency list per document, filters it by the features and adds them as a column to the dataframe. The `...` in the `freqlist()` call in line 9 provides whatever arguments we have given at the end of `compile_frequencies()` (other than the three main ones), if any, to `freqlist()`.
-Finally, lines 14 through 17 turn the dataframe into a matrix, transpose it and remove all empty rows and columns. This is what is returned by the function: the output of `compile_frequencies()` is a matrix of frequencies that we can inspect and manipulate as needed, and that would be given to `ca()`.
+Line 5 creates the empty dataframe with the `features` as rows. Lines 6 through 12 run the for loop across filenames that creates one frequency list per document, filters it by the features and adds them as a column to the dataframe. The `...` in the `freqlist()` call in line 9 provides whatever arguments we have given at the end of `compile_frequencies()` (other than the three main ones), if any, to `freqlist()`. Finally, lines 14 through 17 turn the dataframe into a matrix, transpose it and remove all empty rows and columns. This is what is returned by the function: the output of `compile_frequencies()` is a matrix of frequencies that we can inspect and manipulate as needed, and that would be given to `ca()`.
 
 ```{r}
 #| label: compile-freqs
@@ -620,8 +608,7 @@ If you wrote two separate functions, you could call them to generate `texts_df` 
 
 Finally, we can write a plotting function that covers everything we need to generate our plot. Such functions are extremely useful when writing papers in which you need to print multiple different plots with similar aesthetic characteristics. Moreover, if you have one function to generate a lot of different plots, i.e. scatterplots for different datasets, and you decide to change the color palette, the background color or the size of the points, you can simply adjust the function, and all the plots generated with it will change in response.
 
-The function below, `plot_ca()`, takes the result of `get_coords()` and a list with variance data extracted from `summary(d_ca)$scree[,3]`. Lines 2 and 3 take the variance information to include it in the axis labels, later defined in line 12.
-In lines 5 and 7, what used to be `texts_df` and `words_df` are now `ca_coords$rows` and `ca_coords$cols`, i.e. the elements "rows" and "cols" from the output of `get_coords()`.
+The function below, `plot_ca()`, takes the result of `get_coords()` and a list with variance data extracted from `summary(d_ca)$scree[,3]`. Lines 2 and 3 take the variance information to include it in the axis labels, later defined in line 12. In lines 5 and 7, what used to be `texts_df` and `words_df` are now `ca_coords$rows` and `ca_coords$cols`, i.e. the elements "rows" and "cols" from the output of `get_coords()`.
 
 ```{r}
 #| label: plot-function
@@ -667,15 +654,15 @@ ca_coords <- get_coords(d_ca, sub_corp)
 plot_ca(ca_coords, summary(d_ca)$scree[,3])
 ```
 
-- Line 1 reads the files with features; after it we can check whether it actually contains the items we wanted.
+-   Line 1 reads the files with features; after it we can check whether it actually contains the items we wanted.
 
-- Line 2 creates the matrix of documents by features, and we can inspect it afterwards with something like `d[1:10,1:10]` or `dim(d)`.
+-   Line 2 creates the matrix of documents by features, and we can inspect it afterwards with something like `d[1:10,1:10]` or `dim(d)`.
 
-- Line 3 runs the correspondence analysis and we can inspect the output with `d_ca` or `summary(d_ca)`.
+-   Line 3 runs the correspondence analysis and we can inspect the output with `d_ca` or `summary(d_ca)`.
 
-- Line 4 prepares the coordinates for plotting. We can then also check the most extreme features with `head(arrange(ca_coords$cols, desc(V1)))`, for example.
+-   Line 4 prepares the coordinates for plotting. We can then also check the most extreme features with `head(arrange(ca_coords$cols, desc(V1)))`, for example.
 
-- Line 5 plots the dots on the components (@fig-redo).
+-   Line 5 plots the dots on the components (@fig-redo).
 
 ## Full code
 
@@ -775,4 +762,3 @@ plot_ca(ca_coords4, summary(d_ca4)$scree[,])
 arrange(ca_coords4$cols, V1) %>% head(20)
 arrange(ca_coords4$cols, desc(V1)) %>% head(20)
 ```
-

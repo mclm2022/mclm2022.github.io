@@ -1,0 +1,317 @@
+---
+title: "Correspondence Analysis"
+format: revealjs
+execute:
+  echo: true
+---
+
+## Correspondence Analysis
+
+Dimension reduction technique for "count" data.
+
+Visualization: **biplot**, showing relationships:
+
+- between rows
+
+- between columns
+
+- between rows and columns.
+
+## Count data
+
+```{r}
+#| label: setup
+library(tidyverse)
+library(mclm)
+data(smoke)
+smoke
+```
+
+::: {.incremental}
+
+- Rows = staff category (Senior/Junior manager/employee, Secretary)
+
+- Columns = smoking category (from none to heavy)
+
+- Cells = **counts**, e.g. 4 of the senior managers don't smoke.
+
+:::
+
+## Biplot
+
+```{r}
+#| label: plot1
+smoke_ca <- ca(smoke)
+plot(smoke_ca)
+```
+
+# Terminology
+
+```{r}
+#| label: myfunc
+#| include: false
+library(kableExtra)
+print_matrix <- function(mtx) {
+  k <- kbl(mtx, booktabs = TRUE, digits = 3) %>% 
+    kable_classic(full_width = FALSE, font_size = 20)
+  if ("Sum" %in% colnames(mtx)) {
+    k <- column_spec(k, ncol(mtx)+1,
+                     bold = TRUE)
+  }
+  if ("Sum" %in% rownames(mtx)) {
+    k <- row_spec(k, nrow(mtx),
+                  bold = TRUE)
+  }
+  k
+}
+```
+
+## Original matrix $N$
+
+:::: {.columns}
+
+::: {.column width="35%"}
+$n \times m$ matrix with frequency counts $n_{ij}$
+
+- $n$ = `r nrow(smoke)`
+- $m$ = `r length(smoke)`
+- $n_{\mathrm{SE, light}}$ = `r smoke["SE", "light"]`
+
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="60%"}
+```{r}
+#| label: original-matrix
+smoke_mtx <- as.matrix(smoke)
+print_matrix(smoke_mtx)
+```
+
+:::
+
+::::
+
+::: {.aside}
+Check out the source code of the slides if you want to use `print_matrix()`.
+:::
+
+## Correspondence matrix $P$
+
+$n \times m$ matrix with overall proportions $p_{ij}$
+
+:::: {.columns}
+
+::: {.column width="35%"}
+
+### Mass
+
+- $p_{\mathrm{(SE,light)}}$ = `r formatC(prop.table(smoke_mtx)["SE", "light"], digits = 3)`
+
+- $p_{\mathrm{SE}}$ = `r formatC(sum(prop.table(smoke_mtx)["SE",]), digits = 3)`
+
+- $p_{\mathrm{light}}$ = `r formatC(sum(prop.table(smoke_mtx)[, "light"]), digits = 3)`
+
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="60%"}
+```{r}
+#| label: correspondence-matrix
+prop.table(smoke_mtx) %>% 
+  addmargins() %>% 
+  print_matrix()
+```
+
+:::
+
+::::
+
+## Row profiles matrix $R$
+
+:::: {.columns}
+
+::: {.column width="35%"}
+$n \times m$ matrix with overall row proportions $r_{ij}$
+
+- $r_{\mathrm{SE,light}}$ = `r formatC(prop.table(smoke_mtx, 1)["SE", "light"], digits = 3)`
+
+- columns are dimensions in the **row points cloud**
+
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="60%"}
+```{r}
+#| label: row-profiles-matrix
+prop.table(smoke_mtx, 1) %>% 
+  addmargins(1) %>% 
+  print_matrix()
+```
+
+:::
+
+::::
+
+## Column profiles matrix $C$
+
+:::: {.columns}
+
+::: {.column width="35%"}
+$n \times m$ matrix with overall column proportions $c_{ij}$
+
+- $c_{\mathrm{(SE,light)}}$ = `r formatC(prop.table(smoke_mtx, 2)["SE", "light"], digits = 3)`
+
+- rows are dimensions in the **column points cloud**
+
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="60%"}
+```{r}
+#| label: column-profiles-matrix
+prop.table(smoke_mtx, 2) %>% 
+  addmargins(2) %>% 
+  print_matrix()
+```
+
+:::
+
+::::
+
+## Chi-squared distances {.smaller}
+
+- Euclidean distance
+
+$$\sqrt{\sum_{j=1}^m(r_{ij}-r_{i'j})^2}$$
+
+- Chi-squared distance - it divides by the mass of the row/columns^[It corrects for the fact that the more data you have, the more variability you can expect.]
+
+$$\sqrt{\sum_{j=1}^m\frac{(r_{ij}-r_{i'j})^2}{p_{.j}}}$$
+
+## Inertia
+
+Sum of the squares of the residuals.
+
+The cell contribution of cell $ij$ = $\frac{(p_{ij}-(p_{i.} \times p_{.j}))^2}{p_i\times p_{.j}}$
+
+:::: {.columns}
+
+::: {.column}
+```{r}
+#| label: inertia-counts
+addmargins(smoke_mtx) %>% 
+  print_matrix
+```
+
+:::
+
+::: {.column .incremental .smaller}
+
+...for cell ["SE", "none"]
+
+```{r}
+#| label: inertia-example
+#| include: false
+n_ij <- smoke_mtx[1,1]
+r_i <- sum(smoke_mtx[1,])
+c_j <- sum(smoke_mtx[,1])
+nn <- sum(smoke_mtx)
+```
+
+- $p_{ij} = \frac{`r n_ij`}{`r nn`} = `r n_ij/nn`$
+
+- $p_{i.} = \frac{`r r_i`}{`r nn`} = `r r_i/nn`$
+
+- $p_{.j} = \frac{`r c_j`}{`r nn`} = `r c_j/nn`$
+
+- $p_{i.} \times p_{.j} = \frac{`r r_i`}{`r nn`} \times \frac{`r c_j`}{`r nn`} = `r round((r_i*c_j/nn), 3)`$
+
+:::
+
+::::
+
+## Inertia
+
+Sum of the squares of the residuals.
+
+The cell contribution of cell $ij$ = $\frac{(p_{ij}-(p_{i.} \times p_{.j}))^2}{p_i\times p_{.j}}$
+
+:::: {.columns}
+
+::: {.column}
+```{r}
+#| label: inertia-prop
+prop.table(smoke_mtx) %>% 
+  addmargins() %>% 
+  print_matrix
+```
+
+:::
+
+::: {.column .incremental .smaller}
+
+...for cell ["SE", "none"]
+
+<!-- TODO THINK ABOUT THIS -->
+
+```{r}
+#| label: inertia-example-prop
+#| include: false
+p_ij <- prop.table(smoke_mtx)[1,1]
+p_i <- round(sum(prop.table(smoke_mtx)[1,]), 3)
+p_j <- round(sum(prop.table(smoke_mtx)[,1]), 3)
+expected <- sum(prop.table(smoke_mtx)[1,])*sum(prop.table(smoke_mtx)[,1])
+```
+
+- $\frac{(p_{ij}-(p_{i.} \times p_{.j}))^2}{p_i\times p_{.j}}$
+
+- $\frac{(`r p_ij`-(`r p_i` \times `r p_j`))^2}{`r p_i` \times `r p_j`}$
+
+- $\frac{(`r p_ij`-`r round(expected, 3)`)^2}{`r round(expected, 3)`} = `r round(((p_ij-expected)^2)/expected, 4)`$
+
+:::
+
+::::
+
+## Computing $\chi^2$
+
+```{r}
+#| label: chisq
+smoke_chisq <- chisq.test(smoke)
+smoke_chisq
+```
+
+:::: {.columns}
+
+::: {.column}
+```{r}
+#| label: expected
+smoke_chisq$expected %>% print_matrix()
+```
+:::
+
+::: {.column}
+```{r}
+#| label: residuals
+smoke_chisq$residuals %>% print_matrix()
+```
+:::
+
+::::
+
+
+## Inertia of a row
+
+...the sum of the cell contributions to the inertia of all cells of a row
+
+- the row mass $p_{i.}$ multiplied by the square of the row distance to the centroid of the row points cloud
+
+(Same for the columns)

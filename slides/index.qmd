@@ -1,6 +1,5 @@
 ---
 title: "Slides"
-editor: visual
 ---
 
 These are the slides of the course, Fall of 2022.
@@ -11,6 +10,16 @@ These are the slides of the course, Fall of 2022.
 
 ```{=html}
 <iframe class="slide-deck" src="logistic-regression.html"></iframe>
+```
+
+</div>
+
+# [Correspondence Analysis](correspondence-analysis.qmd){target="_blank"}
+
+<div>
+
+```{=html}
+<iframe class="slide-deck" src="correspondence-analysis.html"></iframe>
 ```
 
 </div>

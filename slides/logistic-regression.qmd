@@ -4,7 +4,6 @@ format:
   revealjs:
     slide-number: true
     show-slide-number: all
-editor: visual
 execute:
   echo: true
 ---
@@ -17,16 +16,14 @@ execute:
 library(tidyverse)
 ```
 
-Is this html according to rmarkdown? `r knitr::is_html_output()`
-
-|                                                      | Linear regression            | Logistic regression                                                      |
+| | Linear regression | Logistic regression |
 |----------------------|-------------------------|-------------------------|
-| Response variable                                    | Numerical                    | Categorical                                                              |
-| Relationship between predictor estimate and response | Linear                       | Logistic (linear relationship between estimate and log odds of response) |
-| Fitting function                                     | OSL (ordinary least squares) | MLE (maximum likelihood estimation)                                      |
-| Model comparison                                     | F-test                       | AIC                                                                      |
-| Evaluation metric                                    | $R^2$                        | $C$                                                                      |
-| Base R function                                      | `lm()`                       | `glm()`                                                                  |
+| Response variable | Numerical | Categorical |
+| Relationship between predictor estimate and response | Linear | Logistic (linear relationship between estimate and log odds of response) |
+| Fitting function | OSL (ordinary least squares) | MLE (maximum likelihood estimation) |
+| Model comparison | F-test  | AIC |
+| Evaluation metric | $R^2$ | $C$ |
+| Base R function | `lm()` | `glm()` |
 
 # Simple linear regression
 
@@ -271,7 +268,7 @@ We cannot fit a simple straight line <!-- TODO create plot -->
 ## Probabilities, odds and logit {.smaller}
 
 | Value                                                 | Range              | Neutral value | Description                                                                                                     |
-|-----------------|-----------------|-----------------|----------------------|
+|-----------------|-----------------|-----------------|---------------------|
 | probabilities <br> $P$                                | 0-1                | 0.5           | Number of successes divided by number of trials                                                                 |
 | odds <br> $\frac{P}{1-P}$                             | 0-$\infty$         | 1             | Probability of success divided by the probability of failure. <br> Undefined for $P=1$                          |
 | logit, log odds <br> $\log\left(\frac{P}{1-P}\right)$ | $-\infty$-$\infty$ | 0             | If positive, success is more likely; if negative failure is more likely. <br> Undefined for $P=0$ and for $P=1$ |
