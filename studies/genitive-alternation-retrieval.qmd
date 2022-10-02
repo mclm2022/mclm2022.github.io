@@ -1,6 +1,5 @@
 ---
 title: "Genitive Alternation I: Retrieval"
-editor: visual
 ---
 
 This is the first part of a variation study focusing on the genitive alternation in English, using the Brown corpus. This part focuses on retrieving observations of the alternation, whereas the second part will illustrate the analysis with conditional inference trees and mixed-effects logistic regression. One of the reasons to split the analysis in two is that, more often than not, between retrieval and analysis there is an additional step of manual cleaning or annotation of the dataset.
@@ -8,7 +7,7 @@ This is the first part of a variation study focusing on the genitive alternation
 ```{r}
 #| include: false
 #| label: setup
-corpus_folder <- "_corpora"
+corpus_folder <- here::here("studies", "_corpora", "brown")
 data_folder <- "assets/genitive-alternation"
 ```
 
@@ -29,9 +28,9 @@ We'll collect the files from the Brown corpus. To replicate this code, adjust th
 
 ```{r}
 #| label: read
-brown_fnames <- get_fnames(file.path(corpus_folder, "brown")) %>% 
+brown_fnames <- get_fnames(corpus_folder) %>% 
   keep_re("/c[a-z][0-9]{2}")
-print(brown_fnames, n = 10)
+print(brown_fnames, n = 10, hide_path = corpus_folder)
 ```
 
 ## POS tags
@@ -41,8 +40,7 @@ The text in this corpus looks as follows, with word forms followed by a part-of-
 ```{r}
 #| echo: false
 #| label: example
-file.path(corpus_folder, "brown") %>% 
-  dir(full.names = TRUE) %>% 
+dir(corpus_folder, full.names = TRUE) %>% 
   .[[1]] %>% 
   readLines() %>% 
   .[[3]] %>%
@@ -567,6 +565,7 @@ In the following code:
 #| label: print-examples
 examples <- cd %>% 
   as_tibble() %>% 
+  mutate(source = gsub(paste0(corpus_folder, "/"), "", source)) %>% 
   unite(conc_line, left, match, right, sep = " ") %>% 
   unite(id, source, id) %>% 
   select(id, conc_line) %>%
@@ -574,12 +573,12 @@ examples <- cd %>%
 
 head(examples)
 
-examples[["_corpora/brown/ca01_1"]]
+examples[["ca01_1"]]
 ```
 
-Then you could write, in an empty line of your report, a numbered example with R inline code: ``(@label) `r knitr::inline_expr('examples[["_corpora/brown/ca01_1"]]')` ``. Then you can easily cite the example with `(@label)`, which produces (@label).
+Then you could write, in an empty line of your report, a numbered example with R inline code: ``(@label) `r knitr::inline_expr('examples[["ca01_1"]]')` ``. Then you can easily cite the example with `(@label)`, which produces (@label).
 
-(@label) `r examples[["_corpora/brown/ca01_1"]]`
+(@label) `r examples[["ca01_1"]]`
 
 You might also want to, first, modify the `match` column, for example to add underscores or asterisks around it so that markdown turns them into italics or boldface.
 

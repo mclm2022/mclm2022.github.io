@@ -1,0 +1,267 @@
+---
+title: "Methods in Corpus Linguistics"
+subtitle: "Introduction to the course"
+author: "Mariana Montes"
+format:
+  revealjs:
+    preview-links: auto
+---
+
+```{r}
+#| label: setup
+#| include: false
+headings <- c("Topics", "Software to install", "Format of the classes", "Exam and submission procedure")
+
+```
+
+
+## Outline
+
+```{r}
+#| label: outline
+#| results: asis
+for (heading in headings) {
+  cat("-", heading, "\n")
+}
+```
+
+# `r headings[[1]]`
+
+## Corpus linguistics
+
+- What is a corpus?
+
+- What is corpus linguistics?
+
+- Collocations and keywords analysis
+
+- Comparison of variants and of varieties
+
+::: {.footer}
+`r headings[[1]]`
+:::
+
+## Statistical techniques
+
+- Association measures
+
+### Comparison of variants
+
+- Logistic regression
+
+- Conditional inference trees
+
+### Comparison of varieties
+
+- Correspondence Analysis
+
+- Factor Analysis
+
+::: {.footer}
+`r headings[[1]]`
+:::
+
+# `r headings[[2]]`
+
+## Programs
+
+- [R](https://cran.r-project.org/) -- the programming language
+
+- [RStudio](https://www.rstudio.com/products/rstudio/) -- IDE for R
+
+- [Quarto](https://quarto.org/docs/get-started/) -- publishing system
+
+- Tinytex (I will show you how)
+
+- (Optionally) [Git](https://git-scm.com/)
+
+::: {.callout-note}
+### Costs?
+
+Everything open source and free!
+:::
+
+::: {.footer}
+`r headings[[2]]`
+:::
+
+## R packages from CRAN
+
+After installing R, you should install the following R packages.
+
+- **tidyverse** (a group of data manipulation packages)
+- **ca** (for Correspondence Analysis)
+- **here** (for file paths)
+- **xml2** (to work with XML files)
+- **easystats** (for reporting stats)^[You might also want to run `easystats::install_suggested()` to install additional useful packages]
+- **ggeffects** (to plot regression effects)
+
+::: {.footer}
+`r headings[[2]]`
+:::
+
+## R development packages
+
+- **mclm** ("masterclm/mclm")
+- **mclmtutorials** ("masterclm/mclmtutorials")
+- **learnr** ("rstudio/learnr")
+- **gradethis** ("rstudio/gradethis")
+- (Optionally) **glossr** ("montesmariana/glossr") if you want to write interlinear glosses
+
+::: {.footer}
+`r headings[[2]]`
+:::
+
+## How to install R packages
+
+- From CRAN: with `install.packages("package")`
+
+```{r}
+#| label: cran
+#| echo: true
+#| eval: false
+install.packages(c("tidyverse", "ca", "here", "xml2", "easystats", "ggeffects"))
+```
+
+- Development packages: with `remotes::install_github("user/repo")`
+
+```{r}
+#| label: insgit
+#| echo: true
+#| eval: false
+library(remotes)
+install_github("masterclm/mclm")
+install_github("masterclm/mclmtutorials")
+install_github("rstudio/learnr")
+install_github("rstudio/gradethis")
+```
+
+::: aside
+Run this code in the R console.
+:::
+
+::: {.footer}
+`r headings[[2]]`
+:::
+
+# `r headings[[3]]`
+
+## Technical setup
+
+- Basics of R, RStudio, R projects
+
+- Basics of Quarto (to write your paper!)
+
+- Basics of Git (option to submit the paper)
+
+::: {.footer}
+`r headings[[3]]`
+:::
+
+## Theoretical classes
+
+Lectures on the different topics, with slides
+
+- Corpus linguistics
+
+- Association measures
+
+- Logistic regression and conditional trees
+
+- Correspondence Analysis
+
+- Factor Analysis
+
+::: {.footer}
+`r headings[[3]]`
+:::
+
+## Case studies
+
+Going through analyses, with notebooks and code you can copy-paste
+
+- Collocation and keyword analysis
+
+- Alternation studies: analysis of variants
+
+- Lectometry: analysis of varieties
+
+- Register analysis: analysis of varieties
+
+::: {.footer}
+`r headings[[3]]`
+:::
+
+# `r headings[[4]]`
+
+## Exam format
+
+- Paper with analysis
+
+  + Choose a corpus and at least one technique
+  
+  + Define a research question that the technique can address
+  
+  + Small literature review
+  
+  + Perform analysis
+  
+- Full project to be submitted: R code, paper written in Quarto, bibliography
+
+::: {.footer}
+`r headings[[4]]`
+:::
+
+## Submission procedure
+
+### Option 1: Toledo
+
+- Turn your project folder into a zip file (excluding corpus) and submit via Toledo Assignments
+
+### Option 2: Git & GitHub
+
+- Follow the instructions to set up the Git repository and push your project
+
+- Optional intermediate assignments to get used to the tasks, Git and GitHub
+
+::: {.footer}
+`r headings[[4]]`
+:::
+
+## Git submission - setup
+
+- Create an R project with a git repository
+
+- Stage and commit your changes, either in the Git tab or by typing `git add .` followed by `git commit -m "some message"` in the Git Bash Terminal
+
+- Add a remote to the repository by typing `git remote add origin <url>` in the Git Bash Terminal
+
+- Set the main branch to "main" with `git branch -M main` if it isn't already.
+
+- Upload your changes with `git push -u origin main`
+
+::: {.footer}
+`r headings[[4]]`
+:::
+
+## Git submission - later
+
+- Stage your changes with `git add .` (`.` to stage _everything_)
+
+- Take a snapshot of your work with `git commit -m "some message"`
+
+- When you want to submit, run `git push`
+
+::: {.footer}
+`r headings[[4]]`
+:::
+
+# Basics of R
+
+## Some things to show {visibility="hidden"}
+
+- R Studio
+
+- How R works
+
+- learnr tutorials

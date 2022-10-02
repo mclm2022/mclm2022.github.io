@@ -9,7 +9,7 @@ This is the second part of a variation study focusing on the genitive alternatio
 ```{r}
 #| include: false
 #| label: setup
-data_folder <- "assets/genitive-alternation"
+data_folder <- here::here("studies", "assets", "genitive-alternation")
 ```
 
 # Setup

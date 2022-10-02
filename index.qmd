@@ -4,5 +4,13 @@ title: "Methods in Corpus Linguistics"
 
 This website compiles course materials for the Advanced Masters in Linguistics course "Methods in Corpus Linguistics" (September-December 2022). It includes (some of the) slides as well as some examples of analyses.
 
-Most of the code relies on the `{mclm}` package.
-<!-- TODO add link to pkgdown when it exists -->
+Most of the code relies on the [`{mclm}` package](https://masterclm.github.io/mclm).
+
+<div>
+
+```{=html}
+<iframe class="slide-deck" src="slides/intro.html"></iframe>
+```
+
+</div>
+

@@ -2,8 +2,4 @@
 title: "About"
 ---
 
-About this site
-
-```{r}
-1 + 1
-```
+This site gathers slides and case studies for the Master in Corpus Linguistics course at KU Leuven, Fall of 2022 (taught by Mariana Montes).

@@ -9,7 +9,7 @@ editor: visual
 ```{r}
 #| include: false
 #| label: setup
-corpus_folder <- "_corpora/"
+corpus_folder <- here::here("studies", "_corpora", "BASE")
 ```
 
 This document illustrates a keyword analysis and a collocation analysis. They both use the BASE corpus and the same criteria for association strength. You may replicate the code by copy-pasting the snippets (clicking on the symbol on the top right corner of each) and running it on the console or, better yet, on a script or Markdown file.
@@ -52,10 +52,10 @@ The second line of the code collects all the file names in that folder in an `fn
 
 ```{r}
 #| label: files
-fnames_BASE <- get_fnames(file.path(corpus_folder, "BASE")) %>% 
+fnames_BASE <- get_fnames(corpus_folder) %>% 
   keep_re("[.]txt")
 
-print(fnames_BASE, 10)
+print(fnames_BASE, 10, hide_path = corpus_folder)
 ```
 
 The functions to actually read the corpus for the analyses will be `freqlist()` and `surf_cooc()`. In both cases we'll use three non-default settings that are more appropriate for the format of the BASE corpus.
@@ -79,12 +79,12 @@ For the keyword analysis, the target corpus will be the file *ahlct001.txt* and 
 # store names of target corpus files in fnames_target
 fnames_target <- fnames_BASE %>%
   keep_re("ahlct001") %>%
-  print()
+  print(hide_path = corpus_folder)
 
 # store names of reference corpus files in fnames_ref
 fnames_ref <- fnames_BASE %>%
   drop_re("ahlct001") %>%
-  print(n = 10)
+  print(n = 10, hide_path = corpus_folder)
 ```
 
 Such `fnames` objects can be turned into `tibble` objects and printed as tables for a nicer rendering in R Markdown file. The most basic way to print a table is with `knitr::kable()`, but we can also take advantage of the wide range of options of the [`{kableExtra}` package](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html), as shown with @tbl-fnames.
@@ -96,6 +96,7 @@ Such `fnames` objects can be turned into `tibble` objects and printed as tables 
 fnames_ref %>%
   as_tibble() %>%
   head(10) %>%   # only keep the first ten items
+  mutate(filename = gsub(corpus_folder, "", filename)) %>% 
   kbl() %>% 
   kable_minimal(full_width = FALSE)
 ```

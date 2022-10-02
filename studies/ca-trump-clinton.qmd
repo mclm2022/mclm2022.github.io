@@ -15,7 +15,7 @@ The difference between the analyses is the definition of the types collected in 
 
 ```{r}
 #| include: false
-corpus_folder <- "_corpora"
+corpus_folder <- here::here("studies", "_corpora", "clinton_trump")
 var_percent <- scales::label_percent(scale = 1, accuracy = 0.01)
 ```
 
@@ -42,7 +42,7 @@ First, we collect the names of the corpus files and store them in an object call
 
 ```{r}
 #| label: fnames
-fnames <- get_fnames(file.path(corpus_folder, "clinton_trump"))
+fnames <- get_fnames(corpus_folder)
 short_fnames <- short_names(fnames)
 sub_corp <- fnames %>%
   re_retrieve_first("/clinton_trump/([^/]+)", requested_group = 1)
@@ -54,7 +54,7 @@ sub_corp <- fnames %>%
 #| echo: false
 set.seed(8541)
 tibble(
-  fnames = fnames,
+  fnames = gsub(corpus_folder, "", fnames),
   short_fnames = short_fnames, sub_corp = sub_corp
 ) %>% 
   slice_sample(n = 5) %>% 
@@ -671,9 +671,8 @@ The full code of this document could then be compressed as in the chunk below. N
 ```{r}
 #| label: final
 #| eval: false
-assets <- "assets/ca-trump-clinton"
-ct_corpus <- file.path(corpus_folder, "clinton_trump")
-fnames <- get_fnames(ct_corpus)
+assets <- here::here("studies", "assets", "ca-trump-clinton")
+fnames <- get_fnames(corpus_folder)
 short_fnames <- short_names(fnames)
 sub_corp <- fnames %>%
   re_retrieve_first(

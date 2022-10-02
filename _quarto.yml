@@ -1,5 +1,9 @@
 project:
   type: website
+  render:
+    - index.qmd
+    - 404.qmd
+    - slides/intro.qmd
 
 website:
   title: "Methods in Corpus Linguistics"
@@ -10,13 +14,13 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
-      - text: Studies
-        menu: 
-          - studies/base.qmd
-          - studies/genitive-alternation-retrieval.qmd
-          - studies/ca-trump-clinton.qmd
-      - text: Slides
-        href: slides/index.qmd
+      # - text: Studies
+      #   menu: 
+      #     - studies/base.qmd
+      #     - studies/genitive-alternation-retrieval.qmd
+      #     - studies/ca-trump-clinton.qmd
+      # - text: Slides
+      #   href: slides/index.qmd
     search: true
 format:
   html:
@@ -25,3 +29,6 @@ format:
     toc: true
     code-link: true
 
+execute:
+  freeze: auto
+  
