@@ -15,7 +15,7 @@ website:
       - href: index.qmd
         text: Home
       # - text: Studies
-      #   menu: 
+      #   menu:
       #     - studies/base.qmd
       #     - studies/genitive-alternation-retrieval.qmd
       #     - studies/ca-trump-clinton.qmd
@@ -24,7 +24,9 @@ website:
     search: true
 format:
   html:
-    theme: flatly
+    theme:
+      - flatly
+      - custom.scss
     css: styles.css
     toc: true
     code-link: true

@@ -4,6 +4,16 @@ title: "Slides"
 
 These are the slides of the course, Fall of 2022.
 
+# [Introduction](intro.qmd){target="_blank"}
+
+<div>
+
+```{=html}
+<iframe class="slide-deck" src="intro.html"></iframe>
+```
+
+</div>
+
 # [Logistic regression](logistic-regression.qmd){target="_blank"}
 
 <div>
