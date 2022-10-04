@@ -1,5 +1,5 @@
 ---
-title: "Methods in Corpus Linguistics"
+title: "Methods of Corpus Linguistics"
 subtitle: "Introduction to the course"
 author: "Mariana Montes"
 format:

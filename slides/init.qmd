@@ -1,0 +1,554 @@
+---
+title: "Reading and exploring a corpus"
+subtitle: "Methods of Corpus Linguistics: class 2"
+author: "Mariana Montes"
+format:
+  revealjs:
+    preview-links: auto
+    multiplex: true
+---
+
+```{r}
+#| label: setup
+#| include: false
+headings <- c("Initialize project", "Add corpus", "Explore corpus", "Describe corpus")
+```
+
+
+## Outline
+
+```{r}
+#| label: outline
+#| results: asis
+for (heading in headings) {
+  cat("-", heading, "\n")
+}
+```
+
+# `r headings[[1]]`
+
+## Steps
+
+1. Create an R project, check on the "git repository" checkbox and commit changes
+
+  + Alternatively, run `usethis::use_git()`
+  
+2. Add remote on the terminal following the instructions on GitHub (see next slide).
+
+::: callout-warning
+### In the future
+
+For future projects, the workflow may be different; check [Happy Git With R](https://happygitwithr.com/usage-intro.html) for a guide.
+:::
+
+::: {.footer}
+`r headings[[1]]`
+:::
+
+## Connect repository to GitHub
+
+This only needs to be done once at the beginning.
+
+```default
+mymachine: ~/project-folder (master)
+$ git remote add origin <url>
+mymachine: ~/project-folder (master)
+$ git branch -M main
+mymachine: ~/project-folder (main)
+$ git push -u origin main
+```
+
+::: callout-note
+`<url>` is the url of your repository.
+:::
+
+::: {.footer}
+`r headings[[1]]`
+:::
+
+## Notes
+
+- If you make changes on the remote, use `git pull` before making changes in the local repo.
+
+- Avoid .RData with `Tools > Global Options > General > Workspace/History`
+
+- You can work with Git(Hub) on the Git tab of RStudio or on the Git Bash Terminal
+
+::: {.footer}
+`r headings[[1]]`
+:::
+
+# `r headings[[2]]`
+
+## Git branch
+
+Optionally, you can start "new work" on a new branch and then merge it to `main`.
+
+```default
+mymachine: ~/project-folder (main)
+$ git branch explore-corpus
+mymachine: ~/project-folder (main)
+$ git checkout explore-corpus
+mymachine: ~/project-folder (explore-corpus)
+$ 
+```
+::: callout-tip
+I will **only** look at what you push to the `main` branch.
+:::
+
+::: {.footer}
+`r headings[[2]]`
+:::
+
+## Add a folder with a corpus
+
+Download the corpora from Toledo (`mcl.zip` file with various corpora) and
+copy/move the `brown` folder to your project. There are different options.
+
+::: {.panel-tabset}
+
+### Top level
+
+To be accessed with `here::here("brown")`.
+
+```
+project
+|_brown
+|_project.Rproj
+|_.gitignore
+```
+
+### Corpus/corpora folder
+
+To be accessed with `here::here("corpus", "brown")`.
+
+```
+project
+|_corpus
+| \_brown
+|_project.Rproj
+|_.gitignore
+```
+
+### Data folder
+
+To be accessed with `here::here("data", "corpus", "brown")`.
+
+```
+project
+|_data
+| \_corpus
+|   \_brown
+|_project.Rproj
+|_.gitignore
+```
+:::
+
+::: {.footer}
+`r headings[[2]]`
+:::
+
+## .gitignore
+
+We don't want to track the corpus on git (because of size and **licenses**).
+
+1. Open `.gitignore`.
+
+2. Add a line for the folder to ignore, e.g. `/brown/`.
+
+(Check `git status`!)
+
+::: {.footer}
+`r headings[[2]]`
+:::
+
+# `r headings[[3]]`
+
+## Create new R script
+
+- Easier to run the code again and to share it.
+
+- Load packages first.
+
+- Do not change your working directory; use `here()` or reliable relative paths.
+
+::: callout-tip
+You can add comments to explain what you did and even hierarchical sections!
+:::
+
+::: {.footer}
+`r headings[[3]]`
+:::
+
+## Start of the script
+
+```{r}
+#| label: startup
+#| echo: true
+# Load packages ----
+library(here)
+library(tidyverse)
+library(mclm)
+
+# Load data ----
+path_to_corpus <- here("studies", "_corpora", "brown") # adapt
+
+## List filenames ----
+brown_fnames <- get_fnames(path_to_corpus)
+```
+
+::: {.footer}
+`r headings[[3]]`
+:::
+
+## Inspect objects
+
+In the console:
+
+- `path_to_corpus` = `print(path_to_corpus)`
+- `print(brown_fnames, hide_path = path_to_corpus)`
+- `explore(brown_fnames)`
+- `drop_re(brown_fnames, "/c[a-z]")`
+
+::: {.footer}
+`r headings[[3]]`
+:::
+
+## Create a frequency list
+
+Create it on the script, inspect in the console (or from the script).
+
+```{r}
+#| label: flist
+#| echo: true
+brown_fnames <- brown_fnames %>% 
+  keep_re("/c[a-z]")
+flist <- freqlist(brown_fnames, re_token_splitter = re("\\s+"))
+```
+
+::: callout-tip
+Check out the "freqlists" tutorial of {mclmtutorials} (`learnr::run_tutorial("freqlists", "mclmtutorials")`) to learn why we need the `re_token_splitter` argument.
+:::
+
+::: {.footer}
+`r headings[[3]]`
+:::
+
+## Explore the frequency list
+
+```{r}
+#| label: flist2
+#| echo: true
+print(flist, n = 3)
+n_tokens(flist)
+n_types(flist)
+```
+
+::: callout-tip
+Check out [the documentation](https://masterclm.github.io/mclm/reference/freqlist.html#value)
+
+::: {.footer}
+`r headings[[3]]`
+:::
+
+## Plot frequencies I {auto-animate=TRUE}
+
+```{r}
+#| label: zipf
+#| echo: true
+as_tibble(flist) %>% 
+  ggplot(aes(x = rank, y = abs_freq)) +
+  geom_point(alpha = 0.3) +
+  theme_minimal()
+```
+
+::: {.footer}
+`r headings[[3]]`
+:::
+
+## Plot frequencies II {auto-animate=TRUE}
+
+```{r}
+#| label: zipf2
+#| echo: true
+as_tibble(flist) %>% 
+  ggplot(aes(x = rank, y = abs_freq)) +
+  geom_point(alpha = 0.3) +
+  ggrepel::geom_text_repel(data = as_tibble(keep_bool(flist, flist > 10000)),
+                  aes(label = type), xlim = c(0, NA)) +
+  theme_minimal()
+```
+
+::: {.footer}
+`r headings[[3]]`
+:::
+
+
+## Plot frequencies III
+
+```{r}
+#| label: freq-cats
+#| echo: true
+#| code-line-numbers: "|1|2-7|8|9|10|11"
+#| output-location: slide
+as_tibble(flist) %>%
+  mutate(freq_range = case_when(
+    abs_freq == 1 ~ "1",
+    abs_freq <= 5 ~ "2-5",
+    abs_freq <= 100 ~ "6-100",
+    abs_freq <= 1000 ~ "101-1000",
+    TRUE ~ "> 1000"
+  ) %>% fct_reorder(abs_freq)) %>% 
+  ggplot(aes(x = freq_range)) +
+  geom_bar() +
+  geom_label(stat = "count", aes(label = ..count..))
+```
+
+::: {.footer}
+`r headings[[3]]`
+:::
+
+# `r headings[[4]]`
+
+## Read the documentation
+
+It might be in a README file, online, as a paper...
+
+- What time period(s) is/are covered?
+
+- What genre(s)? Language varieties?
+
+- Written? Transcripts of oral texts?
+
+- Is it a monitor corpus?
+
+::: callout-warning
+### Licenses
+
+Check also the permissions you have as user of the corpus.
+:::
+
+::: {.footer}
+`r headings[[4]]`
+:::
+
+## Quarto document
+
+- Create basic Quarto document
+
+- Set meta data on the YAML choosing output
+
+- Optional: render to check it's working
+
+- Remove current text and write your own
+
+::: {.footer}
+`r headings[[4]]`
+:::
+
+## Code in a Quarto document
+
+- Inline code surrounded by backticks and starting with "r".
+
+- Code chunks: to run arbitrary code, create tables and plots, print glosses with {glossr}.
+
+- Read external scripts with `source()` or with the `code` or `file` chunk options.
+
+::: {.footer}
+`r headings[[4]]`
+:::
+
+## Inline code
+
+### Markdown
+
+```markdown
+The Brown corpus used in this project has `r knitr::inline_expr('prettyNum(n_tokens(flist))')` tokens
+and `r knitr::inline_expr('n_types(flist)')` types,
+giving us a type-token ratio of `r knitr::inline_expr('round(n_types(flist)/n_tokens(flist), 2)')`.
+```
+
+<br>
+
+### Output
+
+The Brown corpus used in this project has `r prettyNum(n_tokens(flist))` tokens and `r n_types(flist)` types,
+giving us a type-token ratio of `r round(n_types(flist)/n_tokens(flist), 2)`.
+
+::: {.footer}
+`r headings[[4]]`
+:::
+
+## Code chunks {auto-animate=TRUE}
+
+```{r}
+#| label: table
+#| echo: true
+tbl <- (flist) %>% head(5)
+tbl
+```
+
+::: {.footer}
+`r headings[[4]]`
+:::
+
+## Tables with `knitr::kable()` {auto-animate=TRUE}
+
+```{r}
+#| label: tbl-kable
+#| echo: true
+#| tbl-cap: Top 5 types and their frequencies.
+library(knitr)
+tbl <- (flist) %>% head(5)
+tbl %>% 
+  kable()
+```
+
+::: {.footer}
+`r headings[[4]]`
+:::
+
+<!-- ## Tables with `flextable::flextable()` {auto-animate=TRUE} -->
+
+<!-- ```{r} -->
+<!-- #| label: tbl-flextable -->
+<!-- #| echo: true -->
+<!-- #| tbl-cap: Top 5 types and their frequencies. -->
+<!-- library(flextable) -->
+<!-- as_tibble(flist) %>%  -->
+<!--   head(5) %>%  -->
+<!--   flextable() %>%  -->
+<!--   theme_alafoli() -->
+<!-- ``` -->
+
+
+<!-- ::: {.footer} -->
+<!-- `r headings[[4]]` -->
+<!-- ::: -->
+
+## Tables with `kableExtra::kbl()` {auto-animate=TRUE}
+
+```{r}
+#| label: tbl-kableExtra
+#| echo: true
+#| tbl-cap: Top 5 types and their frequencies.
+library(kableExtra)
+tbl <- (flist) %>% head(5)
+tbl %>% 
+  kbl() %>% 
+  kable_paper()
+```
+
+::: {.footer}
+`r headings[[4]]`
+:::
+
+## Import code
+
+In both cases, you might want to use the `include: false` chunk option to avoid printing neither the code itself or its output.
+
+::: {.panel-tabset}
+
+### The code
+
+```{r}
+#| label: readlines
+#| results: asis
+cat("```md    \n")
+cat("# script.R    \n")
+for (line in readLines(here::here("R", "script.R"))) {
+  cat(line)
+  cat("    \n")
+}
+cat("```")
+```
+
+### `source()`
+
+```{r}
+#| label: setup-chunk
+#| echo: fenced
+source(here::here("R", "script.R"), local = knitr::knit_global())
+```
+
+### `file`
+
+```{r}
+#| label: file
+#| echo: fenced
+#| file: !expr here::here("R", "script.R")
+```
+
+### `code=readLines`
+
+```{r}
+#| label: code
+#| echo: fenced
+#| code: !expr readLines(here::here("R", "script.R"))
+```
+
+:::
+
+::: {.footer}
+`r headings[[4]]`
+:::
+
+## Stage, commit, push
+
+- Commit whenever you reach a "stage".
+- Push at most once a day.
+
+```default
+mymachine: ~/project-folder (explore-corpus)
+$ git status
+mymachine: ~/project-folder (explore-corpus)
+$ git add .
+mymachine: ~/project-folder (explore-corpus)
+$ git commit -m "my first quarto document"
+mymachine: ~/project-folder (explore-corpus)
+$ git push
+```
+
+::: callout-warning
+### Branches and remotes
+
+The first time you try to push from a local branch you may get an error! Just
+follow the instructions, don't panic :)
+
+:::
+
+## From a branch
+
+If you were in your `explore-corpus` branch and want to bring changes to main
+
+::: {.panel-tabset}
+
+### `git merge`
+
+`main` is now totally up-to-speed.
+
+```default
+mymachine: ~/project-folder (explore-corpus)
+$ git checkout main
+mymachine: ~/project-folder (main)
+$ git merge explore-corpus
+```
+
+### `git checkout`
+
+Get only selected folders/files.
+
+```default
+mymachine: ~/project-folder (explore-corpus)
+$ git checkout main
+mymachine: ~/project-folder (main)
+$ git checkout explore-corpus script.R
+```
+:::
+
+::: {.footer}
+`r headings[[4]]`
+:::
+
+# Next: Contingency tables
+

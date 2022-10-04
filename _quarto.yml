@@ -5,6 +5,8 @@ project:
     - index.qmd
     - 404.qmd
     - slides/intro.qmd
+    - slides/init.qmd
+    - slides/index.qmd
 
 website:
   title: "Methods in Corpus Linguistics"
@@ -19,8 +21,8 @@ website:
       #     - studies/base.qmd
       #     - studies/genitive-alternation-retrieval.qmd
       #     - studies/ca-trump-clinton.qmd
-      # - text: Slides
-      #   href: slides/index.qmd
+      - text: Slides
+        href: slides/index.qmd
     search: true
 format:
   html:

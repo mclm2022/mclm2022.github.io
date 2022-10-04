@@ -14,22 +14,32 @@ These are the slides of the course, Fall of 2022.
 
 </div>
 
-# [Logistic regression](logistic-regression.qmd){target="_blank"}
+# [Read corpora](init.qmd){target="_blank"}
 
 <div>
 
 ```{=html}
-<iframe class="slide-deck" src="logistic-regression.html"></iframe>
+<iframe class="slide-deck" src="init.html"></iframe>
 ```
 
 </div>
 
-# [Correspondence Analysis](correspondence-analysis.qmd){target="_blank"}
+<!-- # [Logistic regression](logistic-regression.qmd){target="_blank"} -->
 
-<div>
+<!-- <div> -->
 
-```{=html}
-<iframe class="slide-deck" src="correspondence-analysis.html"></iframe>
-```
+<!-- ```{=html} -->
+<!-- <iframe class="slide-deck" src="logistic-regression.html"></iframe> -->
+<!-- ``` -->
 
-</div>
+<!-- </div> -->
+
+<!-- # [Correspondence Analysis](correspondence-analysis.qmd){target="_blank"} -->
+
+<!-- <div> -->
+
+<!-- ```{=html} -->
+<!-- <iframe class="slide-deck" src="correspondence-analysis.html"></iframe> -->
+<!-- ``` -->
+
+<!-- </div> -->
