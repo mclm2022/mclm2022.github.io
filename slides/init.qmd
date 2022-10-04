@@ -246,6 +246,7 @@ n_types(flist)
 
 ::: callout-tip
 Check out [the documentation](https://masterclm.github.io/mclm/reference/freqlist.html#value)
+:::
 
 ::: {.footer}
 `r headings[[3]]`

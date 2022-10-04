@@ -9,98 +9,98 @@
   {
     "objectID": "slides/intro.html#outline",
     "href": "slides/intro.html#outline",
-    "title": "Methods in Corpus Linguistics",
+    "title": "Methods of Corpus Linguistics",
     "section": "Outline",
     "text": "Outline\n\nTopics\nSoftware to install\nFormat of the classes\nExam and submission procedure"
   },
   {
     "objectID": "slides/intro.html#corpus-linguistics",
     "href": "slides/intro.html#corpus-linguistics",
-    "title": "Methods in Corpus Linguistics",
+    "title": "Methods of Corpus Linguistics",
     "section": "Corpus linguistics",
     "text": "Corpus linguistics\n\nWhat is a corpus?\nWhat is corpus linguistics?\nCollocations and keywords analysis\nComparison of variants and of varieties\n\n\nTopics"
   },
   {
     "objectID": "slides/intro.html#statistical-techniques",
     "href": "slides/intro.html#statistical-techniques",
-    "title": "Methods in Corpus Linguistics",
+    "title": "Methods of Corpus Linguistics",
     "section": "Statistical techniques",
     "text": "Statistical techniques\n\nAssociation measures\n\nComparison of variants\n\nLogistic regression\nConditional inference trees\n\nComparison of varieties\n\nCorrespondence Analysis\nFactor Analysis\n\n\nTopics"
   },
   {
     "objectID": "slides/intro.html#programs",
     "href": "slides/intro.html#programs",
-    "title": "Methods in Corpus Linguistics",
+    "title": "Methods of Corpus Linguistics",
     "section": "Programs",
     "text": "Programs\n\nR – the programming language\nRStudio – IDE for R\nQuarto – publishing system\nTinytex (I will show you how)\n(Optionally) Git\n\n\n\n\n\n\n\nCosts?\n\n\nEverything open source and free!\n\n\n\n\nSoftware to install"
   },
   {
     "objectID": "slides/intro.html#r-packages-from-cran",
     "href": "slides/intro.html#r-packages-from-cran",
-    "title": "Methods in Corpus Linguistics",
+    "title": "Methods of Corpus Linguistics",
     "section": "R packages from CRAN",
     "text": "R packages from CRAN\nAfter installing R, you should install the following R packages.\n\ntidyverse (a group of data manipulation packages)\nca (for Correspondence Analysis)\nhere (for file paths)\nxml2 (to work with XML files)\neasystats (for reporting stats)1\nggeffects (to plot regression effects)\n\n\nSoftware to install\n\nYou might also want to run easystats::install_suggested() to install additional useful packages"
   },
   {
     "objectID": "slides/intro.html#r-development-packages",
     "href": "slides/intro.html#r-development-packages",
-    "title": "Methods in Corpus Linguistics",
+    "title": "Methods of Corpus Linguistics",
     "section": "R development packages",
     "text": "R development packages\n\nmclm (“masterclm/mclm”)\nmclmtutorials (“masterclm/mclmtutorials”)\nlearnr (“rstudio/learnr”)\ngradethis (“rstudio/gradethis”)\n(Optionally) glossr (“montesmariana/glossr”) if you want to write interlinear glosses\n\n\nSoftware to install"
   },
   {
     "objectID": "slides/intro.html#how-to-install-r-packages",
     "href": "slides/intro.html#how-to-install-r-packages",
-    "title": "Methods in Corpus Linguistics",
+    "title": "Methods of Corpus Linguistics",
     "section": "How to install R packages",
     "text": "How to install R packages\n\nFrom CRAN: with install.packages(\"package\")\n\n\ninstall.packages(c(\"tidyverse\", \"ca\", \"here\", \"xml2\", \"easystats\", \"ggeffects\"))\n\n\nDevelopment packages: with remotes::install_github(\"user/repo\")\n\n\nlibrary(remotes)\ninstall_github(\"masterclm/mclm\")\ninstall_github(\"masterclm/mclmtutorials\")\ninstall_github(\"rstudio/learnr\")\ninstall_github(\"rstudio/gradethis\")\n\n\n\nSoftware to install\n\n\nRun this code in the R console."
   },
   {
     "objectID": "slides/intro.html#technical-setup",
     "href": "slides/intro.html#technical-setup",
-    "title": "Methods in Corpus Linguistics",
+    "title": "Methods of Corpus Linguistics",
     "section": "Technical setup",
     "text": "Technical setup\n\nBasics of R, RStudio, R projects\nBasics of Quarto (to write your paper!)\nBasics of Git (option to submit the paper)\n\n\nFormat of the classes"
   },
   {
     "objectID": "slides/intro.html#theoretical-classes",
     "href": "slides/intro.html#theoretical-classes",
-    "title": "Methods in Corpus Linguistics",
+    "title": "Methods of Corpus Linguistics",
     "section": "Theoretical classes",
     "text": "Theoretical classes\nLectures on the different topics, with slides\n\nCorpus linguistics\nAssociation measures\nLogistic regression and conditional trees\nCorrespondence Analysis\nFactor Analysis\n\n\nFormat of the classes"
   },
   {
     "objectID": "slides/intro.html#case-studies",
     "href": "slides/intro.html#case-studies",
-    "title": "Methods in Corpus Linguistics",
+    "title": "Methods of Corpus Linguistics",
     "section": "Case studies",
     "text": "Case studies\nGoing through analyses, with notebooks and code you can copy-paste\n\nCollocation and keyword analysis\nAlternation studies: analysis of variants\nLectometry: analysis of varieties\nRegister analysis: analysis of varieties\n\n\nFormat of the classes"
   },
   {
     "objectID": "slides/intro.html#exam-format",
     "href": "slides/intro.html#exam-format",
-    "title": "Methods in Corpus Linguistics",
+    "title": "Methods of Corpus Linguistics",
     "section": "Exam format",
     "text": "Exam format\n\nPaper with analysis\n\nChoose a corpus and at least one technique\nDefine a research question that the technique can address\nSmall literature review\nPerform analysis\n\nFull project to be submitted: R code, paper written in Quarto, bibliography\n\n\nExam and submission procedure"
   },
   {
     "objectID": "slides/intro.html#submission-procedure",
     "href": "slides/intro.html#submission-procedure",
-    "title": "Methods in Corpus Linguistics",
+    "title": "Methods of Corpus Linguistics",
     "section": "Submission procedure",
     "text": "Submission procedure\nOption 1: Toledo\n\nTurn your project folder into a zip file (excluding corpus) and submit via Toledo Assignments\n\nOption 2: Git & GitHub\n\nFollow the instructions to set up the Git repository and push your project\nOptional intermediate assignments to get used to the tasks, Git and GitHub\n\n\nExam and submission procedure"
   },
   {
     "objectID": "slides/intro.html#git-submission---setup",
     "href": "slides/intro.html#git-submission---setup",
-    "title": "Methods in Corpus Linguistics",
+    "title": "Methods of Corpus Linguistics",
     "section": "Git submission - setup",
     "text": "Git submission - setup\n\nCreate an R project with a git repository\nStage and commit your changes, either in the Git tab or by typing git add . followed by git commit -m \"some message\" in the Git Bash Terminal\nAdd a remote to the repository by typing git remote add origin <url> in the Git Bash Terminal\nSet the main branch to “main” with git branch -M main if it isn’t already.\nUpload your changes with git push -u origin main\n\n\nExam and submission procedure"
   },
   {
     "objectID": "slides/intro.html#git-submission---later",
     "href": "slides/intro.html#git-submission---later",
-    "title": "Methods in Corpus Linguistics",
+    "title": "Methods of Corpus Linguistics",
     "section": "Git submission - later",
     "text": "Git submission - later\n\nStage your changes with git add . (. to stage everything)\nTake a snapshot of your work with git commit -m \"some message\"\nWhen you want to submit, run git push\n\n\nExam and submission procedure"
   },
@@ -186,7 +186,7 @@
     "href": "slides/init.html#explore-the-frequency-list",
     "title": "Reading and exploring a corpus",
     "section": "Explore the frequency list",
-    "text": "Explore the frequency list\n\nprint(flist, n = 3)\n\nFrequency list (types in list: 63517, tokens in list: 1162192)\nrank   type abs_freq nrm_freq\n---- ------ -------- --------\n   1 the/at    69013  593.818\n   2    ,/,    58153  500.373\n   3    ./.    48812  419.999\n...\n\nn_tokens(flist)\n\n[1] 1162192\n\nn_types(flist)\n\n[1] 63517\n\n\n::: callout-tip Check out the documentation\n\nExplore corpus"
+    "text": "Explore the frequency list\n\nprint(flist, n = 3)\n\nFrequency list (types in list: 63517, tokens in list: 1162192)\nrank   type abs_freq nrm_freq\n---- ------ -------- --------\n   1 the/at    69013  593.818\n   2    ,/,    58153  500.373\n   3    ./.    48812  419.999\n...\n\nn_tokens(flist)\n\n[1] 1162192\n\nn_types(flist)\n\n[1] 63517\n\n\n\n\n\n\n\n\nTip\n\n\nCheck out the documentation\n\n\n\n\nExplore corpus"
   },
   {
     "objectID": "slides/init.html#plot-frequencies-i",
