@@ -1,0 +1,224 @@
+---
+title: "Contingency tables"
+subtitle: "Methods of Corpus Linguistics"
+author: "Mariana Montes"
+format:
+  revealjs:
+    preview-links: auto
+    multiplex: true
+execute:
+  echo: true
+---
+
+```{r}
+#| label: setup
+#| include: false
+headings <- c("Absolute frequencies", "Target and reference contexts", "Effect size measures", "Strength of evidence measures")
+library(kableExtra)
+```
+
+## Outline
+
+```{r}
+#| label: outline
+#| results: asis
+#| echo: false
+for (heading in headings) {
+  cat("-", heading, "\n")
+}
+```
+
+# `r headings[[1]]`
+
+## Set up data
+
+```{r}
+#| label: read-corp
+library(tidyverse)
+library(mclm)
+corpus_folder <- here::here("studies", "_corpora", "brown")
+brown_fnames <- get_fnames(corpus_folder) %>% keep_re("/c[a-z]")
+flist <- freqlist(brown_fnames, re_token_splitter = re("\\s+"))
+print(flist, n = 5)
+```
+
+::: {.footer}
+`r headings[[1]]`
+:::
+
+## Frequency of *hot*
+
+```{r}
+#| label: flist
+flist %>% keep_re("^hot/")
+```
+
+<!-- TODO transform corpus so that only the first two items in the POS tag show up? -->
+
+::: {.footer}
+`r headings[[1]]`
+:::
+
+## Concordance of *hot* {auto-animate=TRUE}
+
+```{r}
+#| label: conc1
+hot <- conc(brown_fnames, "\\bhot/jj")
+hot
+```
+
+::: {.footer}
+`r headings[[1]]`
+:::
+
+## Concordance of *hot* {auto-animate=TRUE}
+
+```{r}
+#| label: conc2
+hot %>% 
+  arrange(right)
+```
+
+::: {.footer}
+`r headings[[1]]`
+:::
+
+## Concordance of *hot* {auto-animate=TRUE}
+
+```{r}
+#| label: conc3
+hot %>% 
+  arrange(right) %>% 
+  print_kwic(from = 25, n = 15)
+```
+
+::: {.footer}
+`r headings[[1]]`
+:::
+
+## Co-occurrences with *hot*
+
+```{r}
+#| label: surf-cooc
+hot_cooc <- surf_cooc(brown_fnames, "^hot/jj", re_token_splitter = "\\s+")
+```
+
+<br>
+
+:::: {.columns}
+
+::: {.column}
+```{r}
+#| label: target
+head(hot_cooc$target_freqlist, 7)
+```
+
+:::
+
+::: {.column}
+```{r}
+#| label: ref
+head(hot_cooc$ref_freqlist, 7)
+```
+
+:::
+
+::::
+
+::: {.footer}
+`r headings[[1]]`
+:::
+
+## Hot coffee
+
+```{r}
+#| label: coffee-coocs
+map(hot_cooc, keep_re, "^coffee/")
+```
+
+::: {.footer}
+`r headings[[1]]`
+:::
+
+## Important frequencies
+
+- Frequency of *hot/jj* context = $f(n)$ = `r tot_n_tokens(hot_cooc$target_freqlist)`^[Not the frequency of *hot/jj* (`r flist[["hot/jj"]]`).]
+- Frequency of *coffee/nn* = $f(c)$ = `r sum(map_dbl(hot_cooc, "coffee/nn"))`
+- Frequency of *coffee/nn* in the context of *hot/jj* = $f(n,c)$ = `r hot_cooc$target_freqlist[["coffee/nn"]]`
+- Sum of the *hot/jj* context and not-*hot/jj* context = $N$ = `r prettyNum(sum(map_dbl(hot_cooc, tot_n_tokens)))`
+
+::: {.footer}
+`r headings[[1]]`
+:::
+
+## Building the contingency table I
+
+```{r}
+#| label: abcd-letter
+#| echo: false
+node <- "hot/jj"
+colloc <- "coffee/nn"
+a <- hot_cooc$target_freqlist[[colloc]]
+b <- tot_n_tokens(hot_cooc$target_freqlist) - a
+c <- hot_cooc$ref_freqlist[[colloc]]
+d <- tot_n_tokens(hot_cooc$ref_freqlist) - c
+tibble(
+  rows = c("Context of <em>hot</em>", "Not context of <em>hot</em>", "Total"),
+  coffee = c("a", "c", "k = a + c"),
+  not_coffee = c("b", "d", "l = b + d"),
+  total = c("m = a + b", "n = c + d", "N = m + n")
+) %>% 
+  kbl(col.names = c(" ", "Coffee", "Not coffee", "Total"),
+      escape = FALSE) %>%
+  kable_styling()
+```
+
+::: {.footer}
+`r headings[[1]]`
+:::
+
+## Building the contingency table II
+
+```{r}
+#| label: abcd-freq
+#| echo: false
+tibble(
+  rows = c("Context of <em>hot</em>", "Not context of <em>hot</em>", "Total"),
+  coffee = c(a, c, a + c),
+  not_coffee = c(b, d, b + d),
+  total = c(a + b, c + d, a + b + c + d)
+) %>% 
+  kbl(col.names = c(" ", "Coffee", "Not coffee", "Total"),
+      escape = FALSE,
+      format.args = list(big.mark = " ")) %>%
+  kable_styling()
+```
+
+- How important is it that *coffee* occurs `r a` times in the context of *hot* when
+
+  + there are `r b` other events in the context of *hot*
+  
+  + and *coffee* also occurs `r c` times outside the context of *hot*?
+
+::: {.footer}
+`r headings[[1]]`
+:::
+
+# `r headings[[2]]`
+
+::: {.footer}
+`r headings[[2]]`
+:::
+
+# `r headings[[3]]`
+
+::: {.footer}
+`r headings[[3]]`
+:::
+
+# `r headings[[4]]`
+
+::: {.footer}
+`r headings[[4]]`
+:::
+
