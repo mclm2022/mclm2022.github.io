@@ -7,6 +7,7 @@ project:
     - slides/intro.qmd
     - slides/init.qmd
     - slides/index.qmd
+    - slides/contingency-tables.qmd
     - studies/base.qmd
 
 website:
