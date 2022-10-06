@@ -523,5 +523,96 @@
     "title": "Keywords and collocation analysis on the BASE corpus",
     "section": "Plotting the association scores",
     "text": "Plotting the association scores\nIf we store the tibble version of the results in a variable, such as top_scores_df, we can reuse that object in several subsequent instructions without having to recreate it time and again. Let’s work with the keywords here.\n\ntop_scores_df <- as_tibble(top_scores_kw)\n\nTo illustrate the use of the tibble version of the results, we can, for instance, generate plots on the basis of the object top_scores_df. In Figure 1, we build a scatter plot of signed G scores (x-axis) by PMI scores (y-axis). The plot gives us an idea of to which extent both measures correlate.\n\ntop_scores_df %>%\n  ggplot(aes(x = PMI, y = G_signed)) +\n  geom_point()\n\n\n\nFigure 1: Scatterplot of PMI by signed \\(G\\) in the keyword analysis.\n\n\n\n\nWe see that the measures do correlate a bit, but definitely not perfectly. In fact, should you build similar plots for other combinations of measures, you’ll find that some pair correlate much more clearly than what we see here.\nLet’s inspect to which extent absolute frequencies can explain the discrepancies between PMI and signed G. In Figure 2 we have the frequencies in the target corpus (i.e. the values in the a cell of the contingency tables) reflect the size of the symbols. We see that high frequencies tend to relatively boost signed G scores and that low frequencies appear to relatively increase the probability of obtaining a high PMI score.\n\ntop_scores_df %>%\n  ggplot(aes(x = PMI, y = G_signed)) +\n  geom_point(aes(size = a))\n\n\n\nFigure 2: Scatterplot of PMI by signed \\(G\\) in the keyword analysis, with size reflecting frequency.\n\n\n\n\nWe can also plot the names of the words instead of using symbols, using the geom_text() function, as shown in Figure 3. Notice that in top_scores_df the names of the types are stored in a column called type.\n\ntop_scores_df %>%\n  ggplot(aes(x = PMI, y = G_signed)) +\n  geom_text(aes(label = type))\n\n\n\nFigure 3: Scatterplot of PMI by signed \\(G\\) in the keyword analysis, with types instead of dots.\n\n\n\n\nFor a more sophisticated plot, the ggrepel package allows us to add text close to the position of their datapoints, avoiding overlap. In Figure 4 we combine text and points to only annotate the higher values.\n\nhigh_G_signed <- top_scores_df %>% \n  filter(G_signed > 100) # extract types with high G_signed\n\ntop_scores_df %>% \n  ggplot(aes(x = PMI, y = G_signed)) +\n  geom_point() +\n  ggrepel::geom_text_repel(data = high_G_signed, aes(label = type))\n\n\n\nFigure 4: Scatterplot of PMI by signed \\(G\\) in the keyword analysis, labeled with the highest \\(G\\)-signed values."
+  },
+  {
+    "objectID": "git/assignment.html",
+    "href": "git/assignment.html",
+    "title": "Corpus description",
+    "section": "",
+    "text": "I am assuming that you have an R project connected to your Github repository; if you don’t, please look at the Git Cheatsheet. I also assume you have downloaded the corpora from Toledo (the “mcl.zip” file).\nInstructions\n\nCreate a branch for the assignment, e.g. explore-corpus. You will work here and only move your changes to main if and when you want to submit.\nCopy or move the “brown” folder to your project folder, in the location of your preference (see Slides).\nAdd the “brown” folder to “.gitignore” so it is not tracked by Git (see Slides).\nCreate a Quarto document. In this document, write a description of the corpus. You may use information from the “README” and “CONTENTS” file within the “brown” corpus as well as Wikipedia information or from other sources.\nRender your Quarto document into the output of your choice (word, html, pdf…).\nStage and commit all the relevant files (see Cheatsheet if you don’t remember how).\nMerge the changes into your main branch (see Cheatsheet).\nPush the changes to the remote.\nSend me an e-mail so I check if it went ok.\nTips for the Quarto document\nIt’s ok if your file just has text for now. You could also create an R script with the code used in the lecture slides and interlace code with your text.\n\n\nCode in a chunk\nCode in a separate script\n\n\n\nInside your .qmd file, you can insert the following chunk:\n\n```{r}\n#| label: chunk\n#| eval: false\nlibrary(here)\nlibrary(tidyverse)\nlibrary(mclm)\n\npath_to_corpus <- here(\"studies\", \"_corpora\", \"brown\") # adapt\nbrown_fnames <- get_fnames(path_to_corpus) %>% \n  keep_re(\"/c[a-z]\")\nflist <- freqlist(brown_fnames, re_token_splitter = re(\"\\\\s+\"))\n```\n\n\n\nYou could create a script, e.g. “script.R”, where you put all the code:\n# script.R\n# Load packages ----\nlibrary(here)\nlibrary(tidyverse)\nlibrary(mclm)\n\n# Load data ----\npath_to_corpus <- here(\"studies\", \"_corpora\", \"brown\") # adapt\n\n## List filenames ----\nbrown_fnames <- get_fnames(path_to_corpus) %>% \n  keep_re(\"/c[a-z]\")\nflist <- freqlist(brown_fnames, re_token_splitter = re(\"\\\\s+\"))\nAnd then, in your .qmd file, you call the code with one of the options in the slides, e.g.\n\n```{r}\n#| label: file\n#| file: !expr here::here(\"R\", \"script.R\")\nx <- \"New variable called x\"\nprint(x)\n```\n\n[1] \"New variable called x\"\n\n\n\n\n\nThen you can call the flist object you created in the following piece of text:\nThe Brown corpus used in this project has `r prettyNum(n_tokens(flist))` tokens\nand `r n_types(flist)` types,\ngiving us a type-token ratio of `r round(n_types(flist)/n_tokens(flist), 2)`.\nGit workflow\ngit status # check that you're on main, nothing to commit...\ngit branch explore-corpus\ngit checkout explore-corpus\n# copy corpus folder, edit and save .gitignore\n# work on your .qmd file, render\ngit status # check that the right files are unstaged, the corpus does not show up\ngit add .\ngit commit -m \"describe corpus\"\ngit checkout main\ngit status # check everything is fine. New files should not be there\ngit merge explore-corpus\n# Now the .qmd file and the rendered file should be present\ngit push\n# and send me a message!"
+  },
+  {
+    "objectID": "git/cheatsheet.html",
+    "href": "git/cheatsheet.html",
+    "title": "Git Cheetsheet",
+    "section": "",
+    "text": "Reference cheatsheet for using Git(Hub) with the course project."
+  },
+  {
+    "objectID": "git/cheatsheet.html#create-an-r-project-that-is-also-a-git-repository.",
+    "href": "git/cheatsheet.html#create-an-r-project-that-is-also-a-git-repository.",
+    "title": "Git Cheetsheet",
+    "section": "\n1.1 Create an R project that is also a git repository.",
+    "text": "1.1 Create an R project that is also a git repository.\n\n\nCheck in the box in the dialog\nUse usethis::use_git()\n\n\n\n\n\nInitialize project\n\n\n\n\nIf you created an R project that is not a Git repository, you can still turn it into one with usethis::use_git(). When an R project is also a Git repository, you will see a “Git” tab.\n\n# install.packages(\"usethis\") # if not installed\nusethis::use_git()\n\n✔ Setting active project to 'C:/Users/u0118974/repos/github/mclm2022/methods-\nin-corpus-linguistics'"
+  },
+  {
+    "objectID": "git/cheatsheet.html#stage-and-commit",
+    "href": "git/cheatsheet.html#stage-and-commit",
+    "title": "Git Cheetsheet",
+    "section": "\n1.2 Stage and commit",
+    "text": "1.2 Stage and commit\nA freshly created R project + git repository has two files: the “{project-name}.Rproj” file that indicates that it’s an R project, and the “.gitignore” file that tells Git which files not to track.\nBy setting up a git repository in an R project folder, “.gitignore” is automatically populated with types of files that should be ignored:\n# .gitignore\n.Rproj.user\n.Rhistory\n.RData\n.Ruserdata\nIn order to start up with git, you need to commit the files. Before committing, you need to stage the files you wish to commit. In other words, staging states which files you want to keep track of, and committing takes a snapshot of their current state.\ngit add .\ngit commit -m \"first commit\"\nWe stage with git add; git add . stages all files. Eventually you might want to only stage some of them, e.g. specific folders or files; in that case you type git add my-file.txt or git add some-folder.\nWith git commit we take a snapshot of all the staged files; -m indicates that the following text (in quotation marks) is the commit message. This message should be a short description of the change you’re taking a snapshot of."
+  },
+  {
+    "objectID": "git/cheatsheet.html#connect-to-the-remote",
+    "href": "git/cheatsheet.html#connect-to-the-remote",
+    "title": "Git Cheetsheet",
+    "section": "\n1.3 Connect to the remote",
+    "text": "1.3 Connect to the remote\nThe next step after committing changes, if you want online backup or to submit something, is to push. This uploads the current commits to the remote repository, i.e. the url you received. However, first we have to tell git what that url is. Suppose that your url is https://github.com/mclm2022/montes.git (It will not be montes), then you write the following:\ngit remote add origin https://github.com/mclm/montes.git\nThis has set the url as a remote destination called origin. You could also add a different remote, e.g. a repository in your private account, with a different name."
+  },
+  {
+    "objectID": "git/cheatsheet.html#push-changes",
+    "href": "git/cheatsheet.html#push-changes",
+    "title": "Git Cheetsheet",
+    "section": "\n1.4 Push changes",
+    "text": "1.4 Push changes\nFinally we can push the changes. Normally, git push will suffice. This first time, we indicate that the default remote location is origin and that we push the main branch, creating a main branch in the remote if it doesn’t exist.\nIf your main branch is not called main (but maybe master), we first rename it (with the first line below).\ngit branch -M main\ngit push -u origin main\n\n\n\n\n\n\nErrors in pushing\n\n\n\nIf you did not commit changes yet, there is nothing to push! You will get an error. Make sure you have committed something!\n\n\nIf you have never done something like this in R Studio, you will also be asked to identify yourself and/or log in to GitHub. Just follow the instructions on the Terminal :)"
+  },
+  {
+    "objectID": "git/cheatsheet.html#work-on-your-local-version.",
+    "href": "git/cheatsheet.html#work-on-your-local-version.",
+    "title": "Git Cheetsheet",
+    "section": "\n2.1 Work on your local version.",
+    "text": "2.1 Work on your local version.\nWrite code, write your Quarto file, whatever you want."
+  },
+  {
+    "objectID": "git/cheatsheet.html#stage-the-changes-you-will-want-to-commit.",
+    "href": "git/cheatsheet.html#stage-the-changes-you-will-want-to-commit.",
+    "title": "Git Cheetsheet",
+    "section": "\n2.2 Stage the changes you will want to commit.",
+    "text": "2.2 Stage the changes you will want to commit.\nHere you can select which files you want to keep and discard changes you’re not interested in! You’re just letting git know what it will have to track.\nThe handiest version is with the period/dot, which stages all files that have not been staged yet.\ngit add .\nAlternatively, you can specify a file or folder to stage, if there are files you don’t want to track yet. For example, you may have changes in both your code (let’s say, an “R” folder) and your Quarto file but you want to link them to different commit messages.\ngit add R\ngit commit -m \"Updated code\"\ngit add report.qmd\ngit commit -m \"fix typos in Quarto document\""
+  },
+  {
+    "objectID": "git/cheatsheet.html#commit",
+    "href": "git/cheatsheet.html#commit",
+    "title": "Git Cheetsheet",
+    "section": "\n2.3 Commit",
+    "text": "2.3 Commit\nCommitting equals to taking a snapshot of the state of your project. You can do this several times a day if you have different steps or important changes.\nIf you just run git commit, you will be taken to an editor to introduce a message. You can avoid this by adding the -m flag followed by an informative message.\ngit commit -m \"This is a commit message\"\nUp to committing, this is simply working locally, with Git."
+  },
+  {
+    "objectID": "git/cheatsheet.html#push",
+    "href": "git/cheatsheet.html#push",
+    "title": "Git Cheetsheet",
+    "section": "\n2.4 Push",
+    "text": "2.4 Push\nThe command to upload your changes to the remote repository, e.g. the GitHub repository, is git push.\ngit push\nIf there is any incompatibility with the remote repository, you will get a warning.\n\n\n\n\n\n\nNote\n\n\n\nIf we get to the point that I give feedback by modifying your project and pushing my notes to the local repository, you will have to retrieve the changes with git pull. You should do that before you stage or commit anything else, or it will be troublesome."
+  },
+  {
+    "objectID": "git/cheatsheet.html#create-a-new-branch",
+    "href": "git/cheatsheet.html#create-a-new-branch",
+    "title": "Git Cheetsheet",
+    "section": "\n3.1 Create a new branch",
+    "text": "3.1 Create a new branch\nThe command to create a new branch is git branch.\ngit branch new-branch\nThis only sets up its creation, but does not move you to the branch."
+  },
+  {
+    "objectID": "git/cheatsheet.html#switch-to-a-branch",
+    "href": "git/cheatsheet.html#switch-to-a-branch",
+    "title": "Git Cheetsheet",
+    "section": "\n3.2 Switch to a branch",
+    "text": "3.2 Switch to a branch\nYou can move from one branch to the other with git checkout <branch>:\ngit checkout new-branch\nIf you’re using Git Bash, you should see the name of your branch in parenthesis after the name of your directory in the Terminal. The output would be something like this:\nuser@machine project-directory (main)\n$ git checkout new-branch\nuser@machine project-directory (new-branch)\n$\nYou can also switch to a non-existent branch and create it simultaneously with the -b flag:\ngit checkout -b new-branch"
+  },
+  {
+    "objectID": "git/cheatsheet.html#make-changes-and-commit",
+    "href": "git/cheatsheet.html#make-changes-and-commit",
+    "title": "Git Cheetsheet",
+    "section": "\n3.3 Make changes and commit",
+    "text": "3.3 Make changes and commit\nIn order for this branch to have any substance at all, you need to commit something. The example in class was to copy a folder with a corpus and to add the name of the corpus in the “.gitignore” file. This way, the “.gitignore” has changed and it has to be staged and committed.\nIf you want a more drastic change, you could create a file, such a script or a Quarto document. Once you have added and committed it, it exists in the new-branch branch but not in main.\ngit add .\ngit commit -m \"start new branch\"\nBy running git checkout main you will switch to the main branch and see that the new file is not there. You would also see that “.gitignore” is not ignoring the corpus folder.\n\n\nPush to remote\nMerge branches\nMove between branches\n\n\n\nIf you want to send the changes to a new-branch branch in the remote location (because you like the online-backup option), you can also push them. As before, the first time you will have to run:\ngit push -u origin new-branch\nAnd the rest of the times:\ngit push\nIf you do just git push from the beginning, it will throw you an error and give you the appropriate instructions.\n\n\n\n\n\n\nImportant\n\n\n\nI will not look at things you push to branches other than main!\nIf you want to submit something, push the changes to the remote main.\nIf you want to keep it to yourself, push it to another branch!\n\n\n\n\nOnce you are done with a branch you can merge it with another… which doesn’t mean you delete it. It just means that the current state of the new branch is brought to the previous branch. For example, if you want to bring all you have in new-branch to the main branch, you run git checkout followed by git merge. Optionally, you can delete the other branch with git branch -d new-branch… but it’s not necessary.\ngit checkout main\ngit merge new-branch\nOr alternatively\ngit merge main new-branch\n\n\nIf you just want to move part of the work in one branch to the other, instead of merging them fully, you can use git checkout <branch> <file>, e.g.\ngit checkout main\ngit checkout new-branch R"
   }
 ]

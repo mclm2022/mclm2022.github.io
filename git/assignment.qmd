@@ -1,0 +1,110 @@
+---
+title: "Corpus description"
+author: "Mariana Montes"
+subtitle: "First (optional) assignment"
+---
+
+The goal of this assignment is to help solidify what we learned on the second class of the course and get some idea of how to describe a corpus.
+
+I am assuming that you have an R project connected to your Github repository; if you don't, please look at the [Git Cheatsheet](cheatsheet.qmd). I also assume you have downloaded the corpora from Toledo (the "mcl.zip" file).
+
+# Instructions
+
+1. Create a branch for the assignment, e.g. `explore-corpus`. You will work here and only move your changes to `main` if and when you want to submit.
+
+2. Copy or move the "brown" folder to your project folder, in the location of your preference (see [Slides](../slides/init.qmd#add-a-folder-with-a-corpus)).
+
+3. Add the "brown" folder to ".gitignore" so it is not tracked by Git (see [Slides](../slides/init.qmd#gitignore)).
+
+4. Create a Quarto document. In this document, write a description of the corpus. You may use information from the "README" and "CONTENTS" file within the "brown" corpus as well as Wikipedia information or from other sources.
+
+5. Render your Quarto document into the output of your choice (word, html, pdf...).
+
+6. Stage and commit all the relevant files (see [Cheatsheet](cheatsheet.qmd#daily-workflow) if you don't remember how).
+
+7. Merge the changes into your `main` branch (see [Cheatsheet](cheatsheet.qmd#work-with-branches)).
+
+8. Push the changes to the remote.
+
+9. Send me an e-mail so I check if it went ok.
+
+# Tips for the Quarto document
+
+It's ok if your file just has text for now. You could also create an R script with the code used [in the lecture slides](../slides/init.qmd) and interlace code with your text.
+
+::: {.panel-tabset}
+  
+## Code in a chunk
+
+Inside your .qmd file, you can insert the following chunk:
+
+```{r}
+#| label: chunk
+#| echo: fenced
+#| eval: false
+library(here)
+library(tidyverse)
+library(mclm)
+
+path_to_corpus <- here("studies", "_corpora", "brown") # adapt
+brown_fnames <- get_fnames(path_to_corpus) %>% 
+  keep_re("/c[a-z]")
+flist <- freqlist(brown_fnames, re_token_splitter = re("\\s+"))
+```
+
+## Code in a separate script
+
+You could create a script, e.g. "script.R", where you put all the code:
+
+```r
+# script.R
+# Load packages ----
+library(here)
+library(tidyverse)
+library(mclm)
+
+# Load data ----
+path_to_corpus <- here("studies", "_corpora", "brown") # adapt
+
+## List filenames ----
+brown_fnames <- get_fnames(path_to_corpus) %>% 
+  keep_re("/c[a-z]")
+flist <- freqlist(brown_fnames, re_token_splitter = re("\\s+"))
+```
+
+And then, in your .qmd file, you call the code with one of the options in the [slides](../slides/init.qmd#import-code), e.g.
+
+```{r}
+#| label: file
+#| echo: fenced
+#| file: !expr here::here("R", "script.R")
+```
+
+:::
+
+Then you can call the `flist` object you created in the following piece of text:
+
+```markdown
+The Brown corpus used in this project has `r knitr::inline_expr('prettyNum(n_tokens(flist))')` tokens
+and `r knitr::inline_expr('n_types(flist)')` types,
+giving us a type-token ratio of `r knitr::inline_expr('round(n_types(flist)/n_tokens(flist), 2)')`.
+```
+
+# Git workflow
+
+```bash
+git status # check that you're on main, nothing to commit...
+git branch explore-corpus
+git checkout explore-corpus
+# copy corpus folder, edit and save .gitignore
+# work on your .qmd file, render
+git status # check that the right files are unstaged, the corpus does not show up
+git add .
+git commit -m "describe corpus"
+git checkout main
+git status # check everything is fine. New files should not be there
+git merge explore-corpus
+# Now the .qmd file and the rendered file should be present
+git push
+# and send me a message!
+```

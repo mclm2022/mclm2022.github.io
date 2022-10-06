@@ -5,3 +5,6 @@
 studies/_corpora/
 /.quarto/
 *-speaker.html
+.Rdata
+.httr-oauth
+.DS_Store

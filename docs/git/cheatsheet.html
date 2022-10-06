@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.251">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="author" content="Mariana Montes">
+<title>Methods in Corpus Linguistics - Git Cheetsheet</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script><link rel="stylesheet" href="../styles.css">
+</head>
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg navbar-dark "><div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Methods in Corpus Linguistics</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+<li class="nav-item">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-studies" role="button" data-bs-toggle="dropdown" aria-expanded="false">Studies</a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-studies">
+<li>
+    <a class="dropdown-item" href="../studies/base.html">
+ <span class="dropdown-text">Keywords and collocation analysis on the BASE corpus</span></a>
+  </li>  
+    </ul>
+</li>
+  <li class="nav-item">
+    <a class="nav-link" href="../slides/index.html">Slides</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../git/cheatsheet.html" aria-current="page">Git cheatsheet</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../git/assignment.html">Assignment</a>
+  </li>  
+</ul>
+<div class="quarto-toggle-container">
+                  <a href="" class="quarto-reader-toggle nav-link" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
+   
+  <ul>
+<li>
+<a href="#set-up-from-scratch" id="toc-set-up-from-scratch" class="nav-link active" data-scroll-target="#set-up-from-scratch"><span class="toc-section-number">1</span>  Set-up from scratch</a>
+  <ul class="collapse">
+<li><a href="#create-an-r-project-that-is-also-a-git-repository." id="toc-create-an-r-project-that-is-also-a-git-repository." class="nav-link" data-scroll-target="#create-an-r-project-that-is-also-a-git-repository."><span class="toc-section-number">1.1</span>  Create an R project that is also a git repository.</a></li>
+  <li><a href="#stage-and-commit" id="toc-stage-and-commit" class="nav-link" data-scroll-target="#stage-and-commit"><span class="toc-section-number">1.2</span>  Stage and commit</a></li>
+  <li><a href="#connect-to-the-remote" id="toc-connect-to-the-remote" class="nav-link" data-scroll-target="#connect-to-the-remote"><span class="toc-section-number">1.3</span>  Connect to the remote</a></li>
+  <li><a href="#push-changes" id="toc-push-changes" class="nav-link" data-scroll-target="#push-changes"><span class="toc-section-number">1.4</span>  Push changes</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#daily-workflow" id="toc-daily-workflow" class="nav-link" data-scroll-target="#daily-workflow"><span class="toc-section-number">2</span>  Daily workflow</a>
+  <ul class="collapse">
+<li><a href="#work-on-your-local-version." id="toc-work-on-your-local-version." class="nav-link" data-scroll-target="#work-on-your-local-version."><span class="toc-section-number">2.1</span>  Work on your local version.</a></li>
+  <li><a href="#stage-the-changes-you-will-want-to-commit." id="toc-stage-the-changes-you-will-want-to-commit." class="nav-link" data-scroll-target="#stage-the-changes-you-will-want-to-commit."><span class="toc-section-number">2.2</span>  Stage the changes you will want to commit.</a></li>
+  <li><a href="#commit" id="toc-commit" class="nav-link" data-scroll-target="#commit"><span class="toc-section-number">2.3</span>  Commit</a></li>
+  <li><a href="#push" id="toc-push" class="nav-link" data-scroll-target="#push"><span class="toc-section-number">2.4</span>  Push</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#work-with-branches" id="toc-work-with-branches" class="nav-link" data-scroll-target="#work-with-branches"><span class="toc-section-number">3</span>  Work with branches</a>
+  <ul class="collapse">
+<li><a href="#create-a-new-branch" id="toc-create-a-new-branch" class="nav-link" data-scroll-target="#create-a-new-branch"><span class="toc-section-number">3.1</span>  Create a new branch</a></li>
+  <li><a href="#switch-to-a-branch" id="toc-switch-to-a-branch" class="nav-link" data-scroll-target="#switch-to-a-branch"><span class="toc-section-number">3.2</span>  Switch to a branch</a></li>
+  <li><a href="#make-changes-and-commit" id="toc-make-changes-and-commit" class="nav-link" data-scroll-target="#make-changes-and-commit"><span class="toc-section-number">3.3</span>  Make changes and commit</a></li>
+  </ul>
+</li>
+  </ul></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<h1 class="title">Git Cheetsheet</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Mariana Montes </p>
+          </div>
+  </div>
+    
+    
+  </div>
+  
+
+</header><p>Reference cheatsheet for using Git(Hub) with the course project.</p>
+<div class="callout-caution callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Danger
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This cheatsheet assumes you already have a url for a remote repository in the <code>mclm2022</code> organization.</p>
+<p>In other projects, you could use the url of another remote repository.</p>
+</div>
+</div>
+<section id="set-up-from-scratch" class="level1" data-number="1"><h1 data-number="1">
+<span class="header-section-number">1</span> Set-up from scratch</h1>
+<section id="create-an-r-project-that-is-also-a-git-repository." class="level2" data-number="1.1"><h2 data-number="1.1" class="anchored" data-anchor-id="create-an-r-project-that-is-also-a-git-repository.">
+<span class="header-section-number">1.1</span> Create an R project that is also a git repository.</h2>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Check in the box in the dialog</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Use <code>usethis::use_git()</code></a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="images/createProj3.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Initialize project</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>If you created an R project that is not a Git repository, you can still turn it into one with <code><a href="https://usethis.r-lib.org/reference/use_git.html">usethis::use_git()</a></code>. When an R project is also a Git repository, you will see a “Git” tab.</p>
+<div class="cell">
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># install.packages("usethis") # if not installed</span></span>
+<span><span class="fu">usethis</span><span class="fu">::</span><span class="fu"><a href="https://usethis.r-lib.org/reference/use_git.html">use_git</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>✔ Setting active project to 'C:/Users/u0118974/repos/github/mclm2022/methods-
+in-corpus-linguistics'</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id="stage-and-commit" class="level2" data-number="1.2"><h2 data-number="1.2" class="anchored" data-anchor-id="stage-and-commit">
+<span class="header-section-number">1.2</span> Stage and commit</h2>
+<p>A freshly created R project + git repository has two files: the “{project-name}.Rproj” file that indicates that it’s an R project, and the “.gitignore” file that tells Git which files not to track.</p>
+<p>By setting up a git repository in an R project folder, “.gitignore” is automatically populated with types of files that should be ignored:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a># .gitignore</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>.Rproj.user</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>.Rhistory</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>.RData</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>.Ruserdata</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>In order to start up with git, you need to commit the files. Before committing, you need to stage the files you wish to commit. In other words, <em>staging</em> states which files you want to keep track of, and <em>committing</em> takes a snapshot of their current state.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"first commit"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>We stage with <code>git add</code>; <code>git add .</code> stages all files. Eventually you might want to only stage some of them, e.g.&nbsp;specific folders or files; in that case you type <code>git add my-file.txt</code> or <code>git add some-folder</code>.</p>
+<p>With <code>git commit</code> we take a snapshot of all the staged files; <code>-m</code> indicates that the following text (in quotation marks) is the commit message. This message should be a short description of the change you’re taking a snapshot of.</p>
+</section><section id="connect-to-the-remote" class="level2" data-number="1.3"><h2 data-number="1.3" class="anchored" data-anchor-id="connect-to-the-remote">
+<span class="header-section-number">1.3</span> Connect to the remote</h2>
+<p>The next step after committing changes, if you want online backup or to submit something, is to <code>push</code>. This uploads the current commits to the remote repository, i.e.&nbsp;the url you received. However, first we have to tell git what that url is. Suppose that your url is https://github.com/mclm2022/montes.git (It will not be <em>montes</em>), then you write the following:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin https://github.com/mclm/montes.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This has set the url as a remote destination called <code>origin</code>. You could also add a different remote, e.g.&nbsp;a repository in your private account, with a different name.</p>
+</section><section id="push-changes" class="level2" data-number="1.4"><h2 data-number="1.4" class="anchored" data-anchor-id="push-changes">
+<span class="header-section-number">1.4</span> Push changes</h2>
+<p>Finally we can push the changes. Normally, <code>git push</code> will suffice. This first time, we indicate that the default remote location is <code>origin</code> and that we push the <code>main</code> branch, creating a <code>main</code> branch in the remote if it doesn’t exist.</p>
+<p>If your main branch is not called <code>main</code> (but maybe <code>master</code>), we first rename it (with the first line below).</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch <span class="at">-M</span> main</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Errors in pushing
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you did not commit changes yet, there is nothing to push! You will get an error. Make sure you have committed something!</p>
+</div>
+</div>
+<p>If you have never done something like this in R Studio, you will also be asked to identify yourself and/or log in to GitHub. Just follow the instructions on the Terminal :)</p>
+</section></section><section id="daily-workflow" class="level1" data-number="2"><h1 data-number="2">
+<span class="header-section-number">2</span> Daily workflow</h1>
+<p>For the purposes of this cheetsheet we’ll assume that <strong>all the changes happen in your local computer</strong>. That means that your local repository will be always more up-to-date than the remote, and that there will be nothing in the remote that was not tracked in the local version.</p>
+<p>Before/after each step, it can be useful to run <code>git status</code>, which will let you know:</p>
+<ul>
+<li><p>In which branch you are working.</p></li>
+<li><p>Which files, if anything are yet to be staged. (=you have to run <code>git add</code>)</p></li>
+<li><p>Which files, if any, have been staged and are waiting to be committed. (=you have to run <code>git commit</code>)</p></li>
+<li><p>How many commits you have that have not been pushed to the remote yet. (=you’ll have to run <code>git push</code>)</p></li>
+</ul>
+<section id="work-on-your-local-version." class="level2" data-number="2.1"><h2 data-number="2.1" class="anchored" data-anchor-id="work-on-your-local-version.">
+<span class="header-section-number">2.1</span> Work on your local version.</h2>
+<p>Write code, write your Quarto file, whatever you want.</p>
+</section><section id="stage-the-changes-you-will-want-to-commit." class="level2" data-number="2.2"><h2 data-number="2.2" class="anchored" data-anchor-id="stage-the-changes-you-will-want-to-commit.">
+<span class="header-section-number">2.2</span> Stage the changes you will want to commit.</h2>
+<p>Here you can select which files you want to keep and discard changes you’re not interested in! You’re just letting git know what it will have to track.</p>
+<p>The handiest version is with the period/dot, which stages all files that have not been staged yet.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Alternatively, you can specify a file or folder to stage, if there are files you don’t want to track yet. For example, you may have changes in both your code (let’s say, an “R” folder) and your Quarto file but you want to link them to different commit messages.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add R</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Updated code"</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add report.qmd</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"fix typos in Quarto document"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section><section id="commit" class="level2" data-number="2.3"><h2 data-number="2.3" class="anchored" data-anchor-id="commit">
+<span class="header-section-number">2.3</span> Commit</h2>
+<p>Committing equals to taking a snapshot of the state of your project. You can do this several times a day if you have different steps or important changes.</p>
+<p>If you just run <code>git commit</code>, you will be taken to an editor to introduce a message. You can avoid this by adding the <code>-m</code> flag followed by an informative message.</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"This is a commit message"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Up to committing, this is simply working locally, with Git.</p>
+</section><section id="push" class="level2" data-number="2.4"><h2 data-number="2.4" class="anchored" data-anchor-id="push">
+<span class="header-section-number">2.4</span> Push</h2>
+<p>The command to upload your changes to the remote repository, e.g.&nbsp;the GitHub repository, is <code>git push</code>.</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>If there is any incompatibility with the remote repository, you will get a warning.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If we get to the point that I give feedback by modifying your project and pushing my notes to the local repository, you will have to retrieve the changes with <code>git pull</code>. You should do that <strong>before</strong> you stage or commit anything else, or it will be troublesome.</p>
+</div>
+</div>
+</section></section><section id="work-with-branches" class="level1" data-number="3"><h1 data-number="3">
+<span class="header-section-number">3</span> Work with branches</h1>
+<p>If you want to work on a separate branch, important commands are <code>git checkout</code> and <code>git commit</code>. A branch doesn’t really exist until you have commited something to it!</p>
+<p>So, first, make sure you commited something in your <code>main</code> branch.</p>
+<section id="create-a-new-branch" class="level2" data-number="3.1"><h2 data-number="3.1" class="anchored" data-anchor-id="create-a-new-branch">
+<span class="header-section-number">3.1</span> Create a new branch</h2>
+<p>The command to create a new branch is <code>git branch</code>.</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch new-branch</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This only sets up its creation, but does not move you to the branch.</p>
+</section><section id="switch-to-a-branch" class="level2" data-number="3.2"><h2 data-number="3.2" class="anchored" data-anchor-id="switch-to-a-branch">
+<span class="header-section-number">3.2</span> Switch to a branch</h2>
+<p>You can move from one branch to the other with <code>git checkout &lt;branch&gt;</code>:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout new-branch</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>If you’re using Git Bash, you should see the name of your branch in parenthesis after the name of your directory in the Terminal. The output would be something like this:</p>
+<pre class="console"><code>user@machine project-directory (main)
+$ git checkout new-branch
+user@machine project-directory (new-branch)
+$</code></pre>
+<p>You can also switch to a non-existent branch and create it simultaneously with the <code>-b</code> flag:</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> new-branch</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section><section id="make-changes-and-commit" class="level2" data-number="3.3"><h2 data-number="3.3" class="anchored" data-anchor-id="make-changes-and-commit">
+<span class="header-section-number">3.3</span> Make changes and commit</h2>
+<p>In order for this branch to have any substance at all, you need to commit something. The example in class was to copy a folder with a corpus and to add the name of the corpus in the “.gitignore” file. This way, the “.gitignore” has changed and it has to be staged and committed.</p>
+<p>If you want a more drastic change, you could create a file, such a script or a Quarto document. Once you have added and committed it, it exists in the <code>new-branch</code> branch but not in <code>main</code>.</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"start new branch"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>By running <code>git checkout main</code> you will switch to the <code>main</code> branch and see that the new file is not there. You would also see that “.gitignore” is not ignoring the corpus folder.</p>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Push to remote</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Merge branches</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">Move between branches</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<p>If you want to send the changes to a <code>new-branch</code> branch in the remote location (because you like the online-backup option), you can also push them. As before, the first time you will have to run:</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin new-branch</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>And the rest of the times:</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>If you do just <code>git push</code> from the beginning, it will throw you an error and give you the appropriate instructions.</p>
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>I will not look at things you push to branches other than <code>main</code>!</p>
+<p>If you want to <em>submit</em> something, push the changes to the remote <code>main</code>.</p>
+<p>If you want to keep it to yourself, push it to another branch!</p>
+</div>
+</div>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<p>Once you are done with a branch you can merge it with another… which doesn’t mean you delete it. It just means that the current state of the new branch is brought to the previous branch. For example, if you want to bring all you have in <code>new-branch</code> to the <code>main</code> branch, you run <code>git checkout</code> followed by <code>git merge</code>. Optionally, you can delete the other branch with <code>git branch -d new-branch</code>… but it’s not necessary.</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout main</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> merge new-branch</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Or alternatively</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> merge main new-branch</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<p>If you just want to move part of the work in one branch to the other, instead of merging them fully, you can use <code>git checkout &lt;branch&gt; &lt;file&gt;</code>, e.g.</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout main</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout new-branch R</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+
+
+</section></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer"><div class="nav-footer">
+      <div class="nav-footer-center">Methods in Corpus Linguistics — Mariana Montes, 2022</div>
+  </div>
+</footer>
+
+
+</body></html>

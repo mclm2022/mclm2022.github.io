@@ -1,0 +1,254 @@
+---
+title: "Git Cheetsheet"
+author: "Mariana Montes"
+number-sections: true
+toc: true
+---
+
+Reference cheatsheet for using Git(Hub) with the course project.
+
+::: callout-caution
+This cheatsheet assumes you already have a url for a remote repository in the `mclm2022` organization.
+
+In other projects, you could use the url of another remote repository.
+:::
+
+# Set-up from scratch
+
+## Create an R project that is also a git repository.
+
+::: {.panel-tabset}
+  
+### Check in the box in the dialog
+
+![Initialize project](images/createProj3.png)
+
+### Use `usethis::use_git()`
+
+If you created an R project that is not a Git repository, you can still turn it into one with `usethis::use_git()`. When an R project is also a Git repository, you will see a "Git" tab.
+
+```{r}
+#| label: use_git
+# install.packages("usethis") # if not installed
+usethis::use_git()
+```
+
+:::
+
+## Stage and commit
+
+A freshly created R project + git repository has two files: the "{project-name}.Rproj" file that indicates that it's an R project, and the ".gitignore" file that tells Git which files not to track.
+
+By setting up a git repository in an R project folder, ".gitignore" is automatically populated with types of files that should be ignored:
+
+```default
+# .gitignore
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+```
+
+In order to start up with git, you need to commit the files. Before committing, you need to stage the files you wish to commit. In other words, *staging* states which files you want to keep track of, and *committing* takes a snapshot of their current state.
+
+```bash
+git add .
+git commit -m "first commit"
+```
+We stage with `git add`; `git add .` stages all files. Eventually you might want to only stage some of them, e.g. specific folders or files; in that case you type `git add my-file.txt` or `git add some-folder`.
+
+With `git commit` we take a snapshot of all the staged files; `-m` indicates that the following text (in quotation marks) is the commit message. This message should be a short description of the change you're taking a snapshot of.
+
+## Connect to the remote
+
+The next step after committing changes, if you want online backup or to submit something, is to `push`. This uploads the current commits to the remote repository, i.e. the url you received. However, first we have to tell git what that url is. Suppose that your url is https://github.com/mclm2022/montes.git (It will not be *montes*), then you write the following:
+
+```bash
+git remote add origin https://github.com/mclm/montes.git
+```
+
+This has set the url as a remote destination called `origin`. You could also add a different remote, e.g. a repository in your private account, with a different name.
+
+## Push changes
+
+Finally we can push the changes. Normally, `git push` will suffice. This first time, we indicate that the default remote location is `origin` and that we push the `main` branch, creating a `main` branch in the remote if it doesn't exist.
+
+If your main branch is not called `main` (but maybe `master`), we first rename it (with the first line below).
+
+```bash
+git branch -M main
+git push -u origin main
+```
+
+::: callout-important
+### Errors in pushing
+If you did not commit changes yet, there is nothing to push! You will get an error. Make sure you have committed something!
+:::
+
+If you have never done something like this in R Studio, you will also be asked to identify yourself and/or log in to GitHub. Just follow the instructions on the Terminal :)
+
+# Daily workflow
+
+For the purposes of this cheetsheet we'll assume that **all the changes happen in your local computer**. That means that your local repository will be always more up-to-date than the remote, and that there will be nothing in the remote that was not tracked in the local version.
+
+Before/after each step, it can be useful to run `git status`, which will let you know:
+
+- In which branch you are working.
+
+- Which files, if anything are yet to be staged. (=you have to run `git add`)
+
+- Which files, if any, have been staged and are waiting to be committed. (=you have to run `git commit`)
+
+- How many commits you have that have not been pushed to the remote yet. (=you'll have to run `git push`)
+
+## Work on your local version.
+
+Write code, write your Quarto file, whatever you want.
+
+## Stage the changes you will want to commit.
+
+Here you can select which files you want to keep and discard changes you're not interested in! You're just letting git know what it will have to track.
+
+The handiest version is with the period/dot, which stages all files that have not been staged yet.
+
+```bash
+git add .
+```
+
+Alternatively, you can specify a file or folder to stage, if there are files you don't want to track yet. For example, you may have changes in both your code (let's say, an "R" folder) and your Quarto file but you want to link them to different commit messages.
+
+```bash
+git add R
+git commit -m "Updated code"
+git add report.qmd
+git commit -m "fix typos in Quarto document"
+```
+## Commit
+
+Committing equals to taking a snapshot of the state of your project. You can do this several times a day if you have different steps or important changes.
+
+If you just run `git commit`, you will be taken to an editor to introduce a message. You can avoid this by adding the `-m` flag followed by an informative message.
+
+```bash
+git commit -m "This is a commit message"
+```
+
+Up to committing, this is simply working locally, with Git.
+
+## Push
+
+The command to upload your changes to the remote repository, e.g. the GitHub repository, is `git push`.
+
+```bash
+git push
+```
+
+If there is any incompatibility with the remote repository, you will get a warning.
+
+::: callout-note
+If we get to the point that I give feedback by modifying your project and pushing my notes to the local repository, you will have to retrieve the changes with `git pull`. You should do that **before** you stage or commit anything else, or it will be troublesome.
+:::
+
+# Work with branches
+
+If you want to work on a separate branch, important commands are `git checkout` and `git commit`. A branch doesn't really exist until you have commited something to it!
+
+So, first, make sure you commited something in your `main` branch.
+
+## Create a new branch
+
+The command to create a new branch is `git branch`.
+
+```bash
+git branch new-branch
+```
+
+This only sets up its creation, but does not move you to the branch.
+
+## Switch to a branch
+
+You can move from one branch to the other with `git checkout <branch>`:
+
+```bash
+git checkout new-branch
+```
+
+If you're using Git Bash, you should see the name of your branch in parenthesis after the name of your directory in the Terminal.
+The output would be something like this:
+
+```console
+user@machine project-directory (main)
+$ git checkout new-branch
+user@machine project-directory (new-branch)
+$
+```
+
+You can also switch to a non-existent branch and create it simultaneously with the `-b` flag:
+
+```bash
+git checkout -b new-branch
+```
+
+## Make changes and commit
+
+In order for this branch to have any substance at all, you need to commit something. The example in class was to copy a folder with a corpus and to add the name of the corpus in the ".gitignore" file. This way, the ".gitignore" has changed and it has to be staged and committed.
+
+If you want a more drastic change, you could create a file, such a script or a Quarto document. Once you have added and committed it, it exists in the `new-branch` branch but not in `main`.
+
+```bash
+git add .
+git commit -m "start new branch"
+```
+
+By running `git checkout main` you will switch to the `main` branch and see that the new file is not there. You would also see that ".gitignore" is not ignoring the corpus folder.
+
+::: {.panel-tabset}
+  
+### Push to remote
+
+If you want to send the changes to a `new-branch` branch in the remote location (because you like the online-backup option), you can also push them. As before, the first time you will have to run:
+
+```bash
+git push -u origin new-branch
+```
+
+And the rest of the times:
+
+```bash
+git push
+```
+
+If you do just `git push` from the beginning, it will throw you an error and give you the appropriate instructions.
+
+::: callout-important
+I will not look at things you push to branches other than `main`!
+
+If you want to *submit* something, push the changes to the remote `main`.
+
+If you want to keep it to yourself, push it to another branch!
+:::
+
+### Merge branches
+
+Once you are done with a branch you can merge it with another... which doesn't mean you delete it. It just means that the current state of the new branch is brought to the previous branch. For example, if you want to bring all you have in `new-branch` to the `main` branch, you run `git checkout` followed by `git merge`. Optionally, you can delete the other branch with `git branch -d new-branch`... but it's not necessary.
+
+```bash
+git checkout main
+git merge new-branch
+```
+
+Or alternatively
+
+```bash
+git merge main new-branch
+```
+
+### Move between branches
+
+If you just want to move part of the work in one branch to the other, instead of merging them fully, you can use `git checkout <branch> <file>`, e.g.
+
+```bash
+git checkout main
+git checkout new-branch R
+```
+:::

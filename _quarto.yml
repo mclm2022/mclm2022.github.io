@@ -9,6 +9,7 @@ project:
     - slides/index.qmd
     - slides/contingency-tables.qmd
     - studies/base.qmd
+    - git/*.qmd
 
 website:
   title: "Methods in Corpus Linguistics"
@@ -25,6 +26,10 @@ website:
       #     - studies/ca-trump-clinton.qmd
       - text: Slides
         href: slides/index.qmd
+      - text: Git cheatsheet
+        href: git/cheatsheet.qmd
+      - text: Assignment
+        href: git/assignment.qmd
     search: true
 format:
   html:
