@@ -1,32 +1,26 @@
 ---
 title: "Keywords and collocation analysis on the BASE corpus"
 fig-cap-location: margin
-editor: visual
 ---
 
 # Setup
 
-```{r}
-#| include: false
-#| label: setup
-corpus_folder <- here::here("studies", "_corpora", "BASE")
-```
+This document illustrates a keyword analysis and a collocation analysis. They both use the BASE corpus and the same criteria for association strength. You may replicate the code by copy-pasting the snippets (clicking on the symbol on the top right corner of each) and running it on the console or, better yet, on a script or a Quarto document.
 
-This document illustrates a keyword analysis and a collocation analysis. They both use the BASE corpus and the same criteria for association strength. You may replicate the code by copy-pasting the snippets (clicking on the symbol on the top right corner of each) and running it on the console or, better yet, on a script or Markdown file.
-
-For the analysis we'll mainly use the `{tidyverse}` package and the `{mclm}` package. For the report itself, mostly when printing tables, we'll also use `{kableExtra}`.
+For the analysis we'll mainly use the `{tidyverse}` package and the `{mclm}` package. We'll also use `{here}` to find the corpus and, for the report itself when printing tables, we'll also use `{kableExtra}`.
 
 ```{r}
 #| label: loadpkg
 #| message: false
 library(tidyverse)
 library(mclm)
+library(here)
 library(kableExtra) # for the report
 ```
 
 ## Association strength criteria
 
-Both of the studies rely on the `assoc_scores` objects of the `{mclm}` package, which return frequencies and association scores, i.e. measures based on the frequency of a certain event in a target context and in a reference context. For keyword analysis, the target context is a target (sub)corpus and the reference context is a reference (sub)corpus. For collocation analysis based on surface co-occurrences, the target context is the text surrounding the node term and the reference context is all the other text in the corpus.
+Both of the studies rely on the `assoc_scores` objects of the `{mclm}` package, which return frequencies and association scores, i.e. measures based on the frequency of a certain event in a target context and in a reference context. For keyword analysis, the target context is a target (sub)corpus and the reference context is a reference (sub)corpus. For collocation analysis based on surface co-occurrences, the target context is the text surrounding the occurrences of the node term and the reference context is all the other text in the corpus.
 
 In order to define keywords (for the first study) or collocations (for the second study) we will filter the output of `assoc_scores()` based on the following three criteria:
 
@@ -46,12 +40,15 @@ In short, the selection criteria that were chosen here value both the *effect si
 
 ## Data {#data}
 
-The first step to analyzing the data is to read the corpus. The first line of the code below sets the path to the "BASE" directory where all the corpus files are stored, in this case inside the parent directory. In order to run this in your own computer, set `base_corpus` to the path from wherever you are running the code to where your copy of the corpus is stored.
+The first step to analyzing the data is to read the corpus. The first line of the code below sets the path to the "BASE" directory where all the corpus files are stored, in this case inside a "_corpora" folder, inside a "studies" folder at the top level of the project. In order to run this in your own computer, set `corpus_folder` to the path to where your copy of the corpus is stored.
 
 The second line of the code collects all the file names in that folder in an `fnames` object and keeps those with the "txt" extension.
 
+[The `hide_path` argument in the `print()` method for an `fnames` object allows us to hide a (redundant) bit of the filenames when printing them.]{.aside}
+
 ```{r}
 #| label: files
+corpus_folder <- here("studies", "_corpora", "BASE")
 fnames_BASE <- get_fnames(corpus_folder) %>% 
   keep_re("[.]txt")
 
@@ -61,18 +58,25 @@ print(fnames_BASE, 10, hide_path = corpus_folder)
 The functions to actually read the corpus for the analyses will be `freqlist()` and `surf_cooc()`. In both cases we'll use three non-default settings that are more appropriate for the format of the BASE corpus.
 
 -   In `re_token_splitter` we use the regular expression `(?xi) \s+`; in other words, we treat all chunks of whitespace as token separators. We do this because the default tokenizer, which roughly identifies the chunks of alphanumeric characters as tokens, would e.g. cut up the corpus snippet `a simple [0.4] example` into the tokens `a`, `simple`, `0`, `4`, and `example`, which is not what we want. The tokenizer we do use would cut the same snippet up in the tokens `a`, `simple`, `[0.4]`, and `example`. This is still not exactly what we want, but see the next point.
--   In `re_drop_token` we use `(?xi) [:\[\]]` in order to drop all the tokens that match this regular expression; in other words we drop all tokens that contain either a colon, an opening square bracket or a closing square bracket. So in the aforementioned example, the pseudo-token `[0.4]`, which actually is a pause indication, would be dropped eventually. Tokens that contain a colon are also dropped, because those are speaker identifiers in the BASE corpus, not real tokens.
+-   In `re_drop_token` we use `(?xi) [:\[\]]` in order to drop all the tokens that match this regular expression; in other words we drop all tokens that contain either a colon, an opening square bracket or a closing square bracket. So, in the aforementioned example, the pseudo-token `[0.4]`, which actually is a pause indication, would be dropped eventually. Tokens that contain a colon are also dropped, because those are speaker identifiers in the BASE corpus, not real tokens.
 -   In `file_encoding` we specify `windows-1252`, which indeed is the encoding used in the BASE corpus.
 
 ## Steps
 
-The main function we will use is `assoc_scores()`, which creates an object of class `assoc_scores`, i.e. a special kind of dataframe with association scores information. In the case of [keyword analysis](#kw) we'll run it with two frequency lists created from different (subcorpora), whereas for [collocation analysis](#colloc) we'll provide a `cooc_info` object created with `surf_cooc()`.
+The main function we will use is `assoc_scores()`, which creates an object of class `assoc_scores`, i.e. a special kind of dataframe with association scores information. In the case of [keyword analysis](#kw) we'll run it with two frequency lists created from different subcorpora, whereas for [collocation analysis](#colloc) we'll provide a `cooc_info` object created with `surf_cooc()`.
 
 By default, `assoc_scores()` will not return values where the frequency in the target context was lower than 3, so we don't need to do anything else to define our first criterion. For the other two criteria, instead, we'll need to filter the `assoc_scores` object to only retain elements with a high enough PMI and G_signed.
 
 # Keyword analysis {#kw}
 
-For the keyword analysis, the target corpus will be the file *ahlct001.txt* and the reference corpus, the remaining 198 files. We will store the target filename in a variable called `fnames_target` and the reference corpus filenames in a variable called `fnames_ref`.
+For the keyword analysis, the target corpus will be the file *ahlct001.txt*, and the reference corpus, the remaining 198 files. We will store the target filename in a variable called `fnames_target` and the reference corpus filenames in a variable called `fnames_ref`.
+
+::: {.callout-tip .column-margin}
+### `print()`
+
+The `print()` method invisibly returns the same object you are printing (without any modifications performed by arguments, such as number of items to print), so you can safely add it to an assignment in order to assign and print at the same time.
+
+:::
 
 ```{r}
 #| label: key-corpus
@@ -87,7 +91,7 @@ fnames_ref <- fnames_BASE %>%
   print(n = 10, hide_path = corpus_folder)
 ```
 
-Such `fnames` objects can be turned into `tibble` objects and printed as tables for a nicer rendering in R Markdown file. The most basic way to print a table is with `knitr::kable()`, but we can also take advantage of the wide range of options of the [`{kableExtra}` package](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html), as shown with @tbl-fnames.
+Such `fnames` objects can be turned into `tibble` objects and printed as tables for a nicer rendering in Quarto. The most basic way to print a table is with `knitr::kable()`, but we can also take advantage of the wide range of options of the [`{kableExtra}` package](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html), as shown with @tbl-fnames.
 
 ```{r}
 #| label: tbl-fnames
@@ -173,7 +177,7 @@ Here you can keep reading to see the steps for collocation analysis or skip to t
 
 # Collocation analysis {#colloc}
 
-For collocation analysis, we will only use the full BASE corpus (`fnames_BASE`) and, instead of the `freqlist()` function, the `surf_cooc()` function. This function requires a `re_node` argument that is a regular expression capturing what should be identified as a **node** token. In this case we ask for `(?xi)  ^ big $`.
+For collocation analysis, we will use the full BASE corpus (`fnames_BASE`) and, instead of the `freqlist()` function, the `surf_cooc()` function. This function requires a `re_node` argument that is a regular expression capturing what should be identified as a **node** token. In this case we ask for `(?xi)  ^ big $`.
 
 ::: {.callout-note collapse="true"}
 ## What does this regex mean?
@@ -193,7 +197,7 @@ coocs <- fnames_BASE %>%
 coocs
 ```
 
-::: callout-info
+::: callout-note
 ### About `cooc_info` objects
 
 The object `coocs` is a list with two frequency lists: a target frequency list with the co-occurrence frequencies of items in the vicinity of the node *big* (by default, 3 tokens to either side), and reference frequency list with the frequencies of items in the rest of the corpus.
@@ -206,7 +210,7 @@ Next, we calculate the association score with a call to `assoc_scores()`, provid
 ```{r}
 #| label: scores-colloc
 # calculate scores
-scores_colloc <- assoc_scores(flist_target, flist_ref)
+scores_colloc <- assoc_scores(coocs)
 
 # print scores, sorted by PMI
 print(scores_colloc, sort_order = "PMI")
@@ -291,7 +295,7 @@ top_scores_colloc %>% # also valid for top_scores_kw
 
 ## Plotting the association scores
 
-If we store the tibble version of the results in a variable, such as `top_scores_df`, we can reuse that object in several subsequent instructions without having to recreate it time and again. Let's look at the values for the keywords here.
+If we store the tibble version of the results in a variable, such as `top_scores_df`, we can reuse that object in several subsequent instructions without having to recreate it time and again. Let's work with the keywords here.
 
 ```{r}
 #| label: top-tibble

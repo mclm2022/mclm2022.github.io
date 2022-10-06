@@ -1,5 +1,6 @@
 ---
 title: "Slides"
+number-sections: true
 ---
 
 These are the slides of the course, Fall of 2022.
@@ -20,6 +21,16 @@ These are the slides of the course, Fall of 2022.
 
 ```{=html}
 <iframe class="slide-deck" src="init.html"></iframe>
+```
+
+</div>
+
+# [Contingency tables](contingency-tables.qmd){target="_blank"}
+
+<div>
+
+```{=html}
+<iframe class="slide-deck" src="contingency-tables.html"></iframe>
 ```
 
 </div>

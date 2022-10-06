@@ -13,7 +13,7 @@ execute:
 ```{r}
 #| label: setup
 #| include: false
-headings <- c("Absolute frequencies", "Target and reference contexts", "Effect size measures", "Strength of evidence measures")
+headings <- c("Hot example", "Observed frequencies", "Expected frequencies", "Target and reference contexts", "Summing up")
 library(kableExtra)
 ```
 
@@ -26,9 +26,10 @@ library(kableExtra)
 for (heading in headings) {
   cat("-", heading, "\n")
 }
+i <- 1
 ```
 
-# `r headings[[1]]`
+# `r headings[[i]]`
 
 ## Set up data
 
@@ -43,7 +44,7 @@ print(flist, n = 5)
 ```
 
 ::: {.footer}
-`r headings[[1]]`
+`r headings[[i]]`
 :::
 
 ## Frequency of *hot*
@@ -56,7 +57,7 @@ flist %>% keep_re("^hot/")
 <!-- TODO transform corpus so that only the first two items in the POS tag show up? -->
 
 ::: {.footer}
-`r headings[[1]]`
+`r headings[[i]]`
 :::
 
 ## Concordance of *hot* {auto-animate=TRUE}
@@ -68,7 +69,7 @@ hot
 ```
 
 ::: {.footer}
-`r headings[[1]]`
+`r headings[[i]]`
 :::
 
 ## Concordance of *hot* {auto-animate=TRUE}
@@ -80,7 +81,7 @@ hot %>%
 ```
 
 ::: {.footer}
-`r headings[[1]]`
+`r headings[[i]]`
 :::
 
 ## Concordance of *hot* {auto-animate=TRUE}
@@ -93,7 +94,7 @@ hot %>%
 ```
 
 ::: {.footer}
-`r headings[[1]]`
+`r headings[[i]]`
 :::
 
 ## Co-occurrences with *hot*
@@ -126,7 +127,7 @@ head(hot_cooc$ref_freqlist, 7)
 ::::
 
 ::: {.footer}
-`r headings[[1]]`
+`r headings[[i]]`
 :::
 
 ## Hot coffee
@@ -137,8 +138,15 @@ map(hot_cooc, keep_re, "^coffee/")
 ```
 
 ::: {.footer}
-`r headings[[1]]`
+`r headings[[i]]`
 :::
+
+```{r}
+#| label: headingchange1
+#| include: false
+i <- i + 1
+```
+# `r headings[[i]]`
 
 ## Important frequencies
 
@@ -148,20 +156,14 @@ map(hot_cooc, keep_re, "^coffee/")
 - Sum of the *hot/jj* context and not-*hot/jj* context = $N$ = `r prettyNum(sum(map_dbl(hot_cooc, tot_n_tokens)))`
 
 ::: {.footer}
-`r headings[[1]]`
+`r headings[[i]]`
 :::
 
-## Building the contingency table I
+## a, b, c, d...
 
 ```{r}
 #| label: abcd-letter
 #| echo: false
-node <- "hot/jj"
-colloc <- "coffee/nn"
-a <- hot_cooc$target_freqlist[[colloc]]
-b <- tot_n_tokens(hot_cooc$target_freqlist) - a
-c <- hot_cooc$ref_freqlist[[colloc]]
-d <- tot_n_tokens(hot_cooc$ref_freqlist) - c
 tibble(
   rows = c("Context of <em>hot</em>", "Not context of <em>hot</em>", "Total"),
   coffee = c("a", "c", "k = a + c"),
@@ -174,19 +176,47 @@ tibble(
 ```
 
 ::: {.footer}
-`r headings[[1]]`
+`r headings[[i]]`
 :::
 
-## Building the contingency table II
+## O, R, C, N
+
+```{r}
+#| label: abcd-O
+#| echo: false
+tibble(
+  rows = c("Context of <em>hot</em>", "Not context of <em>hot</em>", "Total"),
+  coffee = c("O<sub>11</sub>", "O<sub>12</sub>", "C<sub>1</sub>"),
+  not_coffee = c("O<sub>21</sub>", "O<sub>22</sub>", "C<sub>2</sub>"),
+  total = c("R<sub>1</sub>", "R<sub>2</sub>", "N")
+) %>% 
+  kbl(col.names = c(" ", "Coffee", "Not coffee", "Total"),
+      escape = FALSE) %>%
+  kable_styling()
+```
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Building the contingency table
 
 ```{r}
 #| label: abcd-freq
 #| echo: false
+node <- "hot/jj"
+colloc <- "coffee/nn"
+a <- hot_cooc$target_freqlist[[colloc]]
+b <- tot_n_tokens(hot_cooc$target_freqlist) - a
+c <- hot_cooc$ref_freqlist[[colloc]]
+d <- tot_n_tokens(hot_cooc$ref_freqlist) - c
+m <- a + b; n <- c + d; k <- a + c; l <- b + d
+N <- m + n
 tibble(
   rows = c("Context of <em>hot</em>", "Not context of <em>hot</em>", "Total"),
-  coffee = c(a, c, a + c),
-  not_coffee = c(b, d, b + d),
-  total = c(a + b, c + d, a + b + c + d)
+  coffee = c(a, c, k),
+  not_coffee = c(b, d, l),
+  total = c(m, n, N)
 ) %>% 
   kbl(col.names = c(" ", "Coffee", "Not coffee", "Total"),
       escape = FALSE,
@@ -194,31 +224,236 @@ tibble(
   kable_styling()
 ```
 
+::: {.incremental}
 - How important is it that *coffee* occurs `r a` times in the context of *hot* when
 
   + there are `r b` other events in the context of *hot*
   
   + and *coffee* also occurs `r c` times outside the context of *hot*?
-
-::: {.footer}
-`r headings[[1]]`
 :::
 
-# `r headings[[2]]`
-
 ::: {.footer}
-`r headings[[2]]`
+`r headings[[i]]`
 :::
 
-# `r headings[[3]]`
+```{r}
+#| label: headingchange2
+#| include: false
+i <- i + 1
+```
+# `r headings[[i]]`
+
+## Expected a, b, c, d...
+
+```{r}
+#| label: abcd-exp1
+#| echo: false
+tibble(
+  rows = c("Context of <em>hot</em>", "Not context of <em>hot</em>", "Total"),
+  coffee = c("(m * k)/N", "(n * k)/N", "k"),
+  not_coffee = c("(m * l)/N", "(n * l)/N", "l"),
+  total = c("m", "n", "N")
+) %>% 
+  kbl(col.names = c(" ", "Coffee", "Not coffee", "Total"),
+      escape = FALSE,
+      format.args = list(big.mark = " ")) %>%
+  kable_styling()
+```
 
 ::: {.footer}
-`r headings[[3]]`
+`r headings[[i]]`
 :::
 
-# `r headings[[4]]`
+## E, R, C, N
+
+```{r}
+#| label: abcd-E
+#| echo: false
+tibble(
+  rows = c("Context of <em>hot</em>", "Not context of <em>hot</em>", "Total"),
+  coffee = c("E<sub>11</sub>", "E<sub>12</sub>", "C<sub>1</sub>"),
+  not_coffee = c("E<sub>21</sub>", "E<sub>22</sub>", "C<sub>2</sub>"),
+  total = c("R<sub>1</sub>", "R<sub>2</sub>", "N")
+) %>% 
+  kbl(col.names = c(" ", "Coffee", "Not coffee", "Total"),
+      escape = FALSE) %>%
+  kable_styling()
+```
 
 ::: {.footer}
-`r headings[[4]]`
+`r headings[[i]]`
 :::
+
+## Expected frequencies
+
+```{r}
+#| label: abcd-exp2
+#| echo: false
+tibble(
+  rows = c("Context of <em>hot</em>", "Not context of <em>hot</em>", "Total"),
+  coffee = c((m * k)/N, (n * k)/N, k),
+  not_coffee = c((m * l)/N, (n * l)/N, l),
+  total = c(m, n, N)
+) %>% 
+  kbl(col.names = c(" ", "Coffee", "Not coffee", "Total"),
+      escape = FALSE, digits = 3,
+      format.args = list(big.mark = " ")) %>%
+  kable_styling()
+```
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+
+```{r}
+#| label: headingchange3
+#| include: false
+i <- i + 1
+```
+# `r headings[[i]]`
+
+## Contexts in the contingency table
+
+```{r}
+#| label: tar-ref
+#| echo: false
+tibble(
+  rows = c("Target context", "Reference context", "Total"),
+  coffee = c("O<sub>11</sub>", "O<sub>12</sub>", "C<sub>1</sub>"),
+  not_coffee = c("O<sub>21</sub>", "O<sub>22</sub>", "C<sub>2</sub>"),
+  total = c("R<sub>1</sub>", "R<sub>2</sub>", "N")
+) %>% 
+  kbl(col.names = c(" ", "Target item", "Other items", "Total"),
+      escape = FALSE) %>%
+  kable_styling()
+```
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Collocation analysis
+
+- The **target** context is the surroundings of an item, the **node**, e.g. *hot*.
+
+  + In **surface collocations**, a certain window around the node, e.g. 3 tokens to either side.
+  
+  + In **textual collocations**, the text in which the node occurs.
+  
+  + In **syntactic collocations**, a certain syntactic relationship with the node.
+
+- The **reference** context is all the contexts **not** surrounding the node.
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Distinctive collocation analysis
+
+- The **target** context is the surroundings of a node, e.g. *hot*.
+
+- The **reference** context is the surroundings of a second node for contrast, e.g. *cold*.
+
+::: callout-note
+In (distinctive) collocation analysis, the "target" item is the **collocate**.
+:::
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Keyword analysis
+
+- The **target** context is a text or corpus.
+
+- The **reference** context is another bigger, *reference* corpus.
+
+::: callout-note
+In *Distinctive keyword analysis* the reference context is another target corpus.
+:::
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Collostructional analysis
+
+- The **target** context is a certain slot in a construction.
+
+- The **reference** context is a comparable slot in a comparable construction.
+
+::: callout-note  
+We talk about *distinctive collexeme analysis* when that second construction is very specific.
+:::
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+
+```{r}
+#| label: headingchange4
+#| include: false
+i <- i + 1
+```
+# `r headings[[i]]`
+
+## Procedure
+
+1. For each type in the corpus, compute their frequencies in the target and reference contexts.
+
+2. We obtain two frequency lists from which we can obtain all necessary values of the contingency table.
+
+3. Based on the contingency tables, compute the association strength between each type and the target context.
+
+4. Rank and/or filter.
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Code
+
+Main function [`mclm::assoc_scores()`](https://masterclm.github.io/mclm/reference/assoc_scores.html).
+
+1. Obtain two frequency lists:
+
+- "Manually" (with `freqlist()` and different corpora, for example.)
+
+- With `surf_cooc()` for surface collocations.
+
+- With `text_cooc()` for textual collocations.
+
+2. Give the frequency lists to `assoc_scores()`.^[Alternatively, give the values of `a`, `b`, `c` and `d` to `assoc_abcd()`.]
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Hot example
+
+```{r}
+#| lable: assoc-hot
+assoc_scores(hot_cooc)
+```
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+
+## Hot-coffee association
+
+```{r}
+#| lable: assoc-hotcoffee
+assoc_scores(hot_cooc)["coffee/nn",]
+```
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+
+# Next: Association measures
 

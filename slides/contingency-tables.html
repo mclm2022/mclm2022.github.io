@@ -400,15 +400,16 @@
 <section id="outline" class="slide level2">
 <h2>Outline</h2>
 <ul>
-<li>Absolute frequencies</li>
+<li>Hot example</li>
+<li>Observed frequencies</li>
+<li>Expected frequencies</li>
 <li>Target and reference contexts</li>
-<li>Effect size measures</li>
-<li>Strength of evidence measures</li>
+<li>Summing up</li>
 </ul>
 </section>
 <section>
-<section id="absolute-frequencies" class="title-slide slide level1 center">
-<h1>Absolute frequencies</h1>
+<section id="hot-example" class="title-slide slide level1 center">
+<h1>Hot example</h1>
 
 </section>
 <section id="set-up-data" class="slide level2">
@@ -433,7 +434,7 @@ rank   type abs_freq nrm_freq
 </div>
 </div>
 <div class="footer">
-<p>Absolute frequencies</p>
+<p>Hot example</p>
 </div>
 </section>
 <section id="frequency-of-hot" class="slide level2">
@@ -452,7 +453,7 @@ rank orig_rank      type abs_freq nrm_freq
 </div>
 <!-- TODO transform corpus so that only the first two items in the POS tag show up? -->
 <div class="footer">
-<p>Absolute frequencies</p>
+<p>Hot example</p>
 </div>
 </section>
 <section id="concordance-of-hot" class="slide level2" data-auto-animate="TRUE">
@@ -507,7 +508,7 @@ This data frame has 6 columns:
 </div>
 </div>
 <div class="footer">
-<p>Absolute frequencies</p>
+<p>Hot example</p>
 </div>
 </section>
 <section id="concordance-of-hot-1" class="slide level2" data-auto-animate="TRUE">
@@ -562,7 +563,7 @@ This data frame has 6 columns:
 </div>
 </div>
 <div class="footer">
-<p>Absolute frequencies</p>
+<p>Hot example</p>
 </div>
 </section>
 <section id="concordance-of-hot-2" class="slide level2" data-auto-animate="TRUE">
@@ -593,7 +594,7 @@ This data frame has 6 columns:
 </div>
 </div>
 <div class="footer">
-<p>Absolute frequencies</p>
+<p>Hot example</p>
 </div>
 </section>
 <section id="co-occurrences-with-hot" class="slide level2">
@@ -640,7 +641,7 @@ rank orig_rank   type abs_freq nrm_freq
 </div>
 </div>
 <div class="footer">
-<p>Absolute frequencies</p>
+<p>Hot example</p>
 </div>
 </section>
 <section id="hot-coffee" class="slide level2">
@@ -665,8 +666,13 @@ rank orig_rank         type abs_freq nrm_freq
 </div>
 </div>
 <div class="footer">
-<p>Absolute frequencies</p>
+<p>Hot example</p>
 </div>
+</section></section>
+<section>
+<section id="observed-frequencies" class="title-slide slide level1 center">
+<h1>Observed frequencies</h1>
+
 </section>
 <section id="important-frequencies" class="slide level2">
 <h2>Important frequencies</h2>
@@ -677,11 +683,11 @@ rank orig_rank         type abs_freq nrm_freq
 <li>Sum of the <em>hot/jj</em> context and not-<em>hot/jj</em> context = <span class="math inline">\(N\)</span> = 1175643</li>
 </ul>
 <div class="footer">
-<p>Absolute frequencies</p>
+<p>Observed frequencies</p>
 </div>
 <aside><ol class="aside-footnotes"><li id="fn1"><p>Not the frequency of <em>hot/jj</em> (123).</p></li></ol></aside></section>
-<section id="building-the-contingency-table-i" class="slide level2">
-<h2>Building the contingency table I</h2>
+<section id="a-b-c-d" class="slide level2">
+<h2>a, b, c, d…</h2>
 <div class="cell">
 <div class="cell-output-display">
 
@@ -719,11 +725,53 @@ rank orig_rank         type abs_freq nrm_freq
 </div>
 </div>
 <div class="footer">
-<p>Absolute frequencies</p>
+<p>Observed frequencies</p>
 </div>
 </section>
-<section id="building-the-contingency-table-ii" class="slide level2">
-<h2>Building the contingency table II</h2>
+<section id="o-r-c-n" class="slide level2">
+<h2>O, R, C, N</h2>
+<div class="cell">
+<div class="cell-output-display">
+
+<table class="table" style="margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:left;"> Coffee </th>
+   <th style="text-align:left;"> Not coffee </th>
+   <th style="text-align:left;"> Total </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Context of <em>hot</em> </td>
+   <td style="text-align:left;"> O<sub>11</sub> </td>
+   <td style="text-align:left;"> O<sub>21</sub> </td>
+   <td style="text-align:left;"> R<sub>1</sub> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Not context of <em>hot</em> </td>
+   <td style="text-align:left;"> O<sub>12</sub> </td>
+   <td style="text-align:left;"> O<sub>22</sub> </td>
+   <td style="text-align:left;"> R<sub>2</sub> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Total </td>
+   <td style="text-align:left;"> C<sub>1</sub> </td>
+   <td style="text-align:left;"> C<sub>2</sub> </td>
+   <td style="text-align:left;"> N </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<div class="footer">
+<p>Observed frequencies</p>
+</div>
+</section>
+<section id="building-the-contingency-table" class="slide level2">
+<h2>Building the contingency table</h2>
 <div class="cell">
 <div class="cell-output-display">
 
@@ -760,36 +808,368 @@ rank orig_rank         type abs_freq nrm_freq
 
 </div>
 </div>
+<div>
 <ul>
-<li><p>How important is it that <em>coffee</em> occurs 4 times in the context of <em>hot</em> when</p>
+<li class="fragment"><p>How important is it that <em>coffee</em> occurs 4 times in the context of <em>hot</em> when</p>
 <ul>
-<li><p>there are 773 other events in the context of <em>hot</em></p></li>
-<li><p>and <em>coffee</em> also occurs 72 times outside the context of <em>hot</em>?</p></li>
+<li class="fragment"><p>there are 773 other events in the context of <em>hot</em></p></li>
+<li class="fragment"><p>and <em>coffee</em> also occurs 72 times outside the context of <em>hot</em>?</p></li>
 </ul></li>
 </ul>
+</div>
 <div class="footer">
-<p>Absolute frequencies</p>
+<p>Observed frequencies</p>
 </div>
 </section></section>
+<section>
+<section id="expected-frequencies" class="title-slide slide level1 center">
+<h1>Expected frequencies</h1>
+
+</section>
+<section id="expected-a-b-c-d" class="slide level2">
+<h2>Expected a, b, c, d…</h2>
+<div class="cell">
+<div class="cell-output-display">
+
+<table class="table" style="margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:left;"> Coffee </th>
+   <th style="text-align:left;"> Not coffee </th>
+   <th style="text-align:left;"> Total </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Context of <em>hot</em> </td>
+   <td style="text-align:left;"> (m * k)/N </td>
+   <td style="text-align:left;"> (m * l)/N </td>
+   <td style="text-align:left;"> m </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Not context of <em>hot</em> </td>
+   <td style="text-align:left;"> (n * k)/N </td>
+   <td style="text-align:left;"> (n * l)/N </td>
+   <td style="text-align:left;"> n </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Total </td>
+   <td style="text-align:left;"> k </td>
+   <td style="text-align:left;"> l </td>
+   <td style="text-align:left;"> N </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<div class="footer">
+<p>Expected frequencies</p>
+</div>
+</section>
+<section id="e-r-c-n" class="slide level2">
+<h2>E, R, C, N</h2>
+<div class="cell">
+<div class="cell-output-display">
+
+<table class="table" style="margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:left;"> Coffee </th>
+   <th style="text-align:left;"> Not coffee </th>
+   <th style="text-align:left;"> Total </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Context of <em>hot</em> </td>
+   <td style="text-align:left;"> E<sub>11</sub> </td>
+   <td style="text-align:left;"> E<sub>21</sub> </td>
+   <td style="text-align:left;"> R<sub>1</sub> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Not context of <em>hot</em> </td>
+   <td style="text-align:left;"> E<sub>12</sub> </td>
+   <td style="text-align:left;"> E<sub>22</sub> </td>
+   <td style="text-align:left;"> R<sub>2</sub> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Total </td>
+   <td style="text-align:left;"> C<sub>1</sub> </td>
+   <td style="text-align:left;"> C<sub>2</sub> </td>
+   <td style="text-align:left;"> N </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<div class="footer">
+<p>Expected frequencies</p>
+</div>
+</section>
+<section id="expected-frequencies-1" class="slide level2">
+<h2>Expected frequencies</h2>
+<div class="cell">
+<div class="cell-output-display">
+
+<table class="table" style="margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:right;"> Coffee </th>
+   <th style="text-align:right;"> Not coffee </th>
+   <th style="text-align:right;"> Total </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Context of <em>hot</em> </td>
+   <td style="text-align:right;"> 0.05 </td>
+   <td style="text-align:right;"> 776.95 </td>
+   <td style="text-align:right;"> 777 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Not context of <em>hot</em> </td>
+   <td style="text-align:right;"> 75.95 </td>
+   <td style="text-align:right;"> 1 174 790.05 </td>
+   <td style="text-align:right;"> 1 174 866 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Total </td>
+   <td style="text-align:right;"> 76.00 </td>
+   <td style="text-align:right;"> 1 175 567.00 </td>
+   <td style="text-align:right;"> 1 175 643 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<div class="footer">
+<p>Expected frequencies</p>
+</div>
+</section></section>
+<section>
 <section id="target-and-reference-contexts" class="title-slide slide level1 center">
 <h1>Target and reference contexts</h1>
+
+</section>
+<section id="contexts-in-the-contingency-table" class="slide level2">
+<h2>Contexts in the contingency table</h2>
+<div class="cell">
+<div class="cell-output-display">
+
+<table class="table" style="margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:left;"> Target item </th>
+   <th style="text-align:left;"> Other items </th>
+   <th style="text-align:left;"> Total </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Target context </td>
+   <td style="text-align:left;"> O<sub>11</sub> </td>
+   <td style="text-align:left;"> O<sub>21</sub> </td>
+   <td style="text-align:left;"> R<sub>1</sub> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Reference context </td>
+   <td style="text-align:left;"> O<sub>12</sub> </td>
+   <td style="text-align:left;"> O<sub>22</sub> </td>
+   <td style="text-align:left;"> R<sub>2</sub> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Total </td>
+   <td style="text-align:left;"> C<sub>1</sub> </td>
+   <td style="text-align:left;"> C<sub>2</sub> </td>
+   <td style="text-align:left;"> N </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
 <div class="footer">
 <p>Target and reference contexts</p>
 </div>
 </section>
-
-<section id="effect-size-measures" class="title-slide slide level1 center">
-<h1>Effect size measures</h1>
+<section id="collocation-analysis" class="slide level2">
+<h2>Collocation analysis</h2>
+<ul>
+<li><p>The <strong>target</strong> context is the surroundings of an item, the <strong>node</strong>, e.g.&nbsp;<em>hot</em>.</p>
+<ul>
+<li><p>In <strong>surface collocations</strong>, a certain window around the node, e.g.&nbsp;3 tokens to either side.</p></li>
+<li><p>In <strong>textual collocations</strong>, the text in which the node occurs.</p></li>
+<li><p>In <strong>syntactic collocations</strong>, a certain syntactic relationship with the node.</p></li>
+</ul></li>
+<li><p>The <strong>reference</strong> context is all the contexts <strong>not</strong> surrounding the node.</p></li>
+</ul>
 <div class="footer">
-<p>Effect size measures</p>
+<p>Target and reference contexts</p>
 </div>
 </section>
-
-<section id="strength-of-evidence-measures" class="title-slide slide level1 center">
-<h1>Strength of evidence measures</h1>
-<div class="footer">
-<p>Strength of evidence measures</p>
+<section id="distinctive-collocation-analysis" class="slide level2">
+<h2>Distinctive collocation analysis</h2>
+<ul>
+<li><p>The <strong>target</strong> context is the surroundings of a node, e.g.&nbsp;<em>hot</em>.</p></li>
+<li><p>The <strong>reference</strong> context is the surroundings of a second node for contrast, e.g.&nbsp;<em>cold</em>.</p></li>
+</ul>
+<div class="callout callout-note callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>In (distinctive) collocation analysis, the “target” item is the <strong>collocate</strong>.</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>Target and reference contexts</p>
+</div>
+</section>
+<section id="keyword-analysis" class="slide level2">
+<h2>Keyword analysis</h2>
+<ul>
+<li><p>The <strong>target</strong> context is a text or corpus.</p></li>
+<li><p>The <strong>reference</strong> context is another bigger, <em>reference</em> corpus.</p></li>
+</ul>
+<div class="callout callout-note callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>In <em>Distinctive keyword analysis</em> the reference context is another target corpus.</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>Target and reference contexts</p>
+</div>
+</section>
+<section id="collostructional-analysis" class="slide level2">
+<h2>Collostructional analysis</h2>
+<ul>
+<li><p>The <strong>target</strong> context is a certain slot in a construction.</p></li>
+<li><p>The <strong>reference</strong> context is a comparable slot in a comparable construction.</p></li>
+</ul>
+<div class="callout callout-note callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>We talk about <em>distinctive collexeme analysis</em> when that second construction is very specific.</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>Target and reference contexts</p>
+</div>
+</section></section>
+<section>
+<section id="summing-up" class="title-slide slide level1 center">
+<h1>Summing up</h1>
+
+</section>
+<section id="procedure" class="slide level2">
+<h2>Procedure</h2>
+<ol type="1">
+<li><p>For each type in the corpus, compute their frequencies in the target and reference contexts.</p></li>
+<li><p>We obtain two frequency lists from which we can obtain all necessary values of the contingency table.</p></li>
+<li><p>Based on the contingency tables, compute the association strength between each type and the target context.</p></li>
+<li><p>Rank and/or filter.</p></li>
+</ol>
+<div class="footer">
+<p>Summing up</p>
+</div>
+</section>
+<section id="code" class="slide level2">
+<h2>Code</h2>
+<p>Main function <a href="https://masterclm.github.io/mclm/reference/assoc_scores.html"><code>mclm::assoc_scores()</code></a>.</p>
+<ol type="1">
+<li>Obtain two frequency lists:</li>
+</ol>
+<ul>
+<li><p>“Manually” (with <code>freqlist()</code> and different corpora, for example.)</p></li>
+<li><p>With <code>surf_cooc()</code> for surface collocations.</p></li>
+<li><p>With <code>text_cooc()</code> for textual collocations.</p></li>
+</ul>
+<ol start="2" type="1">
+<li>Give the frequency lists to <code>assoc_scores()</code>.<sup>1</sup></li>
+</ol>
+<div class="footer">
+<p>Summing up</p>
+</div>
+<aside><ol class="aside-footnotes"><li id="fn2"><p>Alternatively, give the values of <code>a</code>, <code>b</code>, <code>c</code> and <code>d</code> to <code>assoc_abcd()</code>.</p></li></ol></aside></section>
+<section id="hot-example-1" class="slide level2">
+<h2>Hot example</h2>
+<div class="cell" data-lable="assoc-hot">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a><span class="fu">assoc_scores</span>(hot_cooc)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Association scores (types in list: 44)
+       type  a    PMI G_signed|  b     c       d dir  exp_a DP_rows
+ 1      ,/, 49  0.350    2.824|728 58104 1116762   1 38.434   0.014
+ 2   the/at 39 -0.226   -1.069|738 68974 1105892  -1 45.612  -0.009
+ 3      ./. 38  0.236    1.010|739 48774 1126092   1 32.261   0.007
+ 4   and/cc 36  0.932   12.660|741 28506 1146360   1 18.864   0.022
+ 5     a/at 28  0.885    8.898|749 22915 1151951   1 15.163   0.017
+ 6    of/in 21 -0.141   -0.213|756 35007 1139859  -1 23.151  -0.003
+ 7    in/in 15  0.131    0.122|762 20716 1154150   1 13.701   0.002
+ 8 was/bedz 13  1.004    5.120|764  9793 1165073   1  6.481   0.008
+ 9 water/nn 13  5.529   74.799|764   413 1174453   1  0.282   0.016
+10  with/in 10  1.059    4.321|767  7251 1167615   1  4.799   0.007
+11   it/pps  9  1.218    4.975|768  5844 1169022   1  3.868   0.007
+12    to/to  8 -0.301   -0.380|769 14909 1159957  -1  9.859  -0.002
+13    on/in  7  0.795    1.796|770  6098 1168768   1  4.035   0.004
+14  cold/jj  6  6.029   38.634|771   133 1174733   1  0.092   0.008
+15    to/in  6 -0.283   -0.249|771 11040 1163826  -1  7.300  -0.002
+16    at/in  5  0.499    0.538|772  5348 1169518   1  3.538   0.002
+17  from/in  5  0.801    1.299|772  4337 1170529   1  2.870   0.003
+18   sun/nn  5  6.227   33.572|772    96 1174770   1  0.067   0.006
+19  this/dt  5  0.558    0.664|772  5133 1169733   1  3.396   0.002
+20           4 -1.166   -3.520|773 13577 1161289  -1  8.976  -0.006
+...
+&lt;number of extra columns to the right: 7&gt;</code></pre>
+</div>
+</div>
+<div class="footer">
+<p>Summing up</p>
+</div>
+</section>
+<section id="hot-coffee-association" class="slide level2">
+<h2>Hot-coffee association</h2>
+<div class="cell" data-lable="assoc-hotcoffee">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1"></a><span class="fu">assoc_scores</span>(hot_cooc)[<span class="st">"coffee/nn"</span>,]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Association scores (types in list: 1)
+       type a   PMI G_signed|  b  c       d dir exp_a DP_rows RR_rows
+1 coffee/nn 4 6.315   27.349|773 72 1174794   1  0.05   0.005  84.003
+&lt;number of extra columns to the right: 6&gt;</code></pre>
+</div>
+</div>
+<div class="footer">
+<p>Summing up</p>
+</div>
+</section></section>
+<section id="next-association-measures" class="title-slide slide level1 center">
+<h1>Next: Association measures</h1>
 <div class="footer footer-default">
 
 </div>
