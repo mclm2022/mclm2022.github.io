@@ -536,14 +536,14 @@
     "href": "git/cheatsheet.html",
     "title": "Git Cheetsheet",
     "section": "",
-    "text": "Reference cheatsheet for using Git(Hub) with the course project."
+    "text": "Reference cheatsheet for using Git(Hub) with the course project. All the code starting with git should be typed in the (Git Bash) Terminal."
   },
   {
     "objectID": "git/cheatsheet.html#create-an-r-project-that-is-also-a-git-repository.",
     "href": "git/cheatsheet.html#create-an-r-project-that-is-also-a-git-repository.",
     "title": "Git Cheetsheet",
     "section": "\n1.1 Create an R project that is also a git repository.",
-    "text": "1.1 Create an R project that is also a git repository.\n\n\nCheck in the box in the dialog\nUse usethis::use_git()\n\n\n\n\n\nInitialize project\n\n\n\n\nIf you created an R project that is not a Git repository, you can still turn it into one with usethis::use_git(). When an R project is also a Git repository, you will see a “Git” tab.\n\n# install.packages(\"usethis\") # if not installed\nusethis::use_git()\n\n✔ Setting active project to 'C:/Users/u0118974/repos/github/mclm2022/methods-\nin-corpus-linguistics'"
+    "text": "1.1 Create an R project that is also a git repository.\n\n\n\nAt project creation\nUse usethis::use_git()\n\n\n\nWhen you start an R project in R Studio, check the box that says “Create a git repository”.\n\n\n\n\n\n\n\nWarning\n\n\n\nIf you don’t see the box, you probably still have to install Git!\n\n\n\n\nIf you created an R project that is not a Git repository, you can still turn it into one with usethis::use_git(). When an R project is also a Git repository, you will see a “Git” tab.\n\n# install.packages(\"usethis\") # if not installed\nusethis::use_git()"
   },
   {
     "objectID": "git/cheatsheet.html#stage-and-commit",

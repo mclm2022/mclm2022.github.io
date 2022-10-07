@@ -5,23 +5,35 @@ number-sections: true
 toc: true
 ---
 
-Reference cheatsheet for using Git(Hub) with the course project.
+Reference cheatsheet for using Git(Hub) with the course project. All the code starting with `git` should be typed in the (Git Bash) Terminal.
 
 ::: callout-caution
+## Requirements
+
 This cheatsheet assumes you already have a url for a remote repository in the `mclm2022` organization.
 
 In other projects, you could use the url of another remote repository.
+
+It also assumes you have installed [R](https://cloud.r-project.org/), [RStudio](https://www.rstudio.com/products/rstudio/download/) and [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 :::
 
 # Set-up from scratch
 
-## Create an R project that is also a git repository.
+## Create an R project that is *also* a git repository.
 
-::: {.panel-tabset}
+![](images/createProj.png){fig-alt="Three screenshots of dropdowns and dialog boxes in R Studio as you create an R project."}
+
+:::: {.panel-tabset}
   
-### Check in the box in the dialog
+### At project creation
 
-![Initialize project](images/createProj3.png)
+When you start an R project in R Studio, check the box that says "Create a git repository".
+
+![](images/createProj3.png){fig-alt="Final dialog box when creating an R project; the choice to create a git repository is highlighted."}
+
+::: callout-warning
+If you don't see the box, you probably still have to [install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)!
+:::
 
 ### Use `usethis::use_git()`
 
@@ -29,11 +41,12 @@ If you created an R project that is not a Git repository, you can still turn it 
 
 ```{r}
 #| label: use_git
+#| eval: false
 # install.packages("usethis") # if not installed
 usethis::use_git()
 ```
 
-:::
+::::
 
 ## Stage and commit
 
@@ -41,7 +54,7 @@ A freshly created R project + git repository has two files: the "{project-name}.
 
 By setting up a git repository in an R project folder, ".gitignore" is automatically populated with types of files that should be ignored:
 
-```default
+```
 # .gitignore
 .Rproj.user
 .Rhistory
@@ -95,7 +108,7 @@ Before/after each step, it can be useful to run `git status`, which will let you
 
 - In which branch you are working.
 
-- Which files, if anything are yet to be staged. (=you have to run `git add`)
+- Which files, if any, are yet to be staged. (=you have to run `git add`)
 
 - Which files, if any, have been staged and are waiting to be committed. (=you have to run `git commit`)
 

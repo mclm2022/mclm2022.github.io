@@ -174,7 +174,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>
 <a href="#set-up-from-scratch" id="toc-set-up-from-scratch" class="nav-link active" data-scroll-target="#set-up-from-scratch"><span class="toc-section-number">1</span>  Set-up from scratch</a>
   <ul class="collapse">
-<li><a href="#create-an-r-project-that-is-also-a-git-repository." id="toc-create-an-r-project-that-is-also-a-git-repository." class="nav-link" data-scroll-target="#create-an-r-project-that-is-also-a-git-repository."><span class="toc-section-number">1.1</span>  Create an R project that is also a git repository.</a></li>
+<li><a href="#create-an-r-project-that-is-also-a-git-repository." id="toc-create-an-r-project-that-is-also-a-git-repository." class="nav-link" data-scroll-target="#create-an-r-project-that-is-also-a-git-repository."><span class="toc-section-number">1.1</span>  Create an R project that is <em>also</em> a git repository.</a></li>
   <li><a href="#stage-and-commit" id="toc-stage-and-commit" class="nav-link" data-scroll-target="#stage-and-commit"><span class="toc-section-number">1.2</span>  Stage and commit</a></li>
   <li><a href="#connect-to-the-remote" id="toc-connect-to-the-remote" class="nav-link" data-scroll-target="#connect-to-the-remote"><span class="toc-section-number">1.3</span>  Connect to the remote</a></li>
   <li><a href="#push-changes" id="toc-push-changes" class="nav-link" data-scroll-target="#push-changes"><span class="toc-section-number">1.4</span>  Push changes</a></li>
@@ -219,36 +219,48 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   </div>
   
 
-</header><p>Reference cheatsheet for using Git(Hub) with the course project.</p>
+</header><p>Reference cheatsheet for using Git(Hub) with the course project. All the code starting with <code>git</code> should be typed in the (Git Bash) Terminal.</p>
 <div class="callout-caution callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-caption-container flex-fill">
-Danger
+Requirements
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <p>This cheatsheet assumes you already have a url for a remote repository in the <code>mclm2022</code> organization.</p>
 <p>In other projects, you could use the url of another remote repository.</p>
+<p>It also assumes you have installed <a href="https://cloud.r-project.org/">R</a>, <a href="https://www.rstudio.com/products/rstudio/download/">RStudio</a> and <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">Git</a>.</p>
 </div>
 </div>
 <section id="set-up-from-scratch" class="level1" data-number="1"><h1 data-number="1">
 <span class="header-section-number">1</span> Set-up from scratch</h1>
 <section id="create-an-r-project-that-is-also-a-git-repository." class="level2" data-number="1.1"><h2 data-number="1.1" class="anchored" data-anchor-id="create-an-r-project-that-is-also-a-git-repository.">
-<span class="header-section-number">1.1</span> Create an R project that is also a git repository.</h2>
+<span class="header-section-number">1.1</span> Create an R project that is <em>also</em> a git repository.</h2>
+<p><img src="images/createProj.png" class="img-fluid" alt="Three screenshots of dropdowns and dialog boxes in R Studio as you create an R project."></p>
 <div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist">
-<li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Check in the box in the dialog</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">At project creation</a></li>
 <li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Use <code>usethis::use_git()</code></a></li>
 </ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="images/createProj3.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Initialize project</figcaption><p></p>
-</figure>
+<p>When you start an R project in R Studio, check the box that says “Create a git repository”.</p>
+<p><img src="images/createProj3.png" class="img-fluid" alt="Final dialog box when creating an R project; the choice to create a git repository is highlighted."></p>
+<div class="callout-warning callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you don’t see the box, you probably still have to <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">install Git</a>!</p>
+</div>
 </div>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
@@ -256,10 +268,6 @@ Danger
 <div class="cell">
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># install.packages("usethis") # if not installed</span></span>
 <span><span class="fu">usethis</span><span class="fu">::</span><span class="fu"><a href="https://usethis.r-lib.org/reference/use_git.html">use_git</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>✔ Setting active project to 'C:/Users/u0118974/repos/github/mclm2022/methods-
-in-corpus-linguistics'</code></pre>
-</div>
 </div>
 </div>
 </div>
@@ -268,27 +276,27 @@ in-corpus-linguistics'</code></pre>
 <span class="header-section-number">1.2</span> Stage and commit</h2>
 <p>A freshly created R project + git repository has two files: the “{project-name}.Rproj” file that indicates that it’s an R project, and the “.gitignore” file that tells Git which files not to track.</p>
 <p>By setting up a git repository in an R project folder, “.gitignore” is automatically populated with types of files that should be ignored:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a># .gitignore</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>.Rproj.user</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>.Rhistory</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>.RData</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>.Ruserdata</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code># .gitignore
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata</code></pre>
 <p>In order to start up with git, you need to commit the files. Before committing, you need to stage the files you wish to commit. In other words, <em>staging</em> states which files you want to keep track of, and <em>committing</em> takes a snapshot of their current state.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"first commit"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"first commit"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>We stage with <code>git add</code>; <code>git add .</code> stages all files. Eventually you might want to only stage some of them, e.g.&nbsp;specific folders or files; in that case you type <code>git add my-file.txt</code> or <code>git add some-folder</code>.</p>
 <p>With <code>git commit</code> we take a snapshot of all the staged files; <code>-m</code> indicates that the following text (in quotation marks) is the commit message. This message should be a short description of the change you’re taking a snapshot of.</p>
 </section><section id="connect-to-the-remote" class="level2" data-number="1.3"><h2 data-number="1.3" class="anchored" data-anchor-id="connect-to-the-remote">
 <span class="header-section-number">1.3</span> Connect to the remote</h2>
 <p>The next step after committing changes, if you want online backup or to submit something, is to <code>push</code>. This uploads the current commits to the remote repository, i.e.&nbsp;the url you received. However, first we have to tell git what that url is. Suppose that your url is https://github.com/mclm2022/montes.git (It will not be <em>montes</em>), then you write the following:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin https://github.com/mclm/montes.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin https://github.com/mclm/montes.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>This has set the url as a remote destination called <code>origin</code>. You could also add a different remote, e.g.&nbsp;a repository in your private account, with a different name.</p>
 </section><section id="push-changes" class="level2" data-number="1.4"><h2 data-number="1.4" class="anchored" data-anchor-id="push-changes">
 <span class="header-section-number">1.4</span> Push changes</h2>
 <p>Finally we can push the changes. Normally, <code>git push</code> will suffice. This first time, we indicate that the default remote location is <code>origin</code> and that we push the <code>main</code> branch, creating a <code>main</code> branch in the remote if it doesn’t exist.</p>
 <p>If your main branch is not called <code>main</code> (but maybe <code>master</code>), we first rename it (with the first line below).</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch <span class="at">-M</span> main</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch <span class="at">-M</span> main</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="callout-important callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -309,7 +317,7 @@ Errors in pushing
 <p>Before/after each step, it can be useful to run <code>git status</code>, which will let you know:</p>
 <ul>
 <li><p>In which branch you are working.</p></li>
-<li><p>Which files, if anything are yet to be staged. (=you have to run <code>git add</code>)</p></li>
+<li><p>Which files, if any, are yet to be staged. (=you have to run <code>git add</code>)</p></li>
 <li><p>Which files, if any, have been staged and are waiting to be committed. (=you have to run <code>git commit</code>)</p></li>
 <li><p>How many commits you have that have not been pushed to the remote yet. (=you’ll have to run <code>git push</code>)</p></li>
 </ul>
@@ -320,22 +328,22 @@ Errors in pushing
 <span class="header-section-number">2.2</span> Stage the changes you will want to commit.</h2>
 <p>Here you can select which files you want to keep and discard changes you’re not interested in! You’re just letting git know what it will have to track.</p>
 <p>The handiest version is with the period/dot, which stages all files that have not been staged yet.</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Alternatively, you can specify a file or folder to stage, if there are files you don’t want to track yet. For example, you may have changes in both your code (let’s say, an “R” folder) and your Quarto file but you want to link them to different commit messages.</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add R</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Updated code"</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add report.qmd</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"fix typos in Quarto document"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add R</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Updated code"</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add report.qmd</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"fix typos in Quarto document"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section><section id="commit" class="level2" data-number="2.3"><h2 data-number="2.3" class="anchored" data-anchor-id="commit">
 <span class="header-section-number">2.3</span> Commit</h2>
 <p>Committing equals to taking a snapshot of the state of your project. You can do this several times a day if you have different steps or important changes.</p>
 <p>If you just run <code>git commit</code>, you will be taken to an editor to introduce a message. You can avoid this by adding the <code>-m</code> flag followed by an informative message.</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"This is a commit message"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"This is a commit message"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Up to committing, this is simply working locally, with Git.</p>
 </section><section id="push" class="level2" data-number="2.4"><h2 data-number="2.4" class="anchored" data-anchor-id="push">
 <span class="header-section-number">2.4</span> Push</h2>
 <p>The command to upload your changes to the remote repository, e.g.&nbsp;the GitHub repository, is <code>git push</code>.</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>If there is any incompatibility with the remote repository, you will get a warning.</p>
 <div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
@@ -357,25 +365,25 @@ Note
 <section id="create-a-new-branch" class="level2" data-number="3.1"><h2 data-number="3.1" class="anchored" data-anchor-id="create-a-new-branch">
 <span class="header-section-number">3.1</span> Create a new branch</h2>
 <p>The command to create a new branch is <code>git branch</code>.</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch new-branch</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch new-branch</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>This only sets up its creation, but does not move you to the branch.</p>
 </section><section id="switch-to-a-branch" class="level2" data-number="3.2"><h2 data-number="3.2" class="anchored" data-anchor-id="switch-to-a-branch">
 <span class="header-section-number">3.2</span> Switch to a branch</h2>
 <p>You can move from one branch to the other with <code>git checkout &lt;branch&gt;</code>:</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout new-branch</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout new-branch</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>If you’re using Git Bash, you should see the name of your branch in parenthesis after the name of your directory in the Terminal. The output would be something like this:</p>
 <pre class="console"><code>user@machine project-directory (main)
 $ git checkout new-branch
 user@machine project-directory (new-branch)
 $</code></pre>
 <p>You can also switch to a non-existent branch and create it simultaneously with the <code>-b</code> flag:</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> new-branch</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> new-branch</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section><section id="make-changes-and-commit" class="level2" data-number="3.3"><h2 data-number="3.3" class="anchored" data-anchor-id="make-changes-and-commit">
 <span class="header-section-number">3.3</span> Make changes and commit</h2>
 <p>In order for this branch to have any substance at all, you need to commit something. The example in class was to copy a folder with a corpus and to add the name of the corpus in the “.gitignore” file. This way, the “.gitignore” has changed and it has to be staged and committed.</p>
 <p>If you want a more drastic change, you could create a file, such a script or a Quarto document. Once you have added and committed it, it exists in the <code>new-branch</code> branch but not in <code>main</code>.</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"start new branch"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"start new branch"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>By running <code>git checkout main</code> you will switch to the <code>main</code> branch and see that the new file is not there. You would also see that “.gitignore” is not ignoring the corpus folder.</p>
 <div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist">
@@ -386,9 +394,9 @@ $</code></pre>
 <div class="tab-content">
 <div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <p>If you want to send the changes to a <code>new-branch</code> branch in the remote location (because you like the online-backup option), you can also push them. As before, the first time you will have to run:</p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin new-branch</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin new-branch</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>And the rest of the times:</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>If you do just <code>git push</code> from the beginning, it will throw you an error and give you the appropriate instructions.</p>
 <div class="callout-important callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
@@ -408,15 +416,15 @@ Important
 </div>
 <div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
 <p>Once you are done with a branch you can merge it with another… which doesn’t mean you delete it. It just means that the current state of the new branch is brought to the previous branch. For example, if you want to bring all you have in <code>new-branch</code> to the <code>main</code> branch, you run <code>git checkout</code> followed by <code>git merge</code>. Optionally, you can delete the other branch with <code>git branch -d new-branch</code>… but it’s not necessary.</p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout main</span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> merge new-branch</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout main</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> merge new-branch</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Or alternatively</p>
-<div class="sourceCode" id="cb19"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> merge main new-branch</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> merge main new-branch</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
 <p>If you just want to move part of the work in one branch to the other, instead of merging them fully, you can use <code>git checkout &lt;branch&gt; &lt;file&gt;</code>, e.g.</p>
-<div class="sourceCode" id="cb20"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout main</span>
-<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout new-branch R</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout main</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout new-branch R</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
