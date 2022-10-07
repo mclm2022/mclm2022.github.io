@@ -77,7 +77,7 @@ With `git commit` we take a snapshot of all the staged files; `-m` indicates tha
 The next step after committing changes, if you want online backup or to submit something, is to `push`. This uploads the current commits to the remote repository, i.e. the url you received. However, first we have to tell git what that url is. Suppose that your url is https://github.com/mclm2022/montes.git (It will not be *montes*), then you write the following:
 
 ```bash
-git remote add origin https://github.com/mclm/montes.git
+git remote add origin https://github.com/mclm2022/montes.git
 ```
 
 This has set the url as a remote destination called `origin`. You could also add a different remote, e.g. a repository in your private account, with a different name.

@@ -40,8 +40,9 @@ Inside your .qmd file, you can insert the following chunk:
 
 ```{r}
 #| label: chunk
+#| output: false
+#| warning: false
 #| echo: fenced
-#| eval: false
 library(here)
 library(tidyverse)
 library(mclm)
@@ -75,9 +76,9 @@ flist <- freqlist(brown_fnames, re_token_splitter = re("\\s+"))
 And then, in your .qmd file, you call the code with one of the options in the [slides](../slides/init.qmd#import-code), e.g.
 
 ```{r}
-#| label: file
+#| label: source
 #| echo: fenced
-#| file: !expr here::here("R", "script.R")
+source(here::here("script.R"))
 ```
 
 :::
@@ -90,6 +91,13 @@ and `r knitr::inline_expr('n_types(flist)')` types,
 giving us a type-token ratio of `r knitr::inline_expr('round(n_types(flist)/n_tokens(flist), 2)')`.
 ```
 
+And the output should read:
+
+> The Brown corpus used in this project has `r prettyNum(n_tokens(flist))` tokens
+and `r n_types(flist)` types,
+giving us a type-token ratio of `r round(n_types(flist)/n_tokens(flist), 2)`.
+
+
 # Git workflow
 
 ```bash
@@ -101,6 +109,7 @@ git checkout explore-corpus
 git status # check that the right files are unstaged, the corpus does not show up
 git add .
 git commit -m "describe corpus"
+# you may also run `git push -u origin explore-corpus` if you want to push to your own branch
 git checkout main
 git status # check everything is fine. New files should not be there
 git merge explore-corpus
