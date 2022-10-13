@@ -1,6 +1,6 @@
 ---
 title: "Contingency tables"
-subtitle: "Methods of Corpus Linguistics"
+subtitle: "Methods of Corpus Linguistics (class 3)"
 author: "Mariana Montes"
 format:
   revealjs:
@@ -14,6 +14,7 @@ execute:
 #| label: setup
 #| include: false
 headings <- c("Hot example", "Observed frequencies", "Expected frequencies", "Target and reference contexts", "Summing up")
+source(here::here("R", "utils.R"))
 library(kableExtra)
 ```
 
@@ -184,15 +185,7 @@ tibble(
 ```{r}
 #| label: abcd-O
 #| echo: false
-tibble(
-  rows = c("Context of <em>hot</em>", "Not context of <em>hot</em>", "Total"),
-  coffee = c("O<sub>11</sub>", "O<sub>12</sub>", "C<sub>1</sub>"),
-  not_coffee = c("O<sub>21</sub>", "O<sub>22</sub>", "C<sub>2</sub>"),
-  total = c("R<sub>1</sub>", "R<sub>2</sub>", "N")
-) %>% 
-  kbl(col.names = c(" ", "Coffee", "Not coffee", "Total"),
-      escape = FALSE) %>%
-  kable_styling()
+abcd_o("Context of <em>hot</em>", "Not context of <em>hot</em>","Coffee", "Not coffee")
 ```
 
 ::: {.footer}
@@ -212,7 +205,7 @@ c <- hot_cooc$ref_freqlist[[colloc]]
 d <- tot_n_tokens(hot_cooc$ref_freqlist) - c
 m <- a + b; n <- c + d; k <- a + c; l <- b + d
 N <- m + n
-tibble(
+obs <- tibble(
   rows = c("Context of <em>hot</em>", "Not context of <em>hot</em>", "Total"),
   coffee = c(a, c, k),
   not_coffee = c(b, d, l),
@@ -222,6 +215,7 @@ tibble(
       escape = FALSE,
       format.args = list(big.mark = " ")) %>%
   kable_styling()
+obs
 ```
 
 ::: {.incremental}
@@ -284,7 +278,7 @@ tibble(
 `r headings[[i]]`
 :::
 
-## Expected frequencies
+## Expected frequencies {.smaller}
 
 ```{r}
 #| label: abcd-exp2
@@ -299,6 +293,15 @@ tibble(
       escape = FALSE, digits = 3,
       format.args = list(big.mark = " ")) %>%
   kable_styling()
+```
+
+. . .
+
+Cf. Observed frequencies.
+```{r}
+#| label: obs2
+#| echo: false
+obs
 ```
 
 ::: {.footer}
@@ -318,15 +321,7 @@ i <- i + 1
 ```{r}
 #| label: tar-ref
 #| echo: false
-tibble(
-  rows = c("Target context", "Reference context", "Total"),
-  coffee = c("O<sub>11</sub>", "O<sub>12</sub>", "C<sub>1</sub>"),
-  not_coffee = c("O<sub>21</sub>", "O<sub>22</sub>", "C<sub>2</sub>"),
-  total = c("R<sub>1</sub>", "R<sub>2</sub>", "N")
-) %>% 
-  kbl(col.names = c(" ", "Target item", "Other items", "Total"),
-      escape = FALSE) %>%
-  kable_styling()
+abcd_o("Target context", "Reference context")
 ```
 
 ::: {.footer}
@@ -349,6 +344,18 @@ tibble(
 `r headings[[i]]`
 :::
 
+## Collocation analysis - table
+
+```{r}
+#| label: col-obs
+#| echo: false
+abcd_o("Context of node", "Not context of node", "Collocate")
+```
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
 ## Distinctive collocation analysis
 
 - The **target** context is the surroundings of a node, e.g. *hot*.
@@ -363,6 +370,18 @@ In (distinctive) collocation analysis, the "target" item is the **collocate**.
 `r headings[[i]]`
 :::
 
+## Distinctive collocation analysis - table
+
+```{r}
+#| label: dcol-obs
+#| echo: false
+abcd_o("Context of node", "Context of alternative node", "Collocate")
+```
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
 ## Keyword analysis
 
 - The **target** context is a text or corpus.
@@ -370,8 +389,21 @@ In (distinctive) collocation analysis, the "target" item is the **collocate**.
 - The **reference** context is another bigger, *reference* corpus.
 
 ::: callout-note
-In *Distinctive keyword analysis* the reference context is another target corpus.
+In *distinctive keyword analysis* the reference context is another target corpus.
 :::
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+
+## Keyword analysis - table
+
+```{r}
+#| label: kw-obs
+#| echo: false
+abcd_o("Target text/corpus", "Reference corpus")
+```
 
 ::: {.footer}
 `r headings[[i]]`
@@ -387,10 +419,26 @@ In *Distinctive keyword analysis* the reference context is another target corpus
 We talk about *distinctive collexeme analysis* when that second construction is very specific.
 :::
 
+::: {.notes}
+For example, ditransitive construction versus transitive or intransitive. Distinctive: between ditransitive and prepositional alternative -- you need enough data.
+:::
+
 ::: {.footer}
 `r headings[[i]]`
 :::
 
+
+## Collostructional analysis - table
+
+```{r}
+#| label: cols-obs
+#| echo: false
+abcd_o("Target construction", "Comparable construction")
+```
+
+::: {.footer}
+`r headings[[i]]`
+:::
 
 ```{r}
 #| label: headingchange4

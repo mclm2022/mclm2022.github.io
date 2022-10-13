@@ -1,6 +1,6 @@
 ---
 title: "Reading and exploring a corpus"
-subtitle: "Methods of Corpus Linguistics: class 2"
+subtitle: "Methods of Corpus Linguistics (class 2)"
 author: "Mariana Montes"
 format:
   revealjs:

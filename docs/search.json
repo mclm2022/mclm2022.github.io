@@ -396,7 +396,7 @@
     "href": "slides/contingency-tables.html#expected-frequencies-1",
     "title": "Contingency tables",
     "section": "Expected frequencies",
-    "text": "Expected frequencies\n\n\n\n\n \n  \n      \n    Coffee \n    Not coffee \n    Total \n  \n \n\n  \n    Context of hot \n    0.05 \n    776.95 \n    777 \n  \n  \n    Not context of hot \n    75.95 \n    1 174 790.05 \n    1 174 866 \n  \n  \n    Total \n    76.00 \n    1 175 567.00 \n    1 175 643 \n  \n\n\n\n\n\n\nExpected frequencies"
+    "text": "Expected frequencies\n\n\n\n\n \n  \n      \n    Coffee \n    Not coffee \n    Total \n  \n \n\n  \n    Context of hot \n    0.05 \n    776.95 \n    777 \n  \n  \n    Not context of hot \n    75.95 \n    1 174 790.05 \n    1 174 866 \n  \n  \n    Total \n    76.00 \n    1 175 567.00 \n    1 175 643 \n  \n\n\n\n\n\n\nCf. Observed frequencies.\n\n\n\n\n \n  \n      \n    Coffee \n    Not coffee \n    Total \n  \n \n\n  \n    Context of hot \n    4 \n    773 \n    777 \n  \n  \n    Not context of hot \n    72 \n    1 174 794 \n    1 174 866 \n  \n  \n    Total \n    76 \n    1 175 567 \n    1 175 643 \n  \n\n\n\n\n\n\nExpected frequencies"
   },
   {
     "objectID": "slides/contingency-tables.html#contexts-in-the-contingency-table",
@@ -413,6 +413,13 @@
     "text": "Collocation analysis\n\nThe target context is the surroundings of an item, the node, e.g. hot.\n\nIn surface collocations, a certain window around the node, e.g. 3 tokens to either side.\nIn textual collocations, the text in which the node occurs.\nIn syntactic collocations, a certain syntactic relationship with the node.\n\nThe reference context is all the contexts not surrounding the node.\n\n\nTarget and reference contexts"
   },
   {
+    "objectID": "slides/contingency-tables.html#collocation-analysis---table",
+    "href": "slides/contingency-tables.html#collocation-analysis---table",
+    "title": "Contingency tables",
+    "section": "Collocation analysis - table",
+    "text": "Collocation analysis - table\n\n\n\n\n \n  \n      \n    Collocate \n    Other items \n    Total \n  \n \n\n  \n    Context of node \n    O11 \n    O21 \n    R1 \n  \n  \n    Not context of node \n    O12 \n    O22 \n    R2 \n  \n  \n    Total \n    C1 \n    C2 \n    N \n  \n\n\n\n\n\n\nTarget and reference contexts"
+  },
+  {
     "objectID": "slides/contingency-tables.html#distinctive-collocation-analysis",
     "href": "slides/contingency-tables.html#distinctive-collocation-analysis",
     "title": "Contingency tables",
@@ -420,18 +427,39 @@
     "text": "Distinctive collocation analysis\n\nThe target context is the surroundings of a node, e.g. hot.\nThe reference context is the surroundings of a second node for contrast, e.g. cold.\n\n\n\n\n\n\n\nNote\n\n\nIn (distinctive) collocation analysis, the “target” item is the collocate.\n\n\n\n\nTarget and reference contexts"
   },
   {
+    "objectID": "slides/contingency-tables.html#distinctive-collocation-analysis---table",
+    "href": "slides/contingency-tables.html#distinctive-collocation-analysis---table",
+    "title": "Contingency tables",
+    "section": "Distinctive collocation analysis - table",
+    "text": "Distinctive collocation analysis - table\n\n\n\n\n \n  \n      \n    Collocate \n    Other items \n    Total \n  \n \n\n  \n    Context of node \n    O11 \n    O21 \n    R1 \n  \n  \n    Context of alternative node \n    O12 \n    O22 \n    R2 \n  \n  \n    Total \n    C1 \n    C2 \n    N \n  \n\n\n\n\n\n\nTarget and reference contexts"
+  },
+  {
     "objectID": "slides/contingency-tables.html#keyword-analysis",
     "href": "slides/contingency-tables.html#keyword-analysis",
     "title": "Contingency tables",
     "section": "Keyword analysis",
-    "text": "Keyword analysis\n\nThe target context is a text or corpus.\nThe reference context is another bigger, reference corpus.\n\n\n\n\n\n\n\nNote\n\n\nIn Distinctive keyword analysis the reference context is another target corpus.\n\n\n\n\nTarget and reference contexts"
+    "text": "Keyword analysis\n\nThe target context is a text or corpus.\nThe reference context is another bigger, reference corpus.\n\n\n\n\n\n\n\nNote\n\n\nIn distinctive keyword analysis the reference context is another target corpus.\n\n\n\n\nTarget and reference contexts"
+  },
+  {
+    "objectID": "slides/contingency-tables.html#keyword-analysis---table",
+    "href": "slides/contingency-tables.html#keyword-analysis---table",
+    "title": "Contingency tables",
+    "section": "Keyword analysis - table",
+    "text": "Keyword analysis - table\n\n\n\n\n \n  \n      \n    Target item \n    Other items \n    Total \n  \n \n\n  \n    Target text/corpus \n    O11 \n    O21 \n    R1 \n  \n  \n    Reference corpus \n    O12 \n    O22 \n    R2 \n  \n  \n    Total \n    C1 \n    C2 \n    N \n  \n\n\n\n\n\n\nTarget and reference contexts"
   },
   {
     "objectID": "slides/contingency-tables.html#collostructional-analysis",
     "href": "slides/contingency-tables.html#collostructional-analysis",
     "title": "Contingency tables",
     "section": "Collostructional analysis",
-    "text": "Collostructional analysis\n\nThe target context is a certain slot in a construction.\nThe reference context is a comparable slot in a comparable construction.\n\n\n\n\n\n\n\nNote\n\n\nWe talk about distinctive collexeme analysis when that second construction is very specific.\n\n\n\n\nTarget and reference contexts"
+    "text": "Collostructional analysis\n\nThe target context is a certain slot in a construction.\nThe reference context is a comparable slot in a comparable construction.\n\n\n\n\n\n\n\nNote\n\n\nWe talk about distinctive collexeme analysis when that second construction is very specific.\n\n\n\n\nFor example, ditransitive construction versus transitive or intransitive. Distinctive: between ditransitive and prepositional alternative – you need enough data.\n\n\nTarget and reference contexts"
+  },
+  {
+    "objectID": "slides/contingency-tables.html#collostructional-analysis---table",
+    "href": "slides/contingency-tables.html#collostructional-analysis---table",
+    "title": "Contingency tables",
+    "section": "Collostructional analysis - table",
+    "text": "Collostructional analysis - table\n\n\n\n\n \n  \n      \n    Target item \n    Other items \n    Total \n  \n \n\n  \n    Target construction \n    O11 \n    O21 \n    R1 \n  \n  \n    Comparable construction \n    O12 \n    O22 \n    R2 \n  \n  \n    Total \n    C1 \n    C2 \n    N \n  \n\n\n\n\n\n\nTarget and reference contexts"
   },
   {
     "objectID": "slides/contingency-tables.html#procedure",
