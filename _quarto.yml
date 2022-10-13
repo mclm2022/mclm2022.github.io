@@ -10,6 +10,7 @@ project:
     - slides/contingency-tables.qmd
     - studies/base.qmd
     - git/*.qmd
+    - quarto/*.qmd
 
 website:
   title: "Methods in Corpus Linguistics"
@@ -28,8 +29,10 @@ website:
         href: slides/index.qmd
       - text: Git cheatsheet
         href: git/cheatsheet.qmd
-      - text: Assignment
-        href: git/assignment.qmd
+      - text: Assignments
+        menu: 
+          - git/assignment.qmd
+          - quarto/crossref.qmd
     search: true
 format:
   html:

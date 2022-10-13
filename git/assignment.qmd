@@ -1,7 +1,7 @@
 ---
 title: "Corpus description"
 author: "Mariana Montes"
-subtitle: "First (optional) assignment"
+subtitle: "First assignment"
 ---
 
 The goal of this assignment is to help solidify what we learned on the second class of the course and get some idea of how to describe a corpus.
