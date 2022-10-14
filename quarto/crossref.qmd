@@ -165,7 +165,7 @@ git commit -m "practice with cross-references"
 # you may also make several commits as you add a figure, a table...
 git checkout main
 git status # check everything is fine. New files should not be there
-git merge cross-reference
+git merge cross-ref
 # Now the .qmd file, the rendered file and the help files should be present
 git push
 # and send me a message!
