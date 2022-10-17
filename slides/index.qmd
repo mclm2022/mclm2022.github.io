@@ -4,6 +4,7 @@ number-sections: true
 ---
 
 These are the slides of the course, Fall of 2022.
+If you would like to download slides as PDF, please follow the [instructions in the Quarto documentation](https://quarto.org/docs/presentations/revealjs/presenting.html#print-to-pdf).
 
 # [Introduction](intro.qmd){target="_blank"}
 

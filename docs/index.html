@@ -128,7 +128,13 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#faq" id="toc-faq" class="nav-link active" data-scroll-target="#faq">FAQ</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -154,8 +160,20 @@ ul.task-list li input[type="checkbox"] {
 <div>
 <iframe class="slide-deck" src="slides/intro.html"></iframe>
 </div>
+<section id="faq" class="level1">
+<h1>FAQ</h1>
+<p>Here are some questions that have come up frequently and that you might have as well. For Git(Hub) issues, please first check <a href="git/cheatsheet.git">the Cheatsheet</a>.</p>
+<p><strong>I cannot run <code>remotes::install_github("masterclm/mclm")</code>.</strong></p>
+<p>It might be that you have not installed the <code>remotes</code> package (which is understandable, since I forgot to say so). Please run <code>install.packages("remotes")</code> and then try again.</p>
+<p><strong>I cannot read the corpus.</strong></p>
+<p>Please check the path you’re using to read it! If you copied code from slides or notebooks in this website, the path to a corpus directory will be something like <code>here::here("studies", "_corpora", "brown")</code>, because in the R project <em>of this website</em> the corpora are inside a folder called “_corpora”, inside the folder called “studies”. In your own code, you should adapt the <code>here::here()</code> call to the path to your own corpus. For example, if you use the “brown” corpus and it’s stored in the top level of your project, i.e.&nbsp;not inside any other subfolder, then you should use <code>here::here("brown")</code>. If it’s inside a “corpus” folder instead, you should use <code>here::here("corpus", "brown")</code>.</p>
+<p><strong>I get a message that R cannot find the function “get_fnames” (or some other function)</strong></p>
+<p>You should load the library that the function belongs to. For <code>get_fnames()</code>, you need <code>library(mclm)</code>. For <code>here()</code>, you need <code>library(here)</code>. Alternatively, you can mention the name of the package before the function name, joined by two colons: <code>mclm::get_fnames()</code>, <code>here::here()</code>…</p>
+<p><strong>I don’t see <code>(main)</code> or anything similar in my Terminal when I try to use Git.</strong></p>
+<p>I’m not sure if you can do this on Mac at all, but on Windows, in R Studio, go to Tools &gt; Global Options &gt; Terminal, go to the dropbox menu after “New terminals open with” and choose <em>Git Bash</em>. After you reset R Studio, it should be ok.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

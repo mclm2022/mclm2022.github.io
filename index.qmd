@@ -14,3 +14,25 @@ Most of the code relies on the [`{mclm}` package](https://masterclm.github.io/mc
 
 </div>
 
+# FAQ
+
+Here are some questions that have come up frequently and that you might have as well. For Git(Hub) issues, please first check [the Cheatsheet](git/cheatsheet.git).
+
+**I cannot run `remotes::install_github("masterclm/mclm")`.**
+
+It might be that you have not installed the `remotes` package (which is understandable, since I forgot to say so).
+Please run `install.packages("remotes")` and then try again.
+
+**I cannot read the corpus.**
+
+Please check the path you're using to read it! If you copied code from slides or notebooks in this website, the path to a corpus directory will be something like `here::here("studies", "_corpora", "brown")`, because in the R project *of this website* the corpora are inside a folder called "_corpora", inside the folder called "studies". In your own code, you should adapt the `here::here()` call to the path to your own corpus. For example, if you use the "brown" corpus and it's stored in the top level of your project, i.e. not inside any other subfolder, then you should use `here::here("brown")`. If it's inside a "corpus" folder instead, you should use `here::here("corpus", "brown")`.
+
+**I get a message that R cannot find the function "get_fnames" (or some other function)**
+
+You should load the library that the function belongs to. For `get_fnames()`, you need `library(mclm)`. For `here()`, you need `library(here)`. Alternatively, you can mention the name of the package before the function name, joined by two colons: `mclm::get_fnames()`, `here::here()`...
+
+**I don't see `(main)` or anything similar in my Terminal when I try to use Git.**
+
+I'm not sure if you can do this on Mac at all, but on Windows, in R Studio, go to Tools > Global Options > Terminal, go to the dropbox menu after "New terminals open with" and choose *Git Bash*. After you reset R Studio, it should be ok.
+
+
