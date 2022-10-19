@@ -35,4 +35,6 @@ You should load the library that the function belongs to. For `get_fnames()`, yo
 
 I'm not sure if you can do this on Mac at all, but on Windows, in R Studio, go to Tools > Global Options > Terminal, go to the dropbox menu after "New terminals open with" and choose *Git Bash*. After you reset R Studio, it should be ok.
 
+# TIPS
 
+- [How to name files](http://www2.stat.duke.edu/~rcs46/lectures_2015/01-markdown-git/slides/naming-slides/naming-slides.pdf)

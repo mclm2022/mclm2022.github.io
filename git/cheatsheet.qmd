@@ -5,7 +5,7 @@ number-sections: true
 toc: true
 ---
 
-Reference cheatsheet for using Git(Hub) with the course project. All the code starting with `git` should be typed in the (Git Bash) Terminal.
+Reference cheatsheet (or as it going, reference manual) for using Git(Hub) with the course project. All the code starting with `git` should be typed in the (Git Bash) Terminal.
 
 ::: callout-caution
 ## Requirements
@@ -17,7 +17,9 @@ In other projects, you could use the url of another remote repository.
 It also assumes you have installed [R](https://cloud.r-project.org/), [RStudio](https://www.rstudio.com/products/rstudio/download/) and [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 :::
 
-# Set-up from scratch
+If you have already set up your project and repository, you may skip @sec-start. @sec-daily goes over the basic workflow you might do any time you work on your project, whereas @sec-branches delves into the particular workflow when working with branches. Finally, @sec-glossary goes over the main technical terms (but do tell me if you'd like me to add any other) and @sec-debug will collect common issues that you've reported.
+
+# Set-up from scratch {#sec-start}
 
 ## Create an R project that is *also* a git repository.
 
@@ -100,7 +102,7 @@ If you did not commit changes yet, there is nothing to push! You will get an err
 
 If you have never done something like this in R Studio, you will also be asked to identify yourself and/or log in to GitHub. Just follow the instructions on the Terminal :)
 
-# Daily workflow
+# Daily workflow {#sec-daily}
 
 For the purposes of this cheetsheet we'll assume that **all the changes happen in your local computer**. That means that your local repository will be always more up-to-date than the remote, and that there will be nothing in the remote that was not tracked in the local version.
 
@@ -162,11 +164,11 @@ If there is any incompatibility with the remote repository, you will get a warni
 If we get to the point that I give feedback by modifying your project and pushing my notes to the local repository, you will have to retrieve the changes with `git pull`. You should do that **before** you stage or commit anything else, or it will be troublesome.
 :::
 
-# Work with branches
+# Work with branches {#sec-branches}
 
-If you want to work on a separate branch, important commands are `git checkout` and `git commit`. A branch doesn't really exist until you have commited something to it!
+If you want to work on a separate branch, important commands are `git checkout` and `git commit`. A branch doesn't really exist until you have committed something to it!
 
-So, first, make sure you commited something in your `main` branch.
+So, first, make sure you committed something in your `main` branch.
 
 ## Create a new branch
 
@@ -265,3 +267,86 @@ git checkout main
 git checkout new-branch R
 ```
 :::
+
+# Glossary {#sec-glossary}
+
+(git) repository
+
+:   A directory set up for version control with Git. Also its counterpart online.
+
+branch
+
+:   A line of work in your **repository**. The default branch is typically `main` or `master`, but you can work with other branches as parallel lines of work. That way, you can modify files without worrying about upsetting the main, working version. See @sec-branches to learn more about how to work with them.
+
+commit
+
+:   Take a snapshot of the current state of your **repository**. This is done *locally*^[Although you can also modify files on the website and commit those changes too! However, see @sec-nopush for possible consequences.], i.e. it does not publish your changes on GitHub. It's done with `git commit`, and you can follow it with `-m` and a commit message if you don't want an editor to open.
+
+local
+
+:   A local version of your **repository** For example, the directory in your computer that is a git **repository**. The copy of that **repository** in *my* computer is also a local version.
+
+:   Local versions don't communicate directly: in order for my local version to be up-to-date with yours, you have to **push** your (committed) changes to the **remote** and then I have to **pull** them from the **remote** to my local version.
+
+pull
+
+:   Get data from the **remote** to a **local repository**. It's done with `git pull`.
+
+push
+
+:   Send data from a **local** **repository** to its **remote**, e.g. GitHub. It's done with `git push`. Only **committed** changes will be pushed.
+
+remote
+
+:   Online back-up of your data, e.g. in a GitHub server. This is what you see on <https://github.com/mclm2022/>, for example.
+
+:   With `git remote add origin <url>` you connected a **local** **repository** to a remote defined by that URL and named it `origin`.
+
+stage
+
+:   Prepare files for a **commit**, i.e. let git know which files you are ready to take a snapshot of. It's done with `git add` followed by the name of the file or, to stage all files, a period.
+
+# Troubleshooting {#sec-debug}
+
+## Unable to push {#sec-nopush}
+
+Error message includes the following hint:
+
+```md
+Updates were rejected because the remote contains work that you do not have locally.
+```
+
+This means that your remote (what you see on the GitHub site) has history that the local version (what you have on your computer) has never had. The most likely reason is that you added or modified a file from the GitHub website instead of creating it locally and pushing it.
+
+This is not wrong *per se*, but it complicates things (that's why I didn't ask you to do that). How do you solve it?
+
+```bash
+git pull
+```
+
+This is going to try to bring the local version up-to-date with the remote version. It might also give you instructions on how to merge it --maybe you have to write a message or decide on disagreements.
+
+::: callout-tip
+Sometimes git itself gives you suggestions on code you should write. For example, `git pull` may fail and you receive a message suggesting you to write something like:
+
+```bash
+git pull <remote> <branch>
+```
+Because your remote is called `origin`, and when your branch is called `main`, this translates to:
+
+```bash
+git pull origin main
+```
+
+If you *do* get this instruction, notice that there is an additional suggestion to run:
+
+```
+git branch --set-to-origin=origin/<branch> main
+```
+
+This means that you still need to inform what is the name of the `origin` branch (the branch in the remote, i.e. the GitHub website) that matches your local `main` branch. It will be `main`, so just replace `<branch>` with `main` and you will be able to just `git pull` in the future.
+
+:::
+
+Pulling in GitHub is part of a daily workflow when you have more than one local source pushing into the remote... but **that is not the case in this course**. Since many of you have zero to no experience with GitHub, we'll avoid pulling and merging on your side for now. Unless you're confident with GitHub, focus on working on your local computer, pushing to the website and getting comfortable with those instructions, before moving on to other tasks.
+

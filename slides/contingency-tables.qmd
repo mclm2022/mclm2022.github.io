@@ -265,8 +265,8 @@ tibble(
 #| echo: false
 tibble(
   rows = c("Context of <em>hot</em>", "Not context of <em>hot</em>", "Total"),
-  coffee = c("E<sub>11</sub>", "E<sub>12</sub>", "C<sub>1</sub>"),
-  not_coffee = c("E<sub>21</sub>", "E<sub>22</sub>", "C<sub>2</sub>"),
+  coffee = c("E<sub>11</sub>", "E<sub>21</sub>", "C<sub>1</sub>"),
+  not_coffee = c("E<sub>12</sub>", "E<sub>22</sub>", "C<sub>2</sub>"),
   total = c("R<sub>1</sub>", "R<sub>2</sub>", "N")
 ) %>% 
   kbl(col.names = c(" ", "Coffee", "Not coffee", "Total"),

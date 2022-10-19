@@ -182,7 +182,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
    
   <ul>
 <li>
-<a href="#set-up-from-scratch" id="toc-set-up-from-scratch" class="nav-link active" data-scroll-target="#set-up-from-scratch"><span class="toc-section-number">1</span>  Set-up from scratch</a>
+<a href="#sec-start" id="toc-sec-start" class="nav-link active" data-scroll-target="#sec-start"><span class="toc-section-number">1</span>  Set-up from scratch</a>
   <ul class="collapse">
 <li><a href="#create-an-r-project-that-is-also-a-git-repository." id="toc-create-an-r-project-that-is-also-a-git-repository." class="nav-link" data-scroll-target="#create-an-r-project-that-is-also-a-git-repository."><span class="toc-section-number">1.1</span>  Create an R project that is <em>also</em> a git repository.</a></li>
   <li><a href="#stage-and-commit" id="toc-stage-and-commit" class="nav-link" data-scroll-target="#stage-and-commit"><span class="toc-section-number">1.2</span>  Stage and commit</a></li>
@@ -191,7 +191,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   </ul>
 </li>
   <li>
-<a href="#daily-workflow" id="toc-daily-workflow" class="nav-link" data-scroll-target="#daily-workflow"><span class="toc-section-number">2</span>  Daily workflow</a>
+<a href="#sec-daily" id="toc-sec-daily" class="nav-link" data-scroll-target="#sec-daily"><span class="toc-section-number">2</span>  Daily workflow</a>
   <ul class="collapse">
 <li><a href="#work-on-your-local-version." id="toc-work-on-your-local-version." class="nav-link" data-scroll-target="#work-on-your-local-version."><span class="toc-section-number">2.1</span>  Work on your local version.</a></li>
   <li><a href="#stage-the-changes-you-will-want-to-commit." id="toc-stage-the-changes-you-will-want-to-commit." class="nav-link" data-scroll-target="#stage-the-changes-you-will-want-to-commit."><span class="toc-section-number">2.2</span>  Stage the changes you will want to commit.</a></li>
@@ -200,11 +200,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   </ul>
 </li>
   <li>
-<a href="#work-with-branches" id="toc-work-with-branches" class="nav-link" data-scroll-target="#work-with-branches"><span class="toc-section-number">3</span>  Work with branches</a>
+<a href="#sec-branches" id="toc-sec-branches" class="nav-link" data-scroll-target="#sec-branches"><span class="toc-section-number">3</span>  Work with branches</a>
   <ul class="collapse">
 <li><a href="#create-a-new-branch" id="toc-create-a-new-branch" class="nav-link" data-scroll-target="#create-a-new-branch"><span class="toc-section-number">3.1</span>  Create a new branch</a></li>
   <li><a href="#switch-to-a-branch" id="toc-switch-to-a-branch" class="nav-link" data-scroll-target="#switch-to-a-branch"><span class="toc-section-number">3.2</span>  Switch to a branch</a></li>
   <li><a href="#make-changes-and-commit" id="toc-make-changes-and-commit" class="nav-link" data-scroll-target="#make-changes-and-commit"><span class="toc-section-number">3.3</span>  Make changes and commit</a></li>
+  </ul>
+</li>
+  <li><a href="#sec-glossary" id="toc-sec-glossary" class="nav-link" data-scroll-target="#sec-glossary"><span class="toc-section-number">4</span>  Glossary</a></li>
+  <li>
+<a href="#sec-debug" id="toc-sec-debug" class="nav-link" data-scroll-target="#sec-debug"><span class="toc-section-number">5</span>  Troubleshooting</a>
+  <ul class="collapse">
+<li><a href="#sec-nopush" id="toc-sec-nopush" class="nav-link" data-scroll-target="#sec-nopush"><span class="toc-section-number">5.1</span>  Unable to push</a></li>
   </ul>
 </li>
   </ul></nav>
@@ -229,7 +236,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   </div>
   
 
-</header><p>Reference cheatsheet for using Git(Hub) with the course project. All the code starting with <code>git</code> should be typed in the (Git Bash) Terminal.</p>
+</header><p>Reference cheatsheet (or as it going, reference manual) for using Git(Hub) with the course project. All the code starting with <code>git</code> should be typed in the (Git Bash) Terminal.</p>
 <div class="callout-caution callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -245,7 +252,8 @@ Requirements
 <p>It also assumes you have installed <a href="https://cloud.r-project.org/">R</a>, <a href="https://www.rstudio.com/products/rstudio/download/">RStudio</a> and <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">Git</a>.</p>
 </div>
 </div>
-<section id="set-up-from-scratch" class="level1" data-number="1"><h1 data-number="1">
+<p>If you have already set up your project and repository, you may skip <a href="#sec-start">Section&nbsp;1</a>. <a href="#sec-daily">Section&nbsp;2</a> goes over the basic workflow you might do any time you work on your project, whereas <a href="#sec-branches">Section&nbsp;3</a> delves into the particular workflow when working with branches. Finally, <a href="#sec-glossary">Section&nbsp;4</a> goes over the main technical terms (but do tell me if you’d like me to add any other) and <a href="#sec-debug">Section&nbsp;5</a> will collect common issues that you’ve reported.</p>
+<section id="sec-start" class="level1" data-number="1"><h1 data-number="1">
 <span class="header-section-number">1</span> Set-up from scratch</h1>
 <section id="create-an-r-project-that-is-also-a-git-repository." class="level2" data-number="1.1"><h2 data-number="1.1" class="anchored" data-anchor-id="create-an-r-project-that-is-also-a-git-repository.">
 <span class="header-section-number">1.1</span> Create an R project that is <em>also</em> a git repository.</h2>
@@ -321,7 +329,7 @@ Errors in pushing
 </div>
 </div>
 <p>If you have never done something like this in R Studio, you will also be asked to identify yourself and/or log in to GitHub. Just follow the instructions on the Terminal :)</p>
-</section></section><section id="daily-workflow" class="level1" data-number="2"><h1 data-number="2">
+</section></section><section id="sec-daily" class="level1" data-number="2"><h1 data-number="2">
 <span class="header-section-number">2</span> Daily workflow</h1>
 <p>For the purposes of this cheetsheet we’ll assume that <strong>all the changes happen in your local computer</strong>. That means that your local repository will be always more up-to-date than the remote, and that there will be nothing in the remote that was not tracked in the local version.</p>
 <p>Before/after each step, it can be useful to run <code>git status</code>, which will let you know:</p>
@@ -368,10 +376,10 @@ Note
 <p>If we get to the point that I give feedback by modifying your project and pushing my notes to the local repository, you will have to retrieve the changes with <code>git pull</code>. You should do that <strong>before</strong> you stage or commit anything else, or it will be troublesome.</p>
 </div>
 </div>
-</section></section><section id="work-with-branches" class="level1" data-number="3"><h1 data-number="3">
+</section></section><section id="sec-branches" class="level1" data-number="3"><h1 data-number="3">
 <span class="header-section-number">3</span> Work with branches</h1>
-<p>If you want to work on a separate branch, important commands are <code>git checkout</code> and <code>git commit</code>. A branch doesn’t really exist until you have commited something to it!</p>
-<p>So, first, make sure you commited something in your <code>main</code> branch.</p>
+<p>If you want to work on a separate branch, important commands are <code>git checkout</code> and <code>git commit</code>. A branch doesn’t really exist until you have committed something to it!</p>
+<p>So, first, make sure you committed something in your <code>main</code> branch.</p>
 <section id="create-a-new-branch" class="level2" data-number="3.1"><h2 data-number="3.1" class="anchored" data-anchor-id="create-a-new-branch">
 <span class="header-section-number">3.1</span> Create a new branch</h2>
 <p>The command to create a new branch is <code>git branch</code>.</p>
@@ -438,9 +446,83 @@ Important
 </div>
 </div>
 </div>
+</section></section><section id="sec-glossary" class="level1" data-number="4"><h1 data-number="4">
+<span class="header-section-number">4</span> Glossary</h1>
+<dl>
+<dt>(git) repository</dt>
+<dd>
+<p>A directory set up for version control with Git. Also its counterpart online.</p>
+</dd>
+<dt>branch</dt>
+<dd>
+<p>A line of work in your <strong>repository</strong>. The default branch is typically <code>main</code> or <code>master</code>, but you can work with other branches as parallel lines of work. That way, you can modify files without worrying about upsetting the main, working version. See <a href="#sec-branches">Section&nbsp;3</a> to learn more about how to work with them.</p>
+</dd>
+<dt>commit</dt>
+<dd>
+<p>Take a snapshot of the current state of your <strong>repository</strong>. This is done <em>locally</em><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, i.e.&nbsp;it does not publish your changes on GitHub. It’s done with <code>git commit</code>, and you can follow it with <code>-m</code> and a commit message if you don’t want an editor to open.</p>
+</dd>
+<dt>local</dt>
+<dd>
+<p>A local version of your <strong>repository</strong> For example, the directory in your computer that is a git <strong>repository</strong>. The copy of that <strong>repository</strong> in <em>my</em> computer is also a local version.</p>
+</dd>
+<dd>
+<p>Local versions don’t communicate directly: in order for my local version to be up-to-date with yours, you have to <strong>push</strong> your (committed) changes to the <strong>remote</strong> and then I have to <strong>pull</strong> them from the <strong>remote</strong> to my local version.</p>
+</dd>
+<dt>pull</dt>
+<dd>
+<p>Get data from the <strong>remote</strong> to a <strong>local repository</strong>. It’s done with <code>git pull</code>.</p>
+</dd>
+<dt>push</dt>
+<dd>
+<p>Send data from a <strong>local</strong> <strong>repository</strong> to its <strong>remote</strong>, e.g.&nbsp;GitHub. It’s done with <code>git push</code>. Only <strong>committed</strong> changes will be pushed.</p>
+</dd>
+<dt>remote</dt>
+<dd>
+<p>Online back-up of your data, e.g.&nbsp;in a GitHub server. This is what you see on <a href="https://github.com/mclm2022/" class="uri">https://github.com/mclm2022/</a>, for example.</p>
+</dd>
+<dd>
+<p>With <code>git remote add origin &lt;url&gt;</code> you connected a <strong>local</strong> <strong>repository</strong> to a remote defined by that URL and named it <code>origin</code>.</p>
+</dd>
+<dt>stage</dt>
+<dd>
+<p>Prepare files for a <strong>commit</strong>, i.e.&nbsp;let git know which files you are ready to take a snapshot of. It’s done with <code>git add</code> followed by the name of the file or, to stage all files, a period.</p>
+</dd>
+</dl></section><section id="sec-debug" class="level1" data-number="5"><h1 data-number="5">
+<span class="header-section-number">5</span> Troubleshooting</h1>
+<section id="sec-nopush" class="level2" data-number="5.1"><h2 data-number="5.1" class="anchored" data-anchor-id="sec-nopush">
+<span class="header-section-number">5.1</span> Unable to push</h2>
+<p>Error message includes the following hint:</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>Updates were rejected because the remote contains work that you do not have locally.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This means that your remote (what you see on the GitHub site) has history that the local version (what you have on your computer) has never had. The most likely reason is that you added or modified a file from the GitHub website instead of creating it locally and pushing it.</p>
+<p>This is not wrong <em>per se</em>, but it complicates things (that’s why I didn’t ask you to do that). How do you solve it?</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This is going to try to bring the local version up-to-date with the remote version. It might also give you instructions on how to merge it –maybe you have to write a message or decide on disagreements.</p>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Sometimes git itself gives you suggestions on code you should write. For example, <code>git pull</code> may fail and you receive a message suggesting you to write something like:</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull <span class="op">&lt;</span>remote<span class="op">&gt;</span> <span class="op">&lt;</span>branch<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Because your remote is called <code>origin</code>, and when your branch is called <code>main</code>, this translates to:</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>If you <em>do</em> get this instruction, notice that there is an additional suggestion to run:</p>
+<pre><code>git branch --set-to-origin=origin/&lt;branch&gt; main</code></pre>
+<p>This means that you still need to inform what is the name of the <code>origin</code> branch (the branch in the remote, i.e.&nbsp;the GitHub website) that matches your local <code>main</code> branch. It will be <code>main</code>, so just replace <code>&lt;branch&gt;</code> with <code>main</code> and you will be able to just <code>git pull</code> in the future.</p>
+</div>
+</div>
+<p>Pulling in GitHub is part of a daily workflow when you have more than one local source pushing into the remote… but <strong>that is not the case in this course</strong>. Since many of you have zero to no experience with GitHub, we’ll avoid pulling and merging on your side for now. Unless you’re confident with GitHub, focus on working on your local computer, pushing to the website and getting comfortable with those instructions, before moving on to other tasks.</p>
 
 
-</section></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</section></section><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<ol>
+<li id="fn1"><p>Although you can also modify files on the website and commit those changes too! However, see <a href="#sec-nopush">Section&nbsp;5.1</a> for possible consequences.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol></section></div></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
