@@ -796,5 +796,75 @@
     "title": "Cross-references",
     "section": "\n2.2 Chunks with output",
     "text": "2.2 Chunks with output\nFor tables and figures, you can either copy code from the slides from previous lessons or do something from scratch as shown below. It doesn’t have to be serious, it just has to be done properly.\nYou can either add echo: false to your chunks (which will not be shown in the examples below) or add the following lines to the metadata YAML at the top of your .qmd file to make it the default in the whole document:\nexecute:\n  echo: false\n\n\nTable example\nFigure example\nSection example\n\n\n\nTable 1 is referenced with @tbl-tblex in the text. Remember that the label of the figure must start with “tbl”, the caption must be set with “tbl-cap” and the caption location may be set with “tbl-cap-location”. A margin caption will only be shown in the margins in HTML output if the viewport is wide enough (for responsiveness). By default, the margin location of a table is at the top.\n\n```{r}\n#| label: tbl-tblex\n#| tbl-cap: Age and ear shape of people invented for this exercise.\n#| tbl-cap-location: margin\nkbl(dataset, col.names = c(\"Name\", \"Age\", \"Ear shape\")) %>% \n  kable_paper()\n```\n\n\n\n\n\n \n Name \n    Age \n    Ear shape \n  \n\n\n Fulano \n    35 \n    Pointy \n  \n\n Mengano \n    23 \n    Rounded \n  \n\n John Doe \n    56 \n    Rounded \n  \n\n Someone \n    12 \n    Pointy \n  \n\n\nTable 1:  Age and ear shape of people invented for this exercise. \n\n\n\n\nFigure 1 is referenced with @fig-figex in the text. Remember that the label of the figure must start with “fig”, the caption must be set with “fig-cap” and the caption location may be set with “fig-cap-location”. By default the caption location of a figure is at the bottom.\n\n```{r}\n#| label: fig-figex\n#| fig-cap: A lollipop chart showing the ages and ear shapes of people invented for this exercise.\nggplot(dataset, aes(x = age, y = name)) +\n  geom_segment(aes(xend = 0, yend = name), color = \"gray\") +\n  geom_point(aes(color = ear_type), size = 3) +\n  labs(x = \"Age\", y = \"\", color = \"Ear shape\") +\n  theme_classic(base_size = 15) +\n  theme(legend.position = \"top\")\n```\n\n\n\nFigure 1: A lollipop chart showing the ages and ear shapes of people invented for this exercise.\n\n\n\n\n\n\n\n\n\n\n{ggplot2} syntax\n\n\n\n\n\n{ggplot2} uses what is called a Grammar of Graphics: layers of instructions on each other. In Figure 1, this is what each line does:\n\nggplot(dataset, aes(x = age, y = name))\n\nCreates a ggplot object, which is plotted when printing. It assigns it a dataset to read data from and aesthethics. Aesthetics are mappings between columns of the dataset (variables) and markers or characteristics of the plot.\n\n\nThe aesthetics we are assigning are x and y, i.e. the horizontal and vertical axis respectively. The data in the age column of dataset will be mapped to the horizontal axis, while the data in the name column of the dataset (even if it’s categorical) will be mapped to the vertical axis.\n\n\nAesthetics can be assigned either in this stage or in a geom_ layer. Aesthetics assigned inside the ggplot() call will be used by all the following geom_ layers unless overriden.\n\ngeom_segment(aes(xend = 0, yend = name), color = \"gray\")\n\nAdd a segment geometry, i.e. one line per observation. The aesthetics needed to draw a line are x and xend (the horizontal coordinates for each end of the line) and y and yend (the vertical coordinates for each end of the line). In other words, we will draw a line between (x, y) and (xend, yend).\n\n\nFor these segments, we will use the same x and y values assigned in the ggplot() call, which are inherited automatically. But we will also need to add the values for xend and yend. xend is a constant, 0: we want all the segments to start from \\(x=0\\) and end at the value of age. yend is equal to y: we want horizontal lines that have the same value at y and yend, i.e. the value of name.\n\n\nOutside the mapping argument with the aes() call, we can also assign other constants, such as the same color for all elements. These are independent of the dataset. (xend could also have been defined here.) In this case we indicate that the segments must be gray.\n\ngeom_point(aes(color = ear_type), size = 3)\n\nAdd a point geometry, i.e. one point per observation. We inherit the aesthetics from ggplot() but not those of geom_segment() (which would be meaningless anyways).\n\n\ncolor is defined within the aes() call because we want to map the value of ear_type to the colors. size is defined outside, as a constant for all points.\n\n\nIf geom_segment() was called after geom_point(), they would be drawn on top of the points and seen in the overlapping bit.\n\nlabs(x = \"Age\", y = \"\", color = \"Ear shape\")\n\nSet the label of the x axis to “Age”, remove the label of the y axis, and set the title of the color legend to “Ear shape”.\n\ntheme_classic(base_size = 15)\n\nSet a bunch of default properties for a nice theme. We also ask for the base font size to be of 15 points.\n\ntheme(legend.position = \"top\")\n\nFurther refine the theme by stating that the legend should be on top of the plot.\n\n\nTo better understand the effect of each later, I invite you to run the code adding one line at a time and see how the plot changes.\n\n\n\n\n\nSection 3 is referenced as @sec-git. In order to be able to reference it, you should add {#sec-git} after the heading that needs referencing. Remember also to add the following number-sections: true to your metadata YAML."
+  },
+  {
+    "objectID": "tidyverse/cheatsheet.html",
+    "href": "tidyverse/cheatsheet.html",
+    "title": "Tidyverse cheatsheet",
+    "section": "",
+    "text": "Reference cheatsheet for some useful tidyverse functions related to dataframe manipulation.\nTidyverse is a collection of R packages for data wrangling and visualization (among other things). A great resource to learn how to use it is R for data Science."
+  },
+  {
+    "objectID": "tidyverse/cheatsheet.html#numeric-filter",
+    "href": "tidyverse/cheatsheet.html#numeric-filter",
+    "title": "Tidyverse cheatsheet",
+    "section": "Numeric filter",
+    "text": "Numeric filter\n\nmy_tibble %>% filter(first_column < 3)\n\n# A tibble: 2 × 3\n  first_column second_column third_column\n         <dbl> <chr>         <lgl>       \n1            1 a             TRUE        \n2            2 b             FALSE       \n\nmy_tibble %>% filter(first_column == 2)\n\n# A tibble: 1 × 3\n  first_column second_column third_column\n         <dbl> <chr>         <lgl>       \n1            2 b             FALSE       \n\nmy_tibble %>% filter(first_column %in% c(1, 3))\n\n# A tibble: 2 × 3\n  first_column second_column third_column\n         <dbl> <chr>         <lgl>       \n1            1 a             TRUE        \n2            3 a             FALSE"
+  },
+  {
+    "objectID": "tidyverse/cheatsheet.html#filtering-with-character-strings",
+    "href": "tidyverse/cheatsheet.html#filtering-with-character-strings",
+    "title": "Tidyverse cheatsheet",
+    "section": "Filtering with character strings",
+    "text": "Filtering with character strings\n\nmy_tibble %>% filter(second_column == \"a\")\n\n# A tibble: 2 × 3\n  first_column second_column third_column\n         <dbl> <chr>         <lgl>       \n1            1 a             TRUE        \n2            3 a             FALSE       \n\nmy_tibble %>% filter(startsWith(second_column, \"b\"))\n\n# A tibble: 2 × 3\n  first_column second_column third_column\n         <dbl> <chr>         <lgl>       \n1            2 b             FALSE       \n2            4 be            TRUE        \n\nmy_tibble %>% filter(second_column %in% c(\"a\", \"b\"))\n\n# A tibble: 3 × 3\n  first_column second_column third_column\n         <dbl> <chr>         <lgl>       \n1            1 a             TRUE        \n2            2 b             FALSE       \n3            3 a             FALSE"
+  },
+  {
+    "objectID": "tidyverse/cheatsheet.html#filtering-with-boolean-columns",
+    "href": "tidyverse/cheatsheet.html#filtering-with-boolean-columns",
+    "title": "Tidyverse cheatsheet",
+    "section": "Filtering with boolean columns",
+    "text": "Filtering with boolean columns\n\nmy_tibble %>% filter(third_column)\n\n# A tibble: 2 × 3\n  first_column second_column third_column\n         <dbl> <chr>         <lgl>       \n1            1 a             TRUE        \n2            4 be            TRUE        \n\nmy_tibble %>% filter(!third_column)\n\n# A tibble: 2 × 3\n  first_column second_column third_column\n         <dbl> <chr>         <lgl>       \n1            2 b             FALSE       \n2            3 a             FALSE"
+  },
+  {
+    "objectID": "tidyverse/cheatsheet.html#combinations",
+    "href": "tidyverse/cheatsheet.html#combinations",
+    "title": "Tidyverse cheatsheet",
+    "section": "Combinations",
+    "text": "Combinations\nThe comma and & combine the filters, whereas | returns rows that are TRUE for at least one of the conditions.\n\nmy_tibble %>% filter(first_column > 2, second_column == \"a\")\n\n# A tibble: 1 × 3\n  first_column second_column third_column\n         <dbl> <chr>         <lgl>       \n1            3 a             FALSE       \n\nmy_tibble %>% filter(third_column | startsWith(second_column, \"b\"))\n\n# A tibble: 3 × 3\n  first_column second_column third_column\n         <dbl> <chr>         <lgl>       \n1            1 a             TRUE        \n2            2 b             FALSE       \n3            4 be            TRUE        \n\nmy_tibble %>% filter(first_column > 1 & second_column != \"a\")\n\n# A tibble: 2 × 3\n  first_column second_column third_column\n         <dbl> <chr>         <lgl>       \n1            2 b             FALSE       \n2            4 be            TRUE"
+  },
+  {
+    "objectID": "tidyverse/cheatsheet.html#by-number",
+    "href": "tidyverse/cheatsheet.html#by-number",
+    "title": "Tidyverse cheatsheet",
+    "section": "By number",
+    "text": "By number\nThe slice_ functions let you select rows based on position."
+  },
+  {
+    "objectID": "tidyverse/tibbles.html",
+    "href": "tidyverse/tibbles.html",
+    "title": "Tibble manipulation",
+    "section": "",
+    "text": "The goal of this assignment is to practice working with tables using tidyverse. Tidyverse is a collection of R packages for data wrangling and visualization (among other things). A great resource to learn how to use it is R for data Science.\nFor this assignment I ask that you create both a script to manipulate the table and then a Quarto file to print and cross-reference the table (combining what you learned in the second assignment)."
+  },
+  {
+    "objectID": "tidyverse/tibbles.html#manipulating-the-table",
+    "href": "tidyverse/tibbles.html#manipulating-the-table",
+    "title": "Tibble manipulation",
+    "section": "\n2.1 Manipulating the table",
+    "text": "2.1 Manipulating the table\n\nUse mutate() to change the values of a column.\n\nUse filter() to subset the rows based on values in the columns. You can also use the slice_ family of functions to subset with other criteria:\n\nslice_head(n = 3) to select the first three rows; slice_tail(n = 5) to select the last five rows.\nslice_sample(n = 10) to select ten random rows, slice_sample(prop = 0.5) to select a random 50% of the rows.\n\n\nUse select() to subset the columns. You can also use rename() to rename columns without removing the rest.\nUse arrange() to sort the tibble based on the values in a column.\n\n\n\n\n\n\n\nExample\n\n\n\n\n\nAn example is the code below, which starts with an assoc object (product of assoc_scores()) and ends with a tibble with a selection of rows and columns.\n\nsubsetted <- hot_assoc %>% \n  as_tibble() %>% \n  filter(PMI > 1, G_signed >= 5, endsWith(type, \"nn\")) %>% \n  select(type, freq = a, PMI, ends_with(\"signed\"), OR) %>% \n  mutate(\n    log_OR = log(OR),\n    type = str_remove(type, \"/nn\")\n  )\n\n\nIn line 2 we use as_tibble() to turn the assoc object into a tibble to manipulate with {tidyverse} functions.\nIn line 3 we use filter() to subset the rows that have PMI larger than 1, G_signed larger than or equal to 5, and a type ending with “nn”, i.e. nouns.\nIn line 4 we use select() to subset the columns type, a, PMI and OR as well as those ending in “signed” and at the same time rename a to “freq”.\nIn lines 5 through 8 we use mutate() to create a new column log_OR that contains the logarithm of the OR column, and we modify the type column to remove the “/nn” ending from its elements.\nIn line 1 we assign the whole operation, initially applied to hot_assoc, to a variable called subsetted.\n\nEach operation of the pipe acts on the output of the operation before it."
+  },
+  {
+    "objectID": "tidyverse/tibbles.html#association-scores",
+    "href": "tidyverse/tibbles.html#association-scores",
+    "title": "Tibble manipulation",
+    "section": "\n2.2 Association scores",
+    "text": "2.2 Association scores\n\nUse assoc_scores() after surf_cooc() to create an association scores object.\nUse write_assoc(scores_object, filename) to save the object from your R script.\nUse scores_object <- read_assoc(filename) to read the object in the Quarto file."
+  },
+  {
+    "objectID": "tidyverse/tibbles.html#kableextra",
+    "href": "tidyverse/tibbles.html#kableextra",
+    "title": "Tibble manipulation",
+    "section": "\n2.3 KableExtra",
+    "text": "2.3 KableExtra\nCheck out the documentation for HTML or PDF output to learn about {kableExtra} features."
   }
 ]

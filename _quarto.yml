@@ -12,6 +12,7 @@ project:
     - studies/base.qmd
     - git/*.qmd
     - quarto/*.qmd
+    - tidyverse/*.qmd
 
 website:
   title: "Methods in Corpus Linguistics"
@@ -34,6 +35,7 @@ website:
         menu: 
           - git/assignment.qmd
           - quarto/crossref.qmd
+          - tidyverse/tibbles.qmd
     search: true
 format:
   html:

@@ -1,0 +1,170 @@
+---
+title: "Tidyverse cheatsheet"
+author: "Mariana Montes"
+---
+
+Reference cheatsheet for some useful tidyverse functions related to dataframe manipulation.
+
+[Tidyverse](https://www.tidyverse.org/) is a collection of R packages for data wrangling and visualization (among other things). A great resource to learn how to use it is [*R for data Science*](https://r4ds.had.co.nz/).
+
+# Start
+
+Some of the packages in tidyverse are used to manipulate dataframes: those are at the center of this cheatsheet. We won't look into the particular packages but just useful functions that are likely to come in handy in different circumstances. Because of that, we'll load the full set of packages.
+
+```{r}
+#| label: tidyverse
+library(tidyverse)
+```
+
+The main object we will work on is a **tibble**: the tidyverse version of a **dataframe** (basically, a table). In tidy data, each row is an observation and each column, a variable. All properties of dataframes in R apply to tibbles, but they have additional benefits, such as nicer printing.
+
+We can read tibbles from file, but in this case we'll create a dummy dataset to practice. We can use the function `tibble()` for that, indicating each column as a vector.
+
+```{r}
+#| label: tibble
+my_tibble <- tibble(
+  first_column = c(1, 2, 3, 4),
+  second_column = c("a", "b", "a", "be"),
+  third_column = c(TRUE, FALSE, FALSE, TRUE)
+)
+my_tibble
+as.data.frame(my_tibble)
+```
+
+# Choose rows
+
+The function to subset a tibble based on the content of a given column (and therefor obtain only certain rows) is `filter()`. Its first argument is the tibble, and the following arguments are the *conditions*, i.e. logical statements indicating the criteria for selection. This means we can either run `filter(my_tibble, <conditons>)` or `my_tibble %>% filter(<conditions>)`. We'll typically prefer the pipe (` %>% `).
+
+## Numeric filter
+
+```{r}
+#| label: filter-num
+
+my_tibble %>% filter(first_column < 3)
+
+my_tibble %>% filter(first_column == 2)
+
+my_tibble %>% filter(first_column %in% c(1, 3))
+```
+
+## Filtering with character strings
+
+```{r}
+#| label: filter-chr
+
+my_tibble %>% filter(second_column == "a")
+
+my_tibble %>% filter(startsWith(second_column, "b"))
+
+my_tibble %>% filter(second_column %in% c("a", "b"))
+```
+
+## Filtering with boolean columns
+
+```{r}
+#| label: filter-bool
+
+my_tibble %>% filter(third_column)
+
+my_tibble %>% filter(!third_column)
+```
+
+## Combinations
+
+The comma and `&` combine the filters, whereas `|` returns rows that are TRUE for at least one of the conditions.
+
+```{r}
+#| label: filter-mixed
+my_tibble %>% filter(first_column > 2, second_column == "a")
+
+my_tibble %>% filter(third_column | startsWith(second_column, "b"))
+
+my_tibble %>% filter(first_column > 1 & second_column != "a")
+```
+
+## By number
+
+The `slice_` functions let you select rows based on position.
+
+# Choose and rename columns
+
+Columns can be renamed with `select()` or `rename()`. `select()` returns a tibble that only has the requested columns, whereas `rename()` doesn't remove other columns.
+
+```{r}
+#| label: rename
+my_tibble %>% rename(numbers = first_column)
+
+my_tibble %>% select(numbers = first_column, second_column)
+```
+
+`select()` works with a bunch of [selection functions](https://tidyselect.r-lib.org/reference/language.html) that can save up a lot of typing. Some of the most frequent are:
+
+- `starts_with()` to select all columns that start with some pattern, e.g. `select(my_tibble, starts_with("first"))` to select columns that start with "first".
+
+- `ends_with()` to select all columns that end in some pattern, e.g. `select(my_tibble, ends_with("column"))` to select all current columns.
+
+- `contains()` to select all columns that contain a certain pattern somewhere in the name.
+
+- `where(<condition_function>)` to match all columns of a certain type, e.g. `select(my_tibble, where(is.numeric))` to select numeric columns (here "first_column"); `select(my_tibble, where(is.character))` to select character columns (here "second_column")...
+
+- `everything()` to select all columns. This is useful for example to **reorder the columns**:
+
+```{r}
+#| label: everything
+my_tibble %>% 
+  select(second_column, everything())
+```
+
+# Modify data (per column)
+
+The main function to modify data in a tibble is `mutate()`. Its first argument is a tibble, and the rest are columns with their definitions.
+
+```{r}
+#| label: mutate1
+
+my_tibble %>% 
+  mutate(first_column = first_column + 1)
+```
+
+If the column doesn't exist, it will be added.
+
+```{r}
+#| label: mutate2
+
+my_tibble %>% 
+  mutate(upper_case = toupper(second_column))
+
+my_tibble %>% 
+  mutate(
+    multiplied = first_column * 5,
+    upper_case = toupper(second_column),
+    lett_num = paste0(upper_case, multiplied)
+  )
+```
+
+# Sort
+
+The function to sort a tibble based on the values on a column is `arrange()`. Inside of it, `desc()` allows you to sort in descending order (otherwise it will be ascending).
+
+```{r}
+#| label: arrange
+my_tibble %>% arrange(desc(first_column))
+
+my_tibble %>% arrange(second_column)
+
+my_tibble %>% arrange(third_column, desc(first_column))
+```
+
+# Count data
+
+The function `count()` takes a tibble and one or more columns and returns another tibble with the same columns and their frequencies.
+
+```{r}
+#| label: count
+my_tibble %>% 
+  count
+```
+
+
+# Make longer or wider
+

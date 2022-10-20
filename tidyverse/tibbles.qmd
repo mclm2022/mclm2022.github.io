@@ -1,0 +1,114 @@
+---
+title: "Tibble manipulation"
+author: "Mariana Montes"
+subtitle: "Third assignment"
+number-sections: true
+---
+
+The goal of this assignment is to practice working with tables using tidyverse. [Tidyverse](https://www.tidyverse.org/) is a collection of R packages for data wrangling and visualization (among other things). A great resource to learn how to use it is [*R for data Science*](https://r4ds.had.co.nz/).
+
+For this assignment I ask that you create both a script to manipulate the table and then a Quarto file to print and cross-reference the table (combining what you learned in the [second assignment](../quarto/crossref.qmd)).
+
+# Instructions
+
+1. Create a branch for the assignment, e.g. `tibble`. You will work here and only move your changes to `main` if and when you want to submit.
+
+1. Create an R script where you will insert the necessary code to do the following:
+
+    i) Load the appropriate libraries (tidyverse and mclm).
+
+    i) Read the brown corpus.
+    
+    i) Create an association scores table of the collocations of a word of your choosing.
+    
+    i) Manipulate the table as done in class: modify columns, select some columns to show, filter the rows, rearrange the order.
+    
+    i) Save the association scores object to a file with `write_assoc()`.
+  
+1. Create a Quarto report where you will only load the {mclm} and {kableExtra} packages.
+
+  1. Read the association scores object with `mclm::read_assoc()` or with `readr::read_tsv()`.
+  
+  2. Print the table with {kableExtra}, editing it as well if you so wish. Don't forget to add a caption!
+  
+  3. Include some text cross-referencing the table and maybe commenting on the result.
+
+
+# Tips
+
+## Manipulating the table
+
+- Use `mutate()` to change the values of a column.
+
+- Use `filter()` to subset the rows based on values in the columns. You can also use the `slice_` family of functions to subset with other criteria:
+
+  + `slice_head(n = 3)` to select the first three rows; `slice_tail(n = 5)` to select the last five rows.
+  
+  + `slice_sample(n = 10)` to select ten random rows, `slice_sample(prop = 0.5)` to select a random 50% of the rows.
+  
+- Use `select()` to subset the columns. You can also use `rename()` to rename columns without removing the rest.
+
+- Use `arrange()` to sort the tibble based on the values in a column.
+
+::: {.callout-tip collapse=true}
+### Example
+
+An example is the code below, which starts with an `assoc` object (product of `assoc_scores()`) and ends with a tibble with a selection of rows and columns.
+
+```{r}
+#| label: tidy-ex
+#| eval: false
+#| code-line-numbers: true
+subsetted <- hot_assoc %>% 
+  as_tibble() %>% 
+  filter(PMI > 1, G_signed >= 5, endsWith(type, "nn")) %>% 
+  select(type, freq = a, PMI, ends_with("signed"), OR) %>% 
+  mutate(
+    log_OR = log(OR),
+    type = str_remove(type, "/nn")
+  )
+```
+
+- In line 2 we use `as_tibble()` to turn the `assoc` object into a `tibble` to manipulate with {tidyverse} functions.
+
+- In line 3 we use `filter()` to subset the rows that have PMI larger than 1, G_signed larger than or equal to 5, and a type ending with "nn", i.e. nouns.
+
+- In line 4 we use `select()` to subset the columns `type`, `a`, `PMI` and `OR` as well as those ending in "signed" and at the same time rename `a` to "freq". 
+
+- In lines 5 through 8 we use `mutate()` to create a new column `log_OR` that contains the logarithm of the `OR` column, and we modify the `type` column to remove the "/nn" ending from its elements.
+
+- In line 1 we assign the whole operation, initially applied to `hot_assoc`, to a variable called `subsetted`.
+
+Each operation of the pipe acts on the output of the operation before it.
+:::
+
+## Association scores
+
+- Use `assoc_scores()` after `surf_cooc()` to create an association scores object.
+
+- Use `write_assoc(scores_object, filename)` to save the object from your R script.
+
+- Use `scores_object <- read_assoc(filename)` to read the object in the Quarto file.
+
+## KableExtra
+
+Check out the documentation for [HTML](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html) or [PDF](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_pdf.pdf) output to learn about {kableExtra} features.
+
+# Git workflow {#sec-git}
+
+```bash
+git status # check that you're on main, nothing to commit...
+git branch tibble
+git checkout tibble
+# work on your .qmd file, render
+git status # check everything is fine
+git add .
+git commit -m "practice with tibbles"
+# you may also make several commits as you add a figure, a table...
+git checkout main
+git status # check everything is fine. New files should not be there
+git merge tibble
+# Now the .qmd file, the rendered file and the help files should be present
+git push
+# and send me a message!
+```
