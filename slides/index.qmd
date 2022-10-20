@@ -36,6 +36,16 @@ If you would like to download slides as PDF, please follow the [instructions in 
 
 </div>
 
+# [Association measures](assoc.qmd){target="_blank"}
+
+<div>
+
+```{=html}
+<iframe class="slide-deck" src="assoc.html"></iframe>
+```
+
+</div>
+
 <!-- # [Logistic regression](logistic-regression.qmd){target="_blank"} -->
 
 <!-- <div> -->

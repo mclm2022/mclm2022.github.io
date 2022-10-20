@@ -1,0 +1,515 @@
+---
+title: "Association measures"
+subtitle: "Methods of Corpus Linguistics (class 4)"
+author: "Mariana Montes"
+format:
+  revealjs:
+    preview-links: auto
+    multiplex: true
+execute:
+  echo: true
+---
+
+```{r}
+#| label: setup
+#| include: false
+headings <- c("Introduction", "Effect size measures", "Strength of evidence measures", "Usage in practice")
+source(here::here("R", "utils.R"))
+library(tidyverse)
+library(kableExtra)
+options(digits = 3)
+```
+
+## Outline
+
+```{r}
+#| label: outline
+#| results: asis
+#| echo: false
+for (heading in headings) {
+  cat("-", heading, "\n")
+}
+i <- 1
+```
+
+# `r headings[[i]]`
+
+## Sources
+
+- Check the documentation of [mclm::assoc_scores()](https://masterclm.github.io/mclm/reference/assoc_scores.html#possible-columns).
+
+- Evert (2007) in Toledo.
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Terms
+
+::: {.panel-tabset}
+### Observed frequencies
+
+```{r}
+#| label: obs
+#| echo: false
+abcd_o("Target context", "Reference context", "Target item", "Other items")
+```
+
+### Expected frequencies
+
+```{r}
+#| label: exp
+#| echo: false
+tibble(
+  rows = c("Target context", "Reference context", "Total"),
+  coffee = c("E<sub>11</sub>", "E<sub>21</sub>", "C<sub>1</sub>"),
+  not_coffee = c("E<sub>12</sub>", "E<sub>22</sub>", "C<sub>2</sub>"),
+  total = c("R<sub>1</sub>", "R<sub>2</sub>", "N")
+) %>% 
+  kbl(col.names = c(" ", "Target item", "Other items", "Total"),
+      escape = FALSE) %>%
+  kable_styling()
+```
+
+:::
+
+::: callout-tip
+See [slides on Contingency tables](contingency-tables.qmd).
+:::
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Set up data
+
+```{r}
+#| label: data
+#| message: false
+library(tidyverse)
+library(mclm)
+corpus_folder <- here::here("studies", "_corpora", "brown") # adapt path!!
+brown_fnames <- get_fnames(corpus_folder) %>% keep_re("/c[a-z]")
+hot_assoc <- surf_cooc(brown_fnames, "^hot/jj", re_token_splitter = "\\s+") %>% 
+  assoc_scores() %>% as_tibble()
+head(hot_assoc)
+```
+
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+```{r}
+#| label: add-first
+#| include: false
+i <- i + 1
+```
+
+# `r headings[[i]]`
+
+## Difference of proportions ($\Delta p$)
+
+:::: {.columns}
+
+::: {.column width="40%"}
+$$\frac{O_{11}}{R_1}-\frac{O_{21}}{R_2}$$
+
+- $< 0$: repulsion
+-   $0$: neutral
+- $> 0$: attraction
+:::
+
+::: {.column width="60%"}
+```{r}
+#| label: deltap
+hot_assoc %>% arrange(desc(DP_rows)) %>% 
+  select(type, a, b, c, d, DP_rows) %>% head(10) %>% 
+  kbl() %>% kable_paper(font_size = 22)
+```
+:::
+
+::::
+
+::: {.notes}
+One of the values has to be very high for the value to be high
+:::
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Relative risk
+
+:::: {.columns}
+
+::: {.column width="40%"}
+$$\frac{O_{11}/R_1}{O_{21}/R_2}$$
+
+- $< 1$: repulsion
+-   $1$: neutral
+- $> 1$: attraction
+:::
+
+::: {.column width="60%"}
+```{r}
+#| label: rrisk
+hot_assoc %>% arrange(desc(RR_rows)) %>% 
+  select(type, a, b, c, d, RR_rows) %>% head(10) %>% 
+  kbl() %>% kable_paper(font_size = 22)
+```
+:::
+
+::::
+
+::: {.notes}
+How much higher, e.g. twice as high...
+:::
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Odds ratio
+
+:::: {.columns}
+
+::: {.column width="40%"}
+$$\frac{O_{11}/O_{12}}{O_{21}/O_{22}}$$
+
+- $< 1$: repulsion
+-   $1$: neutral
+- $> 1$: attraction
+:::
+
+::: {.column width="60%"}
+```{r}
+#| label: oddsr
+hot_assoc %>% arrange(desc(OR)) %>% 
+  select(type, a, b, c, d, OR) %>% head(10) %>% 
+  kbl() %>% kable_paper(font_size = 22)
+```
+:::
+
+::::
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## log odds ratio
+
+:::: {.columns}
+
+::: {.column width="40%"}
+$$\log\left(\frac{O_{11}/O_{12}}{O_{21}/O_{22}}\right)$$
+
+- $< 0$: repulsion
+-   $0$: neutral
+- $> 0$: attraction
+:::
+
+::: {.column width="60%"}
+```{r}
+#| label: logodds
+hot_assoc %>% mutate(log_OR = log(OR)) %>% arrange(desc(log_OR)) %>% 
+  select(type, a, b, c, d, OR, log_OR) %>% head(10) %>% 
+  kbl() %>% kable_paper(font_size = 22)
+```
+:::
+
+::::
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## PMI
+
+:::: {.columns}
+
+::: {.column width="40%"}
+$$\log_2 \left(\frac{O_{11}}{E_{11}}\right)$$
+
+- $< 0$: repulsion
+-   $0$: neutral
+- $> 0$: attraction
+:::
+
+::: {.column width="60%"}
+```{r}
+#| label: pmi
+hot_assoc %>% arrange(desc(PMI)) %>% 
+  select(type, a, exp_a, PMI) %>% head(10) %>% 
+  kbl() %>% kable_paper(font_size = 22)
+```
+:::
+
+::::
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## DICE coefficient
+
+:::: {.columns}
+
+::: {.column width="40%"}
+$$\frac{2O_{11}}{R_1+C_1}$$
+
+Harmonic mean of $\frac{O_{11}}{R_1}$ and $\frac{O_{11}}{C_1}$
+
+- Range: 0-1
+:::
+
+::: {.column width="60%"}
+```{r}
+#| label: dice
+hot_assoc %>% arrange(desc(Dice)) %>% 
+  select(type, a, b, c, Dice) %>% head(10) %>% 
+  kbl() %>% kable_paper(font_size = 22)
+```
+:::
+
+::::
+
+::: {.notes}
+The harmonic mean of two proportions grows high only if both proportions are high -> so good for catching proper nouns.
+Combining: "if we have the node, how often do we have the collocate" and "if we have the collocate, how often do we have the node"
+basically: is this the probability of being the first column bigger when you are in the first row than when you are in the second
+:::
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Sum up effect size measures
+
+- Intuitive
+
+. . .
+
+- Fragile, especially with low frequencies (which we often have)
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+```{r}
+#| label: add-second
+#| include: false
+i <- i + 1
+```
+
+# `r headings[[i]]`
+
+## About these measures
+
+- How certain are we that there is a difference?
+
+- Take into amount effect size and amount of information.
+
+  + If you have a big difference you don't need much data.
+  
+  + If you have a subtle difference you need a lot of data.
+
+. . .
+
+- BUT they combine attraction and repulsion!
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Chi-square ($\chi^2$)
+
+:::: {.columns}
+
+::: {.column width="40%"}
+- $\sum_{i=1}^{2}\sum_{j=1}^{2}\frac{(O_{ij}-E_{ij})^2}{E_{ij}}$
+
+- Not a good test for low frequency items (one of the expected frequencies is below 5)
+:::
+
+::: {.column width="60%"}
+```{r}
+#| label: chisq
+hot_assoc %>% arrange(desc(chi2_signed)) %>% 
+  select(type, a, exp_a, b, c, d, chi2_signed) %>% head(10) %>% 
+  kbl() %>% kable_paper(font_size = 22)
+```
+:::
+
+::::
+
+::: {.notes}
+checks sum of squared differences between each observed value and its expected counterpart (divided by the expected value)
+Under $H_0$ this test statistic has a $\chi^2$ distribution with one df.
+:::
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Log-likelihood ratio: $G$ or $G^2$
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+$$2\sum_{i=1}^{2}\sum_{j=1}^{2}\left(O_{ij} \times log\left(\frac{O_{ij}}{E_{ij}}\right) \right)$$
+
+- Also problematic with low frequency but not as much as $\chi^2$ (expected values can be as low as 3).
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: llr
+hot_assoc %>% arrange(desc(G_signed)) %>% 
+  select(type, a, exp_a, b, c, G_signed) %>% head(10) %>% 
+  kbl() %>% kable_paper(font_size = 22)
+```
+:::
+
+::::
+
+::: {.notes}
+- Like $\chi^2$ but instead of taking the difference between observed and expected, it's a division with a log transformation
+- Under $H_0$ this test statistic has a $\chi^2$ distribution with one df.
+- We calculate $L$, difference between proportions
+	- Numerator: maximum likelihood estimation (MLE) respecting the null hypothesis
+	- Denominator: maximum likelihood estimation allowing the proportion to be different from the observed one
+	- Then this computes the probability of encountering the proportion that we have
+	- $G^2 = -2 log(L)$
+- Higher values of $G^2$ (=lower values of $L$) show stronger evidence
+
+:::
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Fisher exact test
+
+:::: {.columns}
+
+::: {.column width="40%"}
+- We'll use the p-value: the lower the better.
+
+- Used for low frequencies - accurate but computationally expensive.
+:::
+
+::: {.column width="60%"}
+```{r}
+#| label: fisher
+hot_assoc %>% arrange(p_fisher_1) %>% 
+  select(type, a, b, c, d, p_fisher_1) %>% head(10) %>% 
+  kbl(digits = 5) %>% kable_paper(font_size = 22)
+```
+:::
+
+::::
+
+::: {.notes}
+- Can work for low frequencies, so it is mostly used in those cases (since it's also computationally more demanding - sometimes it *never ends*)
+
+- The position of the observed $O_{11}$ in a hypergeometric distribution (given by the marginal frequencies $R_1$, $R_2$ and $C_1$?) is computed
+:::
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## t-Test {visibility="hidden"}
+
+:::: {.columns}
+
+::: {.column width="40%"}
+- $\frac{\frac{O_{11}}{N}-\left(\frac{R_1}{N} \times \frac{C_1}{N}\right)}{\sqrt{\frac{\frac{O_{11}}{N} \times \left( 1 - \frac{O_{11}}{N}\right)}{N}}}$
+
+:::
+
+::: {.column width="60%"}
+```{r}
+#| label: t
+hot_assoc %>% arrange(desc(t)) %>% 
+  select(type, a, b, c, d, t) %>% head(10) %>% 
+  kbl() %>% kable_paper(font_size = 22)
+```
+:::
+
+::::
+
+::: {.notes}
+- Used a lot in statistics even though mathematicians and statisticians don't really like it (conditions are mostly not met)
+- Keeps being used  (is supported by tools) because
+	- like PMI, it was one of the first to be introduced
+	- it's very intuitive
+- 0 is neutral, positive is attraction, negative is repulsion
+which, for a binary variable $X$ with value 1 for observations in $O_{11}$ and 0 in all the others, it is equivalent to $$\frac{\bar{X} - \mu_0}{\sqrt{\frac{s^2}{n}}}$$
+:::
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+::: {.notes}
+Speelman prefers a combination of log-likelihood ratio $G$ with some effect measure, such as PMI :)
+:::
+
+
+```{r}
+#| label: add-third
+#| include: false
+i <- i + 1
+```
+
+# `r headings[[i]]`
+
+## 1. `assoc` object
+
+Obtain a dataframe with association measures between different items and the target context.
+
+- **collocations:** e.g. between different words and *hot/jj*
+  
+- **keywords:** e.g. between different words and the academic files of the corpus.
+  
+Code: `mclm::assoc_scores()` or `mclm::assoc_abcd()`.
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## What counts as association?
+
+- Set a threshold (always arbitrary, may be theoretically informed).
+
+- Use a ranking.
+
+- Combine: choose the n-best elements.
+
+::: callout-tip
+This can also be combined with different measures, e.g. use frequency threshold, a minimum value of PMI and of $G^2$ and rank by either PMI or $G^2$.
+:::
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## How to choose a measure?
+
+- It depends on the goal, previous literature...
+
+- For the final paper, *comparing measures* is a valid objective.
+
+::: callout-tip
+### Suggestion
+
+Combine an effect-size measure and a strength-of-evidence measure. Use them for thresholds and compare the rankings. A good pair is PMI and $G^2$.
+:::
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+# Next: Logistic regression

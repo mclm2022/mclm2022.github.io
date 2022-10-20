@@ -291,7 +291,7 @@
     "href": "slides/index.html",
     "title": "Slides",
     "section": "",
-    "text": "1 Introduction\n\n\n\n\n\n2 Read corpora\n\n\n\n\n\n3 Contingency tables"
+    "text": "1 Introduction\n\n\n\n\n\n2 Read corpora\n\n\n\n\n\n3 Contingency tables\n\n\n\n\n\n\n4 Association measures"
   },
   {
     "objectID": "slides/contingency-tables.html#outline",
@@ -490,6 +490,132 @@
     "text": "Hot-coffee association\n\nassoc_scores(hot_cooc)[\"coffee/nn\",]\n\nAssociation scores (types in list: 1)\n       type a   PMI G_signed|  b  c       d dir exp_a DP_rows RR_rows\n1 coffee/nn 4 6.315   27.349|773 72 1174794   1  0.05   0.005  84.003\n<number of extra columns to the right: 6>\n\n\n\nSumming up"
   },
   {
+    "objectID": "slides/assoc.html#outline",
+    "href": "slides/assoc.html#outline",
+    "title": "Association measures",
+    "section": "Outline",
+    "text": "Outline\n\nIntroduction\nEffect size measures\nStrength of evidence measures\nUsage in practice"
+  },
+  {
+    "objectID": "slides/assoc.html#sources",
+    "href": "slides/assoc.html#sources",
+    "title": "Association measures",
+    "section": "Sources",
+    "text": "Sources\n\nCheck the documentation of mclm::assoc_scores().\nEvert (2007) in Toledo.\n\n\nIntroduction"
+  },
+  {
+    "objectID": "slides/assoc.html#terms",
+    "href": "slides/assoc.html#terms",
+    "title": "Association measures",
+    "section": "Terms",
+    "text": "Terms\n\nObserved frequenciesExpected frequencies\n\n\n\n\n\n\n \n  \n      \n    Target item \n    Other items \n    Total \n  \n \n\n  \n    Target context \n    O11 \n    O12 \n    R1 \n  \n  \n    Reference context \n    O21 \n    O22 \n    R2 \n  \n  \n    Total \n    C1 \n    C2 \n    N \n  \n\n\n\n\n\n\n\n\n\n\n\n \n  \n      \n    Target item \n    Other items \n    Total \n  \n \n\n  \n    Target context \n    E11 \n    E12 \n    R1 \n  \n  \n    Reference context \n    E21 \n    E22 \n    R2 \n  \n  \n    Total \n    C1 \n    C2 \n    N \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nSee slides on Contingency tables.\n\n\n\n\nIntroduction"
+  },
+  {
+    "objectID": "slides/assoc.html#set-up-data",
+    "href": "slides/assoc.html#set-up-data",
+    "title": "Association measures",
+    "section": "Set up data",
+    "text": "Set up data\n\nlibrary(tidyverse)\nlibrary(mclm)\ncorpus_folder <- here::here(\"studies\", \"_corpora\", \"brown\") # adapt path!!\nbrown_fnames <- get_fnames(corpus_folder) %>% keep_re(\"/c[a-z]\")\nhot_assoc <- surf_cooc(brown_fnames, \"^hot/jj\", re_token_splitter = \"\\\\s+\") %>% \n  assoc_scores() %>% as_tibble()\nhead(hot_assoc)\n\n# A tibble: 6 × 17\n  type       a     b     c       d   dir exp_a  DP_rows RR_rows    OR       MS\n  <chr>  <dbl> <dbl> <dbl>   <dbl> <dbl> <dbl>    <dbl>   <dbl> <dbl>    <dbl>\n1 ,/,       49   728 58104 1116762     1  38.4  0.0136    1.28  1.29  0.000843\n2 the/at    39   738 68974 1105892    -1  45.6 -0.00851   0.855 0.847 0.000565\n3 ./.       38   739 48774 1126092     1  32.3  0.00739   1.18  1.19  0.000778\n4 and/cc    36   741 28506 1146360     1  18.9  0.0221    1.91  1.95  0.00126 \n5 a/at      28   749 22915 1151951     1  15.2  0.0165    1.85  1.88  0.00122 \n6 of/in     21   756 35007 1139859    -1  23.2 -0.00277   0.907 0.904 0.000600\n# … with 6 more variables: Dice <dbl>, PMI <dbl>, chi2_signed <dbl>,\n#   G_signed <dbl>, t <dbl>, p_fisher_1 <dbl>\n\n\n\nIntroduction"
+  },
+  {
+    "objectID": "slides/assoc.html#difference-of-proportions-delta-p",
+    "href": "slides/assoc.html#difference-of-proportions-delta-p",
+    "title": "Association measures",
+    "section": "Difference of proportions (\\(\\Delta p\\))",
+    "text": "Difference of proportions (\\(\\Delta p\\))\n\n\n\\[\\frac{O_{11}}{R_1}-\\frac{O_{21}}{R_2}\\]\n\n\\(< 0\\): repulsion\n\\(0\\): neutral\n\\(> 0\\): attraction\n\n\n\nhot_assoc %>% arrange(desc(DP_rows)) %>% \n  select(type, a, b, c, d, DP_rows) %>% head(10) %>% \n  kbl() %>% kable_paper(font_size = 22)\n\n\n\n \n  \n    type \n    a \n    b \n    c \n    d \n    DP_rows \n  \n \n\n  \n    and/cc \n    36 \n    741 \n    28506 \n    1146360 \n    0.022 \n  \n  \n    a/at \n    28 \n    749 \n    22915 \n    1151951 \n    0.017 \n  \n  \n    water/nn \n    13 \n    764 \n    413 \n    1174453 \n    0.016 \n  \n  \n    ,/, \n    49 \n    728 \n    58104 \n    1116762 \n    0.014 \n  \n  \n    was/bedz \n    13 \n    764 \n    9793 \n    1165073 \n    0.008 \n  \n  \n    cold/jj \n    6 \n    771 \n    133 \n    1174733 \n    0.008 \n  \n  \n    ./. \n    38 \n    739 \n    48774 \n    1126092 \n    0.007 \n  \n  \n    with/in \n    10 \n    767 \n    7251 \n    1167615 \n    0.007 \n  \n  \n    it/pps \n    9 \n    768 \n    5844 \n    1169022 \n    0.007 \n  \n  \n    sun/nn \n    5 \n    772 \n    96 \n    1174770 \n    0.006 \n  \n\n\n\n\n\n\n\n\nOne of the values has to be very high for the value to be high\n\n\nEffect size measures"
+  },
+  {
+    "objectID": "slides/assoc.html#relative-risk",
+    "href": "slides/assoc.html#relative-risk",
+    "title": "Association measures",
+    "section": "Relative risk",
+    "text": "Relative risk\n\n\n\\[\\frac{O_{11}/R_1}{O_{21}/R_2}\\]\n\n\\(< 1\\): repulsion\n\\(1\\): neutral\n\\(> 1\\): attraction\n\n\n\nhot_assoc %>% arrange(desc(RR_rows)) %>% \n  select(type, a, b, c, d, RR_rows) %>% head(10) %>% \n  kbl() %>% kable_paper(font_size = 22)\n\n\n\n \n  \n    type \n    a \n    b \n    c \n    d \n    RR_rows \n  \n \n\n  \n    cereal/nn \n    4 \n    773 \n    12 \n    1174854 \n    504.02 \n  \n  \n    soup/nn \n    3 \n    774 \n    13 \n    1174853 \n    348.94 \n  \n  \n    cup/nn \n    3 \n    774 \n    40 \n    1174826 \n    113.40 \n  \n  \n    coffee/nn \n    4 \n    773 \n    72 \n    1174794 \n    84.00 \n  \n  \n    sun/nn \n    5 \n    772 \n    96 \n    1174770 \n    78.75 \n  \n  \n    weather/nn \n    3 \n    774 \n    63 \n    1174803 \n    72.00 \n  \n  \n    cold/jj \n    6 \n    771 \n    133 \n    1174733 \n    68.21 \n  \n  \n    water/nn \n    13 \n    764 \n    413 \n    1174453 \n    47.59 \n  \n  \n    summer/nn \n    3 \n    774 \n    128 \n    1174738 \n    35.44 \n  \n  \n    day/nn \n    4 \n    773 \n    623 \n    1174243 \n    9.71 \n  \n\n\n\n\n\n\n\n\nHow much higher, e.g. twice as high…\n\n\nEffect size measures"
+  },
+  {
+    "objectID": "slides/assoc.html#odds-ratio",
+    "href": "slides/assoc.html#odds-ratio",
+    "title": "Association measures",
+    "section": "Odds ratio",
+    "text": "Odds ratio\n\n\n\\[\\frac{O_{11}/O_{12}}{O_{21}/O_{22}}\\]\n\n\\(< 1\\): repulsion\n\\(1\\): neutral\n\\(> 1\\): attraction\n\n\n\nhot_assoc %>% arrange(desc(OR)) %>% \n  select(type, a, b, c, d, OR) %>% head(10) %>% \n  kbl() %>% kable_paper(font_size = 22)\n\n\n\n \n  \n    type \n    a \n    b \n    c \n    d \n    OR \n  \n \n\n  \n    cereal/nn \n    4 \n    773 \n    12 \n    1174854 \n    506.62 \n  \n  \n    soup/nn \n    3 \n    774 \n    13 \n    1174853 \n    350.28 \n  \n  \n    cup/nn \n    3 \n    774 \n    40 \n    1174826 \n    113.84 \n  \n  \n    coffee/nn \n    4 \n    773 \n    72 \n    1174794 \n    84.43 \n  \n  \n    sun/nn \n    5 \n    772 \n    96 \n    1174770 \n    79.26 \n  \n  \n    weather/nn \n    3 \n    774 \n    63 \n    1174803 \n    72.28 \n  \n  \n    cold/jj \n    6 \n    771 \n    133 \n    1174733 \n    68.74 \n  \n  \n    water/nn \n    13 \n    764 \n    413 \n    1174453 \n    48.39 \n  \n  \n    summer/nn \n    3 \n    774 \n    128 \n    1174738 \n    35.57 \n  \n  \n    day/nn \n    4 \n    773 \n    623 \n    1174243 \n    9.75 \n  \n\n\n\n\n\n\n\n\nEffect size measures"
+  },
+  {
+    "objectID": "slides/assoc.html#log-odds-ratio",
+    "href": "slides/assoc.html#log-odds-ratio",
+    "title": "Association measures",
+    "section": "log odds ratio",
+    "text": "log odds ratio\n\n\n\\[\\log\\left(\\frac{O_{11}/O_{12}}{O_{21}/O_{22}}\\right)\\]\n\n\\(< 0\\): repulsion\n\\(0\\): neutral\n\\(> 0\\): attraction\n\n\n\nhot_assoc %>% mutate(log_OR = log(OR)) %>% arrange(desc(log_OR)) %>% \n  select(type, a, b, c, d, OR, log_OR) %>% head(10) %>% \n  kbl() %>% kable_paper(font_size = 22)\n\n\n\n \n  \n    type \n    a \n    b \n    c \n    d \n    OR \n    log_OR \n  \n \n\n  \n    cereal/nn \n    4 \n    773 \n    12 \n    1174854 \n    506.62 \n    6.23 \n  \n  \n    soup/nn \n    3 \n    774 \n    13 \n    1174853 \n    350.28 \n    5.86 \n  \n  \n    cup/nn \n    3 \n    774 \n    40 \n    1174826 \n    113.84 \n    4.74 \n  \n  \n    coffee/nn \n    4 \n    773 \n    72 \n    1174794 \n    84.43 \n    4.44 \n  \n  \n    sun/nn \n    5 \n    772 \n    96 \n    1174770 \n    79.26 \n    4.37 \n  \n  \n    weather/nn \n    3 \n    774 \n    63 \n    1174803 \n    72.28 \n    4.28 \n  \n  \n    cold/jj \n    6 \n    771 \n    133 \n    1174733 \n    68.74 \n    4.23 \n  \n  \n    water/nn \n    13 \n    764 \n    413 \n    1174453 \n    48.39 \n    3.88 \n  \n  \n    summer/nn \n    3 \n    774 \n    128 \n    1174738 \n    35.57 \n    3.57 \n  \n  \n    day/nn \n    4 \n    773 \n    623 \n    1174243 \n    9.75 \n    2.28 \n  \n\n\n\n\n\n\n\n\nEffect size measures"
+  },
+  {
+    "objectID": "slides/assoc.html#pmi",
+    "href": "slides/assoc.html#pmi",
+    "title": "Association measures",
+    "section": "PMI",
+    "text": "PMI\n\n\n\\[\\log_2 \\left(\\frac{O_{11}}{E_{11}}\\right)\\]\n\n\\(< 0\\): repulsion\n\\(0\\): neutral\n\\(> 0\\): attraction\n\n\n\nhot_assoc %>% arrange(desc(PMI)) %>% \n  select(type, a, exp_a, PMI) %>% head(10) %>% \n  kbl() %>% kable_paper(font_size = 22)\n\n\n\n \n  \n    type \n    a \n    exp_a \n    PMI \n  \n \n\n  \n    cereal/nn \n    4 \n    0.011 \n    8.56 \n  \n  \n    soup/nn \n    3 \n    0.011 \n    8.15 \n  \n  \n    cup/nn \n    3 \n    0.028 \n    6.72 \n  \n  \n    coffee/nn \n    4 \n    0.050 \n    6.32 \n  \n  \n    sun/nn \n    5 \n    0.067 \n    6.23 \n  \n  \n    weather/nn \n    3 \n    0.044 \n    6.10 \n  \n  \n    cold/jj \n    6 \n    0.092 \n    6.03 \n  \n  \n    water/nn \n    13 \n    0.282 \n    5.53 \n  \n  \n    summer/nn \n    3 \n    0.087 \n    5.12 \n  \n  \n    day/nn \n    4 \n    0.414 \n    3.27 \n  \n\n\n\n\n\n\n\n\nEffect size measures"
+  },
+  {
+    "objectID": "slides/assoc.html#dice-coefficient",
+    "href": "slides/assoc.html#dice-coefficient",
+    "title": "Association measures",
+    "section": "DICE coefficient",
+    "text": "DICE coefficient\n\n\n\\[\\frac{2O_{11}}{R_1+C_1}\\]\nHarmonic mean of \\(\\frac{O_{11}}{R_1}\\) and \\(\\frac{O_{11}}{C_1}\\)\n\nRange: 0-1\n\n\n\nhot_assoc %>% arrange(desc(Dice)) %>% \n  select(type, a, b, c, Dice) %>% head(10) %>% \n  kbl() %>% kable_paper(font_size = 22)\n\n\n\n \n  \n    type \n    a \n    b \n    c \n    Dice \n  \n \n\n  \n    water/nn \n    13 \n    764 \n    413 \n    0.022 \n  \n  \n    cold/jj \n    6 \n    771 \n    133 \n    0.013 \n  \n  \n    sun/nn \n    5 \n    772 \n    96 \n    0.011 \n  \n  \n    cereal/nn \n    4 \n    773 \n    12 \n    0.010 \n  \n  \n    coffee/nn \n    4 \n    773 \n    72 \n    0.009 \n  \n  \n    soup/nn \n    3 \n    774 \n    13 \n    0.008 \n  \n  \n    cup/nn \n    3 \n    774 \n    40 \n    0.007 \n  \n  \n    weather/nn \n    3 \n    774 \n    63 \n    0.007 \n  \n  \n    summer/nn \n    3 \n    774 \n    128 \n    0.007 \n  \n  \n    day/nn \n    4 \n    773 \n    623 \n    0.006 \n  \n\n\n\n\n\n\n\n\nThe harmonic mean of two proportions grows high only if both proportions are high -> so good for catching proper nouns. Combining: “if we have the node, how often do we have the collocate” and “if we have the collocate, how often do we have the node” basically: is this the probability of being the first column bigger when you are in the first row than when you are in the second\n\n\nEffect size measures"
+  },
+  {
+    "objectID": "slides/assoc.html#sum-up-effect-size-measures",
+    "href": "slides/assoc.html#sum-up-effect-size-measures",
+    "title": "Association measures",
+    "section": "Sum up effect size measures",
+    "text": "Sum up effect size measures\n\nIntuitive\n\n\n\nFragile, especially with low frequencies (which we often have)\n\n\nEffect size measures"
+  },
+  {
+    "objectID": "slides/assoc.html#about-these-measures",
+    "href": "slides/assoc.html#about-these-measures",
+    "title": "Association measures",
+    "section": "About these measures",
+    "text": "About these measures\n\nHow certain are we that there is a difference?\nTake into amount effect size and amount of information.\n\nIf you have a big difference you don’t need much data.\nIf you have a subtle difference you need a lot of data.\n\n\n\n\nBUT they combine attraction and repulsion!\n\n\nStrength of evidence measures"
+  },
+  {
+    "objectID": "slides/assoc.html#chi-square-chi2",
+    "href": "slides/assoc.html#chi-square-chi2",
+    "title": "Association measures",
+    "section": "Chi-square (\\(\\chi^2\\))",
+    "text": "Chi-square (\\(\\chi^2\\))\n\n\n\n\\(\\sum_{i=1}^{2}\\sum_{j=1}^{2}\\frac{(O_{ij}-E_{ij})^2}{E_{ij}}\\)\nNot a good test for low frequency items (one of the expected frequencies is below 5)\n\n\n\nhot_assoc %>% arrange(desc(chi2_signed)) %>% \n  select(type, a, exp_a, b, c, d, chi2_signed) %>% head(10) %>% \n  kbl() %>% kable_paper(font_size = 22)\n\n\n\n \n  \n    type \n    a \n    exp_a \n    b \n    c \n    d \n    chi2_signed \n  \n \n\n  \n    cereal/nn \n    4 \n    0.011 \n    773 \n    12 \n    1174854 \n    1506.1 \n  \n  \n    soup/nn \n    3 \n    0.011 \n    774 \n    13 \n    1174853 \n    845.7 \n  \n  \n    water/nn \n    13 \n    0.282 \n    764 \n    413 \n    1174453 \n    575.1 \n  \n  \n    cold/jj \n    6 \n    0.092 \n    771 \n    133 \n    1174733 \n    380.3 \n  \n  \n    sun/nn \n    5 \n    0.067 \n    772 \n    96 \n    1174770 \n    364.9 \n  \n  \n    cup/nn \n    3 \n    0.028 \n    774 \n    40 \n    1174826 \n    310.9 \n  \n  \n    coffee/nn \n    4 \n    0.050 \n    773 \n    72 \n    1174794 \n    310.8 \n  \n  \n    weather/nn \n    3 \n    0.044 \n    774 \n    63 \n    1174803 \n    200.5 \n  \n  \n    summer/nn \n    3 \n    0.087 \n    774 \n    128 \n    1174738 \n    98.1 \n  \n  \n    day/nn \n    4 \n    0.414 \n    773 \n    623 \n    1174243 \n    31.1 \n  \n\n\n\n\n\n\n\n\nchecks sum of squared differences between each observed value and its expected counterpart (divided by the expected value) Under \\(H_0\\) this test statistic has a \\(\\chi^2\\) distribution with one df.\n\n\nStrength of evidence measures"
+  },
+  {
+    "objectID": "slides/assoc.html#log-likelihood-ratio-g-or-g2",
+    "href": "slides/assoc.html#log-likelihood-ratio-g-or-g2",
+    "title": "Association measures",
+    "section": "Log-likelihood ratio: \\(G\\) or \\(G^2\\)",
+    "text": "Log-likelihood ratio: \\(G\\) or \\(G^2\\)\n\n\n\\[2\\sum_{i=1}^{2}\\sum_{j=1}^{2}\\left(O_{ij} \\times log\\left(\\frac{O_{ij}}{E_{ij}}\\right) \\right)\\]\n\nAlso problematic with low frequency but not as much as \\(\\chi^2\\) (expected values can be as low as 3).\n\n\n\nhot_assoc %>% arrange(desc(G_signed)) %>% \n  select(type, a, exp_a, b, c, G_signed) %>% head(10) %>% \n  kbl() %>% kable_paper(font_size = 22)\n\n\n\n \n  \n    type \n    a \n    exp_a \n    b \n    c \n    G_signed \n  \n \n\n  \n    water/nn \n    13 \n    0.282 \n    764 \n    413 \n    74.8 \n  \n  \n    cereal/nn \n    4 \n    0.011 \n    773 \n    12 \n    40.6 \n  \n  \n    cold/jj \n    6 \n    0.092 \n    771 \n    133 \n    38.6 \n  \n  \n    sun/nn \n    5 \n    0.067 \n    772 \n    96 \n    33.6 \n  \n  \n    soup/nn \n    3 \n    0.011 \n    774 \n    13 \n    28.5 \n  \n  \n    coffee/nn \n    4 \n    0.050 \n    773 \n    72 \n    27.3 \n  \n  \n    cup/nn \n    3 \n    0.028 \n    774 \n    40 \n    22.2 \n  \n  \n    weather/nn \n    3 \n    0.044 \n    774 \n    63 \n    19.6 \n  \n  \n    summer/nn \n    3 \n    0.087 \n    774 \n    128 \n    15.5 \n  \n  \n    and/cc \n    36 \n    18.864 \n    741 \n    28506 \n    12.7 \n  \n\n\n\n\n\n\n\n\n\nLike \\(\\chi^2\\) but instead of taking the difference between observed and expected, it’s a division with a log transformation\nUnder \\(H_0\\) this test statistic has a \\(\\chi^2\\) distribution with one df.\nWe calculate \\(L\\), difference between proportions\n\nNumerator: maximum likelihood estimation (MLE) respecting the null hypothesis\nDenominator: maximum likelihood estimation allowing the proportion to be different from the observed one\nThen this computes the probability of encountering the proportion that we have\n\\(G^2 = -2 log(L)\\)\n\nHigher values of \\(G^2\\) (=lower values of \\(L\\)) show stronger evidence\n\n\n\nStrength of evidence measures"
+  },
+  {
+    "objectID": "slides/assoc.html#fisher-exact-test",
+    "href": "slides/assoc.html#fisher-exact-test",
+    "title": "Association measures",
+    "section": "Fisher exact test",
+    "text": "Fisher exact test\n\n\n\nWe’ll use the p-value: the lower the better.\nUsed for low frequencies - accurate but computationally expensive.\n\n\n\nhot_assoc %>% arrange(p_fisher_1) %>% \n  select(type, a, b, c, d, p_fisher_1) %>% head(10) %>% \n  kbl(digits = 5) %>% kable_paper(font_size = 22)\n\n\n\n \n  \n    type \n    a \n    b \n    c \n    d \n    p_fisher_1 \n  \n \n\n  \n    water/nn \n    13 \n    764 \n    413 \n    1174453 \n    0.00000 \n  \n  \n    cereal/nn \n    4 \n    773 \n    12 \n    1174854 \n    0.00000 \n  \n  \n    cold/jj \n    6 \n    771 \n    133 \n    1174733 \n    0.00000 \n  \n  \n    sun/nn \n    5 \n    772 \n    96 \n    1174770 \n    0.00000 \n  \n  \n    soup/nn \n    3 \n    774 \n    13 \n    1174853 \n    0.00000 \n  \n  \n    coffee/nn \n    4 \n    773 \n    72 \n    1174794 \n    0.00000 \n  \n  \n    cup/nn \n    3 \n    774 \n    40 \n    1174826 \n    0.00000 \n  \n  \n    weather/nn \n    3 \n    774 \n    63 \n    1174803 \n    0.00001 \n  \n  \n    summer/nn \n    3 \n    774 \n    128 \n    1174738 \n    0.00010 \n  \n  \n    and/cc \n    36 \n    741 \n    28506 \n    1146360 \n    0.00024 \n  \n\n\n\n\n\n\n\n\n\nCan work for low frequencies, so it is mostly used in those cases (since it’s also computationally more demanding - sometimes it never ends)\nThe position of the observed \\(O_{11}\\) in a hypergeometric distribution (given by the marginal frequencies \\(R_1\\), \\(R_2\\) and \\(C_1\\)?) is computed\n\n\n\nStrength of evidence measures"
+  },
+  {
+    "objectID": "slides/assoc.html#assoc-object",
+    "href": "slides/assoc.html#assoc-object",
+    "title": "Association measures",
+    "section": "1. assoc object",
+    "text": "1. assoc object\nObtain a dataframe with association measures between different items and the target context.\n\ncollocations: e.g. between different words and hot/jj\nkeywords: e.g. between different words and the academic files of the corpus.\n\nCode: mclm::assoc_scores() or mclm::assoc_abcd().\n\nUsage in practice"
+  },
+  {
+    "objectID": "slides/assoc.html#what-counts-as-association",
+    "href": "slides/assoc.html#what-counts-as-association",
+    "title": "Association measures",
+    "section": "What counts as association?",
+    "text": "What counts as association?\n\nSet a threshold (always arbitrary, may be theoretically informed).\nUse a ranking.\nCombine: choose the n-best elements.\n\n\n\n\n\n\n\nTip\n\n\nThis can also be combined with different measures, e.g. use frequency threshold, a minimum value of PMI and of \\(G^2\\) and rank by either PMI or \\(G^2\\).\n\n\n\n\nUsage in practice"
+  },
+  {
+    "objectID": "slides/assoc.html#how-to-choose-a-measure",
+    "href": "slides/assoc.html#how-to-choose-a-measure",
+    "title": "Association measures",
+    "section": "How to choose a measure?",
+    "text": "How to choose a measure?\n\nIt depends on the goal, previous literature…\nFor the final paper, comparing measures is a valid objective.\n\n\n\n\n\n\n\nSuggestion\n\n\nCombine an effect-size measure and a strength-of-evidence measure. Use them for thresholds and compare the rankings. A good pair is PMI and \\(G^2\\).\n\n\n\n\nUsage in practice"
+  },
+  {
     "objectID": "studies/base.html",
     "href": "studies/base.html",
     "title": "Keywords and collocation analysis on the BASE corpus",
@@ -644,6 +770,13 @@
     "text": "3.3 Make changes and commit\nIn order for this branch to have any substance at all, you need to commit something. The example in class was to copy a folder with a corpus and to add the name of the corpus in the “.gitignore” file. This way, the “.gitignore” has changed and it has to be staged and committed.\nIf you want a more drastic change, you could create a file, such a script or a Quarto document. Once you have added and committed it, it exists in the new-branch branch but not in main.\ngit add .\ngit commit -m \"start new branch\"\nBy running git checkout main you will switch to the main branch and see that the new file is not there. You would also see that “.gitignore” is not ignoring the corpus folder.\n\n\nPush to remote\nMerge branches\nMove between branches\n\n\n\nIf you want to send the changes to a new-branch branch in the remote location (because you like the online-backup option), you can also push them. As before, the first time you will have to run:\ngit push -u origin new-branch\nAnd the rest of the times:\ngit push\nIf you do just git push from the beginning, it will throw you an error and give you the appropriate instructions.\n\n\n\n\n\n\nImportant\n\n\n\nI will not look at things you push to branches other than main!\nIf you want to submit something, push the changes to the remote main.\nIf you want to keep it to yourself, push it to another branch!\n\n\n\n\nOnce you are done with a branch you can merge it with another… which doesn’t mean you delete it. It just means that the current state of the new branch is brought to the previous branch. For example, if you want to bring all you have in new-branch to the main branch, you run git checkout followed by git merge. Optionally, you can delete the other branch with git branch -d new-branch… but it’s not necessary.\ngit checkout main\ngit merge new-branch\nOr alternatively\ngit merge main new-branch\n\n\nIf you just want to move part of the work in one branch to the other, instead of merging them fully, you can use git checkout <branch> <file>, e.g.\ngit checkout main\ngit checkout new-branch R"
   },
   {
+    "objectID": "git/cheatsheet.html#sec-nopush",
+    "href": "git/cheatsheet.html#sec-nopush",
+    "title": "Git Cheetsheet",
+    "section": "\n5.1 Unable to push",
+    "text": "5.1 Unable to push\nError message includes the following hint:\nUpdates were rejected because the remote contains work that you do not have locally.\nThis means that your remote (what you see on the GitHub site) has history that the local version (what you have on your computer) has never had. The most likely reason is that you added or modified a file from the GitHub website instead of creating it locally and pushing it.\nThis is not wrong per se, but it complicates things (that’s why I didn’t ask you to do that). How do you solve it?\ngit pull\nThis is going to try to bring the local version up-to-date with the remote version. It might also give you instructions on how to merge it –maybe you have to write a message or decide on disagreements.\n\n\n\n\n\n\nTip\n\n\n\nSometimes git itself gives you suggestions on code you should write. For example, git pull may fail and you receive a message suggesting you to write something like:\ngit pull <remote> <branch>\nBecause your remote is called origin, and when your branch is called main, this translates to:\ngit pull origin main\nIf you do get this instruction, notice that there is an additional suggestion to run:\ngit branch --set-to-origin=origin/<branch> main\nThis means that you still need to inform what is the name of the origin branch (the branch in the remote, i.e. the GitHub website) that matches your local main branch. It will be main, so just replace <branch> with main and you will be able to just git pull in the future.\n\n\nPulling in GitHub is part of a daily workflow when you have more than one local source pushing into the remote… but that is not the case in this course. Since many of you have zero to no experience with GitHub, we’ll avoid pulling and merging on your side for now. Unless you’re confident with GitHub, focus on working on your local computer, pushing to the website and getting comfortable with those instructions, before moving on to other tasks."
+  },
+  {
     "objectID": "quarto/crossref.html",
     "href": "quarto/crossref.html",
     "title": "Cross-references",
@@ -663,12 +796,5 @@
     "title": "Cross-references",
     "section": "\n2.2 Chunks with output",
     "text": "2.2 Chunks with output\nFor tables and figures, you can either copy code from the slides from previous lessons or do something from scratch as shown below. It doesn’t have to be serious, it just has to be done properly.\nYou can either add echo: false to your chunks (which will not be shown in the examples below) or add the following lines to the metadata YAML at the top of your .qmd file to make it the default in the whole document:\nexecute:\n  echo: false\n\n\nTable example\nFigure example\nSection example\n\n\n\nTable 1 is referenced with @tbl-tblex in the text. Remember that the label of the figure must start with “tbl”, the caption must be set with “tbl-cap” and the caption location may be set with “tbl-cap-location”. A margin caption will only be shown in the margins in HTML output if the viewport is wide enough (for responsiveness). By default, the margin location of a table is at the top.\n\n```{r}\n#| label: tbl-tblex\n#| tbl-cap: Age and ear shape of people invented for this exercise.\n#| tbl-cap-location: margin\nkbl(dataset, col.names = c(\"Name\", \"Age\", \"Ear shape\")) %>% \n  kable_paper()\n```\n\n\n\n\n\n \n Name \n    Age \n    Ear shape \n  \n\n\n Fulano \n    35 \n    Pointy \n  \n\n Mengano \n    23 \n    Rounded \n  \n\n John Doe \n    56 \n    Rounded \n  \n\n Someone \n    12 \n    Pointy \n  \n\n\nTable 1:  Age and ear shape of people invented for this exercise. \n\n\n\n\nFigure 1 is referenced with @fig-figex in the text. Remember that the label of the figure must start with “fig”, the caption must be set with “fig-cap” and the caption location may be set with “fig-cap-location”. By default the caption location of a figure is at the bottom.\n\n```{r}\n#| label: fig-figex\n#| fig-cap: A lollipop chart showing the ages and ear shapes of people invented for this exercise.\nggplot(dataset, aes(x = age, y = name)) +\n  geom_segment(aes(xend = 0, yend = name), color = \"gray\") +\n  geom_point(aes(color = ear_type), size = 3) +\n  labs(x = \"Age\", y = \"\", color = \"Ear shape\") +\n  theme_classic(base_size = 15) +\n  theme(legend.position = \"top\")\n```\n\n\n\nFigure 1: A lollipop chart showing the ages and ear shapes of people invented for this exercise.\n\n\n\n\n\n\n\n\n\n\n{ggplot2} syntax\n\n\n\n\n\n{ggplot2} uses what is called a Grammar of Graphics: layers of instructions on each other. In Figure 1, this is what each line does:\n\nggplot(dataset, aes(x = age, y = name))\n\nCreates a ggplot object, which is plotted when printing. It assigns it a dataset to read data from and aesthethics. Aesthetics are mappings between columns of the dataset (variables) and markers or characteristics of the plot.\n\n\nThe aesthetics we are assigning are x and y, i.e. the horizontal and vertical axis respectively. The data in the age column of dataset will be mapped to the horizontal axis, while the data in the name column of the dataset (even if it’s categorical) will be mapped to the vertical axis.\n\n\nAesthetics can be assigned either in this stage or in a geom_ layer. Aesthetics assigned inside the ggplot() call will be used by all the following geom_ layers unless overriden.\n\ngeom_segment(aes(xend = 0, yend = name), color = \"gray\")\n\nAdd a segment geometry, i.e. one line per observation. The aesthetics needed to draw a line are x and xend (the horizontal coordinates for each end of the line) and y and yend (the vertical coordinates for each end of the line). In other words, we will draw a line between (x, y) and (xend, yend).\n\n\nFor these segments, we will use the same x and y values assigned in the ggplot() call, which are inherited automatically. But we will also need to add the values for xend and yend. xend is a constant, 0: we want all the segments to start from \\(x=0\\) and end at the value of age. yend is equal to y: we want horizontal lines that have the same value at y and yend, i.e. the value of name.\n\n\nOutside the mapping argument with the aes() call, we can also assign other constants, such as the same color for all elements. These are independent of the dataset. (xend could also have been defined here.) In this case we indicate that the segments must be gray.\n\ngeom_point(aes(color = ear_type), size = 3)\n\nAdd a point geometry, i.e. one point per observation. We inherit the aesthetics from ggplot() but not those of geom_segment() (which would be meaningless anyways).\n\n\ncolor is defined within the aes() call because we want to map the value of ear_type to the colors. size is defined outside, as a constant for all points.\n\n\nIf geom_segment() was called after geom_point(), they would be drawn on top of the points and seen in the overlapping bit.\n\nlabs(x = \"Age\", y = \"\", color = \"Ear shape\")\n\nSet the label of the x axis to “Age”, remove the label of the y axis, and set the title of the color legend to “Ear shape”.\n\ntheme_classic(base_size = 15)\n\nSet a bunch of default properties for a nice theme. We also ask for the base font size to be of 15 points.\n\ntheme(legend.position = \"top\")\n\nFurther refine the theme by stating that the legend should be on top of the plot.\n\n\nTo better understand the effect of each later, I invite you to run the code adding one line at a time and see how the plot changes.\n\n\n\n\n\nSection 3 is referenced as @sec-git. In order to be able to reference it, you should add {#sec-git} after the heading that needs referencing. Remember also to add the following number-sections: true to your metadata YAML."
-  },
-  {
-    "objectID": "git/cheatsheet.html#sec-nopush",
-    "href": "git/cheatsheet.html#sec-nopush",
-    "title": "Git Cheetsheet",
-    "section": "\n5.1 Unable to push",
-    "text": "5.1 Unable to push\nError message includes the following hint:\nUpdates were rejected because the remote contains work that you do not have locally.\nThis means that your remote (what you see on the GitHub site) has history that the local version (what you have on your computer) has never had. The most likely reason is that you added or modified a file from the GitHub website instead of creating it locally and pushing it.\nThis is not wrong per se, but it complicates things (that’s why I didn’t ask you to do that). How do you solve it?\ngit pull\nThis is going to try to bring the local version up-to-date with the remote version. It might also give you instructions on how to merge it –maybe you have to write a message or decide on disagreements.\n\n\n\n\n\n\nTip\n\n\n\nSometimes git itself gives you suggestions on code you should write. For example, git pull may fail and you receive a message suggesting you to write something like:\ngit pull <remote> <branch>\nBecause your remote is called origin, and when your branch is called main, this translates to:\ngit pull origin main\nIf you do get this instruction, notice that there is an additional suggestion to run:\ngit branch --set-to-origin=origin/<branch> main\nThis means that you still need to inform what is the name of the origin branch (the branch in the remote, i.e. the GitHub website) that matches your local main branch. It will be main, so just replace <branch> with main and you will be able to just git pull in the future.\n\n\nPulling in GitHub is part of a daily workflow when you have more than one local source pushing into the remote… but that is not the case in this course. Since many of you have zero to no experience with GitHub, we’ll avoid pulling and merging on your side for now. Unless you’re confident with GitHub, focus on working on your local computer, pushing to the website and getting comfortable with those instructions, before moving on to other tasks."
   }
 ]

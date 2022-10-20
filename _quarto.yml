@@ -8,6 +8,7 @@ project:
     - slides/init.qmd
     - slides/index.qmd
     - slides/contingency-tables.qmd
+    - slides/assoc.qmd
     - studies/base.qmd
     - git/*.qmd
     - quarto/*.qmd
