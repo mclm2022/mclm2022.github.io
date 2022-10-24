@@ -230,14 +230,30 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p>Load the appropriate libraries (tidyverse and mclm).</p></li>
 <li><p>Read the brown corpus.</p></li>
 <li><p>Create an association scores table of the collocations of a word of your choosing.</p></li>
-<li><p>Manipulate the table as done in class: modify columns, select some columns to show, filter the rows, rearrange the order.</p></li>
-<li><p>Save the association scores object to a file with <code>write_assoc()</code>.</p></li>
+<li>
+<p>Save the file.</p>
+<ol type="a">
+<li><p>OPTION A: Manipulate the table as done in class: turn it into a tibble with <code>as_tibble()</code>, modify columns, select some columns to show, filter the rows, rearrange the order. Then write it to a file with <code>write_tsv()</code>.</p></li>
+<li><p>OPTION B: Save the association scores object to a file with <code>write_assoc()</code>.</p></li>
 </ol>
 </li>
-<li><p>Create a Quarto report where you will only load the {mclm} and {kableExtra} packages.</p></li>
-<li><p>Read the association scores object with <code><a href="https://masterclm.github.io/mclm/reference/read_assoc.html">mclm::read_assoc()</a></code> or with <code><a href="https://readr.tidyverse.org/reference/read_delim.html">readr::read_tsv()</a></code>.</p></li>
+</ol>
+</li>
+<li>
+<p>Create a Quarto report where you will only load the {mclm} and {kableExtra} packages.</p>
+<ol type="i">
+<li>
+<p>Read the association scores object:</p>
+<ol type="a">
+<li><p>OPTION A: If you wrote it with <code>write_tsv()</code>, use <code>read_tsv()</code>.</p></li>
+<li><p>OPTION B: If you wrote it with <code>write_assoc()</code>, you can either use <code>read_tsv()</code> or <code>read_assoc()</code> followed by <code>as_tibble()</code>.</p></li>
+</ol>
+</li>
+<li><p>If you hadn’t manipulated the table, this is the time to do so.</p></li>
 <li><p>Print the table with {kableExtra}, editing it as well if you so wish. Don’t forget to add a caption!</p></li>
 <li><p>Include some text cross-referencing the table and maybe commenting on the result.</p></li>
+</ol>
+</li>
 </ol></section><section id="tips" class="level1" data-number="2"><h1 data-number="2">
 <span class="header-section-number">2</span> Tips</h1>
 <section id="manipulating-the-table" class="level2" data-number="2.1"><h2 data-number="2.1" class="anchored" data-anchor-id="manipulating-the-table">

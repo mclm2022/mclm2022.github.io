@@ -21,17 +21,25 @@ For this assignment I ask that you create both a script to manipulate the table 
     
     i) Create an association scores table of the collocations of a word of your choosing.
     
-    i) Manipulate the table as done in class: modify columns, select some columns to show, filter the rows, rearrange the order.
+    i) Save the file.
     
-    i) Save the association scores object to a file with `write_assoc()`.
+        a. OPTION A: Manipulate the table as done in class: turn it into a tibble with `as_tibble()`, modify columns, select some columns to show, filter the rows, rearrange the order. Then write it to a file with `write_tsv()`.
+        
+        b. OPTION B: Save the association scores object to a file with `write_assoc()`.
   
 1. Create a Quarto report where you will only load the {mclm} and {kableExtra} packages.
 
-  1. Read the association scores object with `mclm::read_assoc()` or with `readr::read_tsv()`.
-  
-  2. Print the table with {kableExtra}, editing it as well if you so wish. Don't forget to add a caption!
-  
-  3. Include some text cross-referencing the table and maybe commenting on the result.
+    i. Read the association scores object:
+
+        a. OPTION A: If you wrote it with `write_tsv()`, use `read_tsv()`.
+        
+        b. OPTION B: If you wrote it with `write_assoc()`, you can either use `read_tsv()` or `read_assoc()` followed by `as_tibble()`.
+        
+    i. If you hadn't manipulated the table, this is the time to do so.
+    
+    i. Print the table with {kableExtra}, editing it as well if you so wish. Don't forget to add a caption!
+    
+    i. Include some text cross-referencing the table and maybe commenting on the result.
 
 
 # Tips
