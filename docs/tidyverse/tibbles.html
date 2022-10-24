@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.1.251">
+<meta name="generator" content="quarto-1.2.237">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta name="author" content="Mariana Montes">
 <title>Methods in Corpus Linguistics - Tibble manipulation</title>
@@ -116,7 +116,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit"
   }
-}</script><link rel="stylesheet" href="../styles.css">
+}</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><link rel="stylesheet" href="../styles.css">
 </head>
 <body class="nav-fixed">
 
@@ -133,10 +133,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
 <li class="nav-item">
-    <a class="nav-link" href="../index.html">Home</a>
+    <a class="nav-link" href="../index.html">
+ <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-studies" role="button" data-bs-toggle="dropdown" aria-expanded="false">Studies</a>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-studies" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Studies</span>
+    </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-studies">
 <li>
     <a class="dropdown-item" href="../studies/base.html">
@@ -145,13 +148,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     </ul>
 </li>
   <li class="nav-item">
-    <a class="nav-link" href="../slides/index.html">Slides</a>
+    <a class="nav-link" href="../slides/index.html">
+ <span class="menu-text">Slides</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../git/cheatsheet.html">Git cheatsheet</a>
+    <a class="nav-link" href="../git/cheatsheet.html">
+ <span class="menu-text">Git cheatsheet</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-assignments" role="button" data-bs-toggle="dropdown" aria-expanded="false">Assignments</a>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-assignments" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Assignments</span>
+    </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-assignments">
 <li>
     <a class="dropdown-item" href="../git/assignment.html">
@@ -214,6 +221,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
   </div>
     
+  
     
   </div>
   
@@ -254,7 +262,26 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p>Include some text cross-referencing the table and maybe commenting on the result.</p></li>
 </ol>
 </li>
-</ol></section><section id="tips" class="level1" data-number="2"><h1 data-number="2">
+</ol>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Render Latex in table header
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you try to use Latex in a table, for example <code>r"($\chi^2$)"</code> to obtain <span class="math inline">\(\chi^2\)</span>, you might notice that it prints well in the interactive session but not in the rendered HTML document. This is (I think) a bug somewhere in the rendering of tables, but there is a workaround:</p>
+<p>Somewhere in your Quarto document, paste the following text (as normal text, not as R code):</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;script type="text/x-mathjax-config"&gt;MathJax.Hub.Config({tex2jax: {inlineMath: [["$","$"]]}})&lt;/script&gt;</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>&lt;script async src="https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"&gt;&lt;/script&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This will activate parsing of Latex inside the HTML tables.</p>
+<p>In PDF output instead you just have to add the option <code>escape = FALSE</code> to your <code>kbl()</code> call. Notice, however, that you should not have unescaped Latex characters in other elements of the table! (No underscores, for example).</p>
+</div>
+</div>
+</section><section id="tips" class="level1" data-number="2"><h1 data-number="2">
 <span class="header-section-number">2</span> Tips</h1>
 <section id="manipulating-the-table" class="level2" data-number="2.1"><h2 data-number="2.1" class="anchored" data-anchor-id="manipulating-the-table">
 <span class="header-section-number">2.1</span> Manipulating the table</h2>
@@ -271,7 +298,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p>Use <code>arrange()</code> to sort the tibble based on the values in a column.</p></li>
 </ul>
 <div class="callout-tip callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -280,18 +307,18 @@ Example
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>An example is the code below, which starts with an <code>assoc</code> object (product of <code>assoc_scores()</code>) and ends with a tibble with a selection of rows and columns.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>subsetted <span class="ot">&lt;-</span> hot_assoc <span class="sc">%&gt;%</span> </span>
-<span id="cb1-2"><a href="#cb1-2"></a>  <span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span> </span>
-<span id="cb1-3"><a href="#cb1-3"></a>  <span class="fu">filter</span>(PMI <span class="sc">&gt;</span> <span class="dv">1</span>, G_signed <span class="sc">&gt;=</span> <span class="dv">5</span>, <span class="fu">endsWith</span>(type, <span class="st">"nn"</span>)) <span class="sc">%&gt;%</span> </span>
-<span id="cb1-4"><a href="#cb1-4"></a>  <span class="fu">select</span>(type, <span class="at">freq =</span> a, PMI, <span class="fu">ends_with</span>(<span class="st">"signed"</span>), OR) <span class="sc">%&gt;%</span> </span>
-<span id="cb1-5"><a href="#cb1-5"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb1-6"><a href="#cb1-6"></a>    <span class="at">log_OR =</span> <span class="fu">log</span>(OR),</span>
-<span id="cb1-7"><a href="#cb1-7"></a>    <span class="at">type =</span> <span class="fu">str_remove</span>(type, <span class="st">"/nn"</span>)</span>
-<span id="cb1-8"><a href="#cb1-8"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>subsetted <span class="ot">&lt;-</span> hot_assoc <span class="sc">%&gt;%</span> </span>
+<span id="cb2-2"><a href="#cb2-2"></a>  <span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb2-3"><a href="#cb2-3"></a>  <span class="fu">filter</span>(PMI <span class="sc">&gt;</span> <span class="dv">1</span>, G_signed <span class="sc">&gt;=</span> <span class="dv">5</span>, <span class="fu">endsWith</span>(type, <span class="st">"nn"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb2-4"><a href="#cb2-4"></a>  <span class="fu">select</span>(type, <span class="at">freq =</span> a, PMI, <span class="fu">ends_with</span>(<span class="st">"signed"</span>), OR) <span class="sc">%&gt;%</span> </span>
+<span id="cb2-5"><a href="#cb2-5"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb2-6"><a href="#cb2-6"></a>    <span class="at">log_OR =</span> <span class="fu">log</span>(OR),</span>
+<span id="cb2-7"><a href="#cb2-7"></a>    <span class="at">type =</span> <span class="fu">str_remove</span>(type, <span class="st">"/nn"</span>)</span>
+<span id="cb2-8"><a href="#cb2-8"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li><p>In line 2 we use <code>as_tibble()</code> to turn the <code>assoc</code> object into a <code>tibble</code> to manipulate with {tidyverse} functions.</p></li>
@@ -315,20 +342,20 @@ Example
 <p>Check out the documentation for <a href="https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html">HTML</a> or <a href="https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_pdf.pdf">PDF</a> output to learn about {kableExtra} features.</p>
 </section></section><section id="sec-git" class="level1" data-number="3"><h1 data-number="3">
 <span class="header-section-number">3</span> Git workflow</h1>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status <span class="co"># check that you're on main, nothing to commit...</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch tibble</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout tibble</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># work on your .qmd file, render</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status <span class="co"># check everything is fine</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"practice with tibbles"</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co"># you may also make several commits as you add a figure, a table...</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout main</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status <span class="co"># check everything is fine. New files should not be there</span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> merge tibble</span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Now the .qmd file, the rendered file and the help files should be present</span></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="co"># and send me a message!</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status <span class="co"># check that you're on main, nothing to commit...</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch tibble</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout tibble</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># work on your .qmd file, render</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status <span class="co"># check everything is fine</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"practice with tibbles"</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co"># you may also make several commits as you add a figure, a table...</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout main</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status <span class="co"># check everything is fine. New files should not be there</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> merge tibble</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Now the .qmd file, the rendered file and the help files should be present</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="co"># and send me a message!</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 </section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
@@ -372,7 +399,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -408,24 +452,42 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>

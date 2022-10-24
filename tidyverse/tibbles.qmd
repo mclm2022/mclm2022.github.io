@@ -41,6 +41,23 @@ For this assignment I ask that you create both a script to manipulate the table 
     
     i. Include some text cross-referencing the table and maybe commenting on the result.
 
+::: callout-tip
+## Render Latex in table header
+
+If you try to use Latex in a table, for example `r"($\chi^2$)"` to obtain $\chi^2$, you might notice that it prints well in the interactive session but not in the rendered HTML document. This is (I think) a bug somewhere in the rendering of tables, but there is a workaround:
+
+Somewhere in your Quarto document, paste the following text (as normal text, not as R code):
+
+```default
+<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [["$","$"]]}})</script>
+<script async src="https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+```
+
+This will activate parsing of Latex inside the HTML tables.
+
+In PDF output instead you just have to add the option `escape = FALSE` to your `kbl()` call. Notice, however, that you should not have unescaped Latex characters in other elements of the table! (No underscores, for example).
+
+:::
 
 # Tips
 

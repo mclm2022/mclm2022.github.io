@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.1.251">
+<meta name="generator" content="quarto-1.2.237">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <title>Methods in Corpus Linguistics - Keywords and collocation analysis on the BASE corpus</title>
 <style>
@@ -133,10 +133,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
 <li class="nav-item">
-    <a class="nav-link" href="../index.html">Home</a>
+    <a class="nav-link" href="../index.html">
+ <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-studies" role="button" data-bs-toggle="dropdown" aria-expanded="false">Studies</a>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-studies" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Studies</span>
+    </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-studies">
 <li>
     <a class="dropdown-item" href="../studies/base.html">
@@ -145,13 +148,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     </ul>
 </li>
   <li class="nav-item">
-    <a class="nav-link" href="../slides/index.html">Slides</a>
+    <a class="nav-link" href="../slides/index.html">
+ <span class="menu-text">Slides</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../git/cheatsheet.html">Git cheatsheet</a>
+    <a class="nav-link" href="../git/cheatsheet.html">
+ <span class="menu-text">Git cheatsheet</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-assignments" role="button" data-bs-toggle="dropdown" aria-expanded="false">Assignments</a>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-assignments" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Assignments</span>
+    </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-assignments">
 <li>
     <a class="dropdown-item" href="../git/assignment.html">
@@ -228,6 +235,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="quarto-title-meta">
 
     
+  
     
   </div>
   
@@ -249,7 +257,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>A <strong>PMI score</strong> of two or higher</li>
 <li>A <strong>signed G</strong> score of two or higher</li>
 </ul>
-<div class="page-columns page-full"><p>A <strong>PMI score</strong> of two or higher means that the probability of the keyword in the target context is at least four times higher than its probability in all the data taken together. </p><div class="no-row-height column-margin column-container"><span class="aside">Incidentally: a PMI of one indicates that this probability is twice as high, a PMI of two indicates it is four times as high, a PMI of three indicates it is eight times as high, a PMI of four indicates it is sixteen times as high, etc.</span></div></div>
+<div class="page-columns page-full"><p>A <strong>PMI score</strong> of two or higher means that the probability of the keyword in the target context is at least four times higher than its probability in all the data taken together. </p><div class="no-row-height column-margin column-container"><span class="">Incidentally: a PMI of one indicates that this probability is twice as high, a PMI of two indicates it is four times as high, a PMI of three indicates it is eight times as high, a PMI of four indicates it is sixteen times as high, etc.</span></div></div>
 <p>A <strong>signed G score</strong> of two or higher is not a very strict criterion. With a signed G score of two there is only mild evidence for attraction. In a traditional G test (log likelihood ratio test) for a two-by-two contingency table, a G score of one would indicate no evidence for any association whatsoever and a G score of 3.84 would be needed for the test to indicate a significant association (at a 95% confidence level). So a value of two would indicate that there is not enough evidence to establish significance.</p>
 <div class="callout-tip callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
@@ -267,7 +275,7 @@ Selection criteria
 </section><section id="data" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="data">Data</h2>
 <p>The first step to analyzing the data is to read the corpus. The first line of the code below sets the path to the “BASE” directory where all the corpus files are stored, in this case inside a “_corpora” folder, inside a “studies” folder at the top level of the project. In order to run this in your own computer, set <code>corpus_folder</code> to the path to where your copy of the corpus is stored.</p>
 <p>The second line of the code collects all the file names in that folder in an <code>fnames</code> object and keeps those with the “txt” extension.</p>
-<div class="page-columns page-full"><p></p><div class="no-row-height column-margin column-container"><span class="aside">The <code>hide_path</code> argument in the <code><a href="https://rdrr.io/r/base/print.html">print()</a></code> method for an <code>fnames</code> object allows us to hide a (redundant) bit of the filenames when printing them.</span></div></div>
+<div class="page-columns page-full"><p></p><div class="no-row-height column-margin column-container"><span class="">The <code>hide_path</code> argument in the <code><a href="https://rdrr.io/r/base/print.html">print()</a></code> method for an <code>fnames</code> object allows us to hide a (redundant) bit of the filenames when printing them.</span></div></div>
 <div class="cell">
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">corpus_folder</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://here.r-lib.org//reference/here.html">here</a></span><span class="op">(</span><span class="st">"studies"</span>, <span class="st">"_corpora"</span>, <span class="st">"BASE"</span><span class="op">)</span></span>
 <span><span class="va">fnames_BASE</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://masterclm.github.io/mclm/reference/fnames.html">get_fnames</a></span><span class="op">(</span><span class="va">corpus_folder</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
@@ -16476,7 +16484,7 @@ About <code>cooc_info</code> objects
 </div>
 </div>
 </div>
-<div class="page-columns page-full"><p>We can also plot the names of the words instead of using symbols, using the <code><a href="https://ggplot2.tidyverse.org/reference/geom_text.html">geom_text()</a></code> function, as shown in <a href="#fig-kw3">Figure&nbsp;3</a>. </p><div class="no-row-height column-margin column-container"><span class="aside">Notice that in <code>top_scores_df</code> the names of the types are stored in a column called <code>type</code>.</span></div></div>
+<div class="page-columns page-full"><p>We can also plot the names of the words instead of using symbols, using the <code><a href="https://ggplot2.tidyverse.org/reference/geom_text.html">geom_text()</a></code> function, as shown in <a href="#fig-kw3">Figure&nbsp;3</a>. </p><div class="no-row-height column-margin column-container"><span class="">Notice that in <code>top_scores_df</code> the names of the types are stored in a column called <code>type</code>.</span></div></div>
 <div class="cell page-columns page-full">
 <div class="sourceCode" id="cb38"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">top_scores_df</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">PMI</span>, y <span class="op">=</span> <span class="va">G_signed</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
@@ -16549,7 +16557,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -16585,24 +16610,42 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>
