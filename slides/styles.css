@@ -1,0 +1,11 @@
+.reveal .small-text {
+  font-size: 0.5em;
+}
+
+.reveal .center {
+  text-align: center;
+}
+
+details>summary {
+  font-size: 0.5em;
+}

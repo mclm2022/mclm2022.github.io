@@ -29,7 +29,7 @@ For this assignment I ask that you create both a script to manipulate the table 
   
 1. Create a Quarto report where you will only load the {mclm} and {kableExtra} packages.
 
-    i. Read the association scores object:
+    i. Read the association scores object:^[If you use `read_tsv()`, the `show_col_types = FALSE` argument will hide the printed output with the description of the column types, e.g. `my_data <- read_tsv("filepath", show_col_types = FALSE)`.]
 
         a. OPTION A: If you wrote it with `write_tsv()`, use `read_tsv()`.
         

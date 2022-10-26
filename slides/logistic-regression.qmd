@@ -1,293 +1,249 @@
 ---
-title: "Regression analysis"
+title: "Logistic regression analysis"
+subtitle: "Methods of Corpus Linguistics (class 6)"
+author: "Mariana Montes"
 format:
   revealjs:
-    slide-number: true
-    show-slide-number: all
+    chalkboard:
+        buttons: false
+    code-fold: true
+    css: styles.css
 execute:
   echo: true
+from: markdown+emoji
 ---
 
-## Linear and logistic regression {.smaller}
-
 ```{r}
+#| label: setup
 #| include: false
-
+headings <- c("Introduction", "Probabilities, odds and logit", "Interpretation and evaluation", "Easystats") 
 library(tidyverse)
+library(easystats)
+library(kableExtra)
+options(digits = 3)
+lnplot <- function(df, x, y, title) {
+  ggplot(df, aes(x = {{ x }}, y = {{ y }})) +
+    geom_line() +
+    geom_point() + 
+    theme_minimal(base_size = 20) +
+    theme(aspect.ratio = 1) +
+    labs(title = title)
+}
+kb_style <- function(df, position = "center") {
+  df %>% head(10) %>% kbl() %>%
+    kable_paper(full_width = FALSE, font_size = 22, position = position)
+}
 ```
 
-| | Linear regression | Logistic regression |
-|----------------------|-------------------------|-------------------------|
-| Response variable | Numerical | Categorical |
-| Relationship between predictor estimate and response | Linear | Logistic (linear relationship between estimate and log odds of response) |
-| Fitting function | OSL (ordinary least squares) | MLE (maximum likelihood estimation) |
-| Model comparison | F-test  | AIC |
-| Evaluation metric | $R^2$ | $C$ |
-| Base R function | `lm()` | `glm()` |
-
-# Simple linear regression
-
-## Simple linear regression
-
-Simple
-
-:   one predictor variable
-
-Linear
-
-:   linear relation between estimated parameters and response variable
-
-Notation
-
-:   `y ~ x`
-
-Estimation: OSL
-
-:   Ordinary least squares, minimizing sum of squares of residuals
-
-## Example
+## Outline
 
 ```{r}
-#| code-line-numbers: "|1-2|3|5-8|9-10|12-15"
-library(ggplot2)
-library(tibble)
+#| label: outline
+#| results: asis
+#| echo: false
+for (heading in headings) {
+  cat("-", heading, "\n")
+}
+i <- 1
+```
+
+# `r headings[[i]]`
+
+## Set up code
+
+```{r}
+#| label: logistic-code
+#| code-fold: false
 set.seed(2022)
+gonna <- tibble(gt = rep("gonna", 50), comp_length = rnorm(50, 6, 0.8))
+going_to <- tibble(gt = rep("going_to", 50), comp_length = rnorm(50, 3, 1.2))
+gt <- bind_rows(gonna, going_to) %>%
+  mutate(
+    comp_length = if_else(comp_length > 1, comp_length, 1),
+    gt = fct_relevel(gt, "gonna"), gt_num = as.numeric(gt)-1
+    )
 
-utt_lengths <- tibble(
-  age = 3:17,
-  utterance_length = 3 + 0.5*seq_along(age) + rnorm(length(age), sd = 0.3)
-)
-m <- lm(utterance_length ~ age, data = utt_lengths)
-utt_lengths$fit <- m$fitted.values
+m3 <- glm(gt ~ comp_length, data = gt, family = binomial(logit))
+gt$fit <- m3$fitted.values
 
-g <- ggplot(utt_lengths, aes(x = age, y = utterance_length)) +
-  labs(x = "Age", y = "Utterance length") +
-  xlim(c(0,18)) + ylim(c(0,15)) +
-  theme_minimal(base_size = 14) + theme(aspect.ratio = 1)
+gonna_plot <- ggplot(gt, aes(x = comp_length, y = gt_num)) +
+  geom_point(size = 3) +
+  labs(x = "Length of complement", y = "Choice of construction") +
+  scale_y_continuous(breaks = c(0, 1), limits = c(0, 1),
+                     labels = c("gonna", "going to")) +
+  theme_minimal(base_size = 20) + theme(aspect.ratio = 1)
 ```
 
-## Plotted values
-
-```{r}
-g <- g + geom_point()
-g
-```
-
-## Adding fitted line
-
-```{r}
-g <- g + geom_line(aes(y = fit))
-g
-```
-
-## Residuals
-
-```{r}
-g <- g + geom_segment(aes(xend = age, yend = fit))
-g
-```
-
-## Model output
-
-```{r}
-summary(m)
-```
-
-# Easystats
-
-## Quick reports in text
-
-```{r}
-library(report)
-report(m)
-```
-
-::: footer
-[{report} package](https://easystats.github.io/report/)
+::: {.footer}
+`r headings[[i]]`
 :::
 
-## Quickly printing estimates
+## *gonna* dataset
 
 ```{r}
-library(parameters)
-model_parameters(m)
-
-print_md(model_parameters(m))
+#| label: logistic-data
+#| layout-ncol: 2
+kb_style(filter(gt, gt == "gonna"), "float_left")
+kb_style(filter(gt, gt == "going_to"), "left")
 ```
 
-::: footer
-[{parameters} package](https://easystats.github.io/parameters/)
+::: {.footer}
+`r headings[[i]]`
 :::
 
-## Check and plot assumptions
+## Scatterplot
+
+What is the relationship between the length of the complement and the choice of *going to/gonna*?
 
 ```{r}
-library(performance)
-check_heteroscedasticity(m)
-
-check_model(m, check = c("qq", "ncv"))
+#| label: logistic-plot
+gonna_plot
 ```
 
-::: footer
-[{performance} package](https://easystats.github.io/performance/)
+::: {.footer}
+`r headings[[i]]`
 :::
 
-## Evaluate model
+## Linear fit {chalkboard-buttons="true"}
 
+The relationship is not linear.
+
+:::: {.columns}
+
+::: {.column width="50%"}
 ```{r}
-model_performance(m) %>% print_md()
+#| label: logistic-linear
+#| fig-height: 8
+gonna_plot + 
+  geom_smooth(method = "lm", se = FALSE, color = "darkolivegreen4")
 ```
-
-::: footer
-[{performance} package](https://easystats.github.io/performance/)
 :::
 
-# Multiple linear regression
+::: {.column width="50%" .incremental}
+- The residuals are not normally distributed.
 
-## Multiple linear regression
+- Not all values are possible (probabilities go between 0 and 1).
+:::
 
-Multiple
+::::
 
-:   more than one predictor
+::: {.footer}
+`r headings[[i]]`
+:::
 
-Notation
+## Logistic fit
 
-:   `y ~ x1 + x2` (fitting on a plane)
-
-:   `y ~ x1 + x2 + ... + xn` (fitting on a hyperplane)
-
-Estimation: OSL
-
-:   Ordinary least squares, minimizing sum of squares of residuals
-
-## Example
+The fit has an S shape.
 
 ```{r}
-library(dplyr)
-
-utt_lengths <- utt_lengths %>% 
-  mutate(pages_read = 0 + 0.8*seq_along(age) + rnorm(length(age), sd = 1))
-
-m2 <- glm(utterance_length ~ age + pages_read, data = utt_lengths)
-utt_lengths$fit2 <- m2$fitted.values
-head(utt_lengths) %>% knitr::kable()
+#| label: logistic-fit
+gonna_plot +
+  geom_line(aes(y = fit), color = "goldenrod", size = 2)
 ```
 
-## Example 3D
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Model
 
 ```{r}
+#| label: logistic-model
+summary(m3)
+```
+
+::: notes
+We can turn the intercept estimate into odds and probabilities (of success when all predictors are at 0).
+In this case, when comp_length = 0, the probabilities of encountering "success" (going to) are `exp(11.645)/(1+exp(11.645))`, i.e. about 0.9999912.
+For other estimates, we can go to odds but not on probabilities because the value also depends on other predictors (?) and it depends on the point on the curve.
+Here, for each unit that comp_length increases, the ODDS of going to are lower (because the logit is
+negative), i.e. you have to multiply the odds by 0.933 (and therefore it goes down).
+In any case, you can compute it for single points too. This is why exp(estimate) gives you the ODDS RATIO,
+i.e. the ratio between the odds in one case and in the other case.
+:::
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+```{r}
+#| label: add-heading1
 #| include: false
-ojs_define(data = utt_lengths)
-
-combos <- crossing(age = utt_lengths$age, pages_read = utt_lengths$pages_read)
-combos$fit <- predict(m2, combos)
-surface_fit <- split(combos, combos$pages_read) %>% purrr::map(pull, fit) %>% unname()
-ojs_define(surface_fit = surface_fit)
-
-plotly_layout = list(
-  scene = list(
-  xaxis = list(title = "Pages read"),
-  yaxis = list(title = "Age"),
-  zaxis = list(title = "Utterance length")),
-  margin = list(l = 0, r = 0, t = 0, b = 0)
-)
-ojs_define(layout = plotly_layout)
+i <- i+1
 ```
 
-```{ojs}
-//| echo: false
-plt = require("https://cdn.plot.ly/plotly-latest.min.js")
-points = [{x: data.age, y: data.pages_read, z: data.utterance_length,
-type: "scatter3d", mode: "markers"}]
-surface = [{x: data.age, y: data.pages_read, z: surface_fit,
-type: "surface"}]
-```
+# `r headings[[i]]`
 
-```{ojs}
-//| panel: input
-//| echo: false
-viewof traces = Inputs.checkbox(
-  [
-    {value: points[0], label: "Observed values"},
-    {value: surface[0], label: "Fitted plane"}
-  ],
-  {
-    value: [points[0], surface[0]],
-    label: "Show:",
-    format: (d) => d.label,
-    valueof: (d) => d.value
-  }
-)
-```
-
-```{ojs}
-//| echo: false
-plt.newPlot(DOM.element("div"), traces, layout)
-```
-
-## Categorical predictors
-
--   With 2 levels, e.g. "monolingual family": yes/no
-
--   Translated into 1 **dummy** predictor with two levels
-
-    -   0: reference level, e.g. *no*
-
-    -   1: other level, e.g. *yes*
-
--   Line fitted between 0 and 1, slope is the difference in `y` when *yes* (compared to *no*)
-
-## Categorical predictors
-
--   With more than 2 levels, e.g. "L1": EN, Es, FR...
-
--   Translated into *n*-1 **dummy** predictors with two levels
-
-    -   1: one of the levels, not the reference level, e.g. Es
-
-    -   0: the rest of the levels, including the reference level (e.g. EN)
-
--   (Hyper)plane fitted between combinations of 0 and 1, slope is the difference in `y` when it is a level compared to the reference level.
-
-## Categorical predictors
-
--   Comparison is done between each level and the reference level, not in all combinations
-
--   t-test: does the slope of an individual dummy predictor differ from 0?
-
--   F-test of nested models: do the dummy predictors jointly reduce unexplained variation?
-
-# Logistic regression
-
-## Logistic regression
-
-Logistic regression explains the probability of success (= a certain outcome)
-
-We cannot fit a simple straight line <!-- TODO create plot -->
-
-## Probabilities, odds and logit {.smaller}
-
-| Value                                                 | Range              | Neutral value | Description                                                                                                     |
-|-----------------|-----------------|-----------------|---------------------|
-| probabilities <br> $P$                                | 0-1                | 0.5           | Number of successes divided by number of trials                                                                 |
-| odds <br> $\frac{P}{1-P}$                             | 0-$\infty$         | 1             | Probability of success divided by the probability of failure. <br> Undefined for $P=1$                          |
-| logit, log odds <br> $\log\left(\frac{P}{1-P}\right)$ | $-\infty$-$\infty$ | 0             | If positive, success is more likely; if negative failure is more likely. <br> Undefined for $P=0$ and for $P=1$ |
-
-Higher $P$ -\> higher odds -\> higher logit
-
-## Some examples
-
-We'll create a vector `probabilities` with the values of fractions from $\frac{1}{7}$ to $\frac{1}{2}$ and then from $1-\frac{1}{3}$ to $1-\frac{1}{7}$.
-
-`MASS::fractions()` prints them as fractions.
-
-From there we compute odds and logit.
+## Probabilities
 
 ```{r}
-#| code-line-numbers: "|3,5|7|6,8|9"
+#| label: proboddslog
+#| include: false
+pol <- tribble(
+  ~"Value", ~"Minimum", ~"Neutral value", ~"Maximum", ~"Description",
+  r"(probabilities $P$)", "0", "0.5", "1", "Number of successes divided by number of trials.", 
+  r"(odds $\frac{P}{1-P}$)", "0", "1", r"($\infty$)", r"(Probability of success divided by the probability of failure. Undefined for $P=1$.)",
+  r"[logit, log odds $\log\left(\frac{P}{1-P}\right)$]", r"($-\infty$)", "0", r"($\infty$)", r"(If positive, success is more likely; if negative failure is more likely. Undefined for $P=0$ and for $P=1$.)"
+  )
+pol_kbl <- function(pol_sub) {
+  pol_sub %>% 
+    kbl() %>% kable_paper(font_size = 25) %>% 
+    column_spec(1, width = "4cm", border_right = TRUE) %>% 
+    column_spec(2:4, width = "3cm") %>% 
+    column_spec(5, width = "7cm", border_left = TRUE)
+}
+```
+
+```{r}
+#| label: probs
+#| echo: false
+pol_kbl(slice_head(pol, n=1))
+```
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Odds
+
+```{r}
+#| label: odds
+#| echo: false
+pol_kbl(slice_head(pol, n=2))
+```
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Logit
+
+```{r}
+#| label: logit
+#| echo: false
+pol_kbl(pol)
+```
+
+. . .
+
+::: callout-tip
+### Same direction!
+Higher $P$ &rarr; higher odds &rarr; higher logit
+:::
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Simulation
+
+```{r}
+#| code-line-numbers: "|3,4,6|8|7,9|10"
+#| output-location: column
 library(MASS) # to print fractions
 
-probabilities <- c(1/c(7:2), 1-(1/c(3:7)))
+probabilities <- c(1/c(7:2),
+                   1-(1/c(3:7)))
 probs <- tibble(
   P = probabilities,
   P_frac = as.character(fractions(P)),
@@ -295,210 +251,274 @@ probs <- tibble(
   odds_frac = as.character(fractions(odds)),
   logit = log(odds)
 )
+kbl(probs) %>% kable_paper(font_size = 22) %>% 
+  row_spec(6, bold = TRUE)
 ```
 
-## Some examples {.smaller}
+::: notes
+We'll create a vector `probabilities` with the values of fractions from $\frac{1}{7}$ to $\frac{1}{2}$ and then from $1-\frac{1}{3}$ to $1-\frac{1}{7}$.
 
+`MASS::fractions()` prints them as fractions.
+
+From there we compute odds and logit.
+:::
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Probabilities, odds and logits: plots {visibility="hidden"}
+
+:::: {.columns}
+
+::: {.column width="50%"}
 ```{r}
-#| echo: false
-knitr::kable(probs, digits = 3)
-```
-
-## Plot code {visibility="hidden"}
-
-```{r}
-lnplot <- function(df, x, y) {
-  ggplot(df, aes(x = {{ x }}, y = {{ y }})) +
-    geom_line() +
-    geom_point() + 
-    theme_minimal(base_size = 20) +
-    theme(aspect.ratio = 1)
-}
-```
-
-## Probabilities, odds, logit
-
-::: panel-tabset
-## `logit ~ P`
-
-```{r}
-lnplot(probs, P, logit)
-```
-
-## `odds ~ P`
-
-```{r}
-lnplot(probs, P, odds)
+#| fig-height: 8
+lnplot(probs, P, logit, "logit ~ P")
 ```
 :::
 
-## Linear/logistic
+::: {.column width="50%"}
+```{r}
+#| fig-height: 8
+lnplot(probs, P, odds, "odds ~ P")
+```
+:::
+
+::::
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Linear vs logistic relationships
 
 Linear relation `logit ~ x` entails logistic curve `p ~ x`.
 
 ```{r}
-with_x <- tibble(x = 1:30, logit = -3.5 + 0.3*x,
-                 odds = exp(logit), P = odds/(1+odds))
+with_x <- tibble(x = 1:30, logit = -3.5 + 0.3*x, odds = exp(logit), P = odds/(1+odds))
 ```
 
-::: columns
-::: {.column widht="50%"}
+:::: columns
+::: {.column width="50%"}
 ```{r}
 #| fig-height: 8
-lnplot(with_x, x, logit)
+lnplot(with_x, x, logit, "logit ~ X")
 ```
 :::
 
-::: {.column widht="50%"}
+::: {.column width="50%"}
 ```{r}
 #| fig-height: 8
-lnplot(with_x, x, P)
+lnplot(with_x, x, P, "P ~ X")
 ```
 :::
+::::
+
+::: {.footer}
+`r headings[[i]]`
 :::
 
-## Linear/logistic
-
-Linear relation `logit ~ x` entails logistic curve `p ~ x`.
-
 ```{r}
-with_x2 <- tibble(x = 1:30, logit = 3.5 - 0.3*x,
-                 odds = exp(logit), P = odds/(1+odds))
+#| label: add-heading2
+#| include: false
+i <- i+1
 ```
 
-::: columns
-::: {.column widht="50%"}
-```{r}
-#| fig-height: 8
-lnplot(with_x2, x, logit)
-```
-:::
+# `r headings[[i]]`
 
-::: {.column widht="50%"}
-```{r}
-#| fig-height: 8
-lnplot(with_x2, x, P)
-```
-:::
-:::
-
-## Example
+## Model
 
 ```{r}
-#| code-line-numbers: "|3|4|6|7|8|9|12-13"
-#| output-location: slide
-
-set.seed(0)
-reading_habits <- tibble(
-  L1 = factor(rep(c("EN", "ES"), each = 50), levels = c("EN", "ES")),
-  age = rep(15:6, 10)) %>%
-  mutate(
-    logit = 0.2 -0.8*as.numeric(L1) + 0.2*age + rnorm(nrow(.)),
-    odds = exp(logit),
-    P = odds/(odds+1),
-    reads_EN = factor(P >= 0.5, c("FALSE", "TRUE"))
-    )
-
-m3 <- glm(reads_EN ~ L1 + age, data = reading_habits, family = binomial(logit))
-reading_habits$fit <- m3$fitted.values
-
-reading_habits %>% head() %>% knitr::kable()
-```
-
-## Visual exploration
-
-```{r}
-ggplot(reading_habits, aes(x = age, y = P, color = L1)) +
-  geom_point(size = 3, alpha = 0.6) +
-  scale_color_manual(values=c("#E69F00", "#56B4E9")) +
-  theme_minimal(base_size = 20) +
-  labs(x = "Age", y = "Probability of reading in English")
-```
-
-## Default output
-
-```{r}
+#| label: logistic-model2
 summary(m3)
 ```
 
-# Easystats - logistic regression
+::: {.footer}
+`r headings[[i]]`
+:::
 
-## Quick reports in text
+## Deviance {.smaller}
+
+Null deviance
+
+:   discrepancy between data and intercept-only model (like SST)
+
+Residual deviance
+
+:   discrepancy between data and fitted model (like SSE)
+
+::: callout-note
+### Computation
+
+$-2 \log(L)$ with $L$ the likelihood of encountering the data if the model is true.
+:::
+
+AIC (Akaike Information Criterion)
+
+:   corrected residual deviance (to compare models with different N. of predictors)
+
+Deviance residuals
+
+:   contribution of each observation to the residual deviance.
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Measures of predictive power {.smaller}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+We take all pairs of observations in which the response variable is different (one of *gonna*, one of *going to*).
+
+- `gt0` is what the model predicted for the "gonna" element.
+
+- `gt1` is what the model predicted for the "going to" element.
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: pred-power
+set.seed(2022)
+pred_power <- tibble(
+  gt0 = sample(filter(gt, gt == "gonna")$fit, 10, replace = FALSE),
+  gt1 = sample(filter(gt, gt == "going_to")$fit, 10, replace = FALSE))
+kb_style(pred_power)
+```
+:::
+
+::::
+
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## C, D, T
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- `C` = concordant pair = prediction is higher for "going to" :grin:
+
+- `D` = discordant pair = the prediction is higher for "gonna" :frowning_face:
+
+- `T` = tie = the prediction is the same for both :neutral_face:
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: pred-power-tbl
+pred_power <- pred_power %>%
+  mutate(C = gt1 > gt0, D = gt0 > gt1, T = gt1 == gt0)
+kb_style(pred_power)
+```
+:::
+
+::::
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## C-value
 
 ```{r}
+#| label: pred-power-sum
+pred_power <- pred_power %>%
+  summarize(C = sum(C), D = sum(D), T = sum(T))
+kb_style(pred_power)
+```
+
+. . .
+
+$$c = \frac{C+T/2}{C+D+T} = \frac{`r pred_power$C`+`r pred_power$T`/2}{`r pred_power$C`+`r pred_power$D`+`r pred_power$T`} = `r (pred_power$C+pred_power$T/2)/sum(pred_power)`$$
+
+. . .
+
+```{r}
+#| label: somers-c
+Hmisc::somers2(gt$fit, gt$gt_num)[["C"]]
+```
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+
+## Linear vs logistic regression {.smaller}
+
+| | Linear regression | Logistic regression |
+|----------------------|-------------------------|-------------------------|
+| Response variable | Numerical | Categorical |
+| Relationship between predictor estimate and response | Linear | Logistic^[Linear relationship between estimate and log odds of response.] |
+| Fitting function | OSL (ordinary least squares) | MLE (maximum likelihood estimation) |
+| Model comparison | F-test  | AIC |
+| Evaluation metric | $R^2$ | $C$ |
+| Base R function | `lm()` | `glm()` |
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## There is more!
+
+With the case study we'll also see:
+
+- Mixed effect models (with random effects)
+
+- Conditional inference trees and random forests
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+```{r}
+#| label: add-heading4
+#| include: false
+i <- i+1
+```
+
+# `r headings[[i]]`
+
+## {report} package {.smaller}
+
+```{r}
+#| label: report-3
 report(m3)
 ```
 
-::: footer
-[{report} package](https://easystats.github.io/report/)
+::: {.footer}
+`r headings[[i]]`
 :::
 
-## Quickly printing estimates
-
-::: panel-tabset
-## Table
+## {parameters} package {.smaller}
 
 ```{r}
+#| label: parameters-3
+#| layout-ncol: 2
 print_md(model_parameters(m3))
-```
 
-## Plot
-
-```{r}
 plot(model_parameters(m3))
 ```
+
+::: {.footer}
+`r headings[[i]]`
 :::
 
-::: footer
-[{parameters} package](https://easystats.github.io/parameters/)
-:::
-
-## Check and plot assumptions
-
-::: panel-tabset
-## Written output
+## {performance} package {.smaller}
 
 ```{r}
-check_collinearity(m3)
+#| label: performance-3
+print_md(model_performance(m3))
 ```
 
-## Plots
-
-```{r}
-check_model(m3, check = c("binned_residuals", "vif", "outliers"))
-```
+::: {.footer}
+`r headings[[i]]`
 :::
 
-::: footer
-[{performance} package](https://easystats.github.io/performance/)
-:::
+<!-- TODO what checks do we need? -->
 
-## Evaluate model
-
-```{r}
-model_performance(m3, metrics = "common") %>% 
-  mutate(C = Hmisc::somers2(
-    reading_habits$fit,
-    as.numeric(reading_habits$reads_EN == "TRUE")
-  )[["C"]]
-  ) %>% 
-  print_md()
-```
-
-::: footer
-[{performance} package](https://easystats.github.io/performance/)
-:::
-
-# Extra code {visibility="uncounted"}
-
-## Plot code {visibility="uncounted"}
-
-```{r}
-lnplot <- function(df, x, y) {
-  ggplot(df, aes(x = {{ x }}, y = {{ y }})) +
-    geom_line() +
-    geom_point() + 
-    theme_minimal(base_size = 20) +
-    theme(aspect.ratio = 1)
-}
-```
+# Next: Correspondence Analysis

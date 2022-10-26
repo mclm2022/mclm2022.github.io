@@ -1,0 +1,609 @@
+---
+title: "Linear regression analysis"
+subtitle: "Methods of Corpus Linguistics (class 5)"
+author: "Mariana Montes"
+format:
+  revealjs:
+    chalkboard:
+        buttons: false
+    code-fold: true
+execute:
+  echo: true
+---
+
+```{r}
+#| label: setup
+#| include: false
+headings <- c("Simple linear regression", "Multiple linear regression",
+              "Categorical predictors", "Easystats")
+library(tidyverse)
+library(easystats)
+library(kableExtra)
+options(digits = 3)
+lnplot <- function(df, x, y, title) {
+  ggplot(df, aes(x = {{ x }}, y = {{ y }})) +
+    geom_line() +
+    geom_point() + 
+    theme_minimal(base_size = 20) +
+    theme(aspect.ratio = 1) +
+    labs(title = title)
+}
+kb_style <- function(df, position = "center") {
+  df %>% head(10) %>% kbl() %>%
+    kable_paper(full_width = FALSE, font_size = 22, position = position)
+}
+```
+
+## Outline
+
+```{r}
+#| label: outline
+#| results: asis
+#| echo: false
+for (heading in headings) {
+  cat("-", heading, "\n")
+}
+i <- 1
+```
+
+# `r headings[[i]]`
+
+## Set up code
+
+In case you want to run this by yourself...
+
+```{r}
+#| label: linear
+#| code-fold: false
+library(tidyverse)
+library(kableExtra)
+set.seed(2022)
+
+utt_lengths <- tibble(age = 3:17) %>% 
+  mutate(utterance_length = 3 + 0.5*age + rnorm(n(), sd = 0.3))
+m1 <- lm(utterance_length ~ age, data = utt_lengths)
+utt_lengths$fit <- m1$fitted.values
+```
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Scatterplot
+
+What is the relationship between the age of a child and the mean length of their utterances (in a corpus)?
+
+```{r}
+#| label: linear-points
+#| output-location: column
+#| fig-height: 8
+#| code-fold: false
+g <- ggplot(utt_lengths, aes(
+  x = age,
+  y = utterance_length
+  )) +
+  geom_point(size = 3) +
+  labs(x = "Age",
+       y = "Utterance length") +
+  xlim(0,18) + ylim(0,15) +
+  theme_minimal(base_size = 20) +
+  theme(aspect.ratio = 1)
+g
+```
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Intercept
+
+The average utterance length is `r mean(utt_lengths$utterance_length)`:
+
+```{r}
+#| label: linear-mean
+#| output-location: column
+#| fig-height: 8
+#| code-fold: false
+g_int <- g +
+  geom_hline(
+    aes(
+      yintercept = mean(utterance_length)
+      ),
+    linetype = 2,
+    color = "coral",
+    size = 1
+    )
+g_int
+```
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Fitted model
+
+But we try to find a line that fits the trend the best:
+
+```{r}
+#| label: linear-line
+#| output-location: column
+#| fig-height: 8
+#| code-fold: false
+g_fit <- g +
+  geom_abline(
+    intercept = m1$coefficients[[1]],
+    slope = m1$coefficients[[2]],
+    linetype = 2,
+    color = "darkcyan",
+    size = 1
+    )
+g_fit
+```
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Error
+
+:::: {.columns incremental=true}
+
+::: {.column width="50%"}
+### Sum of squares total
+
+```{r}
+#| label: sst
+#| fig-height: 8
+g_int +
+  geom_segment(aes(xend = age, yend = mean(utterance_length)), color = "coral3", size = 2)
+```
+
+:::
+
+::: {.column width="50%"}
+### Sum of squares error
+
+```{r}
+#| label: sse
+#| fig-height: 8
+g_fit +
+  geom_segment(aes(xend = age, yend = fit), color = "cyan4", size = 2)
+```
+
+:::
+
+::::
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Data
+
+```{r}
+#| label: linear-data
+utt_lengths %>% mutate(intercept = mean(utterance_length)) %>%
+  slice_sample(n = 7) %>% kb_style()
+```
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## `lm()` output {chalkboard-buttons="true"}
+
+```{r}
+#| label: linear-model
+summary(m1)
+```
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Simple linear regression
+
+Simple
+
+:   one predictor variable
+
+Linear
+
+:   linear relation between estimated parameters and response variable
+
+Notation
+
+:   `y ~ x`
+
+Estimation: OSL
+
+:   Ordinary least squares, minimizing sum of squares of residuals
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+```{r}
+#| label: add-heading1
+#| include: false
+i <- i+1
+```
+
+# `r headings[[i]]`
+
+## Add a predictor
+
+```{r}
+#| label: multiple-code
+#| code-fold: false
+set.seed(7)
+utt_lengths <- utt_lengths %>% 
+  mutate(pages_read = n()/2 + rnorm(n(), mean = 6, sd = 3))
+
+m2 <- lm(utterance_length ~ age + pages_read, data = utt_lengths)
+utt_lengths$fit2 <- m2$fitted.values
+
+utt_lengths %>% slice_tail(n = 7) %>% kb_style()
+```
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Scatterplot and fitted model
+
+```{r}
+#| include: false
+ojs_define(data = utt_lengths)
+
+combos <- crossing(age = utt_lengths$age, pages_read = utt_lengths$pages_read)
+combos$fit <- predict(m2, combos)
+surface_fit <- split(combos, combos$pages_read) %>% purrr::map(pull, fit) %>% unname()
+ojs_define(surface_fit = surface_fit)
+
+plotly_layout = list(
+  scene = list(
+  xaxis = list(title = "Age"),
+  yaxis = list(title = "Pages read"),
+  zaxis = list(title = "Utterance length")),
+  margin = list(l = 0, r = 0, t = 0, b = 0)
+)
+ojs_define(layout = plotly_layout)
+```
+
+```{ojs}
+//| echo: false
+plt = require("https://cdn.plot.ly/plotly-latest.min.js")
+points = [{x: data.age, y: data.pages_read, z: data.utterance_length,
+type: "scatter3d", mode: "markers", hovertemplate: '<b>Age</b>: %{x}' + '<br><b>UT</b>: %{z:.2f}<br>' +  '<b>PR</b>: %{y:.2f}'}]
+surface = [{x: data.age, y: data.pages_read, z: surface_fit,
+type: "surface", showscale: false}]
+```
+
+```{ojs}
+//| panel: input
+//| echo: false
+viewof traces = Inputs.checkbox(
+  [
+    {value: points[0], label: "Observed values"},
+    {value: surface[0], label: "Fitted plane"}
+  ],
+  {
+    value: [points[0]],
+    label: "Show:",
+    format: (d) => d.label,
+    valueof: (d) => d.value
+  }
+)
+```
+
+```{ojs}
+//| echo: false
+plt.newPlot(DOM.element("div"), traces, layout)
+```
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Model
+
+```{r}
+#| label: multiple-model
+summary(m2)
+```
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Multiple linear regression
+
+Multiple
+
+:   more than one predictor
+
+Notation
+
+:   `y ~ x1 + x2` (fitting on a plane)
+
+:   `y ~ x1 + x2 + ... + xn` (fitting on a hyperplane)
+
+Estimation: OSL
+
+:   Ordinary least squares, minimizing sum of squares of residuals
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+```{r}
+#| label: add-heading2
+#| include: false
+i <- i+1
+```
+
+# `r headings[[i]]`
+
+## Two levels
+
+-   E.g. "monolingual family": yes/no
+
+-   Translated into 1 **dummy** predictor with two levels
+
+    -   0: reference level, e.g. *no*
+
+    -   1: other level, e.g. *yes*
+
+-   Line fitted between 0 and 1, slope is the difference in `y` when *yes* (compared to *no*)
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Two levels: example {.smaller}
+
+```{r}
+#| label: mono
+#| code-fold: false
+utt_lengths_cat <- utt_lengths %>% mutate(mono = factor(c(rep("no", 5), "yes", "no", "no", rep("yes", 7))))
+```
+
+:::: {.columns}
+
+::: {.column width="50%"}
+```{r}
+#| label: mono-plot
+#| fig-height: 7
+ggplot(utt_lengths_cat, aes(x = as.numeric(mono)-1, y = utterance_length)) +
+  geom_point(size = 3) + geom_smooth(method = "lm", se = FALSE, color = "darkolivegreen4") +
+  labs(x = "Is the family monolingual?", y = "Utterance length") +
+  ylim(c(0,15)) + scale_x_continuous(breaks = c(0, 1), labels = c("no", "yes")) +
+  theme_minimal(base_size = 20) + theme(aspect.ratio = 1)
+```
+
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: mono-lm
+summary(lm(utterance_length ~ mono, data = utt_lengths_cat))
+```
+
+:::
+
+::::
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## More than two levels
+
+-   E.g. "L1": EN, ES, FR...
+
+-   Translated into *n*-1 **dummy** predictors with two levels
+
+    -   1: one of the levels, not the reference level, e.g. Es
+
+    -   0: the rest of the levels, including the reference level (e.g. EN)
+
+-   (Hyper)plane fitted between combinations of 0 and 1, slope is the difference in `y` when compared to the reference level.
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Data: categorical predictors
+
+```{r}
+#| label: l1-data
+#| layout-ncol: 3
+#| code-fold: false
+mean_utts <- c(EN = 11, ES = 7.4, ZH = 7.8)
+set.seed(2022)
+by_lang <- tibble(L1 = factor(rep(c("EN", "ES", "ZH"), 15))) %>% 
+  mutate(utterance_length = rnorm(n(), mean = mean_utts[L1], sd = 0.8))
+kb_style(filter(by_lang, L1 == "EN"), "float_left")
+kb_style(filter(by_lang, L1 == "ES"), "float_left")
+kb_style(filter(by_lang, L1 == "ZH"), "left")
+```
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Model with categorical predictors {.smaller}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+```{r}
+#| label: en-model
+m_lang1 <- lm(utterance_length ~ L1, data = by_lang)
+summary(m_lang1)
+```
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: es-model
+es_first <- mutate(by_lang, L1 = fct_relevel(L1, "ES"))
+m_lang2 <- lm(utterance_length ~ L1, data = es_first)
+summary(m_lang2)
+```
+:::
+
+::::
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Categorical predictors
+
+-   Comparison is done between each level and the reference level, not in all combinations
+
+-   t-test: does the slope of an individual dummy predictor differ from 0?
+
+-   F-test of nested models: do the dummy predictors jointly reduce unexplained variation?
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+```{r}
+#| label: add-heading3
+#| include: false
+i <- i+1
+```
+
+# `r headings[[i]]`
+
+## {report} package {.smaller}
+
+::: {.panel-tabset}
+
+### Simple
+
+```{r}
+#| label: report-1
+report(m1)
+```
+
+### Multiple
+
+```{r}
+#| label: report-2
+report(m2)
+```
+
+:::
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## {parameters} package {.smaller}
+
+::: {.panel-tabset}
+
+### Simple
+
+```{r}
+#| label: parameters-1
+#| layout-ncol: 2
+print_md(model_parameters(m1))
+
+plot(model_parameters(m1))
+```
+
+### Multiple
+
+```{r}
+#| label: parameters-2
+#| layout-ncol: 2
+print_md(model_parameters(m2))
+
+plot(model_parameters(m2))
+```
+
+### Comparison
+
+```{r}
+#| label: parameters-4
+#| layout-ncol: 2
+print_md(compare_parameters(m1, m2))
+
+plot(compare_parameters(m1, m2))
+```
+
+:::
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## {performance} package I {.smaller}
+
+::: {.panel-tabset}
+
+### Simple
+
+```{r}
+#| label: performance-1
+print_md(model_performance(m1))
+```
+
+### Multiple
+
+```{r}
+#| label: performance-2
+print_md(model_performance(m2))
+```
+
+### Comparison
+
+```{r}
+#| label: performance-4
+#| layout-ncol: 2
+m_perf <- compare_performance(m1, m2)
+print_md(m_perf)
+plot(m_perf)
+```
+
+:::
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## {performance} package II {.smaller}
+
+::: {.panel-tabset}
+
+### Simple
+
+```{r}
+#| label: check-1
+check_heteroscedasticity(m1)
+
+check_model(m1, check = c("qq", "ncv"))
+```
+
+### Multiple
+
+```{r}
+#| label: check-2
+check_heteroscedasticity(m2)
+
+check_model(m2, check = c("qq", "ncv"))
+```
+
+:::
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+
+# Next: Logistic regression analysis

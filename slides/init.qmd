@@ -50,12 +50,9 @@ For future projects, the workflow may be different; check [Happy Git With R](htt
 This only needs to be done once at the beginning.
 
 ```default
-mymachine: ~/project-folder (master)
-$ git remote add origin <url>
-mymachine: ~/project-folder (master)
-$ git branch -M main
-mymachine: ~/project-folder (main)
-$ git push -u origin main
+git remote add origin <url>
+git branch -M main
+git push -u origin main
 ```
 
 ::: callout-note
@@ -85,12 +82,8 @@ $ git push -u origin main
 Optionally, you can start "new work" on a new branch and then merge it to `main`.
 
 ```default
-mymachine: ~/project-folder (main)
-$ git branch explore-corpus
-mymachine: ~/project-folder (main)
-$ git checkout explore-corpus
-mymachine: ~/project-folder (explore-corpus)
-$ 
+git branch explore-corpus
+git checkout explore-corpus
 ```
 ::: callout-tip
 I will **only** look at what you push to the `main` branch.
@@ -500,14 +493,10 @@ source(here::here("R", "script.R"), local = knitr::knit_global())
 - Push at most once a day.
 
 ```default
-mymachine: ~/project-folder (explore-corpus)
-$ git status
-mymachine: ~/project-folder (explore-corpus)
-$ git add .
-mymachine: ~/project-folder (explore-corpus)
-$ git commit -m "my first quarto document"
-mymachine: ~/project-folder (explore-corpus)
-$ git push
+git status
+git add .
+git commit -m "my first quarto document"
+git push
 ```
 
 ::: callout-warning
@@ -529,10 +518,8 @@ If you were in your `explore-corpus` branch and want to bring changes to main
 `main` is now totally up-to-speed.
 
 ```default
-mymachine: ~/project-folder (explore-corpus)
-$ git checkout main
-mymachine: ~/project-folder (main)
-$ git merge explore-corpus
+git checkout main
+git merge explore-corpus
 ```
 
 ### `git checkout`
@@ -540,10 +527,8 @@ $ git merge explore-corpus
 Get only selected folders/files.
 
 ```default
-mymachine: ~/project-folder (explore-corpus)
-$ git checkout main
-mymachine: ~/project-folder (main)
-$ git checkout explore-corpus script.R
+git checkout main
+git checkout explore-corpus script.R
 ```
 :::
 
