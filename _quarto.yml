@@ -9,6 +9,7 @@ project:
     - slides/index.qmd
     - slides/contingency-tables.qmd
     - slides/assoc.qmd
+    - slides/linear-regression.qmd
     - studies/base.qmd
     - git/*.qmd
     - quarto/*.qmd

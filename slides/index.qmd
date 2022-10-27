@@ -18,6 +18,7 @@ If you would like to download slides as PDF, please follow the [instructions in 
 
 # [Read corpora](init.qmd){target="_blank"}
 
+[Download the R script.](https://raw.githubusercontent.com/mclm2022/mclm2022.github.io/main/resources/init.R)
 <div>
 
 ```{=html}
@@ -27,6 +28,8 @@ If you would like to download slides as PDF, please follow the [instructions in 
 </div>
 
 # [Contingency tables](contingency-tables.qmd){target="_blank"}
+
+[Download the R script.](https://raw.githubusercontent.com/mclm2022/mclm2022.github.io/main/resources/contingency-tables.R)
 
 <div>
 
@@ -38,10 +41,24 @@ If you would like to download slides as PDF, please follow the [instructions in 
 
 # [Association measures](assoc.qmd){target="_blank"}
 
+[Download the R script.](https://raw.githubusercontent.com/mclm2022/mclm2022.github.io/main/resources/assoc.R)
+
 <div>
 
 ```{=html}
 <iframe class="slide-deck" src="assoc.html"></iframe>
+```
+
+</div>
+
+# [Linear regression](linear-regression.qmd){target="_blank"}
+
+[Download the R script.](https://raw.githubusercontent.com/mclm2022/mclm2022.github.io/main/resources/linear-regression.R)
+
+<div>
+
+```{=html}
+<iframe class="slide-deck" src="linear-regression.html"></iframe>
 ```
 
 </div>

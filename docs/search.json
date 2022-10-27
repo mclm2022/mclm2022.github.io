@@ -123,7 +123,7 @@
     "href": "slides/init.html#connect-repository-to-github",
     "title": "Reading and exploring a corpus",
     "section": "Connect repository to GitHub",
-    "text": "Connect repository to GitHub\nThis only needs to be done once at the beginning.\nmymachine: ~/project-folder (master)\n$ git remote add origin <url>\nmymachine: ~/project-folder (master)\n$ git branch -M main\nmymachine: ~/project-folder (main)\n$ git push -u origin main\n\n\n\n\n\n\nNote\n\n\n<url> is the url of your repository.\n\n\n\n\nInitialize project"
+    "text": "Connect repository to GitHub\nThis only needs to be done once at the beginning.\ngit remote add origin <url>\ngit branch -M main\ngit push -u origin main\n\n\n\n\n\n\nNote\n\n\n<url> is the url of your repository.\n\n\n\n\nInitialize project"
   },
   {
     "objectID": "slides/init.html#notes",
@@ -137,7 +137,7 @@
     "href": "slides/init.html#git-branch",
     "title": "Reading and exploring a corpus",
     "section": "Git branch",
-    "text": "Git branch\nOptionally, you can start “new work” on a new branch and then merge it to main.\nmymachine: ~/project-folder (main)\n$ git branch explore-corpus\nmymachine: ~/project-folder (main)\n$ git checkout explore-corpus\nmymachine: ~/project-folder (explore-corpus)\n$ \n\n\n\n\n\n\nTip\n\n\nI will only look at what you push to the main branch.\n\n\n\n\nAdd corpus"
+    "text": "Git branch\nOptionally, you can start “new work” on a new branch and then merge it to main.\ngit branch explore-corpus\ngit checkout explore-corpus\n\n\n\n\n\n\nTip\n\n\nI will only look at what you push to the main branch.\n\n\n\n\nAdd corpus"
   },
   {
     "objectID": "slides/init.html#add-a-folder-with-a-corpus",
@@ -277,21 +277,21 @@
     "href": "slides/init.html#stage-commit-push",
     "title": "Reading and exploring a corpus",
     "section": "Stage, commit, push",
-    "text": "Stage, commit, push\n\nCommit whenever you reach a “stage”.\nPush at most once a day.\n\nmymachine: ~/project-folder (explore-corpus)\n$ git status\nmymachine: ~/project-folder (explore-corpus)\n$ git add .\nmymachine: ~/project-folder (explore-corpus)\n$ git commit -m \"my first quarto document\"\nmymachine: ~/project-folder (explore-corpus)\n$ git push\n\n\n\n\n\n\nBranches and remotes\n\n\nThe first time you try to push from a local branch you may get an error! Just follow the instructions, don’t panic :)"
+    "text": "Stage, commit, push\n\nCommit whenever you reach a “stage”.\nPush at most once a day.\n\ngit status\ngit add .\ngit commit -m \"my first quarto document\"\ngit push\n\n\n\n\n\n\nBranches and remotes\n\n\nThe first time you try to push from a local branch you may get an error! Just follow the instructions, don’t panic :)"
   },
   {
     "objectID": "slides/init.html#from-a-branch",
     "href": "slides/init.html#from-a-branch",
     "title": "Reading and exploring a corpus",
     "section": "From a branch",
-    "text": "From a branch\nIf you were in your explore-corpus branch and want to bring changes to main\n\ngit mergegit checkout\n\n\nmain is now totally up-to-speed.\nmymachine: ~/project-folder (explore-corpus)\n$ git checkout main\nmymachine: ~/project-folder (main)\n$ git merge explore-corpus\n\n\nGet only selected folders/files.\nmymachine: ~/project-folder (explore-corpus)\n$ git checkout main\nmymachine: ~/project-folder (main)\n$ git checkout explore-corpus script.R\n\n\n\n\nDescribe corpus"
+    "text": "From a branch\nIf you were in your explore-corpus branch and want to bring changes to main\n\ngit mergegit checkout\n\n\nmain is now totally up-to-speed.\ngit checkout main\ngit merge explore-corpus\n\n\nGet only selected folders/files.\ngit checkout main\ngit checkout explore-corpus script.R\n\n\n\n\nDescribe corpus"
   },
   {
     "objectID": "slides/index.html",
     "href": "slides/index.html",
     "title": "Slides",
     "section": "",
-    "text": "These are the slides of the course, Fall of 2022. If you would like to download slides as PDF, please follow the instructions in the Quarto documentation.\n\n1 Introduction\n\n\n\n\n\n2 Read corpora\n\n\n\n\n\n3 Contingency tables\n\n\n\n\n\n\n4 Association measures"
+    "text": "These are the slides of the course, Fall of 2022. If you would like to download slides as PDF, please follow the instructions in the Quarto documentation.\n\n1 Introduction\n\n\n\n\n\n2 Read corpora\nDownload the R script.\n\n\n\n\n\n3 Contingency tables\nDownload the R script.\n\n\n\n\n\n\n4 Association measures\nDownload the R script.\n\n\n\n\n\n5 Linear regression\nDownload the R script."
   },
   {
     "objectID": "slides/contingency-tables.html#outline",
@@ -616,6 +616,167 @@
     "text": "How to choose a measure?\n\nIt depends on the goal, previous literature…\nFor the final paper, comparing measures is a valid objective.\n\n\n\n\n\n\n\nSuggestion\n\n\nCombine an effect-size measure and a strength-of-evidence measure. Use them for thresholds and compare the rankings. A good pair is PMI and \\(G^2\\).\n\n\n\n\nUsage in practice"
   },
   {
+    "objectID": "slides/linear-regression.html#outline",
+    "href": "slides/linear-regression.html#outline",
+    "title": "Linear regression analysis",
+    "section": "Outline",
+    "text": "Outline\n\nSimple linear regression\nMultiple linear regression\nCategorical predictors\nEasystats"
+  },
+  {
+    "objectID": "slides/linear-regression.html#set-up-code",
+    "href": "slides/linear-regression.html#set-up-code",
+    "title": "Linear regression analysis",
+    "section": "Set up code",
+    "text": "Set up code\nIn case you want to run this by yourself…\n\nlibrary(tidyverse)\nlibrary(kableExtra)\nset.seed(2022)\n\nutt_lengths <- tibble(age = 3:17) %>% \n  mutate(utterance_length = 3 + 0.5*age + rnorm(n(), sd = 0.3))\nm1 <- lm(utterance_length ~ age, data = utt_lengths)\nutt_lengths$fit <- m1$fitted.values\n\n\nSimple linear regression"
+  },
+  {
+    "objectID": "slides/linear-regression.html#scatterplot",
+    "href": "slides/linear-regression.html#scatterplot",
+    "title": "Linear regression analysis",
+    "section": "Scatterplot",
+    "text": "Scatterplot\nWhat is the relationship between the age of a child and the mean length of their utterances (in a corpus)?\n\n\ng <- ggplot(utt_lengths, aes(\n  x = age,\n  y = utterance_length\n  )) +\n  geom_point(size = 3) +\n  labs(x = \"Age\",\n       y = \"Utterance length\") +\n  xlim(0,18) + ylim(0,15) +\n  theme_minimal(base_size = 20) +\n  theme(aspect.ratio = 1)\ng\n\n\n\n\n\n\n\nSimple linear regression"
+  },
+  {
+    "objectID": "slides/linear-regression.html#intercept",
+    "href": "slides/linear-regression.html#intercept",
+    "title": "Linear regression analysis",
+    "section": "Intercept",
+    "text": "Intercept\nThe average utterance length is 7.885:\n\n\ng_int <- g +\n  geom_hline(\n    aes(\n      yintercept = mean(utterance_length)\n      ),\n    linetype = 2,\n    color = \"coral\",\n    size = 1\n    )\ng_int\n\n\n\n\n\n\n\nSimple linear regression"
+  },
+  {
+    "objectID": "slides/linear-regression.html#fitted-model",
+    "href": "slides/linear-regression.html#fitted-model",
+    "title": "Linear regression analysis",
+    "section": "Fitted model",
+    "text": "Fitted model\nBut we try to find a line that fits the trend the best:\n\n\ng_fit <- g +\n  geom_abline(\n    intercept = m1$coefficients[[1]],\n    slope = m1$coefficients[[2]],\n    linetype = 2,\n    color = \"darkcyan\",\n    size = 1\n    )\ng_fit\n\n\n\n\n\n\n\nSimple linear regression"
+  },
+  {
+    "objectID": "slides/linear-regression.html#error",
+    "href": "slides/linear-regression.html#error",
+    "title": "Linear regression analysis",
+    "section": "Error",
+    "text": "Error\n\n\nSum of squares total\n\n\nCode\ng_int +\n  geom_segment(aes(xend = age, yend = mean(utterance_length)), color = \"coral3\", size = 2)\n\n\n\n\n\n\nSum of squares error\n\n\nCode\ng_fit +\n  geom_segment(aes(xend = age, yend = fit), color = \"cyan4\", size = 2)\n\n\n\n\n\n\n\n\nSimple linear regression"
+  },
+  {
+    "objectID": "slides/linear-regression.html#data",
+    "href": "slides/linear-regression.html#data",
+    "title": "Linear regression analysis",
+    "section": "Data",
+    "text": "Data\n\n\nCode\nutt_lengths %>% mutate(intercept = mean(utterance_length)) %>%\n  slice_sample(n = 7) %>% kb_style()\n\n\n\n\n \n  \n    age \n    utterance_length \n    fit \n    intercept \n  \n \n\n  \n    17 \n    11.48 \n    11.52 \n    7.88 \n  \n  \n    14 \n    9.94 \n    9.96 \n    7.88 \n  \n  \n    16 \n    11.03 \n    11.00 \n    7.88 \n  \n  \n    8 \n    6.13 \n    6.85 \n    7.88 \n  \n  \n    9 \n    7.18 \n    7.37 \n    7.88 \n  \n  \n    15 \n    10.21 \n    10.48 \n    7.88 \n  \n  \n    7 \n    6.40 \n    6.33 \n    7.88 \n  \n\n\n\n\n\n\nSimple linear regression"
+  },
+  {
+    "objectID": "slides/linear-regression.html#lm-output",
+    "href": "slides/linear-regression.html#lm-output",
+    "title": "Linear regression analysis",
+    "section": "lm() output",
+    "text": "lm() output\n\n\nCode\nsummary(m1)\n\n\n\nCall:\nlm(formula = utterance_length ~ age, data = utt_lengths)\n\nResiduals:\n   Min     1Q Median     3Q    Max \n-0.717 -0.154 -0.016  0.174  0.518 \n\nCoefficients:\n            Estimate Std. Error t value Pr(>|t|)    \n(Intercept)   2.6958     0.2036    13.2  6.3e-09 ***\nage           0.5189     0.0187    27.8  5.8e-13 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 0.313 on 13 degrees of freedom\nMultiple R-squared:  0.983, Adjusted R-squared:  0.982 \nF-statistic:  771 on 1 and 13 DF,  p-value: 5.84e-13\n\n\n\nSimple linear regression"
+  },
+  {
+    "objectID": "slides/linear-regression.html#simple-linear-regression-1",
+    "href": "slides/linear-regression.html#simple-linear-regression-1",
+    "title": "Linear regression analysis",
+    "section": "Simple linear regression",
+    "text": "Simple linear regression\n\nSimple\n\none predictor variable\n\nLinear\n\nlinear relation between estimated parameters and response variable\n\nNotation\n\ny ~ x\n\nEstimation: OSL\n\nOrdinary least squares, minimizing sum of squares of residuals\n\n\n\nSimple linear regression"
+  },
+  {
+    "objectID": "slides/linear-regression.html#add-a-predictor",
+    "href": "slides/linear-regression.html#add-a-predictor",
+    "title": "Linear regression analysis",
+    "section": "Add a predictor",
+    "text": "Add a predictor\n\nset.seed(7)\nutt_lengths <- utt_lengths %>% \n  mutate(pages_read = n()/2 + rnorm(n(), mean = 6, sd = 3))\n\nm2 <- lm(utterance_length ~ age + pages_read, data = utt_lengths)\nutt_lengths$fit2 <- m2$fitted.values\n\nutt_lengths %>% slice_tail(n = 7) %>% kb_style()\n\n\n\n \n  \n    age \n    utterance_length \n    fit \n    pages_read \n    fit2 \n  \n \n\n  \n    11 \n    8.72 \n    8.40 \n    14.0 \n    8.35 \n  \n  \n    12 \n    9.07 \n    8.92 \n    20.1 \n    9.04 \n  \n  \n    13 \n    9.80 \n    9.44 \n    14.6 \n    9.38 \n  \n  \n    14 \n    9.94 \n    9.96 \n    21.6 \n    10.10 \n  \n  \n    15 \n    10.21 \n    10.48 \n    20.3 \n    10.56 \n  \n  \n    16 \n    11.03 \n    11.00 \n    14.5 \n    10.89 \n  \n  \n    17 \n    11.48 \n    11.52 \n    19.2 \n    11.54 \n  \n\n\n\n\n\n\nMultiple linear regression"
+  },
+  {
+    "objectID": "slides/linear-regression.html#scatterplot-and-fitted-model",
+    "href": "slides/linear-regression.html#scatterplot-and-fitted-model",
+    "title": "Linear regression analysis",
+    "section": "Scatterplot and fitted model",
+    "text": "Scatterplot and fitted model\n\n\nCode\nplt = require(\"https://cdn.plot.ly/plotly-latest.min.js\")\npoints = [{x: data.age, y: data.pages_read, z: data.utterance_length,\ntype: \"scatter3d\", mode: \"markers\", hovertemplate: '<b>Age</b>: %{x}' + '<br><b>UT</b>: %{z:.2f}<br>' +  '<b>PR</b>: %{y:.2f}'}]\nsurface = [{x: data.age, y: data.pages_read, z: surface_fit,\ntype: \"surface\", showscale: false}]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\nviewof traces = Inputs.checkbox(\n  [\n    {value: points[0], label: \"Observed values\"},\n    {value: surface[0], label: \"Fitted plane\"}\n  ],\n  {\n    value: [points[0]],\n    label: \"Show:\",\n    format: (d) => d.label,\n    valueof: (d) => d.value\n  }\n)\n\n\n\n\n\n\n\n\n\nCode\nplt.newPlot(DOM.element(\"div\"), traces, layout)\n\n\n\n\n\n\n\n\nMultiple linear regression"
+  },
+  {
+    "objectID": "slides/linear-regression.html#model",
+    "href": "slides/linear-regression.html#model",
+    "title": "Linear regression analysis",
+    "section": "Model",
+    "text": "Model\n\n\nCode\nsummary(m2)\n\n\n\nCall:\nlm(formula = utterance_length ~ age + pages_read, data = utt_lengths)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-0.6100 -0.1804 -0.0159  0.2139  0.4207 \n\nCoefficients:\n            Estimate Std. Error t value Pr(>|t|)    \n(Intercept)   2.3841     0.3157    7.55  6.7e-06 ***\nage           0.5052     0.0212   23.82  1.8e-11 ***\npages_read    0.0295     0.0232    1.27     0.23    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 0.306 on 12 degrees of freedom\nMultiple R-squared:  0.985, Adjusted R-squared:  0.983 \nF-statistic:  405 on 2 and 12 DF,  p-value: 9.72e-12\n\n\n\nMultiple linear regression"
+  },
+  {
+    "objectID": "slides/linear-regression.html#multiple-linear-regression-1",
+    "href": "slides/linear-regression.html#multiple-linear-regression-1",
+    "title": "Linear regression analysis",
+    "section": "Multiple linear regression",
+    "text": "Multiple linear regression\n\nMultiple\n\nmore than one predictor\n\nNotation\n\ny ~ x1 + x2 (fitting on a plane)\n\n\ny ~ x1 + x2 + ... + xn (fitting on a hyperplane)\n\nEstimation: OSL\n\nOrdinary least squares, minimizing sum of squares of residuals\n\n\n\nMultiple linear regression"
+  },
+  {
+    "objectID": "slides/linear-regression.html#two-levels",
+    "href": "slides/linear-regression.html#two-levels",
+    "title": "Linear regression analysis",
+    "section": "Two levels",
+    "text": "Two levels\n\nE.g. “monolingual family”: yes/no\nTranslated into 1 dummy predictor with two levels\n\n0: reference level, e.g. no\n1: other level, e.g. yes\n\nLine fitted between 0 and 1, slope is the difference in y when yes (compared to no)\n\n\nCategorical predictors"
+  },
+  {
+    "objectID": "slides/linear-regression.html#two-levels-example",
+    "href": "slides/linear-regression.html#two-levels-example",
+    "title": "Linear regression analysis",
+    "section": "Two levels: example",
+    "text": "Two levels: example\n\nutt_lengths_cat <- utt_lengths %>% mutate(mono = factor(c(rep(\"no\", 5), \"yes\", \"no\", \"no\", rep(\"yes\", 7))))\n\n\n\n\n\nCode\nggplot(utt_lengths_cat, aes(x = as.numeric(mono)-1, y = utterance_length)) +\n  geom_point(size = 3) + geom_smooth(method = \"lm\", se = FALSE, color = \"darkolivegreen4\") +\n  labs(x = \"Is the family monolingual?\", y = \"Utterance length\") +\n  ylim(c(0,15)) + scale_x_continuous(breaks = c(0, 1), labels = c(\"no\", \"yes\")) +\n  theme_minimal(base_size = 20) + theme(aspect.ratio = 1)\n\n\n\n\n\n\n\n\nCode\nsummary(lm(utterance_length ~ mono, data = utt_lengths_cat))\n\n\n\nCall:\nlm(formula = utterance_length ~ mono, data = utt_lengths_cat)\n\nResiduals:\n   Min     1Q Median     3Q    Max \n-3.419 -0.788  0.253  0.928  2.100 \n\nCoefficients:\n            Estimate Std. Error t value Pr(>|t|)    \n(Intercept)    5.983      0.566    10.6  9.5e-08 ***\nmonoyes        3.566      0.776     4.6    5e-04 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 1.5 on 13 degrees of freedom\nMultiple R-squared:  0.619, Adjusted R-squared:  0.59 \nF-statistic: 21.1 on 1 and 13 DF,  p-value: 5e-04\n\n\n\n\n\nCategorical predictors"
+  },
+  {
+    "objectID": "slides/linear-regression.html#more-than-two-levels",
+    "href": "slides/linear-regression.html#more-than-two-levels",
+    "title": "Linear regression analysis",
+    "section": "More than two levels",
+    "text": "More than two levels\n\nE.g. “L1”: EN, ES, FR…\nTranslated into n-1 dummy predictors with two levels\n\n1: one of the levels, not the reference level, e.g. Es\n0: the rest of the levels, including the reference level (e.g. EN)\n\n(Hyper)plane fitted between combinations of 0 and 1, slope is the difference in y when compared to the reference level.\n\n\nCategorical predictors"
+  },
+  {
+    "objectID": "slides/linear-regression.html#data-categorical-predictors",
+    "href": "slides/linear-regression.html#data-categorical-predictors",
+    "title": "Linear regression analysis",
+    "section": "Data: categorical predictors",
+    "text": "Data: categorical predictors\n\nmean_utts <- c(EN = 11, ES = 7.4, ZH = 7.8)\nset.seed(2022)\nby_lang <- tibble(L1 = factor(rep(c(\"EN\", \"ES\", \"ZH\"), 15))) %>% \n  mutate(utterance_length = rnorm(n(), mean = mean_utts[L1], sd = 0.8))\nkb_style(filter(by_lang, L1 == \"EN\"), \"float_left\")\nkb_style(filter(by_lang, L1 == \"ES\"), \"float_left\")\nkb_style(filter(by_lang, L1 == \"ZH\"), \"left\")\n\n\n\n\n\n \n  \n    L1 \n    utterance_length \n  \n \n\n  \n    EN \n    11.72 \n  \n  \n    EN \n    9.84 \n  \n  \n    EN \n    10.15 \n  \n  \n    EN \n    11.19 \n  \n  \n    EN \n    10.21 \n  \n  \n    EN \n    10.94 \n  \n  \n    EN \n    11.82 \n  \n  \n    EN \n    11.31 \n  \n  \n    EN \n    10.72 \n  \n  \n    EN \n    11.26 \n  \n\n\n\n\n\n\n\n \n  \n    L1 \n    utterance_length \n  \n \n\n  \n    ES \n    6.46 \n  \n  \n    ES \n    7.13 \n  \n  \n    ES \n    7.62 \n  \n  \n    ES \n    8.21 \n  \n  \n    ES \n    7.47 \n  \n  \n    ES \n    6.88 \n  \n  \n    ES \n    8.09 \n  \n  \n    ES \n    8.29 \n  \n  \n    ES \n    6.71 \n  \n  \n    ES \n    6.99 \n  \n\n\n\n\n\n\n\n \n  \n    L1 \n    utterance_length \n  \n \n\n  \n    ZH \n    7.08 \n  \n  \n    ZH \n    5.48 \n  \n  \n    ZH \n    8.40 \n  \n  \n    ZH \n    7.65 \n  \n  \n    ZH \n    7.76 \n  \n  \n    ZH \n    7.04 \n  \n  \n    ZH \n    8.09 \n  \n  \n    ZH \n    8.77 \n  \n  \n    ZH \n    8.32 \n  \n  \n    ZH \n    7.61 \n  \n\n\n\n\n\n\n\n\nCategorical predictors"
+  },
+  {
+    "objectID": "slides/linear-regression.html#model-with-categorical-predictors",
+    "href": "slides/linear-regression.html#model-with-categorical-predictors",
+    "title": "Linear regression analysis",
+    "section": "Model with categorical predictors",
+    "text": "Model with categorical predictors\n\n\n\n\nCode\nm_lang1 <- lm(utterance_length ~ L1, data = by_lang)\nsummary(m_lang1)\n\n\n\nCall:\nlm(formula = utterance_length ~ L1, data = by_lang)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-2.2294 -0.5615  0.0488  0.6111  1.0603 \n\nCoefficients:\n            Estimate Std. Error t value Pr(>|t|)    \n(Intercept)   10.928      0.189    57.9  < 2e-16 ***\nL1ES          -3.620      0.267   -13.6  < 2e-16 ***\nL1ZH          -3.219      0.267   -12.1  3.1e-15 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 0.731 on 42 degrees of freedom\nMultiple R-squared:  0.84,  Adjusted R-squared:  0.833 \nF-statistic:  111 on 2 and 42 DF,  p-value: <2e-16\n\n\n\n\n\nCode\nes_first <- mutate(by_lang, L1 = fct_relevel(L1, \"ES\"))\nm_lang2 <- lm(utterance_length ~ L1, data = es_first)\nsummary(m_lang2)\n\n\n\nCall:\nlm(formula = utterance_length ~ L1, data = es_first)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-2.2294 -0.5615  0.0488  0.6111  1.0603 \n\nCoefficients:\n            Estimate Std. Error t value Pr(>|t|)    \n(Intercept)    7.308      0.189    38.7   <2e-16 ***\nL1EN           3.620      0.267    13.6   <2e-16 ***\nL1ZH           0.401      0.267     1.5     0.14    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 0.731 on 42 degrees of freedom\nMultiple R-squared:  0.84,  Adjusted R-squared:  0.833 \nF-statistic:  111 on 2 and 42 DF,  p-value: <2e-16\n\n\n\n\n\nCategorical predictors"
+  },
+  {
+    "objectID": "slides/linear-regression.html#categorical-predictors-1",
+    "href": "slides/linear-regression.html#categorical-predictors-1",
+    "title": "Linear regression analysis",
+    "section": "Categorical predictors",
+    "text": "Categorical predictors\n\nComparison is done between each level and the reference level, not in all combinations\nt-test: does the slope of an individual dummy predictor differ from 0?\nF-test of nested models: do the dummy predictors jointly reduce unexplained variation?\n\n\nCategorical predictors"
+  },
+  {
+    "objectID": "slides/linear-regression.html#report-package",
+    "href": "slides/linear-regression.html#report-package",
+    "title": "Linear regression analysis",
+    "section": "{report} package",
+    "text": "{report} package\n\nSimpleMultiple\n\n\n\n\nCode\nreport(m1)\n\n\nWe fitted a linear model (estimated using OLS) to predict utterance_length with\nage (formula: utterance_length ~ age). The model explains a statistically\nsignificant and substantial proportion of variance (R2 = 0.98, F(1, 13) =\n771.19, p < .001, adj. R2 = 0.98). The model's intercept, corresponding to age\n= 0, is at 2.70 (95% CI [2.26, 3.14], t(13) = 13.24, p < .001). Within this\nmodel:\n\n  - The effect of age is statistically significant and positive (beta = 0.52, 95%\nCI [0.48, 0.56], t(13) = 27.77, p < .001; Std. beta = 0.99, 95% CI [0.91,\n1.07])\n\nStandardized parameters were obtained by fitting the model on a standardized\nversion of the dataset. 95% Confidence Intervals (CIs) and p-values were\ncomputed using a Wald t-distribution approximation.\n\n\n\n\n\n\nCode\nreport(m2)\n\n\nWe fitted a linear model (estimated using OLS) to predict utterance_length with\nage (formula: utterance_length ~ age + pages_read). The model explains a\nstatistically significant and substantial proportion of variance (R2 = 0.99,\nF(2, 12) = 404.69, p < .001, adj. R2 = 0.98). The model's intercept,\ncorresponding to age = 0, is at 2.38 (95% CI [1.70, 3.07], t(12) = 7.55, p <\n.001). Within this model:\n\n  - The effect of age is statistically significant and positive (beta = 0.51, 95%\nCI [0.46, 0.55], t(12) = 23.82, p < .001; Std. beta = 0.97, 95% CI [0.88,\n1.05])\n  - The effect of pages read is statistically non-significant and positive (beta\n= 0.03, 95% CI [-0.02, 0.08], t(12) = 1.27, p = 0.228; Std. beta = 0.05, 95% CI\n[-0.04, 0.14])\n\nStandardized parameters were obtained by fitting the model on a standardized\nversion of the dataset. 95% Confidence Intervals (CIs) and p-values were\ncomputed using a Wald t-distribution approximation. and We fitted a linear\nmodel (estimated using OLS) to predict utterance_length with pages_read\n(formula: utterance_length ~ age + pages_read). The model explains a\nstatistically significant and substantial proportion of variance (R2 = 0.99,\nF(2, 12) = 404.69, p < .001, adj. R2 = 0.98). The model's intercept,\ncorresponding to pages_read = 0, is at 2.38 (95% CI [1.70, 3.07], t(12) = 7.55,\np < .001). Within this model:\n\n  - The effect of age is statistically significant and positive (beta = 0.51, 95%\nCI [0.46, 0.55], t(12) = 23.82, p < .001; Std. beta = 0.97, 95% CI [0.88,\n1.05])\n  - The effect of pages read is statistically non-significant and positive (beta\n= 0.03, 95% CI [-0.02, 0.08], t(12) = 1.27, p = 0.228; Std. beta = 0.05, 95% CI\n[-0.04, 0.14])\n\nStandardized parameters were obtained by fitting the model on a standardized\nversion of the dataset. 95% Confidence Intervals (CIs) and p-values were\ncomputed using a Wald t-distribution approximation.\n\n\n\n\n\n\nEasystats"
+  },
+  {
+    "objectID": "slides/linear-regression.html#parameters-package",
+    "href": "slides/linear-regression.html#parameters-package",
+    "title": "Linear regression analysis",
+    "section": "{parameters} package",
+    "text": "{parameters} package\n\nSimpleMultipleComparison\n\n\n\n\nCode\nprint_md(model_parameters(m1))\nplot(model_parameters(m1))\n\n\n\n\n\n\n\nParameter\nCoefficient\nSE\n95% CI\nt(13)\np\n\n\n\n\n(Intercept)\n2.70\n0.20\n(2.26, 3.14)\n13.24\n< .001\n\n\nage\n0.52\n0.02\n(0.48, 0.56)\n27.77\n< .001\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\nprint_md(model_parameters(m2))\nplot(model_parameters(m2))\n\n\n\n\n\n\n\nParameter\nCoefficient\nSE\n95% CI\nt(12)\np\n\n\n\n\n(Intercept)\n2.38\n0.32\n(1.70, 3.07)\n7.55\n< .001\n\n\nage\n0.51\n0.02\n(0.46, 0.55)\n23.82\n< .001\n\n\npages read\n0.03\n0.02\n(-0.02, 0.08)\n1.27\n0.228\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\nprint_md(compare_parameters(m1, m2))\nplot(compare_parameters(m1, m2))\n\n\n\n\n\n\n\nParameter\nm1\nm2\n\n\n\n\n(Intercept)\n2.70 (2.26, 3.14)\n2.38 (1.70, 3.07)\n\n\nage\n0.52 (0.48, 0.56)\n0.51 (0.46, 0.55)\n\n\npages read\n\n0.03 (-0.02, 0.08)\n\n\n\n\n\n\n\nObservations\n15\n15\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEasystats"
+  },
+  {
+    "objectID": "slides/linear-regression.html#performance-package-i",
+    "href": "slides/linear-regression.html#performance-package-i",
+    "title": "Linear regression analysis",
+    "section": "{performance} package I",
+    "text": "{performance} package I\n\nSimpleMultipleComparison\n\n\n\n\nCode\nprint_md(model_performance(m1))\n\n\n\nIndices of model performance\n\n\nAIC\nBIC\nR2\nR2 (adj.)\nRMSE\nSigma\n\n\n\n\n11.54\n13.67\n0.98\n0.98\n0.29\n0.31\n\n\n\n\n\n\n\n\n\nCode\nprint_md(model_performance(m2))\n\n\n\nIndices of model performance\n\n\nAIC\nBIC\nR2\nR2 (adj.)\nRMSE\nSigma\n\n\n\n\n11.65\n14.48\n0.99\n0.98\n0.27\n0.31\n\n\n\n\n\n\n\n\n\nCode\nm_perf <- compare_performance(m1, m2)\nprint_md(m_perf)\nplot(m_perf)\n\n\n\n\n\nComparison of Model Performance Indices\n\n\n\n\n\n\n\n\n\n\n\n\nName\nModel\nAIC (weights)\nBIC (weights)\nR2\nR2 (adj.)\nRMSE\nSigma\n\n\n\n\nm1\nlm\n11.5 (0.51)\n13.7 (0.60)\n0.98\n0.98\n0.29\n0.31\n\n\nm2\nlm\n11.6 (0.49)\n14.5 (0.40)\n0.99\n0.98\n0.27\n0.31\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEasystats"
+  },
+  {
+    "objectID": "slides/linear-regression.html#performance-package-ii",
+    "href": "slides/linear-regression.html#performance-package-ii",
+    "title": "Linear regression analysis",
+    "section": "{performance} package II",
+    "text": "{performance} package II\n\nSimpleMultiple\n\n\n\n\nCode\ncheck_heteroscedasticity(m1)\n\n\nOK: Error variance appears to be homoscedastic (p = 0.237).\n\n\nCode\ncheck_model(m1, check = c(\"qq\", \"ncv\"))\n\n\n\n\n\n\n\n\n\nCode\ncheck_heteroscedasticity(m2)\n\n\nOK: Error variance appears to be homoscedastic (p = 0.947).\n\n\nCode\ncheck_model(m2, check = c(\"qq\", \"ncv\"))\n\n\n\n\n\n\n\n\n\nEasystats"
+  },
+  {
     "objectID": "studies/base.html",
     "href": "studies/base.html",
     "title": "Keywords and collocation analysis on the BASE corpus",
@@ -863,6 +1024,34 @@
   {
     "objectID": "tidyverse/tibbles.html#kableextra",
     "href": "tidyverse/tibbles.html#kableextra",
+    "title": "Tibble manipulation",
+    "section": "\n2.3 KableExtra",
+    "text": "2.3 KableExtra\nCheck out the documentation for HTML or PDF output to learn about {kableExtra} features."
+  },
+  {
+    "objectID": "tidyverse/ggplot.html",
+    "href": "tidyverse/ggplot.html",
+    "title": "Tibble manipulation",
+    "section": "",
+    "text": "The goal of this assignment is to practice working with tables using tidyverse. Tidyverse is a collection of R packages for data wrangling and visualization (among other things). A great resource to learn how to use it is R for data Science.\nFor this assignment I ask that you create both a script to manipulate the table and then a Quarto file to print and cross-reference the table (combining what you learned in the second assignment)."
+  },
+  {
+    "objectID": "tidyverse/ggplot.html#manipulating-the-table",
+    "href": "tidyverse/ggplot.html#manipulating-the-table",
+    "title": "Tibble manipulation",
+    "section": "\n2.1 Manipulating the table",
+    "text": "2.1 Manipulating the table\n\nUse mutate() to change the values of a column.\n\nUse filter() to subset the rows based on values in the columns. You can also use the slice_ family of functions to subset with other criteria:\n\nslice_head(n = 3) to select the first three rows; slice_tail(n = 5) to select the last five rows.\nslice_sample(n = 10) to select ten random rows, slice_sample(prop = 0.5) to select a random 50% of the rows.\n\n\nUse select() to subset the columns. You can also use rename() to rename columns without removing the rest.\nUse arrange() to sort the tibble based on the values in a column.\n\n\n\n\n\n\n\nExample\n\n\n\n\n\nAn example is the code below, which starts with an assoc object (product of assoc_scores()) and ends with a tibble with a selection of rows and columns.\n\nsubsetted <- hot_assoc %>% \n  as_tibble() %>% \n  filter(PMI > 1, G_signed >= 5, endsWith(type, \"nn\")) %>% \n  select(type, freq = a, PMI, ends_with(\"signed\"), OR) %>% \n  mutate(\n    log_OR = log(OR),\n    type = str_remove(type, \"/nn\")\n  )\n\n\nIn line 2 we use as_tibble() to turn the assoc object into a tibble to manipulate with {tidyverse} functions.\nIn line 3 we use filter() to subset the rows that have PMI larger than 1, G_signed larger than or equal to 5, and a type ending with “nn”, i.e. nouns.\nIn line 4 we use select() to subset the columns type, a, PMI and OR as well as those ending in “signed” and at the same time rename a to “freq”.\nIn lines 5 through 8 we use mutate() to create a new column log_OR that contains the logarithm of the OR column, and we modify the type column to remove the “/nn” ending from its elements.\nIn line 1 we assign the whole operation, initially applied to hot_assoc, to a variable called subsetted.\n\nEach operation of the pipe acts on the output of the operation before it."
+  },
+  {
+    "objectID": "tidyverse/ggplot.html#association-scores",
+    "href": "tidyverse/ggplot.html#association-scores",
+    "title": "Tibble manipulation",
+    "section": "\n2.2 Association scores",
+    "text": "2.2 Association scores\n\nUse assoc_scores() after surf_cooc() to create an association scores object.\nUse write_assoc(scores_object, filename) to save the object from your R script.\nUse scores_object <- read_assoc(filename) to read the object in the Quarto file."
+  },
+  {
+    "objectID": "tidyverse/ggplot.html#kableextra",
+    "href": "tidyverse/ggplot.html#kableextra",
     "title": "Tibble manipulation",
     "section": "\n2.3 KableExtra",
     "text": "2.3 KableExtra\nCheck out the documentation for HTML or PDF output to learn about {kableExtra} features."

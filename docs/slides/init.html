@@ -448,12 +448,9 @@ Mariana Montes
 <section id="connect-repository-to-github" class="slide level2">
 <h2>Connect repository to GitHub</h2>
 <p>This only needs to be done once at the beginning.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource default number-lines code-with-copy"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1"></a>mymachine: ~/project-folder (master)</span>
-<span id="cb1-2"><a href="#cb1-2"></a>$ git remote add origin &lt;url&gt;</span>
-<span id="cb1-3"><a href="#cb1-3"></a>mymachine: ~/project-folder (master)</span>
-<span id="cb1-4"><a href="#cb1-4"></a>$ git branch -M main</span>
-<span id="cb1-5"><a href="#cb1-5"></a>mymachine: ~/project-folder (main)</span>
-<span id="cb1-6"><a href="#cb1-6"></a>$ git push -u origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource default number-lines code-with-copy"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1"></a>git remote add origin &lt;url&gt;</span>
+<span id="cb1-2"><a href="#cb1-2"></a>git branch -M main</span>
+<span id="cb1-3"><a href="#cb1-3"></a>git push -u origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="callout callout-note callout-captioned callout-style-default">
 <div class="callout-body">
 <div class="callout-caption">
@@ -490,12 +487,8 @@ Mariana Montes
 <section id="git-branch" class="slide level2">
 <h2>Git branch</h2>
 <p>Optionally, you can start “new work” on a new branch and then merge it to <code>main</code>.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource default number-lines code-with-copy"><code class="sourceCode default"><span id="cb2-1"><a href="#cb2-1"></a>mymachine: ~/project-folder (main)</span>
-<span id="cb2-2"><a href="#cb2-2"></a>$ git branch explore-corpus</span>
-<span id="cb2-3"><a href="#cb2-3"></a>mymachine: ~/project-folder (main)</span>
-<span id="cb2-4"><a href="#cb2-4"></a>$ git checkout explore-corpus</span>
-<span id="cb2-5"><a href="#cb2-5"></a>mymachine: ~/project-folder (explore-corpus)</span>
-<span id="cb2-6"><a href="#cb2-6"></a>$ </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource default number-lines code-with-copy"><code class="sourceCode default"><span id="cb2-1"><a href="#cb2-1"></a>git branch explore-corpus</span>
+<span id="cb2-2"><a href="#cb2-2"></a>git checkout explore-corpus</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="callout callout-tip callout-captioned callout-style-default">
 <div class="callout-body">
 <div class="callout-caption">
@@ -1035,14 +1028,10 @@ rank orig_rank   type abs_freq nrm_freq
 <li>Commit whenever you reach a “stage”.</li>
 <li>Push at most once a day.</li>
 </ul>
-<div class="sourceCode" id="cb29"><pre class="sourceCode numberSource default number-lines code-with-copy"><code class="sourceCode default"><span id="cb29-1"><a href="#cb29-1"></a>mymachine: ~/project-folder (explore-corpus)</span>
-<span id="cb29-2"><a href="#cb29-2"></a>$ git status</span>
-<span id="cb29-3"><a href="#cb29-3"></a>mymachine: ~/project-folder (explore-corpus)</span>
-<span id="cb29-4"><a href="#cb29-4"></a>$ git add .</span>
-<span id="cb29-5"><a href="#cb29-5"></a>mymachine: ~/project-folder (explore-corpus)</span>
-<span id="cb29-6"><a href="#cb29-6"></a>$ git commit -m "my first quarto document"</span>
-<span id="cb29-7"><a href="#cb29-7"></a>mymachine: ~/project-folder (explore-corpus)</span>
-<span id="cb29-8"><a href="#cb29-8"></a>$ git push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb29"><pre class="sourceCode numberSource default number-lines code-with-copy"><code class="sourceCode default"><span id="cb29-1"><a href="#cb29-1"></a>git status</span>
+<span id="cb29-2"><a href="#cb29-2"></a>git add .</span>
+<span id="cb29-3"><a href="#cb29-3"></a>git commit -m "my first quarto document"</span>
+<span id="cb29-4"><a href="#cb29-4"></a>git push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="callout callout-warning callout-captioned callout-style-default">
 <div class="callout-body">
 <div class="callout-caption">
@@ -1065,17 +1054,13 @@ rank orig_rank   type abs_freq nrm_freq
 <div class="tab-content">
 <div id="tabset-3-1">
 <p><code>main</code> is now totally up-to-speed.</p>
-<div class="sourceCode" id="cb30"><pre class="sourceCode numberSource default number-lines code-with-copy"><code class="sourceCode default"><span id="cb30-1"><a href="#cb30-1"></a>mymachine: ~/project-folder (explore-corpus)</span>
-<span id="cb30-2"><a href="#cb30-2"></a>$ git checkout main</span>
-<span id="cb30-3"><a href="#cb30-3"></a>mymachine: ~/project-folder (main)</span>
-<span id="cb30-4"><a href="#cb30-4"></a>$ git merge explore-corpus</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb30"><pre class="sourceCode numberSource default number-lines code-with-copy"><code class="sourceCode default"><span id="cb30-1"><a href="#cb30-1"></a>git checkout main</span>
+<span id="cb30-2"><a href="#cb30-2"></a>git merge explore-corpus</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div id="tabset-3-2">
 <p>Get only selected folders/files.</p>
-<div class="sourceCode" id="cb31"><pre class="sourceCode numberSource default number-lines code-with-copy"><code class="sourceCode default"><span id="cb31-1"><a href="#cb31-1"></a>mymachine: ~/project-folder (explore-corpus)</span>
-<span id="cb31-2"><a href="#cb31-2"></a>$ git checkout main</span>
-<span id="cb31-3"><a href="#cb31-3"></a>mymachine: ~/project-folder (main)</span>
-<span id="cb31-4"><a href="#cb31-4"></a>$ git checkout explore-corpus script.R</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb31"><pre class="sourceCode numberSource default number-lines code-with-copy"><code class="sourceCode default"><span id="cb31-1"><a href="#cb31-1"></a>git checkout main</span>
+<span id="cb31-2"><a href="#cb31-2"></a>git checkout explore-corpus script.R</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -1310,12 +1295,15 @@ rank orig_rank   type abs_freq nrm_freq
       // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
       // slide changes (different for each slide format).
       (function () {
-        function fireSlideChanged(previousSlide, currentSlide) {
-
-          // dispatch for htmlwidgets
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
           const event = window.document.createEvent("Event");
           event.initEvent("slideenter", true, true);
           window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
 
           // dispatch for shiny
           if (window.jQuery) {
@@ -1326,13 +1314,6 @@ rank orig_rank   type abs_freq nrm_freq
               window.jQuery(currentSlide).trigger("shown");
             }
           }
-        }
-
-        // hookup for reveal
-        if (window.Reveal) {
-          window.Reveal.addEventListener("slidechanged", function(event) {
-            fireSlideChanged(event.previousSlide, event.currentSlide);
-          });
         }
 
         // hookup for slidy

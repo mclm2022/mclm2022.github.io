@@ -46,6 +46,8 @@ g <- ggplot(utt_lengths, aes(x = age, y = utterance_length)) +
 g_int <- g + geom_hline(aes(yintercept = mean(utterance_length)),
                         linetype = 2, color = "coral", size = 1)
 g_int
+
+### Sum of squares total ----
 g_int +
   geom_segment(aes(xend = age, yend = mean(utterance_length)),
                color = "coral3", size = 2)
@@ -55,6 +57,8 @@ g_fit <- g + geom_abline(intercept = m1$coefficients[[1]],
                          slope = m1$coefficients[[2]],
                          linetype = 2, color = "darkcyan", size = 1)
 g_fit
+
+### Sum of squares error ----
 g_fit +
   geom_segment(aes(xend = age, yend = fit), color = "cyan4", size = 2)
 
