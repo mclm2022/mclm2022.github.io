@@ -5,7 +5,7 @@
 <meta name="generator" content="quarto-1.2.237">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta name="author" content="Mariana Montes">
-<title>Methods in Corpus Linguistics - Tibble manipulation</title>
+<title>Methods in Corpus Linguistics - The Grammar of Graphics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -116,7 +116,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit"
   }
-}</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><link rel="stylesheet" href="../styles.css">
+}</script><link rel="stylesheet" href="../styles.css">
 </head>
 <body class="nav-fixed">
 
@@ -172,6 +172,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <a class="dropdown-item" href="../tidyverse/tibbles.html">
  <span class="dropdown-text">Tibble manipulation</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../tidyverse/ggplot.html">
+ <span class="dropdown-text">The Grammar of Graphics</span></a>
+  </li>  
     </ul>
 </li>
 </ul>
@@ -192,22 +196,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
    
   <ul>
-<li><a href="#instructions" id="toc-instructions" class="nav-link active" data-scroll-target="#instructions"><span class="toc-section-number">1</span>  Instructions</a></li>
-  <li>
-<a href="#tips" id="toc-tips" class="nav-link" data-scroll-target="#tips"><span class="toc-section-number">2</span>  Tips</a>
+<li>
+<a href="#instructions" id="toc-instructions" class="nav-link active" data-scroll-target="#instructions"><span class="toc-section-number">1</span>  Instructions</a>
   <ul class="collapse">
-<li><a href="#manipulating-the-table" id="toc-manipulating-the-table" class="nav-link" data-scroll-target="#manipulating-the-table"><span class="toc-section-number">2.1</span>  Manipulating the table</a></li>
-  <li><a href="#association-scores" id="toc-association-scores" class="nav-link" data-scroll-target="#association-scores"><span class="toc-section-number">2.2</span>  Association scores</a></li>
-  <li><a href="#kableextra" id="toc-kableextra" class="nav-link" data-scroll-target="#kableextra"><span class="toc-section-number">2.3</span>  KableExtra</a></li>
+<li><a href="#code-to-copy" id="toc-code-to-copy" class="nav-link" data-scroll-target="#code-to-copy"><span class="toc-section-number">1.1</span>  Code to copy</a></li>
   </ul>
 </li>
+  <li><a href="#sec-ex" id="toc-sec-ex" class="nav-link" data-scroll-target="#sec-ex"><span class="toc-section-number">2</span>  Example</a></li>
   <li><a href="#sec-git" id="toc-sec-git" class="nav-link" data-scroll-target="#sec-git"><span class="toc-section-number">3</span>  Git workflow</a></li>
   </ul></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<h1 class="title">Tibble manipulation</h1>
-<p class="subtitle lead">Third assignment</p>
+<main class="content page-columns page-full" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<h1 class="title">The Grammar of Graphics</h1>
+<p class="subtitle lead">Fourth assignment</p>
 </div>
 
 
@@ -226,142 +228,190 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   </div>
   
 
-</header><p>The goal of this assignment is to practice working with tables using tidyverse. <a href="https://www.tidyverse.org/">Tidyverse</a> is a collection of R packages for data wrangling and visualization (among other things). A great resource to learn how to use it is <a href="https://r4ds.had.co.nz/"><em>R for data Science</em></a>.</p>
-<p>For this assignment I ask that you create both a script to manipulate the table and then a Quarto file to print and cross-reference the table (combining what you learned in the <a href="../quarto/crossref.html">second assignment</a>).</p>
+</header><p>The goal of this assignment is to gain some familiarity with the Grammar of Graphics, i.e.&nbsp;the principles behind {ggplot2} syntax. Hadley Wickham’s <a href="https://byrneslab.net/classes/biol607/readings/wickham_layered-grammar.pdf">article</a> is a good start if you’re interested in that philosophy, and you can also check <a href="https://ggplot2-book.org/index.html">the ggplot2 book</a>.</p>
+<p>It is not necessary to know all the functions in order to create graphics with {ggplot2} —I think the most important points are to understand the logic of the layers and to learn how to look up what you need. It’s ok if you need to google how to draw a barplot, how to change the position of the legend, or what the available colors and color palettes are… but you have to get comfortable looking things up, learning about package extensions and combining the functions into the plot you are thinking of.</p>
 <section id="instructions" class="level1" data-number="1"><h1 data-number="1">
 <span class="header-section-number">1</span> Instructions</h1>
 <ol type="1">
-<li><p>Create a branch for the assignment, e.g.&nbsp;<code>tibble</code>. You will work here and only move your changes to <code>main</code> if and when you want to submit.</p></li>
+<li><p>Create a branch for the assignment, e.g.&nbsp;<code>ggplot</code>. You will work here and only move your changes to <code>main</code> if and when you want to submit.</p></li>
 <li>
-<p>Create an R script where you will insert the necessary code to do the following:</p>
-<ol type="i">
-<li><p>Load the appropriate libraries (tidyverse and mclm).</p></li>
-<li><p>Read the brown corpus.</p></li>
-<li><p>Create an association scores table of the collocations of a word of your choosing.</p></li>
-<li>
-<p>Save the file.</p>
-<ol type="a">
-<li><p>OPTION A: Manipulate the table as done in class: turn it into a tibble with <code>as_tibble()</code>, modify columns, select some columns to show, filter the rows, rearrange the order. Then write it to a file with <code>write_tsv()</code>.</p></li>
-<li><p>OPTION B: Save the association scores object to a file with <code>write_assoc()</code>.</p></li>
+<p>Create a Quarto file.</p>
+<ol type="1">
+<li><p>Copy the code in the “setup” tab below to set up a dataset for plotting. This chunk must be hidden, with the option <code>include: false</code>.</p></li>
+<li><p>Draw the plot in the “plot” tab below, but not in one go. Create a separate chunk per layer, as exemplified in <a href="#sec-ex">Section&nbsp;2</a>. Each chunk should be cross-referenceable.</p></li>
+<li><p>Using cross-references, describe the output of each new layer of the plot. What has changed and why? Again, see <a href="#sec-ex">Section&nbsp;2</a> for an example.</p></li>
 </ol>
 </li>
+<li><p>Render the Quarto file, move the changes to <code>main</code>, push and let me know.</p></li>
 </ol>
-</li>
-<li>
-<p>Create a Quarto report where you will only load the {mclm} and {kableExtra} packages.</p>
-<ol type="i">
-<li>
-<p>Read the association scores object:<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
-<ol type="a">
-<li><p>OPTION A: If you wrote it with <code>write_tsv()</code>, use <code>read_tsv()</code>.</p></li>
-<li><p>OPTION B: If you wrote it with <code>write_assoc()</code>, you can either use <code>read_tsv()</code> or <code>read_assoc()</code> followed by <code>as_tibble()</code>.</p></li>
-</ol>
-</li>
-<li><p>If you hadn’t manipulated the table, this is the time to do so.</p></li>
-<li><p>Print the table with {kableExtra}, editing it as well if you so wish. Don’t forget to add a caption!</p></li>
-<li><p>Include some text cross-referencing the table and maybe commenting on the result.</p></li>
-</ol>
-</li>
-</ol>
+<div class="callout-warning callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Cross-references
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Don’t forget to add both a label and a caption to the figure!</p>
+</div>
+</div>
+<section id="code-to-copy" class="level2" data-number="1.1"><h2 data-number="1.1" class="anchored" data-anchor-id="code-to-copy">
+<span class="header-section-number">1.1</span> Code to copy</h2>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Setup</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Plot</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>Copy the following code as is in an invisible chunk in your Quarto file (use <code>include: false</code> in the options).</p>
+<div class="cell">
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org">tidyverse</a></span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/Random.html">set.seed</a></span><span class="op">(</span><span class="fl">2022</span><span class="op">)</span></span>
+<span><span class="va">rows</span> <span class="op">&lt;-</span> <span class="fl">20</span></span>
+<span><span class="va">cake_eaten</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html">tibble</a></span><span class="op">(</span></span>
+<span>  hunger_level <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sample.html">sample</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">100</span>, <span class="va">rows</span>, replace <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>,</span>
+<span>  cake_eaten <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sample.html">sample</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">100</span>, <span class="va">rows</span>, replace <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span><span class="op">/</span><span class="fl">100</span>,</span>
+<span>  cake_flavor <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sample.html">sample</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/rep.html">rep_len</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"vanilla"</span>, <span class="st">"chocolate"</span><span class="op">)</span>, <span class="va">rows</span><span class="op">)</span><span class="op">)</span></span>
+<span>  <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <div class="callout-tip callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-caption-container flex-fill">
-Render Latex in table header
+Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>If you try to use Latex in a table, for example <code>r"($\chi^2$)"</code> to obtain <span class="math inline">\(\chi^2\)</span>, you might notice that it prints well in the interactive session but not in the rendered HTML document. This is (I think) a bug somewhere in the rendering of tables, but there is a workaround:</p>
-<p>Somewhere in your Quarto document, paste the following text (as normal text, not as R code):</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;script type="text/x-mathjax-config"&gt;MathJax.Hub.Config({tex2jax: {inlineMath: [["$","$"]]}})&lt;/script&gt;</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>&lt;script async src="https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"&gt;&lt;/script&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>This will activate parsing of Latex inside the HTML tables.</p>
-<p>In PDF output instead you just have to add the option <code>escape = FALSE</code> to your <code>kbl()</code> call. Notice, however, that you should not have unescaped Latex characters in other elements of the table! (No underscores, for example).</p>
+<p>If you <em>want</em>, you can also write a small section in your file in which you print the table and/or describe what it represents! (If you don’t remember what I said you can make it up, as long as it kind of makes sense.)</p>
+<p>Describing the table can be a good opportunity to practice inline code, e.g.&nbsp;<code>`r nrow(cake_eaten)`</code> to print the number of rows in the dataframe, or using other functions such as <code>length(cake_eaten)</code> to get the number of columns.</p>
 </div>
 </div>
-</section><section id="tips" class="level1" data-number="2"><h1 data-number="2">
-<span class="header-section-number">2</span> Tips</h1>
-<section id="manipulating-the-table" class="level2" data-number="2.1"><h2 data-number="2.1" class="anchored" data-anchor-id="manipulating-the-table">
-<span class="header-section-number">2.1</span> Manipulating the table</h2>
-<ul>
-<li><p>Use <code>mutate()</code> to change the values of a column.</p></li>
-<li>
-<p>Use <code><a href="https://rdrr.io/r/stats/filter.html">filter()</a></code> to subset the rows based on values in the columns. You can also use the <code>slice_</code> family of functions to subset with other criteria:</p>
-<ul>
-<li><p><code>slice_head(n = 3)</code> to select the first three rows; <code>slice_tail(n = 5)</code> to select the last five rows.</p></li>
-<li><p><code>slice_sample(n = 10)</code> to select ten random rows, <code>slice_sample(prop = 0.5)</code> to select a random 50% of the rows.</p></li>
-</ul>
-</li>
-<li><p>Use <code>select()</code> to subset the columns. You can also use <code>rename()</code> to rename columns without removing the rest.</p></li>
-<li><p>Use <code>arrange()</code> to sort the tibble based on the values in a column.</p></li>
-</ul>
-<div class="callout-tip callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>This is the final code for the plot you have to build, and the final output should look like the plot under the code. In total you should have at least 10 different plots: one for each of the layers!</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">ggplot</span>(cake_eaten, <span class="fu">aes</span>(<span class="at">x =</span> cake_eaten, <span class="at">y =</span> hunger_level)) <span class="sc">+</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> cake_flavor), <span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">80</span>, <span class="at">linetype =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb2-4"><a href="#cb2-4"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">group =</span> cake_flavor), <span class="at">color =</span> <span class="st">"gray40"</span>, <span class="at">linetype =</span> <span class="dv">4</span>) <span class="sc">+</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"coral3"</span>, <span class="st">"darkcyan"</span>)) <span class="sc">+</span></span>
+<span id="cb2-6"><a href="#cb2-6"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">labels =</span> scales<span class="sc">::</span><span class="fu">label_percent</span>()) <span class="sc">+</span></span>
+<span id="cb2-7"><a href="#cb2-7"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Percentage of cake eaten"</span>, <span class="at">y =</span> <span class="st">"Hunger level"</span>, <span class="at">color =</span> <span class="st">"Cake flavor"</span>) <span class="sc">+</span></span>
+<span id="cb2-8"><a href="#cb2-8"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="dv">0</span>, <span class="at">y =</span> <span class="dv">80</span>, <span class="at">label =</span> <span class="st">"Would eat anything"</span>,</span>
+<span id="cb2-9"><a href="#cb2-9"></a>           <span class="at">vjust =</span> <span class="sc">-</span><span class="fl">0.6</span>, <span class="at">hjust =</span> <span class="dv">0</span>, <span class="at">family =</span> <span class="st">"mono"</span>) <span class="sc">+</span></span>
+<span id="cb2-10"><a href="#cb2-10"></a>  <span class="fu">theme_light</span>(<span class="at">base_size =</span> <span class="dv">20</span>) <span class="sc">+</span></span>
+<span id="cb2-11"><a href="#cb2-11"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"top"</span>, <span class="at">text =</span> <span class="fu">element_text</span>(<span class="at">family =</span> <span class="st">"serif"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="ggplot_files/figure-html/plot-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-caption-container flex-fill">
-Example
+Order of the layers
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>An example is the code below, which starts with an <code>assoc</code> object (product of <code>assoc_scores()</code>) and ends with a tibble with a selection of rows and columns.</p>
+<p>The order of the layers is not crucial to the output. If the <code><a href="https://ggplot2.tidyverse.org/reference/geom_path.html">geom_line()</a></code> layers goes before the <code><a href="https://ggplot2.tidyverse.org/reference/geom_point.html">geom_point()</a></code> layer, it will be drawn <em>before</em> it (and therefore <em>under</em> it), but otherwise, it doesn’t change much in which order you do them. That said, it can be useful to respect a certain logical order –it’s just not <em>necessary</em> and sometimes it doesn’t make a difference. It won’t throw an error.</p>
+<p>For the assignment, please keep the order, but you’re welcome to explore and experiment what happens if you change it.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section></section><section id="sec-ex" class="level1 page-columns page-full" data-number="2"><h1 data-number="2">
+<span class="header-section-number">2</span> Example</h1>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+About the example
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The text below exemplifies a bit of what the Quarto file should look like. The chunk options should <strong>not</strong> be visible (I made them visible here to help you) but the code should be accessible.</p>
+<p>If you would like to hide the code and make it available on demand, use <code>code-fold: true</code>, either as an option in the chunks you want to apply it to or in the metadata YAML of the Quarto file.</p>
+</div>
+</div>
+<p><a href="#fig-ggplot">Figure&nbsp;1</a> shows the output of just calling <code><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot()</a></code> with the dataset and <code>x</code> and <code>y</code> aesthetics: a basic, gray canvas with default axis labels and range of values.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>subsetted <span class="ot">&lt;-</span> hot_assoc <span class="sc">%&gt;%</span> </span>
-<span id="cb2-2"><a href="#cb2-2"></a>  <span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span> </span>
-<span id="cb2-3"><a href="#cb2-3"></a>  <span class="fu">filter</span>(PMI <span class="sc">&gt;</span> <span class="dv">1</span>, G_signed <span class="sc">&gt;=</span> <span class="dv">5</span>, <span class="fu">endsWith</span>(type, <span class="st">"nn"</span>)) <span class="sc">%&gt;%</span> </span>
-<span id="cb2-4"><a href="#cb2-4"></a>  <span class="fu">select</span>(type, <span class="at">freq =</span> a, PMI, <span class="fu">ends_with</span>(<span class="st">"signed"</span>), OR) <span class="sc">%&gt;%</span> </span>
-<span id="cb2-5"><a href="#cb2-5"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb2-6"><a href="#cb2-6"></a>    <span class="at">log_OR =</span> <span class="fu">log</span>(OR),</span>
-<span id="cb2-7"><a href="#cb2-7"></a>    <span class="at">type =</span> <span class="fu">str_remove</span>(type, <span class="st">"/nn"</span>)</span>
-<span id="cb2-8"><a href="#cb2-8"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<ul>
-<li><p>In line 2 we use <code>as_tibble()</code> to turn the <code>assoc</code> object into a <code>tibble</code> to manipulate with {tidyverse} functions.</p></li>
-<li><p>In line 3 we use <code><a href="https://rdrr.io/r/stats/filter.html">filter()</a></code> to subset the rows that have PMI larger than 1, G_signed larger than or equal to 5, and a type ending with “nn”, i.e.&nbsp;nouns.</p></li>
-<li><p>In line 4 we use <code>select()</code> to subset the columns <code>type</code>, <code>a</code>, <code>PMI</code> and <code>OR</code> as well as those ending in “signed” and at the same time rename <code>a</code> to “freq”.</p></li>
-<li><p>In lines 5 through 8 we use <code>mutate()</code> to create a new column <code>log_OR</code> that contains the logarithm of the <code>OR</code> column, and we modify the <code>type</code> column to remove the “/nn” ending from its elements.</p></li>
-<li><p>In line 1 we assign the whole operation, initially applied to <code>hot_assoc</code>, to a variable called <code>subsetted</code>.</p></li>
-</ul>
-<p>Each operation of the pipe acts on the output of the operation before it.</p>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-ggplot</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "Output of the basic `ggplot()` call."</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>g <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(cake_eaten, <span class="fu">aes</span>(<span class="at">x =</span> cake_eaten, <span class="at">y =</span> hunger_level))</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>g</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-ggplot" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="ggplot_files/figure-html/fig-ggplot-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1: Output of the basic <code><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot()</a></code> call.</figcaption><p></p>
+</figure>
 </div>
 </div>
 </div>
-</section><section id="association-scores" class="level2" data-number="2.2"><h2 data-number="2.2" class="anchored" data-anchor-id="association-scores">
-<span class="header-section-number">2.2</span> Association scores</h2>
-<ul>
-<li><p>Use <code>assoc_scores()</code> after <code>surf_cooc()</code> to create an association scores object.</p></li>
-<li><p>Use <code>write_assoc(scores_object, filename)</code> to save the object from your R script.</p></li>
-<li><p>Use <code>scores_object &lt;- read_assoc(filename)</code> to read the object in the Quarto file.</p></li>
-</ul></section><section id="kableextra" class="level2" data-number="2.3"><h2 data-number="2.3" class="anchored" data-anchor-id="kableextra">
-<span class="header-section-number">2.3</span> KableExtra</h2>
-<p>Check out the documentation for <a href="https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html">HTML</a> or <a href="https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_pdf.pdf">PDF</a> output to learn about {kableExtra} features.</p>
-</section></section><section id="sec-git" class="level1" data-number="3"><h1 data-number="3">
+<div class="page-columns page-full"><p><a href="#fig-point">Figure&nbsp;2</a> shows the output of adding only a point geometry with <code><a href="https://ggplot2.tidyverse.org/reference/geom_point.html">geom_point()</a></code>, additionally mapping the variable of cake flavor to the color of the points and setting the size of all points to 3. A legend with default label is automatically added.</p><div class="no-row-height column-margin column-container"><span class="">In this case I also added <code>code-fold: true</code> so that code is only seen on demand.</span></div></div>
+<div class="cell">
+<details><summary>Code</summary><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-point</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: Output after adding the points geometry.</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co">#| code-fold: true</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>g <span class="ot">&lt;-</span> g <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> cake_flavor), <span class="at">size =</span> <span class="dv">3</span>)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>g</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details><div class="cell-output-display">
+<div id="fig-point" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="ggplot_files/figure-html/fig-point-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;2: Output after adding the points geometry.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>[After a few more plots…]</p>
+<p><a href="#fig-theme-light">Figure&nbsp;3</a> adds a complete theme called <code><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_light()</a></code>, which…</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-theme-light</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: Output after adding a "light" theme.</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>g <span class="ot">&lt;-</span> g <span class="sc">+</span> <span class="fu">theme_light</span>(<span class="at">base_size =</span> <span class="dv">20</span>)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>g</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-theme-light" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="ggplot_files/figure-html/fig-theme-light-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3: Output after adding a “light” theme.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section><section id="sec-git" class="level1" data-number="3"><h1 data-number="3">
 <span class="header-section-number">3</span> Git workflow</h1>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status <span class="co"># check that you're on main, nothing to commit...</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch tibble</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout tibble</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># work on your .qmd file, render</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status <span class="co"># check everything is fine</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"practice with tibbles"</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co"># you may also make several commits as you add a figure, a table...</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout main</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status <span class="co"># check everything is fine. New files should not be there</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> merge tibble</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Now the .qmd file, the rendered file and the help files should be present</span></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="co"># and send me a message!</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status <span class="co"># check that you're on main, nothing to commit...</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch ggplot</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout ggplot</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co"># work on your .qmd file, render</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status <span class="co"># check everything is fine</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"practice with ggplot"</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="co"># you may also make several commits as you add a figure, a table...</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout main</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status <span class="co"># check everything is fine. New files should not be there</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> merge ggplot</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Now the .qmd file, the rendered file and the help files should be present</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="co"># and send me a message!</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
-</section><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-<ol>
-<li id="fn1"><p>If you use <code>read_tsv()</code>, the <code>show_col_types = FALSE</code> argument will hide the printed output with the description of the column types, e.g.&nbsp;<code>my_data &lt;- read_tsv("filepath", show_col_types = FALSE)</code>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol></section></div></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");

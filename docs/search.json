@@ -1001,6 +1001,20 @@
     "text": "By number\nThe slice_ functions let you select rows based on position."
   },
   {
+    "objectID": "tidyverse/ggplot.html",
+    "href": "tidyverse/ggplot.html",
+    "title": "The Grammar of Graphics",
+    "section": "",
+    "text": "The goal of this assignment is to gain some familiarity with the Grammar of Graphics, i.e. the principles behind {ggplot2} syntax. Hadley Wickham’s article is a good start if you’re interested in that philosophy, and you can also check the ggplot2 book.\nIt is not necessary to know all the functions in order to create graphics with {ggplot2} —I think the most important points are to understand the logic of the layers and to learn how to look up what you need. It’s ok if you need to google how to draw a barplot, how to change the position of the legend, or what the available colors and color palettes are… but you have to get comfortable looking things up, learning about package extensions and combining the functions into the plot you are thinking of."
+  },
+  {
+    "objectID": "tidyverse/ggplot.html#code-to-copy",
+    "href": "tidyverse/ggplot.html#code-to-copy",
+    "title": "The Grammar of Graphics",
+    "section": "\n1.1 Code to copy",
+    "text": "1.1 Code to copy\n\n\nSetup\nPlot\n\n\n\nCopy the following code as is in an invisible chunk in your Quarto file (use include: false in the options).\n\nlibrary(tidyverse)\nset.seed(2022)\nrows <- 20\ncake_eaten <- tibble(\n  hunger_level = sample(1:100, rows, replace = TRUE),\n  cake_eaten = sample(1:100, rows, replace = TRUE)/100,\n  cake_flavor = sample(rep_len(c(\"vanilla\", \"chocolate\"), rows))\n  )\n\n\n\n\n\n\n\nTip\n\n\n\nIf you want, you can also write a small section in your file in which you print the table and/or describe what it represents! (If you don’t remember what I said you can make it up, as long as it kind of makes sense.)\nDescribing the table can be a good opportunity to practice inline code, e.g. `r nrow(cake_eaten)` to print the number of rows in the dataframe, or using other functions such as length(cake_eaten) to get the number of columns.\n\n\n\n\nThis is the final code for the plot you have to build, and the final output should look like the plot under the code. In total you should have at least 10 different plots: one for each of the layers!\n\nggplot(cake_eaten, aes(x = cake_eaten, y = hunger_level)) +\n  geom_point(aes(color = cake_flavor), size = 3) +\n  geom_hline(yintercept = 80, linetype = 2) +\n  geom_line(aes(group = cake_flavor), color = \"gray40\", linetype = 4) +\n  scale_color_manual(values = c(\"coral3\", \"darkcyan\")) +\n  scale_x_continuous(labels = scales::label_percent()) +\n  labs(x = \"Percentage of cake eaten\", y = \"Hunger level\", color = \"Cake flavor\") +\n  annotate(\"text\", x = 0, y = 80, label = \"Would eat anything\",\n           vjust = -0.6, hjust = 0, family = \"mono\") +\n  theme_light(base_size = 20) +\n  theme(legend.position = \"top\", text = element_text(family = \"serif\"))\n\n\n\n\n\n\n\n\n\n\nOrder of the layers\n\n\n\nThe order of the layers is not crucial to the output. If the geom_line() layers goes before the geom_point() layer, it will be drawn before it (and therefore under it), but otherwise, it doesn’t change much in which order you do them. That said, it can be useful to respect a certain logical order –it’s just not necessary and sometimes it doesn’t make a difference. It won’t throw an error.\nFor the assignment, please keep the order, but you’re welcome to explore and experiment what happens if you change it."
+  },
+  {
     "objectID": "tidyverse/tibbles.html",
     "href": "tidyverse/tibbles.html",
     "title": "Tibble manipulation",
@@ -1024,34 +1038,6 @@
   {
     "objectID": "tidyverse/tibbles.html#kableextra",
     "href": "tidyverse/tibbles.html#kableextra",
-    "title": "Tibble manipulation",
-    "section": "\n2.3 KableExtra",
-    "text": "2.3 KableExtra\nCheck out the documentation for HTML or PDF output to learn about {kableExtra} features."
-  },
-  {
-    "objectID": "tidyverse/ggplot.html",
-    "href": "tidyverse/ggplot.html",
-    "title": "Tibble manipulation",
-    "section": "",
-    "text": "The goal of this assignment is to practice working with tables using tidyverse. Tidyverse is a collection of R packages for data wrangling and visualization (among other things). A great resource to learn how to use it is R for data Science.\nFor this assignment I ask that you create both a script to manipulate the table and then a Quarto file to print and cross-reference the table (combining what you learned in the second assignment)."
-  },
-  {
-    "objectID": "tidyverse/ggplot.html#manipulating-the-table",
-    "href": "tidyverse/ggplot.html#manipulating-the-table",
-    "title": "Tibble manipulation",
-    "section": "\n2.1 Manipulating the table",
-    "text": "2.1 Manipulating the table\n\nUse mutate() to change the values of a column.\n\nUse filter() to subset the rows based on values in the columns. You can also use the slice_ family of functions to subset with other criteria:\n\nslice_head(n = 3) to select the first three rows; slice_tail(n = 5) to select the last five rows.\nslice_sample(n = 10) to select ten random rows, slice_sample(prop = 0.5) to select a random 50% of the rows.\n\n\nUse select() to subset the columns. You can also use rename() to rename columns without removing the rest.\nUse arrange() to sort the tibble based on the values in a column.\n\n\n\n\n\n\n\nExample\n\n\n\n\n\nAn example is the code below, which starts with an assoc object (product of assoc_scores()) and ends with a tibble with a selection of rows and columns.\n\nsubsetted <- hot_assoc %>% \n  as_tibble() %>% \n  filter(PMI > 1, G_signed >= 5, endsWith(type, \"nn\")) %>% \n  select(type, freq = a, PMI, ends_with(\"signed\"), OR) %>% \n  mutate(\n    log_OR = log(OR),\n    type = str_remove(type, \"/nn\")\n  )\n\n\nIn line 2 we use as_tibble() to turn the assoc object into a tibble to manipulate with {tidyverse} functions.\nIn line 3 we use filter() to subset the rows that have PMI larger than 1, G_signed larger than or equal to 5, and a type ending with “nn”, i.e. nouns.\nIn line 4 we use select() to subset the columns type, a, PMI and OR as well as those ending in “signed” and at the same time rename a to “freq”.\nIn lines 5 through 8 we use mutate() to create a new column log_OR that contains the logarithm of the OR column, and we modify the type column to remove the “/nn” ending from its elements.\nIn line 1 we assign the whole operation, initially applied to hot_assoc, to a variable called subsetted.\n\nEach operation of the pipe acts on the output of the operation before it."
-  },
-  {
-    "objectID": "tidyverse/ggplot.html#association-scores",
-    "href": "tidyverse/ggplot.html#association-scores",
-    "title": "Tibble manipulation",
-    "section": "\n2.2 Association scores",
-    "text": "2.2 Association scores\n\nUse assoc_scores() after surf_cooc() to create an association scores object.\nUse write_assoc(scores_object, filename) to save the object from your R script.\nUse scores_object <- read_assoc(filename) to read the object in the Quarto file."
-  },
-  {
-    "objectID": "tidyverse/ggplot.html#kableextra",
-    "href": "tidyverse/ggplot.html#kableextra",
     "title": "Tibble manipulation",
     "section": "\n2.3 KableExtra",
     "text": "2.3 KableExtra\nCheck out the documentation for HTML or PDF output to learn about {kableExtra} features."

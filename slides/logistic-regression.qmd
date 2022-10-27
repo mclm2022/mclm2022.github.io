@@ -4,6 +4,8 @@ subtitle: "Methods of Corpus Linguistics (class 6)"
 author: "Mariana Montes"
 format:
   revealjs:
+    preview-links: auto
+    multiplex: true
     chalkboard:
         buttons: false
     code-fold: true

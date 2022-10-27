@@ -37,6 +37,7 @@ website:
           - git/assignment.qmd
           - quarto/crossref.qmd
           - tidyverse/tibbles.qmd
+          - tidyverse/ggplot.qmd
     search: true
 format:
   html:
