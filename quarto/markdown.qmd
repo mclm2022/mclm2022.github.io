@@ -1,0 +1,216 @@
+---
+title: "Markdown and inline code"
+author: "Mariana Montes"
+subtitle: "Fifth assignment"
+number-sections: true
+---
+
+The goal of this assignment is to practice markdown formatting and inline code in Quarto.
+
+# Instructions
+
+1. Create a branch for the assignment, e.g. `markdown`. You will work here and only move your changes to `main` if and when you want to submit.
+
+1. Create a Quarto document (don't forget to remove its content!).
+
+1. Write a coherent text that makes use of *italics*, **bold**, `verbatim`, inline code and and bullet points as indicated in @sec-task. The prompt is to describe a file you will read from an URL, as indicated in @sec-data.
+
+1. Render your Quarto document into the output of your choice (word, html, pdf...).
+
+1. Stage and commit all the relevant files (see [Cheatsheet](../git/cheatsheet.qmd#daily-workflow) if you don't remember how).
+
+1. Merge the changes into your `main` branch (see [Cheatsheet](../git/cheatsheet.qmd#work-with-branches)).
+
+1. Push the changes to the remote.
+
+1. Send me an e-mail so I check if it went ok.
+
+# Concretely...
+
+Your Quarto report should be a description of a dataset: you will load the dataset and summarize some variables with a table and with a plot as shown in @sec-data. Remember to use cross-references to point to them!
+
+## Data {#sec-data}
+
+You will start your Quarto file with a hidden chunk (`include: false`) in which you load {tidyverse} and {kableExtra} and open the ["gonna-going to" file](https://raw.githubusercontent.com/mclm2022/mclm2022.github.io/main/slides/gonna_goingto.tsv).
+
+```{r}
+#| label: setup
+#| echo: fenced
+#| message: false
+library(tidyverse)
+library(kableExtra)
+options(digits = 3) # to print up to 3 digits
+url <- "https://raw.githubusercontent.com/mclm2022/mclm2022.github.io/main/slides/gonna_goingto.tsv"
+gt <- read_tsv(url, show_col_types = FALSE) %>% 
+  mutate(variant = fct_relevel(variant, "gonna"), register = fct_relevel(register, "informal"))
+```
+
+The output of `gt` should look something like this (but don't print it in Quarto!):
+
+```{r}
+#| label: gt-output
+gt
+```
+
+The columns `fit1` and `fit2` show the predicted values of the logistic regression model with only `comp_length` and with `comp_length` and `register` as predictors, respectively. You can use this data to obtain the Concordance Index "C" (notice you will need to install the {Hmisc} package):
+
+```{r}
+#| label: c
+# install.packages("Hmisc") # if not installed yet
+Hmisc::somers2(gt$fit2, gt$variant_num)[["C"]]
+```
+
+Other than describing the dataset itself, you will summarize the data in two ways: a contingency table between the `variant` and `register` columns and a boxplot that combines `variant`, `register` and `comp_length`. The code for both is given below. Feel free to edit them to fit your aesthetic preferences, if you want. In both cases, you may use `echo: false` to hide the code.
+
+::: {.panel-tabset}
+
+### Table
+
+```{r}
+#| label: tbl-contingency
+#| tbl-cap: Contingency table between `variant` and `register` variables.
+#| echo: fenced
+cont_table <- table(gt$variant, gt$register)
+cont_table %>% kbl() %>% 
+  kable_paper()
+```
+
+### Plot
+
+```{r}
+#| label: fig-boxplot
+#| fig-cap: Distribution of complement length across variants, distinguished by register.
+#| echo: fenced
+gt %>% ggplot(aes(x = variant, y = comp_length, fill = register)) +
+  geom_boxplot() +
+  scale_fill_manual(values = c("coral", "darkolivegreen3")) +
+  labs(x = "Variant", y = "Complement length", fill = "Register") +
+  theme_minimal(base_size = 15) +
+  theme(legend.position = "top")
+```
+
+:::
+
+## Tasks {#sec-task}
+
+The main task is to describe the dataset (particularly the table and the plot) in your own words. More concretely,
+
+- Use `verbatim` to refer to variables (or column names), e.g. "@tbl-contingency cross-tabulates the `variant` and `register` variables".
+
+- Use *italics* to refer to values of variables, e.g. "The instances of *gonna* are clearly biased towards the *informal* `register`".
+
+- Use **bold** to highlight concepts you will define (you may choose which), e.g. "@fig-boxplot is a **boxplot**, which represents the distribution of a numerical variable...".
+
+- Use bullet points to list the names of your columns like so:
+
+    + `variant`, with values *gonna* and *going_to*, indicating the choice between one expression or the other;
+
+    + `comp_length`, or complement length, with a minimum value of `r min(gt$comp_length)`...
+    
+When possible, use inline code to render values of your variables into your text. This will avoid typos and, if your dataset changes, the printed output will adapt. See @sec-inline for examples.
+
+## Tips {#sec-tips}
+
+### Markdown
+
+See [documentation](https://quarto.org/docs/authoring/markdown-basics.html).
+
+:::: {.columns}
+
+::: {.column width="50%"}
+```md
+`verbatim`
+
+*italics* or _italics_
+
+**bold** or __bold__
+
+- Bullet one
+
+- Bullet two
+
+    + Sub bullet point
+    
+- Bullet three
+```
+
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="40%"}
+<br>
+`verbatim`
+
+*italics* or _italics_
+
+**bold** or __bold__
+
+- Bullet one
+
+- Bullet two
+
+    + Sub bullet point
+    
+- Bullet three
+:::
+
+::::
+
+### Inline code {#sec-inline}
+
+While `verbatim` is rendered by surrounding text with backticks, R output can be included inline by preceding the text with "r ". Here are some examples of how you could use it in the description of your dataset.
+
+```md
+The dataset has `r knitr::inline_expr('nrow(gt)')` observations and `r knitr::inline_expr('length(gt)')` variables.
+```
+
+The dataset has `r nrow(gt)` observations and `r length(gt)` variables.
+
+```md
+There are `r knitr::inline_expr('cont_table["gonna", "informal"]')` instances of *gonna* in the *informal*
+`register`.
+```
+
+There are `r cont_table["gonna", "informal"]` instances of *gonna* in the *informal* `register`.
+
+```md
+The values of `comp_length`, which represents the **complement length**,
+span from `r knitr::inline_expr('min(gt$comp_length)')` to `r knitr::inline_expr('max(gt$comp_length)')`
+with a median of `r knitr::inline_expr('median(comp_length)')`.
+```
+
+The values of `comp_length`, which represents the **complement length**, spans from `r min(gt$comp_length)` to `r max(gt$comp_length)` with a median of `r median(gt$comp_length)`.
+
+```md
+The values of `variant` are *`r knitr::inline_expr('levels(gt$variant)[[1]]')`* and
+*`r knitr::inline_expr('levels(gt$variant)[[2]]')`*.
+```
+The values of `variant` are *`r levels(gt$variant)[[1]]`* and *`r levels(gt$variant)[[2]]`*.
+
+```md
+The Concordance index C for the logistic regression model with `variant` as outcome
+and `comp_length` and `register` as main effects
+is `r knitr::inline_expr('Hmisc::somers2(gt$fit2, gt$variant_num)[["C"]]')`.
+```
+The Concordance index C for the logistic regression model with `variant` as outcome and `comp_length` and `register` as main effects is `r Hmisc::somers2(gt$fit2, gt$variant_num)[["C"]]`.
+
+# Git workflow {#sec-git}
+
+```bash
+git status # check that you're on main, nothing to commit...
+git branch markdown
+git checkout markdown
+# work on your .qmd file, render
+git status # check everything is fine
+git add .
+git commit -m "practice with markdown and inline code"
+# you may also make several commits as you add a figure, a table...
+git checkout main
+git status # check everything is fine. New files should not be there
+git merge markdown
+# Now the .qmd file, the rendered file and the help files should be present
+git push
+# and send me a message!
+```

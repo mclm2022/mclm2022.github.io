@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.237">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="author" content="Mariana Montes">
+<title>Methods in Corpus Linguistics - Markdown and inline code</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script><script src="../site_libs/kePrint-0.0.1/kePrint.js"></script><link href="../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg navbar-dark "><div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Methods in Corpus Linguistics</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+<li class="nav-item">
+    <a class="nav-link" href="../index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-studies" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Studies</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-studies">
+<li>
+    <a class="dropdown-item" href="../studies/base.html">
+ <span class="dropdown-text">Keywords and collocation analysis on the BASE corpus</span></a>
+  </li>  
+    </ul>
+</li>
+  <li class="nav-item">
+    <a class="nav-link" href="../slides/index.html">
+ <span class="menu-text">Slides</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../git/cheatsheet.html">
+ <span class="menu-text">Git cheatsheet</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-assignments" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Assignments</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-assignments">
+<li>
+    <a class="dropdown-item" href="../git/assignment.html">
+ <span class="dropdown-text">Corpus description</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../quarto/crossref.html">
+ <span class="dropdown-text">Cross-references</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../tidyverse/tibbles.html">
+ <span class="dropdown-text">Tibble manipulation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../tidyverse/ggplot.html">
+ <span class="dropdown-text">The Grammar of Graphics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../quarto/markdown.html">
+ <span class="dropdown-text">Markdown and inline code</span></a>
+  </li>  
+    </ul>
+</li>
+</ul>
+<div class="quarto-toggle-container">
+                  <a href="" class="quarto-reader-toggle nav-link" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
+   
+  <ul>
+<li><a href="#instructions" id="toc-instructions" class="nav-link active" data-scroll-target="#instructions"><span class="toc-section-number">1</span>  Instructions</a></li>
+  <li>
+<a href="#concretely" id="toc-concretely" class="nav-link" data-scroll-target="#concretely"><span class="toc-section-number">2</span>  Concretely…</a>
+  <ul class="collapse">
+<li><a href="#sec-data" id="toc-sec-data" class="nav-link" data-scroll-target="#sec-data"><span class="toc-section-number">2.1</span>  Data</a></li>
+  <li><a href="#sec-task" id="toc-sec-task" class="nav-link" data-scroll-target="#sec-task"><span class="toc-section-number">2.2</span>  Tasks</a></li>
+  <li>
+<a href="#sec-tips" id="toc-sec-tips" class="nav-link" data-scroll-target="#sec-tips"><span class="toc-section-number">2.3</span>  Tips</a>
+  <ul class="collapse">
+<li><a href="#markdown" id="toc-markdown" class="nav-link" data-scroll-target="#markdown"><span class="toc-section-number">2.3.1</span>  Markdown</a></li>
+  <li><a href="#sec-inline" id="toc-sec-inline" class="nav-link" data-scroll-target="#sec-inline"><span class="toc-section-number">2.3.2</span>  Inline code</a></li>
+  </ul>
+</li>
+  </ul>
+</li>
+  <li><a href="#sec-git" id="toc-sec-git" class="nav-link" data-scroll-target="#sec-git"><span class="toc-section-number">3</span>  Git workflow</a></li>
+  </ul></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<h1 class="title">Markdown and inline code</h1>
+<p class="subtitle lead">Fifth assignment</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Mariana Montes </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+</header><p>The goal of this assignment is to practice markdown formatting and inline code in Quarto.</p>
+<section id="instructions" class="level1" data-number="1"><h1 data-number="1">
+<span class="header-section-number">1</span> Instructions</h1>
+<ol type="1">
+<li><p>Create a branch for the assignment, e.g.&nbsp;<code>markdown</code>. You will work here and only move your changes to <code>main</code> if and when you want to submit.</p></li>
+<li><p>Create a Quarto document (don’t forget to remove its content!).</p></li>
+<li><p>Write a coherent text that makes use of <em>italics</em>, <strong>bold</strong>, <code>verbatim</code>, inline code and and bullet points as indicated in <a href="#sec-task">Section&nbsp;2.2</a>. The prompt is to describe a file you will read from an URL, as indicated in <a href="#sec-data">Section&nbsp;2.1</a>.</p></li>
+<li><p>Render your Quarto document into the output of your choice (word, html, pdf…).</p></li>
+<li><p>Stage and commit all the relevant files (see <a href="../git/cheatsheet.html#daily-workflow">Cheatsheet</a> if you don’t remember how).</p></li>
+<li><p>Merge the changes into your <code>main</code> branch (see <a href="../git/cheatsheet.html#work-with-branches">Cheatsheet</a>).</p></li>
+<li><p>Push the changes to the remote.</p></li>
+<li><p>Send me an e-mail so I check if it went ok.</p></li>
+</ol></section><section id="concretely" class="level1" data-number="2"><h1 data-number="2">
+<span class="header-section-number">2</span> Concretely…</h1>
+<p>Your Quarto report should be a description of a dataset: you will load the dataset and summarize some variables with a table and with a plot as shown in <a href="#sec-data">Section&nbsp;2.1</a>. Remember to use cross-references to point to them!</p>
+<section id="sec-data" class="level2" data-number="2.1"><h2 data-number="2.1" class="anchored" data-anchor-id="sec-data">
+<span class="header-section-number">2.1</span> Data</h2>
+<p>You will start your Quarto file with a hidden chunk (<code>include: false</code>) in which you load {tidyverse} and {kableExtra} and open the <a href="https://raw.githubusercontent.com/mclm2022/mclm2022.github.io/main/slides/gonna_goingto.tsv">“gonna-going to” file</a>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: setup</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#| message: false</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(kableExtra)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">digits =</span> <span class="dv">3</span>) <span class="co"># to print up to 3 digits</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>url <span class="ot">&lt;-</span> <span class="st">"https://raw.githubusercontent.com/mclm2022/mclm2022.github.io/main/slides/gonna_goingto.tsv"</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>gt <span class="ot">&lt;-</span> <span class="fu">read_tsv</span>(url, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">variant =</span> <span class="fu">fct_relevel</span>(variant, <span class="st">"gonna"</span>), <span class="at">register =</span> <span class="fu">fct_relevel</span>(register, <span class="st">"informal"</span>))</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The output of <code>gt</code> should look something like this (but don’t print it in Quarto!):</p>
+<div class="cell">
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">gt</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 100 × 7
+   variant comp_length register variant_num source    fit1    fit2
+   &lt;fct&gt;         &lt;dbl&gt; &lt;fct&gt;          &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt;   &lt;dbl&gt;
+ 1 gonna          6.72 formal             0 q      0.00791 0.0496 
+ 2 gonna          5.06 informal           0 x      0.348   0.137  
+ 3 gonna          5.28 informal           0 z      0.233   0.0814 
+ 4 gonna          4.84 informal           0 i      0.480   0.221  
+ 5 gonna          5.74 informal           0 m      0.0881  0.0260 
+ 6 gonna          3.68 informal           0 f      0.946   0.861  
+ 7 gonna          5.15 informal           0 j      0.297   0.111  
+ 8 gonna          6.22 informal           0 p      0.0274  0.00727
+ 9 gonna          6.60 informal           0 p      0.0107  0.00269
+10 gonna          6.19 formal             0 c      0.0294  0.174  
+# … with 90 more rows</code></pre>
+</div>
+</div>
+<p>The columns <code>fit1</code> and <code>fit2</code> show the predicted values of the logistic regression model with only <code>comp_length</code> and with <code>comp_length</code> and <code>register</code> as predictors, respectively. You can use this data to obtain the Concordance Index “C” (notice you will need to install the {Hmisc} package):</p>
+<div class="cell">
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># install.packages("Hmisc") # if not installed yet</span></span>
+<span><span class="fu">Hmisc</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/Hmisc/man/somers2.html">somers2</a></span><span class="op">(</span><span class="va">gt</span><span class="op">$</span><span class="va">fit2</span>, <span class="va">gt</span><span class="op">$</span><span class="va">variant_num</span><span class="op">)</span><span class="op">[[</span><span class="st">"C"</span><span class="op">]</span><span class="op">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.984</code></pre>
+</div>
+</div>
+<p>Other than describing the dataset itself, you will summarize the data in two ways: a contingency table between the <code>variant</code> and <code>register</code> columns and a boxplot that combines <code>variant</code>, <code>register</code> and <code>comp_length</code>. The code for both is given below. Feel free to edit them to fit your aesthetic preferences, if you want. In both cases, you may use <code>echo: false</code> to hide the code.</p>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Table</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Plot</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: tbl-contingency</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co">#| tbl-cap: Contingency table between `variant` and `register` variables.</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>cont_table <span class="ot">&lt;-</span> <span class="fu">table</span>(gt<span class="sc">$</span>variant, gt<span class="sc">$</span>register)</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>cont_table <span class="sc">%&gt;%</span> <span class="fu">kbl</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_paper</span>()</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="tbl-contingency" class="anchored">
+
+<table class=" lightable-paper" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto;">
+<caption>Table&nbsp;1:  Contingency table between variant and register variables. </caption>
+ <thead><tr>
+<th style="text-align:left;">   </th>
+   <th style="text-align:right;"> informal </th>
+   <th style="text-align:right;"> formal </th>
+  </tr></thead>
+<tbody>
+<tr>
+<td style="text-align:left;"> gonna </td>
+   <td style="text-align:right;"> 43 </td>
+   <td style="text-align:right;"> 7 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> going_to </td>
+   <td style="text-align:right;"> 15 </td>
+   <td style="text-align:right;"> 35 </td>
+  </tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-boxplot</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: Distribution of complement length across variants, distinguished by register.</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>gt <span class="sc">%&gt;%</span> <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> variant, <span class="at">y =</span> comp_length, <span class="at">fill =</span> register)) <span class="sc">+</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"coral"</span>, <span class="st">"darkolivegreen3"</span>)) <span class="sc">+</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Variant"</span>, <span class="at">y =</span> <span class="st">"Complement length"</span>, <span class="at">fill =</span> <span class="st">"Register"</span>) <span class="sc">+</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">15</span>) <span class="sc">+</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"top"</span>)</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-boxplot" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="markdown_files/figure-html/fig-boxplot-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1: Distribution of complement length across variants, distinguished by register.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id="sec-task" class="level2" data-number="2.2"><h2 data-number="2.2" class="anchored" data-anchor-id="sec-task">
+<span class="header-section-number">2.2</span> Tasks</h2>
+<p>The main task is to describe the dataset (particularly the table and the plot) in your own words. More concretely,</p>
+<ul>
+<li><p>Use <code>verbatim</code> to refer to variables (or column names), e.g.&nbsp;“<a href="#tbl-contingency">Table&nbsp;1</a> cross-tabulates the <code>variant</code> and <code>register</code> variables”.</p></li>
+<li><p>Use <em>italics</em> to refer to values of variables, e.g.&nbsp;“The instances of <em>gonna</em> are clearly biased towards the <em>informal</em> <code>register</code>”.</p></li>
+<li><p>Use <strong>bold</strong> to highlight concepts you will define (you may choose which), e.g.&nbsp;“<a href="#fig-boxplot">Figure&nbsp;1</a> is a <strong>boxplot</strong>, which represents the distribution of a numerical variable…”.</p></li>
+<li>
+<p>Use bullet points to list the names of your columns like so:</p>
+<ul>
+<li><p><code>variant</code>, with values <em>gonna</em> and <em>going_to</em>, indicating the choice between one expression or the other;</p></li>
+<li><p><code>comp_length</code>, or complement length, with a minimum value of 1…</p></li>
+</ul>
+</li>
+</ul>
+<p>When possible, use inline code to render values of your variables into your text. This will avoid typos and, if your dataset changes, the printed output will adapt. See <a href="#sec-inline">Section&nbsp;2.3.2</a> for examples.</p>
+</section><section id="sec-tips" class="level2" data-number="2.3"><h2 data-number="2.3" class="anchored" data-anchor-id="sec-tips">
+<span class="header-section-number">2.3</span> Tips</h2>
+<section id="markdown" class="level3" data-number="2.3.1"><h3 data-number="2.3.1" class="anchored" data-anchor-id="markdown">
+<span class="header-section-number">2.3.1</span> Markdown</h3>
+<p>See <a href="https://quarto.org/docs/authoring/markdown-basics.html">documentation</a>.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="sourceCode" id="cb8"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="in">`verbatim`</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>*italics* or _italics_</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>**bold** or __bold__</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Bullet one</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Bullet two</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="ss">    + </span>Sub bullet point</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Bullet three</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column" style="width:10%;">
+
+</div><div class="column" style="width:40%;">
+<p><br><code>verbatim</code></p>
+<p><em>italics</em> or <em>italics</em></p>
+<p><strong>bold</strong> or <strong>bold</strong></p>
+<ul>
+<li><p>Bullet one</p></li>
+<li>
+<p>Bullet two</p>
+<ul>
+<li>Sub bullet point</li>
+</ul>
+</li>
+<li><p>Bullet three</p></li>
+</ul>
+</div>
+</div>
+</section><section id="sec-inline" class="level3" data-number="2.3.2"><h3 data-number="2.3.2" class="anchored" data-anchor-id="sec-inline">
+<span class="header-section-number">2.3.2</span> Inline code</h3>
+<p>While <code>verbatim</code> is rendered by surrounding text with backticks, R output can be included inline by preceding the text with “r”. Here are some examples of how you could use it in the description of your dataset.</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>The dataset has <span class="in">`r nrow(gt)`</span> observations and <span class="in">`r length(gt)`</span> variables.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The dataset has 100 observations and 7 variables.</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>There are <span class="in">`r cont_table["gonna", "informal"]`</span> instances of *gonna* in the *informal*</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="in">`register`</span>.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>There are 43 instances of <em>gonna</em> in the <em>informal</em> <code>register</code>.</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>The values of <span class="in">`comp_length`</span>, which represents the **complement length**,</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>span from <span class="in">`r min(gt$comp_length)`</span> to <span class="in">`r max(gt$comp_length)`</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>with a median of <span class="in">`r median(comp_length)`</span>.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The values of <code>comp_length</code>, which represents the <strong>complement length</strong>, spans from 1 to 6.969 with a median of 4.85.</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>The values of <span class="in">`variant`</span> are *`r levels(gt$variant)[[1]]`* and</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>*`r levels(gt$variant)[[2]]`*.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The values of <code>variant</code> are <em>gonna</em> and <em>going_to</em>.</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>The Concordance index C for the logistic regression model with <span class="in">`variant`</span> as outcome</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>and <span class="in">`comp_length`</span> and <span class="in">`register`</span> as main effects</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>is <span class="in">`r Hmisc::somers2(gt$fit2, gt$variant_num)[["C"]]`</span>.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The Concordance index C for the logistic regression model with <code>variant</code> as outcome and <code>comp_length</code> and <code>register</code> as main effects is 0.984.</p>
+</section></section></section><section id="sec-git" class="level1" data-number="3"><h1 data-number="3">
+<span class="header-section-number">3</span> Git workflow</h1>
+<div class="sourceCode" id="cb14"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status <span class="co"># check that you're on main, nothing to commit...</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch markdown</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout markdown</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="co"># work on your .qmd file, render</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status <span class="co"># check everything is fine</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"practice with markdown and inline code"</span></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a><span class="co"># you may also make several commits as you add a figure, a table...</span></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout main</span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status <span class="co"># check everything is fine. New files should not be there</span></span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> merge markdown</span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Now the .qmd file, the rendered file and the help files should be present</span></span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a><span class="co"># and send me a message!</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+
+</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer"><div class="nav-footer">
+      <div class="nav-footer-center">Methods in Corpus Linguistics — Mariana Montes, 2022</div>
+  </div>
+</footer>
+
+
+</body></html>
