@@ -18,7 +18,7 @@ from: markdown+emoji
 ```{r}
 #| label: setup
 #| include: false
-headings <- c("Introduction", "Probabilities, odds and logit", "Interpretation and evaluation", "Easystats") 
+headings <- c("Introduction", "Probabilities, odds and logit", "Evaluation", "Interactions", "Random effects") 
 library(tidyverse)
 library(easystats)
 library(kableExtra)
@@ -31,8 +31,8 @@ lnplot <- function(df, x, y, title) {
     theme(aspect.ratio = 1) +
     labs(title = title)
 }
-kb_style <- function(df, position = "center") {
-  df %>% head(10) %>% kbl() %>%
+kb_style <- function(df, position = "center", n = 10) {
+  df %>% head(n) %>% kbl() %>%
     kable_paper(full_width = FALSE, font_size = 22, position = position)
 }
 ```
@@ -56,24 +56,37 @@ i <- 1
 ```{r}
 #| label: logistic-code
 #| code-fold: false
+#| code-line-numbers: "|1|2-5|6-13|14-15|16-17|19-23"
 set.seed(2022)
-gonna <- tibble(gt = rep("gonna", 50), comp_length = rnorm(50, 6, 0.8))
-going_to <- tibble(gt = rep("going_to", 50), comp_length = rnorm(50, 3, 1.2))
+gonna <- tibble(variant = rep("gonna", 50), comp_length = rnorm(50, 6, 0.8),
+                register = sample(c("formal", "informal"), 50, replace = TRUE, prob = c(0.1, 0.9)))
+going_to <- tibble(variant = rep("going_to", 50), comp_length = rnorm(50, 3, 1.2),
+                   register = sample(c("formal", "informal"), 50, replace = TRUE, prob = c(0.7, 0.3)))
 gt <- bind_rows(gonna, going_to) %>%
   mutate(
     comp_length = if_else(comp_length > 1, comp_length, 1),
-    gt = fct_relevel(gt, "gonna"), gt_num = as.numeric(gt)-1
-    )
+    variant = fct_relevel(variant, "gonna"),
+    variant_num = as.numeric(variant)-1,
+    register = fct_relevel(register, "informal"),
+    source = factor(sample(letters, n(), replace = TRUE))
+  )
+m1 <- glm(variant ~ comp_length, data = gt, family = binomial(logit))
+gt$fit1 <- m1$fitted.values
+m2 <- glm(variant ~ comp_length + register, data = gt, family = binomial(logit))
+gt$fit2 <- m2$fitted.values
 
-m3 <- glm(gt ~ comp_length, data = gt, family = binomial(logit))
-gt$fit <- m3$fitted.values
-
-gonna_plot <- ggplot(gt, aes(x = comp_length, y = gt_num)) +
-  geom_point(size = 3) +
+gonna_plot <- ggplot(gt, aes(x = comp_length, y = variant_num)) +
+  geom_point(size = 3) + ylim(0, 1) +
   labs(x = "Length of complement", y = "Choice of construction") +
-  scale_y_continuous(breaks = c(0, 1), limits = c(0, 1),
-                     labels = c("gonna", "going to")) +
+  scale_y_continuous(breaks = c(0, 1), labels = c("gonna", "going to")) +
   theme_minimal(base_size = 20) + theme(aspect.ratio = 1)
+```
+
+
+```{r}
+#| label: save-gonna
+#| include: false
+write_tsv(gt, "gonna_goingto.tsv")
 ```
 
 ::: {.footer}
@@ -85,8 +98,8 @@ gonna_plot <- ggplot(gt, aes(x = comp_length, y = gt_num)) +
 ```{r}
 #| label: logistic-data
 #| layout-ncol: 2
-kb_style(filter(gt, gt == "gonna"), "float_left")
-kb_style(filter(gt, gt == "going_to"), "left")
+kb_style(filter(gt, variant == "gonna"), "float_left")
+kb_style(filter(gt, variant == "going_to"), "left")
 ```
 
 ::: {.footer}
@@ -140,7 +153,7 @@ The fit has an S shape.
 ```{r}
 #| label: logistic-fit
 gonna_plot +
-  geom_line(aes(y = fit), color = "goldenrod", size = 2)
+  geom_line(aes(y = fit1), color = "goldenrod", size = 2)
 ```
 
 ::: {.footer}
@@ -151,18 +164,53 @@ gonna_plot +
 
 ```{r}
 #| label: logistic-model
-summary(m3)
+summary(m2)
 ```
 
-::: notes
-We can turn the intercept estimate into odds and probabilities (of success when all predictors are at 0).
-In this case, when comp_length = 0, the probabilities of encountering "success" (going to) are `exp(11.645)/(1+exp(11.645))`, i.e. about 0.9999912.
-For other estimates, we can go to odds but not on probabilities because the value also depends on other predictors (?) and it depends on the point on the curve.
-Here, for each unit that comp_length increases, the ODDS of going to are lower (because the logit is
-negative), i.e. you have to multiply the odds by 0.933 (and therefore it goes down).
-In any case, you can compute it for single points too. This is why exp(estimate) gives you the ODDS RATIO,
-i.e. the ratio between the odds in one case and in the other case.
+::: {.footer}
+`r headings[[i]]`
 :::
+
+## Interpretation {.smaller}
+
+```{r}
+#| label: interpretation
+#| include: false
+intercept <- m2$coefficients[[1]] # log odds
+cl_lor <- m2$coefficients[["comp_length"]]
+reg_lor <- m2$coefficients[["registerformal"]]
+```
+
+:::: {.columns}
+
+::: {.column width="35%" .incremental}
+### Intercept
+
+- **log odds** of outcome ("going to") when all predictors are at 0 (`comp_length` = 0).
+
+- odds = `exp(`r intercept`)` = `r prettyNum(exp(intercept))`
+
+- prob = odds/(odds+1) $\approx$ `r exp(intercept)/(exp(intercept)+1)`
+:::
+
+::: {.column width="65%" .incremental}
+### Coefficients
+
+- **log odds ratios**: positive increases chances of "going to", negative of "gonna".
+
+- odds ratio
+
+    + of `comp_length` = `exp(`r cl_lor`)` = `r exp(cl_lor)`
+    
+    + of `register` = `exp(`r reg_lor`)` = `r exp(reg_lor)`
+
+. . .
+
+> The odds of *going to* vs *gonna* in the formal register are `r exp(reg_lor)` times higher than those in the informal register, other variables being controlled for.
+
+:::
+
+::::
 
 ::: {.footer}
 `r headings[[i]]`
@@ -176,62 +224,106 @@ i <- i+1
 
 # `r headings[[i]]`
 
-## Probabilities
+## Probabilities {.smaller}
 
-```{r}
-#| label: proboddslog
-#| include: false
-pol <- tribble(
-  ~"Value", ~"Minimum", ~"Neutral value", ~"Maximum", ~"Description",
-  r"(probabilities $P$)", "0", "0.5", "1", "Number of successes divided by number of trials.", 
-  r"(odds $\frac{P}{1-P}$)", "0", "1", r"($\infty$)", r"(Probability of success divided by the probability of failure. Undefined for $P=1$.)",
-  r"[logit, log odds $\log\left(\frac{P}{1-P}\right)$]", r"($-\infty$)", "0", r"($\infty$)", r"(If positive, success is more likely; if negative failure is more likely. Undefined for $P=0$ and for $P=1$.)"
-  )
-pol_kbl <- function(pol_sub) {
-  pol_sub %>% 
-    kbl() %>% kable_paper(font_size = 25) %>% 
-    column_spec(1, width = "4cm", border_right = TRUE) %>% 
-    column_spec(2:4, width = "3cm") %>% 
-    column_spec(5, width = "7cm", border_left = TRUE)
-}
-```
+:::: {.columns}
 
-```{r}
-#| label: probs
-#| echo: false
-pol_kbl(slice_head(pol, n=1))
-```
+::: {.column width="30%"}
+###  probs.
+
+- $P$
+
+- 0 - 0.5 - 1
+
+- Number of successes divided by number of trials.
+:::
+
+::: {.column width="70%"}
+
+:::
+
+::::
 
 ::: {.footer}
 `r headings[[i]]`
 :::
 
-## Odds
+## Odds {.smaller}
 
-```{r}
-#| label: odds
-#| echo: false
-pol_kbl(slice_head(pol, n=2))
-```
+:::: {.columns}
+
+::: {.column width="30%"}
+### probs.
+
+- $P$
+
+- 0 - 0.5 - 1
+
+- Number of successes divided by number of trials.
+:::
+
+
+::: {.column width="30%"}
+### odds
+
+- $\frac{P}{1-P}$
+
+- 0 - 1 - $\infty$
+
+- Probability of success divided by the probability of failure.
+
+- Undefined for $P=1$.
+:::
+
+::: {.column width="30%"}
+
+:::
+
+::::
 
 ::: {.footer}
 `r headings[[i]]`
 :::
 
-## Logit
+## Logit {.smaller}
 
-```{r}
-#| label: logit
-#| echo: false
-pol_kbl(pol)
-```
+:::: {.columns}
 
-. . .
+::: {.column width="30%"}
+###  probs.
 
-::: callout-tip
-### Same direction!
-Higher $P$ &rarr; higher odds &rarr; higher logit
+- $P$
+
+- 0 - 0.5 - 1
+
+- Number of successes divided by number of trials.
 :::
+
+::: {.column width="30%"}
+### odds
+
+- $\frac{P}{1-P}$
+
+- 0 - 1 - $\infty$
+
+- Probability of success divided by the probability of failure.
+
+- Undefined for $P=1$.
+:::
+
+::: {.column width="30%"}
+### logit
+
+- $\log\left(\frac{P}{1-P}\right)$
+
+- $-\infty$ - 0 - $\infty$
+
+- If positive, success is more likely; if negative failure is more likely.
+
+- Undefined for $P=0$ and for $P=1$.
+:::
+
+::::
 
 ::: {.footer}
 `r headings[[i]]`
@@ -241,6 +333,7 @@ Higher $P$ &rarr; higher odds &rarr; higher logit
 
 ```{r}
 #| code-line-numbers: "|3,4,6|8|7,9|10"
+#| code-fold: false
 #| output-location: column
 library(MASS) # to print fractions
 
@@ -333,7 +426,7 @@ i <- i+1
 
 ```{r}
 #| label: logistic-model2
-summary(m3)
+summary(m2)
 ```
 
 ::: {.footer}
@@ -358,11 +451,39 @@ $-2 \log(L)$ with $L$ the likelihood of encountering the data if the model is tr
 
 AIC (Akaike Information Criterion)
 
-:   corrected residual deviance (to compare models with different N. of predictors)
+:   corrected residual deviance (to compare models with different N. of predictors) - the smaller the better
 
 Deviance residuals
 
 :   contribution of each observation to the residual deviance.
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Predicted probability {.smaller}
+
+```{r}
+#| label: predicted
+#| include: false
+pred_logit <- intercept + cl_lor * 4 + reg_lor
+```
+
+$$g(x) = \beta_0 + \beta_1x_1 + \beta_2x_2 + ...$$
+
+Let's predict the probability of *going to* when complement length is 4 and register is formal.
+
+. . .
+
+$$g(x) = `r intercept` + `r cl_lor`\times 4 + `r reg_lor` \times 1 = `r pred_logit`$$
+
+. . .
+
+odds = `exp(`r pred_logit`)` = `r exp(pred_logit)`
+
+. . .
+
+$$P(x) = \frac{`r exp(pred_logit)`}{`r exp(pred_logit)` + 1} = `r exp(pred_logit)/(exp(pred_logit)+1)`$$
 
 ::: {.footer}
 `r headings[[i]]`
@@ -383,16 +504,15 @@ We take all pairs of observations in which the response variable is different (o
 ::: {.column width="50%"}
 ```{r}
 #| label: pred-power
-set.seed(2022)
+set.seed(0)
 pred_power <- tibble(
-  gt0 = sample(filter(gt, gt == "gonna")$fit, 10, replace = FALSE),
-  gt1 = sample(filter(gt, gt == "going_to")$fit, 10, replace = FALSE))
-kb_style(pred_power)
+  gt0 = sample(filter(gt, variant == "gonna")$fit2, 15, replace = FALSE),
+  gt1 = sample(filter(gt, variant == "going_to")$fit2, 15, replace = FALSE))
+kb_style(pred_power, n = 15)
 ```
 :::
 
 ::::
-
 
 ::: {.footer}
 `r headings[[i]]`
@@ -415,7 +535,8 @@ kb_style(pred_power)
 #| label: pred-power-tbl
 pred_power <- pred_power %>%
   mutate(C = gt1 > gt0, D = gt0 > gt1, T = gt1 == gt0)
-kb_style(pred_power)
+kb_style(pred_power, n = 15) %>%
+  column_spec(3, background = spec_color(pred_power$C, option = "H", begin = 0.8, end = 0.45))
 ```
 :::
 
@@ -442,7 +563,8 @@ $$c = \frac{C+T/2}{C+D+T} = \frac{`r pred_power$C`+`r pred_power$T`/2}{`r pred_p
 
 ```{r}
 #| label: somers-c
-Hmisc::somers2(gt$fit, gt$gt_num)[["C"]]
+#| code-fold: false
+Hmisc::somers2(gt$fit2, gt$variant_num)[["C"]]
 ```
 
 ::: {.footer}
@@ -465,18 +587,6 @@ Hmisc::somers2(gt$fit, gt$gt_num)[["C"]]
 `r headings[[i]]`
 :::
 
-## There is more!
-
-With the case study we'll also see:
-
-- Mixed effect models (with random effects)
-
-- Conditional inference trees and random forests
-
-::: {.footer}
-`r headings[[i]]`
-:::
-
 ```{r}
 #| label: add-heading4
 #| include: false
@@ -485,42 +595,178 @@ i <- i+1
 
 # `r headings[[i]]`
 
-## {report} package {.smaller}
+## What is an interaction?
+
+::: msg
+When the effect of a predictor depends on the value of another predictor.
+:::
+
+Formula: `y ~ x1 + x2 + x1:x2` = `y ~ x1*x2`
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Examples
+
+Possible interactions of complement length and register (is the text formal or informal?) on choice of *gonna*.
+
+- The effect of complement length is also positive/negative but stronger/weaker when texts are informal.
+
+- The effect of complement length is positive/negative when texts are informal, reversed when texts are formal.
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Model with interactions {.smaller}
+
+:::: {.columns}
+
+::: {.column width="60%"}
+```{r}
+#| label: interactions
+#| code-fold: false
+m3 <- glm(variant ~ comp_length*register, data = gt, family = binomial(logit))
+summary(m3)
+```
+:::
+
+::: {.column width="40%"}
+### Interpretation
+
+- Intercept is interpreted in the same way.
+
+- `comp_length` is the effect of complement length *in informal register*.
+
+- `registerformal` is the effect of the formal register at *0 complement length*.
+
+- `comp_length:registerformal` is the difference in the effect of complement length in formal register, compared to informal register.
+
+:::
+
+::::
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Visualization
 
 ```{r}
-#| label: report-3
-report(m3)
+#| label: ggeffects
+library(ggeffects)
+plot(ggpredict(m3, c("comp_length", "register")))
 ```
 
 ::: {.footer}
 `r headings[[i]]`
 :::
 
-## {parameters} package {.smaller}
+```{r}
+#| label: add-heading5
+#| include: false
+i <- i+1
+```
+
+# `r headings[[i]]`
+
+## Fixed vs random effects
+
+Unlike **fixed effects** (what we have dealt with up to now), **random effects**:
+
+- May not be replicable in a different dataset.
+
+- Involve a *sample* of the possible values in the population.
+
+Examples: speaker, lexical effects, topic... &rarr; often operationalized as *filename*.
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Random intercept
+
+::: msg
+The intercept can vary.
+:::
+
+. . .
+
+- Different individuals prefer *gonna* over *going to* regardless of complement length.
+
+- Certain children always produce longer utterances than others of the same age.
+
+. . .
+
+::: callout-important
+### Nested random intercept
+
+E.g. random intercept for filename *and* random intercept for register; each filename occurs in only one register.
+:::
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Random slope
+
+::: msg
+The slope of a fixed effect can vary.
+:::
+
+A given predictor can have different effects in different texts.
+
+. . .
+
+- Complement length is more influential in the choice of *gonna* for some individuals than for others.
+
+- For certain children, utterance length increases with age at a higher pace than of others.
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## How to
+
+- `lme4::glmer()` instead of `glm()`; `lme4::lmer()` instead of `lm()`.
+
+    + The `control` argument helps us deal with convergence issues.
+
+. . .
+
+- Extension of the R formula:
+
+    + `(1 | filename)` for `filename` as random effect.
+    
+    + `(age | child)` for `child` as a random slope for `age`.
+    
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Model with random effects
 
 ```{r}
-#| label: parameters-3
-#| layout-ncol: 2
-print_md(model_parameters(m3))
-
-plot(model_parameters(m3))
+#| label: mixed
+#| code-fold: false
+m4 <- lme4::glmer(variant ~ comp_length*register + (1 | source), data = gt, family = binomial)
+summary(m4)
 ```
 
 ::: {.footer}
 `r headings[[i]]`
 :::
 
-## {performance} package {.smaller}
+## Compare models
 
 ```{r}
-#| label: performance-3
-print_md(model_performance(m3))
+#| label: performance
+performance::compare_performance(m1, m2, m3, m4, metrics = "AIC")
 ```
 
 ::: {.footer}
 `r headings[[i]]`
 :::
-
-<!-- TODO what checks do we need? -->
 
 # Next: Correspondence Analysis

@@ -291,7 +291,7 @@
     "href": "slides/index.html",
     "title": "Slides",
     "section": "",
-    "text": "These are the slides of the course, Fall of 2022. If you would like to download slides as PDF, please follow the instructions in the Quarto documentation.\n\n1 Introduction\n\n\n\n\n\n2 Read corpora\nDownload the R script.\n\n\n\n\n\n3 Contingency tables\nDownload the R script.\n\n\n\n\n\n\n4 Association measures\nDownload the R script.\n\n\n\n\n\n5 Linear regression\nDownload the R script."
+    "text": "These are the slides of the course, Fall of 2022. If you would like to download slides as PDF, please follow the instructions in the Quarto documentation.\n\n1 Introduction\n\n\n\n\n\n2 Read corpora\nDownload the R script.\n\n\n\n\n\n3 Contingency tables\nDownload the R script.\n\n\n\n\n\n\n4 Association measures\nDownload the R script.\n\n\n\n\n\n5 Linear regression\nDownload the R script.\n\n\n\n\n\n6 Logistic regression\nDownload the R script."
   },
   {
     "objectID": "slides/contingency-tables.html#outline",
@@ -775,6 +775,216 @@
     "title": "Linear regression analysis",
     "section": "{performance} package II",
     "text": "{performance} package II\n\nSimpleMultiple\n\n\n\n\nCode\ncheck_heteroscedasticity(m1)\n\n\nOK: Error variance appears to be homoscedastic (p = 0.237).\n\n\nCode\ncheck_model(m1, check = c(\"qq\", \"ncv\"))\n\n\n\n\n\n\n\n\n\nCode\ncheck_heteroscedasticity(m2)\n\n\nOK: Error variance appears to be homoscedastic (p = 0.947).\n\n\nCode\ncheck_model(m2, check = c(\"qq\", \"ncv\"))\n\n\n\n\n\n\n\n\n\nEasystats"
+  },
+  {
+    "objectID": "slides/logistic-regression.html#outline",
+    "href": "slides/logistic-regression.html#outline",
+    "title": "Logistic regression analysis",
+    "section": "Outline",
+    "text": "Outline\n\nIntroduction\nProbabilities, odds and logit\nEvaluation\nInteractions\nRandom effects"
+  },
+  {
+    "objectID": "slides/logistic-regression.html#set-up-code",
+    "href": "slides/logistic-regression.html#set-up-code",
+    "title": "Logistic regression analysis",
+    "section": "Set up code",
+    "text": "Set up code\n\nset.seed(2022)\ngonna <- tibble(variant = rep(\"gonna\", 50), comp_length = rnorm(50, 6, 0.8),\n                register = sample(c(\"formal\", \"informal\"), 50, replace = TRUE, prob = c(0.1, 0.9)))\ngoing_to <- tibble(variant = rep(\"going_to\", 50), comp_length = rnorm(50, 3, 1.2),\n                   register = sample(c(\"formal\", \"informal\"), 50, replace = TRUE, prob = c(0.7, 0.3)))\ngt <- bind_rows(gonna, going_to) %>%\n  mutate(\n    comp_length = if_else(comp_length > 1, comp_length, 1),\n    variant = fct_relevel(variant, \"gonna\"),\n    variant_num = as.numeric(variant)-1,\n    register = fct_relevel(register, \"informal\"),\n    source = factor(sample(letters, n(), replace = TRUE))\n  )\nm1 <- glm(variant ~ comp_length, data = gt, family = binomial(logit))\ngt$fit1 <- m1$fitted.values\nm2 <- glm(variant ~ comp_length + register, data = gt, family = binomial(logit))\ngt$fit2 <- m2$fitted.values\n\ngonna_plot <- ggplot(gt, aes(x = comp_length, y = variant_num)) +\n  geom_point(size = 3) + ylim(0, 1) +\n  labs(x = \"Length of complement\", y = \"Choice of construction\") +\n  scale_y_continuous(breaks = c(0, 1), labels = c(\"gonna\", \"going to\")) +\n  theme_minimal(base_size = 20) + theme(aspect.ratio = 1)\n\n\nIntroduction"
+  },
+  {
+    "objectID": "slides/logistic-regression.html#gonna-dataset",
+    "href": "slides/logistic-regression.html#gonna-dataset",
+    "title": "Logistic regression analysis",
+    "section": "gonna dataset",
+    "text": "gonna dataset\n\n\nCode\nkb_style(filter(gt, variant == \"gonna\"), \"float_left\")\nkb_style(filter(gt, variant == \"going_to\"), \"left\")\n\n\n\n\n\n\n \n  \n    variant \n    comp_length \n    register \n    variant_num \n    source \n    fit1 \n    fit2 \n  \n \n\n  \n    gonna \n    6.72 \n    formal \n    0 \n    q \n    0.008 \n    0.050 \n  \n  \n    gonna \n    5.06 \n    informal \n    0 \n    x \n    0.348 \n    0.137 \n  \n  \n    gonna \n    5.28 \n    informal \n    0 \n    z \n    0.233 \n    0.081 \n  \n  \n    gonna \n    4.84 \n    informal \n    0 \n    i \n    0.480 \n    0.221 \n  \n  \n    gonna \n    5.74 \n    informal \n    0 \n    m \n    0.088 \n    0.026 \n  \n  \n    gonna \n    3.68 \n    informal \n    0 \n    f \n    0.946 \n    0.861 \n  \n  \n    gonna \n    5.15 \n    informal \n    0 \n    j \n    0.297 \n    0.111 \n  \n  \n    gonna \n    6.22 \n    informal \n    0 \n    p \n    0.027 \n    0.007 \n  \n  \n    gonna \n    6.60 \n    informal \n    0 \n    p \n    0.011 \n    0.003 \n  \n  \n    gonna \n    6.19 \n    formal \n    0 \n    c \n    0.029 \n    0.174 \n  \n\n\n\n\n\n\n\n \n  \n    variant \n    comp_length \n    register \n    variant_num \n    source \n    fit1 \n    fit2 \n  \n \n\n  \n    going_to \n    2.75 \n    formal \n    1 \n    g \n    0.995 \n    0.999 \n  \n  \n    going_to \n    4.22 \n    formal \n    1 \n    r \n    0.817 \n    0.975 \n  \n  \n    going_to \n    4.64 \n    formal \n    1 \n    x \n    0.608 \n    0.929 \n  \n  \n    going_to \n    4.77 \n    formal \n    1 \n    q \n    0.526 \n    0.901 \n  \n  \n    going_to \n    4.07 \n    informal \n    1 \n    f \n    0.869 \n    0.691 \n  \n  \n    going_to \n    1.78 \n    formal \n    1 \n    y \n    1.000 \n    1.000 \n  \n  \n    going_to \n    5.25 \n    formal \n    1 \n    p \n    0.251 \n    0.723 \n  \n  \n    going_to \n    4.29 \n    informal \n    1 \n    g \n    0.789 \n    0.551 \n  \n  \n    going_to \n    1.71 \n    informal \n    1 \n    h \n    1.000 \n    0.999 \n  \n  \n    going_to \n    1.00 \n    formal \n    1 \n    c \n    1.000 \n    1.000 \n  \n\n\n\n\n\n\n\n\nIntroduction"
+  },
+  {
+    "objectID": "slides/logistic-regression.html#scatterplot",
+    "href": "slides/logistic-regression.html#scatterplot",
+    "title": "Logistic regression analysis",
+    "section": "Scatterplot",
+    "text": "Scatterplot\nWhat is the relationship between the length of the complement and the choice of going to/gonna?\n\n\nCode\ngonna_plot\n\n\n\n\nIntroduction"
+  },
+  {
+    "objectID": "slides/logistic-regression.html#linear-fit",
+    "href": "slides/logistic-regression.html#linear-fit",
+    "title": "Logistic regression analysis",
+    "section": "Linear fit",
+    "text": "Linear fit\nThe relationship is not linear.\n\n\n\n\nCode\ngonna_plot + \n  geom_smooth(method = \"lm\", se = FALSE, color = \"darkolivegreen4\")\n\n\n\n\n\n\n\nThe residuals are not normally distributed.\nNot all values are possible (probabilities go between 0 and 1).\n\n\n\n\nIntroduction"
+  },
+  {
+    "objectID": "slides/logistic-regression.html#logistic-fit",
+    "href": "slides/logistic-regression.html#logistic-fit",
+    "title": "Logistic regression analysis",
+    "section": "Logistic fit",
+    "text": "Logistic fit\nThe fit has an S shape.\n\n\nCode\ngonna_plot +\n  geom_line(aes(y = fit1), color = \"goldenrod\", size = 2)\n\n\n\n\nIntroduction"
+  },
+  {
+    "objectID": "slides/logistic-regression.html#model",
+    "href": "slides/logistic-regression.html#model",
+    "title": "Logistic regression analysis",
+    "section": "Model",
+    "text": "Model\n\n\nCode\nsummary(m2)\n\n\n\nCall:\nglm(formula = variant ~ comp_length + register, family = binomial(logit), \n    data = gt)\n\nDeviance Residuals: \n    Min       1Q   Median       3Q      Max  \n-1.9876  -0.2053  -0.0209   0.1067   2.1787  \n\nCoefficients:\n               Estimate Std. Error z value Pr(>|z|)    \n(Intercept)      11.582      2.899    4.00  6.5e-05 ***\ncomp_length      -2.651      0.613   -4.32  1.5e-05 ***\nregisterformal    3.284      1.068    3.08   0.0021 ** \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n(Dispersion parameter for binomial family taken to be 1)\n\n    Null deviance: 138.63  on 99  degrees of freedom\nResidual deviance:  34.02  on 97  degrees of freedom\nAIC: 40.02\n\nNumber of Fisher Scoring iterations: 7\n\n\n\nIntroduction"
+  },
+  {
+    "objectID": "slides/logistic-regression.html#interpretation",
+    "href": "slides/logistic-regression.html#interpretation",
+    "title": "Logistic regression analysis",
+    "section": "Interpretation",
+    "text": "Interpretation\n\n\nIntercept\n\nlog odds of outcome (“going to”) when all predictors are at 0 (comp_length = 0).\nodds = exp(11.582) = 107138\nprob = odds/(odds+1) \\(\\approx\\) 1\n\n\nCoefficients\n\nlog odds ratios: positive increases chances of “going to”, negative of “gonna”.\nodds ratio\n\nof comp_length = exp(-2.651) = 0.071\nof register = exp(3.284) = 26.676\n\n\n\n\nThe odds of going to vs gonna in the formal register are 26.676 times higher than those in the informal register, other variables being controlled for.\n\n\n\n\n\nIntroduction"
+  },
+  {
+    "objectID": "slides/logistic-regression.html#probabilities",
+    "href": "slides/logistic-regression.html#probabilities",
+    "title": "Logistic regression analysis",
+    "section": "Probabilities",
+    "text": "Probabilities\n\n\nprobs.\n\n\\(P\\)\n0 - 0.5 - 1\nNumber of successes divided by number of trials.\n\n\n\n\n\n\nProbabilities, odds and logit"
+  },
+  {
+    "objectID": "slides/logistic-regression.html#odds",
+    "href": "slides/logistic-regression.html#odds",
+    "title": "Logistic regression analysis",
+    "section": "Odds",
+    "text": "Odds\n\n\nprobs.\n\n\\(P\\)\n0 - 0.5 - 1\nNumber of successes divided by number of trials.\n\n\nodds\n\n\\(\\frac{P}{1-P}\\)\n0 - 1 - \\(\\infty\\)\nProbability of success divided by the probability of failure.\nUndefined for \\(P=1\\).\n\n\n\n\n\n\nProbabilities, odds and logit"
+  },
+  {
+    "objectID": "slides/logistic-regression.html#logit",
+    "href": "slides/logistic-regression.html#logit",
+    "title": "Logistic regression analysis",
+    "section": "Logit",
+    "text": "Logit\n\n\nprobs.\n\n\\(P\\)\n0 - 0.5 - 1\nNumber of successes divided by number of trials.\n\n\nodds\n\n\\(\\frac{P}{1-P}\\)\n0 - 1 - \\(\\infty\\)\nProbability of success divided by the probability of failure.\nUndefined for \\(P=1\\).\n\n\nlogit\n\n\\(\\log\\left(\\frac{P}{1-P}\\right)\\)\n\\(-\\infty\\) - 0 - \\(\\infty\\)\nIf positive, success is more likely; if negative failure is more likely.\nUndefined for \\(P=0\\) and for \\(P=1\\).\n\n\n\n\nProbabilities, odds and logit"
+  },
+  {
+    "objectID": "slides/logistic-regression.html#simulation",
+    "href": "slides/logistic-regression.html#simulation",
+    "title": "Logistic regression analysis",
+    "section": "Simulation",
+    "text": "Simulation\n\n\nlibrary(MASS) # to print fractions\n\nprobabilities <- c(1/c(7:2),\n                   1-(1/c(3:7)))\nprobs <- tibble(\n  P = probabilities,\n  P_frac = as.character(fractions(P)),\n  odds = P/(1-P),\n  odds_frac = as.character(fractions(odds)),\n  logit = log(odds)\n)\nkbl(probs) %>% kable_paper(font_size = 22) %>% \n  row_spec(6, bold = TRUE)\n\n\n\n\n \n  \n    P \n    P_frac \n    odds \n    odds_frac \n    logit \n  \n \n\n  \n    0.143 \n    1/7 \n    0.167 \n    1/6 \n    -1.792 \n  \n  \n    0.167 \n    1/6 \n    0.200 \n    1/5 \n    -1.609 \n  \n  \n    0.200 \n    1/5 \n    0.250 \n    1/4 \n    -1.386 \n  \n  \n    0.250 \n    1/4 \n    0.333 \n    1/3 \n    -1.099 \n  \n  \n    0.333 \n    1/3 \n    0.500 \n    1/2 \n    -0.693 \n  \n  \n    0.500 \n    1/2 \n    1.000 \n    1 \n    0.000 \n  \n  \n    0.667 \n    2/3 \n    2.000 \n    2 \n    0.693 \n  \n  \n    0.750 \n    3/4 \n    3.000 \n    3 \n    1.099 \n  \n  \n    0.800 \n    4/5 \n    4.000 \n    4 \n    1.386 \n  \n  \n    0.833 \n    5/6 \n    5.000 \n    5 \n    1.609 \n  \n  \n    0.857 \n    6/7 \n    6.000 \n    6 \n    1.792 \n  \n\n\n\n\n\n\n\nWe’ll create a vector probabilities with the values of fractions from \\(\\frac{1}{7}\\) to \\(\\frac{1}{2}\\) and then from \\(1-\\frac{1}{3}\\) to \\(1-\\frac{1}{7}\\).\nMASS::fractions() prints them as fractions.\nFrom there we compute odds and logit.\n\n\nProbabilities, odds and logit"
+  },
+  {
+    "objectID": "slides/logistic-regression.html#linear-vs-logistic-relationships",
+    "href": "slides/logistic-regression.html#linear-vs-logistic-relationships",
+    "title": "Logistic regression analysis",
+    "section": "Linear vs logistic relationships",
+    "text": "Linear vs logistic relationships\nLinear relation logit ~ x entails logistic curve p ~ x.\n\n\nCode\nwith_x <- tibble(x = 1:30, logit = -3.5 + 0.3*x, odds = exp(logit), P = odds/(1+odds))\n\n\n\n\n\n\nCode\nlnplot(with_x, x, logit, \"logit ~ X\")\n\n\n\n\n\n\n\n\nCode\nlnplot(with_x, x, P, \"P ~ X\")\n\n\n\n\n\n\n\n\nProbabilities, odds and logit"
+  },
+  {
+    "objectID": "slides/logistic-regression.html#model-1",
+    "href": "slides/logistic-regression.html#model-1",
+    "title": "Logistic regression analysis",
+    "section": "Model",
+    "text": "Model\n\n\nCode\nsummary(m2)\n\n\n\nCall:\nglm(formula = variant ~ comp_length + register, family = binomial(logit), \n    data = gt)\n\nDeviance Residuals: \n    Min       1Q   Median       3Q      Max  \n-1.9876  -0.2053  -0.0209   0.1067   2.1787  \n\nCoefficients:\n               Estimate Std. Error z value Pr(>|z|)    \n(Intercept)      11.582      2.899    4.00  6.5e-05 ***\ncomp_length      -2.651      0.613   -4.32  1.5e-05 ***\nregisterformal    3.284      1.068    3.08   0.0021 ** \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n(Dispersion parameter for binomial family taken to be 1)\n\n    Null deviance: 138.63  on 99  degrees of freedom\nResidual deviance:  34.02  on 97  degrees of freedom\nAIC: 40.02\n\nNumber of Fisher Scoring iterations: 7\n\n\n\nEvaluation"
+  },
+  {
+    "objectID": "slides/logistic-regression.html#deviance",
+    "href": "slides/logistic-regression.html#deviance",
+    "title": "Logistic regression analysis",
+    "section": "Deviance",
+    "text": "Deviance\n\nNull deviance\n\ndiscrepancy between data and intercept-only model (like SST)\n\nResidual deviance\n\ndiscrepancy between data and fitted model (like SSE)\n\n\n\n\n\n\n\n\nComputation\n\n\n\\(-2 \\log(L)\\) with \\(L\\) the likelihood of encountering the data if the model is true.\n\n\n\n\nAIC (Akaike Information Criterion)\n\ncorrected residual deviance (to compare models with different N. of predictors) - the smaller the better\n\nDeviance residuals\n\ncontribution of each observation to the residual deviance.\n\n\n\nEvaluation"
+  },
+  {
+    "objectID": "slides/logistic-regression.html#predicted-probability",
+    "href": "slides/logistic-regression.html#predicted-probability",
+    "title": "Logistic regression analysis",
+    "section": "Predicted probability",
+    "text": "Predicted probability\n\\[g(x) = \\beta_0 + \\beta_1x_1 + \\beta_2x_2 + ...\\]\nLet’s predict the probability of going to when complement length is 4 and register is formal.\n\n\\[g(x) = 11.582 + -2.651\\times 4 + 3.284 \\times 1 = 4.26\\]\n\n\nodds = exp(4.26) = 70.802\n\n\n\\[P(x) = \\frac{70.802}{70.802 + 1} = 0.986\\]\n\nEvaluation"
+  },
+  {
+    "objectID": "slides/logistic-regression.html#measures-of-predictive-power",
+    "href": "slides/logistic-regression.html#measures-of-predictive-power",
+    "title": "Logistic regression analysis",
+    "section": "Measures of predictive power",
+    "text": "Measures of predictive power\n\n\nWe take all pairs of observations in which the response variable is different (one of gonna, one of going to).\n\ngt0 is what the model predicted for the “gonna” element.\ngt1 is what the model predicted for the “going to” element.\n\n\n\n\nCode\nset.seed(0)\npred_power <- tibble(\n  gt0 = sample(filter(gt, variant == \"gonna\")$fit2, 15, replace = FALSE),\n  gt1 = sample(filter(gt, variant == \"going_to\")$fit2, 15, replace = FALSE))\nkb_style(pred_power, n = 15)\n\n\n\n\n \n  \n    gt0 \n    gt1 \n  \n \n\n  \n    0.011 \n    0.999 \n  \n  \n    0.221 \n    1.000 \n  \n  \n    0.009 \n    0.999 \n  \n  \n    0.050 \n    1.000 \n  \n  \n    0.021 \n    0.895 \n  \n  \n    0.001 \n    1.000 \n  \n  \n    0.793 \n    1.000 \n  \n  \n    0.006 \n    0.942 \n  \n  \n    0.090 \n    0.998 \n  \n  \n    0.265 \n    1.000 \n  \n  \n    0.006 \n    0.514 \n  \n  \n    0.019 \n    1.000 \n  \n  \n    0.174 \n    0.093 \n  \n  \n    0.111 \n    0.420 \n  \n  \n    0.003 \n    1.000 \n  \n\n\n\n\n\n\n\n\nEvaluation"
+  },
+  {
+    "objectID": "slides/logistic-regression.html#c-d-t",
+    "href": "slides/logistic-regression.html#c-d-t",
+    "title": "Logistic regression analysis",
+    "section": "C, D, T",
+    "text": "C, D, T\n\n\n\nC = concordant pair = prediction is higher for “going to” 😁\nD = discordant pair = the prediction is higher for “gonna” ☹️\nT = tie = the prediction is the same for both 😐\n\n\n\n\nCode\npred_power <- pred_power %>%\n  mutate(C = gt1 > gt0, D = gt0 > gt1, T = gt1 == gt0)\nkb_style(pred_power, n = 15) %>%\n  column_spec(3, background = spec_color(pred_power$C, option = \"H\", begin = 0.8, end = 0.45))\n\n\n\n\n \n  \n    gt0 \n    gt1 \n    C \n    D \n    T \n  \n \n\n  \n    0.011 \n    0.999 \n    TRUE \n    FALSE \n    FALSE \n  \n  \n    0.221 \n    1.000 \n    TRUE \n    FALSE \n    FALSE \n  \n  \n    0.009 \n    0.999 \n    TRUE \n    FALSE \n    FALSE \n  \n  \n    0.050 \n    1.000 \n    TRUE \n    FALSE \n    FALSE \n  \n  \n    0.021 \n    0.895 \n    TRUE \n    FALSE \n    FALSE \n  \n  \n    0.001 \n    1.000 \n    TRUE \n    FALSE \n    FALSE \n  \n  \n    0.793 \n    1.000 \n    TRUE \n    FALSE \n    FALSE \n  \n  \n    0.006 \n    0.942 \n    TRUE \n    FALSE \n    FALSE \n  \n  \n    0.090 \n    0.998 \n    TRUE \n    FALSE \n    FALSE \n  \n  \n    0.265 \n    1.000 \n    TRUE \n    FALSE \n    FALSE \n  \n  \n    0.006 \n    0.514 \n    TRUE \n    FALSE \n    FALSE \n  \n  \n    0.019 \n    1.000 \n    TRUE \n    FALSE \n    FALSE \n  \n  \n    0.174 \n    0.093 \n    FALSE \n    TRUE \n    FALSE \n  \n  \n    0.111 \n    0.420 \n    TRUE \n    FALSE \n    FALSE \n  \n  \n    0.003 \n    1.000 \n    TRUE \n    FALSE \n    FALSE \n  \n\n\n\n\n\n\n\n\nEvaluation"
+  },
+  {
+    "objectID": "slides/logistic-regression.html#c-value",
+    "href": "slides/logistic-regression.html#c-value",
+    "title": "Logistic regression analysis",
+    "section": "C-value",
+    "text": "C-value\n\n\nCode\npred_power <- pred_power %>%\n  summarize(C = sum(C), D = sum(D), T = sum(T))\nkb_style(pred_power)\n\n\n\n\n \n  \n    C \n    D \n    T \n  \n \n\n  \n    14 \n    1 \n    0 \n  \n\n\n\n\n\n\n\\[c = \\frac{C+T/2}{C+D+T} = \\frac{14+0/2}{14+1+0} = 0.933\\]\n\n\n\nHmisc::somers2(gt$fit2, gt$variant_num)[[\"C\"]]\n\n[1] 0.984\n\n\n\nEvaluation"
+  },
+  {
+    "objectID": "slides/logistic-regression.html#linear-vs-logistic-regression",
+    "href": "slides/logistic-regression.html#linear-vs-logistic-regression",
+    "title": "Logistic regression analysis",
+    "section": "Linear vs logistic regression",
+    "text": "Linear vs logistic regression\n\n\n\n\n\n\n\n\n\nLinear regression\nLogistic regression\n\n\n\n\nResponse variable\nNumerical\nCategorical\n\n\nRelationship between predictor estimate and response\nLinear\nLogistic1\n\n\nFitting function\nOSL (ordinary least squares)\nMLE (maximum likelihood estimation)\n\n\nModel comparison\nF-test\nAIC\n\n\nEvaluation metric\n\\(R^2\\)\n\\(C\\)\n\n\nBase R function\nlm()\nglm()\n\n\n\n\nEvaluation\n\nLinear relationship between estimate and log odds of response."
+  },
+  {
+    "objectID": "slides/logistic-regression.html#what-is-an-interaction",
+    "href": "slides/logistic-regression.html#what-is-an-interaction",
+    "title": "Logistic regression analysis",
+    "section": "What is an interaction?",
+    "text": "What is an interaction?\n\nWhen the effect of a predictor depends on the value of another predictor.\n\nFormula: y ~ x1 + x2 + x1:x2 = y ~ x1*x2\n\nInteractions"
+  },
+  {
+    "objectID": "slides/logistic-regression.html#examples",
+    "href": "slides/logistic-regression.html#examples",
+    "title": "Logistic regression analysis",
+    "section": "Examples",
+    "text": "Examples\nPossible interactions of complement length and register (is the text formal or informal?) on choice of gonna.\n\nThe effect of complement length is also positive/negative but stronger/weaker when texts are informal.\nThe effect of complement length is positive/negative when texts are informal, reversed when texts are formal.\n\n\nInteractions"
+  },
+  {
+    "objectID": "slides/logistic-regression.html#model-with-interactions",
+    "href": "slides/logistic-regression.html#model-with-interactions",
+    "title": "Logistic regression analysis",
+    "section": "Model with interactions",
+    "text": "Model with interactions\n\n\n\nm3 <- glm(variant ~ comp_length*register, data = gt, family = binomial(logit))\nsummary(m3)\n\n\nCall:\nglm(formula = variant ~ comp_length * register, family = binomial(logit), \n    data = gt)\n\nDeviance Residuals: \n    Min       1Q   Median       3Q      Max  \n-2.5689  -0.0792  -0.0030   0.1584   1.8033  \n\nCoefficients:\n                           Estimate Std. Error z value Pr(>|z|)   \n(Intercept)                   18.78       7.10    2.64   0.0082 **\ncomp_length                   -4.22       1.55   -2.72   0.0065 **\nregisterformal                -8.39       7.89   -1.06   0.2878   \ncomp_length:registerformal     2.39       1.67    1.43   0.1529   \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n(Dispersion parameter for binomial family taken to be 1)\n\n    Null deviance: 138.629  on 99  degrees of freedom\nResidual deviance:  31.103  on 96  degrees of freedom\nAIC: 39.1\n\nNumber of Fisher Scoring iterations: 8\n\n\n\nInterpretation\n\nIntercept is interpreted in the same way.\ncomp_length is the effect of complement length in informal register.\nregisterformal is the effect of the formal register at 0 complement length.\ncomp_length:registerformal is the difference in the effect of complement length in formal register, compared to informal register.\n\n\n\n\nInteractions"
+  },
+  {
+    "objectID": "slides/logistic-regression.html#visualization",
+    "href": "slides/logistic-regression.html#visualization",
+    "title": "Logistic regression analysis",
+    "section": "Visualization",
+    "text": "Visualization\n\n\nCode\nlibrary(ggeffects)\nplot(ggpredict(m3, c(\"comp_length\", \"register\")))\n\n\n\n\nInteractions"
+  },
+  {
+    "objectID": "slides/logistic-regression.html#fixed-vs-random-effects",
+    "href": "slides/logistic-regression.html#fixed-vs-random-effects",
+    "title": "Logistic regression analysis",
+    "section": "Fixed vs random effects",
+    "text": "Fixed vs random effects\nUnlike fixed effects (what we have dealt with up to now), random effects:\n\nMay not be replicable in a different dataset.\nInvolve a sample of the possible values in the population.\n\nExamples: speaker, lexical effects, topic… → often operationalized as filename.\n\nRandom effects"
+  },
+  {
+    "objectID": "slides/logistic-regression.html#random-intercept",
+    "href": "slides/logistic-regression.html#random-intercept",
+    "title": "Logistic regression analysis",
+    "section": "Random intercept",
+    "text": "Random intercept\n\nThe intercept can vary.\n\n\n\nDifferent individuals prefer gonna over going to regardless of complement length.\nCertain children always produce longer utterances than others of the same age.\n\n\n\n\n\n\n\n\n\nNested random intercept\n\n\nE.g. random intercept for filename and random intercept for register; each filename occurs in only one register.\n\n\n\n\nRandom effects"
+  },
+  {
+    "objectID": "slides/logistic-regression.html#random-slope",
+    "href": "slides/logistic-regression.html#random-slope",
+    "title": "Logistic regression analysis",
+    "section": "Random slope",
+    "text": "Random slope\n\nThe slope of a fixed effect can vary.\n\nA given predictor can have different effects in different texts.\n\n\nComplement length is more influential in the choice of gonna for some individuals than for others.\nFor certain children, utterance length increases with age at a higher pace than of others.\n\n\nRandom effects"
+  },
+  {
+    "objectID": "slides/logistic-regression.html#how-to",
+    "href": "slides/logistic-regression.html#how-to",
+    "title": "Logistic regression analysis",
+    "section": "How to",
+    "text": "How to\n\nlme4::glmer() instead of glm(); lme4::lmer() instead of lm().\n\nThe control argument helps us deal with convergence issues.\n\n\n\n\nExtension of the R formula:\n\n(1 | filename) for filename as random effect.\n(age | child) for child as a random slope for age.\n\n\n\nRandom effects"
+  },
+  {
+    "objectID": "slides/logistic-regression.html#model-with-random-effects",
+    "href": "slides/logistic-regression.html#model-with-random-effects",
+    "title": "Logistic regression analysis",
+    "section": "Model with random effects",
+    "text": "Model with random effects\n\nm4 <- lme4::glmer(variant ~ comp_length*register + (1 | source), data = gt, family = binomial)\nsummary(m4)\n\nGeneralized linear mixed model fit by maximum likelihood (Laplace\n  Approximation) [glmerMod]\n Family: binomial  ( logit )\nFormula: variant ~ comp_length * register + (1 | source)\n   Data: gt\n\n     AIC      BIC   logLik deviance df.resid \n    40.7     53.7    -15.3     30.7       95 \n\nScaled residuals: \n   Min     1Q Median     3Q    Max \n-4.041 -0.031 -0.001  0.063  1.343 \n\nRandom effects:\n Groups Name        Variance Std.Dev.\n source (Intercept) 1.6      1.26    \nNumber of obs: 100, groups:  source, 26\n\nFixed effects:\n                           Estimate Std. Error z value Pr(>|z|)  \n(Intercept)                   23.19      11.72    1.98    0.048 *\ncomp_length                   -5.18       2.56   -2.03    0.043 *\nregisterformal               -10.30       9.77   -1.05    0.292  \ncomp_length:registerformal     2.94       2.18    1.35    0.177  \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nCorrelation of Fixed Effects:\n            (Intr) cmp_ln rgstrf\ncomp_length -0.997              \nregistrfrml -0.829  0.827       \ncmp_lngth:r  0.890 -0.894 -0.985\n\n\n\nRandom effects"
+  },
+  {
+    "objectID": "slides/logistic-regression.html#compare-models",
+    "href": "slides/logistic-regression.html#compare-models",
+    "title": "Logistic regression analysis",
+    "section": "Compare models",
+    "text": "Compare models\n\n\nCode\nperformance::compare_performance(m1, m2, m3, m4, metrics = \"AIC\")\n\n\n# Comparison of Model Performance Indices\n\nName |    Model | AIC (weights)\n-------------------------------\nm1   |      glm |  51.6 (<.001)\nm2   |      glm |  40.0 (0.303)\nm3   |      glm |  39.1 (0.479)\nm4   | glmerMod |  40.7 (0.217)\n\n\n\nRandom effects"
   },
   {
     "objectID": "studies/base.html",

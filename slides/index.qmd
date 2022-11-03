@@ -63,15 +63,17 @@ If you would like to download slides as PDF, please follow the [instructions in 
 
 </div>
 
-<!-- # [Logistic regression](logistic-regression.qmd){target="_blank"} -->
+# [Logistic regression](logistic-regression.qmd){target="_blank"}
 
-<!-- <div> -->
+[Download the R script.](https://raw.githubusercontent.com/mclm2022/mclm2022.github.io/main/resources/logistic-regression.R)
 
-<!-- ```{=html} -->
-<!-- <iframe class="slide-deck" src="logistic-regression.html"></iframe> -->
-<!-- ``` -->
+<div>
 
-<!-- </div> -->
+```{=html}
+<iframe class="slide-deck" src="logistic-regression.html"></iframe>
+```
+
+</div>
 
 <!-- # [Correspondence Analysis](correspondence-analysis.qmd){target="_blank"} -->
 

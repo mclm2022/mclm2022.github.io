@@ -2,10 +2,13 @@
   font-size: 0.5em;
 }
 
-.reveal .center {
+.msg {
   text-align: center;
+  border-style: solid;
+  border-width: 3px 10px;
+  border-color: var(--r-link-color);
+  border-radius: 10px;
 }
-
 details>summary {
   font-size: 0.5em;
 }
