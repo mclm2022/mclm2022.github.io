@@ -37,7 +37,7 @@ summary(m1)
 
 ## Plot data ===================================================================
 g <- ggplot(utt_lengths, aes(x = age, y = utterance_length)) +
-  g + geom_point(size = 3) +
+  geom_point(size = 3) +
   labs(x = "Age", y = "Utterance length") +
   xlim(0,18) + ylim(0,15) +
   theme_minimal(base_size = 20) + theme(aspect.ratio = 1)
