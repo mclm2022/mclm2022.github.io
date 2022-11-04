@@ -11,7 +11,7 @@ project:
     - slides/assoc.qmd
     - slides/linear-regression.qmd
     - slides/logistic-regression.qmd
-    - studies/base.qmd
+    - studies/*
     - git/*.qmd
     - quarto/*.qmd
     - tidyverse/*.qmd
@@ -27,7 +27,8 @@ website:
       - text: Studies
         menu:
           - studies/base.qmd
-      #     - studies/genitive-alternation-retrieval.qmd
+          - studies/genitive-alternation-retrieval.qmd
+          - studies/genitive-alternation-analysis.qmd
       #     - studies/ca-trump-clinton.qmd
       - text: Slides
         href: slides/index.qmd

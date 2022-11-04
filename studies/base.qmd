@@ -1,5 +1,6 @@
 ---
 title: "Keywords and collocation analysis on the BASE corpus"
+subtitle: "Based on Dirk Speelman's course material"
 fig-cap-location: margin
 ---
 

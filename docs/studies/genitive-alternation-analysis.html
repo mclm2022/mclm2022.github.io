@@ -1,0 +1,1502 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.237">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Methods in Corpus Linguistics - Genitive Alternation II: Analysis</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script><script src="../site_libs/kePrint-0.0.1/kePrint.js"></script><link href="../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg navbar-dark "><div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Methods in Corpus Linguistics</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+<li class="nav-item">
+    <a class="nav-link" href="../index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-studies" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Studies</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-studies">
+<li>
+    <a class="dropdown-item" href="../studies/base.html">
+ <span class="dropdown-text">Keywords and collocation analysis on the BASE corpus</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../studies/genitive-alternation-retrieval.html">
+ <span class="dropdown-text">Genitive Alternation I: Retrieval</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../studies/genitive-alternation-analysis.html">
+ <span class="dropdown-text">Genitive Alternation II: Analysis</span></a>
+  </li>  
+    </ul>
+</li>
+  <li class="nav-item">
+    <a class="nav-link" href="../slides/index.html">
+ <span class="menu-text">Slides</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../git/cheatsheet.html">
+ <span class="menu-text">Git cheatsheet</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-assignments" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Assignments</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-assignments">
+<li>
+    <a class="dropdown-item" href="../git/assignment.html">
+ <span class="dropdown-text">Corpus description</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../quarto/crossref.html">
+ <span class="dropdown-text">Cross-references</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../tidyverse/tibbles.html">
+ <span class="dropdown-text">Tibble manipulation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../tidyverse/ggplot.html">
+ <span class="dropdown-text">The Grammar of Graphics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../quarto/markdown.html">
+ <span class="dropdown-text">Markdown and inline code</span></a>
+  </li>  
+    </ul>
+</li>
+</ul>
+<div class="quarto-toggle-container">
+                  <a href="" class="quarto-reader-toggle nav-link" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
+   
+  <ul>
+<li>
+<a href="#setup" id="toc-setup" class="nav-link active" data-scroll-target="#setup">Setup</a>
+  <ul class="collapse">
+<li><a href="#exploring-the-data" id="toc-exploring-the-data" class="nav-link" data-scroll-target="#exploring-the-data">Exploring the data</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#conditional-inference-tree" id="toc-conditional-inference-tree" class="nav-link" data-scroll-target="#conditional-inference-tree">Conditional inference tree</a>
+  <ul class="collapse">
+<li><a href="#conditional-trees-in-relation-to-other-techniques" id="toc-conditional-trees-in-relation-to-other-techniques" class="nav-link" data-scroll-target="#conditional-trees-in-relation-to-other-techniques">Conditional trees in relation to other techniques</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#logistic-regression-analysis" id="toc-logistic-regression-analysis" class="nav-link" data-scroll-target="#logistic-regression-analysis">Logistic regression analysis</a>
+  <ul class="collapse">
+<li><a href="#maximal-model" id="toc-maximal-model" class="nav-link" data-scroll-target="#maximal-model">Maximal model</a></li>
+  <li><a href="#removing-one-predictor" id="toc-removing-one-predictor" class="nav-link" data-scroll-target="#removing-one-predictor">Removing one predictor</a></li>
+  <li><a href="#second-model" id="toc-second-model" class="nav-link" data-scroll-target="#second-model">Second model</a></li>
+  <li><a href="#concordance-index-c" id="toc-concordance-index-c" class="nav-link" data-scroll-target="#concordance-index-c">Concordance index C</a></li>
+  <li><a href="#interpretation" id="toc-interpretation" class="nav-link" data-scroll-target="#interpretation">Interpretation</a></li>
+  <li><a href="#plotting-effects" id="toc-plotting-effects" class="nav-link" data-scroll-target="#plotting-effects">Plotting effects</a></li>
+  </ul>
+</li>
+  <li><a href="#easystats" id="toc-easystats" class="nav-link" data-scroll-target="#easystats">Easystats</a></li>
+  </ul></nav>
+    </div>
+<!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<h1 class="title">Genitive Alternation II: Analysis</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header><p>This is the second part of a variation study focusing on the genitive alternation in English, using the Brown corpus. This part illustrates the analysis with conditional inference trees and <a href="../slides/logistic-regression.html">mixed-effects logistic regression</a>, whereas the <a href="../studies/genitive-alternation-retrieval.html">first part</a> focused on retrieving observations of the alternation.</p>
+<section id="setup" class="level1 page-columns page-full"><h1>Setup</h1>
+<p>For this study, as always, we need to activate the packages <a href="https://tidyverse.tidyverse.org">tidyverse</a> and <a href="https://github.com/masterclm/mclm">mclm</a>. We will also use <a href="http://haozhu233.github.io/kableExtra/">kableExtra</a> to print some tables.</p>
+<div class="cell">
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org">tidyverse</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/masterclm/mclm">mclm</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="http://haozhu233.github.io/kableExtra/">kableExtra</a></span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="page-columns page-full"><p>In addition, we’ll need the packages <a href="https://github.com/runehaubo/lmerTestR">lmerTest</a>, which loads <a href="https://github.com/lme4/lme4/">lme4</a>, for the mixed-effects logistic regression; <a href="http://partykit.r-forge.r-project.org/partykit/">partykit</a> for the conditional tree; <a href="https://afex.singmann.science/">afex</a> for comparing models with different predictors and <a href="https://strengejacke.github.io/ggeffects/">ggeffects</a> for plotting effects. </p><div class="no-row-height column-margin column-container"><span class="">If you have not installed these packages, remember to do so with <code><a href="https://rdrr.io/r/utils/install.packages.html">install.packages()</a></code>.</span></div></div>
+<div class="cell">
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/runehaubo/lmerTestR">lmerTest</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="http://partykit.r-forge.r-project.org/partykit/">partykit</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://afex.singmann.science/">afex</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://strengejacke.github.io/ggeffects/">ggeffects</a></span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>We will also set a general theme for all coming plots with <code><a href="https://ggplot2.tidyverse.org/reference/theme_get.html">theme_set()</a></code>.</p>
+<div class="cell">
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme_get.html">theme_set</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_minimal</a></span><span class="op">(</span>base_size <span class="op">=</span> <span class="fl">18</span><span class="op">)</span> <span class="op">+</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme.html">theme</a></span><span class="op">(</span>legend.position <span class="op">=</span> <span class="st">"top"</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>This time, we don’t need to read any corpora. Instead, we’ll open the concordance file we saved in the <a href="../studies/genitive-alternation-retrieval.html#save">first step</a> and work with it. In between, you might also have gone through the examples for manual cleaning or to add other variables, either with a spreadsheet software or with <a href="https://github.com/montesmariana/concAnnotator/">concAnnotator</a>.</p>
+<div class="page-columns page-full"><p>As we read the dataset, we’ll also change the type of the categorical variables, i.e.&nbsp;<code>gen_type</code> and <code>possessor_type</code>, from character vectors to factors. Factors are <em>actually</em> numeric vectors with named levels. Crucially, they have predefined levels that keep their order: they will complain if you try to add an item with a different value, will remember an original level that has frequency 0, and will always keep the designed order. Modelling functions such as <code><a href="https://rdrr.io/pkg/lme4/man/glmer.html">lme4::glmer()</a></code> and <code><a href="https://rdrr.io/pkg/partykit/man/ctree.html">partykit::ctree()</a></code>, which we’ll use below, cannot work with character vectors and need factors instead.</p><div class="no-row-height column-margin column-container"><span class="">The tidyverse package <a href="https://forcats.tidyverse.org/">forcats</a> has a lot of useful functions to manipulate factors, all starting with <code>fct_</code>.</span></div></div>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><img src="forcats_logo.png" class="img-fluid" style="width:6em" data-alt-text="The forcats logo"></p>
+<p>The tidyverse package <a href="https://forcats.tidyverse.org/">forcats</a> has a lot of useful functions to manipulate factors, all starting with <code>fct_</code>.</p>
+</div></div><div class="cell">
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">fname</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/file.path.html">file.path</a></span><span class="op">(</span><span class="va">data_folder</span>, <span class="st">"genitive-alternation.tab"</span><span class="op">)</span> <span class="co"># wherever you stored the file</span></span>
+<span><span class="va">cd</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://masterclm.github.io/mclm/reference/read_conc.html">read_conc</a></span><span class="op">(</span><span class="va">fname</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span></span>
+<span>    gen_type <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html">factor</a></span><span class="op">(</span><span class="va">gen_type</span>, levels <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"of"</span>, <span class="st">"s"</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>    possessor_type <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html">factor</a></span><span class="op">(</span><span class="va">possessor_type</span>, levels <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"common"</span>, <span class="st">"proper"</span><span class="op">)</span><span class="op">)</span></span>
+<span>    <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The first level of a factor is a reference level. For the response variable, in most modelling functions (not in <a href="https://tidymodels.tidymodels.org">tidymodels</a>), this counts as the failure outcome; therefore, the model will show the odds of the <em>second level</em> (in this case <em>s</em>-genitive) occurring.</p>
+<section id="exploring-the-data" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="exploring-the-data">Exploring the data</h2>
+<p>It is good practice to get familiar with your dataset before delving into the modelling. On the one hand, it may expose annotation errors, such as mistyped values in manually annotated variables. On the other hand, it gives you a foundation for the interpretation of the output and a notion of what you may encounter.</p>
+<p>In the <a href="../studies/genitive-alternation-retrieval.html#automatic-annotation">retrieval section</a> we already saw the <code><a href="https://rdrr.io/r/stats/xtabs.html">xtabs()</a></code> function, which quickly returns a contingency table between two variables.</p>
+<div class="cell">
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/stats/xtabs.html">xtabs</a></span><span class="op">(</span><span class="op">~</span> <span class="va">gen_type</span> <span class="op">+</span> <span class="va">possessor_type</span>, data <span class="op">=</span> <span class="va">cd</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>        possessor_type
+gen_type common proper
+      of   3151   1006
+      s    1050   2137</code></pre>
+</div>
+</div>
+<p>With <a href="https://tidyverse.tidyverse.org">tidyverse</a>, particularly for a more tabular format, you can use <code><a href="https://dplyr.tidyverse.org/reference/count.html">count()</a></code> combined with <code><a href="https://tidyr.tidyverse.org/reference/pivot_wider.html">pivot_wider()</a></code> to obtain a similar result, as shown in <a href="#tbl-count">Table&nbsp;1</a>.</p>
+<div class="cell">
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">cd</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/count.html">count</a></span><span class="op">(</span><span class="va">gen_type</span>, <span class="va">possessor_type</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://tidyr.tidyverse.org/reference/pivot_wider.html">pivot_wider</a></span><span class="op">(</span>names_from <span class="op">=</span> <span class="va">possessor_type</span>, values_from <span class="op">=</span> <span class="va">n</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/kableExtra/man/kbl.html">kbl</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/kableExtra/man/kable_classic.html">kable_paper</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="tbl-count" class="anchored">
+
+<table class=" lightable-paper" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto;">
+<caption>Table&nbsp;1:  Contingency table between the outcome gen_type and the predictor possessor_type. </caption>
+ <thead><tr>
+<th style="text-align:left;"> gen_type </th>
+   <th style="text-align:right;"> common </th>
+   <th style="text-align:right;"> proper </th>
+  </tr></thead>
+<tbody>
+<tr>
+<td style="text-align:left;"> of </td>
+   <td style="text-align:right;"> 3151 </td>
+   <td style="text-align:right;"> 1006 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> s </td>
+   <td style="text-align:right;"> 1050 </td>
+   <td style="text-align:right;"> 2137 </td>
+  </tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>For quantitative variables, we can extract the corresponding column from the dataset as a vector, e.g.&nbsp;<code>pull(cd, size_possessor)</code> or <code>cd$size_possessor</code>, and apply <code><a href="https://rdrr.io/r/base/summary.html">summary()</a></code>. In order to correlate this with a categorical variable, we can first split the dataset based on the values of that variable with <code><a href="https://rdrr.io/r/base/split.html">split()</a></code> and then apply <code><a href="https://rdrr.io/r/base/summary.html">summary()</a></code> on the columns with <code><a href="https://purrr.tidyverse.org/reference/map.html">map()</a></code>.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><img src="purrr_logo.png" class="img-fluid" style="width:6em" data-alt-text="The purrr logo"></p>
+<p><a href="https://purrr.tidyverse.org/">purrr</a> functions such as <code><a href="https://purrr.tidyverse.org/reference/map.html">map()</a></code> apply the same function to each element of a list or vector. Here, we take each element of the split dataframe and apply the same code.</p>
+</div></div><div class="cell page-columns page-full">
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">cd</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/base/split.html">split</a></span><span class="op">(</span><span class="va">.</span><span class="op">$</span><span class="va">gen_type</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://purrr.tidyverse.org/reference/map.html">map</a></span><span class="op">(</span><span class="op">~</span> <span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span><span class="op">(</span><span class="va">.x</span><span class="op">$</span><span class="va">size_possessor</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="co">## $of</span></span>
+<span><span class="co">##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. </span></span>
+<span><span class="co">##    0.00    1.61    2.08    2.08    2.48    4.26 </span></span>
+<span><span class="co">## </span></span>
+<span><span class="co">## $s</span></span>
+<span><span class="co">##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. </span></span>
+<span><span class="co">##   0.693   1.609   1.946   1.939   2.197   3.611</span></span>
+<span></span>
+<span><span class="va">cd</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">gen_type</span>, y <span class="op">=</span> <span class="va">size_possessor</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_boxplot.html">geom_boxplot</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_minimal</a></span><span class="op">(</span>base_size <span class="op">=</span> <span class="fl">30</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+<div class="no-row-height column-margin column-container"><div class="cell-output-display">
+<p><img src="genitive-alternation-analysis_files/figure-html/split-1.png" class="img-fluid" width="672"></p>
+</div></div></div>
+<p>We can already see here that the tiniest and the longest Possessors tend to go with the <em>of</em>-genitive. Remember that <code>size_possessor</code> doesn’t contain the length in characters but its logarithm. Therefore, the minimum size of 0 corresponds to a character length of 1. <a href="#tbl-sizes">Table&nbsp;2</a> collects these examples for deeper inspection.</p>
+<div class="cell">
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">cd</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/stats/filter.html">filter</a></span><span class="op">(</span><span class="va">size_possessor</span> <span class="op">==</span> <span class="fl">0</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://tibble.tidyverse.org/reference/as_tibble.html">as_tibble</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="va">match</span>, <span class="va">possessor</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/kableExtra/man/kbl.html">kbl</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/pkg/kableExtra/man/kable_classic.html">kable_paper</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="tbl-sizes" class="anchored">
+
+<table class=" lightable-paper" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto;">
+<caption>Table&nbsp;2:  Concordances where the Possessor constituent has only one character. </caption>
+ <thead><tr>
+<th style="text-align:left;"> match </th>
+   <th style="text-align:left;"> possessor </th>
+  </tr></thead>
+<tbody>
+<tr>
+<td style="text-align:left;"> the primary decomposition of T </td>
+   <td style="text-align:left;"> t </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> The constancy of P </td>
+   <td style="text-align:left;"> p </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> The choice of P </td>
+   <td style="text-align:left;"> p </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> the graph of F </td>
+   <td style="text-align:left;"> f </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> the graph of F </td>
+   <td style="text-align:left;"> f </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> the multiplicity of F </td>
+   <td style="text-align:left;"> f </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> the graph of F </td>
+   <td style="text-align:left;"> f </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> the values of S </td>
+   <td style="text-align:left;"> s </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> the values of S </td>
+   <td style="text-align:left;"> s </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> the image of L </td>
+   <td style="text-align:left;"> l </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> the plane of L </td>
+   <td style="text-align:left;"> l </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> the image of L </td>
+   <td style="text-align:left;"> l </td>
+  </tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- In the [last section of this document](#Easystats) we will learn what the `{report}` package can offer us. -->
+<p>Finally, we could also do some visualization. We could use barplots for the categorical variables, mosaic plots for the contingency table, histograms for the quantitative variables, scatterplots for the relationship between two quantitative variables or boxplots/violin plots to compare quantities and/or relate them to qualitative variables.</p>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Bars</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Mosaic</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Histograms</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">Points</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false">Violin</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>Barplots can be created with the <code><a href="https://ggplot2.tidyverse.org/reference/geom_bar.html">geom_bar()</a></code> function. The <code>position</code> argument controls whether the bars of different colors are stacked or put next to each other.</p>
+<div class="cell">
+<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">cd</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">gen_type</span>, fill <span class="op">=</span> <span class="va">possessor_type</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_bar.html">geom_bar</a></span><span class="op">(</span>position <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/position_dodge.html">position_dodge</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_manual.html">scale_fill_manual</a></span><span class="op">(</span>values <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"orange"</span>, <span class="st">"darkgreen"</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-barplot" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="genitive-alternation-analysis_files/figure-html/fig-barplot-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1: Example of a barplot visualizing the number of observations with each outcome and Possessor type. If you already have the counts for the y-axis, use <code><a href="https://ggplot2.tidyverse.org/reference/geom_bar.html">geom_col()</a></code> instead.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>While the <a href="https://github.com/haleyjeppson/ggmosaic">ggmosaic</a> package offers a way of creating mosaic plots with <a href="https://ggplot2.tidyverse.org">ggplot2</a>, <code>graphics::mosaic()</code> has the nice feature of shading the sections based on the residuals (with <code>shade = TRUE</code>). Red squares indicate that the frequency of a combination is <em>significantly</em> lower than expected (i.e.&nbsp;if the distribution was proportional), and blue squares, that the frequency is significantly higher than expected. In other words, you can already see if a pair of values of two categorical variables are “attracted” to each other. Here it is very clear that the Possessor types are not balanced across genitive variants: the common noun Possessor is much more attracted to the <em>of</em>-genitive, and the proper noun to the <em>s</em>-genitive.</p>
+<div class="cell">
+<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/graphics/mosaicplot.html">mosaicplot</a></span><span class="op">(</span><span class="va">gen_type</span> <span class="op">~</span> <span class="va">possessor_type</span>, data <span class="op">=</span> <span class="va">cd</span>, shade <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-mosaic" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="genitive-alternation-analysis_files/figure-html/fig-mosaic-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;2: Example of a mosaic plot visualizing the contingency table between the outcome <code>gen_type</code> and the predictor <code>possessor_type</code>.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p>Histograms can be generated with <code><a href="https://ggplot2.tidyverse.org/reference/geom_histogram.html">geom_histogram()</a></code>; they show the frequencies of different values along a continuous scale.</p>
+<div>
+<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">cd</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">size_possessor</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_histogram.html">geom_histogram</a></span><span class="op">(</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">cd</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">size_possessed</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_histogram.html">geom_histogram</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="fig-hist" class="cell quarto-layout-panel">
+<figure class="figure"><div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-hist-1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="genitive-alternation-analysis_files/figure-html/fig-hist-1.png" class="img-fluid figure-img" data-ref-parent="fig-hist" width="672"></p>
+<p></p><figcaption class="figure-caption">(a) Size of the possessor slot</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-hist-2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="genitive-alternation-analysis_files/figure-html/fig-hist-2.png" class="img-fluid figure-img" data-ref-parent="fig-hist" width="672"></p>
+<p></p><figcaption class="figure-caption">(b) Size of the possessed slot</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3: Examples of histograms showing the frequencies of different Possessor and Possessed sizes (log of N of characters).</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+<p>A scatterplot of points can contrast two quantitative variables; in this case the log-transformed slot sizes (<a href="#fig-scatter-1">Figure&nbsp;4 (a)</a>) and the original sizes in number of characters, retrieved with <code><a href="https://rdrr.io/r/base/Log.html">exp()</a></code> (<a href="#fig-scatter-2">Figure&nbsp;4 (b)</a>).</p>
+<div>
+<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">cd</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">size_possessor</span>, y <span class="op">=</span> <span class="va">size_possessed</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html">geom_point</a></span><span class="op">(</span>size <span class="op">=</span> <span class="fl">3</span>, alpha <span class="op">=</span> <span class="fl">0.5</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">cd</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/Log.html">exp</a></span><span class="op">(</span><span class="va">size_possessor</span><span class="op">)</span>, y <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/Log.html">exp</a></span><span class="op">(</span><span class="va">size_possessed</span><span class="op">)</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html">geom_point</a></span><span class="op">(</span>size <span class="op">=</span> <span class="fl">3</span>, alpha <span class="op">=</span> <span class="fl">0.5</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span><span class="op">(</span>x <span class="op">=</span> <span class="st">"possessor"</span>, y <span class="op">=</span> <span class="st">"possessed"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="fig-scatter" class="cell quarto-layout-panel">
+<figure class="figure"><div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-scatter-1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="genitive-alternation-analysis_files/figure-html/fig-scatter-1.png" class="img-fluid figure-img" data-ref-parent="fig-scatter" width="672"></p>
+<p></p><figcaption class="figure-caption">(a) Log-transformed character length</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-scatter-2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="genitive-alternation-analysis_files/figure-html/fig-scatter-2.png" class="img-fluid figure-img" data-ref-parent="fig-scatter" width="672"></p>
+<p></p><figcaption class="figure-caption">(b) Original character length</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p></p><figcaption class="figure-caption">Figure&nbsp;4: Example of a scatterplot contrasting the size of a Possessor and a Possessed slot in each observation.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
+<p>In order to compare the ranges of <code>size_possessor</code> and <code>size_possessed</code> in a violin plot, we need to turn the dataset into a long-form version, so that the value of possessor/possessed is another variable. For that we use <code><a href="https://tidyr.tidyverse.org/reference/pivot_longer.html">pivot_longer()</a></code>, the complement of <code><a href="https://tidyr.tidyverse.org/reference/pivot_wider.html">pivot_wider()</a></code>, with the names of the columns that we want to change and a few useful arguments. First, for the selection of columns, we can also use <a href="https://dplyr.tidyverse.org">dplyr</a> selectors such as <code><a href="https://tidyselect.r-lib.org/reference/starts_with.html">starts_with()</a></code>, which selects all columns that start with a given string. Then, <code>names_to</code> and <code>values_to</code> indicate the new names for the columns to which the original <em>names</em> of the columns (here <code>size_possessor</code> and <code>size_possessed</code>) and their <em>values</em> will go. In this case, with <code>names_to = "slot", values_to = "size"</code>, each row of the original dataset will become two rows, and the columns <code>size_possessor</code> and <code>size_possessed</code> will have disappeared. Instead, there will be a column <code>slot</code> with values <em>size_possessor</em> and <em>size_possessed</em>, and a column <code>size</code> with the original values of that row for <code>size_possessor</code> and <code>size_possessed</code> respectively. This allows us to use <code>slot</code> as a variable for the ggplot aesthetics. Finally, the <code>names_transform</code> argument allows us to transform the values that will go into the name-column, i.e.&nbsp;<code>slot</code>. In particular, this <code><a href="https://stringr.tidyverse.org/reference/str_remove.html">stringr::str_remove()</a></code> call will remove the “size_” prefix from <code>size_possessed</code> and <code>size_possessor</code>.</p>
+<p>The function to draw a violin plot is <code><a href="https://ggplot2.tidyverse.org/reference/geom_violin.html">geom_violin()</a></code>.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Violins and boxes
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you’re wondering why I use violin plots instead of boxplots, I invite you to read the article <a href="https://www.autodesk.com/research/publications/same-stats-different-graphs"><em>Same Stats, Different Graphs</em></a>, by Justin Matejka and George Fitzmaurice.</p>
+<p>And if you are interested in more advanced graphs, combining half-vioilin plots and half-boxplots or scatterplots, check out <a href="https://erocoar.github.io/gghalves/">the <code>{gghalves}</code> package</a>.</p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">cd</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://tibble.tidyverse.org/reference/as_tibble.html">as_tibble</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="fu"><a href="https://tidyselect.r-lib.org/reference/starts_with.html">starts_with</a></span><span class="op">(</span><span class="st">"size_p"</span><span class="op">)</span>, <span class="va">gen_type</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://tidyr.tidyverse.org/reference/pivot_longer.html">pivot_longer</a></span><span class="op">(</span><span class="fu"><a href="https://tidyselect.r-lib.org/reference/starts_with.html">starts_with</a></span><span class="op">(</span><span class="st">"size"</span><span class="op">)</span>,</span>
+<span>               names_to <span class="op">=</span> <span class="st">"slot"</span>, values_to <span class="op">=</span> <span class="st">"size"</span>,</span>
+<span>               names_transform <span class="op">=</span> <span class="op">~</span> <span class="fu"><a href="https://stringr.tidyverse.org/reference/str_remove.html">str_remove</a></span><span class="op">(</span><span class="va">.x</span>, <span class="st">"size_"</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">slot</span>, y <span class="op">=</span> <span class="va">size</span>, fill <span class="op">=</span> <span class="va">gen_type</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_violin.html">geom_violin</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_manual.html">scale_fill_manual</a></span><span class="op">(</span>values <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"orange"</span>, <span class="st">"darkgreen"</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-violin" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="genitive-alternation-analysis_files/figure-html/fig-violin-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;5: Example of a violin plot.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section></section><section id="conditional-inference-tree" class="level1 page-columns page-full"><h1>Conditional inference tree</h1>
+<div class="page-columns page-full"><p>The first analysis we’ll run is a conditional inference tree, which we’ll obtain with <code><a href="https://rdrr.io/pkg/partykit/man/ctree.html">partykit::ctree()</a></code>. The first argument is a formula, indicating on the left side of the tilde <code>~</code> the response variable or outcome, and on the right side the predictors, separated by <code>+</code>. The second argument is the dataset from which the variables are taken. The output is an object of class <code>party</code>, which can be stored on a file, if needed, with <code><a href="https://rdrr.io/r/base/readRDS.html">saveRDS()</a></code>.</p><div class="no-row-height column-margin column-container"><span class=""><code><a href="https://rdrr.io/r/base/readRDS.html">saveRDS()</a></code> is handy function from base R to write R objects to files; you can restore them with <code><a href="https://rdrr.io/r/base/readRDS.html">readRDS()</a></code>. The downside is that only R can read these files, so if you have an object that could be stored in a more <em>interoperable</em> way, such as tab-separated files or images, then that is preferable.</span></div></div>
+<div class="cell">
+<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">cd_ctree</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/partykit/man/ctree.html">ctree</a></span><span class="op">(</span><span class="va">gen_type</span> <span class="op">~</span> <span class="va">possessor_type</span> <span class="op">+</span> <span class="va">size_possessor</span> <span class="op">+</span> <span class="va">size_possessed</span> <span class="op">+</span> <span class="va">size_diff</span>,</span>
+<span>                  data <span class="op">=</span> <span class="va">cd</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The easiest way to inspect a tree is by plotting it, as shown in <a href="#fig-ctree">Figure&nbsp;6</a>.</p>
+<div class="cell page-columns page-full">
+<div class="sourceCode" id="cb16"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">cd_ctree</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display column-page">
+<div id="fig-ctree" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="genitive-alternation-analysis_files/figure-html/fig-ctree-1.png" class="img-fluid figure-img" width="960"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;6: Conditional inference tree predicting the genitive alternation.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>A conditional inference tree first tries to find a variable by which you can split the dataset in significantly different values, and then repeats the procedure iteratively until no other split returns significantly different groups. In the case of a classification task, i.e.&nbsp;when the outcome is categorical, the splits should have significantly different proportions of the success level.</p>
+<div class="page-columns page-full"><p>Concretely, <a href="#fig-ctree">Figure&nbsp;6</a> shows that the first split is given by <code>possessor_type</code>, followed by <code>size_possessor</code> and then <code>size_possessed</code>. That means that the largest significant difference is given between the observations where the Possessor is a common noun, in which the chances of <em>of</em>-genitive are substantially and significantly higher than those of <em>s</em>-genitive, against those in which the Possessor is a proper noun, which favor the <em>s</em>-genitive a bit more.</p><div class="no-row-height column-margin column-container"><span class="">The split variable at a given level doesn’t have to be the same in all branches.</span></div></div>
+<p>Within the split based on <code>possessor_type</code>, the next significant split is given by <code>size_possessor</code>. When the Possessor is a common noun, if its size is larger than 2.3026 (10 characters) the chances of the <em>of</em>-genitive variant increase in relation to observations where the Possessor has fewer characters. Notice than in both cases the <em>of</em>-variant is dominant, but the proportion is significantly different. Within the group with 10 characters or fewer, <code>size_possessed</code> is now relevant and the <em>of</em>-genitive is favored more when it is 1.0986 or lower (3 characters). Notice, however, that the size of the node is much smaller: whereas, within the occurrences with common noun possessor of 10 characters or fewer, more than 75% of those with a shorter Possessed constituent exhibit the <em>of</em>-genitive, in absolute numbers there are more longer Possessed constituents with the <em>of</em>-genitive.</p>
+<p>The right side of the plot shows the significant splits within the cases with proper nouns in the Possessor slot: this time, if the possessor is longer, with <code>size_possessor</code> larger than 2.6391 (14 characters), the chances of the <em>of</em>-genitive variant also increase, becoming equal to those of the <em>s</em>-genitive within that group.</p>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Plotting with <a href="https://github.com/martin-borkovec/ggparty">ggparty</a>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Plotting with the default method of a <code>party</code> object is straightforward and returns the information you want, but it doesn’t give you much room for manipulation. If the plotting space is too small, the different parts of the plot may overlap — if it’s way too small, you might even get a warning.</p>
+<p>The <a href="https://github.com/martin-borkovec/ggparty">ggparty</a> offers a <a href="https://ggplot2.tidyverse.org">ggplot2</a> extension to plot objects from the <a href="http://partykit.r-forge.r-project.org/partykit/">partykit</a> package. Designing the plot is now more complicated, but it gives you more freedom, in case you want to manipulate the labels, colors, sizes, etc. For a conditional tree such as the one shown in <a href="#fig-ctree">Figure&nbsp;6</a>, <a href="https://github.com/martin-borkovec/ggparty">ggparty</a> might be a bit of an overkill, but <a href="#fig-ggparty">Figure&nbsp;7</a> is an example in which I change the colors in the barplots and color the node labels based on the splitting variables.</p>
+<p>A downside of <a href="https://github.com/martin-borkovec/ggparty">ggparty</a> is that it doesn’t automatically round the numerical values on the edges, but you can copy-paste the code in lines 5:12 to fix that in any other <code>ggparty</code> object (just make sure to change <code>cd_party</code> to the name of the <code>ggparty</code> object). I won’t explain the rest of the code; if you’re interested in the capabilities of the package, check out <a href="https://cran.r-project.org/web/packages/ggparty/vignettes/ggparty-graphic-partying.html">the vignette</a>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a><span class="fu">library</span>(ggparty)</span>
+<span id="cb17-2"><a href="#cb17-2"></a></span>
+<span id="cb17-3"><a href="#cb17-3"></a>cd_party <span class="ot">&lt;-</span> <span class="fu">ggparty</span>(cd_ctree)</span>
+<span id="cb17-4"><a href="#cb17-4"></a></span>
+<span id="cb17-5"><a href="#cb17-5"></a>round_edges <span class="ot">&lt;-</span> <span class="cf">function</span>(break_label) {</span>
+<span id="cb17-6"><a href="#cb17-6"></a>  rounded <span class="ot">&lt;-</span> <span class="fu">str_extract</span>(break_label, <span class="st">"[0-9.]+"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb17-7"><a href="#cb17-7"></a>    <span class="fu">as.numeric</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb17-8"><a href="#cb17-8"></a>    <span class="fu">formatC</span>(<span class="at">digits =</span> <span class="dv">4</span>)</span>
+<span id="cb17-9"><a href="#cb17-9"></a>  <span class="fu">str_replace</span>(break_label, <span class="st">"[0-9.]+"</span>, rounded)</span>
+<span id="cb17-10"><a href="#cb17-10"></a>}</span>
+<span id="cb17-11"><a href="#cb17-11"></a></span>
+<span id="cb17-12"><a href="#cb17-12"></a>cd_party<span class="sc">$</span>data<span class="sc">$</span>breaks_label <span class="ot">&lt;-</span> <span class="fu">map</span>(cd_party<span class="sc">$</span>data<span class="sc">$</span>breaks_label, round_edges)</span>
+<span id="cb17-13"><a href="#cb17-13"></a></span>
+<span id="cb17-14"><a href="#cb17-14"></a>cd_party <span class="sc">+</span> <span class="co"># ggparty object</span></span>
+<span id="cb17-15"><a href="#cb17-15"></a>  <span class="fu">geom_edge</span>() <span class="sc">+</span> <span class="co"># add edges</span></span>
+<span id="cb17-16"><a href="#cb17-16"></a>  <span class="fu">geom_edge_label</span>(<span class="at">size =</span> <span class="dv">4</span>) <span class="sc">+</span> <span class="co"># add edge labels</span></span>
+<span id="cb17-17"><a href="#cb17-17"></a>  <span class="fu">geom_node_label</span>( <span class="co"># add and edit node labels</span></span>
+<span id="cb17-18"><a href="#cb17-18"></a>    <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">col =</span> splitvar),</span>
+<span id="cb17-19"><a href="#cb17-19"></a>    <span class="at">line_list =</span> <span class="fu">list</span>(</span>
+<span id="cb17-20"><a href="#cb17-20"></a>      <span class="fu">aes</span>(<span class="at">label =</span> splitvar),</span>
+<span id="cb17-21"><a href="#cb17-21"></a>      <span class="fu">aes</span>(<span class="at">label =</span> <span class="fu">sprintf</span>(<span class="st">"p = %.2e"</span>, p.value))</span>
+<span id="cb17-22"><a href="#cb17-22"></a>    ),</span>
+<span id="cb17-23"><a href="#cb17-23"></a>    <span class="at">line_gpar =</span> <span class="fu">list</span>(</span>
+<span id="cb17-24"><a href="#cb17-24"></a>      <span class="fu">list</span>(<span class="at">size =</span> <span class="dv">15</span>),</span>
+<span id="cb17-25"><a href="#cb17-25"></a>      <span class="fu">list</span>(<span class="at">size =</span> <span class="dv">10</span>)</span>
+<span id="cb17-26"><a href="#cb17-26"></a>    ),</span>
+<span id="cb17-27"><a href="#cb17-27"></a>    <span class="at">ids =</span> <span class="st">"inner"</span>) <span class="sc">+</span></span>
+<span id="cb17-28"><a href="#cb17-28"></a>  <span class="fu">geom_node_label</span>( <span class="co"># add node size to terminal nodes</span></span>
+<span id="cb17-29"><a href="#cb17-29"></a>    <span class="fu">aes</span>(<span class="at">label =</span> <span class="fu">paste</span>(<span class="st">"N= "</span>, nodesize)),</span>
+<span id="cb17-30"><a href="#cb17-30"></a>    <span class="at">ids =</span> <span class="st">"terminal"</span></span>
+<span id="cb17-31"><a href="#cb17-31"></a>  ) <span class="sc">+</span></span>
+<span id="cb17-32"><a href="#cb17-32"></a>  <span class="fu">geom_node_plot</span>( <span class="co"># add plots</span></span>
+<span id="cb17-33"><a href="#cb17-33"></a>    <span class="at">gglist =</span> <span class="fu">list</span>(</span>
+<span id="cb17-34"><a href="#cb17-34"></a>      <span class="fu">geom_bar</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="st">""</span>, <span class="at">fill =</span> gen_type),</span>
+<span id="cb17-35"><a href="#cb17-35"></a>               <span class="at">position =</span> <span class="fu">position_fill</span>()),</span>
+<span id="cb17-36"><a href="#cb17-36"></a>      <span class="fu">labs</span>(<span class="at">y =</span> <span class="st">"Proportion"</span>, <span class="at">x =</span> <span class="cn">NULL</span>,</span>
+<span id="cb17-37"><a href="#cb17-37"></a>           <span class="at">fill =</span> <span class="st">"Genitive variant"</span>),</span>
+<span id="cb17-38"><a href="#cb17-38"></a>      <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"orange"</span>, <span class="st">"darkgreen"</span>)),</span>
+<span id="cb17-39"><a href="#cb17-39"></a>      <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">15</span>)),</span>
+<span id="cb17-40"><a href="#cb17-40"></a>    <span class="at">shared_axis_label =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
+<span id="cb17-41"><a href="#cb17-41"></a>  <span class="fu">scale_color_brewer</span>(<span class="at">palette =</span> <span class="st">"Dark2"</span>, <span class="at">guide =</span> <span class="st">"none"</span>) <span class="co"># set node labels color</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-ggparty" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="genitive-alternation-analysis_files/figure-html/fig-ggparty-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;7: Conditional inference tree predicting the genitive alternation, plotted with <a href="https://github.com/martin-borkovec/ggparty">ggparty</a>.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section id="conditional-trees-in-relation-to-other-techniques" class="level2"><h2 class="anchored" data-anchor-id="conditional-trees-in-relation-to-other-techniques">Conditional trees in relation to other techniques</h2>
+<p>Unlike logistic regression analysis, conditional inference trees have the ability to deal with collinearity. This is the case where two variables basically do the same thing, or one variable has the same effect as a combination of two other variables. Therefore, we can use a conditional tree to see which predictors to use in the regression model. For example, in our dataset <code>size_difference</code> is redundant with <code>size_possessor</code> and <code>size_possessed</code> because it depends on them, and <a href="#fig-ctree">Figure&nbsp;6</a> tells us that we can safely discard <code>size_difference</code> because it doesn’t have a significant effect.</p>
+<p>On the other hand, conditional trees look at one variable at a time, and once a split is performed, the effect of the following variables is examined in relation to the split dataset. That is how the effect of <code>size_possessor</code> is different in the subset where <code>possessor_type</code> is <em>common</em> compared to the subset where <code>possessor_type</code> is <em>proper</em>, and how <code>size_possessed</code> is only a relevant predictor in certain splits. In contrast, regression models look at the effect of each variable on the whole dataset, while accounting for the effects of the rest of the variables.</p>
+<p>Finally, the conditional tree chooses the most relevant variable but does not tell us how close other variables were — it seems that <code>size_possessor</code> is not as effective as <code>possessor_type</code> when splitting the full dataset, but how less effective is it? In order to obtain a ranking of importance of the variables, we can run random forests. This technique generates a large number of trees with different subsets of the dataset (different subsets of rows and of columns) and checks which variable takes the first place in each of the trees. This is a handy technique when we have many different variables, but it is not very time-efficient and therefore it’s overkill for this dataset.</p>
+</section></section><section id="logistic-regression-analysis" class="level1 page-columns page-full"><h1>Logistic regression analysis</h1>
+<p>Based on the results of the conditional tree, we can decide which predictors to use in the logistic regression model. We’ll run it with <code><a href="https://rdrr.io/pkg/lme4/man/glmer.html">lme4::glmer()</a></code>, which was loaded when we loaded <code>{lme4Test}</code>. We’ll obtain a summary of the results with the <code><a href="https://rdrr.io/r/base/summary.html">summary()</a></code> method, which, if <code>{lme4Test}</code> is loaded, will include p-values.</p>
+<div class="page-columns page-full"><p><code><a href="https://rdrr.io/pkg/lme4/man/glmer.html">lme4::glmer()</a></code> is a function for “mixed-effects generalized linear models”; when run with the argument <code>family = binomial</code>, it runs mixed-effects logistic regression. A mixed effects model combines fixed effects and random effects. For a model with only fixed effects, we can use the base R function <code>glm(, family = binomial)</code>.</p><div class="no-row-height column-margin column-container"><span class=""><code><a href="https://rdrr.io/pkg/lme4/man/glmer.html">lme4::glmer()</a></code> and <code><a href="https://rdrr.io/r/stats/glm.html">glm()</a></code> have counterparts for linear regression: <code><a href="https://rdrr.io/pkg/lme4/man/lmer.html">lme4::lmer()</a></code> and <code><a href="https://rdrr.io/r/stats/lm.html">lm()</a></code>, for mixed and fixed effects, respectively.</span></div></div>
+<p>A fixed effect is a predictor that we are interested in, such as <code>possessor_type</code> and <code>size_possessor</code>. We want to know their effect on the response variable and we expect the values attested in our sample (our dataset) to represent the values that occur in the population (language in general). A random effect, in contrast, is a variable that we want to take into account but whose effect on the response variable we are not interested in. The values they take in the sample are only a sample of those that can be attested in the population, and might not be replicable in a different dataset. Examples in linguistic studies are the speaker, the topic and sometimes lexical effects. In our case, we can use the filename (<code>source</code>) and the register (<code>comp</code>) as a proxy for speakers and topic. We want to take them into account because it could be that a certain speaker prefers to use one variant over the other, but we cannot take them as fixed effects because it’s unlikely that a study in a different dataset will have the same speakers. A different dataset, however, can certainly have the same values of <code>possessor_type</code> and comparable values in <code>size_possessor</code> and <code>size_possessed</code>.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Extended formula notation
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The first argument of <code><a href="https://rdrr.io/pkg/lme4/man/glmer.html">lme4::glmer()</a></code> is a formula, indicating the response variable and the predictors, as used for <code><a href="https://rdrr.io/pkg/partykit/man/ctree.html">partykit::ctree()</a></code>.</p>
+<blockquote class="blockquote">
+<p><code>y ~ x1 + x2</code>: <code>y</code> in function of main effects <code>x1</code> and <code>x2</code></p>
+</blockquote>
+<p>However, for mixed-effects models we can use an extended notation to refer to interactions and random effects.</p>
+<p>Interactions are cases where the effect of a variable depends on the effect on another variable. For example, that would be the case if a higher <code>size_possessor</code> favors <em>of</em> more intensely when <code>possessor_type</code> is <em>common</em> than when it is <em>proper</em>. It could also be the case that a higher <code>size_possessor</code> favors <em>of</em> when <code>possessor_type</code> is <em>common</em> but disfavors it when it is <em>proper</em>.</p>
+<blockquote class="blockquote">
+<p><code>y ~ x1 + x2 + x1:x2</code>: <code>y</code> in function of main effects <code>x1</code> and <code>x2</code> and their interaction</p>
+<p><code>y ~ x1 * x2</code>: <code>x1 * x2</code> is short for <code>x1 + x2 + x1:x2</code></p>
+<p><code>y ~ (x1 + x2 + x3)^2</code>: <code>y</code> in function of main effects <code>x1</code>, <code>x2</code>, and <code>x3</code> and all their two-way interactions; short for <code>y ~ x1 + x2 + x3 + x1:x2 + x1:x3 + x2:x3</code></p>
+</blockquote>
+<p>Random effects include random intercepts and random slopes. A random intercept would represent, for this dataset, that different speakers have different baseline preferences for one variant or the other. A random slope for a given predictor, in contrast, indicates that the same predictor may have different effects for different speakers, e.g.&nbsp;that the effect size of <code>size_possessor</code> changes somewhat across speakers.</p>
+<blockquote class="blockquote">
+<p><code>y ~ x1 + (1 | r1)</code>: random intercepts for <code>r1</code></p>
+<p><code>y ~ x1 + (1 + x1 | r1)</code>: random intercepts and random <code>x1</code>-slopes for <code>r1</code></p>
+<p><code>y ~ x1 + (x1 | r1)</code>: same as (= short notation) previous formula</p>
+</blockquote>
+<p>Random effects are always crossed but can also be nested, when the names of the levels make the nesting clear. In our dataset, <code>source</code> is nested within <code>comp</code> because the level names of <code>source</code> are unique across levels of <code>comp</code>: there is no file name that can belong to different registers. R is smart enough to realize this without us needing to make it explicit.</p>
+<blockquote class="blockquote">
+<p><code>y ~ x1 + (1 | r1) + (1 | r2)</code>: random intercepts for both <code>r1</code> and <code>r2</code></p>
+<p><code>y ~ x1 + (1 | r1) + (1 | r1:r2)</code>: explicit nesting of <code>r2</code> in <code>r1</code>; the analysis will treat the same-name levels of <code>r2</code> within different levels of <code>r1</code> as different levels.</p>
+</blockquote>
+</div>
+</div>
+</div>
+<section id="maximal-model" class="level2"><h2 class="anchored" data-anchor-id="maximal-model">Maximal model</h2>
+<p>The first model we fit is a maximal model, using all the predictors suggested by the conditional tree. Because complex mixed-effect logistic regression models often have a hard time trying to converge, we add a <code><a href="https://rdrr.io/pkg/lme4/man/lmerControl.html">lme4::glmerControl()</a></code> call to help it. Here we set the optimizer to “bobyqa”, but we could also increase the number of iteration with the argument <code>optCtr = list(maxfun = 100000)</code>.</p>
+<div class="cell">
+<div class="sourceCode" id="cb18"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">cd_glmer</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/lme4/man/glmer.html">glmer</a></span><span class="op">(</span></span>
+<span>    <span class="va">gen_type</span> <span class="op">~</span> <span class="op">(</span><span class="va">possessor_type</span> <span class="op">+</span> <span class="va">size_possessor</span> <span class="op">+</span> <span class="va">size_possessed</span><span class="op">)</span><span class="op">^</span><span class="fl">2</span> <span class="op">+</span></span>
+<span>               <span class="op">(</span><span class="fl">1</span> <span class="op">|</span> <span class="va">comp</span><span class="op">)</span> <span class="op">+</span> <span class="op">(</span><span class="fl">1</span> <span class="op">|</span> <span class="va">source</span><span class="op">)</span>,</span>
+<span>    family <span class="op">=</span> <span class="st">"binomial"</span>, data <span class="op">=</span> <span class="va">cd</span>,</span>
+<span>    control <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/lme4/man/lmerControl.html">glmerControl</a></span><span class="op">(</span>optimizer <span class="op">=</span> <span class="st">"bobyqa"</span><span class="op">)</span></span>
+<span>  <span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span><span class="op">(</span><span class="va">cd_glmer</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/base/print.html">print</a></span><span class="op">(</span>correlation <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: gen_type ~ (possessor_type + size_possessor + size_possessed)^2 +  
+    (1 | comp) + (1 | source)
+   Data: cd
+Control: glmerControl(optimizer = "bobyqa")
+
+     AIC      BIC   logLik deviance df.resid 
+    7879     7941    -3931     7861     7335 
+
+Scaled residuals: 
+   Min     1Q Median     3Q    Max 
+-4.630 -0.597 -0.266  0.622  5.265 
+
+Random effects:
+ Groups Name        Variance Std.Dev.
+ source (Intercept) 0.793    0.891   
+ comp   (Intercept) 0.304    0.552   
+Number of obs: 7344, groups:  source, 499; comp, 15
+
+Fixed effects:
+                                    Estimate Std. Error z value Pr(&gt;|z|)    
+(Intercept)                          -0.6953     0.5311   -1.31    0.190    
+possessor_typeproper                  2.5731     0.3299    7.80  6.2e-15 ***
+size_possessor                       -0.4486     0.2510   -1.79    0.074 .  
+size_possessed                        0.4472     0.2329    1.92    0.055 .  
+possessor_typeproper:size_possessor   0.0369     0.1240    0.30    0.766    
+possessor_typeproper:size_possessed  -0.2811     0.1130   -2.49    0.013 *  
+size_possessor:size_possessed        -0.1228     0.1127   -1.09    0.276    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+</div>
+<p>For the interpretation of the model, we want to look at:</p>
+<ul>
+<li><p>The AIC value: the lower, the better. We can use it to compare models to each other.</p></li>
+<li><p>The variance of the random effects: if it is not 0, it means we should keep them.</p></li>
+<li><p>The p-values and estimates of the intercept and the effects. We do not care about non-significant effects, so we might want to try a new model without those predictors.</p></li>
+</ul>
+<p>An useful way to check the significance of a predictor on the model is to run different models, each of which has removed one predictor, and compare them to the model with all the predictors. With the likelihood ratio test (LRT) we can see if removing anything from the model makes it significantly worse. We will do this with one handy function in the next section.</p>
+<div class="callout-caution callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Selection of predictors
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>While p-values and LRT tests are useful statistical guides when selecting or discarding predictors, your selection may also be theoretically motivated. Regardless of these values, if a certain predictor was significant in previous research, you can decide to keep it in your models.</p>
+</div>
+</div>
+</section><section id="removing-one-predictor" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="removing-one-predictor">Removing one predictor</h2>
+<div class="page-columns page-full"><p>The function <code><a href="https://rdrr.io/pkg/afex/man/mixed.html">afex::mixed()</a></code> can take a model, run different iterations in which one predictor was removed, and compare if the model without a predictor is significantly worse than the model with all predictors. For that comparison we’ll use likelihood ratio (LRT).</p><div class="no-row-height column-margin column-container"><span class="">In linear models we would use an F-test instead.</span></div></div>
+<div class="cell">
+<div class="sourceCode" id="cb20"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">cd_glmer_lrt</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/afex/man/mixed.html">mixed</a></span><span class="op">(</span></span>
+<span>    <span class="va">gen_type</span> <span class="op">~</span> <span class="op">(</span><span class="va">possessor_type</span> <span class="op">+</span> <span class="va">size_possessor</span> <span class="op">+</span> <span class="va">size_possessed</span><span class="op">)</span><span class="op">^</span><span class="fl">2</span> <span class="op">+</span></span>
+<span>               <span class="op">(</span><span class="fl">1</span> <span class="op">|</span> <span class="va">comp</span><span class="op">)</span> <span class="op">+</span> <span class="op">(</span><span class="fl">1</span> <span class="op">|</span> <span class="va">source</span><span class="op">)</span>,</span>
+<span>    family <span class="op">=</span> <span class="st">"binomial"</span>, data <span class="op">=</span> <span class="va">cd</span>, </span>
+<span>    method <span class="op">=</span> <span class="st">"LRT"</span>,</span>
+<span>    control <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/lme4/man/lmerControl.html">glmerControl</a></span><span class="op">(</span>optimizer <span class="op">=</span> <span class="st">"bobyqa"</span><span class="op">)</span></span>
+<span>  <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Contrasts set to contr.sum for the following variables: gen_type, possessor_type, comp, source</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Numerical variables NOT centered on 0: size_possessor, size_possessed
+If in interactions, interpretation of lower order (e.g., main) effects difficult.</code></pre>
+</div>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The call to <code><a href="https://rdrr.io/pkg/afex/man/mixed.html">mixed()</a></code> sends us a warning about the distribution of our numerical variables. This is useful but we don’t need to heed it as long as we don’t try to interpret the main effects of variables in interactions.</p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode" id="cb23"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html">print</a></span><span class="op">(</span><span class="va">cd_glmer_lrt</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Mixed Model Anova Table (Type 3 tests, LRT-method)
+
+Model: gen_type ~ (possessor_type + size_possessor + size_possessed)^2 + 
+Model:     (1 | comp) + (1 | source)
+Data: cd
+Df full model: 9
+                         Effect df     Chisq p.value
+1                possessor_type  1 61.26 ***   &lt;.001
+2                size_possessor  1    3.14 +    .076
+3                size_possessed  1      1.72    .190
+4 possessor_type:size_possessor  1      0.09    .765
+5 possessor_type:size_possessed  1    6.13 *    .013
+6 size_possessor:size_possessed  1      1.18    .278
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '+' 0.1 ' ' 1</code></pre>
+</div>
+</div>
+<p>The output confirms that <code>possessor_type</code> and its interaction with <code>size_possessed</code> are significant. We can interpret as well that the other two interactions are not significant and must be dropped. However, we don’t know if the main effect of <code>size_possessor</code> is significant, because it’s being distorted by the interactions in the model. Therefore, we will try a new model with <code>possessor_type</code>, <code>size_possessor</code>, <code>size_possessed</code> and the interaction <code>possessor_type:size_possessed</code>.</p>
+<div class="callout-caution callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Random effects and variable selection
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you model an interaction, you also have to keep the main effects of the predictors that participate in the interaction.</p>
+</div>
+</div>
+</section><section id="second-model" class="level2"><h2 class="anchored" data-anchor-id="second-model">Second model</h2>
+<p>Since the new model is not as complex, we don’t need <code><a href="https://rdrr.io/pkg/lme4/man/lmerControl.html">glmerControl()</a></code> to help it converge.</p>
+<div class="cell">
+<div class="sourceCode" id="cb25"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">cd_glmer2</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/lme4/man/glmer.html">glmer</a></span><span class="op">(</span></span>
+<span>    <span class="va">gen_type</span> <span class="op">~</span> <span class="va">possessor_type</span> <span class="op">+</span> <span class="va">size_possessor</span> <span class="op">+</span> <span class="va">size_possessed</span> <span class="op">+</span></span>
+<span>      <span class="va">possessor_type</span><span class="op">:</span><span class="va">size_possessed</span> <span class="op">+</span></span>
+<span>      <span class="op">(</span><span class="fl">1</span> <span class="op">|</span> <span class="va">comp</span><span class="op">)</span> <span class="op">+</span> <span class="op">(</span><span class="fl">1</span> <span class="op">|</span> <span class="va">source</span><span class="op">)</span>,</span>
+<span>    family <span class="op">=</span> <span class="st">"binomial"</span>, data <span class="op">=</span> <span class="va">cd</span></span>
+<span>  <span class="op">)</span></span>
+<span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span><span class="op">(</span><span class="va">cd_glmer2</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/base/print.html">print</a></span><span class="op">(</span>correlation <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: gen_type ~ possessor_type + size_possessor + size_possessed +  
+    possessor_type:size_possessed + (1 | comp) + (1 | source)
+   Data: cd
+
+     AIC      BIC   logLik deviance df.resid 
+    7877     7925    -3931     7863     7337 
+
+Scaled residuals: 
+   Min     1Q Median     3Q    Max 
+-4.632 -0.597 -0.267  0.621  5.332 
+
+Random effects:
+ Groups Name        Variance Std.Dev.
+ source (Intercept) 0.794    0.891   
+ comp   (Intercept) 0.306    0.553   
+Number of obs: 7344, groups:  source, 499; comp, 15
+
+Fixed effects:
+                                    Estimate Std. Error z value Pr(&gt;|z|)    
+(Intercept)                          -0.2284     0.2478   -0.92   0.3567    
+possessor_typeproper                  2.6650     0.2392   11.14   &lt;2e-16 ***
+size_possessor                       -0.6880     0.0625  -11.01   &lt;2e-16 ***
+size_possessed                        0.2055     0.0759    2.71   0.0068 ** 
+possessor_typeproper:size_possessed  -0.2893     0.1120   -2.58   0.0098 ** 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+</div>
+<p>In this model, the AIC value is slightly lower (so, the model is better) and the variance of the random effects is larger than zero. In addition, all the current predictors and the interaction are significant.</p>
+<p>We could still run <code><a href="https://rdrr.io/pkg/afex/man/mixed.html">afex::mixed()</a></code> to check whether removing any predictor would make the model worse.</p>
+<div class="cell">
+<div class="sourceCode" id="cb27"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">cd_glmer2_lrt</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/afex/man/mixed.html">mixed</a></span><span class="op">(</span></span>
+<span>    <span class="va">gen_type</span> <span class="op">~</span> <span class="va">possessor_type</span> <span class="op">+</span> <span class="va">size_possessor</span> <span class="op">+</span> <span class="va">size_possessed</span> <span class="op">+</span></span>
+<span>      <span class="va">possessor_type</span><span class="op">:</span><span class="va">size_possessed</span> <span class="op">+</span></span>
+<span>      <span class="op">(</span><span class="fl">1</span> <span class="op">|</span> <span class="va">comp</span><span class="op">)</span> <span class="op">+</span> <span class="op">(</span><span class="fl">1</span> <span class="op">|</span> <span class="va">source</span><span class="op">)</span>,</span>
+<span>    family <span class="op">=</span> <span class="st">"binomial"</span>, data <span class="op">=</span> <span class="va">cd</span>,</span>
+<span>    method <span class="op">=</span> <span class="st">"LRT"</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/print.html">print</a></span><span class="op">(</span><span class="va">cd_glmer2_lrt</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Mixed Model Anova Table (Type 3 tests, LRT-method)
+
+Model: gen_type ~ possessor_type + size_possessor + size_possessed + 
+Model:     possessor_type:size_possessed + (1 | comp) + (1 | source)
+Data: cd
+Df full model: 7
+                         Effect df      Chisq p.value
+1                possessor_type  1 126.10 ***   &lt;.001
+2                size_possessor  1 125.08 ***   &lt;.001
+3                size_possessed  1       1.11    .292
+4 possessor_type:size_possessed  1     6.62 *    .010
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '+' 0.1 ' ' 1</code></pre>
+</div>
+</div>
+<p>Indeed, the only predictor that we could “safely” remove is <code>size_possessed</code>, but we need it in order to keep the significant interaction in which it participates.</p>
+</section><section id="concordance-index-c" class="level2"><h2 class="anchored" data-anchor-id="concordance-index-c">Concordance index C</h2>
+<p>In order to assess the strength of the predictions of the models, we can use the concordance index C, computed with <code><a href="https://rdrr.io/pkg/Hmisc/man/somers2.html">Hmisc::somers2()</a></code>. The first argument is the fitted values of the models (obtained with <code><a href="https://rdrr.io/r/stats/predict.html">predict()</a></code>), whereas the second argument is a numerical form of the observed outcomes.</p>
+<div class="cell">
+<div class="sourceCode" id="cb29"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># maximal model</span></span>
+<span><span class="fu">Hmisc</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/Hmisc/man/somers2.html">somers2</a></span><span class="op">(</span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/stats/predict.html">predict</a></span><span class="op">(</span><span class="va">cd_glmer</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/numeric.html">as.numeric</a></span><span class="op">(</span><span class="va">cd</span><span class="op">$</span><span class="va">gen_type</span><span class="op">)</span><span class="op">-</span><span class="fl">1</span></span>
+<span><span class="op">)</span><span class="op">[</span><span class="st">"C"</span><span class="op">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     C 
+0.8494 </code></pre>
+</div>
+<div class="sourceCode" id="cb31"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># minimal model</span></span>
+<span><span class="fu">Hmisc</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/Hmisc/man/somers2.html">somers2</a></span><span class="op">(</span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/stats/predict.html">predict</a></span><span class="op">(</span><span class="va">cd_glmer2</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/numeric.html">as.numeric</a></span><span class="op">(</span><span class="va">cd</span><span class="op">$</span><span class="va">gen_type</span><span class="op">)</span><span class="op">-</span><span class="fl">1</span></span>
+<span><span class="op">)</span><span class="op">[</span><span class="st">"C"</span><span class="op">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     C 
+0.8494 </code></pre>
+</div>
+<div class="sourceCode" id="cb33"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># minimal model without random effects in the prediction</span></span>
+<span><span class="fu">Hmisc</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/Hmisc/man/somers2.html">somers2</a></span><span class="op">(</span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/stats/predict.html">predict</a></span><span class="op">(</span><span class="va">cd_glmer2</span>, re.form <span class="op">=</span> <span class="cn">NA</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/numeric.html">as.numeric</a></span><span class="op">(</span><span class="va">cd</span><span class="op">$</span><span class="va">gen_type</span><span class="op">)</span><span class="op">-</span><span class="fl">1</span></span>
+<span><span class="op">)</span><span class="op">[</span><span class="st">"C"</span><span class="op">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     C 
+0.7511 </code></pre>
+</div>
+</div>
+<div class="callout-warning callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Random effects and <a href="https://tidymodels.tidymodels.org">tidymodels</a>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>With basic <code><a href="https://rdrr.io/r/stats/predict.html">predict()</a></code> it’s possible to obtain the predictions both taking the random effects into account and excluding them. By default, they are taken into account.</p>
+<p>If you use <a href="https://tidymodels.tidymodels.org">tidymodels</a> for modelling, this will not be possible and you will have to take some differences into account:</p>
+<ul>
+<li><p>The predicted value is the reference value.</p></li>
+<li><p>There is no “concordance index C” measure in <a href="https://github.com/tidymodels/yardstick">yardstick</a>, the <a href="https://tidymodels.tidymodels.org">tidymodels</a> package for evaluation; instead, there is a metric computing “the area under the ROC curve” (<code><a href="https://yardstick.tidymodels.org/reference/roc_auc.html">yardstick::roc_auc()</a></code>), which is the same thing!</p></li>
+<li><p>Predictions are always made based on fixed effects only (since the values of your random effects are not supposed to be present in the data you’re predicting).</p></li>
+</ul>
+</div>
+</div>
+</section><section id="interpretation" class="level2"><h2 class="anchored" data-anchor-id="interpretation">Interpretation</h2>
+<p>One of the first things we see in the output is that, when the Possessor is a proper noun and the Possesses slot has one character, the chances of the <em>s</em>-variant are significantly higher — about 14.3677 times more likely than the alternative, all other things being equal.</p>
+<p>Moreover the larger the Possessed constituent, the higher the chances of the <em>s</em>-variant. In contrast, all other things being equal, the larger the Possessor constituent, the lower the chances of the <em>s</em>-variant. This is consistent with the theoretical assumption that the longer constituent is placed at the end: the longer a constituent, the higher the chances of a construction that places it at the end.</p>
+<p>However, that effect of the size of the Possessed constituent is valid when the Possessor slot is a common noun, which in general favors the <em>of</em> construction (as indicated by the Intercept, although it is not significant). In contrast, when the Possessor is a proper noun (which favors the <em>s</em>-construction, all other things being equal), a larger Possessed constituent actually doesn’t favor the <em>s</em> construction as much.</p>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You can always retrieve the coefficients with <code>coefficients(summary(model))</code>, which is a dataframe. For example <code>coefficients(summary(cd_glmer2))["possessor_typeproper","Estimate"]</code> returns the estimate coefficient of <code>possessor_type</code>. Adding <code><a href="https://rdrr.io/r/base/Log.html">exp()</a></code>, you can retrieve the odds of the <em>s</em>-variant over the <em>of</em>-variant when the Possessor is a proper noun, all other things being equal.</p>
+</div>
+</div>
+</section><section id="plotting-effects" class="level2"><h2 class="anchored" data-anchor-id="plotting-effects">Plotting effects</h2>
+<p><a href="#fig-effects">Figure&nbsp;8</a> plots the effects in the models. <a href="#fig-effects-1">Figure&nbsp;8 (a)</a> shows that the probabilities of the <em>s</em>-genitive decrease as the size of the Possessor constituent increases. These probabilities take the other predictors into account by assuming their typical cases.</p>
+<p><a href="#fig-effects-2">Figure&nbsp;8 (b)</a> illustrates the interaction between the type of the Possessor and the size of the Possessed constituent. As we saw in the printed output of the model, when the Possessor is a common noun, a larger size of the Possessed constituent increases the probabilities of the <em>s</em>-genitive, whereas the effect inverts when the Possessor is a proper noun. In addition, we see that the probability of the <em>s</em>-genitive is always higher for the proper noun, regardless of the size of the Possessed constituent.</p>
+<div>
+<div class="sourceCode" id="cb35"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://strengejacke.github.io/ggeffects/reference/ggpredict.html">ggpredict</a></span><span class="op">(</span><span class="va">cd_glmer2</span>, <span class="st">"size_possessor"</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu"><a href="https://strengejacke.github.io/ggeffects/reference/ggpredict.html">ggpredict</a></span><span class="op">(</span><span class="va">cd_glmer2</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"size_possessed"</span>, <span class="st">"possessor_type"</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="fig-effects" class="cell quarto-layout-panel">
+<figure class="figure"><div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-effects-1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="genitive-alternation-analysis_files/figure-html/fig-effects-1.png" class="img-fluid figure-img" data-ref-parent="fig-effects" width="672"></p>
+<p></p><figcaption class="figure-caption">(a) Effect of the size of the possessor slot.</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-effects-2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="genitive-alternation-analysis_files/figure-html/fig-effects-2.png" class="img-fluid figure-img" data-ref-parent="fig-effects" width="672"></p>
+<p></p><figcaption class="figure-caption">(b) Interaction between size of the possessed slot and type of possessor.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p></p><figcaption class="figure-caption">Figure&nbsp;8: Effect plots predicting the probability of the <em>s</em>-genitive.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</section></section><section id="easystats" class="level1"><h1>Easystats</h1>
+<p>In this final section we will showcase some functions from the <a href="https://easystats.github.io/easystats/">easystats</a> group of packages for reporting models.</p>
+<div class="cell">
+<div class="sourceCode" id="cb36"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://easystats.github.io/easystats/">easystats</a></span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Report</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Parameters</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">Performance</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" role="tab" aria-controls="tabset-2-4" aria-selected="false">Comparison</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<div class="callout-caution callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Reporting random effects
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Notice that the <a href="https://github.com/nctingwang/merDeriv">merDeriv</a> package needs to be installed to compute confidence intervals for random effect parameters.</p>
+<p>ALSO: <code>report()</code> is printing twice as much text as it should for models with multiple parameters, be careful!</p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode" id="cb37"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">report</span><span class="op">(</span><span class="va">cd_glmer2</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>We fitted a logistic mixed model (estimated using ML and Nelder-Mead optimizer)
+to predict gen_type with possessor_type (formula: gen_type ~ possessor_type +
+size_possessor + size_possessed + possessor_type:size_possessed). The model
+included comp as random effects (formula: list(~1 | comp, ~1 | source)). The
+model's total explanatory power is substantial (conditional R2 = 0.41) and the
+part related to the fixed effects alone (marginal R2) is of 0.22. The model's
+intercept, corresponding to possessor_type = common, is at -0.23 (95% CI
+[-0.71, 0.26], p = 0.357). Within this model:
+
+  - The effect of possessor type [proper] is statistically significant and
+positive (beta = 2.66, 95% CI [2.20, 3.13], p &lt; .001; Std. beta = 2.07, 95% CI
+[1.94, 2.20])
+  - The effect of size possessor is statistically significant and negative (beta
+= -0.69, 95% CI [-0.81, -0.57], p &lt; .001; Std. beta = -0.35, 95% CI [-0.42,
+-0.29])
+  - The effect of size possessed is statistically significant and positive (beta
+= 0.21, 95% CI [0.06, 0.35], p = 0.007; Std. beta = 0.11, 95% CI [0.03, 0.19])
+  - The interaction effect of size possessed on possessor type [proper] is
+statistically significant and negative (beta = -0.29, 95% CI [-0.51, -0.07], p
+= 0.010; Std. beta = -0.15, 95% CI [-0.27, -0.04])
+
+Standardized parameters were obtained by fitting the model on a standardized
+version of the dataset. 95% Confidence Intervals (CIs) and p-values were
+computed using a Wald z-distribution approximation., We fitted a logistic mixed
+model (estimated using ML and Nelder-Mead optimizer) to predict gen_type with
+size_possessor (formula: gen_type ~ possessor_type + size_possessor +
+size_possessed + possessor_type:size_possessed). The model included comp as
+random effects (formula: list(~1 | comp, ~1 | source)). The model's total
+explanatory power is substantial (conditional R2 = 0.41) and the part related
+to the fixed effects alone (marginal R2) is of 0.22. The model's intercept,
+corresponding to size_possessor = 0, is at -0.23 (95% CI [-0.71, 0.26], p =
+0.357). Within this model:
+
+  - The effect of possessor type [proper] is statistically significant and
+positive (beta = 2.66, 95% CI [2.20, 3.13], p &lt; .001; Std. beta = 2.07, 95% CI
+[1.94, 2.20])
+  - The effect of size possessor is statistically significant and negative (beta
+= -0.69, 95% CI [-0.81, -0.57], p &lt; .001; Std. beta = -0.35, 95% CI [-0.42,
+-0.29])
+  - The effect of size possessed is statistically significant and positive (beta
+= 0.21, 95% CI [0.06, 0.35], p = 0.007; Std. beta = 0.11, 95% CI [0.03, 0.19])
+  - The interaction effect of size possessed on possessor type [proper] is
+statistically significant and negative (beta = -0.29, 95% CI [-0.51, -0.07], p
+= 0.010; Std. beta = -0.15, 95% CI [-0.27, -0.04])
+
+Standardized parameters were obtained by fitting the model on a standardized
+version of the dataset. 95% Confidence Intervals (CIs) and p-values were
+computed using a Wald z-distribution approximation. and We fitted a logistic
+mixed model (estimated using ML and Nelder-Mead optimizer) to predict gen_type
+with size_possessed (formula: gen_type ~ possessor_type + size_possessor +
+size_possessed + possessor_type:size_possessed). The model included comp as
+random effects (formula: list(~1 | comp, ~1 | source)). The model's total
+explanatory power is substantial (conditional R2 = 0.41) and the part related
+to the fixed effects alone (marginal R2) is of 0.22. The model's intercept,
+corresponding to size_possessed = 0, is at -0.23 (95% CI [-0.71, 0.26], p =
+0.357). Within this model:
+
+  - The effect of possessor type [proper] is statistically significant and
+positive (beta = 2.66, 95% CI [2.20, 3.13], p &lt; .001; Std. beta = 2.07, 95% CI
+[1.94, 2.20])
+  - The effect of size possessor is statistically significant and negative (beta
+= -0.69, 95% CI [-0.81, -0.57], p &lt; .001; Std. beta = -0.35, 95% CI [-0.42,
+-0.29])
+  - The effect of size possessed is statistically significant and positive (beta
+= 0.21, 95% CI [0.06, 0.35], p = 0.007; Std. beta = 0.11, 95% CI [0.03, 0.19])
+  - The interaction effect of size possessed on possessor type [proper] is
+statistically significant and negative (beta = -0.29, 95% CI [-0.51, -0.07], p
+= 0.010; Std. beta = -0.15, 95% CI [-0.27, -0.04])
+
+Standardized parameters were obtained by fitting the model on a standardized
+version of the dataset. 95% Confidence Intervals (CIs) and p-values were
+computed using a Wald z-distribution approximation.</code></pre>
+</div>
+</div>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<div class="cell">
+<div class="sourceCode" id="cb39"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">model_parameters</span><span class="op">(</span><span class="va">cd_glmer2</span>, effects <span class="op">=</span> <span class="st">"fixed"</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu">print_md</span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="tbl-parameters" class="anchored">
+<table class="table table-sm table-striped">
+<caption>Table&nbsp;3: Fixed effect parameters.</caption>
+<colgroup>
+<col style="width: 46%">
+<col style="width: 11%">
+<col style="width: 6%">
+<col style="width: 17%">
+<col style="width: 8%">
+<col style="width: 8%">
+</colgroup>
+<thead><tr class="header">
+<th style="text-align: left;">Parameter</th>
+<th style="text-align: center;">Log-Odds</th>
+<th style="text-align: center;">SE</th>
+<th style="text-align: center;">95% CI</th>
+<th style="text-align: center;">z</th>
+<th style="text-align: center;">p</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">(Intercept)</td>
+<td style="text-align: center;">-0.23</td>
+<td style="text-align: center;">0.25</td>
+<td style="text-align: center;">(-0.71, 0.26)</td>
+<td style="text-align: center;">-0.92</td>
+<td style="text-align: center;">0.357</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">possessor type (proper)</td>
+<td style="text-align: center;">2.66</td>
+<td style="text-align: center;">0.24</td>
+<td style="text-align: center;">(2.20, 3.13)</td>
+<td style="text-align: center;">11.14</td>
+<td style="text-align: center;">&lt; .001</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">size possessor</td>
+<td style="text-align: center;">-0.69</td>
+<td style="text-align: center;">0.06</td>
+<td style="text-align: center;">(-0.81, -0.57)</td>
+<td style="text-align: center;">-11.01</td>
+<td style="text-align: center;">&lt; .001</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">size possessed</td>
+<td style="text-align: center;">0.21</td>
+<td style="text-align: center;">0.08</td>
+<td style="text-align: center;">(0.06, 0.35)</td>
+<td style="text-align: center;">2.71</td>
+<td style="text-align: center;">0.007</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">possessor type (proper) * size possessed</td>
+<td style="text-align: center;">-0.29</td>
+<td style="text-align: center;">0.11</td>
+<td style="text-align: center;">(-0.51, -0.07)</td>
+<td style="text-align: center;">-2.58</td>
+<td style="text-align: center;">0.010</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode" id="cb40"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">model_parameters</span><span class="op">(</span><span class="va">cd_glmer2</span>, effects <span class="op">=</span> <span class="st">"fixed"</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-parameters" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="genitive-alternation-analysis_files/figure-html/fig-parameters-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;9: Coefficients of the fixed effect parameters.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<p>The outliers can be further inspected with <code>cd %&gt;% filter(check_outliers(cd_glmer2))</code>.</p>
+<div>
+<div class="sourceCode" id="cb41"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">check_collinearity</span><span class="op">(</span><span class="va">cd_glmer2</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu">check_outliers</span><span class="op">(</span><span class="va">cd_glmer2</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="fig-collinearity" class="cell quarto-layout-panel">
+<figure class="figure"><div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-collinearity-1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="genitive-alternation-analysis_files/figure-html/fig-collinearity-1.png" class="img-fluid figure-img" data-ref-parent="fig-collinearity" width="672"></p>
+<p></p><figcaption class="figure-caption">(a) VIF, or collinearity</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-collinearity-2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="genitive-alternation-analysis_files/figure-html/fig-collinearity-2.png" class="img-fluid figure-img" data-ref-parent="fig-collinearity" width="672"></p>
+<p></p><figcaption class="figure-caption">(b) Outliers</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p></p><figcaption class="figure-caption">Figure&nbsp;10: Performance checks on minimal model</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="tabset-2-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-4-tab">
+<p>The <a href="https://easystats.github.io/easystats/">easystats</a> packages also offer ways of comparing different models. <code><a href="https://easystats.github.io/parameters/reference/compare_parameters.html">parameters::compare_models()</a></code> compares the effect size of the parameters, whereas <code><a href="https://easystats.github.io/performance/reference/compare_performance.html">performance::compare_performance()</a></code> compares them across metrics. Both objects have <code><a href="https://rdrr.io/r/graphics/plot.default.html">plot()</a></code> methods.</p>
+<div class="cell">
+<div class="sourceCode" id="cb42"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">param_comparison</span> <span class="op">&lt;-</span> <span class="fu">compare_models</span><span class="op">(</span><span class="st">"maximal"</span> <span class="op">=</span> <span class="va">cd_glmer</span>,</span>
+<span>                                   <span class="st">"minimal"</span> <span class="op">=</span> <span class="va">cd_glmer2</span><span class="op">)</span></span>
+<span><span class="va">performance_comparison</span> <span class="op">&lt;-</span> <span class="fu">compare_performance</span><span class="op">(</span><span class="st">"maximal"</span> <span class="op">=</span> <span class="va">cd_glmer</span>,</span>
+<span>                                              <span class="st">"minimal"</span> <span class="op">=</span> <span class="va">cd_glmer2</span>,</span>
+<span>                                              metrics <span class="op">=</span> <span class="st">"common"</span></span>
+<span>                                              <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode" id="cb43"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">print_md</span><span class="op">(</span><span class="va">param_comparison</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="tbl-paramcomp" class="anchored">
+<table class="table table-sm table-striped">
+<caption>Table&nbsp;4: Parameter comparison between maximal and minimal model.</caption>
+<colgroup>
+<col style="width: 48%">
+<col style="width: 27%">
+<col style="width: 24%">
+</colgroup>
+<thead><tr class="header">
+<th style="text-align: left;">Parameter</th>
+<th style="text-align: right;">maximal</th>
+<th style="text-align: right;">minimal</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">(Intercept)</td>
+<td style="text-align: right;">-0.70 (-1.74, 0.35)</td>
+<td style="text-align: right;">-0.23 (-0.71, 0.26)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">possessor type (proper)</td>
+<td style="text-align: right;">2.57 (1.93, 3.22)</td>
+<td style="text-align: right;">2.66 (2.20, 3.13)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">size possessor</td>
+<td style="text-align: right;">-0.45 (-0.94, 0.04)</td>
+<td style="text-align: right;">-0.69 (-0.81, -0.57)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">size possessed</td>
+<td style="text-align: right;">0.45 (-9.35e-03, 0.90)</td>
+<td style="text-align: right;">0.21 (0.06, 0.35)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">possessor type (proper) * size possessed</td>
+<td style="text-align: right;">-0.28 (-0.50, -0.06)</td>
+<td style="text-align: right;">-0.29 (-0.51, -0.07)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">possessor type (proper) * size possessor</td>
+<td style="text-align: right;">0.04 (-0.21, 0.28)</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">size possessor * size possessed</td>
+<td style="text-align: right;">-0.12 (-0.34, 0.10)</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Observations</td>
+<td style="text-align: right;">7344</td>
+<td style="text-align: right;">7344</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode" id="cb44"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">param_comparison</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-paramcomp" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="genitive-alternation-analysis_files/figure-html/fig-paramcomp-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;11: Parameter comparison between maximal and minimal model.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode" id="cb45"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">print_md</span><span class="op">(</span><span class="va">performance_comparison</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="tbl-perfcomp" class="anchored">
+<table class="table table-sm table-striped">
+<caption>Table&nbsp;5: Performance comparison between maximal and minimal model.</caption>
+<colgroup>
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 17%">
+<col style="width: 18%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 6%">
+<col style="width: 6%">
+</colgroup>
+<thead><tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: center;">Model</th>
+<th style="text-align: center;">AIC (weights)</th>
+<th style="text-align: center;">BIC (weights)</th>
+<th style="text-align: center;">R2 (cond.)</th>
+<th style="text-align: center;">R2 (marg.)</th>
+<th style="text-align: center;">ICC</th>
+<th style="text-align: center;">RMSE</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">cd_glmer</td>
+<td style="text-align: center;">glmerMod</td>
+<td style="text-align: center;">7879.3 (0.21)</td>
+<td style="text-align: center;">7941.4 (&lt;.001)</td>
+<td style="text-align: center;">0.41</td>
+<td style="text-align: center;">0.22</td>
+<td style="text-align: center;">0.25</td>
+<td style="text-align: center;">0.40</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">cd_glmer2</td>
+<td style="text-align: center;">glmerMod</td>
+<td style="text-align: center;">7876.6 (0.79)</td>
+<td style="text-align: center;">7924.9 (&gt;.999)</td>
+<td style="text-align: center;">0.41</td>
+<td style="text-align: center;">0.22</td>
+<td style="text-align: center;">0.25</td>
+<td style="text-align: center;">0.40</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode" id="cb46"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">performance_comparison</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-perfcomp" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="genitive-alternation-analysis_files/figure-html/fig-perfcomp-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;12: Performance comparison between maximal and minimal model.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer"><div class="nav-footer">
+      <div class="nav-footer-center">Methods in Corpus Linguistics — Mariana Montes, 2022</div>
+  </div>
+</footer>
+
+
+</body></html>
