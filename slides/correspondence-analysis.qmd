@@ -1,13 +1,56 @@
 ---
-title: "Correspondence Analysis"
-format: revealjs
+title: "Correspondence analysis"
+subtitle: "Methods of Corpus Linguistics (class 7)"
+author: "Mariana Montes"
+format:
+  revealjs:
+    preview-links: auto
+    multiplex: true
+    chalkboard:
+        buttons: false
+    code-fold: true
+    css: styles.css
 execute:
   echo: true
 ---
 
+```{r}
+#| label: setup
+#| include: false
+headings <- c("Introduction", "Terminology", r"($\chi^2$)", "Linguistic example") 
+library(tidyverse)
+library(kableExtra)
+options(digits = 3)
+print_matrix <- function(mtx) {
+  k <- kbl(mtx, booktabs = TRUE) %>% 
+    kable_classic(full_width = FALSE, font_size = 20)
+  if ("Sum" %in% colnames(mtx)) {
+    k <- column_spec(k, ncol(mtx)+1, bold = TRUE)
+  }
+  if ("Sum" %in% rownames(mtx)) {
+    k <- row_spec(k, nrow(mtx), bold = TRUE)
+  }
+  k
+}
+```
+
+## Outline
+
+```{r}
+#| label: outline
+#| results: asis
+#| echo: false
+for (heading in headings) {
+  cat("-", heading, "\n")
+}
+i <- 1
+```
+
 ## Correspondence Analysis
 
+::: msg
 Dimension reduction technique for "count" data.
+:::
 
 Visualization: **biplot**, showing relationships:
 
@@ -15,86 +58,120 @@ Visualization: **biplot**, showing relationships:
 
 - between columns
 
-- between rows and columns.
+- between rows and columns (kind of).
 
-## Count data
-
-```{r}
-#| label: setup
-library(tidyverse)
-library(mclm)
-data(smoke)
-smoke
-```
-
-::: {.incremental}
-
-- Rows = staff category (Senior/Junior manager/employee, Secretary)
-
-- Columns = smoking category (from none to heavy)
-
-- Cells = **counts**, e.g. 4 of the senior managers don't smoke.
-
+::: {.footer}
+`r headings[[i]]`
 :::
 
-## Biplot
+# `r headings[[i]]`
 
-```{r}
-#| label: plot1
-smoke_ca <- ca(smoke)
-plot(smoke_ca)
-```
+## Linguistic example
 
-# Terminology
+![](trump-clinton-plot.png)
 
-```{r}
-#| label: myfunc
-#| include: false
-library(kableExtra)
-print_matrix <- function(mtx) {
-  k <- kbl(mtx, booktabs = TRUE, digits = 3) %>% 
-    kable_classic(full_width = FALSE, font_size = 20)
-  if ("Sum" %in% colnames(mtx)) {
-    k <- column_spec(k, ncol(mtx)+1,
-                     bold = TRUE)
-  }
-  if ("Sum" %in% rownames(mtx)) {
-    k <- row_spec(k, nrow(mtx),
-                  bold = TRUE)
-  }
-  k
-}
-```
+::: {.footer}
+`r headings[[i]]`
+:::
 
-## Original matrix $N$
+## Classic (non-linguistic) example^[The `smoke` dataset comes with the `{ca}` package.]
 
 :::: {.columns}
 
-::: {.column width="35%"}
-$n \times m$ matrix with frequency counts $n_{ij}$
-
-- $n$ = `r nrow(smoke)`
-- $m$ = `r length(smoke)`
-- $n_{\mathrm{SE, light}}$ = `r smoke["SE", "light"]`
-
-:::
-
-::: {.column width="5%"}
-:::
-
-::: {.column width="60%"}
+::: {.column width="40%"}
 ```{r}
-#| label: original-matrix
-smoke_mtx <- as.matrix(smoke)
-print_matrix(smoke_mtx)
+#| label: smoke-data
+#| code-fold: false
+library(tidyverse)
+library(mclm)
+data(smoke)
+print_matrix(smoke)
 ```
+:::
+
+::: {.column width="60%" .incremental .smaller}
+- Rows are **types of employees** (Senior/Junior manager, Senior/Junior Employee, Secretary).
+
+- Columns are **types of smokers**.
+
+- Values in the cells are **counts**.
 
 :::
 
 ::::
 
-::: {.aside}
-Check out the source code of the slides if you want to use `print_matrix()`.
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Smoke plot
+
+```{r}
+#| label: smoke-plot
+#| code-fold: false
+smoke_ca <- ca(smoke)
+plot(smoke_ca)
+```
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Smoke CA
+
+::: {.panel-tabset}
+
+### `print()`
+
+```{r}
+#| label: smoke-ca
+smoke_ca
+```
+
+### `summary()`
+
+```{r}
+#| label: smoke-summary
+summary(smoke_ca)
+```
+
+:::
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+```{r}
+#| include: false
+i <- i+1
+```
+
+# `r headings[[i]]`
+
+## Original matrix $N$
+
+$n \times m$ matrix with frequency counts $n_{ij}$
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- $n$ = `r nrow(smoke)`
+- $m$ = `r length(smoke)`
+- $n_{\mathrm{SE, light}}$ = `r smoke["SE", "light"]`
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: original-matrix
+smoke_mtx <- as.matrix(smoke)
+print_matrix(smoke_mtx)
+```
+:::
+
+::::
+
+::: {.footer}
+`r headings[[i]]`
 :::
 
 ## Correspondence matrix $P$
@@ -104,20 +181,16 @@ $n \times m$ matrix with overall proportions $p_{ij}$
 :::: {.columns}
 
 ::: {.column width="35%"}
-
 ### Mass
 
-- $p_{\mathrm{(SE,light)}}$ = `r formatC(prop.table(smoke_mtx)["SE", "light"], digits = 3)`
+- $p_{\mathrm{SE,light}}$ = `r prop.table(smoke_mtx)["SE", "light"]`
 
-- $p_{\mathrm{SE}}$ = `r formatC(sum(prop.table(smoke_mtx)["SE",]), digits = 3)`
+- $p_{\mathrm{SE,.}}$ = `r sum(prop.table(smoke_mtx)["SE",])`
 
-- $p_{\mathrm{light}}$ = `r formatC(sum(prop.table(smoke_mtx)[, "light"]), digits = 3)`
-
+- $p_{\mathrm{.,light}}$ = `r sum(prop.table(smoke_mtx)[, "light"])`
 :::
-
 ::: {.column width="5%"}
 :::
-
 ::: {.column width="60%"}
 ```{r}
 #| label: correspondence-matrix
@@ -125,166 +198,111 @@ prop.table(smoke_mtx) %>%
   addmargins() %>% 
   print_matrix()
 ```
-
 :::
 
 ::::
 
-## Row profiles matrix $R$
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Row profiles
+
+$n \times m$ matrix with overall row proportions $r_{ij}$
 
 :::: {.columns}
 
-::: {.column width="35%"}
-$n \times m$ matrix with overall row proportions $r_{ij}$
-
-- $r_{\mathrm{SE,light}}$ = `r formatC(prop.table(smoke_mtx, 1)["SE", "light"], digits = 3)`
+::: {.column width="50%"}
+- $r_{\mathrm{SE,light}}$ = `r prop.table(smoke_mtx, 1)["SE", "light"]`^[Proportion of senior employees that are light smokers.]
 
 - columns are dimensions in the **row points cloud**
 
-:::
+- In bold: the **row centroid**.
 
-::: {.column width="5%"}
 :::
-
-::: {.column width="60%"}
+::: {.column width="50%"}
 ```{r}
 #| label: row-profiles-matrix
-prop.table(smoke_mtx, 1) %>% 
-  addmargins(1) %>% 
+addmargins(smoke_mtx, 1) %>% 
+  prop.table(1) %>% 
   print_matrix()
 ```
-
 :::
 
 ::::
 
-## Column profiles matrix $C$
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Column profiles
+
+$n \times m$ matrix with overall row proportions $c_{ij}$
 
 :::: {.columns}
 
-::: {.column width="35%"}
-$n \times m$ matrix with overall column proportions $c_{ij}$
-
-- $c_{\mathrm{(SE,light)}}$ = `r formatC(prop.table(smoke_mtx, 2)["SE", "light"], digits = 3)`
+::: {.column width="50%"}
+- $c_{\mathrm{SE,light}}$ = `r prop.table(smoke_mtx, 2)["SE", "light"]`^[Proportion of light smokers that are senior employees.]
 
 - rows are dimensions in the **column points cloud**
 
-:::
+- In bold: the **column centroid**.
 
-::: {.column width="5%"}
 :::
-
-::: {.column width="60%"}
+::: {.column width="50%"}
 ```{r}
-#| label: column-profiles-matrix
-prop.table(smoke_mtx, 2) %>% 
-  addmargins(2) %>% 
+#| label: col-profiles-matrix
+addmargins(smoke_mtx, 2) %>% 
+  prop.table(2) %>% 
   print_matrix()
 ```
-
 :::
 
 ::::
 
-## Chi-squared distances {.smaller}
+::: {.footer}
+`r headings[[i]]`
+:::
 
-- Euclidean distance
+```{r}
+#| include: false
+i <- i+1
+```
+
+# `r headings[[i]]`
+
+## Row distances {.smaller}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+### Euclidean
 
 $$\sqrt{\sum_{j=1}^m(r_{ij}-r_{i'j})^2}$$
+:::
 
-- Chi-squared distance - it divides by the mass of the row/columns^[It corrects for the fact that the more data you have, the more variability you can expect.]
-
+::: {.column width="50%"}
+### Chi-squared ($\chi^2$)
 $$\sqrt{\sum_{j=1}^m\frac{(r_{ij}-r_{i'j})^2}{p_{.j}}}$$
-
-## Inertia
-
-Sum of the squares of the residuals.
-
-The cell contribution of cell $ij$ = $\frac{(p_{ij}-(p_{i.} \times p_{.j}))^2}{p_i\times p_{.j}}$
-
-:::: {.columns}
-
-::: {.column}
-```{r}
-#| label: inertia-counts
-addmargins(smoke_mtx) %>% 
-  print_matrix
-```
-
-:::
-
-::: {.column .incremental .smaller}
-
-...for cell ["SE", "none"]
-
-```{r}
-#| label: inertia-example
-#| include: false
-n_ij <- smoke_mtx[1,1]
-r_i <- sum(smoke_mtx[1,])
-c_j <- sum(smoke_mtx[,1])
-nn <- sum(smoke_mtx)
-```
-
-- $p_{ij} = \frac{`r n_ij`}{`r nn`} = `r n_ij/nn`$
-
-- $p_{i.} = \frac{`r r_i`}{`r nn`} = `r r_i/nn`$
-
-- $p_{.j} = \frac{`r c_j`}{`r nn`} = `r c_j/nn`$
-
-- $p_{i.} \times p_{.j} = \frac{`r r_i`}{`r nn`} \times \frac{`r c_j`}{`r nn`} = `r round((r_i*c_j/nn), 3)`$
-
 :::
 
 ::::
 
-## Inertia
+$\chi^2$ divides the Euclidean row distance by the mass of the columns: it corrects for the fact that the more data you have, the more variability you can expect.
 
-Sum of the squares of the residuals.
-
-The cell contribution of cell $ij$ = $\frac{(p_{ij}-(p_{i.} \times p_{.j}))^2}{p_i\times p_{.j}}$
-
-:::: {.columns}
-
-::: {.column}
-```{r}
-#| label: inertia-prop
-prop.table(smoke_mtx) %>% 
-  addmargins() %>% 
-  print_matrix
-```
-
+::: callout-tip
+For column distances the computation is equivalent.
 :::
 
-::: {.column .incremental .smaller}
-
-...for cell ["SE", "none"]
-
-<!-- TODO THINK ABOUT THIS -->
-
-```{r}
-#| label: inertia-example-prop
-#| include: false
-p_ij <- prop.table(smoke_mtx)[1,1]
-p_i <- round(sum(prop.table(smoke_mtx)[1,]), 3)
-p_j <- round(sum(prop.table(smoke_mtx)[,1]), 3)
-expected <- sum(prop.table(smoke_mtx)[1,])*sum(prop.table(smoke_mtx)[,1])
-```
-
-- $\frac{(p_{ij}-(p_{i.} \times p_{.j}))^2}{p_i\times p_{.j}}$
-
-- $\frac{(`r p_ij`-(`r p_i` \times `r p_j`))^2}{`r p_i` \times `r p_j`}$
-
-- $\frac{(`r p_ij`-`r round(expected, 3)`)^2}{`r round(expected, 3)`} = `r round(((p_ij-expected)^2)/expected, 4)`$
-
+::: {.footer}
+`r headings[[i]]`
 :::
-
-::::
 
 ## Computing $\chi^2$
 
 ```{r}
 #| label: chisq
+#| code-fold: false
 smoke_chisq <- chisq.test(smoke)
 smoke_chisq
 ```
@@ -294,24 +312,136 @@ smoke_chisq
 ::: {.column}
 ```{r}
 #| label: expected
-smoke_chisq$expected %>% print_matrix()
+#| code-fold: false
+print_matrix(smoke_chisq$expected)
 ```
 :::
 
 ::: {.column}
 ```{r}
 #| label: residuals
-smoke_chisq$residuals %>% print_matrix()
+#| code-fold: false
+print_matrix(smoke_chisq$residuals)
 ```
 :::
 
 ::::
 
+::: {.footer}
+`r headings[[i]]`
+:::
 
-## Inertia of a row
+## Inertia
 
-...the sum of the cell contributions to the inertia of all cells of a row
+Sum of the squares of the residuals.
 
-- the row mass $p_{i.}$ multiplied by the square of the row distance to the centroid of the row points cloud
+The cell contribution of cell $ij$ = $\frac{(p_{ij}-(p_{i.} \times p_{.j}))^2}{p_i\times p_{.j}}$
 
-(Same for the columns)
+::: {.footer}
+`r headings[[i]]`
+:::
+
+```{r}
+#| include: false
+i <- i+1
+```
+
+# `r headings[[i]]`
+
+## Contingency table
+
+```{r}
+#| label: tc-setup
+# get corpus documents
+corpus_folder <- here::here("studies", "_corpora", "clinton_trump")
+fnames <- get_fnames(corpus_folder)
+short_fnames <- short_names(fnames)
+# get possible features
+stop_list <- read_types(here::here("studies", "assets", "ca-trump-clinton", "stop_list.txt"))
+features <- freqlist(fnames) %>% drop_types(stop_list) %>%
+  keep_pos(1:150) %>% as_types()
+# create contingency table (a matrix)
+d <- map(setNames(fnames, short_fnames), ~ freqlist(.x)[features]) %>%
+  bind_cols() %>% data.frame(row.names = features) %>% 
+  as.matrix() %>% t() %>% drop_empty_rc()
+print_matrix(d[1:10, 1:10])
+```
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Correspondence Analysis {.smaller}
+
+```{r}
+#| label: tc-ca
+#| code-fold: false
+d_ca <- ca(d)
+```
+
+::: {.panel-tabset}
+
+### `print()`
+
+```{r}
+#| label: tc-ca-print
+#| code-fold: false
+d_ca
+```
+
+### `summary()`
+
+```{r}
+#| label: tc-summary
+#| code-fold: false
+summary(d_ca)
+```
+
+:::
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Basic plot
+
+```{r}
+#| label: tc-plot
+#| code-fold: false
+plot(d_ca)
+```
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Customized plot
+
+```{r}
+#| label: tc-ggplot
+texts_df <- row_pcoord(d_ca)[,c(1, 2)] %>% 
+  as_tibble(rownames = "text") %>% 
+  mutate(Subcorpus = re_retrieve_first(fnames, "/clinton_trump/([^/]+)", requested_group = 1))
+
+words_df <- col_pcoord(d_ca)[,c(1, 2)] %>% 
+  as_tibble(rownames = "word")
+
+dim_1 <- sprintf("Dimension 1 (%.2f %%)", summary(d_ca)$scree[1,3])
+dim_2 <- sprintf("Dimension 2 (%.2f %%)", summary(d_ca)$scree[2,3])
+
+ggplot(words_df, aes(x = V1, y = V2)) +
+  geom_text(aes(label = word), color = "gray60") +
+  geom_point(data = texts_df, aes(color = Subcorpus)) +
+  scale_color_manual(values = c("#0000CD","#DC143C")) +
+  geom_hline(yintercept = 0, color = "darkgray") +
+  geom_vline(xintercept = 0, color = "darkgray") +
+  theme_bw(base_size = 12) +
+  labs(x = dim_1, y = dim_2) +
+  coord_fixed()
+```
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+# Next: Factor Analysis

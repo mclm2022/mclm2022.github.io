@@ -1,0 +1,2550 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="correspondence-analysis_files/libs/clipboard/clipboard.min.js"></script>
+<script src="correspondence-analysis_files/libs/quarto-html/tabby.min.js"></script>
+<script src="correspondence-analysis_files/libs/quarto-html/popper.min.js"></script>
+<script src="correspondence-analysis_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="correspondence-analysis_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="correspondence-analysis_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="correspondence-analysis_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.2.237">
+
+  <meta name="author" content="Mariana Montes">
+  <title>Correspondence analysis</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="correspondence-analysis_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="correspondence-analysis_files/libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="correspondence-analysis_files/libs/revealjs/dist/theme/quarto.css" id="theme">
+  <link rel="stylesheet" href="styles.css">
+  <link href="correspondence-analysis_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="correspondence-analysis_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="correspondence-analysis_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="correspondence-analysis_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="correspondence-analysis_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="correspondence-analysis_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+
+  .callout {
+    margin-top: 1em;
+    margin-bottom: 1em;  
+    border-radius: .25rem;
+  }
+
+  .callout.callout-style-simple { 
+    padding: 0em 0.5em;
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+    display: flex;
+  }
+
+  .callout.callout-style-default {
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+  }
+
+  .callout .callout-body-container {
+    flex-grow: 1;
+  }
+
+  .callout.callout-style-simple .callout-body {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-style-default .callout-body {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-captioned.callout-style-simple .callout-body {
+    margin-top: 0.2em;
+  }
+
+  .callout:not(.callout-captioned) .callout-body {
+      display: flex;
+  }
+
+  .callout:not(.no-icon).callout-captioned.callout-style-simple .callout-content {
+    padding-left: 1.6em;
+  }
+
+  .callout.callout-captioned .callout-header {
+    padding-top: 0.2em;
+    margin-bottom: -0.2em;
+  }
+
+  .callout.callout-captioned .callout-caption  p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+    
+  .callout.callout-captioned.callout-style-simple .callout-content  p {
+    margin-top: 0;
+  }
+
+  .callout.callout-captioned.callout-style-default .callout-content  p {
+    margin-top: 0.7em;
+  }
+
+  .callout.callout-style-simple div.callout-caption {
+    border-bottom: none;
+    font-size: .9rem;
+    font-weight: 600;
+    opacity: 75%;
+  }
+
+  .callout.callout-style-default  div.callout-caption {
+    border-bottom: none;
+    font-weight: 600;
+    opacity: 85%;
+    font-size: 0.9rem;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-default div.callout-content {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-simple .callout-icon::before {
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+  }
+
+  .callout.callout-style-default .callout-icon::before {
+    height: 0.9rem;
+    width: 0.9rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 0.9rem 0.9rem;
+  }
+
+  .callout-caption {
+    display: flex
+  }
+    
+  .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  .callout.no-icon::before {
+    display: none !important;
+  }
+
+  .callout.callout-captioned .callout-body > .callout-content > :last-child {
+    margin-bottom: 0.5rem;
+  }
+
+  .callout.callout-captioned .callout-icon::before {
+    margin-top: .5rem;
+    padding-right: .5rem;
+  }
+
+  .callout:not(.callout-captioned) .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  /* Callout Types */
+
+  div.callout-note {
+    border-left-color: #4582ec !important;
+  }
+
+  div.callout-note .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEU0lEQVRYCcVXTWhcVRQ+586kSUMMxkyaElstCto2SIhitS5Ek8xUKV2poatCcVHtUlFQk8mbaaziwpWgglJwVaquitBOfhQXFlqlzSJpFSpIYyXNjBNiTCck7x2/8/LeNDOZxDuEkgOXe++553zfefee+/OYLOXFk3+1LLrRdiO81yNqZ6K9cG0P3MeFaMIQjXssE8Z1JzLO9ls20MBZX7oG8w9GxB0goaPrW5aNMp1yOZIa7Wv6o2ykpLtmAPs/vrG14Z+6d4jpbSKuhdcSyq9wGMPXjonwmESXrriLzFGOdDBLB8Y6MNYBu0dRokSygMA/mrun8MGFN3behm6VVAwg4WR3i6FvYK1T7MHo9BK7ydH+1uurECoouk5MPRyVSBrBHMYwVobG2aOXM07sWrn5qgB60rc6mcwIDJtQrnrEr44kmy+UO9r0u9O5/YbkS9juQckLed3DyW2XV/qWBBB3ptvI8EUY3I9p/67OW+g967TNr3Sotn3IuVlfMLVnsBwH4fsnebJvyGm5GeIUA3jljERmrv49SizPYuq+z7c2H/jlGC+Ghhupn/hcapqmcudB9jwJ/3jvnvu6vu5lVzF1fXyZuZZ7U8nRmVzytvT+H3kilYvH09mLWrQdwFSsFEsxFVs5fK7A0g8gMZjbif4ACpKbjv7gNGaD8bUrlk8x+KRflttr22JEMRUbTUwwDQScyzPgedQHZT0xnx7ujw2jfVfExwYHwOsDTjLdJ2ebmeQIlJ7neo41s/DrsL3kl+W2lWvAga0tR3zueGr6GL78M3ifH0rGXrBC2aAR8uYcIA5gwV8zIE8onoh8u0Fca/ciF7j1uOzEnqcIm59sEXoGc0+z6+H45V1CvAvHcD7THztu669cnp+L0okAeIc6zjbM/24LgGM1gZk7jnRu1aQWoU9sfUOuhrmtaPIO3YY1KLLWZaEO5TKUbMY5zx8W9UJ6elpLwKXbsaZ4EFl7B4bMtDv0iRipKoDQT2sNQI9b1utXFdYisi+wzZ/ri/1m7QfDgEuvgUUEIJPq3DhX/5DWNqIXDOweC2wvIR90Oq3lDpdMIgD2r0dXvGdsEW5H6x6HLRJYU7C69VefO1x8Gde1ZFSJLfWS1jbCnhtOPxmpfv2LXOA2Xk2tvnwKKPFuZ/oRmwBwqRQDcKNeVQkYcOjtWVBuM/JuYw5b6isojIkYxyYAFn5K7ZBF10fea52y8QltAg6jnMqNHFBmGkQ1j+U43HMi2xMar1Nv0zGsf1s8nUsmUtPOOrbFIR8bHFDMB5zL13Gmr/kGlCkUzedTzzmzsaJXhYawnA3UmARpiYj5ooJZiUoxFRtK3X6pgNPv+IZVPcnwbOl6f+aBaO1CNvPW9n9LmCp01nuSaTRF2YxHqZ8DYQT6WsXT+RD6eUztwYLZ8rM+rcPxamv1VQzFUkzFXvkiVrySGQgJNvXHJAxiU3/NwiC03rSf05VBaPtu/Z7/B8Yn/w7eguloAAAAAElFTkSuQmCC');
+  }
+
+  div.callout-note.callout-style-default .callout-caption {
+    background-color: #dae6fb
+  }
+
+  div.callout-important {
+    border-left-color: #d9534f !important;
+  }
+
+  div.callout-important .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEKklEQVRYCcVXTWhcVRS+575MJym48A+hSRFr00ySRQhURRfd2HYjk2SSTokuBCkU2o0LoSKKraKIBTcuFCoidGFD08nkBzdREbpQ1EDNIv8qSGMFUboImMSZd4/f9zJv8ibJMC8xJQfO3HPPPef7zrvvvnvviIkpC9nsw0UttFunbUhpFzFtarSd6WJkStVMw5xyVqYTvkwfzuf/5FgtkVoB0729j1rjXwThS7Vio+Mo6DNnvLfahoZ+i/o32lULuJ3NNiz7q6+pyAUkJaFF6JwaM2lUJlV0MlnQn5aTRbEu0SEqHUa0A4AdiGuB1kFXRfVyg5d87+Dg4DL6m2TLAub60ilj7A1Ec4odSAc8X95sHh7+ZRPCFo6Fnp7HfU/fBng/hi10CjCnWnJjsxvDNxWw0NfV6Rv5GgP3I3jGWXumdTD/3cbEOP2ZbOZp69yniG3FQ9z1jD7bnBu9Fc2tKGC2q+uAJOQHBDRiZX1x36o7fWBs7J9ownbtO+n0/qWkvW7UPIfc37WgT6ZGR++EOJyeQDSb9UB+DZ1G6DdLDzyS+b/kBCYGsYgJbSQHuThGKRcw5xdeQf8YdNHsc6ePXrlSYMBuSIAFTGAtQo+VuALo4BX83N190NWZWbynBjhOHsmNfFWLeL6v+ynsA58zDvvAC8j5PkbOcXCMg2PZFk3q8MjI7WAG/Dp9AwP7jdGBOOQkAvlFUB+irtm16I1Zw9YBcpGTGXYmk3kQIC/Cds55l+iMI3jqhjAuaoe+am2Jw5GT3Nbz3CkE12NavmzN5+erJW7046n/CH1RO/RVa8lBLozXk9uqykkGAyRXLWlLv5jyp4RFsG5vGVzpDLnIjTWgnRy2Rr+tDKvRc7Y8AyZq10jj8DqXdnIRNtFZb+t/ZRtXcDiVnzpqx8mPcDWxgARUqx0W1QB9MeUZiNrV4qP+Ehc+BpNgATsTX8ozYKL2NtFYAHc84fG7ndxUPr+AR/iQSns7uSUufAymwDOb2+NjK27lEFocm/EE2WpyIy/Hi66MWuMKJn8RvxIcj87IM5Vh9663ziW36kR0HNenXuxmfaD8JC7tfKbrhFr7LiZCrMjrzTeGx+PmkosrkNzW94ObzwocJ7A1HokLolY+AvkTiD/q1H0cN48c5EL8Crkttsa/AXQVDmutfyku0E7jShx49XqV3MFK8IryDhYVbj7Sj2P2eBxwcXoe8T8idsKKPRcnZw1b+slFTubwUwhktrfnAt7J++jwQtLZcm3sr9LQrjRzz6cfMv9aLvgmnAGvpoaGLxM4mAEaLV7iAzQ3oU0IvD5x9ix3yF2RAAuYAOO2f7PEFWCXZ4C9Pb2UsgDeVnFSpbFK7/IWu7TPTvBqzbGdCHOJQSxiEjt6IyZmxQyEJHv6xyQsYk//moVFsN2zP6fRImjfq7/n/wFDguUQFNEwugAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-important.callout-style-default .callout-caption {
+    background-color: #f7dddc
+  }
+
+  div.callout-warning {
+    border-left-color: #f0ad4e !important;
+  }
+
+  div.callout-warning .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAETklEQVRYCeVWW2gcVRg+58yaTUnizqbipZeX4uWhBEniBaoUX1Ioze52t7sRq6APio9V9MEaoWlVsFasRq0gltaAPuxms8lu0gcviE/FFOstVbSIxgcv6SU7EZqmdc7v9+9mJtNks51NTUH84ed889/PP+cmxP+d5FIbMJmNbpREu4WUkiTtCicKny0l1pIKmBzovF2S+hIJHX8iEu3hZJ5lNZGqyRrGSIQpq15AzF28jgpeY6yk6GVdrfFqdrD6Iw+QlB8g0YS2g7dyQmXM/IDhBhT0UCiRf59lfqmmDvzRt6kByV/m4JjtzuaujMUM2c5Z2d6JdKrRb3K2q6mA+oYVz8JnDdKPmmNthzkAk/lN63sYPgevrguc72aZX/L9C6x09GYyxBgCX4NlvyGUHOKELlm5rXeR1kchuChJt4SSwyddZRXgvwMGvYo4QSlk3/zkHD8UHxwVJA6zjZZqP8v8kK8OWLnIZtLyCAJagYC4rTGW/9Pqj92N/c+LUaAj27movwbi19tk/whRCIE7Q9vyI6yvRpftAKVTdUjOW40X3h5OXsKCdmFcx0xlLJoSuQngnrJe7Kcjm4OMq9FlC7CMmScQANuNvjfP3PjGXDBaUQmbp296S5L4DrpbrHN1T87ZVEZVCzg1FF0Ft+dKrlLukI+/c9ENo+TvlTDbYFvuKPtQ9+l052rXrgKoWkDAFnvh0wTOmYn8R5f4k/jN/fZiCM1tQx9jQQ4ANhqG4hiL0qIFTGViG9DKB7GYzgubnpofgYRwO+DFjh0Zin2m4b/97EDkXkc+f6xYAPX0KK2I/7fUQuwzuwo/L3AkcjugPNixC8cHf0FyPjWlItmLxWw4Ou9YsQCr5fijMGoD/zpdRy95HRysyXA74MWOnscpO4j2y3HAVisw85hX5+AFBRSHt4ShfLFkIMXTqyKFc46xdzQM6XbAi702a7sy04J0+feReMFKp5q9esYLCqAZYw/k14E/xcLLsFElaornTuJB0svMuJINy8xkIYuL+xPAlWRceH6+HX7THJ0djLUom46zREu7tTkxwmf/FdOZ/sh6Q8qvEAiHpm4PJ4a/doJe0gH1t+aHRgCzOvBvJedEK5OFE5jpm4AGP2a8Dxe3gGJ/pAutug9Gp6he92CsSsWBaEcxGx0FHytmIpuqGkOpldqNYQK8cSoXvd+xLxXADw0kf6UkJNFtdo5MOgaLjiQOQHcn+A6h5NuL2s0qsC2LOM75PcF3yr5STuBSAcGG+meA14K/CI21HcS4LBT6tv0QAh8Dr5l93AhZzG5ZJ4VxAqdZUEl9z7WJ4aN+svMvwHHL21UKTd1mqvChH7/Za5xzXBBKrUcB0TQ+Ulgkfbi/H/YT5EptrGzsEK7tR1B7ln9BBwckYfMiuSqklSznIuoIIOM42MQO+QnduCoFCI0bpkzjCjddHPN/F+2Yu+sd9bKNpVwHhbS3LluK/0zgfwD0xYI5dXuzlQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-warning.callout-style-default .callout-caption {
+    background-color: #fcefdc
+  }
+
+  div.callout-tip {
+    border-left-color: #02b875 !important;
+  }
+
+  div.callout-tip .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAADr0lEQVRYCe1XTWgTQRj9ZjZV8a9SPIkKgj8I1bMHsUWrqYLVg4Ue6v9BwZOxSYsIerFao7UiUryIqJcqgtpimhbBXoSCVxUFe9CTiogUrUp2Pt+3aUI2u5vdNh4dmMzOzHvvezuz8xNFM0mjnbXaNu1MvFWRXkXEyE6aYOYJpdW4IXuA4r0fo8qqSMDBU0v1HJUgVieAXxzCsdE/YJTdFcVIZQNMyhruOMJKXYFoLfIfIvVIMWdsrd+Rpd86ZmyzzjJmLStqRn0v8lzkb4rVIXvnpScOJuAn2ACC65FkPzEdEy4TPWRLJ2h7z4cArXzzaOdKlbOvKKX25Wl00jSnrwVxAg3o4dRxhO13RBSdNvH0xSARv3adTXbBdTf64IWO2vH0LT+cv4GR1DJt+DUItaQogeBX/chhbTBxEiZ6gftlDNXTrvT7co4ub5A6gp9HIcHvzTa46OS5fBeP87Qm0fQkr4FsYgVQ7Qg+ZayaDg9jhg1GkWj8RG6lkeSacrrHgDaxdoBiZPg+NXV/KifMuB6//JmYH4CntVEHy/keA6x4h4CU5oFy8GzrBS18cLJMXcljAKB6INjWsRcuZBWVaS3GDrqB7rdapVIeA+isQ57Eev9eCqzqOa81CY05VLd6SamW2wA2H3SiTbnbSxmzfp7WtKZkqy4mdyAlGx7ennghYf8voqp9cLSgKdqNfa6RdRsAAkPwRuJZNbpByn+RrJi1RXTwdi8RQF6ymDwGMAtZ6TVE+4uoKh+MYkcLsT0Hk8eAienbiGdjJHZTpmNjlbFJNKDVAp2fJlYju6IreQxQ08UJDNYdoLSl6AadO+fFuCQqVMB1NJwPm69T04Wv5WhfcWyfXQB+wXRs1pt+nCknRa0LVzSA/2B+a9+zQJadb7IyyV24YAxKp2Jqs3emZTuNnKxsah+uabKbMk7CbTgJx/zIgQYErIeTKRQ9yD9wxVof5YolPHqaWo7TD6tJlh7jQnK5z2n3+fGdggIOx2kaa2YI9QWarc5Ce1ipNWMKeSG4DysFF52KBmTNMmn5HqCFkwy34rDg05gDwgH3bBi+sgFhN/e8QvRn8kbamCOhgrZ9GJhFDgfcMHzFb6BAtjKpFhzTjwv1KCVuxHvCbsSiEz4CANnj84cwHdFXAbAOJ4LTSAawGWFn5tDhLMYz6nWeU2wJfIhmIJBefcd/A5FWQWGgrWzyORZ3Q6HuV+Jf0Bj+BTX69fm1zWgK7By1YTXchFDORywnfQ7GpzOo6S+qECrsx2ifVQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-tip.callout-style-default .callout-caption {
+    background-color: #ccf1e3
+  }
+
+  div.callout-caution {
+    border-left-color: #fd7e14 !important;
+  }
+
+  div.callout-caution .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAACV0lEQVRYCdVWzWoUQRCuqp2ICBLJXgITZL1EfQDBW/bkzUMUD7klD+ATSHBEfAIfQO+iXsWDxJsHL96EHAwhgzlkg8nBg25XWb0zIb0zs9muYYWkoKeru+vn664fBqElyZNuyh167NXJ8Ut8McjbmEraKHkd7uAnAFku+VWdb3reSmRV8PKSLfZ0Gjn3a6Xlcq9YGb6tADjn+lUfTXtVmaZ1KwBIvFI11rRXlWlatwIAAv2asaa9mlB9wwygiDX26qaw1yYPzFXg2N1GgG0FMF8Oj+VIx7E/03lHx8UhvYyNZLN7BwSPgekXXLribw7w5/c8EF+DBK5idvDVYtEEwMeYefjjLAdEyQ3M9nfOkgnPTEkYU+sxMq0BxNR6jExrAI31H1rzvLEfRIdgcv1XEdj6QTQAS2wtstEALLG1yEZ3QhH6oDX7ExBSFEkFINXH98NTrme5IOaaA7kIfiu2L8A3qhH9zRbukdCqdsA98TdElyeMe5BI8Rs2xHRIsoTSSVFfCFCWGPn9XHb4cdobRIWABNf0add9jakDjQJpJ1bTXOJXnnRXHRf+dNL1ZV1MBRCXhMbaHqGI1JkKIL7+i8uffuP6wVQAzO7+qVEbF6NbS0LJureYcWXUUhH66nLR5rYmva+2tjRFtojkM2aD76HEGAD3tPtKM309FJg5j/K682ywcWJ3PASCcycH/22u+Bh7Aa0ehM2Fu4z0SAE81HF9RkB21c5bEn4Dzw+/qNOyXr3DCTQDMBOdhi4nAgiFDGCinIa2owCEChUwD8qzd03PG+qdW/4fDzjUMcE1ZpIAAAAASUVORK5CYII=');
+  }
+
+  div.callout-caution.callout-style-default .callout-caption {
+    background-color: #ffe5d0
+  }
+
+  </style>
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+  
+  <script src="correspondence-analysis_files/libs/kePrint-0.0.1/kePrint.js"></script>
+  <link href="correspondence-analysis_files/libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Correspondence analysis</h1>
+  <p class="subtitle">Methods of Corpus Linguistics (class 7)</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Mariana Montes 
+</div>
+</div>
+</div>
+
+</section>
+<section id="outline" class="slide level2">
+<h2>Outline</h2>
+<ul>
+<li>Introduction</li>
+<li>Terminology</li>
+<li><span class="math inline">\(\chi^2\)</span></li>
+<li>Linguistic example</li>
+</ul>
+</section>
+<section id="correspondence-analysis" class="slide level2">
+<h2>Correspondence Analysis</h2>
+<div class="msg">
+<p>Dimension reduction technique for “count” data.</p>
+</div>
+<p>Visualization: <strong>biplot</strong>, showing relationships:</p>
+<ul>
+<li><p>between rows</p></li>
+<li><p>between columns</p></li>
+<li><p>between rows and columns (kind of).</p></li>
+</ul>
+<div class="footer">
+<p>Introduction</p>
+</div>
+</section>
+<section>
+<section id="introduction" class="title-slide slide level1 center">
+<h1>Introduction</h1>
+
+</section>
+<section id="linguistic-example" class="slide level2">
+<h2>Linguistic example</h2>
+
+<img data-src="trump-clinton-plot.png" class="r-stretch"><div class="footer">
+<p>Introduction</p>
+</div>
+</section>
+<section id="classic-non-linguistic-example" class="slide level2">
+<h2>Classic (non-linguistic) example<sup>1</sup></h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="fu">library</span>(mclm)</span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="fu">data</span>(smoke)</span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="fu">print_matrix</span>(smoke)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<table class=" lightable-classic" style="font-size: 20px; font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:right;"> none </th>
+   <th style="text-align:right;"> light </th>
+   <th style="text-align:right;"> medium </th>
+   <th style="text-align:right;"> heavy </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> SM </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> JM </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 4 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> SE </td>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> 12 </td>
+   <td style="text-align:right;"> 4 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> JE </td>
+   <td style="text-align:right;"> 18 </td>
+   <td style="text-align:right;"> 24 </td>
+   <td style="text-align:right;"> 33 </td>
+   <td style="text-align:right;"> 13 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> SC </td>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div><div class="column smaller" style="width:60%;">
+<ul>
+<li class="fragment"><p>Rows are <strong>types of employees</strong> (Senior/Junior manager, Senior/Junior Employee, Secretary).</p></li>
+<li class="fragment"><p>Columns are <strong>types of smokers</strong>.</p></li>
+<li class="fragment"><p>Values in the cells are <strong>counts</strong>.</p></li>
+</ul>
+</div>
+</div>
+<div class="footer">
+<p>Introduction</p>
+</div>
+<aside><ol class="aside-footnotes"><li id="fn1"><p>The <code>smoke</code> dataset comes with the <code>{ca}</code> package.</p></li></ol></aside></section>
+<section id="smoke-plot" class="slide level2">
+<h2>Smoke plot</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>smoke_ca <span class="ot">&lt;-</span> <span class="fu">ca</span>(smoke)</span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="fu">plot</span>(smoke_ca)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="correspondence-analysis_files/figure-revealjs/smoke-plot-1.png" width="960" class="r-stretch"><div class="footer">
+<p>Introduction</p>
+</div>
+</section>
+<section id="smoke-ca" class="slide level2">
+<h2>Smoke CA</h2>
+<div class="panel-tabset">
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1"><code>print()</code></a></li><li><a href="#tabset-1-2"><code>summary()</code></a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1">
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>smoke_ca</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+ Principal inertias (eigenvalues):
+           1        2        3       
+Value      0.074759 0.010017 0.000414
+Percentage 87.76%   11.76%   0.49%   
+
+
+ Rows:
+              SM      JM      SE     JE       SC
+Mass     0.05699  0.0933  0.2642 0.4560  0.12953
+ChiDist  0.21656  0.3569  0.3808 0.2400  0.21617
+Inertia  0.00267  0.0119  0.0383 0.0263  0.00605
+Dim. 1  -0.24054  0.9471 -1.3920 0.8520 -0.73546
+Dim. 2  -1.93571 -2.4310 -0.1065 0.5769  0.78843
+
+
+ Columns:
+           none   light medium   heavy
+Mass     0.3161 0.23316 0.3212  0.1295
+ChiDist  0.3945 0.17400 0.1981  0.3551
+Inertia  0.0492 0.00706 0.0126  0.0163
+Dim. 1  -1.4385 0.36375 0.7180  1.0744
+Dim. 2  -0.3047 1.40943 0.0735 -1.9760</code></pre>
+</div>
+</div>
+</div>
+<div id="tabset-1-2">
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="fu">summary</span>(smoke_ca)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Principal inertias (eigenvalues):
+
+ dim    value      %   cum%   scree plot               
+ 1      0.074759  87.8  87.8  **********************   
+ 2      0.010017  11.8  99.5  ***                      
+ 3      0.000414   0.5 100.0                           
+        -------- -----                                 
+ Total: 0.085190 100.0                                 
+
+
+Rows:
+    name   mass  qlt  inr    k=1 cor ctr    k=2 cor ctr  
+1 |   SM |   57  893   31 |  -66  92   3 | -194 800 214 |
+2 |   JM |   93  991  139 |  259 526  84 | -243 465 551 |
+3 |   SE |  264 1000  450 | -381 999 512 |  -11   1   3 |
+4 |   JE |  456 1000  308 |  233 942 331 |   58  58 152 |
+5 |   SC |  130  999   71 | -201 865  70 |   79 133  81 |
+
+Columns:
+    name   mass  qlt  inr    k=1 cor ctr    k=2 cor ctr  
+1 | none |  316 1000  577 | -393 994 654 |  -30   6  29 |
+2 | lght |  233  984   83 |   99 327  31 |  141 657 463 |
+3 | medm |  321  983  148 |  196 982 166 |    7   1   2 |
+4 | hevy |  130  995  192 |  294 684 150 | -198 310 506 |</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>Introduction</p>
+</div>
+</section></section>
+<section>
+<section id="terminology" class="title-slide slide level1 center">
+<h1>Terminology</h1>
+
+</section>
+<section id="original-matrix-n" class="slide level2">
+<h2>Original matrix <span class="math inline">\(N\)</span></h2>
+<p><span class="math inline">\(n \times m\)</span> matrix with frequency counts <span class="math inline">\(n_{ij}\)</span></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><span class="math inline">\(n\)</span> = 5</li>
+<li><span class="math inline">\(m\)</span> = 4</li>
+<li><span class="math inline">\(n_{\mathrm{SE, light}}\)</span> = 10</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a>smoke_mtx <span class="ot">&lt;-</span> <span class="fu">as.matrix</span>(smoke)</span>
+<span id="cb7-2"><a href="#cb7-2"></a><span class="fu">print_matrix</span>(smoke_mtx)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+
+<table class=" lightable-classic" style="font-size: 20px; font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:right;"> none </th>
+   <th style="text-align:right;"> light </th>
+   <th style="text-align:right;"> medium </th>
+   <th style="text-align:right;"> heavy </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> SM </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> JM </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 4 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> SE </td>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> 12 </td>
+   <td style="text-align:right;"> 4 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> JE </td>
+   <td style="text-align:right;"> 18 </td>
+   <td style="text-align:right;"> 24 </td>
+   <td style="text-align:right;"> 33 </td>
+   <td style="text-align:right;"> 13 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> SC </td>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>Terminology</p>
+</div>
+</section>
+<section id="correspondence-matrix-p" class="slide level2">
+<h2>Correspondence matrix <span class="math inline">\(P\)</span></h2>
+<p><span class="math inline">\(n \times m\)</span> matrix with overall proportions <span class="math inline">\(p_{ij}\)</span></p>
+<div class="columns">
+<div class="column" style="width:35%;">
+<h3 id="mass">Mass</h3>
+<ul>
+<li><p><span class="math inline">\(p_{\mathrm{SE,light}}\)</span> = 0.052</p></li>
+<li><p><span class="math inline">\(p_{\mathrm{SE,.}}\)</span> = 0.264</p></li>
+<li><p><span class="math inline">\(p_{\mathrm{.,light}}\)</span> = 0.233</p></li>
+</ul>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:60%;">
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="fu">prop.table</span>(smoke_mtx) <span class="sc">%&gt;%</span> </span>
+<span id="cb8-2"><a href="#cb8-2"></a>  <span class="fu">addmargins</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb8-3"><a href="#cb8-3"></a>  <span class="fu">print_matrix</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+
+<table class=" lightable-classic" style="font-size: 20px; font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:right;"> none </th>
+   <th style="text-align:right;"> light </th>
+   <th style="text-align:right;"> medium </th>
+   <th style="text-align:right;"> heavy </th>
+   <th style="text-align:right;"> Sum </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> SM </td>
+   <td style="text-align:right;"> 0.021 </td>
+   <td style="text-align:right;"> 0.010 </td>
+   <td style="text-align:right;"> 0.016 </td>
+   <td style="text-align:right;"> 0.010 </td>
+   <td style="text-align:right;font-weight: bold;"> 0.057 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> JM </td>
+   <td style="text-align:right;"> 0.021 </td>
+   <td style="text-align:right;"> 0.016 </td>
+   <td style="text-align:right;"> 0.036 </td>
+   <td style="text-align:right;"> 0.021 </td>
+   <td style="text-align:right;font-weight: bold;"> 0.093 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> SE </td>
+   <td style="text-align:right;"> 0.130 </td>
+   <td style="text-align:right;"> 0.052 </td>
+   <td style="text-align:right;"> 0.062 </td>
+   <td style="text-align:right;"> 0.021 </td>
+   <td style="text-align:right;font-weight: bold;"> 0.264 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> JE </td>
+   <td style="text-align:right;"> 0.093 </td>
+   <td style="text-align:right;"> 0.124 </td>
+   <td style="text-align:right;"> 0.171 </td>
+   <td style="text-align:right;"> 0.067 </td>
+   <td style="text-align:right;font-weight: bold;"> 0.456 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> SC </td>
+   <td style="text-align:right;"> 0.052 </td>
+   <td style="text-align:right;"> 0.031 </td>
+   <td style="text-align:right;"> 0.036 </td>
+   <td style="text-align:right;"> 0.010 </td>
+   <td style="text-align:right;font-weight: bold;"> 0.130 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> Sum </td>
+   <td style="text-align:right;font-weight: bold;"> 0.316 </td>
+   <td style="text-align:right;font-weight: bold;"> 0.233 </td>
+   <td style="text-align:right;font-weight: bold;"> 0.321 </td>
+   <td style="text-align:right;font-weight: bold;"> 0.130 </td>
+   <td style="text-align:right;font-weight: bold;font-weight: bold;"> 1.000 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>Terminology</p>
+</div>
+</section>
+<section id="row-profiles" class="slide level2">
+<h2>Row profiles</h2>
+<p><span class="math inline">\(n \times m\)</span> matrix with overall row proportions <span class="math inline">\(r_{ij}\)</span></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><p><span class="math inline">\(r_{\mathrm{SE,light}}\)</span> = 0.196<sup>1</sup></p></li>
+<li><p>columns are dimensions in the <strong>row points cloud</strong></p></li>
+<li><p>In bold: the <strong>row centroid</strong>.</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="fu">addmargins</span>(smoke_mtx, <span class="dv">1</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb9-2"><a href="#cb9-2"></a>  <span class="fu">prop.table</span>(<span class="dv">1</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb9-3"><a href="#cb9-3"></a>  <span class="fu">print_matrix</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+
+<table class=" lightable-classic" style="font-size: 20px; font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:right;"> none </th>
+   <th style="text-align:right;"> light </th>
+   <th style="text-align:right;"> medium </th>
+   <th style="text-align:right;"> heavy </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> SM </td>
+   <td style="text-align:right;"> 0.364 </td>
+   <td style="text-align:right;"> 0.182 </td>
+   <td style="text-align:right;"> 0.273 </td>
+   <td style="text-align:right;"> 0.182 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> JM </td>
+   <td style="text-align:right;"> 0.222 </td>
+   <td style="text-align:right;"> 0.167 </td>
+   <td style="text-align:right;"> 0.389 </td>
+   <td style="text-align:right;"> 0.222 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> SE </td>
+   <td style="text-align:right;"> 0.490 </td>
+   <td style="text-align:right;"> 0.196 </td>
+   <td style="text-align:right;"> 0.235 </td>
+   <td style="text-align:right;"> 0.078 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> JE </td>
+   <td style="text-align:right;"> 0.205 </td>
+   <td style="text-align:right;"> 0.273 </td>
+   <td style="text-align:right;"> 0.375 </td>
+   <td style="text-align:right;"> 0.148 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> SC </td>
+   <td style="text-align:right;"> 0.400 </td>
+   <td style="text-align:right;"> 0.240 </td>
+   <td style="text-align:right;"> 0.280 </td>
+   <td style="text-align:right;"> 0.080 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> Sum </td>
+   <td style="text-align:right;font-weight: bold;"> 0.316 </td>
+   <td style="text-align:right;font-weight: bold;"> 0.233 </td>
+   <td style="text-align:right;font-weight: bold;"> 0.321 </td>
+   <td style="text-align:right;font-weight: bold;"> 0.130 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>Terminology</p>
+</div>
+<aside><ol class="aside-footnotes"><li id="fn2"><p>Proportion of senior employees that are light smokers.</p></li></ol></aside></section>
+<section id="column-profiles" class="slide level2">
+<h2>Column profiles</h2>
+<p><span class="math inline">\(n \times m\)</span> matrix with overall row proportions <span class="math inline">\(c_{ij}\)</span></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><p><span class="math inline">\(c_{\mathrm{SE,light}}\)</span> = 0.222<sup>1</sup></p></li>
+<li><p>rows are dimensions in the <strong>column points cloud</strong></p></li>
+<li><p>In bold: the <strong>column centroid</strong>.</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="fu">addmargins</span>(smoke_mtx, <span class="dv">2</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb10-2"><a href="#cb10-2"></a>  <span class="fu">prop.table</span>(<span class="dv">2</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb10-3"><a href="#cb10-3"></a>  <span class="fu">print_matrix</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+
+<table class=" lightable-classic" style="font-size: 20px; font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:right;"> none </th>
+   <th style="text-align:right;"> light </th>
+   <th style="text-align:right;"> medium </th>
+   <th style="text-align:right;"> heavy </th>
+   <th style="text-align:right;"> Sum </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> SM </td>
+   <td style="text-align:right;"> 0.066 </td>
+   <td style="text-align:right;"> 0.044 </td>
+   <td style="text-align:right;"> 0.048 </td>
+   <td style="text-align:right;"> 0.08 </td>
+   <td style="text-align:right;font-weight: bold;"> 0.057 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> JM </td>
+   <td style="text-align:right;"> 0.066 </td>
+   <td style="text-align:right;"> 0.067 </td>
+   <td style="text-align:right;"> 0.113 </td>
+   <td style="text-align:right;"> 0.16 </td>
+   <td style="text-align:right;font-weight: bold;"> 0.093 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> SE </td>
+   <td style="text-align:right;"> 0.410 </td>
+   <td style="text-align:right;"> 0.222 </td>
+   <td style="text-align:right;"> 0.194 </td>
+   <td style="text-align:right;"> 0.16 </td>
+   <td style="text-align:right;font-weight: bold;"> 0.264 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> JE </td>
+   <td style="text-align:right;"> 0.295 </td>
+   <td style="text-align:right;"> 0.533 </td>
+   <td style="text-align:right;"> 0.532 </td>
+   <td style="text-align:right;"> 0.52 </td>
+   <td style="text-align:right;font-weight: bold;"> 0.456 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> SC </td>
+   <td style="text-align:right;"> 0.164 </td>
+   <td style="text-align:right;"> 0.133 </td>
+   <td style="text-align:right;"> 0.113 </td>
+   <td style="text-align:right;"> 0.08 </td>
+   <td style="text-align:right;font-weight: bold;"> 0.130 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>Terminology</p>
+</div>
+<aside><ol class="aside-footnotes"><li id="fn3"><p>Proportion of light smokers that are senior employees.</p></li></ol></aside></section></section>
+<section>
+<section id="chi2" class="title-slide slide level1 center">
+<h1><span class="math inline">\(\chi^2\)</span></h1>
+
+</section>
+<section id="row-distances" class="slide level2 smaller">
+<h2>Row distances</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="euclidean">Euclidean</h3>
+<p><span class="math display">\[\sqrt{\sum_{j=1}^m(r_{ij}-r_{i'j})^2}\]</span></p>
+</div><div class="column" style="width:50%;">
+<h3 id="chi-squared-chi2">Chi-squared (<span class="math inline">\(\chi^2\)</span>)</h3>
+<p><span class="math display">\[\sqrt{\sum_{j=1}^m\frac{(r_{ij}-r_{i'j})^2}{p_{.j}}}\]</span></p>
+</div>
+</div>
+<p><span class="math inline">\(\chi^2\)</span> divides the Euclidean row distance by the mass of the columns: it corrects for the fact that the more data you have, the more variability you can expect.</p>
+<div class="callout callout-tip callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>For column distances the computation is equivalent.</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<p><span class="math inline">\(\chi^2\)</span></p>
+</div>
+</section>
+<section id="computing-chi2" class="slide level2">
+<h2>Computing <span class="math inline">\(\chi^2\)</span></h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a>smoke_chisq <span class="ot">&lt;-</span> <span class="fu">chisq.test</span>(smoke)</span>
+<span id="cb11-2"><a href="#cb11-2"></a>smoke_chisq</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Pearson's Chi-squared test
+
+data:  smoke
+X-squared = 16, df = 12, p-value = 0.2</code></pre>
+</div>
+</div>
+<div class="columns">
+<div class="column">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a><span class="fu">print_matrix</span>(smoke_chisq<span class="sc">$</span>expected)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<table class=" lightable-classic" style="font-size: 20px; font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:right;"> none </th>
+   <th style="text-align:right;"> light </th>
+   <th style="text-align:right;"> medium </th>
+   <th style="text-align:right;"> heavy </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> SM </td>
+   <td style="text-align:right;"> 3.48 </td>
+   <td style="text-align:right;"> 2.56 </td>
+   <td style="text-align:right;"> 3.53 </td>
+   <td style="text-align:right;"> 1.42 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> JM </td>
+   <td style="text-align:right;"> 5.69 </td>
+   <td style="text-align:right;"> 4.20 </td>
+   <td style="text-align:right;"> 5.78 </td>
+   <td style="text-align:right;"> 2.33 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> SE </td>
+   <td style="text-align:right;"> 16.12 </td>
+   <td style="text-align:right;"> 11.89 </td>
+   <td style="text-align:right;"> 16.38 </td>
+   <td style="text-align:right;"> 6.61 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> JE </td>
+   <td style="text-align:right;"> 27.81 </td>
+   <td style="text-align:right;"> 20.52 </td>
+   <td style="text-align:right;"> 28.27 </td>
+   <td style="text-align:right;"> 11.40 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> SC </td>
+   <td style="text-align:right;"> 7.90 </td>
+   <td style="text-align:right;"> 5.83 </td>
+   <td style="text-align:right;"> 8.03 </td>
+   <td style="text-align:right;"> 3.24 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div><div class="column">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a><span class="fu">print_matrix</span>(smoke_chisq<span class="sc">$</span>residuals)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<table class=" lightable-classic" style="font-size: 20px; font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:right;"> none </th>
+   <th style="text-align:right;"> light </th>
+   <th style="text-align:right;"> medium </th>
+   <th style="text-align:right;"> heavy </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> SM </td>
+   <td style="text-align:right;"> 0.281 </td>
+   <td style="text-align:right;"> -0.353 </td>
+   <td style="text-align:right;"> -0.284 </td>
+   <td style="text-align:right;"> 0.482 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> JM </td>
+   <td style="text-align:right;"> -0.708 </td>
+   <td style="text-align:right;"> -0.584 </td>
+   <td style="text-align:right;"> 0.506 </td>
+   <td style="text-align:right;"> 1.093 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> SE </td>
+   <td style="text-align:right;"> 2.212 </td>
+   <td style="text-align:right;"> -0.548 </td>
+   <td style="text-align:right;"> -1.083 </td>
+   <td style="text-align:right;"> -1.014 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> JE </td>
+   <td style="text-align:right;"> -1.861 </td>
+   <td style="text-align:right;"> 0.769 </td>
+   <td style="text-align:right;"> 0.890 </td>
+   <td style="text-align:right;"> 0.474 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> SC </td>
+   <td style="text-align:right;"> 0.747 </td>
+   <td style="text-align:right;"> 0.071 </td>
+   <td style="text-align:right;"> -0.364 </td>
+   <td style="text-align:right;"> -0.688 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<p><span class="math inline">\(\chi^2\)</span></p>
+</div>
+</section>
+<section id="inertia" class="slide level2">
+<h2>Inertia</h2>
+<p>Sum of the squares of the residuals.</p>
+<p>The cell contribution of cell <span class="math inline">\(ij\)</span> = <span class="math inline">\(\frac{(p_{ij}-(p_{i.} \times p_{.j}))^2}{p_i\times p_{.j}}\)</span></p>
+<div class="footer">
+<p><span class="math inline">\(\chi^2\)</span></p>
+</div>
+</section></section>
+<section>
+<section id="linguistic-example-1" class="title-slide slide level1 center">
+<h1>Linguistic example</h1>
+
+</section>
+<section id="contingency-table" class="slide level2">
+<h2>Contingency table</h2>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a>corpus_folder <span class="ot">&lt;-</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"studies"</span>, <span class="st">"_corpora"</span>, <span class="st">"clinton_trump"</span>)</span>
+<span id="cb15-2"><a href="#cb15-2"></a>fnames <span class="ot">&lt;-</span> <span class="fu">get_fnames</span>(corpus_folder)</span>
+<span id="cb15-3"><a href="#cb15-3"></a>short_fnames <span class="ot">&lt;-</span> <span class="fu">short_names</span>(fnames)</span>
+<span id="cb15-4"><a href="#cb15-4"></a>stop_list <span class="ot">&lt;-</span> <span class="fu">read_types</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"studies"</span>, <span class="st">"assets"</span>, <span class="st">"ca-trump-clinton"</span>, <span class="st">"stop_list.txt"</span>))</span>
+<span id="cb15-5"><a href="#cb15-5"></a>features <span class="ot">&lt;-</span> <span class="fu">freqlist</span>(fnames) <span class="sc">%&gt;%</span> <span class="fu">drop_types</span>(stop_list) <span class="sc">%&gt;%</span></span>
+<span id="cb15-6"><a href="#cb15-6"></a>  <span class="fu">keep_pos</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">150</span>) <span class="sc">%&gt;%</span> <span class="fu">as_types</span>()</span>
+<span id="cb15-7"><a href="#cb15-7"></a>d <span class="ot">&lt;-</span> <span class="fu">map</span>(<span class="fu">setNames</span>(fnames, short_fnames), <span class="sc">~</span> <span class="fu">freqlist</span>(.x)[features]) <span class="sc">%&gt;%</span></span>
+<span id="cb15-8"><a href="#cb15-8"></a>  <span class="fu">bind_cols</span>() <span class="sc">%&gt;%</span> <span class="fu">data.frame</span>(<span class="at">row.names =</span> features) <span class="sc">%&gt;%</span> </span>
+<span id="cb15-9"><a href="#cb15-9"></a>  <span class="fu">as.matrix</span>() <span class="sc">%&gt;%</span> <span class="fu">t</span>() <span class="sc">%&gt;%</span> <span class="fu">drop_empty_rc</span>()</span>
+<span id="cb15-10"><a href="#cb15-10"></a><span class="fu">print_matrix</span>(d[<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+
+<table class=" lightable-classic" style="font-size: 20px; font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:right;"> again </th>
+   <th style="text-align:right;"> ago </th>
+   <th style="text-align:right;"> also </th>
+   <th style="text-align:right;"> america </th>
+   <th style="text-align:right;"> american </th>
+   <th style="text-align:right;"> americans </th>
+   <th style="text-align:right;"> applause </th>
+   <th style="text-align:right;"> are </th>
+   <th style="text-align:right;"> audience </th>
+   <th style="text-align:right;"> back </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Clinton_2016.07.28 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 24 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:right;"> 113 </td>
+   <td style="text-align:right;"> 36 </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 6 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Clinton_2016.07.29 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 13 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 72 </td>
+   <td style="text-align:right;"> 18 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Clinton_2016.08.01 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Clinton_2016.08.05 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 9 </td>
+   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:right;"> 37 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 7 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Clinton_2016.08.10 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 41 </td>
+   <td style="text-align:right;"> 19 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 4 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Clinton_2016.08.11 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:right;"> 25 </td>
+   <td style="text-align:right;"> 13 </td>
+   <td style="text-align:right;"> 15 </td>
+   <td style="text-align:right;"> 51 </td>
+   <td style="text-align:right;"> 40 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 16 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Clinton_2016.08.15 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 19 </td>
+   <td style="text-align:right;"> 9 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 52 </td>
+   <td style="text-align:right;"> 30 </td>
+   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 16 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Clinton_2016.08.16 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 41 </td>
+   <td style="text-align:right;"> 20 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 6 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Clinton_2016.08.17 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 12 </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 12 </td>
+   <td style="text-align:right;"> 64 </td>
+   <td style="text-align:right;"> 34 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Clinton_2016.08.25 </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 19 </td>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 18 </td>
+   <td style="text-align:right;"> 17 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<div class="footer">
+<p>Linguistic example</p>
+</div>
+</section>
+<section id="correspondence-analysis-1" class="slide level2">
+<h2>Correspondence Analysis</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1"></a>d_ca <span class="ot">&lt;-</span> <span class="fu">ca</span>(d)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="panel-tabset">
+<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1"><code>print()</code></a></li><li><a href="#tabset-2-2"><code>summary()</code></a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a>d_ca</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+ Principal inertias (eigenvalues):
+           1        2        3        4        5      6        7       
+Value      0.053657 0.040702 0.022246 0.019935 0.0143 0.013147 0.011372
+Percentage 14.09%   10.69%   5.84%    5.23%    3.75%  3.45%    2.99%   
+           8        9        10       11       12       13       14      
+Value      0.010335 0.008489 0.007962 0.007012 0.006627 0.006017 0.005841
+Percentage 2.71%    2.23%    2.09%    1.84%    1.74%    1.58%    1.53%   
+           15       16       17      18       19       20       21      
+Value      0.005661 0.005539 0.00512 0.004972 0.004851 0.004673 0.004558
+Percentage 1.49%    1.45%    1.34%   1.31%    1.27%    1.23%    1.2%    
+           22       23       24       25       26      27       28      
+Value      0.004145 0.004037 0.003968 0.003885 0.00385 0.003568 0.003367
+Percentage 1.09%    1.06%    1.04%    1.02%    1.01%   0.94%    0.88%   
+           29       30       31       32       33       34       35      
+Value      0.003301 0.003141 0.003067 0.002921 0.002839 0.002717 0.002664
+Percentage 0.87%    0.82%    0.81%    0.77%    0.75%    0.71%    0.7%    
+           36      37       38       39       40       41       42      
+Value      0.00258 0.002534 0.002443 0.002341 0.002303 0.002214 0.002181
+Percentage 0.68%   0.67%    0.64%    0.61%    0.6%     0.58%    0.57%   
+           43       44       45       46       47       48       49      
+Value      0.002148 0.002031 0.001955 0.001873 0.001861 0.001794 0.001711
+Percentage 0.56%    0.53%    0.51%    0.49%    0.49%    0.47%    0.45%   
+           50       51       52       53       54       55       56      
+Value      0.001662 0.001653 0.001595 0.001496 0.001442 0.001406 0.001361
+Percentage 0.44%    0.43%    0.42%    0.39%    0.38%    0.37%    0.36%   
+           57       58       59       60       61       62       63      
+Value      0.001311 0.001267 0.001257 0.001183 0.001174 0.001111 0.001072
+Percentage 0.34%    0.33%    0.33%    0.31%    0.31%    0.29%    0.28%   
+           64       65       66      67       68       69       70      
+Value      0.001038 0.001011 0.00097 0.000924 0.000905 0.000842 0.000825
+Percentage 0.27%    0.27%    0.25%   0.24%    0.24%    0.22%    0.22%   
+           71       72       73       74       75       76       77      
+Value      0.000774 0.000768 0.000747 0.000718 0.000704 0.000671 0.000659
+Percentage 0.2%     0.2%     0.2%     0.19%    0.18%    0.18%    0.17%   
+           78       79       80       81       82       83       84     
+Value      0.000605 0.000595 0.000568 0.000536 0.000505 0.000481 0.00045
+Percentage 0.16%    0.16%    0.15%    0.14%    0.13%    0.13%    0.12%  
+           85       86       87       88       89       90       91      
+Value      0.000431 0.000422 0.000389 0.000381 0.000343 0.000335 0.000315
+Percentage 0.11%    0.11%    0.1%     0.1%     0.09%    0.09%    0.08%   
+           92       93       94       95       96       97       98      
+Value      0.000292 0.000275 0.000265 0.000243 0.000238 0.000217 0.000205
+Percentage 0.08%    0.07%    0.07%    0.06%    0.06%    0.06%    0.05%   
+           99       100      101      102      103      104      105     
+Value      0.000183 0.000173 0.000164 0.000155 0.000152 0.000148 0.000128
+Percentage 0.05%    0.05%    0.04%    0.04%    0.04%    0.04%    0.03%   
+           106      107      108     109     110     111     112   113    
+Value      0.000121 0.000113 8.9e-05 7.4e-05 6.8e-05 5.9e-05 5e-05 4.5e-05
+Percentage 0.03%    0.03%    0.02%   0.02%   0.02%   0.02%   0.01% 0.01%  
+           114     115     116 117
+Value      3.7e-05 2.3e-05 0   0  
+Percentage 0.01%   0.01%   0%  0% 
+
+
+ Rows:
+        Clinton_2016.07.28 Clinton_2016.07.29 Clinton_2016.08.01
+Mass               0.00787            0.00516            0.00225
+ChiDist            0.72854            0.65694            0.97131
+Inertia            0.00418            0.00223            0.00213
+Dim. 1            -2.02389           -1.16774           -1.77022
+Dim. 2             0.31847            0.87857            1.00231
+        Clinton_2016.08.05 Clinton_2016.08.10 Clinton_2016.08.11
+Mass               0.00841            0.00329            0.00770
+ChiDist            0.67367            0.84070            0.85071
+Inertia            0.00382            0.00233            0.00557
+Dim. 1            -1.11288           -2.12166           -2.06907
+Dim. 2             1.52271            1.01558            0.48095
+        Clinton_2016.08.15 Clinton_2016.08.16 Clinton_2016.08.17
+Mass               0.01033            0.00465            0.00613
+ChiDist            0.62627            0.68516            0.77281
+Inertia            0.00405            0.00218            0.00366
+Dim. 1            -0.61023           -1.10783           -1.82868
+Dim. 2             1.32985            0.92825            1.01634
+        Clinton_2016.08.25 Clinton_2016.08.31 Clinton_2016.09.05.A
+Mass               0.00434            0.00473              0.00946
+ChiDist            0.87991            0.97231              0.62874
+Inertia            0.00336            0.00448              0.00374
+Dim. 1            -1.67873           -1.99464             -1.27886
+Dim. 2             1.23535            0.29216              1.19872
+        Clinton_2016.09.05.B Clinton_2016.09.06 Clinton_2016.09.08.A
+Mass                 0.00517            0.00797              0.00286
+ChiDist              0.71890            0.55881              1.05714
+Inertia              0.00267            0.00249              0.00320
+Dim. 1              -1.60773           -1.16248             -0.65555
+Dim. 2               1.46085            0.75815              1.49847
+        Clinton_2016.09.08.B Clinton_2016.09.08.C Clinton_2016.09.29
+Mass                 0.00419              0.00521            0.00249
+ChiDist              0.81674              0.63028            0.93480
+Inertia              0.00279              0.00207            0.00217
+Dim. 1              -1.81649             -1.21676           -1.38177
+Dim. 2               0.81885              1.31835            1.19489
+        Clinton_2016.09.30 Clinton_2016.10.03 Clinton_2016.10.24
+Mass               0.00509            0.00659            0.01141
+ChiDist            0.78489            0.63694            0.59666
+Inertia            0.00313            0.00267            0.00406
+Dim. 1            -2.22845           -1.23714           -1.62939
+Dim. 2             0.37197            1.19205            0.83067
+        Clinton_2016.10.26 Clinton_2016.10.31.A Clinton_2016.10.31.B
+Mass               0.00473              0.00458              0.00462
+ChiDist            0.71761              0.90953              0.74975
+Inertia            0.00244              0.00379              0.00260
+Dim. 1            -1.58816             -1.75994             -1.90898
+Dim. 2             1.08970              1.58702              1.38698
+        Clinton_2016.11.01.A Clinton_2016.11.01.B Clinton_2016.11.04.A
+Mass                 0.00605              0.00342              0.00607
+ChiDist              0.74790              1.02463              0.61072
+Inertia              0.00338              0.00359              0.00226
+Dim. 1              -1.29248             -2.24480             -1.38148
+Dim. 2               1.37490              0.88133              0.77066
+        Clinton_2016.11.04.B Clinton_2016.11.05 Clinton_2016.11.06.A
+Mass                 0.00596            0.00130              0.00429
+ChiDist              0.70280            1.13518              0.82288
+Inertia              0.00294            0.00168              0.00290
+Dim. 1              -1.31183           -1.94122             -2.54299
+Dim. 2               1.57636            1.22924              0.89944
+        Clinton_2016.11.06.B Clinton_2016.11.07.A Clinton_2016.11.07.B
+Mass                 0.00470              0.00467              0.00580
+ChiDist              0.83614              1.27873              0.68038
+Inertia              0.00328              0.00763              0.00268
+Dim. 1              -2.06126             -1.67631             -1.75604
+Dim. 2               1.26015              1.23829              1.08815
+        Clinton_2016.11.07.C Clinton_2016.11.08 Clinton_2016.11.09
+Mass                 0.00236            0.00228            0.00291
+ChiDist              1.11338            1.16716            0.96174
+Inertia              0.00292            0.00310            0.00269
+Dim. 1              -2.83205           -2.98628           -1.83965
+Dim. 2               0.78706            0.84589            0.41832
+        Trump_2016.07.22 Trump_2016.07.25 Trump_2016.07.26 Trump_2016.07.27.A
+Mass             0.01219          0.01690          0.00424            0.01707
+ChiDist          0.69509          0.47903          0.78165            0.74738
+Inertia          0.00589          0.00388          0.00259            0.00954
+Dim. 1           0.69341          0.79917         -0.73954            1.16718
+Dim. 2           2.27359          1.00803         -0.70112            1.73993
+        Trump_2016.07.27.B Trump_2016.08.01 Trump_2016.08.02 Trump_2016.08.04
+Mass               0.01936          0.01814          0.02013          0.01438
+ChiDist            0.45108          0.59678          0.52218          0.42709
+Inertia            0.00394          0.00646          0.00549          0.00262
+Dim. 1             0.97719          1.26662          1.50007          0.68727
+Dim. 2             1.06519          0.76711          0.54820          0.61284
+        Trump_2016.08.05 Trump_2016.08.08 Trump_2016.08.10 Trump_2016.08.12.A
+Mass             0.01671          0.00668          0.01773            0.01699
+ChiDist          0.44280          1.07661          0.53492            0.44378
+Inertia          0.00328          0.00774          0.00507            0.00335
+Dim. 1           0.64611         -1.54888          1.45535            1.10950
+Dim. 2           0.69654         -2.21025          0.88880            0.70871
+        Trump_2016.08.12.B Trump_2016.08.15 Trump_2016.08.16 Trump_2016.08.17
+Mass               0.01563          0.00589          0.00616          0.01222
+ChiDist            0.48574          1.00223          0.68532          0.67146
+Inertia            0.00369          0.00592          0.00290          0.00551
+Dim. 1             1.28463         -1.24694         -1.13363          0.48849
+Dim. 2             0.17365         -0.14256         -1.57701          1.19286
+        Trump_2016.08.18 Trump_2016.08.19 Trump_2016.08.22 Trump_2016.08.23
+Mass             0.00646          0.00728          0.00785          0.00729
+ChiDist          0.71089          0.67168          0.51183          0.91938
+Inertia          0.00327          0.00329          0.00206          0.00616
+Dim. 1          -1.47111         -0.67781         -0.43326         -0.80832
+Dim. 2          -1.75252         -1.90305         -1.24625         -1.99774
+        Trump_2016.08.24.A Trump_2016.08.24.B Trump_2016.08.25 Trump_2016.08.30
+Mass               0.01321            0.00721          0.00782          0.00732
+ChiDist            0.45717            0.70808          0.61256          0.54672
+Inertia            0.00276            0.00362          0.00293          0.00219
+Dim. 1             0.30969           -1.06200         -0.35949         -0.48429
+Dim. 2            -1.39983           -1.93394         -1.48243         -0.99443
+        Trump_2016.08.31 Trump_2016.09.01.A Trump_2016.09.01.B
+Mass             0.01058            0.00495            0.00262
+ChiDist          0.52025            0.75350            1.00512
+Inertia          0.00286            0.00281            0.00265
+Dim. 1          -0.31778           -0.33167           -1.74930
+Dim. 2          -0.68690           -2.01326           -1.75483
+        Trump_2016.09.06.A Trump_2016.09.06.B Trump_2016.09.07.A
+Mass               0.01347            0.00939            0.00451
+ChiDist            0.56006            0.43420            0.90409
+Inertia            0.00422            0.00177            0.00369
+Dim. 1             0.98309            0.06941           -0.93760
+Dim. 2             1.07593           -0.96084           -1.17754
+        Trump_2016.09.07.B Trump_2016.09.08 Trump_2016.09.09.A
+Mass               0.00625          0.00616            0.00934
+ChiDist            0.78935          0.67009            0.46204
+Inertia            0.00390          0.00277            0.00199
+Dim. 1             0.81699          0.02700            0.37344
+Dim. 2             1.15679         -0.13474           -0.03671
+        Trump_2016.09.09.B Trump_2016.09.09 Trump_2016.09.12.A
+Mass               0.00329          0.00934            0.00912
+ChiDist            0.76311          0.46204            0.51056
+Inertia            0.00192          0.00199            0.00238
+Dim. 1             0.34694          0.37344           -0.19505
+Dim. 2            -1.12001         -0.03671           -0.73983
+        Trump_2016.09.12.B Trump_2016.09.13.A Trump_2016.09.13.B
+Mass               0.00309            0.00688            0.00314
+ChiDist            0.97906            0.58271            1.62463
+Inertia            0.00296            0.00233            0.00830
+Dim. 1            -1.14776           -0.14949           -1.89710
+Dim. 2            -1.07806           -1.45653           -0.40451
+        Trump_2016.09.13 Trump_2016.09.16 Trump_2016.09.17 Trump_2016.09.29
+Mass             0.00688          0.00957          0.00444          0.00790
+ChiDist          0.58271          0.48383          0.79010          0.52557
+Inertia          0.00233          0.00224          0.00277          0.00218
+Dim. 1          -0.14949          0.25199         -0.73154          0.20163
+Dim. 2          -1.45653         -0.73164          0.06891         -0.95380
+        Trump_2016.09.30 Trump_2016.10.03.A Trump_2016.10.03.B Trump_2016.10.05
+Mass             0.01137            0.01270            0.01131          0.01167
+ChiDist          0.53608            0.69566            0.46560          0.37763
+Inertia          0.00327            0.00614            0.00245          0.00166
+Dim. 1           0.07976            0.54541           -0.16163         -0.07123
+Dim. 2          -1.11114            0.82933           -0.54760         -0.67281
+        Trump_2016.10.06 Trump_2016.10.10.A Trump_2016.10.10.B Trump_2016.10.11
+Mass             0.01621            0.01286            0.01505          0.01321
+ChiDist          0.46661            0.46752            0.41148          0.39338
+Inertia          0.00353            0.00281            0.00255          0.00204
+Dim. 1           0.92687            0.67948            0.93722          0.37293
+Dim. 2           1.07343           -0.38991           -0.18854         -0.30168
+        Trump_2016.10.12 Trump_2016.10.13 Trump_2016.10.14.A Trump_2016.10.14.B
+Mass              0.0142          0.00725            0.00986            0.01447
+ChiDist           0.4966          0.63648            0.44339            0.40301
+Inertia           0.0035          0.00294            0.00194            0.00235
+Dim. 1            0.6583         -0.45674            0.81191            0.68835
+Dim. 2           -0.0311         -0.48487           -0.35958           -0.13796
+        Trump_2016.10.17 Trump_2016.10.18 Trump_2016.10.21.A Trump_2016.10.21.B
+Mass             0.00999          0.00936            0.00600            0.01024
+ChiDist          0.75894          0.48127            0.75496            0.51578
+Inertia          0.00575          0.00217            0.00342            0.00272
+Dim. 1           0.28669          0.08980            1.10636            0.52937
+Dim. 2          -0.68317         -0.71455            0.92033           -0.87859
+        Trump_2016.10.21.C Trump_2016.10.27 Trump_2016.10.28 Trump_2016.10.31
+Mass               0.00641          0.00722          0.00986          0.01258
+ChiDist            0.60011          0.53977          0.50616          0.45557
+Inertia            0.00231          0.00210          0.00253          0.00261
+Dim. 1            -0.14318          0.22554          0.55159          0.25615
+Dim. 2            -1.44395         -0.87037         -0.37745         -0.85616
+        Trump_2016.11.01.A Trump_2016.11.01.B Trump_2016.11.02.A
+Mass               0.00875            0.00403            0.00888
+ChiDist            0.47734            0.81191            0.57400
+Inertia            0.00199            0.00266            0.00293
+Dim. 1            -0.21015           -0.63058            0.24179
+Dim. 2            -1.17654           -0.96360           -1.31010
+        Trump_2016.11.02.B Trump_2016.11.02.C Trump_2016.11.03.A
+Mass               0.01078            0.00696            0.01122
+ChiDist            0.44223            0.45933            0.48062
+Inertia            0.00211            0.00147            0.00259
+Dim. 1             0.43943            0.25498            0.33105
+Dim. 2            -0.38575           -0.71532           -0.89609
+        Trump_2016.11.03.B Trump_2016.11.04.A Trump_2016.11.04.B
+Mass               0.01030            0.01010            0.00943
+ChiDist            0.40904            0.50267            0.42586
+Inertia            0.00172            0.00255            0.00171
+Dim. 1             0.59619            0.41608            0.23570
+Dim. 2            -0.74128           -0.41939           -0.49207
+        Trump_2016.11.04.C Trump_2016.11.05.A Trump_2016.11.05.B
+Mass               0.01235            0.01250            0.00973
+ChiDist            0.46700            0.44782            0.53837
+Inertia            0.00269            0.00251            0.00282
+Dim. 1             0.86480            0.81109            0.00957
+Dim. 2            -0.35621           -0.44001           -0.72408
+        Trump_2016.11.06 Trump_2016.11.07.A Trump_2016.11.07.B
+Mass             0.00769             0.0115            0.01174
+ChiDist          0.54634             0.5817            0.45662
+Inertia          0.00230             0.0039            0.00245
+Dim. 1           0.55748             0.4638            0.69168
+Dim. 2          -0.71745            -0.5945           -0.50859
+        Trump_2016.11.07.C Trump_2016.11.07.D Trump_2016.11.08 Trump_2016.11.09
+Mass               0.00684            0.00934          0.00819          0.00307
+ChiDist            0.70994            0.46062          0.54275          0.95258
+Inertia            0.00345            0.00198          0.00241          0.00279
+Dim. 1             0.32096           -0.11529          0.12273         -0.83664
+Dim. 2            -1.13683           -0.71337         -1.09737          0.50210
+
+
+ Columns:
+           again      ago     also  america american americans applause
+Mass     0.00520  0.00239  0.00441  0.00728  0.00623   0.00298   0.0417
+ChiDist  0.59271  0.67304  0.69401  0.74844  1.00224   1.01361   0.5077
+Inertia  0.00183  0.00108  0.00213  0.00407  0.00626   0.00306   0.0107
+Dim. 1  -0.04653  1.42091 -1.32777 -2.51700 -1.95816  -3.08274  -1.3551
+Dim. 2  -1.91206 -0.14646 -1.12235 -0.39190 -2.55831  -0.80550  -0.8807
+             are audience     back      bad     been     being  believe
+Mass     0.02665  0.00398  0.00789  0.00337  0.00913  0.002714  0.00574
+ChiDist  0.27224  1.31493  0.45793  0.74207  0.40025  0.580570  0.66284
+Inertia  0.00198  0.00688  0.00165  0.00186  0.00146  0.000915  0.00252
+Dim. 1  -0.29785 -0.82076  0.16778  1.97468  0.01503 -0.143460 -1.34014
+Dim. 2  -0.33262 -3.10009 -0.65682 -0.55942 -0.16116 -0.042899  0.28557
+          better       big   booing    bring    build campaign   can't     care
+Mass     0.00333  0.004299  0.00398  0.00304  0.00310  0.00319 0.00413  0.00393
+ChiDist  0.56943  0.455725  1.32978  0.70156  0.67447  0.94575 0.57161  0.92892
+Inertia  0.00108  0.000893  0.00704  0.00150  0.00141  0.00286 0.00135  0.00339
+Dim. 1  -0.32014  0.674739  0.13660 -0.25543  0.30632 -2.23064 0.45155 -0.40253
+Dim. 2  -0.03827 -0.033457 -3.15327 -1.65955 -0.88945  0.53180 0.57872 -0.24827
+          change  clinton    come countries  country      day     deal     did
+Mass     0.00265  0.00995 0.00421   0.00244  0.01409  0.00310  0.00289 0.00494
+ChiDist  1.03829  0.66937 0.57192   0.70936  0.41172  0.68683  0.79254 0.56255
+Inertia  0.00286  0.00446 0.00138   0.00123  0.00239  0.00146  0.00181 0.00156
+Dim. 1  -0.63910 -0.95596 0.46960   0.68959 -0.45816 -0.69089  1.22428 0.55516
+Dim. 2  -1.89876 -0.76519 0.11646  -1.12318 -1.28842  0.97911 -0.84514 1.17934
+         didn't  doesn't   doing   don't   donald     done election    even
+Mass    0.00293  0.00272 0.00434 0.01298  0.00429  0.00281  0.00227 0.00488
+ChiDist 0.70625  0.70162 0.53789 0.42538  1.01695  0.76950  1.33125 0.49803
+Inertia 0.00146  0.00134 0.00126 0.00235  0.00444  0.00166  0.00401 0.00121
+Dim. 1  1.03604 -0.09742 1.01116 1.21532 -2.10531 -0.75504 -3.41121 0.19051
+Dim. 2  1.08141  0.65338 0.25113 0.45578  2.23348  0.86540  2.17855 0.39306
+            ever everybody    folks     four      get     give      go    going
+Mass     0.00465   0.00344  0.00403  0.00234  0.01169  0.00271 0.00637  0.03682
+ChiDist  0.52537   0.65586  0.68399  0.74628  0.34888  0.74148 0.54306  0.39574
+Inertia  0.00128   0.00148  0.00189  0.00130  0.00142  0.00149 0.00188  0.00577
+Dim. 1   0.21894  -0.65236  1.49939  0.75926 -0.18967 -0.18898 0.08363  1.06378
+Dim. 2  -1.24393   0.57027 -1.15309 -1.40534  0.51270  0.90447 1.38814 -0.63649
+           gonna    good      got government    great     had   happen      has
+Mass     0.00261 0.00590  0.00708    0.00238  0.01249 0.00674  0.00326  0.00903
+ChiDist  1.97901 0.50567  0.61873    0.89879  0.42992 0.59454  0.65432  0.53272
+Inertia  0.01024 0.00151  0.00271    0.00193  0.00231 0.00238  0.00140  0.00256
+Dim. 1   1.74616 0.20730 -0.22118   -0.38390  0.75507 0.11124  0.97980 -1.05348
+Dim. 2  -0.72854 0.99638  1.39320   -2.75894 -0.27813 1.57321 -1.20735  0.18450
+           he's     help  hillary    i'll     i'm     i've important inaudible
+Mass    0.00369  0.00231  0.01102 0.00237 0.00949  0.00441   0.00238   0.00301
+ChiDist 0.87298  1.14192  0.53795 0.67733 0.43234  0.64769   0.71351   2.50099
+Inertia 0.00281  0.00301  0.00319 0.00109 0.00177  0.00185   0.00121   0.01881
+Dim. 1  0.52917 -3.53872  0.00955 0.83712 0.32248 -0.23131  -0.99611   0.12751
+Dim. 2  2.59097  1.73090 -1.46143 0.63621 0.35250  1.52470   0.56070   1.38804
+              is     isis     it's      job     jobs     just     keep    know
+Mass     0.03485  0.00246  0.01963  0.00301  0.00926  0.01176  0.00237 0.01936
+ChiDist  0.28776  1.37982  0.33181  0.79021  0.67097  0.34990  0.81525 0.37735
+Inertia  0.00288  0.00468  0.00216  0.00188  0.00417  0.00144  0.00158 0.00276
+Dim. 1  -0.70550  0.56684  0.92092 -0.56673 -0.33775 -0.19619 -0.96505 0.32623
+Dim. 2   0.24544 -0.23310 -0.11132  0.08972 -2.12776  0.87747 -0.18902 1.41148
+        laughter     let    like    look     lot     love     made     make
+Mass     0.00235 0.00334 0.01013 0.00658 0.00591  0.00374  0.00279  0.00860
+ChiDist  1.07469 0.61233 0.34748 0.62405 0.52565  0.70683  0.68018  0.47955
+Inertia  0.00271 0.00125 0.00122 0.00256 0.00163  0.00187  0.00129  0.00198
+Dim. 1   0.12941 0.07260 0.78828 1.24481 0.80809  0.52054 -0.15455 -1.25143
+Dim. 2   2.16122 0.13605 0.15329 0.70219 1.22086 -0.01538 -0.06180  0.16861
+           mean   mexico military million    money     need      new      not
+Mass    0.00355  0.00230  0.00245 0.00249  0.00398  0.00362  0.00638  0.01767
+ChiDist 0.82322  0.94229  1.35259 0.85416  0.61222  0.78488  0.83331  0.29258
+Inertia 0.00241  0.00204  0.00449 0.00182  0.00149  0.00223  0.00443  0.00151
+Dim. 1  1.69345  1.91787  0.18755 0.14550  1.39654 -1.44421 -0.97159 -0.60096
+Dim. 2  1.76899 -1.36846 -0.48560 0.32542 -0.44203  1.00628 -0.92025  0.43422
+           obama      ok     only     out      pay  people  percent      ph
+Mass     0.00288 0.00363  0.00326  0.0116  0.00308 0.02483  0.00455 0.00232
+ChiDist  0.82744 0.92138  0.73986  0.3476  0.86535 0.27217  0.70893 1.29998
+Inertia  0.00197 0.00308  0.00179  0.0014  0.00231 0.00184  0.00229 0.00392
+Dim. 1   0.38621 2.77864 -1.13106 -0.1124 -1.02251 0.07947  0.88837 1.52291
+Dim. 2  -0.33202 1.50829 -1.05026  0.4996  1.00648 0.09766 -2.07962 1.61024
+           place     plan president       put   really remember   right    said
+Mass     0.00227  0.00237   0.00591  0.003444  0.00565  0.00318 0.01144 0.01234
+ChiDist  0.69791  1.07109   0.80612  0.521433  0.61536  0.71638 0.37559 0.56708
+Inertia  0.00110  0.00272   0.00384  0.000936  0.00214  0.00163 0.00161 0.00397
+Dim. 1  -0.05062 -1.55305  -2.08299 -0.392729 -0.55240  0.28864 0.86696 1.18909
+Dim. 2  -0.23084 -1.41184   1.70011 -0.149998  1.89038 -1.08873 0.17230 1.61726
+            say     see     seen      she    she's    state   states     stop
+Mass    0.00847 0.00582  0.00238  0.01542  0.00367  0.00411  0.00449  0.00235
+ChiDist 0.37242 0.50491  0.76344  0.57268  0.73651  0.68547  0.49413  0.78727
+Inertia 0.00118 0.00148  0.00138  0.00506  0.00199  0.00193  0.00110  0.00145
+Dim. 1  0.60954 0.68700  0.37797  0.90144  1.54675 -0.61681 -0.09087  0.69153
+Dim. 2  0.65385 0.91515 -0.17770 -1.18574 -0.69465 -1.31118 -0.51880 -1.66137
+           take     talk      tax     tell    thank  that's there's    these
+Mass    0.00571  0.00238  0.00225  0.00549  0.00881 0.01031 0.00228  0.00734
+ChiDist 0.46795  0.83659  1.36466  0.47710  0.75745 0.37205 0.73098  0.51526
+Inertia 0.00125  0.00167  0.00418  0.00125  0.00505 0.00143 0.00122  0.00195
+Dim. 1  0.54986 -0.31465 -1.08180 -0.05398 -1.08654 0.19579 0.28661  0.67819
+Dim. 2  0.00448  1.34102 -0.33456  0.55411 -0.92050 0.48380 0.54697 -0.42013
+         they're   thing   things   think    those     time together      too
+Mass     0.00977 0.00321 0.003849 0.00900  0.00454  0.00660  0.00307  0.00231
+ChiDist  0.62821 0.65050 0.503108 0.51260  0.57317  0.45555  1.21279  0.78833
+Inertia  0.00386 0.00136 0.000974 0.00237  0.00149  0.00137  0.00451  0.00144
+Dim. 1   2.14070 1.26334 0.559702 0.42815 -1.18586 -0.29843 -4.07737 -0.99743
+Dim. 2  -0.06408 1.27331 0.620920 1.61146  0.23093 -0.24678  1.51046  0.36597
+           trade    trump   united       up     very     vote     wall     want
+Mass     0.00346  0.01794  0.00379  0.01013  0.01174  0.00471  0.00311  0.01230
+ChiDist  0.94017  0.59361  0.60364  0.35919  0.54847  0.89731  0.86193  0.47207
+Inertia  0.00305  0.00632  0.00138  0.00131  0.00353  0.00379  0.00231  0.00274
+Dim. 1   1.18794  0.32062 -0.44590 -0.31289  0.78273 -1.42633  1.06967 -0.65314
+Dim. 2  -1.90379 -0.04606 -0.91234  0.59942 -0.35590 -0.48455 -2.04138  0.88367
+           wants     was     way    we'll    we're     well     were   what's
+Mass     0.00283 0.01763 0.00633  0.00258  0.02226  0.00521  0.00554  0.00357
+ChiDist  0.64370 0.47071 0.37498  0.81727  0.44595  0.65637  0.63980  0.59124
+Inertia  0.00117 0.00391 0.00089  0.00172  0.00443  0.00224  0.00227  0.00125
+Dim. 1   0.55184 0.35683 0.56292  0.86412  1.07606 -0.15334 -0.32015  1.46406
+Dim. 2  -0.77502 1.40292 0.12552 -1.16637 -0.54869  2.18059  0.97466 -0.12975
+             why      win     work  working    world    years  you're     your
+Mass     0.00339  0.00437  0.00482  0.00265  0.00444  0.00598 0.00457  0.01139
+ChiDist  0.65960  0.84503  1.02405  0.89373  0.52063  0.45065 0.60997  0.47686
+Inertia  0.00147  0.00312  0.00505  0.00212  0.00120  0.00121 0.00170  0.00259
+Dim. 1  -0.47816  1.28319 -3.13882 -2.07193 -0.36458  0.39163 1.03397 -0.91277
+Dim. 2   0.74921 -1.31044  1.11788  0.40909 -0.48495 -0.53551 0.52202 -0.65435</code></pre>
+</div>
+</div>
+</div>
+<div id="tabset-2-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1"></a><span class="fu">summary</span>(d_ca)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Principal inertias (eigenvalues):
+
+ dim    value      %   cum%   scree plot               
+ 1      0.053657  14.1  14.1  ****                     
+ 2      0.040702  10.7  24.8  ***                      
+ 3      0.022246   5.8  30.6  *                        
+ 4      0.019935   5.2  35.8  *                        
+ 5      0.014300   3.8  39.6  *                        
+ 6      0.013147   3.5  43.1  *                        
+ 7      0.011372   3.0  46.0  *                        
+ 8      0.010335   2.7  48.8  *                        
+ 9      0.008489   2.2  51.0  *                        
+ 10     0.007962   2.1  53.1  *                        
+ 11     0.007012   1.8  54.9                           
+ 12     0.006627   1.7  56.7                           
+ 13     0.006017   1.6  58.2                           
+ 14     0.005841   1.5  59.8                           
+ 15     0.005661   1.5  61.3                           
+ 16     0.005539   1.5  62.7                           
+ 17     0.005120   1.3  64.1                           
+ 18     0.004972   1.3  65.4                           
+ 19     0.004851   1.3  66.6                           
+ 20     0.004673   1.2  67.9                           
+ 21     0.004558   1.2  69.1                           
+ 22     0.004145   1.1  70.1                           
+ 23     0.004037   1.1  71.2                           
+ 24     0.003968   1.0  72.2                           
+ 25     0.003885   1.0  73.3                           
+ 26     0.003850   1.0  74.3                           
+ 27     0.003568   0.9  75.2                           
+ 28     0.003367   0.9  76.1                           
+ 29     0.003301   0.9  77.0                           
+ 30     0.003141   0.8  77.8                           
+ 31     0.003067   0.8  78.6                           
+ 32     0.002921   0.8  79.4                           
+ 33     0.002839   0.7  80.1                           
+ 34     0.002717   0.7  80.8                           
+ 35     0.002664   0.7  81.5                           
+ 36     0.002580   0.7  82.2                           
+ 37     0.002534   0.7  82.9                           
+ 38     0.002443   0.6  83.5                           
+ 39     0.002341   0.6  84.1                           
+ 40     0.002303   0.6  84.7                           
+ 41     0.002214   0.6  85.3                           
+ 42     0.002181   0.6  85.9                           
+ 43     0.002148   0.6  86.4                           
+ 44     0.002031   0.5  87.0                           
+ 45     0.001955   0.5  87.5                           
+ 46     0.001873   0.5  88.0                           
+ 47     0.001861   0.5  88.5                           
+ 48     0.001794   0.5  88.9                           
+ 49     0.001711   0.4  89.4                           
+ 50     0.001662   0.4  89.8                           
+ 51     0.001653   0.4  90.3                           
+ 52     0.001595   0.4  90.7                           
+ 53     0.001496   0.4  91.1                           
+ 54     0.001442   0.4  91.4                           
+ 55     0.001406   0.4  91.8                           
+ 56     0.001361   0.4  92.2                           
+ 57     0.001311   0.3  92.5                           
+ 58     0.001267   0.3  92.9                           
+ 59     0.001257   0.3  93.2                           
+ 60     0.001183   0.3  93.5                           
+ 61     0.001174   0.3  93.8                           
+ 62     0.001111   0.3  94.1                           
+ 63     0.001072   0.3  94.4                           
+ 64     0.001038   0.3  94.6                           
+ 65     0.001011   0.3  94.9                           
+ 66     0.000970   0.3  95.2                           
+ 67     0.000924   0.2  95.4                           
+ 68     0.000905   0.2  95.6                           
+ 69     0.000842   0.2  95.9                           
+ 70     0.000825   0.2  96.1                           
+ 71     0.000774   0.2  96.3                           
+ 72     0.000768   0.2  96.5                           
+ 73     0.000747   0.2  96.7                           
+ 74     0.000718   0.2  96.9                           
+ 75     0.000704   0.2  97.1                           
+ 76     0.000671   0.2  97.2                           
+ 77     0.000659   0.2  97.4                           
+ 78     0.000605   0.2  97.6                           
+ 79     0.000595   0.2  97.7                           
+ 80     0.000568   0.1  97.9                           
+ 81     0.000536   0.1  98.0                           
+ 82     0.000505   0.1  98.1                           
+ 83     0.000481   0.1  98.3                           
+ 84     0.000450   0.1  98.4                           
+ 85     0.000431   0.1  98.5                           
+ 86     0.000422   0.1  98.6                           
+ 87     0.000389   0.1  98.7                           
+ 88     0.000381   0.1  98.8                           
+ 89     0.000343   0.1  98.9                           
+ 90     0.000335   0.1  99.0                           
+ 91     0.000315   0.1  99.1                           
+ 92     0.000292   0.1  99.2                           
+ 93     0.000275   0.1  99.2                           
+ 94     0.000265   0.1  99.3                           
+ 95     0.000243   0.1  99.4                           
+ 96     0.000238   0.1  99.4                           
+ 97     0.000217   0.1  99.5                           
+ 98     0.000205   0.1  99.5                           
+ 99     0.000183   0.0  99.6                           
+ 100    0.000173   0.0  99.6                           
+ 101    0.000164   0.0  99.7                           
+ 102    0.000155   0.0  99.7                           
+ 103    0.000152   0.0  99.7                           
+ 104    0.000148   0.0  99.8                           
+ 105    0.000128   0.0  99.8                           
+ 106    0.000121   0.0  99.9                           
+ 107    0.000113   0.0  99.9                           
+ 108    8.9e-050   0.0  99.9                           
+ 109    7.4e-050   0.0  99.9                           
+ 110    6.8e-050   0.0  99.9                           
+ 111    5.9e-050   0.0 100.0                           
+ 112    5e-05000   0.0 100.0                           
+ 113    4.5e-050   0.0 100.0                           
+ 114    3.7e-050   0.0 100.0                           
+ 115    2.3e-050   0.0 100.0                           
+ 116    00000000   0.0 100.0                           
+ 117    00000000   0.0 100.0                           
+        -------- -----                                 
+ Total: 0.380871 100.0                                 
+
+
+Rows:
+             name   mass  qlt  inr    k=1 cor ctr    k=2 cor ctr  
+1   |  C_20160728 |    8  422   11 | -469 414  32 |   64   8   1 |
+2   |  C_20160729 |    5  242    6 | -270 170   7 |  177  73   4 |
+3   |  C_20160801 |    2  222    6 | -410 178   7 |  202  43   2 |
+4   |  C_20160805 |    8  354   10 | -258 146  10 |  307 208  20 |
+5   |  C_20160810 |    3  401    6 | -491 342  15 |  205  59   3 |
+6   |  C_20160811 |    8  330   15 | -479 317  33 |   97  13   2 |
+7   |  C_20160815 |   10  234   11 | -141  51   4 |  268 184  18 |
+8   |  C_20160816 |    5  215    6 | -257 140   6 |  187  75   4 |
+9   |  C_20160817 |    6  371   10 | -424 300  21 |  205  70   6 |
+10  |   C_2016082 |    4  276    9 | -389 195  12 |  249  80   7 |
+11  |   C_2016083 |    5  229   12 | -462 226  19 |   59   4   0 |
+12  | C_20160905A |    9  370   10 | -296 222  15 |  242 148  14 |
+13  | C_20160905B |    5  436    7 | -372 268  13 |  295 168  11 |
+14  |  C_20160906 |    8  307    7 | -269 232  11 |  153  75   5 |
+15  | C_20160908A |    3  102    8 | -152  21   1 |  302  82   6 |
+16  | C_20160908B |    4  306    7 | -421 265  14 |  165  41   3 |
+17  | C_20160908C |    5  378    5 | -282 200   8 |  266 178   9 |
+18  |   C_2016092 |    2  184    6 | -320 117   5 |  241  67   4 |
+19  |   C_2016093 |    5  442    8 | -516 433  25 |   75   9   1 |
+20  |   C_2016100 |    7  345    7 | -287 202  10 |  240 143   9 |
+21  |  C_20161024 |   11  479   11 | -377 400  30 |  168  79   8 |
+22  |  C_20161026 |    5  357    6 | -368 263  12 |  220  94   6 |
+23  | C_20161031A |    5  325   10 | -408 201  14 |  320 124  12 |
+24  | C_20161031B |    5  487    7 | -442 348  17 |  280 139   9 |
+25  | C_20161101A |    6  298    9 | -299 160  10 |  277 138  11 |
+26  | C_20161101B |    3  288    9 | -520 258  17 |  178  30   3 |
+27  | C_20161104A |    6  339    6 | -320 275  12 |  155  65   4 |
+28  | C_20161104B |    6  392    8 | -304 187  10 |  318 205  15 |
+29  |  C_20161105 |    1  205    4 | -450 157   5 |  248  48   2 |
+30  | C_20161106A |    4  561    8 | -589 512  28 |  181  49   3 |
+31  | C_20161106B |    5  419    9 | -477 326  20 |  254  92   7 |
+32  | C_20161107A |    5  130   20 | -388  92  13 |  250  38   7 |
+33  | C_20161107B |    6  462    7 | -407 357  18 |  220 104   7 |
+34  | C_20161107C |    2  368    8 | -656 347  19 |  159  20   1 |
+35  |  C_20161108 |    2  373    8 | -692 351  20 |  171  21   2 |
+36  |  C_20161109 |    3  204    7 | -426 196  10 |   84   8   1 |
+37  |  T_20160722 |   12  489   15 |  161  53   6 |  459 435  63 |
+38  |  T_20160725 |   17  330   10 |  185 149  11 |  203 180  17 |
+39  |  T_20160726 |    4   81    7 | -171  48   2 | -141  33   2 |
+40  | T_20160727A |   17  351   25 |  270 131  23 |  351 221  52 |
+41  | T_20160727B |   19  479   10 |  226 252  18 |  215 227  22 |
+42  |  T_20160801 |   18  309   17 |  293 242  29 |  155  67  11 |
+43  |  T_20160802 |   20  488   14 |  347 443  45 |  111  45   6 |
+44  |  T_20160804 |   14  223    7 |  159 139   7 |  124  84   5 |
+45  |  T_20160805 |   17  215    9 |  150 114   7 |  141 101   8 |
+46  |  T_20160808 |    7  283   20 | -359 111  16 | -446 172  33 |
+47  |  T_20160810 |   18  510   13 |  337 397  38 |  179 112  14 |
+48  | T_20160812A |   17  439    9 |  257 335  21 |  143 104   9 |
+49  | T_20160812B |   16  380   10 |  298 375  26 |   35   5   0 |
+50  |  T_20160815 |    6   84   16 | -289  83   9 |  -29   1   0 |
+51  |  T_20160816 |    6  362    8 | -263 147   8 | -318 216  15 |
+52  |  T_20160817 |   12  157   14 |  113  28   3 |  241 128  17 |
+53  |  T_20160818 |    6  477    9 | -341 230  14 | -354 247  20 |
+54  |  T_20160819 |    7  381    9 | -157  55   3 | -384 327  26 |
+55  |  T_20160822 |    8  280    5 | -100  38   1 | -251 241  12 |
+56  |  T_20160823 |    7  234   16 | -187  41   5 | -403 192  29 |
+57  | T_20160824A |   13  406    7 |   72  25   1 | -282 382  26 |
+58  | T_20160824B |    7  424    9 | -246 121   8 | -390 304  27 |
+59  |  T_20160825 |    8  257    8 |  -83  18   1 | -299 238  17 |
+60  |  T_20160830 |    7  177    6 | -112  42   2 | -201 135   7 |
+61  |  T_20160831 |   11   91    8 |  -74  20   1 | -139  71   5 |
+62  | T_20160901A |    5  301    7 |  -77  10   1 | -406 291  20 |
+63  | T_20160901B |    3  287    7 | -405 163   8 | -354 124   8 |
+64  | T_20160906A |   13  316   11 |  228 165  13 |  217 150  16 |
+65  | T_20160906B |    9  201    5 |   16   1   0 | -194 199   9 |
+66  | T_20160907A |    5  127   10 | -217  58   4 | -238  69   6 |
+67  | T_20160907B |    6  145   10 |  189  57   4 |  233  87   8 |
+68  |  T_20160908 |    6    2    7 |    6   0   0 |  -27   2   0 |
+69  | T_20160909A |    9   35    5 |   87  35   1 |   -7   0   0 |
+70  | T_20160909B |    3   99    5 |   80  11   0 | -226  88   4 |
+71  | Tr_20160909 |    9   35    5 |   87  35   1 |   -7   0   0 |
+72  | T_20160912A |    9   93    6 |  -45   8   0 | -149  85   5 |
+73  | T_20160912B |    3  123    8 | -266  74   4 | -217  49   4 |
+74  | T_20160913A |    7  258    6 |  -35   4   0 | -294 254  15 |
+75  | T_20160913B |    3   76   22 | -439  73  11 |  -82   3   1 |
+76  | Tr_20160913 |    7  258    6 |  -35   4   0 | -294 254  15 |
+77  |  T_20160916 |   10  108    6 |   58  15   1 | -148  93   5 |
+78  |  T_20160917 |    4   46    7 | -169  46   2 |   14   0   0 |
+79  |   T_2016092 |    8  142    6 |   47   8   0 | -192 134   7 |
+80  |   T_2016093 |   11  176    9 |   18   1   0 | -224 175  14 |
+81  | T_20161003A |   13   91   16 |  126  33   4 |  167  58   9 |
+82  | T_20161003B |   11   63    6 |  -37   6   0 | -110  56   3 |
+83  |  T_20161005 |   12  131    4 |  -16   2   0 | -136 129   5 |
+84  |  T_20161006 |   16  427    9 |  215 212  14 |  217 215  19 |
+85  | T_20161010A |   13  142    7 |  157 113   6 |  -79  28   2 |
+86  | T_20161010B |   15  287    7 |  217 278  13 |  -38   9   1 |
+87  |  T_20161011 |   13   72    5 |   86  48   2 |  -61  24   1 |
+88  |  T_20161012 |   14   94    9 |  152  94   6 |   -6   0   0 |
+89  |  T_20161013 |    7   51    8 | -106  28   2 |  -98  24   2 |
+90  | T_20161014A |   10  207    5 |  188 180   6 |  -73  27   1 |
+91  | T_20161014B |   14  161    6 |  159 157   7 |  -28   5   0 |
+92  |  T_20161017 |   10   41   15 |   66   8   1 | -138  33   5 |
+93  |  T_20161018 |    9   92    6 |   21   2   0 | -144  90   5 |
+94  | T_20161021A |    6  176    9 |  256 115   7 |  186  60   5 |
+95  | T_20161021B |   10  175    7 |  123  57   3 | -177 118   8 |
+96  | T_20161021C |    6  239    6 |  -33   3   0 | -291 236  13 |
+97  |  T_20161027 |    7  115    6 |   52   9   0 | -176 106   5 |
+98  |  T_20161028 |   10   86    7 |  128  64   3 |  -76  23   1 |
+99  |   T_2016103 |   13  161    7 |   59  17   1 | -173 144   9 |
+100 | T_20161101A |    9  258    5 |  -49  10   0 | -237 247  12 |
+101 | T_20161101B |    4   90    7 | -146  32   2 | -194  57   4 |
+102 | T_20161102A |    9  222    8 |   56  10   1 | -264 212  15 |
+103 | T_20161102B |   11   84    6 |  102  53   2 |  -78  31   2 |
+104 | T_20161102C |    7  115    4 |   59  17   0 | -144  99   4 |
+105 | T_20161103A |   11  167    7 |   77  25   1 | -181 141   9 |
+106 | T_20161103B |   10  248    5 |  138 114   4 | -150 134   6 |
+107 | T_20161104A |   10   65    7 |   96  37   2 |  -85  28   2 |
+108 | T_20161104B |    9   71    4 |   55  16   1 |  -99  54   2 |
+109 | T_20161104C |   12  208    7 |  200 184   9 |  -72  24   2 |
+110 | T_20161105A |   12  215    7 |  188 176   8 |  -89  39   2 |
+111 | T_20161105B |   10   74    7 |    2   0   0 | -146  74   5 |
+112 |  T_20161106 |    8  126    6 |  129  56   2 | -145  70   4 |
+113 | T_20161107A |   12   77   10 |  107  34   2 | -120  43   4 |
+114 | T_20161107B |   12  174    6 |  160 123   6 | -103  50   3 |
+115 | T_20161107C |    7  115    9 |   74  11   1 | -229 104   9 |
+116 | T_20161107D |    9  101    5 |  -27   3   0 | -144  98   5 |
+117 |  T_20161108 |    8  169    6 |   28   3   0 | -221 166  10 |
+118 |  T_20161109 |    3   53    7 | -194  41   2 |  101  11   1 |
+
+Columns:
+        name   mass  qlt  inr    k=1 cor ctr    k=2 cor ctr  
+1   |   agan |    5  424    5 |  -11   0   0 | -386 424  19 |
+2   |    ago |    2  241    3 |  329 239   5 |  -30   2   0 |
+3   |   also |    4  303    6 | -308 196   8 | -226 106   6 |
+4   |  amerc |    7  618   11 | -583 607  46 |  -79  11   1 |
+5   | amercn |    6  470   16 | -454 205  24 | -516 265  41 |
+6   | amrcns |    3  522    8 | -714 496  28 | -163  26   2 |
+7   |   appl |   42  505   28 | -314 382  77 | -178 122  32 |
+8   |    are |   27  125    5 |  -69  64   2 |  -67  61   3 |
+9   |   adnc |    4  247   18 | -190  21   3 | -625 226  38 |
+10  |   back |    8   91    4 |   39   7   0 | -133  84   3 |
+11  |    bad |    3  403    5 |  457 380  13 | -113  23   1 |
+12  |   been |    9    7    4 |    3   0   0 |  -33   7   0 |
+13  |   beng |    3    3    2 |  -33   3   0 |   -9   0   0 |
+14  |   belv |    6  227    7 | -310 219  10 |   58   8   0 |
+15  |   bttr |    3   17    3 |  -74  17   0 |   -8   0   0 |
+16  |    big |    4  118    2 |  156 118   2 |   -7   0   0 |
+17  |   bong |    4  229   18 |   32   1   0 | -636 229  40 |
+18  |   brng |    3  235    4 |  -59   7   0 | -335 228   8 |
+19  |   buld |    3   82    4 |   71  11   0 | -179  71   2 |
+20  |   cmpg |    3  311    8 | -517 298  16 |  107  13   1 |
+21  |   cant |    4   75    4 |  105  33   1 |  117  42   1 |
+22  |   care |    4   13    9 |  -93  10   1 |  -50   3   0 |
+23  |   chng |    3  156    8 | -148  20   1 | -383 136  10 |
+24  |   clnt |   10  163   12 | -221 109   9 | -154  53   6 |
+25  |   come |    4   38    4 |  109  36   1 |   23   2   0 |
+26  |  cntrs |    2  153    3 |  160  51   1 | -227 102   3 |
+27  |  cntry |   14  465    6 | -106  66   3 | -260 399  23 |
+28  |    day |    3  137    4 | -160  54   1 |  198  83   3 |
+29  |   deal |    3  174    5 |  284 128   4 | -171  46   2 |
+30  |    did |    5  231    4 |  129  52   2 |  238 179   7 |
+31  |   ddnt |    3  211    4 |  240 115   3 |  218  95   3 |
+32  |   dsnt |    3   36    4 |  -23   1   0 |  132  35   1 |
+33  |   dong |    4  198    3 |  234 190   4 |   51   9   0 |
+34  |   dont |   13  485    6 |  282 438  19 |   92  47   3 |
+35  |   dnld |    4  426   12 | -488 230  19 |  451 196  21 |
+36  |   done |    3  103    4 | -175  52   2 |  175  51   2 |
+37  |   elct |    2  461   11 | -790 352  26 |  440 109  11 |
+38  |   even |    5   33    3 |   44   8   0 |   79  25   1 |
+39  |   ever |    5  237    3 |   51   9   0 | -251 228   7 |
+40  |   evry |    3   84    4 | -151  53   1 |  115  31   1 |
+41  |   flks |    4  374    5 |  347 258   9 | -233 116   5 |
+42  |   four |    2  200    3 |  176  56   1 | -284 144   5 |
+43  |    get |   12  104    4 |  -44  16   0 |  103  88   3 |
+44  |   give |    3   64    4 |  -44   3   0 |  182  61   2 |
+45  |     go |    6  267    5 |   19   1   0 |  280 266  12 |
+46  |   gong |   37  493   15 |  246 388  42 | -128 105  15 |
+47  |   gonn |    3   47   27 |  404  42   8 | -147   6   1 |
+48  |   good |    6  167    4 |   48   9   0 |  201 158   6 |
+49  |    got |    7  213    7 |  -51   7   0 |  281 206  14 |
+50  |   gvrn |    2  393    5 |  -89  10   0 | -557 384  18 |
+51  |   gret |   12  183    6 |  175 166   7 |  -56  17   1 |
+52  |    had |    7  287    6 |   26   2   0 |  317 285  17 |
+53  |   hppn |    3  259    4 |  227 120   3 | -244 139   5 |
+54  |    has |    9  215    7 | -244 210  10 |   37   5   0 |
+55  |    hes |    4  378    7 |  123  20   1 |  523 359  25 |
+56  |   help |    2  609    8 | -820 515  29 |  349  94   7 |
+57  |   hllr |   11  300    8 |    2   0   0 | -295 300  24 |
+58  |    ill |    2  118    3 |  194  82   2 |  128  36   1 |
+59  |     im |    9   57    5 |   75  30   1 |   71  27   1 |
+60  |    ive |    4  232    5 |  -54   7   0 |  308 226  10 |
+61  |   impr |    2  130    3 | -231 105   2 |  113  25   1 |
+62  |   indb |    3   13   49 |   30   0   0 |  280  13   6 |
+63  |     is |   35  352    8 | -163 323  17 |   50  30   2 |
+64  |   isis |    2   10   12 |  131   9   1 |  -47   1   0 |
+65  |    its |   20  418    6 |  213 413  17 |  -22   5   0 |
+66  |    job |    3   28    5 | -131  28   1 |   18   1   0 |
+67  |   jobs |    9  423   11 |  -78  14   1 | -429 409  42 |
+68  |   just |   12  273    4 |  -45  17   0 |  177 256   9 |
+69  |   keep |    2   77    4 | -224  75   2 |  -38   2   0 |
+70  |   know |   19  610    7 |   76  40   2 |  285 569  39 |
+71  |   lght |    2  165    7 |   30   1   0 |  436 165  11 |
+72  |    let |    3    3    3 |   17   1   0 |   27   2   0 |
+73  |   like |   10  284    3 |  183 276   6 |   31   8   0 |
+74  |   look |    7  265    7 |  288 214  10 |  142  52   3 |
+75  |    lot |    6  346    4 |  187 127   4 |  246 220   9 |
+76  |   love |    4   29    5 |  121  29   1 |   -3   0   0 |
+77  |   made |    3    3    3 |  -36   3   0 |  -12   0   0 |
+78  |   make |    9  370    5 | -290 365  13 |   34   5   0 |
+79  |   mean |    4  415    6 |  392 227  10 |  357 188  11 |
+80  |   mexc |    2  308    5 |  444 222   8 | -276  86   4 |
+81  |   mltr |    2    6   12 |   43   1   0 |  -98   5   1 |
+82  |   mlln |    2    7    5 |   34   2   0 |   66   6   0 |
+83  |   mony |    4  300    4 |  323 279   8 |  -89  21   1 |
+84  |   need |    4  249    6 | -335 182   8 |  203  67   4 |
+85  |    new |    6  123   12 | -225  73   6 | -186  50   5 |
+86  |    not |   18  316    4 | -139 226   6 |   88  90   3 |
+87  |   obam |    3   18    5 |   89  12   0 |  -67   7   0 |
+88  |     ok |    4  597    8 |  644 488  28 |  304 109   8 |
+89  |   only |    3  207    5 | -262 125   4 | -212  82   4 |
+90  |    out |   12   90    4 |  -26   6   0 |  101  84   3 |
+91  |    pay |    3  130    6 | -237  75   3 |  203  55   3 |
+92  |   pepl |   25   10    5 |   18   5   0 |   20   5   0 |
+93  |   prcn |    5  435    6 |  206  84   4 | -420 350  20 |
+94  |     ph |    2  136   10 |  353  74   5 |  325  62   6 |
+95  |   plac |    2    5    3 |  -12   0   0 |  -47   4   0 |
+96  |   plan |    2  184    7 | -360 113   6 | -285  71   5 |
+97  |   prsd |    6  539   10 | -483 358  26 |  343 181  17 |
+98  |    put |    3   34    2 |  -91  30   1 |  -30   3   0 |
+99  |   rlly |    6  427    6 | -128  43   2 |  381 384  20 |
+100 |   rmmb |    3  103    4 |   67   9   0 | -220  94   4 |
+101 |   rght |   11  294    4 |  201 286   9 |   35   9   0 |
+102 |   said |   12  567   10 |  275 236  17 |  326 331  32 |
+103 |    say |    8  269    3 |  141 144   3 |  132 125   4 |
+104 |    see |    6  233    4 |  159  99   3 |  185 134   5 |
+105 |   seen |    2   15    4 |   88  13   0 |  -36   2   0 |
+106 |    she |   15  307   13 |  209 133  13 | -239 174  22 |
+107 |   shes |    4  273    5 |  358 237   9 | -140  36   2 |
+108 |   stat |    4  192    5 | -143  43   2 | -265 149   7 |
+109 |   stts |    4   47    3 |  -21   2   0 | -105  45   1 |
+110 |   stop |    2  223    4 |  160  41   1 | -335 181   6 |
+111 |   take |    6   74    3 |  127  74   2 |    1   0   0 |
+112 |   talk |    2  112    4 |  -73   8   0 |  271 105   4 |
+113 |    tax |    2   36   11 | -251  34   3 |  -67   2   0 |
+114 |   tell |    5   56    3 |  -13   1   0 |  112  55   2 |
+115 |  thank |    9  171   13 | -252 110  10 | -186  60   7 |
+116 |   thts |   10   84    4 |   45  15   0 |   98  69   2 |
+117 |   thrs |    2   31    3 |   66   8   0 |  110  23   1 |
+118 |   thes |    7  120    5 |  157  93   3 |  -85  27   1 |
+119 |   thyr |   10  623   10 |  496 623  45 |  -13   0   0 |
+120 |  thing |    3  358    4 |  293 202   5 |  257 156   5 |
+121 |  thngs |    4  128    3 |  130  66   1 |  125  62   1 |
+122 |  think |    9  440    6 |   99  37   2 |  325 402  23 |
+123 |   thos |    5  236    4 | -275 230   6 |   47   7   0 |
+124 |   time |    7   35    4 |  -69  23   1 |  -50  12   0 |
+125 |   tgth |    3  670   12 | -944 606  51 |  305  63   7 |
+126 |    too |    2   95    4 | -231  86   2 |   74   9   0 |
+127 |   trad |    3  253    8 |  275  86   5 | -384 167  13 |
+128 |   trmp |   18   16   17 |   74  16   2 |   -9   0   0 |
+129 |   untd |    4  122    4 | -103  29   1 | -184  93   3 |
+130 |     up |   10  154    3 |  -72  41   1 |  121 113   4 |
+131 |   very |   12  126    9 |  181 109   7 |  -72  17   1 |
+132 |   vote |    5  147   10 | -330 136  10 |  -98  12   1 |
+133 |   wall |    3  311    6 |  248  83   4 | -412 228  13 |
+134 |   want |   12  245    7 | -151 103   5 |  178 143  10 |
+135 |   wnts |    3   98    3 |  128  39   1 | -156  59   2 |
+136 |    was |   18  392   10 |   83  31   2 |  283 362  35 |
+137 |    way |    6  125    2 |  130 121   2 |   25   5   0 |
+138 |   well |    3  143    5 |  200  60   2 | -235  83   4 |
+139 |   were |   22  374   12 |  249 312  26 | -111  62   7 |
+140 |   well |    5  452    6 |  -36   3   0 |  440 449  25 |
+141 |   were |    6  108    6 |  -74  13   1 |  197  94   5 |
+142 |   whts |    4  331    3 |  339 329   8 |  -26   2   0 |
+143 |    why |    3   81    4 | -111  28   1 |  151  53   2 |
+144 |    win |    4  222    8 |  297 124   7 | -264  98   8 |
+145 |   work |    5  553   13 | -727 504  47 |  226  49   6 |
+146 |   wrkn |    3  297    6 | -480 288  11 |   83   9   0 |
+147 |   wrld |    4   62    3 |  -84  26   1 |  -98  35   1 |
+148 |   yers |    6   98    3 |   91  41   1 | -108  57   2 |
+149 |  youre |    5  184    4 |  240 154   5 |  105  30   1 |
+150 |   your |   11  273    7 | -211 197   9 | -132  77   5 |</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>Linguistic example</p>
+</div>
+</section>
+<section id="basic-plot" class="slide level2">
+<h2>Basic plot</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1"></a><span class="fu">plot</span>(d_ca)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="correspondence-analysis_files/figure-revealjs/tc-plot-1.png" width="960" class="r-stretch"><div class="footer">
+<p>Linguistic example</p>
+</div>
+</section>
+<section id="ggplot" class="slide level2">
+<h2>GGplot</h2>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1"></a>texts_df <span class="ot">&lt;-</span> <span class="fu">row_pcoord</span>(d_ca)[,<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>)] <span class="sc">%&gt;%</span> </span>
+<span id="cb22-2"><a href="#cb22-2"></a>  <span class="fu">as_tibble</span>(<span class="at">rownames =</span> <span class="st">"text"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb22-3"><a href="#cb22-3"></a>  <span class="fu">mutate</span>(<span class="at">Subcorpus =</span> <span class="fu">re_retrieve_first</span>(fnames, <span class="st">"/clinton_trump/([^/]+)"</span>, <span class="at">requested_group =</span> <span class="dv">1</span>))</span>
+<span id="cb22-4"><a href="#cb22-4"></a></span>
+<span id="cb22-5"><a href="#cb22-5"></a>words_df <span class="ot">&lt;-</span> <span class="fu">col_pcoord</span>(d_ca)[,<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>)] <span class="sc">%&gt;%</span> </span>
+<span id="cb22-6"><a href="#cb22-6"></a>  <span class="fu">as_tibble</span>(<span class="at">rownames =</span> <span class="st">"word"</span>)</span>
+<span id="cb22-7"><a href="#cb22-7"></a></span>
+<span id="cb22-8"><a href="#cb22-8"></a>dim_1 <span class="ot">&lt;-</span> <span class="fu">sprintf</span>(<span class="st">"Dimension 1 (%.2f %%)"</span>, <span class="fu">summary</span>(d_ca)<span class="sc">$</span>scree[<span class="dv">1</span>,<span class="dv">3</span>])</span>
+<span id="cb22-9"><a href="#cb22-9"></a>dim_2 <span class="ot">&lt;-</span> <span class="fu">sprintf</span>(<span class="st">"Dimension 2 (%.2f %%)"</span>, <span class="fu">summary</span>(d_ca)<span class="sc">$</span>scree[<span class="dv">2</span>,<span class="dv">3</span>])</span>
+<span id="cb22-10"><a href="#cb22-10"></a></span>
+<span id="cb22-11"><a href="#cb22-11"></a><span class="fu">ggplot</span>(words_df, <span class="fu">aes</span>(<span class="at">x =</span> V1, <span class="at">y =</span> V2)) <span class="sc">+</span></span>
+<span id="cb22-12"><a href="#cb22-12"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> word), <span class="at">color =</span> <span class="st">"gray60"</span>) <span class="sc">+</span></span>
+<span id="cb22-13"><a href="#cb22-13"></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> texts_df, <span class="fu">aes</span>(<span class="at">color =</span> Subcorpus)) <span class="sc">+</span></span>
+<span id="cb22-14"><a href="#cb22-14"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"#0000CD"</span>,<span class="st">"#DC143C"</span>)) <span class="sc">+</span></span>
+<span id="cb22-15"><a href="#cb22-15"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>, <span class="at">color =</span> <span class="st">"darkgray"</span>) <span class="sc">+</span></span>
+<span id="cb22-16"><a href="#cb22-16"></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> <span class="dv">0</span>, <span class="at">color =</span> <span class="st">"darkgray"</span>) <span class="sc">+</span></span>
+<span id="cb22-17"><a href="#cb22-17"></a>  <span class="fu">theme_bw</span>(<span class="at">base_size =</span> <span class="dv">12</span>) <span class="sc">+</span></span>
+<span id="cb22-18"><a href="#cb22-18"></a>  <span class="fu">labs</span>(<span class="at">x =</span> dim_1, <span class="at">y =</span> dim_2) <span class="sc">+</span></span>
+<span id="cb22-19"><a href="#cb22-19"></a>  <span class="fu">coord_fixed</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+
+</div>
+<img data-src="correspondence-analysis_files/figure-revealjs/tc-ggplot-1.png" width="960" class="r-stretch"><div class="footer">
+<p>Linguistic example</p>
+</div>
+</section></section>
+<section id="next-factor-analysis" class="title-slide slide level1 center">
+<h1>Next: Factor Analysis</h1>
+<div class="footer footer-default">
+
+</div>
+</section>
+
+
+    </div>
+  </div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="correspondence-analysis_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="correspondence-analysis_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="correspondence-analysis_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="correspondence-analysis_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="correspondence-analysis_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="correspondence-analysis_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="correspondence-analysis_files/libs/revealjs/plugin/multiplex/socket.io.js"></script>
+  <script src="correspondence-analysis_files/libs/revealjs/plugin/multiplex/multiplex.js"></script>
+  <script src="correspondence-analysis_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="correspondence-analysis_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="correspondence-analysis_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="correspondence-analysis_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="correspondence-analysis_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': true,
+'smaller': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":false},
+'multiplex': {"secret":null,"id":"8b6430c798f7922d","url":"https://reveal-multiplex.glitch.me/"},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
+    <script id="quarto-html-after-body" type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
+        }
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
+      }
+      toggleBodyColorPrimary();  
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const clipboard = new window.ClipboardJS('.code-copy-button', {
+        target: function(trigger) {
+          return trigger.previousElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copied!");
+        let tooltip;
+        if (window.bootstrap) {
+          button.setAttribute("data-bs-toggle", "tooltip");
+          button.setAttribute("data-bs-placement", "left");
+          button.setAttribute("data-bs-title", "Copied!");
+          tooltip = new bootstrap.Tooltip(button, 
+            { trigger: "manual", 
+              customClass: "code-copy-button-tooltip",
+              offset: [0, -8]});
+          tooltip.show();    
+        }
+        setTimeout(function() {
+          if (tooltip) {
+            tooltip.hide();
+            button.removeAttribute("data-bs-title");
+            button.removeAttribute("data-bs-toggle");
+            button.removeAttribute("data-bs-placement");
+          }
+          button.setAttribute("title", currentTitle);
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      });
+      function tippyHover(el, contentFn) {
+        const config = {
+          allowHTML: true,
+          content: contentFn,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'quarto-reveal',
+          placement: 'bottom-start'
+        };
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          return note.innerHTML;
+        });
+      }
+      const findCites = (el) => {
+        const parentEl = el.parentElement;
+        if (parentEl) {
+          const cites = parentEl.dataset.cites;
+          if (cites) {
+            return {
+              el,
+              cites: cites.split(' ')
+            };
+          } else {
+            return findCites(el.parentElement)
+          }
+        } else {
+          return undefined;
+        }
+      };
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const citeInfo = findCites(ref);
+        if (citeInfo) {
+          tippyHover(citeInfo.el, function() {
+            var popup = window.document.createElement('div');
+            citeInfo.cites.forEach(function(cite) {
+              var citeDiv = window.document.createElement('div');
+              citeDiv.classList.add('hanging-indent');
+              citeDiv.classList.add('csl-entry');
+              var biblioDiv = window.document.getElementById('ref-' + cite);
+              if (biblioDiv) {
+                citeDiv.innerHTML = biblioDiv.innerHTML;
+              }
+              popup.appendChild(citeDiv);
+            });
+            return popup.innerHTML;
+          });
+        }
+      }
+    });
+    </script>
+    
+
+</body></html>
