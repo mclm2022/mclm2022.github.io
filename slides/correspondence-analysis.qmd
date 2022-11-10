@@ -17,7 +17,7 @@ execute:
 ```{r}
 #| label: setup
 #| include: false
-headings <- c("Introduction", "Terminology", r"($\chi^2$)", "Linguistic example") 
+headings <- c("Introduction", "Terminology", "Interpretation", "Linguistic example") 
 library(tidyverse)
 library(kableExtra)
 options(digits = 3)
@@ -217,7 +217,7 @@ $n \times m$ matrix with overall row proportions $r_{ij}$
 
 - columns are dimensions in the **row points cloud**
 
-- In bold: the **row centroid**.
+- In bold: the **row centroid** (vector of column masses!)
 
 :::
 ::: {.column width="50%"}
@@ -227,6 +227,37 @@ addmargins(smoke_mtx, 1) %>%
   prop.table(1) %>% 
   print_matrix()
 ```
+:::
+
+::::
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## What do you mean, row point cloud?
+
+:::: {.columns}
+
+::: {.column width="50%"}
+```{r}
+#| label: row-cloud
+row_cloud <- addmargins(smoke_mtx, 1) %>% prop.table(1) %>% 
+  as_tibble(rownames = "Employee") %>%
+  mutate(Employee = if_else(Employee == "Sum", "Centroid", Employee))
+row_cloud %>% ggplot(aes(x = none, y = light, label = Employee)) +
+  geom_text(size = 10) +
+  theme_minimal(base_size = 20) +
+  annotate("point", x = row_cloud$none[[nrow(row_cloud)]], y = row_cloud$light[[nrow(row_cloud)]], shape = 1, size = 25)
+```
+:::
+
+::: {.column width="50%"}
+- BUT more than two dimensions
+
+- We then compute $\chi^2$ distances instead of euclidean distances
+
+- How far are points from the *centroid*?
 :::
 
 ::::
@@ -246,7 +277,7 @@ $n \times m$ matrix with overall row proportions $c_{ij}$
 
 - rows are dimensions in the **column points cloud**
 
-- In bold: the **column centroid**.
+- In bold: the **column centroid** (vector of row masses!)
 
 :::
 ::: {.column width="50%"}
@@ -264,6 +295,32 @@ addmargins(smoke_mtx, 2) %>%
 `r headings[[i]]`
 :::
 
+## *Also* a column point cloud?
+
+```{r}
+#| label: col-cloud
+#| layout-ncol: 2
+row_cloud %>% ggplot(aes(x = none, y = light, label = Employee)) +
+  geom_text(size = 8) +
+  theme_minimal(base_size = 20) +
+  annotate("point", x = row_cloud$none[[nrow(row_cloud)]], y = row_cloud$light[[nrow(row_cloud)]], shape = 1, size = 25) +
+  labs(title = "Two dimensions of the row cloud.")
+col_cloud <- addmargins(smoke_mtx, 2) %>% prop.table(2) %>% 
+  t() %>% 
+  as_tibble(rownames = "Smoker") %>%
+  mutate(Smoker = if_else(Smoker == "Sum", "Centroid", Smoker))
+col_cloud %>% ggplot(aes(x = SM, y = SC, label = Smoker)) +
+  geom_text(size = 8) +
+  theme_minimal(base_size = 20) +
+  annotate("point", x = col_cloud$SM[[nrow(col_cloud)]], y = col_cloud$SC[[nrow(col_cloud)]], shape = 1, size = 25) +
+  labs(title = "Two dimensions of the column cloud.")
+```
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+
 ```{r}
 #| include: false
 i <- i+1
@@ -271,7 +328,61 @@ i <- i+1
 
 # `r headings[[i]]`
 
-## Row distances {.smaller}
+## Smoke CA - interpretation
+
+:::: {.columns}
+
+::: {.column width="60%"}
+```{r}
+#| label: smoke-ca2
+#| code-fold: false
+smoke_ca
+```
+:::
+
+::: {.column width="40%"}
+```{r}
+#| label: smoke-elements
+#| code-fold: false
+smoke_ca$rowmass
+smoke_ca$rowdist
+smoke_ca$rowinertia
+```
+:::
+
+::::
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Let's look at `rowmass`
+
+```{r}
+#| label: profiles
+#| layout-ncol: 2
+addmargins(smoke_mtx, 1) %>% 
+  prop.table(1) %>% 
+  print_matrix()
+
+addmargins(smoke_mtx, 2) %>% 
+  prop.table(2) %>% 
+  print_matrix()
+```
+
+```{r}
+#| label: masses
+#| layout-ncol: 2
+#| code-fold: false
+smoke_ca$colmass
+smoke_ca$rowmass
+```
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Distances (rows) {visibility="hidden"}
 
 :::: {.columns}
 
@@ -298,7 +409,219 @@ For column distances the computation is equivalent.
 `r headings[[i]]`
 :::
 
-## Computing $\chi^2$
+## Let's look at `rowdist`
+
+```{r}
+#| label: row-chi-0a
+#| code-fold: false
+#| layout-ncol: 2
+prop.table(smoke_mtx,1)["SM",]
+smoke_ca$colmass
+```
+
+```{r}
+#| label: row-chi-0b
+#| code-fold: false
+prop.table(smoke_mtx,1)["SM",]-smoke_ca$colmass
+```
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Let's look at `rowdist`
+
+```{r}
+#| label: row-chi-1a
+#| code-fold: false
+#| layout-ncol: 2
+prop.table(smoke_mtx,1)["SM",]
+smoke_ca$colmass
+```
+
+```{r}
+#| label: row-chi-1b
+#| code-fold: false
+prop.table(smoke_mtx,1)["SM",]-smoke_ca$colmass
+(prop.table(smoke_mtx,1)["SM",]-smoke_ca$colmass)^2
+```
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Let's look at `rowdist`
+
+```{r}
+#| label: row-chi-2a
+#| code-fold: false
+#| layout-ncol: 2
+prop.table(smoke_mtx,1)["SM",]
+smoke_ca$colmass
+```
+
+```{r}
+#| label: row-chi-2b
+#| code-fold: false
+prop.table(smoke_mtx,1)["SM",]-smoke_ca$colmass
+(prop.table(smoke_mtx,1)["SM",]-smoke_ca$colmass)^2
+
+# Euclidean distance
+sqrt(sum((prop.table(smoke_mtx,1)["SM",]-smoke_ca$colmass)^2))
+```
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Let's look at `rowdist`
+
+```{r}
+#| label: row-chi-3a
+#| code-fold: false
+#| layout-ncol: 2
+prop.table(smoke_mtx,1)["SM",]
+smoke_ca$colmass
+```
+
+```{r}
+#| label: row-chi-3b
+#| code-fold: false
+prop.table(smoke_mtx,1)["SM",]-smoke_ca$colmass
+(prop.table(smoke_mtx,1)["SM",]-smoke_ca$colmass)^2
+(prop.table(smoke_mtx,1)["SM",]-smoke_ca$colmass)^2/smoke_ca$colmass
+
+# Chi-squared distance
+sqrt(sum((prop.table(smoke_mtx,1)["SM",]-smoke_ca$colmass)^2/smoke_ca$colmass))
+```
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Let's look at `rowdist`
+
+```{r}
+#| label: row-dist5
+#| code-fold: false
+row_dists <- map_dbl(smoke_ca$rownames, function(row) {
+  sqrt(sum((prop.table(smoke_mtx,1)[row,]-smoke_ca$colmass)^2/smoke_ca$colmass))
+})
+row_dists
+
+smoke_ca$rowdist
+```
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Let's look at `rowinertia`
+
+```{r}
+#| label: row-dist6
+#| code-fold: false
+smoke_ca$rowdist
+
+smoke_ca$rowdist ^ 2
+
+smoke_ca$rowdist ^ 2 * smoke_ca$rowmass
+
+smoke_ca$rowinertia
+```
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Reading inertias
+
+:::: {.columns}
+
+::: {.column width="64%"}
+```{r}
+#| label: smoke-ca3
+#| code-fold: false
+smoke_ca
+```
+:::
+
+::: {.column width="36%"}
+```{r}
+#| label: inertias
+#| code-fold: false
+sum(smoke_ca$rowinertia)
+sum(smoke_ca$colinertia)
+```
+
+:::
+
+::::
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Interpretation of `summary()`
+
+```{r}
+#| label: smoke-summary2
+#| code-fold: false
+smoke_sum <- summary(smoke_ca)
+smoke_sum
+```
+
+```{r}
+#| label: smoke-int
+#| code-fold: false
+#| layout-ncol: 3
+round(smoke_ca$rowmass*1000)
+round(smoke_ca$rowinertia/sum(smoke_ca$rowinertia)*1000)
+round(smoke_ca$colinertia/sum(smoke_ca$colinertia)*1000)
+```
+
+:::
+
+::::
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Zooming in on rows {.smaller}
+
+```{r}
+#| label: row-summary
+#| code-fold: false
+#| layout: [60, 40]
+rows <- summary(smoke_ca)$rows
+colnames(rows) <- c("row", "mass", "quality", "inertia",
+                    paste0(rep(c("k", "cor", "ctr"), 2), rep(c(1, 2), each = 3)))
+rows <- as_tibble(rows)
+# left table
+rows %>% print_matrix()
+# right table
+rows %>% select(row, quality, cor1, cor2) %>% 
+  mutate(cors = cor1+cor2, qdiff = quality-cors) %>% 
+  print_matrix()
+```
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Let's see that plot again?
+
+```{r}
+#| label: smoke-plot2
+plot(smoke_ca)
+```
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Checking residuals
 
 ```{r}
 #| label: chisq
@@ -331,16 +654,6 @@ print_matrix(smoke_chisq$residuals)
 `r headings[[i]]`
 :::
 
-## Inertia
-
-Sum of the squares of the residuals.
-
-The cell contribution of cell $ij$ = $\frac{(p_{ij}-(p_{i.} \times p_{.j}))^2}{p_i\times p_{.j}}$
-
-::: {.footer}
-`r headings[[i]]`
-:::
-
 ```{r}
 #| include: false
 i <- i+1
@@ -364,7 +677,7 @@ features <- freqlist(fnames) %>% drop_types(stop_list) %>%
 d <- map(setNames(fnames, short_fnames), ~ freqlist(.x)[features]) %>%
   bind_cols() %>% data.frame(row.names = features) %>% 
   as.matrix() %>% t() %>% drop_empty_rc()
-print_matrix(d[1:10, 1:10])
+kbl(d[1:10, 1:10]) %>% kable_paper(font_size = 20)
 ```
 
 ::: {.footer}

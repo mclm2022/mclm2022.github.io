@@ -4,17 +4,12 @@ project:
   render:
     - index.qmd
     - 404.qmd
-    - slides/intro.qmd
-    - slides/init.qmd
-    - slides/index.qmd
-    - slides/contingency-tables.qmd
-    - slides/assoc.qmd
-    - slides/linear-regression.qmd
-    - slides/logistic-regression.qmd
+    - slides/*
     - studies/*
     - git/*.qmd
     - quarto/*.qmd
     - tidyverse/*.qmd
+    - about.qmd
 
 website:
   title: "Methods in Corpus Linguistics"
@@ -24,12 +19,14 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: about.qmd
+        text: Schedule
       - text: Studies
         menu:
           - studies/base.qmd
           - studies/genitive-alternation-retrieval.qmd
           - studies/genitive-alternation-analysis.qmd
-      #     - studies/ca-trump-clinton.qmd
+          - studies/ca-trump-clinton.qmd
       - text: Slides
         href: slides/index.qmd
       - text: Git cheatsheet
