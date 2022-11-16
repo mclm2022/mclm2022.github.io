@@ -86,3 +86,15 @@ If you would like to download slides as PDF, please follow the [instructions in 
 ```
 
 </div>
+
+# [Factor Analysis](factor-analysis.qmd){target="_blank"}
+
+[Download the R script.](https://raw.githubusercontent.com/mclm2022/mclm2022.github.io/main/resources/factor-analysis.R)
+
+<div>
+
+```{=html}
+<iframe class="slide-deck" src="factor-analysis.html"></iframe>
+```
+
+</div>

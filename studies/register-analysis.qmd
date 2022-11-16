@@ -1,0 +1,638 @@
+---
+title: "Simple register analysis (multidimensional analysis) of brown TEI"
+number-sections: true
+subtitle: "Based on Dirk Speelman's course material"
+bibliography: ../slides/bibliography.bib
+---
+
+This document shows how to perform a simple register analysis with Factor Analysis on the Brown corpus. For that purpose we will use the TEI-compliant XML version of the corpus, which will allow us to extract a bit more information from the corpus than other formats. @sec-xml will show what the XML file looks like and how we can read and parse it with `{xml2}` and `{mclm}`. @sec-ann will build on that knowledge to compute a number of frequencies as variables for the Factor Analysis. As we do so, we will illustrate how to take advantage of the possibility of having any type of data in a tibble column. Finally @sec-fa will show the Factor Analysis itself with `factanal()` and illustrate some plotting options.
+
+# Introduction
+
+In this study we will use the `r length(dir(here::here("studies", "_corpora", "brown_tei"), pattern = "[a-z]\\d\\d.xml"))` files of the Brown corpus in XML format. We will compute the frequencies of different linguistic features as described in @sec-features and use Factor Analysis to extract theoretically relevant underlying dimensions. We will then try to describe different components of the Brown corpus (@tbl-components) in terms of these dimensions.
+
+```{r}
+#| label: tbl-components
+#| tbl-cap: List of components of the Brown corpus with the registers they represent, number of files and number of tokens.
+#| echo: false
+library(kableExtra)
+library(magrittr)
+options(digits = 2, knitr.kable.NA = "")
+readr::read_tsv(here::here("resources", "brown_files.tsv"), show_col_types = FALSE) %>% 
+  dplyr::select(Section, Component, Register, Files, Tokens = Size) %>% 
+  kbl(align = "lrlrr", format.args = list(big.mark = " ")) %>% 
+  kable_paper(full_width = FALSE) %>% 
+  collapse_rows(1)
+```
+
+<!-- I. Informative Prose        374 samples -->
+<!-- A. Press: Reportage                                 [.F1/.F2/+F3/-F4] -->
+<!-- B. Press: Editorial                                 [.F1/-F2/+F3/.F4] -->
+<!-- C. Press: Reviews (theatre, books, music, dance)    [.F1/-F2/+F3/.F4] -->
+<!-- D. Religion                                         [.F1/-F2/.F3/+F4] -->
+<!-- E. Skills and Hobbies                               [.F1/.F2/.F3/.F4] -->
+<!-- F. Popular Lore                                     [.F1/-F2/.F3/.F4] -->
+<!-- G. Belles Lettres, Biography, Memoirs, etc.         [.F1/-F2/.F3/.F4] -->
+<!-- H. Miscellaneous                                    [.F1/-F2/-F3/-F4] -->
+<!-- J. Learned                                          [.F1/-F2/-F3/.F4] -->
+<!-- II. Imaginative Prose        126 Samples -->
+<!-- K. General Fiction                                  [-F1/.F2/.F3/.F4] -->
+<!-- L. Mystery and Detective Fiction                    [-F1/+F2/.F3/.F4] -->
+<!-- M. Science Fiction                                  [-F1/.F2/.F3/+F4] -->
+<!-- N. Adventure and Western Fiction                    [-F1/.F2/.F3/-F4] -->
+<!-- P. Romance and Love Story                           [-F1/.F2/-F3/+F4] -->
+<!-- R. Humor                                            [-F1/.F2/.F3/.F4] -->
+
+## Features of interest {#sec-features}
+
+For this simple analysis we will annotate 13 numerical variables, which is quite modest compared to @biber_1988:
+
+Name | Value
+-- | --------
+`ttr` | Type token ratio (number of types divided by number of tokens)^[The type token ratio of different texts can only be compared if they have similar lengths, which is the case with the Brown corpus.]
+`word_len` | Average word length, in characters
+`p_mw` | Proportion of combined tags; typically clitics as in *she's*
+`p_c` | Proportion of punctuation characters
+`p_ppss` | Proportion of personal pronouns nominative, besides third person singular
+`p_noun` | Proportion of nouns
+`p_bigr` | Number of unique word bigrams, relative to document size
+`p_nomin` | Proportion of nominalisations (nouns ending in *-tion*, *-ment*, *-ness*, or *-ity*)
+`p_pobi` | Number of unique pos tag bigrams, relative to document size
+`p_adj` | Proportion of adjectives
+`p_neg` | Number of negations, relative to document size
+`p_adv` | Proportion of adverbs
+`p_qual` | Number of past tenses, relative to document size
+
+The idea is that these variables are relatively straightforward to annotate --- with some programming, they can be easily extracted automatically. The theoretically relevant dimensions, instead, are much harder to operationalize: Factor Analysis is meant to extract these dimensions from the operationalizable linguistic features.
+
+# Setup
+
+The first step is to load the libraries: we will use `{tidyverse}`, `{mclm}`, `{here}` and, for some XML processing, `{xml2}`.
+
+```{r}
+#| label: setup
+#| message: false
+#| warning: false
+library(tidyverse)
+library(mclm)
+library(here)
+library(xml2)
+theme_set(theme_minimal())
+```
+
+The directory with the corpus, for the purposes of this document, is defined below. If you follow along, make sure to set `corpus_directory` to the path to wherever your copy of the corpus is stored.
+
+```{r}
+#| label: corp-dir
+corpus_directory <- here::here("studies", "_corpora", "brown_tei")
+```
+
+The corpus directory contains some documentation files other than the corpus files themselves, so we need to filter them out when creating our `fnames` object. After visual inspection of the contents of the folder we can set up a regular expression that matches the names of the files we want: we will request for files ending in the following sequence: slash, one lowercase letter, two digits, ".xml".
+
+```{r}
+#| label: fnames
+tei_fnames <- get_fnames(corpus_directory) %>% 
+  keep_re(r"--[(?xi) / [a-z] \d\d [.]xml $ ]--")
+
+print(tei_fnames, n = 6, hide_path = corpus_directory)
+```
+
+# Read from XML {#sec-xml}
+
+The first 12 lines of the first file in `tei_fnames` look like this:
+
+```{r}
+#| label: raw-text
+#| echo: false
+first_lines <- readLines(tei_fnames[[1]], n = 12)
+for (line in first_lines) {
+  cat(str_wrap(line))
+  cat("    \n    ")
+}
+```
+
+An XML file has a hierarchical structure, with elements indicated by tags and sometime containing other elements. For example, we could have a paragraph, starting with the `<p>` tag and ending with the following `</p>`, which can contain a series of sentences preceded by `<s>` and ending in `</s>`, and each can contain a series of words, preceded by `<w>` tags, each ending in the following `</w>` tag.^[Tags can also open and close at once, if they have no "content", e.g. `<single/>`.] The opening tag can also contain attribute-value pairs, e.g. `<w type="IN">of</w>` corresponds to a word (indicated by the `w` tag) with content "of" and an attribute "type" with value "IN" ---in this case, the attribute points to the part of speech. Some words also have a "subtype" attribute: `<w type="NP" subtype="TL">Fulton</w>` in this corpus is equivalent to "fulton/np-tl" in the other version of the Brown corpus.
+
+The first tag in these files is `<TEI>` with an "xmlns" attribute, whose value is an URL. This URL points to the "namespace", the standards to which the annotation applies, which indicate what each type of tag means.
+
+Because the file is hierarchical, we can read it with special parsers that interpret the hierarchical structure. Concretely, we will use `xml2::read_xml()`, which returns an object of class `xml_document`.
+
+```{r}
+#| label: xml1
+tei1 <- read_xml(tei_fnames[[1]])
+tei1
+```
+
+We could extract the first sentence of the corpus with `xml_find_first()`, providing the XPath expression "//d1:s", i.e. an `s` element from namespace `d1`. In `{xml2}`, the first namespace in a file is called `d1`, as you can see with `xml_ns()`.
+
+```{r}
+#| label: xml2
+xml_ns(tei1)
+first_sentence <- xml_find_first(tei1, "//d1:s")
+print(first_sentence, max_n = 10)
+```
+
+The output is an `xml_nodeset` object, which contains `xml_node` objects; `xml_children()` can then retrieve the elements inside it. Further, `xml_text()` retrieves the contents of the tags as text and `xml_attr()`, the values of specific attributes. The output of these functions are simple character vectors.
+
+```{r}
+#| label: xml3
+sentence_contents <- xml_children(first_sentence)
+print(sentence_contents, max_n = 10)
+xml_text(sentence_contents)
+xml_attr(sentence_contents, "type")
+```
+
+With this knowledge, we can now read the files in the corpus and obtain the information we need for our Factor Analsyis. We will collect different kinds of tokens with `mclm::find_xpath()`, process them with `{xml2}` functions, count frequencies and generate a matrix.
+
+# Annotate the dataset {#sec-ann}
+
+As a first step to generating our frequencies, we will create a tibble based on the filenames. Each piece of information we will retrieve, whatever its type, will be stored in its own column.
+
+```{r}
+#| label: astibble
+d <- as_tibble(tei_fnames)
+```
+
+::: callout-important
+### tibbles and `{purrr}`
+
+There are other ways of achieving the same result next to what we will do in this section, i.e. by opening one file at a time, processing it and storing the output, either with a `map()`-like function or a `for` loop. However, in this case we will work with a tibble to show how the columns can have different kinds of data and how to work with such a format. In particular, we will work with `purrr::map()` and a few variations --- these functions take a list or vector and a function^[It can also be an index. For example, `map(list_of_lists, 1)` will return the first element of each list in `list_of_lists`.] as input, run the same function on each element of the list, and return the result as either a list or a vector. `map()` always returns a list; `map_dbl()` returns a numerical vector, `map_chr()` returns a character vector, etc. This is useful both when trying to apply the same function to all elements of a list or when you want to apply a function to all elements of a vector but the function is not vectorized (it cannot take vectors with length larger than 1).
+:::
+
+## Read from XML
+
+First, we will read the files by applying `read_xml()` to each element of the `filename` column in `d` via `map()`. This results in a column that is a list of `xml_document` objects. `d$xml[[1]]` is the same as `read_xml(d$filename[[1]])`.
+
+::: callout-tip
+### Example
+
+`map(some_list, tolower)` returns a list in which the first element is `tolower(some_list[[1]])`, the second is `tolower(some_list[[2]])`, etc.
+:::
+
+```{r}
+#| label: readxml
+d <- d %>% mutate(xml = map(filename, read_xml))
+d %>% mutate(filename = short_names(filename)) # just hiding the path when printing
+d$xml[[1]]
+```
+
+## Extract tags with `find_xpath()`
+
+In order to extract lists of tags from each of the file, we will use `mclm::find_xpath()`. We need to provide a namespace definition, so we will create a column `ns` to store the output of `xml_ns()` on each file. Then we will create four columns with the output of `find_xpath()` and different XPath patterns: one to collect the word tags `w`, one to collect the multiword (or "combined tags") `mw`, one to collect the punctuation tags `c` and one to collect all of them, i.e. all the tokens.  For this purpose we need to combine both the elements in the `xml` column and the elements in the newly made `ns` column. The function to achieve this is `map2`, which applies a function to each element of two paired lists of the same length.
+
+::: callout-tip
+### Example
+
+`map2(list1, list2, mean)` returns a list whose first element is `mean(list1[[1]], list2[[1]])`, the second element is `mean(list1[[2]], list2[[2]])`, etc.
+:::
+
+The call to `find_xpath()` takes two positional arguments (the `xml_document` and an XPath pattern) and a few named arguments, among which `namespaces`. In our call inside `map2()`, we can use a **formula**, which allows us to call the function and replace the argument corresponding to the first list with `.x` and the one corresponding to the second list `.y`.
+
+::: callout-tip
+### Example
+
+`map2(list1, list2, mean)` can also be written as `map2(list1, list2, ~ mean(.x, .y))`.
+
+This notation is useful when the elements in the lists do not correspond to the positional arguments of the function.
+:::
+
+```{r}
+#| label: findxpath
+d <- d %>% 
+  select(-filename) %>%
+  mutate(
+    ns = map(xml, xml_ns),
+    token_tags = map2(xml, ns, ~ find_xpath(.x, "//d1:w | //d1:mw | //d1:c", namespaces = .y)),
+    word_tags = map2(xml, ns, ~ find_xpath(.x, "//d1:w", namespaces = .y)),
+    mw_tags = map2(xml, ns, ~ find_xpath(.x, "//d1:mw", namespaces = .y)),
+    punctuation_tags = map2(xml, ns, ~ find_xpath(.x, "//d1:c", namespaces = .y))
+    )
+d
+```
+
+::: aside
+After this, we don't need the `filename` column anymore --- in this stepwise illustration of the process, I will be removing obsolete columns, but when running everything at once, as shown in @sec-full, we won't be doing that; we'll just select the useful columns at the end.
+:::
+
+Each new column is a **list** with elements of different kinds. The elements in the `token_tags` and `mw_tags` columns, for example, are `xml_nodeset` objects. Below we can see the first element of each of these columns, i.e. the tokens and the combined tags of the first file in the corpus.
+
+```{r}
+#| label: nodeset
+#| layout-ncol: 2
+print(d$token_tags[[1]], max_n = 10) # left side
+d$mw_tags[[1]] # right side
+```
+
+## Retrieve text with `xml_text()`
+
+With the new columns we can create `tokens` objects by retrieving the contents of the tags (for word form tokens) or the POS-tags. The columns `all_tokens` and `words` are created by applying a chain of functions to the elements of the `token_tags` and `word_tags` columns: `xml_text()` to obtain the content, `tolower()` to turn it to lower case, `cleanup_spaces()` to remove any spaces that might be accidentally included in the token, and `as_tokens()` to turn the resulting character vector into a `tokens` object. Therefore, the columns `all_tokens` and `words` will be lists of `tokens` objects. Below is an example of the chain of functions as applied to the first element of `d$token_tags`.
+
+```{r}
+#| label: chain
+d$token_tags[[1]] %>% xml_text() %>% head()
+d$token_tags[[1]] %>% xml_text() %>% tolower() %>% head()
+d$token_tags[[1]] %>% xml_text() %>% tolower() %>% cleanup_spaces() %>% head()
+d$token_tags[[1]] %>% xml_text() %>% tolower() %>% as_tokens() %>% print(10)
+```
+
+```{r}
+#| label: xmltext
+d <- d %>%
+  select(-xml, -ns) %>% 
+  mutate(
+    all_tokens = map(token_tags, ~ xml_text(.x) %>% tolower() %>% cleanup_spaces() %>% as_tokens()),
+    words = map(word_tags, ~ xml_text(.x) %>% tolower() %>% cleanup_spaces() %>% as_tokens())
+  )
+d
+```
+
+::: aside
+Now that we have extracted the terms that we are interested in, we don't really need the `xml` and `ns` columns anymore,
+:::
+
+The lists below don't look very different because there are no punctuation marks in the first 10 tokens.
+
+```{r}
+#| label: xmltext2
+#| layout-ncol: 2
+print(d$all_tokens[[1]], 10) # left
+print(d$words[[1]], 10) # right
+```
+
+## Retrieve POS-tags with `xml_attr()`
+
+In order to collect the POS-tags, we could simply apply `xml_attr()` in the same way that we were calling `xml_text()`, but the situation is a bit more complicated. As it turns out, the attribute indicating the part-of-speech for `w` and `c` elements is "type", but in a `mw` element it's called "pos".
+
+```{r}
+#| label: xmlattr
+xml_attr(d$token_tags[[1]], "type") %>% head()
+xml_attr(d$mw_tags[[1]], "type")
+xml_attr(d$mw_tags[[1]], "pos")
+```
+
+As a consequence, we need to apply a more complicated workflow to create the `pos_codes` column, i.e. an equivalent of the `all_tokens` column but with POS-tags instead of word forms. For each element of `token_tags` (lets call them `toks`), we will do the following:
+
+- Extract the "type" attribute, which will contain the POS-tag for the `w` and `c`elements but `NA` for `mw` elements, and store it in a `most_pos` vector: `most_pos <- xml_attr(toks, "type")`.
+
+- Extract the "pos" attribute, which will contain the POS-tag for `mw` elements but `NA` for the rest, and store it in a `mw_pos` element: `mw_pos <- xml_attr(toks, "pos")`.
+
+- Replace the `NA` values in `most_pos` (`most_pos[is.na(most_pos)]`) with the non-`NA` values in `mw_pos` (`mw_pos[!is.na(mw_pos)]`).
+
+- Turn the resulting, fixed `most_pos` into a `tokens` object with `as_tokens(most_pos)`.
+
+In order to provide such a workflow with `map()`, we will do it with an anonymous function defined as `function(argument) { the code... }`.
+
+::: callout-tip
+### Example
+
+`map(some_list, tolower)` is the same as `map(some_list, ~ tolower(.x)`) and the same as `map(some_list, function(list_element) { tolower(list_element) })`.
+:::
+
+```{r}
+#| label: poscodes
+d <- d %>%
+  mutate(
+    pos_codes = map(token_tags, function(toks) {
+      most_pos <- xml_attr(toks, "type")
+      mw_pos <- xml_attr(toks, "pos")
+      most_pos[is.na(most_pos)] <- mw_pos[!is.na(mw_pos)]
+      as_tokens(most_pos) # return value
+      })
+    )
+d
+print(d$pos_codes[[1]], 10)
+```
+
+## Build bigrams
+
+The following step, before we can compute the frequencies we want, is to obtain bigrams. To each element `x` of `all_tokens` (for word form bigrams) and `pos_codes` (for POS-tags bigrams) we will implement the following code: `paste(x, c(x[-1], "EOF"), sep = "|")`. As shown below, `x[-1]` returns the vector `x` minus its first element, `c(x[-1], "EOF")` appends "EOF" (which stands for End Of File) to the vector, and `paste()` glues both vectors. `paste()` is a vectorized function, so it will automatically "paste" the first element of the first vector with the first element of the second vector, the second element of each vector, the third element of each vector, etc. The `sep` argument lets us decide what character will be used when joining those elements.^[In addition, if you wanted to join the elements *of a vector* together, the `collapse` argument lets you decide how.]
+
+```{r}
+#| label: paste
+x <- head(letters, 10)
+x
+x[-1]
+c(x[-1], "EOF")
+paste(x, c(x[-1], "EOF"))
+paste(x, c(x[-1], "EOF"), sep = "|")
+paste(x, c(x[-1], "EOF"), sep = "|") %>% as_tokens()
+```
+
+The result of this code is a vector of bigrams, i.e. each element corresponds to one element of `x` along with its following element.
+
+```{r}
+#| label: bigrams
+d <- d %>% 
+  select(-token_tags, -word_tags) %>% 
+  mutate(
+    bigrams = map(all_tokens, ~ paste(.x, c(.x[-1], "EOF"), sep = "|") %>% as_tokens()),
+    pos_bigrams = map(pos_codes, ~ paste(.x, c(.x[-1], "EOF"), sep = "|") %>% as_tokens())
+  )
+d
+```
+
+::: aside
+At this point we don't need `token_tags` or `word_tags` anymore either.
+:::
+
+Below we see the first token and POS-tag bigrams found in the first file of the corpus.
+
+```{r}
+#| label: bigram-print
+#| layout-ncol: 2
+print(d$bigrams[[1]], 10) # left
+print(d$pos_bigrams[[1]], 10) # right
+```
+
+## Get counts with `n_tokens()`
+
+Now we have everything we need to compute the frequencies we were interested in. The new columns won't be lists anymore but simple numeric vectors, so we will use `map_dbl()` instead of `map()`. This function can be used when the output of the function applied to each element is a single number. For example, `n_tokens()` returns the number of tokens in a `tokens`, `types` or `freqlist` object, so applying it to each element of the `all_tokens` column, which is a list of `tokens` objects, will return a series of numbers.
+
+::: callout-important
+### Lists and vectors
+
+In contrast to `map()`, `map_dbl()` returns a numeric vector rather than a *list* of numbers, which is a different kind of object in R. For example, if we have a vector `c(1, 2, 3)`, we can divide each element of it by the same number with a vectorized function such as `/`.
+
+```{r}
+#| label: divide-vector
+numeric_vector <- c(1, 2, 3)
+numeric_vector
+numeric_vector/2
+```
+
+However, if it is a list, that won't work; we would need a function such as `map()`.
+
+```{r}
+#| label: divide-list
+#| error: true
+a_list <- list(1, 2, 3)
+a_list
+a_list/2
+```
+:::
+
+Once we have the `n_tok` column, we can create other numeric columns with `map_dbl()`, applying different functions that compute quantities, and then divide them by the contents of `n_tok` to obtain proportions. The number of types can be obtained by calling `n_types()` on the elements of the `all_tokens`, `bigrams` and `pos_bigrams` columns; the number of `mw` and `c` tags can be obtained by applying `length` to the elements of the `mw_tags` and `punctuation_tags` columns. For `mw` elements, which are very infrequent, we will multiply the resulting proportion by `r prettyNum(10000, big.mark = " ")`. The mean word length can be be obtained by applying `sum(nchar(x))/n_tokens(x)` to each element of the `words` columns: we count the number of characters of each element, sum them and then divide them by the number of elements.
+
+```{r}
+#| label: mapdbl
+d <- d %>% 
+  mutate(
+    n_tok = map_dbl(all_tokens, n_tokens),
+    ttr = map_dbl(all_tokens, n_types)/n_tok,
+    p_bigr = map_dbl(bigrams, n_types) / n_tok,
+    p_pobi = map_dbl(pos_bigrams, n_types) / n_tok,
+    p_mw = map_dbl(mw_tags, length) / n_tok * 10000,
+    p_c = map_dbl(punctuation_tags, length) / n_tok,
+    word_len = map_dbl(words, ~ sum(nchar(.x))/n_tokens(.x))
+  )
+d %>% select(all_tokens, n_tok, ttr, starts_with("p_"), word_len)
+```
+
+As the output above shows, the new columns are numeric vectors rather than lists.
+
+## Filter tokens with `re()`
+
+Finally, we want to obtain the number of nominalizations and of different grammatical categories. We can obtain the nominalizations by extracting the word forms in the `all_tokens` column with a regular expression:
+
+```{r}
+#| label: nominalizations
+first_tokens <- d$all_tokens[[1]]
+print(first_tokens[re("..+(tion|ment|ness|ity)$")], 10)
+n_tokens(first_tokens[re("..+(tion|ment|ness|ity)$")])
+n_tokens(first_tokens[re("..+(tion|ment|ness|ity)$")]) / d$n_tok[[1]]
+n_tokens(first_tokens[re("..+(tion|ment|ness|ity)$")]) / d$n_tok[[1]] * 10000
+```
+
+The code below applies such workflow to the `all_tokens` column, obtaining the proportion of tokens that are nominalizations in each of the files, and similar instructions to `pos_codes`, extracting the proportion of tokens that are nouns in each file.
+
+```{r}
+#| label: nomin-noun
+d <- d %>% 
+  mutate(
+    p_nomin = map_dbl(all_tokens, ~n_tokens(.x[re("..+(tion|ment|ness|ity)$")])) / n_tok * 10000,
+    p_noun = map_dbl(pos_codes, ~ n_tokens(.x[re("NN")])) / n_tok
+  )
+d %>% select(all_tokens, pos_codes, p_nomin, p_noun)
+```
+
+## Build many columns at once and `unnest()`
+
+For the other POS-tags, we can do the same we did for the nouns. In the case of personal pronouns ("PPSS"), adjectives ("JJ"), negations ("*"), adverbs ("RB") and past tenses ("QL"), which are very infrequent, we'll multiply the proportions by `r prettyNum(10000, big.mark = " ")`. Therefore, given a `tokens` object with POS-tags `pos` and a number of tokens `nt`, for each of these regular expressions `regex` we will run the exact same code:
+`n_tokens(pos[re(regex)])/n_tok * 10000`. In order to avoid redundancy, we can do this for each POS-tag with `map_dbl()`.
+
+```{r}
+#| label: sp-illustration
+pos <- d$pos_codes[[1]]
+nt <- d$n_tok[[1]]
+pos_mapping <- c(p_ppss = "PPSS", p_adj = "JJ",
+                 p_neg = "[*]", p_adv = "RB", p_qual = "QL")
+map_dbl(pos_mapping, ~n_tokens(pos[re(.x)])/nt * 10000)
+map_dbl(pos_mapping, ~n_tokens(pos[re(.x)])/nt * 10000) %>% as_tibble_row()
+```
+
+If we wrap this `map_dbl()` call inside a function `pos_proportions()`, we can easily apply ti to any `pos` and `nt` values.
+
+```{r}
+#| label: small-proportions
+pos_proportions <- function(pos, nt) {
+  pos_mapping <- c(p_ppss = "PPSS", p_adj = "JJ", p_neg = "[*]",
+                   p_adv = "RB", p_qual = "QL")
+  map_dbl(pos_mapping, ~n_tokens(pos[re(.x)])/nt * 10000) %>% 
+    as_tibble_row()
+}
+pos_proportions(pos, nt)
+```
+
+We can then apply our custom function `pos_proportions` to each element pair made from an item of `pos_codes` and one of `n_tok` using `map2()`, which will create a column *of tibbles*. Afterwards, `unnest()` turns the columns of those mini tibbles into columns of our dataframe.
+
+```{r}
+#| label: unnest
+d <- d %>% mutate(pos_prop = map2(pos_codes, n_tok, pos_proportions))
+d %>% select(pos_codes, n_tok, pos_prop)
+d %>% select(pos_codes, n_tok, pos_prop) %>% unnest(pos_prop)
+d <- d %>% unnest(pos_prop) # assign to d
+```
+
+## Obtain matrix {#sec-mat}
+
+The last we have to do is select the columns we are actually interested in, turning our output into a matrix and setting the rownames with the short version of our filenames.
+
+```{r}
+#| label: last
+d <- d %>% select(ttr, word_len, starts_with("p_"))
+colnames(d)
+d_mat <- as.matrix(d)
+rownames(d_mat) <- short_names(tei_fnames)
+d_mat[1:10,]
+```
+
+## Summary {#sec-full}
+
+This section showed the process of creating a matrix with proportions for Factor Analysis from a list of XML files. It paused the workflow at different stages in order to show what each step did and explain what the different functions try to achieve, but in practice it could all be done in one chain. Such code is shown below.
+
+<!-- NOTE we are shortening the names!! -->
+
+```{r}
+#| label: full
+#| eval: false
+d <- as_tibble(tei_fnames) %>% 
+  mutate(
+    xml = map(filename, read_xml),
+    ns = map(xml, xml_ns),
+    token_tags = map2(xml, ns, ~ find_xpath(.x, "//d1:w | //d1:mw | //d1:c", namespaces = .y)),
+    word_tags = map2(xml, ns, ~ find_xpath(.x, "//d1:w", namespaces = .y)),
+    mw_tags = map2(xml, ns, ~ find_xpath(.x, "//d1:mw", namespaces = .y)),
+    punctuation_tags = map2(xml, ns, ~ find_xpath(.x, "//d1:c", namespaces = .y)),
+    all_tokens = map(token_tags, ~ xml_text(.x) %>% tolower() %>% cleanup_spaces() %>% as_tokens()),
+    words = map(word_tags, ~ xml_text(.x) %>% tolower() %>% cleanup_spaces() %>% as_tokens()),
+    pos_codes = map(token_tags, function(toks) {
+      most_pos <- xml_attr(toks, "type")
+      mw_pos <- xml_attr(toks, "pos")
+      most_pos[is.na(most_pos)] <- mw_pos[!is.na(mw_pos)]
+      as_tokens(most_pos)
+    }),
+    bigrams = map(all_tokens, ~ paste(.x, c(.x[-1], "EOF"), sep = "|") %>% as_tokens()),
+    pos_bigrams = map(pos_codes, ~ paste(.x, c(.x[-1], "EOF"), sep = "|") %>% as_tokens()),
+    n_tok = map_dbl(all_tokens, n_tokens),
+    ttr = map_dbl(all_tokens, n_types)/n_tok,
+    p_bigr = map_dbl(bigrams, n_types) / n_tok,
+    p_pobi = map_dbl(pos_bigrams, n_types) / n_tok,
+    p_mw = map_dbl(mw_tags, length) / n_tok * 10000,
+    p_c = map_dbl(punctuation_tags, length) / n_tok,
+    word_len = map_dbl(words, ~ sum(nchar(.x))/n_tokens(.x)),
+    p_nomin = map_dbl(all_tokens, ~n_tokens(.x[re("..+(tion|ment|ness|ity)$")])) / n_tok * 10000,
+    p_noun = map_dbl(pos_codes, ~ n_tokens(.x[re("NN")])) / n_tok,
+    sp = map2(pos_codes, n_tok, small_proportions)) %>% 
+  unnest(sp) %>% 
+  mutate(filename = short_names(filename)) %>% 
+  select(filename, ttr, word_len, starts_with("p_"))
+d_mat <- data.frame(d, row.names = "filename") %>% 
+  as.matrix()
+```
+
+And we are ready to run Factor Analysis!
+
+::: callout-tip
+### Save and read
+
+You might have noticed that in the final piece of code we defined the rownames of the matrix in a different way! In @sec-mat, `d` doesn't contain the filenames, and instead we added the rownames with `rownames(d_mat) <- short_names(tei_fnames)`. In @sec-full, instead, since we never removed the `filename` column, we turn it into its short version and then include it as the first column of the final output. If we do this, we can then set the values of the `filename` column as the rownames of the matrix by first turning `d` into a data frame with `data.frame(d, row.names = "filename")`.
+
+Why would we do that? Well, with the new `d` that includes filenames, we can save the tibble for future use and analysis using `readr::write_tsv()`^[Remember that `{readr}` is part of `{tidyverse}`, so it's already loaded!] and then read it with `readr::read_tsv()`. After reading it again, we can turn it into a matrix setting the names of the `filename` column as rownames. This is done in the [Factor Analysis slides](../slides/factor-analysis.qmd) too!
+
+```{r}
+#| label: saveload
+#| eval: false
+write_tsv(d, here::here("studies", "register-analysis.tsv"))
+d_mat <- read_tsv(here::here("studies", "register-analysis.tsv"), show_col_types = FALSE) %>% 
+  data.frame(row.names = "filename") %>% 
+  as.matrix()
+```
+:::
+
+# Factor Analysis {#sec-fa}
+
+Factor Analysis can be run in R with the base function `factanal()`, which takes a matrix like `d_mat` and a number of factors to reduce it to. An important argument is `rotation`: the default, "varimax", assumes that the factors are orthogonal (uncorrelated), whereas "promax" allows for some correlation between them. This is the setting recommended by both @levshina_2015 and @biber_1988:
+
+> In the description of textual variation, where the factors represent underlying textual dimensions, there is no reason to assume that the factors are completely uncorrelated, and therefore a Promax rotation is recommended.
+> [@biber_1988 85]
+
+In addition, if we want to obtain the scores of the different files, we have to ask for it by setting the `scores` argument to either "regression" or "Bartlett".
+
+```{r}
+#| label: fa
+d_fa <- factanal(d_mat, 4, scores = "regression", rotation = "promax")
+d_fa
+```
+
+The default printed output includes the call, the uniquenesses of the variables, their loadings in each factor, the variance explained by each factor, the correlation between the factors (when `rotation = "promax"`) and the statistic testing that the chosen number of factors is sufficient. In this case, we have a few variables with very high uniqueness (which might lead us to exclude them) and a few that load high in more than one factor, as well as a cumulative variance explained of `r sum(colSums(loadings(d_fa)^2)/nrow(loadings(d_fa)))`. The p-value is really low, indicating that 4 factors are not enough, but increasing them does not really help the model. For such exploratory analysis, our focus lies on the interpretability of the factors.
+
+In order to easily report the loadings of the factors, we can extract them with `loadings()` and turn them into a tibble with `as_tibble()`, although in the middle we have to remove the "loadings" class for `as_tibble()` to work. If we turn irrelevant loadings (here with a threshold of 0.3) to `NA` and we have set `options(knitr.kable.NA = "")`, we can hide them.
+
+```{r}
+#| label: tbl-loadings
+#| tbl-cap: Loadings of the Factor Analysis.
+d_loadings <- loadings(d_fa) %>% 
+  unclass() %>% 
+  as_tibble(rownames = "Variable") %>% 
+  mutate(across(where(is.numeric), ~if_else(abs(.x) < 0.3, NA_real_, .x)))
+kbl(d_loadings) %>% 
+  kable_paper(full_width = FALSE)
+```
+
+The scores can be retrieved with `$scores`, and then turned into a tibble with `as_tibble()`. This automatically generates nice column names. We can also add a `Component` column that collects the lowercase name of the filename, which represents the Brown component (or register) the file belongs to.
+
+```{r}
+#| label: scores
+scores <- d_fa$scores %>% as_tibble(rownames = "File") %>% 
+  mutate(Component = re_retrieve_first(File, "[a-z]"))
+scores
+```
+
+## Plotting files
+
+Once we have the `scores` tibble, we can use it to plot the files based on certain factors. For example, @fig-a below plots all files based on their scores in Factors 1 and 2 and highlights the files from the "a" component.
+
+```{r}
+#| label: fig-a
+#| fig-cap: Scatterplot of Brown files and their scores in the first and second factors, highlighting those from the "a" component.
+comp <- "a"
+this_comp <- filter(scores, Component == comp)
+other_comps <- filter(scores, Component != comp)
+ggplot(other_comps, aes(x = Factor1, y = Factor2)) +
+  geom_point(shape = 3, color = "gray") +
+  geom_text(data = this_comp, label = comp, color = "steelblue") +
+  geom_hline(yintercept = 0, color = "black", linetype = "dashed") +
+  geom_vline(xintercept = 0, color = "black", linetype = "dashed")
+```
+
+We could also use `cowplot::plot_grid()` to plot a list of these plots, each of them highlighting a different component. We can create such a list with `map()`, applying a variant of the code from above to each of the components (obtained with `unique(scores$Component)`). We can then give this list of plots as `plotlist` argument to `plot_grid()`, resulting in @fig-plotlist.
+
+```{r}
+#| label: fig-plotlist
+#| fig-cap: Scatterplots of Brown files and their scores in the first and second factors, highlighting one component at a time.
+library(cowplot)
+plots <- map(unique(scores$Component), function(comp) {
+  this_comp <- filter(scores, Component == comp)
+  other_comps <- filter(scores, Component != comp)
+  ggplot(other_comps, aes(x = Factor1, y = Factor2)) +
+    geom_point(shape = 3, color = "gray") +
+    geom_point(data = this_comp, color = "steelblue", alpha = 0.8) +
+    geom_hline(yintercept = 0, color = "black", linetype = "dashed") +
+    geom_vline(xintercept = 0, color = "black", linetype = "dashed") +
+    theme(axis.title = element_blank())
+})
+plot_grid(plotlist = plots, labels = unique(scores$Component))
+```
+
+## Plotting registers
+
+Alternatively, we could obtain the centroid of each Brown component by computing the mean of the scores of its components. This can be achieved via `group_by()` combined with `summarize()`:
+
+```{r}
+#| label: groupsum
+scores %>% 
+  group_by(Component) %>% 
+  summarize(Factor1 = mean(Factor1))
+```
+
+By default, `summarize()` only returns the variables requested in its call (here `Factor1`) and the grouping variables (here `Component`). We can compute the mean of all the numeric variables by adding a call to `across()` and selecting all numeric variables with `where(is.numeric)`. The resulting figure is shown in @fig-centroids.
+
+```{r}
+#| label: fig-centroids
+#| fig-cap: Scatterplot of component centroids from the Brown corpus and their scores in Factors 1 and 2.
+centroids <- scores %>% 
+  group_by(Component) %>% 
+  summarize(across(where(is.numeric), mean))
+head(centroids)
+ggplot(scores, aes(x = Factor1, y = Factor2, label = Component)) +
+  geom_text(color = "gray") +
+  geom_text(data = centroids, size = 6) +
+  geom_hline(yintercept = 0, color = "black", linetype = "dashed") +
+  geom_vline(xintercept = 0, color = "black", linetype = "dashed")
+```
+
+Going back to @tbl-components, we see that components "h" and "j", i.e. Miscellaneous and Learned, have the highest values along the first factor: they tend to have longer words, more nominalizations and more adjectives, whereas component "k" (General Fiction) lies on the opposite pole with shorter words and fewer nominalizations and adjectives. Across the second factor, where higher values indicate a stronger tendency towards composite tags (clitics), negation and punctuation marks, we have "l" and "p" at the top (Mystery and Detective Fiction along with Romance and Love Stories) and "d" at the bottom (Religion).
+
+However, as we could also see in @fig-plotlist, each register is very broadly distributed across these two factors; some of them have more clear tendencies ("g" is fully on the negative side of Factor 1; "h" is almost entirely on the positive side of Factor 2 whereas "k" is almost entirely on its negative side...) and others much less.
+
+More remains to be done in terms of description: concretely, the rest of the factors should also be interpreted and plotted to understand how (and if) the registers can be described in terms of them.

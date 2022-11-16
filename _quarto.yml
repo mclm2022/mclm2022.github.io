@@ -27,6 +27,7 @@ website:
           - studies/genitive-alternation-retrieval.qmd
           - studies/genitive-alternation-analysis.qmd
           - studies/ca-trump-clinton.qmd
+          - studies/register-analysis.qmd
       - text: Slides
         href: slides/index.qmd
       - text: Git cheatsheet

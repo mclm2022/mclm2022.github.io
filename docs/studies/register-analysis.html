@@ -1,0 +1,1861 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.237">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Methods in Corpus Linguistics - Simple register analysis (multidimensional analysis) of brown TEI</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script><script src="../site_libs/kePrint-0.0.1/kePrint.js"></script><link href="../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg navbar-dark "><div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Methods in Corpus Linguistics</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+<li class="nav-item">
+    <a class="nav-link" href="../index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html">
+ <span class="menu-text">Schedule</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-studies" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Studies</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-studies">
+<li>
+    <a class="dropdown-item" href="../studies/base.html">
+ <span class="dropdown-text">Keywords and collocation analysis on the BASE corpus</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../studies/genitive-alternation-retrieval.html">
+ <span class="dropdown-text">Genitive Alternation I: Retrieval</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../studies/genitive-alternation-analysis.html">
+ <span class="dropdown-text">Genitive Alternation II: Analysis</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../studies/ca-trump-clinton.html">
+ <span class="dropdown-text">CA applied to the Trump-Clinton speeches</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../studies/register-analysis.html">
+ <span class="dropdown-text">Simple register analysis (multidimensional analysis) of brown TEI</span></a>
+  </li>  
+    </ul>
+</li>
+  <li class="nav-item">
+    <a class="nav-link" href="../slides/index.html">
+ <span class="menu-text">Slides</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../git/cheatsheet.html">
+ <span class="menu-text">Git cheatsheet</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-assignments" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Assignments</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-assignments">
+<li>
+    <a class="dropdown-item" href="../git/assignment.html">
+ <span class="dropdown-text">Corpus description</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../quarto/crossref.html">
+ <span class="dropdown-text">Cross-references</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../tidyverse/tibbles.html">
+ <span class="dropdown-text">Tibble manipulation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../tidyverse/ggplot.html">
+ <span class="dropdown-text">The Grammar of Graphics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../quarto/markdown.html">
+ <span class="dropdown-text">Markdown and inline code</span></a>
+  </li>  
+    </ul>
+</li>
+</ul>
+<div class="quarto-toggle-container">
+                  <a href="" class="quarto-reader-toggle nav-link" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
+   
+  <ul>
+<li>
+<a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="toc-section-number">1</span>  Introduction</a>
+  <ul class="collapse">
+<li><a href="#sec-features" id="toc-sec-features" class="nav-link" data-scroll-target="#sec-features"><span class="toc-section-number">1.1</span>  Features of interest</a></li>
+  </ul>
+</li>
+  <li><a href="#setup" id="toc-setup" class="nav-link" data-scroll-target="#setup"><span class="toc-section-number">2</span>  Setup</a></li>
+  <li><a href="#sec-xml" id="toc-sec-xml" class="nav-link" data-scroll-target="#sec-xml"><span class="toc-section-number">3</span>  Read from XML</a></li>
+  <li>
+<a href="#sec-ann" id="toc-sec-ann" class="nav-link" data-scroll-target="#sec-ann"><span class="toc-section-number">4</span>  Annotate the dataset</a>
+  <ul class="collapse">
+<li><a href="#read-from-xml" id="toc-read-from-xml" class="nav-link" data-scroll-target="#read-from-xml"><span class="toc-section-number">4.1</span>  Read from XML</a></li>
+  <li><a href="#extract-tags-with-find_xpath" id="toc-extract-tags-with-find_xpath" class="nav-link" data-scroll-target="#extract-tags-with-find_xpath"><span class="toc-section-number">4.2</span>  Extract tags with <code>find_xpath()</code></a></li>
+  <li><a href="#retrieve-text-with-xml_text" id="toc-retrieve-text-with-xml_text" class="nav-link" data-scroll-target="#retrieve-text-with-xml_text"><span class="toc-section-number">4.3</span>  Retrieve text with <code>xml_text()</code></a></li>
+  <li><a href="#retrieve-pos-tags-with-xml_attr" id="toc-retrieve-pos-tags-with-xml_attr" class="nav-link" data-scroll-target="#retrieve-pos-tags-with-xml_attr"><span class="toc-section-number">4.4</span>  Retrieve POS-tags with <code>xml_attr()</code></a></li>
+  <li><a href="#build-bigrams" id="toc-build-bigrams" class="nav-link" data-scroll-target="#build-bigrams"><span class="toc-section-number">4.5</span>  Build bigrams</a></li>
+  <li><a href="#get-counts-with-n_tokens" id="toc-get-counts-with-n_tokens" class="nav-link" data-scroll-target="#get-counts-with-n_tokens"><span class="toc-section-number">4.6</span>  Get counts with <code>n_tokens()</code></a></li>
+  <li><a href="#filter-tokens-with-re" id="toc-filter-tokens-with-re" class="nav-link" data-scroll-target="#filter-tokens-with-re"><span class="toc-section-number">4.7</span>  Filter tokens with <code>re()</code></a></li>
+  <li><a href="#build-many-columns-at-once-and-unnest" id="toc-build-many-columns-at-once-and-unnest" class="nav-link" data-scroll-target="#build-many-columns-at-once-and-unnest"><span class="toc-section-number">4.8</span>  Build many columns at once and <code>unnest()</code></a></li>
+  <li><a href="#sec-mat" id="toc-sec-mat" class="nav-link" data-scroll-target="#sec-mat"><span class="toc-section-number">4.9</span>  Obtain matrix</a></li>
+  <li><a href="#sec-full" id="toc-sec-full" class="nav-link" data-scroll-target="#sec-full"><span class="toc-section-number">4.10</span>  Summary</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#sec-fa" id="toc-sec-fa" class="nav-link" data-scroll-target="#sec-fa"><span class="toc-section-number">5</span>  Factor Analysis</a>
+  <ul class="collapse">
+<li><a href="#plotting-files" id="toc-plotting-files" class="nav-link" data-scroll-target="#plotting-files"><span class="toc-section-number">5.1</span>  Plotting files</a></li>
+  <li><a href="#plotting-registers" id="toc-plotting-registers" class="nav-link" data-scroll-target="#plotting-registers"><span class="toc-section-number">5.2</span>  Plotting registers</a></li>
+  </ul>
+</li>
+  </ul></nav>
+    </div>
+<!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<h1 class="title">Simple register analysis (multidimensional analysis) of brown TEI</h1>
+<p class="subtitle lead">Based on Dirk Speelman’s course material</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header><p>This document shows how to perform a simple register analysis with Factor Analysis on the Brown corpus. For that purpose we will use the TEI-compliant XML version of the corpus, which will allow us to extract a bit more information from the corpus than other formats. <a href="#sec-xml">Section&nbsp;3</a> will show what the XML file looks like and how we can read and parse it with <a href="https://xml2.r-lib.org/">xml2</a> and <a href="https://github.com/masterclm/mclm">mclm</a>. <a href="#sec-ann">Section&nbsp;4</a> will build on that knowledge to compute a number of frequencies as variables for the Factor Analysis. As we do so, we will illustrate how to take advantage of the possibility of having any type of data in a tibble column. Finally <a href="#sec-fa">Section&nbsp;5</a> will show the Factor Analysis itself with <code><a href="https://rdrr.io/r/stats/factanal.html">factanal()</a></code> and illustrate some plotting options.</p>
+<section id="introduction" class="level1" data-number="1"><h1 data-number="1">
+<span class="header-section-number">1</span> Introduction</h1>
+<p>In this study we will use the 500 files of the Brown corpus in XML format. We will compute the frequencies of different linguistic features as described in <a href="#sec-features">Section&nbsp;1.1</a> and use Factor Analysis to extract theoretically relevant underlying dimensions. We will then try to describe different components of the Brown corpus (<a href="#tbl-components">Table&nbsp;1</a>) in terms of these dimensions.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-components" class="anchored">
+
+<table class=" lightable-paper" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>Table&nbsp;1:  List of components of the Brown corpus with the registers they represent, number of files and number of tokens. </caption>
+ <thead><tr>
+<th style="text-align:left;"> Section </th>
+   <th style="text-align:right;"> Component </th>
+   <th style="text-align:left;"> Register </th>
+   <th style="text-align:right;"> Files </th>
+   <th style="text-align:right;"> Tokens </th>
+  </tr></thead>
+<tbody>
+<tr>
+<td style="text-align:left;vertical-align: middle !important;" rowspan="9"> Informative </td>
+   <td style="text-align:right;"> a </td>
+   <td style="text-align:left;"> Press-reportage </td>
+   <td style="text-align:right;"> 44 </td>
+   <td style="text-align:right;"> 100 554 </td>
+  </tr>
+<tr>
+<td style="text-align:right;"> b </td>
+   <td style="text-align:left;"> Press-editorial </td>
+   <td style="text-align:right;"> 27 </td>
+   <td style="text-align:right;"> 61 604 </td>
+  </tr>
+<tr>
+<td style="text-align:right;"> c </td>
+   <td style="text-align:left;"> Press-reviews </td>
+   <td style="text-align:right;"> 17 </td>
+   <td style="text-align:right;"> 40 704 </td>
+  </tr>
+<tr>
+<td style="text-align:right;"> d </td>
+   <td style="text-align:left;"> Religion </td>
+   <td style="text-align:right;"> 17 </td>
+   <td style="text-align:right;"> 39 399 </td>
+  </tr>
+<tr>
+<td style="text-align:right;"> e </td>
+   <td style="text-align:left;"> Skills &amp; hobbies </td>
+   <td style="text-align:right;"> 36 </td>
+   <td style="text-align:right;"> 82 345 </td>
+  </tr>
+<tr>
+<td style="text-align:right;"> f </td>
+   <td style="text-align:left;"> Popular Lore </td>
+   <td style="text-align:right;"> 48 </td>
+   <td style="text-align:right;"> 110 299 </td>
+  </tr>
+<tr>
+<td style="text-align:right;"> g </td>
+   <td style="text-align:left;"> Belles Lettres, Biography, Memoirs, etc. </td>
+   <td style="text-align:right;"> 75 </td>
+   <td style="text-align:right;"> 173 096 </td>
+  </tr>
+<tr>
+<td style="text-align:right;"> h </td>
+   <td style="text-align:left;"> Miscellaneous </td>
+   <td style="text-align:right;"> 30 </td>
+   <td style="text-align:right;"> 70 117 </td>
+  </tr>
+<tr>
+<td style="text-align:right;"> j </td>
+   <td style="text-align:left;"> Learned </td>
+   <td style="text-align:right;"> 80 </td>
+   <td style="text-align:right;"> 181 888 </td>
+  </tr>
+<tr>
+<td style="text-align:left;vertical-align: middle !important;" rowspan="6"> Imaginative </td>
+   <td style="text-align:right;"> k </td>
+   <td style="text-align:left;"> General Fiction </td>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:right;"> 68 488 </td>
+  </tr>
+<tr>
+<td style="text-align:right;"> l </td>
+   <td style="text-align:left;"> Mystery and Detective Fiction </td>
+   <td style="text-align:right;"> 24 </td>
+   <td style="text-align:right;"> 57 169 </td>
+  </tr>
+<tr>
+<td style="text-align:right;"> m </td>
+   <td style="text-align:left;"> Science Fiction </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 14 470 </td>
+  </tr>
+<tr>
+<td style="text-align:right;"> n </td>
+   <td style="text-align:left;"> Adventure and Western Fiction </td>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:right;"> 69 342 </td>
+  </tr>
+<tr>
+<td style="text-align:right;"> p </td>
+   <td style="text-align:left;"> Romance and Love Stories </td>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:right;"> 70 022 </td>
+  </tr>
+<tr>
+<td style="text-align:right;"> r </td>
+   <td style="text-align:left;"> Humor </td>
+   <td style="text-align:right;"> 9 </td>
+   <td style="text-align:right;"> 21 695 </td>
+  </tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- I. Informative Prose        374 samples -->
+<!-- A. Press: Reportage                                 [.F1/.F2/+F3/-F4] -->
+<!-- B. Press: Editorial                                 [.F1/-F2/+F3/.F4] -->
+<!-- C. Press: Reviews (theatre, books, music, dance)    [.F1/-F2/+F3/.F4] -->
+<!-- D. Religion                                         [.F1/-F2/.F3/+F4] -->
+<!-- E. Skills and Hobbies                               [.F1/.F2/.F3/.F4] -->
+<!-- F. Popular Lore                                     [.F1/-F2/.F3/.F4] -->
+<!-- G. Belles Lettres, Biography, Memoirs, etc.         [.F1/-F2/.F3/.F4] -->
+<!-- H. Miscellaneous                                    [.F1/-F2/-F3/-F4] -->
+<!-- J. Learned                                          [.F1/-F2/-F3/.F4] -->
+<!-- II. Imaginative Prose        126 Samples -->
+<!-- K. General Fiction                                  [-F1/.F2/.F3/.F4] -->
+<!-- L. Mystery and Detective Fiction                    [-F1/+F2/.F3/.F4] -->
+<!-- M. Science Fiction                                  [-F1/.F2/.F3/+F4] -->
+<!-- N. Adventure and Western Fiction                    [-F1/.F2/.F3/-F4] -->
+<!-- P. Romance and Love Story                           [-F1/.F2/-F3/+F4] -->
+<!-- R. Humor                                            [-F1/.F2/.F3/.F4] -->
+<section id="sec-features" class="level2" data-number="1.1"><h2 data-number="1.1" class="anchored" data-anchor-id="sec-features">
+<span class="header-section-number">1.1</span> Features of interest</h2>
+<p>For this simple analysis we will annotate 13 numerical variables, which is quite modest compared to <span class="citation" data-cites="biber_1988">Biber (<a href="#ref-biber_1988" role="doc-biblioref">1988</a>)</span>:</p>
+<table class="table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 80%">
+</colgroup>
+<thead><tr class="header">
+<th>Name</th>
+<th>Value</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td><code>ttr</code></td>
+<td>Type token ratio (number of types divided by number of tokens)<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>
+</td>
+</tr>
+<tr class="even">
+<td><code>word_len</code></td>
+<td>Average word length, in characters</td>
+</tr>
+<tr class="odd">
+<td><code>p_mw</code></td>
+<td>Proportion of combined tags; typically clitics as in <em>she’s</em>
+</td>
+</tr>
+<tr class="even">
+<td><code>p_c</code></td>
+<td>Proportion of punctuation characters</td>
+</tr>
+<tr class="odd">
+<td><code>p_ppss</code></td>
+<td>Proportion of personal pronouns nominative, besides third person singular</td>
+</tr>
+<tr class="even">
+<td><code>p_noun</code></td>
+<td>Proportion of nouns</td>
+</tr>
+<tr class="odd">
+<td><code>p_bigr</code></td>
+<td>Number of unique word bigrams, relative to document size</td>
+</tr>
+<tr class="even">
+<td><code>p_nomin</code></td>
+<td>Proportion of nominalisations (nouns ending in <em>-tion</em>, <em>-ment</em>, <em>-ness</em>, or <em>-ity</em>)</td>
+</tr>
+<tr class="odd">
+<td><code>p_pobi</code></td>
+<td>Number of unique pos tag bigrams, relative to document size</td>
+</tr>
+<tr class="even">
+<td><code>p_adj</code></td>
+<td>Proportion of adjectives</td>
+</tr>
+<tr class="odd">
+<td><code>p_neg</code></td>
+<td>Number of negations, relative to document size</td>
+</tr>
+<tr class="even">
+<td><code>p_adv</code></td>
+<td>Proportion of adverbs</td>
+</tr>
+<tr class="odd">
+<td><code>p_qual</code></td>
+<td>Number of past tenses, relative to document size</td>
+</tr>
+</tbody>
+</table>
+<p>The idea is that these variables are relatively straightforward to annotate — with some programming, they can be easily extracted automatically. The theoretically relevant dimensions, instead, are much harder to operationalize: Factor Analysis is meant to extract these dimensions from the operationalizable linguistic features.</p>
+</section></section><section id="setup" class="level1" data-number="2"><h1 data-number="2">
+<span class="header-section-number">2</span> Setup</h1>
+<p>The first step is to load the libraries: we will use <a href="https://tidyverse.tidyverse.org">tidyverse</a>, <a href="https://github.com/masterclm/mclm">mclm</a>, <a href="https://here.r-lib.org/">here</a> and, for some XML processing, <a href="https://xml2.r-lib.org/">xml2</a>.</p>
+<div class="cell">
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org">tidyverse</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/masterclm/mclm">mclm</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://here.r-lib.org/">here</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://xml2.r-lib.org/">xml2</a></span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/pkg/ggplot2/man/theme_get.html">theme_set</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/pkg/ggplot2/man/ggtheme.html">theme_minimal</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The directory with the corpus, for the purposes of this document, is defined below. If you follow along, make sure to set <code>corpus_directory</code> to the path to wherever your copy of the corpus is stored.</p>
+<div class="cell">
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">corpus_directory</span> <span class="op">&lt;-</span> <span class="fu">here</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/here/man/here.html">here</a></span><span class="op">(</span><span class="st">"studies"</span>, <span class="st">"_corpora"</span>, <span class="st">"brown_tei"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The corpus directory contains some documentation files other than the corpus files themselves, so we need to filter them out when creating our <code>fnames</code> object. After visual inspection of the contents of the folder we can set up a regular expression that matches the names of the files we want: we will request for files ending in the following sequence: slash, one lowercase letter, two digits, “.xml”.</p>
+<div class="cell">
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">tei_fnames</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/fnames.html">get_fnames</a></span><span class="op">(</span><span class="va">corpus_directory</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/keep_re.html">keep_re</a></span><span class="op">(</span><span class="st">r"--[(?xi) / [a-z] \d\d [.]xml $ ]--"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/print.html">print</a></span><span class="op">(</span><span class="va">tei_fnames</span>, n <span class="op">=</span> <span class="fl">6</span>, hide_path <span class="op">=</span> <span class="va">corpus_directory</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Filename collection of length 500
+  filename
+  --------
+1  a01.xml
+2  a02.xml
+3  a03.xml
+4  a04.xml
+5  a05.xml
+6  a06.xml
+...</code></pre>
+</div>
+</div>
+</section><section id="sec-xml" class="level1" data-number="3"><h1 data-number="3">
+<span class="header-section-number">3</span> Read from XML</h1>
+<p>The first 12 lines of the first file in <code>tei_fnames</code> look like this:</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>&lt;TEI xmlns="http://www.tei-c.org/ns/
+1.0"&gt;&lt;teiHeader&gt;&lt;fileDesc&gt;&lt;titleStmt&gt;&lt;title&gt;Sample A01 from The Atlanta
+Constitution&lt;/title&gt;&lt;title type="sub"&gt; November 4, 1961, p.1 "Atlanta
+Primary ..."    
+    "Hartsfield Files"    
+    August 17, 1961, "Urged strongly ..."    
+    "Sam Caldwell Joins"    
+    March 6,1961, p.1 "Legislators Are Moving" by Reg Murphy    
+    "Legislator to fight" by Richard Ashworth    
+    "House Due Bid..."    
+    p.18 "Harry Miller Wins..."    
+    &lt;/title&gt;&lt;/titleStmt&gt;&lt;editionStmt&gt;&lt;edition&gt;A part of the XML version of the Brown
+Corpus&lt;/edition&gt;&lt;/editionStmt&gt;&lt;extent&gt;1,988 words 431 (21.7%) quotes 2 symbols&lt;/
+extent&gt;&lt;publicationStmt&gt;&lt;idno&gt;A01&lt;/idno&gt;&lt;availability&gt;&lt;p&gt;Used by permission
+of The Atlanta ConstitutionState News Service (H), and Reg Murphy (E).&lt;/p&gt;&lt;/
+availability&gt;&lt;/publicationStmt&gt;&lt;sourceDesc&gt;&lt;bibl&gt; The Atlanta Constitution&lt;/
+bibl&gt;&lt;/sourceDesc&gt;&lt;/fileDesc&gt;&lt;encodingDesc&gt;&lt;p&gt;Arbitrary Hyphen: multi-million
+[0520]&lt;/p&gt;&lt;/encodingDesc&gt;&lt;revisionDesc&gt;&lt;change when="2008-04-27"&gt;Header auto-
+generated for TEI version&lt;/change&gt;&lt;/revisionDesc&gt;&lt;/teiHeader&gt;    
+    &lt;text xml:id="A01" decls="A"&gt;    
+    &lt;body&gt;&lt;p&gt;&lt;s n="1"&gt;&lt;w type="AT"&gt;The&lt;/w&gt; &lt;w type="NP" subtype="TL"&gt;Fulton&lt;/w&gt;
+&lt;w type="NN" subtype="TL"&gt;County&lt;/w&gt; &lt;w type="JJ" subtype="TL"&gt;Grand&lt;/w&gt; &lt;w
+type="NN" subtype="TL"&gt;Jury&lt;/w&gt; &lt;w type="VBD"&gt;said&lt;/w&gt; &lt;w type="NR"&gt;Friday&lt;/
+w&gt; &lt;w type="AT"&gt;an&lt;/w&gt; &lt;w type="NN"&gt;investigation&lt;/w&gt; &lt;w type="IN"&gt;of&lt;/w&gt;
+&lt;w type="NPg"&gt;Atlanta's&lt;/w&gt; &lt;w type="JJ"&gt;recent&lt;/w&gt; &lt;w type="NN"&gt;primary&lt;/
+w&gt; &lt;w type="NN"&gt;election&lt;/w&gt; &lt;w type="VBD"&gt;produced&lt;/w&gt; &lt;c type="pct"&gt;``&lt;/
+c&gt; &lt;w type="AT"&gt;no&lt;/w&gt; &lt;w type="NN"&gt;evidence&lt;/w&gt; &lt;c type="pct"&gt;''&lt;/c&gt; &lt;w
+type="CS"&gt;that&lt;/w&gt; &lt;w type="DTI"&gt;any&lt;/w&gt; &lt;w type="NNS"&gt;irregularities&lt;/w&gt; &lt;w
+type="VBD"&gt;took&lt;/w&gt; &lt;w type="NN"&gt;place&lt;/w&gt; &lt;c type="pct"&gt;.&lt;/c&gt; &lt;/s&gt;    
+    &lt;/p&gt;    
+    </code></pre>
+</div>
+</div>
+<p>An XML file has a hierarchical structure, with elements indicated by tags and sometime containing other elements. For example, we could have a paragraph, starting with the <code>&lt;p&gt;</code> tag and ending with the following <code>&lt;/p&gt;</code>, which can contain a series of sentences preceded by <code>&lt;s&gt;</code> and ending in <code>&lt;/s&gt;</code>, and each can contain a series of words, preceded by <code>&lt;w&gt;</code> tags, each ending in the following <code>&lt;/w&gt;</code> tag.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> The opening tag can also contain attribute-value pairs, e.g.&nbsp;<code>&lt;w type="IN"&gt;of&lt;/w&gt;</code> corresponds to a word (indicated by the <code>w</code> tag) with content “of” and an attribute “type” with value “IN” —in this case, the attribute points to the part of speech. Some words also have a “subtype” attribute: <code>&lt;w type="NP" subtype="TL"&gt;Fulton&lt;/w&gt;</code> in this corpus is equivalent to “fulton/np-tl” in the other version of the Brown corpus.</p>
+<p>The first tag in these files is <code>&lt;TEI&gt;</code> with an “xmlns” attribute, whose value is an URL. This URL points to the “namespace”, the standards to which the annotation applies, which indicate what each type of tag means.</p>
+<p>Because the file is hierarchical, we can read it with special parsers that interpret the hierarchical structure. Concretely, we will use <code><a href="https://rdrr.io/pkg/xml2/man/read_xml.html">xml2::read_xml()</a></code>, which returns an object of class <code>xml_document</code>.</p>
+<div class="cell">
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">tei1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/xml2/man/read_xml.html">read_xml</a></span><span class="op">(</span><span class="va">tei_fnames</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span><span class="op">)</span></span>
+<span><span class="va">tei1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>{xml_document}
+&lt;TEI xmlns="http://www.tei-c.org/ns/1.0"&gt;
+[1] &lt;teiHeader&gt;\n  &lt;fileDesc&gt;\n    &lt;titleStmt&gt;\n      &lt;title&gt;Sample A01 from  ...
+[2] &lt;text xml:id="A01" decls="A"&gt;\n  &lt;body&gt;\n    &lt;p&gt;\n      &lt;s n="1"&gt;\n       ...</code></pre>
+</div>
+</div>
+<p>We could extract the first sentence of the corpus with <code><a href="https://rdrr.io/pkg/xml2/man/xml_find_all.html">xml_find_first()</a></code>, providing the XPath expression “//d1:s”, i.e.&nbsp;an <code>s</code> element from namespace <code>d1</code>. In <a href="https://xml2.r-lib.org/">xml2</a>, the first namespace in a file is called <code>d1</code>, as you can see with <code><a href="https://rdrr.io/pkg/xml2/man/xml_ns.html">xml_ns()</a></code>.</p>
+<div class="cell">
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/xml2/man/xml_ns.html">xml_ns</a></span><span class="op">(</span><span class="va">tei1</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>d1 &lt;-&gt; http://www.tei-c.org/ns/1.0</code></pre>
+</div>
+<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">first_sentence</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/xml2/man/xml_find_all.html">xml_find_first</a></span><span class="op">(</span><span class="va">tei1</span>, <span class="st">"//d1:s"</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/print.html">print</a></span><span class="op">(</span><span class="va">first_sentence</span>, max_n <span class="op">=</span> <span class="fl">10</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>{xml_node}
+&lt;s n="1"&gt;
+ [1] &lt;w type="AT"&gt;The&lt;/w&gt;
+ [2] &lt;w type="NP" subtype="TL"&gt;Fulton&lt;/w&gt;
+ [3] &lt;w type="NN" subtype="TL"&gt;County&lt;/w&gt;
+ [4] &lt;w type="JJ" subtype="TL"&gt;Grand&lt;/w&gt;
+ [5] &lt;w type="NN" subtype="TL"&gt;Jury&lt;/w&gt;
+ [6] &lt;w type="VBD"&gt;said&lt;/w&gt;
+ [7] &lt;w type="NR"&gt;Friday&lt;/w&gt;
+ [8] &lt;w type="AT"&gt;an&lt;/w&gt;
+ [9] &lt;w type="NN"&gt;investigation&lt;/w&gt;
+[10] &lt;w type="IN"&gt;of&lt;/w&gt;
+...</code></pre>
+</div>
+</div>
+<p>The output is an <code>xml_nodeset</code> object, which contains <code>xml_node</code> objects; <code><a href="https://rdrr.io/pkg/xml2/man/xml_children.html">xml_children()</a></code> can then retrieve the elements inside it. Further, <code><a href="https://rdrr.io/pkg/xml2/man/xml_text.html">xml_text()</a></code> retrieves the contents of the tags as text and <code><a href="https://rdrr.io/pkg/xml2/man/xml_attr.html">xml_attr()</a></code>, the values of specific attributes. The output of these functions are simple character vectors.</p>
+<div class="cell">
+<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">sentence_contents</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/xml2/man/xml_children.html">xml_children</a></span><span class="op">(</span><span class="va">first_sentence</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/print.html">print</a></span><span class="op">(</span><span class="va">sentence_contents</span>, max_n <span class="op">=</span> <span class="fl">10</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>{xml_nodeset (25)}
+ [1] &lt;w type="AT"&gt;The&lt;/w&gt;
+ [2] &lt;w type="NP" subtype="TL"&gt;Fulton&lt;/w&gt;
+ [3] &lt;w type="NN" subtype="TL"&gt;County&lt;/w&gt;
+ [4] &lt;w type="JJ" subtype="TL"&gt;Grand&lt;/w&gt;
+ [5] &lt;w type="NN" subtype="TL"&gt;Jury&lt;/w&gt;
+ [6] &lt;w type="VBD"&gt;said&lt;/w&gt;
+ [7] &lt;w type="NR"&gt;Friday&lt;/w&gt;
+ [8] &lt;w type="AT"&gt;an&lt;/w&gt;
+ [9] &lt;w type="NN"&gt;investigation&lt;/w&gt;
+[10] &lt;w type="IN"&gt;of&lt;/w&gt;
+...</code></pre>
+</div>
+<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/xml2/man/xml_text.html">xml_text</a></span><span class="op">(</span><span class="va">sentence_contents</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] "The"            "Fulton"         "County"         "Grand"         
+ [5] "Jury"           "said"           "Friday"         "an"            
+ [9] "investigation"  "of"             "Atlanta's"      "recent"        
+[13] "primary"        "election"       "produced"       "``"            
+[17] "no"             "evidence"       "''"             "that"          
+[21] "any"            "irregularities" "took"           "place"         
+[25] "."             </code></pre>
+</div>
+<div class="sourceCode" id="cb16"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/xml2/man/xml_attr.html">xml_attr</a></span><span class="op">(</span><span class="va">sentence_contents</span>, <span class="st">"type"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] "AT"  "NP"  "NN"  "JJ"  "NN"  "VBD" "NR"  "AT"  "NN"  "IN"  "NPg" "JJ" 
+[13] "NN"  "NN"  "VBD" "pct" "AT"  "NN"  "pct" "CS"  "DTI" "NNS" "VBD" "NN" 
+[25] "pct"</code></pre>
+</div>
+</div>
+<p>With this knowledge, we can now read the files in the corpus and obtain the information we need for our Factor Analsyis. We will collect different kinds of tokens with <code><a href="https://rdrr.io/pkg/mclm/man/find_xpath.html">mclm::find_xpath()</a></code>, process them with <a href="https://xml2.r-lib.org/">xml2</a> functions, count frequencies and generate a matrix.</p>
+</section><section id="sec-ann" class="level1 page-columns page-full" data-number="4"><h1 data-number="4">
+<span class="header-section-number">4</span> Annotate the dataset</h1>
+<p>As a first step to generating our frequencies, we will create a tibble based on the filenames. Each piece of information we will retrieve, whatever its type, will be stored in its own column.</p>
+<div class="cell">
+<div class="sourceCode" id="cb18"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/tibble/man/as_tibble.html">as_tibble</a></span><span class="op">(</span><span class="va">tei_fnames</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+tibbles and <a href="https://purrr.tidyverse.org/">purrr</a>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>There are other ways of achieving the same result next to what we will do in this section, i.e.&nbsp;by opening one file at a time, processing it and storing the output, either with a <code><a href="https://rdrr.io/pkg/purrr/man/map.html">map()</a></code>-like function or a <code>for</code> loop. However, in this case we will work with a tibble to show how the columns can have different kinds of data and how to work with such a format. In particular, we will work with <code><a href="https://rdrr.io/pkg/purrr/man/map.html">purrr::map()</a></code> and a few variations — these functions take a list or vector and a function<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> as input, run the same function on each element of the list, and return the result as either a list or a vector. <code><a href="https://rdrr.io/pkg/purrr/man/map.html">map()</a></code> always returns a list; <code><a href="https://rdrr.io/pkg/purrr/man/map.html">map_dbl()</a></code> returns a numerical vector, <code><a href="https://rdrr.io/pkg/purrr/man/map.html">map_chr()</a></code> returns a character vector, etc. This is useful both when trying to apply the same function to all elements of a list or when you want to apply a function to all elements of a vector but the function is not vectorized (it cannot take vectors with length larger than 1).</p>
+</div>
+</div>
+<section id="read-from-xml" class="level2" data-number="4.1"><h2 data-number="4.1" class="anchored" data-anchor-id="read-from-xml">
+<span class="header-section-number">4.1</span> Read from XML</h2>
+<p>First, we will read the files by applying <code><a href="https://rdrr.io/pkg/xml2/man/read_xml.html">read_xml()</a></code> to each element of the <code>filename</code> column in <code>d</code> via <code><a href="https://rdrr.io/pkg/purrr/man/map.html">map()</a></code>. This results in a column that is a list of <code>xml_document</code> objects. <code>d$xml[[1]]</code> is the same as <code>read_xml(d$filename[[1]])</code>.</p>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Example
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><code>map(some_list, tolower)</code> returns a list in which the first element is <code>tolower(some_list[[1]])</code>, the second is <code>tolower(some_list[[2]])</code>, etc.</p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d</span> <span class="op">&lt;-</span> <span class="va">d</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/pkg/dplyr/man/mutate.html">mutate</a></span><span class="op">(</span>xml <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map.html">map</a></span><span class="op">(</span><span class="va">filename</span>, <span class="va">read_xml</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="va">d</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/pkg/dplyr/man/mutate.html">mutate</a></span><span class="op">(</span>filename <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/short_names.html">short_names</a></span><span class="op">(</span><span class="va">filename</span><span class="op">)</span><span class="op">)</span> <span class="co"># just hiding the path when printing</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 500 × 2
+   filename xml       
+   &lt;fnames&gt; &lt;list&gt;    
+ 1 a01      &lt;xml_dcmn&gt;
+ 2 a02      &lt;xml_dcmn&gt;
+ 3 a03      &lt;xml_dcmn&gt;
+ 4 a04      &lt;xml_dcmn&gt;
+ 5 a05      &lt;xml_dcmn&gt;
+ 6 a06      &lt;xml_dcmn&gt;
+ 7 a07      &lt;xml_dcmn&gt;
+ 8 a08      &lt;xml_dcmn&gt;
+ 9 a09      &lt;xml_dcmn&gt;
+10 a10      &lt;xml_dcmn&gt;
+# … with 490 more rows</code></pre>
+</div>
+<div class="sourceCode" id="cb21"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d</span><span class="op">$</span><span class="va">xml</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>{xml_document}
+&lt;TEI xmlns="http://www.tei-c.org/ns/1.0"&gt;
+[1] &lt;teiHeader&gt;\n  &lt;fileDesc&gt;\n    &lt;titleStmt&gt;\n      &lt;title&gt;Sample A01 from  ...
+[2] &lt;text xml:id="A01" decls="A"&gt;\n  &lt;body&gt;\n    &lt;p&gt;\n      &lt;s n="1"&gt;\n       ...</code></pre>
+</div>
+</div>
+</section><section id="extract-tags-with-find_xpath" class="level2 page-columns page-full" data-number="4.2"><h2 data-number="4.2" class="anchored" data-anchor-id="extract-tags-with-find_xpath">
+<span class="header-section-number">4.2</span> Extract tags with <code>find_xpath()</code>
+</h2>
+<p>In order to extract lists of tags from each of the file, we will use <code><a href="https://rdrr.io/pkg/mclm/man/find_xpath.html">mclm::find_xpath()</a></code>. We need to provide a namespace definition, so we will create a column <code>ns</code> to store the output of <code><a href="https://rdrr.io/pkg/xml2/man/xml_ns.html">xml_ns()</a></code> on each file. Then we will create four columns with the output of <code><a href="https://rdrr.io/pkg/mclm/man/find_xpath.html">find_xpath()</a></code> and different XPath patterns: one to collect the word tags <code>w</code>, one to collect the multiword (or “combined tags”) <code>mw</code>, one to collect the punctuation tags <code>c</code> and one to collect all of them, i.e.&nbsp;all the tokens. For this purpose we need to combine both the elements in the <code>xml</code> column and the elements in the newly made <code>ns</code> column. The function to achieve this is <code>map2</code>, which applies a function to each element of two paired lists of the same length.</p>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Example
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><code>map2(list1, list2, mean)</code> returns a list whose first element is <code>mean(list1[[1]], list2[[1]])</code>, the second element is <code>mean(list1[[2]], list2[[2]])</code>, etc.</p>
+</div>
+</div>
+<p>The call to <code><a href="https://rdrr.io/pkg/mclm/man/find_xpath.html">find_xpath()</a></code> takes two positional arguments (the <code>xml_document</code> and an XPath pattern) and a few named arguments, among which <code>namespaces</code>. In our call inside <code><a href="https://rdrr.io/pkg/purrr/man/map2.html">map2()</a></code>, we can use a <strong>formula</strong>, which allows us to call the function and replace the argument corresponding to the first list with <code>.x</code> and the one corresponding to the second list <code>.y</code>.</p>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Example
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><code>map2(list1, list2, mean)</code> can also be written as <code>map2(list1, list2, ~ mean(.x, .y))</code>.</p>
+<p>This notation is useful when the elements in the lists do not correspond to the positional arguments of the function.</p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode" id="cb23"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d</span> <span class="op">&lt;-</span> <span class="va">d</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/dplyr/man/select.html">select</a></span><span class="op">(</span><span class="op">-</span><span class="va">filename</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/dplyr/man/mutate.html">mutate</a></span><span class="op">(</span></span>
+<span>    ns <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map.html">map</a></span><span class="op">(</span><span class="va">xml</span>, <span class="va">xml_ns</span><span class="op">)</span>,</span>
+<span>    token_tags <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map2.html">map2</a></span><span class="op">(</span><span class="va">xml</span>, <span class="va">ns</span>, <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/find_xpath.html">find_xpath</a></span><span class="op">(</span><span class="va">.x</span>, <span class="st">"//d1:w | //d1:mw | //d1:c"</span>, namespaces <span class="op">=</span> <span class="va">.y</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>    word_tags <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map2.html">map2</a></span><span class="op">(</span><span class="va">xml</span>, <span class="va">ns</span>, <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/find_xpath.html">find_xpath</a></span><span class="op">(</span><span class="va">.x</span>, <span class="st">"//d1:w"</span>, namespaces <span class="op">=</span> <span class="va">.y</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>    mw_tags <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map2.html">map2</a></span><span class="op">(</span><span class="va">xml</span>, <span class="va">ns</span>, <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/find_xpath.html">find_xpath</a></span><span class="op">(</span><span class="va">.x</span>, <span class="st">"//d1:mw"</span>, namespaces <span class="op">=</span> <span class="va">.y</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>    punctuation_tags <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map2.html">map2</a></span><span class="op">(</span><span class="va">xml</span>, <span class="va">ns</span>, <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/find_xpath.html">find_xpath</a></span><span class="op">(</span><span class="va">.x</span>, <span class="st">"//d1:c"</span>, namespaces <span class="op">=</span> <span class="va">.y</span><span class="op">)</span><span class="op">)</span></span>
+<span>    <span class="op">)</span></span>
+<span><span class="va">d</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 500 × 6
+   xml        ns             token_tags word_tags  mw_tags    punctuation_tags
+   &lt;list&gt;     &lt;list&gt;         &lt;list&gt;     &lt;list&gt;     &lt;list&gt;     &lt;list&gt;          
+ 1 &lt;xml_dcmn&gt; &lt;xml_nmsp [1]&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt;      
+ 2 &lt;xml_dcmn&gt; &lt;xml_nmsp [1]&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt;      
+ 3 &lt;xml_dcmn&gt; &lt;xml_nmsp [1]&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt;      
+ 4 &lt;xml_dcmn&gt; &lt;xml_nmsp [1]&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt;      
+ 5 &lt;xml_dcmn&gt; &lt;xml_nmsp [1]&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt;      
+ 6 &lt;xml_dcmn&gt; &lt;xml_nmsp [1]&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt;      
+ 7 &lt;xml_dcmn&gt; &lt;xml_nmsp [1]&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt;      
+ 8 &lt;xml_dcmn&gt; &lt;xml_nmsp [1]&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt;      
+ 9 &lt;xml_dcmn&gt; &lt;xml_nmsp [1]&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt;      
+10 &lt;xml_dcmn&gt; &lt;xml_nmsp [1]&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt;      
+# … with 490 more rows</code></pre>
+</div>
+</div>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>After this, we don’t need the <code>filename</code> column anymore — in this stepwise illustration of the process, I will be removing obsolete columns, but when running everything at once, as shown in <a href="#sec-full">Section&nbsp;4.10</a>, we won’t be doing that; we’ll just select the useful columns at the end.</p>
+</div></div><p>Each new column is a <strong>list</strong> with elements of different kinds. The elements in the <code>token_tags</code> and <code>mw_tags</code> columns, for example, are <code>xml_nodeset</code> objects. Below we can see the first element of each of these columns, i.e.&nbsp;the tokens and the combined tags of the first file in the corpus.</p>
+<div>
+<div class="sourceCode" id="cb25"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html">print</a></span><span class="op">(</span><span class="va">d</span><span class="op">$</span><span class="va">token_tags</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span>, max_n <span class="op">=</span> <span class="fl">10</span><span class="op">)</span> <span class="co"># left side</span></span>
+<span><span class="va">d</span><span class="op">$</span><span class="va">mw_tags</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span> <span class="co"># right side</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell-output cell-output-stdout quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<pre><code>{xml_nodeset (2242)}
+ [1] &lt;w type="AT"&gt;The&lt;/w&gt;
+ [2] &lt;w type="NP" subtype="TL"&gt;Fulton&lt;/w&gt;
+ [3] &lt;w type="NN" subtype="TL"&gt;County&lt;/w&gt;
+ [4] &lt;w type="JJ" subtype="TL"&gt;Grand&lt;/w&gt;
+ [5] &lt;w type="NN" subtype="TL"&gt;Jury&lt;/w&gt;
+ [6] &lt;w type="VBD"&gt;said&lt;/w&gt;
+ [7] &lt;w type="NR"&gt;Friday&lt;/w&gt;
+ [8] &lt;w type="AT"&gt;an&lt;/w&gt;
+ [9] &lt;w type="NN"&gt;investigation&lt;/w&gt;
+[10] &lt;w type="IN"&gt;of&lt;/w&gt;
+...</code></pre>
+</div>
+<div class="cell-output cell-output-stdout quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<pre><code>{xml_nodeset (3)}
+[1] &lt;mw pos="DOD *"&gt;didn't &lt;/mw&gt;
+[2] &lt;mw pos="DOD *"&gt;didn't &lt;/mw&gt;
+[3] &lt;mw pos="BEDZ *"&gt;wasn't &lt;/mw&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</section><section id="retrieve-text-with-xml_text" class="level2 page-columns page-full" data-number="4.3"><h2 data-number="4.3" class="anchored" data-anchor-id="retrieve-text-with-xml_text">
+<span class="header-section-number">4.3</span> Retrieve text with <code>xml_text()</code>
+</h2>
+<p>With the new columns we can create <code>tokens</code> objects by retrieving the contents of the tags (for word form tokens) or the POS-tags. The columns <code>all_tokens</code> and <code>words</code> are created by applying a chain of functions to the elements of the <code>token_tags</code> and <code>word_tags</code> columns: <code><a href="https://rdrr.io/pkg/xml2/man/xml_text.html">xml_text()</a></code> to obtain the content, <code><a href="https://rdrr.io/r/base/chartr.html">tolower()</a></code> to turn it to lower case, <code><a href="https://rdrr.io/pkg/mclm/man/cleanup_spaces.html">cleanup_spaces()</a></code> to remove any spaces that might be accidentally included in the token, and <code><a href="https://rdrr.io/pkg/mclm/man/as_tokens.html">as_tokens()</a></code> to turn the resulting character vector into a <code>tokens</code> object. Therefore, the columns <code>all_tokens</code> and <code>words</code> will be lists of <code>tokens</code> objects. Below is an example of the chain of functions as applied to the first element of <code>d$token_tags</code>.</p>
+<div class="cell">
+<div class="sourceCode" id="cb28"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d</span><span class="op">$</span><span class="va">token_tags</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/pkg/xml2/man/xml_text.html">xml_text</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "The"    "Fulton" "County" "Grand"  "Jury"   "said"  </code></pre>
+</div>
+<div class="sourceCode" id="cb30"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d</span><span class="op">$</span><span class="va">token_tags</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/pkg/xml2/man/xml_text.html">xml_text</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/r/base/chartr.html">tolower</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "the"    "fulton" "county" "grand"  "jury"   "said"  </code></pre>
+</div>
+<div class="sourceCode" id="cb32"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d</span><span class="op">$</span><span class="va">token_tags</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/pkg/xml2/man/xml_text.html">xml_text</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/r/base/chartr.html">tolower</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/cleanup_spaces.html">cleanup_spaces</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "the"    "fulton" "county" "grand"  "jury"   "said"  </code></pre>
+</div>
+<div class="sourceCode" id="cb34"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d</span><span class="op">$</span><span class="va">token_tags</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/pkg/xml2/man/xml_text.html">xml_text</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/r/base/chartr.html">tolower</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/as_tokens.html">as_tokens</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/r/base/print.html">print</a></span><span class="op">(</span><span class="fl">10</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Token sequence of length 2242
+idx         token
+--- -------------
+  1           the
+  2        fulton
+  3        county
+  4         grand
+  5          jury
+  6          said
+  7        friday
+  8            an
+  9 investigation
+ 10            of
+...</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode" id="cb36"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d</span> <span class="op">&lt;-</span> <span class="va">d</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/dplyr/man/select.html">select</a></span><span class="op">(</span><span class="op">-</span><span class="va">xml</span>, <span class="op">-</span><span class="va">ns</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/dplyr/man/mutate.html">mutate</a></span><span class="op">(</span></span>
+<span>    all_tokens <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map.html">map</a></span><span class="op">(</span><span class="va">token_tags</span>, <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/pkg/xml2/man/xml_text.html">xml_text</a></span><span class="op">(</span><span class="va">.x</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/r/base/chartr.html">tolower</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/cleanup_spaces.html">cleanup_spaces</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/as_tokens.html">as_tokens</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>    words <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map.html">map</a></span><span class="op">(</span><span class="va">word_tags</span>, <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/pkg/xml2/man/xml_text.html">xml_text</a></span><span class="op">(</span><span class="va">.x</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/r/base/chartr.html">tolower</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/cleanup_spaces.html">cleanup_spaces</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/as_tokens.html">as_tokens</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
+<span>  <span class="op">)</span></span>
+<span><span class="va">d</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 500 × 6
+   token_tags word_tags  mw_tags    punctuation_tags all_tokens       words   
+   &lt;list&gt;     &lt;list&gt;     &lt;list&gt;     &lt;list&gt;           &lt;list&gt;           &lt;list&gt;  
+ 1 &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt;       &lt;tokens [2,242]&gt; &lt;tokens&gt;
+ 2 &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt;       &lt;tokens [2,277]&gt; &lt;tokens&gt;
+ 3 &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt;       &lt;tokens [2,275]&gt; &lt;tokens&gt;
+ 4 &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt;       &lt;tokens [2,216]&gt; &lt;tokens&gt;
+ 5 &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt;       &lt;tokens [2,244]&gt; &lt;tokens&gt;
+ 6 &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt;       &lt;tokens [2,263]&gt; &lt;tokens&gt;
+ 7 &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt;       &lt;tokens [2,270]&gt; &lt;tokens&gt;
+ 8 &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt;       &lt;tokens [2,187]&gt; &lt;tokens&gt;
+ 9 &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt;       &lt;tokens [2,234]&gt; &lt;tokens&gt;
+10 &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt;       &lt;tokens [2,282]&gt; &lt;tokens&gt;
+# … with 490 more rows</code></pre>
+</div>
+</div>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Now that we have extracted the terms that we are interested in, we don’t really need the <code>xml</code> and <code>ns</code> columns anymore,</p>
+</div></div><p>The lists below don’t look very different because there are no punctuation marks in the first 10 tokens.</p>
+<div>
+<div class="sourceCode" id="cb38"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html">print</a></span><span class="op">(</span><span class="va">d</span><span class="op">$</span><span class="va">all_tokens</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span>, <span class="fl">10</span><span class="op">)</span> <span class="co"># left</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/print.html">print</a></span><span class="op">(</span><span class="va">d</span><span class="op">$</span><span class="va">words</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span>, <span class="fl">10</span><span class="op">)</span> <span class="co"># right</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell-output cell-output-stdout quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<pre><code>Token sequence of length 2242
+idx         token
+--- -------------
+  1           the
+  2        fulton
+  3        county
+  4         grand
+  5          jury
+  6          said
+  7        friday
+  8            an
+  9 investigation
+ 10            of
+...</code></pre>
+</div>
+<div class="cell-output cell-output-stdout quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<pre><code>Token sequence of length 1985
+idx         token
+--- -------------
+  1           the
+  2        fulton
+  3        county
+  4         grand
+  5          jury
+  6          said
+  7        friday
+  8            an
+  9 investigation
+ 10            of
+...</code></pre>
+</div>
+</div>
+</div>
+</div>
+</section><section id="retrieve-pos-tags-with-xml_attr" class="level2" data-number="4.4"><h2 data-number="4.4" class="anchored" data-anchor-id="retrieve-pos-tags-with-xml_attr">
+<span class="header-section-number">4.4</span> Retrieve POS-tags with <code>xml_attr()</code>
+</h2>
+<p>In order to collect the POS-tags, we could simply apply <code><a href="https://rdrr.io/pkg/xml2/man/xml_attr.html">xml_attr()</a></code> in the same way that we were calling <code><a href="https://rdrr.io/pkg/xml2/man/xml_text.html">xml_text()</a></code>, but the situation is a bit more complicated. As it turns out, the attribute indicating the part-of-speech for <code>w</code> and <code>c</code> elements is “type”, but in a <code>mw</code> element it’s called “pos”.</p>
+<div class="cell">
+<div class="sourceCode" id="cb41"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/xml2/man/xml_attr.html">xml_attr</a></span><span class="op">(</span><span class="va">d</span><span class="op">$</span><span class="va">token_tags</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span>, <span class="st">"type"</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "AT"  "NP"  "NN"  "JJ"  "NN"  "VBD"</code></pre>
+</div>
+<div class="sourceCode" id="cb43"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/xml2/man/xml_attr.html">xml_attr</a></span><span class="op">(</span><span class="va">d</span><span class="op">$</span><span class="va">mw_tags</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span>, <span class="st">"type"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] NA NA NA</code></pre>
+</div>
+<div class="sourceCode" id="cb45"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/xml2/man/xml_attr.html">xml_attr</a></span><span class="op">(</span><span class="va">d</span><span class="op">$</span><span class="va">mw_tags</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span>, <span class="st">"pos"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "DOD *"  "DOD *"  "BEDZ *"</code></pre>
+</div>
+</div>
+<p>As a consequence, we need to apply a more complicated workflow to create the <code>pos_codes</code> column, i.e.&nbsp;an equivalent of the <code>all_tokens</code> column but with POS-tags instead of word forms. For each element of <code>token_tags</code> (lets call them <code>toks</code>), we will do the following:</p>
+<ul>
+<li><p>Extract the “type” attribute, which will contain the POS-tag for the <code>w</code> and <code>c</code>elements but <code>NA</code> for <code>mw</code> elements, and store it in a <code>most_pos</code> vector: <code>most_pos &lt;- xml_attr(toks, "type")</code>.</p></li>
+<li><p>Extract the “pos” attribute, which will contain the POS-tag for <code>mw</code> elements but <code>NA</code> for the rest, and store it in a <code>mw_pos</code> element: <code>mw_pos &lt;- xml_attr(toks, "pos")</code>.</p></li>
+<li><p>Replace the <code>NA</code> values in <code>most_pos</code> (<code>most_pos[is.na(most_pos)]</code>) with the non-<code>NA</code> values in <code>mw_pos</code> (<code>mw_pos[!is.na(mw_pos)]</code>).</p></li>
+<li><p>Turn the resulting, fixed <code>most_pos</code> into a <code>tokens</code> object with <code>as_tokens(most_pos)</code>.</p></li>
+</ul>
+<p>In order to provide such a workflow with <code><a href="https://rdrr.io/pkg/purrr/man/map.html">map()</a></code>, we will do it with an anonymous function defined as <code>function(argument) { the code... }</code>.</p>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Example
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><code>map(some_list, tolower)</code> is the same as <code>map(some_list, ~ tolower(.x)</code>) and the same as <code>map(some_list, function(list_element) { tolower(list_element) })</code>.</p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode" id="cb47"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d</span> <span class="op">&lt;-</span> <span class="va">d</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/dplyr/man/mutate.html">mutate</a></span><span class="op">(</span></span>
+<span>    pos_codes <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map.html">map</a></span><span class="op">(</span><span class="va">token_tags</span>, <span class="kw">function</span><span class="op">(</span><span class="va">toks</span><span class="op">)</span> <span class="op">{</span></span>
+<span>      <span class="va">most_pos</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/xml2/man/xml_attr.html">xml_attr</a></span><span class="op">(</span><span class="va">toks</span>, <span class="st">"type"</span><span class="op">)</span></span>
+<span>      <span class="va">mw_pos</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/xml2/man/xml_attr.html">xml_attr</a></span><span class="op">(</span><span class="va">toks</span>, <span class="st">"pos"</span><span class="op">)</span></span>
+<span>      <span class="va">most_pos</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/NA.html">is.na</a></span><span class="op">(</span><span class="va">most_pos</span><span class="op">)</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="va">mw_pos</span><span class="op">[</span><span class="op">!</span><span class="fu"><a href="https://rdrr.io/r/base/NA.html">is.na</a></span><span class="op">(</span><span class="va">mw_pos</span><span class="op">)</span><span class="op">]</span></span>
+<span>      <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/as_tokens.html">as_tokens</a></span><span class="op">(</span><span class="va">most_pos</span><span class="op">)</span> <span class="co"># return value</span></span>
+<span>      <span class="op">}</span><span class="op">)</span></span>
+<span>    <span class="op">)</span></span>
+<span><span class="va">d</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 500 × 7
+   token_tags word_tags  mw_tags    punctuation_tags all_tok…¹ words    pos_co…²
+   &lt;list&gt;     &lt;list&gt;     &lt;list&gt;     &lt;list&gt;           &lt;list&gt;    &lt;list&gt;   &lt;list&gt;  
+ 1 &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt;       &lt;tokens&gt;  &lt;tokens&gt; &lt;tokens&gt;
+ 2 &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt;       &lt;tokens&gt;  &lt;tokens&gt; &lt;tokens&gt;
+ 3 &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt;       &lt;tokens&gt;  &lt;tokens&gt; &lt;tokens&gt;
+ 4 &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt;       &lt;tokens&gt;  &lt;tokens&gt; &lt;tokens&gt;
+ 5 &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt;       &lt;tokens&gt;  &lt;tokens&gt; &lt;tokens&gt;
+ 6 &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt;       &lt;tokens&gt;  &lt;tokens&gt; &lt;tokens&gt;
+ 7 &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt;       &lt;tokens&gt;  &lt;tokens&gt; &lt;tokens&gt;
+ 8 &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt;       &lt;tokens&gt;  &lt;tokens&gt; &lt;tokens&gt;
+ 9 &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt;       &lt;tokens&gt;  &lt;tokens&gt; &lt;tokens&gt;
+10 &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt; &lt;xml_ndst&gt;       &lt;tokens&gt;  &lt;tokens&gt; &lt;tokens&gt;
+# … with 490 more rows, and abbreviated variable names ¹​all_tokens, ²​pos_codes</code></pre>
+</div>
+<div class="sourceCode" id="cb49"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html">print</a></span><span class="op">(</span><span class="va">d</span><span class="op">$</span><span class="va">pos_codes</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span>, <span class="fl">10</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Token sequence of length 2242
+idx token
+--- -----
+  1    AT
+  2    NP
+  3    NN
+  4    JJ
+  5    NN
+  6   VBD
+  7    NR
+  8    AT
+  9    NN
+ 10    IN
+...</code></pre>
+</div>
+</div>
+</section><section id="build-bigrams" class="level2 page-columns page-full" data-number="4.5"><h2 data-number="4.5" class="anchored" data-anchor-id="build-bigrams">
+<span class="header-section-number">4.5</span> Build bigrams</h2>
+<p>The following step, before we can compute the frequencies we want, is to obtain bigrams. To each element <code>x</code> of <code>all_tokens</code> (for word form bigrams) and <code>pos_codes</code> (for POS-tags bigrams) we will implement the following code: <code>paste(x, c(x[-1], "EOF"), sep = "|")</code>. As shown below, <code>x[-1]</code> returns the vector <code>x</code> minus its first element, <code>c(x[-1], "EOF")</code> appends “EOF” (which stands for End Of File) to the vector, and <code><a href="https://rdrr.io/r/base/paste.html">paste()</a></code> glues both vectors. <code><a href="https://rdrr.io/r/base/paste.html">paste()</a></code> is a vectorized function, so it will automatically “paste” the first element of the first vector with the first element of the second vector, the second element of each vector, the third element of each vector, etc. The <code>sep</code> argument lets us decide what character will be used when joining those elements.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p>
+<div class="cell">
+<div class="sourceCode" id="cb51"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">letters</span>, <span class="fl">10</span><span class="op">)</span></span>
+<span><span class="va">x</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] "a" "b" "c" "d" "e" "f" "g" "h" "i" "j"</code></pre>
+</div>
+<div class="sourceCode" id="cb53"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">x</span><span class="op">[</span><span class="op">-</span><span class="fl">1</span><span class="op">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "b" "c" "d" "e" "f" "g" "h" "i" "j"</code></pre>
+</div>
+<div class="sourceCode" id="cb55"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">x</span><span class="op">[</span><span class="op">-</span><span class="fl">1</span><span class="op">]</span>, <span class="st">"EOF"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] "b"   "c"   "d"   "e"   "f"   "g"   "h"   "i"   "j"   "EOF"</code></pre>
+</div>
+<div class="sourceCode" id="cb57"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/paste.html">paste</a></span><span class="op">(</span><span class="va">x</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">x</span><span class="op">[</span><span class="op">-</span><span class="fl">1</span><span class="op">]</span>, <span class="st">"EOF"</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] "a b"   "b c"   "c d"   "d e"   "e f"   "f g"   "g h"   "h i"   "i j"  
+[10] "j EOF"</code></pre>
+</div>
+<div class="sourceCode" id="cb59"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/paste.html">paste</a></span><span class="op">(</span><span class="va">x</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">x</span><span class="op">[</span><span class="op">-</span><span class="fl">1</span><span class="op">]</span>, <span class="st">"EOF"</span><span class="op">)</span>, sep <span class="op">=</span> <span class="st">"|"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] "a|b"   "b|c"   "c|d"   "d|e"   "e|f"   "f|g"   "g|h"   "h|i"   "i|j"  
+[10] "j|EOF"</code></pre>
+</div>
+<div class="sourceCode" id="cb61"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/paste.html">paste</a></span><span class="op">(</span><span class="va">x</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">x</span><span class="op">[</span><span class="op">-</span><span class="fl">1</span><span class="op">]</span>, <span class="st">"EOF"</span><span class="op">)</span>, sep <span class="op">=</span> <span class="st">"|"</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/as_tokens.html">as_tokens</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Token sequence of length 10
+idx token
+--- -----
+  1   a|b
+  2   b|c
+  3   c|d
+  4   d|e
+  5   e|f
+  6   f|g
+  7   g|h
+  8   h|i
+  9   i|j
+ 10 j|EOF</code></pre>
+</div>
+</div>
+<p>The result of this code is a vector of bigrams, i.e.&nbsp;each element corresponds to one element of <code>x</code> along with its following element.</p>
+<div class="cell">
+<div class="sourceCode" id="cb63"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d</span> <span class="op">&lt;-</span> <span class="va">d</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/dplyr/man/select.html">select</a></span><span class="op">(</span><span class="op">-</span><span class="va">token_tags</span>, <span class="op">-</span><span class="va">word_tags</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/dplyr/man/mutate.html">mutate</a></span><span class="op">(</span></span>
+<span>    bigrams <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map.html">map</a></span><span class="op">(</span><span class="va">all_tokens</span>, <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html">paste</a></span><span class="op">(</span><span class="va">.x</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">.x</span><span class="op">[</span><span class="op">-</span><span class="fl">1</span><span class="op">]</span>, <span class="st">"EOF"</span><span class="op">)</span>, sep <span class="op">=</span> <span class="st">"|"</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/as_tokens.html">as_tokens</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>    pos_bigrams <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map.html">map</a></span><span class="op">(</span><span class="va">pos_codes</span>, <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html">paste</a></span><span class="op">(</span><span class="va">.x</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">.x</span><span class="op">[</span><span class="op">-</span><span class="fl">1</span><span class="op">]</span>, <span class="st">"EOF"</span><span class="op">)</span>, sep <span class="op">=</span> <span class="st">"|"</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/as_tokens.html">as_tokens</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
+<span>  <span class="op">)</span></span>
+<span><span class="va">d</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 500 × 7
+   mw_tags    punctuation_tags all_tokens words    pos_codes bigrams  pos_bigr…¹
+   &lt;list&gt;     &lt;list&gt;           &lt;list&gt;     &lt;list&gt;   &lt;list&gt;    &lt;list&gt;   &lt;list&gt;    
+ 1 &lt;xml_ndst&gt; &lt;xml_ndst&gt;       &lt;tokens&gt;   &lt;tokens&gt; &lt;tokens&gt;  &lt;tokens&gt; &lt;tokens&gt;  
+ 2 &lt;xml_ndst&gt; &lt;xml_ndst&gt;       &lt;tokens&gt;   &lt;tokens&gt; &lt;tokens&gt;  &lt;tokens&gt; &lt;tokens&gt;  
+ 3 &lt;xml_ndst&gt; &lt;xml_ndst&gt;       &lt;tokens&gt;   &lt;tokens&gt; &lt;tokens&gt;  &lt;tokens&gt; &lt;tokens&gt;  
+ 4 &lt;xml_ndst&gt; &lt;xml_ndst&gt;       &lt;tokens&gt;   &lt;tokens&gt; &lt;tokens&gt;  &lt;tokens&gt; &lt;tokens&gt;  
+ 5 &lt;xml_ndst&gt; &lt;xml_ndst&gt;       &lt;tokens&gt;   &lt;tokens&gt; &lt;tokens&gt;  &lt;tokens&gt; &lt;tokens&gt;  
+ 6 &lt;xml_ndst&gt; &lt;xml_ndst&gt;       &lt;tokens&gt;   &lt;tokens&gt; &lt;tokens&gt;  &lt;tokens&gt; &lt;tokens&gt;  
+ 7 &lt;xml_ndst&gt; &lt;xml_ndst&gt;       &lt;tokens&gt;   &lt;tokens&gt; &lt;tokens&gt;  &lt;tokens&gt; &lt;tokens&gt;  
+ 8 &lt;xml_ndst&gt; &lt;xml_ndst&gt;       &lt;tokens&gt;   &lt;tokens&gt; &lt;tokens&gt;  &lt;tokens&gt; &lt;tokens&gt;  
+ 9 &lt;xml_ndst&gt; &lt;xml_ndst&gt;       &lt;tokens&gt;   &lt;tokens&gt; &lt;tokens&gt;  &lt;tokens&gt; &lt;tokens&gt;  
+10 &lt;xml_ndst&gt; &lt;xml_ndst&gt;       &lt;tokens&gt;   &lt;tokens&gt; &lt;tokens&gt;  &lt;tokens&gt; &lt;tokens&gt;  
+# … with 490 more rows, and abbreviated variable name ¹​pos_bigrams</code></pre>
+</div>
+</div>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>At this point we don’t need <code>token_tags</code> or <code>word_tags</code> anymore either.</p>
+</div></div><p>Below we see the first token and POS-tag bigrams found in the first file of the corpus.</p>
+<div>
+<div class="sourceCode" id="cb65"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html">print</a></span><span class="op">(</span><span class="va">d</span><span class="op">$</span><span class="va">bigrams</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span>, <span class="fl">10</span><span class="op">)</span> <span class="co"># left</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/print.html">print</a></span><span class="op">(</span><span class="va">d</span><span class="op">$</span><span class="va">pos_bigrams</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span>, <span class="fl">10</span><span class="op">)</span> <span class="co"># right</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell-output cell-output-stdout quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<pre><code>Token sequence of length 2242
+idx            token
+--- ----------------
+  1       the|fulton
+  2    fulton|county
+  3     county|grand
+  4       grand|jury
+  5        jury|said
+  6      said|friday
+  7        friday|an
+  8 an|investigation
+  9 investigation|of
+ 10     of|atlanta's
+...</code></pre>
+</div>
+<div class="cell-output cell-output-stdout quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<pre><code>Token sequence of length 2242
+idx  token
+--- ------
+  1  AT|NP
+  2  NP|NN
+  3  NN|JJ
+  4  JJ|NN
+  5 NN|VBD
+  6 VBD|NR
+  7  NR|AT
+  8  AT|NN
+  9  NN|IN
+ 10 IN|NPg
+...</code></pre>
+</div>
+</div>
+</div>
+</div>
+</section><section id="get-counts-with-n_tokens" class="level2" data-number="4.6"><h2 data-number="4.6" class="anchored" data-anchor-id="get-counts-with-n_tokens">
+<span class="header-section-number">4.6</span> Get counts with <code>n_tokens()</code>
+</h2>
+<p>Now we have everything we need to compute the frequencies we were interested in. The new columns won’t be lists anymore but simple numeric vectors, so we will use <code><a href="https://rdrr.io/pkg/purrr/man/map.html">map_dbl()</a></code> instead of <code><a href="https://rdrr.io/pkg/purrr/man/map.html">map()</a></code>. This function can be used when the output of the function applied to each element is a single number. For example, <code><a href="https://rdrr.io/pkg/mclm/man/n_tokens.html">n_tokens()</a></code> returns the number of tokens in a <code>tokens</code>, <code>types</code> or <code>freqlist</code> object, so applying it to each element of the <code>all_tokens</code> column, which is a list of <code>tokens</code> objects, will return a series of numbers.</p>
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Lists and vectors
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In contrast to <code><a href="https://rdrr.io/pkg/purrr/man/map.html">map()</a></code>, <code><a href="https://rdrr.io/pkg/purrr/man/map.html">map_dbl()</a></code> returns a numeric vector rather than a <em>list</em> of numbers, which is a different kind of object in R. For example, if we have a vector <code>c(1, 2, 3)</code>, we can divide each element of it by the same number with a vectorized function such as <code>/</code>.</p>
+<div class="cell">
+<div class="sourceCode" id="cb68"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">numeric_vector</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">2</span>, <span class="fl">3</span><span class="op">)</span></span>
+<span><span class="va">numeric_vector</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1 2 3</code></pre>
+</div>
+<div class="sourceCode" id="cb70"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">numeric_vector</span><span class="op">/</span><span class="fl">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.5 1.0 1.5</code></pre>
+</div>
+</div>
+<p>However, if it is a list, that won’t work; we would need a function such as <code><a href="https://rdrr.io/pkg/purrr/man/map.html">map()</a></code>.</p>
+<div class="cell">
+<div class="sourceCode" id="cb72"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">a_list</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">2</span>, <span class="fl">3</span><span class="op">)</span></span>
+<span><span class="va">a_list</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[[1]]
+[1] 1
+
+[[2]]
+[1] 2
+
+[[3]]
+[1] 3</code></pre>
+</div>
+<div class="sourceCode" id="cb74"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">a_list</span><span class="op">/</span><span class="fl">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error in a_list/2: non-numeric argument to binary operator</code></pre>
+</div>
+</div>
+</div>
+</div>
+<p>Once we have the <code>n_tok</code> column, we can create other numeric columns with <code><a href="https://rdrr.io/pkg/purrr/man/map.html">map_dbl()</a></code>, applying different functions that compute quantities, and then divide them by the contents of <code>n_tok</code> to obtain proportions. The number of types can be obtained by calling <code><a href="https://rdrr.io/pkg/mclm/man/n_types.html">n_types()</a></code> on the elements of the <code>all_tokens</code>, <code>bigrams</code> and <code>pos_bigrams</code> columns; the number of <code>mw</code> and <code>c</code> tags can be obtained by applying <code>length</code> to the elements of the <code>mw_tags</code> and <code>punctuation_tags</code> columns. For <code>mw</code> elements, which are very infrequent, we will multiply the resulting proportion by 10 000. The mean word length can be be obtained by applying <code>sum(nchar(x))/n_tokens(x)</code> to each element of the <code>words</code> columns: we count the number of characters of each element, sum them and then divide them by the number of elements.</p>
+<div class="cell">
+<div class="sourceCode" id="cb76"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d</span> <span class="op">&lt;-</span> <span class="va">d</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/dplyr/man/mutate.html">mutate</a></span><span class="op">(</span></span>
+<span>    n_tok <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map.html">map_dbl</a></span><span class="op">(</span><span class="va">all_tokens</span>, <span class="va">n_tokens</span><span class="op">)</span>,</span>
+<span>    ttr <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map.html">map_dbl</a></span><span class="op">(</span><span class="va">all_tokens</span>, <span class="va">n_types</span><span class="op">)</span><span class="op">/</span><span class="va">n_tok</span>,</span>
+<span>    p_bigr <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map.html">map_dbl</a></span><span class="op">(</span><span class="va">bigrams</span>, <span class="va">n_types</span><span class="op">)</span> <span class="op">/</span> <span class="va">n_tok</span>,</span>
+<span>    p_pobi <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map.html">map_dbl</a></span><span class="op">(</span><span class="va">pos_bigrams</span>, <span class="va">n_types</span><span class="op">)</span> <span class="op">/</span> <span class="va">n_tok</span>,</span>
+<span>    p_mw <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map.html">map_dbl</a></span><span class="op">(</span><span class="va">mw_tags</span>, <span class="va">length</span><span class="op">)</span> <span class="op">/</span> <span class="va">n_tok</span> <span class="op">*</span> <span class="fl">10000</span>,</span>
+<span>    p_c <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map.html">map_dbl</a></span><span class="op">(</span><span class="va">punctuation_tags</span>, <span class="va">length</span><span class="op">)</span> <span class="op">/</span> <span class="va">n_tok</span>,</span>
+<span>    word_len <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map.html">map_dbl</a></span><span class="op">(</span><span class="va">words</span>, <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/nchar.html">nchar</a></span><span class="op">(</span><span class="va">.x</span><span class="op">)</span><span class="op">)</span><span class="op">/</span><span class="fu"><a href="https://rdrr.io/pkg/mclm/man/n_tokens.html">n_tokens</a></span><span class="op">(</span><span class="va">.x</span><span class="op">)</span><span class="op">)</span></span>
+<span>  <span class="op">)</span></span>
+<span><span class="va">d</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/pkg/dplyr/man/select.html">select</a></span><span class="op">(</span><span class="va">all_tokens</span>, <span class="va">n_tok</span>, <span class="va">ttr</span>, <span class="fu"><a href="https://rdrr.io/pkg/tidyselect/man/starts_with.html">starts_with</a></span><span class="op">(</span><span class="st">"p_"</span><span class="op">)</span>, <span class="va">word_len</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 500 × 8
+   all_tokens       n_tok   ttr p_bigr p_pobi  p_mw    p_c word_len
+   &lt;list&gt;           &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;    &lt;dbl&gt;
+ 1 &lt;tokens [2,242]&gt;  2242 0.357  0.824  0.207 13.4  0.113      4.99
+ 2 &lt;tokens [2,277]&gt;  2277 0.381  0.836  0.185 17.6  0.118      4.95
+ 3 &lt;tokens [2,275]&gt;  2275 0.340  0.808  0.187 17.6  0.110      4.88
+ 4 &lt;tokens [2,216]&gt;  2216 0.383  0.840  0.226  4.51 0.0884     5.19
+ 5 &lt;tokens [2,244]&gt;  2244 0.320  0.765  0.206  0    0.0936     4.77
+ 6 &lt;tokens [2,263]&gt;  2263 0.350  0.813  0.202 53.0  0.114      4.89
+ 7 &lt;tokens [2,270]&gt;  2270 0.370  0.828  0.202 17.6  0.105      5.13
+ 8 &lt;tokens [2,187]&gt;  2187 0.356  0.810  0.212  4.57 0.0841     4.91
+ 9 &lt;tokens [2,234]&gt;  2234 0.379  0.823  0.179 17.9  0.0971     4.94
+10 &lt;tokens [2,282]&gt;  2282 0.368  0.832  0.216  4.38 0.120      4.82
+# … with 490 more rows</code></pre>
+</div>
+</div>
+<p>As the output above shows, the new columns are numeric vectors rather than lists.</p>
+</section><section id="filter-tokens-with-re" class="level2" data-number="4.7"><h2 data-number="4.7" class="anchored" data-anchor-id="filter-tokens-with-re">
+<span class="header-section-number">4.7</span> Filter tokens with <code>re()</code>
+</h2>
+<p>Finally, we want to obtain the number of nominalizations and of different grammatical categories. We can obtain the nominalizations by extracting the word forms in the <code>all_tokens</code> column with a regular expression:</p>
+<div class="cell">
+<div class="sourceCode" id="cb78"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">first_tokens</span> <span class="op">&lt;-</span> <span class="va">d</span><span class="op">$</span><span class="va">all_tokens</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/print.html">print</a></span><span class="op">(</span><span class="va">first_tokens</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/pkg/mclm/man/re.html">re</a></span><span class="op">(</span><span class="st">"..+(tion|ment|ness|ity)$"</span><span class="op">)</span><span class="op">]</span>, <span class="fl">10</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Token sequence of length 80
+idx          token
+--- --------------
+  1  investigation
+  2       election
+  3       election
+  4       election
+  5       election
+  6   registration
+  7       election
+  8 administration
+  9     department
+ 10 implementation
+...</code></pre>
+</div>
+<div class="sourceCode" id="cb80"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/mclm/man/n_tokens.html">n_tokens</a></span><span class="op">(</span><span class="va">first_tokens</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/pkg/mclm/man/re.html">re</a></span><span class="op">(</span><span class="st">"..+(tion|ment|ness|ity)$"</span><span class="op">)</span><span class="op">]</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 80</code></pre>
+</div>
+<div class="sourceCode" id="cb82"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/mclm/man/n_tokens.html">n_tokens</a></span><span class="op">(</span><span class="va">first_tokens</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/pkg/mclm/man/re.html">re</a></span><span class="op">(</span><span class="st">"..+(tion|ment|ness|ity)$"</span><span class="op">)</span><span class="op">]</span><span class="op">)</span> <span class="op">/</span> <span class="va">d</span><span class="op">$</span><span class="va">n_tok</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.036</code></pre>
+</div>
+<div class="sourceCode" id="cb84"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/mclm/man/n_tokens.html">n_tokens</a></span><span class="op">(</span><span class="va">first_tokens</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/pkg/mclm/man/re.html">re</a></span><span class="op">(</span><span class="st">"..+(tion|ment|ness|ity)$"</span><span class="op">)</span><span class="op">]</span><span class="op">)</span> <span class="op">/</span> <span class="va">d</span><span class="op">$</span><span class="va">n_tok</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span> <span class="op">*</span> <span class="fl">10000</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 357</code></pre>
+</div>
+</div>
+<p>The code below applies such workflow to the <code>all_tokens</code> column, obtaining the proportion of tokens that are nominalizations in each of the files, and similar instructions to <code>pos_codes</code>, extracting the proportion of tokens that are nouns in each file.</p>
+<div class="cell">
+<div class="sourceCode" id="cb86"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d</span> <span class="op">&lt;-</span> <span class="va">d</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/dplyr/man/mutate.html">mutate</a></span><span class="op">(</span></span>
+<span>    p_nomin <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map.html">map_dbl</a></span><span class="op">(</span><span class="va">all_tokens</span>, <span class="op">~</span><span class="fu"><a href="https://rdrr.io/pkg/mclm/man/n_tokens.html">n_tokens</a></span><span class="op">(</span><span class="va">.x</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/pkg/mclm/man/re.html">re</a></span><span class="op">(</span><span class="st">"..+(tion|ment|ness|ity)$"</span><span class="op">)</span><span class="op">]</span><span class="op">)</span><span class="op">)</span> <span class="op">/</span> <span class="va">n_tok</span> <span class="op">*</span> <span class="fl">10000</span>,</span>
+<span>    p_noun <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map.html">map_dbl</a></span><span class="op">(</span><span class="va">pos_codes</span>, <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/n_tokens.html">n_tokens</a></span><span class="op">(</span><span class="va">.x</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/pkg/mclm/man/re.html">re</a></span><span class="op">(</span><span class="st">"NN"</span><span class="op">)</span><span class="op">]</span><span class="op">)</span><span class="op">)</span> <span class="op">/</span> <span class="va">n_tok</span></span>
+<span>  <span class="op">)</span></span>
+<span><span class="va">d</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/pkg/dplyr/man/select.html">select</a></span><span class="op">(</span><span class="va">all_tokens</span>, <span class="va">pos_codes</span>, <span class="va">p_nomin</span>, <span class="va">p_noun</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 500 × 4
+   all_tokens       pos_codes        p_nomin p_noun
+   &lt;list&gt;           &lt;list&gt;             &lt;dbl&gt;  &lt;dbl&gt;
+ 1 &lt;tokens [2,242]&gt; &lt;tokens [2,242]&gt;    357.  0.244
+ 2 &lt;tokens [2,277]&gt; &lt;tokens [2,277]&gt;    211.  0.250
+ 3 &lt;tokens [2,275]&gt; &lt;tokens [2,275]&gt;    224.  0.256
+ 4 &lt;tokens [2,216]&gt; &lt;tokens [2,216]&gt;    370.  0.225
+ 5 &lt;tokens [2,244]&gt; &lt;tokens [2,244]&gt;    241.  0.223
+ 6 &lt;tokens [2,263]&gt; &lt;tokens [2,263]&gt;    305.  0.226
+ 7 &lt;tokens [2,270]&gt; &lt;tokens [2,270]&gt;    304.  0.224
+ 8 &lt;tokens [2,187]&gt; &lt;tokens [2,187]&gt;    251.  0.220
+ 9 &lt;tokens [2,234]&gt; &lt;tokens [2,234]&gt;    255.  0.269
+10 &lt;tokens [2,282]&gt; &lt;tokens [2,282]&gt;    153.  0.208
+# … with 490 more rows</code></pre>
+</div>
+</div>
+</section><section id="build-many-columns-at-once-and-unnest" class="level2" data-number="4.8"><h2 data-number="4.8" class="anchored" data-anchor-id="build-many-columns-at-once-and-unnest">
+<span class="header-section-number">4.8</span> Build many columns at once and <code>unnest()</code>
+</h2>
+<p>For the other POS-tags, we can do the same we did for the nouns. In the case of personal pronouns (“PPSS”), adjectives (“JJ”), negations (“*“), adverbs (”RB”) and past tenses (“QL”), which are very infrequent, we’ll multiply the proportions by 10 000. Therefore, given a <code>tokens</code> object with POS-tags <code>pos</code> and a number of tokens <code>nt</code>, for each of these regular expressions <code>regex</code> we will run the exact same code: <code>n_tokens(pos[re(regex)])/n_tok * 10000</code>. In order to avoid redundancy, we can do this for each POS-tag with <code><a href="https://rdrr.io/pkg/purrr/man/map.html">map_dbl()</a></code>.</p>
+<div class="cell">
+<div class="sourceCode" id="cb88"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">pos</span> <span class="op">&lt;-</span> <span class="va">d</span><span class="op">$</span><span class="va">pos_codes</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span></span>
+<span><span class="va">nt</span> <span class="op">&lt;-</span> <span class="va">d</span><span class="op">$</span><span class="va">n_tok</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span></span>
+<span><span class="va">pos_mapping</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span>p_ppss <span class="op">=</span> <span class="st">"PPSS"</span>, p_adj <span class="op">=</span> <span class="st">"JJ"</span>,</span>
+<span>                 p_neg <span class="op">=</span> <span class="st">"[*]"</span>, p_adv <span class="op">=</span> <span class="st">"RB"</span>, p_qual <span class="op">=</span> <span class="st">"QL"</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map.html">map_dbl</a></span><span class="op">(</span><span class="va">pos_mapping</span>, <span class="op">~</span><span class="fu"><a href="https://rdrr.io/pkg/mclm/man/n_tokens.html">n_tokens</a></span><span class="op">(</span><span class="va">pos</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/pkg/mclm/man/re.html">re</a></span><span class="op">(</span><span class="va">.x</span><span class="op">)</span><span class="op">]</span><span class="op">)</span><span class="op">/</span><span class="va">nt</span> <span class="op">*</span> <span class="fl">10000</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>p_ppss  p_adj  p_neg  p_adv p_qual 
+    36    464     13    205     27 </code></pre>
+</div>
+<div class="sourceCode" id="cb90"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map.html">map_dbl</a></span><span class="op">(</span><span class="va">pos_mapping</span>, <span class="op">~</span><span class="fu"><a href="https://rdrr.io/pkg/mclm/man/n_tokens.html">n_tokens</a></span><span class="op">(</span><span class="va">pos</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/pkg/mclm/man/re.html">re</a></span><span class="op">(</span><span class="va">.x</span><span class="op">)</span><span class="op">]</span><span class="op">)</span><span class="op">/</span><span class="va">nt</span> <span class="op">*</span> <span class="fl">10000</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/pkg/tibble/man/as_tibble.html">as_tibble_row</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 5
+  p_ppss p_adj p_neg p_adv p_qual
+   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;
+1   35.7  464.  13.4  205.   26.8</code></pre>
+</div>
+</div>
+<p>If we wrap this <code><a href="https://rdrr.io/pkg/purrr/man/map.html">map_dbl()</a></code> call inside a function <code>pos_proportions()</code>, we can easily apply ti to any <code>pos</code> and <code>nt</code> values.</p>
+<div class="cell">
+<div class="sourceCode" id="cb92"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">pos_proportions</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">pos</span>, <span class="va">nt</span><span class="op">)</span> <span class="op">{</span></span>
+<span>  <span class="va">pos_mapping</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span>p_ppss <span class="op">=</span> <span class="st">"PPSS"</span>, p_adj <span class="op">=</span> <span class="st">"JJ"</span>, p_neg <span class="op">=</span> <span class="st">"[*]"</span>,</span>
+<span>                   p_adv <span class="op">=</span> <span class="st">"RB"</span>, p_qual <span class="op">=</span> <span class="st">"QL"</span><span class="op">)</span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map.html">map_dbl</a></span><span class="op">(</span><span class="va">pos_mapping</span>, <span class="op">~</span><span class="fu"><a href="https://rdrr.io/pkg/mclm/man/n_tokens.html">n_tokens</a></span><span class="op">(</span><span class="va">pos</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/pkg/mclm/man/re.html">re</a></span><span class="op">(</span><span class="va">.x</span><span class="op">)</span><span class="op">]</span><span class="op">)</span><span class="op">/</span><span class="va">nt</span> <span class="op">*</span> <span class="fl">10000</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> </span>
+<span>    <span class="fu"><a href="https://rdrr.io/pkg/tibble/man/as_tibble.html">as_tibble_row</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="op">}</span></span>
+<span><span class="fu">pos_proportions</span><span class="op">(</span><span class="va">pos</span>, <span class="va">nt</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 5
+  p_ppss p_adj p_neg p_adv p_qual
+   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;
+1   35.7  464.  13.4  205.   26.8</code></pre>
+</div>
+</div>
+<p>We can then apply our custom function <code>pos_proportions</code> to each element pair made from an item of <code>pos_codes</code> and one of <code>n_tok</code> using <code><a href="https://rdrr.io/pkg/purrr/man/map2.html">map2()</a></code>, which will create a column <em>of tibbles</em>. Afterwards, <code><a href="https://rdrr.io/pkg/tidyr/man/nest.html">unnest()</a></code> turns the columns of those mini tibbles into columns of our dataframe.</p>
+<div class="cell">
+<div class="sourceCode" id="cb94"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d</span> <span class="op">&lt;-</span> <span class="va">d</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/pkg/dplyr/man/mutate.html">mutate</a></span><span class="op">(</span>pos_prop <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map2.html">map2</a></span><span class="op">(</span><span class="va">pos_codes</span>, <span class="va">n_tok</span>, <span class="va">pos_proportions</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="va">d</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/pkg/dplyr/man/select.html">select</a></span><span class="op">(</span><span class="va">pos_codes</span>, <span class="va">n_tok</span>, <span class="va">pos_prop</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 500 × 3
+   pos_codes        n_tok pos_prop        
+   &lt;list&gt;           &lt;dbl&gt; &lt;list&gt;          
+ 1 &lt;tokens [2,242]&gt;  2242 &lt;tibble [1 × 5]&gt;
+ 2 &lt;tokens [2,277]&gt;  2277 &lt;tibble [1 × 5]&gt;
+ 3 &lt;tokens [2,275]&gt;  2275 &lt;tibble [1 × 5]&gt;
+ 4 &lt;tokens [2,216]&gt;  2216 &lt;tibble [1 × 5]&gt;
+ 5 &lt;tokens [2,244]&gt;  2244 &lt;tibble [1 × 5]&gt;
+ 6 &lt;tokens [2,263]&gt;  2263 &lt;tibble [1 × 5]&gt;
+ 7 &lt;tokens [2,270]&gt;  2270 &lt;tibble [1 × 5]&gt;
+ 8 &lt;tokens [2,187]&gt;  2187 &lt;tibble [1 × 5]&gt;
+ 9 &lt;tokens [2,234]&gt;  2234 &lt;tibble [1 × 5]&gt;
+10 &lt;tokens [2,282]&gt;  2282 &lt;tibble [1 × 5]&gt;
+# … with 490 more rows</code></pre>
+</div>
+<div class="sourceCode" id="cb96"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/pkg/dplyr/man/select.html">select</a></span><span class="op">(</span><span class="va">pos_codes</span>, <span class="va">n_tok</span>, <span class="va">pos_prop</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/pkg/tidyr/man/nest.html">unnest</a></span><span class="op">(</span><span class="va">pos_prop</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 500 × 7
+   pos_codes        n_tok p_ppss p_adj p_neg p_adv p_qual
+   &lt;list&gt;           &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;
+ 1 &lt;tokens [2,242]&gt;  2242   35.7  464. 13.4   205.   26.8
+ 2 &lt;tokens [2,277]&gt;  2277   39.5  457.  8.78  193.   13.2
+ 3 &lt;tokens [2,275]&gt;  2275   30.8  541. 13.2   163.   39.6
+ 4 &lt;tokens [2,216]&gt;  2216   18.1  731.  4.51  311.   99.3
+ 5 &lt;tokens [2,244]&gt;  2244   62.4  584.  0     196.   26.7
+ 6 &lt;tokens [2,263]&gt;  2263  128.   535.  8.84  163.   13.3
+ 7 &lt;tokens [2,270]&gt;  2270   48.5  604.  8.81  163.   26.4
+ 8 &lt;tokens [2,187]&gt;  2187   45.7  590.  4.57  306.   77.7
+ 9 &lt;tokens [2,234]&gt;  2234   44.8  389.  8.95  179.   22.4
+10 &lt;tokens [2,282]&gt;  2282  101.   482.  4.38  184.   48.2
+# … with 490 more rows</code></pre>
+</div>
+<div class="sourceCode" id="cb98"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d</span> <span class="op">&lt;-</span> <span class="va">d</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/pkg/tidyr/man/nest.html">unnest</a></span><span class="op">(</span><span class="va">pos_prop</span><span class="op">)</span> <span class="co"># assign to d</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section><section id="sec-mat" class="level2" data-number="4.9"><h2 data-number="4.9" class="anchored" data-anchor-id="sec-mat">
+<span class="header-section-number">4.9</span> Obtain matrix</h2>
+<p>The last we have to do is select the columns we are actually interested in, turning our output into a matrix and setting the rownames with the short version of our filenames.</p>
+<div class="cell">
+<div class="sourceCode" id="cb99"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d</span> <span class="op">&lt;-</span> <span class="va">d</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/pkg/dplyr/man/select.html">select</a></span><span class="op">(</span><span class="va">ttr</span>, <span class="va">word_len</span>, <span class="fu"><a href="https://rdrr.io/pkg/tidyselect/man/starts_with.html">starts_with</a></span><span class="op">(</span><span class="st">"p_"</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/colnames.html">colnames</a></span><span class="op">(</span><span class="va">d</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] "ttr"      "word_len" "p_bigr"   "p_pobi"   "p_mw"     "p_c"     
+ [7] "p_nomin"  "p_noun"   "p_ppss"   "p_adj"    "p_neg"    "p_adv"   
+[13] "p_qual"  </code></pre>
+</div>
+<div class="sourceCode" id="cb101"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d_mat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/matrix.html">as.matrix</a></span><span class="op">(</span><span class="va">d</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/colnames.html">rownames</a></span><span class="op">(</span><span class="va">d_mat</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/short_names.html">short_names</a></span><span class="op">(</span><span class="va">tei_fnames</span><span class="op">)</span></span>
+<span><span class="va">d_mat</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">10</span>,<span class="op">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     ttr word_len p_bigr p_pobi p_mw   p_c p_nomin p_noun p_ppss p_adj p_neg
+a01 0.36      5.0   0.82   0.21 13.4 0.113     357   0.24     36   464  13.4
+a02 0.38      4.9   0.84   0.19 17.6 0.118     211   0.25     40   457   8.8
+a03 0.34      4.9   0.81   0.19 17.6 0.110     224   0.26     31   541  13.2
+a04 0.38      5.2   0.84   0.23  4.5 0.088     370   0.22     18   731   4.5
+a05 0.32      4.8   0.77   0.21  0.0 0.094     241   0.22     62   584   0.0
+a06 0.35      4.9   0.81   0.20 53.0 0.114     305   0.23    128   535   8.8
+a07 0.37      5.1   0.83   0.20 17.6 0.105     304   0.22     48   604   8.8
+a08 0.36      4.9   0.81   0.21  4.6 0.084     251   0.22     46   590   4.6
+a09 0.38      4.9   0.82   0.18 17.9 0.097     255   0.27     45   389   9.0
+a10 0.37      4.8   0.83   0.22  4.4 0.120     153   0.21    101   482   4.4
+    p_adv p_qual
+a01   205     27
+a02   193     13
+a03   163     40
+a04   311     99
+a05   196     27
+a06   163     13
+a07   163     26
+a08   306     78
+a09   179     22
+a10   184     48</code></pre>
+</div>
+</div>
+</section><section id="sec-full" class="level2" data-number="4.10"><h2 data-number="4.10" class="anchored" data-anchor-id="sec-full">
+<span class="header-section-number">4.10</span> Summary</h2>
+<p>This section showed the process of creating a matrix with proportions for Factor Analysis from a list of XML files. It paused the workflow at different stages in order to show what each step did and explain what the different functions try to achieve, but in practice it could all be done in one chain. Such code is shown below.</p>
+<!-- NOTE we are shortening the names!! -->
+<div class="cell">
+<div class="sourceCode" id="cb103"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/tibble/man/as_tibble.html">as_tibble</a></span><span class="op">(</span><span class="va">tei_fnames</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/dplyr/man/mutate.html">mutate</a></span><span class="op">(</span></span>
+<span>    xml <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map.html">map</a></span><span class="op">(</span><span class="va">filename</span>, <span class="va">read_xml</span><span class="op">)</span>,</span>
+<span>    ns <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map.html">map</a></span><span class="op">(</span><span class="va">xml</span>, <span class="va">xml_ns</span><span class="op">)</span>,</span>
+<span>    token_tags <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map2.html">map2</a></span><span class="op">(</span><span class="va">xml</span>, <span class="va">ns</span>, <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/find_xpath.html">find_xpath</a></span><span class="op">(</span><span class="va">.x</span>, <span class="st">"//d1:w | //d1:mw | //d1:c"</span>, namespaces <span class="op">=</span> <span class="va">.y</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>    word_tags <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map2.html">map2</a></span><span class="op">(</span><span class="va">xml</span>, <span class="va">ns</span>, <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/find_xpath.html">find_xpath</a></span><span class="op">(</span><span class="va">.x</span>, <span class="st">"//d1:w"</span>, namespaces <span class="op">=</span> <span class="va">.y</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>    mw_tags <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map2.html">map2</a></span><span class="op">(</span><span class="va">xml</span>, <span class="va">ns</span>, <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/find_xpath.html">find_xpath</a></span><span class="op">(</span><span class="va">.x</span>, <span class="st">"//d1:mw"</span>, namespaces <span class="op">=</span> <span class="va">.y</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>    punctuation_tags <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map2.html">map2</a></span><span class="op">(</span><span class="va">xml</span>, <span class="va">ns</span>, <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/find_xpath.html">find_xpath</a></span><span class="op">(</span><span class="va">.x</span>, <span class="st">"//d1:c"</span>, namespaces <span class="op">=</span> <span class="va">.y</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>    all_tokens <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map.html">map</a></span><span class="op">(</span><span class="va">token_tags</span>, <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/pkg/xml2/man/xml_text.html">xml_text</a></span><span class="op">(</span><span class="va">.x</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/r/base/chartr.html">tolower</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/cleanup_spaces.html">cleanup_spaces</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/as_tokens.html">as_tokens</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>    words <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map.html">map</a></span><span class="op">(</span><span class="va">word_tags</span>, <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/pkg/xml2/man/xml_text.html">xml_text</a></span><span class="op">(</span><span class="va">.x</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/r/base/chartr.html">tolower</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/cleanup_spaces.html">cleanup_spaces</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/as_tokens.html">as_tokens</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>    pos_codes <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map.html">map</a></span><span class="op">(</span><span class="va">token_tags</span>, <span class="kw">function</span><span class="op">(</span><span class="va">toks</span><span class="op">)</span> <span class="op">{</span></span>
+<span>      <span class="va">most_pos</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/xml2/man/xml_attr.html">xml_attr</a></span><span class="op">(</span><span class="va">toks</span>, <span class="st">"type"</span><span class="op">)</span></span>
+<span>      <span class="va">mw_pos</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/xml2/man/xml_attr.html">xml_attr</a></span><span class="op">(</span><span class="va">toks</span>, <span class="st">"pos"</span><span class="op">)</span></span>
+<span>      <span class="va">most_pos</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/NA.html">is.na</a></span><span class="op">(</span><span class="va">most_pos</span><span class="op">)</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="va">mw_pos</span><span class="op">[</span><span class="op">!</span><span class="fu"><a href="https://rdrr.io/r/base/NA.html">is.na</a></span><span class="op">(</span><span class="va">mw_pos</span><span class="op">)</span><span class="op">]</span></span>
+<span>      <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/as_tokens.html">as_tokens</a></span><span class="op">(</span><span class="va">most_pos</span><span class="op">)</span></span>
+<span>    <span class="op">}</span><span class="op">)</span>,</span>
+<span>    bigrams <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map.html">map</a></span><span class="op">(</span><span class="va">all_tokens</span>, <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html">paste</a></span><span class="op">(</span><span class="va">.x</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">.x</span><span class="op">[</span><span class="op">-</span><span class="fl">1</span><span class="op">]</span>, <span class="st">"EOF"</span><span class="op">)</span>, sep <span class="op">=</span> <span class="st">"|"</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/as_tokens.html">as_tokens</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>    pos_bigrams <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map.html">map</a></span><span class="op">(</span><span class="va">pos_codes</span>, <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html">paste</a></span><span class="op">(</span><span class="va">.x</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">.x</span><span class="op">[</span><span class="op">-</span><span class="fl">1</span><span class="op">]</span>, <span class="st">"EOF"</span><span class="op">)</span>, sep <span class="op">=</span> <span class="st">"|"</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/as_tokens.html">as_tokens</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>    n_tok <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map.html">map_dbl</a></span><span class="op">(</span><span class="va">all_tokens</span>, <span class="va">n_tokens</span><span class="op">)</span>,</span>
+<span>    ttr <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map.html">map_dbl</a></span><span class="op">(</span><span class="va">all_tokens</span>, <span class="va">n_types</span><span class="op">)</span><span class="op">/</span><span class="va">n_tok</span>,</span>
+<span>    p_bigr <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map.html">map_dbl</a></span><span class="op">(</span><span class="va">bigrams</span>, <span class="va">n_types</span><span class="op">)</span> <span class="op">/</span> <span class="va">n_tok</span>,</span>
+<span>    p_pobi <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map.html">map_dbl</a></span><span class="op">(</span><span class="va">pos_bigrams</span>, <span class="va">n_types</span><span class="op">)</span> <span class="op">/</span> <span class="va">n_tok</span>,</span>
+<span>    p_mw <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map.html">map_dbl</a></span><span class="op">(</span><span class="va">mw_tags</span>, <span class="va">length</span><span class="op">)</span> <span class="op">/</span> <span class="va">n_tok</span> <span class="op">*</span> <span class="fl">10000</span>,</span>
+<span>    p_c <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map.html">map_dbl</a></span><span class="op">(</span><span class="va">punctuation_tags</span>, <span class="va">length</span><span class="op">)</span> <span class="op">/</span> <span class="va">n_tok</span>,</span>
+<span>    word_len <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map.html">map_dbl</a></span><span class="op">(</span><span class="va">words</span>, <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/nchar.html">nchar</a></span><span class="op">(</span><span class="va">.x</span><span class="op">)</span><span class="op">)</span><span class="op">/</span><span class="fu"><a href="https://rdrr.io/pkg/mclm/man/n_tokens.html">n_tokens</a></span><span class="op">(</span><span class="va">.x</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>    p_nomin <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map.html">map_dbl</a></span><span class="op">(</span><span class="va">all_tokens</span>, <span class="op">~</span><span class="fu"><a href="https://rdrr.io/pkg/mclm/man/n_tokens.html">n_tokens</a></span><span class="op">(</span><span class="va">.x</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/pkg/mclm/man/re.html">re</a></span><span class="op">(</span><span class="st">"..+(tion|ment|ness|ity)$"</span><span class="op">)</span><span class="op">]</span><span class="op">)</span><span class="op">)</span> <span class="op">/</span> <span class="va">n_tok</span> <span class="op">*</span> <span class="fl">10000</span>,</span>
+<span>    p_noun <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map.html">map_dbl</a></span><span class="op">(</span><span class="va">pos_codes</span>, <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/n_tokens.html">n_tokens</a></span><span class="op">(</span><span class="va">.x</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/pkg/mclm/man/re.html">re</a></span><span class="op">(</span><span class="st">"NN"</span><span class="op">)</span><span class="op">]</span><span class="op">)</span><span class="op">)</span> <span class="op">/</span> <span class="va">n_tok</span>,</span>
+<span>    sp <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map2.html">map2</a></span><span class="op">(</span><span class="va">pos_codes</span>, <span class="va">n_tok</span>, <span class="va">small_proportions</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/tidyr/man/nest.html">unnest</a></span><span class="op">(</span><span class="va">sp</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/dplyr/man/mutate.html">mutate</a></span><span class="op">(</span>filename <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/short_names.html">short_names</a></span><span class="op">(</span><span class="va">filename</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/dplyr/man/select.html">select</a></span><span class="op">(</span><span class="va">filename</span>, <span class="va">ttr</span>, <span class="va">word_len</span>, <span class="fu"><a href="https://rdrr.io/pkg/tidyselect/man/starts_with.html">starts_with</a></span><span class="op">(</span><span class="st">"p_"</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="va">d_mat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html">data.frame</a></span><span class="op">(</span><span class="va">d</span>, row.names <span class="op">=</span> <span class="st">"filename"</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/base/matrix.html">as.matrix</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>And we are ready to run Factor Analysis!</p>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Save and read
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You might have noticed that in the final piece of code we defined the rownames of the matrix in a different way! In <a href="#sec-mat">Section&nbsp;4.9</a>, <code>d</code> doesn’t contain the filenames, and instead we added the rownames with <code>rownames(d_mat) &lt;- short_names(tei_fnames)</code>. In <a href="#sec-full">Section&nbsp;4.10</a>, instead, since we never removed the <code>filename</code> column, we turn it into its short version and then include it as the first column of the final output. If we do this, we can then set the values of the <code>filename</code> column as the rownames of the matrix by first turning <code>d</code> into a data frame with <code>data.frame(d, row.names = "filename")</code>.</p>
+<p>Why would we do that? Well, with the new <code>d</code> that includes filenames, we can save the tibble for future use and analysis using <code><a href="https://rdrr.io/pkg/readr/man/write_delim.html">readr::write_tsv()</a></code><a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> and then read it with <code><a href="https://rdrr.io/pkg/readr/man/read_delim.html">readr::read_tsv()</a></code>. After reading it again, we can turn it into a matrix setting the names of the <code>filename</code> column as rownames. This is done in the <a href="../slides/factor-analysis.html">Factor Analysis slides</a> too!</p>
+<div class="cell">
+<div class="sourceCode" id="cb104"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/readr/man/write_delim.html">write_tsv</a></span><span class="op">(</span><span class="va">d</span>, <span class="fu">here</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/here/man/here.html">here</a></span><span class="op">(</span><span class="st">"studies"</span>, <span class="st">"register-analysis.tsv"</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="va">d_mat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/readr/man/read_delim.html">read_tsv</a></span><span class="op">(</span><span class="fu">here</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/here/man/here.html">here</a></span><span class="op">(</span><span class="st">"studies"</span>, <span class="st">"register-analysis.tsv"</span><span class="op">)</span>, show_col_types <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html">data.frame</a></span><span class="op">(</span>row.names <span class="op">=</span> <span class="st">"filename"</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/base/matrix.html">as.matrix</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</section></section><section id="sec-fa" class="level1" data-number="5"><h1 data-number="5">
+<span class="header-section-number">5</span> Factor Analysis</h1>
+<p>Factor Analysis can be run in R with the base function <code><a href="https://rdrr.io/r/stats/factanal.html">factanal()</a></code>, which takes a matrix like <code>d_mat</code> and a number of factors to reduce it to. An important argument is <code>rotation</code>: the default, “varimax”, assumes that the factors are orthogonal (uncorrelated), whereas “promax” allows for some correlation between them. This is the setting recommended by both <span class="citation" data-cites="levshina_2015">Levshina (<a href="#ref-levshina_2015" role="doc-biblioref">2015</a>)</span> and <span class="citation" data-cites="biber_1988">Biber (<a href="#ref-biber_1988" role="doc-biblioref">1988</a>)</span>:</p>
+<blockquote class="blockquote">
+<p>In the description of textual variation, where the factors represent underlying textual dimensions, there is no reason to assume that the factors are completely uncorrelated, and therefore a Promax rotation is recommended. <span class="citation" data-cites="biber_1988">(<a href="#ref-biber_1988" role="doc-biblioref">Biber 1988, 85</a>)</span></p>
+</blockquote>
+<p>In addition, if we want to obtain the scores of the different files, we have to ask for it by setting the <code>scores</code> argument to either “regression” or “Bartlett”.</p>
+<div class="cell">
+<div class="sourceCode" id="cb105"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d_fa</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/factanal.html">factanal</a></span><span class="op">(</span><span class="va">d_mat</span>, <span class="fl">4</span>, scores <span class="op">=</span> <span class="st">"regression"</span>, rotation <span class="op">=</span> <span class="st">"promax"</span><span class="op">)</span></span>
+<span><span class="va">d_fa</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+factanal(x = d_mat, factors = 4, scores = "regression", rotation = "promax")
+
+Uniquenesses:
+     ttr word_len   p_bigr   p_pobi     p_mw      p_c  p_nomin   p_noun 
+   0.014    0.057    0.096    0.241    0.005    0.544    0.245    0.250 
+  p_ppss    p_adj    p_neg    p_adv   p_qual 
+   0.422    0.383    0.132    0.414    0.510 
+
+Loadings:
+         Factor1 Factor2 Factor3 Factor4
+ttr                       1.006         
+word_len  1.013   0.121   0.163         
+p_bigr                    0.888   0.183 
+p_pobi   -0.228           0.305   0.607 
+p_mw      0.147   1.129                 
+p_c      -0.249   0.510                 
+p_nomin   0.934   0.108  -0.213         
+p_noun    0.563                  -0.431 
+p_ppss   -0.272   0.369  -0.120   0.260 
+p_adj     0.818                   0.300 
+p_neg             0.995                 
+p_adv    -0.256          -0.197   0.605 
+p_qual    0.311  -0.118           0.780 
+
+               Factor1 Factor2 Factor3 Factor4
+SS loadings       3.27    2.71    2.03    1.74
+Proportion Var    0.25    0.21    0.16    0.13
+Cumulative Var    0.25    0.46    0.62    0.75
+
+Factor Correlations:
+        Factor1 Factor2 Factor3 Factor4
+Factor1   1.000  0.1266 -0.7496   0.426
+Factor2   0.127  1.0000 -0.0532  -0.262
+Factor3  -0.750 -0.0532  1.0000  -0.387
+Factor4   0.426 -0.2624 -0.3871   1.000
+
+Test of the hypothesis that 4 factors are sufficient.
+The chi square statistic is 371 on 32 degrees of freedom.
+The p-value is 2.3e-59 </code></pre>
+</div>
+</div>
+<p>The default printed output includes the call, the uniquenesses of the variables, their loadings in each factor, the variance explained by each factor, the correlation between the factors (when <code>rotation = "promax"</code>) and the statistic testing that the chosen number of factors is sufficient. In this case, we have a few variables with very high uniqueness (which might lead us to exclude them) and a few that load high in more than one factor, as well as a cumulative variance explained of 0.75. The p-value is really low, indicating that 4 factors are not enough, but increasing them does not really help the model. For such exploratory analysis, our focus lies on the interpretability of the factors.</p>
+<p>In order to easily report the loadings of the factors, we can extract them with <code><a href="https://rdrr.io/r/stats/loadings.html">loadings()</a></code> and turn them into a tibble with <code><a href="https://rdrr.io/pkg/tibble/man/as_tibble.html">as_tibble()</a></code>, although in the middle we have to remove the “loadings” class for <code><a href="https://rdrr.io/pkg/tibble/man/as_tibble.html">as_tibble()</a></code> to work. If we turn irrelevant loadings (here with a threshold of 0.3) to <code>NA</code> and we have set <code>options(knitr.kable.NA = "")</code>, we can hide them.</p>
+<div class="cell">
+<div class="sourceCode" id="cb107"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d_loadings</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/loadings.html">loadings</a></span><span class="op">(</span><span class="va">d_fa</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/base/class.html">unclass</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/tibble/man/as_tibble.html">as_tibble</a></span><span class="op">(</span>rownames <span class="op">=</span> <span class="st">"Variable"</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/dplyr/man/mutate.html">mutate</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/pkg/dplyr/man/across.html">across</a></span><span class="op">(</span><span class="fu">where</span><span class="op">(</span><span class="va">is.numeric</span><span class="op">)</span>, <span class="op">~</span><span class="fu"><a href="https://rdrr.io/pkg/dplyr/man/if_else.html">if_else</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/MathFun.html">abs</a></span><span class="op">(</span><span class="va">.x</span><span class="op">)</span> <span class="op">&lt;</span> <span class="fl">0.3</span>, <span class="cn">NA_real_</span>, <span class="va">.x</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="fu">kbl</span><span class="op">(</span><span class="va">d_loadings</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu">kable_paper</span><span class="op">(</span>full_width <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="tbl-loadings" class="anchored">
+
+<table class=" lightable-paper" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>Table&nbsp;2:  Loadings of the Factor Analysis. </caption>
+ <thead><tr>
+<th style="text-align:left;"> Variable </th>
+   <th style="text-align:right;"> Factor1 </th>
+   <th style="text-align:right;"> Factor2 </th>
+   <th style="text-align:right;"> Factor3 </th>
+   <th style="text-align:right;"> Factor4 </th>
+  </tr></thead>
+<tbody>
+<tr>
+<td style="text-align:left;"> ttr </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;"> 1.01 </td>
+   <td style="text-align:right;">  </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> word_len </td>
+   <td style="text-align:right;"> 1.01 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> p_bigr </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;"> 0.89 </td>
+   <td style="text-align:right;">  </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> p_pobi </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;"> 0.30 </td>
+   <td style="text-align:right;"> 0.61 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> p_mw </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;"> 1.13 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> p_c </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;"> 0.51 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> p_nomin </td>
+   <td style="text-align:right;"> 0.93 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> p_noun </td>
+   <td style="text-align:right;"> 0.56 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;"> -0.43 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> p_ppss </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;"> 0.37 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> p_adj </td>
+   <td style="text-align:right;"> 0.82 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;"> 0.30 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> p_neg </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;"> 0.99 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> p_adv </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;"> 0.60 </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> p_qual </td>
+   <td style="text-align:right;"> 0.31 </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;">  </td>
+   <td style="text-align:right;"> 0.78 </td>
+  </tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>The scores can be retrieved with <code>$scores</code>, and then turned into a tibble with <code><a href="https://rdrr.io/pkg/tibble/man/as_tibble.html">as_tibble()</a></code>. This automatically generates nice column names. We can also add a <code>Component</code> column that collects the lowercase name of the filename, which represents the Brown component (or register) the file belongs to.</p>
+<div class="cell">
+<div class="sourceCode" id="cb108"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">scores</span> <span class="op">&lt;-</span> <span class="va">d_fa</span><span class="op">$</span><span class="va">scores</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/pkg/tibble/man/as_tibble.html">as_tibble</a></span><span class="op">(</span>rownames <span class="op">=</span> <span class="st">"File"</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/dplyr/man/mutate.html">mutate</a></span><span class="op">(</span>Component <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/mclm/man/re_convenience.html">re_retrieve_first</a></span><span class="op">(</span><span class="va">File</span>, <span class="st">"[a-z]"</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="va">scores</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 500 × 6
+   File   Factor1 Factor2 Factor3 Factor4 Component
+   &lt;chr&gt;    &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt;    
+ 1 a01    0.530     0.432   0.837  -1.09  a        
+ 2 a02   -0.148     0.543   1.63   -2.19  a        
+ 3 a03   -0.00890   0.230   0.581  -1.47  a        
+ 4 a04    1.65      0.532   1.00    0.357 a        
+ 5 a05   -0.709    -0.904  -0.169  -0.707 a        
+ 6 a06    0.677     1.28    0.917  -1.52  a        
+ 7 a07    1.02      0.920   1.18   -1.23  a        
+ 8 a08    0.115    -0.402   0.505  -0.122 a        
+ 9 a09   -0.0710    0.700   1.63   -2.47  a        
+10 a10   -0.838    -0.734   0.956  -0.791 a        
+# … with 490 more rows</code></pre>
+</div>
+</div>
+<section id="plotting-files" class="level2" data-number="5.1"><h2 data-number="5.1" class="anchored" data-anchor-id="plotting-files">
+<span class="header-section-number">5.1</span> Plotting files</h2>
+<p>Once we have the <code>scores</code> tibble, we can use it to plot the files based on certain factors. For example, <a href="#fig-a">Figure&nbsp;1</a> below plots all files based on their scores in Factors 1 and 2 and highlights the files from the “a” component.</p>
+<div class="cell">
+<div class="sourceCode" id="cb110"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">comp</span> <span class="op">&lt;-</span> <span class="st">"a"</span></span>
+<span><span class="va">this_comp</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/dplyr/man/filter.html">filter</a></span><span class="op">(</span><span class="va">scores</span>, <span class="va">Component</span> <span class="op">==</span> <span class="va">comp</span><span class="op">)</span></span>
+<span><span class="va">other_comps</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/dplyr/man/filter.html">filter</a></span><span class="op">(</span><span class="va">scores</span>, <span class="va">Component</span> <span class="op">!=</span> <span class="va">comp</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/pkg/ggplot2/man/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">other_comps</span>, <span class="fu"><a href="https://rdrr.io/pkg/ggplot2/man/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">Factor1</span>, y <span class="op">=</span> <span class="va">Factor2</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/ggplot2/man/geom_point.html">geom_point</a></span><span class="op">(</span>shape <span class="op">=</span> <span class="fl">3</span>, color <span class="op">=</span> <span class="st">"gray"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/ggplot2/man/geom_text.html">geom_text</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">this_comp</span>, label <span class="op">=</span> <span class="va">comp</span>, color <span class="op">=</span> <span class="st">"steelblue"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/ggplot2/man/geom_abline.html">geom_hline</a></span><span class="op">(</span>yintercept <span class="op">=</span> <span class="fl">0</span>, color <span class="op">=</span> <span class="st">"black"</span>, linetype <span class="op">=</span> <span class="st">"dashed"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/ggplot2/man/geom_abline.html">geom_vline</a></span><span class="op">(</span>xintercept <span class="op">=</span> <span class="fl">0</span>, color <span class="op">=</span> <span class="st">"black"</span>, linetype <span class="op">=</span> <span class="st">"dashed"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-a" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="register-analysis_files/figure-html/fig-a-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1: Scatterplot of Brown files and their scores in the first and second factors, highlighting those from the “a” component.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>We could also use <code><a href="https://rdrr.io/pkg/cowplot/man/plot_grid.html">cowplot::plot_grid()</a></code> to plot a list of these plots, each of them highlighting a different component. We can create such a list with <code><a href="https://rdrr.io/pkg/purrr/man/map.html">map()</a></code>, applying a variant of the code from above to each of the components (obtained with <code>unique(scores$Component)</code>). We can then give this list of plots as <code>plotlist</code> argument to <code><a href="https://rdrr.io/pkg/cowplot/man/plot_grid.html">plot_grid()</a></code>, resulting in <a href="#fig-plotlist">Figure&nbsp;2</a>.</p>
+<div class="cell">
+<div class="sourceCode" id="cb111"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://wilkelab.org/cowplot/">cowplot</a></span><span class="op">)</span></span>
+<span><span class="va">plots</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/purrr/man/map.html">map</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/unique.html">unique</a></span><span class="op">(</span><span class="va">scores</span><span class="op">$</span><span class="va">Component</span><span class="op">)</span>, <span class="kw">function</span><span class="op">(</span><span class="va">comp</span><span class="op">)</span> <span class="op">{</span></span>
+<span>  <span class="va">this_comp</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/dplyr/man/filter.html">filter</a></span><span class="op">(</span><span class="va">scores</span>, <span class="va">Component</span> <span class="op">==</span> <span class="va">comp</span><span class="op">)</span></span>
+<span>  <span class="va">other_comps</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/dplyr/man/filter.html">filter</a></span><span class="op">(</span><span class="va">scores</span>, <span class="va">Component</span> <span class="op">!=</span> <span class="va">comp</span><span class="op">)</span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/ggplot2/man/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">other_comps</span>, <span class="fu"><a href="https://rdrr.io/pkg/ggplot2/man/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">Factor1</span>, y <span class="op">=</span> <span class="va">Factor2</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>    <span class="fu"><a href="https://rdrr.io/pkg/ggplot2/man/geom_point.html">geom_point</a></span><span class="op">(</span>shape <span class="op">=</span> <span class="fl">3</span>, color <span class="op">=</span> <span class="st">"gray"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>    <span class="fu"><a href="https://rdrr.io/pkg/ggplot2/man/geom_point.html">geom_point</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">this_comp</span>, color <span class="op">=</span> <span class="st">"steelblue"</span>, alpha <span class="op">=</span> <span class="fl">0.8</span><span class="op">)</span> <span class="op">+</span></span>
+<span>    <span class="fu"><a href="https://rdrr.io/pkg/ggplot2/man/geom_abline.html">geom_hline</a></span><span class="op">(</span>yintercept <span class="op">=</span> <span class="fl">0</span>, color <span class="op">=</span> <span class="st">"black"</span>, linetype <span class="op">=</span> <span class="st">"dashed"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>    <span class="fu"><a href="https://rdrr.io/pkg/ggplot2/man/geom_abline.html">geom_vline</a></span><span class="op">(</span>xintercept <span class="op">=</span> <span class="fl">0</span>, color <span class="op">=</span> <span class="st">"black"</span>, linetype <span class="op">=</span> <span class="st">"dashed"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>    <span class="fu"><a href="https://rdrr.io/pkg/ggplot2/man/theme.html">theme</a></span><span class="op">(</span>axis.title <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/ggplot2/man/element.html">element_blank</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="op">}</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/pkg/cowplot/man/plot_grid.html">plot_grid</a></span><span class="op">(</span>plotlist <span class="op">=</span> <span class="va">plots</span>, labels <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/unique.html">unique</a></span><span class="op">(</span><span class="va">scores</span><span class="op">$</span><span class="va">Component</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-plotlist" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="register-analysis_files/figure-html/fig-plotlist-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;2: Scatterplots of Brown files and their scores in the first and second factors, highlighting one component at a time.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section><section id="plotting-registers" class="level2" data-number="5.2"><h2 data-number="5.2" class="anchored" data-anchor-id="plotting-registers">
+<span class="header-section-number">5.2</span> Plotting registers</h2>
+<p>Alternatively, we could obtain the centroid of each Brown component by computing the mean of the scores of its components. This can be achieved via <code><a href="https://rdrr.io/pkg/dplyr/man/group_by.html">group_by()</a></code> combined with <code><a href="https://rdrr.io/pkg/dplyr/man/summarise.html">summarize()</a></code>:</p>
+<div class="cell">
+<div class="sourceCode" id="cb112"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">scores</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/dplyr/man/group_by.html">group_by</a></span><span class="op">(</span><span class="va">Component</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/dplyr/man/summarise.html">summarize</a></span><span class="op">(</span>Factor1 <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">Factor1</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 15 × 2
+   Component  Factor1
+   &lt;chr&gt;        &lt;dbl&gt;
+ 1 a         -0.224  
+ 2 b          0.138  
+ 3 c         -0.00658
+ 4 d         -0.418  
+ 5 e          0.266  
+ 6 f         -0.268  
+ 7 g         -0.230  
+ 8 h          1.15   
+ 9 j          0.904  
+10 k         -1.36   
+11 l         -0.0854 
+12 m         -0.384  
+13 n         -0.724  
+14 p         -0.151  
+15 r         -0.395  </code></pre>
+</div>
+</div>
+<p>By default, <code><a href="https://rdrr.io/pkg/dplyr/man/summarise.html">summarize()</a></code> only returns the variables requested in its call (here <code>Factor1</code>) and the grouping variables (here <code>Component</code>). We can compute the mean of all the numeric variables by adding a call to <code><a href="https://rdrr.io/pkg/dplyr/man/across.html">across()</a></code> and selecting all numeric variables with <code>where(is.numeric)</code>. The resulting figure is shown in <a href="#fig-centroids">Figure&nbsp;3</a>.</p>
+<div class="cell">
+<div class="sourceCode" id="cb114"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">centroids</span> <span class="op">&lt;-</span> <span class="va">scores</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/dplyr/man/group_by.html">group_by</a></span><span class="op">(</span><span class="va">Component</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/magrittr/man/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/dplyr/man/summarise.html">summarize</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/pkg/dplyr/man/across.html">across</a></span><span class="op">(</span><span class="fu">where</span><span class="op">(</span><span class="va">is.numeric</span><span class="op">)</span>, <span class="va">mean</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">centroids</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 5
+  Component  Factor1 Factor2  Factor3 Factor4
+  &lt;chr&gt;        &lt;dbl&gt;   &lt;dbl&gt;    &lt;dbl&gt;   &lt;dbl&gt;
+1 a         -0.224    0.154   1.17     -1.10 
+2 b          0.138   -0.0602  0.906     0.221
+3 c         -0.00658 -0.240   1.31      0.100
+4 d         -0.418   -1.21   -0.597     0.930
+5 e          0.266    0.0557 -0.00126  -0.112
+6 f         -0.268   -0.614   0.0908    0.226</code></pre>
+</div>
+<div class="sourceCode" id="cb116"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/ggplot2/man/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">scores</span>, <span class="fu"><a href="https://rdrr.io/pkg/ggplot2/man/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">Factor1</span>, y <span class="op">=</span> <span class="va">Factor2</span>, label <span class="op">=</span> <span class="va">Component</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/ggplot2/man/geom_text.html">geom_text</a></span><span class="op">(</span>color <span class="op">=</span> <span class="st">"gray"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/ggplot2/man/geom_text.html">geom_text</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">centroids</span>, size <span class="op">=</span> <span class="fl">6</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/ggplot2/man/geom_abline.html">geom_hline</a></span><span class="op">(</span>yintercept <span class="op">=</span> <span class="fl">0</span>, color <span class="op">=</span> <span class="st">"black"</span>, linetype <span class="op">=</span> <span class="st">"dashed"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/pkg/ggplot2/man/geom_abline.html">geom_vline</a></span><span class="op">(</span>xintercept <span class="op">=</span> <span class="fl">0</span>, color <span class="op">=</span> <span class="st">"black"</span>, linetype <span class="op">=</span> <span class="st">"dashed"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-centroids" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="register-analysis_files/figure-html/fig-centroids-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3: Scatterplot of component centroids from the Brown corpus and their scores in Factors 1 and 2.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Going back to <a href="#tbl-components">Table&nbsp;1</a>, we see that components “h” and “j”, i.e.&nbsp;Miscellaneous and Learned, have the highest values along the first factor: they tend to have longer words, more nominalizations and more adjectives, whereas component “k” (General Fiction) lies on the opposite pole with shorter words and fewer nominalizations and adjectives. Across the second factor, where higher values indicate a stronger tendency towards composite tags (clitics), negation and punctuation marks, we have “l” and “p” at the top (Mystery and Detective Fiction along with Romance and Love Stories) and “d” at the bottom (Religion).</p>
+<p>However, as we could also see in <a href="#fig-plotlist">Figure&nbsp;2</a>, each register is very broadly distributed across these two factors; some of them have more clear tendencies (“g” is fully on the negative side of Factor 1; “h” is almost entirely on the positive side of Factor 2 whereas “k” is almost entirely on its negative side…) and others much less.</p>
+<p>More remains to be done in terms of description: concretely, the rest of the factors should also be interpreted and plotted to understand how (and if) the registers can be described in terms of them.</p>
+
+
+
+</section></section><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-biber_1988" class="csl-entry" role="doc-biblioentry">
+Biber, Douglas. 1988. <em>Variation Across <span>Speech</span> and <span>Writing</span></em>. First. <span>Cambridge University Press</span>. <a href="https://doi.org/10.1017/CBO9780511621024">https://doi.org/10.1017/CBO9780511621024</a>.
+</div>
+<div id="ref-levshina_2015" class="csl-entry" role="doc-biblioentry">
+Levshina, Natalia. 2015. <em>How to Do Linguistics with <span>R</span>: Data Exploration and Statistical Analysis</em>. <span>Amsterdam; Philadelphia</span>: <span>John Benjamins Publishing Company</span>.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<ol>
+<li id="fn1"><p>The type token ratio of different texts can only be compared if they have similar lengths, which is the case with the Brown corpus.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Tags can also open and close at once, if they have no “content”, e.g.&nbsp;<code>&lt;single/&gt;</code>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>It can also be an index. For example, <code>map(list_of_lists, 1)</code> will return the first element of each list in <code>list_of_lists</code>.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>In addition, if you wanted to join the elements <em>of a vector</em> together, the <code>collapse</code> argument lets you decide how.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Remember that <a href="https://readr.tidyverse.org">readr</a> is part of <a href="https://tidyverse.tidyverse.org">tidyverse</a>, so it’s already loaded!<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol></section></div></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer"><div class="nav-footer">
+      <div class="nav-footer-center">Methods in Corpus Linguistics — Mariana Montes, 2022</div>
+  </div>
+</footer>
+
+
+</body></html>

@@ -1,0 +1,323 @@
+---
+title: "Factor analysis"
+subtitle: "Methods of Corpus Linguistics (class 8)"
+author: "Mariana Montes"
+format:
+  revealjs:
+    preview-links: auto
+    multiplex: false
+    chalkboard:
+        buttons: false
+    code-fold: true
+    css: styles.css
+execute:
+  echo: true
+bibliography: bibliography.bib
+---
+
+```{r}
+#| label: setup
+#| include: false
+headings <- c("Introduction", "Interpretation", "Data extraction") 
+library(tidyverse)
+library(kableExtra)
+options(digits = 3, knitr.kable.NA = "")
+```
+
+## Outline
+
+```{r}
+#| label: outline
+#| results: asis
+#| echo: false
+for (heading in headings) {
+  cat("-", heading, "\n")
+}
+i <- 1
+```
+
+# `r headings[[i]]`
+
+## Objective
+
+- Find correlations between (numeric) variables in a dataset.
+
+- Interpret the underlying (theoretically-relevant) dimensions in the dataset.
+
+- Describe groups of texts based on these dimensions.
+
+## In register analysis
+
+@biber_1988 finds 7 underlying dimensions to 69 variables and describes textual registers based on them.
+
+E.g. Narrative emphasis (past tense, 3PP, perfect aspect, public verbs ... against adjectives, present tense.)
+
+. . .
+
+> Can we identify interpretable dimensions
+of register variation on the basis of the data and what are the relationships between the
+metaregisters, as well as more specific subsections, with regard to these dimensions?
+>
+> [@levshina_2015 353]
+
+## Unlike Correspondence Analysis
+
+Correspondence Analysis | Factor Analysis
+-- | --
+Count data | Numerical variables (often proportions)
+Relationships between columns and between rows | Correlations between variables to find underlying structure
+Biplot | Scatterplot of items based on factors
+
+<!-- TODO search "multidimensional analysis of register variation"
+
+-->
+
+## Our setup {incremental="true"}
+
+- Technical/theoretical description based on @biber_1988.
+
+- Dataset based on the Brown corpus, see study for how the variables were created.
+<!-- TODO add link to study and fix URL to dataset-->
+
+- Base R `factanal()` to run Factor Analysis and custom functions to examine it.
+
+```{r}
+#| label: start
+#| code-fold: false
+library(tidyverse)
+library(GGally) # to plot correlogram
+library(xml2) # to read examples from files
+path <- here::here("studies", "register-analysis.tsv")
+dataset <- read_tsv(path, show_col_types = FALSE)
+fa <- dataset %>% data.frame(row.names = "filename") %>% 
+  as.matrix() %>% factanal(factors = 4, scores = "regression")
+```
+
+<!-- NOTE showing without promax so I can have negative loadings -->
+
+## Dataset (`r nrow(dataset)` rows, `r length(dataset)` columns)
+
+```{r}
+#| label: dataset
+dataset %>% kbl() %>% kable_paper(font_size = 22) %>% 
+  scroll_box(height = "80vh", width = "100vw")
+```
+
+## Output of `factanal()`
+
+```{r}
+#| label: factanal
+fa
+```
+
+```{r}
+#| include: false
+i <- i+1
+```
+
+# `r headings[[i]]`
+
+## Correlations between variables
+
+```{r}
+#| label: correlations
+dataset %>%
+  select(word_len, p_nomin, p_ppss, p_pobi, ttr) %>% ggpairs()
+```
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Factors 1 and 2
+
+```{r}
+#| label: f12
+#| layout-ncol: 2
+#| fig-height: 9
+fa_loads <- unclass(loadings(fa)) %>% 
+  as_tibble(rownames = "Variable") %>% 
+  mutate(across(where(is.numeric), ~ if_else(abs(.x) < 0.3, NA_real_, .x))) %>% 
+  filter(!is.na(Factor1) | !is.na(Factor2))
+kbl(fa_loads[,1:3]) %>% kable_paper(font_size = 22)
+
+scores <- as_tibble(fa$scores, rownames = "File")
+brown_mapping <- read_tsv(here::here("resources", "brown_files.tsv"), show_col_types = FALSE) %>%
+  select(Component, Register) %>% deframe()
+register_centroids <- scores %>%
+  mutate(Component = str_extract(File, "[a-z]"), Register = brown_mapping[Component]) %>%
+  group_by(Register) %>%
+  summarize(Factor1 = mean(Factor1), Factor2 = mean(Factor2))
+top_1 <- register_centroids %>% arrange(Factor1) %>%
+  tail(2) %>% summarize(across(where(is.numeric), mean))
+top_2 <- register_centroids %>% arrange(Factor2) %>%
+  tail(2) %>% summarize(across(where(is.numeric), mean))
+
+ggplot(scores, aes(x = Factor1, y = Factor2)) +
+  geom_text(aes(label = File), color = "gray", size = 6, alpha = 0.8) +
+  geom_point(data = register_centroids, size = 6) +
+  annotate("segment", x = 1.5, y = 1, xend = top_1$Factor1, yend = top_1$Factor2) +
+  annotate("label", x = 1.5, y = 1, label = "Miscellaneous & Learned", size = 8) +
+  annotate("segment", x = -0.8, y = 3, xend = top_2$Factor1, yend = top_2$Factor2) +
+  annotate("label", x = -0.8, y = 3, label = "Romance and Mystery", size = 8) +
+  theme_minimal(base_size = 23) +
+  geom_hline(yintercept = 0, color = "gray", linetype = 3) +
+  geom_vline(xintercept = 0, color = "gray", linetype = 3)
+```
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Representative files for Factor 1 {.smaller}
+
+```{r}
+#| label: representative
+get_random_s <- function(filepath) {
+  read_xml(filepath) %>% 
+    xml_find_all("//d1:s") %>% 
+    sample(1) %>% 
+    xml_children() %>% 
+    xml_text() %>% 
+    paste(collapse = " ")
+}
+set.seed(5)
+filepath <- function(file) here::here("studies", "_corpora", "brown_tei", paste0(file, ".xml"))
+right_1 <- filter(scores, Factor1 == max(Factor1))$File
+left_1 <- filter(scores, Factor1 == min(Factor1))$File
+```
+
+Pole | Preferred | Dispreferred | Random example
+- | --- | ---- | ------
+Right | long words, nominalizations, nouns adjectives | punctuation, POS bigrams, pronouns, adverbs | *`r get_random_s(filepath(right_1))`*
+Left | short words, punctuation POS bigrams, pronouns adverbs| nominalizations, nouns, adjectives  | *`r get_random_s(filepath(left_1))`*
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Representative files for Factor 2 {.smaller}
+
+```{r}
+#| label: rep2
+#| include: false
+right_2 <- filter(scores, Factor2 == max(Factor2))$File
+left_2 <- filter(scores, Factor2 == min(Factor2))$File
+```
+
+Pole | Preferred | Dispreferred | Random example
+- | ---- | ----- | ----
+Right | short words, composite expressions, negations, punctuation, personal pronouns, adverbs | nouns and adjectives | *`r get_random_s(filepath(right_2))`*
+Left | long words, nouns and adjectives | composite expressions, negations, punctuation, personal pronouns, adverbs | *`r get_random_s(filepath(left_2))`*
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+```{r}
+#| include: false
+i <- i+1
+```
+
+# `r headings[[i]]`
+
+## Loadings
+
+```{r}
+#| label: loadings
+#| code-fold: false
+#| layout: [0.6, 0.4]
+#| output-location: column
+options(knitr.kable.NA = "")
+
+fa_loads <- loadings(fa) %>% 
+  unclass() %>% 
+  as_tibble(rownames = "Variable") %>% 
+  mutate(across(
+    where(is.numeric),
+    ~ if_else(
+      abs(.x) < 0.3,
+      NA_real_,
+      .x))
+    )
+
+kbl(fa_loads) %>%
+  kable_paper(font_size = 22)
+```
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Uniqueness
+
+```{r}
+#| label: uniqueness
+#| code-fold: false
+#| layout: [1.2, 1]
+#| output-location: column
+uniqueness <- fa$uniquenesses %>% 
+  enframe(
+    name = "Variable",
+    value = "Uniqueness"
+    ) %>% 
+  arrange(desc(Uniqueness))
+uniqueness %>% kbl() %>% 
+  kable_paper(font_size = 22)
+```
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Variance
+
+```{r}
+#| label: scree
+#| code-fold: false
+#| output-location: column
+#| layout: [0.6, 0.4]
+#| fig-height: 8
+factanal_variances <- function(loadings) {
+  vars <- colSums(loadings^2)/nrow(loadings)
+  as_tibble_row(vars) %>%
+    pivot_longer(
+      everything(),
+      names_to = "Factor",
+      values_to = "Variance",
+      names_transform = ~str_remove(.x, "Factor"))
+  }
+fa7 <- dataset %>%
+  data.frame(row.names = "filename") %>%
+  as.matrix() %>% factanal(7)
+loadings(fa7) %>% factanal_variances() %>% 
+  ggplot(aes(x = Factor, y = Variance)) +
+  geom_point(size = 7) +
+  scale_y_continuous(labels = scales::label_percent()) +
+  theme_minimal(base_size = 35)
+```
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## Scores
+
+```{r}
+#| label: scores
+#| code-fold: false
+#| layout-ncol: 2
+scores <- as_tibble(fa$scores, rownames = "File")
+head(scores, 7) %>% kbl() %>% kable_paper(font_size = 22) %>% column_spec(1, bold = T)
+centroids <- scores %>% 
+  mutate(Register = str_extract(File, "[a-z]")) %>% 
+  group_by(Register) %>% 
+  summarize(across(where(is.numeric), mean))
+head(centroids, 7) %>% kbl() %>% kable_paper(font_size = 22) %>% column_spec(1, bold = T, border_left = T)
+```
+
+::: {.footer}
+`r headings[[i]]`
+:::
+
+## References {visibility="uncounted"}

@@ -161,6 +161,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <a class="dropdown-item" href="../studies/ca-trump-clinton.html">
  <span class="dropdown-text">CA applied to the Trump-Clinton speeches</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../studies/register-analysis.html">
+ <span class="dropdown-text">Simple register analysis (multidimensional analysis) of brown TEI</span></a>
+  </li>  
     </ul>
 </li>
   <li class="nav-item">
@@ -291,7 +295,7 @@ Cross-references
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org">tidyverse</a></span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/Random.html">set.seed</a></span><span class="op">(</span><span class="fl">2022</span><span class="op">)</span></span>
 <span><span class="va">rows</span> <span class="op">&lt;-</span> <span class="fl">20</span></span>
-<span><span class="va">cake_eaten</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html">tibble</a></span><span class="op">(</span></span>
+<span><span class="va">cake_eaten</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/tibble/man/tibble.html">tibble</a></span><span class="op">(</span></span>
 <span>  hunger_level <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sample.html">sample</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">100</span>, <span class="va">rows</span>, replace <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>,</span>
 <span>  cake_eaten <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sample.html">sample</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">100</span>, <span class="va">rows</span>, replace <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span><span class="op">/</span><span class="fl">100</span>,</span>
 <span>  cake_flavor <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sample.html">sample</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/rep.html">rep_len</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"vanilla"</span>, <span class="st">"chocolate"</span><span class="op">)</span>, <span class="va">rows</span><span class="op">)</span><span class="op">)</span></span>
@@ -340,7 +344,7 @@ Order of the layers
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The order of the layers is not crucial to the output. If the <code><a href="https://ggplot2.tidyverse.org/reference/geom_path.html">geom_line()</a></code> layers goes before the <code><a href="https://ggplot2.tidyverse.org/reference/geom_point.html">geom_point()</a></code> layer, it will be drawn <em>before</em> it (and therefore <em>under</em> it), but otherwise, it doesn’t change much in which order you do them. That said, it can be useful to respect a certain logical order –it’s just not <em>necessary</em> and sometimes it doesn’t make a difference. It won’t throw an error.</p>
+<p>The order of the layers is not crucial to the output. If the <code><a href="https://rdrr.io/pkg/ggplot2/man/geom_path.html">geom_line()</a></code> layers goes before the <code><a href="https://rdrr.io/pkg/ggplot2/man/geom_point.html">geom_point()</a></code> layer, it will be drawn <em>before</em> it (and therefore <em>under</em> it), but otherwise, it doesn’t change much in which order you do them. That said, it can be useful to respect a certain logical order –it’s just not <em>necessary</em> and sometimes it doesn’t make a difference. It won’t throw an error.</p>
 <p>For the assignment, please keep the order, but you’re welcome to explore and experiment what happens if you change it.</p>
 </div>
 </div>
@@ -363,7 +367,7 @@ About the example
 <p>If you would like to hide the code and make it available on demand, use <code>code-fold: true</code>, either as an option in the chunks you want to apply it to or in the metadata YAML of the Quarto file.</p>
 </div>
 </div>
-<p><a href="#fig-ggplot">Figure&nbsp;1</a> shows the output of just calling <code><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot()</a></code> with the dataset and <code>x</code> and <code>y</code> aesthetics: a basic, gray canvas with default axis labels and range of values.</p>
+<p><a href="#fig-ggplot">Figure&nbsp;1</a> shows the output of just calling <code><a href="https://rdrr.io/pkg/ggplot2/man/ggplot.html">ggplot()</a></code> with the dataset and <code>x</code> and <code>y</code> aesthetics: a basic, gray canvas with default axis labels and range of values.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-ggplot</span></span>
@@ -374,12 +378,12 @@ About the example
 <div class="cell-output-display">
 <div id="fig-ggplot" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure"><p><img src="ggplot_files/figure-html/fig-ggplot-1.png" class="img-fluid figure-img" width="672"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;1: Output of the basic <code><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot()</a></code> call.</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1: Output of the basic <code><a href="https://rdrr.io/pkg/ggplot2/man/ggplot.html">ggplot()</a></code> call.</figcaption><p></p>
 </figure>
 </div>
 </div>
 </div>
-<div class="page-columns page-full"><p><a href="#fig-point">Figure&nbsp;2</a> shows the output of adding only a point geometry with <code><a href="https://ggplot2.tidyverse.org/reference/geom_point.html">geom_point()</a></code>, additionally mapping the variable of cake flavor to the color of the points and setting the size of all points to 3. A legend with default label is automatically added.</p><div class="no-row-height column-margin column-container"><span class="">In this case I also added <code>code-fold: true</code> so that code is only seen on demand.</span></div></div>
+<div class="page-columns page-full"><p><a href="#fig-point">Figure&nbsp;2</a> shows the output of adding only a point geometry with <code><a href="https://rdrr.io/pkg/ggplot2/man/geom_point.html">geom_point()</a></code>, additionally mapping the variable of cake flavor to the color of the points and setting the size of all points to 3. A legend with default label is automatically added.</p><div class="no-row-height column-margin column-container"><span class="">In this case I also added <code>code-fold: true</code> so that code is only seen on demand.</span></div></div>
 <div class="cell">
 <details><summary>Code</summary><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-point</span></span>
@@ -397,7 +401,7 @@ About the example
 </div>
 </div>
 <p>[After a few more plots…]</p>
-<p><a href="#fig-theme-light">Figure&nbsp;3</a> adds a complete theme called <code><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_light()</a></code>, which…</p>
+<p><a href="#fig-theme-light">Figure&nbsp;3</a> adds a complete theme called <code><a href="https://rdrr.io/pkg/ggplot2/man/ggtheme.html">theme_light()</a></code>, which…</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-theme-light</span></span>
