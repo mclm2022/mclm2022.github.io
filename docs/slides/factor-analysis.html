@@ -445,6 +445,9 @@ Mariana Montes
 <li><p>Interpret the underlying (theoretically-relevant) dimensions in the dataset.</p></li>
 <li><p>Describe groups of texts based on these dimensions.</p></li>
 </ul>
+<div class="footer">
+<p>Introduction</p>
+</div>
 </section>
 <section id="in-register-analysis" class="slide level2">
 <h2>In register analysis</h2>
@@ -455,6 +458,9 @@ Mariana Montes
 <p>Can we identify interpretable dimensions of register variation on the basis of the data and what are the relationships between the metaregisters, as well as more specific subsections, with regard to these dimensions?</p>
 <p><span class="citation" data-cites="levshina_2015">(<a href="#/references" role="doc-biblioref" onclick="">Levshina 2015, 353</a>)</span></p>
 </blockquote>
+<div class="footer">
+<p>Introduction</p>
+</div>
 </div>
 </section>
 <section id="unlike-correspondence-analysis" class="slide level2">
@@ -473,7 +479,7 @@ Mariana Montes
 <tbody>
 <tr class="odd">
 <td>Count data</td>
-<td>Numerical variables (often proportions)</td>
+<td>Numeric variables</td>
 </tr>
 <tr class="even">
 <td>Relationships between columns and between rows</td>
@@ -485,44 +491,42 @@ Mariana Montes
 </tr>
 </tbody>
 </table>
-<!-- TODO search "multidimensional analysis of register variation"
-
--->
+<div class="footer">
+<p>Introduction</p>
+</div>
 </section>
 <section id="our-setup" class="slide level2" data-incremental="true">
 <h2>Our setup</h2>
 <ul>
 <li><p>Technical/theoretical description based on <span class="citation" data-cites="biber_1988">Biber (<a href="#/references" role="doc-biblioref" onclick="">1988</a>)</span>.</p></li>
-<li><p>Dataset based on the Brown corpus, see study for how the variables were created. <!-- TODO add link to study and fix URL to dataset--></p></li>
+<li><p>Dataset based on the Brown corpus, see <a href="../studies/register-analysis.qmd">study</a> for how the variables were created.</p></li>
 <li><p>Base R <code>factanal()</code> to run Factor Analysis and custom functions to examine it.</p></li>
 </ul>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="fu">library</span>(GGally) <span class="co"># to plot correlogram</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Registered S3 method overwritten by 'GGally':
-  method from   
-  +.gg   ggplot2</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">library</span>(xml2) <span class="co"># to read examples from files</span></span>
-<span id="cb3-2"><a href="#cb3-2"></a>path <span class="ot">&lt;-</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"studies"</span>, <span class="st">"register-analysis.tsv"</span>)</span>
-<span id="cb3-3"><a href="#cb3-3"></a>dataset <span class="ot">&lt;-</span> <span class="fu">read_tsv</span>(path, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb3-4"><a href="#cb3-4"></a>fa <span class="ot">&lt;-</span> dataset <span class="sc">%&gt;%</span> <span class="fu">data.frame</span>(<span class="at">row.names =</span> <span class="st">"filename"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb3-5"><a href="#cb3-5"></a>  <span class="fu">as.matrix</span>() <span class="sc">%&gt;%</span> <span class="fu">factanal</span>(<span class="at">factors =</span> <span class="dv">4</span>, <span class="at">scores =</span> <span class="st">"regression"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="fu">library</span>(GGally) <span class="co"># to plot correlogram</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="fu">library</span>(xml2) <span class="co"># to read examples from files</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a>path <span class="ot">&lt;-</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"studies"</span>, <span class="st">"register-analysis.tsv"</span>)</span>
+<span id="cb1-5"><a href="#cb1-5"></a>dataset <span class="ot">&lt;-</span> <span class="fu">read_tsv</span>(path, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb1-6"><a href="#cb1-6"></a>fa <span class="ot">&lt;-</span> dataset <span class="sc">%&gt;%</span> <span class="fu">data.frame</span>(<span class="at">row.names =</span> <span class="st">"filename"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb1-7"><a href="#cb1-7"></a>  <span class="fu">as.matrix</span>() <span class="sc">%&gt;%</span> <span class="fu">factanal</span>(<span class="at">factors =</span> <span class="dv">4</span>, <span class="at">scores =</span> <span class="st">"regression"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <!-- NOTE showing without promax so I can have negative loadings -->
+<div class="footer">
+<p>Introduction</p>
+</div>
 </section>
 <section id="dataset-500-rows-14-columns" class="slide level2">
 <h2>Dataset (500 rows, 14 columns)</h2>
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>dataset <span class="sc">%&gt;%</span> <span class="fu">kbl</span>() <span class="sc">%&gt;%</span> <span class="fu">kable_paper</span>(<span class="at">font_size =</span> <span class="dv">22</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb4-2"><a href="#cb4-2"></a>  <span class="fu">scroll_box</span>(<span class="at">height =</span> <span class="st">"80vh"</span>, <span class="at">width =</span> <span class="st">"100vw"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>dataset <span class="sc">%&gt;%</span> <span class="fu">kbl</span>() <span class="sc">%&gt;%</span> <span class="fu">kable_paper</span>(<span class="at">font_size =</span> <span class="dv">22</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb2-2"><a href="#cb2-2"></a>  <span class="fu">scroll_box</span>(<span class="at">height =</span> <span class="st">"500px"</span>, <span class="at">width =</span> <span class="st">"100vw"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
 
-<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:80vh; overflow-x: scroll; width:100vw; "><table class=" lightable-paper" style="font-size: 22px; font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto;">
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:500px; overflow-x: scroll; width:100vw; "><table class=" lightable-paper" style="font-size: 22px; font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> filename </th>
@@ -8547,13 +8551,16 @@ Mariana Montes
 
 </div>
 </div>
+<div class="footer">
+<p>Introduction</p>
+</div>
 </section>
 <section id="output-of-factanal" class="slide level2">
 <h2>Output of <code>factanal()</code></h2>
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>fa</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>fa</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>
@@ -8592,6 +8599,9 @@ The chi square statistic is 371 on 32 degrees of freedom.
 The p-value is 2.33e-59 </code></pre>
 </div>
 </div>
+<div class="footer">
+<p>Introduction</p>
+</div>
 </section></section>
 <section>
 <section id="interpretation" class="title-slide slide level1 center">
@@ -8603,12 +8613,12 @@ The p-value is 2.33e-59 </code></pre>
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a>dataset <span class="sc">%&gt;%</span></span>
-<span id="cb7-2"><a href="#cb7-2"></a>  <span class="fu">select</span>(word_len, p_nomin, p_ppss, p_pobi, ttr) <span class="sc">%&gt;%</span> <span class="fu">ggpairs</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>dataset <span class="sc">%&gt;%</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a>  <span class="fu">select</span>(word_len, p_nomin, p_ppss, p_pobi, ttr) <span class="sc">%&gt;%</span> <span class="fu">ggpairs</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 
 </div>
-<img data-src="factor-analysis_files/figure-html/correlations-1.png" width="672" class="r-stretch"><div class="footer">
+<img data-src="factor-analysis_files/figure-revealjs/correlations-1.png" width="960" class="r-stretch"><div class="footer">
 <p>Interpretation</p>
 </div>
 </section>
@@ -8617,33 +8627,33 @@ The p-value is 2.33e-59 </code></pre>
 <div>
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a>fa_loads <span class="ot">&lt;-</span> <span class="fu">unclass</span>(<span class="fu">loadings</span>(fa)) <span class="sc">%&gt;%</span> </span>
-<span id="cb8-2"><a href="#cb8-2"></a>  <span class="fu">as_tibble</span>(<span class="at">rownames =</span> <span class="st">"Variable"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb8-3"><a href="#cb8-3"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">where</span>(is.numeric), <span class="sc">~</span> <span class="fu">if_else</span>(<span class="fu">abs</span>(.x) <span class="sc">&lt;</span> <span class="fl">0.3</span>, <span class="cn">NA_real_</span>, .x))) <span class="sc">%&gt;%</span> </span>
-<span id="cb8-4"><a href="#cb8-4"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(Factor1) <span class="sc">|</span> <span class="sc">!</span><span class="fu">is.na</span>(Factor2))</span>
-<span id="cb8-5"><a href="#cb8-5"></a><span class="fu">kbl</span>(fa_loads[,<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>]) <span class="sc">%&gt;%</span> <span class="fu">kable_paper</span>(<span class="at">font_size =</span> <span class="dv">22</span>)</span>
-<span id="cb8-6"><a href="#cb8-6"></a>scores <span class="ot">&lt;-</span> <span class="fu">as_tibble</span>(fa<span class="sc">$</span>scores, <span class="at">rownames =</span> <span class="st">"File"</span>)</span>
-<span id="cb8-7"><a href="#cb8-7"></a>brown_mapping <span class="ot">&lt;-</span> <span class="fu">read_tsv</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"resources"</span>, <span class="st">"brown_files.tsv"</span>), <span class="at">show_col_types =</span> <span class="cn">FALSE</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb8-8"><a href="#cb8-8"></a>  <span class="fu">select</span>(Component, Register) <span class="sc">%&gt;%</span> <span class="fu">deframe</span>()</span>
-<span id="cb8-9"><a href="#cb8-9"></a>register_centroids <span class="ot">&lt;-</span> scores <span class="sc">%&gt;%</span></span>
-<span id="cb8-10"><a href="#cb8-10"></a>  <span class="fu">mutate</span>(<span class="at">Component =</span> <span class="fu">str_extract</span>(File, <span class="st">"[a-z]"</span>), <span class="at">Register =</span> brown_mapping[Component]) <span class="sc">%&gt;%</span></span>
-<span id="cb8-11"><a href="#cb8-11"></a>  <span class="fu">group_by</span>(Register) <span class="sc">%&gt;%</span></span>
-<span id="cb8-12"><a href="#cb8-12"></a>  <span class="fu">summarize</span>(<span class="at">Factor1 =</span> <span class="fu">mean</span>(Factor1), <span class="at">Factor2 =</span> <span class="fu">mean</span>(Factor2))</span>
-<span id="cb8-13"><a href="#cb8-13"></a>top_1 <span class="ot">&lt;-</span> register_centroids <span class="sc">%&gt;%</span> <span class="fu">arrange</span>(Factor1) <span class="sc">%&gt;%</span></span>
-<span id="cb8-14"><a href="#cb8-14"></a>  <span class="fu">tail</span>(<span class="dv">2</span>) <span class="sc">%&gt;%</span> <span class="fu">summarize</span>(<span class="fu">across</span>(<span class="fu">where</span>(is.numeric), mean))</span>
-<span id="cb8-15"><a href="#cb8-15"></a>top_2 <span class="ot">&lt;-</span> register_centroids <span class="sc">%&gt;%</span> <span class="fu">arrange</span>(Factor2) <span class="sc">%&gt;%</span></span>
-<span id="cb8-16"><a href="#cb8-16"></a>  <span class="fu">tail</span>(<span class="dv">2</span>) <span class="sc">%&gt;%</span> <span class="fu">summarize</span>(<span class="fu">across</span>(<span class="fu">where</span>(is.numeric), mean))</span>
-<span id="cb8-17"><a href="#cb8-17"></a></span>
-<span id="cb8-18"><a href="#cb8-18"></a><span class="fu">ggplot</span>(scores, <span class="fu">aes</span>(<span class="at">x =</span> Factor1, <span class="at">y =</span> Factor2)) <span class="sc">+</span></span>
-<span id="cb8-19"><a href="#cb8-19"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> File), <span class="at">color =</span> <span class="st">"gray"</span>, <span class="at">size =</span> <span class="dv">6</span>, <span class="at">alpha =</span> <span class="fl">0.8</span>) <span class="sc">+</span></span>
-<span id="cb8-20"><a href="#cb8-20"></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> register_centroids, <span class="at">size =</span> <span class="dv">6</span>) <span class="sc">+</span></span>
-<span id="cb8-21"><a href="#cb8-21"></a>  <span class="fu">annotate</span>(<span class="st">"segment"</span>, <span class="at">x =</span> <span class="fl">1.5</span>, <span class="at">y =</span> <span class="dv">1</span>, <span class="at">xend =</span> top_1<span class="sc">$</span>Factor1, <span class="at">yend =</span> top_1<span class="sc">$</span>Factor2) <span class="sc">+</span></span>
-<span id="cb8-22"><a href="#cb8-22"></a>  <span class="fu">annotate</span>(<span class="st">"label"</span>, <span class="at">x =</span> <span class="fl">1.5</span>, <span class="at">y =</span> <span class="dv">1</span>, <span class="at">label =</span> <span class="st">"Miscellaneous &amp; Learned"</span>, <span class="at">size =</span> <span class="dv">8</span>) <span class="sc">+</span></span>
-<span id="cb8-23"><a href="#cb8-23"></a>  <span class="fu">annotate</span>(<span class="st">"segment"</span>, <span class="at">x =</span> <span class="sc">-</span><span class="fl">0.8</span>, <span class="at">y =</span> <span class="dv">3</span>, <span class="at">xend =</span> top_2<span class="sc">$</span>Factor1, <span class="at">yend =</span> top_2<span class="sc">$</span>Factor2) <span class="sc">+</span></span>
-<span id="cb8-24"><a href="#cb8-24"></a>  <span class="fu">annotate</span>(<span class="st">"label"</span>, <span class="at">x =</span> <span class="sc">-</span><span class="fl">0.8</span>, <span class="at">y =</span> <span class="dv">3</span>, <span class="at">label =</span> <span class="st">"Romance and Mystery"</span>, <span class="at">size =</span> <span class="dv">8</span>) <span class="sc">+</span></span>
-<span id="cb8-25"><a href="#cb8-25"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">23</span>) <span class="sc">+</span></span>
-<span id="cb8-26"><a href="#cb8-26"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>, <span class="at">color =</span> <span class="st">"gray"</span>, <span class="at">linetype =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
-<span id="cb8-27"><a href="#cb8-27"></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> <span class="dv">0</span>, <span class="at">color =</span> <span class="st">"gray"</span>, <span class="at">linetype =</span> <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>fa_loads <span class="ot">&lt;-</span> <span class="fu">unclass</span>(<span class="fu">loadings</span>(fa)) <span class="sc">%&gt;%</span> </span>
+<span id="cb6-2"><a href="#cb6-2"></a>  <span class="fu">as_tibble</span>(<span class="at">rownames =</span> <span class="st">"Variable"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb6-3"><a href="#cb6-3"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">where</span>(is.numeric), <span class="sc">~</span> <span class="fu">if_else</span>(<span class="fu">abs</span>(.x) <span class="sc">&lt;</span> <span class="fl">0.3</span>, <span class="cn">NA_real_</span>, .x))) <span class="sc">%&gt;%</span> </span>
+<span id="cb6-4"><a href="#cb6-4"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(Factor1) <span class="sc">|</span> <span class="sc">!</span><span class="fu">is.na</span>(Factor2))</span>
+<span id="cb6-5"><a href="#cb6-5"></a><span class="fu">kbl</span>(fa_loads[,<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>]) <span class="sc">%&gt;%</span> <span class="fu">kable_paper</span>(<span class="at">font_size =</span> <span class="dv">22</span>)</span>
+<span id="cb6-6"><a href="#cb6-6"></a>scores <span class="ot">&lt;-</span> <span class="fu">as_tibble</span>(fa<span class="sc">$</span>scores, <span class="at">rownames =</span> <span class="st">"File"</span>)</span>
+<span id="cb6-7"><a href="#cb6-7"></a>brown_mapping <span class="ot">&lt;-</span> <span class="fu">read_tsv</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"resources"</span>, <span class="st">"brown_files.tsv"</span>), <span class="at">show_col_types =</span> <span class="cn">FALSE</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb6-8"><a href="#cb6-8"></a>  <span class="fu">select</span>(Component, Register) <span class="sc">%&gt;%</span> <span class="fu">deframe</span>()</span>
+<span id="cb6-9"><a href="#cb6-9"></a>register_centroids <span class="ot">&lt;-</span> scores <span class="sc">%&gt;%</span></span>
+<span id="cb6-10"><a href="#cb6-10"></a>  <span class="fu">mutate</span>(<span class="at">Component =</span> <span class="fu">str_extract</span>(File, <span class="st">"[a-z]"</span>), <span class="at">Register =</span> brown_mapping[Component]) <span class="sc">%&gt;%</span></span>
+<span id="cb6-11"><a href="#cb6-11"></a>  <span class="fu">group_by</span>(Register) <span class="sc">%&gt;%</span></span>
+<span id="cb6-12"><a href="#cb6-12"></a>  <span class="fu">summarize</span>(<span class="at">Factor1 =</span> <span class="fu">mean</span>(Factor1), <span class="at">Factor2 =</span> <span class="fu">mean</span>(Factor2))</span>
+<span id="cb6-13"><a href="#cb6-13"></a>top_1 <span class="ot">&lt;-</span> register_centroids <span class="sc">%&gt;%</span> <span class="fu">arrange</span>(Factor1) <span class="sc">%&gt;%</span></span>
+<span id="cb6-14"><a href="#cb6-14"></a>  <span class="fu">tail</span>(<span class="dv">2</span>) <span class="sc">%&gt;%</span> <span class="fu">summarize</span>(<span class="fu">across</span>(<span class="fu">where</span>(is.numeric), mean))</span>
+<span id="cb6-15"><a href="#cb6-15"></a>top_2 <span class="ot">&lt;-</span> register_centroids <span class="sc">%&gt;%</span> <span class="fu">arrange</span>(Factor2) <span class="sc">%&gt;%</span></span>
+<span id="cb6-16"><a href="#cb6-16"></a>  <span class="fu">tail</span>(<span class="dv">2</span>) <span class="sc">%&gt;%</span> <span class="fu">summarize</span>(<span class="fu">across</span>(<span class="fu">where</span>(is.numeric), mean))</span>
+<span id="cb6-17"><a href="#cb6-17"></a></span>
+<span id="cb6-18"><a href="#cb6-18"></a><span class="fu">ggplot</span>(scores, <span class="fu">aes</span>(<span class="at">x =</span> Factor1, <span class="at">y =</span> Factor2)) <span class="sc">+</span></span>
+<span id="cb6-19"><a href="#cb6-19"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> File), <span class="at">color =</span> <span class="st">"gray"</span>, <span class="at">size =</span> <span class="dv">6</span>, <span class="at">alpha =</span> <span class="fl">0.8</span>) <span class="sc">+</span></span>
+<span id="cb6-20"><a href="#cb6-20"></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> register_centroids, <span class="at">size =</span> <span class="dv">6</span>) <span class="sc">+</span></span>
+<span id="cb6-21"><a href="#cb6-21"></a>  <span class="fu">annotate</span>(<span class="st">"segment"</span>, <span class="at">x =</span> <span class="fl">1.5</span>, <span class="at">y =</span> <span class="dv">1</span>, <span class="at">xend =</span> top_1<span class="sc">$</span>Factor1, <span class="at">yend =</span> top_1<span class="sc">$</span>Factor2) <span class="sc">+</span></span>
+<span id="cb6-22"><a href="#cb6-22"></a>  <span class="fu">annotate</span>(<span class="st">"label"</span>, <span class="at">x =</span> <span class="fl">1.5</span>, <span class="at">y =</span> <span class="dv">1</span>, <span class="at">label =</span> <span class="st">"Miscellaneous &amp; Learned"</span>, <span class="at">size =</span> <span class="dv">8</span>) <span class="sc">+</span></span>
+<span id="cb6-23"><a href="#cb6-23"></a>  <span class="fu">annotate</span>(<span class="st">"segment"</span>, <span class="at">x =</span> <span class="sc">-</span><span class="fl">0.8</span>, <span class="at">y =</span> <span class="dv">3</span>, <span class="at">xend =</span> top_2<span class="sc">$</span>Factor1, <span class="at">yend =</span> top_2<span class="sc">$</span>Factor2) <span class="sc">+</span></span>
+<span id="cb6-24"><a href="#cb6-24"></a>  <span class="fu">annotate</span>(<span class="st">"label"</span>, <span class="at">x =</span> <span class="sc">-</span><span class="fl">0.8</span>, <span class="at">y =</span> <span class="dv">3</span>, <span class="at">label =</span> <span class="st">"Romance and Mystery"</span>, <span class="at">size =</span> <span class="dv">8</span>) <span class="sc">+</span></span>
+<span id="cb6-25"><a href="#cb6-25"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">23</span>) <span class="sc">+</span></span>
+<span id="cb6-26"><a href="#cb6-26"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>, <span class="at">color =</span> <span class="st">"gray"</span>, <span class="at">linetype =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb6-27"><a href="#cb6-27"></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> <span class="dv">0</span>, <span class="at">color =</span> <span class="st">"gray"</span>, <span class="at">linetype =</span> <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
@@ -8713,7 +8723,7 @@ The p-value is 2.33e-59 </code></pre>
 
 </div>
 <div class="cell-output-display quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img data-src="factor-analysis_files/figure-html/f12-1.png" width="672"></p>
+<p><img data-src="factor-analysis_files/figure-revealjs/f12-1.png" width="960"></p>
 </div>
 </div>
 </div>
@@ -8727,18 +8737,18 @@ The p-value is 2.33e-59 </code></pre>
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a>get_random_s <span class="ot">&lt;-</span> <span class="cf">function</span>(filepath) {</span>
-<span id="cb9-2"><a href="#cb9-2"></a>  <span class="fu">read_xml</span>(filepath) <span class="sc">%&gt;%</span> </span>
-<span id="cb9-3"><a href="#cb9-3"></a>    <span class="fu">xml_find_all</span>(<span class="st">"//d1:s"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb9-4"><a href="#cb9-4"></a>    <span class="fu">sample</span>(<span class="dv">1</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb9-5"><a href="#cb9-5"></a>    <span class="fu">xml_children</span>() <span class="sc">%&gt;%</span> </span>
-<span id="cb9-6"><a href="#cb9-6"></a>    <span class="fu">xml_text</span>() <span class="sc">%&gt;%</span> </span>
-<span id="cb9-7"><a href="#cb9-7"></a>    <span class="fu">paste</span>(<span class="at">collapse =</span> <span class="st">" "</span>)</span>
-<span id="cb9-8"><a href="#cb9-8"></a>}</span>
-<span id="cb9-9"><a href="#cb9-9"></a><span class="fu">set.seed</span>(<span class="dv">5</span>)</span>
-<span id="cb9-10"><a href="#cb9-10"></a>filepath <span class="ot">&lt;-</span> <span class="cf">function</span>(file) here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"studies"</span>, <span class="st">"_corpora"</span>, <span class="st">"brown_tei"</span>, <span class="fu">paste0</span>(file, <span class="st">".xml"</span>))</span>
-<span id="cb9-11"><a href="#cb9-11"></a>right_1 <span class="ot">&lt;-</span> <span class="fu">filter</span>(scores, Factor1 <span class="sc">==</span> <span class="fu">max</span>(Factor1))<span class="sc">$</span>File</span>
-<span id="cb9-12"><a href="#cb9-12"></a>left_1 <span class="ot">&lt;-</span> <span class="fu">filter</span>(scores, Factor1 <span class="sc">==</span> <span class="fu">min</span>(Factor1))<span class="sc">$</span>File</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a>get_random_s <span class="ot">&lt;-</span> <span class="cf">function</span>(filepath) {</span>
+<span id="cb7-2"><a href="#cb7-2"></a>  <span class="fu">read_xml</span>(filepath) <span class="sc">%&gt;%</span> </span>
+<span id="cb7-3"><a href="#cb7-3"></a>    <span class="fu">xml_find_all</span>(<span class="st">"//d1:s"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb7-4"><a href="#cb7-4"></a>    <span class="fu">sample</span>(<span class="dv">1</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb7-5"><a href="#cb7-5"></a>    <span class="fu">xml_children</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb7-6"><a href="#cb7-6"></a>    <span class="fu">xml_text</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb7-7"><a href="#cb7-7"></a>    <span class="fu">paste</span>(<span class="at">collapse =</span> <span class="st">" "</span>)</span>
+<span id="cb7-8"><a href="#cb7-8"></a>}</span>
+<span id="cb7-9"><a href="#cb7-9"></a><span class="fu">set.seed</span>(<span class="dv">5</span>)</span>
+<span id="cb7-10"><a href="#cb7-10"></a>filepath <span class="ot">&lt;-</span> <span class="cf">function</span>(file) here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"studies"</span>, <span class="st">"_corpora"</span>, <span class="st">"brown_tei"</span>, <span class="fu">paste0</span>(file, <span class="st">".xml"</span>))</span>
+<span id="cb7-11"><a href="#cb7-11"></a>right_1 <span class="ot">&lt;-</span> <span class="fu">filter</span>(scores, Factor1 <span class="sc">==</span> <span class="fu">max</span>(Factor1))<span class="sc">$</span>File</span>
+<span id="cb7-12"><a href="#cb7-12"></a>left_1 <span class="ot">&lt;-</span> <span class="fu">filter</span>(scores, Factor1 <span class="sc">==</span> <span class="fu">min</span>(Factor1))<span class="sc">$</span>File</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 <table>
@@ -8821,21 +8831,21 @@ The p-value is 2.33e-59 </code></pre>
 <div class="cell columns column-output-location quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
 <div class="column quarto-layout-cell" style="flex-basis: 60.0%;justify-content: center;">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="fu">options</span>(<span class="at">knitr.kable.NA =</span> <span class="st">""</span>)</span>
-<span id="cb10-2"><a href="#cb10-2"></a></span>
-<span id="cb10-3"><a href="#cb10-3"></a>fa_loads <span class="ot">&lt;-</span> <span class="fu">loadings</span>(fa) <span class="sc">%&gt;%</span> </span>
-<span id="cb10-4"><a href="#cb10-4"></a>  <span class="fu">unclass</span>() <span class="sc">%&gt;%</span> </span>
-<span id="cb10-5"><a href="#cb10-5"></a>  <span class="fu">as_tibble</span>(<span class="at">rownames =</span> <span class="st">"Variable"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb10-6"><a href="#cb10-6"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(</span>
-<span id="cb10-7"><a href="#cb10-7"></a>    <span class="fu">where</span>(is.numeric),</span>
-<span id="cb10-8"><a href="#cb10-8"></a>    <span class="sc">~</span> <span class="fu">if_else</span>(</span>
-<span id="cb10-9"><a href="#cb10-9"></a>      <span class="fu">abs</span>(.x) <span class="sc">&lt;</span> <span class="fl">0.3</span>,</span>
-<span id="cb10-10"><a href="#cb10-10"></a>      <span class="cn">NA_real_</span>,</span>
-<span id="cb10-11"><a href="#cb10-11"></a>      .x))</span>
-<span id="cb10-12"><a href="#cb10-12"></a>    )</span>
-<span id="cb10-13"><a href="#cb10-13"></a></span>
-<span id="cb10-14"><a href="#cb10-14"></a><span class="fu">kbl</span>(fa_loads) <span class="sc">%&gt;%</span></span>
-<span id="cb10-15"><a href="#cb10-15"></a>  <span class="fu">kable_paper</span>(<span class="at">font_size =</span> <span class="dv">22</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="fu">options</span>(<span class="at">knitr.kable.NA =</span> <span class="st">""</span>)</span>
+<span id="cb8-2"><a href="#cb8-2"></a></span>
+<span id="cb8-3"><a href="#cb8-3"></a>fa_loads <span class="ot">&lt;-</span> <span class="fu">loadings</span>(fa) <span class="sc">%&gt;%</span> </span>
+<span id="cb8-4"><a href="#cb8-4"></a>  <span class="fu">unclass</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb8-5"><a href="#cb8-5"></a>  <span class="fu">as_tibble</span>(<span class="at">rownames =</span> <span class="st">"Variable"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb8-6"><a href="#cb8-6"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(</span>
+<span id="cb8-7"><a href="#cb8-7"></a>    <span class="fu">where</span>(is.numeric),</span>
+<span id="cb8-8"><a href="#cb8-8"></a>    <span class="sc">~</span> <span class="fu">if_else</span>(</span>
+<span id="cb8-9"><a href="#cb8-9"></a>      <span class="fu">abs</span>(.x) <span class="sc">&lt;</span> <span class="fl">0.3</span>,</span>
+<span id="cb8-10"><a href="#cb8-10"></a>      <span class="cn">NA_real_</span>,</span>
+<span id="cb8-11"><a href="#cb8-11"></a>      .x))</span>
+<span id="cb8-12"><a href="#cb8-12"></a>    )</span>
+<span id="cb8-13"><a href="#cb8-13"></a></span>
+<span id="cb8-14"><a href="#cb8-14"></a><span class="fu">kbl</span>(fa_loads) <span class="sc">%&gt;%</span></span>
+<span id="cb8-15"><a href="#cb8-15"></a>  <span class="fu">kable_paper</span>(<span class="at">font_size =</span> <span class="dv">22</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="column quarto-layout-cell" style="flex-basis: 40.0%;justify-content: center;">
 <div class="cell-output-display">
@@ -8958,14 +8968,15 @@ The p-value is 2.33e-59 </code></pre>
 <div class="cell columns column-output-location quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
 <div class="column quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a>uniqueness <span class="ot">&lt;-</span> fa<span class="sc">$</span>uniquenesses <span class="sc">%&gt;%</span> </span>
-<span id="cb11-2"><a href="#cb11-2"></a>  <span class="fu">enframe</span>(</span>
-<span id="cb11-3"><a href="#cb11-3"></a>    <span class="at">name =</span> <span class="st">"Variable"</span>,</span>
-<span id="cb11-4"><a href="#cb11-4"></a>    <span class="at">value =</span> <span class="st">"Uniqueness"</span></span>
-<span id="cb11-5"><a href="#cb11-5"></a>    ) <span class="sc">%&gt;%</span> </span>
-<span id="cb11-6"><a href="#cb11-6"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(Uniqueness))</span>
-<span id="cb11-7"><a href="#cb11-7"></a>uniqueness <span class="sc">%&gt;%</span> <span class="fu">kbl</span>() <span class="sc">%&gt;%</span> </span>
-<span id="cb11-8"><a href="#cb11-8"></a>  <span class="fu">kable_paper</span>(<span class="at">font_size =</span> <span class="dv">22</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a>uniqueness <span class="ot">&lt;-</span> fa<span class="sc">$</span>uniquenesses <span class="sc">%&gt;%</span> </span>
+<span id="cb9-2"><a href="#cb9-2"></a>  <span class="fu">enframe</span>(</span>
+<span id="cb9-3"><a href="#cb9-3"></a>    <span class="at">name =</span> <span class="st">"Variable"</span>,</span>
+<span id="cb9-4"><a href="#cb9-4"></a>    <span class="at">value =</span> <span class="st">"Uniqueness"</span></span>
+<span id="cb9-5"><a href="#cb9-5"></a>    ) <span class="sc">%&gt;%</span> </span>
+<span id="cb9-6"><a href="#cb9-6"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(Uniqueness))</span>
+<span id="cb9-7"><a href="#cb9-7"></a></span>
+<span id="cb9-8"><a href="#cb9-8"></a>uniqueness <span class="sc">%&gt;%</span> <span class="fu">kbl</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb9-9"><a href="#cb9-9"></a>  <span class="fu">kable_paper</span>(<span class="at">font_size =</span> <span class="dv">22</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div><div class="quarto-layout-row quarto-layout-valign-top">
 <div class="column quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
@@ -9047,27 +9058,27 @@ The p-value is 2.33e-59 </code></pre>
 <div class="cell columns column-output-location quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
 <div class="column quarto-layout-cell" style="flex-basis: 60.0%;justify-content: center;">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a>factanal_variances <span class="ot">&lt;-</span> <span class="cf">function</span>(loadings) {</span>
-<span id="cb12-2"><a href="#cb12-2"></a>  vars <span class="ot">&lt;-</span> <span class="fu">colSums</span>(loadings<span class="sc">^</span><span class="dv">2</span>)<span class="sc">/</span><span class="fu">nrow</span>(loadings)</span>
-<span id="cb12-3"><a href="#cb12-3"></a>  <span class="fu">as_tibble_row</span>(vars) <span class="sc">%&gt;%</span></span>
-<span id="cb12-4"><a href="#cb12-4"></a>    <span class="fu">pivot_longer</span>(</span>
-<span id="cb12-5"><a href="#cb12-5"></a>      <span class="fu">everything</span>(),</span>
-<span id="cb12-6"><a href="#cb12-6"></a>      <span class="at">names_to =</span> <span class="st">"Factor"</span>,</span>
-<span id="cb12-7"><a href="#cb12-7"></a>      <span class="at">values_to =</span> <span class="st">"Variance"</span>,</span>
-<span id="cb12-8"><a href="#cb12-8"></a>      <span class="at">names_transform =</span> <span class="sc">~</span><span class="fu">str_remove</span>(.x, <span class="st">"Factor"</span>))</span>
-<span id="cb12-9"><a href="#cb12-9"></a>  }</span>
-<span id="cb12-10"><a href="#cb12-10"></a>fa7 <span class="ot">&lt;-</span> dataset <span class="sc">%&gt;%</span></span>
-<span id="cb12-11"><a href="#cb12-11"></a>  <span class="fu">data.frame</span>(<span class="at">row.names =</span> <span class="st">"filename"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb12-12"><a href="#cb12-12"></a>  <span class="fu">as.matrix</span>() <span class="sc">%&gt;%</span> <span class="fu">factanal</span>(<span class="dv">7</span>)</span>
-<span id="cb12-13"><a href="#cb12-13"></a><span class="fu">loadings</span>(fa7) <span class="sc">%&gt;%</span> <span class="fu">factanal_variances</span>() <span class="sc">%&gt;%</span> </span>
-<span id="cb12-14"><a href="#cb12-14"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> Factor, <span class="at">y =</span> Variance)) <span class="sc">+</span></span>
-<span id="cb12-15"><a href="#cb12-15"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">7</span>) <span class="sc">+</span></span>
-<span id="cb12-16"><a href="#cb12-16"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> scales<span class="sc">::</span><span class="fu">label_percent</span>()) <span class="sc">+</span></span>
-<span id="cb12-17"><a href="#cb12-17"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">35</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a>factanal_variances <span class="ot">&lt;-</span> <span class="cf">function</span>(loadings) {</span>
+<span id="cb10-2"><a href="#cb10-2"></a>  vars <span class="ot">&lt;-</span> <span class="fu">colSums</span>(loadings<span class="sc">^</span><span class="dv">2</span>)<span class="sc">/</span><span class="fu">nrow</span>(loadings)</span>
+<span id="cb10-3"><a href="#cb10-3"></a>  <span class="fu">as_tibble_row</span>(vars) <span class="sc">%&gt;%</span></span>
+<span id="cb10-4"><a href="#cb10-4"></a>    <span class="fu">pivot_longer</span>(</span>
+<span id="cb10-5"><a href="#cb10-5"></a>      <span class="fu">everything</span>(),</span>
+<span id="cb10-6"><a href="#cb10-6"></a>      <span class="at">names_to =</span> <span class="st">"Factor"</span>,</span>
+<span id="cb10-7"><a href="#cb10-7"></a>      <span class="at">values_to =</span> <span class="st">"Variance"</span>,</span>
+<span id="cb10-8"><a href="#cb10-8"></a>      <span class="at">names_transform =</span> <span class="sc">~</span><span class="fu">str_remove</span>(.x, <span class="st">"Factor"</span>))</span>
+<span id="cb10-9"><a href="#cb10-9"></a>  }</span>
+<span id="cb10-10"><a href="#cb10-10"></a>fa7 <span class="ot">&lt;-</span> dataset <span class="sc">%&gt;%</span></span>
+<span id="cb10-11"><a href="#cb10-11"></a>  <span class="fu">data.frame</span>(<span class="at">row.names =</span> <span class="st">"filename"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb10-12"><a href="#cb10-12"></a>  <span class="fu">as.matrix</span>() <span class="sc">%&gt;%</span> <span class="fu">factanal</span>(<span class="dv">7</span>)</span>
+<span id="cb10-13"><a href="#cb10-13"></a><span class="fu">loadings</span>(fa7) <span class="sc">%&gt;%</span> <span class="fu">factanal_variances</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb10-14"><a href="#cb10-14"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> Factor, <span class="at">y =</span> Variance)) <span class="sc">+</span></span>
+<span id="cb10-15"><a href="#cb10-15"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">7</span>) <span class="sc">+</span></span>
+<span id="cb10-16"><a href="#cb10-16"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> scales<span class="sc">::</span><span class="fu">label_percent</span>()) <span class="sc">+</span></span>
+<span id="cb10-17"><a href="#cb10-17"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">35</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="column quarto-layout-cell" style="flex-basis: 40.0%;justify-content: center;">
 <div class="cell-output-display">
-<p><img data-src="factor-analysis_files/figure-html/scree-1.png" width="672"></p>
+<p><img data-src="factor-analysis_files/figure-revealjs/scree-1.png" width="960"></p>
 </div>
 </div>
 </div>
@@ -9079,13 +9090,13 @@ The p-value is 2.33e-59 </code></pre>
 <section id="scores" class="slide level2">
 <h2>Scores</h2>
 <div>
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a>scores <span class="ot">&lt;-</span> <span class="fu">as_tibble</span>(fa<span class="sc">$</span>scores, <span class="at">rownames =</span> <span class="st">"File"</span>)</span>
-<span id="cb13-2"><a href="#cb13-2"></a><span class="fu">head</span>(scores, <span class="dv">7</span>) <span class="sc">%&gt;%</span> <span class="fu">kbl</span>() <span class="sc">%&gt;%</span> <span class="fu">kable_paper</span>(<span class="at">font_size =</span> <span class="dv">22</span>) <span class="sc">%&gt;%</span> <span class="fu">column_spec</span>(<span class="dv">1</span>, <span class="at">bold =</span> T)</span>
-<span id="cb13-3"><a href="#cb13-3"></a>centroids <span class="ot">&lt;-</span> scores <span class="sc">%&gt;%</span> </span>
-<span id="cb13-4"><a href="#cb13-4"></a>  <span class="fu">mutate</span>(<span class="at">Register =</span> <span class="fu">str_extract</span>(File, <span class="st">"[a-z]"</span>)) <span class="sc">%&gt;%</span> </span>
-<span id="cb13-5"><a href="#cb13-5"></a>  <span class="fu">group_by</span>(Register) <span class="sc">%&gt;%</span> </span>
-<span id="cb13-6"><a href="#cb13-6"></a>  <span class="fu">summarize</span>(<span class="fu">across</span>(<span class="fu">where</span>(is.numeric), mean))</span>
-<span id="cb13-7"><a href="#cb13-7"></a><span class="fu">head</span>(centroids, <span class="dv">7</span>) <span class="sc">%&gt;%</span> <span class="fu">kbl</span>() <span class="sc">%&gt;%</span> <span class="fu">kable_paper</span>(<span class="at">font_size =</span> <span class="dv">22</span>) <span class="sc">%&gt;%</span> <span class="fu">column_spec</span>(<span class="dv">1</span>, <span class="at">bold =</span> T, <span class="at">border_left =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a>scores <span class="ot">&lt;-</span> <span class="fu">as_tibble</span>(fa<span class="sc">$</span>scores, <span class="at">rownames =</span> <span class="st">"File"</span>)</span>
+<span id="cb11-2"><a href="#cb11-2"></a><span class="fu">head</span>(scores, <span class="dv">7</span>) <span class="sc">%&gt;%</span> <span class="fu">kbl</span>() <span class="sc">%&gt;%</span> <span class="fu">kable_paper</span>(<span class="at">font_size =</span> <span class="dv">22</span>) <span class="sc">%&gt;%</span> <span class="fu">column_spec</span>(<span class="dv">1</span>, <span class="at">bold =</span> T)</span>
+<span id="cb11-3"><a href="#cb11-3"></a>centroids <span class="ot">&lt;-</span> scores <span class="sc">%&gt;%</span> </span>
+<span id="cb11-4"><a href="#cb11-4"></a>  <span class="fu">mutate</span>(<span class="at">Register =</span> <span class="fu">str_extract</span>(File, <span class="st">"[a-z]"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb11-5"><a href="#cb11-5"></a>  <span class="fu">group_by</span>(Register) <span class="sc">%&gt;%</span> </span>
+<span id="cb11-6"><a href="#cb11-6"></a>  <span class="fu">summarize</span>(<span class="fu">across</span>(<span class="fu">where</span>(is.numeric), mean))</span>
+<span id="cb11-7"><a href="#cb11-7"></a><span class="fu">head</span>(centroids, <span class="dv">7</span>) <span class="sc">%&gt;%</span> <span class="fu">kbl</span>() <span class="sc">%&gt;%</span> <span class="fu">kable_paper</span>(<span class="at">font_size =</span> <span class="dv">22</span>) <span class="sc">%&gt;%</span> <span class="fu">column_spec</span>(<span class="dv">1</span>, <span class="at">bold =</span> T, <span class="at">border_left =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
 <div class="cell-output-display quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
@@ -9455,6 +9466,44 @@ Levshina, Natalia. 2015. <em>How to Do Linguistics with <span>R</span>: Data Exp
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

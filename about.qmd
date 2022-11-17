@@ -15,10 +15,10 @@ Class number | Date | Topic | Material in website | Assignment
 5 | 27/10 | Linear regression | [Slides](slides/index.qmd#linear-regression) | [The Grammar of Graphics](https://mclm2022.github.io/tidyverse/ggplot.html)
 6 | 03/11 | Logistic regression | [Slides](slides/index.qmd#logistic-regression) | [Markdown](https://mclm2022.github.io/quarto/markdown.html)
 7 | 10/11 | Correspondence analysis | [Slides](slides/index.qmd#correspondence-analysis) | [MCLM Tutorials](https://github.com/masterclm/mclmtutorials)
-8 | 17/11 | Factor analysis | Slides (to come) | **Paper proposal**
+8 | 17/11 | Factor analysis | [Slides](slides/index.qmd#factor-analysis) | **Paper proposal**
 9 | 24/11 | Collocations and keywords: example | [Study](studies/base.qmd) | Citations
 10 | 01/12 | Retrieval and analysis of variants in alternation | [Study](studies/genitive-alternation-retrieval.qmd) | Interlinear glosses
 11 | 08/12 | Case study with logistic regression | TBD | TBD
 12 | 15/12 | Lectometry example | [Study](studies/ca-trump-clinton.qmd) | TBD
-13 | 22/12 | Register analysis | Study (to come) | TBD
+13 | 22/12 | Register analysis | [Study](studies/register-analysis.qmd) | TBD
 

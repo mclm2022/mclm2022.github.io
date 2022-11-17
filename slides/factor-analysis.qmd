@@ -46,6 +46,10 @@ i <- 1
 
 - Describe groups of texts based on these dimensions.
 
+::: {.footer}
+`r headings[[i]]`
+:::
+
 ## In register analysis
 
 @biber_1988 finds 7 underlying dimensions to 69 variables and describes textual registers based on them.
@@ -60,30 +64,34 @@ metaregisters, as well as more specific subsections, with regard to these dimens
 >
 > [@levshina_2015 353]
 
+::: {.footer}
+`r headings[[i]]`
+:::
+
 ## Unlike Correspondence Analysis
 
 Correspondence Analysis | Factor Analysis
 -- | --
-Count data | Numerical variables (often proportions)
+Count data | Numeric variables
 Relationships between columns and between rows | Correlations between variables to find underlying structure
 Biplot | Scatterplot of items based on factors
 
-<!-- TODO search "multidimensional analysis of register variation"
-
--->
+::: {.footer}
+`r headings[[i]]`
+:::
 
 ## Our setup {incremental="true"}
 
 - Technical/theoretical description based on @biber_1988.
 
-- Dataset based on the Brown corpus, see study for how the variables were created.
-<!-- TODO add link to study and fix URL to dataset-->
+- Dataset based on the Brown corpus, see [study](../studies/register-analysis.qmd) for how the variables were created.
 
 - Base R `factanal()` to run Factor Analysis and custom functions to examine it.
 
 ```{r}
 #| label: start
 #| code-fold: false
+#| message: false
 library(tidyverse)
 library(GGally) # to plot correlogram
 library(xml2) # to read examples from files
@@ -94,14 +102,21 @@ fa <- dataset %>% data.frame(row.names = "filename") %>%
 ```
 
 <!-- NOTE showing without promax so I can have negative loadings -->
+::: {.footer}
+`r headings[[i]]`
+:::
 
 ## Dataset (`r nrow(dataset)` rows, `r length(dataset)` columns)
 
 ```{r}
 #| label: dataset
 dataset %>% kbl() %>% kable_paper(font_size = 22) %>% 
-  scroll_box(height = "80vh", width = "100vw")
+  scroll_box(height = "500px", width = "100vw")
 ```
+
+::: {.footer}
+`r headings[[i]]`
+:::
 
 ## Output of `factanal()`
 
@@ -109,6 +124,10 @@ dataset %>% kbl() %>% kable_paper(font_size = 22) %>%
 #| label: factanal
 fa
 ```
+
+::: {.footer}
+`r headings[[i]]`
+:::
 
 ```{r}
 #| include: false
@@ -262,6 +281,7 @@ uniqueness <- fa$uniquenesses %>%
     value = "Uniqueness"
     ) %>% 
   arrange(desc(Uniqueness))
+
 uniqueness %>% kbl() %>% 
   kable_paper(font_size = 22)
 ```

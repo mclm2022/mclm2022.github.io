@@ -2,7 +2,7 @@
 title: "Methods of Corpus Linguistics"
 ---
 
-This website compiles course materials for the Advanced Masters course "Methods of Corpus Linguistics" (September-December 2022, Faculty of Arts, KU Leuven). It includes (or will include) slides as well as some examples of analyses.
+This website compiles course materials for the Advanced Masters course "Methods of Corpus Linguistics" (September-December 2022, Faculty of Arts, KU Leuven). It includes [slides](slides/index.qmd) as well as some examples of analyses.
 
 Most of the code relies on the [`{mclm}` package](https://masterclm.github.io/mclm).
 

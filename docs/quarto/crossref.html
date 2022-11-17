@@ -277,7 +277,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org">tidyverse</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/masterclm/mclm">mclm</a></span><span class="op">)</span> <span class="co"># not necessary for THIS notebook, but usually yes</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="http://haozhu233.github.io/kableExtra/">kableExtra</a></span><span class="op">)</span></span>
-<span><span class="va">dataset</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/tibble/man/tibble.html">tibble</a></span><span class="op">(</span></span>
+<span><span class="va">dataset</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html">tibble</a></span><span class="op">(</span></span>
 <span>  name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"Fulano"</span>, <span class="st">"Mengano"</span>, <span class="st">"John Doe"</span>, <span class="st">"Someone"</span><span class="op">)</span>,</span>
 <span>  age <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">35</span>, <span class="fl">23</span>, <span class="fl">56</span>, <span class="fl">12</span><span class="op">)</span>,</span>
 <span>  ear_type <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"Pointy"</span>, <span class="st">"Rounded"</span>, <span class="st">"Rounded"</span>, <span class="st">"Pointy"</span><span class="op">)</span></span>
@@ -385,27 +385,27 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>The aesthetics we are assigning are <code>x</code> and <code>y</code>, i.e.&nbsp;the horizontal and vertical axis respectively. The data in the <code>age</code> column of <code>dataset</code> will be mapped to the horizontal axis, while the data in the <code>name</code> column of the <code>dataset</code> (even if it’s categorical) will be mapped to the vertical axis.</p>
 </dd>
 <dd>
-<p>Aesthetics can be assigned either in this stage or in a <code>geom_</code> layer. Aesthetics assigned inside the <code><a href="https://rdrr.io/pkg/ggplot2/man/ggplot.html">ggplot()</a></code> call will be used by all the following <code>geom_</code> layers unless overriden.</p>
+<p>Aesthetics can be assigned either in this stage or in a <code>geom_</code> layer. Aesthetics assigned inside the <code><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot()</a></code> call will be used by all the following <code>geom_</code> layers unless overriden.</p>
 </dd>
 <dt><code>geom_segment(aes(xend = 0, yend = name), color = "gray")</code></dt>
 <dd>
 <p>Add a segment <strong>geom</strong>etry, i.e.&nbsp;one line per observation. The aesthetics needed to draw a line are <code>x</code> and <code>xend</code> (the horizontal coordinates for each end of the line) and <code>y</code> and <code>yend</code> (the vertical coordinates for each end of the line). In other words, we will draw a line between <code>(x, y)</code> and <code>(xend, yend)</code>.</p>
 </dd>
 <dd>
-<p>For these segments, we will use the same <code>x</code> and <code>y</code> values assigned in the <code><a href="https://rdrr.io/pkg/ggplot2/man/ggplot.html">ggplot()</a></code> call, which are <em>inherited</em> automatically. But we will also need to add the values for <code>xend</code> and <code>yend</code>. <code>xend</code> is a constant, 0: we want all the segments to start from <span class="math inline">\(x=0\)</span> and end at the value of <code>age</code>. <code>yend</code> is equal to <code>y</code>: we want horizontal lines that have the same value at <code>y</code> and <code>yend</code>, i.e.&nbsp;the value of <code>name</code>.</p>
+<p>For these segments, we will use the same <code>x</code> and <code>y</code> values assigned in the <code><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot()</a></code> call, which are <em>inherited</em> automatically. But we will also need to add the values for <code>xend</code> and <code>yend</code>. <code>xend</code> is a constant, 0: we want all the segments to start from <span class="math inline">\(x=0\)</span> and end at the value of <code>age</code>. <code>yend</code> is equal to <code>y</code>: we want horizontal lines that have the same value at <code>y</code> and <code>yend</code>, i.e.&nbsp;the value of <code>name</code>.</p>
 </dd>
 <dd>
-<p>Outside the mapping argument with the <code><a href="https://rdrr.io/pkg/ggplot2/man/aes.html">aes()</a></code> call, we can also assign other constants, such as the same color for all elements. These are independent of the dataset. (<code>xend</code> could also have been defined here.) In this case we indicate that the segments must be gray.</p>
+<p>Outside the mapping argument with the <code><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes()</a></code> call, we can also assign other constants, such as the same color for all elements. These are independent of the dataset. (<code>xend</code> could also have been defined here.) In this case we indicate that the segments must be gray.</p>
 </dd>
 <dt><code>geom_point(aes(color = ear_type), size = 3)</code></dt>
 <dd>
-<p>Add a point geometry, i.e.&nbsp;one point per observation. We inherit the aesthetics from <code><a href="https://rdrr.io/pkg/ggplot2/man/ggplot.html">ggplot()</a></code> but not those of <code><a href="https://rdrr.io/pkg/ggplot2/man/geom_segment.html">geom_segment()</a></code> (which would be meaningless anyways).</p>
+<p>Add a point geometry, i.e.&nbsp;one point per observation. We inherit the aesthetics from <code><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot()</a></code> but not those of <code><a href="https://ggplot2.tidyverse.org/reference/geom_segment.html">geom_segment()</a></code> (which would be meaningless anyways).</p>
 </dd>
 <dd>
-<p><code>color</code> is defined within the <code><a href="https://rdrr.io/pkg/ggplot2/man/aes.html">aes()</a></code> call because we want to map the value of <code>ear_type</code> to the colors. <code>size</code> is defined outside, as a constant for all points.</p>
+<p><code>color</code> is defined within the <code><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes()</a></code> call because we want to map the value of <code>ear_type</code> to the colors. <code>size</code> is defined outside, as a constant for all points.</p>
 </dd>
 <dd>
-<p>If <code><a href="https://rdrr.io/pkg/ggplot2/man/geom_segment.html">geom_segment()</a></code> was called after <code><a href="https://rdrr.io/pkg/ggplot2/man/geom_point.html">geom_point()</a></code>, they would be drawn <em>on top</em> of the points and seen in the overlapping bit.</p>
+<p>If <code><a href="https://ggplot2.tidyverse.org/reference/geom_segment.html">geom_segment()</a></code> was called after <code><a href="https://ggplot2.tidyverse.org/reference/geom_point.html">geom_point()</a></code>, they would be drawn <em>on top</em> of the points and seen in the overlapping bit.</p>
 </dd>
 <dt><code>labs(x = "Age", y = "", color = "Ear shape")</code></dt>
 <dd>
