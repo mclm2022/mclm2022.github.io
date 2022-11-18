@@ -22,3 +22,12 @@ Class number | Date | Topic | Material in website | Assignment
 12 | 15/12 | Lectometry example | [Study](studies/ca-trump-clinton.qmd) | TBD
 13 | 22/12 | Register analysis | [Study](studies/register-analysis.qmd) | TBD
 
+# Techniques and research questions
+
+Technique | Corpus | RQ
+---- | ---- | -------
+Collocation analysis | Full corpus, with or without annotation | What words does a certain word co-occur with?
+Keyword analysis | Full corpus, with or without annotation | What words characterize a given text or subcorpus?
+Variationist analysis (with logistic regression) - variants | Concordance and annotation of factors | What factors influence the choice of a variant over its alternative?
+Analysis of varieties (with correspondence analysis) | Full corpus, with or without annotation | How are varieties distinguished based on the frequency of certain features (e.g. words)?
+Multidimensional register analysis (with factor analysis) | Full corpus with annotation | What dimensions underlie the features and how do they characterize registers?

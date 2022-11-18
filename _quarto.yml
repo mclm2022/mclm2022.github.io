@@ -20,7 +20,7 @@ website:
       - href: index.qmd
         text: Home
       - href: about.qmd
-        text: Schedule
+        text: Schedule & Overview
       - text: Studies
         menu:
           - studies/base.qmd
