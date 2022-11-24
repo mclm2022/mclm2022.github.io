@@ -31,3 +31,39 @@ Keyword analysis | Full corpus, with or without annotation | What words characte
 Variationist analysis (with logistic regression) - variants | Concordance and annotation of factors | What factors influence the choice of a variant over its alternative?
 Analysis of varieties (with correspondence analysis) | Full corpus, with or without annotation | How are varieties distinguished based on the frequency of certain features (e.g. words)?
 Multidimensional register analysis (with factor analysis) | Full corpus with annotation | What dimensions underlie the features and how do they characterize registers?
+
+# ConcAnnotator
+
+For manual annotation, you may use the desktop tool concAnnotator. Unfortunately, while there exist installation files for different platforms (to download from [here](https://github.com/montesmariana/concAnnotator/releases/tag/v0.2.0)), they are not certified, so your system will probably reject them.
+Alternatively, you can install them in development mode, which requires a bit more work and a Node JS installation. If you're up to it, here are the instructions:
+
+1. [Install Node JS](https://nodejs.org/en/download/) if you don't have it already. You can check if you have it by typing `node -v` in a console (Windows PowerShell in Windows, Terminal in Mac).
+
+1. Open a console and go to a directory where you want to download the code. For example, from the console type `cd`, to sit in the home directory of your computer, and then `ls` to see which files are present there.^[`cd` is a command to change directories; `ls` shows you the contents of a directory.] You might have a "Downloads" directory. You can now do `cd Downloads` to go to that directory.
+
+1. Clone the repository with `git clone <url>`; the url depends on whether you use SSH for authentication or not:
+
+    a. If you use SSH, type `git clone git@github.com:montesmariana/concAnnotator.git`.
+    
+    b. If you don't use SSH, type `git clone https://github.com/montesmariana/concAnnotator.git`.
+    
+1. The previous step should have created a "concAnnotator" directory. Go to it with `cd concAnnotator`.
+
+1. Install the node dependencies with `npm install`.
+
+1. Create your own installation with `npx electron-forge make`.
+
+In sum:
+
+```default
+cd
+cd Downloads
+git clone git@github.com:montesmariana/concAnnotator.git # or the other url
+cd concAnnotator
+npm install
+npx electron-forge make
+```
+
+The last step should create an "out" folder that has two folders inside: "make" and "concannotator..." (the "..." depends on your OS). You can now go to the concAnnotator folder with your normal file explorer, go into "out" and then "concannotator...", and you will find an application file. Clicking on it should start the program. From here on, unless I make updates to the software, you don't need to do anything else, just click on the file to start the program.
+
+
