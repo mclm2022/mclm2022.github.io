@@ -39,6 +39,7 @@ website:
           - tidyverse/tibbles.qmd
           - tidyverse/ggplot.qmd
           - quarto/markdown.qmd
+          - quarto/citations.qmd
     search: true
 format:
   html:

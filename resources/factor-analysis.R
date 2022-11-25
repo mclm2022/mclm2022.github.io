@@ -5,7 +5,7 @@ library(tidyverse)
 library(GGally) # to plot correlogram
 library(xml2) # to read examples from files
 path <- here::here("studies", "register-analysis.tsv")
-# path <- "https://github.com/mclm2022/mclm2022.github.io/studies/register-analysis.tsv)"
+# path <- "https://raw.githubusercontent.com/mclm2022/mclm2022.github.io/main/studies/register-analysis.tsv)"
 
 # Dataset and analysis #########################################################
 
@@ -36,7 +36,7 @@ scores <- as_tibble(fa$scores, rownames = "File")
 
 ### Prepare centroids of registers ----
 brown_mapping_file <- here::here("resources", "brown_files.tsv")
-# brown_mapping_file <- "https://github.com/mclm2022/mclm2022.github.io/resources/brown_files.tsv"
+# brown_mapping_file <- "https://raw.githubusercontent.com/mclm2022/mclm2022.github.io/main/resources/brown_files.tsv"
 brown_mapping <- read_tsv(brown_mapping_file, show_col_types = FALSE) %>%
   select(Component, Register) %>%
   deframe()

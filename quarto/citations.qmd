@@ -20,6 +20,8 @@ The goal of this assignment is to practice introducing academic citations in a Q
     a. Include at least one block quote, even if ficticious.^[This is by no means a requirement in the final paper, just for the assignment.]
     
     b. If necessary (if it isn't printed automatically), add a "References" title at the end of your document.
+    
+    c. You can use [the bibliography file used here](https://raw.githubusercontent.com/mclm2022/mclm2022.github.io/main/quarto/citations.bib), but if you already have a list of sources for your paper, I would recommend trying to create the BibTeX file with them and using that.
 
 1. Render your Quarto document into the output of your choice (word, html, pdf...).
 
@@ -37,7 +39,7 @@ The goal of this assignment is to practice introducing academic citations in a Q
 All the examples in this document are **fake citations**.
 :::
 
-I do recommend to keep at hand the [documentation]() on citations in Quarto. The main point is that a cited work is indicated with an `@` followed by the citation key. For a citation key "levshina_2015" and the citation style of the Unified Stylesheet for Linguistics:
+I do recommend to keep at hand the [documentation](https://quarto.org/docs/authoring/footnotes-and-citations.html#citations) on citations in Quarto. The main idea is that a cited work is indicated with **an `@` followed by the citation key**. For a citation key "levshina_2015" and the citation style of the Unified Stylesheet for Linguistics:
 
 Text in Quarto | Output
 ----- | -----
@@ -78,9 +80,9 @@ There is but one way of saying this:
 
 > A long quote can be an effective way of conveying a uniquely phrased statement that is too long to be inserted in the middle of a sentence. However, please be advised and do not abuse of it. The text, after all, has to be your own. [@montes_2022 2]
 
-# Bibtex and CSL
+# BibTeX and CSL
 
-In order to provide the bibliographical information that Quarto needs, you need a Bibtex file, like [citations.bib used here](https://github.com/mclm2022/mclm2022.github.io/quarto/citations.bib). The filename should be indicated in the `bibliography` field of the metadata YAML:
+In order to provide the bibliographical information that Quarto needs, you need a BibTeX file, like [citations.bib used here](https://raw.githubusercontent.com/mclm2022/mclm2022.github.io/main/quarto/citations.bib). The filename should be indicated in the `bibliography` field of the metadata YAML:
 
 ```yml
 title: "Title of my document"
@@ -88,9 +90,9 @@ author: "My name and surname"
 bibliography: citations.bib
 ```
 
-There are different ways of obtaining a Bibtex file. If you use Zotero, you can export any group of entries as a Bibtex file. If you add the Better BibTex extension, you can keep such file updated, e.g. you export a collection, and every time you add or change something in the collection, your file will change accordingly. Better BibTeX also helps you define a template for your citation key, which otherwise can be very convoluted and hard to remember.
+There are different ways of obtaining a BibTeX file. If you use [Zotero](https://www.zotero.org/), you can export any group of entries as a BibTeX file. If you add the [Better BibTeX](https://retorque.re/zotero-better-bibtex/) extension, you can keep such file updated, e.g. you export a collection, and every time you add or change something in the collection, your file will change accordingly. Better BibTeX also helps you define a template for your citation key, which otherwise can be very convoluted and hard to remember; you can read [this blogpost](https://marianamontes.netlify.app/post/obsidian-and-zotero/) for an example.^[You might also be interested in exploring [the `{rbbt}` package.](https://github.com/paleolimbot/rbbt)]
 
-A citation style is coded in a CSL file (Citation Style Language). If you don't want to use Quarto's default style, you may provide another by adding a `csl` field in the metadata YAML, as is done in this document. The value should be the path to [a .csl file](https://github.com/mclm2022/mclm2022.github.io/unified-style-sheet-for-linguistics.csl), which you can download from the Zotero CSL repository or even create with the CSL Editor.
+A citation style is coded in a [CSL file (Citation Style Language)](https://docs.citationstyles.org/en/stable/primer.html#what-is-csl). If you don't want to use Quarto's default style, you may provide another by adding a `csl` field in the metadata YAML, as is done in this document. The value should be the path to [a .csl file](https://raw.githubusercontent.com/mclm2022/mclm2022.github.io/main/quarto/unified-style-sheet-for-linguistics.csl), which you can download from the [Zotero CSL repository](https://www.zotero.org/styles) or even create/modify with a [Visual Editor](https://editor.citationstyles.org/visualEditor/).
 
 ```yml
 title: "Title of my document"
@@ -111,7 +113,6 @@ git checkout citations
 git status # check everything is fine
 git add .
 git commit -m "practice with citations"
-# you may also make several commits as you add a figure, a table...
 git checkout main
 git status # check everything is fine. New files should not be there
 git merge citations

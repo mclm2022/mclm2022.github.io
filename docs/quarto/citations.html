@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.237">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Mariana Montes">
+
+<title>Methods in Corpus Linguistics - Citations in Quarto</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Methods in Corpus Linguistics</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html">
+ <span class="menu-text">Schedule &amp; Overview</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-studies" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Studies</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-studies">    
+        <li>
+    <a class="dropdown-item" href="../studies/base.html">
+ <span class="dropdown-text">Keywords and collocation analysis on the BASE corpus</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../studies/genitive-alternation-retrieval.html">
+ <span class="dropdown-text">Genitive Alternation I: Retrieval</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../studies/genitive-alternation-analysis.html">
+ <span class="dropdown-text">Genitive Alternation II: Analysis</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../studies/ca-trump-clinton.html">
+ <span class="dropdown-text">CA applied to the Trump-Clinton speeches</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../studies/register-analysis.html">
+ <span class="dropdown-text">Simple register analysis (multidimensional analysis) of brown TEI</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../slides/index.html">
+ <span class="menu-text">Slides</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../git/cheatsheet.html">
+ <span class="menu-text">Git cheatsheet</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-assignments" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Assignments</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-assignments">    
+        <li>
+    <a class="dropdown-item" href="../git/assignment.html">
+ <span class="dropdown-text">Corpus description</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../quarto/crossref.html">
+ <span class="dropdown-text">Cross-references</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../tidyverse/tibbles.html">
+ <span class="dropdown-text">Tibble manipulation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../tidyverse/ggplot.html">
+ <span class="dropdown-text">The Grammar of Graphics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../quarto/markdown.html">
+ <span class="dropdown-text">Markdown and inline code</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../quarto/citations.html">
+ <span class="dropdown-text">Citations in Quarto</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-reader-toggle nav-link" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#instructions" id="toc-instructions" class="nav-link active" data-scroll-target="#instructions"><span class="toc-section-number">1</span>  Instructions</a></li>
+  <li><a href="#sec-cite" id="toc-sec-cite" class="nav-link" data-scroll-target="#sec-cite"><span class="toc-section-number">2</span>  How to cite in Quarto</a>
+  <ul class="collapse">
+  <li><a href="#multiple-works" id="toc-multiple-works" class="nav-link" data-scroll-target="#multiple-works"><span class="toc-section-number">2.1</span>  Multiple works</a></li>
+  <li><a href="#quotes" id="toc-quotes" class="nav-link" data-scroll-target="#quotes"><span class="toc-section-number">2.2</span>  Quotes</a></li>
+  </ul></li>
+  <li><a href="#bibtex-and-csl" id="toc-bibtex-and-csl" class="nav-link" data-scroll-target="#bibtex-and-csl"><span class="toc-section-number">3</span>  BibTeX and CSL</a></li>
+  <li><a href="#sec-git" id="toc-sec-git" class="nav-link" data-scroll-target="#sec-git"><span class="toc-section-number">4</span>  Git workflow</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Citations in Quarto</h1>
+<p class="subtitle lead">Sixth assignment</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Mariana Montes </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>The goal of this assignment is to practice introducing academic citations in a Quarto document.</p>
+<section id="instructions" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Instructions</h1>
+<ol type="1">
+<li><p>Create a branch for the assignment, e.g.&nbsp;<code>citations</code>. You will work here and only move your changes to <code>main</code> if and when you want to submit.</p></li>
+<li><p>Create a Quarto document (don’t forget to remove its content!).</p></li>
+<li><p>Write a short text with different kinds of citations, as exemplified in <a href="#sec-cite">Section&nbsp;2</a>: lists of authors, author name integrated in the text, with page numbers…</p>
+<ol type="a">
+<li><p>Include at least one block quote, even if ficticious.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p></li>
+<li><p>If necessary (if it isn’t printed automatically), add a “References” title at the end of your document.</p></li>
+<li><p>You can use <a href="https://raw.githubusercontent.com/mclm2022/mclm2022.github.io/main/quarto/citations.bib">the bibliography file used here</a>, but if you already have a list of sources for your paper, I would recommend trying to create the BibTeX file with them and using that.</p></li>
+</ol></li>
+<li><p>Render your Quarto document into the output of your choice (word, html, pdf…).</p></li>
+<li><p>Stage and commit all the relevant files (see <a href="../git/cheatsheet.html#daily-workflow">Cheatsheet</a> if you don’t remember how).</p></li>
+<li><p>Merge the changes into your <code>main</code> branch (see <a href="../git/cheatsheet.html#work-with-branches">Cheatsheet</a>).</p></li>
+<li><p>Push the changes to the remote.</p></li>
+<li><p>Send me an e-mail so I check if it went ok (I will not check your repository if you don’t inform me).</p></li>
+</ol>
+</section>
+<section id="sec-cite" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> How to cite in Quarto</h1>
+<div class="callout-warning callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>All the examples in this document are <strong>fake citations</strong>.</p>
+</div>
+</div>
+<p>I do recommend to keep at hand the <a href="https://quarto.org/docs/authoring/footnotes-and-citations.html#citations">documentation</a> on citations in Quarto. The main idea is that a cited work is indicated with <strong>an <code>@</code> followed by the citation key</strong>. For a citation key “levshina_2015” and the citation style of the Unified Stylesheet for Linguistics:</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Text in Quarto</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>@levshina_2015</code></td>
+<td><span class="citation" data-cites="levshina_2015">Levshina (<a href="#ref-levshina_2015" role="doc-biblioref">2015</a>)</span></td>
+</tr>
+<tr class="even">
+<td><code>@levshina_2015 [345]</code></td>
+<td><span class="citation" data-cites="levshina_2015">Levshina (<a href="#ref-levshina_2015" role="doc-biblioref">2015: 345</a>)</span></td>
+</tr>
+<tr class="odd">
+<td><code>[@levshina_2015]</code></td>
+<td><span class="citation" data-cites="levshina_2015">(<a href="#ref-levshina_2015" role="doc-biblioref">Levshina 2015</a>)</span></td>
+</tr>
+<tr class="even">
+<td><code>[@levshina_2015 345]</code></td>
+<td><span class="citation" data-cites="levshina_2015">(<a href="#ref-levshina_2015" role="doc-biblioref">Levshina 2015: 345</a>)</span>.</td>
+</tr>
+</tbody>
+</table>
+<section id="multiple-works" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="multiple-works"><span class="header-section-number">2.1</span> Multiple works</h2>
+<p>Multiple works can be cited next to each other by separating them with a semicolon:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>The present document illustrates how to cite different works</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">@evert_2009; @evert_2004; @mcenery.etal_2010</span><span class="co">]</span>.</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>As @levshina_2015 and @levshina.etal_2014 suggest,</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>this is just a fake example.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The present document illustrates how to cite different works <span class="citation" data-cites="evert_2009 evert_2004 mcenery.etal_2010">(<a href="#ref-evert_2009" role="doc-biblioref">Evert 2009</a>, <a href="#ref-evert_2004" role="doc-biblioref">2004</a>; <a href="#ref-mcenery.etal_2010" role="doc-biblioref">McEnery, Xiao &amp; Tono 2010</a>)</span>. As <span class="citation" data-cites="levshina_2015">Levshina (<a href="#ref-levshina_2015" role="doc-biblioref">2015</a>)</span> and <span class="citation" data-cites="levshina.etal_2014">Levshina, Geeraerts &amp; Speelman (<a href="#ref-levshina.etal_2014" role="doc-biblioref">2014</a>)</span> suggest, this is just a fake example.</p>
+</section>
+<section id="quotes" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="quotes"><span class="header-section-number">2.2</span> Quotes</h2>
+<p>Short quotes are simply surrounded by double quotation marks with the source and page number in parenthesis next to it: “This is a great example” <span class="citation" data-cites="montes_2022">(<a href="#ref-montes_2022" role="doc-biblioref">Montes 2022: 1</a>)</span>.</p>
+<p>Block quotes are generated by preceding the text with a “&gt;”, without quotation marks.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="an">There is but one way of saying this:</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; A long quote can be an effective way of conveying a uniquely phrased statement</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="at">that is too long to be inserted in the middle of a sentence. However, please be</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="at">advised and do not abuse of it. The text, after all, has to be your own.</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">@montes_2022 2</span><span class="co">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>There is but one way of saying this:</p>
+<blockquote class="blockquote">
+<p>A long quote can be an effective way of conveying a uniquely phrased statement that is too long to be inserted in the middle of a sentence. However, please be advised and do not abuse of it. The text, after all, has to be your own. <span class="citation" data-cites="montes_2022">(<a href="#ref-montes_2022" role="doc-biblioref">Montes 2022: 2</a>)</span></p>
+</blockquote>
+</section>
+</section>
+<section id="bibtex-and-csl" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> BibTeX and CSL</h1>
+<p>In order to provide the bibliographical information that Quarto needs, you need a BibTeX file, like <a href="https://raw.githubusercontent.com/mclm2022/mclm2022.github.io/main/quarto/citations.bib">citations.bib used here</a>. The filename should be indicated in the <code>bibliography</code> field of the metadata YAML:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Title of my document"</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">author</span><span class="kw">:</span><span class="at"> </span><span class="st">"My name and surname"</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> citations.bib</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>There are different ways of obtaining a BibTeX file. If you use <a href="https://www.zotero.org/">Zotero</a>, you can export any group of entries as a BibTeX file. If you add the <a href="https://retorque.re/zotero-better-bibtex/">Better BibTeX</a> extension, you can keep such file updated, e.g.&nbsp;you export a collection, and every time you add or change something in the collection, your file will change accordingly. Better BibTeX also helps you define a template for your citation key, which otherwise can be very convoluted and hard to remember; you can read <a href="https://marianamontes.netlify.app/post/obsidian-and-zotero/">this blogpost</a> for an example.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<p>A citation style is coded in a <a href="https://docs.citationstyles.org/en/stable/primer.html#what-is-csl">CSL file (Citation Style Language)</a>. If you don’t want to use Quarto’s default style, you may provide another by adding a <code>csl</code> field in the metadata YAML, as is done in this document. The value should be the path to <a href="https://raw.githubusercontent.com/mclm2022/mclm2022.github.io/main/quarto/unified-style-sheet-for-linguistics.csl">a .csl file</a>, which you can download from the <a href="https://www.zotero.org/styles">Zotero CSL repository</a> or even create/modify with a <a href="https://editor.citationstyles.org/visualEditor/">Visual Editor</a>.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Title of my document"</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">author</span><span class="kw">:</span><span class="at"> </span><span class="st">"My name and surname"</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> citations.bib</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">csl</span><span class="kw">:</span><span class="at"> unified-style-sheet-for-linguistics.csl</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>For both the assignment and the final paper, you are free to choose the stylesheet that you prefer.</p>
+</section>
+<section id="sec-git" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Git workflow</h1>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status <span class="co"># check that you're on main, nothing to commit...</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch citations</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout citations</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># work on your .qmd file, render</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status <span class="co"># check everything is fine</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"practice with citations"</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout main</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status <span class="co"># check everything is fine. New files should not be there</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> merge citations</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Now the .qmd file, the rendered file and the help files should be present</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="co"># and send me a message!</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-evert_2004" class="csl-entry" role="doc-biblioentry">
+Evert, Stefan. 2004. <em><span>The Statistics of Word Cooccurrences. Word Pairs and Collocations</span></em>. <span>Stuttgart</span>: Universität Stuttgart PhD thesis.
+</div>
+<div id="ref-evert_2009" class="csl-entry" role="doc-biblioentry">
+Evert, Stefan. 2009. 58. <span>Corpora</span> and collocations. In Anke Lüdeling &amp; Merja Kytö (eds.), <em>Corpus <span>Linguistics</span>. <span>An International Handbook</span></em> (Handbooks of <span>Linguistics</span> and <span>Communication Science</span>), vol. 2, 1212–1248. <span>Berlin; New York</span>: <span>Mouton de Gruyter</span>.
+</div>
+<div id="ref-levshina_2015" class="csl-entry" role="doc-biblioentry">
+Levshina, Natalia. 2015. <em>How to do linguistics with <span>R</span>: Data exploration and statistical analysis</em>. <span>Amsterdam; Philadelphia</span>: <span>John Benjamins Publishing Company</span>.
+</div>
+<div id="ref-levshina.etal_2014" class="csl-entry" role="doc-biblioentry">
+Levshina, Natalia, Dirk Geeraerts &amp; Dirk Speelman. 2014. Dutch causative constructions: <span>Quantification</span> of meaning and meaning of quantification. In Dylan Glynn &amp; Justyna A. Robinson (eds.), <em>Corpus methods for semantics: Quantitative studies in polysemy and synonymy</em> (Human Cognitive Processing volume 43), 205–222. <span>Amsterdam ; Philadelphia</span>: <span>John Benjamins Publishing Company</span>.
+</div>
+<div id="ref-mcenery.etal_2010" class="csl-entry" role="doc-biblioentry">
+McEnery, Tony, Richard Xiao &amp; Yukio Tono. 2010. <em>Corpus-based language studies: An advanced resource book</em> (Routledge Applied Linguistics). Reprinted. <span>London</span>: <span>Routledge</span>.
+</div>
+<div id="ref-montes_2022" class="csl-entry" role="doc-biblioentry">
+Montes, Mariana. 2022. Citations in <span>Quarto</span>. <em>Methods in Corpus Linguistics - The Website</em> 1(1). 1–4.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>This is by no means a requirement in the final paper, just for the assignment.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>You might also be interested in exploring <a href="https://github.com/paleolimbot/rbbt">the <code>{rbbt}</code> package.</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+      <div class="nav-footer-center">Methods in Corpus Linguistics — Mariana Montes, 2022</div>
+  </div>
+</footer>
+
+
+
+</body></html>
