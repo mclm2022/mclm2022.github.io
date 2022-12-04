@@ -40,6 +40,7 @@ website:
           - tidyverse/ggplot.qmd
           - quarto/markdown.qmd
           - quarto/citations.qmd
+          - quarto/glossr.qmd
     search: true
 format:
   html:

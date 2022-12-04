@@ -1,0 +1,115 @@
+---
+title: "Interlinear glosses"
+author: "Mariana Montes"
+subtitle: "Seventh assignment"
+number-sections: true
+---
+
+The goal of this assignment is to practice writing interlinear glosses with the `{glossr}` package.
+
+# Instructions
+
+1. Create a branch for the assignment, e.g. `glossr`. You will work here and only move your changes to `main` if and when you want to submit.
+
+1. Create a Quarto document (don't forget to remove its content!).
+
+1. Reproduce the examples in [the glossr documentation](https://montesmariana.github.io/glossr/articles/gloss_factory.html), paying attention to the points described in @sec-glossr.
+
+1. Render your Quarto document into the output of your choice (word, html, pdf...).
+
+1. Stage and commit all the relevant files (see [Cheatsheet](../git/cheatsheet.qmd#daily-workflow) if you don't remember how).
+
+1. Merge the changes into your `main` branch (see [Cheatsheet](../git/cheatsheet.qmd#work-with-branches)).
+
+1. Push the changes to the remote.
+
+1. Send me an e-mail so I check if it went ok (I will not check your repository if you don't inform me).
+
+# Tips {#sec-glossr}
+
+1. You can either use your own glosses, if you have examples in different languages in mind, or use the dataset that comes with `{glossr}`.
+
+::: {.panel-tabset}
+
+## Own glosses
+
+Create a dataframe (it can be a file that you open or a tibble you create in your document) with one line per example and one column per line of your interlinear gloss. The free translation has to be in a column called `translation` and the unique label of the example (for cross-references) in a column called `label`. Other columns can have any other name^[If you have a column called `source` it will have a special location too, though.] and all that matters is the order. For example, if you have only one other column, your glosses will have one line with that text and one with the translation, without alignment. If you have two other columns, the text in the first column and the text in the second column will be aligned based on spaces, and the translation will be added without alignment afterwards. See examples in the documentation.
+
+## `{glossr}` dataset
+
+`{glossr}` comes with a small dataframe used for examples, which is available as `glosses` once you load the package:
+
+```{r}
+#| label: data
+library(glossr)
+glosses
+```
+
+:::
+
+2. In a hidden chunk (with `include: false`), set up `{glossr}`:
+
+    a. Call `library(glossr)`.
+    
+    b. Call `use_glossr()`.
+    
+    c. Call `gloss_factory()` on your dataset and assign it to a variable, which will be a function to print glosses. The `gloss_factory()` call also gives you some information about how your dataset will be read, so you can print it in the console to check everything is ok.
+    
+```{{r}}
+#| label: glossr-setup
+#| include: false
+library(glossr)
+use_glossr()
+by_label <- gloss_factory(glosses, ignore_columns = "language")
+```
+
+```{r}
+#| label: glossr-setup
+#| include: false
+library(glossr)
+use_glossr()
+by_label <- gloss_factory(glosses, ignore_columns = "language")
+```
+
+3. Use `by_label("gloss-label")` in a chunk with `echo: false` to print the gloss with the "gloss-label" label, and `` `r knitr::inline_expr('gloss("gloss-label")')` `` inline to cross-reference it. You may also follow instructions on the `{glossr}` documentation to print several glosses one after the other.
+
+````
+Example `r knitr::inline_expr('gloss("heartwarming-jp")')` illustrates a metaphorical use
+of Japanese *atatakai* 'warm'.
+
+```{{r}}
+#| label: heartwarming
+#| echo: false
+by_label("heartwarming-jp")
+```
+
+````
+
+Example `r gloss("heartwarming-jp")` illustrates a metaphorical use
+of Japanese *atatakai* 'warm'.
+
+```{r}
+#| label: heartwarming2
+#| echo: false
+by_label("heartwarming-jp")
+```
+
+4. You may also use [styling options](https://montesmariana.github.io/glossr/articles/styling.html) to edit the style of your glosses.
+
+# Git workflow {#sec-git}
+
+```bash
+git status # check that you're on main, nothing to commit...
+git branch glossr
+git checkout glossr
+# work on your .qmd file, render
+git status # check everything is fine
+git add .
+git commit -m "practice with glossr"
+git checkout main
+git status # check everything is fine. New files should not be there
+git merge glossr
+# Now the .qmd file, the rendered file and the help files should be present
+git push
+# and send me a message!
+```
