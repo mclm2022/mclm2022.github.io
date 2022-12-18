@@ -41,6 +41,7 @@ website:
           - quarto/markdown.qmd
           - quarto/citations.qmd
           - quarto/glossr.qmd
+          - git/sample.qmd
     search: true
 format:
   html:
