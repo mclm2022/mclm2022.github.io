@@ -269,10 +269,10 @@ The code below sorts the dataframe with features information based on their coor
 
 ```{r}
 #| label: func-extremes
-clinton_words <- words_df %>%
+trump_words <- words_df %>%
   arrange(desc(V2)) %>%
   head(20) %>% pull(word)
-trump_words <- words_df %>%
+clinton_words <- words_df %>%
   arrange(V2) %>%
   head(20) %>% pull(word)
 ```

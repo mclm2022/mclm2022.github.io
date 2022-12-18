@@ -9,17 +9,17 @@ This site gathers slides and case studies for the Master in Corpus Linguistics c
 Class number | Date | Topic | Material in website | Assignment
 ---- | -------- | -------------------- | -------------------- | -------
 1 | 29/09 | Introduction | [Slides](slides/index.qmd#introduction) | Install software and packages
-2 | 06/10 | Reading corpora and using Git | [Slides](slides/index.qmd#read-corpora) | [Corpus description](https://mclm2022.github.io/git/assignment.html)
-3 | 13/10 | Contingency tables | [Slides](slides/index.qmd#contingency-tables) | [Cross-references](https://mclm2022.github.io/quarto/crossref.html)
-4 | 20/10 | Association measures | [Slides](slides/index.qmd#association-measures) | [Tibble manipulation](https://mclm2022.github.io/tidyverse/tibbles.html)
-5 | 27/10 | Linear regression | [Slides](slides/index.qmd#linear-regression) | [The Grammar of Graphics](https://mclm2022.github.io/tidyverse/ggplot.html)
-6 | 03/11 | Logistic regression | [Slides](slides/index.qmd#logistic-regression) | [Markdown](https://mclm2022.github.io/quarto/markdown.html)
+2 | 06/10 | Reading corpora and using Git | [Slides](slides/index.qmd#read-corpora) | [Corpus description](git/assignment.html)
+3 | 13/10 | Contingency tables | [Slides](slides/index.qmd#contingency-tables) | [Cross-references](quarto/crossref.html)
+4 | 20/10 | Association measures | [Slides](slides/index.qmd#association-measures) | [Tibble manipulation](tidyverse/tibbles.html)
+5 | 27/10 | Linear regression | [Slides](slides/index.qmd#linear-regression) | [The Grammar of Graphics](tidyverse/ggplot.html)
+6 | 03/11 | Logistic regression | [Slides](slides/index.qmd#logistic-regression) | [Markdown](quarto/markdown.html)
 7 | 10/11 | Correspondence analysis | [Slides](slides/index.qmd#correspondence-analysis) | [MCLM Tutorials](https://github.com/masterclm/mclmtutorials)
 8 | 17/11 | Factor analysis | [Slides](slides/index.qmd#factor-analysis) | **Paper proposal**
-9 | 24/11 | Collocations and keywords: example | [Study](studies/base.qmd) | Citations
-10 | 01/12 | Retrieval and analysis of variants in alternation | [Study](studies/genitive-alternation-retrieval.qmd) | Interlinear glosses
-11 | 08/12 | Case study with logistic regression | TBD | TBD
-12 | 15/12 | Lectometry example | [Study](studies/ca-trump-clinton.qmd) | TBD
+9 | 24/11 | Collocations and keywords: example | [Study](studies/base.qmd) | [Citations](quarto/citations.qmd)
+10 | 01/12 | Retrieval and analysis of variants in alternation | [Study](studies/genitive-alternation-retrieval.qmd) | [Interlinear glosses](quarto/glossr.qmd)
+11 | 08/12 | Case study with logistic regression | [Slides](https://cipaolini.github.io/QSlides/MCL_seminar/) and [study](https://cipaolini.github.io/QSlides/MCL_seminar/study.html) | NA
+12 | 15/12 | Lectometry example | [Study](studies/ca-trump-clinton.qmd) | [Check out sample paper](git/sample.qmd)
 13 | 22/12 | Register analysis | [Study](studies/register-analysis.qmd) | TBD
 
 # Techniques and research questions

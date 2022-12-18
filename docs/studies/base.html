@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.237">
+<meta name="generator" content="quarto-1.2.269">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <title>Methods in Corpus Linguistics - Keywords and collocation analysis on the BASE corpus</title>
 <style>
@@ -16531,13 +16531,13 @@ rank type abs_freq nrm_freq
 </div>
 </div>
 </div>
-<p>For a more sophisticated plot, the <a href="https://github.com/slowkow/ggrepel">ggrepel</a> package allows us to add text close to the position of their datapoints, avoiding overlap. To create <a href="#fig-kw4">Figure&nbsp;4</a> we define a smaller dataframe with the subset of keywords for which <span class="math inline">\(G^2\)</span> is larger than 100 and provide it as data for <code><a href="https://rdrr.io/pkg/ggrepel/man/geom_text_repel.html">ggrepel::geom_text_repel()</a></code>. The <code>x</code> and <code>y</code> aesthetics are inherited from the <code><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot()</a></code> call in <code>g</code>.</p>
+<p>For a more sophisticated plot, the <a href="https://github.com/slowkow/ggrepel">ggrepel</a> package allows us to add text close to the position of their datapoints, avoiding overlap. To create <a href="#fig-kw4">Figure&nbsp;4</a> we define a smaller dataframe with the subset of keywords for which <span class="math inline">\(G^2\)</span> is larger than 100 and provide it as data for <code>ggrepel::geom_text_repel()</code>. The <code>x</code> and <code>y</code> aesthetics are inherited from the <code><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot()</a></code> call in <code>g</code>.</p>
 <div class="cell page-columns page-full">
 <div class="sourceCode" id="cb39"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">high_G_signed</span> <span class="op">&lt;-</span> <span class="va">top_scores_df</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span><span class="op">(</span><span class="va">G_signed</span> <span class="op">&gt;</span> <span class="fl">100</span><span class="op">)</span> <span class="co"># extract types with high G_signed</span></span>
 <span></span>
 <span><span class="va">g</span> <span class="op">+</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html">geom_point</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu">ggrepel</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/ggrepel/man/geom_text_repel.html">geom_text_repel</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">high_G_signed</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>label <span class="op">=</span> <span class="va">type</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span>  <span class="fu">ggrepel</span><span class="fu">::</span><span class="fu">geom_text_repel</span><span class="op">(</span>data <span class="op">=</span> <span class="va">high_G_signed</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>label <span class="op">=</span> <span class="va">type</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display page-columns page-full">
 <div id="fig-kw4" class="quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="figure page-columns page-full"><p><img src="base_files/figure-html/fig-kw4-1.png" class="img-fluid figure-img" width="672"></p>

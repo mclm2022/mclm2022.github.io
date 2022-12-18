@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.237">
+<meta name="generator" content="quarto-1.2.269">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <title>Methods in Corpus Linguistics - CA applied to the Trump-Clinton speeches</title>
 <style>
@@ -900,10 +900,10 @@ Note
 <p>Since the dimension that sets apart the Clinton speeches (top) most clearly from the Trump speeches (bottom) is the second dimension (y-axis), we may want to inspect the features that occupy extreme positions on the y-axis (and that hence contribute importantly to the y-axis).</p>
 <p>The code below sorts the dataframe with features information based on their coordinates in the second dimension (“V2”, i.e.&nbsp;the vertical axis) and extracts the first 20 elements. <code>clinton_words</code> and <code>trump_words</code> are thus vectors with the 20 words most characteristic of Clinton’s and Trump’s speeches respectively.</p>
 <div class="cell">
-<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">clinton_words</span> <span class="op">&lt;-</span> <span class="va">words_df</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">trump_words</span> <span class="op">&lt;-</span> <span class="va">words_df</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/arrange.html">arrange</a></span><span class="op">(</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/desc.html">desc</a></span><span class="op">(</span><span class="va">V2</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
 <span>  <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="fl">20</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/pull.html">pull</a></span><span class="op">(</span><span class="va">word</span><span class="op">)</span></span>
-<span><span class="va">trump_words</span> <span class="op">&lt;-</span> <span class="va">words_df</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span><span class="va">clinton_words</span> <span class="op">&lt;-</span> <span class="va">words_df</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/arrange.html">arrange</a></span><span class="op">(</span><span class="va">V2</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
 <span>  <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="fl">20</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/pull.html">pull</a></span><span class="op">(</span><span class="va">word</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -913,7 +913,7 @@ Note
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>Those most characteristic of Trump's speeches, instead, are</span>
 <span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="in">`r glue::glue_collapse(paste0("*", trump_words, "*"), sep = ", ", last = " and ")`</span>.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <blockquote class="blockquote">
-<p>The words most characteristic of Clinton’s speeches are <em>anyway</em>, <em>little</em>, <em>mine</em>, <em>they</em>, <em>over</em>, <em>twice</em>, <em>myself</em>, <em>second</em>, <em>anything</em>, <em>though</em>, <em>otherwise</em>, <em>onto</em>, <em>along</em>, <em>never</em>, <em>such</em>, <em>them</em>, <em>her</em>, <em>two</em>, <em>but</em> and <em>ones</em>. Those most characteristic of Trump’s speeches, instead, are <em>someone</em>, <em>himself</em>, <em>toward</em>, <em>each</em>, <em>shall</em>, <em>everyone</em>, <em>ourselves</em>, <em>ours</em>, <em>his</em>, <em>anyone</em>, <em>often</em>, <em>several</em>, <em>own</em>, <em>across</em>, <em>both</em>, <em>sometimes</em>, <em>whose</em>, <em>may</em>, <em>should</em> and <em>my</em>.</p>
+<p>The words most characteristic of Clinton’s speeches are <em>someone</em>, <em>himself</em>, <em>toward</em>, <em>each</em>, <em>shall</em>, <em>everyone</em>, <em>ourselves</em>, <em>ours</em>, <em>his</em>, <em>anyone</em>, <em>often</em>, <em>several</em>, <em>own</em>, <em>across</em>, <em>both</em>, <em>sometimes</em>, <em>whose</em>, <em>may</em>, <em>should</em> and <em>my</em>. Those most characteristic of Trump’s speeches, instead, are <em>anyway</em>, <em>little</em>, <em>mine</em>, <em>they</em>, <em>over</em>, <em>twice</em>, <em>myself</em>, <em>second</em>, <em>anything</em>, <em>though</em>, <em>otherwise</em>, <em>onto</em>, <em>along</em>, <em>never</em>, <em>such</em>, <em>them</em>, <em>her</em>, <em>two</em>, <em>but</em> and <em>ones</em>.</p>
 </blockquote>
 </section></section><section id="sec-content" class="level1" data-number="3"><h1 data-number="3">
 <span class="header-section-number">3</span> High frequency content words as features</h1>
