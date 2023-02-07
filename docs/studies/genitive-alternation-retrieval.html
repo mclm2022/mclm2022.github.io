@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.269">
+<meta name="generator" content="quarto-1.2.280">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <title>Methods in Corpus Linguistics - Genitive Alternation I: Retrieval</title>
 <style>
@@ -139,6 +139,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li class="nav-item">
     <a class="nav-link" href="../about.html">
  <span class="menu-text">Schedule &amp; Overview</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../resources/general-feedback.html">
+ <span class="menu-text">General Feedback</span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-studies" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -487,7 +491,7 @@ Variable names
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># install.packages("learnr")</span></span>
 <span><span class="co"># remotes::install_github("masterclm/mclmtutorials")</span></span>
 <span><span class="co"># remotes::install_github("rstudio/gradethis")</span></span>
-<span><span class="fu">learnr</span><span class="fu">::</span><span class="fu">run_tutorial</span><span class="op">(</span><span class="st">"regex"</span>, <span class="st">"mclmtutorials"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span><span class="fu">learnr</span><span class="fu">::</span><span class="fu"><a href="https://pkgs.rstudio.com/learnr/reference/run_tutorial.html">run_tutorial</a></span><span class="op">(</span><span class="st">"regex"</span>, <span class="st">"mclmtutorials"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div></div><p>As a first step, we construct a regular expression that will match, in the non-tokenized corpus, the sequence we are interested in, and we’ll store it in a variable <code>pattern</code>. Notice that we use a raw string (preceded with <code>r</code> and, within the quotation marks, surrounded by two hyphens and a square bracket) and that we flag the regular expression with an <code>x</code> and an <code>i</code>. The <code>x</code> allows us to insert spaces and line breaks for more readability (free-spacing mode), and the <code>i</code> makes the search case insensitive.</p>
 <div class="cell">

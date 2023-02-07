@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.280">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Methods in Corpus Linguistics - General feedback</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><link rel="stylesheet" href="../styles.css">
+</head>
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg navbar-dark "><div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Methods in Corpus Linguistics</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+<li class="nav-item">
+    <a class="nav-link" href="../index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html">
+ <span class="menu-text">Schedule &amp; Overview</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../resources/general-feedback.html" aria-current="page">
+ <span class="menu-text">General Feedback</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-studies" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Studies</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-studies">
+<li>
+    <a class="dropdown-item" href="../studies/base.html">
+ <span class="dropdown-text">Keywords and collocation analysis on the BASE corpus</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../studies/genitive-alternation-retrieval.html">
+ <span class="dropdown-text">Genitive Alternation I: Retrieval</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../studies/genitive-alternation-analysis.html">
+ <span class="dropdown-text">Genitive Alternation II: Analysis</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../studies/ca-trump-clinton.html">
+ <span class="dropdown-text">CA applied to the Trump-Clinton speeches</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../studies/register-analysis.html">
+ <span class="dropdown-text">Simple register analysis (multidimensional analysis) of brown TEI</span></a>
+  </li>  
+    </ul>
+</li>
+  <li class="nav-item">
+    <a class="nav-link" href="../slides/index.html">
+ <span class="menu-text">Slides</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../git/cheatsheet.html">
+ <span class="menu-text">Git cheatsheet</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-assignments" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Assignments</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-assignments">
+<li>
+    <a class="dropdown-item" href="../git/assignment.html">
+ <span class="dropdown-text">Corpus description</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../quarto/crossref.html">
+ <span class="dropdown-text">Cross-references</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../tidyverse/tibbles.html">
+ <span class="dropdown-text">Tibble manipulation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../tidyverse/ggplot.html">
+ <span class="dropdown-text">The Grammar of Graphics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../quarto/markdown.html">
+ <span class="dropdown-text">Markdown and inline code</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../quarto/citations.html">
+ <span class="dropdown-text">Citations in Quarto</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../quarto/glossr.html">
+ <span class="dropdown-text">Interlinear glosses</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../git/sample.html">
+ <span class="dropdown-text">Sample paper</span></a>
+  </li>  
+    </ul>
+</li>
+</ul>
+<div class="quarto-toggle-container">
+                  <a href="" class="quarto-reader-toggle nav-link" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
+   
+  <ul>
+<li><a href="#sec-github" id="toc-sec-github" class="nav-link active" data-scroll-target="#sec-github"><span class="toc-section-number">1</span>  How to find your personalized feedback</a></li>
+  <li>
+<a href="#sec-comments" id="toc-sec-comments" class="nav-link" data-scroll-target="#sec-comments"><span class="toc-section-number">2</span>  Comments and suggestions</a>
+  <ul class="collapse">
+<li><a href="#look-at-your-output" id="toc-look-at-your-output" class="nav-link" data-scroll-target="#look-at-your-output"><span class="toc-section-number">2.1</span>  Look at your output</a></li>
+  <li><a href="#scripts-versus-literate-programming" id="toc-scripts-versus-literate-programming" class="nav-link" data-scroll-target="#scripts-versus-literate-programming"><span class="toc-section-number">2.2</span>  Scripts versus literate programming</a></li>
+  <li>
+<a href="#test-your-code" id="toc-test-your-code" class="nav-link" data-scroll-target="#test-your-code"><span class="toc-section-number">2.3</span>  Test your code</a>
+  <ul class="collapse">
+<li><a href="#if-you-modified-a-variable-in-a-dataframe-check-that-it-has-the-values-or-frequencies-that-you-wanted" id="toc-if-you-modified-a-variable-in-a-dataframe-check-that-it-has-the-values-or-frequencies-that-you-wanted" class="nav-link" data-scroll-target="#if-you-modified-a-variable-in-a-dataframe-check-that-it-has-the-values-or-frequencies-that-you-wanted"><span class="toc-section-number">2.3.1</span>  If you modified a variable in a dataframe, check that it has the values (or frequencies) that you wanted</a></li>
+  <li><a href="#if-you-rerun-code-that-you-ran-before-avoid-retyping" id="toc-if-you-rerun-code-that-you-ran-before-avoid-retyping" class="nav-link" data-scroll-target="#if-you-rerun-code-that-you-ran-before-avoid-retyping"><span class="toc-section-number">2.3.2</span>  If you rerun code that you ran before, avoid retyping</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#code-repetition" id="toc-code-repetition" class="nav-link" data-scroll-target="#code-repetition"><span class="toc-section-number">2.4</span>  Code repetition</a>
+  <ul class="collapse">
+<li><a href="#saving-output" id="toc-saving-output" class="nav-link" data-scroll-target="#saving-output"><span class="toc-section-number">2.4.1</span>  Saving output</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#actual-techniques" id="toc-actual-techniques" class="nav-link" data-scroll-target="#actual-techniques"><span class="toc-section-number">2.5</span>  Actual techniques</a>
+  <ul class="collapse">
+<li><a href="#explain-the-technique" id="toc-explain-the-technique" class="nav-link" data-scroll-target="#explain-the-technique"><span class="toc-section-number">2.5.1</span>  Explain the technique</a></li>
+  <li><a href="#frequency-lists" id="toc-frequency-lists" class="nav-link" data-scroll-target="#frequency-lists"><span class="toc-section-number">2.5.2</span>  Frequency lists</a></li>
+  <li><a href="#logistic-regression-analysis" id="toc-logistic-regression-analysis" class="nav-link" data-scroll-target="#logistic-regression-analysis"><span class="toc-section-number">2.5.3</span>  Logistic regression analysis</a></li>
+  <li><a href="#correspondence-analysis" id="toc-correspondence-analysis" class="nav-link" data-scroll-target="#correspondence-analysis"><span class="toc-section-number">2.5.4</span>  Correspondence analysis</a></li>
+  </ul>
+</li>
+  <li><a href="#packages" id="toc-packages" class="nav-link" data-scroll-target="#packages"><span class="toc-section-number">2.6</span>  Packages</a></li>
+  <li><a href="#writing" id="toc-writing" class="nav-link" data-scroll-target="#writing"><span class="toc-section-number">2.7</span>  Writing</a></li>
+  </ul>
+</li>
+  </ul></nav>
+    </div>
+<!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<h1 class="title">General feedback</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header><p>The goal of this document is twofold. In section <a href="#sec-github">Section&nbsp;1</a> I give the instructions to look at your personalized feedback, which can be found in your respective private repositories in <a href="https://github.com/mclm2022" class="uri">https://github.com/mclm2022</a>. If you don’t see or have access to the repository, send me a message and I will fix that. I will not push to any other repositories.</p>
+<p><a href="#sec-comments">Section&nbsp;2</a> gather some points that have been observed in different submissions. This is also important guidance for those who will submit in the resitting period. Not all of these remarks are things I have explicitly mentioned in class. They have affected grades to a different degree — in any case, beyond the rubric I used to be as thorough and fair as possible, this was the fundamental practice:</p>
+<ul>
+<li><p>Exams that failed failed. It was not the accumulation of tiny unsatisfactory things but something important that was wrong and without which there was no passing.</p></li>
+<li><p>Exams with grades 17 or up were excellent, having none of barely any of the issues described in this file. They were easy to read and evaluate and extremely satisfying.</p></li>
+<li><p>Examples that pass but with grades below 17 are OK to good and certainly satisfy the minimum expectations of the course. The difference with the top grades can be due to different things: not respecting things that I have asked for (but that were not bad enough for failing) or serious issues with the points described here. Even if I didn’t <em>teach</em> you about them, they did make the evaluation much harder to perform. This is still good work, it just can be much better.</p></li>
+</ul>
+<section id="sec-github" class="level1" data-number="1"><h1 data-number="1">
+<span class="header-section-number">1</span> How to find your personalized feedback</h1>
+<p>Your personalized feedback can be found in your private GitHub repository at <a href="https://github.com/mclm2022" class="uri">https://github.com/mclm2022</a>. I have made changes directly to the .qmd file, the script(s) if present and, sometimes, to the README file. In addition, I have compiled a “feedback.md” file that has comments on the different items that were graded.</p>
+<p>I have not touched your main/master branch: everything is in a feedback branch, which you can access via the dropdown button at the top left, as shown in <a href="#fig-branch">Figure&nbsp;1</a>.</p>
+<div id="fig-branch" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="branch-choice-2.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1: Choose the ‘feedback’ branch on your repository.</figcaption><p></p>
+</figure>
+</div>
+<p>Once on the feedback branch, you can see my contribution. I’ve tried to keep it neat with one commit for all my in-text comments and another for the feedback report, but it may be messier than that. <a href="#fig-commits">Figure&nbsp;2</a> shows what the page looks like when you choose the feedback branch, with two highlighted areas. The number 1 points to the link that shows you the commits <a href="#fig-files">Figure&nbsp;3</a> and where you can easily see my changes in contrast to the original text. The number 2 points to the “feedback.md” file, which you can read directly on GitHub without downloading it <a href="#fig-feedback">Figure&nbsp;4</a>.</p>
+<div id="fig-commits" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="find-commit-2.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;2: feedback branch on the repository.</figcaption><p></p>
+</figure>
+</div>
+<p>If you click on the link indicated by the number 1 in <a href="#fig-commits">Figure&nbsp;2</a>, you are taken to a page where you can compare the modified files with their original versions, shown in <a href="#fig-files">Figure&nbsp;3</a>. The boxes like the one indicated by the number 1 in this new figure indicate the different commits, in case you want to zoom in on one, i.e.&nbsp;only see the changes between that commit and the previous one. After these commits, you get an overview of each of the files that have been modified (or created!) with one of these commits. Notice that you will see “feedback.md” with its contents fully in green (item 2): this is not the best way to read it, so I recommend you collapse it by clicking on the small triangle next to its name and instead read it by clicking on the link shown by item 2 in <a href="#fig-commits">Figure&nbsp;2</a>.</p>
+<p>In this view of the files, removed lines are shown in red and added lines are shown in green. If I have made a comment inside a line, you will see the original text in red, the new text in green, and the actual addition highlighted inside the green part (item 3). Sections in blue are collapsed because I have not changed anything (item 4).</p>
+<p>I have tried to make all my comments as comments: surrounded by <code>&lt;!--</code> and <code>--&gt;</code> in markdown files, and preceded by <code>#</code> in R scripts.</p>
+<div id="fig-files" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="files-2.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3: Compare the effect of the commits.</figcaption><p></p>
+</figure>
+</div>
+<p>In order to read the feedback report, you can click on the name of the file in the page shown in <a href="#fig-commits">Figure&nbsp;2</a>, which takes you to the screen shown in <a href="#fig-feedback">Figure&nbsp;4</a>. As you can see, you can read the contents quite nicely on GitHub directly.</p>
+<p>The feedback report starts with a small introduction that summarizes your score and may provide a generalized feedback message (whether that is the case depends greatly on when I graded/wrote the feedback, you may not see such a message). Afterwards there are four sections worth 5 points each, corresponding to the bullet points indicated in the description of the Exam in Toledo. For each of these sections, there are a few subsections that are worth a variable number of points, and for each of them you can see the assigned score. Within the subsections, you may find one bullet point with a general comment or separate sets of bullet points with strong or weak (or, occasionally, “other”) points that were taken into account. Most of these items and more are usually elaborated as comments in the Quarto and R files themselves.</p>
+<div id="fig-feedback" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="feedback-report.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;4: Feedback report.</figcaption><p></p>
+</figure>
+</div>
+<p>As mentioned in Toledo, if you still have any questions you can contact me on the 14th of February in the afternoon via the Teams link that I provided.</p>
+</section><section id="sec-comments" class="level1 page-columns page-full" data-number="2"><h1 data-number="2">
+<span class="header-section-number">2</span> Comments and suggestions</h1>
+<p>In this section I gather some general comments that came up across different papers, and that I thought worth going deeper into. I realize that I was not clear enough about them during the course, so, in the hope to offer you better guidance in this last opportunity, I gathered my thoughts here.</p>
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>For those submitting in August, I will consider this as read.</p>
+</div>
+</div>
+<section id="look-at-your-output" class="level2" data-number="2.1"><h2 data-number="2.1" class="anchored" data-anchor-id="look-at-your-output">
+<span class="header-section-number">2.1</span> Look at your output</h2>
+<p>When providing someone with output from Quarto, please take a look at the output file, which is the one they are going to read. Has everything rendered properly? Are the tables and figures meaningful and readable? Are the citations properly rendered? The source file is to see <em>how</em> you do it, but the actual paper is the output file.</p>
+</section><section id="scripts-versus-literate-programming" class="level2" data-number="2.2"><h2 data-number="2.2" class="anchored" data-anchor-id="scripts-versus-literate-programming">
+<span class="header-section-number">2.2</span> Scripts versus literate programming</h2>
+<p>Part of what I wanted to teach you was to generate a reproducible project, a bundle of work that you can give to someone else for them to read, replicate, learn from. While this takes practice to figure out, the core principle is to think of your reader and what their experience is reading your content and reproducing your code. In that spirit, the choice of what goes into a Quarto file and what goes into an R script becomes important.</p>
+<p>When you run <strong>code from a script</strong>, you can easily see the output in the console (always in the console) and it’s easy to go line by line (or groups of lines when they have comments or are between <code><a href="https://rdrr.io/r/base/Paren.html">{ }</a></code>). The comments in the script help the reader understand what it’s for, especially if it’s a decision that they might not immediately understand, e.g.&nbsp;removing outliers that you captured via interactive exploration, adapting the <code><a href="https://masterclm.github.io/mclm/reference/freqlist.html">freqlist()</a></code> arguments to your corpus format, etc.</p>
+<p>Inside this script you may <strong>assign</strong> variables and/or <strong>print</strong> them. If you assign them but don’t print them, the user has to type the name of the variable to inspect it. I don’t think that’s a problem, it’s an easy thing to do. After all, you cannot predict when your reader will want to inspect an element. If you are not going to use the object again (e.g.&nbsp;a plot for exploration, a contingency table, a brief accuracy test…) you don’t <em>need</em> to assign the object. If you print something from your script, you’d better only print things that are fast. Printing a data frame with hundreds of rows as is (not as tibble, not with <code><a href="https://rdrr.io/r/base/summary.html">summary()</a></code>) takes time, takes over the console and is useless to look at.</p>
+<p>Writing code into an R Markdown or Quarto document has <strong>different goals</strong>. When you run code from such a document, you cannot always easily see the output in the console: sometimes it will render inside the chunks. The code in this document is not meant for explorations from the source code, but as interacting with what you say. When you write an R Markdown or Quarto document that contains code, the idea is that the code supports your story and/or that your text explains the code. In the reports used in class, the text of the reports <em>explains the code</em>. And there is no code ran inside that does not directly contribute to what is shown in the report.</p>
+<p>The Quarto file is meant to help you <em>reproduce the text output</em>, not <em>run an analysis</em>. Only when the demonstration of the analysis and the text output are the same thing does it makes sense to have a lot of code in your source file. But then, you wouldn’t be hiding it.</p>
+<p>Another thing to take into account there is that every time you render your Quarto file you will be <em>recomputing</em> the code that is inside. The actual analysis code takes time, and you don’t <em>need</em> to run it over and over any time you re-render the file! This is why it’s useful to have:</p>
+<ul>
+<li>A script that shows the data cleaning, analysis, etc. as a separate script or multiple separate scripts.</li>
+<li>Files with the output that is relevant for the Quarto file, i.e.&nbsp;plain-text files with tables, .rds files with modelling outputs.</li>
+<li>In the Quarto file, only the code that reads these files and renders the plots, tables, final demonstrative computations…</li>
+</ul>
+<p>If you don’t think the computation aspect is too bad, then you can still run the code of an external script by sourcing it.</p>
+</section><section id="test-your-code" class="level2" data-number="2.3"><h2 data-number="2.3" class="anchored" data-anchor-id="test-your-code">
+<span class="header-section-number">2.3</span> Test your code</h2>
+<p>I mentioned a number of times that, even if I show a long chain of functions that result in my desired R object, <em>as I am creating it</em>, i.e.&nbsp;as I first write the code, I do it step by step to check that I get the output that I want. It is very easy to assume that you are doing things right and that the code fulfills your wishes. It is hard to figure out <em>how</em> to check or test that the code did what you think it’s doing. But it is crucial to learn to do it. This section gathers some tips for that, responding to some cases where the intention of the code and the actual output were clearly different.</p>
+<section id="if-you-modified-a-variable-in-a-dataframe-check-that-it-has-the-values-or-frequencies-that-you-wanted" class="level3" data-number="2.3.1"><h3 data-number="2.3.1" class="anchored" data-anchor-id="if-you-modified-a-variable-in-a-dataframe-check-that-it-has-the-values-or-frequencies-that-you-wanted">
+<span class="header-section-number">2.3.1</span> If you modified a variable in a dataframe, check that it has the values (or frequencies) that you wanted</h3>
+<p>Say that you want to create a categorical variable <code>age_cat</code> that takes all values below 20 as “&lt;20” and all other values as “&gt;20”. I’m starting my reasoning wrong because I’m not accounting for values that are equal to 20.</p>
+<div class="cell">
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org">tidyverse</a></span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/Random.html">set.seed</a></span><span class="op">(</span><span class="fl">123</span><span class="op">)</span></span>
+<span><span class="va">my_tibble</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html">tibble</a></span><span class="op">(</span>age <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sample.html">sample</a></span><span class="op">(</span><span class="fl">12</span><span class="op">:</span><span class="fl">85</span>, <span class="fl">50</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="va">my_tibble</span> <span class="op">&lt;-</span> <span class="va">my_tibble</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span>age_cat <span class="op">=</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/if_else.html">if_else</a></span><span class="op">(</span><span class="va">age</span> <span class="op">&lt;</span> <span class="fl">20</span>, <span class="st">"&lt;20"</span>, <span class="st">"&gt;20"</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Just to check that my data makes sense, I could run the following:</p>
+<div class="cell">
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">my_tibble</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span><span class="op">(</span><span class="va">age_cat</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html">summarize</a></span><span class="op">(</span>min <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/Extremes.html">min</a></span><span class="op">(</span><span class="va">age</span><span class="op">)</span>, max <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/Extremes.html">max</a></span><span class="op">(</span><span class="va">age</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 3
+  age_cat   min   max
+  &lt;chr&gt;   &lt;int&gt; &lt;int&gt;
+1 &lt;20        12    19
+2 &gt;20        20    83</code></pre>
+</div>
+</div>
+<p>There you can see that the minimum value of the “&gt;20” category is 20, which was not the plan, and adjust the code accordingly.</p>
+<p>The <code><a href="https://dplyr.tidyverse.org/reference/count.html">count()</a></code> function can also help you figure out the frequencies of different categories and <em>which</em> categories you have. Is any category missing? Are those the frequencies you expected?</p>
+</section><section id="if-you-rerun-code-that-you-ran-before-avoid-retyping" class="level3" data-number="2.3.2"><h3 data-number="2.3.2" class="anchored" data-anchor-id="if-you-rerun-code-that-you-ran-before-avoid-retyping">
+<span class="header-section-number">2.3.2</span> If you rerun code that you ran before, avoid retyping</h3>
+<p>Use a variable, functions… but avoid any variability that might mean that the rerun is different from the run.</p>
+<p>As an example, we will create a small tibble with sentences that include the numbers of different cities. The goal is to then create a column <code>tour</code> that contains <code>TRUE</code> when the value in <code>phrase</code> contains “tourist” or “tourists” and <code>FALSE</code> otherwise.</p>
+<div class="cell">
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/Random.html">set.seed</a></span><span class="op">(</span><span class="fl">123</span><span class="op">)</span></span>
+<span><span class="va">txt_tibble</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://tidyr.tidyverse.org/reference/expand.html">crossing</a></span><span class="op">(</span></span>
+<span>  city <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"Brussels"</span>, <span class="st">"Berlin"</span>, <span class="st">"Paris"</span><span class="op">)</span>,</span>
+<span>  comment <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"I live in %s"</span>, <span class="st">"I went to %s and back"</span>,</span>
+<span>              <span class="st">"Never gone to %s"</span>, <span class="st">"%s is full of tourists"</span><span class="op">)</span></span>
+<span>  <span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span>phrase <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sprintf.html">sprintf</a></span><span class="op">(</span><span class="va">comment</span>, <span class="va">city</span><span class="op">)</span><span class="op">)</span> </span>
+<span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/slice.html">slice_sample</a></span><span class="op">(</span><span class="va">txt_tibble</span>, n <span class="op">=</span> <span class="fl">6</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 3
+  city     comment               phrase                   
+  &lt;chr&gt;    &lt;chr&gt;                 &lt;chr&gt;                    
+1 Berlin   I went to %s and back I went to Berlin and back
+2 Paris    Never gone to %s      Never gone to Paris      
+3 Paris    I live in %s          I live in Paris          
+4 Berlin   I live in %s          I live in Berlin         
+5 Brussels I live in %s          I live in Brussels       
+6 Paris    I went to %s and back I went to Paris and back </code></pre>
+</div>
+</div>
+<p>In the code below, we first try a quick exploration of <code><a href="https://stringr.tidyverse.org/reference/str_detect.html">str_detect()</a></code> to make sure that we get a meaningful result. Then we implement it in the tibble… but we make a mistake!</p>
+<div class="cell">
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># exploration</span></span>
+<span><span class="fu"><a href="https://stringr.tidyverse.org/reference/str_detect.html">str_detect</a></span><span class="op">(</span><span class="va">txt_tibble</span><span class="op">$</span><span class="va">phrase</span>, <span class="st">'tourist'</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1]  TRUE FALSE FALSE FALSE  TRUE FALSE FALSE FALSE  TRUE FALSE FALSE FALSE</code></pre>
+</div>
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># implementation</span></span>
+<span><span class="va">txt_tibble</span> <span class="op">&lt;-</span> <span class="va">txt_tibble</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span></span>
+<span>  tour <span class="op">=</span> <span class="fu"><a href="https://stringr.tidyverse.org/reference/str_detect.html">str_detect</a></span><span class="op">(</span><span class="va">phrase</span>, <span class="st">'tourits'</span><span class="op">)</span></span>
+<span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Would you have noticed the mistake if these had been two out of hundreds of lines of code in a script and I hadn’t told you that it is there? Would you have realized that the <code>tour</code> column does not have your expected value without the check shown below?</p>
+<div class="cell">
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">txt_tibble</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/count.html">count</a></span><span class="op">(</span><span class="va">tour</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 2
+  tour      n
+  &lt;lgl&gt; &lt;int&gt;
+1 FALSE    12</code></pre>
+</div>
+</div>
+</section></section><section id="code-repetition" class="level2" data-number="2.4"><h2 data-number="2.4" class="anchored" data-anchor-id="code-repetition">
+<span class="header-section-number">2.4</span> Code repetition</h2>
+<p>Avoiding unnecessary repetition also applies to code repeated across several scripts, particularly when it is long and convoluted. Copy-pasting a chunk of code is easy, but what if you realize <em>later</em> that there was a mistake, or you want to make an adjustment? You have to make sure to fix the copy (or copies) in exactly the same way. Maybe once or twice that’s doable, but it’s not sustainable.</p>
+<p>Instead, it’s safer to either get common code in another script that is sourced by the files that use it (check <code><a href="https://rdrr.io/r/base/source.html">source()</a></code>) or to store the output in the first run and then open it the following times you call it.</p>
+<section id="saving-output" class="level3" data-number="2.4.1"><h3 data-number="2.4.1" class="anchored" data-anchor-id="saving-output">
+<span class="header-section-number">2.4.1</span> Saving output</h3>
+<p>It is always preferable to save output in an interoperable format (that different softwares can parse), such as plain-text files (.txt, .csv, .tsv…). Think: if I have this output, who can I give it to, how can this be opened later?</p>
+<p>I do love RDS (and that is why I recommended it), but it’s best to leave it for R objects that you cannot save in another way (e.g.&nbsp;raw model outputs) or that you definitely only will read with R (e.g.&nbsp;a list of values for your Quarto file). Dataframes should be stored as plain text file so you can also explore them in a text editor, with Python, in Excel, whatever.</p>
+<p>Saving as .Rdata with <code><a href="https://rdrr.io/r/base/save.html">save()</a></code>, which can be loaded with <code><a href="https://rdrr.io/r/base/load.html">load()</a></code>, forces the name of the variables, which removes the option from the user. If I want to open your data in my own script, and I already have a variable with that name, it will mess up my environment. With RDS and other formats, the user knows explicitly the name of the variable that the data is stored with, and also has the opportunity to explore it <em>without</em> saving it to a variable.</p>
+<p>All <a href="https://github.com/masterclm/mclm">mclm</a> objects have a <code>write_</code> function paired with a <code>read_</code> function that is tailored to the object <em>but also</em> saves them in an interoperable format. The same way you can save association scores output with <code><a href="https://masterclm.github.io/mclm/reference/write_assoc.html">write_assoc()</a></code> so that you read them with <code><a href="https://masterclm.github.io/mclm/reference/read_assoc.html">read_assoc()</a></code> and concordances with <code><a href="https://masterclm.github.io/mclm/reference/write_conc.html">write_conc()</a></code>, you can save frequency lists with <code><a href="https://masterclm.github.io/mclm/reference/write_freqlist.html">write_freqlist()</a></code>, filenames with <code><a href="https://masterclm.github.io/mclm/reference/write_fnames.html">write_fnames()</a></code>, types with <code><a href="https://masterclm.github.io/mclm/reference/write_types.html">write_types()</a></code>… The output is a plain text file that you can open with your text editor and read with whatever. The reason that there are specific functions is that they save (and then read) the data in a way that keeps the integrity and properties of the objects, whereas <code><a href="https://readr.tidyverse.org/reference/write_delim.html">write_tsv()</a></code> or other functions would lose those properties. You can learn about these and other functions in the “Value” section of the documentation of <code><a href="https://masterclm.github.io/mclm/reference/freqlist.html">freqlist()</a></code>, <code>fnames()</code>, <code><a href="https://masterclm.github.io/mclm/reference/types.html">types()</a></code>…</p>
+</section></section><section id="actual-techniques" class="level2 page-columns page-full" data-number="2.5"><h2 data-number="2.5" class="anchored" data-anchor-id="actual-techniques">
+<span class="header-section-number">2.5</span> Actual techniques</h2>
+<p>A main point that I wish I had managed to get across better is: these are exploratory techniques. This means that they are not, at least in most cases, enough by themselves, but they are supposed to orient you in the direction of the interesting stuff. Your corpus is like a huge new uncharted land with mountains and valleys and meadows and swamps, and you have a thing you want to find (a research question). Exploring the land on foot is one possibility: you read your corpus. But the technique you choose is a way to generate one or more big neon arrows pointing to the region that can help you find what you seek.</p>
+<p>Once you get a result from your analysis (a list of keywords or collocations, a biplot with correspondences, coefficients) you have your big arrow… but the land is right there. You can go to where the arrow points to and see what it is that it is trying to show. The association measures or the biplots show attraction? Ok, what are the actual frequencies we are talking about, what is an example of that context? You have the raw frequencies, you have a function to generate concordances, <em>use them</em>.</p>
+<p>The techniques don’t give you an answer to your question as much as the direction of where you can find it. It tells you where the patterns are so you can go and explore them, describe them, understand them.</p>
+<section id="explain-the-technique" class="level3" data-number="2.5.1"><h3 data-number="2.5.1" class="anchored" data-anchor-id="explain-the-technique">
+<span class="header-section-number">2.5.1</span> Explain the technique</h3>
+<p>Part of what I need you to show me is that you understand the technique you are using. You don’t even need to show you learned <em>everything</em> that I taught in class, just what is relevant to the technique you chose. What does logistic regression / correspondence analysis / keyword analysis … do? Imagine you reader has never heard of it: what is the minimum that you should say so they understand how that technique addresses your question? What are the caveats/warnings of that technique, type of association measure, approach…?</p>
+</section><section id="frequency-lists" class="level3 page-columns page-full" data-number="2.5.2"><h3 data-number="2.5.2" class="anchored" data-anchor-id="frequency-lists">
+<span class="header-section-number">2.5.2</span> Frequency lists</h3>
+<p>Please tailor the arguments of <code><a href="https://masterclm.github.io/mclm/reference/freqlist.html">freqlist()</a></code> to your corpus! If you have normal running text, don’t use space as a delimiter! The default values of <code><a href="https://masterclm.github.io/mclm/reference/freqlist.html">freqlist()</a></code> are meant for normal running text (like the one you are reading right now) in UTF-8 encoding (which is the preferred one). The space as a delimiter is used in the Brown corpus because it has word/pos pairs separated by spaces: the punctuation is separated from the words by spaces. In normal, not-annotated text, that is not the case. The code below illustrates this: the output to the left shows the tokens when using space as a delimiter, while the output to the right shows the tokens based on the default tokenizer.</p>
+<div class="page-columns page-full">
+<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/masterclm/mclm">mclm</a></span><span class="op">)</span></span>
+<span><span class="va">my_example_text</span> <span class="op">&lt;-</span> <span class="st">"</span></span>
+<span><span class="st">  This is some text that has not been annotated.</span></span>
+<span><span class="st">  It's normal (English) running text!</span></span>
+<span><span class="st">  Most of the web-scraped corpora, or in any case not-annotated corpora,</span></span>
+<span><span class="st">  look like this.</span></span>
+<span><span class="st">"</span></span>
+<span></span>
+<span><span class="va">with_splitter</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://masterclm.github.io/mclm/reference/freqlist.html">freqlist</a></span><span class="op">(</span><span class="va">my_example_text</span>, re_token_splitter <span class="op">=</span> <span class="st">"\\s+"</span>, as_text <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
+<span><span class="va">default</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://masterclm.github.io/mclm/reference/freqlist.html">freqlist</a></span><span class="op">(</span><span class="va">my_example_text</span>, as_text <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">with_splitter</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">default</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell column-page quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell-output cell-output-stdout quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<pre><code>Frequency list (types in list: 6, tokens in list: 7)
+&lt;total number of tokens: 28&gt;
+rank orig_rank       type abs_freq nrm_freq
+---- --------- ---------- -------- --------
+   1         1   corpora,        2  714.286
+   2         2  (english)        1  357.143
+   3         3 annotated.        1  357.143
+   4         4        any        1  357.143
+   5         5       been        1  357.143
+   6         6       case        1  357.143</code></pre>
+</div>
+<div class="cell-output cell-output-stdout quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<pre><code>Frequency list (types in list: 6, tokens in list: 9)
+&lt;total number of tokens: 28&gt;
+rank orig_rank      type abs_freq nrm_freq
+---- --------- --------- -------- --------
+   1         1   corpora        2  714.286
+   2         2      text        2  714.286
+   3         3      this        2  714.286
+   4         4 annotated        1  357.143
+   5         5       any        1  357.143
+   6         6      been        1  357.143</code></pre>
+</div>
+</div>
+</div>
+</div>
+<p>If, in addition, you use <code>re_drop_token</code> to remove tokens that match certain punctuation marks, you are removing the words that ended up attached to the punctuation marks.</p>
+<div class="page-columns page-full">
+<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">with_splitter</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://masterclm.github.io/mclm/reference/keep_re.html">keep_re</a></span><span class="op">(</span><span class="st">"[.,'!()]"</span><span class="op">)</span></span>
+<span><span class="va">default</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://masterclm.github.io/mclm/reference/keep_re.html">keep_re</a></span><span class="op">(</span><span class="st">"[.,'!()]"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell column-page quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell-output cell-output-stdout quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<pre><code>Frequency list (types in list: 6, tokens in list: 7)
+&lt;total number of tokens: 28&gt;
+rank orig_rank       type abs_freq nrm_freq
+---- --------- ---------- -------- --------
+   1         1   corpora,        2  714.286
+   2         2  (english)        1  357.143
+   3         3 annotated.        1  357.143
+   4        10       it's        1  357.143
+   5        22      text!        1  357.143
+   6        26      this.        1  357.143</code></pre>
+</div>
+<div class="cell-output cell-output-stdout quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<pre><code>Frequency list (types in list: 1, tokens in list: 1)
+&lt;total number of tokens: 28&gt;
+rank orig_rank type abs_freq nrm_freq
+---- --------- ---- -------- --------
+   1        12 it's        1  357.143</code></pre>
+</div>
+</div>
+</div>
+</div>
+</section><section id="logistic-regression-analysis" class="level3" data-number="2.5.3"><h3 data-number="2.5.3" class="anchored" data-anchor-id="logistic-regression-analysis">
+<span class="header-section-number">2.5.3</span> Logistic regression analysis</h3>
+<p>Random effects don’t make sense if you have only one observation per individual. If very few individuals have multiple observations, you might consider choosing one from each.</p>
+<p>As a rule of thumb, check the frequency of your least frequent response value and divide it by 20. That is the maximum number of predictors you can have.</p>
+<p>The C-value is the most important measure to show the relevance and accuracy of your result. Just accuracy is not enough, especially if you don’t compare it to the baseline accuracy of always guessing the most frequent result. AIC is necessary if you compare models to each other. <span class="math inline">\(R^2\)</span> is an option to show quality, but not better than the C-value (or area under the ROC curve, which is the same).</p>
+</section><section id="correspondence-analysis" class="level3" data-number="2.5.4"><h3 data-number="2.5.4" class="anchored" data-anchor-id="correspondence-analysis">
+<span class="header-section-number">2.5.4</span> Correspondence analysis</h3>
+<p>The scree plot is a good addition: not necessary (since you will plot only two dimensions anyways) but nice, and if you mention it: plot it.</p>
+<p>When you talk about a statistical measure you need a measure of quality. <code><a href="https://rdrr.io/pkg/ca/man/ca.html">ca()</a></code> provides that; use it. At least, beware of data points with very low quality and mention them.</p>
+<p>The plot is <strong>exploratory</strong>. The idea is that you are interested in the relationship between the rows, between the columns, and between the rows and columns of your contingency matrix (this should be mentioned in the description). It summarizes the variation so that you have an idea of <em>where</em> the variation is, so you can go inspect it. This could be by reading the outlier file, by checking concordances of the weird-behaving words… but crucially, remember that you still have the contingency table with the actual frequencies. The plot can tell you “this word seems very attracted to this file”: it’s the contingency table that will clarify: because it occurs only in that file… once. Don’t stay with only the plot when the actual data is so easy to check.</p>
+</section></section><section id="packages" class="level2" data-number="2.6"><h2 data-number="2.6" class="anchored" data-anchor-id="packages">
+<span class="header-section-number">2.6</span> Packages</h2>
+<p>It’s good practice to list the packages needed (with the <code><a href="https://rdrr.io/r/base/library.html">library()</a></code> calls) at the beginning of your script. Then the reader knows what is necessary to install and doesn’t suddenly run into incompatibilities or need to update after having run some code. (I don’t do it here because the goal of this document is entirely different.)</p>
+<p>But avoid listing packages that are not used. Every <code><a href="https://rdrr.io/r/base/library.html">library()</a></code> call uses memory and computation, and if the reader does not have that package they may have to install it. It also suggests that <em>you</em> don’t know what the libraries are for.</p>
+</section><section id="writing" class="level2" data-number="2.7"><h2 data-number="2.7" class="anchored" data-anchor-id="writing">
+<span class="header-section-number">2.7</span> Writing</h2>
+<p>As a tip for any structured text with sections, every time you have an internal division, explain it. Instead of going straight for your sections or your subsections, write a short text that explains what the different sections or subsections are and, if possible, how they link to each other (use cross-references!). You may notice that I am not doing that within <a href="#sec-comments">Section&nbsp;2</a>, and that makes it harder for you to keep up with the structure of the text and the relationship between the ideas.</p>
+<p>I am not adding a conclusion, either. A proper conclusion would recap the structure of the <em>full text</em> and how the sections link with each other. When you anticipate the sections in the introduction, the reader does not know the content: when you repeat them in the conclusion, they can finally bring all the ideas together into a meaningful whole.</p>
+
+
+</section></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer"><div class="nav-footer">
+      <div class="nav-footer-center">Methods in Corpus Linguistics — Mariana Montes, 2022</div>
+  </div>
+</footer>
+
+
+</body></html>

@@ -10,6 +10,7 @@ project:
     - quarto/*.qmd
     - tidyverse/*.qmd
     - about.qmd
+    - resources/general-feedback.qmd
 
 website:
   title: "Methods in Corpus Linguistics"
@@ -21,6 +22,8 @@ website:
         text: Home
       - href: about.qmd
         text: Schedule & Overview
+      - href: resources/general-feedback.qmd
+        text: General Feedback
       - text: Studies
         menu:
           - studies/base.qmd
